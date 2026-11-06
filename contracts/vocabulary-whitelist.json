@@ -37,16 +37,16 @@
                     }
                 ],
     "counting":  {
-                     "base_compulsory_single_words":  1596,
+                     "base_compulsory_single_words":  1603,
                      "base_compulsory_phrases":  4,
                      "official_supplement_single_words":  120,
                      "official_supplement_phrases":  44,
                      "high_school_source_rows":  1886,
                      "high_school_unique_headwords":  1846,
-                     "single_word_entries":  3015,
+                     "single_word_entries":  3021,
                      "phrase_entries":  392,
                      "closed_class_entries":  124,
-                     "unique_whitelist_entries":  3407
+                     "unique_whitelist_entries":  3413
                  },
     "allowed_books":  [
                           "必修第一册",
@@ -3517,6 +3517,13 @@
                     },
                     {
                         "word":  "carrot",
+                        "sources":  [
+                                        "课程标准2022|三级词汇表"
+                                    ],
+                        "closed_class":  false
+                    },
+                    {
+                        "word":  "carry",
                         "sources":  [
                                         "课程标准2022|三级词汇表"
                                     ],
@@ -12518,7 +12525,7 @@
                     {
                         "word":  "little",
                         "sources":  [
-                                        "closed_class"
+                                        "课程标准2022|三级词汇表"
                                     ],
                         "closed_class":  true
                     },
@@ -12921,6 +12928,13 @@
                         "sources":  [
                                         "课程标准2022|三级词汇表",
                                         "选必修第二册|Unit 4"
+                                    ],
+                        "closed_class":  false
+                    },
+                    {
+                        "word":  "man",
+                        "sources":  [
+                                        "课程标准2022|三级词汇表"
                                     ],
                         "closed_class":  false
                     },
@@ -14896,6 +14910,13 @@
                         "closed_class":  true
                     },
                     {
+                        "word":  "orange",
+                        "sources":  [
+                                        "课程标准2022|三级词汇表"
+                                    ],
+                        "closed_class":  false
+                    },
+                    {
                         "word":  "orbit",
                         "sources":  [
                                         "必修第三册|Unit 4"
@@ -15301,6 +15322,13 @@
                         "word":  "paris",
                         "sources":  [
                                         "课程标准2022|补充词表"
+                                    ],
+                        "closed_class":  false
+                    },
+                    {
+                        "word":  "park",
+                        "sources":  [
+                                        "课程标准2022|三级词汇表"
                                     ],
                         "closed_class":  false
                     },
@@ -16049,6 +16077,13 @@
                         "word":  "plus",
                         "sources":  [
                                         "必修第二册|Unit 3"
+                                    ],
+                        "closed_class":  false
+                    },
+                    {
+                        "word":  "pm",
+                        "sources":  [
+                                        "课程标准2022|三级词汇表"
                                     ],
                         "closed_class":  false
                     },
@@ -20065,6 +20100,13 @@
                         "word":  "sputnik “",
                         "sources":  [
                                         "必修第三册|Unit 4"
+                                    ],
+                        "closed_class":  false
+                    },
+                    {
+                        "word":  "square",
+                        "sources":  [
+                                        "课程标准2022|三级词汇表"
                                     ],
                         "closed_class":  false
                     },

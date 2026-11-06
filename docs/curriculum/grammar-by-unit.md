@@ -32,7 +32,7 @@
 | 11 | 必修三 U1 Festivals and Celebrations | 13 | 动词 -ing 作定语和表语 | `v_ing_nonfinite` | 范围收窄 |
 | 12 | 必修三 U2 Morals and Virtues | 25 | 动词 -ing 作宾语补足语和状语 | `v_ing_nonfinite` | 范围收窄 |
 | 13 | 必修三 U3 Diverse Cultures | 37 | 宾语从句 | `noun_clauses` | 范围收窄至基础宾语从句 |
-| 14 | 必修三 U4 Space Exploration | 49 | 不定式作宾语、表语和状语 | 无 | 白名单外，不可出题 |
+| 14 | 必修三 U4 Space Exploration | 49 | 不定式作宾语、表语和状语 | `infinitive_nonfinite` | 完全一致；仅允许 to do / to be done |
 | 15 | 必修三 U5 The Value of Money | 61 | 主语从句 | `noun_clauses` | 范围收窄 |
 | 16 | 选必一 U1 People of Achievement | 12 | 非限制性定语从句 | `relative_clauses_non_defining` | 完全一致 |
 | 17 | 选必一 U2 Looking into the Future | 24 | 将来进行时 | `tense_system` | 完全一致 |
@@ -61,8 +61,8 @@
 
 25 个正式单元中：
 
-- `完全一致` 8 个；
+- `完全一致` 9 个；
 - `范围收窄` 13 个；
-- `白名单外` 4 个。
+- `白名单外` 3 个。
 
-4 个白名单外单元为语法板块层面的排除，不代表这些结构不能出现在语篇中；它们只能作为自然语言现象出现，不能被设置为考点。
+3 个白名单外单元为语法板块层面的排除，不代表这些结构不能出现在语篇中；它们只能作为自然语言现象出现，不能被设置为考点。

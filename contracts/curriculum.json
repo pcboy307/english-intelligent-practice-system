@@ -1,5 +1,6 @@
 {
   "schema_version": "1.0.0",
+  "requirement_version": "V11.1",
   "status": "frozen_candidate",
   "updated_at": "2026-11-07",
   "textbook": {
@@ -28,7 +29,7 @@
       "选择性必修第一册": 5,
       "选择性必修第二册": 5
     },
-    "vocabulary_counting": "按去重后的规范化词头计；官方 2022 三级词表声明 1600 项（OCR 归一为 1596 单词头 + 4 短语），补充数词/日期/地名/机构/节日表 120 单词头 + 44 短语，人教版已学新增 1846 项，闭合功能词另补 5 项；去重后单词头 3015 个，另有 392 个短语，完整允许表 3407 项。",
+    "vocabulary_counting": "按去重后的规范化词头计；官方 2022 三级词表声明 1600 项（斜杠变体展开后为 1603 单词头，另有 4 短语），补充数词/日期/地名/机构/节日表 120 单词头 + 44 短语，人教版已学新增 1846 项，闭合功能词另补 5 项；去重后单词头 3021 个，另有 392 个短语，完整允许表 3413 项。",
     "grammar_counting": "按 grammar_whitelist 中的语法项目 ID 计，不按 25 个单元数计；25 个单元仅用于教材出处、题材和组卷册次对齐。",
     "topic_counting": "按 25 个正式教学单元的题材池计；Welcome Unit 不计入 25 个题材单元。"
   },
@@ -43,21 +44,21 @@
     ],
     "counting": {
       "base_compulsory_declared_entries": 1600,
-      "base_compulsory_single_words": 1596,
+      "base_compulsory_single_words": 1603,
       "base_compulsory_phrases": 4,
       "official_supplement_single_words": 120,
       "official_supplement_phrases": 44,
       "high_school_unique_entries": 1846,
       "closed_class_added": 5,
-      "single_word_entries": 3015,
+      "single_word_entries": 3021,
       "phrase_entries": 392,
-      "unique_whitelist_entries": 3407
+      "unique_whitelist_entries": 3413
     },
     "normalization": {
       "case": "lowercase",
       "whitespace": "trim and collapse",
       "headword_deduplication": "exact normalized headword",
-      "phrases": "retained as exact multiword entries and excluded from the 3015 single-headword count",
+      "phrases": "retained as exact multiword entries and excluded from the 3021 single-headword count",
       "inflections": "stored as base headwords; runtime matching maps plural, past, past participle, present participle, third-person, comparative and superlative forms to the base lemma without adding them as new whitelist entries",
       "derivatives": "accepted only when present in a source list or covered by an approved curriculum word-formation rule",
       "proper_nouns": "ordinary curriculum lexical entries may remain; generated content still must not contain real people, schools, or exam identifiers"
@@ -189,6 +190,27 @@
       "label": "基础 with 复合结构",
       "sources": ["必修一", "必修二", "必修三", "选择性必修一"],
       "allowed_in_question": true
+    },
+    {
+      "id": "infinitive_nonfinite",
+      "label": "基础不定式",
+      "sources": ["必修三"],
+      "allowed_in_question": true,
+      "allowed_functions": [
+        "object",
+        "predicative",
+        "adverbial_purpose_result",
+        "attributive",
+        "subject"
+      ],
+      "allowed_forms": ["to do", "to be done"],
+      "fixed_collocations_only": [
+        "remember",
+        "forget",
+        "stop",
+        "regret",
+        "mean"
+      ]
     }
   ],
   "grammar_forbidden_as_question": [
@@ -203,7 +225,12 @@
     "complex_full_inversion",
     "cleft_inversion_combination",
     "rare_derivation_sense",
-    "book_3_4_exclusive_grammar"
+    "book_3_4_exclusive_grammar",
+    "perfect_infinitive",
+    "progressive_infinitive",
+    "split_infinitive_analysis",
+    "infinitive_vs_gerund_meaning",
+    "independent_infinitive_phrase"
   ],
   "units": [
     {
@@ -316,7 +343,7 @@
       "book_group": "必修",
       "unit": "Unit 4",
       "topic": "太空探索",
-      "grammar_tags": []
+      "grammar_tags": ["infinitive_nonfinite"]
     },
     {
       "id": "B3U5",
@@ -499,7 +526,8 @@
     "max_knowledge_point_repetition_per_paper": 3,
     "generation_batch_max_passages": 10,
     "forced_pause_after_first_batch": true,
-    "manual_review_before_pool": true
+    "manual_review_before_pool": true,
+    "grammar_fill_min_questions_per_grammar_id": 12
   },
   "m1_exemption": {
     "seven_day_repeat_rate_requirement": "deferred_to_m3",

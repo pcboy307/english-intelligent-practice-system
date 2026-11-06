@@ -1,4 +1,4 @@
-$ErrorActionPreference = "Stop"
+﻿$ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
 Set-Location -LiteralPath $root
 
@@ -52,6 +52,10 @@ Assert-True ($unitGroups.Count -eq 5) "Expected 5 textbooks"
 Assert-True (@($unitGroups | Where-Object Count -ne 5).Count -eq 0) "Each textbook must contain 5 units"
 
 $grammarIds = @($curriculum.grammar_whitelist.id)
+Assert-True ($curriculum.requirement_version -eq "V11.1") "Requirement version mismatch"
+Assert-True ($grammarIds.Count -eq 21) "Expected 21 grammar IDs"
+Assert-True ($grammarIds -contains "infinitive_nonfinite") "Infinitive grammar ID missing"
+Assert-True ($curriculum.quality_gates.grammar_fill_min_questions_per_grammar_id -eq 12) "Grammar coverage minimum mismatch"
 $unknownTags = @($units | ForEach-Object { $_.grammar_tags } | Where-Object { $grammarIds -notcontains $_ } | Sort-Object -Unique)
 Assert-True ($unknownTags.Count -eq 0) "Unit contains unknown grammar tags"
 
@@ -102,8 +106,9 @@ Write-Output "PASS design-tokens"
 
 $officialVocabulary = Read-Json "contracts/vocabulary/kebiao-2022-level3.json"
 Assert-True ($officialVocabulary.source.declared_total -eq 1600) "Official vocabulary declared total mismatch"
-Assert-True ($officialVocabulary.counts.total_entries -eq 1600) "Official vocabulary reconciliation mismatch"
-Assert-True ($officialVocabulary.source_comparison.jaccard_difference_percent -eq 29.75) "ECDICT comparison mismatch"
+Assert-True ($officialVocabulary.counts.declared_entries -eq 1600) "Official vocabulary declared count mismatch"
+Assert-True ($officialVocabulary.counts.normalized_single_words -eq 1603) "Official vocabulary normalized headword count mismatch"
+Assert-True ($officialVocabulary.source_comparison.jaccard_difference_percent -eq 29.47) "ECDICT comparison mismatch"
 $supplementVocabulary = Read-Json "contracts/vocabulary/kebiao-2022-supplements.json"
 Assert-True (@($supplementVocabulary.single_words).Count -eq 120) "Supplement headword count mismatch"
 Assert-True (@($supplementVocabulary.phrases).Count -eq 44) "Supplement phrase count mismatch"
@@ -113,16 +118,30 @@ $words = @($vocabulary.entries.word)
 Assert-True ($words.Count -gt 0) "Vocabulary whitelist cannot be empty"
 Assert-True ($words.Count -eq @($words | Sort-Object -Unique).Count) "Vocabulary whitelist has duplicate words"
 Assert-True ($words.Count -eq $vocabulary.counting.unique_whitelist_entries) "Vocabulary count declaration mismatch"
-Assert-True ($vocabulary.counting.base_compulsory_single_words -eq 1596) "Compulsory baseline count mismatch"
-Assert-True ($vocabulary.counting.single_word_entries -eq 3015) "Single-headword count mismatch"
+Assert-True ($vocabulary.counting.base_compulsory_single_words -eq 1603) "Compulsory baseline count mismatch"
+Assert-True ($vocabulary.counting.single_word_entries -eq 3021) "Single-headword count mismatch"
 Assert-True ($vocabulary.counting.phrase_entries -eq 392) "Phrase count mismatch"
-Assert-True ($vocabulary.counting.unique_whitelist_entries -eq 3407) "Full allowlist count mismatch"
-Write-Output "PASS vocabulary entries=$($words.Count) singleWords=3015 phrases=392 officialBase=1600"
+Assert-True ($vocabulary.counting.unique_whitelist_entries -eq 3413) "Full allowlist count mismatch"
+Write-Output "PASS vocabulary entries=$($words.Count) singleWords=3021 phrases=392 officialBase=1600"
 
 $grammarDoc = Get-Content -Raw -Encoding UTF8 -LiteralPath "docs/curriculum/grammar-by-unit.md"
 $grammarRows = [regex]::Matches($grammarDoc, "(?m)^\| \d+ \|").Count
 Assert-True ($grammarRows -eq 25) "Grammar document must contain 25 unit rows"
-Write-Output "PASS grammar-document rows=25"
+$grammarUnitRows = @(Get-Content -Encoding UTF8 -LiteralPath "docs/curriculum/grammar-by-unit.md" | Where-Object { $_ -match "^\| \d+ \|" })
+$exactRows = @($grammarUnitRows | Where-Object { $_ -match "\| 完全一致" }).Count
+$narrowedRows = @($grammarUnitRows | Where-Object { $_ -match "\| 范围收窄" }).Count
+$excludedRows = @($grammarUnitRows | Where-Object { $_ -match "\| 白名单外" }).Count
+Assert-True ($exactRows -eq 9) "Grammar exact-match count mismatch"
+Assert-True ($narrowedRows -eq 13) "Grammar narrowed count mismatch"
+Assert-True ($excludedRows -eq 3) "Grammar excluded count mismatch"
+$mappingDoc = Get-Content -Raw -Encoding UTF8 -LiteralPath "docs/curriculum/grammar-whitelist-mapping.md"
+$mappingRows = [regex]::Matches($mappingDoc, "(?m)^\| \d+ \|").Count
+Assert-True ($mappingRows -eq 15) "Grammar mapping must contain 15 V11.1 rows"
+$questionSchema = Read-Json "contracts/schemas/question.json"
+$grammarEnum = @($questionSchema.properties.grammar_tags.items.enum)
+Assert-True ($grammarEnum.Count -eq 21) "Question grammar enum must contain 21 IDs"
+Assert-True ($grammarEnum -contains "infinitive_nonfinite") "Question grammar enum missing infinitive"
+Write-Output "PASS grammar whitelistRows=15 grammarIds=21 unitRows=25"
 
 $openapi = Get-Content -Raw -Encoding UTF8 -LiteralPath "contracts/openapi.yaml"
 foreach ($path in @(

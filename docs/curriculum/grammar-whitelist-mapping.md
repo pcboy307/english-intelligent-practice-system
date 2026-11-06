@@ -1,4 +1,4 @@
-# V11 语法白名单映射
+# V11.1 语法白名单映射
 
 状态：M0 冻结候选。
 
@@ -18,12 +18,15 @@
 | 12 | 构词法 | `word_formation` |
 | 13 | 比较级、最高级、as...as、the more...the more | `comparatives_superlatives` |
 | 14 | 基础 with 复合结构 | `with_compound` |
+| 15 | 基础不定式 | `infinitive_nonfinite` |
 
-## “多出的 2 项”解释
+## 项目总数解释
 
-V11 14 行按最小项目拆分时为 18 项。当前有 20 项，仅因以下两行被拆得更细：
+V11.1 共 15 行。原 V11 14 行按最小项目拆分时为 18 项；新增基础不定式后为 19 项。
+
+当前有 21 项，另外 2 项仅因以下两行被拆得更细：
 
 1. 第 1 行拆为 `relative_clauses_defining` 与 `relative_clauses_non_defining`，新增 1 项。
 2. 第 7 行拆为 `subjunctive_basic_if` 与 `subjunctive_basic_should`，新增 1 项。
 
-因此 20 项全部在 V11 授权范围内，没有新增白名单外语法。
+因此 21 项全部在 V11.1 授权范围内，没有新增白名单外语法。

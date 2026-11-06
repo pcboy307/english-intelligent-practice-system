@@ -48,6 +48,7 @@
         "out_of_scope_rate",
         "passage_duplicate_rate",
         "stem_duplicate_rate",
+        "grammar_fill_coverage",
         "generated_at"
       ],
       "properties": {
@@ -96,6 +97,10 @@
         "out_of_scope_rate": {"type": "number", "minimum": 0, "maximum": 1},
         "passage_duplicate_rate": {"type": "number", "minimum": 0, "maximum": 1},
         "stem_duplicate_rate": {"type": "number", "minimum": 0, "maximum": 1},
+        "grammar_fill_coverage": {
+          "type": "object",
+          "additionalProperties": {"type": "integer", "minimum": 0}
+        },
         "generated_at": {"type": "string", "format": "date-time"}
       }
     }

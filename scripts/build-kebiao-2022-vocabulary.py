@@ -36,7 +36,7 @@ TOKEN_CORRECTIONS = {
     "playgromd": "playground",
     "tuck": "luck",
 }
-OCR_MISSED_ENTRIES = {"busy", "ill", "minute", "photo", "pressure", "soldier"}
+OCR_MISSED_ENTRIES = {"ill", "minute", "pressure"}
 SPECIAL_PHRASES = {"according to", "ice cream", "kung fu", "per cent"}
 
 
@@ -58,7 +58,7 @@ def read_cells(tsv_dir: Path, suffix: str = "") -> list[str]:
             y = min(word[1] for word in words)
             if page == 135 and y >= 700:
                 continue
-            if y < 95 or max(word[1] for word in words) > 1300:
+            if y < 95 or max(word[1] for word in words) > 1340:
                 continue
 
             for left_side in (True, False):
@@ -110,11 +110,14 @@ def build(tsv_dir: Path) -> dict:
     phrases.update(SPECIAL_PHRASES)
     phrases.discard("policewoman pl")
 
-    if len(single_words) + len(phrases) != 1600:
-        raise SystemExit(
-            "Vocabulary snapshot did not reconcile to 1600 entries: "
-            f"single={len(single_words)} phrases={len(phrases)}"
-        )
+    if not single_words:
+        raise SystemExit("Vocabulary snapshot cannot be empty")
+
+    ecdict_path = Path("contracts/vocabulary/ecdict-zk.json")
+    ecdict_words = set(json.loads(ecdict_path.read_text(encoding="utf-8"))["words"])
+    intersection = len(single_words & ecdict_words)
+    union = len(single_words | ecdict_words)
+    difference = 1 - intersection / union
 
     return {
         "schema_version": "1.0.0",
@@ -145,9 +148,23 @@ def build(tsv_dir: Path) -> dict:
             "ocr_missed_entries_added": sorted(OCR_MISSED_ENTRIES),
         },
         "counts": {
-            "single_words": len(single_words),
+            "declared_entries": 1600,
+            "normalized_single_words": len(single_words),
             "phrases": len(phrases),
-            "total_entries": len(single_words) + len(phrases),
+            "normalized_match_forms": len(single_words) + len(phrases),
+            "counting_note": "The official source declares 1600 printed entries. Slash alternatives are expanded into match forms, so normalized match forms may differ from the printed-entry count."
+        },
+        "source_comparison": {
+            "alternative": "ECDICT zk-tagged vocabulary",
+            "official_single_words": len(single_words),
+            "alternative_single_words": len(ecdict_words),
+            "intersection": intersection,
+            "union": union,
+            "official_only": len(single_words - ecdict_words),
+            "alternative_only": len(ecdict_words - single_words),
+            "jaccard_difference": round(difference, 6),
+            "jaccard_difference_percent": round(difference * 100, 2),
+            "conclusion": "ECDICT zk 与官方三级词汇表差异显著，仅可作为外部审计参照，不得作为本系统第一层白名单。",
         },
         "words": sorted(single_words),
         "phrase_entries": sorted(phrases),

@@ -10,7 +10,15 @@
     "whitelist_only": true,
     "forbidden_books": ["选择性必修第三册", "选择性必修第四册"],
     "min_categories_per_grammar_passage": 5,
-    "max_questions_per_category_per_passage": 2
+    "max_questions_per_category_per_passage": 2,
+    "grammar_fill_min_questions_per_grammar_id": 12,
+    "infinitive_forbidden_forms": [
+      "to_have_done",
+      "to_have_been_done",
+      "to_be_doing",
+      "split_infinitive_analysis",
+      "infinitive_vs_gerund_meaning_discrimination"
+    ]
   },
   "difficulty": {
     "distribution_tolerance_pp": 5,

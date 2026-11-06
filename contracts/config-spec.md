@@ -24,16 +24,18 @@
 - `counting_clarification.vocabulary_counting`：说明词汇按规范化词头计，并给出 2022 课标基础层、高中新增层、闭合功能词和短语的计数口径。
 - `counting_clarification.grammar_counting`：说明语法按项目 ID 计。
 - `vocabulary.counting.base_compulsory_declared_entries`：教育部 2022 三级词表原文声明，固定 `1600`。
-- `vocabulary.counting.base_compulsory_single_words`：官方基础层规范化单词头，固定 `1596`。
+- `vocabulary.counting.base_compulsory_single_words`：官方基础层规范化单词头，固定 `1603`；官方原文声明 1600 个印刷条目，差异来自斜杠变体展开。
 - `vocabulary.counting.base_compulsory_phrases`：官方基础层遗留短语，固定 `4`。
 - `vocabulary.counting.official_supplement_single_words`：课标补充词表单词头，固定 `120`。
 - `vocabulary.counting.official_supplement_phrases`：课标补充词表短语，固定 `44`。
 - `vocabulary.counting.high_school_unique_entries`：人教版必修 1-3 与选必 1-2 去重条目，固定 `1846`。
 - `vocabulary.counting.closed_class_added`：前两层未覆盖的闭合功能词补充，固定 `5`。
-- `vocabulary.counting.single_word_entries`：合并去重后的单词头，固定 `3015`。
+- `vocabulary.counting.single_word_entries`：合并去重后的单词头，固定 `3021`。
 - `vocabulary.counting.phrase_entries`：多词短语，固定 `392`，不得混入单词头分母。
-- `vocabulary.counting.unique_whitelist_entries`：完整允许表，固定 `3407`。
+- `vocabulary.counting.unique_whitelist_entries`：完整允许表，固定 `3413`。
 - `vocabulary.normalization.inflections`：入库只保存基础词头；运行时做规则/不规则词形还原。
+- **生词率匹配规则**：先按最长匹配识别已登记短语；被短语消费的词元不进入单词分母。剩余单词按词头/lemma 匹配，单词分母为 `denominator_tokens`；`unknown_ratio = unknown_lemma_tokens / denominator_tokens`。短语条目只用于匹配，不作为单词加入分母。
+- 生词率阈值 `0.03` 只用于自动筛查，不替代高阶难词排除、非白名单考点为零和语法白名单检查。
 - `difficulty.bank_default_distribution.d1...d5`：全库难度占比，分别为 `0.15/0.30/0.35/0.15/0.05`。
 - `difficulty.paper_distribution`：单套易中难占比 `0.40/0.40/0.20`。
 - `difficulty.paper_hard_adaptive_min/max`：自适应难档下限/上限 `0.15/0.25`。

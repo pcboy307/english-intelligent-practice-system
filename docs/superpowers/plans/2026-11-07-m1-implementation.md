@@ -1,6 +1,6 @@
 # M1 最小闭环实施计划
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** Execute in strict serial order using `superpowers:executing-plans`. Do not dispatch implementation tasks in parallel. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** 交付可由 Docker Compose 启动、由 Expo 学生端真实完成 30/60 分钟练习、交卷报告与错题闭环的 M1 本地系统。
 
@@ -24,6 +24,28 @@
 - 视觉只能读取 `contracts/design-tokens.json`。
 - `tests/` 由 F 独占；B–F 可运行测试，不修改彼此模块。
 - 每个任务完成后运行自测、记录实际输出，最后由 Lead 集成。
+- M1 采用严格串行实施；子 Agent 并行复核当前阻塞，不把并行作为排期前提。
+
+## Serial Schedule
+
+| 顺序 | 任务 | 预计耗时 | 前置 |
+|---:|---|---:|---|
+| 1 | M0 签字冻结与基线确认 | 1 小时 | 用户签字 |
+| 2 | 运行时、Compose、API 骨架 | 3 小时 | 1 |
+| 3 | 契约加载与数据库迁移 | 4 小时 | 2 |
+| 4 | Bank 生命周期与隔离 | 4 小时 | 3 |
+| 5 | Demo Bank 60 题与校验器 | 8 小时 | 4 |
+| 6 | 完整组卷算法 | 6 小时 | 5 |
+| 7 | 服务端会话、判分、错题 | 6 小时 | 6 |
+| 8 | 单次报告与数据接口 | 5 小时 | 7 |
+| 9 | Expo 基础、令牌、离线与计时 | 6 小时 | 8 |
+| 10 | App 四页面 | 8 小时 | 9 |
+| 11 | 契约、隔离、安全与视觉验收 | 6 小时 | 10 |
+| 12 | README、待补齐清单与 M1 证据 | 3 小时 | 11 |
+
+串行总估算：约 60 个开发小时，折合约 8 个标准工作日；实际工期取决于环境安装、真机连接和题库人工审核。
+
+串行只影响 M1 完成时间，不改变验收范围、测试项或质量门槛。
 
 ---
 
@@ -681,4 +703,4 @@ git commit -m "docs: publish reproducible M1 acceptance evidence"
 
 ## Handoff
 
-M0 完成后由系统所有者核对并签字冻结。M1 开始前必须完成 Git 基线、运行版本锁定和 3 个只读子 Agent 冒烟测试。冒烟失败时切换串行，不得宣称并行。
+M0 完成后由系统所有者核对并签字冻结。当前 3 个只读子 Agent 冒烟复核结果为 0/3，多 Agent 并行已标记阻塞，M1 按上述顺序严格串行执行。Git 基线、运行版本锁定和已有契约必须保持完整。

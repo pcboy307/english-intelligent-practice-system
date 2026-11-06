@@ -158,7 +158,7 @@ $payload = [ordered]@{
       url = $officialSource.source.url
       sha256 = $officialSource.source.sha256
       file = "contracts/vocabulary/kebiao-2022-level3.json"
-      entry_count = $officialSource.counts.total_entries
+      entry_count = $officialSource.counts.declared_entries
     },
     [ordered]@{
       name = "义务教育英语课程标准（2022年版）附录3补充词表"

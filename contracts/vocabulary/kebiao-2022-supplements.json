@@ -6,7 +6,34 @@
     "url": "http://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582349487953.pdf",
     "sha256": "59EC3971E0DBD6CA487C4E4972CBC80EFFAF2FD62418D07E5F62C6698FA222FB",
     "printed_pages": [129, 132],
-    "note": "数词、月份、星期、地理名称、组织机构缩写、节日与中国文化专有名词。补充表不改变三级词汇表声明的1600个核心条目。"
+    "sections": [
+      {
+        "title": "数词表",
+        "printed_page": 129,
+        "content": "基数词与序数词"
+      },
+      {
+        "title": "月份、星期词汇表",
+        "printed_page": 130,
+        "content": "12个月份与7个星期名称"
+      },
+      {
+        "title": "部分地理名称及相关信息",
+        "printed_pages": [130, 131],
+        "content": "洲名、国家名、语言/国民称谓、城市及海洋名称"
+      },
+      {
+        "title": "部分国家、重要组织机构名称缩写",
+        "printed_page": 132,
+        "content": "CPC、PLA、PRC、UN、UNESCO、WHO、WTO 等"
+      },
+      {
+        "title": "部分重要节日名称、中国文化专有名词",
+        "printed_page": 132,
+        "content": "节日、地名景点、其他中国文化专有名词"
+      }
+    ],
+    "note": "以上均为附录3词汇表后续的官方分表。补充表与三级核心词表的1600项分开计数，不把补充项加回核心1600。"
   },
   "single_words": [
     "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday",

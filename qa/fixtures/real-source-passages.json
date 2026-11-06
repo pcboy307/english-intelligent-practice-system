@@ -1,0 +1,27 @@
+[
+  {
+    "id": "PEP-2019-B1-U1-FIRST-IMPRESSIONS",
+    "source": {
+      "publisher": "人民教育出版社",
+      "textbook": "普通高中教科书·英语 必修 第一册",
+      "unit": "Unit 1 Teenage Life",
+      "section": "Reading and Thinking: First Impressions",
+      "printed_page": 4,
+      "official_page_url": "https://basic.smartedu.cn/tchMaterial/detail?contentType=assets_document&contentId=8e62f140-1990-411e-8831-59a69bb53c1d&catalogType=tchMaterial&subCatalog=tchMaterial&page=023",
+      "use": "QA-only passage; never imported into a Bank or returned by the app."
+    },
+    "text": "So this is it—senior high school at last! I'm not outgoing so I'm a little anxious right now. I want to make a good first impression. Will I make any friends? What if no one talks to me? I just had my first maths class at senior high school! The class was difficult, but the teacher was kind and friendly. He even told us a funny story, and everyone laughed so much! I found most of my classmates and teachers friendly and helpful. This afternoon, we had our chemistry class in the science lab. The lab is new and the lesson was great, but the guy next to me tried to talk to me the whole time. I couldn't concentrate on the experiment. I really wanted to tell him to please be quiet and leave me alone! What a day! This morning, I was worried that no one would talk to me. But I was wrong. I didn't feel awkward or frightened at all. I miss my friends from junior high school, but I believe I will make new friends here, and there's a lot to explore at senior high. I feel much more confident than I felt this morning. I think that tomorrow will be a great day!"
+  },
+  {
+    "id": "GD-H2-LIKE-2025-03-READING-B-EXCERPT",
+    "source": {
+      "exam": "2025年3月 精诚联盟高二英语",
+      "section": "Text B (Q24-Q27)",
+      "repository": "https://github.com/mikefu24/gaokao-english-app",
+      "repository_path": "public/questions.json",
+      "use": "External QA-only excerpt; not copied into a Bank or shipped in the App."
+    },
+    "proper_nouns": ["Milpitas"],
+    "text": "I was a volunteer with the city of Milpitas, and was studying at mission college. One night after going to class, I was heading home and decided to stop off at a burrito（墨西哥卷饼）restaurant. I got my burrito and started to head for my car when I was approached by a homeless man. He was very dirty and obviously very hungry. He asked me for some change to buy a little food. As I was pulling some change out, I had an idea."
+  }
+]

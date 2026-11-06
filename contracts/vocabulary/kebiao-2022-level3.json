@@ -49,29 +49,28 @@
       "tuck": "luck"
     },
     "ocr_missed_entries_added": [
-      "busy",
       "ill",
       "minute",
-      "photo",
-      "pressure",
-      "soldier"
+      "pressure"
     ]
   },
   "counts": {
-    "single_words": 1596,
+    "declared_entries": 1600,
+    "normalized_single_words": 1603,
     "phrases": 4,
-    "total_entries": 1600
+    "normalized_match_forms": 1607,
+    "counting_note": "The official source declares 1600 printed entries. Slash alternatives are expanded into match forms, so normalized match forms may differ from the printed-entry count."
   },
   "source_comparison": {
     "alternative": "ECDICT zk-tagged vocabulary",
-    "official_single_words": 1596,
+    "official_single_words": 1603,
     "alternative_single_words": 1603,
-    "intersection": 1320,
-    "union": 1879,
-    "official_only": 276,
-    "alternative_only": 283,
-    "jaccard_difference": 0.297499,
-    "jaccard_difference_percent": 29.75,
+    "intersection": 1326,
+    "union": 1880,
+    "official_only": 277,
+    "alternative_only": 277,
+    "jaccard_difference": 0.294681,
+    "jaccard_difference_percent": 29.47,
     "conclusion": "ECDICT zk 与官方三级词汇表差异显著，仅可作为外部审计参照，不得作为本系统第一层白名单。"
   },
   "words": [
@@ -303,6 +302,7 @@
     "careful",
     "careless",
     "carrot",
+    "carry",
     "cartoon",
     "case",
     "cash",
@@ -873,6 +873,7 @@
     "listen",
     "literature",
     "litter",
+    "little",
     "live",
     "lively",
     "local",
@@ -898,6 +899,7 @@
     "main",
     "make",
     "mall",
+    "man",
     "manage",
     "manner",
     "many",
@@ -1032,6 +1034,7 @@
     "opinion",
     "opposite",
     "or",
+    "orange",
     "order",
     "organise",
     "other",
@@ -1057,6 +1060,7 @@
     "paragraph",
     "pardon",
     "parent",
+    "park",
     "part",
     "partner",
     "party",
@@ -1111,6 +1115,7 @@
     "please",
     "pleasure",
     "plenty",
+    "pm",
     "pocket",
     "poem",
     "poet",
@@ -1387,6 +1392,7 @@
     "sport",
     "spread",
     "spring",
+    "square",
     "stage",
     "stamp",
     "stand",

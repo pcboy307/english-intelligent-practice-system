@@ -1,0 +1,75 @@
+{
+  "basic_sample_20": {
+    "because": true,
+    "important": true,
+    "decide": true,
+    "different": true,
+    "develop": true,
+    "ability": true,
+    "accident": true,
+    "achieve": true,
+    "active": true,
+    "advice": true,
+    "afford": true,
+    "afraid": true,
+    "agree": true,
+    "air": true,
+    "animal": true,
+    "answer": true,
+    "apple": true,
+    "art": true,
+    "ask": true,
+    "bad": true
+  },
+  "advanced_sample_20": {
+    "ubiquitous": false,
+    "paradigm": false,
+    "meticulous": false,
+    "exacerbate": false,
+    "corroborate": false,
+    "anomaly": false,
+    "synthesize": false,
+    "notwithstanding": false,
+    "albeit": false,
+    "ostensibly": false,
+    "juxtapose": false,
+    "pragmatic": false,
+    "intricate": false,
+    "ambiguity": false,
+    "profound": false,
+    "skeptical": false,
+    "resilient": false,
+    "controversy": false,
+    "hypothetical": false,
+    "disproportionate": false
+  },
+  "passage_results": {
+    "PEP-2019-B1-U1-FIRST-IMPRESSIONS": {
+      "raw_tokens": 215,
+      "phrase_hits": [
+        "junior high school",
+        "senior high school",
+        "senior high school",
+        "concentrate on",
+        "at last",
+        "what if"
+      ],
+      "single_word_denominator": 200,
+      "unknown": [],
+      "unknown_ratio": 0.0,
+      "passes": true
+    },
+    "GD-H2-LIKE-2025-03-READING-B-EXCERPT": {
+      "raw_tokens": 83,
+      "phrase_hits": [],
+      "single_word_denominator": 82,
+      "unknown": [
+        "burrito",
+        "burrito"
+      ],
+      "unknown_ratio": 0.024390243902439025,
+      "passes": true
+    }
+  },
+  "checks_pass": true
+}

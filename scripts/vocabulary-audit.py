@@ -95,6 +95,17 @@ IRREGULAR = {
     "came": "come",
     "became": "become",
     "gave": "give",
+    "given": "give",
+    "got": "get",
+    "gotten": "get",
+    "felt": "feel",
+    "built": "build",
+    "wore": "wear",
+    "worn": "wear",
+    "known": "know",
+    "sung": "sing",
+    "grew": "grow",
+    "grown": "grow",
     "bought": "buy",
     "brought": "bring",
     "thought": "think",
@@ -117,6 +128,40 @@ IRREGULAR = {
     "won": "win",
 }
 
+CONTRACTIONS = {
+    "aren't": "are not",
+    "can't": "can not",
+    "couldn't": "could not",
+    "didn't": "did not",
+    "doesn't": "does not",
+    "don't": "do not",
+    "hadn't": "had not",
+    "hasn't": "has not",
+    "haven't": "have not",
+    "he's": "he is",
+    "i'd": "i would",
+    "i'll": "i will",
+    "i'm": "i am",
+    "i've": "i have",
+    "isn't": "is not",
+    "it's": "it is",
+    "let's": "let us",
+    "she's": "she is",
+    "shouldn't": "should not",
+    "that's": "that is",
+    "there's": "there is",
+    "they're": "they are",
+    "wasn't": "was not",
+    "we're": "we are",
+    "we've": "we have",
+    "weren't": "were not",
+    "what's": "what is",
+    "won't": "will not",
+    "wouldn't": "would not",
+    "you're": "you are",
+    "you've": "you have",
+}
+
 
 def candidate_lemmas(token: str) -> list[str]:
     candidates = [token]
@@ -126,20 +171,28 @@ def candidate_lemmas(token: str) -> list[str]:
         candidates.append(token[:-3] + "y")
     if token.endswith("ied") and len(token) > 4:
         candidates.append(token[:-3] + "y")
-    if token.endswith("ing") and len(token) > 5:
+    if token.endswith("ing") and len(token) >= 5:
         stem = token[:-3]
         candidates.extend([stem, stem + "e", stem[:-1] if len(stem) > 2 and stem[-1] == stem[-2] else stem])
-    if token.endswith("ed") and len(token) > 4:
+    if token.endswith("ed") and len(token) >= 4:
         stem = token[:-2]
         candidates.extend([stem, stem + "e", stem[:-1] if len(stem) > 2 and stem[-1] == stem[-2] else stem])
     if token.endswith("es") and len(token) > 4:
         candidates.append(token[:-2])
     if token.endswith("s") and len(token) > 3:
         candidates.append(token[:-1])
-    if token.endswith("er") and len(token) > 4:
+    if token.endswith("er") and len(token) > 3:
         candidates.append(token[:-2])
     if token.endswith("est") and len(token) > 5:
         candidates.append(token[:-3])
+    if token.endswith("ly") and len(token) > 4:
+        candidates.append(token[:-2])
+    if token.endswith("less") and len(token) > 6:
+        candidates.append(token[:-4])
+    if token.endswith("ful") and len(token) > 5:
+        candidates.append(token[:-3])
+    if token.endswith("ness") and len(token) > 6:
+        candidates.append(token[:-4])
     return list(dict.fromkeys(candidates))
 
 
@@ -150,8 +203,17 @@ def resolve(token: str, words: set[str]) -> str:
     return token
 
 
-def count_passage(text: str, words: set[str], phrases: set[str]) -> dict:
-    tokens = [token.lower().replace("’", "'") for token in re.findall(r"[A-Za-z]+(?:['-][A-Za-z]+)*", text)]
+def count_passage(
+    text: str,
+    words: set[str],
+    phrases: set[str],
+    proper_nouns: list[str] | None = None,
+) -> dict:
+    normalized_text = text.lower().replace("’", "'")
+    for contraction, expansion in CONTRACTIONS.items():
+        normalized_text = re.sub(rf"\b{re.escape(contraction)}\b", expansion, normalized_text)
+    tokens = re.findall(r"[a-z]+(?:['-][a-z]+)*", normalized_text)
+    excluded = {noun.lower() for noun in (proper_nouns or [])}
     phrase_hits: list[str] = []
     consumed = [False] * len(tokens)
     for phrase in sorted(phrases, key=lambda value: len(value.split()), reverse=True):
@@ -165,7 +227,11 @@ def count_passage(text: str, words: set[str], phrases: set[str]) -> dict:
                 for offset in range(size):
                     consumed[index + offset] = True
 
-    denominator_tokens = [token for index, token in enumerate(tokens) if not consumed[index]]
+    denominator_tokens = [
+        token
+        for index, token in enumerate(tokens)
+        if not consumed[index] and token not in excluded
+    ]
     unknown = [token for token in denominator_tokens if resolve(token, words) not in words]
     ratio = len(unknown) / len(denominator_tokens) if denominator_tokens else 0.0
     return {
@@ -197,7 +263,12 @@ def main() -> None:
     advanced = {word: word in all_entries for word in ADVANCED_SAMPLE}
     passages = json.loads(args.passages.read_text(encoding="utf-8"))
     passage_results = {
-        passage["id"]: count_passage(passage["text"], single_words, phrases)
+        passage["id"]: count_passage(
+            passage["text"],
+            single_words,
+            phrases,
+            passage.get("proper_nouns"),
+        )
         for passage in passages
     }
 

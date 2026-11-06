@@ -55,7 +55,32 @@
     "grammar_tags": {
       "type": "array",
       "uniqueItems": true,
-      "items": {"type": "string", "minLength": 1}
+      "items": {
+        "type": "string",
+        "enum": [
+          "relative_clauses_defining",
+          "relative_clauses_non_defining",
+          "passive_voice_tenses",
+          "past_participle_nonfinite",
+          "v_ing_nonfinite",
+          "noun_clauses",
+          "adverbial_clauses",
+          "subjunctive_basic_if",
+          "subjunctive_basic_should",
+          "partial_inversion_basic",
+          "cleft_basic",
+          "tense_system",
+          "subject_verb_agreement",
+          "articles",
+          "prepositions",
+          "pronouns",
+          "conjunctions",
+          "word_formation",
+          "comparatives_superlatives",
+          "with_compound",
+          "infinitive_nonfinite"
+        ]
+      }
     },
     "book_source": {"type": "string", "minLength": 1},
     "difficulty": {"type": "integer", "minimum": 1, "maximum": 5},
