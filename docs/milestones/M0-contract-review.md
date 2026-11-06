@@ -62,3 +62,7 @@ Jaccard difference=29.47%
 
 - `/admin` 本机/非回环连通性证据依赖 M1 后端代码，M0 阶段为 `N/A：服务尚未实现`。
 - 手机同一 Wi-Fi 访问学生接口依赖 M1 服务，M0 阶段为 `N/A：服务尚未实现`。
+
+## 执行方式
+
+多 Agent 并行不可用，已按 CO-002 改为严格串行。实际执行方式与 V11 多 Agent 要求存在偏差，详见 `docs/change-log/CO-002-serial-execution.md`；该偏差不改变 M1 验收范围。

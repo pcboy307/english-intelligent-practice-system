@@ -16,6 +16,6 @@
 3. 未实现接口只能按 `contracts/openapi.yaml` 和 Schemas 对接，不得口头约定。
 4. QA 只提交缺陷、测试和证据，不直接修改业务代码。
 5. 每个任务一次 commit；每个里程碑打一个 tag，并提交独立验收记录。
-6. 并行上限为 3 个子 Agent；生成 job 永远串行。
+6. 并行机制理论上限为主 Agent + 3 个子 Agent；当前实测不可用，M1 实际严格串行。生成 job 永远串行。
 7. App 与后台视觉只能读取 `contracts/design-tokens.json`。
 8. 根装配层由 A 独占：`api/` 路由注册、`backend/` 入口、`docker-compose.yml`、根启动脚本和 `.env.example`。
