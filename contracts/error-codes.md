@@ -19,8 +19,9 @@
 | 400 | `INVALID_DURATION` | 练习时长不在配置中 |
 | 400 | `ANSWER_FORMAT_INVALID` | 答案不符合题型要求 |
 | 401 | `STUDENT_ID_REQUIRED` | 缺少或非法 `X-Student-Id` |
-| 403 | `ADMIN_FORBIDDEN` | 后台操作未满足本地管理权限 |
-| 403 | `OWNER_APPROVAL_REQUIRED` | 生成全量 Bank 缺少所有者批准 |
+| 401 | `ADMIN_AUTH_FAILED` | 缺少或错误 `X-Admin-Token` |
+| 403 | `ADMIN_LOCAL_ONLY` | `/admin/*` 请求来源不是回环地址 |
+| 403 | `OWNER_APPROVAL_REQUIRED` | 服务端不存在该 Bank 的有效所有者审批记录 |
 | 404 | `BANK_NOT_FOUND` | Bank 不存在 |
 | 404 | `SESSION_NOT_FOUND` | 会话不存在或不属于该学生 |
 | 404 | `QUESTION_NOT_FOUND` | 题目不存在或不属于当前 Bank |

@@ -3,19 +3,26 @@ info:
   title: 高二英语智能练习系统 API
   version: 1.0.0
   description: |
-    M0 冻结候选接口。学生端使用 X-Student-Id；交卷前任何响应都不得包含 answer 或 explanation。
+    M0 冻结候选接口。学生端使用 X-Student-Id；管理端只接受本机回环连接并使用 X-Admin-Token。
+    交卷前任何学生端响应都不得包含 answer 或 explanation。服务绑定 0.0.0.0，便于局域网真机访问。
 servers:
   - url: http://localhost:8000/api/v1
 tags:
   - name: student
   - name: reports
   - name: admin
+    description: 来源 socket 对端必须是 127.0.0.1 或 ::1；随后校验 X-Admin-Token。不得使用 X-Forwarded-For。
 components:
   securitySchemes:
     StudentId:
       type: apiKey
       in: header
       name: X-Student-Id
+    AdminToken:
+      type: apiKey
+      in: header
+      name: X-Admin-Token
+      description: 仅由本机回环地址提交；值来自 .env 的 ADMIN_TOKEN，使用 secrets.compare_digest 比较。
   schemas:
     Error:
       type: object
@@ -133,16 +140,41 @@ components:
     StartGenerationRequest:
       type: object
       additionalProperties: false
-      required: [approved_by_owner]
       properties:
-        approved_by_owner:
-          type: boolean
-          description: 必须为 true；全量 Bank job 还需线下逐个批准。
         batch_size:
           type: integer
           minimum: 1
           maximum: 10
           default: 10
+      description: 服务端必须存在绑定该 Bank 的有效审批记录；本请求不接受客户端布尔批准。
+    GenerationApprovalRequest:
+      type: object
+      additionalProperties: false
+      required: [reason]
+      properties:
+        reason:
+          type: string
+          minLength: 1
+          maxLength: 500
+    GenerationApproval:
+      type: object
+      additionalProperties: false
+      required: [approval_id, bank_id, approved_at, expires_at, used]
+      properties:
+        approval_id:
+          type: string
+          format: uuid
+        bank_id:
+          type: string
+          format: uuid
+        approved_at:
+          type: string
+          format: date-time
+        expires_at:
+          type: string
+          format: date-time
+        used:
+          type: boolean
     GenerationJob:
       type: object
       additionalProperties: false
@@ -232,8 +264,11 @@ components:
     QuestionReviewRequest:
       type: object
       additionalProperties: false
-      required: [question_ids, decision]
+      required: [bank_id, question_ids, decision]
       properties:
+        bank_id:
+          type: string
+          format: uuid
         question_ids:
           type: array
           minItems: 1
@@ -247,7 +282,30 @@ components:
           type: string
         edits:
           type: object
-          additionalProperties: true
+          additionalProperties: false
+          properties:
+            stem:
+              type: string
+              minLength: 1
+            options:
+              oneOf:
+                - type: "null"
+                - type: array
+                  items:
+                    type: string
+            answer:
+              $ref: ./schemas/common.json#/$defs/answerValue
+            explanation:
+              type: string
+              minLength: 1
+            knowledge_points:
+              type: array
+              items:
+                type: string
+            grammar_tags:
+              type: array
+              items:
+                type: string
   responses:
     ErrorResponse:
       description: 统一错误响应
@@ -272,13 +330,21 @@ components:
       schema:
         type: string
         format: uuid
-security:
-  - StudentId: []
+    IdempotencyKey:
+      name: Idempotency-Key
+      in: header
+      required: true
+      description: 同一会话的重试必须复用该 UUID；重复提交返回首次结果。
+      schema:
+        type: string
+        format: uuid
 paths:
   /practice/start:
     post:
       tags: [student]
       operationId: startPractice
+      security:
+        - StudentId: []
       summary: 从 active Bank 为新会话组卷
       requestBody:
         required: true
@@ -301,6 +367,8 @@ paths:
     get:
       tags: [student]
       operationId: getPracticeSession
+      security:
+        - StudentId: []
       summary: 获取会话、服务端剩余时间和进度
       parameters:
         - $ref: "#/components/parameters/SessionId"
@@ -317,6 +385,8 @@ paths:
     put:
       tags: [student]
       operationId: saveAnswer
+      security:
+        - StudentId: []
       summary: 暂存单题答案
       parameters:
         - $ref: "#/components/parameters/SessionId"
@@ -339,12 +409,15 @@ paths:
     post:
       tags: [student]
       operationId: submitPractice
-      summary: 交卷、判分并返回逐题解析与单次报告
+      security:
+        - StudentId: []
+      summary: 交卷、判分并返回逐题解析与单次报告；重复幂等返回同一结果
       parameters:
         - $ref: "#/components/parameters/SessionId"
+        - $ref: "#/components/parameters/IdempotencyKey"
       responses:
         "200":
-          description: 交卷结果
+          description: 首次交卷结果或相同幂等键对应的同一结果
           content:
             application/json:
               schema:
@@ -357,6 +430,8 @@ paths:
     get:
       tags: [reports]
       operationId: getReport
+      security:
+        - StudentId: []
       summary: 获取绑定原 Bank 的单次报告
       parameters:
         - $ref: "#/components/parameters/SessionId"
@@ -373,6 +448,8 @@ paths:
     get:
       tags: [reports]
       operationId: getStageReport
+      security:
+        - StudentId: []
       summary: 获取最近 10 次或每 5 次触发的阶段总结
       parameters:
         - name: range
@@ -395,6 +472,8 @@ paths:
     get:
       tags: [student]
       operationId: listErrorTags
+      security:
+        - StudentId: []
       summary: 获取当前学生的错题标签
       parameters:
         - name: status
@@ -422,6 +501,8 @@ paths:
     delete:
       tags: [student]
       operationId: deleteStudentData
+      security:
+        - StudentId: []
       summary: 删除该 device_student_id 的全部后端数据
       description: 前端必须先完成二次确认，并在成功后清除本地缓存。
       responses:
@@ -433,6 +514,8 @@ paths:
     get:
       tags: [admin]
       operationId: listBanks
+      security:
+        - AdminToken: []
       summary: 列出所有 Bank，包括 archived
       responses:
         "200":
@@ -448,6 +531,8 @@ paths:
     post:
       tags: [admin]
       operationId: createBank
+      security:
+        - AdminToken: []
       summary: 创建全新 Bank，不向任何已有 Bank 追加
       requestBody:
         required: true
@@ -470,6 +555,8 @@ paths:
     get:
       tags: [admin]
       operationId: compareBanks
+      security:
+        - AdminToken: []
       summary: 并排比较任意两份 Bank 的 Coverage 与各 5 题预览
       parameters:
         - name: left_id
@@ -493,11 +580,40 @@ paths:
                 $ref: "#/components/schemas/BankComparison"
         "404":
           $ref: "#/components/responses/ErrorResponse"
+  /admin/banks/{bank_id}/approve-generation:
+    post:
+      tags: [admin]
+      operationId: approveBankGeneration
+      security:
+        - AdminToken: []
+      summary: 记录该 Bank 的生成审批；不接受客户端布尔批准
+      description: 创建服务端持久化审批记录，并写 admin_audit_log。
+      parameters:
+        - $ref: "#/components/parameters/BankId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/GenerationApprovalRequest"
+      responses:
+        "201":
+          description: 审批记录已落库
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GenerationApproval"
+        "401":
+          $ref: "#/components/responses/ErrorResponse"
+        "403":
+          $ref: "#/components/responses/ErrorResponse"
   /admin/banks/{bank_id}/generate:
     post:
       tags: [admin]
       operationId: startGeneration
-      summary: 为指定 Bank 启动串行生成 job
+      security:
+        - AdminToken: []
+      summary: 为指定 Bank 启动串行生成 job；必须存在服务端审批记录
       parameters:
         - $ref: "#/components/parameters/BankId"
       requestBody:
@@ -521,6 +637,8 @@ paths:
     get:
       tags: [admin]
       operationId: getCoverage
+      security:
+        - AdminToken: []
       summary: 获取 Bank Coverage 快照
       parameters:
         - $ref: "#/components/parameters/BankId"
@@ -537,6 +655,8 @@ paths:
     get:
       tags: [admin]
       operationId: previewBank
+      security:
+        - AdminToken: []
       summary: 随机抽题预览
       parameters:
         - $ref: "#/components/parameters/BankId"
@@ -561,6 +681,8 @@ paths:
     post:
       tags: [admin]
       operationId: activateBank
+      security:
+        - AdminToken: []
       summary: 原子切换 active Bank；只影响新会话
       parameters:
         - $ref: "#/components/parameters/BankId"
@@ -577,6 +699,8 @@ paths:
     post:
       tags: [admin]
       operationId: archiveBank
+      security:
+        - AdminToken: []
       summary: 归档 Bank 并永久保留历史数据
       parameters:
         - $ref: "#/components/parameters/BankId"
@@ -593,6 +717,8 @@ paths:
     get:
       tags: [admin]
       operationId: getGenerationJob
+      security:
+        - AdminToken: []
       summary: 获取生成进度、暂停点状态与拒收统计
       parameters:
         - $ref: "#/components/parameters/BankId"
@@ -609,6 +735,8 @@ paths:
     get:
       tags: [admin]
       operationId: listQuestions
+      security:
+        - AdminToken: []
       summary: 按 Bank 筛选题目；bank_id 必填
       parameters:
         - name: bank_id
@@ -638,7 +766,10 @@ paths:
     post:
       tags: [admin]
       operationId: reviewQuestions
-      summary: 人工审核题目；reviewed 后方可发布入池
+      security:
+        - AdminToken: []
+      summary: 人工审核同一 Bank 内的题目；reviewed 后方可发布入池
+      description: 服务端逐题校验 question.bank_id 与请求 bank_id 一致，并在事务内写 admin_audit_log。
       requestBody:
         required: true
         content:

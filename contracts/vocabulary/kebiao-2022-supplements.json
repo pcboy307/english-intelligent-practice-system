@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "source": {
+    "name": "义务教育英语课程标准（2022年版）附录3补充词表",
+    "publisher": "中华人民共和国教育部",
+    "url": "http://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582349487953.pdf",
+    "sha256": "59EC3971E0DBD6CA487C4E4972CBC80EFFAF2FD62418D07E5F62C6698FA222FB",
+    "printed_pages": [129, 132],
+    "note": "数词、月份、星期、地理名称、组织机构缩写、节日与中国文化专有名词。补充表不改变三级词汇表声明的1600个核心条目。"
+  },
+  "single_words": [
+    "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday",
+    "january", "february", "march", "april", "may", "june", "july", "august",
+    "september", "october", "november", "december",
+    "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
+    "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen",
+    "eighteen", "nineteen", "twenty", "thirty", "forty", "fifty", "sixty",
+    "seventy", "eighty", "ninety", "hundred", "thousand", "million",
+    "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth",
+    "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth",
+    "fifteenth", "sixteenth", "seventeenth", "eighteenth", "nineteenth",
+    "twentieth", "thirtieth", "fortieth", "fiftieth", "sixtieth", "seventieth",
+    "eightieth", "ninetieth", "hundredth",
+    "africa", "african", "america", "american", "antarctica", "asia", "asian",
+    "australia", "australian", "britain", "british", "canada", "canadian",
+    "china", "chinese", "england", "english", "europe", "european", "france",
+    "french", "germany", "german", "india", "indian", "italy", "italian",
+    "japan", "japanese", "russia", "russian", "singapore", "singaporean",
+    "uk", "usa", "cpc", "pla", "prc", "un", "unesco", "who", "wto", "tcm"
+  ],
+  "phrases": [
+    "new york", "new zealand", "new zealander", "south africa", "south african",
+    "london", "paris", "the atlantic ocean", "the indian ocean", "the pacific ocean",
+    "the united kingdom", "the united states of america",
+    "children's day", "double ninth festival", "dragon boat festival",
+    "labour day", "lantern festival", "mid-autumn festival", "national day",
+    "new year's day", "pla day", "spring festival", "teachers' day",
+    "tomb-sweeping day", "women's day", "mount huangshan",
+    "mount qomolangma", "mount taishan", "the changjiang river",
+    "the yangtze river", "the great wall", "the palace museum",
+    "the yellow river", "tian'anmen square", "the silk road",
+    "beijing opera", "peking opera", "beijing roast duck", "hot pot",
+    "lunar calendar", "paper-cut", "spring festival couplets", "spring roll",
+    "traditional chinese medicine"
+  ]
+}

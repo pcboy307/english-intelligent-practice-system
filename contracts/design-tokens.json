@@ -27,10 +27,16 @@
   },
   "color_usage": {
     "accent_only_for": [
-      "primary_action_background_when_not_monochrome_primary",
       "progress_bar",
       "selected_control",
       "radar_chart_stroke"
+    ],
+    "accent_never_for": [
+      "button_background",
+      "body_text",
+      "card_background",
+      "large_surface",
+      "border_default"
     ],
     "correct_incorrect": "text_or_1px_border_only",
     "semantic_fill_forbidden": true,

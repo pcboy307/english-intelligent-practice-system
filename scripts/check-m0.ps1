@@ -20,8 +20,12 @@ $requiredFiles = @(
   "contracts/config-spec.md",
   "contracts/ownership.md",
   "contracts/error-codes.md",
+  "contracts/admin-auth.md",
   "contracts/vocabulary-whitelist.json",
+  "contracts/vocabulary/kebiao-2022-level3.json",
+  "contracts/vocabulary/kebiao-2022-supplements.json",
   "docs/curriculum/grammar-by-unit.md",
+  "docs/curriculum/grammar-whitelist-mapping.md",
   "docs/requirements-confirmation.md"
 )
 foreach ($file in $requiredFiles) {
@@ -84,22 +88,36 @@ Write-Output "PASS report-and-app invariants"
 $tokens = Read-Json "contracts/design-tokens.json"
 Assert-True ($tokens.color.pageBackground -eq "#FFFFFF") "Page background mismatch"
 Assert-True ($tokens.color.primaryText -eq "#111111") "Primary text mismatch"
-Assert-True ($tokens.color.accent -eq "#2C5F5A") "Accent mismatch"
+Assert-True ($tokens.color.accent -match "^#[0-9A-F]{6}$") "Accent must be a six-digit uppercase hex token"
 Assert-True ($tokens.radius.maximum -eq 14) "Radius maximum mismatch"
 Assert-True ($tokens.font.sizes.minimum -eq 13) "Minimum font size mismatch"
 Assert-True ($tokens.control.touchTargetMin -eq 44) "Touch target mismatch"
+$accentOnly = @($tokens.color_usage.accent_only_for)
+$accentNever = @($tokens.color_usage.accent_never_for)
+Assert-True (($accentOnly -join ",") -eq "progress_bar,selected_control,radar_chart_stroke") "Accent allowed uses mismatch"
+Assert-True (($accentNever -join ",") -eq "button_background,body_text,card_background,large_surface,border_default") "Accent forbidden uses mismatch"
+Assert-True ($tokens.color.primaryButtonBackground -eq "#111111") "Primary button background mismatch"
+Assert-True ($tokens.color.primaryButtonText -eq "#FFFFFF") "Primary button text mismatch"
 Write-Output "PASS design-tokens"
+
+$officialVocabulary = Read-Json "contracts/vocabulary/kebiao-2022-level3.json"
+Assert-True ($officialVocabulary.source.declared_total -eq 1600) "Official vocabulary declared total mismatch"
+Assert-True ($officialVocabulary.counts.total_entries -eq 1600) "Official vocabulary reconciliation mismatch"
+Assert-True ($officialVocabulary.source_comparison.jaccard_difference_percent -eq 29.75) "ECDICT comparison mismatch"
+$supplementVocabulary = Read-Json "contracts/vocabulary/kebiao-2022-supplements.json"
+Assert-True (@($supplementVocabulary.single_words).Count -eq 120) "Supplement headword count mismatch"
+Assert-True (@($supplementVocabulary.phrases).Count -eq 44) "Supplement phrase count mismatch"
 
 $vocabulary = Read-Json "contracts/vocabulary-whitelist.json"
 $words = @($vocabulary.entries.word)
 Assert-True ($words.Count -gt 0) "Vocabulary whitelist cannot be empty"
 Assert-True ($words.Count -eq @($words | Sort-Object -Unique).Count) "Vocabulary whitelist has duplicate words"
 Assert-True ($words.Count -eq $vocabulary.counting.unique_whitelist_entries) "Vocabulary count declaration mismatch"
-Assert-True ($vocabulary.counting.base_compulsory_zk_entries -eq 1603) "Compulsory baseline count mismatch"
-Assert-True ($vocabulary.counting.single_word_entries -eq 2998) "Single-headword count mismatch"
-Assert-True ($vocabulary.counting.phrase_entries -eq 349) "Phrase count mismatch"
-Assert-True ($vocabulary.counting.unique_whitelist_entries -eq 3347) "Full allowlist count mismatch"
-Write-Output "PASS vocabulary entries=$($words.Count) singleWords=2998 phrases=349 baseline=1603"
+Assert-True ($vocabulary.counting.base_compulsory_single_words -eq 1596) "Compulsory baseline count mismatch"
+Assert-True ($vocabulary.counting.single_word_entries -eq 3015) "Single-headword count mismatch"
+Assert-True ($vocabulary.counting.phrase_entries -eq 392) "Phrase count mismatch"
+Assert-True ($vocabulary.counting.unique_whitelist_entries -eq 3407) "Full allowlist count mismatch"
+Write-Output "PASS vocabulary entries=$($words.Count) singleWords=3015 phrases=392 officialBase=1600"
 
 $grammarDoc = Get-Content -Raw -Encoding UTF8 -LiteralPath "docs/curriculum/grammar-by-unit.md"
 $grammarRows = [regex]::Matches($grammarDoc, "(?m)^\| \d+ \|").Count
@@ -128,6 +146,13 @@ foreach ($path in @(
 )) {
   Assert-True ($openapi.Contains($path)) "OpenAPI missing path $path"
 }
+Assert-True (-not $openapi.Contains("approved_by_owner")) "Client-side owner approval must be removed"
+Assert-True (-not [regex]::IsMatch($openapi, "(?m)^security:")) "Top-level global security must be absent"
+Assert-True ([regex]::Matches($openapi, "(?m)^      security:\s*$").Count -eq 20) "Every operation must declare security"
+Assert-True ([regex]::Matches($openapi, "- StudentId: \[\]").Count -eq 8) "Student security declaration mismatch"
+Assert-True ([regex]::Matches($openapi, "- AdminToken: \[\]").Count -eq 12) "Admin security declaration mismatch"
+Assert-True ($openapi.Contains("/approve-generation:")) "Generation approval path missing"
+Assert-True ($openapi.Contains("Idempotency-Key")) "Submit idempotency contract missing"
 Assert-True (-not $openapi.Contains("components_parameters_anchor")) "Invalid OpenAPI anchor remains"
 Write-Output "PASS openapi-required-paths"
 

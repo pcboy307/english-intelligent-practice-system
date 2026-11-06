@@ -24,9 +24,25 @@ CREATE UNIQUE INDEX one_active_bank
 
 CREATE INDEX question_banks_status_idx ON question_banks (status, created_at DESC);
 
+CREATE TABLE generation_approvals (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    bank_id UUID NOT NULL REFERENCES question_banks(id) ON DELETE RESTRICT,
+    approved_by VARCHAR(100) NOT NULL,
+    reason VARCHAR(500) NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    expires_at TIMESTAMPTZ NOT NULL,
+    used_at TIMESTAMPTZ,
+    CHECK (expires_at > created_at)
+);
+
+CREATE INDEX generation_approvals_bank_unused_idx
+    ON generation_approvals (bank_id, expires_at)
+    WHERE used_at IS NULL;
+
 CREATE TABLE generation_jobs (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     bank_id UUID NOT NULL REFERENCES question_banks(id) ON DELETE RESTRICT,
+    approval_id UUID NOT NULL REFERENCES generation_approvals(id) ON DELETE RESTRICT,
     status VARCHAR(30) NOT NULL
         CHECK (status IN ('queued', 'running', 'paused_for_review', 'paused_for_owner', 'completed', 'failed')),
     batch_size INTEGER NOT NULL DEFAULT 10 CHECK (batch_size BETWEEN 1 AND 10),
@@ -144,10 +160,12 @@ CREATE TABLE practice_sessions (
     started_at TIMESTAMPTZ NOT NULL DEFAULT now(),
     deadline TIMESTAMPTZ NOT NULL,
     submitted_at TIMESTAMPTZ,
+    submit_idempotency_key UUID,
     composition_note JSONB NOT NULL,
     UNIQUE (id, bank_id),
+    UNIQUE (id, submit_idempotency_key),
     CHECK (deadline > started_at),
-    CHECK (status <> 'submitted' OR submitted_at IS NOT NULL)
+    CHECK (status <> 'submitted' OR (submitted_at IS NOT NULL AND submit_idempotency_key IS NOT NULL))
 );
 
 CREATE INDEX practice_sessions_student_idx
@@ -257,6 +275,20 @@ CREATE TABLE bank_audit_logs (
 );
 
 CREATE INDEX bank_audit_logs_bank_idx ON bank_audit_logs (bank_id, created_at DESC);
+
+CREATE TABLE admin_audit_log (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    occurred_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    method VARCHAR(10) NOT NULL,
+    path TEXT NOT NULL,
+    token_fingerprint CHAR(8) NOT NULL,
+    result VARCHAR(20) NOT NULL,
+    status_code INTEGER NOT NULL,
+    bank_id UUID REFERENCES question_banks(id) ON DELETE RESTRICT
+);
+
+CREATE INDEX admin_audit_log_occurred_idx
+    ON admin_audit_log (occurred_at DESC);
 
 CREATE TABLE bank_active_state (
     singleton BOOLEAN PRIMARY KEY DEFAULT TRUE CHECK (singleton),

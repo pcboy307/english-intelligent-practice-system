@@ -26,8 +26,10 @@ if ($response.encoding -ne "base64" -or [string]::IsNullOrWhiteSpace($response.c
 $bytes = [Convert]::FromBase64String(($response.content -replace "\s", ""))
 $sourceItems = [Text.Encoding]::UTF8.GetString($bytes) | ConvertFrom-Json
 $selectedItems = $sourceItems | Where-Object { $allowedBooks -contains $_.book }
-$zkPath = Join-Path $PSScriptRoot "..\contracts\vocabulary\ecdict-zk.json"
-$zkSource = Get-Content -Raw -Encoding UTF8 -LiteralPath $zkPath | ConvertFrom-Json
+$officialPath = Join-Path $PSScriptRoot "..\contracts\vocabulary\kebiao-2022-level3.json"
+$officialSource = Get-Content -Raw -Encoding UTF8 -LiteralPath $officialPath | ConvertFrom-Json
+$supplementPath = Join-Path $PSScriptRoot "..\contracts\vocabulary\kebiao-2022-supplements.json"
+$supplementSource = Get-Content -Raw -Encoding UTF8 -LiteralPath $supplementPath | ConvertFrom-Json
 
 $closedClassWords = @(
   "a", "an", "the", "and", "or", "but", "nor", "so", "yet", "for",
@@ -48,15 +50,57 @@ $closedClassWords = @(
 )
 
 $entriesByWord = @{}
-foreach ($baseWord in $zkSource.words) {
+foreach ($baseWord in $officialSource.words) {
   $word = ([string]$baseWord).Trim().ToLowerInvariant()
   if ([string]::IsNullOrWhiteSpace($word)) {
     continue
   }
   $entriesByWord[$word] = [ordered]@{
     word = $word
-    sources = @("ECDICT:zk")
+    sources = @("课程标准2022|三级词汇表")
     closed_class = $closedClassWords -contains $word
+  }
+}
+
+foreach ($basePhrase in $officialSource.phrase_entries) {
+  $phrase = ([string]$basePhrase).Trim().ToLowerInvariant()
+  if ($entriesByWord.ContainsKey($phrase)) {
+    continue
+  }
+  $entriesByWord[$phrase] = [ordered]@{
+    word = $phrase
+    sources = @("课程标准2022|三级词汇表")
+    closed_class = $false
+  }
+}
+
+foreach ($supplementWord in $supplementSource.single_words) {
+  $word = ([string]$supplementWord).Trim().ToLowerInvariant()
+  if ($entriesByWord.ContainsKey($word)) {
+    if ($entriesByWord[$word].sources -notcontains "课程标准2022|补充词表") {
+      $entriesByWord[$word].sources += "课程标准2022|补充词表"
+    }
+    continue
+  }
+  $entriesByWord[$word] = [ordered]@{
+    word = $word
+    sources = @("课程标准2022|补充词表")
+    closed_class = $closedClassWords -contains $word
+  }
+}
+
+foreach ($supplementPhrase in $supplementSource.phrases) {
+  $phrase = ([string]$supplementPhrase).Trim().ToLowerInvariant()
+  if ($entriesByWord.ContainsKey($phrase)) {
+    if ($entriesByWord[$phrase].sources -notcontains "课程标准2022|补充词表") {
+      $entriesByWord[$phrase].sources += "课程标准2022|补充词表"
+    }
+    continue
+  }
+  $entriesByWord[$phrase] = [ordered]@{
+    word = $phrase
+    sources = @("课程标准2022|补充词表")
+    closed_class = $false
   }
 }
 
@@ -109,12 +153,20 @@ $payload = [ordered]@{
   }
   sources = @(
     [ordered]@{
-      name = "ECDICT zk-tagged 1600 vocabulary"
-      repository = "https://github.com/skywind3000/ECDICT"
-      commit = "39cfb9672c0906b63569e0453c2e6abfb9ab182a"
-      file = "contracts/vocabulary/ecdict-zk.json"
-      license = "MIT"
-      entry_count = @($zkSource.words).Count
+      name = "义务教育英语课程标准（2022年版）附录3三级词汇表"
+      publisher = "中华人民共和国教育部"
+      url = $officialSource.source.url
+      sha256 = $officialSource.source.sha256
+      file = "contracts/vocabulary/kebiao-2022-level3.json"
+      entry_count = $officialSource.counts.total_entries
+    },
+    [ordered]@{
+      name = "义务教育英语课程标准（2022年版）附录3补充词表"
+      publisher = "中华人民共和国教育部"
+      url = $supplementSource.source.url
+      sha256 = $supplementSource.source.sha256
+      file = "contracts/vocabulary/kebiao-2022-supplements.json"
+      entry_count = @($supplementSource.single_words).Count + @($supplementSource.phrases).Count
     },
     [ordered]@{
       name = "pep-senior-eng-vocab-json"
@@ -125,7 +177,10 @@ $payload = [ordered]@{
     }
   )
   counting = [ordered]@{
-    base_compulsory_zk_entries = @($zkSource.words).Count
+    base_compulsory_single_words = @($officialSource.words).Count
+    base_compulsory_phrases = @($officialSource.phrase_entries).Count
+    official_supplement_single_words = @($supplementSource.single_words).Count
+    official_supplement_phrases = @($supplementSource.phrases).Count
     high_school_source_rows = @($selectedItems).Count
     high_school_unique_headwords = $highSchoolUnique
     single_word_entries = $singleWordEntries

@@ -9,6 +9,7 @@
 | `contracts/curriculum.json` | 教材、25 单元、词汇/语法边界、题材、难度、题型与质量规则 |
 | `contracts/vocabulary-whitelist.json` | 规范化词元白名单及教材出处 |
 | `contracts/design-tokens.json` | App 与后台唯一视觉事实源 |
+| `contracts/admin-auth.md` | 本机回环、管理 token、生成审批和审计契约 |
 | `config/practice-modes.json` | 时长、题量、组卷权重与单套约束 |
 | `config/reporting.json` | 掌握度、趋势与报告阈值 |
 | `config/validation.json` | 题库自动校验阈值 |
@@ -20,12 +21,18 @@
 ### `contracts/curriculum.json`
 
 - `counting_clarification.content_alignment_units`：整数，固定 `25`。
-- `counting_clarification.vocabulary_counting`：说明词汇按规范化词头计，并给出义务教育基础层、高中新增层和短语的计数口径。
+- `counting_clarification.vocabulary_counting`：说明词汇按规范化词头计，并给出 2022 课标基础层、高中新增层、闭合功能词和短语的计数口径。
 - `counting_clarification.grammar_counting`：说明语法按项目 ID 计。
-- `vocabulary.counting.base_compulsory_entries`：义务教育基础层，固定 `1603`。
-- `vocabulary.counting.single_word_entries`：两层合并后的单词头，固定 `2998`。
-- `vocabulary.counting.phrase_entries`：多词短语，固定 `349`，不得混入单词头分母。
-- `vocabulary.counting.unique_whitelist_entries`：完整允许表，固定 `3347`。
+- `vocabulary.counting.base_compulsory_declared_entries`：教育部 2022 三级词表原文声明，固定 `1600`。
+- `vocabulary.counting.base_compulsory_single_words`：官方基础层规范化单词头，固定 `1596`。
+- `vocabulary.counting.base_compulsory_phrases`：官方基础层遗留短语，固定 `4`。
+- `vocabulary.counting.official_supplement_single_words`：课标补充词表单词头，固定 `120`。
+- `vocabulary.counting.official_supplement_phrases`：课标补充词表短语，固定 `44`。
+- `vocabulary.counting.high_school_unique_entries`：人教版必修 1-3 与选必 1-2 去重条目，固定 `1846`。
+- `vocabulary.counting.closed_class_added`：前两层未覆盖的闭合功能词补充，固定 `5`。
+- `vocabulary.counting.single_word_entries`：合并去重后的单词头，固定 `3015`。
+- `vocabulary.counting.phrase_entries`：多词短语，固定 `392`，不得混入单词头分母。
+- `vocabulary.counting.unique_whitelist_entries`：完整允许表，固定 `3407`。
 - `vocabulary.normalization.inflections`：入库只保存基础词头；运行时做规则/不规则词形还原。
 - `difficulty.bank_default_distribution.d1...d5`：全库难度占比，分别为 `0.15/0.30/0.35/0.15/0.05`。
 - `difficulty.paper_distribution`：单套易中难占比 `0.40/0.40/0.20`。
@@ -71,6 +78,15 @@
 - `time_authority=server_deadline`。
 - `answer_available_before_submit=false`。
 - `data_clear_scope` 同时包含本地缓存和后端该 ID 数据。
+
+### `contracts/admin-auth.md`
+
+- 服务绑定 `0.0.0.0`。
+- `/admin/*` 先校验 socket 回环来源，再校验 `X-Admin-Token`。
+- `ADMIN_TOKEN` 仅来自 `.env`；缺失时启动生成并写回。
+- 禁止用 `X-Forwarded-For` 判断来源。
+- token 使用 `secrets.compare_digest`。
+- 管理写操作写 `admin_audit_log`，仅保存 token SHA-256 前 8 位。
 
 ## 3. 修改规则
 

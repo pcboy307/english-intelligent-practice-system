@@ -35,10 +35,11 @@ python --version
 ## 开发原则
 
 - `contracts/`、`config/`、`db/migrations/` 与根脚本只由 Lead Agent 维护。
-- 每个里程碑一个 commit；业务模块按 B–F 所有权拆分。
+- 每个任务一次 commit；每个里程碑打一个 tag 并提交独立验收记录。
 - 所有设计取值来自 `contracts/design-tokens.json`，学生端与后台代码不得硬编码颜色、字号或间距。
 - 题库按独立 Bank 管理，禁止跨 Bank 混抽、覆盖或向已存在 Bank 追加题目。
 - 交卷前答案与解析不得进入 API 响应或 App 持久化。
+- 后端监听 `0.0.0.0`；`/admin/*` 只接受本机回环来源和 `X-Admin-Token`。
 
 ## 启动
 

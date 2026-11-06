@@ -1,0 +1,65 @@
+{
+  "basic_sample_20": {
+    "because": true,
+    "important": true,
+    "decide": true,
+    "different": true,
+    "develop": true,
+    "ability": true,
+    "accident": true,
+    "achieve": true,
+    "active": true,
+    "advice": true,
+    "afford": true,
+    "afraid": true,
+    "agree": true,
+    "air": true,
+    "animal": true,
+    "answer": true,
+    "apple": true,
+    "art": true,
+    "ask": true,
+    "bad": true
+  },
+  "advanced_sample_20": {
+    "ubiquitous": false,
+    "paradigm": false,
+    "meticulous": false,
+    "exacerbate": false,
+    "corroborate": false,
+    "anomaly": false,
+    "synthesize": false,
+    "notwithstanding": false,
+    "albeit": false,
+    "ostensibly": false,
+    "juxtapose": false,
+    "pragmatic": false,
+    "intricate": false,
+    "ambiguity": false,
+    "profound": false,
+    "skeptical": false,
+    "resilient": false,
+    "controversy": false,
+    "hypothetical": false,
+    "disproportionate": false
+  },
+  "passage_results": {
+    "M1-READING-SAMPLE-01": {
+      "raw_tokens": 115,
+      "phrase_hits": [],
+      "single_word_denominator": 115,
+      "unknown": [],
+      "unknown_ratio": 0.0,
+      "passes": true
+    },
+    "M1-READING-SAMPLE-02": {
+      "raw_tokens": 116,
+      "phrase_hits": [],
+      "single_word_denominator": 116,
+      "unknown": [],
+      "unknown_ratio": 0.0,
+      "passes": true
+    }
+  },
+  "checks_pass": true
+}

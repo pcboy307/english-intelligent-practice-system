@@ -1,58 +1,68 @@
-# 逐单元语法清单（25 单元）
+# 人教版（2019）逐单元语法清单
 
-状态：M0 冻结候选。事实源为 `contracts/curriculum.json`；本表用于说明教材对齐与白名单差异。
+状态：M0 冻结候选。
 
-## 口径
+教材：人民教育出版社《普通高中教科书·英语》必修第一至第三册、选择性必修第一至第二册。
 
-- 教材正式教学单元共 25 个：必修 1–3 各 5 个，选择性必修 1–2 各 5 个。
-- 本表正好 25 行。必修一 Welcome Unit 的词汇属于已学词汇，但不计入 25 个正式题材/语法对齐单元。
-- 语法白名单按 **grammar item ID** 计数，不按单元数计数；同一语法项目可出现在多个单元。
-- 词汇白名单按 **规范化词元** 计数，不按单元数计数，详见 `contracts/vocabulary-whitelist.json`。
-- 单元中若出现白名单外结构，只能在语篇中作为自然语言现象，不得出题考查。
-- 选择性必修第三、第四册一律不进入可考范围。
+来源：各册目录的 `Learning About Language (2): Structures` / `Discovering Useful Structures` 页面编号。教材原文仅用于核验语法板块，不复制语篇。
 
-## 清单
+## 计数口径
 
-| # | 单元 | 题材 | 可考语法项目 ID | 说明 |
-|---:|---|---|---|---|
-| 1 | 必修一 U1 | 青少年生活与成长 | `pronouns`, `articles`, `subject_verb_agreement`, `word_formation` | 名词/形容词/副词短语只作自然语言，不单独出结构辨析题 |
-| 2 | 必修一 U2 | 旅行与计划 | `tense_system`, `adverbial_clauses`, `prepositions` | 现在进行表将来置于基础时态体系内 |
-| 3 | 必修一 U3 | 运动与健康 | `comparatives_superlatives`, `subject_verb_agreement`, `conjunctions` | 附加疑问句不属当前白名单，不出题 |
-| 4 | 必修一 U4 | 自然灾害与应对 | `relative_clauses_defining`, `past_participle_nonfinite`, `tense_system` | 限制性定语从句只考基础关系词与关系副词 |
-| 5 | 必修一 U5 | 世界语言与文字 | `relative_clauses_defining`, `relative_clauses_non_defining`, `word_formation` | 非限制性定语从句采用基础形式 |
-| 6 | 必修二 U1 | 文化遗产保护 | `relative_clauses_non_defining`, `passive_voice_tenses` | 不考复杂句法嵌套 |
-| 7 | 必修二 U2 | 野生动植物保护 | `passive_voice_tenses`, `tense_system`, `subject_verb_agreement` | 被动语态限于基础时态，含现在进行/现在完成被动 |
-| 8 | 必修二 U3 | 互联网与科技生活 | `passive_voice_tenses`, `adverbial_clauses`, `word_formation` | 常考现在完成被动 |
-| 9 | 必修二 U4 | 历史与传统 | `past_participle_nonfinite`, `relative_clauses_defining`, `articles` | 过去分词作定语/状语/宾补 |
-| 10 | 必修二 U5 | 音乐与艺术 | `past_participle_nonfinite`, `v_ing_nonfinite`, `with_compound` | `with` 结构仅基础形式 |
-| 11 | 必修三 U1 | 节日与庆典 | `v_ing_nonfinite`, `relative_clauses_defining`, `pronouns` | `-ing` 作定语、状语、宾补、主语和表语 |
-| 12 | 必修三 U2 | 品德与美德 | `v_ing_nonfinite`, `adverbial_clauses`, `conjunctions` | 不考独立主格 |
-| 13 | 必修三 U3 | 多元文化 | `noun_clauses`, `adverbial_clauses`, `tense_system` | 名词性从句覆盖宾/表/主/同位语基础形式 |
-| 14 | 必修三 U4 | 太空探索 | `cleft_basic`, `noun_clauses`, `passive_voice_tenses` | 强调句仅 `it is/was ... that` 基础形式 |
-| 15 | 必修三 U5 | 金钱与价值观 | `noun_clauses`, `subject_verb_agreement`, `articles` | 省略与替代只作自然语言现象 |
-| 16 | 选必一 U1 | 杰出人物与成就 | `relative_clauses_non_defining`, `cleft_basic`, `word_formation` | 不考强调句与倒装复合变体 |
-| 17 | 选必一 U2 | 未来科技与生活 | `tense_system`, `passive_voice_tenses`, `adverbial_clauses` | 含将来进行与基础将来被动 |
-| 18 | 选必一 U3 | 自然公园与旅游 | `v_ing_nonfinite`, `with_compound`, `prepositions` | 不考悬垂分词的高阶辨析 |
-| 19 | 选必一 U4 | 肢体语言与非言语沟通 | `v_ing_nonfinite`, `adverbial_clauses`, `pronouns` | 状语从句限于基础类型 |
-| 20 | 选必一 U5 | 农业与土地 | `noun_clauses`, `subject_verb_agreement`, `articles` | 多重从句嵌套只作自然语言 |
-| 21 | 选必二 U1 | 科学与科学家 | `noun_clauses`, `tense_system`, `word_formation` | 名词性从句侧重表语/宾语基础形式 |
-| 22 | 选必二 U2 | 跨文化沟通 | `noun_clauses`, `adverbial_clauses`, `conjunctions` | 不考高阶省略与替代综合判断 |
-| 23 | 选必二 U3 | 饮食与文化 | `tense_system`, `passive_voice_tenses`, `past_participle_nonfinite` | 含过去完成与基础完成被动 |
-| 24 | 选必二 U4 | 长途旅行与地理 | `partial_inversion_basic`, `tense_system`, `relative_clauses_non_defining` | 倒装仅否定词前置、only+状语、so/neither |
-| 25 | 选必二 U5 | 急救与安全 | `subjunctive_basic_if`, `subjunctive_basic_should`, `adverbial_clauses` | 虚拟仅三种 if 时态与 should 型宾语从句 |
+- 正式教学单元为 25 个，Welcome Unit 不计入 25 个正式单元。
+- 语法白名单按 grammar item ID 计数，而不是按单元数计数。
+- `完全一致`：教材板块可直接映射到 V11 允许项目。
+- `范围收窄`：教材板块范围更大，只开放 V11 明示的基础子类。
+- `白名单外`：教材教过但 V11 未授权出题，只能作为语篇自然语言现象。
+- 选必三、选必四不进入本表，任何独有语法一律不可考。
 
-## 与教材/需求的差异处理
+## 逐单元对照
 
-| 项目 | 处理 |
+| # | 单元 | 来源页 | 教材实际语法板块 | V11 可考 ID | 差异类型 |
+|---:|---|---:|---|---|---|
+| 1 | 必修一 U1 Teenage Life | 23 | 名词短语、形容词短语、副词短语 | 无 | 白名单外，不可出结构辨析 |
+| 2 | 必修一 U2 Travelling Around | 35 | 现在进行时表将来 | `tense_system` | 完全一致 |
+| 3 | 必修一 U3 Sports and Fitness | 47 | 附加疑问句 | 无 | 白名单外，不可出题 |
+| 4 | 必修一 U4 Natural Disasters | 59 | 限制性定语从句 | `relative_clauses_defining` | 完全一致 |
+| 5 | 必修一 U5 Languages Around the World | 71 | 限制性定语从句（关系副词、介词+关系代词） | `relative_clauses_defining` | 范围收窄至基础关系词/关系副词 |
+| 6 | 必修二 U1 Cultural Heritage | 13 | 限制性定语从句复习与扩展 | `relative_clauses_defining` | 范围收窄，不考多重嵌套 |
+| 7 | 必修二 U2 Wildlife Protection | 25 | 现在进行时被动语态 | `passive_voice_tenses` | 完全一致 |
+| 8 | 必修二 U3 The Internet | 37 | 现在完成时被动语态 | `passive_voice_tenses` | 完全一致 |
+| 9 | 必修二 U4 History and Traditions | 49 | 过去分词作定语、宾语补足语 | `past_participle_nonfinite` | 范围收窄 |
+| 10 | 必修二 U5 Music | 61 | 过去分词作状语 | `past_participle_nonfinite` | 范围收窄 |
+| 11 | 必修三 U1 Festivals and Celebrations | 13 | 动词 -ing 作定语和表语 | `v_ing_nonfinite` | 范围收窄 |
+| 12 | 必修三 U2 Morals and Virtues | 25 | 动词 -ing 作宾语补足语和状语 | `v_ing_nonfinite` | 范围收窄 |
+| 13 | 必修三 U3 Diverse Cultures | 37 | 宾语从句 | `noun_clauses` | 范围收窄至基础宾语从句 |
+| 14 | 必修三 U4 Space Exploration | 49 | 不定式作宾语、表语和状语 | 无 | 白名单外，不可出题 |
+| 15 | 必修三 U5 The Value of Money | 61 | 主语从句 | `noun_clauses` | 范围收窄 |
+| 16 | 选必一 U1 People of Achievement | 12 | 非限制性定语从句 | `relative_clauses_non_defining` | 完全一致 |
+| 17 | 选必一 U2 Looking into the Future | 24 | 将来进行时 | `tense_system` | 完全一致 |
+| 18 | 选必一 U3 Fascinating Parks | 36 | 动词 -ing 作主语 | `v_ing_nonfinite` | 范围收窄 |
+| 19 | 选必一 U4 Body Language | 48 | 动词 -ing 作宾语、表语和状语 | `v_ing_nonfinite` | 范围收窄 |
+| 20 | 选必一 U5 Working the Land | 60 | 主语从句 | `noun_clauses` | 范围收窄 |
+| 21 | 选必二 U1 Science and Scientists | 12 | 表语从句 | `noun_clauses` | 范围收窄 |
+| 22 | 选必二 U2 Bridging Cultures | 24 | 宾语从句 | `noun_clauses` | 范围收窄 |
+| 23 | 选必二 U3 Food and Culture | 36 | 过去完成时及过去完成被动语态 | `tense_system`, `passive_voice_tenses` | 完全一致 |
+| 24 | 选必二 U4 Journey Across a Vast Land | 48 | 过去完成时复习 | `tense_system` | 完全一致 |
+| 25 | 选必二 U5 First Aid | 60 | 省略 | 无 | 白名单外，不可出题 |
+
+## 差异处置
+
+| 教材实际问题 | 处置 |
 |---|---|
-| 单元中出现的名词短语、形容词短语、副词短语 | 白名单没有独立考查项，只作自然语言，不出结构辨析 |
-| 附加疑问句 | 只作自然语言，不出题 |
-| 不定式作宾语/状语等单元现象 | 当前白名单未列独立考查项，只作自然语言 |
-| 省略、替代、独立主格 | 明确禁止作为考点 |
-| 混合/错综时间/含蓄条件/倒装式虚拟 | 明确禁止作为考点 |
-| 完全倒装及强调句复合变体 | 明确禁止作为考点 |
-| 选必三、选必四独有语法 | 一律禁止，即使语篇自然出现也不得设为考点 |
+| 名词短语、形容词短语、副词短语 | 不作独立结构辨析 |
+| 附加疑问句 | 不作考点 |
+| 不定式作宾语、表语、状语 | 不作考点 |
+| 省略、省略与替代综合判断 | 不作考点 |
+| 混合虚拟、含蓄条件虚拟、倒装式虚拟 | 不在白名单，禁止命题 |
+| 独立主格、完全倒装、强调与倒装复合 | 不在白名单，禁止命题 |
+| 选必三、四独有语法 | 一律禁止 |
 
-## M0 签字规则
+## 结论
 
-签字后 `grammar_whitelist` 的 ID 集合冻结。后续若新增语法项目，必须由 Lead 同时更新 `curriculum.json`、本题库校验器、测试夹具和 `CHANGELOG.md`，并经系统所有者批准。
+25 个正式单元中：
+
+- `完全一致` 8 个；
+- `范围收窄` 13 个；
+- `白名单外` 4 个。
+
+4 个白名单外单元为语法板块层面的排除，不代表这些结构不能出现在语篇中；它们只能作为自然语言现象出现，不能被设置为考点。

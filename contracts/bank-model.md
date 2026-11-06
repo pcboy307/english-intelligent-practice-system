@@ -14,6 +14,7 @@
 
 ```text
 draft -> generating -> reviewing -> ready -> active
+                                  \<- ready
                                       \-> archived
 active -> archived
 ```
@@ -24,13 +25,15 @@ active -> archived
 - `ready`：审核完成且可作为待激活候选。
 - `active`：当前生效 Bank，新会话使用。
 - `archived`：不再作为激活候选，但所有历史数据保留。
+- 切换生效 Bank 时，旧 active Bank 回到 `ready`，不是 `archived`。
+- `active → ready` 只用于原子切换；切换事务必须同时记录审计。
 - 任一时刻最多一个 `active` Bank，由 PostgreSQL 部分唯一索引保证。
 - 禁止物理删除 Bank；默认不提供物理删除接口。
 
 ## 3. 创建与生成
 
 - 创建 Bank 时记录 `name`、`target_size`、`difficulty_profile`、`status=draft`。
-- 生成前必须由系统所有者单独批准；API 请求体必须带 `approved_by_owner=true`，服务端仍应配置外部确认门禁。
+- 生成前必须由系统所有者单独批准，并先通过 `/admin/banks/{id}/approve-generation` 写入服务端审批记录；生成请求不接受客户端布尔批准。
 - 每个 generation job 固定绑定 `bank_id`，job 中途不得更换。
 - 单批最多 10 篇语篇。
 - 首批完成后状态变为 `paused_for_review`，不得继续下一批，直到人工确认。
