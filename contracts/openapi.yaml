@@ -1,0 +1,661 @@
+openapi: 3.1.0
+info:
+  title: 高二英语智能练习系统 API
+  version: 1.0.0
+  description: |
+    M0 冻结候选接口。学生端使用 X-Student-Id；交卷前任何响应都不得包含 answer 或 explanation。
+servers:
+  - url: http://localhost:8000/api/v1
+tags:
+  - name: student
+  - name: reports
+  - name: admin
+components:
+  securitySchemes:
+    StudentId:
+      type: apiKey
+      in: header
+      name: X-Student-Id
+  schemas:
+    Error:
+      type: object
+      additionalProperties: false
+      required: [error]
+      properties:
+        error:
+          type: object
+          additionalProperties: false
+          required: [code, message, request_id]
+          properties:
+            code:
+              type: string
+              example: BANK_NOT_ACTIVE
+            message:
+              type: string
+            request_id:
+              type: string
+              format: uuid
+            details:
+              type: object
+              additionalProperties: true
+    StartPracticeRequest:
+      type: object
+      additionalProperties: false
+      required: [duration_minutes]
+      properties:
+        duration_minutes:
+          type: integer
+          enum: [30, 60]
+    SessionResponse:
+      $ref: ./schemas/session.json
+    SavedAnswer:
+      $ref: ./schemas/answer.json
+    Report:
+      $ref: ./schemas/report.json
+    StageReport:
+      type: object
+      additionalProperties: false
+      required:
+        - practice_count
+        - average_accuracy
+        - total_questions
+        - type_trends
+        - trend_slope
+        - mastery_matrix
+        - cleared_errors
+        - active_errors
+        - accuracy_stddev
+        - conclusion
+        - action_plan_4_weeks
+        - cross_bank_notice
+      properties:
+        practice_count:
+          type: integer
+          minimum: 0
+        average_accuracy:
+          type: number
+          minimum: 0
+          maximum: 1
+        total_questions:
+          type: integer
+          minimum: 0
+        type_trends:
+          type: object
+          additionalProperties:
+            type: array
+            items:
+              type: number
+        trend_slope:
+          type: number
+        mastery_matrix:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+        cleared_errors:
+          type: integer
+          minimum: 0
+        active_errors:
+          type: integer
+          minimum: 0
+        accuracy_stddev:
+          type: number
+          minimum: 0
+        conclusion:
+          type: string
+        action_plan_4_weeks:
+          type: array
+          items:
+            type: string
+        cross_bank_notice:
+          oneOf:
+            - type: "null"
+            - type: string
+    ErrorTag:
+      $ref: ./schemas/error-tag.json
+    Bank:
+      $ref: ./schemas/bank.json
+    CreateBankRequest:
+      type: object
+      additionalProperties: false
+      required: [name, target_size, difficulty_profile]
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 80
+        target_size:
+          type: integer
+          minimum: 1
+        difficulty_profile:
+          type: string
+          enum: [standard, foundation, advanced]
+    StartGenerationRequest:
+      type: object
+      additionalProperties: false
+      required: [approved_by_owner]
+      properties:
+        approved_by_owner:
+          type: boolean
+          description: 必须为 true；全量 Bank job 还需线下逐个批准。
+        batch_size:
+          type: integer
+          minimum: 1
+          maximum: 10
+          default: 10
+    GenerationJob:
+      type: object
+      additionalProperties: false
+      required:
+        - job_id
+        - bank_id
+        - status
+        - completed_passages
+        - target_passages
+        - first_batch_verified
+        - rejected_count
+        - batches
+        - created_at
+      properties:
+        job_id:
+          type: string
+          format: uuid
+        bank_id:
+          type: string
+          format: uuid
+        status:
+          type: string
+          enum: [queued, running, paused_for_review, paused_for_owner, completed, failed]
+        completed_passages:
+          type: integer
+          minimum: 0
+        target_passages:
+          type: integer
+          minimum: 1
+        first_batch_verified:
+          type: boolean
+        rejected_count:
+          type: integer
+          minimum: 0
+        batches:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+        created_at:
+          type: string
+          format: date-time
+    Coverage:
+      type: object
+      additionalProperties: true
+    PreviewResponse:
+      type: object
+      additionalProperties: false
+      required: [bank_id, items]
+      properties:
+        bank_id:
+          type: string
+          format: uuid
+        items:
+          type: array
+          minItems: 1
+          maxItems: 5
+          items:
+            $ref: ./schemas/question.json
+    BankComparison:
+      type: object
+      additionalProperties: false
+      required: [left, right]
+      properties:
+        left:
+          type: object
+          additionalProperties: false
+          required: [bank, coverage, preview]
+          properties:
+            bank:
+              $ref: ./schemas/bank.json
+            coverage:
+              $ref: "#/components/schemas/Coverage"
+            preview:
+              $ref: "#/components/schemas/PreviewResponse"
+        right:
+          type: object
+          additionalProperties: false
+          required: [bank, coverage, preview]
+          properties:
+            bank:
+              $ref: ./schemas/bank.json
+            coverage:
+              $ref: "#/components/schemas/Coverage"
+            preview:
+              $ref: "#/components/schemas/PreviewResponse"
+    QuestionReviewRequest:
+      type: object
+      additionalProperties: false
+      required: [question_ids, decision]
+      properties:
+        question_ids:
+          type: array
+          minItems: 1
+          uniqueItems: true
+          items:
+            type: string
+        decision:
+          type: string
+          enum: [approve, reject, edit]
+        reason:
+          type: string
+        edits:
+          type: object
+          additionalProperties: true
+  responses:
+    ErrorResponse:
+      description: 统一错误响应
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Error"
+    NoContent:
+      description: 操作成功，无响应体
+  parameters:
+    SessionId:
+      name: session_id
+      in: path
+      required: true
+      schema:
+        type: string
+        format: uuid
+    BankId:
+      name: bank_id
+      in: path
+      required: true
+      schema:
+        type: string
+        format: uuid
+security:
+  - StudentId: []
+paths:
+  /practice/start:
+    post:
+      tags: [student]
+      operationId: startPractice
+      summary: 从 active Bank 为新会话组卷
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/StartPracticeRequest"
+      responses:
+        "201":
+          description: 创建完成；响应不含答案与解析
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SessionResponse"
+        "400":
+          $ref: "#/components/responses/ErrorResponse"
+        "409":
+          $ref: "#/components/responses/ErrorResponse"
+  /practice/{session_id}:
+    get:
+      tags: [student]
+      operationId: getPracticeSession
+      summary: 获取会话、服务端剩余时间和进度
+      parameters:
+        - $ref: "#/components/parameters/SessionId"
+      responses:
+        "200":
+          description: 会话详情；答案和解析仍不返回
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SessionResponse"
+        "404":
+          $ref: "#/components/responses/ErrorResponse"
+  /practice/{session_id}/answer:
+    put:
+      tags: [student]
+      operationId: saveAnswer
+      summary: 暂存单题答案
+      parameters:
+        - $ref: "#/components/parameters/SessionId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SavedAnswer"
+      responses:
+        "204":
+          $ref: "#/components/responses/NoContent"
+        "400":
+          $ref: "#/components/responses/ErrorResponse"
+        "404":
+          $ref: "#/components/responses/ErrorResponse"
+        "409":
+          $ref: "#/components/responses/ErrorResponse"
+  /practice/{session_id}/submit:
+    post:
+      tags: [student]
+      operationId: submitPractice
+      summary: 交卷、判分并返回逐题解析与单次报告
+      parameters:
+        - $ref: "#/components/parameters/SessionId"
+      responses:
+        "200":
+          description: 交卷结果
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Report"
+        "404":
+          $ref: "#/components/responses/ErrorResponse"
+        "409":
+          $ref: "#/components/responses/ErrorResponse"
+  /reports/{session_id}:
+    get:
+      tags: [reports]
+      operationId: getReport
+      summary: 获取绑定原 Bank 的单次报告
+      parameters:
+        - $ref: "#/components/parameters/SessionId"
+      responses:
+        "200":
+          description: 单次报告
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Report"
+        "404":
+          $ref: "#/components/responses/ErrorResponse"
+  /reports/summary:
+    get:
+      tags: [reports]
+      operationId: getStageReport
+      summary: 获取最近 10 次或每 5 次触发的阶段总结
+      parameters:
+        - name: range
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [last5, last10]
+            default: last10
+      responses:
+        "200":
+          description: 阶段报告
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/StageReport"
+        "404":
+          $ref: "#/components/responses/ErrorResponse"
+  /error-tags:
+    get:
+      tags: [student]
+      operationId: listErrorTags
+      summary: 获取当前学生的错题标签
+      parameters:
+        - name: status
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [active, mastered]
+        - name: bank_id
+          in: query
+          required: false
+          schema:
+            type: string
+            format: uuid
+      responses:
+        "200":
+          description: 错题标签
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/ErrorTag"
+  /student-data:
+    delete:
+      tags: [student]
+      operationId: deleteStudentData
+      summary: 删除该 device_student_id 的全部后端数据
+      description: 前端必须先完成二次确认，并在成功后清除本地缓存。
+      responses:
+        "204":
+          $ref: "#/components/responses/NoContent"
+        "401":
+          $ref: "#/components/responses/ErrorResponse"
+  /admin/banks:
+    get:
+      tags: [admin]
+      operationId: listBanks
+      summary: 列出所有 Bank，包括 archived
+      responses:
+        "200":
+          description: Bank 列表
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Bank"
+        "403":
+          $ref: "#/components/responses/ErrorResponse"
+    post:
+      tags: [admin]
+      operationId: createBank
+      summary: 创建全新 Bank，不向任何已有 Bank 追加
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateBankRequest"
+      responses:
+        "201":
+          description: 创建完成
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Bank"
+        "400":
+          $ref: "#/components/responses/ErrorResponse"
+        "403":
+          $ref: "#/components/responses/ErrorResponse"
+  /admin/banks/compare:
+    get:
+      tags: [admin]
+      operationId: compareBanks
+      summary: 并排比较任意两份 Bank 的 Coverage 与各 5 题预览
+      parameters:
+        - name: left_id
+          in: query
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: right_id
+          in: query
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        "200":
+          description: 对比结果
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BankComparison"
+        "404":
+          $ref: "#/components/responses/ErrorResponse"
+  /admin/banks/{bank_id}/generate:
+    post:
+      tags: [admin]
+      operationId: startGeneration
+      summary: 为指定 Bank 启动串行生成 job
+      parameters:
+        - $ref: "#/components/parameters/BankId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/StartGenerationRequest"
+      responses:
+        "202":
+          description: job 已创建，首批完成后暂停
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GenerationJob"
+        "403":
+          $ref: "#/components/responses/ErrorResponse"
+        "409":
+          $ref: "#/components/responses/ErrorResponse"
+  /admin/banks/{bank_id}/coverage:
+    get:
+      tags: [admin]
+      operationId: getCoverage
+      summary: 获取 Bank Coverage 快照
+      parameters:
+        - $ref: "#/components/parameters/BankId"
+      responses:
+        "200":
+          description: Coverage
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Coverage"
+        "404":
+          $ref: "#/components/responses/ErrorResponse"
+  /admin/banks/{bank_id}/preview:
+    get:
+      tags: [admin]
+      operationId: previewBank
+      summary: 随机抽题预览
+      parameters:
+        - $ref: "#/components/parameters/BankId"
+        - name: n
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 5
+            default: 5
+      responses:
+        "200":
+          description: 抽样题目
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PreviewResponse"
+        "404":
+          $ref: "#/components/responses/ErrorResponse"
+  /admin/banks/{bank_id}/activate:
+    post:
+      tags: [admin]
+      operationId: activateBank
+      summary: 原子切换 active Bank；只影响新会话
+      parameters:
+        - $ref: "#/components/parameters/BankId"
+      responses:
+        "200":
+          description: 切换完成，返回新 active Bank
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Bank"
+        "409":
+          $ref: "#/components/responses/ErrorResponse"
+  /admin/banks/{bank_id}/archive:
+    post:
+      tags: [admin]
+      operationId: archiveBank
+      summary: 归档 Bank 并永久保留历史数据
+      parameters:
+        - $ref: "#/components/parameters/BankId"
+      responses:
+        "200":
+          description: 归档完成
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Bank"
+        "409":
+          $ref: "#/components/responses/ErrorResponse"
+  /admin/banks/{bank_id}/job:
+    get:
+      tags: [admin]
+      operationId: getGenerationJob
+      summary: 获取生成进度、暂停点状态与拒收统计
+      parameters:
+        - $ref: "#/components/parameters/BankId"
+      responses:
+        "200":
+          description: Generation job
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GenerationJob"
+        "404":
+          $ref: "#/components/responses/ErrorResponse"
+  /admin/questions:
+    get:
+      tags: [admin]
+      operationId: listQuestions
+      summary: 按 Bank 筛选题目；bank_id 必填
+      parameters:
+        - name: bank_id
+          in: query
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: status
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [draft, reviewed, published, archived]
+      responses:
+        "200":
+          description: 题目列表
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: ./schemas/question.json
+        "400":
+          $ref: "#/components/responses/ErrorResponse"
+  /admin/questions/review:
+    post:
+      tags: [admin]
+      operationId: reviewQuestions
+      summary: 人工审核题目；reviewed 后方可发布入池
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/QuestionReviewRequest"
+      responses:
+        "200":
+          description: 审核结果
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [updated_count]
+                properties:
+                  updated_count:
+                    type: integer
+                    minimum: 0
+        "400":
+          $ref: "#/components/responses/ErrorResponse"

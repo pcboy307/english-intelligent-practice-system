@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "student_identity": {
+    "storage_key": "device_student_id",
+    "header": "X-Student-Id",
+    "uuid_version": 4
+  },
+  "time_authority": "server_deadline",
+  "foreground_recalibration_required": true,
+  "offline_answer_persistence": true,
+  "answer_available_before_submit": false,
+  "data_clear_requires_confirmation": true,
+  "data_clear_scope": ["local_cache", "backend_student_data"]
+}

@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.english-practice/schemas/bank.json",
+  "title": "Question bank",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "bank_id",
+    "name",
+    "target_size",
+    "difficulty_profile",
+    "status",
+    "created_at"
+  ],
+  "properties": {
+    "bank_id": {"type": "string", "format": "uuid"},
+    "name": {"type": "string", "minLength": 1, "maxLength": 80},
+    "target_size": {"type": "integer", "minimum": 1},
+    "difficulty_profile": {
+      "type": "string",
+      "enum": ["standard", "foundation", "advanced"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "generating", "reviewing", "ready", "active", "archived"]
+    },
+    "coverage_snapshot": {
+      "oneOf": [{"type": "null"}, {"$ref": "#/$defs/coverage"}]
+    },
+    "generation_job_id": {
+      "oneOf": [{"type": "null"}, {"type": "string", "format": "uuid"}]
+    },
+    "created_at": {"type": "string", "format": "date-time"},
+    "finished_at": {
+      "oneOf": [{"type": "null"}, {"type": "string", "format": "date-time"}]
+    }
+  },
+  "$defs": {
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "question_counts",
+        "passage_counts",
+        "difficulty_distribution",
+        "book_distribution",
+        "topic_distribution",
+        "out_of_scope_rate",
+        "passage_duplicate_rate",
+        "stem_duplicate_rate",
+        "generated_at"
+      ],
+      "properties": {
+        "question_counts": {
+          "type": "object",
+          "required": ["cloze", "grammar_fill", "reading", "gap_fill"],
+          "properties": {
+            "cloze": {"type": "integer", "minimum": 0},
+            "grammar_fill": {"type": "integer", "minimum": 0},
+            "reading": {"type": "integer", "minimum": 0},
+            "gap_fill": {"type": "integer", "minimum": 0}
+          },
+          "additionalProperties": false
+        },
+        "passage_counts": {
+          "type": "object",
+          "required": ["cloze", "grammar_fill", "reading", "gap_fill"],
+          "properties": {
+            "cloze": {"type": "integer", "minimum": 0},
+            "grammar_fill": {"type": "integer", "minimum": 0},
+            "reading": {"type": "integer", "minimum": 0},
+            "gap_fill": {"type": "integer", "minimum": 0}
+          },
+          "additionalProperties": false
+        },
+        "difficulty_distribution": {
+          "type": "object",
+          "required": ["d1", "d2", "d3", "d4", "d5"],
+          "properties": {
+            "d1": {"type": "number", "minimum": 0, "maximum": 1},
+            "d2": {"type": "number", "minimum": 0, "maximum": 1},
+            "d3": {"type": "number", "minimum": 0, "maximum": 1},
+            "d4": {"type": "number", "minimum": 0, "maximum": 1},
+            "d5": {"type": "number", "minimum": 0, "maximum": 1}
+          },
+          "additionalProperties": false
+        },
+        "book_distribution": {
+          "type": "object",
+          "additionalProperties": {"type": "number", "minimum": 0, "maximum": 1}
+        },
+        "topic_distribution": {
+          "type": "object",
+          "additionalProperties": {"type": "integer", "minimum": 0}
+        },
+        "out_of_scope_rate": {"type": "number", "minimum": 0, "maximum": 1},
+        "passage_duplicate_rate": {"type": "number", "minimum": 0, "maximum": 1},
+        "stem_duplicate_rate": {"type": "number", "minimum": 0, "maximum": 1},
+        "generated_at": {"type": "string", "format": "date-time"}
+      }
+    }
+  }
+}

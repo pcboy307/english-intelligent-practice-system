@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "vocabulary": {
+    "unknown_word_ratio_max": 0.03,
+    "non_whitelist_words_per_passage_max": 2,
+    "non_whitelist_assessment_allowed": false,
+    "non_whitelist_requires_gloss": true
+  },
+  "grammar": {
+    "whitelist_only": true,
+    "forbidden_books": ["选择性必修第三册", "选择性必修第四册"],
+    "min_categories_per_grammar_passage": 5,
+    "max_questions_per_category_per_passage": 2
+  },
+  "difficulty": {
+    "distribution_tolerance_pp": 5,
+    "max_d5_per_paper": 3,
+    "d5_high_exam_cd_style_forbidden": true
+  },
+  "similarity": {
+    "passage_reject_gte": 0.90,
+    "stem_reject_gte": 0.85,
+    "scope": "within_bank"
+  },
+  "explanation": {
+    "minimum_sentences": 3,
+    "require_distractor_analysis": true,
+    "gap_fill_require_link_type": true
+  },
+  "generation": {
+    "max_passages_per_batch": 10,
+    "pause_after_first_batch": true,
+    "full_bank_requires_explicit_approval": true,
+    "rejected_items_must_be_audited": true
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.english-practice/schemas/error-tag.json",
+  "title": "Error tag",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "tag_id",
+    "question_id",
+    "bank_id",
+    "question_type",
+    "knowledge_points",
+    "grammar_tags",
+    "status",
+    "streak",
+    "successful_session_ids",
+    "activated_at",
+    "updated_at"
+  ],
+  "properties": {
+    "tag_id": {"type": "string", "format": "uuid"},
+    "question_id": {"type": "string"},
+    "bank_id": {"type": "string", "format": "uuid"},
+    "question_type": {"enum": ["cloze", "grammar_fill", "reading", "gap_fill"]},
+    "knowledge_points": {"type": "array", "items": {"type": "string"}},
+    "grammar_tags": {"type": "array", "items": {"type": "string"}},
+    "status": {"type": "string", "enum": ["active", "mastered"]},
+    "streak": {"type": "integer", "minimum": 0, "maximum": 2},
+    "successful_session_ids": {
+      "type": "array",
+      "maxItems": 2,
+      "uniqueItems": true,
+      "items": {"type": "string", "format": "uuid"}
+    },
+    "activated_at": {"type": "string", "format": "date-time"},
+    "mastered_at": {
+      "oneOf": [{"type": "null"}, {"type": "string", "format": "date-time"}]
+    },
+    "updated_at": {"type": "string", "format": "date-time"}
+  }
+}

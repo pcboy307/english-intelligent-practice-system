@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "mastery": {
+    "ewma_alpha": 0.3,
+    "scope": "knowledge_point_cross_bank",
+    "weak_threshold": 0.60,
+    "weak_min_attempts": 3,
+    "mastered_threshold": 0.85,
+    "mastered_min_attempts": 5
+  },
+  "trend": {
+    "window": 5,
+    "rising_above": 0.05,
+    "falling_below": -0.05
+  },
+  "single_report": {
+    "weak_point_top_n": 3,
+    "include_each_question": true,
+    "require_action_bound_to_knowledge_point": true
+  },
+  "stage_report": {
+    "trigger_every_practices": 5,
+    "require_trend_slope": true,
+    "require_stability_stddev": true,
+    "require_cross_bank_notice": true,
+    "cross_bank_notice_required_when_bank_count_gte": 2
+  }
+}

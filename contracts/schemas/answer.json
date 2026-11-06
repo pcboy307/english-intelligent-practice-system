@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.english-practice/schemas/answer.json",
+  "title": "Saved answer",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["question_id", "answer", "client_revision"],
+  "properties": {
+    "question_id": {"type": "string", "minLength": 1},
+    "answer": {
+      "oneOf": [
+        {"type": "string"},
+        {"type": "array", "uniqueItems": true, "items": {"type": "string"}}
+      ]
+    },
+    "client_revision": {"type": "integer", "minimum": 0},
+    "saved_at": {"type": "string", "format": "date-time"}
+  }
+}

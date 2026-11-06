@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.english-practice/schemas/passage.json",
+  "title": "Passage",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "passage_group_id",
+    "bank_id",
+    "type",
+    "text",
+    "word_count",
+    "topic",
+    "book_source",
+    "difficulty",
+    "status"
+  ],
+  "properties": {
+    "passage_group_id": {"type": "string", "minLength": 1},
+    "bank_id": {"type": "string", "format": "uuid"},
+    "type": {"enum": ["cloze", "grammar_fill", "reading", "gap_fill"]},
+    "text": {"type": "string", "minLength": 1},
+    "word_count": {"type": "integer", "minimum": 1, "maximum": 250},
+    "topic": {"type": "string", "minLength": 1},
+    "book_source": {"type": "string", "minLength": 1},
+    "difficulty": {"type": "integer", "minimum": 1, "maximum": 5},
+    "status": {"type": "string", "enum": ["draft", "reviewed", "published", "archived"]},
+    "out_of_scope_flags": {"type": "array", "items": {"type": "string"}},
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"}
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "prefix": "/api/v1",
+  "student_header": "X-Student-Id",
+  "max_page_size": 100,
+  "default_preview_questions": 5,
+  "timeout_seconds": {
+    "paper_generation": 2,
+    "grading_and_report": 5
+  }
+}

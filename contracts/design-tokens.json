@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_version": "1.0.0",
+  "status": "frozen_candidate",
+  "source_of_truth": true,
+  "usage": {
+    "applies_to": ["apps/mobile", "admin"],
+    "hardcoded_color_font_size_spacing_forbidden": true,
+    "dark_mode_allowed": false,
+    "third_party_ui_theme_allowed": false,
+    "third_party_font_files_allowed": false
+  },
+  "color": {
+    "pageBackground": "#FFFFFF",
+    "cardBackground": "#FAFAFA",
+    "primaryText": "#111111",
+    "secondaryText": "#5C5C5C",
+    "tertiaryText": "#9A9A9A",
+    "divider": "#E6E6E6",
+    "secondaryBorder": "#DDDDDD",
+    "disabled": "#C4C4C4",
+    "primaryButtonBackground": "#111111",
+    "primaryButtonText": "#FFFFFF",
+    "accent": "#2C5F5A",
+    "correct": "#2E7D52",
+    "incorrect": "#B3261E"
+  },
+  "color_usage": {
+    "accent_only_for": [
+      "primary_action_background_when_not_monochrome_primary",
+      "progress_bar",
+      "selected_control",
+      "radar_chart_stroke"
+    ],
+    "correct_incorrect": "text_or_1px_border_only",
+    "semantic_fill_forbidden": true,
+    "large_semantic_color_blocks_forbidden": true
+  },
+  "font": {
+    "uiFamily": {
+      "ios": "System",
+      "android": "sans-serif",
+      "web": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    },
+    "passageFamily": {
+      "ios": "Georgia",
+      "android": "serif",
+      "web": "Georgia, Noto Serif, serif"
+    },
+    "sizes": {
+      "pageTitle": 28,
+      "sectionTitle": 22,
+      "subheading": 18,
+      "body": 16,
+      "auxiliary": 14,
+      "minimum": 13
+    },
+    "lineHeight": {
+      "ui": 1.6,
+      "passage": 1.75
+    },
+    "passageParagraphGap": 12
+  },
+  "spacing": {
+    "pageX": 20,
+    "section": 24,
+    "cardPadding": 16,
+    "listGap": 12
+  },
+  "radius": {
+    "small": 6,
+    "medium": 10,
+    "large": 14,
+    "maximum": 14
+  },
+  "border": {
+    "width": 1,
+    "style": "solid"
+  },
+  "control": {
+    "primaryButtonHeightMin": 48,
+    "touchTargetMin": 44,
+    "iconStrokeWidth": 1.5
+  },
+  "motion": {
+    "pageFadeMs": 200,
+    "pageTranslateMaxPx": 8,
+    "progressLinearMs": 300,
+    "bounceAllowed": false,
+    "scaleEmphasisAllowed": false
+  },
+  "forbidden": [
+    "gradient",
+    "glassmorphism",
+    "box_shadow",
+    "decorative_illustration",
+    "background_image",
+    "pattern",
+    "emoji_icon",
+    "colored_tab_bar",
+    "large_colored_surface",
+    "radius_above_14",
+    "dark_mode"
+  ]
+}

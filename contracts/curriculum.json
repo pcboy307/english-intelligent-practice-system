@@ -1,0 +1,509 @@
+{
+  "schema_version": "1.0.0",
+  "status": "frozen_candidate",
+  "updated_at": "2026-11-07",
+  "textbook": {
+    "publisher": "人民教育出版社",
+    "edition": "2019",
+    "curriculum_region": "广东省",
+    "completed_books": [
+      "必修第一册",
+      "必修第二册",
+      "必修第三册",
+      "选择性必修第一册",
+      "选择性必修第二册"
+    ],
+    "unlearned_books": [
+      "选择性必修第三册",
+      "选择性必修第四册"
+    ],
+    "primary_progress_book": "选择性必修第二册"
+  },
+  "counting_clarification": {
+    "content_alignment_units": 25,
+    "unit_breakdown": {
+      "必修第一册": 5,
+      "必修第二册": 5,
+      "必修第三册": 5,
+      "选择性必修第一册": 5,
+      "选择性必修第二册": 5
+    },
+    "vocabulary_counting": "按去重后的规范化词头计，不按教材单元数计；ECDICT zk 标签义务教育基础表 1603 个词头，人教版必修1-3与选必1-2新增词头 1846 个，合并后单词头 2998 个；另保留 349 个多词短语，完整允许表 3347 项。",
+    "grammar_counting": "按 grammar_whitelist 中的语法项目 ID 计，不按 25 个单元数计；25 个单元仅用于教材出处、题材和组卷册次对齐。",
+    "topic_counting": "按 25 个正式教学单元的题材池计；Welcome Unit 不计入 25 个题材单元。"
+  },
+  "vocabulary": {
+    "whitelist_file": "contracts/vocabulary-whitelist.json",
+    "base_source_file": "contracts/vocabulary/ecdict-zk.json",
+    "source_layers": [
+      "ECDICT zk-tagged compulsory education vocabulary",
+      "PEP 2019 required books 1-3 and elective required books 1-2",
+      "closed-class function words"
+    ],
+    "counting": {
+      "base_compulsory_entries": 1603,
+      "high_school_unique_headwords": 1846,
+      "single_word_entries": 2998,
+      "phrase_entries": 349,
+      "unique_whitelist_entries": 3347
+    },
+    "normalization": {
+      "case": "lowercase",
+      "whitespace": "trim and collapse",
+      "headword_deduplication": "exact normalized headword",
+      "phrases": "retained as exact multiword entries and excluded from the 2998 single-headword count",
+      "inflections": "stored as base headwords; runtime matching resolves regular and irregular forms without adding them as new whitelist entries",
+      "derivatives": "accepted only when present in a source list or covered by an approved curriculum word-formation rule",
+      "proper_nouns": "ordinary curriculum lexical entries may remain; generated content still must not contain real people, schools, or exam identifiers"
+    },
+    "unknown_word_policy": "reject_or_replace",
+    "max_unknown_word_ratio": 0.03,
+    "max_non_whitelist_words_per_passage": 2,
+    "non_whitelist_words_require_gloss": true,
+    "non_whitelist_words_cannot_be_assessed": true,
+    "forbid_rare_sense_of_common_word": true
+  },
+  "grammar_whitelist": [
+    {
+      "id": "relative_clauses_defining",
+      "label": "限制性定语从句：关系代词、关系副词",
+      "sources": ["必修一", "必修二"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "relative_clauses_non_defining",
+      "label": "非限制性定语从句",
+      "sources": ["必修一", "必修二", "选择性必修一"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "passive_voice_tenses",
+      "label": "被动语态各基础时态，含现在进行与现在完成被动",
+      "sources": ["必修二", "必修三"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "past_participle_nonfinite",
+      "label": "过去分词作定语、状语、宾语补足语",
+      "sources": ["必修二", "必修三"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "v_ing_nonfinite",
+      "label": "动词-ing 作定语、状语、宾补、主语与表语",
+      "sources": ["必修三", "选择性必修一"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "noun_clauses",
+      "label": "名词性从句：宾语、表语、主语、同位语",
+      "sources": ["必修三", "选择性必修一", "选择性必修二"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "adverbial_clauses",
+      "label": "基础状语从句：时间、条件、让步、原因、结果、目的、比较",
+      "sources": ["必修一", "必修二", "必修三"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "subjunctive_basic_if",
+      "label": "基础 if 虚拟条件句的三种时态",
+      "sources": ["选择性必修一", "选择性必修二"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "subjunctive_basic_should",
+      "label": "建议、要求、命令类动词后的 should 型宾语从句",
+      "sources": ["选择性必修一", "选择性必修二"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "partial_inversion_basic",
+      "label": "基础部分倒装：否定词前置、only+状语、so/neither",
+      "sources": ["选择性必修二"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "cleft_basic",
+      "label": "基础强调句 it is/was ... that",
+      "sources": ["必修三", "选择性必修一"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "tense_system",
+      "label": "一般现在、一般过去、一般将来、现在完成、过去完成、现在进行、过去进行、将来进行",
+      "sources": ["必修一", "必修二", "必修三", "选择性必修一", "选择性必修二"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "subject_verb_agreement",
+      "label": "主谓一致",
+      "sources": ["必修一", "必修二", "必修三"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "articles",
+      "label": "冠词",
+      "sources": ["必修一", "必修二", "必修三"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "prepositions",
+      "label": "介词",
+      "sources": ["必修一", "必修二", "必修三"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "pronouns",
+      "label": "代词",
+      "sources": ["必修一", "必修二", "必修三"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "conjunctions",
+      "label": "连词",
+      "sources": ["必修一", "必修二", "必修三"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "word_formation",
+      "label": "常见前后缀与词性转换",
+      "sources": ["必修一", "必修二", "必修三", "选择性必修一", "选择性必修二"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "comparatives_superlatives",
+      "label": "比较级、最高级、as...as、the more...the more",
+      "sources": ["必修一", "必修二", "必修三"],
+      "allowed_in_question": true
+    },
+    {
+      "id": "with_compound",
+      "label": "基础 with 复合结构",
+      "sources": ["必修一", "必修二", "必修三", "选择性必修一"],
+      "allowed_in_question": true
+    }
+  ],
+  "grammar_forbidden_as_question": [
+    "mixed_subjunctive",
+    "time_shifted_subjunctive",
+    "implied_condition_subjunctive",
+    "inverted_subjunctive",
+    "absolute_construction",
+    "multi_clause_nesting_analysis",
+    "advanced_ellipsis_and_substitution",
+    "as_though_inverted_concession",
+    "complex_full_inversion",
+    "cleft_inversion_combination",
+    "rare_derivation_sense",
+    "book_3_4_exclusive_grammar"
+  ],
+  "units": [
+    {
+      "id": "B1U1",
+      "book": "必修第一册",
+      "book_group": "必修",
+      "unit": "Unit 1",
+      "topic": "青少年生活与成长",
+      "grammar_tags": ["pronouns", "articles", "subject_verb_agreement", "word_formation"]
+    },
+    {
+      "id": "B1U2",
+      "book": "必修第一册",
+      "book_group": "必修",
+      "unit": "Unit 2",
+      "topic": "旅行与计划",
+      "grammar_tags": ["tense_system", "adverbial_clauses", "prepositions"]
+    },
+    {
+      "id": "B1U3",
+      "book": "必修第一册",
+      "book_group": "必修",
+      "unit": "Unit 3",
+      "topic": "运动与健康",
+      "grammar_tags": ["comparatives_superlatives", "subject_verb_agreement", "conjunctions"]
+    },
+    {
+      "id": "B1U4",
+      "book": "必修第一册",
+      "book_group": "必修",
+      "unit": "Unit 4",
+      "topic": "自然灾害与应对",
+      "grammar_tags": ["relative_clauses_defining", "past_participle_nonfinite", "tense_system"]
+    },
+    {
+      "id": "B1U5",
+      "book": "必修第一册",
+      "book_group": "必修",
+      "unit": "Unit 5",
+      "topic": "世界语言与文字",
+      "grammar_tags": ["relative_clauses_defining", "relative_clauses_non_defining", "word_formation"]
+    },
+    {
+      "id": "B2U1",
+      "book": "必修第二册",
+      "book_group": "必修",
+      "unit": "Unit 1",
+      "topic": "文化遗产保护",
+      "grammar_tags": ["relative_clauses_non_defining", "passive_voice_tenses"]
+    },
+    {
+      "id": "B2U2",
+      "book": "必修第二册",
+      "book_group": "必修",
+      "unit": "Unit 2",
+      "topic": "野生动植物保护",
+      "grammar_tags": ["passive_voice_tenses", "tense_system", "subject_verb_agreement"]
+    },
+    {
+      "id": "B2U3",
+      "book": "必修第二册",
+      "book_group": "必修",
+      "unit": "Unit 3",
+      "topic": "互联网与科技生活",
+      "grammar_tags": ["passive_voice_tenses", "adverbial_clauses", "word_formation"]
+    },
+    {
+      "id": "B2U4",
+      "book": "必修第二册",
+      "book_group": "必修",
+      "unit": "Unit 4",
+      "topic": "历史与传统",
+      "grammar_tags": ["past_participle_nonfinite", "relative_clauses_defining", "articles"]
+    },
+    {
+      "id": "B2U5",
+      "book": "必修第二册",
+      "book_group": "必修",
+      "unit": "Unit 5",
+      "topic": "音乐与艺术",
+      "grammar_tags": ["past_participle_nonfinite", "v_ing_nonfinite", "with_compound"]
+    },
+    {
+      "id": "B3U1",
+      "book": "必修第三册",
+      "book_group": "必修",
+      "unit": "Unit 1",
+      "topic": "节日与庆典",
+      "grammar_tags": ["v_ing_nonfinite", "relative_clauses_defining", "pronouns"]
+    },
+    {
+      "id": "B3U2",
+      "book": "必修第三册",
+      "book_group": "必修",
+      "unit": "Unit 2",
+      "topic": "品德与美德",
+      "grammar_tags": ["v_ing_nonfinite", "adverbial_clauses", "conjunctions"]
+    },
+    {
+      "id": "B3U3",
+      "book": "必修第三册",
+      "book_group": "必修",
+      "unit": "Unit 3",
+      "topic": "多元文化",
+      "grammar_tags": ["noun_clauses", "adverbial_clauses", "tense_system"]
+    },
+    {
+      "id": "B3U4",
+      "book": "必修第三册",
+      "book_group": "必修",
+      "unit": "Unit 4",
+      "topic": "太空探索",
+      "grammar_tags": ["cleft_basic", "noun_clauses", "passive_voice_tenses"]
+    },
+    {
+      "id": "B3U5",
+      "book": "必修第三册",
+      "book_group": "必修",
+      "unit": "Unit 5",
+      "topic": "金钱与价值观",
+      "grammar_tags": ["noun_clauses", "subject_verb_agreement", "articles"]
+    },
+    {
+      "id": "S1U1",
+      "book": "选择性必修第一册",
+      "book_group": "选必一",
+      "unit": "Unit 1",
+      "topic": "杰出人物与成就",
+      "grammar_tags": ["relative_clauses_non_defining", "cleft_basic", "word_formation"]
+    },
+    {
+      "id": "S1U2",
+      "book": "选择性必修第一册",
+      "book_group": "选必一",
+      "unit": "Unit 2",
+      "topic": "未来科技与生活",
+      "grammar_tags": ["tense_system", "passive_voice_tenses", "adverbial_clauses"]
+    },
+    {
+      "id": "S1U3",
+      "book": "选择性必修第一册",
+      "book_group": "选必一",
+      "unit": "Unit 3",
+      "topic": "自然公园与旅游",
+      "grammar_tags": ["v_ing_nonfinite", "with_compound", "prepositions"]
+    },
+    {
+      "id": "S1U4",
+      "book": "选择性必修第一册",
+      "book_group": "选必一",
+      "unit": "Unit 4",
+      "topic": "肢体语言与非言语沟通",
+      "grammar_tags": ["v_ing_nonfinite", "adverbial_clauses", "pronouns"]
+    },
+    {
+      "id": "S1U5",
+      "book": "选择性必修第一册",
+      "book_group": "选必一",
+      "unit": "Unit 5",
+      "topic": "农业与土地",
+      "grammar_tags": ["noun_clauses", "subject_verb_agreement", "articles"]
+    },
+    {
+      "id": "S2U1",
+      "book": "选择性必修第二册",
+      "book_group": "选必二",
+      "unit": "Unit 1",
+      "topic": "科学与科学家",
+      "grammar_tags": ["noun_clauses", "tense_system", "word_formation"]
+    },
+    {
+      "id": "S2U2",
+      "book": "选择性必修第二册",
+      "book_group": "选必二",
+      "unit": "Unit 2",
+      "topic": "跨文化沟通",
+      "grammar_tags": ["noun_clauses", "adverbial_clauses", "conjunctions"]
+    },
+    {
+      "id": "S2U3",
+      "book": "选择性必修第二册",
+      "book_group": "选必二",
+      "unit": "Unit 3",
+      "topic": "饮食与文化",
+      "grammar_tags": ["tense_system", "passive_voice_tenses", "past_participle_nonfinite"]
+    },
+    {
+      "id": "S2U4",
+      "book": "选择性必修第二册",
+      "book_group": "选必二",
+      "unit": "Unit 4",
+      "topic": "长途旅行与地理",
+      "grammar_tags": ["partial_inversion_basic", "tense_system", "relative_clauses_non_defining"]
+    },
+    {
+      "id": "S2U5",
+      "book": "选择性必修第二册",
+      "book_group": "选必二",
+      "unit": "Unit 5",
+      "topic": "急救与安全",
+      "grammar_tags": ["subjunctive_basic_if", "subjunctive_basic_should", "adverbial_clauses"]
+    }
+  ],
+  "difficulty": {
+    "scale": [1, 2, 3, 4, 5],
+    "bank_default_distribution": {
+      "d1": 0.15,
+      "d2": 0.30,
+      "d3": 0.35,
+      "d4": 0.15,
+      "d5": 0.05
+    },
+    "bank_distribution_tolerance_pp": 5,
+    "paper_distribution": {
+      "easy_d1_d2": 0.40,
+      "medium_d3": 0.40,
+      "hard_d4_d5": 0.20
+    },
+    "paper_hard_adaptive_min": 0.15,
+    "paper_hard_adaptive_max": 0.25,
+    "max_d5_questions_per_paper": 3,
+    "d5_must_not_share_passage": true,
+    "upper_bound": "广东省高二统考/学业水平合格考；不得达到高考 C/D 篇难度"
+  },
+  "book_distribution": {
+    "question_point_distribution": {
+      "必修": 0.20,
+      "选必一": 0.30,
+      "选必二": 0.45,
+      "cross_book": 0.05
+    },
+    "reading_topic_min_elective_share": 0.50,
+    "max_passages_per_book_per_paper": 3
+  },
+  "question_type_distribution": {
+    "standard_2000": {
+      "cloze": {"questions": 600, "passages": 40},
+      "grammar_fill": {"questions": 400, "passages": 40},
+      "reading": {"questions": 700, "passages": 175},
+      "gap_fill": {"questions": 300, "passages": 60}
+    },
+    "demo_60": {
+      "cloze": {"questions": 30, "passages": 2},
+      "grammar_fill": {"questions": 20, "passages": 2},
+      "reading": {"questions": 20, "passages": 5},
+      "gap_fill": {"questions": 10, "passages": 2}
+    }
+  },
+  "passage_rules": {
+    "word_limits": {
+      "cloze": {"min": 170, "max": 220},
+      "grammar_fill": {"min": 120, "max": 180},
+      "reading": {"min": 1, "max": 250},
+      "gap_fill": {"min": 1, "max": 220}
+    },
+    "questions_per_passage": {
+      "cloze": 15,
+      "grammar_fill": 10,
+      "reading": {"min": 3, "max": 4, "default": 4},
+      "gap_fill": 5
+    },
+    "max_average_sentence_length": 20,
+    "max_nested_clause_sentences_per_passage": 2,
+    "max_cross_paragraph_inference_questions_per_reading": 1,
+    "max_cross_paragraph_gap_per_gap_fill": 1,
+    "unique_information_locus_per_question": true
+  },
+  "coverage": {
+    "reading_skill_distribution": {
+      "detail": 0.45,
+      "inference": 0.20,
+      "main_idea": 0.15,
+      "vocabulary_in_context": 0.10,
+      "attitude_intention": 0.10
+    },
+    "gap_fill_link_types": {
+      "pronoun_reference": 0.25,
+      "logical_connective": 0.25,
+      "lexical_repetition_or_synonym": 0.25,
+      "paragraph_structure": 0.25
+    },
+    "cloze_function_word_ratio_max": 0.20,
+    "min_topics_per_paper": 3
+  },
+  "quality_gates": {
+    "dedupe_within_bank": {
+      "passage_similarity_reject_gte": 0.90,
+      "stem_similarity_reject_gte": 0.85
+    },
+    "explanation_min_sentences": 3,
+    "grammar_min_categories_per_grammar_fill": 5,
+    "grammar_max_questions_per_category": 2,
+    "max_knowledge_point_repetition_per_paper": 3,
+    "generation_batch_max_passages": 10,
+    "forced_pause_after_first_batch": true,
+    "manual_review_before_pool": true
+  },
+  "m1_exemption": {
+    "seven_day_repeat_rate_requirement": "deferred_to_m3",
+    "reason": "Demo Bank 仅 60 题；M1 允许同题重复，不增加 M1 去重约束。",
+    "does_not_waive": [
+      "bank 内题目结构校验",
+      "组卷算法权重",
+      "错题机制",
+      "答案安全",
+      "服务端计时"
+    ]
+  }
+}

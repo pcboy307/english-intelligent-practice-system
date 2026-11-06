@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.english-practice/schemas/report.json",
+  "title": "Single practice report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "session_id",
+    "bank_id",
+    "bank_name",
+    "score",
+    "max_score",
+    "accuracy",
+    "duration_seconds",
+    "type_scores",
+    "knowledge_point_levels",
+    "weak_points",
+    "suggestions",
+    "question_results",
+    "error_tag_changes"
+  ],
+  "properties": {
+    "session_id": {"type": "string", "format": "uuid"},
+    "bank_id": {"type": "string", "format": "uuid"},
+    "bank_name": {"type": "string"},
+    "score": {"type": "number", "minimum": 0},
+    "max_score": {"type": "number", "exclusiveMinimum": 0},
+    "accuracy": {"type": "number", "minimum": 0, "maximum": 1},
+    "duration_seconds": {"type": "integer", "minimum": 0},
+    "type_scores": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["correct", "total", "accuracy"],
+        "properties": {
+          "correct": {"type": "integer", "minimum": 0},
+          "total": {"type": "integer", "minimum": 0},
+          "accuracy": {"type": "number", "minimum": 0, "maximum": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "knowledge_point_levels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["knowledge_point", "level", "mastery", "attempts"],
+        "properties": {
+          "knowledge_point": {"type": "string"},
+          "level": {"type": "string", "enum": ["mastered", "consolidating", "weak"]},
+          "mastery": {"type": "number", "minimum": 0, "maximum": 1},
+          "attempts": {"type": "integer", "minimum": 0}
+        },
+        "additionalProperties": false
+      }
+    },
+    "weak_points": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["knowledge_point", "error_stage"],
+        "properties": {
+          "knowledge_point": {"type": "string"},
+          "error_stage": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "suggestions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["knowledge_point", "action"],
+        "properties": {
+          "knowledge_point": {"type": "string"},
+          "action": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "question_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "question_id",
+          "correct",
+          "user_answer",
+          "correct_answer",
+          "explanation",
+          "knowledge_points",
+          "grammar_tags",
+          "book_source",
+          "difficulty"
+        ],
+        "properties": {
+          "question_id": {"type": "string"},
+          "correct": {"type": "boolean"},
+          "user_answer": {"oneOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
+          "correct_answer": {"oneOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
+          "explanation": {"type": "string"},
+          "knowledge_points": {"type": "array", "items": {"type": "string"}},
+          "grammar_tags": {"type": "array", "items": {"type": "string"}},
+          "book_source": {"type": "string"},
+          "difficulty": {"type": "integer", "minimum": 1, "maximum": 5}
+        },
+        "additionalProperties": false
+      }
+    },
+    "error_tag_changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["question_id", "from_status", "to_status", "streak"],
+        "properties": {
+          "question_id": {"type": "string"},
+          "from_status": {"type": "string", "enum": ["none", "active", "mastered"]},
+          "to_status": {"type": "string", "enum": ["active", "mastered"]},
+          "streak": {"type": "integer", "minimum": 0, "maximum": 2}
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

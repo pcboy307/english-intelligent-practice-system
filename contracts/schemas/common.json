@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.english-practice/schemas/common.json",
+  "title": "Common definitions",
+  "$defs": {
+    "uuid": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "bookGroup": {
+      "type": "string",
+      "enum": ["必修", "选必一", "选必二", "cross_book"]
+    },
+    "questionType": {
+      "type": "string",
+      "enum": ["cloze", "grammar_fill", "reading", "gap_fill"]
+    },
+    "answerValue": {
+      "oneOf": [
+        {"type": "string", "minLength": 1},
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      ]
+    }
+  }
+}
