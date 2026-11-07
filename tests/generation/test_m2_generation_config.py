@@ -35,7 +35,8 @@ def test_deepseek_contract_uses_environment_key_and_safe_budget_defaults() -> No
     assert contract["base_url"] == "https://api.deepseek.com/v1"
     assert contract["api_key_env"] == "DEEPSEEK_API_KEY"
     assert "api_key" not in contract
-    assert contract["max_tokens"] >= 4096
+    assert contract["max_tokens"] == 8192
+    assert contract["thinking"] == {"type": "disabled"}
     assert contract["temperature"] == 0.5
     assert contract["prompt_version"] == "m2-gen-v1"
     assert contract["budget_cap_cny"] == {"pilot": 10, "bulk": 100}

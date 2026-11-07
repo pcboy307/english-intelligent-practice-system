@@ -81,6 +81,7 @@ def test_client_uses_environment_key_json_mode_and_records_finish_reason(
     assert response.finish_reason == "stop"
     assert response.prompt_tokens == 100
     assert response.completion_tokens == 50
+    assert client.requests[-1].raw_content == '{"ok": true}'
     assert captured["headers"]["authorization"] == "Bearer test-secret"
     assert captured["payload"]["model"] == "listed-model-id"
     assert captured["payload"]["max_tokens"] == 4096
@@ -132,11 +133,12 @@ def test_client_rejects_finish_reason_length_before_schema_validation(
         http_client=httpx.Client(transport=httpx.MockTransport(handler)),
     )
 
-    with pytest.raises(FinishReasonError):
+    with pytest.raises(FinishReasonError) as raised:
         client.chat_json("passage", "Generate JSON.")
 
     assert calls == 1
     assert client.requests[-1].status == "finish_reason_length"
+    assert raised.value.raw_content == '{"partial":'
 
 
 def test_client_retries_transport_errors_with_exponential_backoff(

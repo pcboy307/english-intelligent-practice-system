@@ -19,10 +19,10 @@
     "passages": 3,
     "accepted_passages": 0,
     "questions": 0,
-    "prompt_tokens": 3153,
-    "completion_tokens": 20245,
-    "total_tokens": 23398,
-    "cost_cny": 0.168266
+    "prompt_tokens": 6726,
+    "completion_tokens": 6189,
+    "total_tokens": 12915,
+    "cost_cny": 0.062964
   },
   "per_question": null,
   "per_passage": [
@@ -30,17 +30,17 @@
       "type": "cloze",
       "passages": 1,
       "questions": 15,
-      "prompt_tokens": 3153,
-      "completion_tokens": 20245,
-      "total_tokens": 23398,
-      "cost_cny": 0.168266,
-      "elapsed_seconds": 127.363162,
+      "prompt_tokens": 6726,
+      "completion_tokens": 6189,
+      "total_tokens": 12915,
+      "cost_cny": 0.062964,
+      "elapsed_seconds": 34.929677,
       "retry_count": 4,
       "per_question": {
-        "prompt_tokens": 210.2,
-        "completion_tokens": 1349.666667,
-        "total_tokens": 1559.866667,
-        "cost_cny": 0.011217733
+        "prompt_tokens": 448.4,
+        "completion_tokens": 412.6,
+        "total_tokens": 861.0,
+        "cost_cny": 0.0041976
       }
     },
     {
@@ -79,6 +79,6 @@
     }
   ],
   "extrapolations": null,
-  "generated_at": "2026-11-07T12:40:01.148993+00:00",
+  "generated_at": "2026-11-07T12:46:30.486447+00:00",
   "readability": []
 }

@@ -1,0 +1,107 @@
+{
+  "started_at": "2026-11-07T12:45:45.174999+00:00",
+  "model_id": "deepseek-flash",
+  "thinking": {
+    "type": "disabled"
+  },
+  "max_tokens": 8192,
+  "passage_source": "选必二 U1",
+  "batch_size": 5,
+  "status": "passed",
+  "finish_reason": "stop",
+  "input_tokens": 633,
+  "output_tokens": 373,
+  "cost_cny": 0.00425,
+  "questions": [
+    {
+      "stem": "At first there were only twenty (1) ______, but demand grew quickly.",
+      "options": [
+        "bikes",
+        "bike",
+        "biking",
+        "biked"
+      ],
+      "answer": "bikes",
+      "knowledge_points": [
+        "plural nouns after numbers"
+      ],
+      "grammar_tags": [
+        "tense_system"
+      ],
+      "book_source": "选必二 U1",
+      "difficulty": 1
+    },
+    {
+      "stem": "Volunteers check every bike (2) ______ so that lights work well.",
+      "options": [
+        "regularly",
+        "regular",
+        "regularity",
+        "regularize"
+      ],
+      "answer": "regularly",
+      "knowledge_points": [
+        "adverbs modifying verbs"
+      ],
+      "grammar_tags": [
+        "noun_clauses"
+      ],
+      "book_source": "选必二 U2",
+      "difficulty": 1
+    },
+    {
+      "stem": "(3) ______ a bike is damaged, it is moved to a repair area.",
+      "options": [
+        "If",
+        "Unless",
+        "Although",
+        "Because of"
+      ],
+      "answer": "If",
+      "knowledge_points": [
+        "conditional conjunctions"
+      ],
+      "grammar_tags": [
+        "word_formation"
+      ],
+      "book_source": "选必二 U3",
+      "difficulty": 2
+    },
+    {
+      "stem": "People must lock it after each trip and avoid (4) ______ on narrow streets.",
+      "options": [
+        "riding",
+        "to ride",
+        "ride",
+        "rode"
+      ],
+      "answer": "riding",
+      "knowledge_points": [
+        "gerund after avoid"
+      ],
+      "grammar_tags": [
+        "passive_voice_tenses"
+      ],
+      "book_source": "选必二 U4",
+      "difficulty": 2
+    },
+    {
+      "stem": "The service has (5) ______ become part of daily life for many workers.",
+      "options": [
+        "quickly",
+        "quick",
+        "quickness",
+        "quicken"
+      ],
+      "answer": "quickly",
+      "knowledge_points": [
+        "adverbs with present perfect"
+      ],
+      "grammar_tags": [
+        "partial_inversion_basic"
+      ],
+      "book_source": "选必二 U5",
+      "difficulty": 3
+    }
+  ]
+}

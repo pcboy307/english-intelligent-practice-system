@@ -36,7 +36,16 @@ class DeepSeekAPIError(DeepSeekGenerationError):
 
 
 class FinishReasonError(DeepSeekGenerationError):
-    pass
+    def __init__(
+        self,
+        message: str,
+        *,
+        raw_content: str = "",
+        raw_response: dict[str, Any] | None = None,
+    ) -> None:
+        super().__init__(message)
+        self.raw_content = raw_content
+        self.raw_response = raw_response
 
 
 class ResponseJSONError(DeepSeekGenerationError):
@@ -68,9 +77,10 @@ class RequestRecord:
     finish_reason: str | None = None
     request_id: str | None = None
     error: str | None = None
+    raw_content: str | None = None
 
     def as_dict(self) -> dict[str, Any]:
-        return {
+        result = {
             "purpose": self.purpose,
             "attempt": self.attempt,
             "status": self.status,
@@ -82,6 +92,9 @@ class RequestRecord:
             "request_id": self.request_id,
             "error": self.error,
         }
+        if self.raw_content is not None:
+            result["raw_content"] = self.raw_content
+        return result
 
 
 @dataclass
@@ -310,6 +323,7 @@ class DeepSeekClient:
             payload_json = response.json()
             choice = payload_json["choices"][0]
             finish_reason = str(choice.get("finish_reason") or "unknown")
+            content = choice["message"].get("content") or ""
             usage = payload_json.get("usage") or {}
             prompt_tokens = int(usage.get("prompt_tokens", 0))
             completion_tokens = int(usage.get("completion_tokens", 0))
@@ -328,10 +342,14 @@ class DeepSeekClient:
                 request_id=request_id,
             )
             self.requests.append(record)
+            record.raw_content = content
             if finish_reason == "length":
                 record.status = "finish_reason_length"
-                raise FinishReasonError("DEEPSEEK_OUTPUT_TRUNCATED_BY_LENGTH")
-            content = choice["message"].get("content") or ""
+                raise FinishReasonError(
+                    "DEEPSEEK_OUTPUT_TRUNCATED_BY_LENGTH",
+                    raw_content=content,
+                    raw_response=payload_json,
+                )
             try:
                 data = parse_json_content(content)
             except (json.JSONDecodeError, ValueError) as error:

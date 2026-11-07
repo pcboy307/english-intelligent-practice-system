@@ -14,11 +14,11 @@
   ],
   "ping": {
     "model_id": "deepseek-flash",
-    "request_id": "c54a3f4f-bd99-44f5-90cf-b475f319fb51",
+    "request_id": "21aedb67-b8fb-4763-bd10-63748355fbf1",
     "finish_reason": "length",
     "prompt_tokens": 31,
     "completion_tokens": 1,
-    "elapsed_seconds": 0.7757521999301389
+    "elapsed_seconds": 0.3837060999358073
   },
   "api_key_source": "DEEPSEEK_API_KEY"
 }

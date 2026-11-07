@@ -1,15 +1,36 @@
 {
-  "decision": "stopped_before_retry",
-  "reason": "finish_reason_length request failure rate exceeded the owner threshold",
+  "decision": "stopped_before_another_retry",
+  "reason": "request-level validation failure rate exceeded the owner threshold",
   "provider": "deepseek",
   "model_id": "deepseek-flash",
-  "request_count_excluding_ping": 5,
-  "failed_requests": 4,
-  "failure_rate": 0.8,
-  "configured_stop_threshold": 0.3,
-  "observed_cost_cny": 0.168266,
+  "latest_run": {
+    "request_count_excluding_ping": 8,
+    "failed_requests": 4,
+    "failure_rate": 0.5,
+    "configured_stop_threshold": 0.3,
+    "failure_category": "validation_error",
+    "failure_detail": "EXPLANATION_NOT_OBJECT",
+    "finish_reason_distribution": {
+      "stop": 8
+    },
+    "observed_cost_cny": 0.062964
+  },
+  "prior_run": {
+    "request_count_excluding_ping": 5,
+    "failed_requests": 4,
+    "failure_rate": 0.8,
+    "failure_category": "finish_reason_length",
+    "observed_cost_cny": 0.168266,
+    "root_cause": "DeepSeek thinking mode remained enabled, consuming the 4096 completion-token budget before the question JSON completed.",
+    "fix": "Set thinking.type=disabled and raise max_tokens to 8192."
+  },
+  "smoke_after_fix": {
+    "finish_reason": "stop",
+    "input_tokens": 633,
+    "output_tokens": 373,
+    "cost_cny": 0.00425,
+    "passed": true
+  },
   "bank2_questions_written": 0,
-  "root_cause": "DeepSeek thinking mode remained enabled, consuming the 4096 completion-token budget before the question JSON completed.",
-  "fix_applied_but_not_rerun": "Set thinking.type=disabled for JSON generation requests.",
-  "requires_user_approval_to_rerun": true
+  "requires_user_approval_to_retry": true
 }

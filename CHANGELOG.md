@@ -106,6 +106,15 @@
 - 本轮观测成本人民币 0.168266 元；Bank #2 仍为 0 题，两个 generation job 均为 failed。
 - 证据：`qa/evidence/m2b/`。
 
+## 2026-11-07 - M2.0b 关闭 thinking 后重跑
+
+- PostgreSQL 前置校验通过：端口 15432、库名 `english_practice`、会话 411，高于历史基线 42。
+- `max_tokens` 由 4096 提高到 8192，并显式设置 DeepSeek `thinking.type=disabled`。
+- 单请求 5 题烟测通过：`finish_reason=stop`，输入 633 tokens、输出 373 tokens、成本 0.00425 元。
+- 完整试点在完型解析批次失败：4/8 个生成请求返回非对象 explanation，请求级失败率 50%，再次触发 30% 停止线。
+- 本轮 8 个请求 `finish_reason` 全部为 `stop`，不存在截断；失败类别为 `validation_error / EXPLANATION_NOT_OBJECT`。
+- 本轮观测成本 0.062964 元；未写入 Bank #2，未执行浏览器验收或 v4-pro 对照。
+
 ## 2026-11-07 - Demo Bank 规模笔误修正
 
 - 笔误修正：Demo Bank 由文档中的“60 题/11 篇”统一改为“80 题/11 篇”。
