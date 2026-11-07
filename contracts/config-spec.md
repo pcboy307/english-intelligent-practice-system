@@ -43,7 +43,7 @@
 - `book_distribution.question_point_distribution`：考点册次 `0.20/0.30/0.45/0.05`。
 - `book_distribution.reading_topic_min_elective_share`：阅读与七选五选必一+选必二话题下限 `0.50`。
 - `question_type_distribution.standard_2000`：生产 Bank 规模。
-- `question_type_distribution.demo_60`：M1 Demo Bank 规模。
+- `question_type_distribution.demo_80`：M1 Demo Bank 规模，共 80 题 / 11 篇。
 - `passage_rules.word_limits`：各题型词数边界。
 - `grammar_fill` 仅为题型 ID：语篇使用 ①–⑩ 空位，小题为 A/B/C/D 四选一；干扰项必须同语法范畴，`grammar_tags` 和每 ID ≥12 题覆盖要求不变。
 - `quality_gates.generation_batch_max_passages`：单批上限 `10`。

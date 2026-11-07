@@ -472,7 +472,7 @@
       "reading": {"questions": 700, "passages": 175},
       "gap_fill": {"questions": 300, "passages": 60}
     },
-    "demo_60": {
+    "demo_80": {
       "cloze": {"questions": 30, "passages": 2},
       "grammar_fill": {"questions": 20, "passages": 2},
       "reading": {"questions": 20, "passages": 5},
@@ -531,7 +531,7 @@
   },
   "m1_exemption": {
     "seven_day_repeat_rate_requirement": "deferred_to_m3",
-    "reason": "Demo Bank 仅 60 题；M1 允许同题重复，不增加 M1 去重约束。",
+    "reason": "Demo Bank 为 80 题；M1 仍允许同题重复，不增加 7 天去重约束。",
     "does_not_waive": [
       "bank 内题目结构校验",
       "组卷算法权重",
