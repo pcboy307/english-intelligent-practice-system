@@ -88,6 +88,14 @@
 - 语义绿填充仅限正确答案，不允许扩大到错误答案或大面积界面。
 - 原始记录：`qa/evidence/correct-answer-review.png`。
 
+## 2026-11-07 - M2.0 生成管线试点
+
+- 新建 `M2 Bank #2`，目标 300 题；试点失败后保持 `generating`，题量为 0，禁止继续追加或放量。
+- 使用本机 `qwen3.5:4b-q4_K_M` 真实生成完型试点，最大重试 3 次，总 token 预算 120000。
+- 4 次尝试全部未通过闸门，试点失败率 100%；可观测 token 为 4124，3 次运行未返回可用 JSON/usage。
+- 失败分类：structure 32、grammar_tag 2、book_tag 1、question_count 1、vocabulary_scope 1。
+- 证据：`qa/evidence/m2/generation-cost-report.json`、`qa/evidence/m2/gate-failures.json`、`qa/evidence/m2/bank2-counts.txt`。
+
 ## 2026-11-07 - Demo Bank 规模笔误修正
 
 - 笔误修正：Demo Bank 由文档中的“60 题/11 篇”统一改为“80 题/11 篇”。

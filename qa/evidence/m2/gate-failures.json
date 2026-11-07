@@ -1,0 +1,350 @@
+{
+  "generated_at": "2026-11-07T11:32:44.242359+00:00",
+  "failure_counts": {
+    "book_tag": 1,
+    "grammar_tag": 2,
+    "question_count": 1,
+    "structure": 32,
+    "vocabulary_scope": 1
+  },
+  "attempts": [
+    {
+      "passage_type": "cloze",
+      "attempt": 1,
+      "accepted": false,
+      "failures": [
+        {
+          "category": "structure",
+          "message": "Generated passage is missing required fields.",
+          "question_index": null,
+          "details": {
+            "missing": [
+              "book_source",
+              "difficulty",
+              "passage",
+              "passage_group_id",
+              "questions",
+              "topic"
+            ]
+          }
+        }
+      ],
+      "metrics": {},
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "elapsed_seconds": 900.0166123999516
+    },
+    {
+      "passage_type": "cloze",
+      "attempt": 2,
+      "accepted": false,
+      "failures": [
+        {
+          "category": "question_count",
+          "message": "Question count does not match the type-specific structure.",
+          "question_index": null,
+          "details": {
+            "actual": 14,
+            "expected": 15
+          }
+        },
+        {
+          "category": "structure",
+          "message": "cloze blank (3) is missing",
+          "question_index": null,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "cloze blank (4) is missing",
+          "question_index": null,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "cloze blank (5) is missing",
+          "question_index": null,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "cloze blank (6) is missing",
+          "question_index": null,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "cloze blank (7) is missing",
+          "question_index": null,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "cloze blank (8) is missing",
+          "question_index": null,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "cloze blank (9) is missing",
+          "question_index": null,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "cloze blank (10) is missing",
+          "question_index": null,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "cloze blank (11) is missing",
+          "question_index": null,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "cloze blank (12) is missing",
+          "question_index": null,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "cloze blank (13) is missing",
+          "question_index": null,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "cloze blank (14) is missing",
+          "question_index": null,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "cloze blank (15) is missing",
+          "question_index": null,
+          "details": {}
+        },
+        {
+          "category": "vocabulary_scope",
+          "message": "Passage contains words outside the 3413-entry whitelist.",
+          "question_index": null,
+          "details": {
+            "unknown_words": [
+              "media",
+              "children's",
+              "communication"
+            ]
+          }
+        },
+        {
+          "category": "structure",
+          "message": "Explanation must contain at least three sentences.",
+          "question_index": 1,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "Explanation must contain at least three sentences.",
+          "question_index": 2,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "Explanation must contain at least three sentences.",
+          "question_index": 3,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "Explanation must contain at least three sentences.",
+          "question_index": 4,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "Explanation must contain at least three sentences.",
+          "question_index": 5,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "Explanation must contain at least three sentences.",
+          "question_index": 6,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "Explanation must contain at least three sentences.",
+          "question_index": 7,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "Explanation must contain at least three sentences.",
+          "question_index": 8,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "Explanation must contain at least three sentences.",
+          "question_index": 9,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "Explanation must contain at least three sentences.",
+          "question_index": 10,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "Question options may not contain empty values.",
+          "question_index": 12,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "Question answer must be non-empty.",
+          "question_index": 12,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "Explanation must contain at least three sentences.",
+          "question_index": 12,
+          "details": {}
+        },
+        {
+          "category": "structure",
+          "message": "Explanation must contain at least three sentences.",
+          "question_index": 13,
+          "details": {}
+        },
+        {
+          "category": "grammar_tag",
+          "message": "Question grammar tags differ from the pilot schedule.",
+          "question_index": 13,
+          "details": {
+            "expected": [
+              "prepositions"
+            ],
+            "actual": [
+              "comparatives_superlatives"
+            ]
+          }
+        },
+        {
+          "category": "structure",
+          "message": "Explanation must contain at least three sentences.",
+          "question_index": 14,
+          "details": {}
+        },
+        {
+          "category": "book_tag",
+          "message": "Question book source differs from the pilot schedule.",
+          "question_index": 14,
+          "details": {
+            "expected": "必修三 U2",
+            "actual": "跨册综合"
+          }
+        },
+        {
+          "category": "structure",
+          "message": "Question difficulty differs from the pilot schedule.",
+          "question_index": 14,
+          "details": {
+            "expected": 3,
+            "actual": 4
+          }
+        },
+        {
+          "category": "grammar_tag",
+          "message": "Question grammar tags differ from the pilot schedule.",
+          "question_index": 14,
+          "details": {
+            "expected": [
+              "comparatives_superlatives"
+            ],
+            "actual": [
+              "tense_system"
+            ]
+          }
+        }
+      ],
+      "metrics": {
+        "type": "cloze",
+        "word_count": 182,
+        "question_count": 14,
+        "unknown_words": [
+          "media",
+          "children's",
+          "communication"
+        ],
+        "unknown_ratio": 0.016484,
+        "glossed_terms": [],
+        "single_word_denominator": 182
+      },
+      "prompt_tokens": 1691,
+      "completion_tokens": 2433,
+      "total_tokens": 4124,
+      "elapsed_seconds": 566.7330356000457
+    },
+    {
+      "passage_type": "cloze",
+      "attempt": 3,
+      "accepted": false,
+      "failures": [
+        {
+          "category": "structure",
+          "message": "Generated passage is missing required fields.",
+          "question_index": null,
+          "details": {
+            "missing": [
+              "book_source",
+              "difficulty",
+              "passage",
+              "passage_group_id",
+              "questions",
+              "topic"
+            ]
+          }
+        }
+      ],
+      "metrics": {},
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "elapsed_seconds": 2366.8640474999556
+    },
+    {
+      "passage_type": "cloze",
+      "attempt": 4,
+      "accepted": false,
+      "failures": [
+        {
+          "category": "structure",
+          "message": "Generated passage is missing required fields.",
+          "question_index": null,
+          "details": {
+            "missing": [
+              "book_source",
+              "difficulty",
+              "passage",
+              "passage_group_id",
+              "questions",
+              "topic"
+            ]
+          }
+        }
+      ],
+      "metrics": {},
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "elapsed_seconds": 3266.88298330002
+    }
+  ]
+}

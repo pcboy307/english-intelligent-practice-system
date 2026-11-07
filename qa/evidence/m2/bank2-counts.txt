@@ -1,0 +1,6 @@
+bank_id=6fab59cd-c1fa-4a7a-8532-41bde57d18f2
+question_count=0
+passage_count=0
+question_type_counts={}
+passage_type_counts={}
+pilot_status=failed

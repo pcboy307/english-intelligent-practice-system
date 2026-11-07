@@ -1,0 +1,41 @@
+{
+  "passages": [],
+  "totals": {
+    "attempts": 4,
+    "accepted_passages": 0,
+    "questions": 0,
+    "prompt_tokens": 1691,
+    "completion_tokens": 2433,
+    "total_tokens": 4124,
+    "elapsed_seconds": 3267,
+    "failed_retries": 3
+  },
+  "failure_rate": 1.0,
+  "per_question": null,
+  "extrapolations": null,
+  "extrapolation_status": "not_computable_without_an_accepted_pilot_passage",
+  "token_accounting_note": "Only usage returned by HTTP completions is observable. Three attempts returned no usable JSON and no usage payload; they are recorded as structure failures.",
+  "status": "failed",
+  "model": {
+    "provider": "llama.cpp-openai-compatible",
+    "endpoint": "http://127.0.0.1:11435/v1/chat/completions",
+    "model": "qwen-local",
+    "identifier": "qwen3.5:4b-q4_K_M",
+    "temperature": 0.2,
+    "timeout_seconds": 900,
+    "max_retries": 3,
+    "max_tokens": {
+      "cloze": 6500,
+      "grammar_fill": 5500,
+      "reading": 3500,
+      "gap_fill": 4000
+    }
+  },
+  "budget": {
+    "pilot_total_token_cap": 120000,
+    "single_batch_token_cap": 120000,
+    "estimated_usd_per_million_tokens": 0.0
+  },
+  "generated_at": "2026-11-07T11:32:44.234349+00:00",
+  "summary": "M2.0 stopped after the fourth failed cloze attempt. No passage or question was written to Bank #2."
+}
