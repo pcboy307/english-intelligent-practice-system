@@ -387,26 +387,16 @@
       "groups": [
         "DEMO-CLOZE-01",
         "DEMO-GRAMMAR-01",
-        "DEMO-READING-03"
+        "DEMO-READING-04"
       ],
       "reasons": [
-        "TOPIC_COUNT_BELOW_3"
+        "GRAMMAR_TAG_REPEAT_EXCEEDS_3"
       ]
     },
     {
       "groups": [
         "DEMO-CLOZE-01",
         "DEMO-GRAMMAR-01",
-        "DEMO-READING-04"
-      ],
-      "reasons": [
-        "GRAMMAR_TAG_REPEAT_EXCEEDS_3"
-      ]
-    },
-    {
-      "groups": [
-        "DEMO-CLOZE-01",
-        "DEMO-GRAMMAR-02",
         "DEMO-READING-03"
       ],
       "reasons": [
@@ -421,6 +411,16 @@
       ],
       "reasons": [
         "GRAMMAR_TAG_REPEAT_EXCEEDS_3"
+      ]
+    },
+    {
+      "groups": [
+        "DEMO-CLOZE-01",
+        "DEMO-GRAMMAR-02",
+        "DEMO-READING-03"
+      ],
+      "reasons": [
+        "TOPIC_COUNT_BELOW_3"
       ]
     },
     {

@@ -58,6 +58,8 @@
 - `paper_constraints.book_distribution_rounding`：按卷内实际题数使用最大余数法从百分比生成整数配额，不写死某一题数的整数组合。差额依次补给小数部分最大的册次；并列时顺序为 `选必二`、`选必一`、`必修`、`cross_book`。
 - 最大余数法自检值：29 题 `13/9/6/1`，30 题 `14/9/6/1`，42 题 `19/13/8/2`。册次配额覆盖卷内全部题目，包括阅读场与七选五场。
 - `paper_constraints.paper_question_counts`：阅读场 29 题，七选五场 30 题；报告与历史记录必须使用实际题数作分母。
+- `paper_constraints.same_passage_exclusivity_scope=concurrent_in_progress_sessions_only`：同一语篇不得同时进入两套未完成会话；已交卷会话允许复用。
+- `paper_constraints.allow_same_passage_reuse_after_submission=true`：11 篇小于 4 套 × 3 篇，历史复用不可避免。
 - `bank_scope.source`：必须为 `session.bank_id`；`allow_cross_bank_sampling=false`。
 - `paper_constraints.allow_same_question_repeat_in_m1=true`：仅 M1 豁免。
 - `paper_constraints.seven_day_repeat_rate_max=0.10`：M3 生效。
@@ -71,6 +73,7 @@
 - `trend.window=5`、`rising_above=0.05`、`falling_below=-0.05`。
 - `stage_report.require_cross_bank_notice=true`。
 - `weakness_analysis`：本地模型端点、模型名、100 字上限、最多 4 个典型错题样本与超时。
+- 当前模型记录为 `qwen3.5:4b-q4_K_M`，别名 `qwen-local`，经本机 `llama.cpp` OpenAI 兼容接口部署。
 - 薄弱点分析输入必须包含题目、用户答案、正确答案和知识点；输出超过 100 字时按完整句截断。
 
 ### `config/validation.json`

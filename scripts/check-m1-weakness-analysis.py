@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import sys
@@ -15,10 +16,8 @@ if str(ROOT) not in sys.path:
 
 from fastapi.testclient import TestClient
 
+from backend.app import analysis as analysis_module
 from backend.app.main import app, store
-
-
-OUTPUT = ROOT / "qa" / "evidence" / "m1" / "weakness-analysis.json"
 
 
 def wrong_answer(question) -> str:
@@ -31,6 +30,25 @@ def wrong_answer(question) -> str:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--force-fallback", action="store_true")
+    args = parser.parse_args()
+    forced_endpoint = None
+    output = ROOT / "qa" / "evidence" / "m1" / "weakness-analysis.json"
+    if args.force_fallback:
+        forced_endpoint = "http://127.0.0.1:9/v1/chat/completions"
+        analysis_module.REPORTING_CONFIG["weakness_analysis"]["endpoint"] = (
+            forced_endpoint
+        )
+        analysis_module.REPORTING_CONFIG["weakness_analysis"]["timeout_seconds"] = 2
+        output = (
+            ROOT
+            / "qa"
+            / "evidence"
+            / "m1"
+            / "weakness-analysis-fallback.json"
+        )
+
     client = TestClient(app, client=("127.0.0.1", 43000))
     headers = {"X-Student-Id": str(uuid.uuid4())}
     started = client.post(
@@ -78,7 +96,16 @@ def main() -> None:
         )
     report = submitted.json()
     analysis = report["weakness_analysis"]
+    expected_source = "fallback" if args.force_fallback else "llm"
+    model_config = analysis_module.REPORTING_CONFIG["weakness_analysis"]
     result = {
+        "mode": "forced_network_failure" if args.force_fallback else "live_llm",
+        "forced_endpoint": forced_endpoint,
+        "model_alias": model_config["model"],
+        "model_identifier": model_config["model_identifier"],
+        "deployment": model_config["deployment"],
+        "server_version": model_config["server_version"],
+        "configured_endpoint": model_config["endpoint"],
         "session_id": session["session_id"],
         "question_count": report["question_count"],
         "report_title": report["report_title"],
@@ -88,17 +115,27 @@ def main() -> None:
         "analysis_length": len(analysis),
         "contains_chinese": bool(re.search(r"[\u4e00-\u9fff]", analysis)),
         "at_most_100_chars": len(analysis) <= 100,
+        "has_explicit_action": (
+            "先回看错题依据" in analysis
+            if args.force_fallback
+            else "建议：" in analysis
+        ),
         "question_results_have_stem_and_options": all(
             item["stem"] and item["options"] for item in report["question_results"]
         ),
         "passes": (
-            report["weakness_analysis_source"] == "llm"
+            report["weakness_analysis_source"] == expected_source
             and bool(re.search(r"[\u4e00-\u9fff]", analysis))
             and len(analysis) <= 100
+            and (
+                "先回看错题依据" in analysis
+                if args.force_fallback
+                else "建议：" in analysis
+            )
         ),
     }
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text(
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(
         json.dumps(result, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )

@@ -40,6 +40,16 @@ def _fallback(weak_points: list[dict], maximum: int) -> str:
     )
 
 
+def _ensure_explicit_action(text: str, maximum: int) -> str:
+    if "建议：" in text:
+        return _limit(text, maximum)
+    action = "建议：今天重做一组同类题并复述错因。"
+    if len(action) >= maximum:
+        return _limit(action, maximum)
+    prefix = _limit(text, maximum - len(action))
+    return prefix + action
+
+
 def generate_weakness_analysis(
     question_results: list[dict],
     weak_points: list[dict],
@@ -93,7 +103,7 @@ def generate_weakness_analysis(
                 "content": (
                     "你是一位温和、专业的高中英语老师。只输出一段70至90个汉字的中文分析，"
                     "不要标题、列表、分数复述或空泛鼓励。必须点出两个最需巩固的知识点，"
-                    "说明典型错因，并给出今天就能执行的具体练习动作。"
+                    "说明典型错因，并以“建议：”开头给出今天就能执行的具体练习动作。"
                     "若未答题数超过10，应优先指出限时完成和选择策略问题，"
                     "不要把未作答误判为知识遗忘。"
                 ),
@@ -118,12 +128,7 @@ def generate_weakness_analysis(
         text = _limit(content, maximum)
         if not re.search(r"[\u4e00-\u9fff]", text):
             raise ValueError("LLM_ANALYSIS_EMPTY")
-        if not re.search(r"建议|先|请|练习|重做|复述", text):
-            text = _limit(
-                text
-                + "建议今天先限时完成一组同类题，再逐题标注判断依据并复述错因。",
-                maximum,
-            )
+        text = _ensure_explicit_action(text, maximum)
         return {"text": text, "source": "llm"}
     except (httpx.HTTPError, KeyError, TypeError, ValueError):
         return {"text": fallback, "source": "fallback"}

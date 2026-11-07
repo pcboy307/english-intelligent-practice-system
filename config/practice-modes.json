@@ -80,7 +80,8 @@
       }
     },
     "paper_question_counts": {"reading": 29, "gap_fill": 30},
-    "do_not_split_same_passage_across_sessions": true,
+    "same_passage_exclusivity_scope": "concurrent_in_progress_sessions_only",
+    "allow_same_passage_reuse_after_submission": true,
     "allow_same_question_repeat_in_m1": true,
     "seven_day_repeat_rate_max": 0.10,
     "seven_day_repeat_rate_effective_milestone": "M3"

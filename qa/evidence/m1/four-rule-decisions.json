@@ -2,32 +2,32 @@
   "papers": [
     {
       "paper_number": 1,
-      "session_id": "a2f88280-5c92-4556-8f14-36dffc891252",
-      "report_title": "2026-11-07-16-53-29题-100.00分",
+      "session_id": "ea414a1e-a9ba-48ff-9685-12d90ad15c47",
+      "report_title": "2026-11-07-17-17-29题-100.00分",
       "question_count": 29,
       "score": 100.0,
       "weakness_analysis_source": "fallback"
     },
     {
       "paper_number": 2,
-      "session_id": "5c5c1171-0ecd-4c6f-914d-9a157f898917",
-      "report_title": "2026-11-07-16-53-30题-100.00分",
+      "session_id": "b71fc88d-4924-4285-83c8-e8a5b1f217ea",
+      "report_title": "2026-11-07-17-17-30题-100.00分",
       "question_count": 30,
       "score": 100.0,
       "weakness_analysis_source": "fallback"
     },
     {
       "paper_number": 3,
-      "session_id": "f047166d-ab23-4231-ac5a-6266f81663ce",
-      "report_title": "2026-11-07-16-53-29题-100.00分",
+      "session_id": "f02b010d-4c4c-46c1-a8a5-1b363dce92fa",
+      "report_title": "2026-11-07-17-17-29题-100.00分",
       "question_count": 29,
       "score": 100.0,
       "weakness_analysis_source": "fallback"
     },
     {
       "paper_number": 4,
-      "session_id": "4b657158-e1c2-4304-8e02-6fdb852cbe19",
-      "report_title": "2026-11-07-16-53-30题-100.00分",
+      "session_id": "20c414f3-b543-4d6b-b698-d5d7e7739149",
+      "report_title": "2026-11-07-17-17-30题-100.00分",
       "question_count": 30,
       "score": 100.0,
       "weakness_analysis_source": "fallback"
@@ -98,6 +98,54 @@
           "cross_book": 1
         }
       ]
+    },
+    "difficulty_distribution_40_40_20": {
+      "passed": true,
+      "actual": [
+        {
+          "easy": 12,
+          "medium": 11,
+          "hard": 6
+        },
+        {
+          "easy": 12,
+          "medium": 12,
+          "hard": 6
+        },
+        {
+          "easy": 12,
+          "medium": 11,
+          "hard": 6
+        },
+        {
+          "easy": 12,
+          "medium": 12,
+          "hard": 6
+        }
+      ],
+      "expected": [
+        {
+          "easy": 12,
+          "medium": 11,
+          "hard": 6
+        },
+        {
+          "easy": 12,
+          "medium": 12,
+          "hard": 6
+        },
+        {
+          "easy": 12,
+          "medium": 11,
+          "hard": 6
+        },
+        {
+          "easy": 12,
+          "medium": 12,
+          "hard": 6
+        }
+      ],
+      "note": "The 40/40/20 percentages are converted with largest remainder for each actual paper size: 29 -> 12/11/6, 30 -> 12/12/6."
     },
     "recent_three_penalty": {
       "passed": true,
@@ -573,7 +621,7 @@
         "DEMO-CLOZE-01",
         "DEMO-GRAMMAR-01"
       ],
-      "note": "Completed-paper reuse is expected in an 11-passage bank; the contract constraint is checked on concurrent active sessions."
+      "note": "11 篇 < 4 套×3 篇，复用不可避免，故按并发维度约束"
     }
   },
   "passes": true

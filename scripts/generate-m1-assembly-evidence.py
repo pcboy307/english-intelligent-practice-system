@@ -161,6 +161,18 @@ def main() -> None:
             "actual": [log["book_quota_actual"] for log in logs],
             "expected": [log["book_quota_expected"] for log in logs],
         },
+        "difficulty_distribution_40_40_20": {
+            "passed": all(
+                log["difficulty_actual"] == log["difficulty_quota_expected"]
+                for log in logs
+            ),
+            "actual": [log["difficulty_actual"] for log in logs],
+            "expected": [log["difficulty_quota_expected"] for log in logs],
+            "note": (
+                "The 40/40/20 percentages are converted with largest remainder "
+                "for each actual paper size: 29 -> 12/11/6, 30 -> 12/12/6."
+            ),
+        },
         "recent_three_penalty": {
             "passed": bool(recent_rows)
             and all(row["weight"] < row["base_weight"] for row in recent_rows),
@@ -175,8 +187,7 @@ def main() -> None:
             "expected": "zero shared passages while both sessions are unfinished",
             "historical_completed_reuse": sorted(historical_shared_passages),
             "note": (
-                "Completed-paper reuse is expected in an 11-passage bank; "
-                "the contract constraint is checked on concurrent active sessions."
+                "11 篇 < 4 套×3 篇，复用不可避免，故按并发维度约束"
             ),
         },
     }
