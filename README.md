@@ -6,7 +6,7 @@
 
 当前处于 **M0 契约收口**。所有者已用 CO-003 授权半日最小闭环实施；M0 最终细节仍需签字，半日成果不能单独替代 M0/M1 正式验收。
 
-M1 状态为 **Demo Bank 达标、完整验收未签字**：当前题库为 80 题/11 篇，四套两层组卷验证已通过。CO-003 关闭只代表半天闭环签收，不代表 M1 全部条款通过。详见 `docs/milestones/M1-status.md`。
+M0 契约与 M1 验收已于 2026-11-07 签字通过：当前题库为 80 题/11 篇，四套两层组卷验证已通过。详见 `docs/milestones/M1-status.md`。
 
 当前需求版本严格读取 `contracts/VERSION`，并与 `contracts/curriculum.json.requirement_version` 机械校验。本期运行载体为 **Expo Web（react-native-web）电脑浏览器**。React Native 源码保留，手机真机验收推迟到手机端阶段，不作为本期门禁。
 
