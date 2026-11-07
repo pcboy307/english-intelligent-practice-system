@@ -316,7 +316,10 @@ export default function PracticeScreen() {
                 reportHref &&
                 router.push({
                   pathname: "/report",
-                  params: { session_id: reportHref },
+                  params: {
+                    session_id: reportHref,
+                    anchor: String(currentIndex + 1),
+                  },
                 })
               }
               style={[actionStyle, !canViewReport && styles.actionDisabled]}

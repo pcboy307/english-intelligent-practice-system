@@ -1,5 +1,5 @@
 import { router, useLocalSearchParams } from "expo-router";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 
 import { getReport, type Report } from "../src/api/client";
@@ -9,10 +9,14 @@ import { useResponsiveLayout } from "../src/theme/useResponsiveLayout";
 
 export default function ReportScreen() {
   const layout = useResponsiveLayout();
-  const params = useLocalSearchParams<{ session_id?: string }>();
+  const params = useLocalSearchParams<{ session_id?: string; anchor?: string }>();
   const routeSessionId = Array.isArray(params.session_id)
     ? params.session_id[0]
     : params.session_id;
+  const anchorParam = Array.isArray(params.anchor)
+    ? params.anchor[0]
+    : params.anchor;
+  const restoredAnchor = useRef<string | null>(null);
   const [report, setLocalReport] = useState<Report | null>(
     routeSessionId ? null : getStoredReport(),
   );
@@ -27,6 +31,43 @@ export default function ReportScreen() {
       .catch((reason) => setError(String(reason)));
   }, [report, routeSessionId]);
 
+  const restoreAnswerAnchor = useCallback(() => {
+    if (!report || !anchorParam || restoredAnchor.current === anchorParam) return;
+    if (typeof document === "undefined") return;
+    const anchorNumber = Number(anchorParam);
+    if (
+      !Number.isInteger(anchorNumber) ||
+      anchorNumber < 1 ||
+      anchorNumber > report.question_results.length
+    ) {
+      return;
+    }
+    const target = Array.from(
+      document.querySelectorAll<HTMLElement>(
+        `#report-result-${anchorNumber}`,
+      ),
+    ).find((candidate) => {
+      const rect = candidate.getBoundingClientRect();
+      return rect.width > 0 && rect.height > 0;
+    });
+    if (!target) return;
+    target.scrollIntoView({ block: "center", behavior: "auto" });
+    restoredAnchor.current = anchorParam;
+  }, [anchorParam, report]);
+
+  useEffect(() => {
+    restoredAnchor.current = null;
+    if (typeof window === "undefined") return;
+    let secondFrame = 0;
+    const firstFrame = window.requestAnimationFrame(() => {
+      secondFrame = window.requestAnimationFrame(restoreAnswerAnchor);
+    });
+    return () => {
+      window.cancelAnimationFrame(firstFrame);
+      if (secondFrame) window.cancelAnimationFrame(secondFrame);
+    };
+  }, [restoreAnswerAnchor]);
+
   if (!report) {
     return (
       <View style={[styles.shell, { maxWidth: layout.contentMaxWidth }]}>
@@ -36,7 +77,11 @@ export default function ReportScreen() {
   }
 
   return (
-    <ScrollView style={styles.page} contentContainerStyle={styles.center}>
+    <ScrollView
+      style={styles.page}
+      contentContainerStyle={styles.center}
+      onContentSizeChange={restoreAnswerAnchor}
+    >
       <View
         testID="report-shell"
         style={[styles.shell, { maxWidth: layout.contentMaxWidth }]}
@@ -94,7 +139,12 @@ export default function ReportScreen() {
 
         <Text style={styles.sectionTitle}>逐题解析</Text>
         {report.question_results.map((item, index) => (
-          <View key={item.question_id} style={styles.result}>
+          <View
+            key={item.question_id}
+            nativeID={`report-result-${index + 1}`}
+            testID={`report-result-${index + 1}`}
+            style={styles.result}
+          >
             <View style={styles.resultHeader}>
               <Text style={[styles.resultTitle, { color: item.correct ? tokens.color.correct : tokens.color.incorrect }]}>
                 {index + 1}. {item.correct ? "正确" : "错误"}

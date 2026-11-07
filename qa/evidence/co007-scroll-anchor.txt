@@ -1,0 +1,13 @@
+URL:
+http://localhost:8081/report?session_id=dfd98820-6d88-42d7-a5ec-08b933d575da&anchor=10
+
+Observed visible target:
+matches=1
+visible=true
+scrollTop=2369
+targetTop=433.3125
+targetBottom=645.90625
+viewportHeight=1080
+
+Screenshot:
+qa/evidence/co007-report-anchor.png
