@@ -1,0 +1,7 @@
+Observed browser text:
+Question 1: 完形填空
+Question 16: 语法填空
+Question 26: 阅读理解
+
+Screenshot:
+qa/evidence/question-type-header.png

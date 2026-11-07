@@ -17,6 +17,13 @@ import { getSession, setReport, setSession } from "../src/sessionStore";
 import { tokens } from "../src/theme/tokens";
 import { useResponsiveLayout } from "../src/theme/useResponsiveLayout";
 
+const QUESTION_TYPE_LABELS = {
+  cloze: "完形填空",
+  grammar_fill: "语法填空",
+  reading: "阅读理解",
+  gap_fill: "七选五",
+} as const;
+
 type PassageGroup = {
   passageGroupId: string;
   items: SessionItem[];
@@ -271,7 +278,9 @@ export default function PracticeScreen() {
       >
         <View style={styles.header}>
           <View>
-            <Text style={styles.bank}>{activeSession.bank_name}</Text>
+            <Text style={styles.bank}>
+              {QUESTION_TYPE_LABELS[item.type] ?? "英语练习"}
+            </Text>
             <Text style={styles.meta}>
               {reviewMode ? "已交卷" : timeText} · 已答 {answered} 题
             </Text>
