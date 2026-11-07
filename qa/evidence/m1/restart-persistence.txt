@@ -1,0 +1,21 @@
+Actual table name is practice_sessions.
+
+Before backend stop:
+SELECT count(*) FROM practice_sessions;
+42
+
+Backend stopped:
+BACKEND_STOPPED
+
+Before backend restart:
+42
+
+After backend restart:
+42
+
+Post-restart health:
+{"status":"ok"}
+
+Post-restart database identity:
+SELECT inet_server_port(), current_database();
+15432|english_practice

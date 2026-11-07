@@ -1,7 +1,11 @@
 from __future__ import annotations
 
 import json
+import os
+import subprocess
+import sys
 import uuid
+from pathlib import Path
 
 from fastapi.testclient import TestClient
 
@@ -74,8 +78,13 @@ def test_submit_returns_report_and_is_idempotent() -> None:
     assert report["score"] == 100.0
     assert report["bank_name"] == "Demo Bank"
     assert len(report["type_scores"]) == 3
+    assert report["weak_points"]
+    assert report["suggestions"]
     assert len(report["question_results"]) == 30
-    assert all(item["explanation"] for item in report["question_results"])
+    assert all(
+        item["explanation"].strip() and item["explanation"].strip() != "暂无解析"
+        for item in report["question_results"]
+    )
     store.sessions.clear()
     persisted = client.get(f"/api/v1/reports/{session['session_id']}", headers=headers)
     assert persisted.status_code == 200
@@ -136,3 +145,31 @@ def test_admin_cors_and_loopback_guards() -> None:
     denied = remote.get("/api/v1/admin/banks", headers={"X-Admin-Token": token})
     assert denied.status_code == 403
     assert denied.json()["detail"]["code"] == "ADMIN_LOCAL_ONLY"
+
+
+def test_database_endpoint_is_absolute_and_name_is_checked() -> None:
+    with store.connection() as connection:
+        runtime = connection.execute(
+            "SELECT inet_server_port() AS port, current_database() AS database_name"
+        ).fetchone()
+    assert runtime["port"] == 15432
+    assert runtime["database_name"] == "english_practice"
+
+    root = Path(__file__).resolve().parents[2]
+    environment = {
+        **os.environ,
+        "DATABASE_URL": "postgresql://postgres@127.0.0.1:5432/english_practice",
+    }
+    rejected = subprocess.run(
+        [sys.executable, "-c", "import backend.app.main"],
+        cwd=root,
+        env=environment,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    assert rejected.returncode != 0
+    assert (
+        "DATABASE_URL_PORT_FORBIDDEN: configured=5432 allowed=15432"
+        in rejected.stderr
+    )

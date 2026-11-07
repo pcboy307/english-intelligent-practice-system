@@ -15,6 +15,7 @@ function Assert-True([bool]$Condition, [string]$Message) {
 $requiredFiles = @(
   "contracts/openapi.yaml",
   "contracts/VERSION",
+  "contracts/runtime.json",
   "contracts/curriculum.json",
   "contracts/bank-model.md",
   "contracts/design-tokens.json",
@@ -49,6 +50,9 @@ Write-Output "PASS config-json count=$($configs.Count)"
 
 $curriculum = Read-Json "contracts/curriculum.json"
 $manifestVersion = (Get-Content -Raw -Encoding UTF8 -LiteralPath "contracts/VERSION").Trim()
+$runtime = Read-Json "contracts/runtime.json"
+Assert-True ($runtime.database.allowed_port -eq 15432) "Database port must be fixed to 15432"
+Assert-True ($runtime.database.required_database -eq "english_practice") "Database name must be fixed to english_practice"
 $units = @($curriculum.units)
 Assert-True ($units.Count -eq 25) "Expected 25 curriculum units"
 $unitGroups = @($units | Group-Object book)

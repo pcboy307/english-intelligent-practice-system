@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0.0",
+  "database": {
+    "allowed_port": 15432,
+    "required_database": "english_practice"
+  }
+}

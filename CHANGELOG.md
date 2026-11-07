@@ -49,4 +49,7 @@
 - PostgreSQL 16.15 使用官方 Windows ZIP 在 15432 端口启动；浏览器闭环已跑通。
 - 前端实际调用 6 个端点与 OpenAPI 机械对照全部通过。
 - M0 25 单元表改为完全一致 9、教材范围更窄 11、教材范围更宽 2、白名单外 3；补齐 13 个跨单元 grammar ID 归属规则和三个教材抽查点出处。
+- 数据库守卫改为 `contracts/runtime.json` 绝对规则：只允许端口 15432 和数据库 `english_practice`；只改 URL 到 5432 时启动被拒绝。
+- 后端重启前后 `practice_sessions` 均为 42；报告含分数、3 组题型正确率、3 个薄弱知识点、30 条逐题解析且缺失解析数为 0。
+- 登记当前 Demo Bank 只有 30 题/3 篇，以及加权、重复惩罚和知识点上限尚未形成真实排除验证。
 - 原始记录：`docs/change-log/CO-003-half-day-sprint.md`、`docs/milestones/M1-half-day-delivery.md`。

@@ -9,9 +9,6 @@
     "host": "localhost",
     "port": 8081
   },
-  "database": {
-    "expected_port": 15432
-  },
   "cors": {
     "allow_origins": [
       "http://localhost:8081",

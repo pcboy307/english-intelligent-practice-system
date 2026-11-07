@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import os
 import random
 import uuid
@@ -7,6 +8,7 @@ from collections import defaultdict
 from contextlib import contextmanager
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 import psycopg
 from psycopg.rows import dict_row
@@ -20,25 +22,35 @@ class PostgresStore:
     """PostgreSQL-backed store for the 30-question sprint fixture."""
 
     def __init__(self) -> None:
+        runtime_path = Path(__file__).resolve().parents[2] / "contracts" / "runtime.json"
+        runtime = json.loads(runtime_path.read_text(encoding="utf-8"))
+        allowed_port = int(runtime["database"]["allowed_port"])
+        required_database = runtime["database"]["required_database"]
         self.database_url = os.getenv(
             "DATABASE_URL",
-            "postgresql://postgres@127.0.0.1:15432/english_practice",
+            f"postgresql://postgres@127.0.0.1:{allowed_port}/{required_database}",
         )
-        config_path = Path(__file__).resolve().parents[2] / "config" / "api.json"
-        import json
-
-        config = json.loads(config_path.read_text(encoding="utf-8"))
-        expected_port = int(
-            os.getenv("EXPECTED_DATABASE_PORT", config["database"]["expected_port"])
-        )
-        with self.connection() as connection:
-            actual_port = connection.execute(
-                "SELECT inet_server_port() AS port"
-            ).fetchone()["port"]
-        if actual_port != expected_port:
+        configured_port = urlparse(self.database_url).port
+        if configured_port != allowed_port:
             raise RuntimeError(
-                "DATABASE_PORT_MISMATCH: "
-                f"inet_server_port()={actual_port} expected={expected_port}"
+                "DATABASE_URL_PORT_FORBIDDEN: "
+                f"configured={configured_port} allowed={allowed_port}"
+            )
+        with self.connection() as connection:
+            runtime_row = connection.execute(
+                "SELECT inet_server_port() AS port, current_database() AS database_name"
+            ).fetchone()
+        actual_port = runtime_row["port"]
+        actual_database = runtime_row["database_name"]
+        if actual_port != allowed_port:
+            raise RuntimeError(
+                "DATABASE_SERVER_PORT_FORBIDDEN: "
+                f"inet_server_port()={actual_port} allowed={allowed_port}"
+            )
+        if actual_database != required_database:
+            raise RuntimeError(
+                "DATABASE_NAME_FORBIDDEN: "
+                f"current_database()={actual_database} required={required_database}"
             )
         self.bank = self._ensure_seeded()
         self.questions = self._load_questions()

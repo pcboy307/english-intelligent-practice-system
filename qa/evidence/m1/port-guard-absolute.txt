@@ -1,0 +1,13 @@
+Guard source: contracts/runtime.json
+allowed_port=15432
+required_database=english_practice
+
+Reverse test changed only DATABASE_URL:
+DATABASE_URL=postgresql://postgres@127.0.0.1:5432/english_practice
+
+Exact startup failure:
+RuntimeError: DATABASE_URL_PORT_FORBIDDEN: configured=5432 allowed=15432
+
+After connection, the same guard also checks:
+SELECT inet_server_port(), current_database()
+and rejects either value when it differs from contracts/runtime.json.

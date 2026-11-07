@@ -71,7 +71,7 @@ english_practice | PostgreSQL 16.15, compiled by Visual C++ build 1944, 64-bit
 接口测试在真实 PostgreSQL 上运行：
 
 ```text
-4 passed, 1 warning in 11.60s
+5 passed, 1 warning
 ```
 
 覆盖：30 题组卷、交卷前无答案、报告落库、交卷幂等、跨会话两次消标、CORS 与 `/admin` 回环守卫。
@@ -125,11 +125,28 @@ psql 原始结果：
 
 ## 数据库端口守卫
 
-正常启动时 `inet_server_port()` 必须等于 `15432`。将期望端口人为改为 5432 后，启动原文：
+绝对规则来自与 `contracts/VERSION` 同级的 `contracts/runtime.json`：
+
+- 连接前：`DATABASE_URL` 端口必须是 `15432`。
+- 连接后：`inet_server_port()` 必须是 `15432`。
+- 连接后：`current_database()` 必须是 `english_practice`。
+
+只把 `DATABASE_URL` 的端口改为 5432 后，启动原文：
 
 ```text
-RuntimeError: DATABASE_PORT_MISMATCH: inet_server_port()=15432 expected=5432
+RuntimeError: DATABASE_URL_PORT_FORBIDDEN: configured=5432 allowed=15432
 ```
+
+## 重启持久化
+
+实际表名为 `practice_sessions`。后端停止前、停止后和重启后均为：
+
+```text
+SELECT count(*) FROM practice_sessions;
+42
+```
+
+重启后健康检查为 `{"status":"ok"}`，数据库身份为 `15432|english_practice`。
 
 ## 前端调用与 OpenAPI 对照
 
@@ -179,3 +196,7 @@ contracts/design-tokens.json:24:    "accent": "#2C5F5A",
 ```
 
 代码只通过 `tokens.color.accent` 使用；强调色仅用于进度条与选中控制。主按钮仍为 `#111111` 底、`#FFFFFF` 字；圆角、字号和间距均从 tokens 读取。
+
+## 当前题库边界
+
+当前 Demo Bank 是 30 题、3 篇，不是 60 题、11 篇。由于每个题型候选数等于抽取数，双通道权重与近 3 次重复惩罚没有产生成员排除效果；同语篇拆分和单套知识点重复 ≤3 也未形成有效验证场景。完整说明见 `docs/待补齐清单.md`。

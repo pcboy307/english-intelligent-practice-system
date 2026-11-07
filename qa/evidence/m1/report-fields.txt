@@ -1,0 +1,11 @@
+Latest stored report:
+              session_id              | score | type_groups | weak_points | question_results | missing_explanations
+--------------------------------------+-------+-------------+-------------+------------------+----------------------
+ 73470593-87a8-4ae2-90cb-24126618215b | 3.33  |           3 |           3 |               30 |                    0
+(1 row)
+
+Reading:
+- score: report.score
+- type accuracy: report.type_scores with 3 groups
+- weak knowledge points: report.weak_points with 3 entries
+- per-question plain-text explanation: 30 results, 0 blank or missing explanations
