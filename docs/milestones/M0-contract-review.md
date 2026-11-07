@@ -78,6 +78,8 @@ Jaccard difference=29.47%
 每个 ID 的允许册次集合和 400 道语法填空可达性见
 `docs/curriculum/grammar-book-matrix.md`；机器证据见
 `qa/evidence/m0/grammar-book-feasibility.json`。
+25 行册次一致性为 0 处不匹配；210 个 ID 对中 34 对交集为空、176 对兼容；
+按兼容对构造出 132 题、252 题次的覆盖见证，结论为“可达”。
 
 ## 三个教材抽查点
 

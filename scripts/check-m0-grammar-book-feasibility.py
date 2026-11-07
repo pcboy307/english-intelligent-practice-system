@@ -4,7 +4,9 @@
 from __future__ import annotations
 
 import json
+import itertools
 import math
+import re
 from pathlib import Path
 
 
@@ -24,6 +26,22 @@ def main() -> None:
         (ROOT / "contracts" / "curriculum.json").read_text(encoding="utf-8")
     )
     grammar = curriculum["grammar_whitelist"]
+    grammar_by_id = {item["id"]: item for item in grammar}
+    pair_intersections = []
+    incompatible_pairs = []
+    for first, second in itertools.combinations(grammar, 2):
+        intersection = sorted(
+            set(first["allowed_book_tags"])
+            & set(second["allowed_book_tags"])
+        )
+        row = {
+            "first": first["id"],
+            "second": second["id"],
+            "allowed_book_tags": intersection,
+        }
+        pair_intersections.append(row)
+        if not intersection:
+            incompatible_pairs.append(row)
     grammar_fill_questions = curriculum["question_type_distribution"][
         "standard_2000"
     ]["grammar_fill"]["questions"]
@@ -70,6 +88,9 @@ def main() -> None:
                 "book_tag": group,
                 "usable_id_count": len(allowed_ids),
                 "usable_ids": allowed_ids,
+                "within_group_compatible_pair_count": len(allowed_ids)
+                * (len(allowed_ids) - 1)
+                // 2,
                 "exclusive_id_count": len(exclusive_ids),
                 "exclusive_ids": exclusive_ids,
                 "exclusive_coverage_occurrences": exclusive_occurrences,
@@ -102,6 +123,89 @@ def main() -> None:
         if need:
             raise AssertionError(f"NO_COVERAGE_ALLOCATION:{item['id']}")
 
+    group_witnesses = []
+    for group in GROUPS:
+        assigned_ids = sorted(
+            item_id
+            for item_id, groups in allocation.items()
+            if groups.get(group, 0) > 0
+        )
+        pair_plan = []
+        for index in range(0, len(assigned_ids), 2):
+            pair = assigned_ids[index:index + 2]
+            pair_plan.append(
+                {
+                    "grammar_ids": pair,
+                    "questions": minimum_per_id,
+                    "book_tag": group,
+                }
+            )
+        for pair in pair_plan:
+            if len(pair["grammar_ids"]) == 2:
+                first, second = pair["grammar_ids"]
+                first_tags = next(
+                    item["allowed_book_tags"]
+                    for item in grammar
+                    if item["id"] == first
+                )
+                second_tags = next(
+                    item["allowed_book_tags"]
+                    for item in grammar
+                    if item["id"] == second
+                )
+                if group not in set(first_tags) & set(second_tags):
+                    raise AssertionError(
+                        f"INCOMPATIBLE_WITNESS_PAIR:{group}:{first}:{second}"
+                    )
+        group_witnesses.append(
+            {
+                "book_tag": group,
+                "pair_plan": pair_plan,
+                "covered_id_occurrences": sum(
+                    len(item["grammar_ids"]) * minimum_per_id
+                    for item in pair_plan
+                ),
+                "questions_used_for_coverage": sum(
+                    item["questions"] for item in pair_plan
+                ),
+                "target_questions": targets[group],
+            }
+        )
+
+    unit_rows = []
+    unit_mismatches = []
+    grammar_doc = (ROOT / "docs" / "curriculum" / "grammar-by-unit.md").read_text(
+        encoding="utf-8"
+    )
+    for line in grammar_doc.splitlines():
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        if len(cells) < 7 or not cells[0].isdigit():
+            continue
+        if not (cells[1].startswith("必修") or cells[1].startswith("选必")):
+            continue
+        book_tag = cells[1][:3] if cells[1].startswith("选必") else "必修"
+        grammar_ids = re.findall(r"`([^`]+)`", cells[4])
+        unit_rows.append(
+            {
+                "row": int(cells[0]),
+                "unit": cells[1],
+                "book_tag": book_tag,
+                "grammar_ids": grammar_ids,
+            }
+        )
+        for grammar_id in grammar_ids:
+            allowed = grammar_by_id[grammar_id]["allowed_book_tags"]
+            if book_tag not in allowed:
+                unit_mismatches.append(
+                    {
+                        "row": int(cells[0]),
+                        "unit": cells[1],
+                        "grammar_id": grammar_id,
+                        "unit_book_tag": book_tag,
+                        "allowed_book_tags": allowed,
+                    }
+                )
+
     total_required_occurrences = len(grammar) * minimum_per_id
     total_tag_capacity = grammar_fill_questions * max_tags_per_question
     remaining_capacity = sum(
@@ -117,6 +221,8 @@ def main() -> None:
         and total_tag_capacity >= total_required_occurrences
         and remaining_capacity >= remaining_required
         and all(row["passes"] for row in rows)
+        and len(unit_rows) == 25
+        and not unit_mismatches
     )
     result = {
         "grammar_fill_questions": grammar_fill_questions,
@@ -129,7 +235,19 @@ def main() -> None:
         "remaining_coverage_occurrences": remaining_required,
         "distribution_targets": targets,
         "rows": rows,
+        "unit_book_consistency": {
+            "checked_rows": len(unit_rows),
+            "mismatch_count": len(unit_mismatches),
+            "mismatches": unit_mismatches,
+            "passes": len(unit_rows) == 25 and not unit_mismatches,
+        },
+        "pair_intersections": pair_intersections,
+        "compatible_pair_count": len(pair_intersections)
+        - len(incompatible_pairs),
+        "incompatible_pair_count": len(incompatible_pairs),
+        "incompatible_pairs": incompatible_pairs,
         "coverage_allocation": allocation,
+        "group_compatible_witnesses": group_witnesses,
         "remaining_tag_slots_after_allocation": remaining_slots,
         "conclusion": "可达" if passes else "不可达",
         "passes": passes,

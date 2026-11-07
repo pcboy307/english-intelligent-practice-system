@@ -10,7 +10,9 @@
   教材范围更宽 2 / 白名单外 3`，见 `docs/curriculum/grammar-by-unit.md`。
 - B：21 个 ID 已写入允许册次集合；每道题使用唯一 `book_tag`。见
   `docs/curriculum/grammar-book-matrix.md`。
-- C：21×12=252 题次、400 题双标签容量 800 题次，复算结论为“可达”，见
+- 25 行册次机械自检：检查 25 行、不匹配 0。
+- C：210 个 ID 对中有 34 个空交集、176 个可组合对；兼容对覆盖见证为 132 题、
+  252 题次，复算结论为“可达”，见
   `qa/evidence/m0/grammar-book-feasibility.json`。
 - 以上仍需所有者复核，M1 门禁保持阻塞。
 

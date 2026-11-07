@@ -5,8 +5,8 @@
   "required_coverage_occurrences": 252,
   "max_grammar_tags_per_question": 2,
   "total_tag_capacity": 800,
-  "remaining_capacity_after_exclusive_ids": 656,
-  "remaining_coverage_occurrences": 108,
+  "remaining_capacity_after_exclusive_ids": 668,
+  "remaining_coverage_occurrences": 120,
   "distribution_targets": {
     "必修": 80,
     "选必一": 120,
@@ -37,10 +37,10 @@
         "with_compound",
         "infinitive_nonfinite"
       ],
-      "exclusive_id_count": 11,
+      "within_group_compatible_pair_count": 153,
+      "exclusive_id_count": 10,
       "exclusive_ids": [
         "relative_clauses_defining",
-        "passive_voice_tenses",
         "past_participle_nonfinite",
         "adverbial_clauses",
         "subject_verb_agreement",
@@ -51,8 +51,8 @@
         "comparatives_superlatives",
         "infinitive_nonfinite"
       ],
-      "exclusive_coverage_occurrences": 132,
-      "minimum_questions_for_exclusive_ids": 66,
+      "exclusive_coverage_occurrences": 120,
+      "minimum_questions_for_exclusive_ids": 60,
       "target_questions": 80,
       "tag_capacity_at_target": 160,
       "passes": true
@@ -71,6 +71,7 @@
         "word_formation",
         "with_compound"
       ],
+      "within_group_compatible_pair_count": 36,
       "exclusive_id_count": 0,
       "exclusive_ids": [],
       "exclusive_coverage_occurrences": 0,
@@ -81,8 +82,9 @@
     },
     {
       "book_tag": "选必二",
-      "usable_id_count": 6,
+      "usable_id_count": 7,
       "usable_ids": [
+        "passive_voice_tenses",
         "noun_clauses",
         "subjunctive_basic_if",
         "subjunctive_basic_should",
@@ -90,6 +92,7 @@
         "tense_system",
         "word_formation"
       ],
+      "within_group_compatible_pair_count": 21,
       "exclusive_id_count": 1,
       "exclusive_ids": [
         "partial_inversion_basic"
@@ -114,6 +117,7 @@
         "word_formation",
         "with_compound"
       ],
+      "within_group_compatible_pair_count": 36,
       "exclusive_id_count": 0,
       "exclusive_ids": [],
       "exclusive_coverage_occurrences": 0,
@@ -121,6 +125,1660 @@
       "target_questions": 20,
       "tag_capacity_at_target": 40,
       "passes": true
+    }
+  ],
+  "unit_book_consistency": {
+    "checked_rows": 25,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "passes": true
+  },
+  "pair_intersections": [
+    {
+      "first": "relative_clauses_defining",
+      "second": "relative_clauses_non_defining",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "passive_voice_tenses",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "past_participle_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "v_ing_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "noun_clauses",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "adverbial_clauses",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "subjunctive_basic_if",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "subjunctive_basic_should",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "partial_inversion_basic",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "cleft_basic",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "tense_system",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "subject_verb_agreement",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "articles",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "prepositions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "pronouns",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "conjunctions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "word_formation",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "passive_voice_tenses",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "past_participle_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "v_ing_nonfinite",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "noun_clauses",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "adverbial_clauses",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "subjunctive_basic_if",
+      "allowed_book_tags": [
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "subjunctive_basic_should",
+      "allowed_book_tags": [
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "partial_inversion_basic",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "cleft_basic",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "tense_system",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "subject_verb_agreement",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "articles",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "prepositions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "pronouns",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "conjunctions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "word_formation",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "past_participle_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "v_ing_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "noun_clauses",
+      "allowed_book_tags": [
+        "必修",
+        "选必二"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "adverbial_clauses",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "subjunctive_basic_if",
+      "allowed_book_tags": [
+        "选必二"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "subjunctive_basic_should",
+      "allowed_book_tags": [
+        "选必二"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "partial_inversion_basic",
+      "allowed_book_tags": [
+        "选必二"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "cleft_basic",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "tense_system",
+      "allowed_book_tags": [
+        "必修",
+        "选必二"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "subject_verb_agreement",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "articles",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "prepositions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "pronouns",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "conjunctions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "word_formation",
+      "allowed_book_tags": [
+        "必修",
+        "选必二"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "passive_voice_tenses",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "v_ing_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "noun_clauses",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "adverbial_clauses",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "subjunctive_basic_if",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "subjunctive_basic_should",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "partial_inversion_basic",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "cleft_basic",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "tense_system",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "subject_verb_agreement",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "articles",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "prepositions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "pronouns",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "conjunctions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "word_formation",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "v_ing_nonfinite",
+      "second": "noun_clauses",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "v_ing_nonfinite",
+      "second": "adverbial_clauses",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "v_ing_nonfinite",
+      "second": "subjunctive_basic_if",
+      "allowed_book_tags": [
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "v_ing_nonfinite",
+      "second": "subjunctive_basic_should",
+      "allowed_book_tags": [
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "v_ing_nonfinite",
+      "second": "partial_inversion_basic",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "v_ing_nonfinite",
+      "second": "cleft_basic",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "v_ing_nonfinite",
+      "second": "tense_system",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "v_ing_nonfinite",
+      "second": "subject_verb_agreement",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "v_ing_nonfinite",
+      "second": "articles",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "v_ing_nonfinite",
+      "second": "prepositions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "v_ing_nonfinite",
+      "second": "pronouns",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "v_ing_nonfinite",
+      "second": "conjunctions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "v_ing_nonfinite",
+      "second": "word_formation",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "v_ing_nonfinite",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "v_ing_nonfinite",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "v_ing_nonfinite",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "noun_clauses",
+      "second": "adverbial_clauses",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "noun_clauses",
+      "second": "subjunctive_basic_if",
+      "allowed_book_tags": [
+        "跨册",
+        "选必一",
+        "选必二"
+      ]
+    },
+    {
+      "first": "noun_clauses",
+      "second": "subjunctive_basic_should",
+      "allowed_book_tags": [
+        "跨册",
+        "选必一",
+        "选必二"
+      ]
+    },
+    {
+      "first": "noun_clauses",
+      "second": "partial_inversion_basic",
+      "allowed_book_tags": [
+        "选必二"
+      ]
+    },
+    {
+      "first": "noun_clauses",
+      "second": "cleft_basic",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "noun_clauses",
+      "second": "tense_system",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一",
+        "选必二"
+      ]
+    },
+    {
+      "first": "noun_clauses",
+      "second": "subject_verb_agreement",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "noun_clauses",
+      "second": "articles",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "noun_clauses",
+      "second": "prepositions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "noun_clauses",
+      "second": "pronouns",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "noun_clauses",
+      "second": "conjunctions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "noun_clauses",
+      "second": "word_formation",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一",
+        "选必二"
+      ]
+    },
+    {
+      "first": "noun_clauses",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "noun_clauses",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "noun_clauses",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "adverbial_clauses",
+      "second": "subjunctive_basic_if",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "adverbial_clauses",
+      "second": "subjunctive_basic_should",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "adverbial_clauses",
+      "second": "partial_inversion_basic",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "adverbial_clauses",
+      "second": "cleft_basic",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "adverbial_clauses",
+      "second": "tense_system",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "adverbial_clauses",
+      "second": "subject_verb_agreement",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "adverbial_clauses",
+      "second": "articles",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "adverbial_clauses",
+      "second": "prepositions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "adverbial_clauses",
+      "second": "pronouns",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "adverbial_clauses",
+      "second": "conjunctions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "adverbial_clauses",
+      "second": "word_formation",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "adverbial_clauses",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "adverbial_clauses",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "adverbial_clauses",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "subjunctive_basic_should",
+      "allowed_book_tags": [
+        "跨册",
+        "选必一",
+        "选必二"
+      ]
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "partial_inversion_basic",
+      "allowed_book_tags": [
+        "选必二"
+      ]
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "cleft_basic",
+      "allowed_book_tags": [
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "tense_system",
+      "allowed_book_tags": [
+        "跨册",
+        "选必一",
+        "选必二"
+      ]
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "subject_verb_agreement",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "articles",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "prepositions",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "pronouns",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "conjunctions",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "word_formation",
+      "allowed_book_tags": [
+        "跨册",
+        "选必一",
+        "选必二"
+      ]
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "partial_inversion_basic",
+      "allowed_book_tags": [
+        "选必二"
+      ]
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "cleft_basic",
+      "allowed_book_tags": [
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "tense_system",
+      "allowed_book_tags": [
+        "跨册",
+        "选必一",
+        "选必二"
+      ]
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "subject_verb_agreement",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "articles",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "prepositions",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "pronouns",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "conjunctions",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "word_formation",
+      "allowed_book_tags": [
+        "跨册",
+        "选必一",
+        "选必二"
+      ]
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "cleft_basic",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "tense_system",
+      "allowed_book_tags": [
+        "选必二"
+      ]
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "subject_verb_agreement",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "articles",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "prepositions",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "pronouns",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "conjunctions",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "word_formation",
+      "allowed_book_tags": [
+        "选必二"
+      ]
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "with_compound",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "cleft_basic",
+      "second": "tense_system",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "cleft_basic",
+      "second": "subject_verb_agreement",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "cleft_basic",
+      "second": "articles",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "cleft_basic",
+      "second": "prepositions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "cleft_basic",
+      "second": "pronouns",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "cleft_basic",
+      "second": "conjunctions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "cleft_basic",
+      "second": "word_formation",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "cleft_basic",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "cleft_basic",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "cleft_basic",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "tense_system",
+      "second": "subject_verb_agreement",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "tense_system",
+      "second": "articles",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "tense_system",
+      "second": "prepositions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "tense_system",
+      "second": "pronouns",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "tense_system",
+      "second": "conjunctions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "tense_system",
+      "second": "word_formation",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一",
+        "选必二"
+      ]
+    },
+    {
+      "first": "tense_system",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "tense_system",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "tense_system",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "subject_verb_agreement",
+      "second": "articles",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "subject_verb_agreement",
+      "second": "prepositions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "subject_verb_agreement",
+      "second": "pronouns",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "subject_verb_agreement",
+      "second": "conjunctions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "subject_verb_agreement",
+      "second": "word_formation",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "subject_verb_agreement",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "subject_verb_agreement",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "subject_verb_agreement",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "articles",
+      "second": "prepositions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "articles",
+      "second": "pronouns",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "articles",
+      "second": "conjunctions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "articles",
+      "second": "word_formation",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "articles",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "articles",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "articles",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "prepositions",
+      "second": "pronouns",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "prepositions",
+      "second": "conjunctions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "prepositions",
+      "second": "word_formation",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "prepositions",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "prepositions",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "prepositions",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "pronouns",
+      "second": "conjunctions",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "pronouns",
+      "second": "word_formation",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "pronouns",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "pronouns",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "pronouns",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "conjunctions",
+      "second": "word_formation",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "conjunctions",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "conjunctions",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "conjunctions",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "word_formation",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "word_formation",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "必修",
+        "跨册",
+        "选必一"
+      ]
+    },
+    {
+      "first": "word_formation",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "comparatives_superlatives",
+      "second": "with_compound",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "comparatives_superlatives",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    },
+    {
+      "first": "with_compound",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": [
+        "必修"
+      ]
+    }
+  ],
+  "compatible_pair_count": 176,
+  "incompatible_pair_count": 34,
+  "incompatible_pairs": [
+    {
+      "first": "relative_clauses_defining",
+      "second": "subjunctive_basic_if",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "subjunctive_basic_should",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "relative_clauses_defining",
+      "second": "partial_inversion_basic",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "relative_clauses_non_defining",
+      "second": "partial_inversion_basic",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "subjunctive_basic_if",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "subjunctive_basic_should",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "past_participle_nonfinite",
+      "second": "partial_inversion_basic",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "v_ing_nonfinite",
+      "second": "partial_inversion_basic",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "adverbial_clauses",
+      "second": "subjunctive_basic_if",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "adverbial_clauses",
+      "second": "subjunctive_basic_should",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "adverbial_clauses",
+      "second": "partial_inversion_basic",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "subject_verb_agreement",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "articles",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "prepositions",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "pronouns",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "conjunctions",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_if",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "subject_verb_agreement",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "articles",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "prepositions",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "pronouns",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "conjunctions",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "subjunctive_basic_should",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "cleft_basic",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "subject_verb_agreement",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "articles",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "prepositions",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "pronouns",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "conjunctions",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "comparatives_superlatives",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "with_compound",
+      "allowed_book_tags": []
+    },
+    {
+      "first": "partial_inversion_basic",
+      "second": "infinitive_nonfinite",
+      "allowed_book_tags": []
     }
   ],
   "coverage_allocation": {
@@ -142,9 +1800,6 @@
     "partial_inversion_basic": {
       "选必二": 12
     },
-    "passive_voice_tenses": {
-      "必修": 12
-    },
     "past_participle_nonfinite": {
       "必修": 12
     },
@@ -159,6 +1814,9 @@
     },
     "subject_verb_agreement": {
       "必修": 12
+    },
+    "passive_voice_tenses": {
+      "选必二": 12
     },
     "cleft_basic": {
       "选必一": 12
@@ -188,10 +1846,130 @@
       "选必二": 12
     }
   },
+  "group_compatible_witnesses": [
+    {
+      "book_tag": "必修",
+      "pair_plan": [
+        {
+          "grammar_ids": [
+            "adverbial_clauses",
+            "articles"
+          ],
+          "questions": 12,
+          "book_tag": "必修"
+        },
+        {
+          "grammar_ids": [
+            "comparatives_superlatives",
+            "conjunctions"
+          ],
+          "questions": 12,
+          "book_tag": "必修"
+        },
+        {
+          "grammar_ids": [
+            "infinitive_nonfinite",
+            "past_participle_nonfinite"
+          ],
+          "questions": 12,
+          "book_tag": "必修"
+        },
+        {
+          "grammar_ids": [
+            "prepositions",
+            "pronouns"
+          ],
+          "questions": 12,
+          "book_tag": "必修"
+        },
+        {
+          "grammar_ids": [
+            "relative_clauses_defining",
+            "subject_verb_agreement"
+          ],
+          "questions": 12,
+          "book_tag": "必修"
+        }
+      ],
+      "covered_id_occurrences": 120,
+      "questions_used_for_coverage": 60,
+      "target_questions": 80
+    },
+    {
+      "book_tag": "选必一",
+      "pair_plan": [
+        {
+          "grammar_ids": [
+            "cleft_basic",
+            "relative_clauses_non_defining"
+          ],
+          "questions": 12,
+          "book_tag": "选必一"
+        },
+        {
+          "grammar_ids": [
+            "v_ing_nonfinite",
+            "with_compound"
+          ],
+          "questions": 12,
+          "book_tag": "选必一"
+        }
+      ],
+      "covered_id_occurrences": 48,
+      "questions_used_for_coverage": 24,
+      "target_questions": 120
+    },
+    {
+      "book_tag": "选必二",
+      "pair_plan": [
+        {
+          "grammar_ids": [
+            "noun_clauses",
+            "partial_inversion_basic"
+          ],
+          "questions": 12,
+          "book_tag": "选必二"
+        },
+        {
+          "grammar_ids": [
+            "passive_voice_tenses",
+            "subjunctive_basic_if"
+          ],
+          "questions": 12,
+          "book_tag": "选必二"
+        },
+        {
+          "grammar_ids": [
+            "subjunctive_basic_should",
+            "tense_system"
+          ],
+          "questions": 12,
+          "book_tag": "选必二"
+        },
+        {
+          "grammar_ids": [
+            "word_formation"
+          ],
+          "questions": 12,
+          "book_tag": "选必二"
+        }
+      ],
+      "covered_id_occurrences": 84,
+      "questions_used_for_coverage": 48,
+      "target_questions": 180
+    },
+    {
+      "book_tag": "跨册",
+      "pair_plan": [],
+      "covered_id_occurrences": 0,
+      "questions_used_for_coverage": 0,
+      "target_questions": 20
+    }
+  ],
   "remaining_tag_slots_after_allocation": {
-    "必修": 28,
+    "必修": 40,
     "选必一": 192,
-    "选必二": 288,
+    "选必二": 276,
     "跨册": 40
   },
   "conclusion": "可达",

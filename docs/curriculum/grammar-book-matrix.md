@@ -17,7 +17,7 @@
 |---:|---|---|
 | 1 | `relative_clauses_defining` | `{必修}` |
 | 2 | `relative_clauses_non_defining` | `{必修, 选必一, 跨册}` |
-| 3 | `passive_voice_tenses` | `{必修}` |
+| 3 | `passive_voice_tenses` | `{必修, 选必二}` |
 | 4 | `past_participle_nonfinite` | `{必修}` |
 | 5 | `v_ing_nonfinite` | `{必修, 选必一, 跨册}` |
 | 6 | `noun_clauses` | `{必修, 选必一, 选必二, 跨册}` |
@@ -50,28 +50,86 @@
 | `comparatives_superlatives` | `{必修}` |
 | `word_formation` | `{必修, 选必一, 选必二, 跨册}` |
 
-## C. 400 道语法填空可达性
+## 25 行册次一致性自检
 
-目标题数：
+逐行读取 `grammar-by-unit.md`，对本行每个 ID 校验：
 
-| 册次 | 可用 ID 数 | 专属 ID 数 | 达到专属覆盖所需最少题数 | 本分布可分配上限 |
+```text
+单元所属册次 ∈ grammar ID 的 allowed_book_tags
+```
+
+结果：
+
+```text
+检查行数：25
+不匹配：0
+```
+
+第 23 行曾暴露的 `passive_voice_tenses` 矛盾已修复，该 ID 的允许集合改为
+`{必修, 选必二}`。
+
+## C. 双标签兼容性与 400 题可达性
+
+| 册次 | 可用 ID 数 | 专属 ID 数 | 专属覆盖最少题数 | 本分布可分配上限 |
 |---|---:|---:|---:|---:|
-| 选必二 | 6 | 1 | 12 | 180 |
+| 选必二 | 7 | 1 | 12 | 180 |
 | 选必一 | 9 | 0 | 0 | 120 |
-| 必修 | 18 | 11 | 66 | 80 |
+| 必修 | 18 | 10 | 60 | 80 |
 | 跨册 | 9 | 0 | 0 | 20 |
 
-计算依据：
+### 210 个 ID 对的交集结果
+
+- 两两组合总数：`C(21,2) = 210`
+- 有共同允许册次、可组合：176 对
+- 交集为空、不可组合：34 对
+
+34 个不可组合对完整列出如下：
+
+| 固定一侧 ID | 不可组合的另一侧 ID |
+|---|---|
+| `relative_clauses_defining` | `subjunctive_basic_if`, `subjunctive_basic_should`, `partial_inversion_basic` |
+| `relative_clauses_non_defining` | `partial_inversion_basic` |
+| `past_participle_nonfinite` | `subjunctive_basic_if`, `subjunctive_basic_should`, `partial_inversion_basic` |
+| `v_ing_nonfinite` | `partial_inversion_basic` |
+| `adverbial_clauses` | `subjunctive_basic_if`, `subjunctive_basic_should`, `partial_inversion_basic` |
+| `subjunctive_basic_if` | `subject_verb_agreement`, `articles`, `prepositions`, `pronouns`, `conjunctions`, `comparatives_superlatives`, `infinitive_nonfinite` |
+| `subjunctive_basic_should` | `subject_verb_agreement`, `articles`, `prepositions`, `pronouns`, `conjunctions`, `comparatives_superlatives`, `infinitive_nonfinite` |
+| `partial_inversion_basic` | `cleft_basic`, `subject_verb_agreement`, `articles`, `prepositions`, `pronouns`, `conjunctions`, `comparatives_superlatives`, `with_compound`, `infinitive_nonfinite` |
+
+表中每一对都确实交集为空，没有把有共同册次的 ID 误列入。
+
+### 每个册次内的可组合性
+
+同一册次内任意两个可用 ID 都因共同包含该册次而可组合：
+
+| 册次 | 可用 ID 数 | 册内可组合对 | 无法配对而落单的 ID |
+|---|---:|---:|---:|
+| 必修 | 18 | 153 | 0 |
+| 选必一 | 9 | 36 | 0 |
+| 选必二 | 7 | 21 | 0 |
+| 跨册 | 9 | 36 | 0 |
+
+因此，34 个全局不可组合对不会降低单册次内“两道 grammar tag 共题”的能力。
+
+### 可执行覆盖见证
+
+按兼容对求解出一组 252 题次覆盖见证：
+
+| 册次 | 覆盖用题数 | 覆盖题次 | 本分布可分配上限 |
+|---|---:|---:|---:|
+| 必修 | 60 | 120 | 80 |
+| 选必一 | 24 | 48 | 120 |
+| 选必二 | 48 | 84 | 180 |
+| 跨册 | 0 | 0 | 20 |
+| 合计 | 132 | 252 | 400 |
 
 - 21 个 ID × 每 ID 至少 12 题 = **252 题次**。
-- 每题最多两个 grammar ID，因此 400 题总容量为 **800 题次**。
-- 必修专属 11 个 ID 需要 132 题次；每题最多双标签时，至少需要 66 道必修题，未超过
-  必修目标 80 题。
-- 选必二专属的 `partial_inversion_basic` 需要出现在至少 12 道不同题中，未超过选必二
-  目标 180 题。
-- 其余 9 个多册 ID 共需 108 题次；扣掉专属占用后仍有 656 题次容量。
-- 册次目标 `80 + 120 + 180 + 20 = 400`，每道题只进入一个册次。
+- 每题最多两个兼容 grammar ID，400 题总容量仍为 **800 题次**。
+- 上述见证只用 132 道题就完成全部 252 题次覆盖，且各册次均未超过目标配额。
+- 剩余 268 道题可用任意单标签或兼容双标签的重复题次填充，从而精确达到
+  `80/120/180/20`。
 
 结论：**可达**。
 
-机器可复算证据：`qa/evidence/m0/grammar-book-feasibility.json`。
+机器可复算证据：`qa/evidence/m0/grammar-book-feasibility.json`。该文件包含全部 210
+个 ID 对、34 个空交集对、逐册次见证和 25 行一致性检查结果。
