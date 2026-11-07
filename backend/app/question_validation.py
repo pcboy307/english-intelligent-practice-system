@@ -90,7 +90,7 @@ def validate_question_book_tag(grammar_tags: list[str], book_tag: str) -> dict:
         reason = (
             "GRAMMAR_TAGS_HAVE_NO_COMMON_BOOK_TAG"
             if not intersection
-            else "BOOK_TAG_NOT_IN_GRAMMAR_TAG_INTERSECTION"
+            else "BOOK_TAG_NOT_IN_INTERSECTION"
         )
         raise QuestionValidationError(
             "BOOK_TAG_INCOMPATIBLE",

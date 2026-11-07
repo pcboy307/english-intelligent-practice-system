@@ -45,6 +45,20 @@ def test_compatible_double_tag_is_accepted() -> None:
     ]
 
 
+def test_nonempty_intersection_rejects_book_tag_outside_it() -> None:
+    with pytest.raises(QuestionValidationError) as raised:
+        validate_question_book_tag(
+            ["tense_system", "articles"],
+            "选必二",
+        )
+
+    error = raised.value
+    assert error.code == "BOOK_TAG_INCOMPATIBLE"
+    assert error.details["reason"] == "BOOK_TAG_NOT_IN_INTERSECTION"
+    assert error.details["book_tag"] == "选必二"
+    assert error.details["allowed_book_tag_intersection"] == ["必修"]
+
+
 def test_single_tag_uses_its_own_allowed_set() -> None:
     result = validate_question_book_tag(["articles"], "必修")
     assert result["ok"] is True

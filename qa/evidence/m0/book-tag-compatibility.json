@@ -106,6 +106,36 @@
           "跨册"
         ]
       }
+    },
+    {
+      "case": "nonempty-intersection-wrong-book",
+      "passes": true,
+      "result": {
+        "ok": false,
+        "error": "BOOK_TAG_INCOMPATIBLE",
+        "message": "Rejected: book_tag is incompatible with the grammar tag set.",
+        "reason": "BOOK_TAG_NOT_IN_INTERSECTION",
+        "book_tag": "选必二",
+        "grammar_tags": [
+          "tense_system",
+          "articles"
+        ],
+        "grammar_tag_allowed_book_tags": {
+          "tense_system": [
+            "必修",
+            "选必一",
+            "选必二",
+            "跨册"
+          ],
+          "articles": [
+            "必修"
+          ]
+        },
+        "allowed_book_tag_intersection": [
+          "必修"
+        ],
+        "conflict_pairs": []
+      }
     }
   ]
 }

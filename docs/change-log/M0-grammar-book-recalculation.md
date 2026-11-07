@@ -36,7 +36,9 @@
 - 对全部 grammar tag 的允许册次求交集，要求唯一 `book_tag` 属于交集。
 - 空交集或标签不在交集时返回 `BOOK_TAG_INCOMPATIBLE`，并输出冲突 ID 与允许册次。
 - 单标签题使用相同路径。
-- 两个 `partial_inversion_basic + articles` 非法样例均拒收，合法
+- 两个 `partial_inversion_basic + articles` 空交集样例均拒收；
+  `tense_system + articles / 选必二` 在交集非空但册次不在交集时拒收，reason
+  为 `BOOK_TAG_NOT_IN_INTERSECTION`；合法
   `tense_system + noun_clauses / 选必二` 样例通过。
 
 原始输出：`qa/evidence/m0/book-tag-compatibility.json`。

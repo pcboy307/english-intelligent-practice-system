@@ -150,6 +150,7 @@
 |---|---|---|---|
 | `partial_inversion_basic + articles` | `必修` | 拒收 | `BOOK_TAG_INCOMPATIBLE` |
 | `partial_inversion_basic + articles` | `选必二` | 拒收 | `BOOK_TAG_INCOMPATIBLE` |
+| `tense_system + articles` | `选必二` | 拒收 | `BOOK_TAG_INCOMPATIBLE`；reason=`BOOK_TAG_NOT_IN_INTERSECTION` |
 | `tense_system + noun_clauses` | `选必二` | 通过 | `ok=true` |
 
 原始输出：`qa/evidence/m0/book-tag-compatibility.json`。

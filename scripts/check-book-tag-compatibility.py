@@ -36,6 +36,12 @@ CASES = [
         "book_tag": "选必二",
         "expected_ok": True,
     },
+    {
+        "case": "nonempty-intersection-wrong-book",
+        "grammar_tags": ["tense_system", "articles"],
+        "book_tag": "选必二",
+        "expected_code": "BOOK_TAG_INCOMPATIBLE",
+    },
 ]
 
 
