@@ -75,6 +75,18 @@ export default function PracticeScreen() {
     if (!reviewRequested || !routeSessionId) return;
     getPracticeReview(routeSessionId)
       .then((review) => {
+        const initialGroups = groupPassages(review.items);
+        if (params.q) {
+          const requestedIndex = Math.max(
+            0,
+            Math.min(review.items.length - 1, Number(params.q) - 1),
+          );
+          const targetId = review.items[requestedIndex]?.question_id;
+          const targetGroupIndex = initialGroups.findIndex((item) =>
+            item.items.some((question) => question.question_id === targetId),
+          );
+          setGroupIndex(Math.max(0, targetGroupIndex));
+        }
         setReviewSession(review);
         setReviewMode(true);
         setAnswers(
@@ -86,7 +98,7 @@ export default function PracticeScreen() {
         );
       })
       .catch((reason) => setError(String(reason)));
-  }, [reviewRequested, routeSessionId]);
+  }, [params.q, reviewRequested, routeSessionId]);
 
   useEffect(() => {
     if (!session) return;
@@ -166,20 +178,13 @@ export default function PracticeScreen() {
 
   useEffect(() => {
     if (!requestedQuestionId) return;
-    const targetGroupIndex = groups.findIndex((item) =>
-      item.items.some((question) => question.question_id === requestedQuestionId),
-    );
-    if (targetGroupIndex >= 0 && targetGroupIndex !== groupIndex) {
-      setGroupIndex(targetGroupIndex);
-      return;
-    }
     const timer = window.setTimeout(() => {
       document
         .querySelector(`[data-testid="question-${requestedQuestionId}"]`)
         ?.scrollIntoView({ block: "start" });
     }, 0);
     return () => window.clearTimeout(timer);
-  }, [groupIndex, groups, requestedQuestionId]);
+  }, [groupIndex, requestedQuestionId]);
 
   async function choose(item: SessionItem, answer: string) {
     if (!session || reviewMode) return;

@@ -45,6 +45,12 @@ has_choice=true
 has_correct_mark=true
 has_explanation=false
 
+Last-question jump:
+URL=/practice?session_id=259315a5-dd13-471f-aaa9-fcccc54563d4&review=1&q=30
+question_30_present=true
+question_30_top=501.375
+viewport_height=1000
+
 Pre-submit:
 report_button_disabled=true
 has_answer=false
