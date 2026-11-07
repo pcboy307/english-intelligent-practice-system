@@ -48,6 +48,29 @@ class _ScoreResponse:
         }
 
 
+class _LongResponse:
+    def raise_for_status(self) -> None:
+        return None
+
+    def json(self) -> dict:
+        return {
+            "choices": [
+                {
+                    "message": {
+                        "content": (
+                            "建议：先复习现在完成时和一般现在时被动语态。"
+                            "你需要逐题标记时间状语、主语与谓语关系，再对比正确选项和干扰项。"
+                            "完成十道同类题后，用三分钟复述每道题为什么这样判断。"
+                            "如果仍然出错，就把错题按时态、语态和句子结构分类，"
+                            "每天选两组重新作答，并记录第二次判断依据是否更清楚。"
+                            "坚持把判断过程说出来，比只记答案更能稳定提升。"
+                        )
+                    }
+                }
+            ]
+        }
+
+
 def _question_result() -> dict:
     return {
         "correct": False,
@@ -82,7 +105,7 @@ def test_llm_text_without_action_gets_explicit_action(monkeypatch) -> None:
     assert result["source"] == "llm"
     assert "建议：" in result["text"]
     assert "重做一组同类题" in result["text"]
-    assert len(result["text"]) <= 100
+    assert len(result["text"]) <= 300
 
 
 def test_http_failure_uses_rule_fallback(monkeypatch) -> None:
@@ -104,7 +127,7 @@ def test_http_failure_uses_rule_fallback(monkeypatch) -> None:
     assert result["source"] == "fallback"
     assert "一般现在时被动语态" in result["text"]
     assert "先回看错题依据" in result["text"]
-    assert len(result["text"]) <= 100
+    assert len(result["text"]) <= 300
 
 
 def test_score_wording_names_total_and_correct_count(monkeypatch) -> None:
@@ -245,3 +268,16 @@ def test_stored_analysis_text_is_humanized_on_read() -> None:
     assert "名词词义辨析（团队）" in result
     assert "名词词义辨析（材料）" in result
     assert "方式副词辨析" in result
+
+
+def test_analysis_allows_more_than_100_characters_up_to_300(monkeypatch) -> None:
+    monkeypatch.delenv("WEAKNESS_ANALYSIS_DISABLED", raising=False)
+    monkeypatch.setattr(analysis.httpx, "post", lambda *args, **kwargs: _LongResponse())
+
+    result = analysis.generate_weakness_analysis(
+        [_question_result()],
+        _weak_points(),
+        provider_override="qwen",
+    )
+
+    assert 100 < len(result["text"]) <= 300

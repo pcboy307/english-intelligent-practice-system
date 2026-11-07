@@ -131,7 +131,7 @@ def main() -> None:
         "weakness_analysis": analysis,
         "analysis_length": len(analysis),
         "contains_chinese": bool(re.search(r"[\u4e00-\u9fff]", analysis)),
-        "at_most_100_chars": len(analysis) <= 100,
+        "at_most_300_chars": len(analysis) <= 300,
         "has_explicit_action": (
             "先回看错题依据" in analysis
             if args.force_fallback
@@ -143,7 +143,7 @@ def main() -> None:
         "passes": (
             report["weakness_analysis_source"] == expected_source
             and bool(re.search(r"[\u4e00-\u9fff]", analysis))
-            and len(analysis) <= 100
+            and len(analysis) <= 300
             and (
                 "先回看错题依据" in analysis
                 if args.force_fallback

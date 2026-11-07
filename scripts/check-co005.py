@@ -35,7 +35,7 @@ def main() -> None:
         analysis = report["weakness_analysis"]
         assert TITLE.fullmatch(report["report_title"])
         assert report["question_count"] in {29, 30}
-        assert len(analysis) <= 100
+        assert len(analysis) <= 300
         assert report["weakness_analysis_source"] in {"llm", "fallback"}
         assert re.search(r"[\u4e00-\u9fff]", analysis)
 

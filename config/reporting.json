@@ -24,7 +24,7 @@
     "providers": {
       "deepseek": {
         "model_config": "contracts/generation-model.json",
-        "max_tokens": 220,
+        "max_tokens": 500,
         "temperature": 0.2,
         "timeout_seconds": 60,
         "thinking": "disabled"
@@ -33,12 +33,12 @@
         "endpoint": "http://127.0.0.1:11435/v1/chat/completions",
         "model": "qwen-local",
         "model_identifier": "qwen3.5:4b-q4_K_M",
-        "max_tokens": 220,
+        "max_tokens": 500,
         "temperature": 0.2,
         "timeout_seconds": 60
       }
     },
-    "max_chars": 100,
+    "max_chars": 300,
     "max_wrong_samples": 4,
     "knowledge_point_labels": {
       "achievement_noun": "名词词义辨析（成就）",

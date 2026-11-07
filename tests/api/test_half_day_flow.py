@@ -115,7 +115,7 @@ def test_submit_returns_report_and_is_idempotent() -> None:
     assert re.fullmatch(r"\d{4}-\d{2}-\d{2}-\d{2}-\d{2}-29题-100\.00分", report["report_title"])
     assert report["bank_name"] == "Demo Bank"
     assert report["question_count"] == 29
-    assert len(report["weakness_analysis"]) <= 100
+    assert len(report["weakness_analysis"]) <= 300
     assert len(report["type_scores"]) == 3
     assert report["weak_points"]
     assert report["suggestions"]
