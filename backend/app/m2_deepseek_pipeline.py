@@ -241,25 +241,35 @@ def _validate_explanation_batch(
 ) -> dict[int, str]:
     explanations = data.get("explanations")
     if not isinstance(explanations, list):
-        raise ValueError("EXPLANATIONS_ARRAY_MISSING")
+        raise ValueError(
+            "EXPLANATIONS_ARRAY_MISSING: "
+            f"received_type={type(explanations).__name__} "
+            f"sample={str(explanations)[:120]!r}"
+        )
+    if len(explanations) != len(expected_indices):
+        raise ValueError(
+            "EXPLANATION_COUNT_MISMATCH: "
+            f"expected={len(expected_indices)} actual={len(explanations)}"
+        )
     by_index: dict[int, str] = {}
-    for item in explanations:
-        if not isinstance(item, dict):
-            raise ValueError("EXPLANATION_NOT_OBJECT")
-        question_index = item.get("question_index")
-        explanation = item.get("explanation")
-        if not isinstance(question_index, int):
-            raise ValueError("EXPLANATION_INDEX_INVALID")
+    for question_index, explanation in zip(
+        expected_indices,
+        explanations,
+        strict=True,
+    ):
+        if not isinstance(explanation, str):
+            raise ValueError(
+                "EXPLANATION_NOT_STRING: "
+                f"received_type={type(explanation).__name__} "
+                f"sample={str(explanation)[:120]!r}"
+            )
         if not isinstance(explanation, str) or _sentence_count(explanation) < 3:
             raise ValueError(
-                f"EXPLANATION_MIN_SENTENCES_NOT_MET index={question_index}"
+                "EXPLANATION_MIN_SENTENCES_NOT_MET "
+                f"index={question_index} received_type=str "
+                f"sample={explanation[:120]!r}"
             )
         by_index[question_index] = explanation
-    if set(by_index) != set(expected_indices):
-        raise ValueError(
-            "EXPLANATION_INDEX_SET_MISMATCH "
-            f"expected={expected_indices} actual={sorted(by_index)}"
-        )
     return by_index
 
 

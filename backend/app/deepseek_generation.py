@@ -7,6 +7,7 @@ import os
 import re
 import time
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Any, Callable
 
 import httpx
@@ -140,6 +141,7 @@ class DeepSeekClient:
         *,
         http_client: httpx.Client | None = None,
         sleep: Callable[[float], None] | None = None,
+        raw_output_dir: str | Path | None = None,
     ) -> None:
         self.config = config
         self.api_key = os.getenv(config["api_key_env"])
@@ -149,6 +151,9 @@ class DeepSeekClient:
             )
         self.http_client = http_client or httpx.Client(timeout=120.0)
         self.sleep = sleep or time.sleep
+        self.raw_output_dir = (
+            Path(raw_output_dir) if raw_output_dir is not None else None
+        )
         self.requests: list[RequestRecord] = []
         self.consecutive_transport_failures = 0
 
@@ -167,12 +172,26 @@ class DeepSeekClient:
             "Content-Type": "application/json",
         }
 
+    def _persist_raw(self, request_id: str | None, content: str) -> None:
+        if self.raw_output_dir is None or not request_id:
+            return
+        self.raw_output_dir.mkdir(parents=True, exist_ok=True)
+        safe_id = re.sub(r"[^A-Za-z0-9._-]", "_", request_id)
+        (self.raw_output_dir / f"{safe_id}.txt").write_text(
+            content[:8000],
+            encoding="utf-8",
+        )
+
     def list_models(self) -> list[dict[str, Any]]:
         response = self.http_client.get(
             self.models_endpoint,
             headers=self.headers,
         )
         if response.status_code >= 400:
+            self._persist_raw(
+                response.headers.get("x-request-id"),
+                f"HTTP {response.status_code}\n{response.text}",
+            )
             raise DeepSeekAPIError(response.status_code, response.text[:500])
         payload = response.json()
         return list(payload.get("data") or [])
@@ -331,6 +350,7 @@ class DeepSeekClient:
                 response.headers.get("x-request-id")
                 or payload_json.get("id")
             )
+            self._persist_raw(request_id, content)
             record = RequestRecord(
                 purpose=purpose,
                 attempt=attempt,

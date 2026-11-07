@@ -20,6 +20,7 @@ from backend.app.deepseek_generation import (
     run_repair_loop,
 )
 from backend.app.m2_deepseek_pipeline import generate_pilot_passage
+from backend.app.m2_deepseek_pipeline import _validate_explanation_batch
 from backend.app.m2_pilot import load_pilot_schedule
 
 
@@ -112,6 +113,31 @@ def test_ping_request_is_tiny_and_does_not_require_json_output(monkeypatch) -> N
     assert result["prompt_tokens"] == 8
     assert captured["payload"]["max_tokens"] == 1
     assert "response_format" not in captured["payload"]
+
+
+def test_client_persists_raw_response_with_eight_thousand_character_cap(
+    monkeypatch,
+    tmp_path,
+) -> None:
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "test-secret")
+    long_value = "x" * 9000
+
+    def handler(_request: httpx.Request) -> httpx.Response:
+        body = completion(json.dumps({"payload": long_value}))
+        body["id"] = "req-raw"
+        return httpx.Response(200, json=body)
+
+    client = DeepSeekClient(
+        CONFIG,
+        http_client=httpx.Client(transport=httpx.MockTransport(handler)),
+        raw_output_dir=tmp_path,
+    )
+
+    client.chat_json("smoke", 'Return {"payload":"..."} as JSON.')
+
+    raw_path = tmp_path / "req-raw.txt"
+    assert raw_path.exists()
+    assert len(raw_path.read_text(encoding="utf-8")) == 8000
 
 
 def test_client_rejects_finish_reason_length_before_schema_validation(
@@ -371,15 +397,12 @@ def test_split_pipeline_uses_passage_question_and_explanation_requests() -> None
             elif purpose.startswith("explanations:"):
                 data = {
                     "explanations": [
-                        {
-                            "question_index": index,
-                            "explanation": (
-                                "第一句说明答案依据。"
-                                "第二句说明干扰项为何不合适。"
-                                "第三句说明本题考点。"
-                            ),
-                        }
-                        for index in range(1, 5)
+                        (
+                            "第一句说明答案依据。"
+                            "第二句说明干扰项为何不合适。"
+                            "第三句说明本题考点。"
+                        )
+                        for _index in range(1, 5)
                     ]
                 }
             else:
@@ -410,3 +433,33 @@ def test_split_pipeline_uses_passage_question_and_explanation_requests() -> None
         "questions",
         "explanations",
     ]
+
+
+def test_explanation_batch_accepts_contract_string_entries() -> None:
+    result = _validate_explanation_batch(
+        [1, 2],
+        {
+            "explanations": [
+                "第一句说明答案。第二句说明干扰项。第三句说明考点。",
+                "第一句说明依据。第二句说明误区。第三句说明知识。",
+            ]
+        },
+    )
+
+    assert result == {
+        1: "第一句说明答案。第二句说明干扰项。第三句说明考点。",
+        2: "第一句说明依据。第二句说明误区。第三句说明知识。",
+    }
+
+
+def test_explanation_validation_error_reports_received_type_and_sample() -> None:
+    with pytest.raises(ValueError) as raised:
+        _validate_explanation_batch(
+            [1],
+            {"explanations": [{"unexpected": "object"}]},
+        )
+
+    message = str(raised.value)
+    assert message.startswith("EXPLANATION_NOT_STRING")
+    assert "received_type=dict" in message
+    assert 'sample="{\'unexpected\': \'object\'}"' in message

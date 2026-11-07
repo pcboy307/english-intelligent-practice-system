@@ -1,0 +1,16 @@
+{
+  "started_at": "2026-11-07T12:51:54.636108+00:00",
+  "model_id": "deepseek-flash",
+  "thinking": {
+    "type": "disabled"
+  },
+  "max_tokens": 8192,
+  "batch_size": 10,
+  "passage_group_id": "DEMO-CLOZE-02",
+  "status": "failed",
+  "reason": "contract_validation_error",
+  "error": "EXPLANATION_NOT_STRING: received_type=dict sample=\"{'question_index': 1, 'explanation': '第1空应填复数名词bikes，因为前面有twenty修饰，表示“二十辆自行车”，且后文demand grew quickly说明数量不止一辆。bike是单数形式，与\"",
+  "finish_reason": "stop",
+  "input_tokens": 973,
+  "output_tokens": 853
+}

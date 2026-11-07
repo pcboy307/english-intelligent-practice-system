@@ -18,7 +18,7 @@
   "prompt_version": "m2-gen-v1",
   "request_timeout_seconds": 120,
   "request_retries_max": 3,
-  "repair_retries_max": 3,
+  "repair_retries_max": 1,
   "circuit_breaker_consecutive_failures": 5,
   "budget_stop_ratio": 0.8,
   "price_input_per_1m_cny": 2.0,

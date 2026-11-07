@@ -286,7 +286,10 @@ def main() -> None:
             f"{contract['api_key_env']} is not set; refusing to write secrets "
             "or call DeepSeek."
         )
-    client = DeepSeekClient(contract)
+    client = DeepSeekClient(
+        contract,
+        raw_output_dir=EVIDENCE_DIR / "raw-responses",
+    )
     model_id, model_list = ensure_model_id(contract, client)
     ping = client.ping()
     write_json(

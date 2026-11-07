@@ -108,7 +108,10 @@ def main() -> None:
             for index, assignment in enumerate(batch)
         ],
     )
-    client = DeepSeekClient(contract)
+    client = DeepSeekClient(
+        contract,
+        raw_output_dir=EVIDENCE / "raw-responses",
+    )
     ledger = CostLedger(contract)
     result = {
         "started_at": datetime.now(timezone.utc).isoformat(),
