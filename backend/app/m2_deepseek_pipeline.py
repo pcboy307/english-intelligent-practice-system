@@ -4,7 +4,10 @@ from __future__ import annotations
 
 import json
 import re
+from pathlib import Path
 from typing import Any
+
+import jsonschema
 
 from .deepseek_generation import (
     CostLedger,
@@ -21,6 +24,20 @@ from .question_validation import (
     validate_question_book_tag,
 )
 
+ROOT = Path(__file__).resolve().parents[2]
+GENERATION_BATCH_SCHEMA_PATH = (
+    ROOT / "contracts" / "schemas" / "generation-batch.json"
+)
+GENERATION_BATCH_SCHEMA = json.loads(
+    GENERATION_BATCH_SCHEMA_PATH.read_text(encoding="utf-8")
+)
+QUESTION_SCHEMA = json.loads(
+    (ROOT / "contracts" / "schemas" / "question.json").read_text(
+        encoding="utf-8"
+    )
+)
+EXPLANATION_SCHEMA = QUESTION_SCHEMA["properties"]["explanation"]
+
 
 def _word_count(text: str) -> int:
     return len(re.findall(r"[A-Za-z]+(?:['-][A-Za-z]+)*", text))
@@ -30,7 +47,7 @@ def _sentence_count(text: str) -> int:
     return len(
         [
             item
-            for item in re.split(r"[.!?。！？]+", text)
+            for item in re.split(r"[。！？]+", text)
             if item.strip()
         ]
     )
@@ -110,7 +127,14 @@ def _build_explanations_prompt(
     ]
     return f"""
 Write only Chinese explanations for the following fixed questions.
-Return JSON exactly as {{"explanations": [...]}}.
+Return JSON matching this exact shape:
+{{
+  "explanations": [
+    {{"question_index": 1, "explanation": "第一句。第二句。第三句。"}}
+  ]
+}}
+Every array item MUST be an object containing exactly question_index and
+explanation. Do not return bare strings and do not drop question_index.
 Each explanation must contain at least three complete Chinese sentences,
 separated by Chinese full stops: the correct-answer reason, why a distractor
 is wrong, and the assessed knowledge point. Do not change any question.
@@ -239,36 +263,58 @@ def _validate_explanation_batch(
     expected_indices: list[int],
     data: dict[str, Any],
 ) -> dict[int, str]:
-    explanations = data.get("explanations")
-    if not isinstance(explanations, list):
+    try:
+        jsonschema.validate(data, GENERATION_BATCH_SCHEMA)
+    except jsonschema.ValidationError as error:
+        path = list(error.absolute_path)
+        if (
+            error.validator == "type"
+            and len(path) >= 2
+            and path[0] == "explanations"
+            and isinstance(path[1], int)
+            and isinstance(data.get("explanations"), list)
+        ):
+            item = data["explanations"][path[1]]
+            raise ValueError(
+                "EXPLANATION_ITEM_NOT_OBJECT: "
+                f"received_type={type(item).__name__} "
+                f"sample={json.dumps(item, ensure_ascii=False)[:120]}"
+            ) from error
         raise ValueError(
-            "EXPLANATIONS_ARRAY_MISSING: "
-            f"received_type={type(explanations).__name__} "
-            f"sample={str(explanations)[:120]!r}"
+            "GENERATION_BATCH_SCHEMA_INVALID: "
+            f"path={path} "
+            f"received={json.dumps(data, ensure_ascii=False)[:300]!r}"
+        ) from error
+    explanations = data["explanations"]
+    indices = [item["question_index"] for item in explanations]
+    if len(indices) != len(set(indices)):
+        raise ValueError(
+            "EXPLANATION_INDEX_DUPLICATE: "
+            f"indices={indices}"
         )
-    if len(explanations) != len(expected_indices):
+    if set(indices) != set(expected_indices):
         raise ValueError(
-            "EXPLANATION_COUNT_MISMATCH: "
-            f"expected={len(expected_indices)} actual={len(explanations)}"
+            "EXPLANATION_INDEX_SET_MISMATCH: "
+            f"expected={sorted(expected_indices)} actual={sorted(indices)}"
         )
     by_index: dict[int, str] = {}
-    for question_index, explanation in zip(
-        expected_indices,
-        explanations,
-        strict=True,
-    ):
-        if not isinstance(explanation, str):
-            raise ValueError(
-                "EXPLANATION_NOT_STRING: "
-                f"received_type={type(explanation).__name__} "
-                f"sample={str(explanation)[:120]!r}"
-            )
-        if not isinstance(explanation, str) or _sentence_count(explanation) < 3:
+    for item in sorted(explanations, key=lambda value: value["question_index"]):
+        question_index = item["question_index"]
+        explanation = item["explanation"]
+        if _sentence_count(explanation) < 3:
             raise ValueError(
                 "EXPLANATION_MIN_SENTENCES_NOT_MET "
                 f"index={question_index} received_type=str "
                 f"sample={explanation[:120]!r}"
             )
+        try:
+            jsonschema.validate(explanation, EXPLANATION_SCHEMA)
+        except jsonschema.ValidationError as error:
+            raise ValueError(
+                "QUESTION_SCHEMA_EXPLANATION_INVALID: "
+                f"received_type={type(explanation).__name__} "
+                f"sample={str(explanation)[:120]!r}"
+            ) from error
         by_index[question_index] = explanation
     return by_index
 
@@ -332,6 +378,7 @@ def generate_pilot_passage(
                 f"batch-{start // 10 + 1}"
             ),
             prompt=_build_explanations_prompt(passage, batch_questions),
+            response_schema=GENERATION_BATCH_SCHEMA,
             validate=lambda data, indices=expected_indices: (
                 _validate_explanation_batch(indices, data)
             ),

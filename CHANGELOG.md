@@ -124,6 +124,15 @@
 - 10 条解析冒烟未通过：模型仍返回对象数组，`finish_reason=stop`，已保留完整原文并按规则停止，未再次请求。
 - 上一轮 8 个请求中，同一结构错误产生 3 次重试，浪费 6002 tokens，估算 0.027244 元。
 
+## 2026-11-07 - M2.0b 批量解析 IR 契约
+
+- 新增 `contracts/schemas/generation-batch.json`，固定 explanation 批响应为带 `question_index` 的对象数组。
+- IR 层使用 JSON Schema 校验；索引必须无重复、无缺号、无越界，并按索引排序映射。
+- 最终 100 字以内解析继续使用 `question.json` 的字符串定义做第二次校验。
+- 原始模型响应统一落盘到 `qa/evidence/m2b/raw-responses/`，最多保存 8000 字符。
+- 结构修复重试降为 1 次；429/超时/5xx 仍最多指数退避 3 次。
+- DeepSeek structured output `json_schema` 冒烟返回 HTTP 400：`This response_format type is unavailable now`，按冒烟规则停止，没有自动回退。
+
 ## 2026-11-07 - Demo Bank 规模笔误修正
 
 - 笔误修正：Demo Bank 由文档中的“60 题/11 篇”统一改为“80 题/11 篇”。

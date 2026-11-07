@@ -251,12 +251,25 @@ class DeepSeekClient:
         prompt: str,
         *,
         max_tokens: int | None = None,
+        response_schema: dict[str, Any] | None = None,
     ) -> DeepSeekResponse:
         if self.consecutive_transport_failures >= 5:
             raise CircuitOpen("CIRCUIT_OPEN_AFTER_FIVE_CONSECUTIVE_FAILURES")
         model_id = self.config.get("model_id")
         if not model_id:
             raise DeepSeekGenerationError("DEEPSEEK_MODEL_ID_NOT_CONFIGURED")
+        response_format = (
+            {
+                "type": "json_schema",
+                "json_schema": {
+                    "name": "generation_batch",
+                    "strict": True,
+                    "schema": response_schema,
+                },
+            }
+            if response_schema is not None
+            else {"type": "json_object"}
+        )
         payload = {
             "model": model_id,
             "messages": [
@@ -271,7 +284,7 @@ class DeepSeekClient:
             ],
             "temperature": float(self.config["temperature"]),
             "max_tokens": int(max_tokens or self.config["max_tokens"]),
-            "response_format": {"type": "json_object"},
+            "response_format": response_format,
             "thinking": {"type": "disabled"},
             "stream": False,
         }
@@ -328,15 +341,32 @@ class DeepSeekClient:
                 continue
 
             if response.status_code >= 400:
+                response_text = response.text
+                request_id = response.headers.get("x-request-id")
+                try:
+                    error_payload = response.json()
+                    request_id = request_id or (
+                        (error_payload.get("error") or {}).get("request_id")
+                    )
+                except json.JSONDecodeError:
+                    pass
                 record = RequestRecord(
                     purpose=purpose,
                     attempt=attempt,
                     status="api_error",
                     elapsed_seconds=elapsed,
-                    error=response.text[:500],
+                    error=response_text[:500],
+                    request_id=request_id,
                 )
                 self.requests.append(record)
-                raise DeepSeekAPIError(response.status_code, response.text[:500])
+                self._persist_raw(
+                    request_id,
+                    f"HTTP {response.status_code}\n{response_text}",
+                )
+                raise DeepSeekAPIError(
+                    response.status_code,
+                    response_text[:500],
+                )
 
             self.consecutive_transport_failures = 0
             payload_json = response.json()
@@ -458,6 +488,7 @@ def run_repair_loop(
     prompt: str,
     validate: Callable[[dict[str, Any]], Any],
     max_repair_retries: int = 3,
+    response_schema: dict[str, Any] | None = None,
 ) -> Any:
     errors: list[str] = []
     for repair_attempt in range(max_repair_retries + 1):
@@ -469,7 +500,11 @@ def run_repair_loop(
                 + json.dumps(errors, ensure_ascii=False, indent=2)
             )
         try:
-            response = client.chat_json(purpose, repair_prompt)
+                response = client.chat_json(
+                    purpose,
+                    repair_prompt,
+                    response_schema=response_schema,
+                )
         except (FinishReasonError, ResponseJSONError) as error:
             request_record = client.requests[-1] if client.requests else None
             if request_record is not None:

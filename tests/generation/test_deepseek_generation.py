@@ -8,6 +8,7 @@ import pytest
 
 from backend.app.deepseek_generation import (
     BudgetThresholdReached,
+    DeepSeekAPIError,
     CircuitOpen,
     CostLedger,
     DeepSeekClient,
@@ -20,7 +21,10 @@ from backend.app.deepseek_generation import (
     run_repair_loop,
 )
 from backend.app.m2_deepseek_pipeline import generate_pilot_passage
-from backend.app.m2_deepseek_pipeline import _validate_explanation_batch
+from backend.app.m2_deepseek_pipeline import (
+    GENERATION_BATCH_SCHEMA_PATH,
+    _validate_explanation_batch,
+)
 from backend.app.m2_pilot import load_pilot_schedule
 
 
@@ -91,6 +95,40 @@ def test_client_uses_environment_key_json_mode_and_records_finish_reason(
     assert captured["payload"]["thinking"] == {"type": "disabled"}
 
 
+def test_client_can_send_json_schema_structured_output(monkeypatch) -> None:
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "test-secret")
+    captured = {}
+    schema = {
+        "type": "object",
+        "properties": {"ok": {"type": "boolean"}},
+        "required": ["ok"],
+        "additionalProperties": False,
+    }
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        captured["payload"] = json.loads(request.content)
+        return httpx.Response(200, json=completion('{"ok": true}'))
+
+    client = DeepSeekClient(
+        CONFIG,
+        http_client=httpx.Client(transport=httpx.MockTransport(handler)),
+    )
+    client.chat_json(
+        "structured",
+        "Return JSON.",
+        response_schema=schema,
+    )
+
+    assert captured["payload"]["response_format"] == {
+        "type": "json_schema",
+        "json_schema": {
+            "name": "generation_batch",
+            "strict": True,
+            "schema": schema,
+        },
+    }
+
+
 def test_ping_request_is_tiny_and_does_not_require_json_output(monkeypatch) -> None:
     monkeypatch.setenv("DEEPSEEK_API_KEY", "test-secret")
     captured = {}
@@ -138,6 +176,39 @@ def test_client_persists_raw_response_with_eight_thousand_character_cap(
     raw_path = tmp_path / "req-raw.txt"
     assert raw_path.exists()
     assert len(raw_path.read_text(encoding="utf-8")) == 8000
+
+
+def test_api_error_persists_raw_body_and_request_id(
+    monkeypatch,
+    tmp_path,
+) -> None:
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "test-secret")
+
+    def handler(_request: httpx.Request) -> httpx.Response:
+        return httpx.Response(
+            400,
+            json={
+                "error": {
+                    "message": "response_format unavailable",
+                    "request_id": "req-error",
+                }
+            },
+        )
+
+    client = DeepSeekClient(
+        CONFIG,
+        http_client=httpx.Client(transport=httpx.MockTransport(handler)),
+        raw_output_dir=tmp_path,
+    )
+
+    with pytest.raises(DeepSeekAPIError):
+        client.chat_json("structured", "Return JSON.")
+
+    raw_path = tmp_path / "req-error.txt"
+    assert raw_path.exists()
+    assert "HTTP 400" in raw_path.read_text(encoding="utf-8")
+    assert "response_format unavailable" in raw_path.read_text(encoding="utf-8")
+    assert client.requests[-1].request_id == "req-error"
 
 
 def test_client_rejects_finish_reason_length_before_schema_validation(
@@ -259,7 +330,7 @@ def test_repair_loop_retries_only_the_failed_step_with_error_feedback() -> None:
             self.prompts = []
             self.requests = []
 
-        def chat_json(self, purpose, prompt):
+        def chat_json(self, purpose, prompt, **_kwargs):
             self.prompts.append((purpose, prompt))
             questions = [] if len(self.prompts) == 1 else [1]
             self.requests.append(
@@ -313,7 +384,7 @@ def test_repair_loop_stops_after_three_repairs() -> None:
         def __init__(self) -> None:
             self.calls = 0
 
-        def chat_json(self, _purpose, _prompt):
+        def chat_json(self, _purpose, _prompt, **_kwargs):
             self.calls += 1
             return DeepSeekResponse(
                 data={"questions": []},
@@ -383,7 +454,7 @@ def test_split_pipeline_uses_passage_question_and_explanation_requests() -> None
         def __init__(self) -> None:
             self.calls = []
 
-        def chat_json(self, purpose, prompt):
+        def chat_json(self, purpose, prompt, **_kwargs):
             self.calls.append((purpose, prompt))
             if purpose.startswith("passage:"):
                 data = {
@@ -397,12 +468,15 @@ def test_split_pipeline_uses_passage_question_and_explanation_requests() -> None
             elif purpose.startswith("explanations:"):
                 data = {
                     "explanations": [
-                        (
-                            "第一句说明答案依据。"
-                            "第二句说明干扰项为何不合适。"
-                            "第三句说明本题考点。"
-                        )
-                        for _index in range(1, 5)
+                        {
+                            "question_index": index,
+                            "explanation": (
+                                "第一句说明答案依据。"
+                                "第二句说明干扰项为何不合适。"
+                                "第三句说明本题考点。"
+                            ),
+                        }
+                        for index in range(1, 5)
                     ]
                 }
             else:
@@ -435,13 +509,29 @@ def test_split_pipeline_uses_passage_question_and_explanation_requests() -> None
     ]
 
 
-def test_explanation_batch_accepts_contract_string_entries() -> None:
+def test_generation_batch_schema_file_exists_with_explanation_ir_contract() -> None:
+    schema = json.loads(GENERATION_BATCH_SCHEMA_PATH.read_text(encoding="utf-8"))
+
+    assert schema["required"] == ["explanations"]
+    assert schema["additionalProperties"] is False
+    item = schema["properties"]["explanations"]["items"]
+    assert item["required"] == ["question_index", "explanation"]
+    assert item["additionalProperties"] is False
+
+
+def test_explanation_batch_sorts_by_question_index_before_mapping() -> None:
     result = _validate_explanation_batch(
         [1, 2],
         {
             "explanations": [
-                "第一句说明答案。第二句说明干扰项。第三句说明考点。",
-                "第一句说明依据。第二句说明误区。第三句说明知识。",
+                {
+                    "question_index": 2,
+                    "explanation": "第一句说明依据。第二句说明误区。第三句说明知识。",
+                },
+                {
+                    "question_index": 1,
+                    "explanation": "第一句说明答案。第二句说明干扰项。第三句说明考点。",
+                },
             ]
         },
     )
@@ -456,10 +546,52 @@ def test_explanation_validation_error_reports_received_type_and_sample() -> None
     with pytest.raises(ValueError) as raised:
         _validate_explanation_batch(
             [1],
-            {"explanations": [{"unexpected": "object"}]},
+            {"explanations": ["not an object"]},
         )
 
     message = str(raised.value)
-    assert message.startswith("EXPLANATION_NOT_STRING")
-    assert "received_type=dict" in message
-    assert 'sample="{\'unexpected\': \'object\'}"' in message
+    assert message.startswith("EXPLANATION_ITEM_NOT_OBJECT")
+    assert "received_type=str" in message
+    assert 'sample="not an object"' in message
+
+
+@pytest.mark.parametrize(
+    ("entries", "expected_code"),
+    [
+        (
+            [
+                {"question_index": 1, "explanation": "一。二。三。"},
+                {"question_index": 1, "explanation": "一。二。三。"},
+            ],
+            "EXPLANATION_INDEX_DUPLICATE",
+        ),
+        (
+            [
+                {"question_index": 1, "explanation": "一。二。三。"},
+                {"question_index": 3, "explanation": "一。二。三。"},
+            ],
+            "EXPLANATION_INDEX_SET_MISMATCH",
+        ),
+    ],
+)
+def test_explanation_batch_rejects_duplicate_missing_or_out_of_range_indices(
+    entries,
+    expected_code,
+) -> None:
+    with pytest.raises(ValueError, match=expected_code):
+        _validate_explanation_batch([1, 2], {"explanations": entries})
+
+
+def test_explanation_batch_rejects_fewer_than_three_chinese_sentences() -> None:
+    with pytest.raises(ValueError, match="EXPLANATION_MIN_SENTENCES_NOT_MET"):
+        _validate_explanation_batch(
+            [1],
+            {
+                "explanations": [
+                    {
+                        "question_index": 1,
+                        "explanation": "只有一句。第二句。",
+                    }
+                ]
+            },
+        )

@@ -18,10 +18,12 @@ if str(ROOT) not in sys.path:
 
 from backend.app.deepseek_generation import (  # noqa: E402
     CostLedger,
+    DeepSeekAPIError,
     DeepSeekClient,
     FinishReasonError,
 )
 from backend.app.m2_deepseek_pipeline import (  # noqa: E402
+    GENERATION_BATCH_SCHEMA,
     _build_explanations_prompt,
     _validate_explanation_batch,
 )
@@ -105,7 +107,11 @@ def main() -> None:
         "passage_group_id": group["passage_group_id"],
     }
     try:
-        response = client.chat_json("smoke:explanations:batch-10", prompt)
+        response = client.chat_json(
+            "smoke:explanations:batch-10",
+            prompt,
+            response_schema=GENERATION_BATCH_SCHEMA,
+        )
     except FinishReasonError as error:
         request = client.requests[-1]
         result.update(
@@ -117,6 +123,20 @@ def main() -> None:
                 "output_tokens": request.completion_tokens,
                 "raw_content": error.raw_content,
                 "raw_response": error.raw_response,
+            }
+        )
+        write_json(EVIDENCE / "smoke-explanations.json", result)
+        raise
+    except DeepSeekAPIError as error:
+        request = client.requests[-1]
+        result.update(
+            {
+                "status": "failed",
+                "reason": "deepseek_api_error",
+                "error": str(error),
+                "request_id": request.request_id,
+                "input_tokens": request.prompt_tokens,
+                "output_tokens": request.completion_tokens,
             }
         )
         write_json(EVIDENCE / "smoke-explanations.json", result)
