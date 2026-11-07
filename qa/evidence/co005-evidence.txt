@@ -8,13 +8,13 @@ top_right_controls=上一题, 下一题, 交卷后可查看报告
 next_navigation=第 2 题 / 共 30 题
 
 Report:
-report_title=2026-11-07-15-54-30题-0.00分
+report_title=2026-11-07-16-05-30题-0.00分
 history_listed=true
 history_opened=true
 history_deleted=true
 history_question_entry=history_report_then_view_original_only
 analysis_source=llm
-analysis_length=100
+analysis_length=83
 old_three_rule_lines_removed=true
 
 Delete transaction verification:

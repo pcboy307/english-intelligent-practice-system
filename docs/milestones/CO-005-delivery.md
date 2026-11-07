@@ -19,7 +19,7 @@
 - `qa/evidence/co005-history-list.png`
 - `qa/evidence/co005-history-report.png`
 
-最近一次本地模型分析为 `100` 字，来源为 `llm`；删除测试中
+最近一次本地模型分析为 `83` 字，来源为 `llm`；删除测试中
 `practice_reports=0`、`saved_answers=0`、`session_items=0`、`practice_sessions=0`。
 
 ## 浏览器确认
