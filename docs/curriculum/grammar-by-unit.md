@@ -1,6 +1,6 @@
 # 人教版（2019）逐单元语法清单
 
-状态：M0 冻结候选（四档重做版）。
+状态：M0 冻结候选（集合判据重做版）。
 
 教材：人民教育出版社《普通高中教科书·英语》必修第一至第三册、选择性必修第一至第二册。
 
@@ -10,10 +10,12 @@
 
 - 正式教学单元为 25 个，Welcome Unit 不计入 25 个正式单元。
 - 语法白名单按 grammar item ID 计数，而不是按单元数计数。
-- `完全一致`：教材板块在类别层面与 V11 授权项目对齐，没有超出授权范围。
+- `完全一致`：教材实际子项集合 T 与对应 grammar ID 的授权集合 S 相等。
 - `教材范围更窄`：教材只教某个白名单 ID 的部分子类；只能按教材已学子类设题。
 - `教材范围更宽`：教材同时包含授权子类与禁止子类；只开放授权子类，禁止子类不设题。
 - `白名单外`：教材板块与 V11 授权项目无交集，只能作为语篇自然语言现象。
+- 只要处置中存在“不考 X”而 X 原先属于该 ID 的可考范围，T 就按真子集处理，不能
+  标为完全一致。
 - 选必三、选必四不进入本表，任何独有语法一律不可考。
 
 ## 逐单元对照
@@ -24,25 +26,25 @@
 | 2 | 必修一 U2 Travelling Around | 35 | 现在进行时表将来 | `tense_system` | 教材范围更窄 | 只按现在进行时表将来设题 |
 | 3 | 必修一 U3 Sports and Fitness | 47 | 附加疑问句 | 无 | 白名单外 | 附加疑问句不设题 |
 | 4 | 必修一 U4 Natural Disasters | 59 | 限制性定语从句 | `relative_clauses_defining` | 完全一致 | 无 |
-| 5 | 必修一 U5 Languages Around the World | 71 | 限制性定语从句（关系副词、介词+关系代词） | `relative_clauses_defining` | 完全一致 | 不考多重嵌套 |
-| 6 | 必修二 U1 Cultural Heritage | 13 | 限制性定语从句复习与扩展 | `relative_clauses_defining` | 完全一致 | 不考多重嵌套 |
+| 5 | 必修一 U5 Languages Around the World | 71 | 限制性定语从句（关系副词、介词+关系代词） | `relative_clauses_defining` | 教材范围更窄 | 不考多重嵌套，T 为 S 的真子集 |
+| 6 | 必修二 U1 Cultural Heritage | 13 | 限制性定语从句复习与扩展 | `relative_clauses_defining` | 教材范围更窄 | 不考多重嵌套，T 为 S 的真子集 |
 | 7 | 必修二 U2 Wildlife Protection | 25 | 现在进行时被动语态 | `passive_voice_tenses` | 教材范围更窄 | 只按现在进行时被动设题 |
 | 8 | 必修二 U3 The Internet | 37 | 现在完成时被动语态 | `passive_voice_tenses` | 教材范围更窄 | 只按现在完成时被动设题 |
-| 9 | 必修二 U4 History and Traditions | 49 | 过去分词作定语、宾语补足语 | `past_participle_nonfinite` | 完全一致 | 无 |
-| 10 | 必修二 U5 Music | 61 | 过去分词作状语 | `past_participle_nonfinite` | 完全一致 | 无 |
+| 9 | 必修二 U4 History and Traditions | 49 | 过去分词作定语、宾语补足语 | `past_participle_nonfinite` | 教材范围更窄 | `{作定语,作宾补} ⊂ {作定语,作状语,作宾补}` |
+| 10 | 必修二 U5 Music | 61 | 过去分词作状语 | `past_participle_nonfinite` | 教材范围更窄 | `{作状语} ⊂ {作定语,作状语,作宾补}` |
 | 11 | 必修三 U1 Festivals and Celebrations | 13 | 动词 -ing 作定语和表语 | `v_ing_nonfinite` | 教材范围更宽 | 开放 -ing 作定语；禁止设题：-ing 作表语 |
-| 12 | 必修三 U2 Morals and Virtues | 25 | 动词 -ing 作宾语补足语和状语 | `v_ing_nonfinite` | 完全一致 | 无 |
+| 12 | 必修三 U2 Morals and Virtues | 25 | 动词 -ing 作宾语补足语和状语 | `v_ing_nonfinite` | 教材范围更窄 | `{作宾补,作状语} ⊂ {作定语,作状语,作宾补,作主语}` |
 | 13 | 必修三 U3 Diverse Cultures | 37 | 宾语从句 | `noun_clauses` | 教材范围更窄 | 只按宾语从句设题 |
-| 14 | 必修三 U4 Space Exploration | 49 | 不定式作宾语、表语和状语 | `infinitive_nonfinite` | 完全一致 | 只允许 `to do` / `to be done` |
+| 14 | 必修三 U4 Space Exploration | 49 | 不定式作宾语、表语和状语 | `infinitive_nonfinite` | 教材范围更窄 | T 未覆盖作定语、作主语；形式只允许 `to do` / `to be done` |
 | 15 | 必修三 U5 The Value of Money | 61 | 主语从句 | `noun_clauses` | 教材范围更窄 | 只按主语从句设题 |
 | 16 | 选必一 U1 People of Achievement | 12 | 非限制性定语从句 | `relative_clauses_non_defining` | 完全一致 | 无 |
 | 17 | 选必一 U2 Looking into the Future | 24 | 将来进行时 | `tense_system` | 教材范围更窄 | 只按将来进行时设题 |
 | 18 | 选必一 U3 Fascinating Parks | 36 | 动词 -ing 作主语 | `v_ing_nonfinite` | 教材范围更窄 | 只按 -ing 作主语设题 |
-| 19 | 选必一 U4 Body Language | 48 | 动词 -ing 作宾语、表语和状语 | `v_ing_nonfinite` | 教材范围更宽 | 开放作宾语、状语；禁止设题：-ing 作表语 |
+| 19 | 选必一 U4 Body Language | 48 | 动词 -ing 作宾语、表语和状语 | `v_ing_nonfinite` | 教材范围更宽 | V11 第 4 行无“作宾语”；开放作状语；禁止设题：作宾语、作表语 |
 | 20 | 选必一 U5 Working the Land | 60 | 主语从句 | `noun_clauses` | 教材范围更窄 | 只按主语从句设题 |
 | 21 | 选必二 U1 Science and Scientists | 12 | 表语从句 | `noun_clauses` | 教材范围更窄 | 只按表语从句设题 |
 | 22 | 选必二 U2 Bridging Cultures | 24 | 宾语从句 | `noun_clauses` | 教材范围更窄 | 只按宾语从句设题 |
-| 23 | 选必二 U3 Food and Culture | 36 | 过去完成时及过去完成被动语态 | `tense_system`, `passive_voice_tenses` | 完全一致 | 不考完成进行时 |
+| 23 | 选必二 U3 Food and Culture | 36 | 过去完成时及过去完成被动语态 | `tense_system`, `passive_voice_tenses` | 教材范围更窄 | 两个 ID 均只覆盖单一子类；不考完成进行时 |
 | 24 | 选必二 U4 Journey Across a Vast Land | 48 | 过去完成时复习 | `tense_system` | 教材范围更窄 | 只按过去完成时设题 |
 | 25 | 选必二 U5 First Aid | 60 | 省略 | 无 | 白名单外 | 省略与替代均不设题 |
 
@@ -53,6 +55,7 @@
 | 名词短语、形容词短语、副词短语 | 不作独立结构辨析 |
 | 附加疑问句 | 不作考点 |
 | 不定式作宾语、表语、状语 | CO-001 已补入 `infinitive_nonfinite`；只考 `to do` / `to be done` |
+| 动词 -ing 作宾语 | V11 第 4 行未授权；选必一 U4 处置为只开放作状语 |
 | 动词 -ing 作表语 | V11 第 4 行未授权，不设题；不得因教材出现而扩权 |
 | 省略、省略与替代综合判断 | 不作考点 |
 | 混合虚拟、含蓄条件虚拟、倒装式虚拟 | 不在白名单，禁止命题 |
@@ -61,11 +64,24 @@
 
 ## 结论
 
-25 个正式单元按四档统计：
+25 个正式单元按集合判据统计：
 
-- `完全一致` 9 个；
-- `教材范围更窄` 11 个；
+- `完全一致` 2 个；
+- `教材范围更窄` 18 个；
 - `教材范围更宽` 2 个；
 - `白名单外` 3 个。
 
-9 + 11 + 2 + 3 = 25。两个“教材范围更宽”单元只禁止明确列出的越界子类，不连带删除已授权子类。3 个白名单外单元只作为自然语言现象出现，不能被设置为考点。
+2 + 18 + 2 + 3 = 25。两个“教材范围更宽”单元只禁止明确列出的越界子类，不连带删除已授权子类。3 个白名单外单元只作为自然语言现象出现，不能被设置为考点。
+
+## 相对旧表的变化
+
+| 单元 | 旧判定 | 新判定 | 原因 |
+|---:|---|---|---|
+| 5 | 完全一致 | 教材范围更窄 | 明确不考多重嵌套，可考集合成为真子集 |
+| 6 | 完全一致 | 教材范围更窄 | 明确不考多重嵌套，可考集合成为真子集 |
+| 9 | 完全一致 | 教材范围更窄 | 教材只覆盖作定语、作宾补两个子项 |
+| 10 | 完全一致 | 教材范围更窄 | 教材只覆盖作状语一个子项 |
+| 12 | 完全一致 | 教材范围更窄 | 教材只覆盖作宾补、作状语 |
+| 14 | 完全一致 | 教材范围更窄 | 教材未覆盖不定式作定语、作主语 |
+| 19 | 教材范围更宽 | 教材范围更宽 | 处置改为只开放作状语，禁止作宾语、作表语 |
+| 23 | 完全一致 | 教材范围更窄 | 两个 ID 均只覆盖单一子类，且不考完成进行时 |

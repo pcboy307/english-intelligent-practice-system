@@ -434,6 +434,8 @@ export interface components {
                 blank_label: string;
                 passage_order: number;
                 question_order: number;
+                /** @enum {string} */
+                book_tag: "必修" | "选必一" | "选必二" | "跨册";
                 correct: boolean;
             }[];
         };
@@ -551,6 +553,8 @@ export interface components {
             blank_label: string;
             passage_order: number;
             question_order: number;
+            /** @enum {unknown} */
+            book_tag: "必修" | "选必一" | "选必二" | "跨册";
         };
         compositionNote: {
             bank_name: string;
@@ -607,6 +611,8 @@ export interface components {
                     blank_label: string;
                     passage_order: number;
                     question_order: number;
+                    /** @enum {unknown} */
+                    book_tag: "必修" | "选必一" | "选必二" | "跨册";
                 };
                 compositionNote: {
                     bank_name: string;
@@ -688,6 +694,8 @@ export interface components {
                 knowledge_points: string[];
                 grammar_tags: string[];
                 book_source: string;
+                /** @enum {unknown} */
+                book_tag: "必修" | "选必一" | "选必二" | "跨册";
                 difficulty: number;
             }[];
             error_tag_changes: {
@@ -809,6 +817,8 @@ export interface components {
             };
         };
         answerValue: string | string[];
+        /** @enum {string} */
+        bookTag: "必修" | "选必一" | "选必二" | "跨册";
         /** Question */
         question: {
             id: string;
@@ -834,7 +844,9 @@ export interface components {
             explanation: string;
             knowledge_points: string[];
             grammar_tags: ("relative_clauses_defining" | "relative_clauses_non_defining" | "passive_voice_tenses" | "past_participle_nonfinite" | "v_ing_nonfinite" | "noun_clauses" | "adverbial_clauses" | "subjunctive_basic_if" | "subjunctive_basic_should" | "partial_inversion_basic" | "cleft_basic" | "tense_system" | "subject_verb_agreement" | "articles" | "prepositions" | "pronouns" | "conjunctions" | "word_formation" | "comparatives_superlatives" | "with_compound" | "infinitive_nonfinite")[];
+            /** @description 教材与单元来源；必须能且只能解析出一个 book_tag。 */
             book_source: string;
+            book_tag: components["schemas"]["bookTag"];
             difficulty: number;
             out_of_scope_flags: string[];
             /** @enum {string} */

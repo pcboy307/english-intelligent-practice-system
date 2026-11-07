@@ -770,6 +770,7 @@ class PostgresStore:
                     "knowledge_points": question.knowledge_points,
                     "grammar_tags": question.grammar_tags,
                     "book_source": question.book_source,
+                    "book_tag": question.book_tag,
                     "difficulty": question.difficulty,
                 }
             )

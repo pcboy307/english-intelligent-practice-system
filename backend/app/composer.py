@@ -160,6 +160,7 @@ def assemble_demo_paper(
                 "question_id": question.id,
                 "type": question.type,
                 "passage_group_id": question.passage_group_id,
+                "book_tag": question.book_tag,
                 "weight": detail["weight"],
                 "base_weight": detail["base_weight"],
                 "recent_three_penalty": detail["recent_three_penalty"],

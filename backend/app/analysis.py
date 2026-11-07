@@ -50,6 +50,14 @@ def _ensure_explicit_action(text: str, maximum: int) -> str:
     return prefix + action
 
 
+def _normalize_score_phrase(text: str, total: int, correct: int) -> str:
+    return re.sub(
+        r"你?已?全答对\s*\d+\s*题",
+        f"{total} 题中答对 {correct} 题",
+        text,
+    )
+
+
 def generate_weakness_analysis(
     question_results: list[dict],
     weak_points: list[dict],
@@ -87,11 +95,12 @@ def generate_weakness_analysis(
     answered_count = sum(
         1 for item in question_results if str(item.get("user_answer", "")).strip()
     )
+    correct_count = sum(1 for item in question_results if item["correct"])
     prompt_data = {
         "题目数": len(question_results),
         "已答题数": answered_count,
         "未答题数": len(question_results) - answered_count,
-        "答对题数": sum(1 for item in question_results if item["correct"]),
+        "答对题数": correct_count,
         "薄弱知识点": weak_points,
         "典型错题": wrong_samples,
     }
@@ -102,8 +111,9 @@ def generate_weakness_analysis(
                 "role": "system",
                 "content": (
                     "你是一位温和、专业的高中英语老师。只输出一段70至90个汉字的中文分析，"
-                    "不要标题、列表、分数复述或空泛鼓励。必须点出两个最需巩固的知识点，"
+                    "不要标题、列表或空泛鼓励。必须点出两个最需巩固的知识点，"
                     "说明典型错因，并以“建议：”开头给出今天就能执行的具体练习动作。"
+                    "若提及答题数，只能写“共N题，答对M题”，禁止写“全答对N题”。"
                     "若未答题数超过10，应优先指出限时完成和选择策略问题，"
                     "不要把未作答误判为知识遗忘。"
                 ),
@@ -125,6 +135,11 @@ def generate_weakness_analysis(
         )
         response.raise_for_status()
         content = response.json()["choices"][0]["message"].get("content") or ""
+        content = _normalize_score_phrase(
+            content,
+            len(question_results),
+            correct_count,
+        )
         text = _limit(content, maximum)
         if not re.search(r"[\u4e00-\u9fff]", text):
             raise ValueError("LLM_ANALYSIS_EMPTY")

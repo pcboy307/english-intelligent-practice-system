@@ -59,7 +59,8 @@
         "presentation_mode",
         "blank_label",
         "passage_order",
-        "question_order"
+        "question_order",
+        "book_tag"
       ],
       "properties": {
         "question_id": {"type": "string", "minLength": 1},
@@ -86,7 +87,8 @@
         },
         "blank_label": {"type": "string", "minLength": 1},
         "passage_order": {"type": "integer", "minimum": 1},
-        "question_order": {"type": "integer", "minimum": 1}
+        "question_order": {"type": "integer", "minimum": 1},
+        "book_tag": {"enum": ["必修", "选必一", "选必二", "跨册"]}
       }
     },
     "compositionNote": {

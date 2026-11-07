@@ -73,6 +73,11 @@ class DemoQuestion:
         return "必修"
 
     @property
+    def book_tag(self) -> str:
+        bucket = self.book_bucket
+        return "跨册" if bucket == "cross_book" else bucket
+
+    @property
     def topic(self) -> str:
         return {
             "DEMO-CLOZE-01": "environment",

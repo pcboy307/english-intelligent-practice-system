@@ -1,0 +1,199 @@
+{
+  "grammar_fill_questions": 400,
+  "grammar_id_count": 21,
+  "minimum_questions_per_id": 12,
+  "required_coverage_occurrences": 252,
+  "max_grammar_tags_per_question": 2,
+  "total_tag_capacity": 800,
+  "remaining_capacity_after_exclusive_ids": 656,
+  "remaining_coverage_occurrences": 108,
+  "distribution_targets": {
+    "必修": 80,
+    "选必一": 120,
+    "选必二": 180,
+    "跨册": 20
+  },
+  "rows": [
+    {
+      "book_tag": "必修",
+      "usable_id_count": 18,
+      "usable_ids": [
+        "relative_clauses_defining",
+        "relative_clauses_non_defining",
+        "passive_voice_tenses",
+        "past_participle_nonfinite",
+        "v_ing_nonfinite",
+        "noun_clauses",
+        "adverbial_clauses",
+        "cleft_basic",
+        "tense_system",
+        "subject_verb_agreement",
+        "articles",
+        "prepositions",
+        "pronouns",
+        "conjunctions",
+        "word_formation",
+        "comparatives_superlatives",
+        "with_compound",
+        "infinitive_nonfinite"
+      ],
+      "exclusive_id_count": 11,
+      "exclusive_ids": [
+        "relative_clauses_defining",
+        "passive_voice_tenses",
+        "past_participle_nonfinite",
+        "adverbial_clauses",
+        "subject_verb_agreement",
+        "articles",
+        "prepositions",
+        "pronouns",
+        "conjunctions",
+        "comparatives_superlatives",
+        "infinitive_nonfinite"
+      ],
+      "exclusive_coverage_occurrences": 132,
+      "minimum_questions_for_exclusive_ids": 66,
+      "target_questions": 80,
+      "tag_capacity_at_target": 160,
+      "passes": true
+    },
+    {
+      "book_tag": "选必一",
+      "usable_id_count": 9,
+      "usable_ids": [
+        "relative_clauses_non_defining",
+        "v_ing_nonfinite",
+        "noun_clauses",
+        "subjunctive_basic_if",
+        "subjunctive_basic_should",
+        "cleft_basic",
+        "tense_system",
+        "word_formation",
+        "with_compound"
+      ],
+      "exclusive_id_count": 0,
+      "exclusive_ids": [],
+      "exclusive_coverage_occurrences": 0,
+      "minimum_questions_for_exclusive_ids": 0,
+      "target_questions": 120,
+      "tag_capacity_at_target": 240,
+      "passes": true
+    },
+    {
+      "book_tag": "选必二",
+      "usable_id_count": 6,
+      "usable_ids": [
+        "noun_clauses",
+        "subjunctive_basic_if",
+        "subjunctive_basic_should",
+        "partial_inversion_basic",
+        "tense_system",
+        "word_formation"
+      ],
+      "exclusive_id_count": 1,
+      "exclusive_ids": [
+        "partial_inversion_basic"
+      ],
+      "exclusive_coverage_occurrences": 12,
+      "minimum_questions_for_exclusive_ids": 12,
+      "target_questions": 180,
+      "tag_capacity_at_target": 360,
+      "passes": true
+    },
+    {
+      "book_tag": "跨册",
+      "usable_id_count": 9,
+      "usable_ids": [
+        "relative_clauses_non_defining",
+        "v_ing_nonfinite",
+        "noun_clauses",
+        "subjunctive_basic_if",
+        "subjunctive_basic_should",
+        "cleft_basic",
+        "tense_system",
+        "word_formation",
+        "with_compound"
+      ],
+      "exclusive_id_count": 0,
+      "exclusive_ids": [],
+      "exclusive_coverage_occurrences": 0,
+      "minimum_questions_for_exclusive_ids": 0,
+      "target_questions": 20,
+      "tag_capacity_at_target": 40,
+      "passes": true
+    }
+  ],
+  "coverage_allocation": {
+    "adverbial_clauses": {
+      "必修": 12
+    },
+    "articles": {
+      "必修": 12
+    },
+    "comparatives_superlatives": {
+      "必修": 12
+    },
+    "conjunctions": {
+      "必修": 12
+    },
+    "infinitive_nonfinite": {
+      "必修": 12
+    },
+    "partial_inversion_basic": {
+      "选必二": 12
+    },
+    "passive_voice_tenses": {
+      "必修": 12
+    },
+    "past_participle_nonfinite": {
+      "必修": 12
+    },
+    "prepositions": {
+      "必修": 12
+    },
+    "pronouns": {
+      "必修": 12
+    },
+    "relative_clauses_defining": {
+      "必修": 12
+    },
+    "subject_verb_agreement": {
+      "必修": 12
+    },
+    "cleft_basic": {
+      "选必一": 12
+    },
+    "relative_clauses_non_defining": {
+      "选必一": 12
+    },
+    "subjunctive_basic_if": {
+      "选必二": 12
+    },
+    "subjunctive_basic_should": {
+      "选必二": 12
+    },
+    "v_ing_nonfinite": {
+      "选必一": 12
+    },
+    "with_compound": {
+      "选必一": 12
+    },
+    "noun_clauses": {
+      "选必二": 12
+    },
+    "tense_system": {
+      "选必二": 12
+    },
+    "word_formation": {
+      "选必二": 12
+    }
+  },
+  "remaining_tag_slots_after_allocation": {
+    "必修": 28,
+    "选必一": 192,
+    "选必二": 288,
+    "跨册": 40
+  },
+  "conclusion": "可达",
+  "passes": true
+}

@@ -24,6 +24,25 @@ class _Response:
         }
 
 
+class _ScoreResponse:
+    def raise_for_status(self) -> None:
+        return None
+
+    def json(self) -> dict:
+        return {
+            "choices": [
+                {
+                    "message": {
+                        "content": (
+                            "你已全答对 23 题，薄弱点在于现在完成时和被动语态，"
+                            "错因是忽略动作时间。建议：今天重做同类题并复述错因。"
+                        )
+                    }
+                }
+            ]
+        }
+
+
 def _question_result() -> dict:
     return {
         "correct": False,
@@ -69,3 +88,18 @@ def test_http_failure_uses_rule_fallback(monkeypatch) -> None:
     assert "一般现在时被动语态" in result["text"]
     assert "先回看错题依据" in result["text"]
     assert len(result["text"]) <= 100
+
+
+def test_score_wording_names_total_and_correct_count(monkeypatch) -> None:
+    monkeypatch.delenv("WEAKNESS_ANALYSIS_DISABLED", raising=False)
+    monkeypatch.setattr(analysis.httpx, "post", lambda *args, **kwargs: _ScoreResponse())
+    results = [_question_result() for _ in range(6)]
+    results.extend(
+        {**_question_result(), "correct": True, "user_answer": "is checked"}
+        for _ in range(23)
+    )
+
+    result = analysis.generate_weakness_analysis(results, _weak_points())
+
+    assert "全答对" not in result["text"]
+    assert "29 题中答对 23 题" in result["text"]

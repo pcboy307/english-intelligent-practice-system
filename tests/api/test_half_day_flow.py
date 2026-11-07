@@ -78,6 +78,10 @@ def test_first_paper_has_reading_mode_and_no_answers() -> None:
         "reading",
     }
     assert all(item["options"] for item in session["items"])
+    assert all(
+        item["book_tag"] in {"必修", "选必一", "选必二", "跨册"}
+        for item in session["items"]
+    )
     grammar_items = [item for item in session["items"] if item["type"] == "grammar_fill"]
     assert len(grammar_items) == 10
     assert all(len(item["options"] or []) == 4 for item in grammar_items)
@@ -334,6 +338,11 @@ def test_four_generated_papers_meet_all_hard_constraints() -> None:
         assert max(log["grammar_tag_counts"].values(), default=0) <= 3
         assert max(log["knowledge_point_counts"].values(), default=0) <= 3
         assert log["error_pool_ratio"] <= 0.60
+        assert all(
+            item["book_tag"] in {"必修", "选必一", "选必二", "跨册"}
+            for item in log["question_weights"]
+        )
+        assert len(log["question_weights"]) == expected_size
         logs.append(log)
         answer_all_correct(session, headers)
         submit_session(session, headers)

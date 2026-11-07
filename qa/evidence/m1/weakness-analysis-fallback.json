@@ -6,9 +6,9 @@
   "deployment": "local llama.cpp OpenAI-compatible API",
   "server_version": "llama-server 0.8.0-dev (commit 39febd2ad)",
   "configured_endpoint": "http://127.0.0.1:9/v1/chat/completions",
-  "session_id": "49c2c27c-627e-4e43-a135-36fcd18640a7",
+  "session_id": "ce811b10-9d95-45fe-92c1-9d63d32dcd4a",
   "question_count": 29,
-  "report_title": "2026-11-07-17-16-29题-79.31分",
+  "report_title": "2026-11-07-17-32-29题-79.31分",
   "wrong_question_ids": [
     "DEMO2-G01",
     "DEMO2-G02",

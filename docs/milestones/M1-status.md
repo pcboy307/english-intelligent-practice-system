@@ -1,6 +1,18 @@
 # M1 状态
 
+**阻塞项：M0 契约重判（A/B/C）。复核签字前不得打 tag。**
+
 状态：**Demo Bank 达标；M1 仍需按完整验收清单签字**。
+
+## M0 A/B/C 交付
+
+- A：25 单元已按集合关系重判，结果 `完全一致 2 / 教材范围更窄 18 /
+  教材范围更宽 2 / 白名单外 3`，见 `docs/curriculum/grammar-by-unit.md`。
+- B：21 个 ID 已写入允许册次集合；每道题使用唯一 `book_tag`。见
+  `docs/curriculum/grammar-book-matrix.md`。
+- C：21×12=252 题次、400 题双标签容量 800 题次，复算结论为“可达”，见
+  `qa/evidence/m0/grammar-book-feasibility.json`。
+- 以上仍需所有者复核，M1 门禁保持阻塞。
 
 ## Demo Bank
 
@@ -41,10 +53,10 @@
 - 薄弱点分析模型为 `qwen3.5:4b-q4_K_M`，通过本机 `llama.cpp` OpenAI 兼容接口
   `127.0.0.1:11435` 部署，服务端为 `llama-server 0.8.0-dev (commit
   39febd2ad)`。
-- 实际 LLM 输出 90 字，包含具体考点、错因和以“建议：”开头的动作：
-  “你已全答对 23 题，薄弱点在于现在完成时、过去分词作定语及一般现在时被动语态。
-  错因多是将完成时误判为过去时，或混淆分词作定语与谓语动词的用法。建议：今天
-  重做一组同类题并复述错因。”
+- 实际 LLM 输出 73 字，答题数采用“总题数 + 答对数”表述，包含具体考点、错因和
+  以“建议：”开头的动作：
+  “29 题中答对 23 题，但三处薄弱点暴露出时态与语态混淆问题。现在完成时易误用
+  过去时，因忽视‘对现在影响’；建议：今天重做一组同类题并复述错因。”
   证据见 `qa/evidence/m1/weakness-analysis.json`。
 - 强制连接失败时报告仍返回规则版分析，`source=fallback`，输出 66 字：
   `qa/evidence/m1/weakness-analysis-fallback.json`。

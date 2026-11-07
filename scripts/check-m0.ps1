@@ -180,17 +180,22 @@ Assert-True ($vocabulary.counting.unique_whitelist_entries -eq 3413) "Full allow
 Write-Output "PASS vocabulary entries=$($words.Count) singleWords=3021 phrases=392 officialBase=1600"
 
 $grammarDoc = Get-Content -Raw -Encoding UTF8 -LiteralPath "docs/curriculum/grammar-by-unit.md"
-$grammarRows = [regex]::Matches($grammarDoc, "(?m)^\| \d+ \|").Count
+$grammarRows = [regex]::Matches($grammarDoc, "(?m)^\| \d+ \| (必修|选必)").Count
 Assert-True ($grammarRows -eq 25) "Grammar document must contain 25 unit rows"
-$grammarUnitRows = @(Get-Content -Encoding UTF8 -LiteralPath "docs/curriculum/grammar-by-unit.md" | Where-Object { $_ -match "^\| \d+ \|" })
+$grammarUnitRows = @(Get-Content -Encoding UTF8 -LiteralPath "docs/curriculum/grammar-by-unit.md" | Where-Object { $_ -match "^\| \d+ \| (必修|选必)" })
 $exactRows = @($grammarUnitRows | Where-Object { $_ -match "\| 完全一致" }).Count
 $narrowedRows = @($grammarUnitRows | Where-Object { $_ -match "\| 教材范围更窄" }).Count
 $widerRows = @($grammarUnitRows | Where-Object { $_ -match "\| 教材范围更宽" }).Count
 $excludedRows = @($grammarUnitRows | Where-Object { $_ -match "\| 白名单外" }).Count
-Assert-True ($exactRows -eq 9) "Grammar exact-match count mismatch"
-Assert-True ($narrowedRows -eq 11) "Grammar narrower count mismatch"
+Assert-True ($exactRows -eq 2) "Grammar exact-match count mismatch"
+Assert-True ($narrowedRows -eq 18) "Grammar narrower count mismatch"
 Assert-True ($widerRows -eq 2) "Grammar wider count mismatch"
 Assert-True ($excludedRows -eq 3) "Grammar excluded count mismatch"
+$reclassification = $curriculum.grammar_unit_reclassification.counts
+Assert-True ($reclassification.exact -eq $exactRows) "Curriculum exact count mismatch"
+Assert-True ($reclassification.narrower -eq $narrowedRows) "Curriculum narrower count mismatch"
+Assert-True ($reclassification.wider -eq $widerRows) "Curriculum wider count mismatch"
+Assert-True ($reclassification.outside_whitelist -eq $excludedRows) "Curriculum excluded count mismatch"
 $ownershipDoc = Get-Content -Raw -Encoding UTF8 -LiteralPath "docs/curriculum/grammar-id-ownership.md"
 $ownershipRows = [regex]::Matches($ownershipDoc, "(?m)^\| \d+ \|").Count
 Assert-True ($ownershipRows -eq 13) "Grammar ownership document must contain 13 IDs"
@@ -201,7 +206,32 @@ $questionSchema = Read-Json "contracts/schemas/question.json"
 $grammarEnum = @($questionSchema.properties.grammar_tags.items.enum)
 Assert-True ($grammarEnum.Count -eq 21) "Question grammar enum must contain 21 IDs"
 Assert-True ($grammarEnum -contains "infinitive_nonfinite") "Question grammar enum missing infinitive"
-Write-Output "PASS grammar whitelistRows=15 grammarIds=21 unitRows=25"
+Assert-True (@($questionSchema.required) -contains "book_tag") "Question schema must require one book tag"
+Assert-True ([string]$questionSchema.properties.book_tag.'$ref' -eq './common.json#/$defs/bookTag') "Question book tag reference mismatch"
+$sessionSchema = Read-Json "contracts/schemas/session.json"
+Assert-True (@($sessionSchema.'$defs'.sessionItem.required) -contains "book_tag") "Session item must require one book tag"
+$reportSchema = Read-Json "contracts/schemas/report.json"
+Assert-True (@($reportSchema.properties.question_results.items.required) -contains "book_tag") "Report question result must require one book tag"
+$allowedBookTags = @($curriculum.book_tag_policy.allowed_values)
+Assert-True (($allowedBookTags -join ",") -eq "必修,选必一,选必二,跨册") "Canonical book tag set mismatch"
+Assert-True ($curriculum.book_tag_policy.question_cardinality -eq "exactly_one") "Book tag cardinality mismatch"
+Assert-True ($curriculum.grammar_tag_policy.max_grammar_tags_per_question -eq 2) "Grammar tag cap mismatch"
+foreach ($grammarItem in @($curriculum.grammar_whitelist)) {
+  $bookTags = @($grammarItem.allowed_book_tags)
+  Assert-True ($bookTags.Count -ge 1) "Grammar ID has no allowed book tags: $($grammarItem.id)"
+  Assert-True ($bookTags.Count -eq @($bookTags | Sort-Object -Unique).Count) "Grammar ID has duplicate book tags: $($grammarItem.id)"
+  Assert-True (@($bookTags | Where-Object { $allowedBookTags -notcontains $_ }).Count -eq 0) "Grammar ID has invalid book tag: $($grammarItem.id)"
+}
+$vIng = @($curriculum.grammar_whitelist | Where-Object id -eq "v_ing_nonfinite")[0]
+Assert-True ((@($vIng.authorized_subsets) -join ",") -eq "作定语,作状语,作宾补,作主语") "v-ing authorized subset mismatch"
+Assert-True (-not (@($vIng.forbidden_functions) -contains "作定语")) "v-ing attributive cannot be forbidden"
+Assert-True ((@($vIng.forbidden_functions) -join ",") -eq "作宾语,作表语") "v-ing forbidden function mismatch"
+& ".\.venv\Scripts\python.exe" -X utf8 "scripts/check-m0-grammar-book-feasibility.py" | Out-Null
+Assert-True ($LASTEXITCODE -eq 0) "Grammar/book feasibility check failed"
+$feasibility = Read-Json "qa/evidence/m0/grammar-book-feasibility.json"
+Assert-True ($feasibility.conclusion -eq "可达") "Grammar/book feasibility conclusion mismatch"
+Write-Output "PASS grammar-book feasibility=$($feasibility.conclusion) coverage=$($feasibility.required_coverage_occurrences) capacity=$($feasibility.total_tag_capacity)"
+Write-Output "PASS grammar whitelistRows=15 grammarIds=21 unitRows=25 exact=2 narrower=18 wider=2 excluded=3"
 
 $openapi = Get-Content -Raw -Encoding UTF8 -LiteralPath "contracts/openapi.yaml"
 $generatedApi = Get-Content -Raw -Encoding UTF8 -LiteralPath "apps/mobile/src/api/generated.d.ts"

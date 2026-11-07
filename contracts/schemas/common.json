@@ -15,6 +15,10 @@
       "type": "string",
       "enum": ["必修", "选必一", "选必二", "cross_book"]
     },
+    "bookTag": {
+      "type": "string",
+      "enum": ["必修", "选必一", "选必二", "跨册"]
+    },
     "questionType": {
       "type": "string",
       "enum": ["cloze", "grammar_fill", "reading", "gap_fill"]

@@ -7,6 +7,7 @@
 | 文件 | 职责 |
 |---|---|
 | `contracts/curriculum.json` | 教材、25 单元、词汇/语法边界、题材、难度、题型与质量规则 |
+| `docs/curriculum/grammar-book-matrix.md` | 21 个 grammar ID 的允许册次集合与 400 题覆盖可达性 |
 | `contracts/vocabulary-whitelist.json` | 规范化词元白名单及教材出处 |
 | `contracts/design-tokens.json` | App 与后台唯一视觉事实源 |
 | `contracts/admin-auth.md` | 本机回环、管理 token、生成审批和审计契约 |
@@ -23,6 +24,9 @@
 - `counting_clarification.content_alignment_units`：整数，固定 `25`。
 - `counting_clarification.vocabulary_counting`：说明词汇按规范化词头计，并给出 2022 课标基础层、高中新增层、闭合功能词和短语的计数口径。
 - `counting_clarification.grammar_counting`：说明语法按项目 ID 计。
+- `grammar_tag_policy.max_grammar_tags_per_question=2`：每题一个主 grammar ID，可再带一个跨单元次 ID；Coverage 可重叠计题次。
+- `book_tag_policy`：每道考点题必须且只能有一个册次标签，合法值为 `必修/选必一/选必二/跨册`。
+- `grammar_whitelist[].allowed_book_tags`：每个 grammar ID 可使用的册次集合；册次标签不随 grammar tag 数量重复计数。
 - `vocabulary.counting.base_compulsory_declared_entries`：教育部 2022 三级词表原文声明，固定 `1600`。
 - `vocabulary.counting.base_compulsory_single_words`：官方基础层规范化单词头，固定 `1603`；官方原文声明 1600 个印刷条目，差异来自斜杠变体展开。
 - `vocabulary.counting.base_compulsory_phrases`：官方基础层遗留短语，固定 `4`。

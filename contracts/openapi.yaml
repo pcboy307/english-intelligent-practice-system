@@ -91,6 +91,7 @@ components:
               - blank_label
               - passage_order
               - question_order
+              - book_tag
               - correct
             properties:
               question_id:
@@ -123,6 +124,9 @@ components:
               question_order:
                 type: integer
                 minimum: 1
+              book_tag:
+                type: string
+                enum: [必修, 选必一, 选必二, 跨册]
               correct:
                 type: boolean
     SavedAnswer:

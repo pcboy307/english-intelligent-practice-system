@@ -6,9 +6,9 @@
   "deployment": "local llama.cpp OpenAI-compatible API",
   "server_version": "llama-server 0.8.0-dev (commit 39febd2ad)",
   "configured_endpoint": "http://127.0.0.1:11435/v1/chat/completions",
-  "session_id": "9b238c04-46f5-405e-9f7f-e092fb36d204",
+  "session_id": "a80e40f4-1d2a-47ec-834b-5d2723b5c8da",
   "question_count": 29,
-  "report_title": "2026-11-07-17-16-29题-79.31分",
+  "report_title": "2026-11-07-17-32-29题-79.31分",
   "wrong_question_ids": [
     "DEMO2-G01",
     "DEMO2-G02",
@@ -18,8 +18,8 @@
     "DEMO2-G06"
   ],
   "weakness_analysis_source": "llm",
-  "weakness_analysis": "你已全答对 23 题，薄弱点在于现在完成时、过去分词作定语及一般现在时被动语态。错因多是将完成时误判为过去时，或混淆分词作定语与谓语动词的用法。建议：今天重做一组同类题并复述错因。",
-  "analysis_length": 90,
+  "weakness_analysis": "29 题中答对 23 题，但三处薄弱点暴露出时态与语态混淆问题。现在完成时易误用过去时，因忽视“对现在影响”；建议：今天重做一组同类题并复述错因。",
+  "analysis_length": 73,
   "contains_chinese": true,
   "at_most_100_chars": true,
   "has_explicit_action": true,

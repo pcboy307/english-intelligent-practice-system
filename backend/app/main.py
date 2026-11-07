@@ -89,6 +89,7 @@ def session_payload(record) -> dict:
                 "blank_label": question.blank_label,
                 "passage_order": question.passage_order,
                 "question_order": question.question_order,
+                "book_tag": question.book_tag,
             }
         )
     return {
