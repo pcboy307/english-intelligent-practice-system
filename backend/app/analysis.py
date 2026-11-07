@@ -12,6 +12,29 @@ ROOT = Path(__file__).resolve().parents[2]
 REPORTING_CONFIG = json.loads(
     (ROOT / "config" / "reporting.json").read_text(encoding="utf-8")
 )
+KNOWLEDGE_POINT_LABELS = REPORTING_CONFIG["weakness_analysis"][
+    "knowledge_point_labels"
+]
+
+
+def humanize_knowledge_point(point: str) -> str:
+    if point in KNOWLEDGE_POINT_LABELS:
+        return KNOWLEDGE_POINT_LABELS[point]
+    if "_" not in point:
+        return point
+    if point.startswith("reading_"):
+        return "阅读理解能力"
+    if point.startswith("gap_fill_"):
+        return "七选五语篇衔接"
+    if point.endswith("_noun"):
+        return "名词词义与搭配辨析"
+    if point.endswith("_verb"):
+        return "动词词义与固定搭配辨析"
+    if point.endswith("_adjective"):
+        return "形容词词义辨析"
+    if point.endswith("_adverb"):
+        return "副词辨析"
+    return "英语基础知识运用"
 
 
 def _limit(text: str, maximum: int) -> str:
@@ -31,7 +54,10 @@ def _limit(text: str, maximum: int) -> str:
 
 
 def _fallback(weak_points: list[dict], maximum: int) -> str:
-    names = [item["knowledge_point"] for item in weak_points[:2]]
+    names = [
+        humanize_knowledge_point(item["knowledge_point"])
+        for item in weak_points[:2]
+    ]
     focus = "、".join(names) if names else "本套暴露的基础知识"
     return _limit(
         f"你这次主要卡在{focus}。先回看错题依据，再用同类题做三次即时复述，"
@@ -56,6 +82,12 @@ def _normalize_score_phrase(text: str, total: int, correct: int) -> str:
         f"{total} 题中答对 {correct} 题",
         text,
     )
+
+
+def _replace_internal_knowledge_points(text: str, points: list[str]) -> str:
+    for point in sorted(set(points), key=len, reverse=True):
+        text = text.replace(point, humanize_knowledge_point(point))
+    return text
 
 
 def generate_weakness_analysis(
@@ -86,7 +118,10 @@ def generate_weakness_analysis(
                 "选项": item.get("options", []),
                 "我的答案": item.get("user_answer", ""),
                 "正确答案": item.get("correct_answer", ""),
-                "知识点": item.get("knowledge_points", []),
+                "知识点": [
+                    humanize_knowledge_point(point)
+                    for point in item.get("knowledge_points", [])
+                ],
             }
         )
         if len(wrong_samples) >= int(config["max_wrong_samples"]):
@@ -101,7 +136,15 @@ def generate_weakness_analysis(
         "已答题数": answered_count,
         "未答题数": len(question_results) - answered_count,
         "答对题数": correct_count,
-        "薄弱知识点": weak_points,
+        "薄弱知识点": [
+            {
+                **item,
+                "knowledge_point": humanize_knowledge_point(
+                    item["knowledge_point"]
+                ),
+            }
+            for item in weak_points
+        ],
         "典型错题": wrong_samples,
     }
     payload = {
@@ -139,6 +182,15 @@ def generate_weakness_analysis(
             content,
             len(question_results),
             correct_count,
+        )
+        content = _replace_internal_knowledge_points(
+            content,
+            [
+                point
+                for item in question_results
+                for point in item.get("knowledge_points", [])
+            ]
+            + [item["knowledge_point"] for item in weak_points],
         )
         text = _limit(content, maximum)
         if not re.search(r"[\u4e00-\u9fff]", text):

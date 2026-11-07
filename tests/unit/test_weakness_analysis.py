@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import json
+
 import httpx
 
 from backend.app import analysis
@@ -103,3 +105,50 @@ def test_score_wording_names_total_and_correct_count(monkeypatch) -> None:
 
     assert "全答对" not in result["text"]
     assert "29 题中答对 23 题" in result["text"]
+
+
+def test_internal_knowledge_point_ids_are_not_sent_to_llm(monkeypatch) -> None:
+    monkeypatch.delenv("WEAKNESS_ANALYSIS_DISABLED", raising=False)
+    captured: dict = {}
+
+    def fake_post(*args, **kwargs):
+        captured.update(kwargs)
+        return _Response()
+
+    monkeypatch.setattr(analysis.httpx, "post", fake_post)
+    question = {
+        **_question_result(),
+        "knowledge_points": ["team_noun", "material_noun"],
+    }
+
+    analysis.generate_weakness_analysis(
+        [question],
+        [
+            {"knowledge_point": "team_noun"},
+            {"knowledge_point": "material_noun"},
+        ],
+    )
+
+    prompt = json.dumps(captured["json"], ensure_ascii=False)
+    assert "team_noun" not in prompt
+    assert "material_noun" not in prompt
+    assert "名词词义辨析（团队）" in prompt
+    assert "名词词义辨析（材料）" in prompt
+
+
+def test_fallback_uses_natural_knowledge_point_labels(monkeypatch) -> None:
+    monkeypatch.setenv("WEAKNESS_ANALYSIS_DISABLED", "1")
+
+    result = analysis.generate_weakness_analysis(
+        [_question_result()],
+        [
+            {"knowledge_point": "team_noun"},
+            {"knowledge_point": "material_noun"},
+        ],
+    )
+
+    assert result["source"] == "fallback"
+    assert "team_noun" not in result["text"]
+    assert "material_noun" not in result["text"]
+    assert "名词词义辨析（团队）" in result["text"]
+    assert "名词词义辨析（材料）" in result["text"]

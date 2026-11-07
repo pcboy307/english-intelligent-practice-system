@@ -1,0 +1,11 @@
+{
+  "session_id": "c1361d97-b92a-4246-b318-b353b391f469",
+  "analysis_source": "llm",
+  "stored_weak_points": [
+    "team_noun",
+    "material_noun",
+    "manner_adverb"
+  ],
+  "analysis": "29 题中答对 23 题，但名词词义辨析（团队、材料）及方式副词均全错，错因多是对核心语境理解偏差。建议：立即重读错题原文，对比正确选项与干扰项在语境中的逻辑差异，并针对薄弱点各做 5 道专项练习以。",
+  "contains_internal_ids": false
+}
