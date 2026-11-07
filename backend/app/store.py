@@ -7,7 +7,9 @@ import uuid
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 
+from .analysis import generate_weakness_analysis
 from .demo_bank import DemoQuestion, demo_bank
 
 
@@ -266,6 +268,11 @@ class InMemoryStore:
             results.append(
                 {
                     "question_id": qid,
+                    "type": question.type,
+                    "passage_group_id": question.passage_group_id,
+                    "stem": question.stem,
+                    "options": question.options or [],
+                    "blank_label": question.blank_label,
                     "correct": correct,
                     "user_answer": user_answer,
                     "correct_answer": question.answer,
@@ -298,6 +305,13 @@ class InMemoryStore:
             }
             for item in weak
         ]
+        weak_points = [
+            {"knowledge_point": item["knowledge_point"], "error_stage": "答案选择"}
+            for item in weak
+        ]
+        analysis = generate_weakness_analysis(results, weak_points)
+        local_now = now.astimezone(ZoneInfo("Asia/Shanghai"))
+        raw_score = correct_count / total * 100
         type_scores = {
             qtype: {
                 "correct": values["correct"],
@@ -310,16 +324,17 @@ class InMemoryStore:
             "session_id": session_id,
             "bank_id": record.bank_id,
             "bank_name": record.bank_name,
-            "score": round(correct_count / total * 100, 2),
+            "report_title": f"{local_now:%Y-%m-%d-%H-%M}-{total}题-{raw_score:.2f}分",
+            "score": round(raw_score, 2),
             "max_score": 100,
+            "question_count": total,
             "accuracy": round(correct_count / total, 4),
             "duration_seconds": max(0, int((now - record.started_at).total_seconds())),
             "type_scores": type_scores,
             "knowledge_point_levels": levels,
-            "weak_points": [
-                {"knowledge_point": item["knowledge_point"], "error_stage": "答案选择"}
-                for item in weak
-            ],
+            "weak_points": weak_points,
+            "weakness_analysis": analysis["text"],
+            "weakness_analysis_source": analysis["source"],
             "suggestions": suggestions,
             "question_results": results,
             "error_tag_changes": changes,

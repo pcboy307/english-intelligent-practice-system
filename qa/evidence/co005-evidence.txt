@@ -1,0 +1,31 @@
+Version:
+V11.4
+
+Single-question browser:
+progress=第 1 题 / 共 30 题
+browser_inputs=0
+top_right_controls=上一题, 下一题, 交卷后可查看报告
+next_navigation=第 2 题 / 共 30 题
+
+Report:
+report_title=2026-11-07-15-54-30题-0.00分
+history_listed=true
+history_opened=true
+history_deleted=true
+history_question_entry=history_report_then_view_original_only
+analysis_source=llm
+analysis_length=100
+old_three_rule_lines_removed=true
+
+Delete transaction verification:
+practice_reports=0
+saved_answers=0
+session_items=0
+practice_sessions=0
+
+Automated checks:
+7 passed
+M0_CHECK=PASS
+API_CONTRACT_CHECK=PASS calls=9
+openapi.yaml=valid
+TypeScript=pass

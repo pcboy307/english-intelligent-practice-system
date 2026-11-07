@@ -101,6 +101,8 @@ Write-Output "PASS practice-modes counts=29/30,42"
 $reporting = Read-Json "config/reporting.json"
 Assert-True ($reporting.mastery.ewma_alpha -eq 0.3) "EWMA alpha mismatch"
 Assert-True ($reporting.stage_report.require_cross_bank_notice -eq $true) "Cross-bank notice must be required"
+Assert-True ($reporting.weakness_analysis.max_chars -eq 100) "Weakness analysis length mismatch"
+Assert-True ($reporting.weakness_analysis.model -eq "qwen-local") "Weakness analysis model mismatch"
 $appConfig = Read-Json "config/app.json"
 Assert-True ($appConfig.time_authority -eq "server_deadline") "Time authority mismatch"
 Assert-True (@($appConfig.data_clear_scope).Count -eq 2) "Data clear must include local and backend"
@@ -190,6 +192,7 @@ foreach ($path in @(
   "/practice/{session_id}/answer:",
   "/practice/{session_id}/submit:",
   "/reports/{session_id}:",
+  "/reports:",
   "/reports/summary:",
   "/error-tags:",
   "/student-data:",
@@ -208,8 +211,8 @@ foreach ($path in @(
 }
 Assert-True (-not $openapi.Contains("approved_by_owner")) "Client-side owner approval must be removed"
 Assert-True (-not [regex]::IsMatch($openapi, "(?m)^security:")) "Top-level global security must be absent"
-Assert-True ([regex]::Matches($openapi, "(?m)^      security:\s*$").Count -eq 22) "Every operation must declare security"
-Assert-True ([regex]::Matches($openapi, "- StudentId: \[\]").Count -eq 10) "Student security declaration mismatch"
+Assert-True ([regex]::Matches($openapi, "(?m)^      security:\s*$").Count -eq 24) "Every operation must declare security"
+Assert-True ([regex]::Matches($openapi, "- StudentId: \[\]").Count -eq 12) "Student security declaration mismatch"
 Assert-True ([regex]::Matches($openapi, "- AdminToken: \[\]").Count -eq 12) "Admin security declaration mismatch"
 Assert-True ($openapi.Contains("/approve-generation:")) "Generation approval path missing"
 Assert-True ($openapi.Contains("Idempotency-Key")) "Submit idempotency contract missing"

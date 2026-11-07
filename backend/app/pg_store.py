@@ -9,12 +9,14 @@ from contextlib import contextmanager
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlparse
+from zoneinfo import ZoneInfo
 
 import psycopg
 from psycopg.rows import dict_row
 from psycopg.types.json import Jsonb
 
 from .demo_bank import DemoQuestion, demo_bank
+from .analysis import generate_weakness_analysis
 from .store import SessionRecord
 
 
@@ -441,7 +443,7 @@ class PostgresStore:
         with self.connection() as connection:
             row = connection.execute(
                 """
-                SELECT report
+                SELECT report, created_at
                 FROM practice_reports
                 WHERE student_id=%s AND session_id=%s
                 """,
@@ -449,7 +451,92 @@ class PostgresStore:
             ).fetchone()
         if not row:
             raise KeyError("REPORT_NOT_FOUND")
-        return row["report"]
+        report = dict(row["report"])
+        question_count = report.get(
+            "question_count",
+            len(report.get("question_results", [])),
+        )
+        local_created = row["created_at"].astimezone(ZoneInfo("Asia/Shanghai"))
+        report.setdefault(
+            "report_title",
+            f"{local_created:%Y-%m-%d-%H-%M}-{question_count}题-{report.get('score', 0):.2f}分",
+        )
+        report.setdefault("question_count", question_count)
+        report.setdefault(
+            "weakness_analysis",
+            "建议先回看本套错题，按知识点归类后完成三到五道同类练习，"
+            "并逐题写出判断依据，确认能独立复述后再进入下一组。",
+        )
+        report.setdefault("weakness_analysis_source", "fallback")
+        return report
+
+    def list_reports(self, student_id: str) -> list[dict]:
+        with self.connection() as connection:
+            rows = connection.execute(
+                """
+                SELECT session_id, report, created_at
+                FROM practice_reports
+                WHERE student_id=%s
+                ORDER BY created_at DESC
+                """,
+                (student_id,),
+            ).fetchall()
+        reports = []
+        for row in rows:
+            report = row["report"]
+            question_count = report.get(
+                "question_count",
+                len(report.get("question_results", [])),
+            )
+            score = report.get("score", 0)
+            title = report.get("report_title")
+            if not title:
+                local_created = row["created_at"].astimezone(ZoneInfo("Asia/Shanghai"))
+                title = f"{local_created:%Y-%m-%d-%H-%M}-{question_count}题-{score:.2f}分"
+            reports.append(
+                {
+                    "session_id": str(row["session_id"]),
+                    "report_title": title,
+                    "question_count": question_count,
+                    "score": score,
+                    "created_at": row["created_at"].isoformat(),
+                }
+            )
+        return reports
+
+    def delete_report(self, student_id: str, session_id: str) -> None:
+        with self.connection() as connection:
+            with connection.transaction():
+                exists = connection.execute(
+                    """
+                    SELECT 1
+                    FROM practice_reports
+                    WHERE student_id=%s AND session_id=%s
+                    """,
+                    (student_id, session_id),
+                ).fetchone()
+                if not exists:
+                    raise KeyError("REPORT_NOT_FOUND")
+                connection.execute(
+                    "DELETE FROM error_tag_successes WHERE session_id=%s",
+                    (session_id,),
+                )
+                connection.execute(
+                    "DELETE FROM practice_reports WHERE student_id=%s AND session_id=%s",
+                    (student_id, session_id),
+                )
+                connection.execute(
+                    "DELETE FROM saved_answers WHERE session_id=%s",
+                    (session_id,),
+                )
+                connection.execute(
+                    "DELETE FROM session_items WHERE session_id=%s",
+                    (session_id,),
+                )
+                connection.execute(
+                    "DELETE FROM practice_sessions WHERE student_id=%s AND id=%s",
+                    (student_id, session_id),
+                )
 
     def get_review(self, student_id: str, session_id: str) -> dict:
         record = self._load_session(student_id, session_id)
@@ -550,6 +637,11 @@ class PostgresStore:
             results.append(
                 {
                     "question_id": qid,
+                    "type": question.type,
+                    "passage_group_id": question.passage_group_id,
+                    "stem": question.stem,
+                    "options": question.options or [],
+                    "blank_label": question.blank_label,
                     "correct": correct,
                     "user_answer": user_answer,
                     "correct_answer": question.answer,
@@ -570,13 +662,22 @@ class PostgresStore:
             for point, values in point_stats.items()
         ]
         weak = sorted(levels, key=lambda item: item["mastery"])[:3]
+        analysis = generate_weakness_analysis(results, weak)
+        local_now = now.astimezone(ZoneInfo("Asia/Shanghai"))
+        raw_score = sum(item["correct"] for item in results) / max(1, len(results)) * 100
+        report_title = (
+            f"{local_now:%Y-%m-%d-%H-%M}-"
+            f"{len(results)}题-{raw_score:.2f}分"
+        )
         report = {
             "session_id": session_id,
             "bank_id": record.bank_id,
             "bank_name": record.bank_name,
-            "score": round(sum(item["correct"] for item in results) / max(1, len(results)) * 100, 2),
+            "report_title": report_title,
+            "score": round(raw_score, 2),
             "max_score": 100,
             "accuracy": round(sum(item["correct"] for item in results) / max(1, len(results)), 4),
+            "question_count": len(results),
             "duration_seconds": max(0, int((now - record.started_at).total_seconds())),
             "type_scores": {
                 qtype: {**values, "accuracy": round(values["correct"] / max(1, values["total"]), 4)}
@@ -584,6 +685,8 @@ class PostgresStore:
             },
             "knowledge_point_levels": levels,
             "weak_points": [{"knowledge_point": item["knowledge_point"], "error_stage": "答案选择"} for item in weak],
+            "weakness_analysis": analysis["text"],
+            "weakness_analysis_source": analysis["source"],
             "suggestions": [
                 {"knowledge_point": item["knowledge_point"], "action": f"复习“{item['knowledge_point']}”并完成一组针对性短练。"}
                 for item in weak

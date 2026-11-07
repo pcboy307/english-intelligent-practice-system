@@ -1,0 +1,129 @@
+from __future__ import annotations
+
+import json
+import os
+import re
+from pathlib import Path
+
+import httpx
+
+
+ROOT = Path(__file__).resolve().parents[2]
+REPORTING_CONFIG = json.loads(
+    (ROOT / "config" / "reporting.json").read_text(encoding="utf-8")
+)
+
+
+def _limit(text: str, maximum: int) -> str:
+    cleaned = re.sub(r"\s+", " ", text).strip().strip('"“”')
+    if len(cleaned) <= maximum:
+        if cleaned.endswith(("。", "！", "？", "；")):
+            return cleaned
+        return cleaned[: maximum - 1].rstrip("，、；：,. ") + "。"
+    prefix = cleaned[: maximum - 1]
+    punctuation_positions = [
+        prefix.rfind(mark) for mark in ("。", "！", "？", "；")
+    ]
+    cut = max(punctuation_positions)
+    if cut >= int(maximum * 0.6):
+        return prefix[: cut + 1]
+    return prefix.rstrip("，、；：,. ") + "。"
+
+
+def _fallback(weak_points: list[dict], maximum: int) -> str:
+    names = [item["knowledge_point"] for item in weak_points[:2]]
+    focus = "、".join(names) if names else "本套暴露的基础知识"
+    return _limit(
+        f"你这次主要卡在{focus}。先回看错题依据，再用同类题做三次即时复述，"
+        "确认能说出为什么再继续下一组，稳住节奏就会进步。",
+        maximum,
+    )
+
+
+def generate_weakness_analysis(
+    question_results: list[dict],
+    weak_points: list[dict],
+) -> dict:
+    config = REPORTING_CONFIG["weakness_analysis"]
+    maximum = int(config["max_chars"])
+    fallback = _fallback(weak_points, maximum)
+    if not config["enabled"] or os.getenv("WEAKNESS_ANALYSIS_DISABLED") == "1":
+        return {"text": fallback, "source": "fallback"}
+
+    wrong_samples = []
+    selected_keys = set()
+    for item in question_results:
+        if item["correct"]:
+            continue
+        sample_key = (
+            item.get("knowledge_points", ["unknown"])[0],
+            item.get("type", "unknown"),
+        )
+        if sample_key in selected_keys:
+            continue
+        selected_keys.add(sample_key)
+        wrong_samples.append(
+            {
+                "题目": item.get("stem", ""),
+                "选项": item.get("options", []),
+                "我的答案": item.get("user_answer", ""),
+                "正确答案": item.get("correct_answer", ""),
+                "知识点": item.get("knowledge_points", []),
+            }
+        )
+        if len(wrong_samples) >= int(config["max_wrong_samples"]):
+            break
+
+    answered_count = sum(
+        1 for item in question_results if str(item.get("user_answer", "")).strip()
+    )
+    prompt_data = {
+        "题目数": len(question_results),
+        "已答题数": answered_count,
+        "未答题数": len(question_results) - answered_count,
+        "答对题数": sum(1 for item in question_results if item["correct"]),
+        "薄弱知识点": weak_points,
+        "典型错题": wrong_samples,
+    }
+    payload = {
+        "model": config["model"],
+        "messages": [
+            {
+                "role": "system",
+                "content": (
+                    "你是一位温和、专业的高中英语老师。只输出一段70至90个汉字的中文分析，"
+                    "不要标题、列表、分数复述或空泛鼓励。必须点出两个最需巩固的知识点，"
+                    "说明典型错因，并给出今天就能执行的具体练习动作。"
+                    "若未答题数超过10，应优先指出限时完成和选择策略问题，"
+                    "不要把未作答误判为知识遗忘。"
+                ),
+            },
+            {
+                "role": "user",
+                "content": json.dumps(prompt_data, ensure_ascii=False),
+            },
+        ],
+        "temperature": config["temperature"],
+        "max_tokens": config["max_tokens"],
+        "chat_template_kwargs": {"enable_thinking": False},
+    }
+    try:
+        response = httpx.post(
+            config["endpoint"],
+            json=payload,
+            timeout=float(config["timeout_seconds"]),
+        )
+        response.raise_for_status()
+        content = response.json()["choices"][0]["message"].get("content") or ""
+        text = _limit(content, maximum)
+        if not re.search(r"[\u4e00-\u9fff]", text):
+            raise ValueError("LLM_ANALYSIS_EMPTY")
+        if not re.search(r"建议|先|请|练习|重做|复述", text):
+            text = _limit(
+                text
+                + "建议今天先限时完成一组同类题，再逐题标注判断依据并复述错因。",
+                maximum,
+            )
+        return {"text": text, "source": "llm"}
+    except (httpx.HTTPError, KeyError, TypeError, ValueError):
+        return {"text": fallback, "source": "fallback"}

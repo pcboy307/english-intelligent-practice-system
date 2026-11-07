@@ -7,9 +7,8 @@ import {
   getPracticeReview,
   saveAnswer,
   submitPractice,
-  type PracticeSession,
   type PracticeReview,
-  type ReviewItem,
+  type PracticeSession,
   type SessionItem,
 } from "../src/api/client";
 import { getSession, setReport, setSession } from "../src/sessionStore";
@@ -18,7 +17,6 @@ import { useResponsiveLayout } from "../src/theme/useResponsiveLayout";
 
 type PassageGroup = {
   passageGroupId: string;
-  passage: string;
   items: SessionItem[];
 };
 
@@ -34,11 +32,7 @@ function groupPassages(items: SessionItem[]): PassageGroup[] {
       previous.items.push(item);
       continue;
     }
-    groups.push({
-      passageGroupId: item.passage_group_id,
-      passage: item.passage,
-      items: [item],
-    });
+    groups.push({ passageGroupId: item.passage_group_id, items: [item] });
   }
   return groups;
 }
@@ -65,7 +59,7 @@ export default function PracticeScreen() {
   const [session, setLocalSession] = useState<PracticeSession | null>(getSession());
   const [reviewSession, setReviewSession] = useState<PracticeReview | null>(null);
   const [reviewMode, setReviewMode] = useState(reviewRequested);
-  const [groupIndex, setGroupIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [remaining, setRemaining] = useState(0);
   const [error, setError] = useState("");
@@ -75,20 +69,15 @@ export default function PracticeScreen() {
     if (!reviewRequested || !routeSessionId) return;
     getPracticeReview(routeSessionId)
       .then((review) => {
-        const initialGroups = groupPassages(review.items);
-        if (params.q) {
-          const requestedIndex = Math.max(
-            0,
-            Math.min(review.items.length - 1, Number(params.q) - 1),
-          );
-          const targetId = review.items[requestedIndex]?.question_id;
-          const targetGroupIndex = initialGroups.findIndex((item) =>
-            item.items.some((question) => question.question_id === targetId),
-          );
-          setGroupIndex(Math.max(0, targetGroupIndex));
-        }
+        const requestedIndex = params.q
+          ? Math.max(
+              0,
+              Math.min(review.items.length - 1, Number(params.q) - 1),
+            )
+          : 0;
         setReviewSession(review);
         setReviewMode(true);
+        setCurrentIndex(requestedIndex);
         setAnswers(
           Object.fromEntries(
             review.items
@@ -106,10 +95,10 @@ export default function PracticeScreen() {
     if (draft) {
       const parsed = JSON.parse(draft) as {
         answers?: Record<string, string>;
-        groupIndex?: number;
+        currentIndex?: number;
       };
       setAnswers(parsed.answers || {});
-      setGroupIndex(parsed.groupIndex || 0);
+      setCurrentIndex(parsed.currentIndex || 0);
     }
     const deadline = new Date(session.deadline).getTime();
     const serverNow = new Date(session.server_time).getTime();
@@ -135,59 +124,41 @@ export default function PracticeScreen() {
   }, [session?.session_id]);
 
   useEffect(() => {
-    if (!session) return;
+    if (!session || reviewMode) return;
     window.localStorage.setItem(
       draftKey(session.session_id),
-      JSON.stringify({ answers, groupIndex }),
+      JSON.stringify({ answers, currentIndex }),
     );
-  }, [answers, groupIndex, session?.session_id]);
+  }, [answers, currentIndex, reviewMode, session?.session_id]);
 
   const activeSession = reviewSession || session;
-  const groups = useMemo(
-    () => groupPassages(activeSession?.items || []),
-    [activeSession],
-  );
-  const group = groups[groupIndex];
-  const reviewById = useMemo(
-    () =>
-      new Map<string, ReviewItem>(
-        (reviewSession?.items || []).map((item) => [item.question_id, item]),
-      ),
-    [reviewSession],
+  const items = activeSession?.items || [];
+  const item = items[currentIndex];
+  const groups = useMemo(() => groupPassages(items), [items]);
+  const passageIndex = groups.findIndex((group) =>
+    group.items.some((question) => question.question_id === item?.question_id),
   );
   const answered = Object.keys(answers).length;
   const minutes = Math.floor(remaining / 60);
   const seconds = remaining % 60;
   const timeText = `${minutes}:${String(seconds).padStart(2, "0")}`;
-  const groupStart = groups
-    .slice(0, groupIndex)
-    .reduce((total, current) => total + current.items.length, 0);
-  const requestedQuestionId = useMemo(() => {
-    if (!reviewSession || !params.q) return null;
-    const requestedIndex = Math.max(
-      0,
-      Math.min(reviewSession.items.length - 1, Number(params.q) - 1),
-    );
-    return reviewSession.items[requestedIndex]?.question_id || null;
-  }, [params.q, reviewSession]);
+  const reviewItem = reviewSession?.items.find(
+    (question) => question.question_id === item?.question_id,
+  );
+  const canViewReport =
+    reviewMode ||
+    session?.status === "submitted" ||
+    session?.status === "expired" ||
+    reviewSession?.status === "submitted" ||
+    reviewSession?.status === "expired";
 
   const progressWidth = useMemo(() => {
     if (!activeSession) return "0%";
     return `${Math.round((answered / activeSession.items.length) * 100)}%` as `${number}%`;
   }, [activeSession, answered]);
 
-  useEffect(() => {
-    if (!requestedQuestionId) return;
-    const timer = window.setTimeout(() => {
-      document
-        .querySelector(`[data-testid="question-${requestedQuestionId}"]`)
-        ?.scrollIntoView({ block: "start" });
-    }, 0);
-    return () => window.clearTimeout(timer);
-  }, [groupIndex, requestedQuestionId]);
-
-  async function choose(item: SessionItem, answer: string) {
-    if (!session || reviewMode) return;
+  async function choose(answer: string) {
+    if (!session || !item || reviewMode) return;
     setAnswers((current) => ({ ...current, [item.question_id]: answer }));
     try {
       await saveAnswer(session.session_id, item.question_id, answer);
@@ -218,21 +189,19 @@ export default function PracticeScreen() {
     }
   }
 
-  const activeSessionId = reviewSession?.session_id || session?.session_id;
-  const canViewReport =
-    reviewMode ||
-    session?.status === "submitted" ||
-    session?.status === "expired" ||
-    reviewSession?.status === "submitted" ||
-    reviewSession?.status === "expired";
+  const reportHref = (activeSession?.session_id || routeSessionId) as string | undefined;
+  const atFirst = currentIndex === 0;
+  const atLast = currentIndex >= items.length - 1;
+  const actionStyle = [styles.actionButton, layout.desktop && styles.actionDesktop];
+  const actionTextStyle = [
+    styles.actionText,
+    layout.desktop && styles.actionTextDesktop,
+  ];
 
-  if (!activeSession || !group) {
+  if (!activeSession || !item) {
     return (
-      <View
-        testID="practice-shell"
-        style={[styles.shell, { maxWidth: layout.contentMaxWidth }]}
-      >
-        <Text style={styles.meta}>没有进行中的练习。</Text>
+      <View style={[styles.shell, { maxWidth: layout.contentMaxWidth }]}>
+        <Text style={styles.meta}>{error || "没有进行中的练习。"}</Text>
         <Pressable style={styles.primaryButton} onPress={() => router.replace("/")}>
           <Text style={styles.primaryButtonText}>返回首页</Text>
         </Pressable>
@@ -246,165 +215,176 @@ export default function PracticeScreen() {
         testID="practice-shell"
         style={[styles.shell, { maxWidth: layout.contentMaxWidth }]}
       >
-        <View style={styles.topRow}>
-          <Text style={styles.bank}>{activeSession.bank_name}</Text>
-          <Text style={styles.timer}>{reviewMode ? "已交卷" : timeText}</Text>
+        <View style={styles.header}>
+          <View>
+            <Text style={styles.bank}>{activeSession.bank_name}</Text>
+            <Text style={styles.meta}>
+              {reviewMode ? "已交卷" : timeText} · 已答 {answered} 题
+            </Text>
+          </View>
+          <View style={styles.headerActions}>
+            <Pressable
+              accessibilityRole="button"
+              disabled={atFirst || confirming}
+              onPress={() => setCurrentIndex((value) => Math.max(0, value - 1))}
+              style={[actionStyle, (atFirst || confirming) && styles.actionDisabled]}
+            >
+              <Text
+                style={[
+                  actionTextStyle,
+                  (atFirst || confirming) && styles.actionTextDisabled,
+                ]}
+              >
+                上一题
+              </Text>
+            </Pressable>
+            <Pressable
+              accessibilityRole="button"
+              disabled={atLast || confirming}
+              onPress={() =>
+                setCurrentIndex((value) => Math.min(items.length - 1, value + 1))
+              }
+              style={[actionStyle, (atLast || confirming) && styles.actionDisabled]}
+            >
+              <Text
+                style={[
+                  actionTextStyle,
+                  (atLast || confirming) && styles.actionTextDisabled,
+                ]}
+              >
+                下一题
+              </Text>
+            </Pressable>
+            <Pressable
+              accessibilityRole="button"
+              disabled={!canViewReport || !reportHref}
+              onPress={() =>
+                reportHref &&
+                router.push({
+                  pathname: "/report",
+                  params: { session_id: reportHref },
+                })
+              }
+              style={[actionStyle, !canViewReport && styles.actionDisabled]}
+            >
+              <Text
+                style={[
+                  actionTextStyle,
+                  !canViewReport && styles.actionTextDisabled,
+                ]}
+              >
+                {canViewReport ? "查看报告" : "交卷后可查看报告"}
+              </Text>
+            </Pressable>
+            {!reviewMode && atLast ? (
+              <Pressable
+                accessibilityRole="button"
+                onPress={() => setConfirming(true)}
+                style={actionStyle}
+              >
+                <Text style={actionTextStyle}>交卷</Text>
+              </Pressable>
+            ) : null}
+          </View>
         </View>
-        <Pressable
-          accessibilityRole="button"
-          disabled={!canViewReport || !activeSessionId}
-          onPress={() =>
-            activeSessionId &&
-            router.push({
-              pathname: "/report",
-              params: { session_id: activeSessionId },
-            })
-          }
-          style={[
-            styles.reportButton,
-            layout.desktop && styles.buttonDesktop,
-            !canViewReport && styles.reportButtonDisabled,
-          ]}
-        >
-          <Text
-            style={[
-              styles.reportButtonText,
-              !canViewReport && styles.reportButtonTextDisabled,
-            ]}
-          >
-            {canViewReport ? "查看报告" : "交卷后可查看报告"}
-          </Text>
-        </Pressable>
+
         <View style={styles.progressTrack}>
           <View style={[styles.progressFill, { width: progressWidth }]} />
         </View>
         <Text style={styles.meta}>
-          第 {groupIndex + 1} 篇 / 共 {groups.length} 篇 · 已答 {answered} 题
+          第 {currentIndex + 1} 题 / 共 {items.length} 题 · 第 {passageIndex + 1} 篇 / 共 {groups.length} 篇
         </Text>
 
         <View
           testID="reading-column"
           style={[styles.readingColumn, { maxWidth: layout.bodyMaxWidth }]}
         >
-          <Text style={styles.passage}>{group.passage}</Text>
-          {group.items.map((item, itemIndex) => (
-            <View
-              key={item.question_id}
-              testID={`question-${item.question_id}`}
-              style={styles.questionBlock}
-            >
-              <Text style={styles.stem}>
-                {groupStart + itemIndex + 1}. {item.stem}
-              </Text>
-              <View style={[styles.options, layout.desktop && styles.optionsDesktop]}>
-                {(item.options || []).map((option, optionIndex) => {
-                  const parsed = splitOption(option, optionIndex);
-                  const selected = answers[item.question_id] === option;
-                  return (
-                    <Pressable
-                      key={option}
-                      accessibilityRole="button"
-                      disabled={reviewMode}
-                      onPress={() => choose(item, option)}
+          <Text style={styles.passage}>{item.passage}</Text>
+          <View testID={`question-${item.question_id}`} style={styles.questionBlock}>
+            <Text style={styles.stem}>
+              {currentIndex + 1}. {item.stem}
+            </Text>
+            <View style={[styles.options, layout.desktop && styles.optionsDesktop]}>
+              {(item.options || []).map((option, optionIndex) => {
+                const parsed = splitOption(option, optionIndex);
+                const selected = answers[item.question_id] === option;
+                return (
+                  <Pressable
+                    key={option}
+                    accessibilityRole="button"
+                    disabled={reviewMode}
+                    onPress={() => choose(option)}
+                    style={[
+                      styles.option,
+                      layout.desktop && styles.optionDesktop,
+                      selected && styles.optionSelected,
+                      reviewMode && styles.optionReadOnly,
+                    ]}
+                  >
+                    <Text
                       style={[
-                        styles.option,
-                        layout.desktop && styles.optionDesktop,
-                        selected && styles.optionSelected,
-                        reviewMode && styles.optionReadOnly,
+                        styles.optionLabel,
+                        layout.desktop && styles.optionTextDesktop,
+                        selected && styles.optionTextSelected,
                       ]}
                     >
-                      <Text
-                        style={[
-                          styles.optionLabel,
-                          layout.desktop && styles.optionTextDesktop,
-                          selected && styles.optionTextSelected,
-                        ]}
-                      >
-                        {parsed.label}
-                      </Text>
-                      <Text
-                        style={[
-                          styles.optionText,
-                          layout.desktop && styles.optionTextDesktop,
-                          selected && styles.optionTextSelected,
-                        ]}
-                      >
-                        {parsed.text}
-                      </Text>
-                    </Pressable>
-                  );
-                })}
-              </View>
-              {reviewMode && reviewById.has(item.question_id) ? (
-                <Text
-                  style={[
-                    styles.reviewResult,
-                    {
-                      color: reviewById.get(item.question_id)?.correct
-                        ? tokens.color.correct
-                        : tokens.color.incorrect,
-                    },
-                  ]}
-                >
-                  我的选择：{String(reviewById.get(item.question_id)?.saved_answer || "未作答")}
-                  {" · "}
-                  {reviewById.get(item.question_id)?.correct ? "正确" : "错误"}
-                </Text>
-              ) : null}
+                      {parsed.label}
+                    </Text>
+                    <Text
+                      style={[
+                        styles.optionText,
+                        layout.desktop && styles.optionTextDesktop,
+                        selected && styles.optionTextSelected,
+                      ]}
+                    >
+                      {parsed.text}
+                    </Text>
+                  </Pressable>
+                );
+              })}
             </View>
-          ))}
+            {reviewMode && reviewItem ? (
+              <Text
+                style={[
+                  styles.reviewResult,
+                  {
+                    color: reviewItem.correct
+                      ? tokens.color.correct
+                      : tokens.color.incorrect,
+                  },
+                ]}
+              >
+                我的选择：{String(reviewItem.saved_answer || "未作答")} ·{" "}
+                {reviewItem.correct ? "正确" : "错误"}
+              </Text>
+            ) : null}
+          </View>
         </View>
 
         {error ? <Text style={styles.error}>{error}</Text> : null}
-        <View style={styles.actions}>
-          {reviewMode ? (
-            <Pressable
-              onPress={() =>
-                activeSessionId &&
-                router.push({
-                  pathname: "/report",
-                  params: { session_id: activeSessionId },
-                })
-              }
-              style={[styles.primaryButton, layout.desktop && styles.buttonDesktop]}
-            >
-              <Text style={styles.primaryButtonText}>查看报告</Text>
-            </Pressable>
-          ) : groupIndex < groups.length - 1 ? (
-            <Pressable
-              onPress={() => setGroupIndex((value) => value + 1)}
-              style={[styles.primaryButton, layout.desktop && styles.buttonDesktop]}
-            >
-              <Text style={styles.primaryButtonText}>下一篇</Text>
-            </Pressable>
-          ) : (
-            <Pressable
-              onPress={() => setConfirming(true)}
-              style={[styles.primaryButton, layout.desktop && styles.buttonDesktop]}
-            >
-              <Text style={styles.primaryButtonText}>交卷</Text>
-            </Pressable>
-          )}
-        </View>
         {confirming ? (
           <View style={styles.confirm}>
             <Text style={styles.confirmTitle}>确认交卷？</Text>
             <Text style={styles.meta}>未答题目将按空白计分。</Text>
-            <View style={styles.actions}>
+            <View style={styles.headerActions}>
               <Pressable
                 onPress={() => setConfirming(false)}
-                style={[
-                  styles.secondaryButton,
-                  layout.desktop && styles.buttonDesktop,
-                ]}
+                style={[styles.secondaryButton, layout.desktop && styles.actionDesktop]}
               >
-                <Text style={styles.secondaryButtonText}>继续作答</Text>
+                <Text style={actionTextStyle}>继续作答</Text>
               </Pressable>
               <Pressable
                 onPress={submit}
-                style={[styles.primaryButton, layout.desktop && styles.buttonDesktop]}
+                style={[styles.primaryButton, layout.desktop && styles.actionDesktop]}
               >
-                <Text style={styles.primaryButtonText}>确认交卷</Text>
+                <Text
+                  style={[
+                    styles.primaryButtonText,
+                    layout.desktop && styles.actionTextDesktop,
+                  ]}
+                >
+                  确认交卷
+                </Text>
               </Pressable>
             </View>
           </View>
@@ -422,10 +402,19 @@ const styles = StyleSheet.create({
     paddingHorizontal: tokens.spacing.pageX,
     paddingVertical: tokens.spacing.section,
   },
-  topRow: {
+  header: {
     flexDirection: "row",
     justifyContent: "space-between",
+    alignItems: "flex-start",
+    gap: tokens.spacing.listGap,
+  },
+  headerActions: {
+    flexDirection: "row",
+    justifyContent: "flex-end",
     alignItems: "center",
+    flexWrap: "wrap",
+    gap: tokens.web_desktop.optionGap,
+    marginLeft: "auto",
   },
   bank: {
     color: tokens.color.primaryText,
@@ -433,32 +422,31 @@ const styles = StyleSheet.create({
     fontSize: tokens.font.sizes.subheading,
     fontWeight: "600",
   },
-  timer: {
-    color: tokens.color.primaryText,
-    fontFamily: tokens.font.uiFamily.web,
-    fontSize: tokens.font.sizes.subheading,
-  },
-  reportButton: {
-    minHeight: tokens.control.primaryButtonHeightMin,
+  actionButton: {
+    minHeight: tokens.control.touchTargetMin,
+    minWidth: tokens.control.touchTargetMin,
     borderWidth: tokens.border.width,
     borderColor: tokens.color.secondaryBorder,
     borderRadius: tokens.radius.medium,
     justifyContent: "center",
     alignItems: "center",
-    marginTop: tokens.spacing.listGap,
-    paddingHorizontal: tokens.spacing.cardPadding,
+    paddingHorizontal: tokens.spacing.listGap,
   },
-  reportButtonDisabled: { backgroundColor: tokens.color.cardBackground },
-  buttonDesktop: {
+  actionDesktop: {
     height: tokens.web_desktop.buttonHeight,
     minHeight: tokens.web_desktop.buttonHeight,
   },
-  reportButtonText: {
+  actionDisabled: {
+    backgroundColor: tokens.color.cardBackground,
+    borderColor: tokens.color.divider,
+  },
+  actionText: {
     color: tokens.color.primaryText,
     fontFamily: tokens.font.uiFamily.web,
-    fontSize: tokens.font.sizes.body,
+    fontSize: tokens.font.sizes.auxiliary,
   },
-  reportButtonTextDisabled: { color: tokens.color.tertiaryText },
+  actionTextDesktop: { fontSize: tokens.web_desktop.optionFontSize },
+  actionTextDisabled: { color: tokens.color.tertiaryText },
   progressTrack: {
     height: tokens.border.width,
     backgroundColor: tokens.color.divider,
@@ -535,22 +523,17 @@ const styles = StyleSheet.create({
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.body,
   },
-  optionTextSelected: { color: tokens.color.primaryButtonText },
   optionTextDesktop: {
     fontSize: tokens.web_desktop.optionFontSize,
     lineHeight:
       tokens.web_desktop.optionFontSize * tokens.web_desktop.optionLineHeight,
   },
+  optionTextSelected: { color: tokens.color.primaryButtonText },
   reviewResult: {
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.body,
     marginTop: tokens.spacing.listGap,
     fontWeight: "600",
-  },
-  actions: {
-    flexDirection: "row",
-    gap: tokens.spacing.listGap,
-    marginTop: tokens.spacing.section,
   },
   primaryButton: {
     minHeight: tokens.control.primaryButtonHeightMin,
@@ -560,7 +543,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     paddingHorizontal: tokens.spacing.cardPadding,
-    flex: 1,
   },
   primaryButtonText: {
     color: tokens.color.primaryButtonText,
@@ -577,12 +559,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     paddingHorizontal: tokens.spacing.cardPadding,
-    flex: 1,
-  },
-  secondaryButtonText: {
-    color: tokens.color.primaryText,
-    fontFamily: tokens.font.uiFamily.web,
-    fontSize: tokens.font.sizes.body,
   },
   confirm: {
     borderTopWidth: tokens.border.width,

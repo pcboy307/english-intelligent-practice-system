@@ -1,4 +1,4 @@
-import type { components } from "./generated";
+import type { components, paths } from "./generated";
 
 const API_BASE = "http://localhost:8000/api/v1";
 
@@ -7,6 +7,8 @@ export type SessionItem = PracticeSession["items"][number];
 export type PracticeReview = components["schemas"]["ReviewResponse"];
 export type ReviewItem = PracticeReview["items"][number];
 export type Report = components["schemas"]["Report"];
+export type ReportSummary =
+  paths["/reports"]["get"]["responses"]["200"]["content"]["application/json"][number];
 
 export function getStudentId(): string {
   const key = "device_student_id";
@@ -73,4 +75,12 @@ export async function getPracticeReview(sessionId: string) {
 
 export async function getReport(sessionId: string) {
   return request<Report>(`/reports/${sessionId}`);
+}
+
+export async function listReports() {
+  return request<ReportSummary[]>("/reports");
+}
+
+export async function deleteReport(sessionId: string) {
+  return request<void>(`/reports/${sessionId}`, { method: "DELETE" });
 }

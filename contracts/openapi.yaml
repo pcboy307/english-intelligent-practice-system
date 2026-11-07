@@ -561,6 +561,50 @@ paths:
                 $ref: "#/components/schemas/Report"
         "404":
           $ref: "#/components/responses/ErrorResponse"
+    delete:
+      tags: [reports]
+      operationId: deleteReport
+      security:
+        - StudentId: []
+      summary: 删除该学生的一份历史报告及其题目和作答快照
+      parameters:
+        - $ref: "#/components/parameters/SessionId"
+      responses:
+        "204":
+          $ref: "#/components/responses/NoContent"
+        "404":
+          $ref: "#/components/responses/ErrorResponse"
+  /reports:
+    get:
+      tags: [reports]
+      operationId: listReports
+      security:
+        - StudentId: []
+      summary: 列出该学生的历史报告
+      responses:
+        "200":
+          description: 按创建时间倒序排列的历史报告
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  additionalProperties: false
+                  required: [session_id, report_title, question_count, score, created_at]
+                  properties:
+                    session_id:
+                      type: string
+                      format: uuid
+                    report_title:
+                      type: string
+                    question_count:
+                      type: integer
+                    score:
+                      type: number
+                    created_at:
+                      type: string
+                      format: date-time
   /reports/summary:
     get:
       tags: [reports]

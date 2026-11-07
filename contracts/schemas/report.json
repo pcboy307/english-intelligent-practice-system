@@ -8,13 +8,17 @@
     "session_id",
     "bank_id",
     "bank_name",
+    "report_title",
     "score",
     "max_score",
     "accuracy",
+    "question_count",
     "duration_seconds",
     "type_scores",
     "knowledge_point_levels",
     "weak_points",
+    "weakness_analysis",
+    "weakness_analysis_source",
     "suggestions",
     "question_results",
     "error_tag_changes"
@@ -23,9 +27,11 @@
     "session_id": {"type": "string", "format": "uuid"},
     "bank_id": {"type": "string", "format": "uuid"},
     "bank_name": {"type": "string"},
+    "report_title": {"type": "string", "minLength": 1},
     "score": {"type": "number", "minimum": 0},
     "max_score": {"type": "number", "exclusiveMinimum": 0},
     "accuracy": {"type": "number", "minimum": 0, "maximum": 1},
+    "question_count": {"type": "integer", "minimum": 1},
     "duration_seconds": {"type": "integer", "minimum": 0},
     "type_scores": {
       "type": "object",
@@ -67,6 +73,8 @@
         "additionalProperties": false
       }
     },
+    "weakness_analysis": {"type": "string", "maxLength": 100},
+    "weakness_analysis_source": {"type": "string", "enum": ["llm", "fallback"]},
     "suggestions": {
       "type": "array",
       "items": {
@@ -85,6 +93,11 @@
         "type": "object",
         "required": [
           "question_id",
+          "type",
+          "passage_group_id",
+          "stem",
+          "options",
+          "blank_label",
           "correct",
           "user_answer",
           "correct_answer",
@@ -96,6 +109,11 @@
         ],
         "properties": {
           "question_id": {"type": "string"},
+          "type": {"type": "string", "enum": ["cloze", "grammar_fill", "reading", "gap_fill"]},
+          "passage_group_id": {"type": "string"},
+          "stem": {"type": "string"},
+          "options": {"type": "array", "items": {"type": "string"}},
+          "blank_label": {"type": "string"},
           "correct": {"type": "boolean"},
           "user_answer": {"oneOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},
           "correct_answer": {"oneOf": [{"type": "string"}, {"type": "array", "items": {"type": "string"}}]},

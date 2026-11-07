@@ -117,6 +117,24 @@ export interface paths {
         get: operations["getReport"];
         put?: never;
         post?: never;
+        /** 删除该学生的一份历史报告及其题目和作答快照 */
+        delete: operations["deleteReport"];
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/reports": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** 列出该学生的历史报告 */
+        get: operations["listReports"];
+        put?: never;
+        post?: never;
         delete?: never;
         options?: never;
         head?: never;
@@ -617,9 +635,11 @@ export interface components {
             /** Format: uuid */
             bank_id: string;
             bank_name: string;
+            report_title: string;
             score: number;
             max_score: number;
             accuracy: number;
+            question_count: number;
             duration_seconds: number;
             type_scores: {
                 [key: string]: {
@@ -639,12 +659,21 @@ export interface components {
                 knowledge_point: string;
                 error_stage: string;
             }[];
+            weakness_analysis: string;
+            /** @enum {string} */
+            weakness_analysis_source: "llm" | "fallback";
             suggestions: {
                 knowledge_point: string;
                 action: string;
             }[];
             question_results: {
                 question_id: string;
+                /** @enum {string} */
+                type: "cloze" | "grammar_fill" | "reading" | "gap_fill";
+                passage_group_id: string;
+                stem: string;
+                options: string[];
+                blank_label: string;
                 correct: boolean;
                 user_answer: string | string[];
                 correct_answer: string | string[];
@@ -1009,6 +1038,49 @@ export interface operations {
                 };
             };
             404: components["responses"]["ErrorResponse"];
+        };
+    };
+    deleteReport: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                session_id: components["parameters"]["SessionId"];
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            204: components["responses"]["NoContent"];
+            404: components["responses"]["ErrorResponse"];
+        };
+    };
+    listReports: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description 按创建时间倒序排列的历史报告 */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": {
+                        /** Format: uuid */
+                        session_id: string;
+                        report_title: string;
+                        question_count: number;
+                        score: number;
+                        /** Format: date-time */
+                        created_at: string;
+                    }[];
+                };
+            };
         };
     };
     getStageReport: {

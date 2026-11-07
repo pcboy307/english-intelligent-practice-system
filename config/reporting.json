@@ -18,6 +18,16 @@
     "include_each_question": true,
     "require_action_bound_to_knowledge_point": true
   },
+  "weakness_analysis": {
+    "enabled": true,
+    "endpoint": "http://127.0.0.1:11435/v1/chat/completions",
+    "model": "qwen-local",
+    "max_chars": 100,
+    "max_wrong_samples": 4,
+    "max_tokens": 220,
+    "temperature": 0.2,
+    "timeout_seconds": 60
+  },
   "stage_report": {
     "trigger_every_practices": 5,
     "require_trend_slope": true,

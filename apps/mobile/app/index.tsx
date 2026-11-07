@@ -39,8 +39,19 @@ export default function HomeScreen() {
         testID="home-shell"
         style={[styles.shell, { maxWidth: layout.contentMaxWidth }]}
       >
-        <Text style={styles.eyebrow}>高二英语</Text>
-        <Text style={styles.title}>智能练习</Text>
+        <View style={styles.header}>
+          <View>
+            <Text style={styles.eyebrow}>高二英语</Text>
+            <Text style={styles.title}>智能练习</Text>
+          </View>
+          <Pressable
+            accessibilityRole="button"
+            onPress={() => router.push("/history")}
+            style={[styles.secondaryButton, layout.desktop && styles.primaryButtonDesktop]}
+          >
+            <Text style={styles.secondaryButtonText}>历史报告</Text>
+          </Pressable>
+        </View>
         <Text style={styles.bank}>当前题库：{bankName}</Text>
         <Text style={[styles.body, { maxWidth: layout.bodyMaxWidth }]}>
           一套 30 分钟练习，包含完型填空、语法填空和七选五。交卷后查看分数、正确率、薄弱知识点和逐题解析。
@@ -74,6 +85,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: tokens.spacing.pageX,
     paddingTop: 80,
   },
+  header: { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", gap: tokens.spacing.listGap },
   eyebrow: {
     color: tokens.color.secondaryText,
     fontFamily: tokens.font.uiFamily.web,
@@ -113,6 +125,20 @@ const styles = StyleSheet.create({
     color: tokens.color.primaryButtonText,
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.body,
+  },
+  secondaryButton: {
+    minHeight: tokens.control.touchTargetMin,
+    borderWidth: tokens.border.width,
+    borderColor: tokens.color.secondaryBorder,
+    borderRadius: tokens.radius.medium,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: tokens.spacing.cardPadding,
+  },
+  secondaryButtonText: {
+    color: tokens.color.primaryText,
+    fontFamily: tokens.font.uiFamily.web,
+    fontSize: tokens.font.sizes.auxiliary,
   },
   primaryButtonDesktop: {
     height: tokens.web_desktop.buttonHeight,

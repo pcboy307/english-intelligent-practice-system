@@ -69,6 +69,8 @@
 - `mastered_threshold=0.85`、`mastered_min_attempts=5`。
 - `trend.window=5`、`rising_above=0.05`、`falling_below=-0.05`。
 - `stage_report.require_cross_bank_notice=true`。
+- `weakness_analysis`：本地模型端点、模型名、100 字上限、最多 4 个典型错题样本与超时。
+- 薄弱点分析输入必须包含题目、用户答案、正确答案和知识点；输出超过 100 字时按完整句截断。
 
 ### `config/validation.json`
 
@@ -89,6 +91,7 @@
 - `web_layout.color_scheme=light`；CSS 必须固定 `color-scheme: light`。
 - `design-tokens.json.web_desktop` 固定选项字号 15、行高 1.5、内边距 12、高度 40、间距 8、按钮高度 40。
 - `control.touchTargetMin=44` 仅适用于移动端；桌面端使用 `web_desktop` 的收紧尺寸。
+- 练习页一次显示一题；所有操作按钮位于内容区右上角。
 
 ### `config/api.json`
 

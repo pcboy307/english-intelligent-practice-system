@@ -215,6 +215,27 @@ def get_report(
         raise HTTPException(status_code=404, detail={"code": "REPORT_NOT_FOUND"}) from error
 
 
+@app.get("/api/v1/reports")
+def list_reports(
+    x_student_id: str | None = Header(default=None, alias="X-Student-Id"),
+) -> list[dict]:
+    student_id = student_id_or_401(x_student_id)
+    return store.list_reports(student_id)
+
+
+@app.delete("/api/v1/reports/{session_id}", status_code=204)
+def delete_report(
+    session_id: str,
+    x_student_id: str | None = Header(default=None, alias="X-Student-Id"),
+) -> None:
+    student_id = student_id_or_401(x_student_id)
+    try:
+        store.delete_report(student_id, session_id)
+    except KeyError as error:
+        raise HTTPException(status_code=404, detail={"code": "REPORT_NOT_FOUND"}) from error
+    return None
+
+
 @app.get("/api/v1/error-tags")
 def get_error_tags(
     x_student_id: str | None = Header(default=None, alias="X-Student-Id"),

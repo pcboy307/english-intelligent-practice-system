@@ -10,6 +10,8 @@ from pathlib import Path
 
 from fastapi.testclient import TestClient
 
+os.environ.setdefault("WEAKNESS_ANALYSIS_DISABLED", "1")
+
 from backend.app.main import app, store
 
 
@@ -88,11 +90,15 @@ def test_submit_returns_report_and_is_idempotent() -> None:
     assert first.json() == second.json()
     report = first.json()
     assert report["score"] == 100.0
+    assert re.fullmatch(r"\d{4}-\d{2}-\d{2}-\d{2}-\d{2}-30题-100\.00分", report["report_title"])
     assert report["bank_name"] == "Demo Bank"
+    assert report["question_count"] == 30
+    assert len(report["weakness_analysis"]) <= 100
     assert len(report["type_scores"]) == 3
     assert report["weak_points"]
     assert report["suggestions"]
     assert len(report["question_results"]) == 30
+    assert all(item["stem"] and item["options"] for item in report["question_results"])
     assert all(
         item["explanation"].strip() and item["explanation"].strip() != "暂无解析"
         for item in report["question_results"]
@@ -123,6 +129,52 @@ def test_review_is_blocked_before_submit() -> None:
     )
     assert response.status_code == 409
     assert response.json()["detail"]["code"] == "SESSION_NOT_SUBMITTED"
+
+
+def test_history_report_can_be_listed_opened_and_deleted() -> None:
+    headers = student_headers()
+    session = start_practice(headers)
+    report = client.post(
+        f"/api/v1/practice/{session['session_id']}/submit",
+        headers={**headers, "Idempotency-Key": str(uuid.uuid4())},
+    )
+    assert report.status_code == 200
+
+    history = client.get("/api/v1/reports", headers=headers)
+    assert history.status_code == 200
+    listed = next(
+        item
+        for item in history.json()
+        if item["session_id"] == session["session_id"]
+    )
+    assert listed["report_title"] == report.json()["report_title"]
+    assert listed["question_count"] == 30
+
+    deleted = client.delete(
+        f"/api/v1/reports/{session['session_id']}",
+        headers=headers,
+    )
+    assert deleted.status_code == 204
+    assert client.get(
+        f"/api/v1/reports/{session['session_id']}",
+        headers=headers,
+    ).status_code == 404
+    assert client.get(
+        f"/api/v1/practice/{session['session_id']}",
+        headers=headers,
+    ).status_code == 404
+    with store.connection() as connection:
+        for table, id_column in (
+            ("practice_reports", "session_id"),
+            ("saved_answers", "session_id"),
+            ("session_items", "session_id"),
+            ("practice_sessions", "id"),
+        ):
+            count = connection.execute(
+                f"SELECT count(*) AS count FROM {table} WHERE {id_column}=%s",
+                (session["session_id"],),
+            ).fetchone()["count"]
+            assert count == 0
 
 
 def test_wrong_answer_is_tagged_and_two_different_sessions_clear_it() -> None:
