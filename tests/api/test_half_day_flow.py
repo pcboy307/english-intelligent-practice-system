@@ -140,6 +140,7 @@ def test_submit_returns_report_and_is_idempotent() -> None:
     assert review.status_code == 200
     assert len(review.json()["items"]) == 29
     assert all("explanation" not in item for item in review.json()["items"])
+    assert all(item["correct_answer"] for item in review.json()["items"])
 
 
 def test_review_is_blocked_before_submit() -> None:

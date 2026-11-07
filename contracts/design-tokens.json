@@ -39,8 +39,9 @@
       "large_surface",
       "border_default"
     ],
-    "correct_incorrect": "text_or_1px_border_only",
-    "semantic_fill_forbidden": true,
+    "correct_incorrect": "correct_answer_background_or_text; incorrect_text_or_1px_border_only",
+    "semantic_fill_forbidden": false,
+    "correct_answer_fill_only": true,
     "large_semantic_color_blocks_forbidden": true
   },
   "font": {

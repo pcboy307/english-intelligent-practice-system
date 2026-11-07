@@ -93,6 +93,7 @@ components:
               - question_order
               - book_tag
               - correct
+              - correct_answer
             properties:
               question_id:
                 type: string
@@ -129,6 +130,12 @@ components:
                 enum: [必修, 选必一, 选必二, 跨册]
               correct:
                 type: boolean
+              correct_answer:
+                oneOf:
+                  - type: string
+                  - type: array
+                    items:
+                      type: string
     SavedAnswer:
       $ref: ./schemas/answer.json
     Report:

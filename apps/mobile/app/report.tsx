@@ -121,7 +121,14 @@ export default function ReportScreen() {
               </Pressable>
             </View>
             <Text style={styles.text}>你的答案：{String(item.user_answer || "未作答")}</Text>
-            <Text style={styles.text}>正确答案：{String(item.correct_answer)}</Text>
+            <View
+              testID={`correct-answer-${item.question_id}`}
+              style={styles.correctAnswer}
+            >
+              <Text style={styles.correctAnswerText}>
+                正确答案：{String(item.correct_answer)}
+              </Text>
+            </View>
             <Text style={styles.explanation}>{item.explanation}</Text>
             <Text style={styles.meta}>{item.book_source} · 难度 {item.difficulty}</Text>
           </View>
@@ -152,6 +159,8 @@ const styles = StyleSheet.create({
   resultHeader: { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", gap: tokens.spacing.listGap },
   resultTitle: { fontFamily: tokens.font.uiFamily.web, fontSize: tokens.font.sizes.subheading, fontWeight: "600" },
   explanation: { color: tokens.color.primaryText, fontFamily: tokens.font.passageFamily.web, fontSize: tokens.font.sizes.body, lineHeight: tokens.font.sizes.body * tokens.font.lineHeight.passage, marginTop: tokens.spacing.listGap },
+  correctAnswer: { alignSelf: "flex-start", backgroundColor: tokens.color.correct, borderRadius: tokens.radius.small, marginTop: tokens.spacing.listGap, paddingHorizontal: tokens.spacing.listGap, paddingVertical: tokens.web_desktop.optionGap },
+  correctAnswerText: { color: tokens.color.primaryButtonText, fontFamily: tokens.font.uiFamily.web, fontSize: tokens.font.sizes.body, fontWeight: "600" },
   reviewButton: { minHeight: tokens.control.touchTargetMin, borderWidth: tokens.border.width, borderColor: tokens.color.secondaryBorder, borderRadius: tokens.radius.medium, justifyContent: "center", alignItems: "center", marginTop: tokens.spacing.listGap, paddingHorizontal: tokens.spacing.cardPadding },
   reviewButtonInline: { marginTop: 0 },
   reviewButtonText: { color: tokens.color.primaryText, fontFamily: tokens.font.uiFamily.web, fontSize: tokens.font.sizes.body },

@@ -652,6 +652,7 @@ class PostgresStore:
                     "passage_order": question.passage_order,
                     "question_order": question.question_order,
                     "correct": correctness[qid],
+                    "correct_answer": question.answer,
                 }
             )
         return {

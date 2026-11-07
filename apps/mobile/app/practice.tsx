@@ -5,6 +5,7 @@ import { Modal, Pressable, ScrollView, StyleSheet, Text, View } from "react-nati
 import {
   getPractice,
   getPracticeReview,
+  getReport,
   abandonPractice,
   saveAnswer,
   submitPractice,
@@ -46,6 +47,25 @@ function splitOption(option: string, index: number) {
   };
 }
 
+function isCorrectOption(
+  option: string,
+  index: number,
+  correctAnswer: string | string[],
+) {
+  const parsed = splitOption(option, index);
+  const answers = Array.isArray(correctAnswer)
+    ? correctAnswer
+    : [correctAnswer];
+  return answers.some((answer) => {
+    const normalized = String(answer).trim().toLocaleLowerCase();
+    return (
+      option.trim().toLocaleLowerCase() === normalized ||
+      parsed.text.trim().toLocaleLowerCase() === normalized ||
+      parsed.label.trim().toLocaleLowerCase() === normalized
+    );
+  });
+}
+
 export default function PracticeScreen() {
   const layout = useResponsiveLayout();
   const params = useLocalSearchParams<{
@@ -68,15 +88,34 @@ export default function PracticeScreen() {
 
   useEffect(() => {
     if (!reviewRequested || !routeSessionId) return;
-    getPracticeReview(routeSessionId)
-      .then((review) => {
+    Promise.all([
+      getPracticeReview(routeSessionId),
+      getReport(routeSessionId),
+    ])
+      .then(([review, report]) => {
+        const correctAnswers = new Map(
+          report.question_results.map((result) => [
+            result.question_id,
+            result.correct_answer,
+          ]),
+        );
+        const reviewWithAnswers = {
+          ...review,
+          items: review.items.map((reviewItem) => ({
+            ...reviewItem,
+            correct_answer:
+              reviewItem.correct_answer ??
+              correctAnswers.get(reviewItem.question_id) ??
+              "",
+          })),
+        };
         const requestedIndex = params.q
           ? Math.max(
               0,
               Math.min(review.items.length - 1, Number(params.q) - 1),
             )
           : 0;
-        setReviewSession(review);
+        setReviewSession(reviewWithAnswers);
         setReviewMode(true);
         setCurrentIndex(requestedIndex);
         setAnswers(
@@ -332,9 +371,22 @@ export default function PracticeScreen() {
               {(item.options || []).map((option, optionIndex) => {
                 const parsed = splitOption(option, optionIndex);
                 const selected = answers[item.question_id] === option;
+                const correct =
+                  reviewMode &&
+                  reviewItem != null &&
+                  isCorrectOption(
+                    option,
+                    optionIndex,
+                    reviewItem.correct_answer,
+                  );
                 return (
                   <Pressable
                     key={option}
+                    testID={
+                      correct
+                        ? `correct-option-${item.question_id}`
+                        : undefined
+                    }
                     accessibilityRole="button"
                     disabled={reviewMode}
                     onPress={() => choose(option)}
@@ -342,6 +394,7 @@ export default function PracticeScreen() {
                       styles.option,
                       layout.desktop && styles.optionDesktop,
                       selected && styles.optionSelected,
+                      correct && styles.optionCorrect,
                       reviewMode && styles.optionReadOnly,
                     ]}
                   >
@@ -350,6 +403,7 @@ export default function PracticeScreen() {
                         styles.optionLabel,
                         layout.desktop && styles.optionTextDesktop,
                         selected && styles.optionTextSelected,
+                        correct && styles.optionTextCorrect,
                       ]}
                     >
                       {parsed.label}
@@ -359,6 +413,7 @@ export default function PracticeScreen() {
                         styles.optionText,
                         layout.desktop && styles.optionTextDesktop,
                         selected && styles.optionTextSelected,
+                        correct && styles.optionTextCorrect,
                       ]}
                     >
                       {parsed.text}
@@ -548,6 +603,10 @@ const styles = StyleSheet.create({
     borderColor: tokens.color.primaryText,
     backgroundColor: tokens.color.primaryButtonBackground,
   },
+  optionCorrect: {
+    borderColor: tokens.color.correct,
+    backgroundColor: tokens.color.correct,
+  },
   optionReadOnly: { opacity: 0.9 },
   optionLabel: {
     width: 24,
@@ -568,6 +627,7 @@ const styles = StyleSheet.create({
       tokens.web_desktop.optionFontSize * tokens.web_desktop.optionLineHeight,
   },
   optionTextSelected: { color: tokens.color.primaryButtonText },
+  optionTextCorrect: { color: tokens.color.primaryButtonText },
   reviewResult: {
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.body,

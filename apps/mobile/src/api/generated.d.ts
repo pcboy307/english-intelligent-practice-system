@@ -437,6 +437,7 @@ export interface components {
                 /** @enum {string} */
                 book_tag: "必修" | "选必一" | "选必二" | "跨册";
                 correct: boolean;
+                correct_answer: string | string[];
             }[];
         };
         SavedAnswer: components["schemas"]["answer"];
