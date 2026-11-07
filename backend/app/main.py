@@ -169,6 +169,21 @@ def get_practice_review(
         raise HTTPException(status_code=409, detail={"code": str(error)}) from error
 
 
+@app.delete("/api/v1/practice/{session_id}", status_code=204)
+def abandon_practice(
+    session_id: str,
+    x_student_id: str | None = Header(default=None, alias="X-Student-Id"),
+) -> None:
+    student_id = student_id_or_401(x_student_id)
+    try:
+        store.abandon_session(student_id, session_id)
+    except KeyError as error:
+        raise HTTPException(status_code=404, detail={"code": str(error)}) from error
+    except ValueError as error:
+        raise HTTPException(status_code=409, detail={"code": str(error)}) from error
+    return None
+
+
 @app.put("/api/v1/practice/{session_id}/answer", status_code=204)
 def save_answer(
     session_id: str,

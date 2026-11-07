@@ -131,6 +131,39 @@ def test_review_is_blocked_before_submit() -> None:
     assert response.json()["detail"]["code"] == "SESSION_NOT_SUBMITTED"
 
 
+def test_exit_deletes_unsubmitted_session_without_report() -> None:
+    headers = student_headers()
+    session = start_practice(headers)
+    exited = client.delete(
+        f"/api/v1/practice/{session['session_id']}",
+        headers=headers,
+    )
+    assert exited.status_code == 204
+    assert client.get(
+        f"/api/v1/practice/{session['session_id']}",
+        headers=headers,
+    ).status_code == 404
+    with store.connection() as connection:
+        rows = {
+            table: connection.execute(
+                f"SELECT count(*) AS count FROM {table} WHERE {id_column}=%s",
+                (session["session_id"],),
+            ).fetchone()["count"]
+            for table, id_column in (
+                ("practice_reports", "session_id"),
+                ("saved_answers", "session_id"),
+                ("session_items", "session_id"),
+                ("practice_sessions", "id"),
+            )
+        }
+    assert rows == {
+        "practice_reports": 0,
+        "saved_answers": 0,
+        "session_items": 0,
+        "practice_sessions": 0,
+    }
+
+
 def test_history_report_can_be_listed_opened_and_deleted() -> None:
     headers = student_headers()
     session = start_practice(headers)

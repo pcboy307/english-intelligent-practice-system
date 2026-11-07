@@ -51,6 +51,10 @@ export async function getPractice(sessionId: string) {
   return request<PracticeSession>(`/practice/${sessionId}`);
 }
 
+export async function abandonPractice(sessionId: string) {
+  return request<void>(`/practice/${sessionId}`, { method: "DELETE" });
+}
+
 export async function saveAnswer(sessionId: string, questionId: string, answer: string) {
   return request<void>(`/practice/${sessionId}/answer`, {
     method: "PUT",

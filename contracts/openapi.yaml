@@ -478,6 +478,21 @@ paths:
                 $ref: "#/components/schemas/SessionResponse"
         "404":
           $ref: "#/components/responses/ErrorResponse"
+    delete:
+      tags: [student]
+      operationId: abandonPractice
+      security:
+        - StudentId: []
+      summary: 退出并删除未交卷会话及其题目快照和作答，不生成报告
+      parameters:
+        - $ref: "#/components/parameters/SessionId"
+      responses:
+        "204":
+          $ref: "#/components/responses/NoContent"
+        "404":
+          $ref: "#/components/responses/ErrorResponse"
+        "409":
+          $ref: "#/components/responses/ErrorResponse"
   /practice/{session_id}/review:
     get:
       tags: [student]

@@ -49,7 +49,8 @@ export interface paths {
         get: operations["getPracticeSession"];
         put?: never;
         post?: never;
-        delete?: never;
+        /** 退出并删除未交卷会话及其题目快照和作答，不生成报告 */
+        delete: operations["abandonPractice"];
         options?: never;
         head?: never;
         patch?: never;
@@ -943,6 +944,22 @@ export interface operations {
                 };
             };
             404: components["responses"]["ErrorResponse"];
+        };
+    };
+    abandonPractice: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                session_id: components["parameters"]["SessionId"];
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            204: components["responses"]["NoContent"];
+            404: components["responses"]["ErrorResponse"];
+            409: components["responses"]["ErrorResponse"];
         };
     };
     getPracticeReview: {

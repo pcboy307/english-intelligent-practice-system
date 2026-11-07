@@ -1,10 +1,11 @@
 import { router, useLocalSearchParams } from "expo-router";
 import { useEffect, useMemo, useState } from "react";
-import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Modal, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 
 import {
   getPractice,
   getPracticeReview,
+  abandonPractice,
   saveAnswer,
   submitPractice,
   type PracticeReview,
@@ -63,7 +64,7 @@ export default function PracticeScreen() {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [remaining, setRemaining] = useState(0);
   const [error, setError] = useState("");
-  const [confirming, setConfirming] = useState(false);
+  const [dialogMode, setDialogMode] = useState<"submit" | "exit" | null>(null);
 
   useEffect(() => {
     if (!reviewRequested || !routeSessionId) return;
@@ -183,7 +184,21 @@ export default function PracticeScreen() {
       const review = await getPracticeReview(session.session_id);
       setReviewSession(review);
       setReviewMode(true);
-      setConfirming(false);
+      setDialogMode(null);
+    } catch (reason) {
+      setError(String(reason));
+    }
+  }
+
+  async function abandon() {
+    if (!session) return;
+    try {
+      await abandonPractice(session.session_id);
+      window.localStorage.removeItem(draftKey(session.session_id));
+      window.localStorage.removeItem(`submit:${session.session_id}`);
+      setSession(null);
+      setLocalSession(null);
+      router.replace("/");
     } catch (reason) {
       setError(String(reason));
     }
@@ -225,14 +240,14 @@ export default function PracticeScreen() {
           <View style={styles.headerActions}>
             <Pressable
               accessibilityRole="button"
-              disabled={atFirst || confirming}
+              disabled={atFirst || dialogMode !== null}
               onPress={() => setCurrentIndex((value) => Math.max(0, value - 1))}
-              style={[actionStyle, (atFirst || confirming) && styles.actionDisabled]}
+              style={[actionStyle, (atFirst || dialogMode !== null) && styles.actionDisabled]}
             >
               <Text
                 style={[
                   actionTextStyle,
-                  (atFirst || confirming) && styles.actionTextDisabled,
+                  (atFirst || dialogMode !== null) && styles.actionTextDisabled,
                 ]}
               >
                 上一题
@@ -240,16 +255,16 @@ export default function PracticeScreen() {
             </Pressable>
             <Pressable
               accessibilityRole="button"
-              disabled={atLast || confirming}
+              disabled={atLast || dialogMode !== null}
               onPress={() =>
                 setCurrentIndex((value) => Math.min(items.length - 1, value + 1))
               }
-              style={[actionStyle, (atLast || confirming) && styles.actionDisabled]}
+              style={[actionStyle, (atLast || dialogMode !== null) && styles.actionDisabled]}
             >
               <Text
                 style={[
                   actionTextStyle,
-                  (atLast || confirming) && styles.actionTextDisabled,
+                  (atLast || dialogMode !== null) && styles.actionTextDisabled,
                 ]}
               >
                 下一题
@@ -279,10 +294,19 @@ export default function PracticeScreen() {
             {!reviewMode && atLast ? (
               <Pressable
                 accessibilityRole="button"
-                onPress={() => setConfirming(true)}
+                onPress={() => setDialogMode("submit")}
                 style={actionStyle}
               >
                 <Text style={actionTextStyle}>交卷</Text>
+              </Pressable>
+            ) : null}
+            {!reviewMode ? (
+              <Pressable
+                accessibilityRole="button"
+                onPress={() => setDialogMode("exit")}
+                style={actionStyle}
+              >
+                <Text style={actionTextStyle}>退出</Text>
               </Pressable>
             ) : null}
           </View>
@@ -362,19 +386,34 @@ export default function PracticeScreen() {
         </View>
 
         {error ? <Text style={styles.error}>{error}</Text> : null}
-        {confirming ? (
-          <View style={styles.confirm}>
-            <Text style={styles.confirmTitle}>确认交卷？</Text>
-            <Text style={styles.meta}>未答题目将按空白计分。</Text>
-            <View style={styles.headerActions}>
+      </View>
+      <Modal
+        visible={dialogMode !== null}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setDialogMode(null)}
+      >
+        <View style={styles.modalBackdrop}>
+          <View style={styles.modalCard}>
+            <Text style={styles.confirmTitle}>
+              {dialogMode === "exit" ? "退出本次练习？" : "确认交卷？"}
+            </Text>
+            <Text style={styles.meta}>
+              {dialogMode === "exit"
+                ? "退出后会删除本次题目和已答记录，不会保存报告。"
+                : "未答题目将按空白计分，交卷后仍可查看报告。"}
+            </Text>
+            <View style={styles.modalActions}>
               <Pressable
-                onPress={() => setConfirming(false)}
+                accessibilityRole="button"
+                onPress={() => setDialogMode(null)}
                 style={[styles.secondaryButton, layout.desktop && styles.actionDesktop]}
               >
                 <Text style={actionTextStyle}>继续作答</Text>
               </Pressable>
               <Pressable
-                onPress={submit}
+                accessibilityRole="button"
+                onPress={dialogMode === "exit" ? abandon : submit}
                 style={[styles.primaryButton, layout.desktop && styles.actionDesktop]}
               >
                 <Text
@@ -383,13 +422,13 @@ export default function PracticeScreen() {
                     layout.desktop && styles.actionTextDesktop,
                   ]}
                 >
-                  确认交卷
+                  {dialogMode === "exit" ? "确认退出" : "确认交卷"}
                 </Text>
               </Pressable>
             </View>
           </View>
-        ) : null}
-      </View>
+        </View>
+      </Modal>
     </ScrollView>
   );
 }
@@ -560,11 +599,27 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingHorizontal: tokens.spacing.cardPadding,
   },
-  confirm: {
-    borderTopWidth: tokens.border.width,
-    borderColor: tokens.color.divider,
+  modalBackdrop: {
+    flex: 1,
+    backgroundColor: tokens.color.modalBackdrop,
+    justifyContent: "center",
+    alignItems: "center",
+    padding: tokens.spacing.pageX,
+  },
+  modalCard: {
+    width: "100%",
+    maxWidth: tokens.web_desktop.mobileMaxWidth,
+    backgroundColor: tokens.color.pageBackground,
+    borderWidth: tokens.border.width,
+    borderColor: tokens.color.secondaryBorder,
+    borderRadius: tokens.radius.large,
+    padding: tokens.spacing.cardPadding,
+  },
+  modalActions: {
+    flexDirection: "row",
+    justifyContent: "flex-end",
+    gap: tokens.web_desktop.optionGap,
     marginTop: tokens.spacing.section,
-    paddingTop: tokens.spacing.section,
   },
   confirmTitle: {
     color: tokens.color.primaryText,

@@ -3,7 +3,7 @@ import type { PracticeSession, Report } from "./api/client";
 let currentSession: PracticeSession | null = null;
 let currentReport: Report | null = null;
 
-export function setSession(session: PracticeSession) {
+export function setSession(session: PracticeSession | null) {
   currentSession = session;
 }
 

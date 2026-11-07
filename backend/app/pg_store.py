@@ -597,6 +597,39 @@ class PostgresStore:
         record.answers[question_id] = answer
         return record
 
+    def abandon_session(self, student_id: str, session_id: str) -> None:
+        with self.connection() as connection:
+            with connection.transaction():
+                row = connection.execute(
+                    """
+                    SELECT status
+                    FROM practice_sessions
+                    WHERE student_id=%s AND id=%s
+                    FOR UPDATE
+                    """,
+                    (student_id, session_id),
+                ).fetchone()
+                if not row:
+                    raise KeyError("SESSION_NOT_FOUND")
+                if row["status"] != "in_progress":
+                    raise ValueError("SESSION_ALREADY_SUBMITTED")
+                connection.execute(
+                    "DELETE FROM error_tag_successes WHERE session_id=%s",
+                    (session_id,),
+                )
+                connection.execute(
+                    "DELETE FROM saved_answers WHERE session_id=%s",
+                    (session_id,),
+                )
+                connection.execute(
+                    "DELETE FROM session_items WHERE session_id=%s",
+                    (session_id,),
+                )
+                connection.execute(
+                    "DELETE FROM practice_sessions WHERE student_id=%s AND id=%s",
+                    (student_id, session_id),
+                )
+
     def submit_session(
         self, student_id: str, session_id: str, idempotency_key: str, now: datetime
     ) -> dict:

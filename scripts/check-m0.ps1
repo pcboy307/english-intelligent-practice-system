@@ -186,6 +186,7 @@ Write-Output "PASS grammar whitelistRows=15 grammarIds=21 unitRows=25"
 $openapi = Get-Content -Raw -Encoding UTF8 -LiteralPath "contracts/openapi.yaml"
 $generatedApi = Get-Content -Raw -Encoding UTF8 -LiteralPath "apps/mobile/src/api/generated.d.ts"
 Assert-True ($generatedApi.Contains('"/practice/{session_id}/review"')) "Generated API type is stale"
+Assert-True ($generatedApi.Contains('abandonPractice')) "Generated abandon-practice type is stale"
 foreach ($path in @(
   "/practice/start:",
   "/practice/{session_id}/review:",
@@ -211,8 +212,8 @@ foreach ($path in @(
 }
 Assert-True (-not $openapi.Contains("approved_by_owner")) "Client-side owner approval must be removed"
 Assert-True (-not [regex]::IsMatch($openapi, "(?m)^security:")) "Top-level global security must be absent"
-Assert-True ([regex]::Matches($openapi, "(?m)^      security:\s*$").Count -eq 24) "Every operation must declare security"
-Assert-True ([regex]::Matches($openapi, "- StudentId: \[\]").Count -eq 12) "Student security declaration mismatch"
+Assert-True ([regex]::Matches($openapi, "(?m)^      security:\s*$").Count -eq 25) "Every operation must declare security"
+Assert-True ([regex]::Matches($openapi, "- StudentId: \[\]").Count -eq 13) "Student security declaration mismatch"
 Assert-True ([regex]::Matches($openapi, "- AdminToken: \[\]").Count -eq 12) "Admin security declaration mismatch"
 Assert-True ($openapi.Contains("/approve-generation:")) "Generation approval path missing"
 Assert-True ($openapi.Contains("Idempotency-Key")) "Submit idempotency contract missing"

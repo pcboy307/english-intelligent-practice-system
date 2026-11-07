@@ -1,0 +1,29 @@
+Version:
+V11.5
+
+Exit dialog:
+title=退出本次练习？
+message=退出后会删除本次题目和已答记录，不会保存报告。
+buttons=继续作答, 确认退出
+
+After confirmation:
+url=http://localhost:8081/
+local_draft_removed=true
+
+Database verification:
+practice_reports=0
+saved_answers=0
+session_items=0
+practice_sessions=0
+
+Submit dialog:
+title=确认交卷？
+position=centered_modal
+bottom_confirmation_removed=true
+
+Automated checks:
+8 passed
+M0_CHECK=PASS
+API_CONTRACT_CHECK=PASS calls=10
+openapi.yaml=valid
+TypeScript=pass
