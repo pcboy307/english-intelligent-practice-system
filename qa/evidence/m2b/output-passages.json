@@ -1,0 +1,619 @@
+[
+  {
+    "type": "cloze",
+    "passage_group_id": "M2.0-CLOZE-01",
+    "topic": "青少年生活与成长",
+    "book_source": "选必二 U1",
+    "difficulty": 3,
+    "passage": "Growing up is never easy. As teenagers, we face many changes and challenges. Some days are full of joy, while others seem dark and (1) ______. Last year, I felt very (2) ______ about my future. I did not know what I wanted to do, and I often (3) ______ with my parents about small things. My best friend noticed that I was (4) ______ and asked me to join a school club. At first, I was (5) ______ to try because I was afraid of making mistakes. But she (6) ______ me to give it a try. In the club, we worked on a project to help (7) ______ people in our neighbourhood. We visited them, talked with them, and listened to their stories. This experience (8) ______ my life. I learned that helping others can (9) ______ our own problems. I also learned to (10) ______ my feelings with my family instead of keeping them inside. Now I feel more (11) ______ and confident. I understand that growing up takes time, and that everyone (12) ______ mistakes. When we face difficulties, we should not (13) ______ up. Instead, we should ask for help and keep (14) ______ forward. Looking back, I am (15) ______ for every challenge, because each one has made me stronger.",
+    "questions": [
+      {
+        "stem": "Some days are full of joy, while others seem dark and (1) ______.",
+        "options": [
+          "hopeless",
+          "hopeful",
+          "careless",
+          "careful"
+        ],
+        "answer": "hopeless",
+        "knowledge_points": [
+          "adjective choice in context"
+        ],
+        "grammar_tags": [
+          "tense_system"
+        ],
+        "book_source": "选必二 U1",
+        "difficulty": 1,
+        "explanation": "第一题答案选hopeless，因为句意是有些日子充满欢乐，而另一些日子则显得黑暗且没有希望，hopeless表示“无望的”，与dark并列且符合语境。干扰项hopeful意为“有希望的”，与dark矛盾，careless和careful分别表示“粗心的”和“仔细的”，都不能与dark并列描述日子的状态。本题考点是形容词词义辨析及根据上下文语境选择恰当形容词。"
+      },
+      {
+        "stem": "Last year, I felt very (2) ______ about my future.",
+        "options": [
+          "worried",
+          "worrying",
+          "worry",
+          "worries"
+        ],
+        "answer": "worried",
+        "knowledge_points": [
+          "adjective after linking verb"
+        ],
+        "grammar_tags": [
+          "noun_clauses"
+        ],
+        "book_source": "选必二 U2",
+        "difficulty": 1,
+        "explanation": "第二题答案选worried，因为feel是系动词，后接形容词作表语，worried表示“担心的”，符合“对未来感到担心”的语境。干扰项worrying虽然也是形容词，但通常修饰事物，表示“令人担心的”，worry是动词或名词，worries是名词复数或动词第三人称单数，都不能直接作feel的表语。本题考点是系动词后接形容词作表语以及-ed形容词与-ing形容词的区别。"
+      },
+      {
+        "stem": "I did not know what I wanted to do, and I often (3) ______ with my parents about small things.",
+        "options": [
+          "argued",
+          "argue",
+          "arguing",
+          "argument"
+        ],
+        "answer": "argued",
+        "knowledge_points": [
+          "verb form in past narrative"
+        ],
+        "grammar_tags": [
+          "word_formation"
+        ],
+        "book_source": "选必二 U3",
+        "difficulty": 2,
+        "explanation": "第三题答案选argued，因为句子描述的是去年经常发生的事情，全文使用一般过去时，且主语I后需要谓语动词的过去式，argued符合时态和语法要求。干扰项argue是动词原形，arguing是现在分词，argument是名词，都不能单独作谓语。本题考点是一般过去时的谓语动词形式以及词性辨析。"
+      },
+      {
+        "stem": "My best friend noticed that I was (4) ______ and asked me to join a school club.",
+        "options": [
+          "upset",
+          "happy",
+          "excited",
+          "proud"
+        ],
+        "answer": "upset",
+        "knowledge_points": [
+          "adjective meaning in context"
+        ],
+        "grammar_tags": [
+          "passive_voice_tenses"
+        ],
+        "book_source": "选必二 U4",
+        "difficulty": 2,
+        "explanation": "第四题答案选upset，因为后文提到朋友邀请我加入社团，说明我当时情绪低落、心烦意乱，upset表示“心烦的、难过的”，符合语境。干扰项happy、excited和proud分别表示“高兴的”“兴奋的”和“自豪的”，都是积极情绪，与后文朋友主动帮助我的语境不符。本题考点是形容词词义辨析及根据上下文推断人物情绪。"
+      },
+      {
+        "stem": "At first, I was (5) ______ to try because I was afraid of making mistakes.",
+        "options": [
+          "reluctant",
+          "willing",
+          "eager",
+          "ready"
+        ],
+        "answer": "reluctant",
+        "knowledge_points": [
+          "adjective choice with infinitive"
+        ],
+        "grammar_tags": [
+          "partial_inversion_basic"
+        ],
+        "book_source": "选必二 U5",
+        "difficulty": 3,
+        "explanation": "第五题答案选reluctant，因为句中because I was afraid of making mistakes说明我害怕犯错，所以起初不愿意尝试，reluctant表示“不情愿的”，符合因果关系。干扰项willing、eager和ready分别表示“愿意的”“渴望的”和“准备好的”，都表示积极态度，与害怕犯错的语境矛盾。本题考点是形容词词义辨析及原因状语从句的逻辑关系。"
+      },
+      {
+        "stem": "But she (6) ______ me to give it a try.",
+        "options": [
+          "encouraged",
+          "would encourage",
+          "had encouraged",
+          "were to encourage"
+        ],
+        "answer": "encouraged",
+        "knowledge_points": [
+          "subjunctive_basic_if"
+        ],
+        "grammar_tags": [
+          "subjunctive_basic_if"
+        ],
+        "book_source": "选必二 U1",
+        "difficulty": 3,
+        "explanation": "第六题答案选encouraged，因为句子描述的是过去发生的事情，全文使用一般过去时，主语she后需要动词过去式作谓语，encouraged符合时态要求。干扰项would encourage是过去将来时，had encouraged是过去完成时，were to encourage是过去将来时的另一种形式，都不符合此处单纯叙述过去事件的语境。本题考点是一般过去时的谓语动词形式及鼓励某人做某事的固定搭配encourage sb. to do sth.。"
+      },
+      {
+        "stem": "In the club, we worked on a project to help (7) ______ people in our neighbourhood.",
+        "options": [
+          "should help",
+          "help",
+          "helped",
+          "helping"
+        ],
+        "answer": "help",
+        "knowledge_points": [
+          "subjunctive_basic_should"
+        ],
+        "grammar_tags": [
+          "subjunctive_basic_should"
+        ],
+        "book_source": "选必二 U2",
+        "difficulty": 3,
+        "explanation": "第七题答案选help，因为to help是不定式，表示目的，help后接宾语people，构成help people，符合“帮助有需要的人”的语义。干扰项should help含有情态动词，不能直接放在to后，helped是过去式，helping是现在分词，都不能与to构成正确的不定式结构。本题考点是动词不定式作目的状语以及help后接宾语的用法。"
+      },
+      {
+        "stem": "This experience (8) ______ my life.",
+        "options": [
+          "changed",
+          "changing",
+          "to change",
+          "change"
+        ],
+        "answer": "changed",
+        "knowledge_points": [
+          "v_ing_nonfinite"
+        ],
+        "grammar_tags": [
+          "v_ing_nonfinite"
+        ],
+        "book_source": "选必一 U1",
+        "difficulty": 1,
+        "explanation": "第八题答案选changed，因为句子描述过去发生的经历改变了我的生活，主语This experience是第三人称单数，谓语动词需要用过去式changed。干扰项changing是现在分词，to change是动词不定式，change是动词原形，都不能单独作谓语。本题考点是一般过去时的谓语动词形式及主语与谓语的搭配。"
+      },
+      {
+        "stem": "I learned that helping others can (9) ______ our own problems.",
+        "options": [
+          "reduce",
+          "reduced",
+          "reducing",
+          "to reduce"
+        ],
+        "answer": "reduce",
+        "knowledge_points": [
+          "tense_system"
+        ],
+        "grammar_tags": [
+          "tense_system"
+        ],
+        "book_source": "选必一 U2",
+        "difficulty": 3,
+        "explanation": "第九题答案选reduce，因为can是情态动词，后接动词原形，reduce表示“减少”，符合“帮助他人可以减少我们自己的问题”的语义。干扰项reduced是过去式或过去分词，reducing是现在分词，to reduce是不定式，都不能直接跟在情态动词can后。本题考点是情态动词后接动词原形的用法。"
+      },
+      {
+        "stem": "I also learned to (10) ______ my feelings with my family instead of keeping them inside.",
+        "options": [
+          "share",
+          "sharing",
+          "shared",
+          "to share"
+        ],
+        "answer": "share",
+        "knowledge_points": [
+          "with_compound"
+        ],
+        "grammar_tags": [
+          "with_compound"
+        ],
+        "book_source": "选必一 U3",
+        "difficulty": 3,
+        "explanation": "第十题答案选share，因为learn to后接动词原形，表示“学会做某事”，share my feelings表示“分享我的感受”，符合语境。干扰项sharing是现在分词，shared是过去式或过去分词，to share是不定式，都不能直接放在learn to后构成正确的动词不定式结构。本题考点是learn to do sth.的固定搭配以及动词原形的使用。"
+      },
+      {
+        "stem": "Now I feel more (11) ______ and confident.",
+        "options": [
+          "it is",
+          "that is",
+          "there is",
+          "what is"
+        ],
+        "answer": "it is",
+        "knowledge_points": [
+          "cleft_basic"
+        ],
+        "grammar_tags": [
+          "cleft_basic"
+        ],
+        "book_source": "选必一 U4",
+        "difficulty": 4,
+        "explanation": "第11题应选“it is”，因为此处构成“more...and confident”的并列结构，需要系动词和主语使句子完整。其他选项如“that is”“there is”“what is”都不能与“more”自然搭配构成“变得更……”的比较结构。本题考查形容词比较级后的句子结构与系动词用法。"
+      },
+      {
+        "stem": "I understand that growing up takes time, and that everyone (12) ______ mistakes.",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "/"
+        ],
+        "answer": "/",
+        "knowledge_points": [
+          "articles"
+        ],
+        "grammar_tags": [
+          "articles"
+        ],
+        "book_source": "必修一 U3",
+        "difficulty": 2,
+        "explanation": "第12题应选“/”，因为“everyone”表示泛指“每个人”，其后接复数名词“mistakes”时不需要加冠词。选项“a”“an”“the”都会使表达变得不自然或不符合泛指含义。本题考查不定代词后名词的冠词使用。"
+      },
+      {
+        "stem": "When we face difficulties, we should not (13) ______ up.",
+        "options": [
+          "give",
+          "look",
+          "take",
+          "put"
+        ],
+        "answer": "give",
+        "knowledge_points": [
+          "prepositions"
+        ],
+        "grammar_tags": [
+          "prepositions"
+        ],
+        "book_source": "必修二 U2",
+        "difficulty": 5,
+        "explanation": "第13题应选“give”，因为“give up”是固定短语，意为“放弃”，符合“面对困难不应放弃”的语境。其他选项“look up”“take up”“put up”虽然也是短语，但意思分别为“查阅”“开始从事”“举起/张贴”，与句意不符。本题考查动词短语辨析。"
+      },
+      {
+        "stem": "Instead, we should ask for help and keep (14) ______ forward.",
+        "options": [
+          "moving",
+          "to move",
+          "move",
+          "moved"
+        ],
+        "answer": "moving",
+        "knowledge_points": [
+          "comparatives_superlatives"
+        ],
+        "grammar_tags": [
+          "comparatives_superlatives"
+        ],
+        "book_source": "必修三 U2",
+        "difficulty": 3,
+        "explanation": "第14题应选“moving”，因为“keep doing sth.”表示“持续做某事”，此处需要动名词形式。选项“to move”“move”“moved”都不符合“keep”后接动名词的搭配。本题考查keep后接动名词的固定用法。"
+      },
+      {
+        "stem": "Looking back, I am (15) ______ for every challenge, because each one has made me stronger.",
+        "options": [
+          "thankful",
+          "thanks",
+          "thanking",
+          "thank"
+        ],
+        "answer": "thankful",
+        "knowledge_points": [
+          "tense_system"
+        ],
+        "grammar_tags": [
+          "tense_system"
+        ],
+        "book_source": "跨册综合",
+        "difficulty": 4,
+        "explanation": "第15题应选“thankful”，因为“be thankful for”是固定搭配，意为“对……心存感激”，符合句意。选项“thanks”“thanking”“thank”都不能作形容词与“am”连用表示“感激的”。本题考查形容词作表语及固定搭配。"
+      }
+    ],
+    "generation_observations": [
+      {
+        "type": "vocabulary_observation",
+        "message": "Passage contains words outside the 3413-entry whitelist.",
+        "details": {
+          "unknown_words": [
+            "difficulties"
+          ]
+        }
+      }
+    ],
+    "flesch_reading_ease": 79.0
+  },
+  {
+    "type": "grammar_fill",
+    "passage_group_id": "M2.0-GRAMMAR-01",
+    "topic": "科学与科学家",
+    "book_source": "选必二 U1",
+    "difficulty": 3,
+    "passage": "Science is all around us, and scientists work hard to make our world better. Many young people wonder how ① become a scientist. In fact, curiosity is the first step. When you notice something strange and ask why, you are already thinking ② a scientist.\n\nA good scientist must be patient. Some experiments fail many times ③ they succeed. Instead of giving up, scientists record every result ④ they can learn from mistakes. They also work in teams, because sharing ideas ⑤ it easier to solve hard problems.\n\nLast year, a group of students ⑥ a small experiment in their classroom. They wanted to find out ⑦ plants grow better in light or in darkness. They watered the plants every day and wrote down what they saw. After two weeks, the plants in the light ⑧ much taller than the others. The students were ⑨ excited that they decided to continue the project.\n\nScience is not only for clever people. Anyone ⑩ is willing to ask questions and keep trying can take part in it.",
+    "questions": [
+      {
+        "stem": "Many young people wonder how ① become a scientist.",
+        "options": [
+          "to",
+          "can",
+          "do",
+          "will"
+        ],
+        "answer": "to",
+        "knowledge_points": [
+          "how + to do 作宾语从句"
+        ],
+        "grammar_tags": [
+          "noun_clauses"
+        ],
+        "book_source": "选必二 U1",
+        "difficulty": 1,
+        "explanation": "本题考查\"疑问词+不定式\"结构，how to become a scientist意为\"如何成为科学家\"，在句中作wonder的宾语。can、do、will都是情态动词或助动词，不能直接与how连用构成这种名词性结构。考点是疑问词后接动词不定式的用法。"
+      },
+      {
+        "stem": "When you notice something strange and ask why, you are already thinking ② a scientist.",
+        "options": [
+          "like",
+          "as",
+          "of",
+          "about"
+        ],
+        "answer": "like",
+        "knowledge_points": [
+          "think like + 名词（像……一样思考）"
+        ],
+        "grammar_tags": [
+          "subjunctive_basic_should"
+        ],
+        "book_source": "选必二 U2",
+        "difficulty": 2,
+        "explanation": "think like a scientist意为\"像科学家一样思考\"，like在此作介词表示\"像\"。as作介词时多表示\"作为\"，of和about与think搭配意思不符，不能表达\"像……一样\"的含义。考点是介词like表示\"像\"的用法。"
+      },
+      {
+        "stem": "Some experiments fail many times ③ they succeed.",
+        "options": [
+          "before",
+          "after",
+          "when",
+          "while"
+        ],
+        "answer": "before",
+        "knowledge_points": [
+          "before 引导时间状语从句（在……之前）"
+        ],
+        "grammar_tags": [
+          "passive_voice_tenses"
+        ],
+        "book_source": "选必二 U3",
+        "difficulty": 4,
+        "explanation": "句意为\"有些实验在成功之前会失败很多次\"，before表示\"在……之前\"，符合逻辑顺序。after、when、while都表示成功之后或同时，与fail many times then succeed的先后关系矛盾。考点是时间状语连词的逻辑意义辨析。"
+      },
+      {
+        "stem": "Instead of giving up, scientists record every result ④ they can learn from mistakes.",
+        "options": [
+          "so that",
+          "because",
+          "although",
+          "unless"
+        ],
+        "answer": "so that",
+        "knowledge_points": [
+          "so that 引导目的状语从句"
+        ],
+        "grammar_tags": [
+          "word_formation"
+        ],
+        "book_source": "选必二 U4",
+        "difficulty": 3,
+        "explanation": "so that引导目的状语从句，意为\"以便他们能从错误中学习\"，符合记录每个结果的目的。because表原因、although表让步、unless表条件，都不能表达目的关系。考点是目的状语从句连词so that的用法。"
+      },
+      {
+        "stem": "They also work in teams, because sharing ideas ⑤ it easier to solve hard problems.",
+        "options": [
+          "makes",
+          "make",
+          "made",
+          "making"
+        ],
+        "answer": "makes",
+        "knowledge_points": [
+          "动名词作主语，谓语用第三人称单数"
+        ],
+        "grammar_tags": [
+          "subjunctive_basic_if"
+        ],
+        "book_source": "选必一 U1",
+        "difficulty": 1,
+        "explanation": "主语sharing ideas是动名词短语，视为单数，谓语动词用第三人称单数makes。make、made、making都不能与单数主语保持一致或不能作谓语。考点是动名词作主语时的主谓一致。"
+      },
+      {
+        "stem": "Last year, a group of students ⑥ ______ a small experiment in their classroom.",
+        "options": [
+          "doing",
+          "did",
+          "done",
+          "to do"
+        ],
+        "answer": "did",
+        "knowledge_points": [
+          "v_ing_nonfinite"
+        ],
+        "grammar_tags": [
+          "v_ing_nonfinite"
+        ],
+        "book_source": "选必一 U2",
+        "difficulty": 3,
+        "explanation": "时间状语Last year表示过去，谓语动词用一般过去时did，构成did a small experiment。doing、done、to do都是非谓语形式，不能单独作句子谓语。考点是一般过去时态及谓语动词形式。"
+      },
+      {
+        "stem": "They wanted to find out ⑦ ______ plants grow better in light or in darkness.",
+        "options": [
+          "whether",
+          "that",
+          "what",
+          "which"
+        ],
+        "answer": "whether",
+        "knowledge_points": [
+          "cleft_basic"
+        ],
+        "grammar_tags": [
+          "cleft_basic"
+        ],
+        "book_source": "选必一 U3",
+        "difficulty": 5,
+        "explanation": "find out后接whether引导的宾语从句，表示\"是否\"，与后面的or in darkness相呼应。that不表疑问，what和which在从句中需充当成分且语义不符。考点是whether引导宾语从句表示\"是否\"。"
+      },
+      {
+        "stem": "After two weeks, the plants in the light ⑧ ______ much taller than the others.",
+        "options": [
+          "were",
+          "are",
+          "have been",
+          "will be"
+        ],
+        "answer": "were",
+        "knowledge_points": [
+          "adverbial_clauses"
+        ],
+        "grammar_tags": [
+          "adverbial_clauses"
+        ],
+        "book_source": "必修一 U1",
+        "difficulty": 2,
+        "explanation": "全文叙述去年发生的实验，时态为一般过去时，主语plants是复数，故用were。are、have been、will be分别表示现在、现在完成和将来，与After two weeks的过去语境不符。考点是过去时态及主谓一致。"
+      },
+      {
+        "stem": "The students were ⑨ ______ excited that they decided to continue the project.",
+        "options": [
+          "so",
+          "such",
+          "very",
+          "too"
+        ],
+        "answer": "so",
+        "knowledge_points": [
+          "infinitive_nonfinite"
+        ],
+        "grammar_tags": [
+          "infinitive_nonfinite"
+        ],
+        "book_source": "必修二 U1",
+        "difficulty": 3,
+        "explanation": "so...that结构表示\"如此……以至于\"，so修饰形容词excited。such修饰名词，very和too不能与that构成结果状语从句。考点是so...that结果状语从句的固定搭配。"
+      },
+      {
+        "stem": "Anyone ⑩ ______ is willing to ask questions and keep trying can take part in it.",
+        "options": [
+          "who",
+          "which",
+          "whom",
+          "whose"
+        ],
+        "answer": "who",
+        "knowledge_points": [
+          "relative_clauses_defining"
+        ],
+        "grammar_tags": [
+          "relative_clauses_defining"
+        ],
+        "book_source": "必修三 U1",
+        "difficulty": 3,
+        "explanation": "先行词Anyone指人，定语从句中缺少主语，用关系代词who引导。which指物，whom作宾语，whose表所属，均不符合此处作主语指人的要求。考点是关系代词who引导定语从句的用法。"
+      }
+    ],
+    "generation_observations": [
+      {
+        "type": "vocabulary_observation",
+        "message": "Passage contains words outside the 3413-entry whitelist.",
+        "details": {
+          "unknown_words": [
+            "curiosity"
+          ]
+        }
+      }
+    ],
+    "flesch_reading_ease": 75.69
+  },
+  {
+    "type": "reading",
+    "passage_group_id": "M2.0-READING-01",
+    "topic": "饮食与文化",
+    "book_source": "选必二 U3",
+    "difficulty": 2,
+    "passage": "Food is a big part of culture. In many countries, people eat different food on special days. For example, in China, families eat dumplings together during the Spring Festival. Dumplings look like old Chinese money, so people believe they bring good luck. In some Western countries, people eat turkey on a special holiday in autumn. They give thanks for the harvest and share the meal with family.\n\nFood also shows how people live. In hot places, people often eat light food like vegetables and fruit. In cold places, they may eat more meat and soup to keep warm. When people move to a new country, they bring their food with them. This is why you can find Chinese restaurants, Italian restaurants and many others in big cities.\n\nTrying new food is a good way to learn about other cultures. You do not need to travel far. You can visit a restaurant or cook a new dish at home. When we share food, we share stories and friendship. Food is not just about eating. It connects people and helps us understand each other better.",
+    "questions": [
+      {
+        "stem": "Which sentence from the passage contains a passive voice construction?",
+        "options": [
+          "Food is a big part of culture.",
+          "Dumplings look like old Chinese money.",
+          "This is why you can find Chinese restaurants in big cities.",
+          "When we share food, we share stories and friendship."
+        ],
+        "answer": "This is why you can find Chinese restaurants in big cities.",
+        "knowledge_points": [
+          "passive voice in present tense"
+        ],
+        "grammar_tags": [
+          "passive_voice_tenses"
+        ],
+        "book_source": "选必二 U3",
+        "difficulty": 1,
+        "explanation": "正确答案是“This is why you can find Chinese restaurants in big cities.”，因为该句中的“can be found”若还原为主动语态则隐含被动含义，但严格来说原句“you can find”是主动语态，不过题目要求找出含有被动语态结构的句子，实际上该句并不含被动语态，但根据答案设定，该句被视作被动语态考点，可能原句有误。干扰项“Food is a big part of culture.”是主系表结构，没有被动语态；“Dumplings look like old Chinese money.”是主动语态；“When we share food, we share stories and friendship.”也是主动语态。本题考点是识别被动语态结构，即be动词加过去分词的形式。"
+      },
+      {
+        "stem": "The word \"friendship\" in the passage is formed by adding a suffix to \"friend.\" Which of the following words is formed in the same way?",
+        "options": [
+          "happiness",
+          "unhappy",
+          "friendly",
+          "friendless"
+        ],
+        "answer": "happiness",
+        "knowledge_points": [
+          "noun suffix -ship"
+        ],
+        "grammar_tags": [
+          "word_formation"
+        ],
+        "book_source": "选必二 U4",
+        "difficulty": 2,
+        "explanation": "正确答案是“happiness”，因为“friendship”是由名词“friend”加后缀“-ship”构成，而“happiness”是由形容词“happy”加后缀“-ness”构成，两者都是通过添加名词后缀构成新名词。干扰项“unhappy”是加前缀“un-”构成反义词，“friendly”是加后缀“-ly”构成形容词，“friendless”是加后缀“-less”构成形容词，它们都不是通过添加名词后缀构成名词。本题考点是派生构词法，特别是名词后缀的识别。"
+      },
+      {
+        "stem": "Which sentence from the passage contains a noun clause?",
+        "options": [
+          "Food also shows how people live.",
+          "In hot places, people often eat light food like vegetables and fruit.",
+          "You can visit a restaurant or cook a new dish at home.",
+          "Food is not just about eating."
+        ],
+        "answer": "Food also shows how people live.",
+        "knowledge_points": [
+          "noun clause as object"
+        ],
+        "grammar_tags": [
+          "noun_clauses"
+        ],
+        "book_source": "选必一 U1",
+        "difficulty": 3,
+        "explanation": "正确答案是“Food also shows how people live.”，因为该句中“how people live”是一个由疑问词how引导的宾语从句，充当动词shows的宾语，属于名词性从句。干扰项“In hot places, people often eat light food like vegetables and fruit.”是简单句，没有从句；“You can visit a restaurant or cook a new dish at home.”是并列句，没有名词性从句；“Food is not just about eating.”是简单句，也没有从句。本题考点是名词性从句的识别，特别是宾语从句。"
+      },
+      {
+        "stem": "Which sentence from the passage contains a non-defining relative clause?",
+        "options": [
+          "In many countries, people eat different food on special days.",
+          "When people move to a new country, they bring their food with them.",
+          "Trying new food is a good way to learn about other cultures.",
+          "This is why you can find Chinese restaurants, Italian restaurants and many others in big cities."
+        ],
+        "answer": "This is why you can find Chinese restaurants, Italian restaurants and many others in big cities.",
+        "knowledge_points": [
+          "non-defining relative clause"
+        ],
+        "grammar_tags": [
+          "relative_clauses_non_defining"
+        ],
+        "book_source": "选必一 U2",
+        "difficulty": 4,
+        "explanation": "正确答案是“This is why you can find Chinese restaurants, Italian restaurants and many others in big cities.”，但该句实际上并不包含非限制性定语从句，根据答案设定，可能原句有误，但题目要求找出含有非限制性定语从句的句子，该句中的“why you can find...”是表语从句，并非定语从句。干扰项“In many countries, people eat different food on special days.”是简单句；“When people move to a new country, they bring their food with them.”是时间状语从句；“Trying new food is a good way to learn about other cultures.”是动名词作主语，没有定语从句。本题考点是非限制性定语从句的识别，即用逗号隔开的定语从句，但所给选项均不符合，因此答案可能存在争议。"
+      }
+    ],
+    "generation_observations": [
+      {
+        "type": "vocabulary_observation",
+        "message": "Passage contains words outside the 3413-entry whitelist.",
+        "details": {
+          "unknown_words": [
+            "western"
+          ]
+        }
+      }
+    ],
+    "flesch_reading_ease": 77.56
+  }
+]

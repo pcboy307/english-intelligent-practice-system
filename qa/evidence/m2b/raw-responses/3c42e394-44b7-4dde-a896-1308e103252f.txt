@@ -1,0 +1,20 @@
+{
+  "explanations": [
+    {
+      "question_index": 1,
+      "explanation": "正确答案是“This is why you can find Chinese restaurants in big cities.”，因为该句中的“can be found”若还原为主动语态则隐含被动含义，但严格来说原句“you can find”是主动语态，不过题目要求找出含有被动语态结构的句子，实际上该句并不含被动语态，但根据答案设定，该句被视作被动语态考点，可能原句有误。干扰项“Food is a big part of culture.”是主系表结构，没有被动语态；“Dumplings look like old Chinese money.”是主动语态；“When we share food, we share stories and friendship.”也是主动语态。本题考点是识别被动语态结构，即be动词加过去分词的形式。"
+    },
+    {
+      "question_index": 2,
+      "explanation": "正确答案是“happiness”，因为“friendship”是由名词“friend”加后缀“-ship”构成，而“happiness”是由形容词“happy”加后缀“-ness”构成，两者都是通过添加名词后缀构成新名词。干扰项“unhappy”是加前缀“un-”构成反义词，“friendly”是加后缀“-ly”构成形容词，“friendless”是加后缀“-less”构成形容词，它们都不是通过添加名词后缀构成名词。本题考点是派生构词法，特别是名词后缀的识别。"
+    },
+    {
+      "question_index": 3,
+      "explanation": "正确答案是“Food also shows how people live.”，因为该句中“how people live”是一个由疑问词how引导的宾语从句，充当动词shows的宾语，属于名词性从句。干扰项“In hot places, people often eat light food like vegetables and fruit.”是简单句，没有从句；“You can visit a restaurant or cook a new dish at home.”是并列句，没有名词性从句；“Food is not just about eating.”是简单句，也没有从句。本题考点是名词性从句的识别，特别是宾语从句。"
+    },
+    {
+      "question_index": 4,
+      "explanation": "正确答案是“This is why you can find Chinese restaurants, Italian restaurants and many others in big cities.”，但该句实际上并不包含非限制性定语从句，根据答案设定，可能原句有误，但题目要求找出含有非限制性定语从句的句子，该句中的“why you can find...”是表语从句，并非定语从句。干扰项“In many countries, people eat different food on special days.”是简单句；“When people move to a new country, they bring their food with them.”是时间状语从句；“Trying new food is a good way to learn about other cultures.”是动名词作主语，没有定语从句。本题考点是非限制性定语从句的识别，即用逗号隔开的定语从句，但所给选项均不符合，因此答案可能存在争议。"
+    }
+  ]
+}

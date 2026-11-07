@@ -1,0 +1,16 @@
+{
+  "explanations": [
+    {
+      "question_index": 11,
+      "explanation": "正确答案是 it is，因为句子结构为“feel more + 形容词 + and + 形容词”，需要填入形式主语 it is 来构成完整比较结构，表示“现在我感觉更……和自信”。干扰项 that is 不能作形式主语，there is 表示存在，what is 引导名词性从句，均不符合此处语法。本题考查形式主语 it 在比较结构中的用法。",
+      "question_index": 12,
+      "explanation": "正确答案是 /，因为“everyone makes mistakes”是固定表达，mistakes 为复数泛指，前面不需要冠词。干扰项 a 和 an 只能修饰单数可数名词，the 表示特指，均与复数泛指矛盾。本题考查零冠词在固定搭配中的使用。",
+      "question_index": 13,
+      "explanation": "正确答案是 give，因为“give up”是固定短语，意为“放弃”，符合“面对困难不应放弃”的语境。干扰项 look up 意为“查阅”，take up 意为“开始从事”，put up 意为“举起/搭建”，均不符合句意。本题考查动词短语 give up 的辨析。",
+      "question_index": 14,
+      "explanation": "正确答案是 moving，因为“keep doing sth.”表示“继续做某事”，keep 后接动名词作宾语。干扰项 to move 不能作 keep 的宾语，move 是动词原形不能直接跟在 keep 后，moved 是过去分词也不符合。本题考查 keep 后接动名词的固定用法。",
+      "question_index": 15,
+      "explanation": "正确答案是 thankful，因为“be thankful for”是固定搭配，意为“对……感激”，形容词作表语。干扰项 thanks 是名词或动词，thanking 是现在分词，thank 是动词原形，均不能直接作 be 动词的表语。本题考查形容词 thankful 的固定搭配。"
+    }
+  ]
+}

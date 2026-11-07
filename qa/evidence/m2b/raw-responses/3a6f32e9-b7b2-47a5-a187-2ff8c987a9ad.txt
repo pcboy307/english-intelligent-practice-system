@@ -1,0 +1,26 @@
+{
+  "explanations": [
+    {
+      "question_index": 1,
+      "explanation": "本题考查“疑问词+不定式”结构，how to become a scientist意为“如何成为一名科学家”，在句中作wonder的宾语。can、do、will都是情态动词或助动词，不能直接与how构成这种名词性结构，且会破坏句子语法。该考点是疑问词后接动词不定式的固定搭配。",
+      "question_index": 2,
+      "explanation": "think like a scientist意为“像科学家一样思考”，like在此表示“像……一样”，符合语境。as作介词时通常表示“作为”，of和about与think搭配时分别表示“想到”和“考虑”，均不能表达“像科学家那样思考”的意思。该考点是介词like表示相似性的用法。",
+      "question_index": 3,
+      "explanation": "句意为“有些实验在成功之前会失败很多次”，before表示“在……之前”，符合逻辑关系。after表示“在……之后”，与句意相反；when和while表示时间点或同时进行，不能体现“失败先于成功”的顺序。该考点是时间状语从句连词的逻辑选择。",
+      "question_index": 4,
+      "explanation": "so that引导目的状语从句，意为“以便他们能从错误中学习”，符合科学家记录结果的目的。because表示原因，although表示让步，unless表示条件，三者均不能表达目的关系。该考点是目的状语从句连词so that的用法。",
+      "question_index": 5,
+      "explanation": "主语sharing ideas是动名词短语，视为单数，谓语动词应用第三人称单数makes。make是复数形式，made是过去式，making是非谓语形式，均不能在此作谓语。该考点是动名词作主语时的主谓一致。",
+      "question_index": 6,
+      "explanation": "时间状语Last year表示过去，句子需要一般过去时谓语，did是do的过去式，符合语法。doing、done、to do都是非谓语形式，不能单独作谓语。该考点是一般过去时态中谓语动词的形式。",
+      "question_index": 7,
+      "explanation": "find out后接宾语从句，whether...or...表示“是否……还是……”，符合“想弄清楚植物在光下还是黑暗中长得更好”的语境。that引导陈述事实，不能与or搭配；what和which在从句中需充当成分，此处从句结构完整，不需要它们。该考点是whether引导宾语从句表示“是否”。",
+      "question_index": 8,
+      "explanation": "全文叙述的是去年发生的实验，时态为一般过去时，主语plants是复数，故用were。are是现在时，have been是现在完成时，will be是将来时，均与上下文时态不一致。该考点是一般过去时中be动词的复数形式。",
+      "question_index": 9,
+      "explanation": "so...that...结构表示“如此……以至于……”，so修饰形容词excited，符合“学生们如此兴奋以至于决定继续项目”的句意。such修饰名词，very不能与that构成该结构，too...to表示“太……而不能”，均不符合。该考点是so...that...结果状语从句的固定搭配。",
+      "question_index": 10,
+      "explanation": "先行词Anyone指人，定语从句中缺少主语，应用关系代词who引导。which指物，whom在从句中作宾语，whose表示所属关系，均不能在此作主语。该考点是关系代词who引导定语从句指人的用法。"
+    }
+  ]
+}

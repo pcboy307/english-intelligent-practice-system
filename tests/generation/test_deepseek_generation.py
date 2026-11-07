@@ -627,16 +627,27 @@ def test_explanation_batch_rejects_duplicate_missing_or_out_of_range_indices(
         _validate_explanation_batch([1, 2], {"explanations": entries})
 
 
-def test_explanation_batch_rejects_fewer_than_three_chinese_sentences() -> None:
-    with pytest.raises(ValueError, match="EXPLANATION_MIN_SENTENCES_NOT_MET"):
-        _validate_explanation_batch(
-            [1],
-            {
-                "explanations": [
-                    {
-                        "question_index": 1,
-                        "explanation": "只有一句。第二句。",
-                    }
-                ]
-            },
-        )
+def test_explanation_batch_retains_short_text_as_observation() -> None:
+    observations = []
+    result = _validate_explanation_batch(
+        [1],
+        {
+            "explanations": [
+                {
+                    "question_index": 1,
+                    "explanation": "只有一句。第二句。",
+                }
+            ]
+        },
+        observations=observations,
+    )
+
+    assert result[1] == "只有一句。第二句。"
+    assert observations == [
+        {
+            "type": "explanation_sentence_count",
+            "question_index": 1,
+            "actual": 2,
+            "minimum": 3,
+        }
+    ]

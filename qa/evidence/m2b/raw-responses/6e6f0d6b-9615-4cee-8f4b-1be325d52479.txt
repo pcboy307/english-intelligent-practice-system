@@ -1,0 +1,26 @@
+{
+  "explanations": [
+    {
+      "question_index": 1,
+      "explanation": "此处考查固定搭配be interested in，表示“对……感兴趣”，主语是人，所以用interested。interesting表示“有趣的”，通常修饰事物；interest是名词或动词；interests是名词复数或动词第三人称单数，均不符合be动词后作表语的用法。考点是形容词interested与interesting的区别及固定搭配。",
+      "question_index": 2,
+      "explanation": "此处需要形容词作表语，说明科学家的品质，careful意为“仔细的”，符合语境。care是名词或动词；carefully是副词，不能作表语；careless意为“粗心的”，与语境矛盾。考点是形容词作表语及careful与careless的意义区别。",
+      "question_index": 3,
+      "explanation": "此处主语是result（结果），表示“令人惊讶的”，应用surprising。surprised表示“感到惊讶的”，通常主语是人；surprise是名词或动词；surprisingly是副词，不能作表语。考点是现在分词和过去分词作形容词的区别。",
+      "question_index": 4,
+      "explanation": "此处需要动名词Working作主语，表示“在团队中工作”，谓语是is。Work是动词原形，不能直接作主语；Worked是过去分词；To working形式错误。考点是动名词作主语。",
+      "question_index": 5,
+      "explanation": "此处inventions与make是被动关系，且由many years ago可知用一般过去时，故用were made。make是主动语态；made是过去分词，缺少be动词；are made是一般现在时被动，与时间状语不符。考点是一般过去时的被动语态。",
+      "question_index": 6,
+      "explanation": "此处需要过去分词invented作后置定语，修饰tool，表示“被发明的”，且与many years ago呼应。inventing是现在分词，表示主动；to invent是不定式；invent是动词原形，均不能作定语。考点是过去分词作后置定语。",
+      "question_index": 7,
+      "explanation": "原句强调every small step，强调句型为It is + 被强调部分 + that + 其他成分，故A正确。B强调scientists，C改变了原句结构，D是被动语态而非强调句型。考点是强调句型It is...that...。",
+      "question_index": 8,
+      "explanation": "此处考查固定搭配be willing to do sth.，意为“愿意做某事”，故用willing。will是情态动词或名词；willed是过去式；willfully是副词。考点是形容词willing的固定搭配。",
+      "question_index": 9,
+      "explanation": "介词of后接动名词，故用failing。fail是动词原形；to fail是不定式；failed是过去式或过去分词。考点是介词后接动名词。",
+      "question_index": 10,
+      "explanation": "此处先行词是inventions（物），在定语从句中作主语，应用关系代词which。who指人；whose表示所属；where表示地点。考点是关系代词which指物作主语。"
+    }
+  ]
+}

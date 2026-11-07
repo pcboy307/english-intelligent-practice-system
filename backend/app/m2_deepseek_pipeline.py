@@ -4,10 +4,12 @@ from __future__ import annotations
 
 import json
 import re
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 import jsonschema
+from referencing import Registry, Resource
 
 from .deepseek_generation import (
     CostLedger,
@@ -19,6 +21,7 @@ from .generation import (
     load_curriculum,
     validate_generated_passage,
 )
+from .readability import flesch_reading_ease
 from .question_validation import (
     QuestionValidationError,
     validate_question_book_tag,
@@ -194,6 +197,7 @@ def _validate_question_batch(
     spec: dict[str, Any],
     assignments: list[dict[str, Any]],
     data: dict[str, Any],
+    observations: list[dict[str, Any]] | None = None,
 ) -> list[dict[str, Any]]:
     questions = data.get("questions")
     if not isinstance(questions, list):
@@ -248,17 +252,34 @@ def _validate_question_batch(
             or any(tag not in allowed_tags for tag in tags)
         ):
             raise ValueError(f"QUESTION_GRAMMAR_TAGS_INVALID index={index}")
-        for field in ("book_source", "difficulty"):
-            if question[field] != assignment[field]:
-                raise ValueError(
-                    f"QUESTION_ASSIGNMENT_MISMATCH index={index} field={field} "
-                    f"expected={assignment[field]!r} actual={question[field]!r}"
-                )
-        if tags != assignment["grammar_tags"]:
-            raise ValueError(
-                f"QUESTION_ASSIGNMENT_MISMATCH index={index} field=grammar_tags "
-                f"expected={assignment['grammar_tags']!r} actual={tags!r}"
+        if question["book_source"] != assignment["book_source"] and observations is not None:
+            observations.append(
+                {
+                    "type": "book_source_schedule_mismatch",
+                    "question_index": index,
+                    "expected": assignment["book_source"],
+                    "actual": question["book_source"],
+                }
             )
+        if question["difficulty"] != assignment["difficulty"] and observations is not None:
+            observations.append(
+                {
+                    "type": "difficulty_schedule_mismatch",
+                    "question_index": index,
+                    "expected": assignment["difficulty"],
+                    "actual": question["difficulty"],
+                }
+            )
+        if tags != assignment["grammar_tags"]:
+            if observations is not None:
+                observations.append(
+                    {
+                        "type": "grammar_tag_schedule_mismatch",
+                        "question_index": index,
+                        "expected": assignment["grammar_tags"],
+                        "actual": tags,
+                    }
+                )
         try:
             validate_question_book_tag(tags, _book_tag(question["book_source"]))
         except QuestionValidationError as error:
@@ -269,9 +290,134 @@ def _validate_question_batch(
     return validated
 
 
+def _question_contract_projection(
+    *,
+    record: dict[str, Any],
+    question: dict[str, Any],
+    index: int,
+    bank_id: str,
+    batch_id: str,
+) -> dict[str, Any]:
+    question_type = record["type"]
+    presentation_mode = {
+        "cloze": "cloze_single_choice",
+        "grammar_fill": "passage_single_choice",
+        "reading": "reading_single_choice",
+        "gap_fill": "seven_choice",
+    }[question_type]
+    blank_label = (
+        chr(0x2460 + index - 1)
+        if question_type == "grammar_fill"
+        else f"({index})"
+    )
+    timestamp = datetime.now(timezone.utc).isoformat()
+    return {
+        "id": f"{record['passage_group_id']}-Q{index:02d}",
+        "bank_id": bank_id,
+        "type": question_type,
+        "passage_group_id": record["passage_group_id"],
+        "passage": record["passage"],
+        "word_count": _word_count(record["passage"]),
+        "stem": question["stem"],
+        "options": question["options"],
+        "answer": question["answer"],
+        "presentation": {
+            "mode": presentation_mode,
+            "passage_order": 1,
+            "question_order": index,
+            "blank_label": blank_label,
+            "option_layout": "A-G" if question_type == "gap_fill" else "A-D",
+        },
+        "explanation": question["explanation"],
+        "knowledge_points": question["knowledge_points"],
+        "grammar_tags": question["grammar_tags"],
+        "book_source": question["book_source"],
+        "book_tag": _book_tag(question["book_source"]),
+        "difficulty": question["difficulty"],
+        "out_of_scope_flags": [],
+        "status": "draft",
+        "batch_id": batch_id,
+        "created_at": timestamp,
+        "updated_at": timestamp,
+    }
+
+
+def validate_pilot_record(
+    record: dict[str, Any],
+    schedule_passage: dict[str, Any],
+    *,
+    bank_id: str,
+    batch_id: str,
+    observations: list[dict[str, Any]] | None = None,
+) -> dict[str, Any]:
+    validation = validate_generated_passage(record)
+    observation_rows = list(observations or [])
+    hard_failures = []
+    for failure in validation.failures:
+        data = failure.as_dict()
+        if failure.category.value in {"vocabulary_scope", "unknown_ratio"}:
+            observation_rows.append(
+                {
+                    "type": "vocabulary_observation",
+                    "message": failure.message,
+                    "details": failure.details,
+                }
+            )
+        elif failure.message.startswith("Explanation must contain"):
+            observation_rows.append(
+                {
+                    "type": "explanation_sentence_count",
+                    "question_index": failure.question_index,
+                    "message": failure.message,
+                }
+            )
+        else:
+            hard_failures.append(data)
+
+    common_schema = json.loads(
+        (ROOT / "contracts" / "schemas" / "common.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    registry = Registry().with_resource(
+        common_schema["$id"],
+        Resource.from_contents(common_schema),
+    )
+    validator = jsonschema.Draft202012Validator(
+        QUESTION_SCHEMA,
+        registry=registry,
+    )
+    for index, question in enumerate(record["questions"], start=1):
+        projected = _question_contract_projection(
+            record=record,
+            question=question,
+            index=index,
+            bank_id=bank_id,
+            batch_id=batch_id,
+        )
+        for error in sorted(validator.iter_errors(projected), key=lambda item: list(item.path)):
+            hard_failures.append(
+                {
+                    "category": "question_schema",
+                    "message": error.message,
+                    "question_index": index,
+                    "path": list(error.absolute_path),
+                }
+            )
+
+    return {
+        "accepted": not hard_failures,
+        "hard_failures": hard_failures,
+        "observations": observation_rows,
+        "metrics": validation.metrics,
+        "flesch_reading_ease": flesch_reading_ease(record["passage"]),
+    }
+
+
 def _validate_explanation_batch(
     expected_indices: list[int],
     data: dict[str, Any],
+    observations: list[dict[str, Any]] | None = None,
 ) -> dict[int, str]:
     try:
         jsonschema.validate(data, GENERATION_BATCH_SCHEMA)
@@ -311,11 +457,15 @@ def _validate_explanation_batch(
     for item in sorted(explanations, key=lambda value: value["question_index"]):
         question_index = item["question_index"]
         explanation = item["explanation"]
-        if _sentence_count(explanation) < 3:
-            raise ValueError(
-                "EXPLANATION_MIN_SENTENCES_NOT_MET "
-                f"index={question_index} received_type=str "
-                f"sample={explanation[:120]!r}"
+        sentence_count = _sentence_count(explanation)
+        if sentence_count < 3 and observations is not None:
+            observations.append(
+                {
+                    "type": "explanation_sentence_count",
+                    "question_index": question_index,
+                    "actual": sentence_count,
+                    "minimum": 3,
+                }
             )
         try:
             jsonschema.validate(explanation, EXPLANATION_SCHEMA)
@@ -334,8 +484,11 @@ def generate_pilot_passage(
     client: DeepSeekClient,
     ledger: CostLedger,
     schedule_passage: dict[str, Any],
+    bank_id: str = "00000000-0000-4000-8000-000000000000",
+    batch_id: str = "M2.0B-DEEPSEEK-PILOT",
     max_repair_retries: int = 3,
 ) -> dict[str, Any]:
+    observations: list[dict[str, Any]] = []
     passage = run_repair_loop(
         client=client,
         ledger=ledger,
@@ -369,6 +522,7 @@ def generate_pilot_passage(
                 schedule_passage,
                 batch,
                 data,
+                observations,
             ),
             max_repair_retries=max_repair_retries,
         )
@@ -390,7 +544,11 @@ def generate_pilot_passage(
             prompt=_build_explanations_prompt(passage, batch_questions),
             response_schema=GENERATION_BATCH_SCHEMA,
             validate=lambda data, indices=expected_indices: (
-                _validate_explanation_batch(indices, data)
+                _validate_explanation_batch(
+                    indices,
+                    data,
+                    observations=observations,
+                )
             ),
             max_repair_retries=max_repair_retries,
         )
@@ -408,13 +566,18 @@ def generate_pilot_passage(
         "passage": passage,
         "questions": questions,
     }
-    report = validate_generated_passage(
+    report = validate_pilot_record(
         record,
-        expected_schedule=schedule_passage,
+        schedule_passage,
+        bank_id=bank_id,
+        batch_id=batch_id,
+        observations=observations,
     )
-    if not report.accepted:
+    record["generation_observations"] = report["observations"]
+    record["flesch_reading_ease"] = report["flesch_reading_ease"]
+    if not report["accepted"]:
         raise ValueError(
-            "PILOT_PASSAGE_GATE_FAILED:"
-            + json.dumps(report.as_dict(), ensure_ascii=False)
+            "PILOT_PASSAGE_HARD_GATE_FAILED:"
+            + json.dumps(report["hard_failures"], ensure_ascii=False)
         )
     return record

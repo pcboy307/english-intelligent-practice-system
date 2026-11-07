@@ -1,0 +1,26 @@
+{
+  "explanations": [
+    {
+      "question_index": 1,
+      "explanation": "第一题答案依据是固定搭配be interested in，表示“对……感兴趣”，主语是人。干扰项interesting表示“令人感兴趣的”，通常修饰事物，不能用于此处描述人。本题考点是形容词interested与interesting的区别。",
+      "question_index": 2,
+      "explanation": "第二题答案依据是系动词be后接形容词作表语，careful意为“仔细的”，符合句意。干扰项careless意为“粗心的”，与科学家应有的品质相反。本题考点是形容词careful的用法及与careless的辨析。",
+      "question_index": 3,
+      "explanation": "第三题答案依据是主语result是物，表示“令人惊讶的”用surprising。干扰项surprised表示“感到惊讶的”，主语通常是人。本题考点是形容词surprising与surprised的区别。",
+      "question_index": 4,
+      "explanation": "第四题答案依据是动名词Working在句中作主语，表示“在团队中工作”。干扰项Work是动词原形，不能直接作主语。本题考点是动名词作主语的用法。",
+      "question_index": 5,
+      "explanation": "第五题答案依据是inventions与make之间是被动关系，且由many years ago可知用一般过去时，故用were made。干扰项are made是现在时被动，与时间状语不符。本题考点是一般过去时的被动语态。",
+      "question_index": 6,
+      "explanation": "第六题答案依据是tool与invent之间是被动关系，用过去分词invented作后置定语。干扰项inventing是现在分词，表示主动，不符合逻辑。本题考点是过去分词作定语的用法。",
+      "question_index": 7,
+      "explanation": "第七题答案依据是强调句型It is...that...强调主语every small step，原句为Scientists believe that every small step is important。干扰项It is scientists that...强调主语scientists，与要求强调的部分不符。本题考点是强调句型的结构。",
+      "question_index": 8,
+      "explanation": "第八题答案依据是be willing to do sth.是固定搭配，意为“愿意做某事”。干扰项will是情态动词，不能用于be动词后。本题考点是形容词willing的固定搭配。",
+      "question_index": 9,
+      "explanation": "第九题答案依据是介词of后接动名词failing作宾语。干扰项fail是动词原形，不能直接放在介词后。本题考点是介词后接动名词的用法。",
+      "question_index": 10,
+      "explanation": "第十题答案依据是先行词inventions指物，在定语从句中作主语，关系代词用which。干扰项who指人，不能指物。本题考点是关系代词which指物的用法。"
+    }
+  ]
+}

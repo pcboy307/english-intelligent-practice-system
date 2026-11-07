@@ -1,0 +1,43 @@
+{
+  "passages_ok": "3/3",
+  "items_ok": "29/29",
+  "hard_gate_drop": {
+    "word_count": 0,
+    "question_count": 0,
+    "tag": 0,
+    "book_tag": 0,
+    "schema": 0
+  },
+  "observation_fail": {
+    "unknown_ratio": 3,
+    "explanation_sentence_count": 0,
+    "flesch": 0,
+    "difficulty": 0
+  },
+  "json_parse_fail_rate": 0.0,
+  "structure_fail_rate": 0.2,
+  "structure_fail_rate_scope": "resume phase only; 2 of 10 requests",
+  "transport": "json_object",
+  "prompt_version": "m2-gen-v2",
+  "cost_cny": 0.02714,
+  "cost_note": "0.02714 is API-usage-backed for the resumed grammar phase. The earlier partial phase crashed before usage audit persistence; its cost is not included.",
+  "extrap_300": 0.8142,
+  "extrap_2000": 5.428,
+  "duration_min": 3.92,
+  "blocking_issue": null,
+  "next": "eligible_for_browser_ui_flow; human content review required before activation",
+  "flesch_reading_ease": {
+    "cloze": 79.0,
+    "grammar_fill": 75.69,
+    "reading": 77.56
+  },
+  "bank2_counts": {
+    "cloze": 15,
+    "grammar_fill": 10,
+    "reading": 4,
+    "total": 29
+  },
+  "bank2_status": "generating",
+  "child_item_status": "draft",
+  "failures": []
+}

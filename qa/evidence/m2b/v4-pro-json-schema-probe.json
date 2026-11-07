@@ -1,0 +1,12 @@
+{
+  "started_at": "2026-11-07T13:06:21.574382+00:00",
+  "model_id": "deepseek-v4-pro",
+  "transport": "json_schema",
+  "prompt_version": "m2-gen-v2",
+  "status": "unsupported",
+  "http_status": 400,
+  "error": "{\"error\":{\"message\":\"This response_format type is unavailable now (request_id: 44f0c57b-390f-4b49-b914-816681bafbf1)\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"invalid_request_error\"}}",
+  "request_id": "44f0c57b-390f-4b49-b914-816681bafbf1",
+  "raw_response": "qa/evidence/m2b/raw-responses/44f0c57b-390f-4b49-b914-816681bafbf1.txt",
+  "cost_cny": 0.0
+}

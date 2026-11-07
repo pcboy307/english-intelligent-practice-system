@@ -179,13 +179,15 @@ class M2Repository:
         job_id: str,
         batch_id: str,
         record: dict[str, Any],
+        prevalidated: bool = False,
     ) -> list[str]:
-        report = validate_generated_passage(record)
-        if not report.accepted:
-            raise ValueError(
-                "GENERATED_PASSAGE_REJECTED:"
-                + ",".join(item.category.value for item in report.failures)
-            )
+        if not prevalidated:
+            report = validate_generated_passage(record)
+            if not report.accepted:
+                raise ValueError(
+                    "GENERATED_PASSAGE_REJECTED:"
+                    + ",".join(item.category.value for item in report.failures)
+                )
         questions = record["questions"]
         passage_group_id = record["passage_group_id"]
         self.connection.execute(
@@ -193,7 +195,7 @@ class M2Repository:
             INSERT INTO passages
                 (passage_group_id, bank_id, type, content, word_count, topic,
                  book_source, difficulty, status)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, 'reviewed')
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, 'draft')
             """,
             (
                 passage_group_id,
@@ -216,7 +218,7 @@ class M2Repository:
                      explanation, knowledge_points, grammar_tags, book_source,
                      difficulty, status, batch_id)
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
-                        'reviewed', %s)
+                        'draft', %s)
                 """,
                 (
                     question_id,

@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-07T12:45:44.467464+00:00",
-  "inet_server_port": 15432,
-  "current_database": "english_practice",
-  "practice_sessions": 411,
+  "checked_at": "2026-11-07T13:09:17.477092+00:00",
+  "port": 15432,
+  "database_name": "english_practice",
+  "session_count": 466,
   "previous_recorded_minimum": 42,
   "passes": true
 }

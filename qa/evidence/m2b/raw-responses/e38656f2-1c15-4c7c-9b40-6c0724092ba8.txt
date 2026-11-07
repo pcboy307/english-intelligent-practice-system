@@ -1,0 +1,24 @@
+{
+  "explanations": [
+    {
+      "question_index": 1,
+      "explanation": "第一题正确答案是“it is”，因为句子“Now I feel more (11) ______ and confident.”中，空格处需要构成一个完整的比较结构，表示“现在我感觉更加……和自信”，其中“it is”与上下文无关，但根据选项和句子结构，实际上这里考查的是固定搭配或句子结构，但原题选项似乎与句子不匹配。不过，根据答案“it is”，可能原句是“Now I feel more (11) ______ and confident.”，但选项是“it is”等，这显然不合理。实际上，根据常见题型，第11题可能考查的是“it is”作为形式主语或其他结构，但这里句子是“Now I feel more (11) ______ and confident.”，空格处应填形容词，而选项都是从句结构，因此题目可能有误。但根据给定答案“it is”，我们需解释：正确答案“it is”可能用于构成强调句或特定结构，但在此句中不适用。干扰项“that is”错误，因为不能构成正确结构；“there is”表示存在，不合逻辑；“what is”不能直接填入。考点是句子结构和固定搭配。由于题目选项与句子不匹配，解释需基于答案进行。第一题答案依据是“it is”可能用于特定句型，但此处句子需要形容词，因此题目有误。干扰项“that is”不能使句子完整；“there is”表示存在，与语境不符；“what is”引导从句，但此处不需要。考点是句子结构和词汇搭配。"
+    },
+    {
+      "question_index": 2,
+      "explanation": "第二题正确答案是“/”，即不填冠词，因为“everyone”后面接复数名词“mistakes”时，表示泛指“犯错误”，用零冠词。干扰项“a”和“an”用于单数可数名词前，但“mistakes”是复数，不能使用；“the”表示特指，但此处是泛指，因此错误。考点是冠词的用法，特别是零冠词在泛指复数名词前的使用。"
+    },
+    {
+      "question_index": 3,
+      "explanation": "第三题正确答案是“give”，因为“give up”是固定短语，意为“放弃”，符合句子“When we face difficulties, we should not (13) ______ up.”的语境。干扰项“look up”意为“查阅”，不合逻辑；“take up”意为“开始从事”，与“not”连用表示“不应开始”，但语境是面对困难不应放弃，因此不恰当；“put up”意为“举起、搭建”，也不符合。考点是动词短语的辨析。"
+    },
+    {
+      "question_index": 4,
+      "explanation": "第四题正确答案是“moving”，因为“keep doing sth.”是固定结构，表示“继续做某事”，此处“keep moving forward”意为“继续前进”。干扰项“to move”不能用于“keep”后作宾语；“move”是动词原形，不能直接跟在“keep”后；“moved”是过去分词，不能用于此结构。考点是动词“keep”后接动名词的用法。"
+    },
+    {
+      "question_index": 5,
+      "explanation": "第五题正确答案是“thankful”，因为“be thankful for”是固定搭配，意为“对……感激”，符合句子“I am (15) ______ for every challenge”的结构。干扰项“thanks”是名词或动词形式，不能作表语形容词；“thanking”是现在分词，不能与“am”构成进行时表示状态；“thank”是动词原形，不能作表语。考点是形容词与介词的固定搭配。"
+    }
+  ]
+}

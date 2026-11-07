@@ -21,14 +21,14 @@
   "request_retries_max": 3,
   "repair_retries_max": 1,
   "circuit_breaker_consecutive_failures": 5,
-  "budget_stop_ratio": 0.8,
+  "budget_stop_ratio": 1.0,
   "price_input_per_1m_cny": 2.0,
   "price_output_per_1m_cny": 8.0,
   "price_note": "Conservative peak, cache-miss upper-bound rate for deepseek-flash / DeepSeek-V4.1-Flash-1017.",
   "price_source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
   "price_source_date": "2026-11-07",
   "budget_cap_cny": {
-    "pilot": 10,
+    "pilot": 5,
     "bulk": 100
   }
 }

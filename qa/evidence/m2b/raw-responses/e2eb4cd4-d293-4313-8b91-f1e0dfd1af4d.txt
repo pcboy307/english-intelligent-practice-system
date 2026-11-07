@@ -1,0 +1,26 @@
+{
+  "explanations": [
+    {
+      "question_index": 1,
+      "explanation": "become interested in 是固定搭配，表示“对……产生兴趣”，此处需要形容词化的过去分词作表语。选项 interest 是名词或动词原形，不能直接作表语；interesting 表示“令人感兴趣的”，通常修饰事物；interests 是名词复数或动词第三人称单数，不符合句子结构。本题考查系表结构中 -ed 形容词与 -ing 形容词的区别以及固定搭配。",
+      "question_index": 2,
+      "explanation": "be careful 表示“细心的”，符合“好科学家必须细心且耐心”的语境，careful 是形容词作表语。care 是名词或动词，不能直接作表语；carefully 是副词，不能作表语；careless 意为“粗心的”，与语境相反。本题考查形容词作表语以及 careful 与 careless 的意义辨析。",
+      "question_index": 3,
+      "explanation": "主语 result 是物，表示“结果令人惊讶”，应用 surprising（令人惊讶的）作表语。surprise 是动词或名词，不能直接作表语；surprised 表示“感到惊讶的”，通常主语是人；surprisingly 是副词，不能作表语。本题考查 -ing 形容词与 -ed 形容词的区别，即修饰事物用 -ing 形式。",
+      "question_index": 4,
+      "explanation": "此处需要动名词 Working 作主语，表示“在团队中工作”这件事很重要。Work 是动词原形，不能直接作主语；Worked 是过去分词，不能作主语；To working 形式错误，动词不定式应为 to work。本题考查动名词作主语的用法。",
+      "question_index": 5,
+      "explanation": "主语 inventions 与 make 之间是被动关系，且由 many years ago 可知动作发生在过去，故用一般过去时的被动语态 were made。make 是主动语态原形；made 是主动语态过去式；are made 是一般现在时被动语态，与过去时间不符。本题考查一般过去时被动语态。",
+      "question_index": 6,
+      "explanation": "此处需要过去分词 invented 作后置定语，修饰 tool，表示“多年前被发明的简单工具”，与 tool 构成被动关系。inventing 是现在分词，表示主动；to invent 是不定式，表示将来或目的；invent 是动词原形，不能作定语。本题考查过去分词作后置定语。",
+      "question_index": 7,
+      "explanation": "强调句型 It is/was + 被强调部分 + that + 其他部分，原句强调 every small step，应改为 It is every small step that scientists believe is important。选项 B 强调 scientists，不符合要求；选项 C 结构混乱，改变了原意；选项 D 是普通被动句，不是强调句型。本题考查强调句型的构成与识别。",
+      "question_index": 8,
+      "explanation": "be willing to do sth. 是固定搭配，意为“愿意做某事”，故填 willing。will 是情态动词或名词，不能作表语形容词；willed 是过去分词，不用于此搭配；willfully 是副词，不能作表语。本题考查固定搭配 be willing to do。",
+      "question_index": 9,
+      "explanation": "be afraid of 后接动名词，表示“害怕做某事”，故用 failing。fail 是动词原形，不能直接作介词宾语；to fail 是不定式，不能作 of 的宾语；failed 是过去分词，不能作介词宾语。本题考查介词后接动名词的用法。",
+      "question_index": 10,
+      "explanation": "先行词 inventions 是物，关系代词在定语从句中作主语，应用 which。who 指人，不能指物；whose 表示所属关系，此处不适用；where 是关系副词，不能作主语。本题考查关系代词 which 指物并在从句中作主语的用法。"
+    }
+  ]
+}

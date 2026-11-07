@@ -1,0 +1,2 @@
+HTTP 400
+{"error":{"message":"This response_format type is unavailable now (request_id: 44f0c57b-390f-4b49-b914-816681bafbf1)","type":"invalid_request_error","param":null,"code":"invalid_request_error"}}

@@ -1,0 +1,44 @@
+{
+  "explanations": [
+    {
+      "question_index": 1,
+      "explanation": "第一题答案选hopeless，因为句意是有些日子充满欢乐，而另一些日子则显得黑暗且没有希望，hopeless表示“无望的”，与dark并列且符合语境。干扰项hopeful意为“有希望的”，与dark矛盾，careless和careful分别表示“粗心的”和“仔细的”，都不能与dark并列描述日子的状态。本题考点是形容词词义辨析及根据上下文语境选择恰当形容词。"
+    },
+    {
+      "question_index": 2,
+      "explanation": "第二题答案选worried，因为feel是系动词，后接形容词作表语，worried表示“担心的”，符合“对未来感到担心”的语境。干扰项worrying虽然也是形容词，但通常修饰事物，表示“令人担心的”，worry是动词或名词，worries是名词复数或动词第三人称单数，都不能直接作feel的表语。本题考点是系动词后接形容词作表语以及-ed形容词与-ing形容词的区别。"
+    },
+    {
+      "question_index": 3,
+      "explanation": "第三题答案选argued，因为句子描述的是去年经常发生的事情，全文使用一般过去时，且主语I后需要谓语动词的过去式，argued符合时态和语法要求。干扰项argue是动词原形，arguing是现在分词，argument是名词，都不能单独作谓语。本题考点是一般过去时的谓语动词形式以及词性辨析。"
+    },
+    {
+      "question_index": 4,
+      "explanation": "第四题答案选upset，因为后文提到朋友邀请我加入社团，说明我当时情绪低落、心烦意乱，upset表示“心烦的、难过的”，符合语境。干扰项happy、excited和proud分别表示“高兴的”“兴奋的”和“自豪的”，都是积极情绪，与后文朋友主动帮助我的语境不符。本题考点是形容词词义辨析及根据上下文推断人物情绪。"
+    },
+    {
+      "question_index": 5,
+      "explanation": "第五题答案选reluctant，因为句中because I was afraid of making mistakes说明我害怕犯错，所以起初不愿意尝试，reluctant表示“不情愿的”，符合因果关系。干扰项willing、eager和ready分别表示“愿意的”“渴望的”和“准备好的”，都表示积极态度，与害怕犯错的语境矛盾。本题考点是形容词词义辨析及原因状语从句的逻辑关系。"
+    },
+    {
+      "question_index": 6,
+      "explanation": "第六题答案选encouraged，因为句子描述的是过去发生的事情，全文使用一般过去时，主语she后需要动词过去式作谓语，encouraged符合时态要求。干扰项would encourage是过去将来时，had encouraged是过去完成时，were to encourage是过去将来时的另一种形式，都不符合此处单纯叙述过去事件的语境。本题考点是一般过去时的谓语动词形式及鼓励某人做某事的固定搭配encourage sb. to do sth.。"
+    },
+    {
+      "question_index": 7,
+      "explanation": "第七题答案选help，因为to help是不定式，表示目的，help后接宾语people，构成help people，符合“帮助有需要的人”的语义。干扰项should help含有情态动词，不能直接放在to后，helped是过去式，helping是现在分词，都不能与to构成正确的不定式结构。本题考点是动词不定式作目的状语以及help后接宾语的用法。"
+    },
+    {
+      "question_index": 8,
+      "explanation": "第八题答案选changed，因为句子描述过去发生的经历改变了我的生活，主语This experience是第三人称单数，谓语动词需要用过去式changed。干扰项changing是现在分词，to change是动词不定式，change是动词原形，都不能单独作谓语。本题考点是一般过去时的谓语动词形式及主语与谓语的搭配。"
+    },
+    {
+      "question_index": 9,
+      "explanation": "第九题答案选reduce，因为can是情态动词，后接动词原形，reduce表示“减少”，符合“帮助他人可以减少我们自己的问题”的语义。干扰项reduced是过去式或过去分词，reducing是现在分词，to reduce是不定式，都不能直接跟在情态动词can后。本题考点是情态动词后接动词原形的用法。"
+    },
+    {
+      "question_index": 10,
+      "explanation": "第十题答案选share，因为learn to后接动词原形，表示“学会做某事”，share my feelings表示“分享我的感受”，符合语境。干扰项sharing是现在分词，shared是过去式或过去分词，to share是不定式，都不能直接放在learn to后构成正确的动词不定式结构。本题考点是learn to do sth.的固定搭配以及动词原形的使用。"
+    }
+  ]
+}

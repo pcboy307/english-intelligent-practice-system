@@ -517,9 +517,10 @@ class CostLedger:
 
     def assert_below_threshold(self, bucket: str) -> None:
         cap = float(self.config["budget_cap_cny"][bucket])
-        if self.total_cny >= cap * 0.8:
+        ratio = float(self.config.get("budget_stop_ratio", 0.8))
+        if self.total_cny >= cap * ratio:
             raise BudgetThresholdReached(
-                f"DEEPSEEK_BUDGET_80_PERCENT_REACHED bucket={bucket} "
+                f"DEEPSEEK_BUDGET_THRESHOLD_REACHED bucket={bucket} "
                 f"cost_cny={self.total_cny:.6f} cap_cny={cap:.2f}"
             )
 
