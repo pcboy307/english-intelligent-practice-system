@@ -6,6 +6,7 @@ passage. It is temporary sprint content, not Bank#1 production content.
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 from datetime import datetime, timezone
 
@@ -27,6 +28,32 @@ class DemoQuestion:
     grammar_tags: list[str]
     book_source: str
     difficulty: int
+
+    @property
+    def question_order(self) -> int:
+        match = re.search(r"(\d+)$", self.id)
+        if not match:
+            raise ValueError(f"Question ID has no ordinal: {self.id}")
+        return int(match.group(1))
+
+    @property
+    def passage_order(self) -> int:
+        prefix = self.passage_group_id.rsplit("-", 2)[-2]
+        return {"CLOZE": 1, "GRAMMAR": 2, "GAP": 3}[prefix]
+
+    @property
+    def blank_label(self) -> str:
+        if self.type == "grammar_fill":
+            return chr(0x2460 + self.question_order - 1)
+        return f"({self.question_order})"
+
+    @property
+    def presentation_mode(self) -> str:
+        return {
+            "cloze": "cloze_single_choice",
+            "grammar_fill": "passage_single_choice",
+            "gap_fill": "seven_choice",
+        }[self.type]
 
 
 CLOZE_TEXT = (
@@ -67,30 +94,29 @@ CLOZE_QA = [
 ]
 
 GRAMMAR_TEXT = (
-    "Community gardens (1) [become] popular in many cities. They give people a "
-    "chance to grow their own food and meet their neighbours. A garden (2) [build] "
-    "on unused land last year is now used by more than fifty families. People work "
-    "together because the space (3) [share] by everyone. Before planting, they must "
-    "decide what (4) [grow] and where each plant should go. Some volunteers "
-    "(5) [work] in the garden for two years and know its soil well. They explain "
-    "that young plants (6) [need] protection from strong wind. Everyone is asked "
-    "to keep the paths clear so that all visitors can move (7) [safe]. The garden "
-    "is not only beautiful (8) also useful. It teaches children where food comes "
-    "from, and it reminds adults (9) [think] about waste. If more residents joined "
-    "next season, the project (10) [become] even stronger."
+    "Community gardens ① popular in many cities for many years. They give people "
+    "a chance to grow their own food and meet their neighbours. A garden ② on "
+    "unused land last year is now used by more than fifty families. People work "
+    "together because the space ③ by everyone. Before planting, they must decide "
+    "what ④ and where each plant should go. Some volunteers ⑤ in the garden for "
+    "two years and know its soil well. They explain that young plants ⑥ protection "
+    "from strong wind. Everyone is asked to keep the paths clear so that all "
+    "visitors can move ⑦. The garden is not only beautiful ⑧ also useful. It teaches "
+    "children where food comes from, and it reminds adults ⑨ about waste. If more "
+    "residents join next season, the project ⑩ even stronger."
 )
 
 GRAMMAR_QA = [
-    ("have become", "tense_system", "Present perfect describes a state that started in the past and continues now.", "现在完成时"),
-    ("built", "past_participle_nonfinite", "The past participle modifies the noun garden.", "过去分词作定语"),
-    ("is shared", "passive_voice_tenses", "The space receives the action and the sentence is present passive.", "一般现在时被动"),
-    ("to grow", "infinitive_nonfinite", "What is followed by an infinitive and to grow expresses the purpose.", "不定式作宾语"),
-    ("have worked", "tense_system", "For two years signals present perfect.", "现在完成时"),
-    ("need", "subject_verb_agreement", "The plural subject young plants takes need.", "主谓一致"),
-    ("safely", "word_formation", "The adverb safely modifies the verb move.", "副词化"),
-    ("but", "conjunctions", "Not only is paired with but also.", "并列连词"),
-    ("to think", "infinitive_nonfinite", "Remind can be followed by an object and an infinitive.", "不定式作宾补"),
-    ("will become", "subjunctive_basic_if", "The if clause uses a present form and the main clause describes a likely future result.", "第一类条件句"),
+    ("have become", ["have become", "had become", "will become", "are becoming"], "tense_system", "for many years 表示动作持续到现在，应使用现在完成时。", "现在完成时"),
+    ("built", ["build", "building", "built", "to build"], "past_participle_nonfinite", "garden 与 build 是被动关系，过去分词 built 作后置定语。", "过去分词作定语"),
+    ("is shared", ["shares", "shared", "is shared", "will share"], "passive_voice_tenses", "space 与 share 是被动关系，整句为一般现在时，因此使用 is shared。", "一般现在时被动语态"),
+    ("to grow", ["grow", "growing", "to grow", "grown"], "infinitive_nonfinite", "what 后使用不定式表示需要种植的内容，to grow 符合结构。", "不定式作宾语"),
+    ("have worked", ["work", "worked", "have worked", "will work"], "tense_system", "for two years 表示从过去持续到现在，应使用现在完成时。", "现在完成时"),
+    ("need", ["need", "needs", "needed", "needing"], "subject_verb_agreement", "主语 young plants 为复数，一般现在时谓语使用 need。", "主谓一致"),
+    ("safely", ["safe", "safety", "safely", "unsafe"], "word_formation", "move 是动词，需要用副词 safely 修饰。", "副词化"),
+    ("but", ["and", "but", "or", "so"], "conjunctions", "not only ... but also ... 是固定并列结构。", "并列连词"),
+    ("to think", ["think", "thinking", "to think", "thought"], "infinitive_nonfinite", "remind sb to do sth 是固定结构，因此使用 to think。", "不定式作宾补"),
+    ("will become", ["becomes", "became", "will become", "would have become"], "subjunctive_basic_if", "条件句描述将来可能发生的结果，主句使用一般将来时 will become。", "条件句中的将来表达"),
 ]
 
 GAP_TEXT = (
@@ -117,20 +143,33 @@ GAP_OPTIONS = [
 ]
 
 GAP_QA = [
-    ("F", "transition", "After asking students to put names on the board, the next logical step is planning.", "The sentence explains the result of collecting names."),
-    ("C", "addition", "The paragraph is adding another benefit of group leaders helping students.", "The added benefit follows the previous sentence."),
-    ("D", "support", "Before returning books, students may need help from club leaders.", "The sentence offers practical guidance to members."),
-    ("A", "sequence", "The discussion length gives the next member time to prepare.", "The sentence shows the result of limiting each talk to two minutes."),
-    ("B", "closing", "A closing sentence about the school's hope follows the club's practical purpose.", "The final sentence summarizes the desired outcome."),
+    ("F", "transition", "前文要求学生在公告板上写名字，下一步自然是帮助组织者安排活动。", "该句承接报名后的活动安排。"),
+    ("C", "addition", "该段在补充小组长帮助学生的另一项好处。", "所补句子应与前一句形成递进关系。"),
+    ("D", "support", "学生借书前可能需要向小组长寻求帮助。", "该句提供借书前的实际指导。"),
+    ("A", "sequence", "限制每人发言两分钟，可以为下一位成员留下准备时间。", "该句体现了发言时间安排带来的结果。"),
+    ("B", "closing", "最后应落到学校希望学生享受阅读并分享想法这一目的。", "该句总结阅读俱乐部的预期成果。"),
 ]
 
 
+CLOZE_REASONS = {
+    "team": "small groups 表示把学生分成小组。",
+    "noun_context": "该词与所在句子的名词语境一致。",
+    "adverb": "此处需要副词修饰 worked。",
+    "concession": "前后句是让步关系，Although 符合逻辑。",
+    "verb_meaning": "该动词与教师记录结果这一语境一致。",
+    "noun_choice": "该名词与 make a decision 的固定搭配一致。",
+    "context_verb": "该动词表示在水边注意到一群鸟。",
+    "verb_pattern": "avoid doing 表示避免做某事。",
+    "adverb_context": "already 与该句完成时语境一致。",
+    "preposition": "without 表示没有使用塑料袋。",
+    "adjective_context": "proud 与完成清理后的感受一致。",
+    "reading_detail": "该名词与前文的清理活动相呼应。",
+}
+
+
 def _explanation(answer: str, point: str) -> str:
-    return (
-        f"The correct answer is {answer}. "
-        f"It matches the grammatical and semantic context for {point}. "
-        "The other choices do not fit the local meaning or structure."
-    )
+    reason = CLOZE_REASONS.get(point, "该选项与句子结构和上下文最为匹配。")
+    return f"正确答案是 {answer}。{reason}其余选项在语境或语法上不合适。"
 
 
 def build_demo_questions() -> list[DemoQuestion]:
@@ -143,7 +182,7 @@ def build_demo_questions() -> list[DemoQuestion]:
                 type="cloze",
                 passage_group_id="DEMO-CLOZE-01",
                 passage=CLOZE_TEXT,
-                stem=f"Choose the best word for blank ({number}).",
+                stem=f"选择第 {number} 空最合适的选项。",
                 options=options,
                 answer=answer,
                 explanation=_explanation(answer, point),
@@ -153,7 +192,7 @@ def build_demo_questions() -> list[DemoQuestion]:
                 difficulty=3 if number < 12 else 4,
             )
         )
-    for number, (answer, tag, fit, point) in enumerate(GRAMMAR_QA, start=1):
+    for number, (answer, options, tag, explanation, point) in enumerate(GRAMMAR_QA, start=1):
         questions.append(
             DemoQuestion(
                 id=f"DEMO-G{number:02d}",
@@ -161,10 +200,10 @@ def build_demo_questions() -> list[DemoQuestion]:
                 type="grammar_fill",
                 passage_group_id="DEMO-GRAMMAR-01",
                 passage=GRAMMAR_TEXT,
-                stem=f"Fill in blank ({number}) with the correct form. Prompt: {GRAMMAR_TEXT.split(f'({number}) ')[1].split()[0]}",
-                options=None,
+                stem=f"选择 {chr(0x2460 + number - 1)} 处最合适的选项。",
+                options=options,
                 answer=answer,
-                explanation=f"The correct answer is {answer}. {fit} The form fits the complete sentence and its grammatical context.",
+                explanation=f"正确答案是 {answer}。{explanation}",
                 knowledge_points=[point],
                 grammar_tags=[tag],
                 book_source="选必一 U3",
@@ -179,10 +218,10 @@ def build_demo_questions() -> list[DemoQuestion]:
                 type="gap_fill",
                 passage_group_id="DEMO-GAP-01",
                 passage=GAP_TEXT,
-                stem=f"Choose the sentence that best fits blank ({number}).",
+                stem=f"选择最适合第 {number} 空的句子。",
                 options=GAP_OPTIONS,
                 answer=answer,
-                explanation=f"The correct answer is {answer}. {fit} The link type is {link_type}; {point}",
+                explanation=f"正确答案是 {answer}。{fit}{point}",
                 knowledge_points=[f"gap_fill_{link_type}"],
                 grammar_tags=["conjunctions"],
                 book_source="必修二 U1",

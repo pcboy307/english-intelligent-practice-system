@@ -86,14 +86,28 @@
   "control": {
     "primaryButtonHeightMin": 48,
     "touchTargetMin": 44,
+    "touchTargetScope": "mobile_only",
     "iconStrokeWidth": 1.5
   },
   "web": {
     "colorScheme": "light",
-    "maxContentWidth": 480,
+    "maxContentWidth": 960,
+    "mobileMaxContentWidth": 480,
     "centerHorizontally": true,
     "bodyBackgroundToken": "pageBackground",
     "bodyTextToken": "primaryText"
+  },
+  "web_desktop": {
+    "breakpoint": 768,
+    "contentMaxWidth": 960,
+    "mobileMaxWidth": 480,
+    "bodyMaxWidth": 760,
+    "optionFontSize": 15,
+    "optionLineHeight": 1.5,
+    "optionPadding": 12,
+    "optionHeight": 40,
+    "optionGap": 8,
+    "buttonHeight": 40
   },
   "motion": {
     "pageFadeMs": 200,

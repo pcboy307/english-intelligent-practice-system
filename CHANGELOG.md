@@ -54,3 +54,13 @@
 - 登记当前 Demo Bank 只有 30 题/3 篇，以及加权、重复惩罚和知识点上限尚未形成真实排除验证。
 - 所有者签收 CO-003 半天闭环，tag 为 `co003-halfday-closedloop`；M1 明确保持未完成。
 - 原始记录：`docs/change-log/CO-003-half-day-sprint.md`、`docs/milestones/M1-half-day-delivery.md`。
+
+## 2026-11-07 - CO-004 练习体验与解析修订
+
+- 版本升为 V11.3。
+- 语法填空改为语篇内 ①–⑩ 加语篇后 10 个四选一小问，取消手输。
+- 组卷按篇和题号排序，前端按篇分节，进度改为“第 x 篇 / 共 y 篇”。
+- 桌面内容区扩展为 960，正文块限制 760，并新增 `web_desktop` 视觉 token。
+- 报告解析全部中文化，报告与答题回顾支持双向跳转。
+- 新增已交卷会话 review 接口，前端类型由 OpenAPI 生成。
+- 原始记录：`docs/change-log/CO-004-practice-experience.md`。

@@ -85,6 +85,10 @@ def session_payload(record) -> dict:
                 "stem": question.stem,
                 "options": question.options,
                 "saved_answer": record.answers.get(qid),
+                "presentation_mode": question.presentation_mode,
+                "blank_label": question.blank_label,
+                "passage_order": question.passage_order,
+                "question_order": question.question_order,
             }
         )
     return {
@@ -149,6 +153,20 @@ def get_practice(
     except KeyError as error:
         raise HTTPException(status_code=404, detail={"code": str(error)}) from error
     return session_payload(record)
+
+
+@app.get("/api/v1/practice/{session_id}/review")
+def get_practice_review(
+    session_id: str,
+    x_student_id: str | None = Header(default=None, alias="X-Student-Id"),
+) -> dict:
+    student_id = student_id_or_401(x_student_id)
+    try:
+        return store.get_review(student_id, session_id)
+    except KeyError as error:
+        raise HTTPException(status_code=404, detail={"code": str(error)}) from error
+    except ValueError as error:
+        raise HTTPException(status_code=409, detail={"code": str(error)}) from error
 
 
 @app.put("/api/v1/practice/{session_id}/answer", status_code=204)

@@ -20,7 +20,7 @@ $PgData    = 'C:\pgdata'
 $Port      = 15432
 $DbName    = 'english_practice'
 $PgUser    = 'postgres'
-$Migration = 'db\migrations\001_initial.sql'
+$MigrationDir = 'db\migrations'
 
 $pgctl    = Join-Path $PgBin 'pg_ctl.exe'
 $initdb   = Join-Path $PgBin 'initdb.exe'
@@ -81,11 +81,15 @@ switch ($Action) {
 
         Write-Host "== 4/4 建库 + 迁移 ==" -ForegroundColor Cyan
         & $createdb -h 127.0.0.1 -p $Port -U $PgUser $DbName 2>$null
-        if (Test-Path $Migration) {
-            & $psql -h 127.0.0.1 -p $Port -U $PgUser -d $DbName -v ON_ERROR_STOP=1 -f $Migration
-            if ($LASTEXITCODE -ne 0) { Write-Host "[FATAL] 迁移失败" -ForegroundColor Red; exit 1 }
+        $migrations = @(Get-ChildItem -LiteralPath $MigrationDir -Filter '*.sql' | Sort-Object Name)
+        if ($migrations.Count -gt 0) {
+            foreach ($migration in $migrations) {
+                Write-Host "==> migrate $($migration.Name)" -ForegroundColor Cyan
+                & $psql -h 127.0.0.1 -p $Port -U $PgUser -d $DbName -v ON_ERROR_STOP=1 -f $migration.FullName
+                if ($LASTEXITCODE -ne 0) { Write-Host "[FATAL] 迁移失败: $($migration.Name)" -ForegroundColor Red; exit 1 }
+            }
         } else {
-            Write-Host "[WARN] 没找到 $Migration，跳过迁移。跑到项目根目录再执行 migrate。" -ForegroundColor Yellow
+            Write-Host "[WARN] 没找到迁移文件，跳过迁移。" -ForegroundColor Yellow
         }
 
         Write-Host ""
@@ -112,7 +116,12 @@ switch ($Action) {
     }
 
     'migrate' {
-        if (-not (Test-Path $Migration)) { Write-Host "[FATAL] 找不到 $Migration" -ForegroundColor Red; exit 1 }
-        & $psql -h 127.0.0.1 -p $Port -U $PgUser -d $DbName -v ON_ERROR_STOP=1 -f $Migration
+        $migrations = @(Get-ChildItem -LiteralPath $MigrationDir -Filter '*.sql' | Sort-Object Name)
+        if ($migrations.Count -eq 0) { Write-Host "[FATAL] 找不到迁移文件" -ForegroundColor Red; exit 1 }
+        foreach ($migration in $migrations) {
+            Write-Host "==> migrate $($migration.Name)" -ForegroundColor Cyan
+            & $psql -h 127.0.0.1 -p $Port -U $PgUser -d $DbName -v ON_ERROR_STOP=1 -f $migration.FullName
+            if ($LASTEXITCODE -ne 0) { Write-Host "[FATAL] 迁移失败: $($migration.Name)" -ForegroundColor Red; exit 1 }
+        }
     }
 }

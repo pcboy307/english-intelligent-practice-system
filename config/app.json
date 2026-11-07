@@ -10,7 +10,10 @@
     "native_secure_store_required": true
   },
   "web_layout": {
-    "max_width": 480,
+    "mobile_max_width": 480,
+    "desktop_breakpoint": 768,
+    "desktop_max_width": 960,
+    "body_max_width": 760,
     "center_horizontally": true,
     "color_scheme": "light",
     "body_background_token": "pageBackground",

@@ -5,8 +5,10 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { getActiveBank, startPractice } from "../src/api/client";
 import { setSession } from "../src/sessionStore";
 import { tokens } from "../src/theme/tokens";
+import { useResponsiveLayout } from "../src/theme/useResponsiveLayout";
 
 export default function HomeScreen() {
+  const layout = useResponsiveLayout();
   const [bankName, setBankName] = useState("加载中");
   const [error, setError] = useState("");
   const [starting, setStarting] = useState(false);
@@ -33,18 +35,25 @@ export default function HomeScreen() {
 
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.center}>
-      <View style={styles.shell}>
+      <View
+        testID="home-shell"
+        style={[styles.shell, { maxWidth: layout.contentMaxWidth }]}
+      >
         <Text style={styles.eyebrow}>高二英语</Text>
         <Text style={styles.title}>智能练习</Text>
         <Text style={styles.bank}>当前题库：{bankName}</Text>
-        <Text style={styles.body}>
+        <Text style={[styles.body, { maxWidth: layout.bodyMaxWidth }]}>
           一套 30 分钟练习，包含完型填空、语法填空和七选五。交卷后查看分数、正确率、薄弱知识点和逐题解析。
         </Text>
         <Pressable
           accessibilityRole="button"
           disabled={starting}
           onPress={start}
-          style={[styles.primaryButton, starting && styles.disabled]}
+          style={[
+            styles.primaryButton,
+            layout.desktop && styles.primaryButtonDesktop,
+            starting && styles.disabled,
+          ]}
         >
           <Text style={styles.primaryButtonText}>
             {starting ? "正在组卷" : "开始 30 分钟练习"}
@@ -104,6 +113,10 @@ const styles = StyleSheet.create({
     color: tokens.color.primaryButtonText,
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.body,
+  },
+  primaryButtonDesktop: {
+    height: tokens.web_desktop.buttonHeight,
+    minHeight: tokens.web_desktop.buttonHeight,
   },
   disabled: { backgroundColor: tokens.color.disabled },
   error: {

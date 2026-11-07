@@ -1,60 +1,12 @@
+import type { components } from "./generated";
+
 const API_BASE = "http://localhost:8000/api/v1";
 
-export type SessionItem = {
-  question_id: string;
-  type: "cloze" | "grammar_fill" | "reading" | "gap_fill";
-  passage_group_id: string;
-  passage: string;
-  stem: string;
-  options: string[] | null;
-  saved_answer: string | string[] | null;
-};
-
-export type PracticeSession = {
-  session_id: string;
-  bank_id: string;
-  bank_name: string;
-  bank_version: string;
-  duration_minutes: number;
-  status: "in_progress" | "submitted" | "expired";
-  items: SessionItem[];
-  composition_note: {
-    bank_name: string;
-    question_type_counts: Record<string, number>;
-    error_pool_ratio: number;
-    difficulty_distribution: Record<string, number>;
-    book_distribution: Record<string, number>;
-    topics: string[];
-  };
-  deadline: string;
-  server_time: string;
-  remaining_seconds: number;
-  progress: { answered: number; total: number };
-};
-
-export type Report = {
-  session_id: string;
-  bank_id: string;
-  bank_name: string;
-  score: number;
-  max_score: number;
-  accuracy: number;
-  duration_seconds: number;
-  type_scores: Record<string, { correct: number; total: number; accuracy: number }>;
-  weak_points: Array<{ knowledge_point: string; error_stage: string }>;
-  suggestions: Array<{ knowledge_point: string; action: string }>;
-  question_results: Array<{
-    question_id: string;
-    correct: boolean;
-    user_answer: string;
-    correct_answer: string;
-    explanation: string;
-    knowledge_points: string[];
-    grammar_tags: string[];
-    book_source: string;
-    difficulty: number;
-  }>;
-};
+export type PracticeSession = components["schemas"]["SessionResponse"];
+export type SessionItem = PracticeSession["items"][number];
+export type PracticeReview = components["schemas"]["ReviewResponse"];
+export type ReviewItem = PracticeReview["items"][number];
+export type Report = components["schemas"]["Report"];
 
 export function getStudentId(): string {
   const key = "device_student_id";
@@ -113,6 +65,10 @@ export async function submitPractice(sessionId: string, idempotencyKey: string) 
     method: "POST",
     headers: { "Idempotency-Key": idempotencyKey },
   });
+}
+
+export async function getPracticeReview(sessionId: string) {
+  return request<PracticeReview>(`/practice/${sessionId}/review`);
 }
 
 export async function getReport(sessionId: string) {

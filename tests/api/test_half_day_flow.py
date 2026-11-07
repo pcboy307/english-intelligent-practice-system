@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import subprocess
 import sys
 import uuid
@@ -49,6 +50,17 @@ def test_30_question_start_has_no_answers() -> None:
         "grammar_fill",
         "gap_fill",
     }
+    assert all(item["options"] for item in session["items"])
+    grammar_items = [item for item in session["items"] if item["type"] == "grammar_fill"]
+    assert len(grammar_items) == 10
+    assert all(len(item["options"] or []) == 4 for item in grammar_items)
+    assert 120 <= len(grammar_items[0]["passage"].split()) <= 180
+    assert all(label in grammar_items[0]["passage"] for label in "①②③④⑤⑥⑦⑧⑨⑩")
+    group_order = [item["passage_group_id"] for item in session["items"]]
+    assert len(list(dict.fromkeys(group_order))) == 3
+    for group_id in dict.fromkeys(group_order):
+        positions = [index for index, value in enumerate(group_order) if value == group_id]
+        assert positions == list(range(positions[0], positions[-1] + 1))
 
 
 def test_submit_returns_report_and_is_idempotent() -> None:
@@ -85,10 +97,32 @@ def test_submit_returns_report_and_is_idempotent() -> None:
         item["explanation"].strip() and item["explanation"].strip() != "暂无解析"
         for item in report["question_results"]
     )
+    assert all(
+        re.search(r"[\u4e00-\u9fff]", item["explanation"])
+        for item in report["question_results"]
+    )
     store.sessions.clear()
     persisted = client.get(f"/api/v1/reports/{session['session_id']}", headers=headers)
     assert persisted.status_code == 200
     assert persisted.json() == report
+    review = client.get(
+        f"/api/v1/practice/{session['session_id']}/review",
+        headers=headers,
+    )
+    assert review.status_code == 200
+    assert len(review.json()["items"]) == 30
+    assert all("explanation" not in item for item in review.json()["items"])
+
+
+def test_review_is_blocked_before_submit() -> None:
+    headers = student_headers()
+    session = start_practice(headers)
+    response = client.get(
+        f"/api/v1/practice/{session['session_id']}/review",
+        headers=headers,
+    )
+    assert response.status_code == 409
+    assert response.json()["detail"]["code"] == "SESSION_NOT_SUBMITTED"
 
 
 def test_wrong_answer_is_tagged_and_two_different_sessions_clear_it() -> None:

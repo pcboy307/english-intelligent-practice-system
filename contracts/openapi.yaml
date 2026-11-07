@@ -55,6 +55,76 @@ components:
           enum: [30, 60]
     SessionResponse:
       $ref: ./schemas/session.json
+    ReviewResponse:
+      type: object
+      additionalProperties: false
+      required: [session_id, bank_id, bank_name, bank_version, status, items]
+      properties:
+        session_id:
+          type: string
+          format: uuid
+        bank_id:
+          type: string
+          format: uuid
+        bank_name:
+          type: string
+        bank_version:
+          type: string
+        status:
+          type: string
+          enum: [submitted, expired]
+        items:
+          type: array
+          minItems: 1
+          items:
+            type: object
+            additionalProperties: false
+            required:
+              - question_id
+              - type
+              - passage_group_id
+              - passage
+              - stem
+              - options
+              - saved_answer
+              - presentation_mode
+              - blank_label
+              - passage_order
+              - question_order
+              - correct
+            properties:
+              question_id:
+                type: string
+              type:
+                type: string
+                enum: [cloze, grammar_fill, reading, gap_fill]
+              passage_group_id:
+                type: string
+              passage:
+                type: string
+              stem:
+                type: string
+              options:
+                type: array
+                items:
+                  type: string
+              saved_answer:
+                oneOf:
+                  - type: "null"
+                  - type: string
+              presentation_mode:
+                type: string
+                enum: [cloze_single_choice, passage_single_choice, seven_choice, reading_single_choice]
+              blank_label:
+                type: string
+              passage_order:
+                type: integer
+                minimum: 1
+              question_order:
+                type: integer
+                minimum: 1
+              correct:
+                type: boolean
     SavedAnswer:
       $ref: ./schemas/answer.json
     Report:
@@ -407,6 +477,26 @@ paths:
               schema:
                 $ref: "#/components/schemas/SessionResponse"
         "404":
+          $ref: "#/components/responses/ErrorResponse"
+  /practice/{session_id}/review:
+    get:
+      tags: [student]
+      operationId: getPracticeReview
+      security:
+        - StudentId: []
+      summary: 获取已交卷会话的原题、我的选择和逐题对错；不返回解析
+      parameters:
+        - $ref: "#/components/parameters/SessionId"
+      responses:
+        "200":
+          description: 只读回顾数据
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ReviewResponse"
+        "404":
+          $ref: "#/components/responses/ErrorResponse"
+        "409":
           $ref: "#/components/responses/ErrorResponse"
   /practice/{session_id}/answer:
     put:

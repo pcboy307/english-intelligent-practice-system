@@ -82,6 +82,14 @@ Coverage 快照至少包含：
 
 后台激活前必须支持任意两个 Bank 的 Coverage 并排对比，以及各抽 5 题预览质量。
 
-## 8. M1 例外
+## 8. 题型呈现模板（CO-004）
+
+- `cloze`：语篇内多空，每个空在语篇后以 A/B/C/D 四选一作答。
+- `grammar_fill`：120–180 词语篇，空位使用 ①–⑩ 编号；语篇后列 10 个四选一小问，取消手输填空。四个选项必须属于同一语法范畴，例如同一动词的不同时态或同一派生词族。题型 ID、`grammar_tags` 与每 ID ≥12 题的 Coverage 要求保持不变。
+- `gap_fill`：保留七选五，属于选择题。
+- `reading`：保留阅读选择题。
+- 每道题必须带 `presentation.mode`、`passage_order`、`question_order`、`blank_label` 和 `option_layout`；组卷按 `(passage_order, question_order)` 输出，禁止前端补排序。
+
+## 9. M1 例外
 
 Demo Bank 仅 60 题，M1 允许同题重复。“7 天内同题重复率 <10%”推迟到 M3，不要求 M1 额外实现该去重约束。其余 Bank 隔离、组卷权重、错题和计时规则不得豁免。

@@ -10,6 +10,8 @@ M1 状态为 **未完成**：当前 Demo Bank 是 30 题/3 篇，未达到 60 �
 
 当前需求版本严格读取 `contracts/VERSION`，并与 `contracts/curriculum.json.requirement_version` 机械校验。本期运行载体为 **Expo Web（react-native-web）电脑浏览器**。React Native 源码保留，手机真机验收推迟到手机端阶段，不作为本期门禁。
 
+V11.3 的练习页按篇分节，语法填空使用语篇后四选一；报告与答题回顾支持双向跳转。
+
 ## 锁定运行时
 
 | 组件 | 版本 | 说明 |
@@ -61,7 +63,7 @@ http://localhost:8081
 http://127.0.0.1:8081
 ```
 
-不使用 `*`。浏览器页面固定 `color-scheme: light`，内容最大宽度 480px 并水平居中。
+不使用 `*`。浏览器页面固定 `color-scheme: light`；桌面内容区最大宽度 960px，正文块 760px；`<768px` 时内容最大宽度回落 480px。
 
 Expo Web 依赖通过 `npx expo install` 固定版本，见 `apps/mobile/package.json`：
 
@@ -78,6 +80,12 @@ M1 工程完成后只使用以下浏览器启动命令：
 ```bash
 cd apps/mobile
 npx expo start --web
+```
+
+修改 `contracts/openapi.yaml` 后，在 `apps/mobile` 执行：
+
+```bash
+npm run generate:api
 ```
 
 不再提供手机扫码步骤。后端和 PostgreSQL 可用是 M1 环境门禁；Docker 可用时使用 Compose，不可用时使用本机 PostgreSQL。

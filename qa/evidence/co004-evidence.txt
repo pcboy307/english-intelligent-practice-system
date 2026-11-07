@@ -1,0 +1,58 @@
+Version:
+V11.3
+
+Command:
+.\.venv\Scripts\python.exe scripts\check-co004.py
+
+Grouped session order:
+DEMO-CLOZE-01: questions 1..15
+DEMO-GRAMMAR-01: questions 16..25
+DEMO-GAP-01: questions 26..30
+
+Question option counts:
+cloze        15 questions, options 4..4
+grammar_fill 10 questions, options 4..4
+gap_fill      5 questions, options 7..7
+
+Desktop browser at 1920:
+content_shell=960
+body_column=760
+option_height=40
+option_font_size=15px
+option_line_height=22.5px
+option_gap=8
+button_height=40
+input_count=0
+
+Browser input scan across all passage groups:
+q=1 inputs=0
+q=16 inputs=0
+q=26 inputs=0
+
+Mid-width browser at 700:
+content_shell=480
+
+Report:
+session_id=f7618168-3a23-457b-a5c1-1bbfa9f2eaf5
+explanations=30
+with_chinese=30
+english_paragraphs=0
+view_original_buttons=30
+
+Review:
+URL=/practice?session_id=259315a5-dd13-471f-aaa9-fcccc54563d4&review=1&q=1
+has_choice=true
+has_correct_mark=true
+has_explanation=false
+
+Pre-submit:
+report_button_disabled=true
+has_answer=false
+has_explanation=false
+
+Checks:
+6 passed
+TypeScript PASS
+openapi.yaml valid
+M0_CHECK=PASS
+API_CONTRACT_CHECK=PASS calls=7

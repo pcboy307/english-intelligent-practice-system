@@ -45,6 +45,7 @@
 - `question_type_distribution.standard_2000`：生产 Bank 规模。
 - `question_type_distribution.demo_60`：M1 Demo Bank 规模。
 - `passage_rules.word_limits`：各题型词数边界。
+- `grammar_fill` 仅为题型 ID：语篇使用 ①–⑩ 空位，小题为 A/B/C/D 四选一；干扰项必须同语法范畴，`grammar_tags` 和每 ID ≥12 题覆盖要求不变。
 - `quality_gates.generation_batch_max_passages`：单批上限 `10`。
 - `m1_exemption.seven_day_repeat_rate_requirement`：值为 `deferred_to_m3`。
 
@@ -54,6 +55,8 @@
 - `modes.60`：60 分钟模式，固定 3 篇阅读 + 1 篇七选五。
 - `selection_weight`：严格对应 `W = 1 + 2I_err + 1S_kp + 0.5S_type + 0.8G_gap - 1.2R_recent - 0.6R_7d`。
 - `paper_constraints`：单套难度、错题池、知识点重复、话题和册次约束。
+- `paper_constraints.question_point_book_distribution_count_rules.30`：固定 `14/9/6/1`。
+- `paper_constraints.question_point_book_distribution_count_rules.2000`：固定 `900/600/400/100`。
 - `bank_scope.source`：必须为 `session.bank_id`；`allow_cross_bank_sampling=false`。
 - `paper_constraints.allow_same_question_repeat_in_m1=true`：仅 M1 豁免。
 - `paper_constraints.seven_day_repeat_rate_max=0.10`：M3 生效。
@@ -82,8 +85,10 @@
 - `data_clear_scope` 同时包含本地缓存和后端该 ID 数据。
 - `student_identity.web_storage=localStorage`；Web 本地演示可用，但安全等级低于原生安全存储。
 - `student_identity.native_storage=expo-secure-store`；回到手机端时必须恢复原生安全存储。
-- `web_layout.max_width=480` 且水平居中，模拟手机竖屏视口。
+- `web_layout.mobile_max_width=480`；`desktop_breakpoint=768`；`desktop_max_width=960`；正文块 `body_max_width=760`。
 - `web_layout.color_scheme=light`；CSS 必须固定 `color-scheme: light`。
+- `design-tokens.json.web_desktop` 固定选项字号 15、行高 1.5、内边距 12、高度 40、间距 8、按钮高度 40。
+- `control.touchTargetMin=44` 仅适用于移动端；桌面端使用 `web_desktop` 的收紧尺寸。
 
 ### `config/api.json`
 

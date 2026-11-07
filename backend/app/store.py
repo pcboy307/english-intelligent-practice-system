@@ -136,7 +136,12 @@ class InMemoryStore:
             ids = [question.id for question in candidates]
             weights = [self._question_weight(question, student_id, now) for question in candidates]
             selected.extend(self._weighted_without_replacement(ids, weights, amount))
-        self.random.shuffle(selected)
+        selected.sort(
+            key=lambda question_id: (
+                self.questions[question_id].passage_order,
+                self.questions[question_id].question_order,
+            )
+        )
         session_id = str(uuid.uuid4())
         record = SessionRecord(
             id=session_id,
@@ -289,7 +294,7 @@ class InMemoryStore:
         suggestions = [
             {
                 "knowledge_point": item["knowledge_point"],
-                "action": f"Review {item['knowledge_point']} and complete a short focused set before the next paper.",
+                "action": f"复习“{item['knowledge_point']}”并在下一套练习前完成一组针对性短练。",
             }
             for item in weak
         ]
@@ -312,7 +317,7 @@ class InMemoryStore:
             "type_scores": type_scores,
             "knowledge_point_levels": levels,
             "weak_points": [
-                {"knowledge_point": item["knowledge_point"], "error_stage": "Answer selection"}
+                {"knowledge_point": item["knowledge_point"], "error_stage": "答案选择"}
                 for item in weak
             ],
             "suggestions": suggestions,

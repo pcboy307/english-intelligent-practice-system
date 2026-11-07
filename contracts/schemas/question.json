@@ -14,6 +14,7 @@
     "stem",
     "options",
     "answer",
+    "presentation",
     "explanation",
     "knowledge_points",
     "grammar_tags",
@@ -45,6 +46,21 @@
       ]
     },
     "answer": {"$ref": "./common.json#/$defs/answerValue"},
+    "presentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "passage_order", "question_order", "blank_label", "option_layout"],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["cloze_single_choice", "passage_single_choice", "seven_choice", "reading_single_choice"]
+        },
+        "passage_order": {"type": "integer", "minimum": 1},
+        "question_order": {"type": "integer", "minimum": 1},
+        "blank_label": {"type": "string", "minLength": 1},
+        "option_layout": {"type": "string", "enum": ["A-D", "A-G"]}
+      }
+    },
     "explanation": {"type": "string", "minLength": 1},
     "knowledge_points": {
       "type": "array",
@@ -96,7 +112,12 @@
   "allOf": [
     {
       "if": {"properties": {"type": {"const": "grammar_fill"}}},
-      "then": {"properties": {"options": {"type": "null"}}}
+      "then": {
+        "properties": {
+          "options": {"type": "array", "minItems": 4, "maxItems": 4},
+          "answer": {"type": "string"}
+        }
+      }
     },
     {
       "if": {"properties": {"type": {"const": "cloze"}}},

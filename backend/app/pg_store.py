@@ -72,6 +72,50 @@ class PostgresStore:
                 (seeded["bank_id"],),
             ).fetchone()
             if row:
+                seen_passages = {}
+                for question in seeded["questions"]:
+                    seen_passages.setdefault(
+                        question.passage_group_id,
+                        (question.type, question.passage, question.book_source),
+                    )
+                for group_id, (qtype, text, book_source) in seen_passages.items():
+                    connection.execute(
+                        """
+                        UPDATE passages
+                        SET type=%s, content=%s, word_count=%s, book_source=%s
+                        WHERE bank_id=%s AND passage_group_id=%s
+                        """,
+                        (
+                            qtype,
+                            text,
+                            len(text.split()),
+                            book_source,
+                            seeded["bank_id"],
+                            group_id,
+                        ),
+                    )
+                for question in seeded["questions"]:
+                    connection.execute(
+                        """
+                        UPDATE questions
+                        SET stem=%s, options=%s, answer=%s, explanation=%s,
+                            knowledge_points=%s, grammar_tags=%s, book_source=%s,
+                            difficulty=%s
+                        WHERE bank_id=%s AND id=%s
+                        """,
+                        (
+                            question.stem,
+                            Jsonb(question.options) if question.options is not None else None,
+                            Jsonb(question.answer),
+                            question.explanation,
+                            question.knowledge_points,
+                            question.grammar_tags,
+                            question.book_source,
+                            question.difficulty,
+                            seeded["bank_id"],
+                            question.id,
+                        ),
+                    )
                 return {
                     "bank_id": str(row["id"]),
                     "name": row["name"],
@@ -303,7 +347,7 @@ class PostgresStore:
             candidates = [q for q in self.questions.values() if q.type == qtype]
             weights = [self._weight(q, tags, history, appearances, now) for q in candidates]
             all_questions.extend(self._sample(candidates, amount, weights, rng))
-        rng.shuffle(all_questions)
+        all_questions.sort(key=lambda question: (question.passage_order, question.question_order))
         session_id = str(uuid.uuid4())
         composition = {
             "bank_name": self.bank["name"],
@@ -407,6 +451,43 @@ class PostgresStore:
             raise KeyError("REPORT_NOT_FOUND")
         return row["report"]
 
+    def get_review(self, student_id: str, session_id: str) -> dict:
+        record = self._load_session(student_id, session_id)
+        if record.status == "in_progress":
+            raise ValueError("SESSION_NOT_SUBMITTED")
+        report = self.get_report(student_id, session_id)
+        correctness = {
+            item["question_id"]: item["correct"]
+            for item in report["question_results"]
+        }
+        items = []
+        for qid in record.question_ids:
+            question = self.questions[qid]
+            items.append(
+                {
+                    "question_id": question.id,
+                    "type": question.type,
+                    "passage_group_id": question.passage_group_id,
+                    "passage": question.passage,
+                    "stem": question.stem,
+                    "options": question.options,
+                    "saved_answer": record.answers.get(qid),
+                    "presentation_mode": question.presentation_mode,
+                    "blank_label": question.blank_label,
+                    "passage_order": question.passage_order,
+                    "question_order": question.question_order,
+                    "correct": correctness[qid],
+                }
+            )
+        return {
+            "session_id": record.id,
+            "bank_id": record.bank_id,
+            "bank_name": record.bank_name,
+            "bank_version": record.bank_version,
+            "status": record.status,
+            "items": items,
+        }
+
     def save_answer(
         self, student_id: str, session_id: str, question_id: str, answer: str, now: datetime
     ) -> SessionRecord:
@@ -502,9 +583,9 @@ class PostgresStore:
                 for qtype, values in type_stats.items()
             },
             "knowledge_point_levels": levels,
-            "weak_points": [{"knowledge_point": item["knowledge_point"], "error_stage": "Answer selection"} for item in weak],
+            "weak_points": [{"knowledge_point": item["knowledge_point"], "error_stage": "答案选择"} for item in weak],
             "suggestions": [
-                {"knowledge_point": item["knowledge_point"], "action": f"Review {item['knowledge_point']} and complete a short focused set."}
+                {"knowledge_point": item["knowledge_point"], "action": f"复习“{item['knowledge_point']}”并完成一组针对性短练。"}
                 for item in weak
             ],
             "question_results": results,

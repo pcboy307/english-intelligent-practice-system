@@ -55,7 +55,11 @@
         "passage",
         "stem",
         "options",
-        "saved_answer"
+        "saved_answer",
+        "presentation_mode",
+        "blank_label",
+        "passage_order",
+        "question_order"
       ],
       "properties": {
         "question_id": {"type": "string", "minLength": 1},
@@ -75,7 +79,14 @@
             {"type": "string"},
             {"type": "array", "items": {"type": "string"}}
           ]
-        }
+        },
+        "presentation_mode": {
+          "type": "string",
+          "enum": ["cloze_single_choice", "passage_single_choice", "seven_choice", "reading_single_choice"]
+        },
+        "blank_label": {"type": "string", "minLength": 1},
+        "passage_order": {"type": "integer", "minimum": 1},
+        "question_order": {"type": "integer", "minimum": 1}
       }
     },
     "compositionNote": {

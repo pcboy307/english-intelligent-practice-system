@@ -30,7 +30,8 @@ $requiredFiles = @(
   "docs/curriculum/grammar-id-ownership.md",
   "docs/curriculum/grammar-whitelist-mapping.md",
   "docs/curriculum/textbook-evidence.md",
-  "docs/requirements-confirmation.md"
+  "docs/requirements-confirmation.md",
+  "apps/mobile/src/api/generated.d.ts"
 )
 foreach ($file in $requiredFiles) {
   Assert-True (Test-Path -LiteralPath $file) "Missing required file: $file"
@@ -103,6 +104,10 @@ Assert-True ($reporting.stage_report.require_cross_bank_notice -eq $true) "Cross
 $appConfig = Read-Json "config/app.json"
 Assert-True ($appConfig.time_authority -eq "server_deadline") "Time authority mismatch"
 Assert-True (@($appConfig.data_clear_scope).Count -eq 2) "Data clear must include local and backend"
+Assert-True ($appConfig.web_layout.mobile_max_width -eq 480) "Mobile web width mismatch"
+Assert-True ($appConfig.web_layout.desktop_breakpoint -eq 768) "Desktop breakpoint mismatch"
+Assert-True ($appConfig.web_layout.desktop_max_width -eq 960) "Desktop web width mismatch"
+Assert-True ($appConfig.web_layout.body_max_width -eq 760) "Body column width mismatch"
 Write-Output "PASS report-and-app invariants"
 
 $tokens = Read-Json "contracts/design-tokens.json"
@@ -112,12 +117,24 @@ Assert-True ($tokens.color.accent -match "^#[0-9A-F]{6}$") "Accent must be a six
 Assert-True ($tokens.radius.maximum -eq 14) "Radius maximum mismatch"
 Assert-True ($tokens.font.sizes.minimum -eq 13) "Minimum font size mismatch"
 Assert-True ($tokens.control.touchTargetMin -eq 44) "Touch target mismatch"
+Assert-True ($tokens.control.touchTargetScope -eq "mobile_only") "Touch target scope mismatch"
 $accentOnly = @($tokens.color_usage.accent_only_for)
 $accentNever = @($tokens.color_usage.accent_never_for)
 Assert-True (($accentOnly -join ",") -eq "progress_bar,selected_control,radar_chart_stroke") "Accent allowed uses mismatch"
 Assert-True (($accentNever -join ",") -eq "button_background,body_text,card_background,large_surface,border_default") "Accent forbidden uses mismatch"
 Assert-True ($tokens.color.primaryButtonBackground -eq "#111111") "Primary button background mismatch"
 Assert-True ($tokens.color.primaryButtonText -eq "#FFFFFF") "Primary button text mismatch"
+Assert-True ($tokens.web_desktop.contentMaxWidth -eq 960) "Desktop content max width mismatch"
+Assert-True ($tokens.web_desktop.mobileMaxWidth -eq 480) "Mobile content max width mismatch"
+Assert-True ($tokens.web.maxContentWidth -eq 960) "Web content max width mismatch"
+Assert-True ($tokens.web.mobileMaxContentWidth -eq 480) "Web mobile max width mismatch"
+Assert-True ($tokens.web_desktop.bodyMaxWidth -eq 760) "Body max width mismatch"
+Assert-True ($tokens.web_desktop.optionFontSize -eq 15) "Desktop option font size mismatch"
+Assert-True ($tokens.web_desktop.optionLineHeight -eq 1.5) "Desktop option line height mismatch"
+Assert-True ($tokens.web_desktop.optionPadding -eq 12) "Desktop option padding mismatch"
+Assert-True ($tokens.web_desktop.optionHeight -eq 40) "Desktop option height mismatch"
+Assert-True ($tokens.web_desktop.optionGap -eq 8) "Desktop option gap mismatch"
+Assert-True ($tokens.web_desktop.buttonHeight -eq 40) "Desktop button height mismatch"
 Write-Output "PASS design-tokens"
 
 $officialVocabulary = Read-Json "contracts/vocabulary/kebiao-2022-level3.json"
@@ -165,8 +182,11 @@ Assert-True ($grammarEnum -contains "infinitive_nonfinite") "Question grammar en
 Write-Output "PASS grammar whitelistRows=15 grammarIds=21 unitRows=25"
 
 $openapi = Get-Content -Raw -Encoding UTF8 -LiteralPath "contracts/openapi.yaml"
+$generatedApi = Get-Content -Raw -Encoding UTF8 -LiteralPath "apps/mobile/src/api/generated.d.ts"
+Assert-True ($generatedApi.Contains('"/practice/{session_id}/review"')) "Generated API type is stale"
 foreach ($path in @(
   "/practice/start:",
+  "/practice/{session_id}/review:",
   "/practice/{session_id}/answer:",
   "/practice/{session_id}/submit:",
   "/reports/{session_id}:",
@@ -188,8 +208,8 @@ foreach ($path in @(
 }
 Assert-True (-not $openapi.Contains("approved_by_owner")) "Client-side owner approval must be removed"
 Assert-True (-not [regex]::IsMatch($openapi, "(?m)^security:")) "Top-level global security must be absent"
-Assert-True ([regex]::Matches($openapi, "(?m)^      security:\s*$").Count -eq 21) "Every operation must declare security"
-Assert-True ([regex]::Matches($openapi, "- StudentId: \[\]").Count -eq 9) "Student security declaration mismatch"
+Assert-True ([regex]::Matches($openapi, "(?m)^      security:\s*$").Count -eq 22) "Every operation must declare security"
+Assert-True ([regex]::Matches($openapi, "- StudentId: \[\]").Count -eq 10) "Student security declaration mismatch"
 Assert-True ([regex]::Matches($openapi, "- AdminToken: \[\]").Count -eq 12) "Admin security declaration mismatch"
 Assert-True ($openapi.Contains("/approve-generation:")) "Generation approval path missing"
 Assert-True ($openapi.Contains("Idempotency-Key")) "Submit idempotency contract missing"
