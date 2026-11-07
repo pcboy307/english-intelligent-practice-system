@@ -88,6 +88,10 @@ IRREGULAR = {
     "taken": "take",
     "wrote": "write",
     "written": "write",
+    "began": "begin",
+    "knew": "know",
+    "fallen": "fall",
+    "fell": "fall",
     "ate": "eat",
     "eaten": "eat",
     "saw": "see",
@@ -122,6 +126,7 @@ IRREGULAR = {
     "sold": "sell",
     "sent": "send",
     "spent": "spend",
+    "slept": "sleep",
     "stood": "stand",
     "told": "tell",
     "understood": "understand",
@@ -177,16 +182,22 @@ def candidate_lemmas(token: str) -> list[str]:
     if token.endswith("ed") and len(token) >= 4:
         stem = token[:-2]
         candidates.extend([stem, stem + "e", stem[:-1] if len(stem) > 2 and stem[-1] == stem[-2] else stem])
-    if token.endswith("es") and len(token) > 4:
+    if token.endswith("es") and len(token) >= 4:
         candidates.append(token[:-2])
     if token.endswith("s") and len(token) > 3:
         candidates.append(token[:-1])
     if token.endswith("er") and len(token) > 3:
-        candidates.append(token[:-2])
+        candidates.extend([token[:-2], token[:-2] + "e"])
     if token.endswith("est") and len(token) > 5:
-        candidates.append(token[:-3])
+        candidates.extend([token[:-3], token[:-3] + "e"])
+    if token.endswith("ier") and len(token) > 4:
+        candidates.append(token[:-3] + "y")
+    if token.endswith("iest") and len(token) > 5:
+        candidates.append(token[:-4] + "y")
     if token.endswith("ly") and len(token) > 4:
-        candidates.append(token[:-2])
+        candidates.extend([token[:-2], token[:-2] + "e"])
+    if token.endswith("ply") and len(token) > 4:
+        candidates.append(token[:-1] + "e")
     if token.endswith("less") and len(token) > 6:
         candidates.append(token[:-4])
     if token.endswith("ful") and len(token) > 5:

@@ -13,7 +13,7 @@ from psycopg.rows import dict_row
 
 
 BASE = "http://127.0.0.1:8000/api/v1"
-TITLE = re.compile(r"\d{4}-\d{2}-\d{2}-\d{2}-\d{2}-30题-\d+\.\d{2}分")
+TITLE = re.compile(r"\d{4}-\d{2}-\d{2}-\d{2}-\d{2}-(?:29|30)题-\d+\.\d{2}分")
 
 
 def main() -> None:
@@ -34,7 +34,7 @@ def main() -> None:
         report = submitted.json()
         analysis = report["weakness_analysis"]
         assert TITLE.fullmatch(report["report_title"])
-        assert report["question_count"] == 30
+        assert report["question_count"] in {29, 30}
         assert len(analysis) <= 100
         assert report["weakness_analysis_source"] in {"llm", "fallback"}
         assert re.search(r"[\u4e00-\u9fff]", analysis)

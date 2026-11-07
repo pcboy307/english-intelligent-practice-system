@@ -70,21 +70,16 @@
       "选必二": 0.45,
       "cross_book": 0.05
     },
-    "question_point_book_distribution_count_rules": {
-      "30": {
-        "必修": 6,
-        "选必一": 9,
-        "选必二": 14,
-        "cross_book": 1
-      },
-      "2000": {
-        "必修": 400,
-        "选必一": 600,
-        "选必二": 900,
-        "cross_book": 100
-      },
-      "policy": "30 题卷采用最大余数取整后由所有者批准的 14/9/6/1；2000 题使用精确整数 900/600/400/100。"
+    "book_distribution_rounding": {
+      "method": "largest_remainder",
+      "tie_break_order": ["选必二", "选必一", "必修", "cross_book"],
+      "self_tests": {
+        "29": {"必修": 6, "选必一": 9, "选必二": 13, "cross_book": 1},
+        "30": {"必修": 6, "选必一": 9, "选必二": 14, "cross_book": 1},
+        "42": {"必修": 8, "选必一": 13, "选必二": 19, "cross_book": 2}
+      }
     },
+    "paper_question_counts": {"reading": 29, "gap_fill": 30},
     "do_not_split_same_passage_across_sessions": true,
     "allow_same_question_repeat_in_m1": true,
     "seven_day_repeat_rate_max": 0.10,
@@ -94,5 +89,11 @@
     "source": "session.bank_id",
     "allow_cross_bank_sampling": false,
     "active_bank_required_for_new_session": true
+  },
+  "assembly": {
+    "hard_constraints_first": true,
+    "soft_weight_second": true,
+    "max_same_grammar_tag_per_paper": 3,
+    "max_questions_sharing_passage_between_active_sessions": 0
   }
 }

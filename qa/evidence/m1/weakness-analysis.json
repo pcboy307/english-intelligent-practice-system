@@ -1,0 +1,20 @@
+{
+  "session_id": "64fe9ddf-62b9-45e5-aff8-a28c89ebc490",
+  "question_count": 29,
+  "report_title": "2026-11-07-16-54-29题-79.31分",
+  "wrong_question_ids": [
+    "DEMO2-G01",
+    "DEMO2-G02",
+    "DEMO2-G03",
+    "DEMO2-G04",
+    "DEMO2-G05",
+    "DEMO2-G06"
+  ],
+  "weakness_analysis_source": "llm",
+  "weakness_analysis": "你已全答对 23 题，未答题数为 0，故无需归因于遗忘。薄弱点在于现在完成时、过去分词作定语及一般现在时被动语态，错因多是将动作误判为过去或忽略被动含义。",
+  "analysis_length": 77,
+  "contains_chinese": true,
+  "at_most_100_chars": true,
+  "question_results_have_stem_and_options": true,
+  "passes": true
+}

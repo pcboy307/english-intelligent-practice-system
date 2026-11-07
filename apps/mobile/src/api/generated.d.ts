@@ -565,6 +565,9 @@ export interface components {
                 [key: string]: number;
             };
             topics: string[];
+            assembly_log: {
+                [key: string]: unknown;
+            };
         };
         /** Practice session without answers */
         session: {
@@ -618,6 +621,9 @@ export interface components {
                         [key: string]: number;
                     };
                     topics: string[];
+                    assembly_log: {
+                        [key: string]: unknown;
+                    };
                 };
             };
         };

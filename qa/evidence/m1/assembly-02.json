@@ -1,0 +1,396 @@
+{
+  "paper_number": 2,
+  "paper_mode": "gap_fill",
+  "paper_label": "30 题七选五场",
+  "question_count": 30,
+  "question_type_counts": {
+    "cloze": 15,
+    "grammar_fill": 10,
+    "gap_fill": 5
+  },
+  "book_quota_expected": {
+    "必修": 6,
+    "选必一": 9,
+    "选必二": 14,
+    "cross_book": 1
+  },
+  "book_quota_actual": {
+    "选必二": 14,
+    "选必一": 9,
+    "必修": 6,
+    "cross_book": 1
+  },
+  "difficulty_quota_expected": {
+    "easy": 12,
+    "medium": 12,
+    "hard": 6
+  },
+  "difficulty_actual": {
+    "easy": 12,
+    "medium": 12,
+    "hard": 6
+  },
+  "grammar_tag_counts": {
+    "adverbial_clauses": 2,
+    "articles": 2,
+    "comparatives_superlatives": 1,
+    "conjunctions": 2,
+    "infinitive_nonfinite": 2,
+    "passive_voice_tenses": 3,
+    "past_participle_nonfinite": 1,
+    "prepositions": 1,
+    "pronouns": 2,
+    "relative_clauses_defining": 1,
+    "subject_verb_agreement": 3,
+    "subjunctive_basic_if": 2,
+    "tense_system": 3,
+    "v_ing_nonfinite": 1,
+    "with_compound": 1,
+    "word_formation": 3
+  },
+  "knowledge_point_counts": {
+    "avoid_pattern": 1,
+    "completion_adverb": 1,
+    "condition": 1,
+    "contrast_preposition": 1,
+    "convenience_adjective": 1,
+    "fleet_noun": 1,
+    "future_action": 1,
+    "gap_fill_addition": 1,
+    "gap_fill_closing": 1,
+    "gap_fill_sequence": 1,
+    "gap_fill_support": 1,
+    "gap_fill_transition": 1,
+    "inspection_adverb": 1,
+    "local_community": 1,
+    "passive_feeling": 1,
+    "present_perfect_result": 1,
+    "progress_noun": 1,
+    "public_transport": 1,
+    "road_safety_noun": 1,
+    "station_relative": 1,
+    "一般现在时被动": 1,
+    "不定式作宾补": 1,
+    "不定式作目的状语": 1,
+    "主谓一致": 1,
+    "副词化": 1,
+    "基础虚拟语气": 1,
+    "并列连词": 1,
+    "现在完成时": 2,
+    "过去分词作定语": 1
+  },
+  "topics": [
+    "school life",
+    "school science",
+    "transport"
+  ],
+  "selected_passage_groups": [
+    "DEMO-CLOZE-02",
+    "DEMO-CLOZE-02",
+    "DEMO-CLOZE-02",
+    "DEMO-CLOZE-02",
+    "DEMO-CLOZE-02",
+    "DEMO-CLOZE-02",
+    "DEMO-CLOZE-02",
+    "DEMO-CLOZE-02",
+    "DEMO-CLOZE-02",
+    "DEMO-CLOZE-02",
+    "DEMO-CLOZE-02",
+    "DEMO-CLOZE-02",
+    "DEMO-CLOZE-02",
+    "DEMO-CLOZE-02",
+    "DEMO-CLOZE-02",
+    "DEMO-GRAMMAR-02",
+    "DEMO-GRAMMAR-02",
+    "DEMO-GRAMMAR-02",
+    "DEMO-GRAMMAR-02",
+    "DEMO-GRAMMAR-02",
+    "DEMO-GRAMMAR-02",
+    "DEMO-GRAMMAR-02",
+    "DEMO-GRAMMAR-02",
+    "DEMO-GRAMMAR-02",
+    "DEMO-GRAMMAR-02",
+    "DEMO-GAP-01",
+    "DEMO-GAP-01",
+    "DEMO-GAP-01",
+    "DEMO-GAP-01",
+    "DEMO-GAP-01"
+  ],
+  "recent_three_question_weights": [],
+  "question_weights": [
+    {
+      "question_id": "DEMO2-C16",
+      "type": "cloze",
+      "passage_group_id": "DEMO-CLOZE-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-C17",
+      "type": "cloze",
+      "passage_group_id": "DEMO-CLOZE-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-C18",
+      "type": "cloze",
+      "passage_group_id": "DEMO-CLOZE-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-C19",
+      "type": "cloze",
+      "passage_group_id": "DEMO-CLOZE-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-C20",
+      "type": "cloze",
+      "passage_group_id": "DEMO-CLOZE-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-C21",
+      "type": "cloze",
+      "passage_group_id": "DEMO-CLOZE-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-C22",
+      "type": "cloze",
+      "passage_group_id": "DEMO-CLOZE-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-C23",
+      "type": "cloze",
+      "passage_group_id": "DEMO-CLOZE-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-C24",
+      "type": "cloze",
+      "passage_group_id": "DEMO-CLOZE-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-C25",
+      "type": "cloze",
+      "passage_group_id": "DEMO-CLOZE-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-C26",
+      "type": "cloze",
+      "passage_group_id": "DEMO-CLOZE-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-C27",
+      "type": "cloze",
+      "passage_group_id": "DEMO-CLOZE-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-C28",
+      "type": "cloze",
+      "passage_group_id": "DEMO-CLOZE-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-C29",
+      "type": "cloze",
+      "passage_group_id": "DEMO-CLOZE-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-C30",
+      "type": "cloze",
+      "passage_group_id": "DEMO-CLOZE-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-G11",
+      "type": "grammar_fill",
+      "passage_group_id": "DEMO-GRAMMAR-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-G12",
+      "type": "grammar_fill",
+      "passage_group_id": "DEMO-GRAMMAR-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-G13",
+      "type": "grammar_fill",
+      "passage_group_id": "DEMO-GRAMMAR-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-G14",
+      "type": "grammar_fill",
+      "passage_group_id": "DEMO-GRAMMAR-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-G15",
+      "type": "grammar_fill",
+      "passage_group_id": "DEMO-GRAMMAR-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-G16",
+      "type": "grammar_fill",
+      "passage_group_id": "DEMO-GRAMMAR-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-G17",
+      "type": "grammar_fill",
+      "passage_group_id": "DEMO-GRAMMAR-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-G18",
+      "type": "grammar_fill",
+      "passage_group_id": "DEMO-GRAMMAR-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-G19",
+      "type": "grammar_fill",
+      "passage_group_id": "DEMO-GRAMMAR-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-G20",
+      "type": "grammar_fill",
+      "passage_group_id": "DEMO-GRAMMAR-02",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-P01",
+      "type": "gap_fill",
+      "passage_group_id": "DEMO-GAP-01",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-P02",
+      "type": "gap_fill",
+      "passage_group_id": "DEMO-GAP-01",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-P03",
+      "type": "gap_fill",
+      "passage_group_id": "DEMO-GAP-01",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-P04",
+      "type": "gap_fill",
+      "passage_group_id": "DEMO-GAP-01",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    },
+    {
+      "question_id": "DEMO2-P05",
+      "type": "gap_fill",
+      "passage_group_id": "DEMO-GAP-01",
+      "weight": 1.0,
+      "base_weight": 1.0,
+      "recent_three_penalty": 0,
+      "appeared_in_recent_three": false
+    }
+  ],
+  "error_pool_ratio": 0.0,
+  "hard_constraint_triggered": false,
+  "hard_constraint_rejections": [],
+  "valid_skeleton_count": 8
+}

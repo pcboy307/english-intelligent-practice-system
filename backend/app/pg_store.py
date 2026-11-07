@@ -17,6 +17,7 @@ from psycopg.types.json import Jsonb
 
 from .demo_bank import DemoQuestion, demo_bank
 from .analysis import generate_weakness_analysis
+from .composer import assemble_demo_paper
 from .store import SessionRecord
 
 
@@ -78,19 +79,20 @@ class PostgresStore:
                 for question in seeded["questions"]:
                     seen_passages.setdefault(
                         question.passage_group_id,
-                        (question.type, question.passage, question.book_source),
+                        (question.type, question.passage, question.topic, question.book_source),
                     )
-                for group_id, (qtype, text, book_source) in seen_passages.items():
+                for group_id, (qtype, text, topic, book_source) in seen_passages.items():
                     connection.execute(
                         """
                         UPDATE passages
-                        SET type=%s, content=%s, word_count=%s, book_source=%s
+                        SET type=%s, content=%s, word_count=%s, topic=%s, book_source=%s
                         WHERE bank_id=%s AND passage_group_id=%s
                         """,
                         (
                             qtype,
                             text,
                             len(text.split()),
+                            topic,
                             book_source,
                             seeded["bank_id"],
                             group_id,
@@ -141,15 +143,21 @@ class PostgresStore:
                     seeded["difficulty_profile"],
                     Jsonb(
                         {
-                            "question_type_counts": {"cloze": 15, "grammar_fill": 10, "gap_fill": 5},
+                            "question_type_counts": {
+                                "cloze": 30,
+                                "grammar_fill": 20,
+                                "reading": 20,
+                                "gap_fill": 10,
+                            },
                             "grammar_fill_coverage": {
                                 "tense_system": 4,
-                                "past_participle_nonfinite": 1,
+                                "past_participle_nonfinite": 2,
                                 "passive_voice_tenses": 1,
-                                "infinitive_nonfinite": 2,
+                                "infinitive_nonfinite": 4,
                                 "subject_verb_agreement": 1,
-                                "word_formation": 1,
+                                "word_formation": 2,
                                 "conjunctions": 1,
+                                "subjunctive_basic_if": 1,
                             },
                             "generated_at": datetime.now(timezone.utc).isoformat(),
                         }
@@ -160,9 +168,9 @@ class PostgresStore:
             for question in seeded["questions"]:
                 seen_passages.setdefault(
                     question.passage_group_id,
-                    (question.type, question.passage, question.book_source),
+                    (question.type, question.passage, question.topic, question.book_source),
                 )
-            for group_id, (qtype, text, book_source) in seen_passages.items():
+            for group_id, (qtype, text, topic, book_source) in seen_passages.items():
                 connection.execute(
                     """
                     INSERT INTO passages
@@ -176,7 +184,7 @@ class PostgresStore:
                         qtype,
                         text,
                         len(text.split()),
-                        "community life",
+                        topic,
                         book_source,
                     ),
                 )
@@ -245,7 +253,9 @@ class PostgresStore:
     def active_bank(self) -> dict:
         return self.bank
 
-    def _student_state(self, student_id: str) -> tuple[dict, dict, dict]:
+    def _student_state(
+        self, student_id: str
+    ) -> tuple[dict, dict, dict, set[str], set[str], int]:
         with self.connection() as connection:
             tags = {
                 row["question_id"]: {
@@ -269,6 +279,54 @@ class PostgresStore:
                 """,
                 (student_id, self.bank["bank_id"]),
             ).fetchall()
+            recent_sessions = connection.execute(
+                """
+                SELECT id
+                FROM practice_sessions
+                WHERE student_id=%s AND bank_id=%s
+                  AND status IN ('submitted', 'expired')
+                ORDER BY COALESCE(submitted_at, started_at) DESC
+                LIMIT 3
+                """,
+                (student_id, self.bank["bank_id"]),
+            ).fetchall()
+            recent_ids = set()
+            if recent_sessions:
+                recent_ids = {
+                    item["question_id"]
+                    for item in connection.execute(
+                        """
+                        SELECT question_id
+                        FROM session_items
+                        WHERE session_id = ANY(%s)
+                        """,
+                        ([row["id"] for row in recent_sessions],),
+                    ).fetchall()
+                }
+            active_groups = {
+                item["passage_group_id"]
+                for item in connection.execute(
+                    """
+                    SELECT DISTINCT q.passage_group_id
+                    FROM practice_sessions ps
+                    JOIN session_items si ON si.session_id=ps.id
+                    JOIN questions q ON q.id=si.question_id
+                    WHERE ps.student_id=%s
+                      AND ps.bank_id=%s
+                      AND ps.status='in_progress'
+                    """,
+                    (student_id, self.bank["bank_id"]),
+                ).fetchall()
+            }
+            submitted_count = connection.execute(
+                """
+                SELECT count(*) AS count
+                FROM practice_sessions
+                WHERE student_id=%s AND bank_id=%s
+                  AND status IN ('submitted', 'expired')
+                """,
+                (student_id, self.bank["bank_id"]),
+            ).fetchone()["count"]
         history: dict[str, list[tuple[bool, datetime]]] = defaultdict(list)
         appearances: dict[str, list[datetime]] = defaultdict(list)
         for row in rows:
@@ -283,16 +341,16 @@ class PostgresStore:
             )
             if result:
                 history[row["question_id"]].append((result["correct"], row["started_at"]))
-        return tags, history, appearances
+        return tags, history, appearances, recent_ids, active_groups, submitted_count
 
-    def _weight(
+    def _weight_details(
         self,
         question: DemoQuestion,
         tags: dict,
         history: dict,
         appearances: dict,
         now: datetime,
-    ) -> float:
+    ) -> dict:
         tag = tags.get(question.id)
         i_err = 1.0 if tag and tag["status"] == "active" else 0.0
         s_kp = min(
@@ -321,7 +379,23 @@ class PostgresStore:
         g_gap = max(0.0, 0.7 - mastery) * 2
         seen = appearances.get(question.id, [])
         recent = 1.2 if len(seen[-3:]) >= 3 else (0.6 if any(now - at <= timedelta(days=7) for at in seen) else 0)
-        return max(0.1, 1.0 + 2 * i_err + s_kp + 0.5 * s_type + 0.8 * g_gap - recent)
+        base = 1.0 + 2 * i_err + s_kp + 0.5 * s_type + 0.8 * g_gap
+        return {
+            "weight": round(max(0.1, base - recent), 4),
+            "base_weight": round(max(0.1, base), 4),
+            "recent_three_penalty": recent,
+            "i_err": i_err,
+        }
+
+    def _weight(
+        self,
+        question: DemoQuestion,
+        tags: dict,
+        history: dict,
+        appearances: dict,
+        now: datetime,
+    ) -> float:
+        return self._weight_details(question, tags, history, appearances, now)["weight"]
 
     def _sample(self, candidates: list[DemoQuestion], amount: int, weights: list[float], rng) -> list[DemoQuestion]:
         remaining = list(zip(candidates, weights))
@@ -342,22 +416,36 @@ class PostgresStore:
     def start_session(self, student_id: str, duration_minutes: int, now: datetime) -> SessionRecord:
         if duration_minutes != 30:
             raise ValueError("INVALID_DURATION")
-        tags, history, appearances = self._student_state(student_id)
-        rng = random.SystemRandom()
-        all_questions: list[DemoQuestion] = []
-        for qtype, amount in {"cloze": 15, "grammar_fill": 10, "gap_fill": 5}.items():
-            candidates = [q for q in self.questions.values() if q.type == qtype]
-            weights = [self._weight(q, tags, history, appearances, now) for q in candidates]
-            all_questions.extend(self._sample(candidates, amount, weights, rng))
-        all_questions.sort(key=lambda question: (question.passage_order, question.question_order))
+        tags, history, appearances, recent_ids, active_groups, submitted_count = self._student_state(student_id)
+        weight_details = {
+            question.id: self._weight_details(question, tags, history, appearances, now)
+            for question in self.questions.values()
+        }
+        practice_config = json.loads(
+            (Path(__file__).resolve().parents[2] / "config" / "practice-modes.json")
+            .read_text(encoding="utf-8")
+        )
+        all_questions, assembly_log = assemble_demo_paper(
+            list(self.questions.values()),
+            submitted_count + 1,
+            weight_details,
+            recent_ids,
+            active_groups,
+            {
+                question.id for question in self.questions.values() if tags.get(question.id, {}).get("status") == "active"
+            },
+            practice_config["paper_constraints"]["question_point_book_distribution"],
+            practice_config["paper_constraints"]["book_distribution_rounding"]["tie_break_order"],
+        )
         session_id = str(uuid.uuid4())
         composition = {
             "bank_name": self.bank["name"],
-            "question_type_counts": {"cloze": 15, "grammar_fill": 10, "gap_fill": 5},
-            "error_pool_ratio": 0.0,
-            "difficulty_distribution": {"easy": 0.4, "medium": 0.4, "hard": 0.2},
-            "book_distribution": {"必修": 0.2, "选必一": 0.3, "选必二": 0.45, "cross_book": 0.05},
-            "topics": ["environment", "community life", "reading"],
+            "question_type_counts": assembly_log["question_type_counts"],
+            "error_pool_ratio": assembly_log["error_pool_ratio"],
+            "difficulty_distribution": assembly_log["difficulty_actual"],
+            "book_distribution": assembly_log["book_quota_actual"],
+            "topics": assembly_log["topics"],
+            "assembly_log": assembly_log,
         }
         record = SessionRecord(
             id=session_id,

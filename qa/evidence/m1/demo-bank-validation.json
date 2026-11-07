@@ -1,0 +1,384 @@
+{
+  "bank_id": "00000000-0000-4000-8000-000000000002",
+  "question_count": 80,
+  "passage_count": 11,
+  "question_type_counts": {
+    "cloze": 30,
+    "grammar_fill": 20,
+    "reading": 20,
+    "gap_fill": 10
+  },
+  "new_passage_count": 8,
+  "generation": {
+    "mode": "deterministic_authored_content",
+    "llm_calls": 0,
+    "llm_tokens": 0
+  },
+  "passages": [
+    {
+      "passage_id": "DEMO-CLOZE-01",
+      "type": "cloze",
+      "new_in_this_expansion": false,
+      "word_count": 191,
+      "word_count_interval": [
+        170,
+        220
+      ],
+      "question_count": 15,
+      "expected_question_count": 15,
+      "grammar_tags": [
+        "adverbial_clauses",
+        "articles",
+        "comparatives_superlatives",
+        "prepositions",
+        "pronouns",
+        "subject_verb_agreement",
+        "subjunctive_basic_should",
+        "tense_system",
+        "v_ing_nonfinite",
+        "with_compound",
+        "word_formation"
+      ],
+      "invalid_grammar_tags": [],
+      "single_word_denominator": 191,
+      "unknown_words": [],
+      "unknown_ratio": 0.0,
+      "advanced_sample_hits": [],
+      "checks": {
+        "question_count": true,
+        "word_count_interval": true,
+        "grammar_tags_within_21_ids": true,
+        "unknown_ratio_at_most_3_percent": true
+      },
+      "passes": true
+    },
+    {
+      "passage_id": "DEMO-CLOZE-02",
+      "type": "cloze",
+      "new_in_this_expansion": true,
+      "word_count": 182,
+      "word_count_interval": [
+        170,
+        220
+      ],
+      "question_count": 15,
+      "expected_question_count": 15,
+      "grammar_tags": [
+        "adverbial_clauses",
+        "articles",
+        "comparatives_superlatives",
+        "passive_voice_tenses",
+        "prepositions",
+        "pronouns",
+        "relative_clauses_defining",
+        "subject_verb_agreement",
+        "subjunctive_basic_if",
+        "tense_system",
+        "v_ing_nonfinite",
+        "with_compound",
+        "word_formation"
+      ],
+      "invalid_grammar_tags": [],
+      "single_word_denominator": 182,
+      "unknown_words": [],
+      "unknown_ratio": 0.0,
+      "advanced_sample_hits": [],
+      "checks": {
+        "question_count": true,
+        "word_count_interval": true,
+        "grammar_tags_within_21_ids": true,
+        "unknown_ratio_at_most_3_percent": true
+      },
+      "passes": true
+    },
+    {
+      "passage_id": "DEMO-GAP-01",
+      "type": "gap_fill",
+      "new_in_this_expansion": false,
+      "word_count": 122,
+      "word_count_interval": [
+        0,
+        220
+      ],
+      "question_count": 5,
+      "expected_question_count": 5,
+      "grammar_tags": [
+        "adverbial_clauses",
+        "conjunctions",
+        "passive_voice_tenses",
+        "pronouns",
+        "subject_verb_agreement"
+      ],
+      "invalid_grammar_tags": [],
+      "single_word_denominator": 122,
+      "unknown_words": [
+        "arrange",
+        "leaders"
+      ],
+      "unknown_ratio": 0.016393,
+      "advanced_sample_hits": [],
+      "checks": {
+        "question_count": true,
+        "word_count_interval": true,
+        "grammar_tags_within_21_ids": true,
+        "unknown_ratio_at_most_3_percent": true
+      },
+      "passes": true
+    },
+    {
+      "passage_id": "DEMO-GAP-02",
+      "type": "gap_fill",
+      "new_in_this_expansion": true,
+      "word_count": 91,
+      "word_count_interval": [
+        0,
+        220
+      ],
+      "question_count": 5,
+      "expected_question_count": 5,
+      "grammar_tags": [
+        "passive_voice_tenses",
+        "past_participle_nonfinite",
+        "relative_clauses_defining",
+        "relative_clauses_non_defining",
+        "v_ing_nonfinite"
+      ],
+      "invalid_grammar_tags": [],
+      "single_word_denominator": 91,
+      "unknown_words": [],
+      "unknown_ratio": 0.0,
+      "advanced_sample_hits": [],
+      "checks": {
+        "question_count": true,
+        "word_count_interval": true,
+        "grammar_tags_within_21_ids": true,
+        "unknown_ratio_at_most_3_percent": true
+      },
+      "passes": true
+    },
+    {
+      "passage_id": "DEMO-GRAMMAR-01",
+      "type": "grammar_fill",
+      "new_in_this_expansion": false,
+      "word_count": 125,
+      "word_count_interval": [
+        120,
+        180
+      ],
+      "question_count": 10,
+      "expected_question_count": 10,
+      "grammar_tags": [
+        "conjunctions",
+        "infinitive_nonfinite",
+        "passive_voice_tenses",
+        "past_participle_nonfinite",
+        "subject_verb_agreement",
+        "subjunctive_basic_if",
+        "tense_system",
+        "word_formation"
+      ],
+      "invalid_grammar_tags": [],
+      "single_word_denominator": 125,
+      "unknown_words": [
+        "unused",
+        "protection",
+        "visitors"
+      ],
+      "unknown_ratio": 0.024,
+      "advanced_sample_hits": [],
+      "checks": {
+        "question_count": true,
+        "word_count_interval": true,
+        "grammar_tags_within_21_ids": true,
+        "unknown_ratio_at_most_3_percent": true
+      },
+      "passes": true
+    },
+    {
+      "passage_id": "DEMO-GRAMMAR-02",
+      "type": "grammar_fill",
+      "new_in_this_expansion": true,
+      "word_count": 125,
+      "word_count_interval": [
+        120,
+        180
+      ],
+      "question_count": 10,
+      "expected_question_count": 10,
+      "grammar_tags": [
+        "conjunctions",
+        "infinitive_nonfinite",
+        "passive_voice_tenses",
+        "past_participle_nonfinite",
+        "subject_verb_agreement",
+        "subjunctive_basic_if",
+        "tense_system",
+        "word_formation"
+      ],
+      "invalid_grammar_tags": [],
+      "single_word_denominator": 125,
+      "unknown_words": [
+        "workshops"
+      ],
+      "unknown_ratio": 0.008,
+      "advanced_sample_hits": [],
+      "checks": {
+        "question_count": true,
+        "word_count_interval": true,
+        "grammar_tags_within_21_ids": true,
+        "unknown_ratio_at_most_3_percent": true
+      },
+      "passes": true
+    },
+    {
+      "passage_id": "DEMO-READING-01",
+      "type": "reading",
+      "new_in_this_expansion": true,
+      "word_count": 131,
+      "word_count_interval": [
+        0,
+        250
+      ],
+      "question_count": 4,
+      "expected_question_count": 4,
+      "grammar_tags": [
+        "adverbial_clauses",
+        "articles",
+        "cleft_basic",
+        "relative_clauses_defining"
+      ],
+      "invalid_grammar_tags": [],
+      "single_word_denominator": 130,
+      "unknown_words": [],
+      "unknown_ratio": 0.0,
+      "advanced_sample_hits": [],
+      "checks": {
+        "question_count": true,
+        "word_count_interval": true,
+        "grammar_tags_within_21_ids": true,
+        "unknown_ratio_at_most_3_percent": true
+      },
+      "passes": true
+    },
+    {
+      "passage_id": "DEMO-READING-02",
+      "type": "reading",
+      "new_in_this_expansion": true,
+      "word_count": 127,
+      "word_count_interval": [
+        0,
+        250
+      ],
+      "question_count": 4,
+      "expected_question_count": 4,
+      "grammar_tags": [
+        "infinitive_nonfinite",
+        "noun_clauses",
+        "passive_voice_tenses",
+        "relative_clauses_defining"
+      ],
+      "invalid_grammar_tags": [],
+      "single_word_denominator": 127,
+      "unknown_words": [],
+      "unknown_ratio": 0.0,
+      "advanced_sample_hits": [],
+      "checks": {
+        "question_count": true,
+        "word_count_interval": true,
+        "grammar_tags_within_21_ids": true,
+        "unknown_ratio_at_most_3_percent": true
+      },
+      "passes": true
+    },
+    {
+      "passage_id": "DEMO-READING-03",
+      "type": "reading",
+      "new_in_this_expansion": true,
+      "word_count": 118,
+      "word_count_interval": [
+        0,
+        250
+      ],
+      "question_count": 4,
+      "expected_question_count": 4,
+      "grammar_tags": [
+        "adverbial_clauses",
+        "articles",
+        "comparatives_superlatives",
+        "infinitive_nonfinite"
+      ],
+      "invalid_grammar_tags": [],
+      "single_word_denominator": 118,
+      "unknown_words": [],
+      "unknown_ratio": 0.0,
+      "advanced_sample_hits": [],
+      "checks": {
+        "question_count": true,
+        "word_count_interval": true,
+        "grammar_tags_within_21_ids": true,
+        "unknown_ratio_at_most_3_percent": true
+      },
+      "passes": true
+    },
+    {
+      "passage_id": "DEMO-READING-04",
+      "type": "reading",
+      "new_in_this_expansion": true,
+      "word_count": 132,
+      "word_count_interval": [
+        0,
+        250
+      ],
+      "question_count": 4,
+      "expected_question_count": 4,
+      "grammar_tags": [
+        "articles",
+        "comparatives_superlatives",
+        "infinitive_nonfinite"
+      ],
+      "invalid_grammar_tags": [],
+      "single_word_denominator": 131,
+      "unknown_words": [],
+      "unknown_ratio": 0.0,
+      "advanced_sample_hits": [],
+      "checks": {
+        "question_count": true,
+        "word_count_interval": true,
+        "grammar_tags_within_21_ids": true,
+        "unknown_ratio_at_most_3_percent": true
+      },
+      "passes": true
+    },
+    {
+      "passage_id": "DEMO-READING-05",
+      "type": "reading",
+      "new_in_this_expansion": true,
+      "word_count": 128,
+      "word_count_interval": [
+        0,
+        250
+      ],
+      "question_count": 4,
+      "expected_question_count": 4,
+      "grammar_tags": [
+        "articles",
+        "comparatives_superlatives",
+        "infinitive_nonfinite",
+        "noun_clauses"
+      ],
+      "invalid_grammar_tags": [],
+      "single_word_denominator": 128,
+      "unknown_words": [],
+      "unknown_ratio": 0.0,
+      "advanced_sample_hits": [],
+      "checks": {
+        "question_count": true,
+        "word_count_interval": true,
+        "grammar_tags_within_21_ids": true,
+        "unknown_ratio_at_most_3_percent": true
+      },
+      "passes": true
+    }
+  ],
+  "passes": true
+}

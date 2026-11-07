@@ -98,7 +98,8 @@
         "error_pool_ratio",
         "difficulty_distribution",
         "book_distribution",
-        "topics"
+        "topics",
+        "assembly_log"
       ],
       "properties": {
         "bank_name": {"type": "string"},
@@ -115,7 +116,11 @@
           "type": "object",
           "additionalProperties": {"type": "number", "minimum": 0, "maximum": 1}
         },
-        "topics": {"type": "array", "minItems": 3, "items": {"type": "string"}}
+        "topics": {"type": "array", "minItems": 3, "items": {"type": "string"}},
+        "assembly_log": {
+          "type": "object",
+          "additionalProperties": true
+        }
       }
     }
   }

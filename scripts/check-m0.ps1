@@ -88,14 +88,29 @@ Assert-True ((15 + 10 + 4) -in @($mode30.expected_question_counts)) "30-minute c
 Assert-True ((15 + 10 + 5) -in @($mode30.expected_question_counts)) "30-minute gap count mismatch"
 Assert-True (42 -in @($mode60.expected_question_counts)) "60-minute count mismatch"
 Assert-True ($practiceModes.bank_scope.allow_cross_bank_sampling -eq $false) "Cross-bank sampling must be forbidden"
-$bookCountRules = $practiceModes.paper_constraints.question_point_book_distribution_count_rules
-$count30 = @($bookCountRules.'30'.PSObject.Properties.Value)
-$count2000 = @($bookCountRules.'2000'.PSObject.Properties.Value)
-Assert-True ((($count30 | Measure-Object -Sum).Sum) -eq 30) "30-question book distribution must sum to 30"
-Assert-True ((($count2000 | Measure-Object -Sum).Sum) -eq 2000) "2000-question book distribution must sum to 2000"
-Assert-True ($bookCountRules.'30'.'选必二' -eq 14) "30-question elective-2 count mismatch"
-Assert-True ($bookCountRules.'30'.'cross_book' -eq 1) "30-question cross-book count mismatch"
-Assert-True ($bookCountRules.'2000'.'选必二' -eq 900) "2000-question elective-2 count mismatch"
+$rounding = $practiceModes.paper_constraints.book_distribution_rounding
+Assert-True ($rounding.method -eq "largest_remainder") "Book rounding method mismatch"
+Assert-True ((@($rounding.tie_break_order) -join ",") -eq "选必二,选必一,必修,cross_book") "Book rounding tie-break order mismatch"
+$count29 = $rounding.self_tests.'29'
+$count30 = $rounding.self_tests.'30'
+$count42 = $rounding.self_tests.'42'
+foreach ($testCase in @(
+  @{ Total = 29; Counts = $count29; Expected = @(13, 9, 6, 1) },
+  @{ Total = 30; Counts = $count30; Expected = @(14, 9, 6, 1) },
+  @{ Total = 42; Counts = $count42; Expected = @(19, 13, 8, 2) }
+)) {
+  $values = @($testCase.Counts.PSObject.Properties.Value)
+  Assert-True ((($values | Measure-Object -Sum).Sum) -eq $testCase.Total) "Largest-remainder sum mismatch for $($testCase.Total)"
+  Assert-True ($testCase.Counts.'选必二' -eq $testCase.Expected[0]) "Largest-remainder elective-2 mismatch for $($testCase.Total)"
+  Assert-True ($testCase.Counts.'选必一' -eq $testCase.Expected[1]) "Largest-remainder elective-1 mismatch for $($testCase.Total)"
+  Assert-True ($testCase.Counts.'必修' -eq $testCase.Expected[2]) "Largest-remainder compulsory mismatch for $($testCase.Total)"
+  Assert-True ($testCase.Counts.cross_book -eq $testCase.Expected[3]) "Largest-remainder cross-book mismatch for $($testCase.Total)"
+}
+$bookPercentages = $practiceModes.paper_constraints.question_point_book_distribution
+Assert-True ([math]::Floor(2000 * $bookPercentages.'选必二') -eq 900) "2000-question elective-2 mismatch"
+Assert-True ([math]::Floor(2000 * $bookPercentages.'选必一') -eq 600) "2000-question elective-1 mismatch"
+Assert-True ([math]::Floor(2000 * $bookPercentages.'必修') -eq 400) "2000-question compulsory mismatch"
+Assert-True ([math]::Floor(2000 * $bookPercentages.cross_book) -eq 100) "2000-question cross-book mismatch"
 Write-Output "PASS practice-modes counts=29/30,42"
 
 $reporting = Read-Json "config/reporting.json"

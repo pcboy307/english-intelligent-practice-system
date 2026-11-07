@@ -54,7 +54,7 @@ export default function HomeScreen() {
         </View>
         <Text style={styles.bank}>当前题库：{bankName}</Text>
         <Text style={[styles.body, { maxWidth: layout.bodyMaxWidth }]}>
-          一套 30 分钟练习，包含完型填空、语法填空和七选五。交卷后查看分数、正确率、薄弱知识点和逐题解析。
+          一套 30 分钟练习，包含完型填空、语法填空和阅读或七选五。交卷后查看分数、正确率、薄弱知识点和逐题解析。
         </Text>
         <Pressable
           accessibilityRole="button"

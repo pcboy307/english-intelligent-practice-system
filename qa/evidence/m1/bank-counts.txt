@@ -1,0 +1,13 @@
+     type     | count 
+--------------+-------
+ cloze        |    30
+ gap_fill     |    10
+ grammar_fill |    20
+ reading      |    20
+(4 rows)
+
+ total | passages 
+-------+----------
+    80 |       11
+(1 row)
+

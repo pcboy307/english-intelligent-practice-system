@@ -13,6 +13,7 @@ from fastapi.testclient import TestClient
 os.environ.setdefault("WEAKNESS_ANALYSIS_DISABLED", "1")
 
 from backend.app.main import app, store
+from backend.app.composer import allocate_difficulty, allocate_largest_remainder
 
 
 client = TestClient(app, client=("127.0.0.1", 41000))
@@ -32,7 +33,31 @@ def start_practice(headers: dict[str, str]) -> dict:
     return response.json()
 
 
-def test_30_question_start_has_no_answers() -> None:
+def answer_all_correct(session: dict, headers: dict[str, str]) -> None:
+    for item in session["items"]:
+        correct = store.questions[item["question_id"]].answer
+        response = client.put(
+            f"/api/v1/practice/{session['session_id']}/answer",
+            headers=headers,
+            json={
+                "question_id": item["question_id"],
+                "answer": correct,
+                "client_revision": 0,
+            },
+        )
+        assert response.status_code == 204, response.text
+
+
+def submit_session(session: dict, headers: dict[str, str]) -> dict:
+    response = client.post(
+        f"/api/v1/practice/{session['session_id']}/submit",
+        headers={**headers, "Idempotency-Key": str(uuid.uuid4())},
+    )
+    assert response.status_code == 200, response.text
+    return response.json()
+
+
+def test_first_paper_has_reading_mode_and_no_answers() -> None:
     headers = student_headers()
     bank = client.get("/api/v1/bank/active", headers=headers)
     assert bank.status_code == 200
@@ -42,7 +67,7 @@ def test_30_question_start_has_no_answers() -> None:
         "status": "active",
     }
     session = start_practice(headers)
-    assert len(session["items"]) == 30
+    assert len(session["items"]) == 29
     assert session["bank_name"] == "Demo Bank"
     serialized = json.dumps(session)
     assert '"answer"' not in serialized
@@ -50,7 +75,7 @@ def test_30_question_start_has_no_answers() -> None:
     assert {item["type"] for item in session["items"]} == {
         "cloze",
         "grammar_fill",
-        "gap_fill",
+        "reading",
     }
     assert all(item["options"] for item in session["items"])
     grammar_items = [item for item in session["items"] if item["type"] == "grammar_fill"]
@@ -68,14 +93,7 @@ def test_30_question_start_has_no_answers() -> None:
 def test_submit_returns_report_and_is_idempotent() -> None:
     headers = student_headers()
     session = start_practice(headers)
-    for item in session["items"]:
-        correct = store.questions[item["question_id"]].answer
-        response = client.put(
-            f"/api/v1/practice/{session['session_id']}/answer",
-            headers=headers,
-            json={"question_id": item["question_id"], "answer": correct, "client_revision": 0},
-        )
-        assert response.status_code == 204, response.text
+    answer_all_correct(session, headers)
 
     key = str(uuid.uuid4())
     first = client.post(
@@ -90,14 +108,14 @@ def test_submit_returns_report_and_is_idempotent() -> None:
     assert first.json() == second.json()
     report = first.json()
     assert report["score"] == 100.0
-    assert re.fullmatch(r"\d{4}-\d{2}-\d{2}-\d{2}-\d{2}-30题-100\.00分", report["report_title"])
+    assert re.fullmatch(r"\d{4}-\d{2}-\d{2}-\d{2}-\d{2}-29题-100\.00分", report["report_title"])
     assert report["bank_name"] == "Demo Bank"
-    assert report["question_count"] == 30
+    assert report["question_count"] == 29
     assert len(report["weakness_analysis"]) <= 100
     assert len(report["type_scores"]) == 3
     assert report["weak_points"]
     assert report["suggestions"]
-    assert len(report["question_results"]) == 30
+    assert len(report["question_results"]) == 29
     assert all(item["stem"] and item["options"] for item in report["question_results"])
     assert all(
         item["explanation"].strip() and item["explanation"].strip() != "暂无解析"
@@ -116,7 +134,7 @@ def test_submit_returns_report_and_is_idempotent() -> None:
         headers=headers,
     )
     assert review.status_code == 200
-    assert len(review.json()["items"]) == 30
+    assert len(review.json()["items"]) == 29
     assert all("explanation" not in item for item in review.json()["items"])
 
 
@@ -181,7 +199,7 @@ def test_history_report_can_be_listed_opened_and_deleted() -> None:
         if item["session_id"] == session["session_id"]
     )
     assert listed["report_title"] == report.json()["report_title"]
-    assert listed["question_count"] == 30
+    assert listed["question_count"] == 29
 
     deleted = client.delete(
         f"/api/v1/reports/{session['session_id']}",
@@ -218,30 +236,27 @@ def test_wrong_answer_is_tagged_and_two_different_sessions_clear_it() -> None:
     wrong = question.options[0] if question.options else "wrong"
     if wrong.casefold() == str(question.answer).casefold():
         wrong = question.options[1] if question.options else "wrong-2"
-    client.put(
-        f"/api/v1/practice/{first['session_id']}/answer",
-        headers=headers,
-        json={"question_id": target, "answer": wrong, "client_revision": 0},
-    )
-    client.post(
-        f"/api/v1/practice/{first['session_id']}/submit",
-        headers={**headers, "Idempotency-Key": str(uuid.uuid4())},
-    )
+    for item in first["items"]:
+        answer = wrong if item["question_id"] == target else store.questions[item["question_id"]].answer
+        client.put(
+            f"/api/v1/practice/{first['session_id']}/answer",
+            headers=headers,
+            json={"question_id": item["question_id"], "answer": answer, "client_revision": 0},
+        )
+    submit_session(first, headers)
     tags = client.get("/api/v1/error-tags", headers=headers).json()
     tag = next(item for item in tags if item["question_id"] == target)
     assert tag["status"] == "active"
 
     for expected_streak, expected_status in [(1, "active"), (2, "mastered")]:
-        session = start_practice(headers)
-        client.put(
-            f"/api/v1/practice/{session['session_id']}/answer",
-            headers=headers,
-            json={"question_id": target, "answer": question.answer, "client_revision": 0},
-        )
-        client.post(
-            f"/api/v1/practice/{session['session_id']}/submit",
-            headers={**headers, "Idempotency-Key": str(uuid.uuid4())},
-        )
+        for _attempt in range(8):
+            session = start_practice(headers)
+            answer_all_correct(session, headers)
+            submit_session(session, headers)
+            if any(item["question_id"] == target for item in session["items"]):
+                break
+        else:
+            raise AssertionError("target question was not selected in eight sessions")
         tags = client.get("/api/v1/error-tags", headers=headers).json()
         tag = next(item for item in tags if item["question_id"] == target)
         assert tag["streak"] == expected_streak
@@ -292,3 +307,51 @@ def test_database_endpoint_is_absolute_and_name_is_checked() -> None:
         "DATABASE_URL_PORT_FORBIDDEN: configured=5432 allowed=15432"
         in rejected.stderr
     )
+
+
+def test_four_generated_papers_meet_all_hard_constraints() -> None:
+    headers = student_headers()
+    logs = []
+    expected_sizes = [29, 30, 29, 30]
+    book_percentages = {"选必二": 0.45, "选必一": 0.30, "必修": 0.20, "cross_book": 0.05}
+    tie_order = ["选必二", "选必一", "必修", "cross_book"]
+
+    for paper_number, expected_size in enumerate(expected_sizes, start=1):
+        _, _, _, _, active_groups, _ = store._student_state(headers["X-Student-Id"])
+        assert active_groups == set()
+        session = start_practice(headers)
+        assert len(session["items"]) == expected_size
+        log = session["composition_note"]["assembly_log"]
+        assert log["paper_label"] == ("29 题阅读场" if paper_number % 2 else "30 题七选五场")
+        assert log["question_count"] == expected_size
+        assert log["book_quota_expected"] == allocate_largest_remainder(
+            expected_size,
+            book_percentages,
+            tie_order,
+        )
+        assert log["book_quota_actual"] == log["book_quota_expected"]
+        assert log["difficulty_actual"] == allocate_difficulty(expected_size)
+        assert max(log["grammar_tag_counts"].values(), default=0) <= 3
+        assert max(log["knowledge_point_counts"].values(), default=0) <= 3
+        assert log["error_pool_ratio"] <= 0.60
+        logs.append(log)
+        answer_all_correct(session, headers)
+        submit_session(session, headers)
+
+    for log in logs[2:]:
+        assert log["recent_three_question_weights"]
+        assert all(
+            item["weight"] < item["base_weight"]
+            for item in log["recent_three_question_weights"]
+        )
+
+
+def test_two_unfinished_sessions_do_not_share_a_passage() -> None:
+    headers = student_headers()
+    first = start_practice(headers)
+    second = start_practice(headers)
+    first_groups = {item["passage_group_id"] for item in first["items"]}
+    second_groups = {item["passage_group_id"] for item in second["items"]}
+    assert first_groups.isdisjoint(second_groups)
+    client.delete(f"/api/v1/practice/{first['session_id']}", headers=headers)
+    client.delete(f"/api/v1/practice/{second['session_id']}", headers=headers)

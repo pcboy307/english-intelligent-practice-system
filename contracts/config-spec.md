@@ -55,8 +55,9 @@
 - `modes.60`：60 分钟模式，固定 3 篇阅读 + 1 篇七选五。
 - `selection_weight`：严格对应 `W = 1 + 2I_err + 1S_kp + 0.5S_type + 0.8G_gap - 1.2R_recent - 0.6R_7d`。
 - `paper_constraints`：单套难度、错题池、知识点重复、话题和册次约束。
-- `paper_constraints.question_point_book_distribution_count_rules.30`：固定 `14/9/6/1`。
-- `paper_constraints.question_point_book_distribution_count_rules.2000`：固定 `900/600/400/100`。
+- `paper_constraints.book_distribution_rounding`：按卷内实际题数使用最大余数法从百分比生成整数配额，不写死某一题数的整数组合。差额依次补给小数部分最大的册次；并列时顺序为 `选必二`、`选必一`、`必修`、`cross_book`。
+- 最大余数法自检值：29 题 `13/9/6/1`，30 题 `14/9/6/1`，42 题 `19/13/8/2`。册次配额覆盖卷内全部题目，包括阅读场与七选五场。
+- `paper_constraints.paper_question_counts`：阅读场 29 题，七选五场 30 题；报告与历史记录必须使用实际题数作分母。
 - `bank_scope.source`：必须为 `session.bank_id`；`allow_cross_bank_sampling=false`。
 - `paper_constraints.allow_same_question_repeat_in_m1=true`：仅 M1 豁免。
 - `paper_constraints.seven_day_repeat_rate_max=0.10`：M3 生效。
