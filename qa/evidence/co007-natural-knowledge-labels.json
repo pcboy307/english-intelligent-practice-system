@@ -7,5 +7,10 @@
     "manner_adverb"
   ],
   "analysis": "29 题中答对 23 题，但名词词义辨析（团队、材料）及方式副词均全错，错因多是对核心语境理解偏差。建议：立即重读错题原文，对比正确选项与干扰项在语境中的逻辑差异，并针对薄弱点各做 5 道专项练习以。",
-  "contains_internal_ids": false
+  "contains_internal_ids": false,
+  "legacy_report_recheck": {
+    "session_id": "506a38a4-f19e-4bf2-88a6-b8b989c6cb83",
+    "analysis": "你这次主要卡在名词词义辨析（车辆数量）、条件关系。先回看错题依据，再用同类题做三次即时复述，确认能说出为什么再继续下一组，稳住节奏就会进步。",
+    "contains_internal_ids": false
+  }
 }

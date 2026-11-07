@@ -90,6 +90,13 @@ def _replace_internal_knowledge_points(text: str, points: list[str]) -> str:
     return text
 
 
+def humanize_analysis_text(text: str) -> str:
+    return _replace_internal_knowledge_points(
+        text,
+        list(KNOWLEDGE_POINT_LABELS),
+    )
+
+
 def generate_weakness_analysis(
     question_results: list[dict],
     weak_points: list[dict],

@@ -152,3 +152,16 @@ def test_fallback_uses_natural_knowledge_point_labels(monkeypatch) -> None:
     assert "material_noun" not in result["text"]
     assert "名词词义辨析（团队）" in result["text"]
     assert "名词词义辨析（材料）" in result["text"]
+
+
+def test_stored_analysis_text_is_humanized_on_read() -> None:
+    result = analysis.humanize_analysis_text(
+        "薄弱点是 team_noun、material_noun 和 manner_adverb。"
+    )
+
+    assert "team_noun" not in result
+    assert "material_noun" not in result
+    assert "manner_adverb" not in result
+    assert "名词词义辨析（团队）" in result
+    assert "名词词义辨析（材料）" in result
+    assert "方式副词辨析" in result

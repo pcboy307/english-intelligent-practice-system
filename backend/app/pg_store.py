@@ -16,7 +16,7 @@ from psycopg.rows import dict_row
 from psycopg.types.json import Jsonb
 
 from .demo_bank import DemoQuestion, demo_bank
-from .analysis import generate_weakness_analysis
+from .analysis import generate_weakness_analysis, humanize_analysis_text
 from .composer import assemble_demo_paper
 from .store import SessionRecord
 
@@ -554,6 +554,9 @@ class PostgresStore:
             "weakness_analysis",
             "建议先回看本套错题，按知识点归类后完成三到五道同类练习，"
             "并逐题写出判断依据，确认能独立复述后再进入下一组。",
+        )
+        report["weakness_analysis"] = humanize_analysis_text(
+            report["weakness_analysis"]
         )
         report.setdefault("weakness_analysis_source", "fallback")
         return report
