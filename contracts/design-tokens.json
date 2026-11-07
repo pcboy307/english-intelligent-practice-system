@@ -88,6 +88,13 @@
     "touchTargetMin": 44,
     "iconStrokeWidth": 1.5
   },
+  "web": {
+    "colorScheme": "light",
+    "maxContentWidth": 480,
+    "centerHorizontally": true,
+    "bodyBackgroundToken": "pageBackground",
+    "bodyTextToken": "primaryText"
+  },
   "motion": {
     "pageFadeMs": 200,
     "pageTranslateMaxPx": 8,

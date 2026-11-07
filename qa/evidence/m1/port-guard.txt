@@ -1,0 +1,12 @@
+Command:
+$env:EXPECTED_DATABASE_PORT='5432'
+.\.venv\Scripts\python.exe -c "import backend.app.main"
+
+Exact failure:
+RuntimeError: DATABASE_PORT_MISMATCH: inet_server_port()=15432 expected=5432
+
+Normal PostgreSQL query:
+ current_database |                           version
+------------------+--------------------------------------------------------------
+ english_practice | PostgreSQL 16.15, compiled by Visual C++ build 1944, 64-bit
+(1 row)

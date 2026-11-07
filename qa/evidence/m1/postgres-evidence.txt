@@ -1,0 +1,19 @@
+Command:
+.\.venv\Scripts\python.exe scripts\evidence_half_day.py
+
+Idempotency response summary:
+{"session_id":"313e3d39-8539-4ce1-b415-196029d15bd0","first_score":100.0,"second_score":100.0,"responses_equal":true}
+
+Idempotency psql:
+                  id                  |  status   |        submit_idempotency_key        | report_rows
+--------------------------------------+-----------+--------------------------------------+-------------
+ 313e3d39-8539-4ce1-b415-196029d15bd0 | submitted | 7188e6a7-653f-4d75-adb8-55d257ef9187 |           1
+(1 row)
+
+Two-session mastery psql:
+              student_id              | question_id |  status  | streak | success_rows
+--------------------------------------+-------------+----------+--------+--------------
+ 8e448699-c126-4b31-85d2-e1ef7fd00882 | DEMO-G01    | mastered |      2 |            2
+(1 row)
+
+Same-session duplicate submission did not add a second error_tag_successes row.

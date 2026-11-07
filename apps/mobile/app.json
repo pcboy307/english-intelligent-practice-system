@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "高二英语智能练习",
+    "slug": "gaoer-english-practice",
+    "version": "0.1.0",
+    "platforms": ["ios", "android", "web"],
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    }
+  }
+}

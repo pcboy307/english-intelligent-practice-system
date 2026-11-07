@@ -1,0 +1,16 @@
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+  background: var(--color-page-background);
+  color: var(--color-primary-text);
+}
+
+body {
+  color-scheme: light;
+}

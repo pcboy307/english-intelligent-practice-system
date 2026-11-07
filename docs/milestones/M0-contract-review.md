@@ -58,6 +58,29 @@ Jaccard difference=29.47%
 
 本表按教材词表口径统计“教材实际列出的词”，宽于课标最低要求，生词率判定偏宽松；超纲校验以“高阶难词抽检被排除”和“语法标签全部在白名单”为准，不以生词率单指标判定。
 
+## 25 单元四档复核
+
+四档采用集合关系，不沿用旧三档：
+
+- 完全一致：9 个。
+- 教材范围更窄：11 个。
+- 教材范围更宽：2 个。
+- 白名单外：3 个。
+
+合计 25 个。两个“教材范围更宽”单元是必修三 U1 与选必一 U4；两者都出现 `-ing` 作表语，该子类不在 V11 第 4 行，已明确禁考。全表见 `docs/curriculum/grammar-by-unit.md`。
+
+## 13 个跨单元 Grammar ID
+
+21 个 grammar ID 中，25 单元结构页直接归属 8 个，未形成单元独占标题的 13 个按白名单教材范围跨单元归属，不强行虚构单元出处。逐 ID 规则见 `docs/curriculum/grammar-id-ownership.md`。
+
+## 三个教材抽查点
+
+必修一 U1 第 23 页、必修二 U3 第 37 页、选必二 U5 第 60 页均已定位到国家中小学智慧教育平台官方电子教材，并记录 `contentId`、页码 URL、结构页标题和核验语法板块。平台正文阅读要求登录，不把登录提示页冒充正文截图。证据见 `docs/curriculum/textbook-evidence.md`。
+
+## 版本单一来源
+
+当前版本由 `contracts/VERSION` 提供；`check-m0.ps1` 校验它与 `curriculum.json.requirement_version` 一致，不再硬编码当前版本。
+
 ## 尚不能提供
 
 - `/admin` 本机/非回环连通性证据依赖 M1 后端代码，M0 阶段为 `N/A：服务尚未实现`。
@@ -65,4 +88,4 @@ Jaccard difference=29.47%
 
 ## 执行方式
 
-多 Agent 并行不可用，已按 CO-002 改为严格串行。实际执行方式与 V11 多 Agent 要求存在偏差，详见 `docs/change-log/CO-002-serial-execution.md`；该偏差不改变 M1 验收范围。
+多 Agent 并行不可用，已按 PROC-001 改为严格串行。实际执行方式与 V11 多 Agent 要求存在偏差，详见 `docs/change-log/PROC-001-serial-execution.md`；该偏差不改变 M1 验收范围。

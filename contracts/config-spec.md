@@ -80,6 +80,17 @@
 - `time_authority=server_deadline`。
 - `answer_available_before_submit=false`。
 - `data_clear_scope` 同时包含本地缓存和后端该 ID 数据。
+- `student_identity.web_storage=localStorage`；Web 本地演示可用，但安全等级低于原生安全存储。
+- `student_identity.native_storage=expo-secure-store`；回到手机端时必须恢复原生安全存储。
+- `web_layout.max_width=480` 且水平居中，模拟手机竖屏视口。
+- `web_layout.color_scheme=light`；CSS 必须固定 `color-scheme: light`。
+
+### `config/api.json`
+
+- 后端固定 `0.0.0.0:8000`。
+- Expo Web 固定 `localhost:8081`。
+- `cors.allow_origins` 只能是 `http://localhost:8081` 与 `http://127.0.0.1:8081`。
+- 禁止 `*`、禁止 `wildcard_allowed=true`。
 
 ### `contracts/admin-auth.md`
 

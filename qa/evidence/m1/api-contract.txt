@@ -1,0 +1,13 @@
+Command:
+.\scripts\check-api-contract.ps1
+
+FrontendCall                  OpenAPIPath                   Present
+------------                  -----------                   -------
+/bank/active                  /bank/active                     True
+/practice/start               /practice/start                  True
+/practice/${sessionId}        /practice/{session_id}           True
+/practice/${sessionId}/answer /practice/{session_id}/answer    True
+/practice/${sessionId}/submit /practice/{session_id}/submit    True
+/reports/${sessionId}         /reports/{session_id}            True
+
+API_CONTRACT_CHECK=PASS calls=6

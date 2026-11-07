@@ -1,0 +1,7 @@
+Command:
+rg -n -F '#2C5F5A' apps backend contracts config -g '!**/node_modules/**' -g '!**/.venv/**'
+
+Result:
+contracts\design-tokens.json:24:    "accent": "#2C5F5A",
+
+No application component or backend file contains the literal accent color.

@@ -7,6 +7,7 @@
 *.sqlite3
 postgres-data/
 redis-data/
+.runtime/
 
 # Python
 .venv/
@@ -40,3 +41,8 @@ Thumbs.db
 qa/tmp/
 qa/playwright-report/
 qa/test-results/
+qa/*.log
+qa/evidence/m0/dzkbw-B2U3-page037.txt
+qa/evidence/m0/smartedu-b1u1.har
+qa/evidence/m0/textbook-B1U1-page023.png
+scripts/start-embedded-postgres.cjs

@@ -14,6 +14,7 @@ function Assert-True([bool]$Condition, [string]$Message) {
 
 $requiredFiles = @(
   "contracts/openapi.yaml",
+  "contracts/VERSION",
   "contracts/curriculum.json",
   "contracts/bank-model.md",
   "contracts/design-tokens.json",
@@ -25,7 +26,9 @@ $requiredFiles = @(
   "contracts/vocabulary/kebiao-2022-level3.json",
   "contracts/vocabulary/kebiao-2022-supplements.json",
   "docs/curriculum/grammar-by-unit.md",
+  "docs/curriculum/grammar-id-ownership.md",
   "docs/curriculum/grammar-whitelist-mapping.md",
+  "docs/curriculum/textbook-evidence.md",
   "docs/requirements-confirmation.md"
 )
 foreach ($file in $requiredFiles) {
@@ -45,6 +48,7 @@ foreach ($config in $configs) {
 Write-Output "PASS config-json count=$($configs.Count)"
 
 $curriculum = Read-Json "contracts/curriculum.json"
+$manifestVersion = (Get-Content -Raw -Encoding UTF8 -LiteralPath "contracts/VERSION").Trim()
 $units = @($curriculum.units)
 Assert-True ($units.Count -eq 25) "Expected 25 curriculum units"
 $unitGroups = @($units | Group-Object book)
@@ -52,7 +56,7 @@ Assert-True ($unitGroups.Count -eq 5) "Expected 5 textbooks"
 Assert-True (@($unitGroups | Where-Object Count -ne 5).Count -eq 0) "Each textbook must contain 5 units"
 
 $grammarIds = @($curriculum.grammar_whitelist.id)
-Assert-True ($curriculum.requirement_version -eq "V11.1") "Requirement version mismatch"
+Assert-True ($manifestVersion -eq $curriculum.requirement_version) "Requirement version mismatch"
 Assert-True ($grammarIds.Count -eq 21) "Expected 21 grammar IDs"
 Assert-True ($grammarIds -contains "infinitive_nonfinite") "Infinitive grammar ID missing"
 Assert-True ($curriculum.quality_gates.grammar_fill_min_questions_per_grammar_id -eq 12) "Grammar coverage minimum mismatch"
@@ -129,14 +133,19 @@ $grammarRows = [regex]::Matches($grammarDoc, "(?m)^\| \d+ \|").Count
 Assert-True ($grammarRows -eq 25) "Grammar document must contain 25 unit rows"
 $grammarUnitRows = @(Get-Content -Encoding UTF8 -LiteralPath "docs/curriculum/grammar-by-unit.md" | Where-Object { $_ -match "^\| \d+ \|" })
 $exactRows = @($grammarUnitRows | Where-Object { $_ -match "\| 完全一致" }).Count
-$narrowedRows = @($grammarUnitRows | Where-Object { $_ -match "\| 范围收窄" }).Count
+$narrowedRows = @($grammarUnitRows | Where-Object { $_ -match "\| 教材范围更窄" }).Count
+$widerRows = @($grammarUnitRows | Where-Object { $_ -match "\| 教材范围更宽" }).Count
 $excludedRows = @($grammarUnitRows | Where-Object { $_ -match "\| 白名单外" }).Count
 Assert-True ($exactRows -eq 9) "Grammar exact-match count mismatch"
-Assert-True ($narrowedRows -eq 13) "Grammar narrowed count mismatch"
+Assert-True ($narrowedRows -eq 11) "Grammar narrower count mismatch"
+Assert-True ($widerRows -eq 2) "Grammar wider count mismatch"
 Assert-True ($excludedRows -eq 3) "Grammar excluded count mismatch"
+$ownershipDoc = Get-Content -Raw -Encoding UTF8 -LiteralPath "docs/curriculum/grammar-id-ownership.md"
+$ownershipRows = [regex]::Matches($ownershipDoc, "(?m)^\| \d+ \|").Count
+Assert-True ($ownershipRows -eq 13) "Grammar ownership document must contain 13 IDs"
 $mappingDoc = Get-Content -Raw -Encoding UTF8 -LiteralPath "docs/curriculum/grammar-whitelist-mapping.md"
 $mappingRows = [regex]::Matches($mappingDoc, "(?m)^\| \d+ \|").Count
-Assert-True ($mappingRows -eq 15) "Grammar mapping must contain 15 V11.1 rows"
+Assert-True ($mappingRows -eq 15) "Grammar mapping must contain 15 whitelist rows"
 $questionSchema = Read-Json "contracts/schemas/question.json"
 $grammarEnum = @($questionSchema.properties.grammar_tags.items.enum)
 Assert-True ($grammarEnum.Count -eq 21) "Question grammar enum must contain 21 IDs"
@@ -167,8 +176,8 @@ foreach ($path in @(
 }
 Assert-True (-not $openapi.Contains("approved_by_owner")) "Client-side owner approval must be removed"
 Assert-True (-not [regex]::IsMatch($openapi, "(?m)^security:")) "Top-level global security must be absent"
-Assert-True ([regex]::Matches($openapi, "(?m)^      security:\s*$").Count -eq 20) "Every operation must declare security"
-Assert-True ([regex]::Matches($openapi, "- StudentId: \[\]").Count -eq 8) "Student security declaration mismatch"
+Assert-True ([regex]::Matches($openapi, "(?m)^      security:\s*$").Count -eq 21) "Every operation must declare security"
+Assert-True ([regex]::Matches($openapi, "- StudentId: \[\]").Count -eq 9) "Student security declaration mismatch"
 Assert-True ([regex]::Matches($openapi, "- AdminToken: \[\]").Count -eq 12) "Admin security declaration mismatch"
 Assert-True ($openapi.Contains("/approve-generation:")) "Generation approval path missing"
 Assert-True ($openapi.Contains("Idempotency-Key")) "Submit idempotency contract missing"

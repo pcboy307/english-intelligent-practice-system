@@ -339,6 +339,33 @@ components:
         type: string
         format: uuid
 paths:
+  /bank/active:
+    get:
+      tags: [student]
+      operationId: getActiveBank
+      security:
+        - StudentId: []
+      summary: 获取当前 active Bank 的只读信息
+      responses:
+        "200":
+          description: 当前生效 Bank
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: false
+                required: [bank_id, name, status]
+                properties:
+                  bank_id:
+                    type: string
+                    format: uuid
+                  name:
+                    type: string
+                  status:
+                    type: string
+                    enum: [active]
+        "401":
+          $ref: "#/components/responses/ErrorResponse"
   /practice/start:
     post:
       tags: [student]

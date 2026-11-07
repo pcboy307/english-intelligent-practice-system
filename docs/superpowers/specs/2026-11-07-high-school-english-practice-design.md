@@ -6,12 +6,12 @@
 
 ## 1. 目标与边界
 
-系统面向广东省高二学生，在人教版（2019）必修 1–3 与选择性必修 1–2 范围内提供四题型练习、自适应组卷、错题复现和结构化报告。第一期只做本地单机开发与真机演示，不做登录、云部署、教师端、家长端、排行榜、付费或暗色模式。
+系统面向广东省高二学生，在人教版（2019）必修 1–3 与选择性必修 1–2 范围内提供四题型练习、自适应组卷、错题复现和结构化报告。当前需求版本读取 `contracts/VERSION`。学生端保留 React Native + Expo，第一期使用 Expo Web 在电脑浏览器本地演示；手机真机验收推迟。不做登录、云部署、教师端、家长端、排行榜、付费或暗色模式。
 
 ## 2. 总体架构
 
 ```text
-Expo App
+Expo Web (react-native-web; same React Native codebase)
   |  X-Student-Id, JSON API
   v
 FastAPI monolith
@@ -103,7 +103,7 @@ M4 增加 Error Book、Trend、Settings。
 
 ### 7.2 状态边界
 
-- `device_student_id`：安全存储。
+- `device_student_id`：Web 演示期使用 localStorage；原生阶段必须恢复 secure store。
 - Session：内存状态 + 本地 session 草稿。
 - Answer draft：仅保存学生答案，不保存标准答案或解析。
 - Server deadline：每次启动、回前台和提交前重新拉取。
@@ -112,6 +112,8 @@ M4 增加 Error Book、Trend、Settings。
 ### 7.3 视觉
 
 所有颜色、字号、行高、间距、圆角、线宽和触控尺寸从 `contracts/design-tokens.json` 读取并映射为应用内 token 对象。语篇正文使用平台衬线字体，题干和 UI 使用系统无衬线字体。
+
+Web 页面最大宽度 480px、水平居中；CSS 强制 `color-scheme: light`，body 背景和正文颜色从 design tokens 映射。
 
 ## 8. 安全与错误处理
 

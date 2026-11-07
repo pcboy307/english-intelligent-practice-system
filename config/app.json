@@ -3,7 +3,18 @@
   "student_identity": {
     "storage_key": "device_student_id",
     "header": "X-Student-Id",
-    "uuid_version": 4
+    "uuid_version": 4,
+    "web_storage": "localStorage",
+    "native_storage": "expo-secure-store",
+    "web_security_level": "local_demo_acceptable",
+    "native_secure_store_required": true
+  },
+  "web_layout": {
+    "max_width": 480,
+    "center_horizontally": true,
+    "color_scheme": "light",
+    "body_background_token": "pageBackground",
+    "body_text_token": "primaryText"
   },
   "time_authority": "server_deadline",
   "foreground_recalibration_required": true,
