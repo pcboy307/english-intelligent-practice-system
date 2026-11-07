@@ -80,6 +80,8 @@ Jaccard difference=29.47%
 `qa/evidence/m0/grammar-book-feasibility.json`。
 25 行册次一致性为 0 处不匹配；210 个 ID 对中 34 对交集为空、176 对兼容；
 按兼容对构造出 132 题、252 题次的覆盖见证，结论为“可达”。
+双标签校验器已执行两个拒收样例和一个通过样例，错误码为
+`BOOK_TAG_INCOMPATIBLE`，原始输出见 `qa/evidence/m0/book-tag-compatibility.json`。
 
 ## 三个教材抽查点
 

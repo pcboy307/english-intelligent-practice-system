@@ -133,3 +133,23 @@
 
 机器可复算证据：`qa/evidence/m0/grammar-book-feasibility.json`。该文件包含全部 210
 个 ID 对、34 个空交集对、逐册次见证和 25 行一致性检查结果。
+
+## D. 校验器执行规则
+
+`backend/app/question_validation.py` 对每道题执行：
+
+1. 读取全部 `grammar_tags` 的 `allowed_book_tags`；
+2. 求交集；
+3. 要求该题唯一 `book_tag` 属于交集；
+4. 交集为空或标签不在交集时抛 `BOOK_TAG_INCOMPATIBLE`；
+5. 单标签题也走同一路径，单 ID 的交集就是它自己的允许册次。
+
+拒收结果携带每个 grammar ID 的允许册次及冲突对。三个固定验收样例：
+
+| grammar_tags | book_tag | 预期 | 结果 |
+|---|---|---|---|
+| `partial_inversion_basic + articles` | `必修` | 拒收 | `BOOK_TAG_INCOMPATIBLE` |
+| `partial_inversion_basic + articles` | `选必二` | 拒收 | `BOOK_TAG_INCOMPATIBLE` |
+| `tense_system + noun_clauses` | `选必二` | 通过 | `ok=true` |
+
+原始输出：`qa/evidence/m0/book-tag-compatibility.json`。

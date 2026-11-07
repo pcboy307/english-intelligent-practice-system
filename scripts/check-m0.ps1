@@ -231,6 +231,9 @@ Assert-True ($LASTEXITCODE -eq 0) "Grammar/book feasibility check failed"
 $feasibility = Read-Json "qa/evidence/m0/grammar-book-feasibility.json"
 Assert-True ($feasibility.conclusion -eq "可达") "Grammar/book feasibility conclusion mismatch"
 Write-Output "PASS grammar-book feasibility=$($feasibility.conclusion) coverage=$($feasibility.required_coverage_occurrences) capacity=$($feasibility.total_tag_capacity)"
+& ".\.venv\Scripts\python.exe" -X utf8 "scripts/check-book-tag-compatibility.py" | Out-Null
+Assert-True ($LASTEXITCODE -eq 0) "Book-tag compatibility acceptance cases failed"
+Write-Output "PASS book-tag compatibility rejection=2 acceptance=1"
 Write-Output "PASS grammar whitelistRows=15 grammarIds=21 unitRows=25 exact=2 narrower=18 wider=2 excluded=3"
 
 $openapi = Get-Content -Raw -Encoding UTF8 -LiteralPath "contracts/openapi.yaml"

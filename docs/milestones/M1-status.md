@@ -14,6 +14,8 @@
 - C：210 个 ID 对中有 34 个空交集、176 个可组合对；兼容对覆盖见证为 132 题、
   252 题次，复算结论为“可达”，见
   `qa/evidence/m0/grammar-book-feasibility.json`。
+- D：`BOOK_TAG_INCOMPATIBLE` 校验已实现；两个非法双标签样例均拒收，一个合法
+  双标签样例通过，原始输出见 `qa/evidence/m0/book-tag-compatibility.json`。
 - 以上仍需所有者复核，M1 门禁保持阻塞。
 
 ## Demo Bank

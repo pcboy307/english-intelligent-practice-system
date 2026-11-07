@@ -12,6 +12,8 @@
     "min_categories_per_grammar_passage": 5,
     "max_questions_per_category_per_passage": 2,
     "grammar_fill_min_questions_per_grammar_id": 12,
+    "book_tag_must_be_in_grammar_tag_intersection": true,
+    "book_tag_incompatible_error": "BOOK_TAG_INCOMPATIBLE",
     "infinitive_forbidden_forms": [
       "to_have_done",
       "to_have_been_done",

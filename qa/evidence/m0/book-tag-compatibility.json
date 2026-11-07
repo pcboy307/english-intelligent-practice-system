@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "empty-intersection-book-fixed",
+      "passes": true,
+      "result": {
+        "ok": false,
+        "error": "BOOK_TAG_INCOMPATIBLE",
+        "message": "Rejected: book_tag is incompatible with the grammar tag set.",
+        "reason": "GRAMMAR_TAGS_HAVE_NO_COMMON_BOOK_TAG",
+        "book_tag": "必修",
+        "grammar_tags": [
+          "partial_inversion_basic",
+          "articles"
+        ],
+        "grammar_tag_allowed_book_tags": {
+          "partial_inversion_basic": [
+            "选必二"
+          ],
+          "articles": [
+            "必修"
+          ]
+        },
+        "allowed_book_tag_intersection": [],
+        "conflict_pairs": [
+          {
+            "first": "partial_inversion_basic",
+            "first_allowed_book_tags": [
+              "选必二"
+            ],
+            "second": "articles",
+            "second_allowed_book_tags": [
+              "必修"
+            ],
+            "intersection": []
+          }
+        ]
+      }
+    },
+    {
+      "case": "empty-intersection-book-elective-2",
+      "passes": true,
+      "result": {
+        "ok": false,
+        "error": "BOOK_TAG_INCOMPATIBLE",
+        "message": "Rejected: book_tag is incompatible with the grammar tag set.",
+        "reason": "GRAMMAR_TAGS_HAVE_NO_COMMON_BOOK_TAG",
+        "book_tag": "选必二",
+        "grammar_tags": [
+          "partial_inversion_basic",
+          "articles"
+        ],
+        "grammar_tag_allowed_book_tags": {
+          "partial_inversion_basic": [
+            "选必二"
+          ],
+          "articles": [
+            "必修"
+          ]
+        },
+        "allowed_book_tag_intersection": [],
+        "conflict_pairs": [
+          {
+            "first": "partial_inversion_basic",
+            "first_allowed_book_tags": [
+              "选必二"
+            ],
+            "second": "articles",
+            "second_allowed_book_tags": [
+              "必修"
+            ],
+            "intersection": []
+          }
+        ]
+      }
+    },
+    {
+      "case": "compatible-double-tag",
+      "passes": true,
+      "result": {
+        "ok": true,
+        "book_tag": "选必二",
+        "grammar_tags": [
+          "tense_system",
+          "noun_clauses"
+        ],
+        "grammar_tag_allowed_book_tags": {
+          "tense_system": [
+            "必修",
+            "选必一",
+            "选必二",
+            "跨册"
+          ],
+          "noun_clauses": [
+            "必修",
+            "选必一",
+            "选必二",
+            "跨册"
+          ]
+        },
+        "allowed_book_tag_intersection": [
+          "必修",
+          "选必一",
+          "选必二",
+          "跨册"
+        ]
+      }
+    }
+  ]
+}

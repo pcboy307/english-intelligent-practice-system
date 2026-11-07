@@ -84,6 +84,9 @@
 
 - 超纲生词率上限 `0.03`。
 - 每篇非白名单词最多 `2` 个，必须有中文释义且不得作考点。
+- `grammar.book_tag_must_be_in_grammar_tag_intersection=true`：题目所有
+  grammar tag 的允许册次交集必须包含唯一 `book_tag`；空交集拒收并返回
+  `BOOK_TAG_INCOMPATIBLE`。
 - Bank 内语篇相似度 `>=0.90` 拒收，题干 `>=0.85` 拒收。
 - 解析至少 `3` 句。
 - 首批 `10` 篇后必须暂停。

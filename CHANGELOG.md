@@ -121,4 +121,6 @@
 - 210 个 ID 对中 34 对交集为空、176 对兼容；兼容对见证以 132 题覆盖 252 题次，
   可达性结论为“可达”。
 - 薄弱点分析答题数表述改为“29 题中答对 23 题”；登记 4B 模型质量观察项。
+- 新增 `BOOK_TAG_INCOMPATIBLE` 校验：book_tag 必须属于全部 grammar tag 的允许册次交集。
+- 两个非法双标签样例均拒收，一个合法双标签样例通过。
 - 详细记录：`docs/change-log/M0-grammar-book-recalculation.md`。
