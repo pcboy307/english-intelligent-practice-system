@@ -22,3 +22,24 @@ def test_pilot_config_declares_model_budget_and_exact_29_question_shape() -> Non
         {"type": "grammar_fill", "questions": 10},
         {"type": "reading", "questions": 4},
     ]
+
+
+def test_deepseek_contract_uses_environment_key_and_safe_budget_defaults() -> None:
+    contract = json.loads(
+        (ROOT / "contracts" / "generation-model.json").read_text(
+            encoding="utf-8"
+        )
+    )
+
+    assert contract["provider"] == "deepseek"
+    assert contract["base_url"] == "https://api.deepseek.com/v1"
+    assert contract["api_key_env"] == "DEEPSEEK_API_KEY"
+    assert "api_key" not in contract
+    assert contract["max_tokens"] >= 4096
+    assert contract["temperature"] == 0.5
+    assert contract["prompt_version"] == "m2-gen-v1"
+    assert contract["budget_cap_cny"] == {"pilot": 10, "bulk": 100}
+    assert contract["request_retries_max"] == 3
+    assert contract["repair_retries_max"] == 3
+    assert contract["circuit_breaker_consecutive_failures"] == 5
+    assert contract["budget_stop_ratio"] == 0.8

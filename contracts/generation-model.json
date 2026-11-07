@@ -1,0 +1,24 @@
+{
+  "provider": "deepseek",
+  "base_url": "https://api.deepseek.com/v1",
+  "model_id": "deepseek-flash",
+  "model_id_status": "verified_from_get_models",
+  "api_key_env": "DEEPSEEK_API_KEY",
+  "max_tokens": 4096,
+  "temperature": 0.5,
+  "prompt_version": "m2-gen-v1",
+  "request_timeout_seconds": 120,
+  "request_retries_max": 3,
+  "repair_retries_max": 3,
+  "circuit_breaker_consecutive_failures": 5,
+  "budget_stop_ratio": 0.8,
+  "price_input_per_1m_cny": 2.0,
+  "price_output_per_1m_cny": 8.0,
+  "price_note": "Conservative peak, cache-miss upper-bound rate for deepseek-flash / DeepSeek-V4.1-Flash-1017.",
+  "price_source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+  "price_source_date": "2026-11-07",
+  "budget_cap_cny": {
+    "pilot": 10,
+    "bulk": 100
+  }
+}

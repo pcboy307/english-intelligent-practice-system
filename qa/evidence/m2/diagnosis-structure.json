@@ -1,0 +1,96 @@
+{
+  "source": "qa/evidence/m2/gate-failures.json",
+  "diagnosed_at": "2026-11-07T19:53:50+08:00",
+  "raw_model_output_available": false,
+  "evidence_limitation": "The failed M2.0 runner did not persist raw model responses or finish_reason. Samples below are the exact validator messages and details recorded by that run.",
+  "structure_failure_total": 32,
+  "classification": {
+    "json_parse_failure": {
+      "count": 0,
+      "confirmed": false,
+      "samples": []
+    },
+    "schema_missing_or_wrong_type": {
+      "count": 29,
+      "samples": [
+        {
+          "attempt": 2,
+          "message": "cloze blank (3) is missing",
+          "count_in_attempt": 13,
+          "scope": "blanks (3) through (15)"
+        },
+        {
+          "attempt": 2,
+          "question_index": 1,
+          "message": "Explanation must contain at least three sentences.",
+          "count_in_attempt": 13
+        },
+        {
+          "attempt": 2,
+          "question_index": 12,
+          "message": "Question options may not contain empty values."
+        },
+        {
+          "attempt": 2,
+          "question_index": 12,
+          "message": "Question answer must be non-empty."
+        },
+        {
+          "attempt": 2,
+          "question_index": 14,
+          "message": "Question difficulty differs from the pilot schedule.",
+          "expected": 3,
+          "actual": 4
+        }
+      ]
+    },
+    "finish_reason_length": {
+      "count": 0,
+      "confirmed": false,
+      "unknown_attempts": [1, 2, 3, 4],
+      "note": "finish_reason was not persisted by the old runner. The only request returning usage stopped at 2433 completion tokens, below the configured 6500 cap."
+    },
+    "answer_stem_inconsistency": {
+      "count": 0,
+      "samples": []
+    },
+    "runtime_crash_or_timeout": {
+      "count": 3,
+      "samples": [
+        {
+          "attempt": 1,
+          "elapsed_seconds": 900.0166123999516,
+          "usage": null,
+          "recorded_failure": "Generated passage is missing required fields.",
+          "missing": [
+            "book_source",
+            "difficulty",
+            "passage",
+            "passage_group_id",
+            "questions",
+            "topic"
+          ]
+        },
+        {
+          "attempt": 3,
+          "elapsed_seconds": 2366.8640474999556,
+          "usage": null,
+          "recorded_failure": "Generated passage is missing required fields."
+        },
+        {
+          "attempt": 4,
+          "elapsed_seconds": 3266.88298330002,
+          "usage": null,
+          "recorded_failure": "Generated passage is missing required fields."
+        }
+      ]
+    }
+  },
+  "root_cause_conclusion": "The 32 structure events are not dominated by finish_reason=length. They split into 29 schema/content-shape failures from the single parseable response and 3 requests with no usable JSON or usage. The old runner also failed to persist finish_reason and raw output, so exact parse-versus-timeout separation for those three requests is unavailable; their 900-second deltas match the configured request timeout.",
+  "additional_gate_failures": {
+    "question_count": 1,
+    "grammar_tag": 2,
+    "book_tag": 1,
+    "vocabulary_scope": 1
+  }
+}

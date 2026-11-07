@@ -37,10 +37,15 @@ def main() -> None:
     output = ROOT / "qa" / "evidence" / "m1" / "weakness-analysis.json"
     if args.force_fallback:
         forced_endpoint = "http://127.0.0.1:9/v1/chat/completions"
-        analysis_module.REPORTING_CONFIG["weakness_analysis"]["endpoint"] = (
-            forced_endpoint
+        analysis_module.REPORTING_CONFIG["weakness_analysis"]["active_provider"] = (
+            "qwen"
         )
-        analysis_module.REPORTING_CONFIG["weakness_analysis"]["timeout_seconds"] = 2
+        analysis_module.REPORTING_CONFIG["weakness_analysis"]["providers"]["qwen"][
+            "endpoint"
+        ] = forced_endpoint
+        analysis_module.REPORTING_CONFIG["weakness_analysis"]["providers"]["qwen"][
+            "timeout_seconds"
+        ] = 2
         output = (
             ROOT
             / "qa"
@@ -97,15 +102,27 @@ def main() -> None:
     report = submitted.json()
     analysis = report["weakness_analysis"]
     expected_source = "fallback" if args.force_fallback else "llm"
-    model_config = analysis_module.REPORTING_CONFIG["weakness_analysis"]
+    weakness_config = analysis_module.REPORTING_CONFIG["weakness_analysis"]
+    provider = weakness_config["active_provider"]
+    model_config = weakness_config["providers"][provider]
+    configured_endpoint = (
+        analysis_module.GENERATION_MODEL_CONFIG["base_url"]
+        if provider == "deepseek"
+        else model_config["endpoint"]
+    )
     result = {
         "mode": "forced_network_failure" if args.force_fallback else "live_llm",
         "forced_endpoint": forced_endpoint,
-        "model_alias": model_config["model"],
-        "model_identifier": model_config["model_identifier"],
-        "deployment": model_config["deployment"],
-        "server_version": model_config["server_version"],
-        "configured_endpoint": model_config["endpoint"],
+        "provider": provider,
+        "model_alias": model_config.get(
+            "model",
+            analysis_module.GENERATION_MODEL_CONFIG.get("model_id"),
+        ),
+        "model_identifier": model_config.get(
+            "model_identifier",
+            analysis_module.GENERATION_MODEL_CONFIG.get("model_id"),
+        ),
+        "configured_endpoint": configured_endpoint,
         "session_id": session["session_id"],
         "question_count": report["question_count"],
         "report_title": report["report_title"],

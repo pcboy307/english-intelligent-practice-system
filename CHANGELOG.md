@@ -96,6 +96,16 @@
 - 失败分类：structure 32、grammar_tag 2、book_tag 1、question_count 1、vocabulary_scope 1。
 - 证据：`qa/evidence/m2/generation-cost-report.json`、`qa/evidence/m2/gate-failures.json`、`qa/evidence/m2/bank2-counts.txt`。
 
+## 2026-11-07 - M2.0b DeepSeek 试点停止线
+
+- 按所有者指令改用云端 `deepseek-flash`（DeepSeek-V4.1-Flash-1017）；本地 Qwen 仅保留为薄弱点分析对照。
+- 新增 JSON mode、`finish_reason` 强制记录、三步拆分、3 次修复重试、3 次传输重试、5 次连续失败熔断和 80% 预算停止线。
+- 真实 `/models` 验证和 1-token ping 通过，模型 ID 回填为 `deepseek-flash`。
+- 第一批 5 题请求中 4/5 因 `finish_reason=length` 失败，请求级失败率 80%，超过 30% 停止线，停止重跑。
+- 根因为 DeepSeek 默认 thinking 模式占用 4096 输出预算；已关闭 JSON 生成请求的 thinking，但尚未获准重跑。
+- 本轮观测成本人民币 0.168266 元；Bank #2 仍为 0 题，两个 generation job 均为 failed。
+- 证据：`qa/evidence/m2b/`。
+
 ## 2026-11-07 - Demo Bank 规模笔误修正
 
 - 笔误修正：Demo Bank 由文档中的“60 题/11 篇”统一改为“80 题/11 篇”。

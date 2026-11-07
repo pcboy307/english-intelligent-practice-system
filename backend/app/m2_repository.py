@@ -74,8 +74,26 @@ class M2Repository:
         bank = self.get_bank(bank_id)
         if not bank:
             raise KeyError("BANK_NOT_FOUND")
-        if bank["status"] != "draft":
-            raise ValueError("BANK_NOT_DRAFT")
+        if bank["status"] not in {"draft", "generating"}:
+            raise ValueError("BANK_NOT_DRAFT_OR_GENERATING")
+        if bank["status"] == "generating":
+            active_job = self.connection.execute(
+                """
+                SELECT id
+                FROM generation_jobs
+                WHERE bank_id=%s
+                  AND status IN (
+                    'queued',
+                    'running',
+                    'paused_for_review',
+                    'paused_for_owner'
+                  )
+                LIMIT 1
+                """,
+                (bank_id,),
+            ).fetchone()
+            if active_job:
+                raise ValueError("GENERATION_JOB_ALREADY_ACTIVE")
         now = datetime.now(timezone.utc)
         approval = self.connection.execute(
             """
@@ -106,7 +124,7 @@ class M2Repository:
             """
             UPDATE question_banks
             SET status='generating', generation_job_id=%s
-            WHERE id=%s AND status='draft'
+            WHERE id=%s AND status IN ('draft', 'generating')
             """,
             (job["id"], bank_id),
         )

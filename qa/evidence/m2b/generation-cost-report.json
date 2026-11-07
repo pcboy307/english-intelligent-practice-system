@@ -1,0 +1,84 @@
+{
+  "kind": "m2.0b-pilot",
+  "status": "failed",
+  "provider": "deepseek",
+  "model_id": "deepseek-flash",
+  "prompt_version": "m2-gen-v1",
+  "pricing": {
+    "currency": "CNY",
+    "input_per_1m_tokens": 2.0,
+    "output_per_1m_tokens": 8.0,
+    "source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing",
+    "source_date": "2026-11-07"
+  },
+  "budget_cap_cny": {
+    "pilot": 10,
+    "bulk": 100
+  },
+  "totals": {
+    "passages": 3,
+    "accepted_passages": 0,
+    "questions": 0,
+    "prompt_tokens": 3153,
+    "completion_tokens": 20245,
+    "total_tokens": 23398,
+    "cost_cny": 0.168266
+  },
+  "per_question": null,
+  "per_passage": [
+    {
+      "type": "cloze",
+      "passages": 1,
+      "questions": 15,
+      "prompt_tokens": 3153,
+      "completion_tokens": 20245,
+      "total_tokens": 23398,
+      "cost_cny": 0.168266,
+      "elapsed_seconds": 127.363162,
+      "retry_count": 4,
+      "per_question": {
+        "prompt_tokens": 210.2,
+        "completion_tokens": 1349.666667,
+        "total_tokens": 1559.866667,
+        "cost_cny": 0.011217733
+      }
+    },
+    {
+      "type": "grammar_fill",
+      "passages": 1,
+      "questions": 10,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "cost_cny": 0,
+      "elapsed_seconds": 0,
+      "retry_count": 0,
+      "per_question": {
+        "prompt_tokens": 0.0,
+        "completion_tokens": 0.0,
+        "total_tokens": 0.0,
+        "cost_cny": 0.0
+      }
+    },
+    {
+      "type": "reading",
+      "passages": 1,
+      "questions": 4,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "total_tokens": 0,
+      "cost_cny": 0,
+      "elapsed_seconds": 0,
+      "retry_count": 0,
+      "per_question": {
+        "prompt_tokens": 0.0,
+        "completion_tokens": 0.0,
+        "total_tokens": 0.0,
+        "cost_cny": 0.0
+      }
+    }
+  ],
+  "extrapolations": null,
+  "generated_at": "2026-11-07T12:40:01.148993+00:00",
+  "readability": []
+}

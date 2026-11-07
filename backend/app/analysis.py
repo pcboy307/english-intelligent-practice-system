@@ -12,6 +12,9 @@ ROOT = Path(__file__).resolve().parents[2]
 REPORTING_CONFIG = json.loads(
     (ROOT / "config" / "reporting.json").read_text(encoding="utf-8")
 )
+GENERATION_MODEL_CONFIG = json.loads(
+    (ROOT / "contracts" / "generation-model.json").read_text(encoding="utf-8")
+)
 KNOWLEDGE_POINT_LABELS = REPORTING_CONFIG["weakness_analysis"][
     "knowledge_point_labels"
 ]
@@ -100,12 +103,25 @@ def humanize_analysis_text(text: str) -> str:
 def generate_weakness_analysis(
     question_results: list[dict],
     weak_points: list[dict],
+    *,
+    provider_override: str | None = None,
 ) -> dict:
     config = REPORTING_CONFIG["weakness_analysis"]
     maximum = int(config["max_chars"])
     fallback = _fallback(weak_points, maximum)
+    provider = provider_override or config["active_provider"]
+    provider_config = config["providers"].get(provider)
+    fallback_result = {
+        "text": fallback,
+        "source": "fallback",
+        "provider": provider,
+        "usage": None,
+        "cost_cny": 0.0,
+    }
     if not config["enabled"] or os.getenv("WEAKNESS_ANALYSIS_DISABLED") == "1":
-        return {"text": fallback, "source": "fallback"}
+        return fallback_result
+    if provider_config is None:
+        return fallback_result
 
     wrong_samples = []
     selected_keys = set()
@@ -155,7 +171,6 @@ def generate_weakness_analysis(
         "典型错题": wrong_samples,
     }
     payload = {
-        "model": config["model"],
         "messages": [
             {
                 "role": "system",
@@ -173,18 +188,45 @@ def generate_weakness_analysis(
                 "content": json.dumps(prompt_data, ensure_ascii=False),
             },
         ],
-        "temperature": config["temperature"],
-        "max_tokens": config["max_tokens"],
-        "chat_template_kwargs": {"enable_thinking": False},
+        "temperature": provider_config["temperature"],
+        "max_tokens": provider_config["max_tokens"],
     }
-    try:
-        response = httpx.post(
-            config["endpoint"],
-            json=payload,
-            timeout=float(config["timeout_seconds"]),
+    request_kwargs = {
+        "json": payload,
+        "timeout": float(provider_config["timeout_seconds"]),
+    }
+    if provider == "deepseek":
+        api_key = os.getenv(GENERATION_MODEL_CONFIG["api_key_env"])
+        model_id = GENERATION_MODEL_CONFIG.get("model_id")
+        if not api_key or not model_id:
+            return fallback_result
+        endpoint = (
+            GENERATION_MODEL_CONFIG["base_url"].rstrip("/")
+            + "/chat/completions"
         )
+        payload["model"] = model_id
+        payload["thinking"] = {
+            "type": str(provider_config.get("thinking", "disabled"))
+        }
+        request_kwargs["headers"] = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        }
+    elif provider == "qwen":
+        endpoint = provider_config["endpoint"]
+        payload["model"] = provider_config["model"]
+        payload["chat_template_kwargs"] = {"enable_thinking": False}
+    else:
+        return fallback_result
+    try:
+        response = httpx.post(endpoint, **request_kwargs)
         response.raise_for_status()
-        content = response.json()["choices"][0]["message"].get("content") or ""
+        response_json = response.json()
+        content = response_json["choices"][0]["message"].get("content") or ""
+        usage = response_json.get("usage") or {
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+        }
         content = _normalize_score_phrase(
             content,
             len(question_results),
@@ -203,6 +245,28 @@ def generate_weakness_analysis(
         if not re.search(r"[\u4e00-\u9fff]", text):
             raise ValueError("LLM_ANALYSIS_EMPTY")
         text = _ensure_explicit_action(text, maximum)
-        return {"text": text, "source": "llm"}
+        prompt_tokens = int(usage.get("prompt_tokens", 0))
+        completion_tokens = int(usage.get("completion_tokens", 0))
+        cost_cny = 0.0
+        if provider == "deepseek":
+            cost_cny = (
+                prompt_tokens
+                * float(GENERATION_MODEL_CONFIG["price_input_per_1m_cny"])
+                / 1_000_000
+                + completion_tokens
+                * float(GENERATION_MODEL_CONFIG["price_output_per_1m_cny"])
+                / 1_000_000
+            )
+        return {
+            "text": text,
+            "source": "llm",
+            "provider": provider,
+            "model_id": payload["model"],
+            "usage": {
+                "prompt_tokens": prompt_tokens,
+                "completion_tokens": completion_tokens,
+            },
+            "cost_cny": cost_cny,
+        }
     except (httpx.HTTPError, KeyError, TypeError, ValueError):
-        return {"text": fallback, "source": "fallback"}
+        return fallback_result

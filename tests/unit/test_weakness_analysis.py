@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 
 import httpx
+import pytest
 
 from backend.app import analysis
 
@@ -22,7 +23,8 @@ class _Response:
                         )
                     }
                 }
-            ]
+            ],
+            "usage": {"prompt_tokens": 1000, "completion_tokens": 200},
         }
 
 
@@ -41,7 +43,8 @@ class _ScoreResponse:
                         )
                     }
                 }
-            ]
+            ],
+            "usage": {"prompt_tokens": 1000, "completion_tokens": 200},
         }
 
 
@@ -66,6 +69,12 @@ def _weak_points() -> list[dict]:
 
 def test_llm_text_without_action_gets_explicit_action(monkeypatch) -> None:
     monkeypatch.delenv("WEAKNESS_ANALYSIS_DISABLED", raising=False)
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "test-secret")
+    monkeypatch.setattr(
+        analysis,
+        "GENERATION_MODEL_CONFIG",
+        {**analysis.GENERATION_MODEL_CONFIG, "model_id": "deepseek-flash"},
+    )
     monkeypatch.setattr(analysis.httpx, "post", lambda *args, **kwargs: _Response())
 
     result = analysis.generate_weakness_analysis([_question_result()], _weak_points())
@@ -78,6 +87,12 @@ def test_llm_text_without_action_gets_explicit_action(monkeypatch) -> None:
 
 def test_http_failure_uses_rule_fallback(monkeypatch) -> None:
     monkeypatch.delenv("WEAKNESS_ANALYSIS_DISABLED", raising=False)
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "test-secret")
+    monkeypatch.setattr(
+        analysis,
+        "GENERATION_MODEL_CONFIG",
+        {**analysis.GENERATION_MODEL_CONFIG, "model_id": "deepseek-flash"},
+    )
 
     def fail(*args, **kwargs):
         raise httpx.ConnectError("forced failure")
@@ -94,6 +109,12 @@ def test_http_failure_uses_rule_fallback(monkeypatch) -> None:
 
 def test_score_wording_names_total_and_correct_count(monkeypatch) -> None:
     monkeypatch.delenv("WEAKNESS_ANALYSIS_DISABLED", raising=False)
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "test-secret")
+    monkeypatch.setattr(
+        analysis,
+        "GENERATION_MODEL_CONFIG",
+        {**analysis.GENERATION_MODEL_CONFIG, "model_id": "deepseek-flash"},
+    )
     monkeypatch.setattr(analysis.httpx, "post", lambda *args, **kwargs: _ScoreResponse())
     results = [_question_result() for _ in range(6)]
     results.extend(
@@ -109,6 +130,12 @@ def test_score_wording_names_total_and_correct_count(monkeypatch) -> None:
 
 def test_internal_knowledge_point_ids_are_not_sent_to_llm(monkeypatch) -> None:
     monkeypatch.delenv("WEAKNESS_ANALYSIS_DISABLED", raising=False)
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "test-secret")
+    monkeypatch.setattr(
+        analysis,
+        "GENERATION_MODEL_CONFIG",
+        {**analysis.GENERATION_MODEL_CONFIG, "model_id": "deepseek-flash"},
+    )
     captured: dict = {}
 
     def fake_post(*args, **kwargs):
@@ -134,6 +161,59 @@ def test_internal_knowledge_point_ids_are_not_sent_to_llm(monkeypatch) -> None:
     assert "material_noun" not in prompt
     assert "名词词义辨析（团队）" in prompt
     assert "名词词义辨析（材料）" in prompt
+
+
+def test_weakness_analysis_calls_deepseek_with_environment_key(monkeypatch) -> None:
+    monkeypatch.delenv("WEAKNESS_ANALYSIS_DISABLED", raising=False)
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "test-secret")
+    monkeypatch.setattr(
+        analysis,
+        "GENERATION_MODEL_CONFIG",
+        {**analysis.GENERATION_MODEL_CONFIG, "model_id": "deepseek-flash"},
+    )
+    captured = {}
+
+    def fake_post(url, **kwargs):
+        captured["url"] = url
+        captured.update(kwargs)
+        return _Response()
+
+    monkeypatch.setattr(analysis.httpx, "post", fake_post)
+
+    result = analysis.generate_weakness_analysis([_question_result()], _weak_points())
+
+    assert result["source"] == "llm"
+    assert captured["url"] == "https://api.deepseek.com/v1/chat/completions"
+    assert captured["headers"]["Authorization"] == "Bearer test-secret"
+    assert captured["json"]["model"] == "deepseek-flash"
+    assert "qwen" not in json.dumps(captured["json"], ensure_ascii=False).lower()
+    assert result["provider"] == "deepseek"
+    assert result["usage"] == {"prompt_tokens": 1000, "completion_tokens": 200}
+    assert result["cost_cny"] == pytest.approx(0.0036)
+
+
+def test_qwen_remains_available_as_a_comparison_provider(monkeypatch) -> None:
+    monkeypatch.delenv("WEAKNESS_ANALYSIS_DISABLED", raising=False)
+    captured = {}
+
+    def fake_post(url, **kwargs):
+        captured["url"] = url
+        captured.update(kwargs)
+        return _Response()
+
+    monkeypatch.setattr(analysis.httpx, "post", fake_post)
+
+    result = analysis.generate_weakness_analysis(
+        [_question_result()],
+        _weak_points(),
+        provider_override="qwen",
+    )
+
+    assert result["source"] == "llm"
+    assert result["provider"] == "qwen"
+    assert result["cost_cny"] == 0.0
+    assert captured["url"] == "http://127.0.0.1:11435/v1/chat/completions"
+    assert "headers" not in captured
 
 
 def test_fallback_uses_natural_knowledge_point_labels(monkeypatch) -> None:

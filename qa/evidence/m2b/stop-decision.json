@@ -1,0 +1,15 @@
+{
+  "decision": "stopped_before_retry",
+  "reason": "finish_reason_length request failure rate exceeded the owner threshold",
+  "provider": "deepseek",
+  "model_id": "deepseek-flash",
+  "request_count_excluding_ping": 5,
+  "failed_requests": 4,
+  "failure_rate": 0.8,
+  "configured_stop_threshold": 0.3,
+  "observed_cost_cny": 0.168266,
+  "bank2_questions_written": 0,
+  "root_cause": "DeepSeek thinking mode remained enabled, consuming the 4096 completion-token budget before the question JSON completed.",
+  "fix_applied_but_not_rerun": "Set thinking.type=disabled for JSON generation requests.",
+  "requires_user_approval_to_rerun": true
+}

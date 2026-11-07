@@ -1,0 +1,90 @@
+{
+  "request_count": 5,
+  "failure_count": 4,
+  "failure_rate": 0.8,
+  "status_counts": {
+    "finish_reason_length": 4,
+    "ok": 1
+  },
+  "class_failure_rates": {
+    "finish_reason_length": 0.8
+  },
+  "finish_reason_distribution": {
+    "length": 4,
+    "stop": 1
+  },
+  "requests": [
+    {
+      "purpose": "ping",
+      "attempt": 1,
+      "status": "ok",
+      "prompt_tokens": 31,
+      "completion_tokens": 1,
+      "total_tokens": 32,
+      "elapsed_seconds": 0.7757521999301389,
+      "finish_reason": "length",
+      "request_id": "c54a3f4f-bd99-44f5-90cf-b475f319fb51",
+      "error": null
+    },
+    {
+      "purpose": "passage:cloze",
+      "attempt": 1,
+      "status": "ok",
+      "prompt_tokens": 181,
+      "completion_tokens": 3861,
+      "total_tokens": 4042,
+      "elapsed_seconds": 18.10965009999927,
+      "finish_reason": "stop",
+      "request_id": "bd440dce-166d-4b65-9df1-aafb4756174b",
+      "error": null
+    },
+    {
+      "purpose": "questions:cloze:batch-1",
+      "attempt": 1,
+      "status": "finish_reason_length",
+      "prompt_tokens": 704,
+      "completion_tokens": 4096,
+      "total_tokens": 4800,
+      "elapsed_seconds": 28.35954660002608,
+      "finish_reason": "length",
+      "request_id": "b4182c3c-0045-4e64-a924-89d8a0c9c8a3",
+      "error": null
+    },
+    {
+      "purpose": "questions:cloze:batch-1",
+      "attempt": 1,
+      "status": "finish_reason_length",
+      "prompt_tokens": 740,
+      "completion_tokens": 4096,
+      "total_tokens": 4836,
+      "elapsed_seconds": 27.35048049991019,
+      "finish_reason": "length",
+      "request_id": "d8e85cc8-640e-41fc-9fd3-f3dccb4c36b6",
+      "error": null
+    },
+    {
+      "purpose": "questions:cloze:batch-1",
+      "attempt": 1,
+      "status": "finish_reason_length",
+      "prompt_tokens": 756,
+      "completion_tokens": 4096,
+      "total_tokens": 4852,
+      "elapsed_seconds": 25.99682430003304,
+      "finish_reason": "length",
+      "request_id": "8e639b0a-db62-494d-a73b-ee0ae737caba",
+      "error": null
+    },
+    {
+      "purpose": "questions:cloze:batch-1",
+      "attempt": 1,
+      "status": "finish_reason_length",
+      "prompt_tokens": 772,
+      "completion_tokens": 4096,
+      "total_tokens": 4868,
+      "elapsed_seconds": 27.54666069999803,
+      "finish_reason": "length",
+      "request_id": "bbb02ced-6ba7-40ca-8ac9-e49384886d2e",
+      "error": null
+    }
+  ]
+}

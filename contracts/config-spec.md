@@ -76,8 +76,9 @@
 - `mastered_threshold=0.85`、`mastered_min_attempts=5`。
 - `trend.window=5`、`rising_above=0.05`、`falling_below=-0.05`。
 - `stage_report.require_cross_bank_notice=true`。
-- `weakness_analysis`：本地模型端点、模型名、100 字上限、最多 4 个典型错题样本与超时。
-- 当前模型记录为 `qwen3.5:4b-q4_K_M`，别名 `qwen-local`，经本机 `llama.cpp` OpenAI 兼容接口部署。
+- `weakness_analysis.active_provider`：当前为 `deepseek`；`qwen` 适配保留用于同题对照，最终采用方由效果与成本决定。
+- DeepSeek 薄弱点分析读取 `contracts/generation-model.json`；密钥只从 `DEEPSEEK_API_KEY` 环境变量读取。
+- 每次分析结果附带 provider、输入/输出 token、耗时与估算人民币成本，报告正文仍只持久化 100 字以内文案和 `llm/fallback` 来源。
 - 薄弱点分析输入必须包含题目、用户答案、正确答案和知识点；输出超过 100 字时按完整句截断。
 
 ### `config/validation.json`

@@ -143,3 +143,34 @@ def test_activation_moves_previous_active_to_ready_and_can_return_target_to_read
             repo.set_bank_status(bank["id"], "ready")
             assert repo.get_active_bank() is None
             assert repo.get_bank(bank["id"])["status"] == "ready"
+
+
+def test_generating_bank_can_start_a_replacement_job_after_previous_job_fails() -> None:
+    with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+        with connection.transaction(force_rollback=True):
+            repo = M2Repository(connection)
+            bank = repo.create_bank(
+                name=f"M2 retry test {uuid.uuid4()}",
+                target_size=300,
+                difficulty_profile="standard",
+            )
+            first = repo.create_generation_job(
+                bank["id"],
+                target_passages=47,
+                batch_size=10,
+                approved_by="pytest",
+                reason="first attempt",
+            )
+            repo.set_job_status(first["id"], "failed")
+
+            second = repo.create_generation_job(
+                bank["id"],
+                target_passages=47,
+                batch_size=10,
+                approved_by="pytest",
+                reason="replacement after failure",
+            )
+
+            assert second["status"] == "queued"
+            assert second["id"] != first["id"]
+            assert repo.get_bank(bank["id"])["generation_job_id"] == second["id"]
