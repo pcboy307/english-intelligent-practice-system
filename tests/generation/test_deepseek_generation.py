@@ -13,6 +13,7 @@ from backend.app.deepseek_generation import (
     CostLedger,
     DeepSeekClient,
     DeepSeekResponse,
+    DeepSeekTransportConfigError,
     FinishReasonError,
     RepairExhausted,
     RequestRecord,
@@ -23,6 +24,7 @@ from backend.app.deepseek_generation import (
 from backend.app.m2_deepseek_pipeline import generate_pilot_passage
 from backend.app.m2_deepseek_pipeline import (
     GENERATION_BATCH_SCHEMA_PATH,
+    _build_explanations_prompt,
     _validate_explanation_batch,
 )
 from backend.app.m2_pilot import load_pilot_schedule
@@ -32,6 +34,8 @@ CONFIG = {
     "provider": "deepseek",
     "base_url": "https://api.deepseek.com/v1",
     "model_id": "listed-model-id",
+    "transport": "json_object",
+    "prompt_version": "m2-gen-v2",
     "api_key_env": "DEEPSEEK_API_KEY",
     "max_tokens": 4096,
     "temperature": 0.5,
@@ -87,6 +91,10 @@ def test_client_uses_environment_key_json_mode_and_records_finish_reason(
     assert response.prompt_tokens == 100
     assert response.completion_tokens == 50
     assert client.requests[-1].raw_content == '{"ok": true}'
+    assert client.requests[-1].model_id == "listed-model-id"
+    assert client.requests[-1].transport == "json_object"
+    assert client.requests[-1].prompt_version == "m2-gen-v2"
+    assert client.requests[-1].cost_cny == pytest.approx(0.0006)
     assert captured["headers"]["authorization"] == "Bearer test-secret"
     assert captured["payload"]["model"] == "listed-model-id"
     assert captured["payload"]["max_tokens"] == 4096
@@ -110,7 +118,7 @@ def test_client_can_send_json_schema_structured_output(monkeypatch) -> None:
         return httpx.Response(200, json=completion('{"ok": true}'))
 
     client = DeepSeekClient(
-        CONFIG,
+        {**CONFIG, "transport": "json_schema"},
         http_client=httpx.Client(transport=httpx.MockTransport(handler)),
     )
     client.chat_json(
@@ -127,6 +135,17 @@ def test_client_can_send_json_schema_structured_output(monkeypatch) -> None:
             "schema": schema,
         },
     }
+
+
+def test_unknown_transport_is_rejected_instead_of_silently_falling_back(
+    monkeypatch,
+) -> None:
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "test-secret")
+    with pytest.raises(
+        DeepSeekTransportConfigError,
+        match="DEEPSEEK_TRANSPORT_UNSUPPORTED",
+    ):
+        DeepSeekClient({**CONFIG, "transport": "automatic"})
 
 
 def test_ping_request_is_tiny_and_does_not_require_json_output(monkeypatch) -> None:
@@ -517,6 +536,32 @@ def test_generation_batch_schema_file_exists_with_explanation_ir_contract() -> N
     item = schema["properties"]["explanations"]["items"]
     assert item["required"] == ["question_index", "explanation"]
     assert item["additionalProperties"] is False
+
+
+def test_explanation_prompt_embeds_ir_schema_and_two_object_examples() -> None:
+    prompt = _build_explanations_prompt(
+        "A short passage.",
+        [
+            {
+                "stem": "Question one?",
+                "options": ["A", "B", "C", "D"],
+                "answer": "A",
+            },
+            {
+                "stem": "Question two?",
+                "options": ["A", "B", "C", "D"],
+                "answer": "B",
+            },
+        ],
+    )
+
+    assert "json" in prompt.lower()
+    assert '"question_index": 1' in prompt
+    assert '"question_index": 2' in prompt
+    assert '"explanation"' in prompt
+    assert '"required"' in prompt
+    assert '"question_index"' in prompt
+    assert '"additionalProperties": false' in prompt
 
 
 def test_explanation_batch_sorts_by_question_index_before_mapping() -> None:

@@ -21,6 +21,10 @@ class MissingAPIKey(DeepSeekGenerationError):
     pass
 
 
+class DeepSeekTransportConfigError(DeepSeekGenerationError):
+    pass
+
+
 class TransportRetriesExhausted(DeepSeekGenerationError):
     pass
 
@@ -79,6 +83,10 @@ class RequestRecord:
     request_id: str | None = None
     error: str | None = None
     raw_content: str | None = None
+    model_id: str | None = None
+    transport: str | None = None
+    prompt_version: str | None = None
+    cost_cny: float = 0.0
 
     def as_dict(self) -> dict[str, Any]:
         result = {
@@ -92,6 +100,10 @@ class RequestRecord:
             "finish_reason": self.finish_reason,
             "request_id": self.request_id,
             "error": self.error,
+            "model_id": self.model_id,
+            "transport": self.transport,
+            "prompt_version": self.prompt_version,
+            "cost_cny": self.cost_cny,
         }
         if self.raw_content is not None:
             result["raw_content"] = self.raw_content
@@ -149,6 +161,11 @@ class DeepSeekClient:
             raise MissingAPIKey(
                 f"{config['api_key_env']} is not set in the environment."
             )
+        if config.get("transport") not in {"json_object", "json_schema"}:
+            raise DeepSeekTransportConfigError(
+                "DEEPSEEK_TRANSPORT_UNSUPPORTED: "
+                f"{config.get('transport')!r}"
+            )
         self.http_client = http_client or httpx.Client(timeout=120.0)
         self.sleep = sleep or time.sleep
         self.raw_output_dir = (
@@ -156,6 +173,27 @@ class DeepSeekClient:
         )
         self.requests: list[RequestRecord] = []
         self.consecutive_transport_failures = 0
+
+    def _cost(self, prompt_tokens: int, completion_tokens: int) -> float:
+        return (
+            prompt_tokens
+            * float(self.config["price_input_per_1m_cny"])
+            / 1_000_000
+            + completion_tokens
+            * float(self.config["price_output_per_1m_cny"])
+            / 1_000_000
+        )
+
+    def _request_record(self, **values: Any) -> RequestRecord:
+        prompt_tokens = int(values.get("prompt_tokens", 0))
+        completion_tokens = int(values.get("completion_tokens", 0))
+        return RequestRecord(
+            **values,
+            model_id=self.config["model_id"],
+            transport=self.config["transport"],
+            prompt_version=self.config["prompt_version"],
+            cost_cny=self._cost(prompt_tokens, completion_tokens),
+        )
 
     @property
     def chat_endpoint(self) -> str:
@@ -225,7 +263,7 @@ class DeepSeekClient:
             or result.get("id")
         )
         self.requests.append(
-            RequestRecord(
+            self._request_record(
                 purpose="ping",
                 attempt=1,
                 status="ok",
@@ -238,10 +276,13 @@ class DeepSeekClient:
         )
         return {
             "model_id": model_id,
+            "transport": self.config["transport"],
+            "prompt_version": self.config["prompt_version"],
             "request_id": request_id,
             "finish_reason": choice.get("finish_reason"),
             "prompt_tokens": int(usage.get("prompt_tokens", 0)),
             "completion_tokens": int(usage.get("completion_tokens", 0)),
+            "cost_cny": self.requests[-1].cost_cny,
             "elapsed_seconds": elapsed,
         }
 
@@ -258,8 +299,12 @@ class DeepSeekClient:
         model_id = self.config.get("model_id")
         if not model_id:
             raise DeepSeekGenerationError("DEEPSEEK_MODEL_ID_NOT_CONFIGURED")
-        response_format = (
-            {
+        if self.config["transport"] == "json_schema":
+            if response_schema is None:
+                raise DeepSeekTransportConfigError(
+                    "DEEPSEEK_JSON_SCHEMA_REQUIRES_SCHEMA"
+                )
+            response_format = {
                 "type": "json_schema",
                 "json_schema": {
                     "name": "generation_batch",
@@ -267,9 +312,8 @@ class DeepSeekClient:
                     "schema": response_schema,
                 },
             }
-            if response_schema is not None
-            else {"type": "json_object"}
-        )
+        else:
+            response_format = {"type": "json_object"}
         payload = {
             "model": model_id,
             "messages": [
@@ -298,7 +342,7 @@ class DeepSeekClient:
                     json=payload,
                 )
             except httpx.HTTPError as error:
-                record = RequestRecord(
+                record = self._request_record(
                     purpose=purpose,
                     attempt=attempt,
                     status="transport_error",
@@ -320,7 +364,7 @@ class DeepSeekClient:
 
             elapsed = time.perf_counter() - started
             if response.status_code == 429 or response.status_code >= 500:
-                record = RequestRecord(
+                record = self._request_record(
                     purpose=purpose,
                     attempt=attempt,
                     status="transport_error",
@@ -350,7 +394,7 @@ class DeepSeekClient:
                     )
                 except json.JSONDecodeError:
                     pass
-                record = RequestRecord(
+                record = self._request_record(
                     purpose=purpose,
                     attempt=attempt,
                     status="api_error",
@@ -381,7 +425,7 @@ class DeepSeekClient:
                 or payload_json.get("id")
             )
             self._persist_raw(request_id, content)
-            record = RequestRecord(
+            record = self._request_record(
                 purpose=purpose,
                 attempt=attempt,
                 status="ok",

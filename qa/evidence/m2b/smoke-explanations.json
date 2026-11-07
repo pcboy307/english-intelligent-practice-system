@@ -1,6 +1,8 @@
 {
-  "started_at": "2026-11-07T12:58:56+00:00",
+  "started_at": "2026-11-07T13:04:15.762615+00:00",
   "model_id": "deepseek-flash",
+  "transport": "json_object",
+  "prompt_version": "m2-gen-v2",
   "thinking": {
     "type": "disabled"
   },
@@ -8,10 +10,11 @@
   "batch_size": 10,
   "passage_group_id": "DEMO-CLOZE-02",
   "status": "failed",
-  "reason": "deepseek_api_error",
-  "error": "DEEPSEEK_API_ERROR:400:This response_format type is unavailable now",
-  "request_id": "587b2a8a-db38-4d2d-9612-c97cd5b9a433",
-  "raw_response": "qa/evidence/m2b/raw-responses/587b2a8a-db38-4d2d-9612-c97cd5b9a433.txt",
-  "input_tokens": 0,
-  "output_tokens": 0
+  "reason": "contract_validation_error",
+  "error": "GENERATION_BATCH_SCHEMA_INVALID: path=['explanations', 9] received='{\"explanations\": [{\"question_index\": 1, \"explanation\": \"第一空应填复数名词bikes，因为前面有数词twenty，表示“二十辆自行车”，且后文demand grew quickly也说明数量不止一辆。选项bike是单数形式，不能与twenty搭配；biking是动名词或名词“骑车运动”，biked是动词过去式，均不符合此处需要名词复数的语法要求。本题考查数词后接可数名词复数的用法。\", \"explanation_extra\": \"\"}, {\"question_index\": 2, \"explanation\": \"第二空应填副词carefu'",
+  "finish_reason": "stop",
+  "input_tokens": 1286,
+  "output_tokens": 932,
+  "request_id": "31bc622d-345a-4303-8305-6be5aa260d45",
+  "cost_cny": 0.010028
 }

@@ -127,10 +127,20 @@ def _build_explanations_prompt(
     ]
     return f"""
 Write only Chinese explanations for the following fixed questions.
-Return JSON matching this exact shape:
+Return JSON that satisfies this schema:
+{json.dumps(GENERATION_BATCH_SCHEMA, ensure_ascii=False, indent=2)}
+
+Example JSON output with two items:
 {{
   "explanations": [
-    {{"question_index": 1, "explanation": "第一句。第二句。第三句。"}}
+    {{
+      "question_index": 1,
+      "explanation": "第一题答案依据。第一题干扰项错误原因。第一题考点。"
+    }},
+    {{
+      "question_index": 2,
+      "explanation": "第二题答案依据。第二题干扰项错误原因。第二题考点。"
+    }}
   ]
 }}
 Every array item MUST be an object containing exactly question_index and

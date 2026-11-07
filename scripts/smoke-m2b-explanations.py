@@ -101,6 +101,8 @@ def main() -> None:
     result = {
         "started_at": datetime.now(timezone.utc).isoformat(),
         "model_id": contract["model_id"],
+        "transport": contract["transport"],
+        "prompt_version": contract["prompt_version"],
         "thinking": contract["thinking"],
         "max_tokens": contract["max_tokens"],
         "batch_size": 10,
@@ -123,6 +125,8 @@ def main() -> None:
                 "output_tokens": request.completion_tokens,
                 "raw_content": error.raw_content,
                 "raw_response": error.raw_response,
+                "request_id": request.request_id,
+                "cost_cny": request.cost_cny,
             }
         )
         write_json(EVIDENCE / "smoke-explanations.json", result)
@@ -137,6 +141,7 @@ def main() -> None:
                 "request_id": request.request_id,
                 "input_tokens": request.prompt_tokens,
                 "output_tokens": request.completion_tokens,
+                "cost_cny": request.cost_cny,
             }
         )
         write_json(EVIDENCE / "smoke-explanations.json", result)
@@ -148,6 +153,7 @@ def main() -> None:
             response.data,
         )
     except ValueError as error:
+        request = client.requests[-1]
         result.update(
             {
                 "status": "failed",
@@ -156,6 +162,8 @@ def main() -> None:
                 "finish_reason": response.finish_reason,
                 "input_tokens": response.prompt_tokens,
                 "output_tokens": response.completion_tokens,
+                "request_id": request.request_id,
+                "cost_cny": request.cost_cny,
             }
         )
         write_json(EVIDENCE / "smoke-explanations.json", result)

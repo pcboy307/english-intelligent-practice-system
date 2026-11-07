@@ -4,6 +4,7 @@
   "model_id": "deepseek-flash",
   "model_id_status": "verified_from_get_models",
   "api_key_env": "DEEPSEEK_API_KEY",
+  "transport": "json_object",
   "max_tokens": 8192,
   "max_tokens_adjustment": {
     "previous": 4096,
@@ -15,7 +16,7 @@
     "type": "disabled"
   },
   "temperature": 0.5,
-  "prompt_version": "m2-gen-v1",
+  "prompt_version": "m2-gen-v2",
   "request_timeout_seconds": 120,
   "request_retries_max": 3,
   "repair_retries_max": 1,

@@ -1,0 +1,54 @@
+{
+  "explanations": [
+    {
+      "question_index": 1,
+      "explanation": "第一空应填复数名词bikes，因为前面有数词twenty，表示“二十辆自行车”，且后文demand grew quickly也说明数量不止一辆。选项bike是单数形式，不能与twenty搭配；biking是动名词或名词“骑车运动”，biked是动词过去式，均不符合此处需要名词复数的语法要求。本题考查数词后接可数名词复数的用法。",
+      "explanation_extra": ""
+    },
+    {
+      "question_index": 2,
+      "explanation": "第二空应填副词carefully，用来修饰动词check，表示“仔细检查每辆自行车”。选项careful是形容词，不能修饰动词；carefulness是名词，careless是形容词且意思为“粗心的”，都不符合语境。本题考查形容词与副词的区别及副词修饰动词的用法。",
+      "explanation_extra": ""
+    },
+    {
+      "question_index": 3,
+      "explanation": "第三空应填If，引导条件状语从句，表示“如果自行车损坏了，就会被移到维修区”。选项Although表示让步“虽然”，Because表示原因“因为”，Unless表示“除非”，均不符合此处逻辑关系。本题考查条件状语从句连词的选择。",
+      "explanation_extra": ""
+    },
+    {
+      "question_index": 4,
+      "explanation": "第四空应填riding，因为avoid后接动名词作宾语，表示“避免在狭窄街道上骑行”。选项ride是动词原形，rode是过去式，ridden是过去分词，都不能直接作avoid的宾语。本题考查avoid doing sth.的固定搭配。",
+      "explanation_extra": ""
+    },
+    {
+      "question_index": 5,
+      "explanation": "第五空应填already，表示“这项服务已经成为许多工人日常生活的一部分”，强调动作已经发生。选项instead意为“代替”，hardly意为“几乎不”，perhaps意为“也许”，都不符合语境。本题考查现在完成时中副词already的用法。",
+      "explanation_extra": ""
+    },
+    {
+      "question_index": 6,
+      "explanation": "第六空应填helped，因为主句has后接过去分词构成现在完成时，表示“骑车已经帮助她省钱并保持活跃”。选项help是原形，helping是现在分词，helps是第三人称单数，都不能与has构成现在完成时。本题考查现在完成时的构成。",
+      "explanation_extra": ""
+    },
+    {
+      "question_index": 7,
+      "explanation": "第七空应填surprised，因为主语Another person是人，表示“感到惊讶的”，用-ed形容词。选项surprising表示“令人惊讶的”，通常修饰事物；surprise是名词或动词，surprisingly是副词，均不符合此处作表语的需要。本题考查-ed形容词与-ing形容词的区别。",
+      "explanation_extra": ""
+    },
+    {
+      "question_index": 8,
+      "explanation": "第八空应填Instead of，表示“人们不是堵住入口，而是把满车留在下一个站点”，符合前后对比的逻辑。选项Because of表示原因，In spite后需接of，According to表示“根据”，都不符合语境。本题考查介词短语Instead of的用法。",
+      "explanation_extra": ""
+    },
+    {
+      "question_index": 9,
+      "explanation": "第九空应填which，引导宾语从句，表示“地图显示哪些站点最繁忙”，which在从句中作定语修饰stations。选项who指人，whose表示所属，when表示时间，都不能修饰物且不符合句意。本题考查疑问词which引导宾语从句的用法。",
+      "explanation_extra": ""
+    },
+    {
+      "question_index": 10,
+      "explanation": "第十空应填will add，因为if引导的条件状语从句用一般现在时，主句用一般将来时，表示“如果居民继续使用这项服务，镇上明年将增加更多站点”。选项adds是一般现在时第三人称单数，added是过去式，would add是过去将来时，均不符合主将从现的规则。本题考查条件状语从句中“主将从现”的时态搭配。",
+      "explanation_extra": ""
+    }
+  ]
+}

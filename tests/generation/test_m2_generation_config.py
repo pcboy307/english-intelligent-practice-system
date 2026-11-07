@@ -38,7 +38,8 @@ def test_deepseek_contract_uses_environment_key_and_safe_budget_defaults() -> No
     assert contract["max_tokens"] == 8192
     assert contract["thinking"] == {"type": "disabled"}
     assert contract["temperature"] == 0.5
-    assert contract["prompt_version"] == "m2-gen-v1"
+    assert contract["transport"] == "json_object"
+    assert contract["prompt_version"] == "m2-gen-v2"
     assert contract["budget_cap_cny"] == {"pilot": 10, "bulk": 100}
     assert contract["request_retries_max"] == 3
     assert contract["repair_retries_max"] == 1

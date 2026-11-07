@@ -132,6 +132,9 @@
 - 原始模型响应统一落盘到 `qa/evidence/m2b/raw-responses/`，最多保存 8000 字符。
 - 结构修复重试降为 1 次；429/超时/5xx 仍最多指数退避 3 次。
 - DeepSeek structured output `json_schema` 冒烟返回 HTTP 400：`This response_format type is unavailable now`，按冒烟规则停止，没有自动回退。
+- 经用户批准后退回显式 `json_object`，提示词版本升级为 `m2-gen-v2`，IR Schema 原文和两条对象样例直接嵌入提示词。
+- `json_object` 冒烟：10 条解析完整生成、`finish_reason=stop`、输入 1286 tokens、输出 932 tokens、成本 0.010028 元。
+- IR Schema 因第 10 项包含额外空字段 `explanation_extra` 拒收整批；原文已落盘，未重试、未进入完整试点。
 
 ## 2026-11-07 - Demo Bank 规模笔误修正
 
