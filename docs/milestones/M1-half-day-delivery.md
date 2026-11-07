@@ -49,6 +49,7 @@ http://localhost:8081/ → 开始 30 分钟练习 → /practice → 交卷 → /
 报告显示：
 
 - `46.67` 分。
+- 计分口径：满分 100 分，按题等分；`得分 = 答对题数 ÷ 30 × 100`。例如答对 1 题即 `1 ÷ 30 × 100 = 3.33`。
 - `grammar_fill 10%`、`cloze 80%`、`gap_fill 20%`。
 - 三项薄弱知识点。
 - 30 条逐题答案、正确答案与纯文本解析。
@@ -88,6 +89,13 @@ english_practice | PostgreSQL 16.15, compiled by Visual C++ build 1944, 64-bit
   "keys": "session_id,bank_id,bank_name,bank_version,duration_minutes,status,items,composition_note,deadline,server_time,remaining_seconds,progress"
 }
 ```
+
+正反面闭环：
+
+- 交卷前：`has_explanation=false`。
+- 交卷后：报告包含 30 条 `question_results`，每条均有非空 `explanation`，缺失解析数为 0。
+
+这说明解析确实只在交卷后下发。
 
 ## 幂等与两次消标
 

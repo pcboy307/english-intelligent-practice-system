@@ -52,4 +52,5 @@
 - 数据库守卫改为 `contracts/runtime.json` 绝对规则：只允许端口 15432 和数据库 `english_practice`；只改 URL 到 5432 时启动被拒绝。
 - 后端重启前后 `practice_sessions` 均为 42；报告含分数、3 组题型正确率、3 个薄弱知识点、30 条逐题解析且缺失解析数为 0。
 - 登记当前 Demo Bank 只有 30 题/3 篇，以及加权、重复惩罚和知识点上限尚未形成真实排除验证。
+- 所有者签收 CO-003 半天闭环，tag 为 `co003-halfday-closedloop`；M1 明确保持未完成。
 - 原始记录：`docs/change-log/CO-003-half-day-sprint.md`、`docs/milestones/M1-half-day-delivery.md`。

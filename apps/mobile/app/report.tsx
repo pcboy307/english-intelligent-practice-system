@@ -34,6 +34,7 @@ export default function ReportScreen() {
         <Text style={styles.bank}>{report.bank_name}</Text>
         <Text style={styles.score}>{report.score} 分</Text>
         <Text style={styles.meta}>正确率 {Math.round(report.accuracy * 100)}% · 用时 {Math.round(report.duration_seconds / 60)} 分钟</Text>
+        <Text style={styles.meta}>计分口径：满分 {report.max_score} 分；按题等分，得分 = 答对题数 ÷ {report.question_results.length} × {report.max_score}。</Text>
 
         <Text style={styles.sectionTitle}>分题型正确率</Text>
         {Object.entries(report.type_scores).map(([type, score]) => (

@@ -87,6 +87,14 @@ Assert-True ((15 + 10 + 4) -in @($mode30.expected_question_counts)) "30-minute c
 Assert-True ((15 + 10 + 5) -in @($mode30.expected_question_counts)) "30-minute gap count mismatch"
 Assert-True (42 -in @($mode60.expected_question_counts)) "60-minute count mismatch"
 Assert-True ($practiceModes.bank_scope.allow_cross_bank_sampling -eq $false) "Cross-bank sampling must be forbidden"
+$bookCountRules = $practiceModes.paper_constraints.question_point_book_distribution_count_rules
+$count30 = @($bookCountRules.'30'.PSObject.Properties.Value)
+$count2000 = @($bookCountRules.'2000'.PSObject.Properties.Value)
+Assert-True ((($count30 | Measure-Object -Sum).Sum) -eq 30) "30-question book distribution must sum to 30"
+Assert-True ((($count2000 | Measure-Object -Sum).Sum) -eq 2000) "2000-question book distribution must sum to 2000"
+Assert-True ($bookCountRules.'30'.'选必二' -eq 14) "30-question elective-2 count mismatch"
+Assert-True ($bookCountRules.'30'.'cross_book' -eq 1) "30-question cross-book count mismatch"
+Assert-True ($bookCountRules.'2000'.'选必二' -eq 900) "2000-question elective-2 count mismatch"
 Write-Output "PASS practice-modes counts=29/30,42"
 
 $reporting = Read-Json "config/reporting.json"
