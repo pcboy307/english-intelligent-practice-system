@@ -42,6 +42,7 @@ class SessionRecord:
     submitted_at: datetime | None = None
     idempotency_key: str | None = None
     report: dict | None = None
+    session_kind: str = "practice"
 
 
 class InMemoryStore:

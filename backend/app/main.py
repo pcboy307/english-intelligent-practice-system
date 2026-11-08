@@ -75,7 +75,7 @@ def session_payload(record) -> dict:
     remaining = max(0, int((record.deadline - now_utc()).total_seconds()))
     items = []
     for qid in record.question_ids:
-        question = store.questions[qid]
+        question = store.get_question(record.bank_id, qid)
         items.append(
             {
                 "question_id": question.id,
@@ -140,6 +140,54 @@ def start_practice(
         record = store.start_session(student_id, payload.duration_minutes, now_utc())
     except ValueError as error:
         raise HTTPException(status_code=400, detail={"code": str(error)}) from error
+    return session_payload(record)
+
+
+@app.get("/api/v1/mistakes")
+def list_mistakes(
+    x_student_id: str | None = Header(default=None, alias="X-Student-Id"),
+) -> dict:
+    student_id = student_id_or_401(x_student_id)
+    return store.list_mistakes(student_id)
+
+
+@app.get("/api/v1/mistakes/{passage_id}")
+def get_mistake_passage(
+    passage_id: str,
+    x_student_id: str | None = Header(default=None, alias="X-Student-Id"),
+) -> dict:
+    student_id = student_id_or_401(x_student_id)
+    try:
+        return store.get_mistake_passage(student_id, passage_id)
+    except KeyError as error:
+        raise HTTPException(
+            status_code=404,
+            detail={"code": str(error)},
+        ) from error
+
+
+@app.post("/api/v1/mistakes/review/{passage_id}", status_code=201)
+def start_mistake_review(
+    passage_id: str,
+    x_student_id: str | None = Header(default=None, alias="X-Student-Id"),
+) -> dict:
+    student_id = student_id_or_401(x_student_id)
+    try:
+        record = store.create_review_session(
+            student_id,
+            passage_id,
+            now_utc(),
+        )
+    except KeyError as error:
+        raise HTTPException(
+            status_code=404,
+            detail={"code": str(error)},
+        ) from error
+    except ValueError as error:
+        raise HTTPException(
+            status_code=409,
+            detail={"code": str(error)},
+        ) from error
     return session_payload(record)
 
 

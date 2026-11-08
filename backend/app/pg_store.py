@@ -18,6 +18,13 @@ from psycopg.types.json import Jsonb
 from .demo_bank import DemoQuestion, demo_bank
 from .analysis import generate_weakness_analysis, humanize_analysis_text
 from .composer import assemble_demo_paper
+from .mistakes import (
+    create_review_composition,
+    get_passage_mistake_detail,
+    list_open_mistakes,
+    record_session_results,
+    session_attempt_kind,
+)
 from .store import SessionRecord
 
 
@@ -55,7 +62,8 @@ class PostgresStore:
                 "DATABASE_NAME_FORBIDDEN: "
                 f"current_database()={actual_database} required={required_database}"
             )
-        self.bank = self._ensure_seeded()
+        seeded = self._ensure_seeded()
+        self.bank = self._load_active_bank() or seeded
         self.questions = self._load_questions()
         self.sessions: dict[str, SessionRecord] = {}
 
@@ -66,6 +74,28 @@ class PostgresStore:
             yield connection
         finally:
             connection.close()
+
+    def _load_active_bank(self) -> dict | None:
+        with self.connection() as connection:
+            row = connection.execute(
+                """
+                SELECT qb.*
+                FROM bank_active_state bas
+                JOIN question_banks qb ON qb.id=bas.active_bank_id
+                WHERE bas.singleton=TRUE
+                """
+            ).fetchone()
+        if not row:
+            return None
+        return {
+            "bank_id": str(row["id"]),
+            "name": row["name"],
+            "version": "1",
+            "status": row["status"],
+            "target_size": row["target_size"],
+            "difficulty_profile": row["difficulty_profile"],
+            "created_at": row["created_at"].isoformat(),
+        }
 
     def _ensure_seeded(self) -> dict:
         seeded = demo_bank()
@@ -223,7 +253,7 @@ class PostgresStore:
         with self.connection() as connection:
             rows = connection.execute(
                 """
-                SELECT q.*, p.content AS passage
+                SELECT q.*, p.content AS passage, p.topic AS topic_value
                 FROM questions q
                 JOIN passages p
                   ON p.bank_id=q.bank_id AND p.passage_group_id=q.passage_group_id
@@ -246,9 +276,44 @@ class PostgresStore:
                 grammar_tags=row["grammar_tags"],
                 book_source=row["book_source"],
                 difficulty=row["difficulty"],
+                topic_value=row["topic_value"],
             )
             for row in rows
         }
+
+    def get_question(self, bank_id: str, question_id: str) -> DemoQuestion:
+        if bank_id == self.bank["bank_id"] and question_id in self.questions:
+            return self.questions[question_id]
+        with self.connection() as connection:
+            row = connection.execute(
+                """
+                SELECT q.*, p.content AS passage, p.topic AS topic_value
+                FROM questions q
+                JOIN passages p
+                  ON p.bank_id=q.bank_id
+                 AND p.passage_group_id=q.passage_group_id
+                WHERE q.bank_id=%s AND q.id=%s
+                """,
+                (bank_id, question_id),
+            ).fetchone()
+        if not row:
+            raise KeyError("QUESTION_NOT_FOUND")
+        return DemoQuestion(
+            id=row["id"],
+            bank_id=str(row["bank_id"]),
+            type=row["type"],
+            passage_group_id=row["passage_group_id"],
+            passage=row["passage"],
+            stem=row["stem"],
+            options=row["options"],
+            answer=row["answer"],
+            explanation=row["explanation"],
+            knowledge_points=row["knowledge_points"],
+            grammar_tags=row["grammar_tags"],
+            book_source=row["book_source"],
+            difficulty=row["difficulty"],
+            topic_value=row["topic_value"],
+        )
 
     def active_bank(self) -> dict:
         return self.bank
@@ -440,6 +505,7 @@ class PostgresStore:
         session_id = str(uuid.uuid4())
         composition = {
             "bank_name": self.bank["name"],
+            "session_kind": "practice",
             "question_type_counts": assembly_log["question_type_counts"],
             "error_pool_ratio": assembly_log["error_pool_ratio"],
             "difficulty_distribution": assembly_log["difficulty_actual"],
@@ -458,14 +524,16 @@ class PostgresStore:
             deadline=now + timedelta(minutes=30),
             question_ids=[q.id for q in all_questions],
             composition_note=composition,
+            session_kind="practice",
         )
         with self.connection() as connection:
             connection.execute(
                 """
                 INSERT INTO practice_sessions
                     (id, student_id, bank_id, bank_name, bank_version, duration_minutes,
-                     status, started_at, deadline, composition_note)
-                VALUES (%s, %s, %s, %s, 1, 30, 'in_progress', %s, %s, %s)
+                     status, started_at, deadline, composition_note, session_kind)
+                VALUES (%s, %s, %s, %s, 1, 30, 'in_progress', %s, %s, %s,
+                        'practice')
                 """,
                 (
                     session_id,
@@ -481,6 +549,74 @@ class PostgresStore:
                 connection.execute(
                     "INSERT INTO session_items (session_id, question_id, bank_id, ordinal) VALUES (%s, %s, %s, %s)",
                     (session_id, question.id, self.bank["bank_id"], ordinal),
+                )
+        self.sessions[session_id] = record
+        return record
+
+    def create_review_session(
+        self,
+        student_id: str,
+        passage_id: str,
+        now: datetime,
+    ) -> SessionRecord:
+        with self.connection() as connection:
+            detail = get_passage_mistake_detail(
+                connection,
+                student_id=student_id,
+                passage_id=passage_id,
+                active_bank_id=self.bank["bank_id"],
+            )
+        question_ids = detail["target_question_ids"]
+        if not question_ids:
+            raise ValueError("NO_OPEN_MISTAKES")
+        session_id = str(uuid.uuid4())
+        composition = create_review_composition(
+            bank_id=detail["bank_id"],
+            bank_name=detail["bank_name"],
+            passage_id=passage_id,
+            target_question_ids=question_ids,
+        )
+        record = SessionRecord(
+            id=session_id,
+            student_id=student_id,
+            bank_id=detail["bank_id"],
+            bank_name=detail["bank_name"],
+            bank_version="1",
+            duration_minutes=30,
+            started_at=now,
+            deadline=now + timedelta(minutes=30),
+            question_ids=question_ids,
+            composition_note=composition,
+            session_kind="review",
+        )
+        with self.connection() as connection:
+            connection.execute(
+                """
+                INSERT INTO practice_sessions
+                    (id, student_id, bank_id, bank_name, bank_version,
+                     duration_minutes, status, started_at, deadline,
+                     composition_note, session_kind)
+                VALUES (%s, %s, %s, %s, 1, 30, 'in_progress', %s, %s, %s,
+                        'review')
+                """,
+                (
+                    session_id,
+                    student_id,
+                    detail["bank_id"],
+                    detail["bank_name"],
+                    now,
+                    record.deadline,
+                    Jsonb(composition),
+                ),
+            )
+            for ordinal, question_id in enumerate(question_ids):
+                connection.execute(
+                    """
+                    INSERT INTO session_items
+                        (session_id, question_id, bank_id, ordinal)
+                    VALUES (%s, %s, %s, %s)
+                    """,
+                    (session_id, question_id, detail["bank_id"], ordinal),
                 )
         self.sessions[session_id] = record
         return record
@@ -512,6 +648,7 @@ class PostgresStore:
             deadline=row["deadline"],
             question_ids=[item["question_id"] for item in items],
             composition_note=row["composition_note"],
+            session_kind=row["session_kind"],
             status=row["status"],
             answers={item["question_id"]: item["answer"] for item in answers},
             submitted_at=row["submitted_at"],
@@ -560,6 +697,23 @@ class PostgresStore:
         )
         report.setdefault("weakness_analysis_source", "fallback")
         return report
+
+    def list_mistakes(self, student_id: str) -> dict:
+        with self.connection() as connection:
+            return list_open_mistakes(
+                connection,
+                student_id=student_id,
+                active_bank_id=self.bank["bank_id"],
+            )
+
+    def get_mistake_passage(self, student_id: str, passage_id: str) -> dict:
+        with self.connection() as connection:
+            return get_passage_mistake_detail(
+                connection,
+                student_id=student_id,
+                passage_id=passage_id,
+                active_bank_id=self.bank["bank_id"],
+            )
 
     def list_reports(self, student_id: str) -> list[dict]:
         with self.connection() as connection:
@@ -640,7 +794,7 @@ class PostgresStore:
         }
         items = []
         for qid in record.question_ids:
-            question = self.questions[qid]
+            question = self.get_question(record.bank_id, qid)
             items.append(
                 {
                     "question_id": question.id,
@@ -746,7 +900,7 @@ class PostgresStore:
         type_stats = defaultdict(lambda: {"correct": 0, "total": 0})
         point_stats = defaultdict(list)
         for qid in record.question_ids:
-            question = self.questions[qid]
+            question = self.get_question(record.bank_id, qid)
             user_answer = record.answers.get(qid, "")
             normalized = " ".join(str(user_answer).strip().split()).casefold()
             if question.type == "cloze":
@@ -823,7 +977,10 @@ class PostgresStore:
         changes = []
         with self.connection() as connection:
             for result in results:
-                question = self.questions[result["question_id"]]
+                question = self.get_question(
+                    record.bank_id,
+                    result["question_id"],
+                )
                 tag = connection.execute(
                     "SELECT * FROM error_tags WHERE student_id=%s AND question_id=%s AND bank_id=%s",
                     (student_id, question.id, question.bank_id),
@@ -880,6 +1037,15 @@ class PostgresStore:
                         }
                     )
             report["error_tag_changes"] = changes
+            record_session_results(
+                connection,
+                student_id=student_id,
+                session_id=session_id,
+                bank_id=record.bank_id,
+                attempt_kind=session_attempt_kind(record.session_kind),
+                results=results,
+                now=now,
+            )
             connection.execute(
                 """
                 UPDATE practice_sessions
