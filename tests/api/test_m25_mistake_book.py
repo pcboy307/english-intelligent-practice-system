@@ -8,6 +8,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import psycopg
+from psycopg import errors as psycopg_errors
 import pytest
 from fastapi.testclient import TestClient
 from psycopg.rows import dict_row
@@ -333,6 +334,78 @@ def test_m25_new_tables_have_referential_integrity_constraints() -> None:
     assert "FOREIGN KEY (bank_id, question_id)" in constraints[
         "question_attempts_question_bank_fk"
     ]
+
+
+def test_m25_attempt_foreign_keys_reject_orphans_and_wrong_bank() -> None:
+    with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+        question = connection.execute(
+            """
+            SELECT bank_id::text AS bank_id, id
+            FROM questions
+            WHERE bank_id='6fab59cd-c1fa-4a7a-8532-41bde57d18f2'
+              AND status='published'
+            LIMIT 1
+            """
+        ).fetchone()
+        other_bank = connection.execute(
+            """
+            SELECT id::text AS id
+            FROM question_banks
+            WHERE id<>%s
+            ORDER BY created_at
+            LIMIT 1
+            """,
+            (question["bank_id"],),
+        ).fetchone()
+        existing_session = connection.execute(
+            """
+            SELECT session_id
+            FROM question_attempts
+            ORDER BY id DESC
+            LIMIT 1
+            """
+        ).fetchone()["session_id"]
+
+        with pytest.raises(psycopg_errors.ForeignKeyViolation):
+            connection.execute(
+                """
+                INSERT INTO question_attempts
+                    (student_id, session_id, bank_id, question_id, passage_id,
+                     question_type, chosen_option, correct_option, is_correct)
+                VALUES (%s, %s, %s, %s, 'missing', 'cloze', 'A', 'A', true)
+                """,
+                (
+                    str(uuid.uuid4()),
+                    str(uuid.uuid4()),
+                    question["bank_id"],
+                    question["id"],
+                ),
+            )
+        connection.rollback()
+
+        with pytest.raises(psycopg_errors.ForeignKeyViolation):
+            connection.execute(
+                """
+                INSERT INTO question_attempts
+                    (student_id, session_id, bank_id, question_id, passage_id,
+                     question_type, chosen_option, correct_option, is_correct)
+                VALUES (%s, %s, %s, %s, 'missing', 'cloze', 'A', 'A', true)
+                """,
+                (
+                    str(uuid.uuid4()),
+                    existing_session,
+                    other_bank["id"],
+                    question["id"],
+                ),
+            )
+        connection.rollback()
+
+        with pytest.raises(psycopg_errors.ForeignKeyViolation):
+            connection.execute(
+                "DELETE FROM practice_sessions WHERE id=%s",
+                (existing_session,),
+            )
+        connection.rollback()
 
 
 def test_m25_wrong_answer_records_attempt_and_opens_mistake() -> None:

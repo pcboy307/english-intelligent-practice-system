@@ -71,7 +71,7 @@
     "qa/evidence/m25/mistakes-cleared.png"
   ],
   "verification": {
-    "pytest": "121 passed, 1 warning",
+    "pytest": "122 passed, 1 warning",
     "M0_CHECK": "PASS",
     "API_CONTRACT_CHECK": "PASS calls=20",
     "OpenAPI": "valid"

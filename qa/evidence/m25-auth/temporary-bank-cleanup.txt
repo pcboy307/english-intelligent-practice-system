@@ -1,0 +1,40 @@
+X2 temporary bank cleanup
+
+before:
+  temporary_banks = 159
+  passages = 159
+  questions = 775
+  sessions = 146
+  attempts = 169
+  mistakes = 79
+  error_tags = 88
+
+deleted:
+  questions = 775
+  passages = 159
+  practice_sessions = 146
+  session_items = 219
+  saved_answers = 208
+  practice_reports = 133
+  question_attempts = 169
+  mistake_items = 79
+  error_tags = 88
+  error_tag_successes = 21
+  bank_switch_log = 279
+  temporary_banks = 159
+
+after final test cleanup:
+  temporary_banks_removed_again = 15
+  questions_removed_again = 77
+  passages_removed_again = 15
+  sessions_removed_again = 14
+  attempts_removed_again = 17
+  mistakes_removed_again = 7
+  errors_tags_removed_again = 8
+
+after:
+  candidate_banks:
+    - M2 Bank #2 / 300 / active / current
+    - Demo Bank / 80 / archived
+    - Demo Bank / 30 / ready
+  orphan_attempts = 0

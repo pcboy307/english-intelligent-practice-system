@@ -1,0 +1,6 @@
+Read=12
+Write=18
+Total=30
+Safe=30
+NeedsFix=0
+Check=True

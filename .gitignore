@@ -14,6 +14,9 @@ redis-data/
 __pycache__/
 *.py[cod]
 .pytest_cache/
+
+# Local generated backup/tokenizer artifacts; not required at runtime.
+work/
 .ruff_cache/
 .mypy_cache/
 coverage.xml

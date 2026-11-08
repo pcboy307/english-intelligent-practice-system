@@ -8,7 +8,8 @@
   "target_bank": {
     "name": "M2.5 UI切换验收题库-258b1b",
     "question_count": 5,
-    "status_before": "archived"
+    "status_before": "archived",
+    "removed_after_acceptance": true
   },
   "G1": {
     "home": "M2 Bank #2 · 共 300 题",
@@ -18,7 +19,9 @@
   "G2": {
     "current_marked": "✓ 当前",
     "current_disabled": true,
-    "all_statuses_visible": ["active", "ready", "archived"]
+    "all_statuses_visible": ["active", "ready", "archived"],
+    "final_candidates": "final-bank-list.txt",
+    "final_screenshot": "bank-list-final.png"
   },
   "G3": {
     "confirmation_sections": 6,
@@ -67,9 +70,31 @@
     "current_mistakes": 3,
     "history_banks": 0
   },
+  "final_candidate_banks": [
+    {
+      "name": "M2 Bank #2",
+      "question_count": 300,
+      "status": "active",
+      "is_current": true
+    },
+    {
+      "name": "Demo Bank",
+      "question_count": 80,
+      "status": "archived",
+      "is_current": false
+    },
+    {
+      "name": "Demo Bank",
+      "question_count": 30,
+      "status": "ready",
+      "is_current": false
+    }
+  ],
+  "temporary_banks_removed": 159,
   "screenshots": {
     "home_bank_count": "home-bank-count-fixed.png",
     "bank_list": "bank-list-dialog.png",
+    "bank_list_final": "bank-list-final.png",
     "switch_confirmation": "bank-switch-confirm.png",
     "home_after_switch": "home-after-switch.png",
     "coverage_after_switch": "coverage-after-switch.png",
