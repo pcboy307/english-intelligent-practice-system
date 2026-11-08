@@ -1,0 +1,105 @@
+{
+  "passage": "Choosing a future career is one of the most important decisions in a student's life. Many teenagers wonder ①______ they should follow their parents' advice or their own interests. My cousin Lily, a senior student, has decided ②______ (become) a doctor. She believes that medicine is ③______ (meaning) because it helps people. However, her best friend Tom wants to be ④______ (create) as a video game designer. He thinks this job is ⑤______ (interesting) than any other job. In fact, he spends hours learning programming. Last week, Lily and Tom attended a career fair. They met a ⑥______ (profession) career advisor who gave them useful tips. The advisor said, \"The ⑦______ (early) you start planning, the better.\" She also suggested ⑧______ (talk) to people in different fields. Now, Lily is working hard ⑨______ (enter) a good university, and Tom is building a game with his friends. They both agree that it is never too early ⑩______ (start) preparing for the future.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank ①.",
+      "options": ["whether", "that", "what", "if"],
+      "answer": "whether",
+      "explanation": "此处表示“是否”，引导宾语从句，whether 可与 or 连用；that 无实义，what 不能与 or 搭配。两个主要干扰项 that 和 what 均不符合句意和搭配。",
+      "evidence_sentence": "Many teenagers wonder ①______ they should follow their parents' advice or their own interests.",
+      "context_clue": "Many teenagers wonder ①______ they should follow their parents' advice or their own interests.",
+      "clue_argument": "wonder 后接 whether...or... 表示“是否……还是……”。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best form for blank ②.",
+      "options": ["become", "becoming", "to become", "became"],
+      "answer": "to become",
+      "explanation": "decide 后接不定式 to do 作宾语；become 是原形，becoming 是现在分词，became 是过去式，均不能直接作 decide 的宾语。两个主要干扰项 become 和 becoming 均不符合 decide 的搭配。",
+      "evidence_sentence": "My cousin Lily, a senior student, has decided ②______ (become) a doctor.",
+      "context_clue": "My cousin Lily, a senior student, has decided ②______ (become) a doctor.",
+      "clue_argument": "decide to do sth. 是固定搭配。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best form for blank ③.",
+      "options": ["meaning", "meaningful", "meaningless", "meaningfully"],
+      "answer": "meaningful",
+      "explanation": "此处需要形容词作表语，表示“有意义的”；meaning 是名词，meaningless 意思相反，meaningfully 是副词。两个主要干扰项 meaning 和 meaningless 均不能作表语且意义不符。",
+      "evidence_sentence": "She believes that medicine is ③______ (meaning) because it helps people.",
+      "context_clue": "She believes that medicine is ③______ (meaning) because it helps people.",
+      "clue_argument": "系动词 is 后接形容词作表语，表示“有意义的”。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best form for blank ④.",
+      "options": ["create", "creative", "creation", "creatively"],
+      "answer": "creative",
+      "explanation": "此处需要形容词作表语，表示“有创造力的”；create 是动词，creation 是名词，creatively 是副词。两个主要干扰项 create 和 creation 均不能作表语。",
+      "evidence_sentence": "However, her best friend Tom wants to be ④______ (create) as a video game designer.",
+      "context_clue": "However, her best friend Tom wants to be ④______ (create) as a video game designer.",
+      "clue_argument": "be 动词后接形容词作表语，表示“有创造力的”。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best form for blank ⑤.",
+      "options": ["interesting", "more interesting", "most interesting", "the most interesting"],
+      "answer": "more interesting",
+      "explanation": "句中有 than，需用比较级 more interesting；interesting 是原级，most interesting 是最高级，the most interesting 也是最高级。两个主要干扰项 interesting 和 most interesting 均不符合比较级要求。",
+      "evidence_sentence": "He thinks this job is ⑤______ (interesting) than any other job.",
+      "context_clue": "He thinks this job is ⑤______ (interesting) than any other job.",
+      "clue_argument": "than 提示比较级，interesting 的比较级是 more interesting。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank ⑥.",
+      "options": ["profession", "professional", "professionally", "professor"],
+      "answer": "professional",
+      "explanation": "此处需要形容词修饰 career advisor，表示“专业的”；profession 是名词，professionally 是副词，professor 是名词“教授”。两个主要干扰项 profession 和 professor 均不能修饰名词。",
+      "evidence_sentence": "They met a ⑥______ (profession) career advisor who gave them useful tips.",
+      "context_clue": "They met a ⑥______ (profession) career advisor who gave them useful tips.",
+      "clue_argument": "修饰名词 career advisor 需要形容词 professional。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best form for blank ⑦.",
+      "options": ["early", "earlier", "earliest", "the earliest"],
+      "answer": "earlier",
+      "explanation": "“the + 比较级, the + 比较级”结构表示“越……越……”，此处用 earlier；early 是原级，earliest 是最高级，the earliest 也是最高级。两个主要干扰项 early 和 earliest 均不符合该结构。",
+      "evidence_sentence": "The advisor said, \"The ⑦______ (early) you start planning, the better.\"",
+      "context_clue": "The advisor said, \"The ⑦______ (early) you start planning, the better.\"",
+      "clue_argument": "“the + 比较级..., the + 比较级...” 是固定句型。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best form for blank ⑧.",
+      "options": ["talk", "talking", "to talk", "talked"],
+      "answer": "talking",
+      "explanation": "suggest 后接动名词作宾语，即 suggest doing sth.；talk 是原形，to talk 是不定式，talked 是过去式。两个主要干扰项 talk 和 to talk 均不符合 suggest 的搭配。",
+      "evidence_sentence": "She also suggested ⑧______ (talk) to people in different fields.",
+      "context_clue": "She also suggested ⑧______ (talk) to people in different fields.",
+      "clue_argument": "suggest doing sth. 表示“建议做某事”。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best form for blank ⑨.",
+      "options": ["enter", "entering", "to enter", "entered"],
+      "answer": "to enter",
+      "explanation": "此处用不定式表示目的，意为“为了进入”；enter 是原形，entering 是现在分词，entered 是过去式。两个主要干扰项 enter 和 entering 均不能表示目的。",
+      "evidence_sentence": "Now, Lily is working hard ⑨______ (enter) a good university, and Tom is building a game with his friends.",
+      "context_clue": "Now, Lily is working hard ⑨______ (enter) a good university, and Tom is building a game with his friends.",
+      "clue_argument": "不定式 to enter 作目的状语，表示“为了进入”。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best form for blank ⑩.",
+      "options": ["start", "starting", "to start", "started"],
+      "answer": "to start",
+      "explanation": "“too...to...”结构表示“太……而不能……”，此处用不定式 to start；start 是原形，starting 是现在分词，started 是过去式。两个主要干扰项 start 和 starting 均不符合该结构。",
+      "evidence_sentence": "They both agree that it is never too early ⑩______ (start) preparing for the future.",
+      "context_clue": "They both agree that it is never too early ⑩______ (start) preparing for the future.",
+      "clue_argument": "too...to... 结构中 to 后接动词原形，表示“太……而不能……”。"
+    }
+  ]
+}

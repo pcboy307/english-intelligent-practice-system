@@ -1,0 +1,65 @@
+{
+  "passage": "In 2023, a small team at a space agency watched their new satellite, called Starlet, lift off. The team leader, Maria, had spent five years on the project. Her goal was simple: test whether a low-cost satellite could map space junk. Space junk is the broken pieces left from old rockets and satellites. It travels very fast and can hit working spacecraft. Maria believed that if we could track this junk better, we could avoid dangerous collisions. During the first month, Starlet sent back clear images of many small objects. The team was excited. However, a problem appeared. One large piece of junk was moving toward Starlet. The team had only hours to act. They used Starlet's small engine to change its path. The satellite moved just enough to avoid the junk. Maria later said, \"We learned that even a simple satellite can make space safer.\" The success of Starlet showed that space exploration is not only about going farther; it is also about protecting what we already have in orbit. The team's work was praised by other scientists, and Maria's design was later used in several new satellites. This story proves that careful planning and quick action can turn a small experiment into an important step for space safety.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"junk\" in the passage most likely mean?",
+      "options": [
+        "broken pieces of old objects",
+        "new satellites",
+        "scientific tools",
+        "fuel for rockets"
+      ],
+      "answer": "broken pieces of old objects",
+      "explanation": "The passage defines space junk as \"the broken pieces left from old rockets and satellites,\" so \"junk\" refers to broken pieces of old objects. 选项B（new satellites）和C（scientific tools）与文中对junk的定义不符，因为文中明确说junk是旧火箭和卫星留下的碎片，而不是新卫星或科学工具。",
+      "evidence_sentence": "Space junk is the broken pieces left from old rockets and satellites.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's attitude toward the Starlet project?",
+      "options": [
+        "Supportive",
+        "Doubtful",
+        "Uninterested",
+        "Critical"
+      ],
+      "answer": "Supportive",
+      "explanation": "The author describes the project as a success and says it \"showed that space exploration is not only about going farther; it is also about protecting what we already have,\" which indicates a supportive attitude. 选项B（Doubtful）和D（Critical）与文中积极肯定的语气相反，因为作者用“excited”“praised”等词表达了对项目的肯定。",
+      "evidence_sentence": "The success of Starlet showed that space exploration is not only about going farther; it is also about protecting what we already have in orbit.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "A small satellite helped make space safer by tracking junk.",
+        "Space junk is impossible to track.",
+        "Maria's team failed to launch a satellite.",
+        "Low-cost satellites are useless for space exploration."
+      ],
+      "answer": "A small satellite helped make space safer by tracking junk.",
+      "explanation": "The passage focuses on how Maria's team used the Starlet satellite to map space junk and avoid a collision, showing that even a simple satellite can improve space safety. 选项B（Space junk is impossible to track）与文中Starlet成功追踪垃圾的事实矛盾；选项C（Maria's team failed）与文中卫星成功发射并发挥作用的事实相反。",
+      "evidence_sentence": "The success of Starlet showed that space exploration is not only about going farther; it is also about protecting what we already have in orbit.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, what did the team do when a large piece of junk moved toward Starlet?",
+      "options": [
+        "They used Starlet's engine to change its path.",
+        "They asked other scientists for help.",
+        "They turned off the satellite.",
+        "They waited for the junk to pass."
+      ],
+      "answer": "They used Starlet's engine to change its path.",
+      "explanation": "The passage states that \"They used Starlet's small engine to change its path\" to avoid the junk. 选项B（asked other scientists for help）在文中未提及；选项D（waited for the junk to pass）与文中团队主动改变路径的行动不符。",
+      "evidence_sentence": "They used Starlet's small engine to change its path.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

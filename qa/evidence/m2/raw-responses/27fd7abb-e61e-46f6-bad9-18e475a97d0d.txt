@@ -1,0 +1,65 @@
+{
+  "passage": "In the small town of Greenfield, there is an old bridge that has a long history. The bridge, which was built over a hundred years ago, is made of stone and still stands today. It was once the only way to cross the river, so it was very important for the town's people. They used it to carry food, wood, and other goods to the market. Over time, the town grew and new roads were built, but the old bridge remained a symbol of the town's past. Today, many people walk across the bridge to enjoy the view. The local government has decided that the bridge should be protected because of its historical value. They believe that if the bridge were lost, the town would lose a part of its identity. Therefore, they have started a project to repair the bridge and to teach young people about its history. The bridge is not just a structure; it is a link to the past.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about the old bridge from the passage?",
+      "options": [
+        "It is no longer used by anyone.",
+        "It was once very important for trade.",
+        "It was built by the local government.",
+        "It is made of wood."
+      ],
+      "answer": "It was once very important for trade.",
+      "explanation": "文章提到桥曾是过河的唯一方式，人们用它运送货物到市场，因此可推断它对贸易很重要。A选项错误，因为今天仍有人步行过桥；D选项错误，因为桥是石头建的。",
+      "evidence_sentence": "They used it to carry food, wood, and other goods to the market.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"symbol\" in the passage most likely mean?",
+      "options": [
+        "A sign that represents something.",
+        "A type of building material.",
+        "A person who builds bridges.",
+        "A place where goods are sold."
+      ],
+      "answer": "A sign that represents something.",
+      "explanation": "根据上下文，桥是小镇历史的象征，因此symbol意为代表某事物的标志。B选项错误，因为symbol不是建筑材料；C选项错误，因为symbol不是指人。",
+      "evidence_sentence": "the old bridge remained a symbol of the town's past.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the purpose of the local government's project?",
+      "options": [
+        "To build a new bridge over the river.",
+        "To repair the bridge and teach its history.",
+        "To close the bridge to all traffic.",
+        "To sell the bridge to a private company."
+      ],
+      "answer": "To repair the bridge and teach its history.",
+      "explanation": "文章明确提到政府启动项目来修复桥并教育年轻人了解其历史。A选项错误，因为项目是修复旧桥而非建新桥；C选项错误，因为文章说人们仍在使用桥。",
+      "evidence_sentence": "they have started a project to repair the bridge and to teach young people about its history.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "The old bridge is a link to the town's past and should be protected.",
+        "The town of Greenfield is famous for its stone bridges.",
+        "The local government wants to build new roads.",
+        "Young people are not interested in history."
+      ],
+      "answer": "The old bridge is a link to the town's past and should be protected.",
+      "explanation": "文章主要讲述老桥的历史价值以及政府保护它的决定，最后总结桥是连接过去的纽带。B选项错误，因为文章未提小镇以石桥闻名；D选项错误，因为文章说政府教育年轻人历史，并非说他们不感兴趣。",
+      "evidence_sentence": "The bridge is not just a structure; it is a link to the past.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

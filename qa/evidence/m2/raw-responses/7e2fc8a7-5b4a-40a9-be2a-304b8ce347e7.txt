@@ -1,0 +1,1 @@
+{"translations": {"discussion": "讨论", "froze": "冻结", "practising": "练习"}}

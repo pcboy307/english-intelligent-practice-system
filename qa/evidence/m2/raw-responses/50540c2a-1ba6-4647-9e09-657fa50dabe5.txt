@@ -1,0 +1,65 @@
+{
+  "passage": "The Mid-Autumn Festival is a time for family gatherings. On this night, the moon is believed to be the brightest and roundest of the year. People eat mooncakes, a sweet pastry with fillings like lotus seed paste or salted egg yolk. The round shape stands for family unity. According to legend, a goddess named Chang'e flew to the moon after taking a magic pill. Today, families still look at the moon and tell her story. However, many young people now live far from their parents. They may not be able to go home for the holiday. To stay connected, some families video-call each other during the festival dinner. Others send mooncakes by delivery to relatives in other cities. In this way, the festival's core value—being together—can still be felt, even when people are apart.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "The Mid-Autumn Festival focuses on family unity, even when relatives are apart.",
+        "Mooncakes are the most popular food in China.",
+        "Chang'e is a famous goddess in Chinese history.",
+        "Young people no longer celebrate traditional festivals."
+      ],
+      "answer": "The Mid-Autumn Festival focuses on family unity, even when relatives are apart.",
+      "explanation": "文章首句点明中秋节是家庭团聚的时刻，后文强调即使不能回家，人们也通过视频通话或寄送月饼来保持联系，核心是家庭团聚。A项概括了全文主旨；B项只提到月饼，过于片面；C项只涉及嫦娥传说，不是全文重点。",
+      "evidence_sentence": "The Mid-Autumn Festival is a time for family gatherings.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, why do people eat mooncakes?",
+      "options": [
+        "Because their round shape represents family unity.",
+        "Because they are easy to deliver to other cities.",
+        "Because they are the only food available during the festival.",
+        "Because Chang'e brought them from the moon."
+      ],
+      "answer": "Because their round shape represents family unity.",
+      "explanation": "文中明确提到“The round shape stands for family unity.”，即月饼的圆形代表家庭团圆。A项直接对应原文；B项虽然文中提到寄送月饼，但这不是吃月饼的原因；C项和D项在文中均无依据。",
+      "evidence_sentence": "The round shape stands for family unity.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can be inferred about how young people feel about the festival?",
+      "options": [
+        "They want to keep the festival's value of togetherness alive.",
+        "They think the festival is no longer important.",
+        "They prefer to celebrate with friends instead of family.",
+        "They believe mooncakes are too sweet to eat."
+      ],
+      "answer": "They want to keep the festival's value of togetherness alive.",
+      "explanation": "文中说年轻人即使不能回家，也会通过视频通话或寄送月饼来保持联系，并指出“the festival's core value—being together—can still be felt”，由此可推断他们希望延续团圆的价值。A项符合推断；B项与原文相反；C项和D项在文中没有依据。",
+      "evidence_sentence": "In this way, the festival's core value—being together—can still be felt, even when people are apart.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"unity\" in the passage most probably mean?",
+      "options": [
+        "Being together as one.",
+        "Being apart from each other.",
+        "Eating sweet food.",
+        "Looking at the moon."
+      ],
+      "answer": "Being together as one.",
+      "explanation": "根据上下文，月饼的圆形代表家庭团圆，且后文提到“being together”，因此unity意为“团聚、合一”。A项正确；B项是unity的反义；C项和D项是节日活动，不是unity的含义。",
+      "evidence_sentence": "The round shape stands for family unity.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "passage": "In the small town of Greenfield, tourism has grown quickly. Many people come to see the old streets and the beautiful hills. This brings money to local shops and hotels. But it also brings problems. In summer, the streets are very crowded. Rubbish is everywhere. Some visitors walk on the grass and pick flowers. Local people are worried. They want to keep their town clean and beautiful.\n\nLast year, the town started a new plan. The plan is called \"Green Travel\". It asks visitors to follow some simple rules. First, visitors should not leave rubbish behind. They should take it home or put it in the bins. Second, they should stay on the paths and not walk on the grass. Third, they should buy local food and gifts. This helps local families earn money. The town also built more bins and put up signs to remind people.\n\nAt first, some visitors did not like the rules. They thought the rules were too strict. But after a few months, things changed. The streets became cleaner. The grass grew back. More visitors came because they liked the clean and quiet town. Local people were happy. They saw that protecting the environment is good for everyone.\n\nNow, other towns want to learn from Greenfield. They ask, \"How can we have tourism and also keep our home clean?\" The answer is simple: everyone must work together. Visitors, local people, and the government all have a part to play. Only in this way can tourism be good for both people and nature.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about the new plan from the passage?",
+      "options": [
+        "It made some visitors unhappy at first.",
+        "It stopped all visitors from coming to the town.",
+        "It cost the town a lot of money and failed.",
+        "It was not supported by local people."
+      ],
+      "answer": "It made some visitors unhappy at first.",
+      "explanation": "文章提到“At first, some visitors did not like the rules. They thought the rules were too strict.”，由此可推断新规定起初让一些游客不满。B项说阻止所有游客前来，与后文“More visitors came”矛盾；C项说计划失败，与后文街道变干净、游客增多矛盾。",
+      "evidence_sentence": "At first, some visitors did not like the rules. They thought the rules were too strict.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"strict\" in paragraph 3 most probably mean?",
+      "options": [
+        "Not easy to follow",
+        "Very popular",
+        "Quite simple",
+        "Too expensive"
+      ],
+      "answer": "Not easy to follow",
+      "explanation": "根据上下文，一些游客不喜欢这些规定，认为它们“too strict”，即规定太严格、不容易遵守。B项“很受欢迎”与游客不喜欢矛盾；C项“很简单”与游客抱怨矛盾。",
+      "evidence_sentence": "They thought the rules were too strict.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the author's attitude towards the \"Green Travel\" plan?",
+      "options": [
+        "Supportive",
+        "Doubtful",
+        "Uninterested",
+        "Angry"
+      ],
+      "answer": "Supportive",
+      "explanation": "作者在文中描述了计划带来的积极变化，如街道变干净、草地恢复、游客增多，并说“protecting the environment is good for everyone”，可见作者支持该计划。B项“怀疑”与作者肯定的语气不符；C项“不感兴趣”与作者详细描述计划好处不符。",
+      "evidence_sentence": "They saw that protecting the environment is good for everyone.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Tourism can be good if everyone works together to protect the environment.",
+        "Small towns should stop tourism to keep their streets clean.",
+        "Visitors should not buy local food and gifts.",
+        "The government should build more hotels for visitors."
+      ],
+      "answer": "Tourism can be good if everyone works together to protect the environment.",
+      "explanation": "文章讲述了Greenfield镇通过“Green Travel”计划，让游客、当地人和政府共同努力，使旅游业与环境保护和谐发展，最后总结“everyone must work together”和“tourism be good for both people and nature”，因此主旨是A。B项“停止旅游业”与文章提倡的可持续旅游相反；C项“不应买当地食物和礼物”与文中建议相反。",
+      "evidence_sentence": "Only in this way can tourism be good for both people and nature.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

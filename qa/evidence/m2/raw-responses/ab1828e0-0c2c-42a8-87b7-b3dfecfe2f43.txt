@@ -1,0 +1,45 @@
+{
+  "passage": "In 2007, my grandmother received a small mobile phone. At first, she only used it to call family. Then her grandson, Leo, showed her how to use a map app. She was amazed that a phone could guide her through the city. Soon, she was using it to find bus times and even to order groceries. One day, she got lost near a park. She opened the app, and it led her home safely. This experience changed her view of technology. She realised that inventions are not just for young people. Now, she often says, \"Technology can help anyone if they are willing to learn.\" Her story shows how a simple device can make life easier and more connected.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What did the grandmother initially use her mobile phone for?",
+      "options": ["Calling family", "Finding bus times", "Ordering groceries", "Playing games"],
+      "answer": "Calling family",
+      "explanation": "文章第一段明确提到“At first, she only used it to call family.”，因此选A。B和C是后来学会的，D文中未提及。",
+      "evidence_sentence": "At first, she only used it to call family.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about the grandmother's attitude towards technology after the incident?",
+      "options": ["She became more confident in using it.", "She decided to stop using it.", "She thought it was only for young people.", "She wanted to buy a new phone."],
+      "answer": "She became more confident in using it.",
+      "explanation": "从她后来经常使用手机并发表积极言论可以推断她变得更自信。B和C与文章结尾矛盾，D文中没有依据。",
+      "evidence_sentence": "Now, she often says, \"Technology can help anyone if they are willing to learn.\"",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"device\" in the last sentence refer to?",
+      "options": ["The mobile phone", "The map app", "The park", "The grandson"],
+      "answer": "The mobile phone",
+      "explanation": "“device”指代前文提到的手机，因为全文围绕手机展开。B、C、D都不是设备，且与语境不符。",
+      "evidence_sentence": "Her story shows how a simple device can make life easier and more connected.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main purpose of the passage?",
+      "options": ["To show how technology can benefit people of all ages.", "To explain how to use a map app.", "To describe the grandmother's daily routine.", "To compare different mobile phones."],
+      "answer": "To show how technology can benefit people of all ages.",
+      "explanation": "文章通过祖母的故事说明技术对老年人也有帮助，因此A是主旨。B、C、D都是片面的细节，不是全文目的。",
+      "evidence_sentence": "Her story shows how a simple device can make life easier and more connected.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

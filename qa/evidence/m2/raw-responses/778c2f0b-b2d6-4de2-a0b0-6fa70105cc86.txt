@@ -1,0 +1,95 @@
+{
+  "passage": "When Leo failed his driving test for the third time, he felt like giving up. His sister Mia, however, refused to let him lose hope. \"(1) ______,\" she said. \"Every failure teaches you something.\" Leo was not convinced. He had practised for months, yet he still made silly mistakes. (2) ______ he had been more careful, he would have passed easily. Mia suggested that he keep a diary of his errors. (3) ______ did he realise how many small problems he had. He learned to check his mirrors and signal earlier. (4) ______ improve, he also watched videos of expert drivers. Slowly, his confidence grew. (5) ______ he failed again, he would not give up. In the end, Leo passed with a perfect score. He thanked Mia for her support and realised that failure was just a step towards success.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the sentence that best fits blank (1).",
+      "options": [
+        "A. Don't give up so easily",
+        "B. You should quit now",
+        "C. Failure is the end",
+        "D. I don't care at all",
+        "E. You are always right",
+        "F. Let's forget about it",
+        "G. It's too late to try"
+      ],
+      "answer": "A",
+      "explanation": "米娅鼓励利奥不要轻易放弃，与后文“每次失败都教你东西”一致。B和C意思消极，与鼓励语境矛盾。",
+      "evidence_sentence": "His sister Mia, however, refused to let him lose hope.",
+      "context_clue": "His sister Mia, however, refused to let him lose hope.",
+      "clue_argument": "米娅拒绝让利奥失去希望，因此她应鼓励他不要放弃。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the sentence that best fits blank (2).",
+      "options": [
+        "A. If only he had been more careful",
+        "B. He was more careful",
+        "C. Unless he was more careful",
+        "D. He had been more careful",
+        "E. If he is more careful",
+        "F. He will be more careful",
+        "G. Should he be more careful"
+      ],
+      "answer": "A",
+      "explanation": "此处表达与过去事实相反的虚拟语气，用“If only + 过去完成时”表示“要是……就好了”。B、D不是虚拟条件句；C、E、F、G时态或结构不符。",
+      "evidence_sentence": "He had practised for months, yet he still made silly mistakes.",
+      "context_clue": "He had practised for months, yet he still made silly mistakes.",
+      "clue_argument": "利奥练习了几个月却仍犯愚蠢错误，因此他后悔要是更细心就好了。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the sentence that best fits blank (3).",
+      "options": [
+        "A. Only then did he realise",
+        "B. Only then he realised",
+        "C. Then only he realised",
+        "D. He only then realised",
+        "E. Only he then realised",
+        "F. Then he only realised",
+        "G. He realised only then"
+      ],
+      "answer": "A",
+      "explanation": "“Only + 状语”置于句首时，主句需部分倒装，即“Only then did he realise”。B未倒装；C、D、E、F、G语序错误。",
+      "evidence_sentence": "Mia suggested that he keep a diary of his errors.",
+      "context_clue": "Mia suggested that he keep a diary of his errors.",
+      "clue_argument": "米娅建议他记录错误，之后他才意识到问题之多，用“Only then”引出倒装。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the sentence that best fits blank (4).",
+      "options": [
+        "A. To improve",
+        "B. Improving",
+        "C. Improved",
+        "D. Improve",
+        "E. To have improved",
+        "F. Having improved",
+        "G. Improvement"
+      ],
+      "answer": "A",
+      "explanation": "此处用动词不定式作目的状语，表示“为了提高”。B、F为分词，不表目的；C、D、E、G形式不符。",
+      "evidence_sentence": "He learned to check his mirrors and signal earlier.",
+      "context_clue": "He learned to check his mirrors and signal earlier.",
+      "clue_argument": "他学习检查后视镜和提前打信号，是为了提高驾驶技术。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the sentence that best fits blank (5).",
+      "options": [
+        "A. If he failed again",
+        "B. If he fails again",
+        "C. If he had failed again",
+        "D. If he would fail again",
+        "E. If he was failing again",
+        "F. If he has failed again",
+        "G. If he is failing again"
+      ],
+      "answer": "A",
+      "explanation": "此处表示对将来情况的虚拟，if从句用一般过去时，主句用“would + 动词原形”。B、C、D、E、F、G时态或结构不符合虚拟语气。",
+      "evidence_sentence": "Slowly, his confidence grew.",
+      "context_clue": "Slowly, his confidence grew.",
+      "clue_argument": "他的信心逐渐增长，因此即使再次失败也不会放弃，用虚拟条件句表达假设。"
+    }
+  ]
+}

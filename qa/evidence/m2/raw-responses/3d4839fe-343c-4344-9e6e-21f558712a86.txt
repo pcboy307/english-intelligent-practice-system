@@ -1,0 +1,45 @@
+{
+  "passage": "In today's classrooms, AI tools are becoming common. A student named Li Hua uses an AI app to check her grammar. The app, designed by a local company, gives quick feedback. Li Hua finds it helpful, but her teacher warns that overuse may weaken thinking skills. \"If you rely on AI for every answer, you might lose the ability to solve problems independently,\" the teacher says. Li Hua agrees and decides to use AI only for review. She also suggests that the school should organise workshops on responsible AI use. The main idea is that AI can aid learning if used wisely, but students must keep their own thinking active.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"designed\" in the passage most likely mean?",
+      "options": ["created", "destroyed", "discovered", "delivered"],
+      "answer": "created",
+      "explanation": "“Designed”意为“设计、创建”，与“created”同义。A项“destroyed”意为“破坏”，C项“discovered”意为“发现”，均不符合语境。",
+      "evidence_sentence": "The app, designed by a local company, gives quick feedback.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the teacher's attitude towards using AI for every answer?",
+      "options": ["Supportive", "Worried", "Indifferent", "Excited"],
+      "answer": "Worried",
+      "explanation": "老师警告过度使用AI可能削弱思考能力，并说“你可能会失去独立解决问题的能力”，表明担忧态度。A项“Supportive”意为“支持的”，C项“Indifferent”意为“漠不关心的”，均与老师的话不符。",
+      "evidence_sentence": "\"If you rely on AI for every answer, you might lose the ability to solve problems independently,\" the teacher says.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["AI tools should be banned in schools.", "AI can help learning if used responsibly.", "Students should never use AI apps.", "Teachers dislike all technology."],
+      "answer": "AI can help learning if used responsibly.",
+      "explanation": "文章最后一句总结：AI若明智使用可辅助学习，但学生须保持思考活跃，即负责任地使用AI。A项“应禁止AI”和C项“学生绝不应使用AI”过于绝对，与文章不符。",
+      "evidence_sentence": "The main idea is that AI can aid learning if used wisely, but students must keep their own thinking active.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does Li Hua suggest the school should do?",
+      "options": ["Buy more AI apps.", "Organise workshops on responsible AI use.", "Stop using AI completely.", "Ask teachers to use AI more."],
+      "answer": "Organise workshops on responsible AI use.",
+      "explanation": "文中明确提到“她建议学校应该组织关于负责任使用AI的研讨会”。A项“购买更多AI应用”和C项“完全停止使用AI”均未提及。",
+      "evidence_sentence": "She also suggests that the school should organise workshops on responsible AI use.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

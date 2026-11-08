@@ -1,41 +1,500 @@
 {
-  "passages": [],
-  "totals": {
-    "attempts": 4,
-    "accepted_passages": 0,
-    "questions": 0,
-    "prompt_tokens": 1691,
-    "completion_tokens": 2433,
-    "total_tokens": 4124,
-    "elapsed_seconds": 3267,
-    "failed_retries": 3
-  },
-  "failure_rate": 1.0,
-  "per_question": null,
-  "extrapolations": null,
-  "extrapolation_status": "not_computable_without_an_accepted_pilot_passage",
-  "token_accounting_note": "Only usage returned by HTTP completions is observable. Three attempts returned no usable JSON and no usage payload; they are recorded as structure failures.",
-  "status": "failed",
-  "model": {
-    "provider": "llama.cpp-openai-compatible",
-    "endpoint": "http://127.0.0.1:11435/v1/chat/completions",
-    "model": "qwen-local",
-    "identifier": "qwen3.5:4b-q4_K_M",
-    "temperature": 0.2,
-    "timeout_seconds": 900,
-    "max_retries": 3,
-    "max_tokens": {
-      "cloze": 6500,
-      "grammar_fill": 5500,
-      "reading": 3500,
-      "gap_fill": 4000
+  "passages": [
+    {
+      "passage_group_id": "M2-FULL-CLOZE-01",
+      "type": "cloze",
+      "questions": 15,
+      "prompt_tokens": 12787,
+      "completion_tokens": 6076,
+      "total_tokens": 18863,
+      "cost_cny": 0.115043,
+      "request_count": 5
+    },
+    {
+      "passage_group_id": "M2-FULL-CLOZE-04",
+      "type": "cloze",
+      "questions": 15,
+      "prompt_tokens": 8187,
+      "completion_tokens": 3689,
+      "total_tokens": 11876,
+      "cost_cny": 0.090431,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-14",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 5589,
+      "completion_tokens": 1180,
+      "total_tokens": 6769,
+      "cost_cny": 0.035812,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-CLOZE-02",
+      "type": "cloze",
+      "questions": 15,
+      "prompt_tokens": 19177,
+      "completion_tokens": 9706,
+      "total_tokens": 28883,
+      "cost_cny": 0.161638,
+      "request_count": 7
+    },
+    {
+      "passage_group_id": "M2-FULL-GRAMMAR-02",
+      "type": "grammar_fill",
+      "questions": 10,
+      "prompt_tokens": 6700,
+      "completion_tokens": 2589,
+      "total_tokens": 9289,
+      "cost_cny": 0.063613,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-05",
+      "type": "gap_fill",
+      "questions": 5,
+      "prompt_tokens": 6392,
+      "completion_tokens": 2067,
+      "total_tokens": 8459,
+      "cost_cny": 0.050826,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-CLOZE-03",
+      "type": "cloze",
+      "questions": 15,
+      "prompt_tokens": 19044,
+      "completion_tokens": 7990,
+      "total_tokens": 27034,
+      "cost_cny": 0.143205,
+      "request_count": 7
+    },
+    {
+      "passage_group_id": "M2-FULL-GRAMMAR-04",
+      "type": "grammar_fill",
+      "questions": 10,
+      "prompt_tokens": 11445,
+      "completion_tokens": 4375,
+      "total_tokens": 15820,
+      "cost_cny": 0.088118,
+      "request_count": 5
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-06",
+      "type": "gap_fill",
+      "questions": 5,
+      "prompt_tokens": 11462,
+      "completion_tokens": 2735,
+      "total_tokens": 14197,
+      "cost_cny": 0.06583,
+      "request_count": 4
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-11",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 14826,
+      "completion_tokens": 3331,
+      "total_tokens": 18157,
+      "cost_cny": 0.073509,
+      "request_count": 7
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-07",
+      "type": "gap_fill",
+      "questions": 5,
+      "prompt_tokens": 6490,
+      "completion_tokens": 2242,
+      "total_tokens": 8732,
+      "cost_cny": 0.05375,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-CLOZE-05",
+      "type": "cloze",
+      "questions": 15,
+      "prompt_tokens": 19157,
+      "completion_tokens": 8514,
+      "total_tokens": 27671,
+      "cost_cny": 0.149292,
+      "request_count": 6
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-01",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 5828,
+      "completion_tokens": 1335,
+      "total_tokens": 7163,
+      "cost_cny": 0.039191,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-CLOZE-06",
+      "type": "cloze",
+      "questions": 15,
+      "prompt_tokens": 19993,
+      "completion_tokens": 8817,
+      "total_tokens": 28810,
+      "cost_cny": 0.152906,
+      "request_count": 7
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-02",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 14918,
+      "completion_tokens": 3519,
+      "total_tokens": 18437,
+      "cost_cny": 0.075956,
+      "request_count": 7
+    },
+    {
+      "passage_group_id": "M2-FULL-GRAMMAR-01",
+      "type": "grammar_fill",
+      "questions": 10,
+      "prompt_tokens": 11365,
+      "completion_tokens": 4224,
+      "total_tokens": 15589,
+      "cost_cny": 0.086129,
+      "request_count": 5
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-03",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 10078,
+      "completion_tokens": 2116,
+      "total_tokens": 12194,
+      "cost_cny": 0.053402,
+      "request_count": 4
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-04",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 5789,
+      "completion_tokens": 1294,
+      "total_tokens": 7083,
+      "cost_cny": 0.038683,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-GRAMMAR-03",
+      "type": "grammar_fill",
+      "questions": 10,
+      "prompt_tokens": 15947,
+      "completion_tokens": 5841,
+      "total_tokens": 21788,
+      "cost_cny": 0.108465,
+      "request_count": 4
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-05",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 5617,
+      "completion_tokens": 1169,
+      "total_tokens": 6786,
+      "cost_cny": 0.035458,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-06",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 5679,
+      "completion_tokens": 1266,
+      "total_tokens": 6945,
+      "cost_cny": 0.037272,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-GRAMMAR-05",
+      "type": "grammar_fill",
+      "questions": 10,
+      "prompt_tokens": 15587,
+      "completion_tokens": 5256,
+      "total_tokens": 20843,
+      "cost_cny": 0.100351,
+      "request_count": 4
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-07",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 10301,
+      "completion_tokens": 2258,
+      "total_tokens": 12559,
+      "cost_cny": 0.055686,
+      "request_count": 5
+    },
+    {
+      "passage_group_id": "M2-FULL-GRAMMAR-06",
+      "type": "grammar_fill",
+      "questions": 10,
+      "prompt_tokens": 16513,
+      "completion_tokens": 6402,
+      "total_tokens": 22915,
+      "cost_cny": 0.114698,
+      "request_count": 4
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-08",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 5674,
+      "completion_tokens": 1266,
+      "total_tokens": 6940,
+      "cost_cny": 0.037562,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-09",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 5627,
+      "completion_tokens": 1277,
+      "total_tokens": 6904,
+      "cost_cny": 0.03708,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-10",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 10332,
+      "completion_tokens": 2363,
+      "total_tokens": 12695,
+      "cost_cny": 0.056796,
+      "request_count": 5
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-12",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 10262,
+      "completion_tokens": 2287,
+      "total_tokens": 12549,
+      "cost_cny": 0.055377,
+      "request_count": 5
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-15",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 5857,
+      "completion_tokens": 1456,
+      "total_tokens": 7313,
+      "cost_cny": 0.040874,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-16",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 5713,
+      "completion_tokens": 1295,
+      "total_tokens": 7008,
+      "cost_cny": 0.038012,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-17",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 5854,
+      "completion_tokens": 1330,
+      "total_tokens": 7184,
+      "cost_cny": 0.039338,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-18",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 5768,
+      "completion_tokens": 1406,
+      "total_tokens": 7174,
+      "cost_cny": 0.039788,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-13",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 10411,
+      "completion_tokens": 2522,
+      "total_tokens": 12933,
+      "cost_cny": 0.058483,
+      "request_count": 5
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-19",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 10277,
+      "completion_tokens": 2382,
+      "total_tokens": 12659,
+      "cost_cny": 0.056225,
+      "request_count": 6
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-20",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 5656,
+      "completion_tokens": 1172,
+      "total_tokens": 6828,
+      "cost_cny": 0.03601,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-21",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 5791,
+      "completion_tokens": 1394,
+      "total_tokens": 7185,
+      "cost_cny": 0.04004,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-22",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 5690,
+      "completion_tokens": 1235,
+      "total_tokens": 6925,
+      "cost_cny": 0.036695,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-23",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 5568,
+      "completion_tokens": 1200,
+      "total_tokens": 6768,
+      "cost_cny": 0.03628,
+      "request_count": 2
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-24",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 5782,
+      "completion_tokens": 1357,
+      "total_tokens": 7139,
+      "cost_cny": 0.0389,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-25",
+      "type": "reading",
+      "questions": 4,
+      "prompt_tokens": 5726,
+      "completion_tokens": 1287,
+      "total_tokens": 7013,
+      "cost_cny": 0.037658,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-01",
+      "type": "gap_fill",
+      "questions": 5,
+      "prompt_tokens": 6279,
+      "completion_tokens": 1967,
+      "total_tokens": 8246,
+      "cost_cny": 0.048861,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-02",
+      "type": "gap_fill",
+      "questions": 5,
+      "prompt_tokens": 10420,
+      "completion_tokens": 2798,
+      "total_tokens": 13218,
+      "cost_cny": 0.061888,
+      "request_count": 4
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-03",
+      "type": "gap_fill",
+      "questions": 5,
+      "prompt_tokens": 6270,
+      "completion_tokens": 1944,
+      "total_tokens": 8214,
+      "cost_cny": 0.048682,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-09",
+      "type": "gap_fill",
+      "questions": 5,
+      "prompt_tokens": 6017,
+      "completion_tokens": 1694,
+      "total_tokens": 7711,
+      "cost_cny": 0.043883,
+      "request_count": 3
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-10",
+      "type": "gap_fill",
+      "questions": 5,
+      "prompt_tokens": 5944,
+      "completion_tokens": 1716,
+      "total_tokens": 7660,
+      "cost_cny": 0.04437,
+      "request_count": 2
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-04",
+      "type": "gap_fill",
+      "questions": 5,
+      "prompt_tokens": 11142,
+      "completion_tokens": 3644,
+      "total_tokens": 14786,
+      "cost_cny": 0.072414,
+      "request_count": 5
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-08",
+      "type": "gap_fill",
+      "questions": 5,
+      "prompt_tokens": 10884,
+      "completion_tokens": 3303,
+      "total_tokens": 14187,
+      "cost_cny": 0.068621,
+      "request_count": 5
     }
+  ],
+  "totals": {
+    "passages": 47,
+    "questions": 300,
+    "prompt_tokens": 445815,
+    "completion_tokens": 140286,
+    "total_tokens": 586101,
+    "cost_cny": 3.063101
   },
-  "budget": {
-    "pilot_total_token_cap": 120000,
-    "single_batch_token_cap": 120000,
-    "estimated_usd_per_million_tokens": 0.0
+  "per_question": {
+    "prompt_tokens": 1486.05,
+    "completion_tokens": 467.62,
+    "total_tokens": 1953.67,
+    "cost_cny": 0.010210336666666667
   },
-  "generated_at": "2026-11-07T11:32:44.234349+00:00",
-  "summary": "M2.0 stopped after the fourth failed cloze attempt. No passage or question was written to Bank #2."
+  "extrapolations": {
+    "300": {
+      "questions": 300,
+      "cost_cny": 3.063101,
+      "total_tokens": 586101.0
+    },
+    "2000": {
+      "questions": 2000,
+      "cost_cny": 20.420673,
+      "total_tokens": 3907340.0
+    }
+  }
 }

@@ -1,0 +1,1 @@
+{"translations": {"cannot": "不能", "end-of-term": "期末", "silence": "沉默"}}

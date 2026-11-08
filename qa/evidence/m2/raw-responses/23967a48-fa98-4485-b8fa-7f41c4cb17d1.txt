@@ -1,0 +1,65 @@
+{
+  "passage": "In 1925, the small town of Greenfield built its first public library, which quickly became the heart of the community. The library was founded by a group of local teachers who believed that books should be available to everyone, not just the wealthy. At first, the collection was tiny—only about 200 books—but it grew steadily as residents donated their own volumes. The library's most dedicated supporter was a retired teacher, who spent hours each week reading to children and helping them choose books. By 1950, the library had moved to a larger building, which was paid for by public donations. Today, the Greenfield Library stands as a reminder of how a small group of determined people can create something lasting. It is more than just a place to borrow books; it is a symbol of the town's commitment to education and community spirit. The library's current director often says that if the founders could see the modern facility, they would be amazed at how their dream has grown. However, she also reminds visitors that the library's success depends on continued support from the community, and she suggests that everyone should volunteer or donate when possible. The story of Greenfield's library shows that even the smallest efforts can lead to great achievements.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can be inferred about the founders of the Greenfield Library?",
+      "options": [
+        "They were wealthy people who wanted to show off their wealth.",
+        "They believed that education should be accessible to all.",
+        "They were not supported by the local community.",
+        "They wanted to build a large building immediately."
+      ],
+      "answer": "They believed that education should be accessible to all.",
+      "explanation": "文章提到创始人认为书籍应该对所有人开放，而不仅仅是富人，因此可以推断他们相信教育应普及。A项错误，因为创始人并非炫耀财富；C项错误，因为社区后来积极支持。",
+      "evidence_sentence": "The library was founded by a group of local teachers who believed that books should be available to everyone, not just the wealthy.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"tiny\" in the passage most nearly mean?",
+      "options": [
+        "very small",
+        "very old",
+        "very popular",
+        "very modern"
+      ],
+      "answer": "very small",
+      "explanation": "根据上下文，图书馆最初只有大约200本书，因此“tiny”意为“非常小”。B项“非常旧”与数量无关；C项“非常受欢迎”与后文“但逐渐增长”矛盾。",
+      "evidence_sentence": "At first, the collection was tiny—only about 200 books—but it grew steadily as residents donated their own volumes.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the author's attitude towards the Greenfield Library?",
+      "options": [
+        "Critical",
+        "Indifferent",
+        "Admiring",
+        "Doubtful"
+      ],
+      "answer": "Admiring",
+      "explanation": "作者用“heart of the community”、“symbol of commitment”等词语表达了对图书馆的赞赏。A项“批评”和D项“怀疑”与文章语气不符。",
+      "evidence_sentence": "Today, the Greenfield Library stands as a reminder of how a small group of determined people can create something lasting.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "The Greenfield Library was built in 1925.",
+        "A retired teacher helped children read.",
+        "The library's success depends on community support.",
+        "Small efforts can lead to lasting community achievements."
+      ],
+      "answer": "Small efforts can lead to lasting community achievements.",
+      "explanation": "文章通过Greenfield图书馆的故事说明，即使很小的努力也能带来伟大的成就，这是全文的主旨。A项和B项是细节，C项是部分内容，不是主旨。",
+      "evidence_sentence": "The story of Greenfield's library shows that even the smallest efforts can lead to great achievements.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

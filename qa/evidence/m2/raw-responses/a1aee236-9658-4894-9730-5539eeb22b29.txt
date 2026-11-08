@@ -1,0 +1,55 @@
+{
+  "passage": "Last term, the student noticed that her study habits were not working. She often stayed up late, but her grades did not improve. One afternoon, she asked her teacher for advice. The teacher suggested that she (1) a weekly plan and stick to it. The student followed this advice. She also learned that (2) regular short breaks can help her focus. After a month, she found that her test scores (3) improved. If she (4) more time to review each day, she would feel less stressed. Her teacher also recommended that she (5) a study group with classmates. Now, the student feels more confident and productive.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank (1).",
+      "options": ["make", "made", "making", "to make"],
+      "answer": "make",
+      "explanation": "虚拟语气中suggest后的从句用(should) do，所以选make。A和B错误，因为A是原形但这里需要虚拟语气，B是过去式不符合。",
+      "evidence_sentence": "The teacher suggested that she (1) a weekly plan and stick to it.",
+      "context_clue": "The teacher suggested that she (1) a weekly plan and stick to it.",
+      "clue_argument": "suggest表示建议时，从句用虚拟语气(should) do。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank (2).",
+      "options": ["taking", "take", "took", "taken"],
+      "answer": "taking",
+      "explanation": "that引导的宾语从句中，主语是taking regular short breaks，动名词作主语，所以选taking。A和B错误，因为A是动名词但这里需要动名词作主语，B是原形不能作主语。",
+      "evidence_sentence": "She also learned that (2) regular short breaks can help her focus.",
+      "context_clue": "She also learned that (2) regular short breaks can help her focus.",
+      "clue_argument": "从句主语需要动名词形式，表示习惯性动作。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank (3).",
+      "options": ["had", "have", "were", "are"],
+      "answer": "had",
+      "explanation": "主句是过去时found，从句表示过去的过去，用过去完成时had improved，所以选had。A和B错误，因为A是原形，B是现在完成时，都不符合过去完成时。",
+      "evidence_sentence": "After a month, she found that her test scores (3) improved.",
+      "context_clue": "After a month, she found that her test scores (3) improved.",
+      "clue_argument": "主句found为过去时，从句动作发生在之前，用过去完成时。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank (4).",
+      "options": ["has", "had", "have", "having"],
+      "answer": "had",
+      "explanation": "if引导的虚拟条件句，与现在事实相反，从句用一般过去时，所以选had。A和B错误，因为A是原形，B是现在完成时，都不符合虚拟语气。",
+      "evidence_sentence": "If she (4) more time to review each day, she would feel less stressed.",
+      "context_clue": "If she (4) more time to review each day, she would feel less stressed.",
+      "clue_argument": "与现在事实相反的虚拟条件句，从句用一般过去时。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank (5).",
+      "options": ["form", "forms", "formed", "forming"],
+      "answer": "form",
+      "explanation": "recommend表示建议，从句用虚拟语气(should) do，所以选form。A和B错误，因为A是原形但这里需要虚拟语气，B是第三人称单数不符合。",
+      "evidence_sentence": "Her teacher also recommended that she (5) a study group with classmates.",
+      "context_clue": "Her teacher also recommended that she (5) a study group with classmates.",
+      "clue_argument": "recommend表示建议，从句用虚拟语气(should) do。"
+    }
+  ]
+}

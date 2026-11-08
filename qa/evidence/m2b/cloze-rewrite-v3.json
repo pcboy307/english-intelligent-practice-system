@@ -1,0 +1,3189 @@
+{
+  "status": "passed",
+  "generated_at": "2026-11-07T14:03:11.980824+00:00",
+  "database": {
+    "port": 15432,
+    "name": "english_practice",
+    "practice_sessions": 534
+  },
+  "bank_id": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2",
+  "batch_id": "M2.0B-CLOZE-REWRITE-V3",
+  "transport": "json_object",
+  "generator_model": "deepseek-flash",
+  "judge_model": "deepseek-v4-pro",
+  "generator_prompt_version": "m2-cloze-rewrite-v1",
+  "judge_prompt_version": "m2-cloze-judge-v1",
+  "record": {
+    "type": "cloze",
+    "passage_group_id": "M2.0-CLOZE-01",
+    "topic": "青少年生活与成长",
+    "book_source": "选必二 U1",
+    "difficulty": 3,
+    "passage": "She felt (1) ______ before the big exam. She was worried and nervous all morning. He stayed (2) ______ when the new task began. He believed in himself and his own skills. The (3) ______ student asked many questions. She was eager to learn about new things. A (4) ______ friend always keeps a promise. You can trust her to do what she says. Her (5) ______ brother plans to lead a team. He has a strong desire to succeed later. They worked hard to (6) ______ their goal. Reaching a personal aim takes steady effort. New students must (7) ______ to a new school. They need time to get used to it. Good teachers (8) ______ students to keep trying. They give young people courage to continue. She tried to (9) ______ her friend to join. She wanted to convince him to sign up. He could not (10) ______ on his homework. Loud noise made it hard to focus. Her reading skills improved (11) ______ over months. The change happened slowly, step by step. After much practice, he (12) ______ passed the test. In the end, his effort brought success. She finished the project (13) ______ without help. She did it on her own from start to finish. Practice gave her (14) ______ in her own ability. She now trusts her skills more than before. The club offered a rare (15) ______ to lead. It was a valuable chance to try something new.",
+    "target_words": [
+      "anxious",
+      "confident",
+      "curious",
+      "reliable",
+      "ambitious",
+      "achieve",
+      "adapt",
+      "encourage",
+      "persuade",
+      "concentrate",
+      "gradually",
+      "eventually",
+      "independently",
+      "confidence",
+      "opportunity"
+    ],
+    "questions": [
+      {
+        "question_index": 1,
+        "stem": "She felt (1) ______ before the big exam.",
+        "options": [
+          "anxious",
+          "joyful",
+          "calm",
+          "proud"
+        ],
+        "answer": "anxious",
+        "clue_argument": "The clue 'She was worried and nervous all morning' points to a negative, uneasy feeling, so 'anxious' fits. 'Joyful' is excluded because worry and nervousness are not happy feelings; 'calm' is excluded because it is the opposite of nervous; 'proud' is excluded because pride is not described by worry and nervousness.",
+        "knowledge_points": [
+          "anxious 意为焦虑的、担忧的",
+          "情绪形容词辨析"
+        ],
+        "grammar_tags": [
+          "tense_system"
+        ],
+        "book_source": "选必二 U1",
+        "difficulty": 1,
+        "context_clue": "She was worried and nervous all morning.",
+        "explanation": "线索句“She was worried and nervous all morning”说明她感到担忧和紧张，因此应选 anxious（焦虑的）。joyful 表示开心，与担忧紧张矛盾；calm 意为平静，正好与 nervous 相反；proud 意为自豪，线索中并未体现自豪感。词汇要点：anxious 是描述担忧、紧张情绪的常用形容词。"
+      },
+      {
+        "question_index": 2,
+        "stem": "He stayed (2) ______ when the new task began.",
+        "options": [
+          "confident",
+          "shy",
+          "angry",
+          "tired"
+        ],
+        "answer": "confident",
+        "clue_argument": "The clue 'He believed in himself and his own skills' shows self-belief, which matches 'confident'. 'Shy' is excluded because believing in one's own skills is not timidity; 'angry' is excluded because no anger is mentioned; 'tired' is excluded because self-belief is not fatigue.",
+        "knowledge_points": [
+          "confident 意为自信的",
+          "性格形容词辨析"
+        ],
+        "grammar_tags": [
+          "noun_clauses"
+        ],
+        "book_source": "选必二 U2",
+        "difficulty": 1,
+        "context_clue": "He believed in himself and his own skills.",
+        "explanation": "线索句“He believed in himself and his own skills”表明他相信自己和自己能力，因此应选 confident（自信的）。shy 意为害羞，与相信自己能力不符；angry 意为生气，文中没有提到愤怒；tired 意为疲倦，自信并不等于疲劳。词汇要点：confident 是描述自信、相信自身能力的常用形容词。"
+      },
+      {
+        "question_index": 3,
+        "stem": "The (3) ______ student asked many questions.",
+        "options": [
+          "curious",
+          "lazy",
+          "rude",
+          "silent"
+        ],
+        "answer": "curious",
+        "clue_argument": "The clue 'She was eager to learn about new things' indicates a desire to know more, which matches 'curious'. 'Lazy' is excluded because eagerness to learn is not laziness; 'rude' is excluded because asking questions to learn is not rudeness; 'silent' is excluded because she asked many questions rather than staying quiet.",
+        "knowledge_points": [
+          "curious 意为好奇的",
+          "性格形容词辨析"
+        ],
+        "grammar_tags": [
+          "word_formation"
+        ],
+        "book_source": "选必二 U3",
+        "difficulty": 2,
+        "context_clue": "She was eager to learn about new things.",
+        "explanation": "线索句“She was eager to learn about new things”说明她渴望学习新事物，因此应选 curious（好奇的）。lazy 意为懒惰，与渴望学习相反；rude 意为粗鲁，提问学习并不等于粗鲁；silent 意为沉默，而她却问了很多问题。词汇要点：curious 是描述渴望求知、好奇的常用形容词。"
+      },
+      {
+        "question_index": 4,
+        "stem": "A (4) ______ friend always keeps a promise.",
+        "options": [
+          "reliable",
+          "careless",
+          "selfish",
+          "noisy"
+        ],
+        "answer": "reliable",
+        "clue_argument": "The clue 'You can trust her to do what she says' points to being dependable, which matches 'reliable'. 'Careless' is excluded because keeping promises requires care, not carelessness; 'selfish' is excluded because trustworthiness is not self-interest; 'noisy' is excluded because noise has nothing to do with keeping promises.",
+        "knowledge_points": [
+          "reliable 意为可靠的",
+          "性格形容词辨析"
+        ],
+        "grammar_tags": [
+          "passive_voice_tenses"
+        ],
+        "book_source": "选必二 U4",
+        "difficulty": 2,
+        "context_clue": "You can trust her to do what she says.",
+        "explanation": "线索句“You can trust her to do what she says”说明她值得信赖、说到做到，因此应选 reliable（可靠的）。careless 意为粗心，与信守承诺不符；selfish 意为自私，与值得信赖无关；noisy 意为吵闹，与守承诺毫无关系。词汇要点：reliable 是描述可靠、值得信任的常用形容词。"
+      },
+      {
+        "question_index": 5,
+        "stem": "Her (5) ______ brother plans to lead a team.",
+        "options": [
+          "ambitious",
+          "timid",
+          "content",
+          "careless"
+        ],
+        "answer": "ambitious",
+        "clue_argument": "The clue 'He has a strong desire to succeed later' shows a drive to succeed, which matches 'ambitious'. 'Timid' is excluded because a strong desire to succeed is not shyness; 'content' is excluded because wanting to lead and succeed is not being satisfied with things as they are; 'careless' is excluded because ambition is not carelessness.",
+        "knowledge_points": [
+          "ambitious 意为有雄心的",
+          "性格形容词辨析"
+        ],
+        "grammar_tags": [
+          "partial_inversion_basic"
+        ],
+        "book_source": "选必二 U5",
+        "difficulty": 3,
+        "context_clue": "He has a strong desire to succeed later.",
+        "explanation": "线索句“He has a strong desire to succeed later”表明他有强烈的成功愿望，因此应选 ambitious（有雄心的）。timid 意为胆怯，与强烈成功愿望不符；content 意为满足现状，与想领导团队、追求成功不符；careless 意为粗心，雄心并不等于粗心。词汇要点：ambitious 是描述有抱负、渴望成功的常用形容词。"
+      },
+      {
+        "question_index": 6,
+        "stem": "They worked hard to (6) ______ their goal.",
+        "options": [
+          "achieve",
+          "abandon",
+          "ignore",
+          "delay"
+        ],
+        "answer": "achieve",
+        "clue_argument": "The clue 'Reaching a personal aim takes steady effort' shows that the aim is reached, which matches 'achieve'. 'Abandon' is excluded because giving up does not reach an aim; 'ignore' is excluded because ignoring a goal does not reach it; 'delay' is excluded because postponing is not reaching the aim.",
+        "knowledge_points": [
+          "achieve 意为实现、达到",
+          "目标类动词辨析"
+        ],
+        "grammar_tags": [
+          "subjunctive_basic_if"
+        ],
+        "book_source": "选必二 U1",
+        "difficulty": 3,
+        "context_clue": "Reaching a personal aim takes steady effort.",
+        "explanation": "线索句“Reaching a personal aim takes steady effort”说明目标是靠努力达到的，因此应选 achieve（实现）。abandon 意为放弃，放弃不会达成目标；ignore 意为忽视，忽视目标无法实现它；delay 意为推迟，推迟并不等于达成目标。词汇要点：achieve a goal 是表示“实现目标”的常用搭配。"
+      },
+      {
+        "question_index": 7,
+        "stem": "New students must (7) ______ to a new school.",
+        "options": [
+          "adapt",
+          "object",
+          "return",
+          "refer"
+        ],
+        "answer": "adapt",
+        "clue_argument": "The clue 'They need time to get used to it' indicates adjusting to a new situation, which matches 'adapt'. 'Object' is excluded because getting used to something is not opposing it; 'return' is excluded because getting used to a new school is not going back; 'refer' is excluded because referring to a school does not mean getting used to it.",
+        "knowledge_points": [
+          "adapt to 意为适应",
+          "适应类动词辨析"
+        ],
+        "grammar_tags": [
+          "subjunctive_basic_should"
+        ],
+        "book_source": "选必二 U2",
+        "difficulty": 3,
+        "context_clue": "They need time to get used to it.",
+        "explanation": "线索句“They need time to get used to it”说明新生需要时间适应新环境，因此应选 adapt（适应）。object 与 to 连用意为反对，不是适应；return 意为返回，而新学校并非返回之地；refer 与 to 连用意为提及，与适应无关。词汇要点：adapt to 是表示“适应”的常用搭配。"
+      },
+      {
+        "question_index": 8,
+        "stem": "Good teachers (8) ______ students to keep trying.",
+        "options": [
+          "encourage",
+          "forbid",
+          "warn",
+          "blame"
+        ],
+        "answer": "encourage",
+        "clue_argument": "The clue 'They give young people courage to continue' shows giving support and courage, which matches 'encourage'. 'Forbid' is excluded because giving courage to continue is not prohibiting; 'warn' is excluded because warning is not giving courage; 'blame' is excluded because blaming does not support students in continuing.",
+        "knowledge_points": [
+          "encourage sb to do sth 意为鼓励某人做某事",
+          "支持类动词辨析"
+        ],
+        "grammar_tags": [
+          "v_ing_nonfinite"
+        ],
+        "book_source": "选必一 U1",
+        "difficulty": 1,
+        "context_clue": "They give young people courage to continue.",
+        "explanation": "线索句“They give young people courage to continue”说明老师给予学生继续努力的勇气，因此应选 encourage（鼓励）。forbid 意为禁止，与给予勇气相反；warn 意为警告，警告并非给予勇气；blame 意为责备，责备不能支持学生继续努力。词汇要点：encourage sb. to do sth. 是表示“鼓励某人做某事”的常用结构。"
+      },
+      {
+        "question_index": 9,
+        "stem": "She tried to (9) ______ her friend to join.",
+        "options": [
+          "persuade",
+          "prevent",
+          "refuse",
+          "ignore"
+        ],
+        "answer": "persuade",
+        "clue_argument": "The clue 'She wanted to convince him to sign up' shows trying to make someone agree, which matches 'persuade'. 'Prevent' is excluded because convincing someone to join is not stopping them; 'refuse' is excluded because she is trying to get him to join, not declining; 'ignore' is excluded because convincing requires attention, not ignoring.",
+        "knowledge_points": [
+          "persuade sb to do sth 意为说服某人做某事",
+          "沟通类动词辨析"
+        ],
+        "grammar_tags": [
+          "tense_system"
+        ],
+        "book_source": "选必一 U2",
+        "difficulty": 3,
+        "context_clue": "She wanted to convince him to sign up.",
+        "explanation": "线索句“She wanted to convince him to sign up”说明她想说服朋友加入，因此应选 persuade（说服）。prevent 意为阻止，与说服加入相反；refuse 意为拒绝，她是在劝对方而非拒绝；ignore 意为忽视，说服需要关注而非忽视。词汇要点：persuade sb. to do sth. 是表示“说服某人做某事”的常用结构。"
+      },
+      {
+        "question_index": 10,
+        "stem": "He could not (10) ______ on his homework.",
+        "options": [
+          "concentrate",
+          "depend",
+          "insist",
+          "comment"
+        ],
+        "answer": "concentrate",
+        "clue_argument": "The clue 'Loud noise made it hard to focus' indicates difficulty paying attention, which matches 'concentrate'. 'Depend' is excluded because focusing is not relying on something; 'insist' is excluded because focusing is not demanding; 'comment' is excluded because focusing on homework is not making remarks.",
+        "knowledge_points": [
+          "concentrate on 意为专注于",
+          "学习类动词辨析"
+        ],
+        "grammar_tags": [
+          "with_compound"
+        ],
+        "book_source": "选必一 U3",
+        "difficulty": 3,
+        "context_clue": "Loud noise made it hard to focus.",
+        "explanation": "线索句“Loud noise made it hard to focus”说明噪音让他难以集中注意力，因此应选 concentrate（集中注意力）。depend 与 on 连用意为依赖，不是专注；insist 与 on 连用意为坚持要求，与专注无关；comment 与 on 连用意为评论，不是集中精力。词汇要点：concentrate on 是表示“专注于”的常用搭配。"
+      },
+      {
+        "question_index": 11,
+        "stem": "Her reading skills improved (11) ______ over months.",
+        "options": [
+          "gradually",
+          "suddenly",
+          "rarely",
+          "hardly"
+        ],
+        "answer": "gradually",
+        "clue_argument": "The clue 'The change happened slowly, step by step' points to a slow, steady process, which matches 'gradually'. 'Suddenly' is excluded because it means quickly and unexpectedly, not slowly; 'rarely' is excluded because it concerns frequency, not slow change; 'hardly' is excluded because it means almost not at all, which contradicts improvement.",
+        "knowledge_points": [
+          "gradually 意为逐渐地",
+          "时间副词辨析"
+        ],
+        "grammar_tags": [
+          "cleft_basic"
+        ],
+        "book_source": "选必一 U4",
+        "difficulty": 4,
+        "context_clue": "The change happened slowly, step by step.",
+        "explanation": "线索句“The change happened slowly, step by step”说明变化是缓慢、逐步发生的，因此应选 gradually（逐渐地）。suddenly 意为突然，与缓慢逐步相反；rarely 意为很少，表示频率而非缓慢变化；hardly 意为几乎不，与技能提高相矛盾。词汇要点：gradually 是表示“逐渐地”的常用副词，常修饰变化过程。"
+      },
+      {
+        "question_index": 12,
+        "stem": "After much practice, he (12) ______ passed the test.",
+        "options": [
+          "eventually",
+          "immediately",
+          "unluckily",
+          "seldom"
+        ],
+        "answer": "eventually",
+        "clue_argument": "The clue 'In the end, his effort brought success' shows a final result after time, which matches 'eventually'. 'Immediately' is excluded because the result came in the end, not at once; 'unluckily' is excluded because success is not bad luck; 'seldom' is excluded because he did pass the test, so it was not rare.",
+        "knowledge_points": [
+          "eventually 意为最终",
+          "时间副词辨析"
+        ],
+        "grammar_tags": [
+          "articles"
+        ],
+        "book_source": "必修一 U3",
+        "difficulty": 2,
+        "context_clue": "In the end, his effort brought success.",
+        "explanation": "线索句“In the end, his effort brought success”说明经过努力最终取得成功，因此应选 eventually（最终）。immediately 意为立刻，与“最后”不符；unluckily 意为不幸地，而成功并非不幸；seldom 意为很少，但他确实通过了考试。词汇要点：eventually 是表示“最终、终于”的常用副词，强调经过一段时间后的结果。"
+      },
+      {
+        "question_index": 13,
+        "stem": "She finished the project (13) ______ without help.",
+        "options": [
+          "independently",
+          "carelessly",
+          "reluctantly",
+          "secretly"
+        ],
+        "answer": "independently",
+        "clue_argument": "The clue 'She did it on her own from start to finish' shows acting alone, which matches 'independently'. 'Carelessly' is excluded because doing it on her own says nothing about poor care; 'reluctantly' is excluded because no unwillingness is mentioned; 'secretly' is excluded because doing it alone is not the same as hiding it.",
+        "knowledge_points": [
+          "independently 意为独立地",
+          "方式副词辨析"
+        ],
+        "grammar_tags": [
+          "prepositions"
+        ],
+        "book_source": "必修二 U2",
+        "difficulty": 5,
+        "context_clue": "She did it on her own from start to finish.",
+        "explanation": "线索句“She did it on her own from start to finish”说明她从头到尾独自完成，因此应选 independently（独立地）。carelessly 意为粗心地，独自完成并不表示粗心；reluctantly 意为不情愿地，文中没有提到不情愿；secretly 意为秘密地，独自完成不等于偷偷进行。词汇要点：independently 是表示“独立地、独自地”的常用副词。"
+      },
+      {
+        "question_index": 14,
+        "stem": "Practice gave her (14) ______ in her own ability.",
+        "options": [
+          "confidence",
+          "doubt",
+          "fear",
+          "anger"
+        ],
+        "answer": "confidence",
+        "clue_argument": "The clue 'She now trusts her skills more than before' shows trust in her ability, which matches 'confidence'. 'Doubt' is excluded because trusting her skills is the opposite of doubting them; 'fear' is excluded because trust is not fear; 'anger' is excluded because trust in skills is not anger.",
+        "knowledge_points": [
+          "confidence 意为信心",
+          "情绪名词辨析"
+        ],
+        "grammar_tags": [
+          "comparatives_superlatives"
+        ],
+        "book_source": "必修三 U2",
+        "difficulty": 3,
+        "context_clue": "She now trusts her skills more than before.",
+        "explanation": "线索句“She now trusts her skills more than before”说明她如今更相信自己的能力，因此应选 confidence（信心）。doubt 意为怀疑，与相信自己能力相反；fear 意为恐惧，信任技能并非恐惧；anger 意为愤怒，与信任能力无关。词汇要点：confidence in one's ability 是表示“对自身能力的信心”的常用搭配。"
+      },
+      {
+        "question_index": 15,
+        "stem": "The club offered a rare (15) ______ to lead.",
+        "options": [
+          "opportunity",
+          "problem",
+          "rule",
+          "duty"
+        ],
+        "answer": "opportunity",
+        "clue_argument": "The clue 'It was a valuable chance to try something new' points to a chance, which matches 'opportunity'. 'Problem' is excluded because a valuable chance is not a difficulty; 'rule' is excluded because a chance to try something is not a regulation; 'duty' is excluded because an offered chance is not an obligation.",
+        "knowledge_points": [
+          "opportunity 意为机会",
+          "机会类名词辨析"
+        ],
+        "grammar_tags": [
+          "tense_system"
+        ],
+        "book_source": "跨册综合",
+        "difficulty": 4,
+        "context_clue": "It was a valuable chance to try something new.",
+        "explanation": "线索句“It was a valuable chance to try something new”说明这是一次尝试新事物的宝贵机会，因此应选 opportunity（机会）。problem 意为问题，宝贵机会并非困难；rule 意为规则，机会不等于规定；duty 意为义务，被提供的机会并非责任。词汇要点：opportunity to do sth. 是表示“做某事的机会”的常用搭配。"
+      }
+    ]
+  },
+  "target_plan": {
+    "targets": [
+      {
+        "question_index": 1,
+        "target_word": "anxious",
+        "part_of_speech": "adjective",
+        "semantic_field": "emotions",
+        "intended_context": "Feeling worried and nervous before an important exam"
+      },
+      {
+        "question_index": 2,
+        "target_word": "confident",
+        "part_of_speech": "adjective",
+        "semantic_field": "personality",
+        "intended_context": "Believing in oneself when facing a new challenge"
+      },
+      {
+        "question_index": 3,
+        "target_word": "curious",
+        "part_of_speech": "adjective",
+        "semantic_field": "personality",
+        "intended_context": "Eager to learn about new things around oneself"
+      },
+      {
+        "question_index": 4,
+        "target_word": "reliable",
+        "part_of_speech": "adjective",
+        "semantic_field": "personality",
+        "intended_context": "A friend who can always be trusted to keep a promise"
+      },
+      {
+        "question_index": 5,
+        "target_word": "ambitious",
+        "part_of_speech": "adjective",
+        "semantic_field": "personality",
+        "intended_context": "Having a strong desire to succeed in the future"
+      },
+      {
+        "question_index": 6,
+        "target_word": "achieve",
+        "part_of_speech": "verb",
+        "semantic_field": "goals",
+        "intended_context": "Reaching a personal goal through hard work"
+      },
+      {
+        "question_index": 7,
+        "target_word": "adapt",
+        "part_of_speech": "verb",
+        "semantic_field": "adjustment",
+        "intended_context": "Getting used to a new school environment"
+      },
+      {
+        "question_index": 8,
+        "target_word": "encourage",
+        "part_of_speech": "verb",
+        "semantic_field": "support",
+        "intended_context": "Giving someone courage to keep trying"
+      },
+      {
+        "question_index": 9,
+        "target_word": "persuade",
+        "part_of_speech": "verb",
+        "semantic_field": "communication",
+        "intended_context": "Convincing a friend to join a club"
+      },
+      {
+        "question_index": 10,
+        "target_word": "concentrate",
+        "part_of_speech": "verb",
+        "semantic_field": "study",
+        "intended_context": "Focusing one's attention on homework"
+      },
+      {
+        "question_index": 11,
+        "target_word": "gradually",
+        "part_of_speech": "adverb",
+        "semantic_field": "time",
+        "intended_context": "Something happening slowly over a period of time"
+      },
+      {
+        "question_index": 12,
+        "target_word": "eventually",
+        "part_of_speech": "adverb",
+        "semantic_field": "time",
+        "intended_context": "Something happening in the end after much effort"
+      },
+      {
+        "question_index": 13,
+        "target_word": "independently",
+        "part_of_speech": "adverb",
+        "semantic_field": "manner",
+        "intended_context": "Doing something on one's own without help"
+      },
+      {
+        "question_index": 14,
+        "target_word": "confidence",
+        "part_of_speech": "noun",
+        "semantic_field": "emotions",
+        "intended_context": "A feeling of trust in one's own abilities"
+      },
+      {
+        "question_index": 15,
+        "target_word": "opportunity",
+        "part_of_speech": "noun",
+        "semantic_field": "chances",
+        "intended_context": "A chance to try something new and valuable"
+      }
+    ]
+  },
+  "target_plan_source": "generated",
+  "passage_design": {
+    "items": [
+      {
+        "question_index": 1,
+        "target_word": "anxious",
+        "blank_sentence": "She felt (1) ______ before the big exam.",
+        "clue_sentence": "She was worried and nervous all morning."
+      },
+      {
+        "question_index": 2,
+        "target_word": "confident",
+        "blank_sentence": "He stayed (2) ______ when the new task began.",
+        "clue_sentence": "He believed in himself and his own skills."
+      },
+      {
+        "question_index": 3,
+        "target_word": "curious",
+        "blank_sentence": "The (3) ______ student asked many questions.",
+        "clue_sentence": "She was eager to learn about new things."
+      },
+      {
+        "question_index": 4,
+        "target_word": "reliable",
+        "blank_sentence": "A (4) ______ friend always keeps a promise.",
+        "clue_sentence": "You can trust her to do what she says."
+      },
+      {
+        "question_index": 5,
+        "target_word": "ambitious",
+        "blank_sentence": "Her (5) ______ brother plans to lead a team.",
+        "clue_sentence": "He has a strong desire to succeed later."
+      },
+      {
+        "question_index": 6,
+        "target_word": "achieve",
+        "blank_sentence": "They worked hard to (6) ______ their goal.",
+        "clue_sentence": "Reaching a personal aim takes steady effort."
+      },
+      {
+        "question_index": 7,
+        "target_word": "adapt",
+        "blank_sentence": "New students must (7) ______ to a new school.",
+        "clue_sentence": "They need time to get used to it."
+      },
+      {
+        "question_index": 8,
+        "target_word": "encourage",
+        "blank_sentence": "Good teachers (8) ______ students to keep trying.",
+        "clue_sentence": "They give young people courage to continue."
+      },
+      {
+        "question_index": 9,
+        "target_word": "persuade",
+        "blank_sentence": "She tried to (9) ______ her friend to join.",
+        "clue_sentence": "She wanted to convince him to sign up."
+      },
+      {
+        "question_index": 10,
+        "target_word": "concentrate",
+        "blank_sentence": "He could not (10) ______ on his homework.",
+        "clue_sentence": "Loud noise made it hard to focus."
+      },
+      {
+        "question_index": 11,
+        "target_word": "gradually",
+        "blank_sentence": "Her reading skills improved (11) ______ over months.",
+        "clue_sentence": "The change happened slowly, step by step."
+      },
+      {
+        "question_index": 12,
+        "target_word": "eventually",
+        "blank_sentence": "After much practice, he (12) ______ passed the test.",
+        "clue_sentence": "In the end, his effort brought success."
+      },
+      {
+        "question_index": 13,
+        "target_word": "independently",
+        "blank_sentence": "She finished the project (13) ______ without help.",
+        "clue_sentence": "She did it on her own from start to finish."
+      },
+      {
+        "question_index": 14,
+        "target_word": "confidence",
+        "blank_sentence": "Practice gave her (14) ______ in her own ability.",
+        "clue_sentence": "She now trusts her skills more than before."
+      },
+      {
+        "question_index": 15,
+        "target_word": "opportunity",
+        "blank_sentence": "The club offered a rare (15) ______ to lead.",
+        "clue_sentence": "It was a valuable chance to try something new."
+      }
+    ],
+    "passage": "She felt (1) ______ before the big exam. She was worried and nervous all morning. He stayed (2) ______ when the new task began. He believed in himself and his own skills. The (3) ______ student asked many questions. She was eager to learn about new things. A (4) ______ friend always keeps a promise. You can trust her to do what she says. Her (5) ______ brother plans to lead a team. He has a strong desire to succeed later. They worked hard to (6) ______ their goal. Reaching a personal aim takes steady effort. New students must (7) ______ to a new school. They need time to get used to it. Good teachers (8) ______ students to keep trying. They give young people courage to continue. She tried to (9) ______ her friend to join. She wanted to convince him to sign up. He could not (10) ______ on his homework. Loud noise made it hard to focus. Her reading skills improved (11) ______ over months. The change happened slowly, step by step. After much practice, he (12) ______ passed the test. In the end, his effort brought success. She finished the project (13) ______ without help. She did it on her own from start to finish. Practice gave her (14) ______ in her own ability. She now trusts her skills more than before. The club offered a rare (15) ______ to lead. It was a valuable chance to try something new.",
+    "target_words": [
+      "anxious",
+      "confident",
+      "curious",
+      "reliable",
+      "ambitious",
+      "achieve",
+      "adapt",
+      "encourage",
+      "persuade",
+      "concentrate",
+      "gradually",
+      "eventually",
+      "independently",
+      "confidence",
+      "opportunity"
+    ]
+  },
+  "report": {
+    "accepted": true,
+    "hard_failures": [],
+    "observations": [],
+    "metrics": {
+      "type": "cloze",
+      "word_count": 214,
+      "question_count": 15,
+      "unknown_words": [],
+      "unknown_ratio": 0.0,
+      "vocabulary_resolutions": [
+        {
+          "original": "felt",
+          "matched_entry": "feel",
+          "rules": [
+            "irregular_inflection"
+          ]
+        },
+        {
+          "original": "was",
+          "matched_entry": "be",
+          "rules": [
+            "irregular_inflection"
+          ]
+        },
+        {
+          "original": "worried",
+          "matched_entry": "worry",
+          "rules": [
+            "past_ied_to_y"
+          ]
+        },
+        {
+          "original": "stayed",
+          "matched_entry": "stay",
+          "rules": [
+            "inflection_ed"
+          ]
+        },
+        {
+          "original": "began",
+          "matched_entry": "begin",
+          "rules": [
+            "irregular_inflection"
+          ]
+        },
+        {
+          "original": "believed",
+          "matched_entry": "believe",
+          "rules": [
+            "inflection_ed_restore_e"
+          ]
+        },
+        {
+          "original": "skills",
+          "matched_entry": "skill",
+          "rules": [
+            "plural_s"
+          ]
+        },
+        {
+          "original": "asked",
+          "matched_entry": "ask",
+          "rules": [
+            "inflection_ed"
+          ]
+        },
+        {
+          "original": "questions",
+          "matched_entry": "question",
+          "rules": [
+            "plural_s"
+          ]
+        },
+        {
+          "original": "was",
+          "matched_entry": "be",
+          "rules": [
+            "irregular_inflection"
+          ]
+        },
+        {
+          "original": "things",
+          "matched_entry": "thing",
+          "rules": [
+            "plural_s"
+          ]
+        },
+        {
+          "original": "keeps",
+          "matched_entry": "keep",
+          "rules": [
+            "plural_s"
+          ]
+        },
+        {
+          "original": "says",
+          "matched_entry": "say",
+          "rules": [
+            "plural_s"
+          ]
+        },
+        {
+          "original": "plans",
+          "matched_entry": "plan",
+          "rules": [
+            "plural_s"
+          ]
+        },
+        {
+          "original": "has",
+          "matched_entry": "have",
+          "rules": [
+            "irregular_inflection"
+          ]
+        },
+        {
+          "original": "worked",
+          "matched_entry": "work",
+          "rules": [
+            "inflection_ed"
+          ]
+        },
+        {
+          "original": "reaching",
+          "matched_entry": "reach",
+          "rules": [
+            "inflection_ing"
+          ]
+        },
+        {
+          "original": "takes",
+          "matched_entry": "take",
+          "rules": [
+            "plural_s"
+          ]
+        },
+        {
+          "original": "students",
+          "matched_entry": "student",
+          "rules": [
+            "plural_s"
+          ]
+        },
+        {
+          "original": "used",
+          "matched_entry": "us",
+          "rules": [
+            "inflection_ed"
+          ]
+        },
+        {
+          "original": "teachers",
+          "matched_entry": "teacher",
+          "rules": [
+            "plural_s"
+          ]
+        },
+        {
+          "original": "students",
+          "matched_entry": "student",
+          "rules": [
+            "plural_s"
+          ]
+        },
+        {
+          "original": "trying",
+          "matched_entry": "try",
+          "rules": [
+            "inflection_ing"
+          ]
+        },
+        {
+          "original": "tried",
+          "matched_entry": "try",
+          "rules": [
+            "past_ied_to_y"
+          ]
+        },
+        {
+          "original": "wanted",
+          "matched_entry": "want",
+          "rules": [
+            "inflection_ed"
+          ]
+        },
+        {
+          "original": "made",
+          "matched_entry": "make",
+          "rules": [
+            "irregular_inflection"
+          ]
+        },
+        {
+          "original": "reading",
+          "matched_entry": "read",
+          "rules": [
+            "inflection_ing"
+          ]
+        },
+        {
+          "original": "skills",
+          "matched_entry": "skill",
+          "rules": [
+            "plural_s"
+          ]
+        },
+        {
+          "original": "improved",
+          "matched_entry": "improve",
+          "rules": [
+            "inflection_ed_restore_e"
+          ]
+        },
+        {
+          "original": "months",
+          "matched_entry": "month",
+          "rules": [
+            "plural_s"
+          ]
+        },
+        {
+          "original": "happened",
+          "matched_entry": "happen",
+          "rules": [
+            "inflection_ed"
+          ]
+        },
+        {
+          "original": "slowly",
+          "matched_entry": "slow",
+          "rules": [
+            "derivation_ly"
+          ]
+        },
+        {
+          "original": "passed",
+          "matched_entry": "pass",
+          "rules": [
+            "inflection_ed"
+          ]
+        },
+        {
+          "original": "brought",
+          "matched_entry": "bring",
+          "rules": [
+            "irregular_inflection"
+          ]
+        },
+        {
+          "original": "finished",
+          "matched_entry": "finish",
+          "rules": [
+            "inflection_ed"
+          ]
+        },
+        {
+          "original": "did",
+          "matched_entry": "do",
+          "rules": [
+            "irregular_inflection"
+          ]
+        },
+        {
+          "original": "gave",
+          "matched_entry": "give",
+          "rules": [
+            "irregular_inflection"
+          ]
+        },
+        {
+          "original": "trusts",
+          "matched_entry": "trust",
+          "rules": [
+            "plural_s"
+          ]
+        },
+        {
+          "original": "skills",
+          "matched_entry": "skill",
+          "rules": [
+            "plural_s"
+          ]
+        },
+        {
+          "original": "offered",
+          "matched_entry": "offer",
+          "rules": [
+            "inflection_ed"
+          ]
+        },
+        {
+          "original": "was",
+          "matched_entry": "be",
+          "rules": [
+            "irregular_inflection"
+          ]
+        },
+        {
+          "original": "valuable",
+          "matched_entry": "value",
+          "rules": [
+            "derivation_able_restore_e"
+          ]
+        }
+      ],
+      "glossed_terms": [],
+      "single_word_denominator": 214
+    },
+    "flesch_reading_ease": 88.11
+  },
+  "cross_audit": [
+    {
+      "question_index": 1,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "anxious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adjective describing her feeling before the exam."
+        },
+        {
+          "option_index": 2,
+          "option": "joyful",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Contradicts the clue that she was worried and nervous."
+        },
+        {
+          "option_index": 3,
+          "option": "calm",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Opposite of being worried and nervous."
+        },
+        {
+          "option_index": 4,
+          "option": "proud",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Pride is not indicated by worry and nervousness."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly describes a negative, uneasy feeling, matching 'anxious' and excluding others."
+      },
+      "answer_collocation": {
+        "phrase": "anxious before the big exam",
+        "standard": true,
+        "reason": "Common and natural English phrase."
+      }
+    },
+    {
+      "question_index": 2,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "confident",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adjective describing his state when the task began."
+        },
+        {
+          "option_index": 2,
+          "option": "shy",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Contradicts self-belief indicated by the clue."
+        },
+        {
+          "option_index": 3,
+          "option": "angry",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "No anger is mentioned in the context."
+        },
+        {
+          "option_index": 4,
+          "option": "tired",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Fatigue is not related to self-belief."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates self-belief, which is synonymous with confidence."
+      },
+      "answer_collocation": {
+        "phrase": "confident when the new task began",
+        "standard": true,
+        "reason": "Natural and grammatically correct phrase."
+      }
+    },
+    {
+      "question_index": 3,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "curious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adjective describing a student eager to learn."
+        },
+        {
+          "option_index": 2,
+          "option": "lazy",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Contradicts eagerness to learn."
+        },
+        {
+          "option_index": 3,
+          "option": "rude",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Asking questions to learn is not rudeness."
+        },
+        {
+          "option_index": 4,
+          "option": "silent",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Contradicts the fact that she asked many questions."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates a desire to learn, which is the definition of curious."
+      },
+      "answer_collocation": {
+        "phrase": "curious student asked many questions",
+        "standard": true,
+        "reason": "Common and natural English phrase."
+      }
+    },
+    {
+      "question_index": 4,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "reliable",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adjective describing a friend who keeps promises."
+        },
+        {
+          "option_index": 2,
+          "option": "careless",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Keeping promises requires care, not carelessness."
+        },
+        {
+          "option_index": 3,
+          "option": "selfish",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Trustworthiness is not self-interest."
+        },
+        {
+          "option_index": 4,
+          "option": "noisy",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Noise has nothing to do with keeping promises."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates dependability, which is synonymous with reliable."
+      },
+      "answer_collocation": {
+        "phrase": "reliable friend always keeps a promise",
+        "standard": true,
+        "reason": "Natural and grammatically correct phrase."
+      }
+    },
+    {
+      "question_index": 5,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "ambitious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adjective describing a brother with a strong desire to succeed."
+        },
+        {
+          "option_index": 2,
+          "option": "timid",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Contradicts a strong desire to succeed."
+        },
+        {
+          "option_index": 3,
+          "option": "content",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Wanting to lead and succeed is not being satisfied with things as they are."
+        },
+        {
+          "option_index": 4,
+          "option": "careless",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Ambition is not carelessness."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates a drive to succeed, which is the definition of ambitious."
+      },
+      "answer_collocation": {
+        "phrase": "ambitious brother plans to lead a team",
+        "standard": true,
+        "reason": "Natural and grammatically correct phrase."
+      }
+    },
+    {
+      "question_index": 6,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "achieve",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as a verb meaning to reach a goal."
+        },
+        {
+          "option_index": 2,
+          "option": "abandon",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Giving up does not reach an aim."
+        },
+        {
+          "option_index": 3,
+          "option": "ignore",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Ignoring a goal does not reach it."
+        },
+        {
+          "option_index": 4,
+          "option": "delay",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Postponing is not reaching the aim."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates reaching a personal aim, which is synonymous with achieving a goal."
+      },
+      "answer_collocation": {
+        "phrase": "achieve their goal",
+        "standard": true,
+        "reason": "Common and natural English collocation."
+      }
+    },
+    {
+      "question_index": 7,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "adapt",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as a verb meaning to adjust to a new situation."
+        },
+        {
+          "option_index": 2,
+          "option": "object",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Getting used to something is not opposing it."
+        },
+        {
+          "option_index": 3,
+          "option": "return",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Getting used to a new school is not going back."
+        },
+        {
+          "option_index": 4,
+          "option": "refer",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Referring to a school does not mean getting used to it."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates adjusting to a new situation, which is the meaning of adapt."
+      },
+      "answer_collocation": {
+        "phrase": "adapt to a new school",
+        "standard": true,
+        "reason": "Common and natural English collocation."
+      }
+    },
+    {
+      "question_index": 8,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "encourage",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as a verb meaning to give support and courage."
+        },
+        {
+          "option_index": 2,
+          "option": "forbid",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Giving courage to continue is not prohibiting."
+        },
+        {
+          "option_index": 3,
+          "option": "warn",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Warning is not giving courage."
+        },
+        {
+          "option_index": 4,
+          "option": "blame",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Blaming does not support students in continuing."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates giving courage, which is the definition of encourage."
+      },
+      "answer_collocation": {
+        "phrase": "encourage students to keep trying",
+        "standard": true,
+        "reason": "Common and natural English collocation."
+      }
+    },
+    {
+      "question_index": 9,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "persuade",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as a verb meaning to convince someone to do something."
+        },
+        {
+          "option_index": 2,
+          "option": "prevent",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Convincing someone to join is not stopping them."
+        },
+        {
+          "option_index": 3,
+          "option": "refuse",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "She is trying to get him to join, not declining."
+        },
+        {
+          "option_index": 4,
+          "option": "ignore",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Convincing requires attention, not ignoring."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates trying to make someone agree, which is the meaning of persuade."
+      },
+      "answer_collocation": {
+        "phrase": "persuade her friend to join",
+        "standard": true,
+        "reason": "Common and natural English collocation."
+      }
+    },
+    {
+      "question_index": 10,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "concentrate",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as a verb meaning to focus attention."
+        },
+        {
+          "option_index": 2,
+          "option": "depend",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Focusing is not relying on something."
+        },
+        {
+          "option_index": 3,
+          "option": "insist",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Focusing is not demanding."
+        },
+        {
+          "option_index": 4,
+          "option": "comment",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Focusing on homework is not making remarks."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates difficulty paying attention, which is the meaning of concentrate."
+      },
+      "answer_collocation": {
+        "phrase": "concentrate on his homework",
+        "standard": true,
+        "reason": "Common and natural English collocation."
+      }
+    },
+    {
+      "question_index": 11,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "gradually",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adverb meaning slowly over time."
+        },
+        {
+          "option_index": 2,
+          "option": "suddenly",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Means quickly and unexpectedly, not slowly."
+        },
+        {
+          "option_index": 3,
+          "option": "rarely",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Concerns frequency, not slow change."
+        },
+        {
+          "option_index": 4,
+          "option": "hardly",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Means almost not at all, which contradicts improvement."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates a slow, step-by-step process, which is the meaning of gradually."
+      },
+      "answer_collocation": {
+        "phrase": "gradually over months",
+        "standard": true,
+        "reason": "Natural and grammatically correct phrase."
+      }
+    },
+    {
+      "question_index": 12,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "eventually",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adverb meaning after a period of time."
+        },
+        {
+          "option_index": 2,
+          "option": "immediately",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "The result came in the end, not at once."
+        },
+        {
+          "option_index": 3,
+          "option": "unluckily",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Success is not bad luck."
+        },
+        {
+          "option_index": 4,
+          "option": "seldom",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "He did pass the test, so it was not rare."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates a final result after time, which is the meaning of eventually."
+      },
+      "answer_collocation": {
+        "phrase": "eventually passed the test",
+        "standard": true,
+        "reason": "Common and natural English collocation."
+      }
+    },
+    {
+      "question_index": 13,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "independently",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adverb meaning without help."
+        },
+        {
+          "option_index": 2,
+          "option": "carelessly",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Doing it on her own says nothing about poor care."
+        },
+        {
+          "option_index": 3,
+          "option": "reluctantly",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "No unwillingness is mentioned."
+        },
+        {
+          "option_index": 4,
+          "option": "secretly",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Doing it alone is not the same as hiding it."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates acting alone, which is the meaning of independently."
+      },
+      "answer_collocation": {
+        "phrase": "independently without help",
+        "standard": true,
+        "reason": "Natural and grammatically correct phrase."
+      }
+    },
+    {
+      "question_index": 14,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "confidence",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as a noun meaning trust in one's ability."
+        },
+        {
+          "option_index": 2,
+          "option": "doubt",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Trusting her skills is the opposite of doubting them."
+        },
+        {
+          "option_index": 3,
+          "option": "fear",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Trust is not fear."
+        },
+        {
+          "option_index": 4,
+          "option": "anger",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Trust in skills is not anger."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates trust in her ability, which is the definition of confidence."
+      },
+      "answer_collocation": {
+        "phrase": "confidence in her own ability",
+        "standard": true,
+        "reason": "Common and natural English collocation."
+      }
+    },
+    {
+      "question_index": 15,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "opportunity",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as a noun meaning a chance."
+        },
+        {
+          "option_index": 2,
+          "option": "problem",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "A valuable chance is not a difficulty."
+        },
+        {
+          "option_index": 3,
+          "option": "rule",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "A chance to try something is not a regulation."
+        },
+        {
+          "option_index": 4,
+          "option": "duty",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "An offered chance is not an obligation."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates a chance, which is the meaning of opportunity."
+      },
+      "answer_collocation": {
+        "phrase": "opportunity to lead",
+        "standard": true,
+        "reason": "Common and natural English collocation."
+      }
+    }
+  ],
+  "audit_attempts": [
+    {
+      "status": "passed",
+      "items": [
+        {
+          "question_index": 1,
+          "option_assessments": [
+            {
+              "option_index": 1,
+              "option": "anxious",
+              "grammar_ok": true,
+              "semantic_ok": true,
+              "idiomatic": true,
+              "reason": "Grammatically correct adjective after 'felt'; semantically matches worry and nervousness; idiomatic as 'felt anxious'."
+            },
+            {
+              "option_index": 2,
+              "option": "joyful",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but contradicts the clue's negative emotion; 'felt joyful' is idiomatic but semantically wrong."
+            },
+            {
+              "option_index": 3,
+              "option": "calm",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but opposite of nervous; 'felt calm' is idiomatic but semantically wrong."
+            },
+            {
+              "option_index": 4,
+              "option": "proud",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but pride is not indicated by worry/nervousness; 'felt proud' is idiomatic but semantically wrong."
+            }
+          ],
+          "context_clue_assessment": {
+            "clue_is_verbatim": true,
+            "supports_answer": true,
+            "excludes_distractors": true,
+            "reason": "Clue directly states she was worried and nervous, matching 'anxious' and excluding joyful, calm, and proud."
+          },
+          "answer_collocation": {
+            "phrase": "anxious",
+            "standard": true,
+            "reason": "'Anxious' is a standard adjective to describe feeling worried and nervous."
+          }
+        },
+        {
+          "question_index": 2,
+          "option_assessments": [
+            {
+              "option_index": 1,
+              "option": "confident",
+              "grammar_ok": true,
+              "semantic_ok": true,
+              "idiomatic": true,
+              "reason": "Grammatically correct after 'stayed'; semantically matches self-belief; idiomatic as 'stayed confident'."
+            },
+            {
+              "option_index": 2,
+              "option": "shy",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but contradicts self-belief; 'stayed shy' is idiomatic but semantically wrong."
+            },
+            {
+              "option_index": 3,
+              "option": "angry",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but no anger is mentioned; 'stayed angry' is idiomatic but semantically wrong."
+            },
+            {
+              "option_index": 4,
+              "option": "tired",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but fatigue is not indicated; 'stayed tired' is idiomatic but semantically wrong."
+            }
+          ],
+          "context_clue_assessment": {
+            "clue_is_verbatim": true,
+            "supports_answer": true,
+            "excludes_distractors": true,
+            "reason": "Clue states he believed in himself, directly supporting 'confident' and excluding shy, angry, and tired."
+          },
+          "answer_collocation": {
+            "phrase": "confident",
+            "standard": true,
+            "reason": "'Confident' is a standard adjective to describe self-belief."
+          }
+        },
+        {
+          "question_index": 3,
+          "option_assessments": [
+            {
+              "option_index": 1,
+              "option": "curious",
+              "grammar_ok": true,
+              "semantic_ok": true,
+              "idiomatic": true,
+              "reason": "Grammatically correct before 'student'; semantically matches eagerness to learn; idiomatic as 'curious student'."
+            },
+            {
+              "option_index": 2,
+              "option": "lazy",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but contradicts eagerness to learn; 'lazy student' is idiomatic but semantically wrong."
+            },
+            {
+              "option_index": 3,
+              "option": "rude",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but asking questions to learn is not rudeness; 'rude student' is idiomatic but semantically wrong."
+            },
+            {
+              "option_index": 4,
+              "option": "silent",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but contradicts asking many questions; 'silent student' is idiomatic but semantically wrong."
+            }
+          ],
+          "context_clue_assessment": {
+            "clue_is_verbatim": true,
+            "supports_answer": true,
+            "excludes_distractors": true,
+            "reason": "Clue states she was eager to learn, directly supporting 'curious' and excluding lazy, rude, and silent."
+          },
+          "answer_collocation": {
+            "phrase": "curious",
+            "standard": true,
+            "reason": "'Curious' is a standard adjective to describe someone eager to learn."
+          }
+        },
+        {
+          "question_index": 4,
+          "option_assessments": [
+            {
+              "option_index": 1,
+              "option": "reliable",
+              "grammar_ok": true,
+              "semantic_ok": true,
+              "idiomatic": true,
+              "reason": "Grammatically correct before 'friend'; semantically matches trustworthiness; idiomatic as 'reliable friend'."
+            },
+            {
+              "option_index": 2,
+              "option": "careless",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but contradicts keeping promises; 'careless friend' is idiomatic but semantically wrong."
+            },
+            {
+              "option_index": 3,
+              "option": "selfish",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but trustworthiness is not selfishness; 'selfish friend' is idiomatic but semantically wrong."
+            },
+            {
+              "option_index": 4,
+              "option": "noisy",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but noise is unrelated to keeping promises; 'noisy friend' is idiomatic but semantically wrong."
+            }
+          ],
+          "context_clue_assessment": {
+            "clue_is_verbatim": true,
+            "supports_answer": true,
+            "excludes_distractors": true,
+            "reason": "Clue states you can trust her, directly supporting 'reliable' and excluding careless, selfish, and noisy."
+          },
+          "answer_collocation": {
+            "phrase": "reliable",
+            "standard": true,
+            "reason": "'Reliable' is a standard adjective to describe someone who keeps promises."
+          }
+        },
+        {
+          "question_index": 5,
+          "option_assessments": [
+            {
+              "option_index": 1,
+              "option": "ambitious",
+              "grammar_ok": true,
+              "semantic_ok": true,
+              "idiomatic": true,
+              "reason": "Grammatically correct before 'brother'; semantically matches strong desire to succeed; idiomatic as 'ambitious brother'."
+            },
+            {
+              "option_index": 2,
+              "option": "timid",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but contradicts strong desire to succeed; 'timid brother' is idiomatic but semantically wrong."
+            },
+            {
+              "option_index": 3,
+              "option": "content",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but being content does not imply desire to lead; 'content brother' is idiomatic but semantically wrong."
+            },
+            {
+              "option_index": 4,
+              "option": "careless",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but carelessness is not ambition; 'careless brother' is idiomatic but semantically wrong."
+            }
+          ],
+          "context_clue_assessment": {
+            "clue_is_verbatim": true,
+            "supports_answer": true,
+            "excludes_distractors": true,
+            "reason": "Clue states he has a strong desire to succeed, directly supporting 'ambitious' and excluding timid, content, and careless."
+          },
+          "answer_collocation": {
+            "phrase": "ambitious",
+            "standard": true,
+            "reason": "'Ambitious' is a standard adjective to describe someone with a strong desire to succeed."
+          }
+        },
+        {
+          "question_index": 6,
+          "option_assessments": [
+            {
+              "option_index": 1,
+              "option": "achieve",
+              "grammar_ok": true,
+              "semantic_ok": true,
+              "idiomatic": true,
+              "reason": "Grammatically correct after 'to'; semantically matches reaching an aim; idiomatic as 'achieve their goal'."
+            },
+            {
+              "option_index": 2,
+              "option": "abandon",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but contradicts reaching the aim; 'abandon their goal' is idiomatic but semantically wrong."
+            },
+            {
+              "option_index": 3,
+              "option": "ignore",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but ignoring does not reach the aim; 'ignore their goal' is idiomatic but semantically wrong."
+            },
+            {
+              "option_index": 4,
+              "option": "delay",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but delaying does not reach the aim; 'delay their goal' is idiomatic but semantically wrong."
+            }
+          ],
+          "context_clue_assessment": {
+            "clue_is_verbatim": true,
+            "supports_answer": true,
+            "excludes_distractors": true,
+            "reason": "Clue states reaching a personal aim takes effort, directly supporting 'achieve' and excluding abandon, ignore, and delay."
+          },
+          "answer_collocation": {
+            "phrase": "achieve",
+            "standard": true,
+            "reason": "'Achieve their goal' is a standard collocation meaning to successfully reach a goal."
+          }
+        },
+        {
+          "question_index": 7,
+          "option_assessments": [
+            {
+              "option_index": 1,
+              "option": "adapt",
+              "grammar_ok": true,
+              "semantic_ok": true,
+              "idiomatic": true,
+              "reason": "Grammatically correct after 'must'; semantically matches getting used to; idiomatic as 'adapt to a new school'."
+            },
+            {
+              "option_index": 2,
+              "option": "object",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": false,
+              "reason": "Grammatically correct but 'object to' means oppose, not get used to; semantically wrong and not idiomatic in this context."
+            },
+            {
+              "option_index": 3,
+              "option": "return",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but returning is not getting used to; 'return to a new school' is odd because it's new."
+            },
+            {
+              "option_index": 4,
+              "option": "refer",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": false,
+              "reason": "Grammatically correct but 'refer to' means mention, not adjust; semantically wrong and not idiomatic here."
+            }
+          ],
+          "context_clue_assessment": {
+            "clue_is_verbatim": true,
+            "supports_answer": true,
+            "excludes_distractors": true,
+            "reason": "Clue states they need time to get used to it, directly supporting 'adapt' and excluding object, return, and refer."
+          },
+          "answer_collocation": {
+            "phrase": "adapt",
+            "standard": true,
+            "reason": "'Adapt to a new school' is a standard collocation meaning to adjust to a new environment."
+          }
+        },
+        {
+          "question_index": 8,
+          "option_assessments": [
+            {
+              "option_index": 1,
+              "option": "encourage",
+              "grammar_ok": true,
+              "semantic_ok": true,
+              "idiomatic": true,
+              "reason": "Grammatically correct after 'teachers'; semantically matches giving courage; idiomatic as 'encourage students to keep trying'."
+            },
+            {
+              "option_index": 2,
+              "option": "forbid",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but forbidding is opposite of giving courage; semantically wrong."
+            },
+            {
+              "option_index": 3,
+              "option": "warn",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but warning is not giving courage; semantically wrong."
+            },
+            {
+              "option_index": 4,
+              "option": "blame",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but blaming does not support continuing; semantically wrong."
+            }
+          ],
+          "context_clue_assessment": {
+            "clue_is_verbatim": true,
+            "supports_answer": true,
+            "excludes_distractors": true,
+            "reason": "Clue states they give courage to continue, directly supporting 'encourage' and excluding forbid, warn, and blame."
+          },
+          "answer_collocation": {
+            "phrase": "encourage",
+            "standard": true,
+            "reason": "'Encourage students to keep trying' is a standard collocation meaning to give support and confidence."
+          }
+        },
+        {
+          "question_index": 9,
+          "option_assessments": [
+            {
+              "option_index": 1,
+              "option": "persuade",
+              "grammar_ok": true,
+              "semantic_ok": true,
+              "idiomatic": true,
+              "reason": "Grammatically correct after 'to'; semantically matches convincing; idiomatic as 'persuade her friend to join'."
+            },
+            {
+              "option_index": 2,
+              "option": "prevent",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but preventing is opposite of convincing to join; semantically wrong."
+            },
+            {
+              "option_index": 3,
+              "option": "refuse",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but refusing is not convincing; semantically wrong."
+            },
+            {
+              "option_index": 4,
+              "option": "ignore",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but ignoring is not convincing; semantically wrong."
+            }
+          ],
+          "context_clue_assessment": {
+            "clue_is_verbatim": true,
+            "supports_answer": true,
+            "excludes_distractors": true,
+            "reason": "Clue states she wanted to convince him, directly supporting 'persuade' and excluding prevent, refuse, and ignore."
+          },
+          "answer_collocation": {
+            "phrase": "persuade",
+            "standard": true,
+            "reason": "'Persuade her friend to join' is a standard collocation meaning to convince someone to do something."
+          }
+        },
+        {
+          "question_index": 10,
+          "option_assessments": [
+            {
+              "option_index": 1,
+              "option": "concentrate",
+              "grammar_ok": true,
+              "semantic_ok": true,
+              "idiomatic": true,
+              "reason": "Grammatically correct after 'could not'; semantically matches focusing; idiomatic as 'concentrate on his homework'."
+            },
+            {
+              "option_index": 2,
+              "option": "depend",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": false,
+              "reason": "Grammatically correct but 'depend on' means rely, not focus; semantically wrong and not idiomatic here."
+            },
+            {
+              "option_index": 3,
+              "option": "insist",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": false,
+              "reason": "Grammatically correct but 'insist on' means demand, not focus; semantically wrong and not idiomatic here."
+            },
+            {
+              "option_index": 4,
+              "option": "comment",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": false,
+              "reason": "Grammatically correct but 'comment on' means remark, not focus; semantically wrong and not idiomatic here."
+            }
+          ],
+          "context_clue_assessment": {
+            "clue_is_verbatim": true,
+            "supports_answer": true,
+            "excludes_distractors": true,
+            "reason": "Clue states loud noise made it hard to focus, directly supporting 'concentrate' and excluding depend, insist, and comment."
+          },
+          "answer_collocation": {
+            "phrase": "concentrate",
+            "standard": true,
+            "reason": "'Concentrate on his homework' is a standard collocation meaning to focus attention on homework."
+          }
+        },
+        {
+          "question_index": 11,
+          "option_assessments": [
+            {
+              "option_index": 1,
+              "option": "gradually",
+              "grammar_ok": true,
+              "semantic_ok": true,
+              "idiomatic": true,
+              "reason": "Grammatically correct as adverb modifying 'improved'; semantically matches slow change; idiomatic."
+            },
+            {
+              "option_index": 2,
+              "option": "suddenly",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but contradicts slow, step-by-step change; semantically wrong."
+            },
+            {
+              "option_index": 3,
+              "option": "rarely",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but 'rarely' means infrequently, not slowly; semantically wrong."
+            },
+            {
+              "option_index": 4,
+              "option": "hardly",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but 'hardly' means almost not, contradicting improvement; semantically wrong."
+            }
+          ],
+          "context_clue_assessment": {
+            "clue_is_verbatim": true,
+            "supports_answer": true,
+            "excludes_distractors": true,
+            "reason": "Clue states change happened slowly, step by step, directly supporting 'gradually' and excluding suddenly, rarely, and hardly."
+          },
+          "answer_collocation": {
+            "phrase": "gradually",
+            "standard": true,
+            "reason": "'Improved gradually' is a standard collocation meaning to improve slowly over time."
+          }
+        },
+        {
+          "question_index": 12,
+          "option_assessments": [
+            {
+              "option_index": 1,
+              "option": "eventually",
+              "grammar_ok": true,
+              "semantic_ok": true,
+              "idiomatic": true,
+              "reason": "Grammatically correct as adverb before 'passed'; semantically matches in the end; idiomatic."
+            },
+            {
+              "option_index": 2,
+              "option": "immediately",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but contradicts 'in the end' and 'after much practice'; semantically wrong."
+            },
+            {
+              "option_index": 3,
+              "option": "unluckily",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but success is not bad luck; semantically wrong."
+            },
+            {
+              "option_index": 4,
+              "option": "seldom",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but 'seldom' means rarely, contradicting that he did pass; semantically wrong."
+            }
+          ],
+          "context_clue_assessment": {
+            "clue_is_verbatim": true,
+            "supports_answer": true,
+            "excludes_distractors": true,
+            "reason": "Clue states in the end his effort brought success, directly supporting 'eventually' and excluding immediately, unluckily, and seldom."
+          },
+          "answer_collocation": {
+            "phrase": "eventually",
+            "standard": true,
+            "reason": "'Eventually passed the test' is a standard collocation meaning to pass after some time."
+          }
+        },
+        {
+          "question_index": 13,
+          "option_assessments": [
+            {
+              "option_index": 1,
+              "option": "independently",
+              "grammar_ok": true,
+              "semantic_ok": true,
+              "idiomatic": true,
+              "reason": "Grammatically correct as adverb modifying 'finished'; semantically matches doing it on her own; idiomatic."
+            },
+            {
+              "option_index": 2,
+              "option": "carelessly",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but carelessness is not indicated by doing it alone; semantically wrong."
+            },
+            {
+              "option_index": 3,
+              "option": "reluctantly",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but no unwillingness is mentioned; semantically wrong."
+            },
+            {
+              "option_index": 4,
+              "option": "secretly",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but doing it alone is not the same as secretly; semantically wrong."
+            }
+          ],
+          "context_clue_assessment": {
+            "clue_is_verbatim": true,
+            "supports_answer": true,
+            "excludes_distractors": true,
+            "reason": "Clue states she did it on her own, directly supporting 'independently' and excluding carelessly, reluctantly, and secretly."
+          },
+          "answer_collocation": {
+            "phrase": "independently",
+            "standard": true,
+            "reason": "'Finished the project independently' is a standard collocation meaning to complete without help."
+          }
+        },
+        {
+          "question_index": 14,
+          "option_assessments": [
+            {
+              "option_index": 1,
+              "option": "confidence",
+              "grammar_ok": true,
+              "semantic_ok": true,
+              "idiomatic": true,
+              "reason": "Grammatically correct as noun after 'gave her'; semantically matches trusting her skills; idiomatic as 'confidence in her own ability'."
+            },
+            {
+              "option_index": 2,
+              "option": "doubt",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but doubt is opposite of trust; semantically wrong."
+            },
+            {
+              "option_index": 3,
+              "option": "fear",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but fear is not trust; semantically wrong."
+            },
+            {
+              "option_index": 4,
+              "option": "anger",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but anger is not trust; semantically wrong."
+            }
+          ],
+          "context_clue_assessment": {
+            "clue_is_verbatim": true,
+            "supports_answer": true,
+            "excludes_distractors": true,
+            "reason": "Clue states she now trusts her skills, directly supporting 'confidence' and excluding doubt, fear, and anger."
+          },
+          "answer_collocation": {
+            "phrase": "confidence",
+            "standard": true,
+            "reason": "'Confidence in her own ability' is a standard collocation meaning trust in one's skills."
+          }
+        },
+        {
+          "question_index": 15,
+          "option_assessments": [
+            {
+              "option_index": 1,
+              "option": "opportunity",
+              "grammar_ok": true,
+              "semantic_ok": true,
+              "idiomatic": true,
+              "reason": "Grammatically correct as noun after 'rare'; semantically matches valuable chance; idiomatic as 'opportunity to lead'."
+            },
+            {
+              "option_index": 2,
+              "option": "problem",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but a problem is not a valuable chance; semantically wrong."
+            },
+            {
+              "option_index": 3,
+              "option": "rule",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but a rule is not a chance; semantically wrong."
+            },
+            {
+              "option_index": 4,
+              "option": "duty",
+              "grammar_ok": true,
+              "semantic_ok": false,
+              "idiomatic": true,
+              "reason": "Grammatically correct but a duty is an obligation, not a chance; semantically wrong."
+            }
+          ],
+          "context_clue_assessment": {
+            "clue_is_verbatim": true,
+            "supports_answer": true,
+            "excludes_distractors": true,
+            "reason": "Clue states it was a valuable chance, directly supporting 'opportunity' and excluding problem, rule, and duty."
+          },
+          "answer_collocation": {
+            "phrase": "opportunity",
+            "standard": true,
+            "reason": "'Opportunity to lead' is a standard collocation meaning a chance to take a leadership role."
+          }
+        }
+      ],
+      "passage": "She felt (1) ______ before the big exam. She was worried and nervous all morning. He stayed (2) ______ when the new task began. He believed in himself and his own skills. The (3) ______ student asked many questions. She was eager to learn about new things. A (4) ______ friend always keeps a promise. You can trust her to do what she says. Her (5) ______ brother plans to lead a team. He has a strong desire to succeed later. They worked hard to (6) ______ their goal. Reaching a personal aim takes steady effort. New students must (7) ______ to a new school. They need time to get used to it. Good teachers (8) ______ students to keep trying. They give young people courage to continue. She tried to (9) ______ her friend to join. She wanted to convince him to sign up. He could not (10) ______ on his homework. Loud noise made it hard to focus. Her reading skills improved (11) ______ over months. The change happened slowly, step by step. After much practice, he (12) ______ passed the test. In the end, his effort brought success. She finished the project (13) ______ without help. She did it on her own from start to finish. Practice gave her (14) ______ in her own ability. She now trusts her skills more than before. The club offered a rare (15) ______ to lead. It was a valuable chance to try something new.",
+      "questions": [
+        {
+          "question_index": 1,
+          "stem": "She felt (1) ______ before the big exam.",
+          "options": [
+            "anxious",
+            "joyful",
+            "calm",
+            "proud"
+          ],
+          "answer": "anxious",
+          "clue_argument": "The clue 'She was worried and nervous all morning' points to a negative, uneasy feeling, so 'anxious' fits. 'Joyful' is excluded because worry and nervousness are not happy feelings; 'calm' is excluded because it is the opposite of nervous; 'proud' is excluded because pride is not described by worry and nervousness.",
+          "knowledge_points": [
+            "anxious 意为焦虑的、担忧的",
+            "情绪形容词辨析"
+          ],
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "book_source": "选必二 U1",
+          "difficulty": 1,
+          "context_clue": "She was worried and nervous all morning.",
+          "explanation": "线索句“She was worried and nervous all morning”说明她感到担忧和紧张，因此应选 anxious（焦虑的）。joyful 表示开心，与担忧紧张矛盾；calm 意为平静，正好与 nervous 相反；proud 意为自豪，线索中并未体现自豪感。词汇要点：anxious 是描述担忧、紧张情绪的常用形容词。"
+        },
+        {
+          "question_index": 2,
+          "stem": "He stayed (2) ______ when the new task began.",
+          "options": [
+            "confident",
+            "shy",
+            "angry",
+            "tired"
+          ],
+          "answer": "confident",
+          "clue_argument": "The clue 'He believed in himself and his own skills' shows self-belief, which matches 'confident'. 'Shy' is excluded because believing in one's own skills is not timidity; 'angry' is excluded because no anger is mentioned; 'tired' is excluded because self-belief is not fatigue.",
+          "knowledge_points": [
+            "confident 意为自信的",
+            "性格形容词辨析"
+          ],
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "book_source": "选必二 U2",
+          "difficulty": 1,
+          "context_clue": "He believed in himself and his own skills.",
+          "explanation": "线索句“He believed in himself and his own skills”表明他相信自己和自己能力，因此应选 confident（自信的）。shy 意为害羞，与相信自己能力不符；angry 意为生气，文中没有提到愤怒；tired 意为疲倦，自信并不等于疲劳。词汇要点：confident 是描述自信、相信自身能力的常用形容词。"
+        },
+        {
+          "question_index": 3,
+          "stem": "The (3) ______ student asked many questions.",
+          "options": [
+            "curious",
+            "lazy",
+            "rude",
+            "silent"
+          ],
+          "answer": "curious",
+          "clue_argument": "The clue 'She was eager to learn about new things' indicates a desire to know more, which matches 'curious'. 'Lazy' is excluded because eagerness to learn is not laziness; 'rude' is excluded because asking questions to learn is not rudeness; 'silent' is excluded because she asked many questions rather than staying quiet.",
+          "knowledge_points": [
+            "curious 意为好奇的",
+            "性格形容词辨析"
+          ],
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "book_source": "选必二 U3",
+          "difficulty": 2,
+          "context_clue": "She was eager to learn about new things.",
+          "explanation": "线索句“She was eager to learn about new things”说明她渴望学习新事物，因此应选 curious（好奇的）。lazy 意为懒惰，与渴望学习相反；rude 意为粗鲁，提问学习并不等于粗鲁；silent 意为沉默，而她却问了很多问题。词汇要点：curious 是描述渴望求知、好奇的常用形容词。"
+        },
+        {
+          "question_index": 4,
+          "stem": "A (4) ______ friend always keeps a promise.",
+          "options": [
+            "reliable",
+            "careless",
+            "selfish",
+            "noisy"
+          ],
+          "answer": "reliable",
+          "clue_argument": "The clue 'You can trust her to do what she says' points to being dependable, which matches 'reliable'. 'Careless' is excluded because keeping promises requires care, not carelessness; 'selfish' is excluded because trustworthiness is not self-interest; 'noisy' is excluded because noise has nothing to do with keeping promises.",
+          "knowledge_points": [
+            "reliable 意为可靠的",
+            "性格形容词辨析"
+          ],
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "book_source": "选必二 U4",
+          "difficulty": 2,
+          "context_clue": "You can trust her to do what she says.",
+          "explanation": "线索句“You can trust her to do what she says”说明她值得信赖、说到做到，因此应选 reliable（可靠的）。careless 意为粗心，与信守承诺不符；selfish 意为自私，与值得信赖无关；noisy 意为吵闹，与守承诺毫无关系。词汇要点：reliable 是描述可靠、值得信任的常用形容词。"
+        },
+        {
+          "question_index": 5,
+          "stem": "Her (5) ______ brother plans to lead a team.",
+          "options": [
+            "ambitious",
+            "timid",
+            "content",
+            "careless"
+          ],
+          "answer": "ambitious",
+          "clue_argument": "The clue 'He has a strong desire to succeed later' shows a drive to succeed, which matches 'ambitious'. 'Timid' is excluded because a strong desire to succeed is not shyness; 'content' is excluded because wanting to lead and succeed is not being satisfied with things as they are; 'careless' is excluded because ambition is not carelessness.",
+          "knowledge_points": [
+            "ambitious 意为有雄心的",
+            "性格形容词辨析"
+          ],
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ],
+          "book_source": "选必二 U5",
+          "difficulty": 3,
+          "context_clue": "He has a strong desire to succeed later.",
+          "explanation": "线索句“He has a strong desire to succeed later”表明他有强烈的成功愿望，因此应选 ambitious（有雄心的）。timid 意为胆怯，与强烈成功愿望不符；content 意为满足现状，与想领导团队、追求成功不符；careless 意为粗心，雄心并不等于粗心。词汇要点：ambitious 是描述有抱负、渴望成功的常用形容词。"
+        },
+        {
+          "question_index": 6,
+          "stem": "They worked hard to (6) ______ their goal.",
+          "options": [
+            "achieve",
+            "abandon",
+            "ignore",
+            "delay"
+          ],
+          "answer": "achieve",
+          "clue_argument": "The clue 'Reaching a personal aim takes steady effort' shows that the aim is reached, which matches 'achieve'. 'Abandon' is excluded because giving up does not reach an aim; 'ignore' is excluded because ignoring a goal does not reach it; 'delay' is excluded because postponing is not reaching the aim.",
+          "knowledge_points": [
+            "achieve 意为实现、达到",
+            "目标类动词辨析"
+          ],
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "context_clue": "Reaching a personal aim takes steady effort.",
+          "explanation": "线索句“Reaching a personal aim takes steady effort”说明目标是靠努力达到的，因此应选 achieve（实现）。abandon 意为放弃，放弃不会达成目标；ignore 意为忽视，忽视目标无法实现它；delay 意为推迟，推迟并不等于达成目标。词汇要点：achieve a goal 是表示“实现目标”的常用搭配。"
+        },
+        {
+          "question_index": 7,
+          "stem": "New students must (7) ______ to a new school.",
+          "options": [
+            "adapt",
+            "object",
+            "return",
+            "refer"
+          ],
+          "answer": "adapt",
+          "clue_argument": "The clue 'They need time to get used to it' indicates adjusting to a new situation, which matches 'adapt'. 'Object' is excluded because getting used to something is not opposing it; 'return' is excluded because getting used to a new school is not going back; 'refer' is excluded because referring to a school does not mean getting used to it.",
+          "knowledge_points": [
+            "adapt to 意为适应",
+            "适应类动词辨析"
+          ],
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "book_source": "选必二 U2",
+          "difficulty": 3,
+          "context_clue": "They need time to get used to it.",
+          "explanation": "线索句“They need time to get used to it”说明新生需要时间适应新环境，因此应选 adapt（适应）。object 与 to 连用意为反对，不是适应；return 意为返回，而新学校并非返回之地；refer 与 to 连用意为提及，与适应无关。词汇要点：adapt to 是表示“适应”的常用搭配。"
+        },
+        {
+          "question_index": 8,
+          "stem": "Good teachers (8) ______ students to keep trying.",
+          "options": [
+            "encourage",
+            "forbid",
+            "warn",
+            "blame"
+          ],
+          "answer": "encourage",
+          "clue_argument": "The clue 'They give young people courage to continue' shows giving support and courage, which matches 'encourage'. 'Forbid' is excluded because giving courage to continue is not prohibiting; 'warn' is excluded because warning is not giving courage; 'blame' is excluded because blaming does not support students in continuing.",
+          "knowledge_points": [
+            "encourage sb to do sth 意为鼓励某人做某事",
+            "支持类动词辨析"
+          ],
+          "grammar_tags": [
+            "v_ing_nonfinite"
+          ],
+          "book_source": "选必一 U1",
+          "difficulty": 1,
+          "context_clue": "They give young people courage to continue.",
+          "explanation": "线索句“They give young people courage to continue”说明老师给予学生继续努力的勇气，因此应选 encourage（鼓励）。forbid 意为禁止，与给予勇气相反；warn 意为警告，警告并非给予勇气；blame 意为责备，责备不能支持学生继续努力。词汇要点：encourage sb. to do sth. 是表示“鼓励某人做某事”的常用结构。"
+        },
+        {
+          "question_index": 9,
+          "stem": "She tried to (9) ______ her friend to join.",
+          "options": [
+            "persuade",
+            "prevent",
+            "refuse",
+            "ignore"
+          ],
+          "answer": "persuade",
+          "clue_argument": "The clue 'She wanted to convince him to sign up' shows trying to make someone agree, which matches 'persuade'. 'Prevent' is excluded because convincing someone to join is not stopping them; 'refuse' is excluded because she is trying to get him to join, not declining; 'ignore' is excluded because convincing requires attention, not ignoring.",
+          "knowledge_points": [
+            "persuade sb to do sth 意为说服某人做某事",
+            "沟通类动词辨析"
+          ],
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "book_source": "选必一 U2",
+          "difficulty": 3,
+          "context_clue": "She wanted to convince him to sign up.",
+          "explanation": "线索句“She wanted to convince him to sign up”说明她想说服朋友加入，因此应选 persuade（说服）。prevent 意为阻止，与说服加入相反；refuse 意为拒绝，她是在劝对方而非拒绝；ignore 意为忽视，说服需要关注而非忽视。词汇要点：persuade sb. to do sth. 是表示“说服某人做某事”的常用结构。"
+        },
+        {
+          "question_index": 10,
+          "stem": "He could not (10) ______ on his homework.",
+          "options": [
+            "concentrate",
+            "depend",
+            "insist",
+            "comment"
+          ],
+          "answer": "concentrate",
+          "clue_argument": "The clue 'Loud noise made it hard to focus' indicates difficulty paying attention, which matches 'concentrate'. 'Depend' is excluded because focusing is not relying on something; 'insist' is excluded because focusing is not demanding; 'comment' is excluded because focusing on homework is not making remarks.",
+          "knowledge_points": [
+            "concentrate on 意为专注于",
+            "学习类动词辨析"
+          ],
+          "grammar_tags": [
+            "with_compound"
+          ],
+          "book_source": "选必一 U3",
+          "difficulty": 3,
+          "context_clue": "Loud noise made it hard to focus.",
+          "explanation": "线索句“Loud noise made it hard to focus”说明噪音让他难以集中注意力，因此应选 concentrate（集中注意力）。depend 与 on 连用意为依赖，不是专注；insist 与 on 连用意为坚持要求，与专注无关；comment 与 on 连用意为评论，不是集中精力。词汇要点：concentrate on 是表示“专注于”的常用搭配。"
+        },
+        {
+          "question_index": 11,
+          "stem": "Her reading skills improved (11) ______ over months.",
+          "options": [
+            "gradually",
+            "suddenly",
+            "rarely",
+            "hardly"
+          ],
+          "answer": "gradually",
+          "clue_argument": "The clue 'The change happened slowly, step by step' points to a slow, steady process, which matches 'gradually'. 'Suddenly' is excluded because it means quickly and unexpectedly, not slowly; 'rarely' is excluded because it concerns frequency, not slow change; 'hardly' is excluded because it means almost not at all, which contradicts improvement.",
+          "knowledge_points": [
+            "gradually 意为逐渐地",
+            "时间副词辨析"
+          ],
+          "grammar_tags": [
+            "cleft_basic"
+          ],
+          "book_source": "选必一 U4",
+          "difficulty": 4,
+          "context_clue": "The change happened slowly, step by step.",
+          "explanation": "线索句“The change happened slowly, step by step”说明变化是缓慢、逐步发生的，因此应选 gradually（逐渐地）。suddenly 意为突然，与缓慢逐步相反；rarely 意为很少，表示频率而非缓慢变化；hardly 意为几乎不，与技能提高相矛盾。词汇要点：gradually 是表示“逐渐地”的常用副词，常修饰变化过程。"
+        },
+        {
+          "question_index": 12,
+          "stem": "After much practice, he (12) ______ passed the test.",
+          "options": [
+            "eventually",
+            "immediately",
+            "unluckily",
+            "seldom"
+          ],
+          "answer": "eventually",
+          "clue_argument": "The clue 'In the end, his effort brought success' shows a final result after time, which matches 'eventually'. 'Immediately' is excluded because the result came in the end, not at once; 'unluckily' is excluded because success is not bad luck; 'seldom' is excluded because he did pass the test, so it was not rare.",
+          "knowledge_points": [
+            "eventually 意为最终",
+            "时间副词辨析"
+          ],
+          "grammar_tags": [
+            "articles"
+          ],
+          "book_source": "必修一 U3",
+          "difficulty": 2,
+          "context_clue": "In the end, his effort brought success.",
+          "explanation": "线索句“In the end, his effort brought success”说明经过努力最终取得成功，因此应选 eventually（最终）。immediately 意为立刻，与“最后”不符；unluckily 意为不幸地，而成功并非不幸；seldom 意为很少，但他确实通过了考试。词汇要点：eventually 是表示“最终、终于”的常用副词，强调经过一段时间后的结果。"
+        },
+        {
+          "question_index": 13,
+          "stem": "She finished the project (13) ______ without help.",
+          "options": [
+            "independently",
+            "carelessly",
+            "reluctantly",
+            "secretly"
+          ],
+          "answer": "independently",
+          "clue_argument": "The clue 'She did it on her own from start to finish' shows acting alone, which matches 'independently'. 'Carelessly' is excluded because doing it on her own says nothing about poor care; 'reluctantly' is excluded because no unwillingness is mentioned; 'secretly' is excluded because doing it alone is not the same as hiding it.",
+          "knowledge_points": [
+            "independently 意为独立地",
+            "方式副词辨析"
+          ],
+          "grammar_tags": [
+            "prepositions"
+          ],
+          "book_source": "必修二 U2",
+          "difficulty": 5,
+          "context_clue": "She did it on her own from start to finish.",
+          "explanation": "线索句“She did it on her own from start to finish”说明她从头到尾独自完成，因此应选 independently（独立地）。carelessly 意为粗心地，独自完成并不表示粗心；reluctantly 意为不情愿地，文中没有提到不情愿；secretly 意为秘密地，独自完成不等于偷偷进行。词汇要点：independently 是表示“独立地、独自地”的常用副词。"
+        },
+        {
+          "question_index": 14,
+          "stem": "Practice gave her (14) ______ in her own ability.",
+          "options": [
+            "confidence",
+            "doubt",
+            "fear",
+            "anger"
+          ],
+          "answer": "confidence",
+          "clue_argument": "The clue 'She now trusts her skills more than before' shows trust in her ability, which matches 'confidence'. 'Doubt' is excluded because trusting her skills is the opposite of doubting them; 'fear' is excluded because trust is not fear; 'anger' is excluded because trust in skills is not anger.",
+          "knowledge_points": [
+            "confidence 意为信心",
+            "情绪名词辨析"
+          ],
+          "grammar_tags": [
+            "comparatives_superlatives"
+          ],
+          "book_source": "必修三 U2",
+          "difficulty": 3,
+          "context_clue": "She now trusts her skills more than before.",
+          "explanation": "线索句“She now trusts her skills more than before”说明她如今更相信自己的能力，因此应选 confidence（信心）。doubt 意为怀疑，与相信自己能力相反；fear 意为恐惧，信任技能并非恐惧；anger 意为愤怒，与信任能力无关。词汇要点：confidence in one's ability 是表示“对自身能力的信心”的常用搭配。"
+        },
+        {
+          "question_index": 15,
+          "stem": "The club offered a rare (15) ______ to lead.",
+          "options": [
+            "opportunity",
+            "problem",
+            "rule",
+            "duty"
+          ],
+          "answer": "opportunity",
+          "clue_argument": "The clue 'It was a valuable chance to try something new' points to a chance, which matches 'opportunity'. 'Problem' is excluded because a valuable chance is not a difficulty; 'rule' is excluded because a chance to try something is not a regulation; 'duty' is excluded because an offered chance is not an obligation.",
+          "knowledge_points": [
+            "opportunity 意为机会",
+            "机会类名词辨析"
+          ],
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "book_source": "跨册综合",
+          "difficulty": 4,
+          "context_clue": "It was a valuable chance to try something new.",
+          "explanation": "线索句“It was a valuable chance to try something new”说明这是一次尝试新事物的宝贵机会，因此应选 opportunity（机会）。problem 意为问题，宝贵机会并非困难；rule 意为规则，机会不等于规定；duty 意为义务，被提供的机会并非责任。词汇要点：opportunity to do sth. 是表示“做某事的机会”的常用搭配。"
+        }
+      ]
+    }
+  ],
+  "vocabulary_resolutions": [
+    {
+      "original": "felt",
+      "matched_entry": "feel",
+      "rules": [
+        "irregular_inflection"
+      ]
+    },
+    {
+      "original": "was",
+      "matched_entry": "be",
+      "rules": [
+        "irregular_inflection"
+      ]
+    },
+    {
+      "original": "worried",
+      "matched_entry": "worry",
+      "rules": [
+        "past_ied_to_y"
+      ]
+    },
+    {
+      "original": "stayed",
+      "matched_entry": "stay",
+      "rules": [
+        "inflection_ed"
+      ]
+    },
+    {
+      "original": "began",
+      "matched_entry": "begin",
+      "rules": [
+        "irregular_inflection"
+      ]
+    },
+    {
+      "original": "believed",
+      "matched_entry": "believe",
+      "rules": [
+        "inflection_ed_restore_e"
+      ]
+    },
+    {
+      "original": "skills",
+      "matched_entry": "skill",
+      "rules": [
+        "plural_s"
+      ]
+    },
+    {
+      "original": "asked",
+      "matched_entry": "ask",
+      "rules": [
+        "inflection_ed"
+      ]
+    },
+    {
+      "original": "questions",
+      "matched_entry": "question",
+      "rules": [
+        "plural_s"
+      ]
+    },
+    {
+      "original": "was",
+      "matched_entry": "be",
+      "rules": [
+        "irregular_inflection"
+      ]
+    },
+    {
+      "original": "things",
+      "matched_entry": "thing",
+      "rules": [
+        "plural_s"
+      ]
+    },
+    {
+      "original": "keeps",
+      "matched_entry": "keep",
+      "rules": [
+        "plural_s"
+      ]
+    },
+    {
+      "original": "says",
+      "matched_entry": "say",
+      "rules": [
+        "plural_s"
+      ]
+    },
+    {
+      "original": "plans",
+      "matched_entry": "plan",
+      "rules": [
+        "plural_s"
+      ]
+    },
+    {
+      "original": "has",
+      "matched_entry": "have",
+      "rules": [
+        "irregular_inflection"
+      ]
+    },
+    {
+      "original": "worked",
+      "matched_entry": "work",
+      "rules": [
+        "inflection_ed"
+      ]
+    },
+    {
+      "original": "reaching",
+      "matched_entry": "reach",
+      "rules": [
+        "inflection_ing"
+      ]
+    },
+    {
+      "original": "takes",
+      "matched_entry": "take",
+      "rules": [
+        "plural_s"
+      ]
+    },
+    {
+      "original": "students",
+      "matched_entry": "student",
+      "rules": [
+        "plural_s"
+      ]
+    },
+    {
+      "original": "used",
+      "matched_entry": "us",
+      "rules": [
+        "inflection_ed"
+      ]
+    },
+    {
+      "original": "teachers",
+      "matched_entry": "teacher",
+      "rules": [
+        "plural_s"
+      ]
+    },
+    {
+      "original": "students",
+      "matched_entry": "student",
+      "rules": [
+        "plural_s"
+      ]
+    },
+    {
+      "original": "trying",
+      "matched_entry": "try",
+      "rules": [
+        "inflection_ing"
+      ]
+    },
+    {
+      "original": "tried",
+      "matched_entry": "try",
+      "rules": [
+        "past_ied_to_y"
+      ]
+    },
+    {
+      "original": "wanted",
+      "matched_entry": "want",
+      "rules": [
+        "inflection_ed"
+      ]
+    },
+    {
+      "original": "made",
+      "matched_entry": "make",
+      "rules": [
+        "irregular_inflection"
+      ]
+    },
+    {
+      "original": "reading",
+      "matched_entry": "read",
+      "rules": [
+        "inflection_ing"
+      ]
+    },
+    {
+      "original": "skills",
+      "matched_entry": "skill",
+      "rules": [
+        "plural_s"
+      ]
+    },
+    {
+      "original": "improved",
+      "matched_entry": "improve",
+      "rules": [
+        "inflection_ed_restore_e"
+      ]
+    },
+    {
+      "original": "months",
+      "matched_entry": "month",
+      "rules": [
+        "plural_s"
+      ]
+    },
+    {
+      "original": "happened",
+      "matched_entry": "happen",
+      "rules": [
+        "inflection_ed"
+      ]
+    },
+    {
+      "original": "slowly",
+      "matched_entry": "slow",
+      "rules": [
+        "derivation_ly"
+      ]
+    },
+    {
+      "original": "passed",
+      "matched_entry": "pass",
+      "rules": [
+        "inflection_ed"
+      ]
+    },
+    {
+      "original": "brought",
+      "matched_entry": "bring",
+      "rules": [
+        "irregular_inflection"
+      ]
+    },
+    {
+      "original": "finished",
+      "matched_entry": "finish",
+      "rules": [
+        "inflection_ed"
+      ]
+    },
+    {
+      "original": "did",
+      "matched_entry": "do",
+      "rules": [
+        "irregular_inflection"
+      ]
+    },
+    {
+      "original": "gave",
+      "matched_entry": "give",
+      "rules": [
+        "irregular_inflection"
+      ]
+    },
+    {
+      "original": "trusts",
+      "matched_entry": "trust",
+      "rules": [
+        "plural_s"
+      ]
+    },
+    {
+      "original": "skills",
+      "matched_entry": "skill",
+      "rules": [
+        "plural_s"
+      ]
+    },
+    {
+      "original": "offered",
+      "matched_entry": "offer",
+      "rules": [
+        "inflection_ed"
+      ]
+    },
+    {
+      "original": "was",
+      "matched_entry": "be",
+      "rules": [
+        "irregular_inflection"
+      ]
+    },
+    {
+      "original": "valuable",
+      "matched_entry": "value",
+      "rules": [
+        "derivation_able_restore_e"
+      ]
+    }
+  ],
+  "generation_requests": [
+    {
+      "purpose": "plan:cloze:targets",
+      "attempt": 1,
+      "status": "validation_error",
+      "prompt_tokens": 11023,
+      "completion_tokens": 625,
+      "total_tokens": 11648,
+      "elapsed_seconds": 3.990252499934286,
+      "finish_reason": "stop",
+      "request_id": "1e4d0437-2c55-4a9c-8f70-75788366fdf5",
+      "error": "CLOZE_PLAN_TARGETS_OUT_OF_SCOPE ['overcome', 'motivate']",
+      "model_id": "deepseek-flash",
+      "transport": "json_object",
+      "prompt_version": "m2-cloze-rewrite-v1",
+      "cost_cny": 0.027046,
+      "raw_content": "{\"targets\":[{\"question_index\":1,\"target_word\":\"anxious\",\"part_of_speech\":\"adjective\",\"semantic_field\":\"emotions\",\"intended_context\":\"Describing how a teenager feels before an important exam\"},{\"question_index\":2,\"target_word\":\"confident\",\"part_of_speech\":\"adjective\",\"semantic_field\":\"personality\",\"intended_context\":\"Describing a student who believes in their own ability after practice\"},{\"question_index\":3,\"target_word\":\"curious\",\"part_of_speech\":\"adjective\",\"semantic_field\":\"personality\",\"intended_context\":\"Describing a young person eager to learn about new things\"},{\"question_index\":4,\"target_word\":\"overcome\",\"part_of_speech\":\"verb\",\"semantic_field\":\"personal challenges\",\"intended_context\":\"Describing how a teenager deals with shyness or fear\"},{\"question_index\":5,\"target_word\":\"balance\",\"part_of_speech\":\"verb\",\"semantic_field\":\"time management\",\"intended_context\":\"Describing how students manage study and hobbies\"},{\"question_index\":6,\"target_word\":\"motivate\",\"part_of_speech\":\"verb\",\"semantic_field\":\"encouragement\",\"intended_context\":\"Describing what a teacher or friend does to inspire effort\"},{\"question_index\":7,\"target_word\":\"gradually\",\"part_of_speech\":\"adverb\",\"semantic_field\":\"manner of change\",\"intended_context\":\"Describing slow improvement in a skill over time\"},{\"question_index\":8,\"target_word\":\"eventually\",\"part_of_speech\":\"adverb\",\"semantic_field\":\"time\",\"intended_context\":\"Describing what happens after a long period of effort\"},{\"question_index\":9,\"target_word\":\"independently\",\"part_of_speech\":\"adverb\",\"semantic_field\":\"manner of acting\",\"intended_context\":\"Describing how teenagers learn to do things without parents' help\"},{\"question_index\":10,\"target_word\":\"responsibility\",\"part_of_speech\":\"noun\",\"semantic_field\":\"personal growth\",\"intended_context\":\"Describing duties a teenager takes on at home or school\"},{\"question_index\":11,\"target_word\":\"pressure\",\"part_of_speech\":\"noun\",\"semantic_field\":\"stress\",\"intended_context\":\"Describing the burden of exams and expectations on students\"},{\"question_index\":12,\"target_word\":\"opportunity\",\"part_of_speech\":\"noun\",\"semantic_field\":\"chances\",\"intended_context\":\"Describing a chance to join a club or activity\"},{\"question_index\":13,\"target_word\":\"friendship\",\"part_of_speech\":\"noun\",\"semantic_field\":\"relationships\",\"intended_context\":\"Describing the bond between teenage classmates\"},{\"question_index\":14,\"target_word\":\"achieve\",\"part_of_speech\":\"verb\",\"semantic_field\":\"success\",\"intended_context\":\"Describing reaching a goal after hard work\"},{\"question_index\":15,\"target_word\":\"mature\",\"part_of_speech\":\"adjective\",\"semantic_field\":\"personal development\",\"intended_context\":\"Describing a teenager who behaves in a grown-up way\"}]}"
+    },
+    {
+      "purpose": "plan:cloze:targets",
+      "attempt": 1,
+      "status": "validation_error",
+      "prompt_tokens": 11067,
+      "completion_tokens": 601,
+      "total_tokens": 11668,
+      "elapsed_seconds": 3.765713799977675,
+      "finish_reason": "stop",
+      "request_id": "4eac1166-e3a8-4584-887a-f0ee644db49f",
+      "error": "CLOZE_PLAN_TARGETS_OUT_OF_SCOPE ['supportive']",
+      "model_id": "deepseek-flash",
+      "transport": "json_object",
+      "prompt_version": "m2-cloze-rewrite-v1",
+      "cost_cny": 0.026942,
+      "raw_content": "{\"targets\":[{\"question_index\":1,\"target_word\":\"ambitious\",\"part_of_speech\":\"adjective\",\"semantic_field\":\"personal qualities\",\"intended_context\":\"Describing a teenager who sets high goals for the future.\"},{\"question_index\":2,\"target_word\":\"anxiety\",\"part_of_speech\":\"noun\",\"semantic_field\":\"emotions\",\"intended_context\":\"Naming the nervous feeling students have before exams.\"},{\"question_index\":3,\"target_word\":\"confident\",\"part_of_speech\":\"adjective\",\"semantic_field\":\"personal qualities\",\"intended_context\":\"Describing a teen who believes in their own ability after practice.\"},{\"question_index\":4,\"target_word\":\"encourage\",\"part_of_speech\":\"verb\",\"semantic_field\":\"support and influence\",\"intended_context\":\"Parents urging their child to keep trying.\"},{\"question_index\":5,\"target_word\":\"independently\",\"part_of_speech\":\"adverb\",\"semantic_field\":\"manner of acting\",\"intended_context\":\"Doing homework without help from others.\"},{\"question_index\":6,\"target_word\":\"responsibility\",\"part_of_speech\":\"noun\",\"semantic_field\":\"duties and roles\",\"intended_context\":\"Taking charge of chores or looking after a pet.\"},{\"question_index\":7,\"target_word\":\"peer\",\"part_of_speech\":\"noun\",\"semantic_field\":\"social relationships\",\"intended_context\":\"Referring to friends of the same age group.\"},{\"question_index\":8,\"target_word\":\"balance\",\"part_of_speech\":\"verb\",\"semantic_field\":\"time management\",\"intended_context\":\"Managing study and hobbies in a healthy way.\"},{\"question_index\":9,\"target_word\":\"stress\",\"part_of_speech\":\"noun\",\"semantic_field\":\"mental health\",\"intended_context\":\"The pressure felt during a busy school term.\"},{\"question_index\":10,\"target_word\":\"curious\",\"part_of_speech\":\"adjective\",\"semantic_field\":\"personal qualities\",\"intended_context\":\"A student eager to learn new things.\"},{\"question_index\":11,\"target_word\":\"adapt\",\"part_of_speech\":\"verb\",\"semantic_field\":\"change and adjustment\",\"intended_context\":\"Getting used to a new school environment.\"},{\"question_index\":12,\"target_word\":\"gradually\",\"part_of_speech\":\"adverb\",\"semantic_field\":\"manner of change\",\"intended_context\":\"Improving slowly over time.\"},{\"question_index\":13,\"target_word\":\"supportive\",\"part_of_speech\":\"adjective\",\"semantic_field\":\"social relationships\",\"intended_context\":\"Describing friends who help you through hard times.\"},{\"question_index\":14,\"target_word\":\"goal\",\"part_of_speech\":\"noun\",\"semantic_field\":\"aspirations\",\"intended_context\":\"Something a teenager plans to achieve this year.\"},{\"question_index\":15,\"target_word\":\"mature\",\"part_of_speech\":\"verb\",\"semantic_field\":\"growth and development\",\"intended_context\":\"Growing more sensible as one gets older.\"}]}"
+    },
+    {
+      "purpose": "plan:cloze:targets",
+      "attempt": 1,
+      "status": "ok",
+      "prompt_tokens": 11087,
+      "completion_tokens": 598,
+      "total_tokens": 11685,
+      "elapsed_seconds": 3.304338000016287,
+      "finish_reason": "stop",
+      "request_id": "2aca1afb-fdbf-4e0c-a570-6f762e5e415f",
+      "error": null,
+      "model_id": "deepseek-flash",
+      "transport": "json_object",
+      "prompt_version": "m2-cloze-rewrite-v1",
+      "cost_cny": 0.026958,
+      "raw_content": "{\"targets\":[{\"question_index\":1,\"target_word\":\"anxious\",\"part_of_speech\":\"adjective\",\"semantic_field\":\"emotions\",\"intended_context\":\"Feeling worried and nervous before an important exam\"},{\"question_index\":2,\"target_word\":\"confident\",\"part_of_speech\":\"adjective\",\"semantic_field\":\"personality\",\"intended_context\":\"Believing in oneself when facing a new challenge\"},{\"question_index\":3,\"target_word\":\"curious\",\"part_of_speech\":\"adjective\",\"semantic_field\":\"personality\",\"intended_context\":\"Eager to learn about new things around oneself\"},{\"question_index\":4,\"target_word\":\"reliable\",\"part_of_speech\":\"adjective\",\"semantic_field\":\"personality\",\"intended_context\":\"A friend who can always be trusted to keep a promise\"},{\"question_index\":5,\"target_word\":\"ambitious\",\"part_of_speech\":\"adjective\",\"semantic_field\":\"personality\",\"intended_context\":\"Having a strong desire to succeed in the future\"},{\"question_index\":6,\"target_word\":\"achieve\",\"part_of_speech\":\"verb\",\"semantic_field\":\"goals\",\"intended_context\":\"Reaching a personal goal through hard work\"},{\"question_index\":7,\"target_word\":\"adapt\",\"part_of_speech\":\"verb\",\"semantic_field\":\"adjustment\",\"intended_context\":\"Getting used to a new school environment\"},{\"question_index\":8,\"target_word\":\"encourage\",\"part_of_speech\":\"verb\",\"semantic_field\":\"support\",\"intended_context\":\"Giving someone courage to keep trying\"},{\"question_index\":9,\"target_word\":\"persuade\",\"part_of_speech\":\"verb\",\"semantic_field\":\"communication\",\"intended_context\":\"Convincing a friend to join a club\"},{\"question_index\":10,\"target_word\":\"concentrate\",\"part_of_speech\":\"verb\",\"semantic_field\":\"study\",\"intended_context\":\"Focusing one's attention on homework\"},{\"question_index\":11,\"target_word\":\"gradually\",\"part_of_speech\":\"adverb\",\"semantic_field\":\"time\",\"intended_context\":\"Something happening slowly over a period of time\"},{\"question_index\":12,\"target_word\":\"eventually\",\"part_of_speech\":\"adverb\",\"semantic_field\":\"time\",\"intended_context\":\"Something happening in the end after much effort\"},{\"question_index\":13,\"target_word\":\"independently\",\"part_of_speech\":\"adverb\",\"semantic_field\":\"manner\",\"intended_context\":\"Doing something on one's own without help\"},{\"question_index\":14,\"target_word\":\"confidence\",\"part_of_speech\":\"noun\",\"semantic_field\":\"emotions\",\"intended_context\":\"A feeling of trust in one's own abilities\"},{\"question_index\":15,\"target_word\":\"opportunity\",\"part_of_speech\":\"noun\",\"semantic_field\":\"chances\",\"intended_context\":\"A chance to try something new and valuable\"}]}"
+    },
+    {
+      "purpose": "design:cloze:passage-and-blanks",
+      "attempt": 1,
+      "status": "validation_error",
+      "prompt_tokens": 1487,
+      "completion_tokens": 656,
+      "total_tokens": 2143,
+      "elapsed_seconds": 3.7158156000077724,
+      "finish_reason": "stop",
+      "request_id": "061ea219-32ad-4c6e-af69-d197e028a996",
+      "error": "WORD_COUNT_OUT_OF_RANGE actual=224 min=170 max=220",
+      "model_id": "deepseek-flash",
+      "transport": "json_object",
+      "prompt_version": "m2-cloze-rewrite-v1",
+      "cost_cny": 0.008222,
+      "raw_content": "{\"items\":[{\"question_index\":1,\"target_word\":\"anxious\",\"blank_sentence\":\"She felt (1) ______ before the big exam.\",\"clue_sentence\":\"Worry and nerves filled her mind that morning.\"},{\"question_index\":2,\"target_word\":\"confident\",\"blank_sentence\":\"He stayed (2) ______ when facing a new challenge.\",\"clue_sentence\":\"He believed in himself and his own skills.\"},{\"question_index\":3,\"target_word\":\"curious\",\"blank_sentence\":\"The (3) ______ student asked many questions.\",\"clue_sentence\":\"She was eager to learn about everything around her.\"},{\"question_index\":4,\"target_word\":\"reliable\",\"blank_sentence\":\"A (4) ______ friend always keeps a promise.\",\"clue_sentence\":\"You can trust her to do what she says.\"},{\"question_index\":5,\"target_word\":\"ambitious\",\"blank_sentence\":\"Her (5) ______ brother plans to start a business.\",\"clue_sentence\":\"He has a strong desire to succeed later.\"},{\"question_index\":6,\"target_word\":\"achieve\",\"blank_sentence\":\"They worked hard to (6) ______ their goal.\",\"clue_sentence\":\"Reaching a personal aim takes effort and time.\"},{\"question_index\":7,\"target_word\":\"adapt\",\"blank_sentence\":\"New students must (7) ______ to a new school.\",\"clue_sentence\":\"They need to get used to a fresh setting.\"},{\"question_index\":8,\"target_word\":\"encourage\",\"blank_sentence\":\"Her teacher tried to (8) ______ her to keep trying.\",\"clue_sentence\":\"Good words can give someone courage to continue.\"},{\"question_index\":9,\"target_word\":\"persuade\",\"blank_sentence\":\"He hoped to (9) ______ his friend to join the club.\",\"clue_sentence\":\"He wanted to convince her to sign up.\"},{\"question_index\":10,\"target_word\":\"concentrate\",\"blank_sentence\":\"She could not (10) ______ on her homework.\",\"clue_sentence\":\"Noise made it hard to focus her attention.\"},{\"question_index\":11,\"target_word\":\"gradually\",\"blank_sentence\":\"His skills improved (11) ______ over the year.\",\"clue_sentence\":\"The change happened slowly, step by step.\"},{\"question_index\":12,\"target_word\":\"eventually\",\"blank_sentence\":\"After much effort, she (12) ______ passed the test.\",\"clue_sentence\":\"In the end, her hard work paid off.\"},{\"question_index\":13,\"target_word\":\"independently\",\"blank_sentence\":\"He learned to study (13) ______ without help.\",\"clue_sentence\":\"He did the work on his own each day.\"},{\"question_index\":14,\"target_word\":\"confidence\",\"blank_sentence\":\"Practice gave her more (14) ______ in class.\",\"clue_sentence\":\"She began to trust her own abilities.\"},{\"question_index\":15,\"target_word\":\"opportunity\",\"blank_sentence\":\"The club offered a fine (15) ______ to try new things.\",\"clue_sentence\":\"It was a valuable chance to learn and grow.\"}]}"
+    },
+    {
+      "purpose": "design:cloze:passage-and-blanks",
+      "attempt": 1,
+      "status": "ok",
+      "prompt_tokens": 1526,
+      "completion_tokens": 645,
+      "total_tokens": 2171,
+      "elapsed_seconds": 3.340815700008534,
+      "finish_reason": "stop",
+      "request_id": "d066fd1b-7769-45e7-8924-cf3d7f0a8681",
+      "error": null,
+      "model_id": "deepseek-flash",
+      "transport": "json_object",
+      "prompt_version": "m2-cloze-rewrite-v1",
+      "cost_cny": 0.008212,
+      "raw_content": "{\"items\":[{\"question_index\":1,\"target_word\":\"anxious\",\"blank_sentence\":\"She felt (1) ______ before the big exam.\",\"clue_sentence\":\"She was worried and nervous all morning.\"},{\"question_index\":2,\"target_word\":\"confident\",\"blank_sentence\":\"He stayed (2) ______ when the new task began.\",\"clue_sentence\":\"He believed in himself and his own skills.\"},{\"question_index\":3,\"target_word\":\"curious\",\"blank_sentence\":\"The (3) ______ student asked many questions.\",\"clue_sentence\":\"She was eager to learn about new things.\"},{\"question_index\":4,\"target_word\":\"reliable\",\"blank_sentence\":\"A (4) ______ friend always keeps a promise.\",\"clue_sentence\":\"You can trust her to do what she says.\"},{\"question_index\":5,\"target_word\":\"ambitious\",\"blank_sentence\":\"Her (5) ______ brother plans to lead a team.\",\"clue_sentence\":\"He has a strong desire to succeed later.\"},{\"question_index\":6,\"target_word\":\"achieve\",\"blank_sentence\":\"They worked hard to (6) ______ their goal.\",\"clue_sentence\":\"Reaching a personal aim takes steady effort.\"},{\"question_index\":7,\"target_word\":\"adapt\",\"blank_sentence\":\"New students must (7) ______ to a new school.\",\"clue_sentence\":\"They need time to get used to it.\"},{\"question_index\":8,\"target_word\":\"encourage\",\"blank_sentence\":\"Good teachers (8) ______ students to keep trying.\",\"clue_sentence\":\"They give young people courage to continue.\"},{\"question_index\":9,\"target_word\":\"persuade\",\"blank_sentence\":\"She tried to (9) ______ her friend to join.\",\"clue_sentence\":\"She wanted to convince him to sign up.\"},{\"question_index\":10,\"target_word\":\"concentrate\",\"blank_sentence\":\"He could not (10) ______ on his homework.\",\"clue_sentence\":\"Loud noise made it hard to focus.\"},{\"question_index\":11,\"target_word\":\"gradually\",\"blank_sentence\":\"Her reading skills improved (11) ______ over months.\",\"clue_sentence\":\"The change happened slowly, step by step.\"},{\"question_index\":12,\"target_word\":\"eventually\",\"blank_sentence\":\"After much practice, he (12) ______ passed the test.\",\"clue_sentence\":\"In the end, his effort brought success.\"},{\"question_index\":13,\"target_word\":\"independently\",\"blank_sentence\":\"She finished the project (13) ______ without help.\",\"clue_sentence\":\"She did it on her own from start to finish.\"},{\"question_index\":14,\"target_word\":\"confidence\",\"blank_sentence\":\"Practice gave her (14) ______ in her own ability.\",\"clue_sentence\":\"She now trusts her skills more than before.\"},{\"question_index\":15,\"target_word\":\"opportunity\",\"blank_sentence\":\"The club offered a rare (15) ______ to lead.\",\"clue_sentence\":\"It was a valuable chance to try something new.\"}]}"
+    },
+    {
+      "purpose": "questions:cloze:options-and-evidence",
+      "attempt": 1,
+      "status": "ok",
+      "prompt_tokens": 3808,
+      "completion_tokens": 2374,
+      "total_tokens": 6182,
+      "elapsed_seconds": 10.676882600062527,
+      "finish_reason": "stop",
+      "request_id": "4bd88b84-7e5f-46a8-95f1-83ab24c5ba7b",
+      "error": null,
+      "model_id": "deepseek-flash",
+      "transport": "json_object",
+      "prompt_version": "m2-cloze-rewrite-v1",
+      "cost_cny": 0.026608,
+      "raw_content": "{\"questions\":[{\"question_index\":1,\"stem\":\"She felt (1) ______ before the big exam.\",\"options\":[\"anxious\",\"joyful\",\"calm\",\"proud\"],\"answer\":\"anxious\",\"clue_argument\":\"The clue 'She was worried and nervous all morning' points to a negative, uneasy feeling, so 'anxious' fits. 'Joyful' is excluded because worry and nervousness are not happy feelings; 'calm' is excluded because it is the opposite of nervous; 'proud' is excluded because pride is not described by worry and nervousness.\",\"knowledge_points\":[\"anxious 意为焦虑的、担忧的\",\"情绪形容词辨析\"],\"grammar_tags\":[\"tense_system\"],\"book_source\":\"选必二 U1\",\"difficulty\":1},{\"question_index\":2,\"stem\":\"He stayed (2) ______ when the new task began.\",\"options\":[\"confident\",\"shy\",\"angry\",\"tired\"],\"answer\":\"confident\",\"clue_argument\":\"The clue 'He believed in himself and his own skills' shows self-belief, which matches 'confident'. 'Shy' is excluded because believing in one's own skills is not timidity; 'angry' is excluded because no anger is mentioned; 'tired' is excluded because self-belief is not fatigue.\",\"knowledge_points\":[\"confident 意为自信的\",\"性格形容词辨析\"],\"grammar_tags\":[\"noun_clauses\"],\"book_source\":\"选必二 U2\",\"difficulty\":1},{\"question_index\":3,\"stem\":\"The (3) ______ student asked many questions.\",\"options\":[\"curious\",\"lazy\",\"rude\",\"silent\"],\"answer\":\"curious\",\"clue_argument\":\"The clue 'She was eager to learn about new things' indicates a desire to know more, which matches 'curious'. 'Lazy' is excluded because eagerness to learn is not laziness; 'rude' is excluded because asking questions to learn is not rudeness; 'silent' is excluded because she asked many questions rather than staying quiet.\",\"knowledge_points\":[\"curious 意为好奇的\",\"性格形容词辨析\"],\"grammar_tags\":[\"word_formation\"],\"book_source\":\"选必二 U3\",\"difficulty\":2},{\"question_index\":4,\"stem\":\"A (4) ______ friend always keeps a promise.\",\"options\":[\"reliable\",\"careless\",\"selfish\",\"noisy\"],\"answer\":\"reliable\",\"clue_argument\":\"The clue 'You can trust her to do what she says' points to being dependable, which matches 'reliable'. 'Careless' is excluded because keeping promises requires care, not carelessness; 'selfish' is excluded because trustworthiness is not self-interest; 'noisy' is excluded because noise has nothing to do with keeping promises.\",\"knowledge_points\":[\"reliable 意为可靠的\",\"性格形容词辨析\"],\"grammar_tags\":[\"passive_voice_tenses\"],\"book_source\":\"选必二 U4\",\"difficulty\":2},{\"question_index\":5,\"stem\":\"Her (5) ______ brother plans to lead a team.\",\"options\":[\"ambitious\",\"timid\",\"content\",\"careless\"],\"answer\":\"ambitious\",\"clue_argument\":\"The clue 'He has a strong desire to succeed later' shows a drive to succeed, which matches 'ambitious'. 'Timid' is excluded because a strong desire to succeed is not shyness; 'content' is excluded because wanting to lead and succeed is not being satisfied with things as they are; 'careless' is excluded because ambition is not carelessness.\",\"knowledge_points\":[\"ambitious 意为有雄心的\",\"性格形容词辨析\"],\"grammar_tags\":[\"partial_inversion_basic\"],\"book_source\":\"选必二 U5\",\"difficulty\":3},{\"question_index\":6,\"stem\":\"They worked hard to (6) ______ their goal.\",\"options\":[\"achieve\",\"abandon\",\"ignore\",\"delay\"],\"answer\":\"achieve\",\"clue_argument\":\"The clue 'Reaching a personal aim takes steady effort' shows that the aim is reached, which matches 'achieve'. 'Abandon' is excluded because giving up does not reach an aim; 'ignore' is excluded because ignoring a goal does not reach it; 'delay' is excluded because postponing is not reaching the aim.\",\"knowledge_points\":[\"achieve 意为实现、达到\",\"目标类动词辨析\"],\"grammar_tags\":[\"subjunctive_basic_if\"],\"book_source\":\"选必二 U1\",\"difficulty\":3},{\"question_index\":7,\"stem\":\"New students must (7) ______ to a new school.\",\"options\":[\"adapt\",\"object\",\"return\",\"refer\"],\"answer\":\"adapt\",\"clue_argument\":\"The clue 'They need time to get used to it' indicates adjusting to a new situation, which matches 'adapt'. 'Object' is excluded because getting used to something is not opposing it; 'return' is excluded because getting used to a new school is not going back; 'refer' is excluded because referring to a school does not mean getting used to it.\",\"knowledge_points\":[\"adapt to 意为适应\",\"适应类动词辨析\"],\"grammar_tags\":[\"subjunctive_basic_should\"],\"book_source\":\"选必二 U2\",\"difficulty\":3},{\"question_index\":8,\"stem\":\"Good teachers (8) ______ students to keep trying.\",\"options\":[\"encourage\",\"forbid\",\"warn\",\"blame\"],\"answer\":\"encourage\",\"clue_argument\":\"The clue 'They give young people courage to continue' shows giving support and courage, which matches 'encourage'. 'Forbid' is excluded because giving courage to continue is not prohibiting; 'warn' is excluded because warning is not giving courage; 'blame' is excluded because blaming does not support students in continuing.\",\"knowledge_points\":[\"encourage sb to do sth 意为鼓励某人做某事\",\"支持类动词辨析\"],\"grammar_tags\":[\"v_ing_nonfinite\"],\"book_source\":\"选必一 U1\",\"difficulty\":1},{\"question_index\":9,\"stem\":\"She tried to (9) ______ her friend to join.\",\"options\":[\"persuade\",\"prevent\",\"refuse\",\"ignore\"],\"answer\":\"persuade\",\"clue_argument\":\"The clue 'She wanted to convince him to sign up' shows trying to make someone agree, which matches 'persuade'. 'Prevent' is excluded because convincing someone to join is not stopping them; 'refuse' is excluded because she is trying to get him to join, not declining; 'ignore' is excluded because convincing requires attention, not ignoring.\",\"knowledge_points\":[\"persuade sb to do sth 意为说服某人做某事\",\"沟通类动词辨析\"],\"grammar_tags\":[\"tense_system\"],\"book_source\":\"选必一 U2\",\"difficulty\":3},{\"question_index\":10,\"stem\":\"He could not (10) ______ on his homework.\",\"options\":[\"concentrate\",\"depend\",\"insist\",\"comment\"],\"answer\":\"concentrate\",\"clue_argument\":\"The clue 'Loud noise made it hard to focus' indicates difficulty paying attention, which matches 'concentrate'. 'Depend' is excluded because focusing is not relying on something; 'insist' is excluded because focusing is not demanding; 'comment' is excluded because focusing on homework is not making remarks.\",\"knowledge_points\":[\"concentrate on 意为专注于\",\"学习类动词辨析\"],\"grammar_tags\":[\"with_compound\"],\"book_source\":\"选必一 U3\",\"difficulty\":3},{\"question_index\":11,\"stem\":\"Her reading skills improved (11) ______ over months.\",\"options\":[\"gradually\",\"suddenly\",\"rarely\",\"hardly\"],\"answer\":\"gradually\",\"clue_argument\":\"The clue 'The change happened slowly, step by step' points to a slow, steady process, which matches 'gradually'. 'Suddenly' is excluded because it means quickly and unexpectedly, not slowly; 'rarely' is excluded because it concerns frequency, not slow change; 'hardly' is excluded because it means almost not at all, which contradicts improvement.\",\"knowledge_points\":[\"gradually 意为逐渐地\",\"时间副词辨析\"],\"grammar_tags\":[\"cleft_basic\"],\"book_source\":\"选必一 U4\",\"difficulty\":4},{\"question_index\":12,\"stem\":\"After much practice, he (12) ______ passed the test.\",\"options\":[\"eventually\",\"immediately\",\"unluckily\",\"seldom\"],\"answer\":\"eventually\",\"clue_argument\":\"The clue 'In the end, his effort brought success' shows a final result after time, which matches 'eventually'. 'Immediately' is excluded because the result came in the end, not at once; 'unluckily' is excluded because success is not bad luck; 'seldom' is excluded because he did pass the test, so it was not rare.\",\"knowledge_points\":[\"eventually 意为最终\",\"时间副词辨析\"],\"grammar_tags\":[\"articles\"],\"book_source\":\"必修一 U3\",\"difficulty\":2},{\"question_index\":13,\"stem\":\"She finished the project (13) ______ without help.\",\"options\":[\"independently\",\"carelessly\",\"reluctantly\",\"secretly\"],\"answer\":\"independently\",\"clue_argument\":\"The clue 'She did it on her own from start to finish' shows acting alone, which matches 'independently'. 'Carelessly' is excluded because doing it on her own says nothing about poor care; 'reluctantly' is excluded because no unwillingness is mentioned; 'secretly' is excluded because doing it alone is not the same as hiding it.\",\"knowledge_points\":[\"independently 意为独立地\",\"方式副词辨析\"],\"grammar_tags\":[\"prepositions\"],\"book_source\":\"必修二 U2\",\"difficulty\":5},{\"question_index\":14,\"stem\":\"Practice gave her (14) ______ in her own ability.\",\"options\":[\"confidence\",\"doubt\",\"fear\",\"anger\"],\"answer\":\"confidence\",\"clue_argument\":\"The clue 'She now trusts her skills more than before' shows trust in her ability, which matches 'confidence'. 'Doubt' is excluded because trusting her skills is the opposite of doubting them; 'fear' is excluded because trust is not fear; 'anger' is excluded because trust in skills is not anger.\",\"knowledge_points\":[\"confidence 意为信心\",\"情绪名词辨析\"],\"grammar_tags\":[\"comparatives_superlatives\"],\"book_source\":\"必修三 U2\",\"difficulty\":3},{\"question_index\":15,\"stem\":\"The club offered a rare (15) ______ to lead.\",\"options\":[\"opportunity\",\"problem\",\"rule\",\"duty\"],\"answer\":\"opportunity\",\"clue_argument\":\"The clue 'It was a valuable chance to try something new' points to a chance, which matches 'opportunity'. 'Problem' is excluded because a valuable chance is not a difficulty; 'rule' is excluded because a chance to try something is not a regulation; 'duty' is excluded because an offered chance is not an obligation.\",\"knowledge_points\":[\"opportunity 意为机会\",\"机会类名词辨析\"],\"grammar_tags\":[\"tense_system\"],\"book_source\":\"跨册综合\",\"difficulty\":4}]}"
+    },
+    {
+      "purpose": "explanations:cloze:rewrite-v3",
+      "attempt": 1,
+      "status": "ok",
+      "prompt_tokens": 9408,
+      "completion_tokens": 1373,
+      "total_tokens": 10781,
+      "elapsed_seconds": 7.112628899980336,
+      "finish_reason": "stop",
+      "request_id": "2db0ea5b-5160-4fbd-98c2-e33bb7c15cda",
+      "error": null,
+      "model_id": "deepseek-flash",
+      "transport": "json_object",
+      "prompt_version": "m2-cloze-rewrite-v1",
+      "cost_cny": 0.0298,
+      "raw_content": "{\"explanations\":[{\"question_index\":1,\"explanation\":\"线索句“She was worried and nervous all morning”说明她感到担忧和紧张，因此应选 anxious（焦虑的）。joyful 表示开心，与担忧紧张矛盾；calm 意为平静，正好与 nervous 相反；proud 意为自豪，线索中并未体现自豪感。词汇要点：anxious 是描述担忧、紧张情绪的常用形容词。\"},{\"question_index\":2,\"explanation\":\"线索句“He believed in himself and his own skills”表明他相信自己和自己能力，因此应选 confident（自信的）。shy 意为害羞，与相信自己能力不符；angry 意为生气，文中没有提到愤怒；tired 意为疲倦，自信并不等于疲劳。词汇要点：confident 是描述自信、相信自身能力的常用形容词。\"},{\"question_index\":3,\"explanation\":\"线索句“She was eager to learn about new things”说明她渴望学习新事物，因此应选 curious（好奇的）。lazy 意为懒惰，与渴望学习相反；rude 意为粗鲁，提问学习并不等于粗鲁；silent 意为沉默，而她却问了很多问题。词汇要点：curious 是描述渴望求知、好奇的常用形容词。\"},{\"question_index\":4,\"explanation\":\"线索句“You can trust her to do what she says”说明她值得信赖、说到做到，因此应选 reliable（可靠的）。careless 意为粗心，与信守承诺不符；selfish 意为自私，与值得信赖无关；noisy 意为吵闹，与守承诺毫无关系。词汇要点：reliable 是描述可靠、值得信任的常用形容词。\"},{\"question_index\":5,\"explanation\":\"线索句“He has a strong desire to succeed later”表明他有强烈的成功愿望，因此应选 ambitious（有雄心的）。timid 意为胆怯，与强烈成功愿望不符；content 意为满足现状，与想领导团队、追求成功不符；careless 意为粗心，雄心并不等于粗心。词汇要点：ambitious 是描述有抱负、渴望成功的常用形容词。\"},{\"question_index\":6,\"explanation\":\"线索句“Reaching a personal aim takes steady effort”说明目标是靠努力达到的，因此应选 achieve（实现）。abandon 意为放弃，放弃不会达成目标；ignore 意为忽视，忽视目标无法实现它；delay 意为推迟，推迟并不等于达成目标。词汇要点：achieve a goal 是表示“实现目标”的常用搭配。\"},{\"question_index\":7,\"explanation\":\"线索句“They need time to get used to it”说明新生需要时间适应新环境，因此应选 adapt（适应）。object 与 to 连用意为反对，不是适应；return 意为返回，而新学校并非返回之地；refer 与 to 连用意为提及，与适应无关。词汇要点：adapt to 是表示“适应”的常用搭配。\"},{\"question_index\":8,\"explanation\":\"线索句“They give young people courage to continue”说明老师给予学生继续努力的勇气，因此应选 encourage（鼓励）。forbid 意为禁止，与给予勇气相反；warn 意为警告，警告并非给予勇气；blame 意为责备，责备不能支持学生继续努力。词汇要点：encourage sb. to do sth. 是表示“鼓励某人做某事”的常用结构。\"},{\"question_index\":9,\"explanation\":\"线索句“She wanted to convince him to sign up”说明她想说服朋友加入，因此应选 persuade（说服）。prevent 意为阻止，与说服加入相反；refuse 意为拒绝，她是在劝对方而非拒绝；ignore 意为忽视，说服需要关注而非忽视。词汇要点：persuade sb. to do sth. 是表示“说服某人做某事”的常用结构。\"},{\"question_index\":10,\"explanation\":\"线索句“Loud noise made it hard to focus”说明噪音让他难以集中注意力，因此应选 concentrate（集中注意力）。depend 与 on 连用意为依赖，不是专注；insist 与 on 连用意为坚持要求，与专注无关；comment 与 on 连用意为评论，不是集中精力。词汇要点：concentrate on 是表示“专注于”的常用搭配。\"},{\"question_index\":11,\"explanation\":\"线索句“The change happened slowly, step by step”说明变化是缓慢、逐步发生的，因此应选 gradually（逐渐地）。suddenly 意为突然，与缓慢逐步相反；rarely 意为很少，表示频率而非缓慢变化；hardly 意为几乎不，与技能提高相矛盾。词汇要点：gradually 是表示“逐渐地”的常用副词，常修饰变化过程。\"},{\"question_index\":12,\"explanation\":\"线索句“In the end, his effort brought success”说明经过努力最终取得成功，因此应选 eventually（最终）。immediately 意为立刻，与“最后”不符；unluckily 意为不幸地，而成功并非不幸；seldom 意为很少，但他确实通过了考试。词汇要点：eventually 是表示“最终、终于”的常用副词，强调经过一段时间后的结果。\"},{\"question_index\":13,\"explanation\":\"线索句“She did it on her own from start to finish”说明她从头到尾独自完成，因此应选 independently（独立地）。carelessly 意为粗心地，独自完成并不表示粗心；reluctantly 意为不情愿地，文中没有提到不情愿；secretly 意为秘密地，独自完成不等于偷偷进行。词汇要点：independently 是表示“独立地、独自地”的常用副词。\"},{\"question_index\":14,\"explanation\":\"线索句“She now trusts her skills more than before”说明她如今更相信自己的能力，因此应选 confidence（信心）。doubt 意为怀疑，与相信自己能力相反；fear 意为恐惧，信任技能并非恐惧；anger 意为愤怒，与信任能力无关。词汇要点：confidence in one's ability 是表示“对自身能力的信心”的常用搭配。\"},{\"question_index\":15,\"explanation\":\"线索句“It was a valuable chance to try something new”说明这是一次尝试新事物的宝贵机会，因此应选 opportunity（机会）。problem 意为问题，宝贵机会并非困难；rule 意为规则，机会不等于规定；duty 意为义务，被提供的机会并非责任。词汇要点：opportunity to do sth. 是表示“做某事的机会”的常用搭配。\"}]}"
+    }
+  ],
+  "judge_requests": [
+    {
+      "purpose": "judge:cloze:cross-model",
+      "attempt": 1,
+      "status": "ok",
+      "prompt_tokens": 3363,
+      "completion_tokens": 6267,
+      "total_tokens": 9630,
+      "elapsed_seconds": 54.93165990000125,
+      "finish_reason": "stop",
+      "request_id": "aef3809d-dc4d-433d-b058-fab8f8e19e76",
+      "error": null,
+      "model_id": "deepseek-v4-pro",
+      "transport": "json_object",
+      "prompt_version": "m2-cloze-judge-v1",
+      "cost_cny": 0.199476,
+      "raw_content": "{\n  \"items\": [\n    {\n      \"question_index\": 1,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"anxious\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct adjective after 'felt'; semantically matches worry and nervousness; idiomatic as 'felt anxious'.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"joyful\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but contradicts the clue's negative emotion; 'felt joyful' is idiomatic but semantically wrong.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"calm\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but opposite of nervous; 'felt calm' is idiomatic but semantically wrong.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"proud\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but pride is not indicated by worry/nervousness; 'felt proud' is idiomatic but semantically wrong.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"Clue directly states she was worried and nervous, matching 'anxious' and excluding joyful, calm, and proud.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"anxious\",\n        \"standard\": true,\n        \"reason\": \"'Anxious' is a standard adjective to describe feeling worried and nervous.\"\n      }\n    },\n    {\n      \"question_index\": 2,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"confident\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct after 'stayed'; semantically matches self-belief; idiomatic as 'stayed confident'.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"shy\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but contradicts self-belief; 'stayed shy' is idiomatic but semantically wrong.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"angry\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but no anger is mentioned; 'stayed angry' is idiomatic but semantically wrong.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"tired\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but fatigue is not indicated; 'stayed tired' is idiomatic but semantically wrong.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"Clue states he believed in himself, directly supporting 'confident' and excluding shy, angry, and tired.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"confident\",\n        \"standard\": true,\n        \"reason\": \"'Confident' is a standard adjective to describe self-belief.\"\n      }\n    },\n    {\n      \"question_index\": 3,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"curious\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct before 'student'; semantically matches eagerness to learn; idiomatic as 'curious student'.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"lazy\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but contradicts eagerness to learn; 'lazy student' is idiomatic but semantically wrong.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"rude\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but asking questions to learn is not rudeness; 'rude student' is idiomatic but semantically wrong.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"silent\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but contradicts asking many questions; 'silent student' is idiomatic but semantically wrong.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"Clue states she was eager to learn, directly supporting 'curious' and excluding lazy, rude, and silent.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"curious\",\n        \"standard\": true,\n        \"reason\": \"'Curious' is a standard adjective to describe someone eager to learn.\"\n      }\n    },\n    {\n      \"question_index\": 4,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"reliable\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct before 'friend'; semantically matches trustworthiness; idiomatic as 'reliable friend'.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"careless\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but contradicts keeping promises; 'careless friend' is idiomatic but semantically wrong.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"selfish\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but trustworthiness is not selfishness; 'selfish friend' is idiomatic but semantically wrong.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"noisy\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but noise is unrelated to keeping promises; 'noisy friend' is idiomatic but semantically wrong.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"Clue states you can trust her, directly supporting 'reliable' and excluding careless, selfish, and noisy.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"reliable\",\n        \"standard\": true,\n        \"reason\": \"'Reliable' is a standard adjective to describe someone who keeps promises.\"\n      }\n    },\n    {\n      \"question_index\": 5,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"ambitious\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct before 'brother'; semantically matches strong desire to succeed; idiomatic as 'ambitious brother'.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"timid\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but contradicts strong desire to succeed; 'timid brother' is idiomatic but semantically wrong.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"content\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but being content does not imply desire to lead; 'content brother' is idiomatic but semantically wrong.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"careless\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but carelessness is not ambition; 'careless brother' is idiomatic but semantically wrong.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"Clue states he has a strong desire to succeed, directly supporting 'ambitious' and excluding timid, content, and careless.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"ambitious\",\n        \"standard\": true,\n        \"reason\": \"'Ambitious' is a standard adjective to describe someone with a strong desire to succeed.\"\n      }\n    },\n    {\n      \"question_index\": 6,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"achieve\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct after 'to'; semantically matches reaching an aim; idiomatic as 'achieve their goal'.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"abandon\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but contradicts reaching the aim; 'abandon their goal' is idiomatic but semantically wrong.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"ignore\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but ignoring does not reach the aim; 'ignore their goal' is idiomatic but semantically wrong.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"delay\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but delaying does not reach the aim; 'delay their goal' is idiomatic but semantically wrong.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"Clue states reaching a personal aim takes effort, directly supporting 'achieve' and excluding abandon, ignore, and delay.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"achieve\",\n        \"standard\": true,\n        \"reason\": \"'Achieve their goal' is a standard collocation meaning to successfully reach a goal.\"\n      }\n    },\n    {\n      \"question_index\": 7,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"adapt\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct after 'must'; semantically matches getting used to; idiomatic as 'adapt to a new school'.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"object\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": false,\n          \"reason\": \"Grammatically correct but 'object to' means oppose, not get used to; semantically wrong and not idiomatic in this context.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"return\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but returning is not getting used to; 'return to a new school' is odd because it's new.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"refer\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": false,\n          \"reason\": \"Grammatically correct but 'refer to' means mention, not adjust; semantically wrong and not idiomatic here.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"Clue states they need time to get used to it, directly supporting 'adapt' and excluding object, return, and refer.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"adapt\",\n        \"standard\": true,\n        \"reason\": \"'Adapt to a new school' is a standard collocation meaning to adjust to a new environment.\"\n      }\n    },\n    {\n      \"question_index\": 8,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"encourage\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct after 'teachers'; semantically matches giving courage; idiomatic as 'encourage students to keep trying'.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"forbid\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but forbidding is opposite of giving courage; semantically wrong.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"warn\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but warning is not giving courage; semantically wrong.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"blame\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but blaming does not support continuing; semantically wrong.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"Clue states they give courage to continue, directly supporting 'encourage' and excluding forbid, warn, and blame.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"encourage\",\n        \"standard\": true,\n        \"reason\": \"'Encourage students to keep trying' is a standard collocation meaning to give support and confidence.\"\n      }\n    },\n    {\n      \"question_index\": 9,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"persuade\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct after 'to'; semantically matches convincing; idiomatic as 'persuade her friend to join'.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"prevent\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but preventing is opposite of convincing to join; semantically wrong.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"refuse\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but refusing is not convincing; semantically wrong.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"ignore\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but ignoring is not convincing; semantically wrong.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"Clue states she wanted to convince him, directly supporting 'persuade' and excluding prevent, refuse, and ignore.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"persuade\",\n        \"standard\": true,\n        \"reason\": \"'Persuade her friend to join' is a standard collocation meaning to convince someone to do something.\"\n      }\n    },\n    {\n      \"question_index\": 10,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"concentrate\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct after 'could not'; semantically matches focusing; idiomatic as 'concentrate on his homework'.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"depend\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": false,\n          \"reason\": \"Grammatically correct but 'depend on' means rely, not focus; semantically wrong and not idiomatic here.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"insist\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": false,\n          \"reason\": \"Grammatically correct but 'insist on' means demand, not focus; semantically wrong and not idiomatic here.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"comment\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": false,\n          \"reason\": \"Grammatically correct but 'comment on' means remark, not focus; semantically wrong and not idiomatic here.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"Clue states loud noise made it hard to focus, directly supporting 'concentrate' and excluding depend, insist, and comment.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"concentrate\",\n        \"standard\": true,\n        \"reason\": \"'Concentrate on his homework' is a standard collocation meaning to focus attention on homework.\"\n      }\n    },\n    {\n      \"question_index\": 11,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"gradually\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct as adverb modifying 'improved'; semantically matches slow change; idiomatic.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"suddenly\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but contradicts slow, step-by-step change; semantically wrong.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"rarely\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but 'rarely' means infrequently, not slowly; semantically wrong.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"hardly\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but 'hardly' means almost not, contradicting improvement; semantically wrong.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"Clue states change happened slowly, step by step, directly supporting 'gradually' and excluding suddenly, rarely, and hardly.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"gradually\",\n        \"standard\": true,\n        \"reason\": \"'Improved gradually' is a standard collocation meaning to improve slowly over time.\"\n      }\n    },\n    {\n      \"question_index\": 12,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"eventually\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct as adverb before 'passed'; semantically matches in the end; idiomatic.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"immediately\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but contradicts 'in the end' and 'after much practice'; semantically wrong.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"unluckily\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but success is not bad luck; semantically wrong.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"seldom\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but 'seldom' means rarely, contradicting that he did pass; semantically wrong.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"Clue states in the end his effort brought success, directly supporting 'eventually' and excluding immediately, unluckily, and seldom.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"eventually\",\n        \"standard\": true,\n        \"reason\": \"'Eventually passed the test' is a standard collocation meaning to pass after some time.\"\n      }\n    },\n    {\n      \"question_index\": 13,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"independently\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct as adverb modifying 'finished'; semantically matches doing it on her own; idiomatic.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"carelessly\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but carelessness is not indicated by doing it alone; semantically wrong.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"reluctantly\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but no unwillingness is mentioned; semantically wrong.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"secretly\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but doing it alone is not the same as secretly; semantically wrong.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"Clue states she did it on her own, directly supporting 'independently' and excluding carelessly, reluctantly, and secretly.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"independently\",\n        \"standard\": true,\n        \"reason\": \"'Finished the project independently' is a standard collocation meaning to complete without help.\"\n      }\n    },\n    {\n      \"question_index\": 14,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"confidence\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct as noun after 'gave her'; semantically matches trusting her skills; idiomatic as 'confidence in her own ability'.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"doubt\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but doubt is opposite of trust; semantically wrong.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"fear\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but fear is not trust; semantically wrong.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"anger\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but anger is not trust; semantically wrong.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"Clue states she now trusts her skills, directly supporting 'confidence' and excluding doubt, fear, and anger.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"confidence\",\n        \"standard\": true,\n        \"reason\": \"'Confidence in her own ability' is a standard collocation meaning trust in one's skills.\"\n      }\n    },\n    {\n      \"question_index\": 15,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"opportunity\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct as noun after 'rare'; semantically matches valuable chance; idiomatic as 'opportunity to lead'.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"problem\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but a problem is not a valuable chance; semantically wrong.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"rule\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but a rule is not a chance; semantically wrong.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"duty\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Grammatically correct but a duty is an obligation, not a chance; semantically wrong.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"Clue states it was a valuable chance, directly supporting 'opportunity' and excluding problem, rule, and duty.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"opportunity\",\n        \"standard\": true,\n        \"reason\": \"'Opportunity to lead' is a standard collocation meaning a chance to take a leadership role.\"\n      }\n    }\n  ]\n}"
+    }
+  ],
+  "request_count": 8,
+  "failed_attempt_count": 3,
+  "finish_reasons": {
+    "stop": 8
+  },
+  "cost_cny": {
+    "generator": 0.153788,
+    "judge": 0.377919,
+    "total": 0.531707
+  },
+  "duration_seconds": 92.258,
+  "reaudit": {
+    "prompt_version": "m2-cloze-judge-v2",
+    "status": "passed",
+    "judge_requests": [
+      {
+        "purpose": "judge:cloze:cross-model",
+        "attempt": 1,
+        "status": "ok",
+        "prompt_tokens": 3417,
+        "completion_tokens": 5470,
+        "total_tokens": 8887,
+        "elapsed_seconds": 43.77350749995094,
+        "finish_reason": "stop",
+        "request_id": "859886f6-4dd9-45c9-a04b-dd8799916683",
+        "error": null,
+        "model_id": "deepseek-v4-pro",
+        "transport": "json_object",
+        "prompt_version": "m2-cloze-judge-v2",
+        "cost_cny": 0.178443,
+        "raw_content": "{\n  \"items\": [\n    {\n      \"question_index\": 1,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"anxious\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Fits the blank as an adjective describing her feeling before the exam.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"joyful\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Contradicts the clue that she was worried and nervous.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"calm\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Opposite of being worried and nervous.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"proud\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Pride is not indicated by worry and nervousness.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"The clue directly describes a negative, uneasy feeling, matching 'anxious' and excluding others.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"anxious before the big exam\",\n        \"standard\": true,\n        \"reason\": \"Common and natural English phrase.\"\n      }\n    },\n    {\n      \"question_index\": 2,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"confident\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Fits the blank as an adjective describing his state when the task began.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"shy\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Contradicts self-belief indicated by the clue.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"angry\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"No anger is mentioned in the context.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"tired\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Fatigue is not related to self-belief.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"The clue directly indicates self-belief, which is synonymous with confidence.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"confident when the new task began\",\n        \"standard\": true,\n        \"reason\": \"Natural and grammatically correct phrase.\"\n      }\n    },\n    {\n      \"question_index\": 3,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"curious\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Fits the blank as an adjective describing a student eager to learn.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"lazy\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Contradicts eagerness to learn.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"rude\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Asking questions to learn is not rudeness.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"silent\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Contradicts the fact that she asked many questions.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"The clue directly indicates a desire to learn, which is the definition of curious.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"curious student asked many questions\",\n        \"standard\": true,\n        \"reason\": \"Common and natural English phrase.\"\n      }\n    },\n    {\n      \"question_index\": 4,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"reliable\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Fits the blank as an adjective describing a friend who keeps promises.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"careless\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Keeping promises requires care, not carelessness.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"selfish\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Trustworthiness is not self-interest.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"noisy\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Noise has nothing to do with keeping promises.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"The clue directly indicates dependability, which is synonymous with reliable.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"reliable friend always keeps a promise\",\n        \"standard\": true,\n        \"reason\": \"Natural and grammatically correct phrase.\"\n      }\n    },\n    {\n      \"question_index\": 5,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"ambitious\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Fits the blank as an adjective describing a brother with a strong desire to succeed.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"timid\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Contradicts a strong desire to succeed.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"content\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Wanting to lead and succeed is not being satisfied with things as they are.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"careless\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Ambition is not carelessness.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"The clue directly indicates a drive to succeed, which is the definition of ambitious.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"ambitious brother plans to lead a team\",\n        \"standard\": true,\n        \"reason\": \"Natural and grammatically correct phrase.\"\n      }\n    },\n    {\n      \"question_index\": 6,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"achieve\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Fits the blank as a verb meaning to reach a goal.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"abandon\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Giving up does not reach an aim.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"ignore\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Ignoring a goal does not reach it.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"delay\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Postponing is not reaching the aim.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"The clue directly indicates reaching a personal aim, which is synonymous with achieving a goal.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"achieve their goal\",\n        \"standard\": true,\n        \"reason\": \"Common and natural English collocation.\"\n      }\n    },\n    {\n      \"question_index\": 7,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"adapt\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Fits the blank as a verb meaning to adjust to a new situation.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"object\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Getting used to something is not opposing it.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"return\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Getting used to a new school is not going back.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"refer\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Referring to a school does not mean getting used to it.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"The clue directly indicates adjusting to a new situation, which is the meaning of adapt.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"adapt to a new school\",\n        \"standard\": true,\n        \"reason\": \"Common and natural English collocation.\"\n      }\n    },\n    {\n      \"question_index\": 8,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"encourage\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Fits the blank as a verb meaning to give support and courage.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"forbid\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Giving courage to continue is not prohibiting.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"warn\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Warning is not giving courage.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"blame\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Blaming does not support students in continuing.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"The clue directly indicates giving courage, which is the definition of encourage.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"encourage students to keep trying\",\n        \"standard\": true,\n        \"reason\": \"Common and natural English collocation.\"\n      }\n    },\n    {\n      \"question_index\": 9,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"persuade\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Fits the blank as a verb meaning to convince someone to do something.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"prevent\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Convincing someone to join is not stopping them.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"refuse\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"She is trying to get him to join, not declining.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"ignore\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Convincing requires attention, not ignoring.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"The clue directly indicates trying to make someone agree, which is the meaning of persuade.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"persuade her friend to join\",\n        \"standard\": true,\n        \"reason\": \"Common and natural English collocation.\"\n      }\n    },\n    {\n      \"question_index\": 10,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"concentrate\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Fits the blank as a verb meaning to focus attention.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"depend\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Focusing is not relying on something.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"insist\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Focusing is not demanding.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"comment\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Focusing on homework is not making remarks.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"The clue directly indicates difficulty paying attention, which is the meaning of concentrate.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"concentrate on his homework\",\n        \"standard\": true,\n        \"reason\": \"Common and natural English collocation.\"\n      }\n    },\n    {\n      \"question_index\": 11,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"gradually\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Fits the blank as an adverb meaning slowly over time.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"suddenly\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Means quickly and unexpectedly, not slowly.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"rarely\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Concerns frequency, not slow change.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"hardly\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Means almost not at all, which contradicts improvement.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"The clue directly indicates a slow, step-by-step process, which is the meaning of gradually.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"gradually over months\",\n        \"standard\": true,\n        \"reason\": \"Natural and grammatically correct phrase.\"\n      }\n    },\n    {\n      \"question_index\": 12,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"eventually\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Fits the blank as an adverb meaning after a period of time.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"immediately\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"The result came in the end, not at once.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"unluckily\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Success is not bad luck.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"seldom\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"He did pass the test, so it was not rare.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"The clue directly indicates a final result after time, which is the meaning of eventually.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"eventually passed the test\",\n        \"standard\": true,\n        \"reason\": \"Common and natural English collocation.\"\n      }\n    },\n    {\n      \"question_index\": 13,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"independently\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Fits the blank as an adverb meaning without help.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"carelessly\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Doing it on her own says nothing about poor care.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"reluctantly\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"No unwillingness is mentioned.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"secretly\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Doing it alone is not the same as hiding it.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"The clue directly indicates acting alone, which is the meaning of independently.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"independently without help\",\n        \"standard\": true,\n        \"reason\": \"Natural and grammatically correct phrase.\"\n      }\n    },\n    {\n      \"question_index\": 14,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"confidence\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Fits the blank as a noun meaning trust in one's ability.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"doubt\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Trusting her skills is the opposite of doubting them.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"fear\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Trust is not fear.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"anger\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"Trust in skills is not anger.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"The clue directly indicates trust in her ability, which is the definition of confidence.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"confidence in her own ability\",\n        \"standard\": true,\n        \"reason\": \"Common and natural English collocation.\"\n      }\n    },\n    {\n      \"question_index\": 15,\n      \"option_assessments\": [\n        {\n          \"option_index\": 1,\n          \"option\": \"opportunity\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": true,\n          \"idiomatic\": true,\n          \"reason\": \"Fits the blank as a noun meaning a chance.\"\n        },\n        {\n          \"option_index\": 2,\n          \"option\": \"problem\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"A valuable chance is not a difficulty.\"\n        },\n        {\n          \"option_index\": 3,\n          \"option\": \"rule\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"A chance to try something is not a regulation.\"\n        },\n        {\n          \"option_index\": 4,\n          \"option\": \"duty\",\n          \"grammar_ok\": true,\n          \"semantic_ok\": false,\n          \"idiomatic\": true,\n          \"reason\": \"An offered chance is not an obligation.\"\n        }\n      ],\n      \"context_clue_assessment\": {\n        \"clue_is_verbatim\": true,\n        \"supports_answer\": true,\n        \"excludes_distractors\": true,\n        \"reason\": \"The clue directly indicates a chance, which is the meaning of opportunity.\"\n      },\n      \"answer_collocation\": {\n        \"phrase\": \"opportunity to lead\",\n        \"standard\": true,\n        \"reason\": \"Common and natural English collocation.\"\n      }\n    }\n  ]\n}"
+      }
+    ],
+    "cost_cny": 0.178443
+  }
+}

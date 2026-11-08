@@ -1,0 +1,1 @@
+{"translations": {"natural": "自然", "renewable": "可再生", "shown": "展示", "sunlight": "阳光"}}

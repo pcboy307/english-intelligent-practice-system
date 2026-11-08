@@ -1,0 +1,126 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a connected narrative about a student improving her health habits, with each sentence logically following the previous one.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "respect",
+      "reason": "Respect aligns with taking her body seriously, while the others have negative or irrelevant connotations.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "support",
+      "reason": "Support fits the context of the school helping with a plan, while refuse, ignore, and blame are contradictory.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "responsible",
+      "reason": "Responsible is the only option that logically pairs with 'for every small decision'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "solution",
+      "reason": "Solution matches the description of a method to keep a daily record, while problem and question are opposite.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "avoid",
+      "reason": "Avoid makes sense in the context of reducing screen time for health, while enjoy and buy are contrary.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 6,
+      "clear_best": true,
+      "best_option": "value",
+      "reason": "Value fits the positive appreciation of quiet hours, while waste and hide are negative.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 7,
+      "clear_best": true,
+      "best_option": "conduct",
+      "reason": "Conduct refers to daily behavior, which is changeable, unlike wealth, noise, or weather.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 8,
+      "clear_best": true,
+      "best_option": "choice",
+      "reason": "Choice is the only option that collocates with 'making' and fits the context of a decision.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 9,
+      "clear_best": true,
+      "best_option": "effort",
+      "reason": "Effort is rewarded by better sleep, while gift, joke, and song are unrelated to the context.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 10,
+      "clear_best": true,
+      "best_option": "environment",
+      "reason": "Environment fits the physical space around the desk, while holiday, concert, and match do not.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 11,
+      "clear_best": true,
+      "best_option": "experience",
+      "reason": "Experience is something one can know, unlike address, machine, or island.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 12,
+      "clear_best": true,
+      "best_option": "purpose",
+      "reason": "Purpose aligns with the goal of being steady, while pity, price, and pain do not fit.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 13,
+      "clear_best": true,
+      "best_option": "understand",
+      "reason": "Understand fits the advice to know her limits, while refuse, forget, and hide are negative or illogical.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 14,
+      "clear_best": true,
+      "best_option": "identify",
+      "reason": "Identify is the only verb that logically pairs with 'signs of tiredness'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 15,
+      "clear_best": true,
+      "best_option": "allow",
+      "reason": "Allow fits the supportive parental action, while prevent, force, and order are contradictory.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

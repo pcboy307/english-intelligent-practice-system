@@ -1,0 +1,65 @@
+{
+  "passage": "Last spring, a group of students in our town noticed that an empty piece of land behind the library was full of rubbish. They decided to turn it into a small city garden. Their teacher, Ms. Chen, helped them make a plan. The students worked hard every weekend. They cleared the rubbish, pulled out wild grass, and planted flowers and vegetables. They also built a few simple seats from old wood. Soon, the garden became a beautiful place. Many people in the town came to visit it. Some older people said that the garden reminded them of the countryside. The students felt proud of what they had done. What is the main purpose of this passage? To describe how students turned an empty lot into a garden. To explain why the library needed more books. To show that rubbish is a serious problem. To introduce a famous garden in the city. What can we infer about the students from the passage? They care about their community. They want to leave school early. They dislike working with others. They prefer to play in the garden. Why did the students build seats from old wood? To give people a place to rest. To sell the wood for money. To make the garden look like a park. To use the wood for a fire. Which sentence best states the main idea of the passage? Students worked together to create a city garden. The library is a popular place in town. Old people miss their life in the countryside. Rubbish is a big problem in many cities.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of this passage?",
+      "options": [
+        "To describe how students turned an empty lot into a garden.",
+        "To explain why the library needed more books.",
+        "To show that rubbish is a serious problem.",
+        "To introduce a famous garden in the city."
+      ],
+      "answer": "To describe how students turned an empty lot into a garden.",
+      "explanation": "文章主要讲述学生们如何把空地变成花园，因此目的是描述这一过程。B项关于图书馆需要书，C项强调垃圾问题严重，D项介绍著名花园，这三项均非文章主要目的。",
+      "evidence_sentence": "They decided to turn it into a small city garden.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about the students from the passage?",
+      "options": [
+        "They care about their community.",
+        "They want to leave school early.",
+        "They dislike working with others.",
+        "They prefer to play in the garden."
+      ],
+      "answer": "They care about their community.",
+      "explanation": "学生们主动清理垃圾并建花园，说明他们关心社区。B项想早退、C项不喜欢合作、D项更喜欢在花园玩，这些在文中均无依据。",
+      "evidence_sentence": "The students felt proud of what they had done.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Why did the students build seats from old wood?",
+      "options": [
+        "To give people a place to rest.",
+        "To sell the wood for money.",
+        "To make the garden look like a park.",
+        "To use the wood for a fire."
+      ],
+      "answer": "To give people a place to rest.",
+      "explanation": "文中提到他们用旧木头做座位，目的是让来花园的人有地方休息。B项卖钱、C项让花园像公园、D项烧火，这些都不是文中提到的原因。",
+      "evidence_sentence": "They also built a few simple seats from old wood.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "Which sentence best states the main idea of the passage?",
+      "options": [
+        "Students worked together to create a city garden.",
+        "The library is a popular place in town.",
+        "Old people miss their life in the countryside.",
+        "Rubbish is a big problem in many cities."
+      ],
+      "answer": "Students worked together to create a city garden.",
+      "explanation": "文章核心是学生们合作把空地变成花园，因此A项最能概括主旨。B项图书馆受欢迎、C项老人怀念乡村、D项垃圾问题严重，这些只是细节或未提及。",
+      "evidence_sentence": "They decided to turn it into a small city garden.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

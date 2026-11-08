@@ -1,0 +1,105 @@
+{
+  "passage": "Many students wonder about their future jobs. ① they think about careers, they often ask what makes a job good. A ② job is not only about money. It also needs ③ and a clear aim. Some students want to be doctors, while others hope to become ④. These jobs are all ⑤ than they look. In fact, the ⑥ job may be the one you love most. ⑦ a clear plan, you can reach your goal step by step. You should ⑧ your interests and abilities. ⑨ a decision early can help you choose the right path. It is important ⑩ hard and never give up.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "① ___",
+      "options": ["When", "Before", "Because", "Although"],
+      "answer": "When",
+      "explanation": "此处表示“当……时”，用When引导时间状语从句。Before表示“在……之前”，Because表示“因为”，均不符合语境。",
+      "evidence_sentence": "Many students wonder about their future jobs.",
+      "context_clue": "Many students wonder about their future jobs. ① they think about careers, they often ask what makes a job good.",
+      "clue_argument": "时间状语从句，表示当思考职业时。"
+    },
+    {
+      "question_index": 2,
+      "stem": "② ___",
+      "options": ["satisfying", "satisfied", "satisfaction", "satisfy"],
+      "answer": "satisfying",
+      "explanation": "修饰job用形容词satisfying，表示“令人满意的”。satisfied修饰人，satisfaction是名词，satisfy是动词。",
+      "evidence_sentence": "Many students wonder about their future jobs.",
+      "context_clue": "A ② job is not only about money.",
+      "clue_argument": "形容词修饰job，表示令人满意的工作。"
+    },
+    {
+      "question_index": 3,
+      "stem": "③ ___",
+      "options": ["patience", "patient", "patiently", "impatient"],
+      "answer": "patience",
+      "explanation": "and连接并列名词，此处需要名词patience。patient是形容词，patiently是副词，impatient是形容词。",
+      "evidence_sentence": "Many students wonder about their future jobs.",
+      "context_clue": "It also needs ③ and a clear aim.",
+      "clue_argument": "与aim并列，需要名词。"
+    },
+    {
+      "question_index": 4,
+      "stem": "④ ___",
+      "options": ["scientists", "science", "scientific", "scientifically"],
+      "answer": "scientists",
+      "explanation": "become后接表示人的名词，scientists意为“科学家”。science是学科，scientific是形容词，scientifically是副词。",
+      "evidence_sentence": "Many students wonder about their future jobs.",
+      "context_clue": "Some students want to be doctors, while others hope to become ④.",
+      "clue_argument": "与doctors并列，表示职业的人。"
+    },
+    {
+      "question_index": 5,
+      "stem": "⑤ ___",
+      "options": ["harder", "hard", "hardest", "hardly"],
+      "answer": "harder",
+      "explanation": "than提示比较级，hard的比较级是harder。hard是原级，hardest是最高级，hardly是副词“几乎不”。",
+      "evidence_sentence": "Many students wonder about their future jobs.",
+      "context_clue": "These jobs are all ⑤ than they look.",
+      "clue_argument": "than前用比较级。"
+    },
+    {
+      "question_index": 6,
+      "stem": "⑥ ___",
+      "options": ["best", "better", "good", "well"],
+      "answer": "best",
+      "explanation": "the后接最高级best，表示“最好的”。better是比较级，good是原级，well是副词。",
+      "evidence_sentence": "Many students wonder about their future jobs.",
+      "context_clue": "In fact, the ⑥ job may be the one you love most.",
+      "clue_argument": "the后接最高级，表示最好的工作。"
+    },
+    {
+      "question_index": 7,
+      "stem": "⑦ ___",
+      "options": ["With", "Without", "Under", "By"],
+      "answer": "With",
+      "explanation": "with a clear plan表示“有清晰的计划”，符合语境。Without表示“没有”，Under表示“在……下”，By表示“通过”，均不恰当。",
+      "evidence_sentence": "Many students wonder about their future jobs.",
+      "context_clue": "⑦ a clear plan, you can reach your goal step by step.",
+      "clue_argument": "表示伴随“有”，用with。"
+    },
+    {
+      "question_index": 8,
+      "stem": "⑧ ___",
+      "options": ["develop", "developing", "developed", "development"],
+      "answer": "develop",
+      "explanation": "should后接动词原形develop。developing是现在分词，developed是过去分词，development是名词。",
+      "evidence_sentence": "Many students wonder about their future jobs.",
+      "context_clue": "You should ⑧ your interests and abilities.",
+      "clue_argument": "情态动词should后接动词原形。"
+    },
+    {
+      "question_index": 9,
+      "stem": "⑨ ___",
+      "options": ["Making", "Make", "Made", "To make"],
+      "answer": "Making",
+      "explanation": "动名词短语作主语，用Making。Make是动词原形，Made是过去分词，To make虽可作主语但此处不自然。",
+      "evidence_sentence": "Many students wonder about their future jobs.",
+      "context_clue": "⑨ a decision early can help you choose the right path.",
+      "clue_argument": "动名词作主语。"
+    },
+    {
+      "question_index": 10,
+      "stem": "⑩ ___",
+      "options": ["to work", "work", "working", "worked"],
+      "answer": "to work",
+      "explanation": "It is important to do sth. 是固定句型，用不定式to work。work是动词原形，working是动名词，worked是过去分词。",
+      "evidence_sentence": "Many students wonder about their future jobs.",
+      "context_clue": "It is important ⑩ hard and never give up.",
+      "clue_argument": "It is important to do sth. 句型。"
+    }
+  ]
+}

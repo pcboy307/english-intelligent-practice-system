@@ -1,0 +1,45 @@
+{
+  "passage": "AI is becoming a common helper in classrooms. The student uses an AI app to practise English. The app gives quick answers, but her teacher warns that easy answers can make thinking weak. He advises students to use AI as a tool, not as a brain. One afternoon, the student asked the AI to write a story for her. She copied it and handed it in. Her teacher noticed the style was not hers. He did not punish her; instead, he asked her to explain the story to the class. She could not. She felt ashamed. The teacher then said, \"If you had written it yourself, you would have learned more.\" He also suggested that every student should keep a learning diary. In the diary, they should record what they do alone and what AI helps with. The student began to use AI only to check her grammar after she finished her own work. Her writing improved slowly, and she felt proud. AI can be a good aid, but the real learning must come from the student's own effort.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"weak\" in the passage most probably mean?",
+      "options": ["not strong", "not smart", "not fast", "not safe"],
+      "answer": "not strong",
+      "explanation": "此处weak指思考能力变弱，与not strong对应。A项not smart指不聪明，C项not fast指不快，均不符合语境。",
+      "evidence_sentence": "The app gives quick answers, but her teacher warns that easy answers can make thinking weak.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the teacher's attitude towards using AI in learning?",
+      "options": ["He accepts it as a helpful tool.", "He refuses to allow it in class.", "He thinks it should replace teachers.", "He is unsure about its use."],
+      "answer": "He accepts it as a helpful tool.",
+      "explanation": "老师建议把AI当作工具，说明他接受其辅助作用。B项拒绝在课堂使用和C项认为应取代老师都过于极端，与老师的话不符。",
+      "evidence_sentence": "He advises students to use AI as a tool, not as a brain.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["AI should be used wisely to support real learning.", "AI can write better stories than students.", "Teachers should not use AI in class.", "Students should never use AI apps."],
+      "answer": "AI should be used wisely to support real learning.",
+      "explanation": "文章通过学生使用AI的经历说明AI应合理使用以促进真正学习。B项说AI写故事更好，C项说老师不应在课堂用AI，都偏离主旨。",
+      "evidence_sentence": "AI can be a good aid, but the real learning must come from the student's own effort.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What did the teacher suggest every student should do?",
+      "options": ["Keep a learning diary.", "Stop using AI completely.", "Write stories with AI.", "Explain stories to the class."],
+      "answer": "Keep a learning diary.",
+      "explanation": "文中老师明确建议每个学生记学习日记。B项完全停止使用AI和C项用AI写故事都不是老师的建议。",
+      "evidence_sentence": "He also suggested that every student should keep a learning diary.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

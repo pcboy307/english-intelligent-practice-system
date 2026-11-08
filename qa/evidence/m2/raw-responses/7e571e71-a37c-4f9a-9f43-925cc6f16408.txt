@@ -1,0 +1,111 @@
+{
+  "passage": "Last month, our class was assigned a group project on environmental protection. The teacher told us that we should accept different opinions if we wanted to succeed. At first, we did not appreciate how much time teamwork would take. Tom, who was good at drawing, wanted to design the poster alone, while Chen, who was good at writing, wanted to focus on the report. We had to balance our strengths and weaknesses. We soon realized that the benefit of working together was greater than working alone. We faced the challenge of sharing ideas without arguing. We learned that we must communicate clearly and listen to each other. With everyone contributing a small part, the project became a success. Only by working together did we determine the best plan. Through this experience, we made a discovery: teamwork is not about one person, but about everyone. If we had not cooperated, we would not have improved so much. We also learned that we should manage our time well and prefer listening to speaking. In the end, we reduced our stress and finished on time, which made us proud.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "The teacher told us that we should ______ different opinions if we wanted to succeed.",
+      "options": ["accept", "refuse", "ignore", "deny"],
+      "answer": "accept",
+      "explanation": "根据上下文，老师建议我们接受不同意见才能成功，accept 意为“接受”，符合语境。refuse 和 ignore 与成功条件相反，deny 意为“否认”，不合逻辑。",
+      "evidence_sentence": "The teacher told us that we should accept different opinions if we wanted to succeed.",
+      "context_clue": "The teacher told us that we should accept different opinions if we wanted to succeed.",
+      "clue_argument": "should 后接动词原形，且与“不同意见”搭配表示接受，故选 accept。"
+    },
+    {
+      "question_index": 2,
+      "stem": "At first, we did not ______ how much time teamwork would take.",
+      "options": ["appreciate", "imagine", "remember", "expect"],
+      "answer": "appreciate",
+      "explanation": "appreciate 在此意为“意识到，理解”，与 not 连用表示起初没有意识到团队合作需要多少时间。imagine 和 expect 侧重想象或预期，remember 意为“记得”，均不如 appreciate 贴切。",
+      "evidence_sentence": "At first, we did not appreciate how much time teamwork would take.",
+      "context_clue": "At first, we did not appreciate how much time teamwork would take.",
+      "clue_argument": "did not 后接动词原形，appreciate 表示“意识到”，符合起初不了解情况的语境。"
+    },
+    {
+      "question_index": 3,
+      "stem": "We had to ______ our strengths and weaknesses.",
+      "options": ["balance", "count", "measure", "compare"],
+      "answer": "balance",
+      "explanation": "balance 意为“平衡”，与 strengths and weaknesses 搭配表示权衡优缺点。count 意为“数”，measure 意为“测量”，compare 意为“比较”，都不能准确表达平衡之意。",
+      "evidence_sentence": "We had to balance our strengths and weaknesses.",
+      "context_clue": "We had to balance our strengths and weaknesses.",
+      "clue_argument": "had to 后接动词原形，balance 与“优缺点”搭配表示平衡，符合团队分工的语境。"
+    },
+    {
+      "question_index": 4,
+      "stem": "We soon realized that the ______ of working together was greater than working alone.",
+      "options": ["benefit", "problem", "result", "reason"],
+      "answer": "benefit",
+      "explanation": "benefit 意为“好处”，与 greater than working alone 呼应，表示合作的好处更大。problem 意为“问题”，result 意为“结果”，reason 意为“原因”，均不能与 greater 搭配表达好处。",
+      "evidence_sentence": "We soon realized that the benefit of working together was greater than working alone.",
+      "context_clue": "We soon realized that the benefit of working together was greater than working alone.",
+      "clue_argument": "the 后接名词，benefit 表示“好处”，与 greater than 搭配合理。"
+    },
+    {
+      "question_index": 5,
+      "stem": "We faced the ______ of sharing ideas without arguing.",
+      "options": ["challenge", "chance", "choice", "change"],
+      "answer": "challenge",
+      "explanation": "challenge 意为“挑战”，与 faced 和 without arguing 搭配，表示面对不争吵地分享观点的挑战。chance 意为“机会”，choice 意为“选择”，change 意为“变化”，均不能准确表达困难。",
+      "evidence_sentence": "We faced the challenge of sharing ideas without arguing.",
+      "context_clue": "We faced the challenge of sharing ideas without arguing.",
+      "clue_argument": "the 后接名词，challenge 与 faced 搭配表示面对挑战，符合语境。"
+    },
+    {
+      "question_index": 6,
+      "stem": "We learned that we must ______ clearly and listen to each other.",
+      "options": ["communicate", "compete", "complain", "complete"],
+      "answer": "communicate",
+      "explanation": "communicate 意为“交流”，与 clearly 和 listen to each other 并列，表示必须清晰交流并互相倾听。compete 意为“竞争”，complain 意为“抱怨”，complete 意为“完成”，均不合语境。",
+      "evidence_sentence": "We learned that we must communicate clearly and listen to each other.",
+      "context_clue": "We learned that we must communicate clearly and listen to each other.",
+      "clue_argument": "must 后接动词原形，communicate 与 clearly 搭配表示清晰交流。"
+    },
+    {
+      "question_index": 7,
+      "stem": "With everyone ______ a small part, the project became a success.",
+      "options": ["contributing", "contributed", "contribute", "contributes"],
+      "answer": "contributing",
+      "explanation": "with 复合结构中，everyone 与 contribute 是主动关系，且表示伴随，故用现在分词 contributing。contributed 是过去分词，contribute 是原形，contributes 是第三人称单数，均不符合 with 复合结构。",
+      "evidence_sentence": "With everyone contributing a small part, the project became a success.",
+      "context_clue": "With everyone contributing a small part, the project became a success.",
+      "clue_argument": "with 复合结构中，宾语 everyone 与 contribute 为主动关系，用现在分词 contributing。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Only by working together did we ______ the best plan.",
+      "options": ["determine", "decide", "select", "pick"],
+      "answer": "determine",
+      "explanation": "determine 意为“确定，决定”，与 the best plan 搭配表示确定最佳方案。decide 后常接 to do 或 that 从句，select 和 pick 侧重挑选具体物品，不如 determine 正式贴切。",
+      "evidence_sentence": "Only by working together did we determine the best plan.",
+      "context_clue": "Only by working together did we determine the best plan.",
+      "clue_argument": "did 后接动词原形，determine 与 the best plan 搭配表示确定最佳方案。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Through this experience, we made a ______: teamwork is not about one person, but about everyone.",
+      "options": ["discovery", "decision", "difference", "discussion"],
+      "answer": "discovery",
+      "explanation": "discovery 意为“发现”，与 made a 搭配表示有所发现，后接冒号解释发现的内容。decision 意为“决定”，difference 意为“差异”，discussion 意为“讨论”，均不能与 made a 搭配表示发现。",
+      "evidence_sentence": "Through this experience, we made a discovery: teamwork is not about one person, but about everyone.",
+      "context_clue": "Through this experience, we made a discovery: teamwork is not about one person, but about everyone.",
+      "clue_argument": "made a 后接名词，discovery 表示“发现”，与冒号后的解释一致。"
+    },
+    {
+      "question_index": 10,
+      "stem": "We also learned that we should manage our time well and prefer listening to speaking. In the end, we ______ our stress and finished on time, which made us proud.",
+      "options": ["reduced", "increased", "caused", "created"],
+      "answer": "reduced",
+      "explanation": "reduced 意为“减少”，与 stress 搭配表示减轻压力，且与 finished on time 的积极结果一致。increased 意为“增加”，caused 意为“导致”，created 意为“创造”，均不合语境。",
+      "evidence_sentence": "In the end, we reduced our stress and finished on time, which made us proud.",
+      "context_clue": "In the end, we reduced our stress and finished on time, which made us proud.",
+      "clue_argument": "与 stress 搭配且与 finished on time 的积极结果一致，用 reduced 表示减轻压力。"
+    },
+    {
+      "question_index": 11,
+      "stem": "It was through this experience ______ we learned the importance of teamwork.",
+      "options": ["that", "which", "what", "where"],
+      "answer": "that",
+      "explanation": "本句是强调句型 It was ... that ...，强调状语 through this experience，故用 that。which 不能用于强调句，what 不能引导强调句，where 不能用于此处。",
+      "evidence_sentence": "Through this experience, we made a discovery: teamwork is not about one person, but about everyone.",
+      "context_clue": "It was through

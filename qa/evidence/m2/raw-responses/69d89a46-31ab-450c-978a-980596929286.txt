@@ -1,0 +1,1 @@
+{"translations": {"blades": "叶片", "realized": "意识到", "renewable": "可再生", "spin": "旋转", "turbine": "涡轮机"}}

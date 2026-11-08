@@ -1,0 +1,95 @@
+{
+  "passage": "Reading habits shape how we learn and grow. The student, who loves stories, reads every day. Her teacher often says that it is through reading that we open doors to new worlds. However, a classmate seldom picks up a book. The student believes it is important that her classmate should read more. (1) ______ (2) ______ (3) ______ (4) ______ (5) ______",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the sentence that best fits blank (1).",
+      "options": [
+        "A. Reading is a waste of time for busy students.",
+        "B. Reading is not only fun but also helps us understand others.",
+        "C. Only novels are worth reading.",
+        "D. Students should read only for exams.",
+        "E. Reading is less important than sports.",
+        "F. Reading is boring for most people.",
+        "G. Reading should be avoided if it takes too long."
+      ],
+      "answer": "B",
+      "explanation": "前文提到学生爱读书、老师强调阅读打开新世界，后文说同学很少读书，因此此处应填阅读既有趣又有益的句子，与后文形成对比。A和D都贬低阅读或过于功利，与上下文矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "The student, who loves stories, reads every day. Her teacher often says that it is through reading that we open doors to new worlds.",
+      "clue_argument": "前文强调阅读的乐趣和益处，后文转向同学不读书，需要承上启下的对比句。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the sentence that best fits blank (2).",
+      "options": [
+        "A. The classmate thinks reading is a waste of time.",
+        "B. The classmate reads more than anyone else.",
+        "C. The classmate prefers watching TV to reading.",
+        "D. The classmate has no books at home.",
+        "E. The classmate often visits the library.",
+        "F. The classmate enjoys reading comics.",
+        "G. The classmate reads only for school."
+      ],
+      "answer": "C",
+      "explanation": "前文说同学很少拿起书，后文建议多读书，此处应说明同学更爱看电视而不爱阅读，形成对比。A说阅读浪费时间，与后文建议矛盾；B说同学读得最多，与“很少”矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "However, a classmate seldom picks up a book.",
+      "clue_argument": "however 表转折，说明同学与爱读书的学生相反，需要具体说明其不爱阅读的表现。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the sentence that best fits blank (3).",
+      "options": [
+        "A. The student thinks reading is useless.",
+        "B. The student advises her classmate to read more.",
+        "C. The student never reads books.",
+        "D. The student dislikes her classmate.",
+        "E. The student wants to stop reading.",
+        "F. The student thinks TV is better.",
+        "G. The student reads only for exams."
+      ],
+      "answer": "B",
+      "explanation": "前文说学生认为同学应该多读书，此处应是她向同学提出建议，与后文老师的话形成呼应。A和C与“学生爱读书”矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "The student believes it is important that her classmate should read more.",
+      "clue_argument": "学生认为同学应该多读，自然会建议同学多读书。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the sentence that best fits blank (4).",
+      "options": [
+        "A. The classmate finds reading very interesting.",
+        "B. The classmate is eager to read more.",
+        "C. The classmate is not interested in reading.",
+        "D. The classmate reads every day.",
+        "E. The classmate loves stories.",
+        "F. The classmate has many books.",
+        "G. The classmate often goes to the library."
+      ],
+      "answer": "C",
+      "explanation": "前文说同学很少读书，后文可能继续描述其态度，此处应说同学对阅读不感兴趣，形成对比。A和B说同学感兴趣或渴望读书，与“很少”矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "However, a classmate seldom picks up a book.",
+      "clue_argument": "seldom 表明同学不爱读书，因此对阅读不感兴趣。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the sentence that best fits blank (5).",
+      "options": [
+        "A. The student and her classmate never talk.",
+        "B. The student and her classmate both love reading.",
+        "C. The student and her classmate have different reading habits.",
+        "D. The student and her classmate read the same books.",
+        "E. The student and her classmate dislike reading.",
+        "F. The student and her classmate read only for school.",
+        "G. The student and her classmate have no books."
+      ],
+      "answer": "C",
+      "explanation": "全文对比了学生爱读书和同学不爱读书，此处总结两人阅读习惯不同，呼应主题。A说两人从不交谈，文中无依据；B说两人都爱读书，与同学很少读书矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "The student, who loves stories, reads every day. However, a classmate seldom picks up a book.",
+      "clue_argument": "全文围绕两人不同的阅读习惯展开，结尾应总结这一对比。"
+    }
+  ]
+}

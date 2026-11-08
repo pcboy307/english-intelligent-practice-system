@@ -1,0 +1,65 @@
+{
+  "passage": "Every year, millions of tons of plastic waste enter the ocean. This plastic does not disappear; it breaks into tiny pieces called microplastics（微塑料）. These tiny pieces are now found everywhere in the sea, from the surface to the deep bottom. They are eaten by fish and other sea animals, and they can end up in the seafood（海鲜）that people eat. Scientists are worried because the full effect on human health is not yet known.\n\nHowever, there is hope. Many countries have started to reduce single-use plastics. For example, some places have banned plastic bags and plastic straws. Volunteers also organise beach clean-ups（清理活动）to collect plastic waste before it reaches the sea. These actions are helpful, but they are not enough. We need to produce less plastic and recycle more.\n\nAs a student, you can also help. You can bring a reusable water bottle and avoid plastic bags when you shop. You can join a local clean-up activity and encourage your friends to do the same. Small actions, when many people take them, can make a big difference. The ocean is important to all of us, and it is our duty to protect it.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the passage mainly about?",
+      "options": [
+        "The problem of ocean plastic and ways to reduce it.",
+        "How microplastics are formed in the ocean.",
+        "The reasons why fish eat plastic waste.",
+        "The history of beach clean-up activities."
+      ],
+      "answer": "The problem of ocean plastic and ways to reduce it.",
+      "explanation": "文章先指出海洋塑料污染问题，再提出减少塑料的方法，最后呼吁个人行动，因此主旨是问题与解决办法。选项B只涉及微塑料形成这一细节，选项C只提到鱼吃塑料这一细节，均不能概括全文。",
+      "evidence_sentence": "Every year, millions of tons of plastic waste enter the ocean.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what happens to plastic waste in the ocean?",
+      "options": [
+        "It breaks into tiny pieces called microplastics.",
+        "It is completely removed by volunteers.",
+        "It turns into safe food for sea animals.",
+        "It stays on the surface forever."
+      ],
+      "answer": "It breaks into tiny pieces called microplastics.",
+      "explanation": "文中明确说塑料不会消失，而是碎成微塑料，因此B、C、D均与原文不符。选项B错在志愿者只清理部分塑料，选项C错在微塑料并非安全食物，选项D错在塑料会沉入深海。",
+      "evidence_sentence": "This plastic does not disappear; it breaks into tiny pieces called microplastics（微塑料）.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer from the passage about solving the plastic problem?",
+      "options": [
+        "Individual actions alone are not enough; we need both personal and government efforts.",
+        "Beach clean-ups are the only effective solution.",
+        "Students are too young to make a difference.",
+        "Plastic bags have already disappeared from all countries."
+      ],
+      "answer": "Individual actions alone are not enough; we need both personal and government efforts.",
+      "explanation": "文章提到政府措施和志愿者清理有帮助但不够，又鼓励学生个人行动，可推断需要多方共同努力。选项B错在清理只是措施之一，选项C与文中鼓励学生行动矛盾，选项D与“一些地方禁用塑料袋”不符。",
+      "evidence_sentence": "These actions are helpful, but they are not enough. We need to produce less plastic and recycle more.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"reduce\" in paragraph 2 most likely mean?",
+      "options": [
+        "To make something smaller in amount.",
+        "To collect and clean something.",
+        "To produce something new.",
+        "To ban something completely."
+      ],
+      "answer": "To make something smaller in amount.",
+      "explanation": "第二段说“reduce single-use plastics”，后文举例禁用塑料袋和吸管，可知reduce意为减少用量。选项B是清理，选项C是生产，选项D是完全禁止，均不符合语境。",
+      "evidence_sentence": "Many countries have started to reduce single-use plastics.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

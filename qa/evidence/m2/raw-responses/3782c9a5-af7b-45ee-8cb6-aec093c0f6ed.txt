@@ -1,0 +1,122 @@
+{
+  "passage": "When the student began her final year, she felt lost about her future. Her teacher advised her to treat career planning with (1) ______, because it shapes daily choices. The student knew that her parents' (2) ______ mattered, but she also needed to listen to herself. Only by exploring different paths could she become more (3) ______ for her own decisions. She learned that every problem has a (4) ______ if one is patient. To (5) ______ making a hasty choice, she decided to research careers carefully. Her teacher suggested that she (6) ______ every chance to talk with professionals. Last month, she (7) ______ an interview with a young engineer, which helped her understand the field. That (8) ______ gave her confidence. She realised that consistent (9) ______ would be needed to reach her goal. Only in a supportive (10) ______ can students truly grow. She was (11) ______ by many helpful people. If she had not explored, she would have missed her (12) ______. Her teacher recommended that she (13) ______ the importance of balance. Now she can (14) ______ her strengths and weaknesses. Good planning will (15) ______ her to move forward with courage.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank (1).",
+      "options": ["respect", "doubt", "fear", "anger"],
+      "answer": "respect",
+      "explanation": "respect 意为“尊重”，与 treat ... with 搭配表示认真对待。doubt（怀疑）和 fear（害怕）与语境中积极规划未来的态度不符。",
+      "evidence_sentence": "Her teacher advised her to treat career planning with (1) ______, because it shapes daily choices.",
+      "context_clue": "Her teacher advised her to treat career planning with (1) ______, because it shapes daily choices.",
+      "clue_argument": "treat ... with respect 是固定搭配，表示认真对待。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank (2).",
+      "options": ["support", "money", "advice", "pressure"],
+      "answer": "support",
+      "explanation": "support 意为“支持”，与 parents' 搭配表示父母的支持。money（钱）和 pressure（压力）虽然也可能来自父母，但下文“listen to herself”强调情感支持。",
+      "evidence_sentence": "The student knew that her parents' (2) ______ mattered, but she also needed to listen to herself.",
+      "context_clue": "The student knew that her parents' (2) ______ mattered, but she also needed to listen to herself.",
+      "clue_argument": "与“听自己”对比，父母的支持很重要。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank (3).",
+      "options": ["responsible", "famous", "rich", "lucky"],
+      "answer": "responsible",
+      "explanation": "responsible 意为“负责任的”，be responsible for 表示对决定负责。famous（著名的）和 rich（富有的）与“为自己的决定负责”无关。",
+      "evidence_sentence": "Only by exploring different paths could she become more (3) ______ for her own decisions.",
+      "context_clue": "Only by exploring different paths could she become more (3) ______ for her own decisions.",
+      "clue_argument": "be responsible for 是固定搭配，表示对……负责。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank (4).",
+      "options": ["solution", "problem", "question", "reason"],
+      "answer": "solution",
+      "explanation": "solution 意为“解决办法”，与 has a 搭配表示每个问题都有解决办法。problem（问题）和 question（问题）与“耐心”搭配不合逻辑。",
+      "evidence_sentence": "She learned that every problem has a (4) ______ if one is patient.",
+      "context_clue": "She learned that every problem has a (4) ______ if one is patient.",
+      "clue_argument": "problem 对应 solution，表示问题有解决办法。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank (5).",
+      "options": ["avoid", "risk", "enjoy", "finish"],
+      "answer": "avoid",
+      "explanation": "avoid 意为“避免”，avoid doing 表示避免做某事。risk（冒险）和 enjoy（享受）与“做出草率选择”搭配不当。",
+      "evidence_sentence": "To (5) ______ making a hasty choice, she decided to research careers carefully.",
+      "context_clue": "To (5) ______ making a hasty choice, she decided to research careers carefully.",
+      "clue_argument": "avoid doing sth 是固定搭配，表示避免做某事。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank (6).",
+      "options": ["value", "waste", "ignore", "refuse"],
+      "answer": "value",
+      "explanation": "value 意为“重视”，在 suggest that sb (should) do 结构中用动词原形。waste（浪费）和 ignore（忽视）与“与专业人士交谈”的积极建议矛盾。",
+      "evidence_sentence": "Her teacher suggested that she (6) ______ every chance to talk with professionals.",
+      "context_clue": "Her teacher suggested that she (6) ______ every chance to talk with professionals.",
+      "clue_argument": "suggest that sb (should) do 表示建议某人做某事，value 符合语境。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank (7).",
+      "options": ["conduct", "conducted", "conducting", "conducts"],
+      "answer": "conducted",
+      "explanation": "conduct 意为“进行”，last month 表示过去，用一般过去时 conducted。conducting 和 conducts 时态不对。",
+      "evidence_sentence": "Last month, she (7) ______ an interview with a young engineer, which helped her understand the field.",
+      "context_clue": "Last month, she (7) ______ an interview with a young engineer, which helped her understand the field.",
+      "clue_argument": "last month 提示一般过去时，conduct 的过去式是 conducted。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank (8).",
+      "options": ["choice", "choose", "chosen", "choosing"],
+      "answer": "choice",
+      "explanation": "choice 意为“选择”，此处作名词，前有 That 修饰。choose 是动词，chosen 是过去分词，choosing 是动名词，均不能直接作主语中心词。",
+      "evidence_sentence": "That (8) ______ gave her confidence.",
+      "context_clue": "That (8) ______ gave her confidence.",
+      "clue_argument": "That 后需要名词，choice 是 choose 的名词形式。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank (9).",
+      "options": ["effort", "efforts", "effortless", "effortlessly"],
+      "answer": "effort",
+      "explanation": "effort 意为“努力”，consistent effort 表示持续的努力，此处作不可数名词。efforts 虽可作复数，但 consistent 常修饰单数不可数名词；effortless 是形容词，effortlessly 是副词。",
+      "evidence_sentence": "She realised that consistent (9) ______ would be needed to reach her goal.",
+      "context_clue": "She realised that consistent (9) ______ would be needed to reach her goal.",
+      "clue_argument": "consistent 修饰名词 effort，表示持续的努力。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank (10).",
+      "options": ["environment", "environments", "environmental", "environmentally"],
+      "answer": "environment",
+      "explanation": "environment 意为“环境”，a supportive environment 表示支持性环境。environments 是复数，但此处指一个环境；environmental 是形容词，environmentally 是副词。",
+      "evidence_sentence": "Only in a supportive (10) ______ can students truly grow.",
+      "context_clue": "Only in a supportive (10) ______ can students truly grow.",
+      "clue_argument": "a supportive 后接单数名词 environment。"
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank (11).",
+      "options": ["experience", "experienced", "experiencing", "experiences"],
+      "answer": "experienced",
+      "explanation": "experience 意为“经历”，此处用被动语态 was experienced by，表示“被……经历”。experienced 是过去分词，构成被动。experiencing 是现在分词，experiences 是第三人称单数，均不符合被动结构。",
+      "evidence_sentence": "She was (11) ______ by many helpful people.",
+      "context_clue": "She was (11) ______ by many helpful people.",
+      "clue_argument": "was ... by 构成被动语态，需用过去分词 experienced。"
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank (12).",
+      "options": ["purpose", "purposes", "purposeful", "purposefully"],
+      "answer": "purpose",
+      "explanation": "purpose 意为“目的”，miss her purpose 表示错过她的目标。purposes 是复数，但此处指一个目的；purposeful 是形容词，purposefully 是副词。",
+      "evidence_sentence": "If she had not explored, she would have missed her (12) ______.",
+      "context_clue": "If she had not explored, she would have missed her (12) ______.",
+      "clue_argument": "her 后接单数名词 purpose，表示她的目

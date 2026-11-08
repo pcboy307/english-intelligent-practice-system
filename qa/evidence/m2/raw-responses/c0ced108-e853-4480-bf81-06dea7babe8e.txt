@@ -1,0 +1,65 @@
+{
+  "passage": "Every year, millions of tons of plastic waste enter the ocean. This pollution harms marine animals. For example, sea turtles often mistake plastic bags for jellyfish and eat them. Scientists say that by 2050, there could be more plastic than fish in the sea. The good news is that people are taking action. In many countries, plastic bags are now banned or taxed. Students are also getting involved. Last month, a classmate organised a beach clean-up. Over 50 students collected more than 200 kilograms of rubbish. The local government praised their effort and promised to install more recycling bins. However, cleaning up is not enough. We must reduce plastic use at the source. Simple actions like carrying a reusable bottle and refusing plastic straws can make a big difference. If everyone plays a part, our oceans can become cleaner and healthier.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Plastic pollution is a serious problem, but actions can help solve it.",
+        "Sea turtles are the only animals harmed by plastic.",
+        "Beach clean-ups are the best solution to plastic pollution.",
+        "Plastic bags should be completely banned worldwide."
+      ],
+      "answer": "Plastic pollution is a serious problem, but actions can help solve it.",
+      "explanation": "文章先指出海洋塑料污染的严重性，然后说明人们正在采取行动，最后强调减少塑料使用的重要性，因此主旨是问题严重但行动可以解决。B项错在“only”，C项错在“best”，D项错在“completely”，均过于绝对。",
+      "evidence_sentence": "Every year, millions of tons of plastic waste enter the ocean.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what do sea turtles often mistake plastic bags for?",
+      "options": [
+        "Jellyfish",
+        "Fish",
+        "Seaweed",
+        "Food wrappers"
+      ],
+      "answer": "Jellyfish",
+      "explanation": "文中明确提到海龟常把塑料袋误认为水母。B项“鱼”和C项“海藻”在文中未提及，D项“食品包装纸”也未出现，均属无中生有。",
+      "evidence_sentence": "For example, sea turtles often mistake plastic bags for jellyfish and eat them.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can be inferred from the passage about the students' beach clean-up?",
+      "options": [
+        "It was supported by the local government.",
+        "It collected over 500 kilograms of rubbish.",
+        "It was organised by a teacher.",
+        "It solved the plastic pollution problem completely."
+      ],
+      "answer": "It was supported by the local government.",
+      "explanation": "文中提到当地政府表扬了他们的努力并承诺安装更多回收箱，由此可推断政府支持这次活动。B项数字错误（应为200公斤），C项组织者是同学而非老师，D项“完全解决”与文意不符。",
+      "evidence_sentence": "The local government praised their effort and promised to install more recycling bins.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"source\" most likely mean in the passage?",
+      "options": [
+        "The place where something begins",
+        "A person who provides information",
+        "A type of plastic material",
+        "A solution to a problem"
+      ],
+      "answer": "The place where something begins",
+      "explanation": "根据上下文“reduce plastic use at the source”指从源头减少塑料使用，因此source意为“来源、起源”。B项“信息提供者”、C项“塑料材料类型”和D项“解决方案”均不符合语境。",
+      "evidence_sentence": "We must reduce plastic use at the source.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

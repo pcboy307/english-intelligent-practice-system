@@ -1,0 +1,95 @@
+{
+  "passage": "Last year, the student joined the school basketball team. He trained hard every day, but in the final match, he missed the last shot and his team lost. He felt awful and wanted to give up. (1) ______ His coach told him that failure was not the end. (2) ______ he had practised more, he might have made that shot. The coach advised him to learn from the mistake instead of running away from it. (3) ______ did he realise that every champion had once failed. He decided (4) ______ even harder for the next season. (5) ______ he had given up then, he would never have improved. This season, he is a better player and a stronger person.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "A. However, his teacher encouraged him to keep going.",
+        "B. Therefore, he stopped playing basketball forever.",
+        "C. For example, he won the next game easily.",
+        "D. In addition, he forgot all about the match.",
+        "E. As a result, he never spoke to his coach again.",
+        "F. Meanwhile, his classmates laughed at him.",
+        "G. Besides, he decided to try a new sport."
+      ],
+      "answer": "A",
+      "explanation": "前文说他想放弃，后文教练鼓励他，因此需要转折并引出鼓励。B和E与后文教练鼓励矛盾；C和D与语境不符。",
+      "evidence_sentence": "",
+      "context_clue": "He felt awful and wanted to give up. (1) ______ His coach told him that failure was not the end.",
+      "clue_argument": "需要转折词引出教练的鼓励，与放弃形成对比。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "A. If",
+        "B. Unless",
+        "C. Although",
+        "D. Because",
+        "E. Whether",
+        "F. Since",
+        "G. While"
+      ],
+      "answer": "A",
+      "explanation": "此处是虚拟条件句，表示与过去事实相反，用If引导。B表示除非，C表示虽然，D表示因为，均不符合逻辑。",
+      "evidence_sentence": "",
+      "context_clue": "(2) ______ he had practised more, he might have made that shot.",
+      "clue_argument": "主句might have made表示与过去事实相反，需要If引导虚拟条件。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "A. Only then",
+        "B. Only when",
+        "C. Only if",
+        "D. Only after",
+        "E. Only because",
+        "F. Only before",
+        "G. Only until"
+      ],
+      "answer": "A",
+      "explanation": "Only then置于句首引起部分倒装，表示“直到那时他才意识到”。B、C、D等需要接从句，而此处是主句倒装。",
+      "evidence_sentence": "",
+      "context_clue": "(3) ______ did he realise that every champion had once failed.",
+      "clue_argument": "倒装结构did he realise提示需要Only then。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "A. to train",
+        "B. training",
+        "C. train",
+        "D. trained",
+        "E. trains",
+        "F. have trained",
+        "G. be training"
+      ],
+      "answer": "A",
+      "explanation": "decide后接不定式to do，表示决定做某事。B是动名词，C是动词原形，D是过去式，均不能直接跟在decide后。",
+      "evidence_sentence": "",
+      "context_clue": "He decided (4) ______ even harder for the next season.",
+      "clue_argument": "decide to do是固定搭配，需要不定式。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "A. If",
+        "B. Unless",
+        "C. Although",
+        "D. Because",
+        "E. Whether",
+        "F. Since",
+        "G. While"
+      ],
+      "answer": "A",
+      "explanation": "此处是虚拟条件句，表示与过去事实相反，用If引导。B表示除非，C表示虽然，D表示因为，均不符合逻辑。",
+      "evidence_sentence": "",
+      "context_clue": "(5) ______ he had given up then, he would never have improved.",
+      "clue_argument": "主句would never have improved表示与过去事实相反，需要If引导虚拟条件。"
+    }
+  ]
+}

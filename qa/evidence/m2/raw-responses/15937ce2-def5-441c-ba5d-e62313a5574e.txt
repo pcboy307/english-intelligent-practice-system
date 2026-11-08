@@ -1,0 +1,95 @@
+{
+  "passage": "Last month, our school held a science fair. Students worked in groups to present projects. (1) They were excited to show their ideas. One group built a small robot. (2) Its ability to move surprised everyone. Another group made a model of a bridge. (3) The bridge was designed by a student named Li Hua. (4) Only then did we realise how creative our classmates were. (5) It was the science fair that made us proud of our school. All students enjoyed the event and learned a lot.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "They were excited to show their ideas.",
+        "He was excited to show his ideas.",
+        "She was excited to show her ideas.",
+        "It was excited to show its ideas.",
+        "We were excited to show our ideas.",
+        "You were excited to show your ideas.",
+        "I was excited to show my ideas."
+      ],
+      "answer": "A",
+      "explanation": "此处指代前文的Students，用They。B和C分别用He和She，指代单个人，与Students不一致。",
+      "evidence_sentence": "Students worked in groups to present projects.",
+      "context_clue": "Students worked in groups to present projects.",
+      "clue_argument": "Students为复数，代词用They。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "Its ability to move surprised everyone.",
+        "His ability to move surprised everyone.",
+        "Her ability to move surprised everyone.",
+        "Their ability to move surprised everyone.",
+        "Our ability to move surprised everyone.",
+        "Your ability to move surprised everyone.",
+        "My ability to move surprised everyone."
+      ],
+      "answer": "A",
+      "explanation": "此处指代前文的a small robot，用Its。B和C分别用His和Her，指代人的性别，与robot不符。",
+      "evidence_sentence": "One group built a small robot.",
+      "context_clue": "One group built a small robot.",
+      "clue_argument": "robot为无生命物体，所有格用Its。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "The bridge was designed by a student named Li Hua.",
+        "The bridge is designed by a student named Li Hua.",
+        "The bridge has designed by a student named Li Hua.",
+        "The bridge will be designed by a student named Li Hua.",
+        "The bridge designs by a student named Li Hua.",
+        "The bridge designed by a student named Li Hua.",
+        "The bridge is designing by a student named Li Hua."
+      ],
+      "answer": "A",
+      "explanation": "桥是被设计的，且发生在过去，用一般过去时的被动语态was designed。B时态错误，C结构错误。",
+      "evidence_sentence": "Another group made a model of a bridge.",
+      "context_clue": "Another group made a model of a bridge.",
+      "clue_argument": "描述过去事件，且bridge与design为被动关系。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "Only then did we realise how creative our classmates were.",
+        "Only then we realised how creative our classmates were.",
+        "Only then we did realise how creative our classmates were.",
+        "Only then realised we how creative our classmates were.",
+        "Only then do we realise how creative our classmates were.",
+        "Only then we realise how creative our classmates were.",
+        "Only then did we realised how creative our classmates were."
+      ],
+      "answer": "A",
+      "explanation": "Only then位于句首，主句用部分倒装，即助动词did提前，动词用原形realise。B未倒装，C助动词位置错误。",
+      "evidence_sentence": "Another group made a model of a bridge.",
+      "context_clue": "Another group made a model of a bridge.",
+      "clue_argument": "Only+状语置于句首，引起部分倒装。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "It was the science fair that made us proud of our school.",
+        "It was the science fair which made us proud of our school.",
+        "It was the science fair who made us proud of our school.",
+        "It was the science fair where made us proud of our school.",
+        "It was the science fair what made us proud of our school.",
+        "It was the science fair when made us proud of our school.",
+        "It was the science fair whose made us proud of our school."
+      ],
+      "answer": "A",
+      "explanation": "强调句型It was...that...，强调the science fair。B用which，C用who，均不符合强调句结构。",
+      "evidence_sentence": "All students enjoyed the event and learned a lot.",
+      "context_clue": "All students enjoyed the event and learned a lot.",
+      "clue_argument": "强调主语the science fair，用that连接。"
+    }
+  ]
+}

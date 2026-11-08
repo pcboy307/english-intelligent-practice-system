@@ -1,0 +1,45 @@
+{
+  "passage": "Online learning has become a big part of education today. Many students use computers or tablets to attend classes from home. Last year, a student named Li Ming tried online learning for the first time. At first, he found it hard to focus because his phone was always nearby. However, his teacher gave him some advice: set a fixed study time and keep the phone in another room. Li Ming followed the advice, and his grades improved. Now he prefers online learning because it saves time and allows him to review lessons easily. What he likes most is that he can pause a video and take notes at his own pace. Only by using online tools wisely can students truly benefit from them. Online learning also helps students in rural areas access good teachers. For example, a girl in a small village can now take English classes from a city teacher. This shows that technology can bring education to more people. However, online learning requires self-discipline. Students must avoid distractions and manage their time well. In conclusion, online learning is a useful tool, but it works best when students are active and responsible.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"focus\" in the passage probably mean?",
+      "options": ["pay attention", "take a break", "give up", "make a call"],
+      "answer": "pay attention",
+      "explanation": "根据上下文，Li Ming 一开始很难集中注意力，因为手机就在旁边，所以 focus 意为“集中注意力”。A 项“pay attention”符合；B 项“take a break”和 C 项“give up”与语境不符。",
+      "evidence_sentence": "At first, he found it hard to focus because his phone was always nearby.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's attitude towards online learning?",
+      "options": ["Supportive but cautious", "Completely opposed", "Uninterested", "Doubtful"],
+      "answer": "Supportive but cautious",
+      "explanation": "作者认为在线学习是有用的工具，但需要学生主动和负责，因此态度是支持但谨慎的。A 项正确；B 项“完全反对”和 C 项“不感兴趣”与文章不符。",
+      "evidence_sentence": "In conclusion, online learning is a useful tool, but it works best when students are active and responsible.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Online learning has advantages but requires self-discipline.", "Online learning is better than traditional learning.", "Students should not use phones during class.", "Teachers should give more advice to students."],
+      "answer": "Online learning has advantages but requires self-discipline.",
+      "explanation": "文章主要讨论了在线学习的好处以及需要自律，因此 A 项概括了全文。B 项“在线学习比传统学习好”文中未比较；C 项只是细节；D 项片面。",
+      "evidence_sentence": "Online learning also helps students in rural areas access good teachers.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, what can students do to benefit from online learning?",
+      "options": ["Use online tools wisely", "Study without any breaks", "Avoid asking teachers for help", "Watch videos without taking notes"],
+      "answer": "Use online tools wisely",
+      "explanation": "文章明确指出只有明智地使用在线工具，学生才能真正受益。A 项正确；B 项“不休息地学习”和 C 项“避免求助老师”文中未提及且不合理。",
+      "evidence_sentence": "Only by using online tools wisely can students truly benefit from them.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

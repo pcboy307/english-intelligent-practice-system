@@ -1,0 +1,1 @@
+{"translations": {"applauded": "鼓掌", "persistence": "坚持", "realized": "意识到", "rhythm": "节奏"}}

@@ -1,0 +1,65 @@
+{
+  "passage": "In a small town, a student named Lily learned about renewable energy. Her teacher explained that wind and solar power can replace coal and oil. Lily was curious, so she started a project to show how a solar panel works. She used a small panel to power a toy car. When the sun shone, the car moved; when clouds covered the sun, it stopped. Lily realised that renewable energy depends on weather. She also learned that solar panels can be recycled, which reduces waste. Her classmate Tom was doubtful at first, but after seeing the car run, he became interested. Together, they designed a model house with solar panels on the roof. The project won a school prize. Lily's teacher said, \"Renewable energy is not just a technology; it is a choice for a better future.\" Lily now believes that small actions can lead to big changes.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about Lily's attitude toward renewable energy after the project?",
+      "options": [
+        "She thinks it is too expensive for common people.",
+        "She believes it is a practical solution for the future.",
+        "She doubts whether it can work in bad weather.",
+        "She prefers to use coal and oil instead."
+      ],
+      "answer": "She believes it is a practical solution for the future.",
+      "explanation": "文章最后Lily说“small actions can lead to big changes”，表明她认为可再生能源是可行的未来解决方案。A和C在文中没有依据，且与她的积极态度矛盾。",
+      "evidence_sentence": "Lily now believes that small actions can lead to big changes.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"recycled\" in the passage most likely mean?",
+      "options": [
+        " thrown away",
+        " reused after processing",
+        " burned for energy",
+        " stored for later use"
+      ],
+      "answer": "reused after processing",
+      "explanation": "根据上下文“solar panels can be recycled, which reduces waste”，recycled意为“回收利用”，即经过处理后再使用。A“扔掉”会增加浪费，与reduce waste矛盾；C“燃烧”不符合太阳能板回收的常识。",
+      "evidence_sentence": "She also learned that solar panels can be recycled, which reduces waste.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Why did Lily start her project?",
+      "options": [
+        "To win a school prize.",
+        "To show how a solar panel works.",
+        "To help her classmate Tom.",
+        "To replace coal and oil in her town."
+      ],
+      "answer": "To show how a solar panel works.",
+      "explanation": "文中明确说“Lily was curious, so she started a project to show how a solar panel works”，因此她开始项目的目的是展示太阳能板如何工作。A获奖是结果而非目的；C帮助同学不是最初目的。",
+      "evidence_sentence": "Lily was curious, so she started a project to show how a solar panel works.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Solar panels are expensive and difficult to make.",
+        "A student learns about renewable energy through a hands-on project.",
+        "Wind power is better than solar power.",
+        "Coal and oil will never run out."
+      ],
+      "answer": "A student learns about renewable energy through a hands-on project.",
+      "explanation": "全文讲述Lily通过制作太阳能玩具车和模型房子来学习可再生能源，并从中获得启发，因此主旨是“一个学生通过动手项目了解可再生能源”。A文中未提及太阳能板昂贵难造；C文中未比较风能和太阳能。",
+      "evidence_sentence": "In a small town, a student named Lily learned about renewable energy.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

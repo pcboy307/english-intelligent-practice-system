@@ -1,0 +1,65 @@
+{
+  "passage": "The old bell tower in our town, which was built in 1890, is the most famous building in the area. It is also the tallest one. For many years, the tower was closed to the public because it was unsafe. Last year, a group of local people decided to repair it. They wanted to save this important part of our history. The work took six months. Today, the tower is open again, and visitors can climb to the top. However, some people worry that too many tourists will harm the old stones. Therefore, the town has made a rule: only fifty people can enter each day. This rule should protect the tower for future generations. I believe it is our duty to keep our local history alive, and the bell tower is a perfect place to start.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about the bell tower from the passage?",
+      "options": [
+        "It was built by the government.",
+        "It is no longer safe to visit.",
+        "It is an important symbol of local history.",
+        "It attracts more than fifty visitors daily."
+      ],
+      "answer": "It is an important symbol of local history.",
+      "explanation": "文章提到当地人修复钟楼是为了“save this important part of our history”，说明它是当地历史的重要象征。A项文中未提及建造者；B项与“the tower is open again”矛盾。",
+      "evidence_sentence": "They wanted to save this important part of our history.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "The word \"harm\" in the passage is closest in meaning to ______.",
+      "options": [
+        "damage",
+        "help",
+        "change",
+        "clean"
+      ],
+      "answer": "damage",
+      "explanation": "“harm”意为“伤害”，与“damage”意思最接近。B项“help”是反义词；C项“change”和D项“clean”与语境不符。",
+      "evidence_sentence": "However, some people worry that too many tourists will harm the old stones.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Why has the town made the rule about the number of visitors?",
+      "options": [
+        "To earn more money from tourists.",
+        "To protect the tower from damage.",
+        "To make the tower more attractive.",
+        "To limit the number of local people."
+      ],
+      "answer": "To protect the tower from damage.",
+      "explanation": "文中明确说“This rule should protect the tower for future generations”，说明规定的目的是保护钟楼。A项赚钱和C项增加吸引力文中未提；D项限制本地人不是目的。",
+      "evidence_sentence": "This rule should protect the tower for future generations.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "The bell tower is the tallest building in the town.",
+        "Local people repaired an old tower to keep history alive.",
+        "Tourists should not visit old buildings.",
+        "The town has made a new rule for visitors."
+      ],
+      "answer": "Local people repaired an old tower to keep history alive.",
+      "explanation": "文章主要讲述当地人修复古老的钟楼以保护历史，并为此制定了规则，因此B项概括了全文主旨。A项只是细节；C项文中未建议游客不去；D项只是部分内容。",
+      "evidence_sentence": "I believe it is our duty to keep our local history alive, and the bell tower is a perfect place to start.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

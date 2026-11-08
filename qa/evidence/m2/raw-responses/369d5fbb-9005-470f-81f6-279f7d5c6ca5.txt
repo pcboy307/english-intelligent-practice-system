@@ -1,0 +1,155 @@
+{
+  "passage": "When Li Hua first entered high school, she felt 1. ______ about everything new. Her teacher, Ms. Wang, noticed this and said, \"It is your attitude that makes you 2. ______, not your grades.\" Li Hua was 3. ______ about the world, so she joined the science club. There she met Zhang Wei, a 4. ______ partner who always finished his tasks on time. 5. ______ was Li Hua to become a leader, so she ran for club president. She worked hard to 6. ______ her goal. At first, she found it hard to 7. ______ to the new environment. Her parents 8. ______ her to keep trying. She was 9. ______ by Zhang Wei to take part in a speech contest. She tried to 10. ______ on her speech, which was about youth. 11. ______, she became more confident. If she had not joined the club, she would not have 12. ______ won the contest. Now she can work 13. ______ and has great 14. ______ in herself. She believes that every student should have the 15. ______ to grow.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank 1.",
+      "options": ["anxious", "angry", "bored", "excited"],
+      "answer": "anxious",
+      "explanation": "根据后文老师安慰她，可知她感到焦虑。A项正确。B项“angry”无根据，C项“bored”与语境不符。",
+      "evidence_sentence": "",
+      "context_clue": "When Li Hua first entered high school, she felt anxious about everything new.",
+      "clue_argument": "后文老师安慰她，说明她焦虑。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank 2.",
+      "options": ["confident", "careful", "kind", "polite"],
+      "answer": "confident",
+      "explanation": "老师强调态度使人自信。A项正确。B项“careful”和C项“kind”不符合语境。",
+      "evidence_sentence": "",
+      "context_clue": "It is your attitude that makes you confident, not your grades.",
+      "clue_argument": "态度使人自信，与成绩无关。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank 3.",
+      "options": ["curious", "afraid", "tired", "sad"],
+      "answer": "curious",
+      "explanation": "因为好奇所以加入科学俱乐部。A项正确。B项“afraid”和C项“tired”与加入俱乐部矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "Li Hua was curious about the world, so she joined the science club.",
+      "clue_argument": "好奇促使她加入科学俱乐部。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank 4.",
+      "options": ["reliable", "lazy", "shy", "strict"],
+      "answer": "reliable",
+      "explanation": "总是按时完成任务说明他可靠。A项正确。B项“lazy”和C项“shy”与描述不符。",
+      "evidence_sentence": "",
+      "context_clue": "There she met Zhang Wei, a reliable partner who always finished his tasks on time.",
+      "clue_argument": "按时完成任务体现可靠。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank 5.",
+      "options": ["ambitious", "lucky", "happy", "safe"],
+      "answer": "ambitious",
+      "explanation": "竞选主席说明她有雄心。A项正确。B项“lucky”和C项“happy”不是竞选的原因。",
+      "evidence_sentence": "",
+      "context_clue": "Ambitious was Li Hua to become a leader, so she ran for club president.",
+      "clue_argument": "有雄心所以竞选主席。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank 6.",
+      "options": ["achieve", "avoid", "forget", "lose"],
+      "answer": "achieve",
+      "explanation": "努力实现目标。A项正确。B项“avoid”和C项“forget”与努力矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "She worked hard to achieve her goal.",
+      "clue_argument": "努力是为了实现目标。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank 7.",
+      "options": ["adapt", "argue", "copy", "hide"],
+      "answer": "adapt",
+      "explanation": "适应新环境。A项正确。B项“argue”和C项“copy”不搭配。",
+      "evidence_sentence": "",
+      "context_clue": "At first, she found it hard to adapt to the new environment.",
+      "clue_argument": "适应新环境是常见挑战。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank 8.",
+      "options": ["encourage", "blame", "punish", "stop"],
+      "answer": "encourage",
+      "explanation": "父母鼓励她坚持。A项正确。B项“blame”和C项“punish”与坚持矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "Her parents encourage her to keep trying.",
+      "clue_argument": "父母鼓励孩子坚持。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank 9.",
+      "options": ["persuade", "warn", "teach", "force"],
+      "answer": "persuade",
+      "explanation": "被说服参加演讲比赛。A项正确。B项“warn”和C项“teach”不符合语境。",
+      "evidence_sentence": "",
+      "context_clue": "She was persuade by Zhang Wei to take part in a speech contest.",
+      "clue_argument": "被说服参加比赛。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank 10.",
+      "options": ["concentrate", "depend", "insist", "spend"],
+      "answer": "concentrate",
+      "explanation": "集中精力于演讲。A项正确。B项“depend”和C项“insist”不搭配。",
+      "evidence_sentence": "",
+      "context_clue": "She tried to concentrate on her speech, which was about youth.",
+      "clue_argument": "集中精力于演讲。"
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank 11.",
+      "options": ["gradually", "suddenly", "luckily", "finally"],
+      "answer": "gradually",
+      "explanation": "逐渐变得自信。A项正确。B项“suddenly”和C项“luckily”不强调过程。",
+      "evidence_sentence": "",
+      "context_clue": "Gradually, she became more confident.",
+      "clue_argument": "自信是逐渐建立的。"
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank 12.",
+      "options": ["eventually", "hardly", "nearly", "quickly"],
+      "answer": "eventually",
+      "explanation": "最终赢得比赛。A项正确。B项“hardly”和C项“nearly”与赢得矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "If she had not joined the club, she would not have eventually won the contest.",
+      "clue_argument": "最终赢得比赛。"
+    },
+    {
+      "question_index": 13,
+      "stem": "Choose the best word for blank 13.",
+      "options": ["independently", "angrily", "carelessly", "slowly"],
+      "answer": "independently",
+      "explanation": "现在她能独立工作。A项正确。B项“angrily”和C项“carelessly”不符合成长主题。",
+      "evidence_sentence": "",
+      "context_clue": "Now she can work independently and has great confidence in herself.",
+      "clue_argument": "成长表现为独立工作。"
+    },
+    {
+      "question_index": 14,
+      "stem": "Choose the best word for blank 14.",
+      "options": ["confidence", "doubt", "fear", "sadness"],
+      "answer": "confidence",
+      "explanation": "对自己有信心。A项正确。B项“doubt”和C项“fear”与积极成长矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "Now she can work independently and has great confidence in herself.",
+      "clue_argument": "成长带来自信。"
+    },
+    {
+      "question_index": 15,
+      "stem": "Choose the best word for blank 15.",
+      "options": ["opportunity", "problem", "reason", "result"],
+      "answer": "opportunity",
+      "explanation": "每个学生都应有成长的机会。A项正确。B项“problem”和C项“reason”不符合语境。",
+      "evidence_sentence": "",
+      "context_clue": "She believes that every student should have the opportunity to grow.",
+      "clue_argument": "成长需要机会。"
+    }
+  ]
+}

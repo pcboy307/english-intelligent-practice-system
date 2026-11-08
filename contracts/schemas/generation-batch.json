@@ -21,6 +21,12 @@
           "explanation": {
             "type": "string",
             "minLength": 1
+          },
+          "invalid": {
+            "type": "boolean"
+          },
+          "invalid_reason": {
+            "type": "string"
           }
         }
       }

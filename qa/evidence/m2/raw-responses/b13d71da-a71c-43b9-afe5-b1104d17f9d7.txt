@@ -1,0 +1,95 @@
+{
+  "passage": "Last month, our school held a science fair. The student and her teacher had prepared for it for weeks. The student wanted to build a small robot that could pick up a ball. (1) It was a simple idea, but it needed careful work. Her teacher advised her to test every part again and again. A classmate helped her cut the plastic pieces. (2) The student was very careful with each step, and the robot slowly took shape. On the day of the fair, the robot was placed on a table in the hall. Many visitors stopped to watch. (3) The robot had been tested many times, so it worked well. (4) Only then did the student feel calm and proud. Her teacher smiled and said, “You have done a great job.” (5) It was the teamwork that made the project a success. The student learned that patience and help from others are the keys to any achievement.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the sentence that best fits blank (1).",
+      "options": [
+        "It was a simple idea, but it needed careful work.",
+        "The robot was very expensive to build.",
+        "Her teacher did not like the idea at first.",
+        "The student decided to give up the project.",
+        "The fair was cancelled because of the rain.",
+        "A classmate borrowed the robot for a day.",
+        "The student forgot to bring her tools."
+      ],
+      "answer": "A",
+      "explanation": "前文说学生想做一个能捡球的小机器人，后文说需要仔细工作，A项“想法简单但需要细心工作”承上启下最连贯。B项与后文“仔细工作”无关，C项与老师建议她反复测试矛盾，因此B、C错误。",
+      "evidence_sentence": "The student wanted to build a small robot that could pick up a ball.",
+      "context_clue": "It was a simple idea, but it needed careful work.",
+      "clue_argument": "前文描述简单想法，后文强调仔细工作，A项直接衔接两者。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the sentence that best fits blank (2).",
+      "options": [
+        "The student was very careful with each step, and the robot slowly took shape.",
+        "The teacher bought a new robot from a shop.",
+        "The classmate broke the robot by accident.",
+        "The student lost interest in the science fair.",
+        "The robot was too heavy to carry.",
+        "The hall was closed for repairs.",
+        "The student asked for more money for the project."
+      ],
+      "answer": "A",
+      "explanation": "前文说同学帮她切塑料片，后文说在展览日机器人被放在桌上，A项“学生每一步都很小心，机器人慢慢成形”使叙事连贯。B项买新机器人与她们自己制作矛盾，C项同学弄坏机器人与后文成功展示矛盾，因此B、C错误。",
+      "evidence_sentence": "A classmate helped her cut the plastic pieces.",
+      "context_clue": "The student was very careful with each step, and the robot slowly took shape.",
+      "clue_argument": "前文同学帮忙，后文机器人成形，A项描述制作过程最合理。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the sentence that best fits blank (3).",
+      "options": [
+        "The robot had been tested many times, so it worked well.",
+        "The robot was still in the classroom.",
+        "The student was too nervous to speak.",
+        "The visitors did not notice the robot.",
+        "The teacher forgot to bring the robot.",
+        "The robot needed more plastic pieces.",
+        "The fair ended before the robot was ready."
+      ],
+      "answer": "A",
+      "explanation": "前文说许多参观者停下来观看，后文说学生感到平静和自豪，A项“机器人已被测试多次，所以运行良好”解释了成功的原因。B项机器人在教室与“放在大厅桌上”矛盾，C项学生太紧张与后文“感到平静”矛盾，因此B、C错误。",
+      "evidence_sentence": "Many visitors stopped to watch.",
+      "context_clue": "The robot had been tested many times, so it worked well.",
+      "clue_argument": "参观者观看需要机器人运行良好，A项给出原因，衔接自然。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the sentence that best fits blank (4).",
+      "options": [
+        "Only then did the student feel calm and proud.",
+        "The student felt calm and proud only then.",
+        "Only the student felt calm and proud.",
+        "The student only then felt calm and proud.",
+        "Then only the student felt calm and proud.",
+        "The student felt only calm and proud then.",
+        "Only then the student felt calm and proud."
+      ],
+      "answer": "A",
+      "explanation": "前文说机器人运行良好，后文老师微笑表扬，A项“直到那时学生才感到平静和自豪”用部分倒装强调时间，符合语境。B项语序不自然且未倒装，C项“只有学生感到平静”改变了句意，因此B、C错误。",
+      "evidence_sentence": "The robot had been tested many times, so it worked well.",
+      "context_clue": "Only then did the student feel calm and proud.",
+      "clue_argument": "机器人成功运行后学生才放松自豪，A项倒装句强调“直到那时”。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the sentence that best fits blank (5).",
+      "options": [
+        "It was the teamwork that made the project a success.",
+        "The teamwork made the project a success.",
+        "It was the project that made the teamwork a success.",
+        "The project was made a success by the teamwork.",
+        "It made the teamwork a successful project.",
+        "The teamwork was made a success by the project.",
+        "It was a success that made the teamwork project."
+      ],
+      "answer": "A",
+      "explanation": "前文老师表扬学生做得好，后文说学生学到耐心和他人帮助是成功的关键，A项“正是团队合作使项目成功”用强调句型突出团队合作，总结全文。B项为普通陈述句，没有强调意味，C项强调对象颠倒，因此B、C错误。",
+      "evidence_sentence": "The student learned that patience and help from others are the keys to any achievement.",
+      "context_clue": "It was the teamwork that made the project a success.",
+      "clue_argument": "后文强调耐心和他人帮助，A项用强调句型突出团队合作，总结最贴切。"
+    }
+  ]
+}

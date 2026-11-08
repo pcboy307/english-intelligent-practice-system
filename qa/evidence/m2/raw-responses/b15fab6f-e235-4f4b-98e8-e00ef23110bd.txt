@@ -1,0 +1,65 @@
+{
+  "passage": "The Spring Festival is the most important festival in China. It usually comes in January or February according to the lunar calendar. Before the festival, families clean their houses and put up red paper-cuts on windows and doors. People also buy new clothes and prepare special food. On the eve of the festival, family members gather for a big dinner. They eat dumplings in the north and rice cakes in the south. After dinner, many people watch a special TV programme and stay up late. At midnight, fireworks light up the sky. On the first day of the new year, children receive red packets from their parents and grandparents. They also visit relatives and friends to wish them a happy new year. The celebration lasts about fifteen days and ends with the Lantern Festival. During the Spring Festival, people try to be with their families. The festival shows the importance of family and the hope for a good year ahead.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the passage mainly about?",
+      "options": [
+        "The history of the Spring Festival.",
+        "How people celebrate the Spring Festival.",
+        "Why children like red packets.",
+        "The food people eat during the Lantern Festival."
+      ],
+      "answer": "How people celebrate the Spring Festival.",
+      "explanation": "文章主要介绍了春节前的准备、年夜饭、看节目、放烟花、拜年等庆祝活动，因此主旨是“人们如何庆祝春节”。A项“春节的历史”文中未提及；D项“元宵节的食物”只是结尾一句，不是全文主旨。",
+      "evidence_sentence": "The Spring Festival is the most important festival in China.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what do children receive on the first day of the new year?",
+      "options": [
+        "New clothes.",
+        "Red packets.",
+        "Rice cakes.",
+        "Fireworks."
+      ],
+      "answer": "Red packets.",
+      "explanation": "文中明确提到“children receive red packets from their parents and grandparents”，因此答案是红包。A项“新衣服”是节前买的，不是孩子在新年第一天收到的；C项“年糕”是年夜饭的食物，不是孩子收到的礼物。",
+      "evidence_sentence": "On the first day of the new year, children receive red packets from their parents and grandparents.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer from the passage about the Spring Festival?",
+      "options": [
+        "It is celebrated only in northern China.",
+        "It lasts for more than a month.",
+        "Family is very important to Chinese people.",
+        "People must watch TV on New Year's Eve."
+      ],
+      "answer": "Family is very important to Chinese people.",
+      "explanation": "文中说“people try to be with their families”和“The festival shows the importance of family”，可以推断家庭对中国人很重要。A项“只在北方庆祝”与文中南北都庆祝矛盾；B项“持续一个多月”与文中“about fifteen days”不符。",
+      "evidence_sentence": "The festival shows the importance of family and the hope for a good year ahead.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"gather\" in the passage probably mean?",
+      "options": [
+        "Come together.",
+        "Cook food.",
+        "Clean houses.",
+        "Watch TV."
+      ],
+      "answer": "Come together.",
+      "explanation": "根据上下文“family members gather for a big dinner”可知，家人聚在一起吃年夜饭，因此gather意为“聚集”。B项“做饭”和C项“打扫房子”都是节前准备活动，不是gather的意思。",
+      "evidence_sentence": "On the eve of the festival, family members gather for a big dinner.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

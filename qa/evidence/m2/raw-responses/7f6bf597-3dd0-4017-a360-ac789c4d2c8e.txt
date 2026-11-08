@@ -1,0 +1,65 @@
+{
+  "passage": "Last spring, the student joined a volunteer group at her school. The group visits older people in the community every Saturday. At first, the student was nervous because she did not know what to say. Her teacher advised her to be patient and to listen more than she talked. The student followed this advice. She sat with an older woman and asked about her life. The woman told stories about her childhood, and the student listened carefully. Over time, they became friends. The student learned that many older people feel lonely, and she wanted to help. She also invited a classmate to join the group. The classmate was shy, but the student encouraged him. Together, they organised a small concert for the community centre. They sang simple songs and the older people smiled and clapped. The student felt happy when she saw their smiles. She realised that volunteering is not only about giving time. It is also about building relationships and showing care. Now, the student volunteers every weekend. She says the experience has changed her life and made her more confident.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the volunteer group do every Saturday?",
+      "options": [
+        "They visit older people in the community.",
+        "They clean the school playground.",
+        "They collect money for charity.",
+        "They teach children to sing."
+      ],
+      "answer": "They visit older people in the community.",
+      "explanation": "文章明确提到小组每周六拜访社区老人，因此A正确。B和C在文中没有提及，属于无中生有；D虽然提到唱歌，但对象是老人而非儿童。",
+      "evidence_sentence": "The group visits older people in the community every Saturday.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about the student from the passage?",
+      "options": [
+        "She was confident from the start.",
+        "She has become more confident through volunteering.",
+        "She only volunteers to get school awards.",
+        "She prefers to volunteer alone."
+      ],
+      "answer": "She has become more confident through volunteering.",
+      "explanation": "文章最后一句说志愿经历让她更自信，因此B正确。A与文中“at first, the student was nervous”矛盾；C文中未提及为了获奖；D与文中邀请同学一起参加矛盾。",
+      "evidence_sentence": "She says the experience has changed her life and made her more confident.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"encouraged\" most likely mean in the passage?",
+      "options": [
+        "Helped someone feel more confident.",
+        "Asked someone to leave.",
+        "Praised someone for winning.",
+        "Warned someone of danger."
+      ],
+      "answer": "Helped someone feel more confident.",
+      "explanation": "根据上下文，同学很害羞，学生鼓励他，使他能参与活动，因此A最符合。B“叫某人离开”与语境相反；C“因获胜而表扬”文中没有比赛获胜的信息；D“警告危险”与语境无关。",
+      "evidence_sentence": "The classmate was shy, but the student encouraged him.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To explain how to organise a concert.",
+        "To show the value of volunteering.",
+        "To describe a typical school day.",
+        "To compare different volunteer groups."
+      ],
+      "answer": "To show the value of volunteering.",
+      "explanation": "文章通过学生志愿服务的经历，说明志愿服务不仅付出时间，还能建立关系、带来改变，因此B正确。A只是文中一个细节，不是主旨；C文章重点不是学校日常；D没有比较不同志愿小组，属于无中生有。",
+      "evidence_sentence": "She realised that volunteering is not only about giving time. It is also about building relationships and showing care.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

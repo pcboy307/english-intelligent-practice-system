@@ -1,0 +1,1 @@
+{"translations": {"contest": "比赛", "pace": "步伐"}}

@@ -1,0 +1,46 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative about a student's visit to a museum, with each sentence logically connected to the next.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "The passive past tense 'was built' correctly matches the time expression and the subject 'museum'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "The simple present 'attracts' is required for the habitual action indicated by 'Every year' with a third-person singular subject.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "B",
+      "reason": "'What' correctly introduces the subject clause and acts as its subject, whereas other options cannot fulfill both roles.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "'That' properly introduces a complete object clause after 'explained' without adding extra meaning.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "'Which' is the correct relative pronoun for a non-human antecedent acting as the subject of the relative clause.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

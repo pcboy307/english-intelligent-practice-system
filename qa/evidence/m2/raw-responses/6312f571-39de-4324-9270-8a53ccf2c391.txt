@@ -1,0 +1,38 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a unified text about the importance of sleep, using Li Hua as an example.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "He has learned that good sleep supports his learning.",
+      "reason": "The passage explicitly shows Li Hua's improved grades and energy after changing his sleep habits, directly supporting this inference.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "essential",
+      "reason": "In context, 'basic' means fundamental or necessary, which is synonymous with 'essential'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "To explain why sleep matters and encourage healthy sleep habits.",
+      "reason": "The passage consistently emphasizes the benefits of sleep and ends with a call to ensure adequate sleep, aligning with this purpose.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "Sleep is a necessary process that helps the brain and body.",
+      "reason": "The passage's central theme is the necessity and benefits of sleep for brain and body, as stated in the opening and closing paragraphs.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "passage": "When the student entered high school, she felt (1) ______ about the new environment. Her teacher noticed this and said it was (2) ______ practice that helped her improve. The student was (3) ______ about everything around her, so she asked many questions. A classmate was (4) ______ and always ready to help. The student was (5) ______ to succeed, and she worked hard. She wanted to (6) ______ her goals. At first, she found it hard to (7) ______ to the new schedule. Her teacher would (8) ______ her to keep going. She was (9) ______ by her parents to join a club. The club, (10) ______ met every Friday, helped her (11) ______ on her studies. (12) ______, she learned to manage her time. She began to work (13) ______ and gained (14) ______. If she had not joined the club, she would not have found this (15) ______ to grow.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank (1).",
+      "options": ["anxious", "angry", "bored", "excited"],
+      "answer": "anxious",
+      "explanation": "根据后文老师注意到并安慰她，说明她感到焦虑。angry和bored与语境不符。",
+      "evidence_sentence": "",
+      "context_clue": "When the student entered high school, she felt (1) ______ about the new environment.",
+      "clue_argument": "后文老师注意到并安慰她，说明她感到焦虑。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank (2).",
+      "options": ["confident", "careful", "constant", "casual"],
+      "answer": "confident",
+      "explanation": "老师的话让她自信，与后文她提问和努力一致。careful和casual不表示自信。",
+      "evidence_sentence": "",
+      "context_clue": "Her teacher noticed this and said it was (2) ______ practice that helped her improve.",
+      "clue_argument": "老师的话让她自信，与后文她提问和努力一致。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank (3).",
+      "options": ["curious", "nervous", "silent", "serious"],
+      "answer": "curious",
+      "explanation": "她问很多问题，说明她好奇。nervous和silent与提问行为矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "The student was (3) ______ about everything around her, so she asked many questions.",
+      "clue_argument": "她问很多问题，说明她好奇。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank (4).",
+      "options": ["reliable", "funny", "lazy", "shy"],
+      "answer": "reliable",
+      "explanation": "同学总是乐于助人，说明他可靠。funny和lazy与乐于助人不直接相关。",
+      "evidence_sentence": "",
+      "context_clue": "A classmate was (4) ______ and always ready to help.",
+      "clue_argument": "同学总是乐于助人，说明他可靠。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank (5).",
+      "options": ["ambitious", "afraid", "content", "proud"],
+      "answer": "ambitious",
+      "explanation": "她努力工作想成功，说明她有雄心。afraid和content与努力成功矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "The student was (5) ______ to succeed, and she worked hard.",
+      "clue_argument": "她努力工作想成功，说明她有雄心。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank (6).",
+      "options": ["achieve", "avoid", "forget", "give"],
+      "answer": "achieve",
+      "explanation": "她努力以达成目标。avoid和forget与目标搭配不当。",
+      "evidence_sentence": "",
+      "context_clue": "She wanted to (6) ______ her goals.",
+      "clue_argument": "她努力以达成目标。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank (7).",
+      "options": ["adapt", "adopt", "argue", "attend"],
+      "answer": "adapt",
+      "explanation": "适应新日程用adapt。adopt和argue不表示适应。",
+      "evidence_sentence": "",
+      "context_clue": "At first, she found it hard to (7) ______ to the new schedule.",
+      "clue_argument": "适应新日程用adapt。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank (8).",
+      "options": ["encourage", "force", "order", "warn"],
+      "answer": "encourage",
+      "explanation": "老师鼓励她坚持。force和order语气过强，不符合老师支持的态度。",
+      "evidence_sentence": "",
+      "context_clue": "Her teacher would (8) ______ her to keep going.",
+      "clue_argument": "老师鼓励她坚持。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank (9).",
+      "options": ["persuade", "allow", "remind", "teach"],
+      "answer": "persuade",
+      "explanation": "父母说服她加入社团。allow和remind不表示说服。",
+      "evidence_sentence": "",
+      "context_clue": "She was (9) ______ by her parents to join a club.",
+      "clue_argument": "父母说服她加入社团。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank (10).",
+      "options": ["concentrate", "connect", "compete", "continue"],
+      "answer": "concentrate",
+      "explanation": "社团帮助她集中精力学习。connect和compete不表示集中注意力。",
+      "evidence_sentence": "",
+      "context_clue": "The club, (10) ______ met every Friday, helped her (11) ______ on her studies.",
+      "clue_argument": "社团帮助她集中精力学习。"
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank (11).",
+      "options": ["gradually", "suddenly", "finally", "immediately"],
+      "answer": "gradually",
+      "explanation": "她逐渐学会管理时间。suddenly和immediately与逐渐过程矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "(12) ______, she learned to manage her time.",
+      "clue_argument": "她逐渐学会管理时间。"
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank (12).",
+      "options": ["eventually", "actually", "especially", "exactly"],
+      "answer": "eventually",
+      "explanation": "最终她学会了管理时间。actually和especially不表示最终结果。",
+      "evidence_sentence": "",
+      "context_clue": "(12) ______, she learned to manage her time.",
+      "clue_argument": "最终她学会了管理时间。"
+    },
+    {
+      "question_index": 13,
+      "stem": "Choose the best word for blank (13).",
+      "options": ["independently", "carefully", "quickly", "quietly"],
+      "answer": "independently",
+      "explanation": "她开始独立工作。carefully和quickly不强调独立性。",
+      "evidence_sentence": "",
+      "context_clue": "She began to work (13) ______ and gained (14) ______.",
+      "clue_argument": "她开始独立工作。"
+    },
+    {
+      "question_index": 14,
+      "stem": "Choose the best word for blank (14).",
+      "options": ["confidence", "courage", "experience", "knowledge"],
+      "answer": "confidence",
+      "explanation": "独立工作使她获得自信。courage和knowledge与上下文不符。",
+      "evidence_sentence": "",
+      "context_clue": "She began to work (13) ______ and gained (14) ______.",
+      "clue_argument": "独立工作使她获得自信。"
+    },
+    {
+      "question_index": 15,
+      "stem": "Choose the best word for blank (15).",
+      "options": ["opportunity", "challenge", "choice", "chance"],
+      "answer": "opportunity",
+      "explanation": "加入社团给了她成长的机会。challenge和choice不表示机会。",
+      "evidence_sentence": "",
+      "context_clue": "If she had not joined the club, she would not have found this (15) ______ to grow.",
+      "clue_argument": "加入社团给了她成长的机会。"
+    }
+  ]
+}

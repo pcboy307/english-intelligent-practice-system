@@ -1,0 +1,38 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a connected narrative about a student's role in helping her town adopt solar energy.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "She helped change people's opinions.",
+      "reason": "The evidence sentence directly states that after her presentation, many people changed their minds, supporting this inference.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "advantages",
+      "reason": "The context lists positive outcomes like reducing bills and creating jobs, making 'advantages' the clear meaning.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "To help the community understand the benefits.",
+      "reason": "The passage implies her goal was to inform the community, leading to changed minds, which aligns with this option.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "A student helps her town accept renewable energy.",
+      "reason": "The final sentence summarizes the student's pride in helping her community accept a renewable future, matching this main idea.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

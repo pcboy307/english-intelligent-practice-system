@@ -1,0 +1,55 @@
+{
+  "passage": "Last spring, the student visited the city museum with her teacher and a classmate. The museum was built in 1958 and (1) it has been repaired twice since then, it still looks old but beautiful. Before the trip, the student had read a book about the museum. The book said that the museum (2) many ancient objects from the Tang Dynasty. When they arrived, the teacher told them that (3) was the Tang gallery that she loved most. The student was surprised to learn (4) the museum had over 30,000 objects. She also saw a famous painting (5) was painted by a local artist. The teacher explained that the painting showed a busy market. The classmate took notes and asked many questions. After the visit, the student wrote a report about what she had learned. She hopes to go back again next year.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank (1).",
+      "options": ["A. Although", "B. Because", "C. So", "D. But", "E. If", "F. When", "G. Unless"],
+      "answer": "A",
+      "explanation": "句子前后为让步关系：博物馆虽旧但依然美丽，因此用 Although。B 项 Because 表原因，逻辑不通；C 项 So 表结果，与后文 still 矛盾。",
+      "evidence_sentence": "The museum was built in 1958 and (1) it has been repaired twice since then, it still looks old but beautiful.",
+      "context_clue": "The museum was built in 1958 and (1) it has been repaired twice since then, it still looks old but beautiful.",
+      "clue_argument": "前后句意转折，表示“虽然……但是……”，选 Although。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank (2).",
+      "options": ["A. collects", "B. collected", "C. will collect", "D. is collecting", "E. has collected", "F. was collecting", "G. collect"],
+      "answer": "A",
+      "explanation": "书里介绍博物馆的客观事实，用一般现在时 collects。B 项 collected 为过去时，与书中介绍事实不符；C 项 will collect 表将来，也不符合语境。",
+      "evidence_sentence": "The book said that the museum (2) many ancient objects from the Tang Dynasty.",
+      "context_clue": "The book said that the museum (2) many ancient objects from the Tang Dynasty.",
+      "clue_argument": "介绍博物馆的常态事实，用一般现在时。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank (3).",
+      "options": ["A. this", "B. that", "C. it", "D. there", "E. here", "F. one", "G. which"],
+      "answer": "C",
+      "explanation": "强调句型 It was ... that ... 中，被强调部分 the Tang gallery 后用 it 指代。A 项 this 不能用于强调句；B 项 that 位置错误，此处需要 it 作形式主语。",
+      "evidence_sentence": "When they arrived, the teacher told them that (3) was the Tang gallery that she loved most.",
+      "context_clue": "When they arrived, the teacher told them that (3) was the Tang gallery that she loved most.",
+      "clue_argument": "强调句型 It was ... that ... 中缺 it。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank (4).",
+      "options": ["A. what", "B. that", "C. whether", "D. if", "E. which", "F. who", "G. how"],
+      "answer": "B",
+      "explanation": "learn 后接宾语从句，从句意思完整，用 that 引导。A 项 what 在从句中作成分，但此处从句不缺成分；C 项 whether 表“是否”，与句意不符。",
+      "evidence_sentence": "The student was surprised to learn (4) the museum had over 30,000 objects.",
+      "context_clue": "The student was surprised to learn (4) the museum had over 30,000 objects.",
+      "clue_argument": "宾语从句不缺成分，用 that 引导。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank (5).",
+      "options": ["A. who", "B. whom", "C. whose", "D. which", "E. what", "F. where", "G. when"],
+      "answer": "D",
+      "explanation": "先行词 a famous painting 指物，定语从句中缺主语，用 which。A 项 who 指人，不能指物；C 项 whose 表所属，此处不适用。",
+      "evidence_sentence": "She also saw a famous painting (5) was painted by a local artist.",
+      "context_clue": "She also saw a famous painting (5) was painted by a local artist.",
+      "clue_argument": "先行词指物，从句缺主语，用 which。"
+    }
+  ]
+}

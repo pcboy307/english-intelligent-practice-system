@@ -1,0 +1,45 @@
+{
+  "passage": "In today's classrooms, AI tools are becoming common. The student uses an AI app to practise English. Her teacher, who has studied technology in education, explains that AI can offer quick feedback. A classmate, however, worries that students might depend on AI too much. Last month, the student used an AI writing helper to check her essay. The app suggested many changes, and she accepted them without thinking. Her teacher noticed this and said, \"If you always accept AI's advice without question, you will not develop your own ability.\" The student realised her mistake. She now uses AI only to check grammar and vocabulary. She writes her first draft alone, then asks the app for ideas. The teacher is pleased with this balanced approach. She believes that AI should be a tool, not a master. The classmate agrees and says, \"We should use AI to help us learn, not to do the learning for us.\" The school has started a club where students discuss how to use AI wisely. The student joined the club and now helps others. She feels more confident in her learning. AI is powerful, but human judgment is still the key.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"accepted\" in the passage most likely mean?",
+      "options": ["refused", "took", "ignored", "changed"],
+      "answer": "took",
+      "explanation": "此处accepted意为“接受”，与took意思相近。refused（拒绝）和ignored（忽视）与上下文矛盾，因为学生不加思考地接受了建议。",
+      "evidence_sentence": "The app suggested many changes, and she accepted them without thinking.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the teacher's attitude towards using AI in learning?",
+      "options": ["She thinks AI should be avoided completely.", "She believes AI is more important than teachers.", "She supports using AI as a helpful tool with caution.", "She is unsure about the benefits of AI."],
+      "answer": "She supports using AI as a helpful tool with caution.",
+      "explanation": "老师认为AI应作为工具而非主人，并赞赏平衡使用的方法，说明她支持谨慎使用AI。完全避免和认为AI比老师更重要都是错误的，因为老师强调人类判断的重要性。",
+      "evidence_sentence": "She believes that AI should be a tool, not a master.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["AI can replace teachers in the classroom.", "Students should use AI wisely to support their learning.", "AI apps are not useful for learning English.", "The student stopped using AI completely."],
+      "answer": "Students should use AI wisely to support their learning.",
+      "explanation": "文章通过学生使用AI的经历，强调应明智地使用AI来辅助学习。AI取代老师和AI无用都是错误的，因为文章提倡平衡使用，而非完全放弃。",
+      "evidence_sentence": "She now uses AI only to check grammar and vocabulary.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, what does the classmate suggest?",
+      "options": ["Students should let AI do all the learning.", "AI should be used to help learning, not to replace it.", "AI is too dangerous to use in schools.", "Teachers should not use AI at all."],
+      "answer": "AI should be used to help learning, not to replace it.",
+      "explanation": "同学说“我们应该用AI帮助学习，而不是让它代替学习”，即AI应辅助而非替代学习。让AI做所有学习和AI太危险都不符合原文。",
+      "evidence_sentence": "We should use AI to help us learn, not to do the learning for us.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "passage": "Sustainable tourism means travelling in a way that protects nature and helps local people. Last summer, a student and her teacher visited a small island. They chose a local guesthouse, not a big hotel. The guesthouse used solar power and served food from nearby farms. The student noticed that the owner gave jobs to many villagers. \"It is this small business that keeps our money in the community,\" the owner said. The teacher explained that sustainable tourism is not just about the environment; it also supports local culture and fair pay. The student learned that even a simple choice, like buying a handmade basket, can make a difference. On the last day, they joined a beach clean-up with other tourists. The student felt proud. She realised that travel can be a force for good when we think about the people and places we visit. Now she wants to share this idea with her classmates. She believes that small actions, added together, can protect beautiful places for future generations.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about the owner's attitude toward the guesthouse?",
+      "options": [
+        "The owner thinks it is just a way to make money.",
+        "The owner believes it helps the local community.",
+        "The owner wants to sell the guesthouse soon.",
+        "The owner thinks tourists should stay in big hotels."
+      ],
+      "answer": "The owner believes it helps the local community.",
+      "explanation": "从店主的话“It is this small business that keeps our money in the community”可以推断，店主认为这家小生意有助于当地社区。A项说只是为了赚钱，与店主强调社区受益不符；D项说游客应住大酒店，与文章选择家庭旅馆的做法相反。",
+      "evidence_sentence": "\"It is this small business that keeps our money in the community,\" the owner said.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"force\" in the passage most probably mean?",
+      "options": [
+        "A group of soldiers.",
+        "Physical strength.",
+        "A powerful influence.",
+        "A natural phenomenon."
+      ],
+      "answer": "A powerful influence.",
+      "explanation": "根据上下文“travel can be a force for good”，这里force意为“强大的影响力”，即旅游可以成为一股向善的力量。A项“一群士兵”和B项“体力”都不符合语境，因为文章讨论的是旅游的积极影响。",
+      "evidence_sentence": "She realised that travel can be a force for good when we think about the people and places we visit.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To persuade readers to travel more often.",
+        "To explain what sustainable tourism is and its benefits.",
+        "To describe a beautiful island in detail.",
+        "To warn readers about the dangers of tourism."
+      ],
+      "answer": "To explain what sustainable tourism is and its benefits.",
+      "explanation": "文章通过学生和老师的经历，解释了可持续旅游的含义及其对社区和环境的益处，因此主要目的是解释说明。A项“说服读者多旅游”不是重点；D项“警告旅游的危险”文中未提及。",
+      "evidence_sentence": "The teacher explained that sustainable tourism is not just about the environment; it also supports local culture and fair pay.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "Which of the following best states the main idea of the passage?",
+      "options": [
+        "Sustainable tourism can protect places and help local people.",
+        "Big hotels are always bad for the environment.",
+        "Students should not travel during summer holidays.",
+        "Beach clean-ups are the best way to help the environment."
+      ],
+      "answer": "Sustainable tourism can protect places and help local people.",
+      "explanation": "全文围绕可持续旅游展开，强调它既能保护环境又能帮助当地社区，因此A项最能概括主旨。B项“大酒店总是不好”过于绝对且非重点；D项“海滩清理是最好的方式”只是文中一个例子，不是主旨。",
+      "evidence_sentence": "Sustainable tourism means travelling in a way that protects nature and helps local people.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

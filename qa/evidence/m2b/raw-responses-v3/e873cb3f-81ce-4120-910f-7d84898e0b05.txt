@@ -1,0 +1,217 @@
+{
+  "coherence": {
+    "verdict": "coherent",
+    "characters_consistent": true,
+    "timeline_present": true,
+    "connections_present": true,
+    "reason": "The passage follows a student and her classmate over a term, with consistent characters (student, teacher, classmate) and a clear timeline from start to end. Sentences are connected through cause-effect (worry to help), progressive improvement, and repeated references to support and effort."
+  },
+  "items": [
+    {
+      "question_index": 1,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "anxious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "exact",
+          "reason": "Fits the blank as 'felt anxious about' is a standard collocation and matches the worry mentioned in the clue."
+        },
+        {
+          "option_index": 2,
+          "option": "uneasy",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Similar meaning but milder than 'anxious'; the clue's 'worry' suggests a stronger feeling."
+        },
+        {
+          "option_index": 3,
+          "option": "concerned",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Close in meaning but less intense; 'concerned' does not fully capture the worry implied."
+        },
+        {
+          "option_index": 4,
+          "option": "restless",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "unrelated",
+          "reason": "Means unable to stay still, not worried about an exam; semantically incorrect."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "direct_lexical_relationship": false,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue 'Her teacher noticed the worry' directly indicates the feeling of worry, which 'anxious' captures; 'uneasy' and 'concerned' are milder, and 'restless' is unrelated."
+      },
+      "answer_collocation": {
+        "phrase": "anxious",
+        "standard": true,
+        "reason": "'Felt anxious about' is a standard English collocation."
+      }
+    },
+    {
+      "question_index": 2,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "confident",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "exact",
+          "reason": "Fits as 'feel more confident' is idiomatic and contrasts with the initial worry."
+        },
+        {
+          "option_index": 2,
+          "option": "assured",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": false,
+          "relation_to_answer": "near_synonym",
+          "reason": "Grammatically possible but 'feel more assured' is less idiomatic than 'confident' in this context."
+        },
+        {
+          "option_index": 3,
+          "option": "hopeful",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Similar but focuses on expecting good outcomes rather than self-belief."
+        },
+        {
+          "option_index": 4,
+          "option": "optimistic",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Similar but more about general positivity than confidence in one's ability."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "direct_lexical_relationship": false,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue shows the student was worried, so the teacher helped her feel the opposite; 'confident' is the direct opposite of worry about one's ability, while others are less precise."
+      },
+      "answer_collocation": {
+        "phrase": "confident",
+        "standard": true,
+        "reason": "'Feel more confident' is a standard expression."
+      }
+    },
+    {
+      "question_index": 3,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "curious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "exact",
+          "reason": "Fits as 'always curious about new subjects' and matches asking questions."
+        },
+        {
+          "option_index": 2,
+          "option": "inquisitive",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Very close in meaning but slightly more formal and less common in this context."
+        },
+        {
+          "option_index": 3,
+          "option": "interested",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Similar but weaker; 'interested' does not imply the active questioning described."
+        },
+        {
+          "option_index": 4,
+          "option": "attentive",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "unrelated",
+          "reason": "Means paying attention, not having a desire to learn; semantically incorrect."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "direct_lexical_relationship": false,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue about asking many thoughtful questions directly indicates curiosity; 'inquisitive' is close but less precise, 'interested' is too weak, and 'attentive' is unrelated."
+      },
+      "answer_collocation": {
+        "phrase": "curious",
+        "standard": true,
+        "reason": "'Always curious about' is a standard phrase."
+      }
+    },
+    {
+      "question_index": 4,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "reliable",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "exact",
+          "reason": "Fits as 'a reliable friend' who keeps promises."
+        },
+        {
+          "option_index": 2,
+          "option": "dependable",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Very close in meaning but 'reliable' is more commonly used for a friend."
+        },
+        {
+          "option_index": 3,
+          "option": "trustworthy",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Similar but focuses on honesty rather than dependability in keeping promises."
+        },
+        {
+          "option_index": 4,
+          "option": "consistent",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "unrelated",
+          "reason": "Means unchanging, not necessarily trustworthy; semantically incorrect."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "direct_lexical_relationship": false,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue about steady effort and successful futures supports reliability; 'dependable' and 'trustworthy' are close but less precise, and 'consistent' is unrelated."
+      },
+      "answer_collocation": {
+        "phrase": "r

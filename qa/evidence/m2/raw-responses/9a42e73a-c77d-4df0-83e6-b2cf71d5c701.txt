@@ -1,0 +1,1 @@
+{"translations": {"couplets": "对联", "unable": "无法"}}

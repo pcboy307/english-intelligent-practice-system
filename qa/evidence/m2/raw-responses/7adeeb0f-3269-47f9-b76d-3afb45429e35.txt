@@ -1,0 +1,55 @@
+{
+  "passage": "Last Saturday, the student and her classmate visited the city museum. The museum (1) ______ by thousands of people every year. It is famous for its ancient art. The student was excited because she (2) ______ about the museum for months. Her classmate had told her that the museum was amazing. (3) ______ the student liked most was the collection of old paintings. She spent a long time looking at them. The guide explained (4) ______ the paintings were created hundreds of years ago. The student listened carefully and took notes. She also learned about the history of the city. The museum has a special room (5) ______ contains many old books. The student found this room very interesting. After the visit, she decided to come back again. She wants to learn more about history. The museum is a wonderful place for learning.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank (1).",
+      "options": ["A. is visited", "B. was visited", "C. has visited", "D. will visit", "E. visiting", "F. to visit", "G. visit"],
+      "answer": "A",
+      "explanation": "此处描述博物馆每年被成千上万人参观，应用一般现在时被动语态。B项为一般过去时被动，与every year不符；C项为主动语态，主语museum是参观对象，故排除。",
+      "evidence_sentence": "The museum (1) ______ by thousands of people every year.",
+      "context_clue": "The museum (1) ______ by thousands of people every year.",
+      "clue_argument": "every year表明一般现在时，by thousands of people表明被动语态。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank (2).",
+      "options": ["A. hears", "B. heard", "C. has heard", "D. had heard", "E. is hearing", "F. will hear", "G. hearing"],
+      "answer": "D",
+      "explanation": "主句was excited为过去时，从句中“听说”发生在过去之前，且for months表示持续，应用过去完成时。A项一般现在时与过去语境不符；C项现在完成时与过去时不一致，故排除。",
+      "evidence_sentence": "The student was excited because she (2) ______ about the museum for months.",
+      "context_clue": "The student was excited because she (2) ______ about the museum for months.",
+      "clue_argument": "主句was excited为过去时，for months表示持续到过去，故用过去完成时。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank (3).",
+      "options": ["A. That", "B. What", "C. Which", "D. Who", "E. It", "F. This", "G. Whether"],
+      "answer": "B",
+      "explanation": "此处为主语从句，从句中liked缺少宾语，应用what引导。A项that引导主语从句时不作成分，此处需要作宾语；C项which意为“哪一个”，与句意不符，故排除。",
+      "evidence_sentence": "(3) ______ the student liked most was the collection of old paintings.",
+      "context_clue": "(3) ______ the student liked most was the collection of old paintings.",
+      "clue_argument": "从句中liked缺宾语，且句意为“学生最喜欢的东西”，故用what。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank (4).",
+      "options": ["A. that", "B. what", "C. if", "D. whether", "E. which", "F. when", "G. why"],
+      "answer": "A",
+      "explanation": "explain后接宾语从句，从句句意完整，不缺成分，应用that引导。B项what需在从句中作成分；C项if表示“是否”，与句意不符，故排除。",
+      "evidence_sentence": "The guide explained (4) ______ the paintings were created hundreds of years ago.",
+      "context_clue": "The guide explained (4) ______ the paintings were created hundreds of years ago.",
+      "clue_argument": "从句结构完整，不缺成分，故用that引导宾语从句。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank (5).",
+      "options": ["A. who", "B. whom", "C. whose", "D. which", "E. what", "F. where", "G. when"],
+      "answer": "D",
+      "explanation": "先行词room为物，在定语从句中作主语，应用which引导。A项who指人；F项where在从句中作地点状语，此处从句缺主语，故排除。",
+      "evidence_sentence": "The museum has a special room (5) ______ contains many old books.",
+      "context_clue": "The museum has a special room (5) ______ contains many old books.",
+      "clue_argument": "先行词room为物，从句缺主语，故用which。"
+    }
+  ]
+}

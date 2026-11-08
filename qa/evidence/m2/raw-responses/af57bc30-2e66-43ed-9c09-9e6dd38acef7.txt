@@ -1,0 +1,65 @@
+{
+  "passage": "When Maya Chen, a high school junior, first volunteered at the local food bank, she expected to sort cans and stack boxes. Instead, she was handed a clipboard and asked to phone donors. At first she felt nervous, but after a week she was calling businesses with confidence. Her supervisor noticed her skill and put her in charge of a small team of student volunteers. Maya soon learned that the food bank relied on regular donations, so she started a monthly giving program at her school. The program grew quickly, and within three months it had collected enough money to buy a new delivery van. Maya's work was recognized by the city council, and she received a youth service award. Looking back, she says the experience taught her that volunteering is not just about giving time; it is about finding where your skills can make the biggest difference.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What was Maya's first task at the food bank?",
+      "options": [
+        "Sorting cans and stacking boxes",
+        "Phoning donors",
+        "Driving a delivery van",
+        "Managing a team"
+      ],
+      "answer": "Phoning donors",
+      "explanation": "文章第二句明确说明她被要求打电话给捐赠者，而不是整理罐头。A项是她原本以为要做的事，C项是后来才有的送货车，D项是她后来才负责的团队管理，因此A、C、D均错误。",
+      "evidence_sentence": "Instead, she was handed a clipboard and asked to phone donors.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can be inferred about Maya's monthly giving program?",
+      "options": [
+        "It was started by the city council.",
+        "It collected enough money for a new van in three months.",
+        "It failed because students were not interested.",
+        "It was a one-time donation event."
+      ],
+      "answer": "It collected enough money for a new van in three months.",
+      "explanation": "文中提到该项目在三个月内筹集了足够的钱购买新送货车，因此可以推断其成效显著。A项错误，因为项目是Maya发起的，不是市议会；C项与原文相反；D项错误，因为该项目是每月捐赠计划，不是一次性活动。",
+      "evidence_sentence": "The program grew quickly, and within three months it had collected enough money to buy a new delivery van.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "The word \"relied on\" in the passage is closest in meaning to ______.",
+      "options": [
+        "depended on",
+        "gave up",
+        "looked after",
+        "took over"
+      ],
+      "answer": "depended on",
+      "explanation": "“relied on”意为“依赖”，与“depended on”同义，文中指食物银行依赖定期捐赠。B项“放弃”、C项“照顾”、D项“接管”均不符合语境，因此错误。",
+      "evidence_sentence": "Maya soon learned that the food bank relied on regular donations, so she started a monthly giving program at her school.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the author's main purpose in writing the passage?",
+      "options": [
+        "To criticize the food bank's management",
+        "To show how volunteering can match skills to needs",
+        "To explain how to start a food bank",
+        "To compare different volunteer programs"
+      ],
+      "answer": "To show how volunteering can match skills to needs",
+      "explanation": "文章通过Maya的经历说明志愿服务不仅是付出时间，更是找到能发挥自己技能的地方，因此作者的主要目的是展示如何将技能与需求匹配。A项文中没有批评，C项不是指导如何开办食物银行，D项没有比较不同项目，因此A、C、D均错误。",
+      "evidence_sentence": "Looking back, she says the experience taught her that volunteering is not just about giving time; it is about finding where your skills can make the biggest difference.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "passage": "Last month, our science club carried out a project on water quality. The student ①______ designed the experiment was very careful. She chose a river ②______ flows through our town and collected samples from three places. The method ③______ she used was simple but effective. Our teacher, ④______ has worked in this field for years, guided us patiently. We also visited a lab, ⑤______ we learned how to test pH. The results, ⑥______ surprised everyone, showed that the water was cleaner than we had thought. The samples ⑦______ (test) twice to avoid mistakes. Now the report ⑧______ (write) by the whole team. The river ⑨______ (protect) by local people in recent years. The data ⑩______ (collect) last week will be used in our presentation.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the correct word for blank ①.",
+      "options": ["who", "which", "whom", "whose"],
+      "answer": "who",
+      "explanation": "先行词是The student，指人且在定语从句中作主语，用who。which指物，whom作宾语，whose表所属，均不符合。",
+      "evidence_sentence": "The student ①______ designed the experiment was very careful.",
+      "context_clue": "The student ①______ designed the experiment was very careful.",
+      "clue_argument": "先行词student指人，从句缺主语，故用who。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the correct word for blank ②.",
+      "options": ["who", "which", "where", "when"],
+      "answer": "which",
+      "explanation": "先行词是a river，指物且在定语从句中作主语，用which。who指人，where作地点状语，when作时间状语，均不符合。",
+      "evidence_sentence": "She chose a river ②______ flows through our town and collected samples from three places.",
+      "context_clue": "She chose a river ②______ flows through our town and collected samples from three places.",
+      "clue_argument": "先行词river指物，从句缺主语，故用which。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the correct word for blank ③.",
+      "options": ["that", "who", "where", "when"],
+      "answer": "that",
+      "explanation": "先行词是The method，指物，定语从句中作used的宾语，可用that。who指人，where和when作状语，均不符合。",
+      "evidence_sentence": "The method ③______ she used was simple but effective.",
+      "context_clue": "The method ③______ she used was simple but effective.",
+      "clue_argument": "先行词method指物，从句缺宾语，故用that。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the correct word for blank ④.",
+      "options": ["who", "which", "whose", "whom"],
+      "answer": "who",
+      "explanation": "非限制性定语从句先行词Our teacher指人，在从句中作主语，用who。which指物，whose表所属，whom作宾语，均不符合。",
+      "evidence_sentence": "Our teacher, ④______ has worked in this field for years, guided us patiently.",
+      "context_clue": "Our teacher, ④______ has worked in this field for years, guided us patiently.",
+      "clue_argument": "先行词teacher指人，从句缺主语，故用who。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the correct word for blank ⑤.",
+      "options": ["which", "that", "where", "when"],
+      "answer": "where",
+      "explanation": "非限制性定语从句先行词a lab表地点，在从句中作地点状语，用where。which和that作主语或宾语，when表时间，均不符合。",
+      "evidence_sentence": "We also visited a lab, ⑤______ we learned how to test pH.",
+      "context_clue": "We also visited a lab, ⑤______ we learned how to test pH.",
+      "clue_argument": "先行词lab表地点，从句缺地点状语，故用where。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the correct word for blank ⑥.",
+      "options": ["which", "that", "who", "where"],
+      "answer": "which",
+      "explanation": "非限制性定语从句先行词The results指物，在从句中作主语，用which。that不能引导非限制性定语从句，who指人，where作状语，均不符合。",
+      "evidence_sentence": "The results, ⑥______ surprised everyone, showed that the water was cleaner than we had thought.",
+      "context_clue": "The results, ⑥______ surprised everyone, showed that the water was cleaner than we had thought.",
+      "clue_argument": "先行词results指物，非限制性从句缺主语，故用which。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the correct form for blank ⑦.",
+      "options": ["were tested", "are tested", "have tested", "will test"],
+      "answer": "were tested",
+      "explanation": "主语The samples与test是被动关系，且动作发生在过去，用一般过去时的被动语态were tested。are tested时态不符，have tested和will test是主动语态，均不符合。",
+      "evidence_sentence": "The samples ⑦______ (test) twice to avoid mistakes.",
+      "context_clue": "The samples ⑦______ (test) twice to avoid mistakes.",
+      "clue_argument": "samples作主语，与test是被动关系，过去发生，故用were tested。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the correct form for blank ⑧.",
+      "options": ["is being written", "is writing", "has written", "wrote"],
+      "answer": "is being written",
+      "explanation": "主语The report与write是被动关系，且now表示正在进行，用现在进行时的被动语态is being written。is writing是主动，has written和wrote也是主动，均不符合。",
+      "evidence_sentence": "Now the report ⑧______ (write) by the whole team.",
+      "context_clue": "Now the report ⑧______ (write) by the whole team.",
+      "clue_argument": "report作主语，与write是被动关系，now表示进行，故用is being written。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the correct form for blank ⑨.",
+      "options": ["has been protected", "is protected", "was protected", "will protect"],
+      "answer": "has been protected",
+      "explanation": "主语The river与protect是被动关系，in recent years常与现在完成时连用，用现在完成时的被动语态has been protected。is protected和was protected时态不符，will protect是主动，均不符合。",
+      "evidence_sentence": "The river ⑨______ (protect) by local people in recent years.",
+      "context_clue": "The river ⑨______ (protect) by local people in recent years.",
+      "clue_argument": "river作主语，与protect是被动关系，in recent years提示现在完成时，故用has been protected。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the correct form for blank ⑩.",
+      "options": ["collected", "collecting", "to collect", "collect"],
+      "answer": "collected",
+      "explanation": "The data与collect是被动关系，且动作已完成，用过去分词collected作后置定语。collecting表主动进行，to collect表目的，collect是动词原形，均不符合。",
+      "evidence_sentence": "The data ⑩______ (collect) last week will be used in our presentation.",
+      "context_clue": "The data ⑩______ (collect) last week will be used in our presentation.",
+      "clue_argument": "data与collect是被动关系，且已完成，故用过去分词collected。"
+    }
+  ]
+}

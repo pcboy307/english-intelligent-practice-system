@@ -1,0 +1,46 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a connected narrative about an environmental club's project, with each sentence logically following from the previous one.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A 'set up' means to establish, which fits the context of starting a club, while the other options have meanings that contradict the positive actions described.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A correctly uses 'makes sure' to agree with the singular subject 'The student' in present tense, while the other options have subject-verb agreement or tense errors.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A correctly uses the subjunctive 'write' after 'suggested that', while the other options use incorrect verb forms or structures.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A correctly uses the gerund 'writing' after 'found', while the other options use incorrect verb forms.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "B",
+      "reason": "Option B 'creativity' is the correct noun meaning the ability to create, fitting the context of being inspiring, while the other options are either different nouns, adjectives, or incorrect forms.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

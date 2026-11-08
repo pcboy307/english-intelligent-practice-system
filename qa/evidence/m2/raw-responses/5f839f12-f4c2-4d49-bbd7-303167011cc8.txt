@@ -1,0 +1,65 @@
+{
+  "passage": "In a small town, the student and her teacher started a project on renewable（可再生的）energy. They wanted to show that clean power could help their school. First, they borrowed some solar panels（太阳能板）from a local company. The panels were installed（安装）on the roof of the science building. At first, the system only produced a little electricity, so the student felt disappointed. However, her teacher encouraged her to keep a record of the output every day. After two weeks, they noticed that the panels worked best on bright, cool days. The student also learned that the energy could be stored in batteries for later use. When a storm damaged one panel, a classmate helped them repair it quickly. Because the project was a success, the school decided to hold a workshop（研讨会）to teach other students about renewable energy. The student now believes that small actions can lead to big changes.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can be inferred about the student's attitude after the storm damaged a panel?",
+      "options": [
+        "She felt like giving up the project.",
+        "She was confident because help was available.",
+        "She thought the project was a waste of time.",
+        "She decided to buy new panels immediately."
+      ],
+      "answer": "She was confident because help was available.",
+      "explanation": "文章提到同学帮忙快速修好了面板，因此可以推断她因有帮手而感到有信心。A项“想放弃”和C项“认为是浪费时间”都与后文项目成功的事实矛盾，故错误。",
+      "evidence_sentence": "When a storm damaged one panel, a classmate helped them repair it quickly.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "The word \"installed\" in the passage is closest in meaning to ______.",
+      "options": [
+        "fixed in place",
+        "removed",
+        "bought",
+        "invented"
+      ],
+      "answer": "fixed in place",
+      "explanation": "根据上下文，面板被“安装”在科学楼屋顶上，因此installed意为“固定安装”。B项“移除”和C项“购买”与语境不符，故错误。",
+      "evidence_sentence": "The panels were installed（安装）on the roof of the science building.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Why did the school decide to hold a workshop?",
+      "options": [
+        "To celebrate the student's birthday.",
+        "To teach other students about renewable energy.",
+        "To raise money for new panels.",
+        "To replace the damaged panel."
+      ],
+      "answer": "To teach other students about renewable energy.",
+      "explanation": "文章明确提到学校决定举办研讨会是为了教其他学生关于可再生能源的知识。A项“庆祝生日”和C项“筹钱买新面板”在文中没有依据，故错误。",
+      "evidence_sentence": "Because the project was a success, the school decided to hold a workshop（研讨会）to teach other students about renewable energy.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Solar panels are expensive to install.",
+        "A student and her teacher learned about renewable energy through a school project.",
+        "Storms often damage solar panels.",
+        "Students should avoid using electricity."
+      ],
+      "answer": "A student and her teacher learned about renewable energy through a school project.",
+      "explanation": "全文讲述了学生和老师通过一个学校项目了解可再生能源的过程和成果，因此B项概括了主旨。A项“面板昂贵”和C项“风暴常损坏面板”只是细节，不是主旨，故错误。",
+      "evidence_sentence": "In a small town, the student and her teacher started a project on renewable（可再生的）energy.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

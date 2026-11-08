@@ -1,0 +1,65 @@
+{
+  "passage": "Every year, many students feel stress before exams. The student in this story is no different. She studies late and worries about her grades. Her teacher notices that she looks tired and gives her some advice. \"If you were less anxious, you would think more clearly,\" the teacher says. \"It is important that you should take short breaks and sleep well.\" The student decides to follow this advice. She starts to exercise for twenty minutes each day and goes to bed earlier. She also talks to a classmate who often feels the same way. They agree to study together and share their worries. After a few weeks, the student feels calmer and more confident. She realises that stress is normal, but it should not control her life. The pressure that she felt before exams becomes easier to manage. She learns that balance is the key to success.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Students should avoid all exams.",
+        "Managing stress through balance helps students succeed.",
+        "Teachers give too much homework.",
+        "Exercise is the only way to reduce stress."
+      ],
+      "answer": "Managing stress through balance helps students succeed.",
+      "explanation": "文章主要讲述学生通过平衡学习与休息来应对压力，最终更成功。A项“避免所有考试”过于绝对；C项“老师布置太多作业”文中未提及，故错误。",
+      "evidence_sentence": "She learns that balance is the key to success.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the teacher, what should the student do?",
+      "options": [
+        "Study harder and later.",
+        "Take short breaks and sleep well.",
+        "Stop talking to classmates.",
+        "Exercise for two hours daily."
+      ],
+      "answer": "Take short breaks and sleep well.",
+      "explanation": "老师建议学生“should take short breaks and sleep well”。A项“更努力学习到更晚”与建议相反；D项“每天锻炼两小时”文中是二十分钟，故错误。",
+      "evidence_sentence": "It is important that you should take short breaks and sleep well.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about the student after a few weeks?",
+      "options": [
+        "She still feels very anxious.",
+        "She has stopped studying completely.",
+        "She feels more confident and calmer.",
+        "She no longer talks to her classmate."
+      ],
+      "answer": "She feels more confident and calmer.",
+      "explanation": "文中提到“After a few weeks, the student feels calmer and more confident.”由此可推断她变得更自信平静。A项“仍然非常焦虑”与原文矛盾；B项“完全停止学习”文中未提及，故错误。",
+      "evidence_sentence": "After a few weeks, the student feels calmer and more confident.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"manage\" in the passage most likely mean?",
+      "options": [
+        "control",
+        "ignore",
+        "increase",
+        "avoid"
+      ],
+      "answer": "control",
+      "explanation": "“manage”在句中意为“控制”，与control同义。B项ignore（忽视）和D项avoid（避免）都不符合“压力变得更容易应对”的语境，故错误。",
+      "evidence_sentence": "The pressure that she felt before exams becomes easier to manage.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

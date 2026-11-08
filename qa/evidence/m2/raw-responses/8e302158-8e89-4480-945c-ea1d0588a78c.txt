@@ -1,0 +1,1 @@
+{"translations": {"okay": "好的"}}

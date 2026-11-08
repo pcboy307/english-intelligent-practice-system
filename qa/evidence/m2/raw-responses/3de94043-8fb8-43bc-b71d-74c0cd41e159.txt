@@ -1,0 +1,105 @@
+{
+  "passage": "Choosing a career in the future is not easy. Many students wonder ① they should follow their parents' advice or their own interests. My cousin, who is ② about computer science, has decided to become a software engineer. She believes that ③ is important to keep learning new skills. Her brother, on the other hand, is ④ in art and wants to be a designer. He thinks that creativity is ⑤ more important than technical skills. In fact, the job market is becoming ⑥ than ever, so young people need to be flexible. ⑦ with a clear goal, they should also be open to new opportunities. My cousin plans ⑧ a portfolio of her projects to show employers. She also hopes ⑨ an internship next summer. ⑩ these steps, she believes she can achieve her dream.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank ①.",
+      "options": ["whether", "that", "what", "if"],
+      "answer": "whether",
+      "explanation": "此处需要连词引导宾语从句，表示“是否”，whether 可与 or 连用；that 无词义且不引导选择疑问，what 在从句中作成分但此处不缺成分。因此选 whether。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank ②.",
+      "options": ["enthusiastic", "enthusiasm", "enthusiastically", "enthuse"],
+      "answer": "enthusiastic",
+      "explanation": "be 动词后需要形容词作表语，表示“对……感兴趣”，enthusiastic 是形容词；enthusiasm 是名词，enthusiastically 是副词。因此选 enthusiastic。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank ③.",
+      "options": ["it", "that", "this", "one"],
+      "answer": "it",
+      "explanation": "此处 it 作形式主语，真正的主语是后面的不定式短语 to keep learning new skills；that 不能作形式主语，this 和 one 也无此用法。因此选 it。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank ④.",
+      "options": ["interested", "interesting", "interest", "interests"],
+      "answer": "interested",
+      "explanation": "be interested in 是固定搭配，表示“对……感兴趣”，主语是人，所以用 -ed 形容词 interested；interesting 修饰物，interest 是名词或动词。因此选 interested。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank ⑤.",
+      "options": ["much", "more", "very", "most"],
+      "answer": "much",
+      "explanation": "修饰比较级 more important 需要用 much，表示“重要得多”；more 本身是比较级形式，不能修饰另一个比较级，very 不能修饰比较级。因此选 much。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best option for blank ⑥.",
+      "options": ["more competitive", "most competitive", "competitiver", "competitive"],
+      "answer": "more competitive",
+      "explanation": "句中有 than，所以用比较级 more competitive；most competitive 是最高级，competitiver 是错误形式，competitive 是原级。因此选 more competitive。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best option for blank ⑦.",
+      "options": ["Armed", "Arming", "To arm", "Arm"],
+      "answer": "Armed",
+      "explanation": "be armed with 意为“配备有”，此处用过去分词短语作状语，表示状态；Arming 是主动进行，To arm 表目的，Arm 是动词原形。因此选 Armed。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best option for blank ⑧.",
+      "options": ["to build", "building", "build", "built"],
+      "answer": "to build",
+      "explanation": "plan 后接不定式作宾语，plan to do sth 表示“计划做某事”；building 是动名词，build 是原形，built 是过去式。因此选 to build。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best option for blank ⑨.",
+      "options": ["to get", "getting", "get", "got"],
+      "answer": "to get",
+      "explanation": "hope 后接不定式作宾语，hope to do sth 表示“希望做某事”；getting 是动名词，get 是原形，got 是过去式。因此选 to get。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best option for blank ⑩.",
+      "options": ["By taking", "Take", "Taken", "To take"],
+      "answer": "By taking",
+      "explanation": "by doing sth 表示“通过做某事”，作方式状语；Take 是祈使句动词原形，Taken 是过去分词，To take 表目的。因此选 By taking。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

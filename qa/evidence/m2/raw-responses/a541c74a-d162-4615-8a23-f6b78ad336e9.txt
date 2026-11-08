@@ -1,0 +1,65 @@
+{
+  "passage": "Climate change is a global challenge that requires action from everyone. In a small town, a student named Lily noticed that the local river was drying up. She decided to take action. With the help of her teacher, she started a campaign to reduce plastic waste. They organised a community clean-up and planted trees along the riverbank. Lily's efforts encouraged others to join. A classmate, Tom, was initially doubtful, but after seeing the positive results, he became an active volunteer. The town's mayor supported the project, and the local government provided funds for more trees. Within a year, the river began to flow again, and the community became more aware of environmental protection. Lily believes that small actions can lead to big changes. She continues to advocate for sustainable practices, hoping to inspire more people to protect the planet.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To describe the beauty of a river",
+        "To encourage readers to take action against climate change",
+        "To explain how to plant trees",
+        "To criticise the local government"
+      ],
+      "answer": "To encourage readers to take action against climate change",
+      "explanation": "文章通过Lily的故事说明小行动能带来大变化，目的是鼓励读者参与环保行动。A项只涉及河流美景，C项只提到植树，均非主旨。",
+      "evidence_sentence": "Lily believes that small actions can lead to big changes.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "A student's efforts to fight climate change inspired her community.",
+        "Plastic waste is the biggest problem in the world.",
+        "The local government should provide more funds.",
+        "Tom was always an active volunteer."
+      ],
+      "answer": "A student's efforts to fight climate change inspired her community.",
+      "explanation": "全文围绕Lily发起环保行动并带动社区参与展开，主要思想是个人努力能激励社区应对气候变化。B项过度概括，C项是细节，D项与事实相反。",
+      "evidence_sentence": "Lily's efforts encouraged others to join.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What did Lily and her teacher do to help the river?",
+      "options": [
+        "They built a new bridge.",
+        "They organised a clean-up and planted trees.",
+        "They wrote a letter to the mayor.",
+        "They stopped using plastic bags."
+      ],
+      "answer": "They organised a clean-up and planted trees.",
+      "explanation": "文中明确提到他们组织了社区清洁活动并沿河岸植树。A项建桥未提及，C项写信未提及，D项是个人行为而非他们共同行动。",
+      "evidence_sentence": "They organised a community clean-up and planted trees along the riverbank.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can be inferred about Tom from the passage?",
+      "options": [
+        "He was never interested in the environment.",
+        "He changed his attitude after seeing results.",
+        "He was the leader of the campaign.",
+        "He disagreed with Lily from the beginning."
+      ],
+      "answer": "He changed his attitude after seeing results.",
+      "explanation": "Tom最初怀疑，但看到积极结果后成为积极志愿者，说明他态度转变。A项与事实相反，C项无依据，D项“从一开始就反对”不准确。",
+      "evidence_sentence": "Tom, was initially doubtful, but after seeing the positive results, he became an active volunteer.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

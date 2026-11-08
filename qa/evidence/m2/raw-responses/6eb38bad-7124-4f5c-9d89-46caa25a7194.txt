@@ -1,0 +1,65 @@
+{
+  "passage": "In the small town of Greenfield, the student noticed that the old factory had been closed for years. Her teacher explained that the town wanted to use the empty land for a solar farm（太阳能农场）. At first, some neighbours argued that the panels would be ugly. However, the student decided to research the benefits. She found that solar power could reduce electricity bills and create local jobs. After she presented her findings at a town meeting, many people changed their minds. The solar farm was built, and now the town produces clean energy. The student feels proud because she helped her community accept a renewable future.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about the student's role in the town's decision?",
+      "options": [
+        "She caused the factory to close.",
+        "She helped change people's opinions.",
+        "She wanted to leave the town.",
+        "She opposed the solar farm."
+      ],
+      "answer": "She helped change people's opinions.",
+      "explanation": "文章提到她展示调查结果后，许多人改变了想法，因此可推断她帮助改变了人们的观点。A项“她导致工厂关闭”文中未提及；D项“她反对太阳能农场”与文章相反。",
+      "evidence_sentence": "After she presented her findings at a town meeting, many people changed their minds.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"benefits\" in the passage most likely mean?",
+      "options": [
+        "problems",
+        "advantages",
+        "costs",
+        "dangers"
+      ],
+      "answer": "advantages",
+      "explanation": "根据上下文，学生研究的是太阳能的好处，如减少电费和创造就业，因此benefits意为“优势”。A项“问题”和D项“危险”与积极语境不符。",
+      "evidence_sentence": "She found that solar power could reduce electricity bills and create local jobs.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Why did the student present her findings at the town meeting?",
+      "options": [
+        "To show off her research skills.",
+        "To argue against the teacher.",
+        "To help the community understand the benefits.",
+        "To become famous."
+      ],
+      "answer": "To help the community understand the benefits.",
+      "explanation": "学生展示调查结果是为了让社区了解太阳能的好处，从而接受太阳能农场。A项“炫耀研究技能”和D项“出名”在文中没有依据。",
+      "evidence_sentence": "After she presented her findings at a town meeting, many people changed their minds.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "A town rejects a solar farm.",
+        "A student helps her town accept renewable energy.",
+        "The old factory is rebuilt.",
+        "Solar panels are ugly."
+      ],
+      "answer": "A student helps her town accept renewable energy.",
+      "explanation": "文章主要讲述一名学生通过研究并展示太阳能的好处，帮助小镇接受可再生能源。A项“小镇拒绝太阳能农场”与事实相反；D项“太阳能板很丑”只是部分人的最初看法，并非主旨。",
+      "evidence_sentence": "The student feels proud because she helped her community accept a renewable future.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

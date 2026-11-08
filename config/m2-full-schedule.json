@@ -1,0 +1,3070 @@
+{
+  "schema_version": "1.0.0",
+  "bank_name": "M2 Bank #2",
+  "target_questions": 300,
+  "passages": [
+    {
+      "type": "cloze",
+      "passage_group_id": "M2-FULL-CLOZE-01",
+      "topic": "青春成长与自我认识",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "cloze_target": "anxious"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必一 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "cleft_basic"
+          ],
+          "cloze_target": "confident"
+        },
+        {
+          "question_index": 3,
+          "book_source": "必修1 U1",
+          "difficulty": 4,
+          "grammar_tags": [
+            "adverbial_clauses"
+          ],
+          "cloze_target": "curious"
+        },
+        {
+          "question_index": 4,
+          "book_source": "跨册综合",
+          "difficulty": 1,
+          "grammar_tags": [
+            "cleft_basic"
+          ],
+          "cloze_target": "reliable"
+        },
+        {
+          "question_index": 5,
+          "book_source": "选必二 U1",
+          "difficulty": 5,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ],
+          "cloze_target": "ambitious"
+        },
+        {
+          "question_index": 6,
+          "book_source": "选必一 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "cloze_target": "achieve"
+        },
+        {
+          "question_index": 7,
+          "book_source": "必修1 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "articles"
+          ],
+          "cloze_target": "adapt"
+        },
+        {
+          "question_index": 8,
+          "book_source": "跨册综合",
+          "difficulty": 4,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "cloze_target": "encourage"
+        },
+        {
+          "question_index": 9,
+          "book_source": "选必二 U1",
+          "difficulty": 1,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "cloze_target": "persuade"
+        },
+        {
+          "question_index": 10,
+          "book_source": "选必一 U1",
+          "difficulty": 5,
+          "grammar_tags": [
+            "relative_clauses_non_defining"
+          ],
+          "cloze_target": "concentrate"
+        },
+        {
+          "question_index": 11,
+          "book_source": "跨册综合",
+          "difficulty": 3,
+          "grammar_tags": [
+            "relative_clauses_non_defining"
+          ],
+          "cloze_target": "gradually"
+        },
+        {
+          "question_index": 12,
+          "book_source": "选必二 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cloze_target": "eventually"
+        },
+        {
+          "question_index": 13,
+          "book_source": "选必一 U1",
+          "difficulty": 4,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cloze_target": "independently"
+        },
+        {
+          "question_index": 14,
+          "book_source": "跨册综合",
+          "difficulty": 1,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cloze_target": "confidence"
+        },
+        {
+          "question_index": 15,
+          "book_source": "选必二 U1",
+          "difficulty": 5,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "cloze_target": "opportunity"
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "passage_group_id": "M2-FULL-CLOZE-02",
+      "topic": "团队合作与责任",
+      "book_source": "选必一 U2",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必一 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "cloze_target": "accept"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "cloze_target": "appreciate"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必一 U2",
+          "difficulty": 4,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "cloze_target": "balance"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U2",
+          "difficulty": 1,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "cloze_target": "benefit"
+        },
+        {
+          "question_index": 5,
+          "book_source": "选必一 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "v_ing_nonfinite"
+          ],
+          "cloze_target": "challenge"
+        },
+        {
+          "question_index": 6,
+          "book_source": "选必二 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "cloze_target": "communicate"
+        },
+        {
+          "question_index": 7,
+          "book_source": "选必一 U2",
+          "difficulty": 4,
+          "grammar_tags": [
+            "with_compound"
+          ],
+          "cloze_target": "contribute"
+        },
+        {
+          "question_index": 8,
+          "book_source": "选必二 U2",
+          "difficulty": 1,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ],
+          "cloze_target": "determine"
+        },
+        {
+          "question_index": 9,
+          "book_source": "选必一 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "cloze_target": "discover"
+        },
+        {
+          "question_index": 10,
+          "book_source": "选必二 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "cloze_target": "efficient"
+        },
+        {
+          "question_index": 11,
+          "book_source": "选必一 U2",
+          "difficulty": 4,
+          "grammar_tags": [
+            "cleft_basic"
+          ],
+          "cloze_target": "essential"
+        },
+        {
+          "question_index": 12,
+          "book_source": "选必二 U2",
+          "difficulty": 1,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cloze_target": "improve"
+        },
+        {
+          "question_index": 13,
+          "book_source": "选必一 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "cloze_target": "manage"
+        },
+        {
+          "question_index": 14,
+          "book_source": "选必二 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "cloze_target": "prefer"
+        },
+        {
+          "question_index": 15,
+          "book_source": "选必一 U2",
+          "difficulty": 4,
+          "grammar_tags": [
+            "relative_clauses_non_defining"
+          ],
+          "cloze_target": "reduce"
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "passage_group_id": "M2-FULL-CLOZE-03",
+      "topic": "健康生活与自律",
+      "book_source": "选必二 U3",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U3",
+          "difficulty": 1,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "cloze_target": "respect"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必一 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cloze_target": "support"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "cloze_target": "responsible"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必一 U3",
+          "difficulty": 4,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "cloze_target": "solution"
+        },
+        {
+          "question_index": 5,
+          "book_source": "选必二 U3",
+          "difficulty": 1,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "cloze_target": "avoid"
+        },
+        {
+          "question_index": 6,
+          "book_source": "选必一 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "cloze_target": "value"
+        },
+        {
+          "question_index": 7,
+          "book_source": "选必二 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ],
+          "cloze_target": "conduct"
+        },
+        {
+          "question_index": 8,
+          "book_source": "选必一 U3",
+          "difficulty": 4,
+          "grammar_tags": [
+            "v_ing_nonfinite"
+          ],
+          "cloze_target": "choice"
+        },
+        {
+          "question_index": 9,
+          "book_source": "选必二 U3",
+          "difficulty": 1,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "cloze_target": "effort"
+        },
+        {
+          "question_index": 10,
+          "book_source": "选必一 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "with_compound"
+          ],
+          "cloze_target": "environment"
+        },
+        {
+          "question_index": 11,
+          "book_source": "选必二 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cloze_target": "experience"
+        },
+        {
+          "question_index": 12,
+          "book_source": "选必一 U3",
+          "difficulty": 4,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "cloze_target": "purpose"
+        },
+        {
+          "question_index": 13,
+          "book_source": "选必二 U3",
+          "difficulty": 1,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "cloze_target": "understand"
+        },
+        {
+          "question_index": 14,
+          "book_source": "选必一 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "cleft_basic"
+          ],
+          "cloze_target": "identify"
+        },
+        {
+          "question_index": 15,
+          "book_source": "选必二 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "cloze_target": "allow"
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "passage_group_id": "M2-FULL-CLOZE-04",
+      "topic": "数字学习与选择",
+      "book_source": "选必一 U4",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必一 U4",
+          "difficulty": 4,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "cloze_target": "anxious"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U4",
+          "difficulty": 1,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "cloze_target": "confident"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必一 U4",
+          "difficulty": 3,
+          "grammar_tags": [
+            "relative_clauses_non_defining"
+          ],
+          "cloze_target": "curious"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U4",
+          "difficulty": 2,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "cloze_target": "reliable"
+        },
+        {
+          "question_index": 5,
+          "book_source": "选必一 U4",
+          "difficulty": 4,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cloze_target": "ambitious"
+        },
+        {
+          "question_index": 6,
+          "book_source": "选必二 U4",
+          "difficulty": 1,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ],
+          "cloze_target": "achieve"
+        },
+        {
+          "question_index": 7,
+          "book_source": "选必一 U4",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "cloze_target": "adapt"
+        },
+        {
+          "question_index": 8,
+          "book_source": "选必二 U4",
+          "difficulty": 2,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "cloze_target": "encourage"
+        },
+        {
+          "question_index": 9,
+          "book_source": "选必一 U4",
+          "difficulty": 4,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "cloze_target": "persuade"
+        },
+        {
+          "question_index": 10,
+          "book_source": "选必二 U4",
+          "difficulty": 1,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cloze_target": "concentrate"
+        },
+        {
+          "question_index": 11,
+          "book_source": "选必一 U4",
+          "difficulty": 3,
+          "grammar_tags": [
+            "v_ing_nonfinite"
+          ],
+          "cloze_target": "gradually"
+        },
+        {
+          "question_index": 12,
+          "book_source": "选必二 U4",
+          "difficulty": 2,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "cloze_target": "eventually"
+        },
+        {
+          "question_index": 13,
+          "book_source": "选必一 U4",
+          "difficulty": 4,
+          "grammar_tags": [
+            "with_compound"
+          ],
+          "cloze_target": "independently"
+        },
+        {
+          "question_index": 14,
+          "book_source": "选必二 U4",
+          "difficulty": 1,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "cloze_target": "confidence"
+        },
+        {
+          "question_index": 15,
+          "book_source": "选必一 U4",
+          "difficulty": 3,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "cloze_target": "opportunity"
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "passage_group_id": "M2-FULL-CLOZE-05",
+      "topic": "环境保护与行动",
+      "book_source": "选必二 U5",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U5",
+          "difficulty": 2,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "cloze_target": "accept"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必一 U5",
+          "difficulty": 3,
+          "grammar_tags": [
+            "cleft_basic"
+          ],
+          "cloze_target": "appreciate"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U5",
+          "difficulty": 2,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "cloze_target": "balance"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必一 U5",
+          "difficulty": 3,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "cloze_target": "benefit"
+        },
+        {
+          "question_index": 5,
+          "book_source": "选必二 U5",
+          "difficulty": 2,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ],
+          "cloze_target": "challenge"
+        },
+        {
+          "question_index": 6,
+          "book_source": "选必一 U5",
+          "difficulty": 3,
+          "grammar_tags": [
+            "relative_clauses_non_defining"
+          ],
+          "cloze_target": "communicate"
+        },
+        {
+          "question_index": 7,
+          "book_source": "选必二 U5",
+          "difficulty": 2,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "cloze_target": "contribute"
+        },
+        {
+          "question_index": 8,
+          "book_source": "选必一 U5",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cloze_target": "determine"
+        },
+        {
+          "question_index": 9,
+          "book_source": "选必二 U5",
+          "difficulty": 2,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cloze_target": "discover"
+        },
+        {
+          "question_index": 10,
+          "book_source": "选必一 U5",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "cloze_target": "efficient"
+        },
+        {
+          "question_index": 11,
+          "book_source": "选必二 U5",
+          "difficulty": 2,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "cloze_target": "essential"
+        },
+        {
+          "question_index": 12,
+          "book_source": "选必一 U5",
+          "difficulty": 3,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "cloze_target": "improve"
+        },
+        {
+          "question_index": 13,
+          "book_source": "选必二 U5",
+          "difficulty": 2,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "cloze_target": "manage"
+        },
+        {
+          "question_index": 14,
+          "book_source": "选必一 U5",
+          "difficulty": 3,
+          "grammar_tags": [
+            "v_ing_nonfinite"
+          ],
+          "cloze_target": "prefer"
+        },
+        {
+          "question_index": 15,
+          "book_source": "选必二 U5",
+          "difficulty": 2,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "cloze_target": "reduce"
+        }
+      ]
+    },
+    {
+      "type": "cloze",
+      "passage_group_id": "M2-FULL-CLOZE-06",
+      "topic": "生涯规划与目标",
+      "book_source": "选必一 U1",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必一 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "with_compound"
+          ],
+          "cloze_target": "respect"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "cloze_target": "support"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ],
+          "cloze_target": "responsible"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "cloze_target": "solution"
+        },
+        {
+          "question_index": 5,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cloze_target": "avoid"
+        },
+        {
+          "question_index": 6,
+          "book_source": "选必二 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "cloze_target": "value"
+        },
+        {
+          "question_index": 7,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "cloze_target": "conduct"
+        },
+        {
+          "question_index": 8,
+          "book_source": "选必二 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "cloze_target": "choice"
+        },
+        {
+          "question_index": 9,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "cloze_target": "effort"
+        },
+        {
+          "question_index": 10,
+          "book_source": "选必二 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ],
+          "cloze_target": "environment"
+        },
+        {
+          "question_index": 11,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "cloze_target": "experience"
+        },
+        {
+          "question_index": 12,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cloze_target": "purpose"
+        },
+        {
+          "question_index": 13,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "cloze_target": "understand"
+        },
+        {
+          "question_index": 14,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "cloze_target": "identify"
+        },
+        {
+          "question_index": 15,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "cloze_target": "allow"
+        }
+      ]
+    },
+    {
+      "type": "grammar_fill",
+      "passage_group_id": "M2-FULL-GRAMMAR-01",
+      "topic": "科学探究",
+      "book_source": "必修1 U1",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修1 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "relative_clauses_defining"
+          ]
+        },
+        {
+          "question_index": 2,
+          "book_source": "必修1 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "relative_clauses_defining"
+          ]
+        },
+        {
+          "question_index": 3,
+          "book_source": "必修1 U1",
+          "difficulty": 4,
+          "grammar_tags": [
+            "relative_clauses_defining"
+          ]
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必一 U1",
+          "difficulty": 1,
+          "grammar_tags": [
+            "relative_clauses_non_defining"
+          ]
+        },
+        {
+          "question_index": 5,
+          "book_source": "选必一 U1",
+          "difficulty": 5,
+          "grammar_tags": [
+            "relative_clauses_non_defining"
+          ]
+        },
+        {
+          "question_index": 6,
+          "book_source": "跨册综合",
+          "difficulty": 3,
+          "grammar_tags": [
+            "relative_clauses_non_defining"
+          ]
+        },
+        {
+          "question_index": 7,
+          "book_source": "选必二 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ]
+        },
+        {
+          "question_index": 8,
+          "book_source": "选必二 U1",
+          "difficulty": 4,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ]
+        },
+        {
+          "question_index": 9,
+          "book_source": "选必二 U1",
+          "difficulty": 1,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ]
+        },
+        {
+          "question_index": 10,
+          "book_source": "必修1 U1",
+          "difficulty": 5,
+          "grammar_tags": [
+            "past_participle_nonfinite"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "grammar_fill",
+      "passage_group_id": "M2-FULL-GRAMMAR-02",
+      "topic": "校园运动",
+      "book_source": "必修1 U2",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修1 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "past_participle_nonfinite"
+          ]
+        },
+        {
+          "question_index": 2,
+          "book_source": "必修1 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "past_participle_nonfinite"
+          ]
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必一 U2",
+          "difficulty": 4,
+          "grammar_tags": [
+            "v_ing_nonfinite"
+          ]
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必一 U2",
+          "difficulty": 1,
+          "grammar_tags": [
+            "v_ing_nonfinite"
+          ]
+        },
+        {
+          "question_index": 5,
+          "book_source": "跨册综合",
+          "difficulty": 5,
+          "grammar_tags": [
+            "v_ing_nonfinite"
+          ]
+        },
+        {
+          "question_index": 6,
+          "book_source": "选必二 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "noun_clauses"
+          ]
+        },
+        {
+          "question_index": 7,
+          "book_source": "选必二 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "noun_clauses"
+          ]
+        },
+        {
+          "question_index": 8,
+          "book_source": "选必二 U2",
+          "difficulty": 4,
+          "grammar_tags": [
+            "noun_clauses"
+          ]
+        },
+        {
+          "question_index": 9,
+          "book_source": "必修1 U2",
+          "difficulty": 1,
+          "grammar_tags": [
+            "adverbial_clauses"
+          ]
+        },
+        {
+          "question_index": 10,
+          "book_source": "必修1 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "adverbial_clauses"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "grammar_fill",
+      "passage_group_id": "M2-FULL-GRAMMAR-03",
+      "topic": "社区服务",
+      "book_source": "必修1 U3",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修1 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "adverbial_clauses"
+          ]
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U3",
+          "difficulty": 4,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ]
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U3",
+          "difficulty": 1,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ]
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ]
+        },
+        {
+          "question_index": 5,
+          "book_source": "选必二 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ]
+        },
+        {
+          "question_index": 6,
+          "book_source": "选必二 U3",
+          "difficulty": 4,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ]
+        },
+        {
+          "question_index": 7,
+          "book_source": "选必一 U3",
+          "difficulty": 1,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ]
+        },
+        {
+          "question_index": 8,
+          "book_source": "选必二 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ]
+        },
+        {
+          "question_index": 9,
+          "book_source": "选必二 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ]
+        },
+        {
+          "question_index": 10,
+          "book_source": "选必二 U3",
+          "difficulty": 4,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "grammar_fill",
+      "passage_group_id": "M2-FULL-GRAMMAR-04",
+      "topic": "旅行与交通",
+      "book_source": "选必一 U4",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必一 U4",
+          "difficulty": 1,
+          "grammar_tags": [
+            "cleft_basic"
+          ]
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必一 U4",
+          "difficulty": 3,
+          "grammar_tags": [
+            "cleft_basic"
+          ]
+        },
+        {
+          "question_index": 3,
+          "book_source": "跨册综合",
+          "difficulty": 2,
+          "grammar_tags": [
+            "cleft_basic"
+          ]
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U4",
+          "difficulty": 4,
+          "grammar_tags": [
+            "tense_system"
+          ]
+        },
+        {
+          "question_index": 5,
+          "book_source": "选必二 U4",
+          "difficulty": 1,
+          "grammar_tags": [
+            "tense_system"
+          ]
+        },
+        {
+          "question_index": 6,
+          "book_source": "选必二 U4",
+          "difficulty": 3,
+          "grammar_tags": [
+            "tense_system"
+          ]
+        },
+        {
+          "question_index": 7,
+          "book_source": "必修2 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "subject_verb_agreement"
+          ]
+        },
+        {
+          "question_index": 8,
+          "book_source": "必修2 U1",
+          "difficulty": 4,
+          "grammar_tags": [
+            "subject_verb_agreement"
+          ]
+        },
+        {
+          "question_index": 9,
+          "book_source": "必修2 U1",
+          "difficulty": 1,
+          "grammar_tags": [
+            "subject_verb_agreement"
+          ]
+        },
+        {
+          "question_index": 10,
+          "book_source": "必修2 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "articles"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "grammar_fill",
+      "passage_group_id": "M2-FULL-GRAMMAR-05",
+      "topic": "艺术与文化",
+      "book_source": "必修2 U2",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修2 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "articles"
+          ]
+        },
+        {
+          "question_index": 2,
+          "book_source": "必修2 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "articles"
+          ]
+        },
+        {
+          "question_index": 3,
+          "book_source": "必修2 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "prepositions"
+          ]
+        },
+        {
+          "question_index": 4,
+          "book_source": "必修2 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "prepositions"
+          ]
+        },
+        {
+          "question_index": 5,
+          "book_source": "必修2 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "prepositions"
+          ]
+        },
+        {
+          "question_index": 6,
+          "book_source": "必修2 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "pronouns"
+          ]
+        },
+        {
+          "question_index": 7,
+          "book_source": "必修2 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "pronouns"
+          ]
+        },
+        {
+          "question_index": 8,
+          "book_source": "必修2 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "pronouns"
+          ]
+        },
+        {
+          "question_index": 9,
+          "book_source": "必修2 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "conjunctions"
+          ]
+        },
+        {
+          "question_index": 10,
+          "book_source": "必修2 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "conjunctions"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "grammar_fill",
+      "passage_group_id": "M2-FULL-GRAMMAR-06",
+      "topic": "未来职业",
+      "book_source": "必修2 U3",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修2 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "conjunctions"
+          ]
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必一 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "word_formation"
+          ]
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "word_formation"
+          ]
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "word_formation"
+          ]
+        },
+        {
+          "question_index": 5,
+          "book_source": "必修2 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "comparatives_superlatives"
+          ]
+        },
+        {
+          "question_index": 6,
+          "book_source": "必修2 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "comparatives_superlatives"
+          ]
+        },
+        {
+          "question_index": 7,
+          "book_source": "选必一 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "with_compound"
+          ]
+        },
+        {
+          "question_index": 8,
+          "book_source": "选必一 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "with_compound"
+          ]
+        },
+        {
+          "question_index": 9,
+          "book_source": "必修2 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "infinitive_nonfinite"
+          ]
+        },
+        {
+          "question_index": 10,
+          "book_source": "必修2 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "infinitive_nonfinite"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-01",
+      "topic": "饮食文化",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "reading_type": "main_idea"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ],
+          "reading_type": "detail"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必一 U1",
+          "difficulty": 4,
+          "grammar_tags": [
+            "relative_clauses_non_defining"
+          ],
+          "reading_type": "inference"
+        },
+        {
+          "question_index": 4,
+          "book_source": "必修1 U1",
+          "difficulty": 1,
+          "grammar_tags": [
+            "comparatives_superlatives"
+          ],
+          "reading_type": "vocabulary_in_context"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-02",
+      "topic": "气候变化行动",
+      "book_source": "必修1 U2",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修1 U2",
+          "difficulty": 5,
+          "grammar_tags": [
+            "conjunctions"
+          ],
+          "reading_type": "purpose_or_attitude"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "reading_type": "main_idea"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "reading_type": "detail"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必一 U2",
+          "difficulty": 4,
+          "grammar_tags": [
+            "with_compound"
+          ],
+          "reading_type": "inference"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-03",
+      "topic": "人工智能与学习",
+      "book_source": "必修1 U3",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修1 U3",
+          "difficulty": 1,
+          "grammar_tags": [
+            "past_participle_nonfinite"
+          ],
+          "reading_type": "vocabulary_in_context"
+        },
+        {
+          "question_index": 2,
+          "book_source": "必修1 U3",
+          "difficulty": 5,
+          "grammar_tags": [
+            "prepositions"
+          ],
+          "reading_type": "purpose_or_attitude"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "reading_type": "main_idea"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "reading_type": "detail"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-04",
+      "topic": "睡眠科学",
+      "book_source": "选必一 U4",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必一 U4",
+          "difficulty": 4,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "reading_type": "inference"
+        },
+        {
+          "question_index": 2,
+          "book_source": "必修2 U1",
+          "difficulty": 1,
+          "grammar_tags": [
+            "subject_verb_agreement"
+          ],
+          "reading_type": "vocabulary_in_context"
+        },
+        {
+          "question_index": 3,
+          "book_source": "必修2 U1",
+          "difficulty": 5,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "reading_type": "purpose_or_attitude"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U4",
+          "difficulty": 3,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ],
+          "reading_type": "main_idea"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-05",
+      "topic": "志愿服务",
+      "book_source": "选必二 U5",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U5",
+          "difficulty": 2,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "reading_type": "detail"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必一 U5",
+          "difficulty": 4,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "reading_type": "inference"
+        },
+        {
+          "question_index": 3,
+          "book_source": "必修2 U2",
+          "difficulty": 1,
+          "grammar_tags": [
+            "adverbial_clauses"
+          ],
+          "reading_type": "vocabulary_in_context"
+        },
+        {
+          "question_index": 4,
+          "book_source": "必修2 U2",
+          "difficulty": 5,
+          "grammar_tags": [
+            "articles"
+          ],
+          "reading_type": "purpose_or_attitude"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-06",
+      "topic": "传统节日",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "reading_type": "main_idea"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "reading_type": "detail"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必一 U1",
+          "difficulty": 4,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "reading_type": "inference"
+        },
+        {
+          "question_index": 4,
+          "book_source": "必修2 U3",
+          "difficulty": 1,
+          "grammar_tags": [
+            "infinitive_nonfinite"
+          ],
+          "reading_type": "vocabulary_in_context"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-07",
+      "topic": "城市花园",
+      "book_source": "必修3 U1",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修3 U1",
+          "difficulty": 5,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "reading_type": "purpose_or_attitude"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "reading_type": "main_idea"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "reading_type": "detail"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必一 U2",
+          "difficulty": 4,
+          "grammar_tags": [
+            "cleft_basic"
+          ],
+          "reading_type": "inference"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-08",
+      "topic": "体育精神",
+      "book_source": "必修3 U2",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修3 U2",
+          "difficulty": 1,
+          "grammar_tags": [
+            "pronouns"
+          ],
+          "reading_type": "vocabulary_in_context"
+        },
+        {
+          "question_index": 2,
+          "book_source": "必修3 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "relative_clauses_defining"
+          ],
+          "reading_type": "purpose_or_attitude"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "reading_type": "main_idea"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U3",
+          "difficulty": 4,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "reading_type": "detail"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-09",
+      "topic": "音乐学习",
+      "book_source": "选必一 U4",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必一 U4",
+          "difficulty": 1,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "reading_type": "inference"
+        },
+        {
+          "question_index": 2,
+          "book_source": "必修3 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "v_ing_nonfinite"
+          ],
+          "reading_type": "vocabulary_in_context"
+        },
+        {
+          "question_index": 3,
+          "book_source": "必修3 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "with_compound"
+          ],
+          "reading_type": "purpose_or_attitude"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U4",
+          "difficulty": 4,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "reading_type": "main_idea"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-10",
+      "topic": "数字隐私",
+      "book_source": "选必二 U5",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U5",
+          "difficulty": 1,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ],
+          "reading_type": "detail"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必一 U5",
+          "difficulty": 3,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "reading_type": "inference"
+        },
+        {
+          "question_index": 3,
+          "book_source": "必修1 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "cleft_basic"
+          ],
+          "reading_type": "vocabulary_in_context"
+        },
+        {
+          "question_index": 4,
+          "book_source": "必修1 U1",
+          "difficulty": 4,
+          "grammar_tags": [
+            "comparatives_superlatives"
+          ],
+          "reading_type": "purpose_or_attitude"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-11",
+      "topic": "海洋塑料",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U1",
+          "difficulty": 1,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "reading_type": "main_idea"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "reading_type": "detail"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必一 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "v_ing_nonfinite"
+          ],
+          "reading_type": "inference"
+        },
+        {
+          "question_index": 4,
+          "book_source": "必修1 U2",
+          "difficulty": 4,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "reading_type": "vocabulary_in_context"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-12",
+      "topic": "博物馆教育",
+      "book_source": "必修1 U3",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修1 U3",
+          "difficulty": 1,
+          "grammar_tags": [
+            "past_participle_nonfinite"
+          ],
+          "reading_type": "purpose_or_attitude"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "reading_type": "main_idea"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "reading_type": "detail"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必一 U2",
+          "difficulty": 4,
+          "grammar_tags": [
+            "relative_clauses_non_defining"
+          ],
+          "reading_type": "inference"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-13",
+      "topic": "公共图书馆",
+      "book_source": "必修2 U1",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修2 U1",
+          "difficulty": 1,
+          "grammar_tags": [
+            "relative_clauses_non_defining"
+          ],
+          "reading_type": "vocabulary_in_context"
+        },
+        {
+          "question_index": 2,
+          "book_source": "必修2 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subject_verb_agreement"
+          ],
+          "reading_type": "purpose_or_attitude"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ],
+          "reading_type": "main_idea"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U3",
+          "difficulty": 4,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "reading_type": "detail"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-14",
+      "topic": "可再生能源",
+      "book_source": "选必一 U4",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必一 U4",
+          "difficulty": 1,
+          "grammar_tags": [
+            "with_compound"
+          ],
+          "reading_type": "inference"
+        },
+        {
+          "question_index": 2,
+          "book_source": "必修2 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "reading_type": "vocabulary_in_context"
+        },
+        {
+          "question_index": 3,
+          "book_source": "必修2 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "adverbial_clauses"
+          ],
+          "reading_type": "purpose_or_attitude"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U4",
+          "difficulty": 4,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "reading_type": "main_idea"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-15",
+      "topic": "友谊与信任",
+      "book_source": "选必二 U5",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U5",
+          "difficulty": 1,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "reading_type": "detail"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必一 U5",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "reading_type": "inference"
+        },
+        {
+          "question_index": 3,
+          "book_source": "必修2 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "conjunctions"
+          ],
+          "reading_type": "vocabulary_in_context"
+        },
+        {
+          "question_index": 4,
+          "book_source": "必修2 U3",
+          "difficulty": 4,
+          "grammar_tags": [
+            "infinitive_nonfinite"
+          ],
+          "reading_type": "purpose_or_attitude"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-16",
+      "topic": "时间管理",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U1",
+          "difficulty": 1,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "reading_type": "main_idea"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "reading_type": "detail"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必一 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "reading_type": "inference"
+        },
+        {
+          "question_index": 4,
+          "book_source": "必修3 U1",
+          "difficulty": 4,
+          "grammar_tags": [
+            "prepositions"
+          ],
+          "reading_type": "vocabulary_in_context"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-17",
+      "topic": "野生动物保护",
+      "book_source": "必修3 U2",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修3 U2",
+          "difficulty": 1,
+          "grammar_tags": [
+            "pronouns"
+          ],
+          "reading_type": "purpose_or_attitude"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "reading_type": "main_idea"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "reading_type": "detail"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必一 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "reading_type": "inference"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-18",
+      "topic": "在线学习",
+      "book_source": "必修3 U3",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修3 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "reading_type": "vocabulary_in_context"
+        },
+        {
+          "question_index": 2,
+          "book_source": "必修3 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "v_ing_nonfinite"
+          ],
+          "reading_type": "purpose_or_attitude"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "reading_type": "main_idea"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ],
+          "reading_type": "detail"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-19",
+      "topic": "可持续旅游",
+      "book_source": "选必一 U4",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必一 U4",
+          "difficulty": 2,
+          "grammar_tags": [
+            "cleft_basic"
+          ],
+          "reading_type": "inference"
+        },
+        {
+          "question_index": 2,
+          "book_source": "必修1 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "articles"
+          ],
+          "reading_type": "vocabulary_in_context"
+        },
+        {
+          "question_index": 3,
+          "book_source": "必修1 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "cleft_basic"
+          ],
+          "reading_type": "purpose_or_attitude"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U4",
+          "difficulty": 3,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "reading_type": "main_idea"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-20",
+      "topic": "改变生活的发明",
+      "book_source": "选必二 U5",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U5",
+          "difficulty": 2,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "reading_type": "detail"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必一 U5",
+          "difficulty": 3,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "reading_type": "inference"
+        },
+        {
+          "question_index": 3,
+          "book_source": "必修1 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "reading_type": "vocabulary_in_context"
+        },
+        {
+          "question_index": 4,
+          "book_source": "必修1 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "reading_type": "purpose_or_attitude"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-21",
+      "topic": "学习压力",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "reading_type": "main_idea"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "reading_type": "detail"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必一 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "reading_type": "inference"
+        },
+        {
+          "question_index": 4,
+          "book_source": "必修1 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "relative_clauses_defining"
+          ],
+          "reading_type": "vocabulary_in_context"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-22",
+      "topic": "循环经济",
+      "book_source": "必修2 U1",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修2 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "relative_clauses_non_defining"
+          ],
+          "reading_type": "purpose_or_attitude"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ],
+          "reading_type": "main_idea"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "reading_type": "detail"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必一 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "v_ing_nonfinite"
+          ],
+          "reading_type": "inference"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-23",
+      "topic": "太空探索",
+      "book_source": "必修2 U2",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修2 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "with_compound"
+          ],
+          "reading_type": "vocabulary_in_context"
+        },
+        {
+          "question_index": 2,
+          "book_source": "必修2 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "reading_type": "purpose_or_attitude"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "reading_type": "main_idea"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "reading_type": "detail"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-24",
+      "topic": "地方历史",
+      "book_source": "选必一 U4",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必一 U4",
+          "difficulty": 2,
+          "grammar_tags": [
+            "relative_clauses_non_defining"
+          ],
+          "reading_type": "inference"
+        },
+        {
+          "question_index": 2,
+          "book_source": "必修2 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "comparatives_superlatives"
+          ],
+          "reading_type": "vocabulary_in_context"
+        },
+        {
+          "question_index": 3,
+          "book_source": "必修2 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "conjunctions"
+          ],
+          "reading_type": "purpose_or_attitude"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U4",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "reading_type": "main_idea"
+        }
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M2-FULL-READING-25",
+      "topic": "自动化与工作",
+      "book_source": "选必二 U5",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U5",
+          "difficulty": 3,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "reading_type": "detail"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必一 U5",
+          "difficulty": 3,
+          "grammar_tags": [
+            "with_compound"
+          ],
+          "reading_type": "inference"
+        },
+        {
+          "question_index": 3,
+          "book_source": "必修3 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "past_participle_nonfinite"
+          ],
+          "reading_type": "vocabulary_in_context"
+        },
+        {
+          "question_index": 4,
+          "book_source": "必修3 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "prepositions"
+          ],
+          "reading_type": "purpose_or_attitude"
+        }
+      ]
+    },
+    {
+      "type": "gap_fill",
+      "passage_group_id": "M2-FULL-GAP-01",
+      "topic": "高效学习习惯",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "cohesion_type": "pronoun_reference"
+        },
+        {
+          "question_index": 2,
+          "book_source": "必修1 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "articles"
+          ],
+          "cohesion_type": "pronoun_reference"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U1",
+          "difficulty": 4,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "cohesion_type": "pronoun_reference"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必一 U1",
+          "difficulty": 1,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cohesion_type": "pronoun_reference"
+        },
+        {
+          "question_index": 5,
+          "book_source": "选必二 U1",
+          "difficulty": 5,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "cohesion_type": "pronoun_reference"
+        }
+      ]
+    },
+    {
+      "type": "gap_fill",
+      "passage_group_id": "M2-FULL-GAP-02",
+      "topic": "校园科学展",
+      "book_source": "必修1 U2",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修1 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "infinitive_nonfinite"
+          ],
+          "cohesion_type": "pronoun_reference"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "cohesion_type": "pronoun_reference"
+        },
+        {
+          "question_index": 3,
+          "book_source": "必修1 U2",
+          "difficulty": 4,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "cohesion_type": "pronoun_reference"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U2",
+          "difficulty": 1,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ],
+          "cohesion_type": "pronoun_reference"
+        },
+        {
+          "question_index": 5,
+          "book_source": "选必一 U2",
+          "difficulty": 5,
+          "grammar_tags": [
+            "cleft_basic"
+          ],
+          "cohesion_type": "pronoun_reference"
+        }
+      ]
+    },
+    {
+      "type": "gap_fill",
+      "passage_group_id": "M2-FULL-GAP-03",
+      "topic": "健康作息",
+      "book_source": "选必二 U3",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cohesion_type": "pronoun_reference"
+        },
+        {
+          "question_index": 2,
+          "book_source": "必修1 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "relative_clauses_defining"
+          ],
+          "cohesion_type": "pronoun_reference"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U3",
+          "difficulty": 4,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "cohesion_type": "pronoun_reference"
+        },
+        {
+          "question_index": 4,
+          "book_source": "必修1 U3",
+          "difficulty": 1,
+          "grammar_tags": [
+            "subject_verb_agreement"
+          ],
+          "cohesion_type": "logical_connector"
+        },
+        {
+          "question_index": 5,
+          "book_source": "选必二 U3",
+          "difficulty": 5,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "cohesion_type": "logical_connector"
+        }
+      ]
+    },
+    {
+      "type": "gap_fill",
+      "passage_group_id": "M2-FULL-GAP-04",
+      "topic": "户外活动",
+      "book_source": "选必一 U4",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必一 U4",
+          "difficulty": 3,
+          "grammar_tags": [
+            "v_ing_nonfinite"
+          ],
+          "cohesion_type": "logical_connector"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U4",
+          "difficulty": 2,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "cohesion_type": "logical_connector"
+        },
+        {
+          "question_index": 3,
+          "book_source": "必修2 U1",
+          "difficulty": 4,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "cohesion_type": "logical_connector"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U4",
+          "difficulty": 1,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "cohesion_type": "logical_connector"
+        },
+        {
+          "question_index": 5,
+          "book_source": "必修2 U1",
+          "difficulty": 5,
+          "grammar_tags": [
+            "articles"
+          ],
+          "cohesion_type": "logical_connector"
+        }
+      ]
+    },
+    {
+      "type": "gap_fill",
+      "passage_group_id": "M2-FULL-GAP-05",
+      "topic": "面对失败",
+      "book_source": "选必二 U5",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U5",
+          "difficulty": 3,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "cohesion_type": "logical_connector"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必一 U5",
+          "difficulty": 2,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cohesion_type": "logical_connector"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U5",
+          "difficulty": 4,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ],
+          "cohesion_type": "logical_connector"
+        },
+        {
+          "question_index": 4,
+          "book_source": "必修2 U2",
+          "difficulty": 1,
+          "grammar_tags": [
+            "infinitive_nonfinite"
+          ],
+          "cohesion_type": "logical_connector"
+        },
+        {
+          "question_index": 5,
+          "book_source": "选必二 U5",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cohesion_type": "logical_connector"
+        }
+      ]
+    },
+    {
+      "type": "gap_fill",
+      "passage_group_id": "M2-FULL-GAP-06",
+      "topic": "博物馆参观",
+      "book_source": "必修2 U3",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修2 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "cohesion_type": "logical_connector"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U1",
+          "difficulty": 4,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "cohesion_type": "lexical_repetition"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必一 U1",
+          "difficulty": 1,
+          "grammar_tags": [
+            "cleft_basic"
+          ],
+          "cohesion_type": "lexical_repetition"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "cohesion_type": "lexical_repetition"
+        },
+        {
+          "question_index": 5,
+          "book_source": "必修2 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "relative_clauses_defining"
+          ],
+          "cohesion_type": "lexical_repetition"
+        }
+      ]
+    },
+    {
+      "type": "gap_fill",
+      "passage_group_id": "M2-FULL-GAP-07",
+      "topic": "环保社团",
+      "book_source": "选必二 U2",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U2",
+          "difficulty": 4,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "cohesion_type": "lexical_repetition"
+        },
+        {
+          "question_index": 2,
+          "book_source": "必修3 U1",
+          "difficulty": 1,
+          "grammar_tags": [
+            "subject_verb_agreement"
+          ],
+          "cohesion_type": "lexical_repetition"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "cohesion_type": "lexical_repetition"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必一 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "v_ing_nonfinite"
+          ],
+          "cohesion_type": "lexical_repetition"
+        },
+        {
+          "question_index": 5,
+          "book_source": "选必二 U2",
+          "difficulty": 3,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "cohesion_type": "lexical_repetition"
+        }
+      ]
+    },
+    {
+      "type": "gap_fill",
+      "passage_group_id": "M2-FULL-GAP-08",
+      "topic": "沟通技巧",
+      "book_source": "必修3 U2",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "必修3 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "cohesion_type": "lexical_repetition"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "partial_inversion_basic"
+          ],
+          "cohesion_type": "lexical_repetition"
+        },
+        {
+          "question_index": 3,
+          "book_source": "必修3 U2",
+          "difficulty": 2,
+          "grammar_tags": [
+            "articles"
+          ],
+          "cohesion_type": "lexical_repetition"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U3",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cohesion_type": "semantic_contrast"
+        },
+        {
+          "question_index": 5,
+          "book_source": "选必一 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "cohesion_type": "semantic_contrast"
+        }
+      ]
+    },
+    {
+      "type": "gap_fill",
+      "passage_group_id": "M2-FULL-GAP-09",
+      "topic": "旅行准备",
+      "book_source": "选必二 U4",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必二 U4",
+          "difficulty": 3,
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "cohesion_type": "semantic_contrast"
+        },
+        {
+          "question_index": 2,
+          "book_source": "必修3 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "infinitive_nonfinite"
+          ],
+          "cohesion_type": "semantic_contrast"
+        },
+        {
+          "question_index": 3,
+          "book_source": "选必二 U4",
+          "difficulty": 3,
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "cohesion_type": "semantic_contrast"
+        },
+        {
+          "question_index": 4,
+          "book_source": "必修3 U3",
+          "difficulty": 2,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "cohesion_type": "semantic_contrast"
+        },
+        {
+          "question_index": 5,
+          "book_source": "选必二 U4",
+          "difficulty": 3,
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "cohesion_type": "semantic_contrast"
+        }
+      ]
+    },
+    {
+      "type": "gap_fill",
+      "passage_group_id": "M2-FULL-GAP-10",
+      "topic": "阅读习惯",
+      "book_source": "选必一 U5",
+      "difficulty": 3,
+      "questions": [
+        {
+          "question_index": 1,
+          "book_source": "选必一 U5",
+          "difficulty": 2,
+          "grammar_tags": [
+            "cleft_basic"
+          ],
+          "cohesion_type": "semantic_contrast"
+        },
+        {
+          "question_index": 2,
+          "book_source": "选必二 U5",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "cohesion_type": "semantic_contrast"
+        },
+        {
+          "question_index": 3,
+          "book_source": "必修1 U1",
+          "difficulty": 2,
+          "grammar_tags": [
+            "relative_clauses_defining"
+          ],
+          "cohesion_type": "semantic_contrast"
+        },
+        {
+          "question_index": 4,
+          "book_source": "选必二 U5",
+          "difficulty": 3,
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "cohesion_type": "semantic_contrast"
+        },
+        {
+          "question_index": 5,
+          "book_source": "必修1 U1",
+          "difficulty": 3,
+          "grammar_tags": [
+            "subject_verb_agreement"
+          ],
+          "cohesion_type": "semantic_contrast"
+        }
+      ]
+    }
+  ]
+}

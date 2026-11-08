@@ -1,0 +1,1 @@
+{"translations": {"rewarded": "奖励", "stole": "偷"}}

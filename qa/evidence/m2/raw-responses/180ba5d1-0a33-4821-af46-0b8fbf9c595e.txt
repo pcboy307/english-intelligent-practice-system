@@ -1,0 +1,65 @@
+{
+  "passage": "Every year, millions of tons of plastic waste enter the ocean. This plastic does not break down quickly. Instead, it breaks into tiny pieces called microplastics. These small pieces are now found everywhere in the sea, from the surface to the deep ocean floor. Scientists have found microplastics inside fish, sea birds, and even whales. This is a serious problem because plastic can harm animals and may also affect human health through the food we eat. Recently, a student and her teacher organised a beach clean-up in their town. They collected over 200 kilograms of plastic waste in just one day. The student said, \"I was shocked by how much rubbish we found. But I also felt hopeful because so many people came to help.\" The classmate added, \"We must reduce our use of plastic bags and bottles. Small actions can make a big difference.\" The teacher explained that plastic pollution is a global issue. \"If we all take action, we can protect our oceans for future generations,\" she said. The students plan to continue their clean-up activities every month. They also want to encourage others to use less plastic. By working together, they believe they can make a real change.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Plastic waste is a serious problem, but people can take action to reduce it.",
+        "Microplastics are only found in the deep ocean.",
+        "Beach clean-ups are the only way to solve plastic pollution.",
+        "Fish and sea birds do not eat plastic."
+      ],
+      "answer": "Plastic waste is a serious problem, but people can take action to reduce it.",
+      "explanation": "文章先说明海洋塑料污染的严重性，然后通过学生和老师的行动说明人们可以采取措施减少污染，因此主旨是塑料垃圾问题严重但人们可以行动。A选项概括了全文；B选项错误，因为微塑料从表面到深海都有；C选项错误，因为文章提到减少使用塑料等多种行动，并非只有海滩清理。",
+      "evidence_sentence": "Every year, millions of tons of plastic waste enter the ocean.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what have scientists found inside sea animals?",
+      "options": [
+        "Microplastics",
+        "Plastic bags",
+        "Large pieces of plastic",
+        "Tiny pieces of glass"
+      ],
+      "answer": "Microplastics",
+      "explanation": "文章明确提到科学家在鱼、海鸟甚至鲸鱼体内发现了微塑料。A选项正确；B选项错误，因为文章说的是微塑料，不是塑料袋；C选项错误，因为微塑料是微小碎片，不是大块塑料。",
+      "evidence_sentence": "Scientists have found microplastics inside fish, sea birds, and even whales.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about the student's feelings after the beach clean-up?",
+      "options": [
+        "She felt both shocked and hopeful.",
+        "She felt angry and disappointed.",
+        "She felt tired and bored.",
+        "She felt afraid and alone."
+      ],
+      "answer": "She felt both shocked and hopeful.",
+      "explanation": "学生说“I was shocked by how much rubbish we found. But I also felt hopeful because so many people came to help.”，由此可以推断她既震惊又充满希望。A选项正确；B选项错误，因为她说感到有希望，不是失望；C选项错误，因为文章没有提到她感到无聊或疲惫。",
+      "evidence_sentence": "I was shocked by how much rubbish we found. But I also felt hopeful because so many people came to help.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"reduce\" in the passage most likely mean?",
+      "options": [
+        "To make something smaller in amount",
+        "To increase something",
+        "To collect something",
+        "To recycle something"
+      ],
+      "answer": "To make something smaller in amount",
+      "explanation": "根据上下文，学生说“We must reduce our use of plastic bags and bottles.”，意思是必须减少塑料袋和瓶子的使用量，因此reduce意为“减少”。A选项正确；B选项是相反意思；C选项“收集”不符合语境；D选项“回收”不是reduce的意思。",
+      "evidence_sentence": "We must reduce our use of plastic bags and bottles.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

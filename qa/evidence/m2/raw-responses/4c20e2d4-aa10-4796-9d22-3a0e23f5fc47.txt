@@ -1,0 +1,95 @@
+{
+  "passage": "Last year, the environmental club at our school started a project to make our campus greener. The club was (1) ______ by a group of students who wanted to reduce waste. They believed that every small action could make a difference. The first task was to set up recycling bins in every classroom. The student (2) ______ the bins are emptied every day. To encourage participation, the club organized a competition between classes. The winner would receive a special prize. The club also suggested that each class (3) ______ a short report on how much waste they reduced. Many students found (4) ______ the reports eye-opening. They realized that simple habits like using both sides of paper could save many trees. The club's efforts were praised by the teacher, who said that the students' (5) ______ was inspiring. Now, more students are joining the club, and the campus is cleaner than before.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank (1).",
+      "options": [
+        "A. The club was set up by a group of students who wanted to reduce waste.",
+        "B. The club was taken down by a group of students who wanted to reduce waste.",
+        "C. The club was put off by a group of students who wanted to reduce waste.",
+        "D. The club was given up by a group of students who wanted to reduce waste.",
+        "E. The club was turned on by a group of students who wanted to reduce waste.",
+        "F. The club was looked after by a group of students who wanted to reduce waste.",
+        "G. The club was broken into by a group of students who wanted to reduce waste."
+      ],
+      "answer": "A",
+      "explanation": "根据上下文，环保社团是由一群想减少浪费的学生成立的，因此用 set up 表示“建立”。B“拆除”、C“推迟”和D“放弃”都与后文他们积极行动矛盾。",
+      "evidence_sentence": "The club was (1) ______ by a group of students who wanted to reduce waste.",
+      "context_clue": "The club was (1) ______ by a group of students who wanted to reduce waste.",
+      "clue_argument": "后文提到他们相信每个小行动都能带来改变，并开始设置回收箱，说明社团是“成立”的。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank (2).",
+      "options": [
+        "A. The student makes sure the bins are emptied every day.",
+        "B. The student make sure the bins are emptied every day.",
+        "C. The student making sure the bins are emptied every day.",
+        "D. The student made sure the bins are emptied every day.",
+        "E. The student has made sure the bins are emptied every day.",
+        "F. The student is made sure the bins are emptied every day.",
+        "G. The student will make sure the bins are emptied every day."
+      ],
+      "answer": "A",
+      "explanation": "主语 The student 是第三人称单数，一般现在时用 makes 表示日常职责。B 主谓不一致，C 缺少谓语，D 和E 时态与上下文的一般现在时不符。",
+      "evidence_sentence": "The student (2) ______ the bins are emptied every day.",
+      "context_clue": "The student (2) ______ the bins are emptied every day.",
+      "clue_argument": "句子描述的是日常任务，主语为单数，因此用一般现在时单数形式 makes sure。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank (3).",
+      "options": [
+        "A. The club also suggested that each class write a short report on how much waste they reduced.",
+        "B. The club also suggested that each class writes a short report on how much waste they reduced.",
+        "C. The club also suggested that each class wrote a short report on how much waste they reduced.",
+        "D. The club also suggested that each class writing a short report on how much waste they reduced.",
+        "E. The club also suggested that each class to write a short report on how much waste they reduced.",
+        "F. The club also suggested that each class has written a short report on how much waste they reduced.",
+        "G. The club also suggested that each class will write a short report on how much waste they reduced."
+      ],
+      "answer": "A",
+      "explanation": "suggest 表示“建议”时，从句用虚拟语气 should + 动词原形，should 可省略，因此用 write。B 和C 不是虚拟语气形式，D 和E 结构错误。",
+      "evidence_sentence": "The club also suggested that each class (3) ______ a short report on how much waste they reduced.",
+      "context_clue": "The club also suggested that each class (3) ______ a short report on how much waste they reduced.",
+      "clue_argument": "suggest 表建议，其后宾语从句使用 (should) + 动词原形，所以选 write。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank (4).",
+      "options": [
+        "A. Many students found writing the reports eye-opening.",
+        "B. Many students found write the reports eye-opening.",
+        "C. Many students found to write the reports eye-opening.",
+        "D. Many students found written the reports eye-opening.",
+        "E. Many students found writes the reports eye-opening.",
+        "F. Many students found to writing the reports eye-opening.",
+        "G. Many students found wrote the reports eye-opening."
+      ],
+      "answer": "A",
+      "explanation": "find 后接宾语补足语时，常用动词-ing形式表示动作正在进行或经历，因此用 writing。B 和C 形式错误，D 和G 时态或形式不对。",
+      "evidence_sentence": "Many students found (4) ______ the reports eye-opening.",
+      "context_clue": "Many students found (4) ______ the reports eye-opening.",
+      "clue_argument": "find + 宾语 + 形容词，宾语由动词-ing短语充当，表示“发现写报告这件事令人大开眼界”。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank (5).",
+      "options": [
+        "A. The club's efforts were praised by the teacher, who said that the students' creation was inspiring.",
+        "B. The club's efforts were praised by the teacher, who said that the students' creativity was inspiring.",
+        "C. The club's efforts were praised by the teacher, who said that the students' creative was inspiring.",
+        "D. The club's efforts were praised by the teacher, who said that the students' created was inspiring.",
+        "E. The club's efforts were praised by the teacher, who said that the students' creating was inspiring.",
+        "F. The club's efforts were praised by the teacher, who said that the students' creator was inspiring.",
+        "G. The club's efforts were praised by the teacher, who said that the students' creatively was inspiring."
+      ],
+      "answer": "B",
+      "explanation": "此处需要名词表示“创造力”，由 creative 加后缀 -ity 构成 creativity。A 是“创造物”，C 是形容词，D 是动词过去式，均不符合语境。",
+      "evidence_sentence": "The club's efforts were praised by the teacher, who said that the students' (5) ______ was inspiring.",
+      "context_clue": "The club's efforts were praised by the teacher, who said that the students' (5) ______ was inspiring.",
+      "clue_argument": "所有格 students' 后需要名词，且与 inspiring 搭配，表示学生的创造力，故用 creativity。"
+    }
+  ]
+}

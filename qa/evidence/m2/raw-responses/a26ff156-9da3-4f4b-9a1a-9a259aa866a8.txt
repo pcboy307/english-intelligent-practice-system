@@ -1,0 +1,45 @@
+{
+  "passage": "Last year, the student joined the school basketball team. She was not the tallest, but she was the most active. Her coach often said, \"Sports spirit is not only about winning; it is about how you behave when you lose.\" The student admired these words. In the final match, her team was beaten by a stronger side. Instead of crying, she shook hands with every opponent. Her teacher, who had watched the game, later told the class, \"She showed true sports spirit.\" The student explained, \"If I had given up earlier, I would not have learned this lesson.\" She also helped a classmate who fell during the game. The coach praised her action. Sports spirit, she realised, is built through small choices. It is the courage to respect others and the will to keep trying. This spirit can be seen in every training and every match. It is not about medals but about attitude.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"admired\" in the passage most likely mean?",
+      "options": ["disliked", "respected", "forgot", "doubted"],
+      "answer": "respected",
+      "explanation": "根据上下文，学生认同教练的话，因此“admired”意为“尊敬、钦佩”。A项“disliked”和D项“doubted”与后文她践行这些话的行为矛盾，故错误。",
+      "evidence_sentence": "The student admired these words.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the teacher's attitude towards the student's behavior?",
+      "options": ["Critical", "Indifferent", "Supportive", "Confused"],
+      "answer": "Supportive",
+      "explanation": "老师评价学生“showed true sports spirit”，表明支持态度。A项“Critical”和B项“Indifferent”与老师表扬性的言辞不符，故错误。",
+      "evidence_sentence": "Her teacher, who had watched the game, later told the class, \"She showed true sports spirit.\"",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Winning is the most important thing in sports.", "Sports spirit is about attitude and respect.", "Tall players are always the best.", "Losing a match is a failure."],
+      "answer": "Sports spirit is about attitude and respect.",
+      "explanation": "文章通过学生输球后仍尊重对手、帮助同学的事例，说明体育精神在于态度和尊重。A项“Winning is the most important thing”和D项“Losing a match is a failure”与文章主旨相反，故错误。",
+      "evidence_sentence": "Sports spirit, she realised, is built through small choices.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What did the student do when a classmate fell during the game?",
+      "options": ["She laughed at the classmate.", "She helped the classmate.", "She ignored the classmate.", "She called the coach."],
+      "answer": "She helped the classmate.",
+      "explanation": "文中明确提到“She also helped a classmate who fell during the game.”，因此B项正确。A项“She laughed at the classmate”和C项“She ignored the classmate”与原文事实相反，故错误。",
+      "evidence_sentence": "She also helped a classmate who fell during the game.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

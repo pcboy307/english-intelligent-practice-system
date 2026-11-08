@@ -1,0 +1,65 @@
+{
+  "passage": "The City Museum is a place where students can learn outside the classroom. Last year, the museum started a new education programme for high school students. The programme offers guided tours, art activities, and talks by local people. Students can touch copies of ancient objects and ask questions. The museum hopes that the programme will help young people understand history and culture. Many teachers believe that such experiences are more useful than reading textbooks alone. They say that students who join the programme become more active and curious. The museum also trains teachers to use its collections in their lessons. If the museum had more money, it would open a special room for school groups. The director suggests that every school should visit the museum at least once a year. The programme, which started with only two schools, now includes twenty schools across the city. The museum plans to add online tours so that more students can take part. The aim is to make learning fun and easy for everyone.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the purpose of the museum's new education programme?",
+      "options": [
+        "To help students learn outside the classroom",
+        "To sell ancient objects to schools",
+        "To train students to become guides",
+        "To replace textbooks in all schools"
+      ],
+      "answer": "To help students learn outside the classroom",
+      "explanation": "文章首句说明博物馆是学生在课堂外学习的地方，后文也提到项目旨在帮助年轻人理解历史与文化。错误选项B（向学校出售文物）和C（训练学生成为导游）在文中均无依据。",
+      "evidence_sentence": "The City Museum is a place where students can learn outside the classroom.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "The museum's education programme helps students learn in new ways",
+        "The museum needs more money to build a new room",
+        "Teachers should stop using textbooks in class",
+        "Online tours are better than guided tours"
+      ],
+      "answer": "The museum's education programme helps students learn in new ways",
+      "explanation": "全文围绕博物馆教育项目展开，介绍其活动、目的和扩展计划，核心是帮助学生以新方式学习。错误选项B（需要更多钱建新房间）只是文中一个假设细节，C（教师应停止使用教科书）和D（在线参观优于导游参观）均非文章主旨。",
+      "evidence_sentence": "The programme offers guided tours, art activities, and talks by local people.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what does the director suggest?",
+      "options": [
+        "Every school should visit the museum at least once a year",
+        "The museum should close its special room",
+        "Students should pay for online tours",
+        "Teachers should not use museum collections"
+      ],
+      "answer": "Every school should visit the museum at least once a year",
+      "explanation": "文中明确提到馆长建议每所学校每年至少参观博物馆一次。错误选项B（关闭特殊房间）与文中计划相反，C（学生应为在线参观付费）文中未提及，D（教师不应使用博物馆藏品）与文中培训教师使用藏品矛盾。",
+      "evidence_sentence": "The director suggests that every school should visit the museum at least once a year.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the future of the programme?",
+      "options": [
+        "It will likely reach more students",
+        "It will be stopped because of high costs",
+        "It will only serve two schools",
+        "It will replace all classroom teaching"
+      ],
+      "answer": "It will likely reach more students",
+      "explanation": "文章提到项目从两所学校扩展到二十所，并计划增加在线参观让更多学生参与，可推断其未来将惠及更多学生。错误选项B（因高成本停止）与文中扩展趋势相反，C（只服务两所学校）与现状矛盾，D（取代所有课堂教学）过度推断且无依据。",
+      "evidence_sentence": "The museum plans to add online tours so that more students can take part.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

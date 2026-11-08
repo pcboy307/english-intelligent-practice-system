@@ -1,0 +1,1 @@
+{"translations": {"rebuild": "重建", "relay": "接力", "runners": "跑者"}}

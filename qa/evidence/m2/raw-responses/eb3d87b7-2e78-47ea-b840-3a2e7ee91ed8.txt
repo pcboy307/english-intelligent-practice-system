@@ -1,0 +1,46 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative about a student's growth after a failure, with logical connections between sentences.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A logically follows the teacher's encouragement to see failure as a chance to grow, while other options contradict the theme.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A correctly uses subjunctive mood and connects to the idea of discovering weaknesses, while others have tense errors or contradict the theme.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A correctly uses inversion after 'Only after', while others fail to invert or have different word order.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A correctly uses the infinitive 'to make' after 'was', while others use incorrect forms.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A correctly uses the past perfect subjunctive in the if-clause and 'would have' in the main clause, while others have tense errors.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

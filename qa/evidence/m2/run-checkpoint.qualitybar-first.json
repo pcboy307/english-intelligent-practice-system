@@ -1,0 +1,844 @@
+{
+  "updated_at": "2026-11-07T14:57:21.819882+00:00",
+  "records": [
+    {
+      "index": 11,
+      "record": {
+        "type": "grammar_fill",
+        "passage_group_id": "M2-FULL-GRAMMAR-06",
+        "topic": "未来职业",
+        "book_source": "必修2 U3",
+        "difficulty": 3,
+        "passage": "Many students wonder what job they will do in the future. ① they choose a career, they should think about their skills and interests. Some jobs need special ②, such as engineering or medicine. Others require ③ and good communication. The world of work is changing fast, and some old jobs are becoming ④. For example, many tasks that people once did by hand are now done by machines. However, new jobs are appearing all the time. ⑤, jobs in technology and health care are growing quickly. ⑥, it is important to keep learning. A person with many skills is ⑦ than one with only a few. The most ⑧ thing is to stay curious and open to new ideas. ⑨ a clear plan can help you reach your goal. You should also be ready ⑩ new challenges. With hard work and a positive attitude, you can build a bright future.",
+        "questions": [
+          {
+            "stem": "① ___ they choose a career, they should think about their skills and interests.",
+            "options": [
+              "Before",
+              "After",
+              "While",
+              "Since"
+            ],
+            "answer": "Before",
+            "explanation": "根据语境，学生应在选择职业之前考虑技能和兴趣，before表示“在……之前”，符合逻辑。After表示之后，while表示同时，since表示自从或因为，均不符合此处时间先后关系。",
+            "knowledge_points": [
+              "m2:提分优先",
+              "grammar:conjunctions"
+            ],
+            "grammar_tags": [
+              "conjunctions"
+            ],
+            "book_source": "必修2 U3",
+            "difficulty": 2,
+            "evidence_sentence": "Many students wonder what job they will do in the future. ① they choose a career, they should think about their skills and interests.",
+            "context_clue": "Many students wonder what job they will do in the future. ① they choose a career, they should think about their skills and interests.",
+            "clue_argument": "考虑技能和兴趣应发生在选择职业之前，故用before。"
+          },
+          {
+            "stem": "Some jobs need special ②, such as engineering or medicine.",
+            "options": [
+              "knowledge",
+              "know",
+              "known",
+              "knowing"
+            ],
+            "answer": "knowledge",
+            "explanation": "need后接名词作宾语，special knowledge表示“专业知识”，knowledge是know的名词形式。know是动词，known是过去分词，knowing是动名词，均不能直接作need的宾语且不符合此处名词需求。",
+            "knowledge_points": [
+              "m2:提分优先",
+              "grammar:word_formation"
+            ],
+            "grammar_tags": [
+              "word_formation"
+            ],
+            "book_source": "选必一 U1",
+            "difficulty": 3,
+            "evidence_sentence": "Some jobs need special ②, such as engineering or medicine.",
+            "context_clue": "Some jobs need special ②, such as engineering or medicine.",
+            "clue_argument": "special后需名词，engineering和medicine属于专业知识。"
+          },
+          {
+            "stem": "Others require ③ and good communication.",
+            "options": [
+              "patience",
+              "patient",
+              "patiently",
+              "patients"
+            ],
+            "answer": "patience",
+            "explanation": "require后接名词，与good communication并列，patience是不可数名词，表示“耐心”。patient作形容词或名词（病人），patiently是副词，patients是复数名词，均不符合此处与communication并列的抽象名词要求。",
+            "knowledge_points": [
+              "m2:提分优先",
+              "grammar:word_formation"
+            ],
+            "grammar_tags": [
+              "word_formation"
+            ],
+            "book_source": "选必二 U1",
+            "difficulty": 2,
+            "evidence_sentence": "Others require ③ and good communication.",
+            "context_clue": "Others require ③ and good communication.",
+            "clue_argument": "与good communication并列，需要抽象名词patience。"
+          },
+          {
+            "stem": "The world of work is changing fast, and some old jobs are becoming ④.",
+            "options": [
+              "disappearing",
+              "disappear",
+              "disappeared",
+              "disappears"
+            ],
+            "answer": "disappearing",
+            "explanation": "are becoming后接现在分词构成进行时，表示正在消失，disappearing符合语法。disappear是动词原形，disappeared是过去分词，disappears是第三人称单数，均不能用于be becoming之后。",
+            "knowledge_points": [
+              "m2:提分优先",
+              "grammar:word_formation"
+            ],
+            "grammar_tags": [
+              "word_formation"
+            ],
+            "book_source": "选必二 U1",
+            "difficulty": 3,
+            "evidence_sentence": "The world of work is changing fast, and some old jobs are becoming ④.",
+            "context_clue": "The world of work is changing fast, and some old jobs are becoming ④.",
+            "clue_argument": "are becoming后需现在分词，表示正在消失。"
+          },
+          {
+            "stem": "⑤, jobs in technology and health care are growing quickly.",
+            "options": [
+              "For example",
+              "However",
+              "In conclusion",
+              "Instead"
+            ],
+            "answer": "For example",
+            "explanation": "前文说新工作不断出现，此处举例说明技术和医疗领域的工作增长快，for example表示举例。However表示转折，In conclusion表示总结，Instead表示替代，均不符合此处举例关系。",
+            "knowledge_points": [
+              "m2:提分优先",
+              "grammar:comparatives_superlatives"
+            ],
+            "grammar_tags": [
+              "comparatives_superlatives"
+            ],
+            "book_source": "必修2 U3",
+            "difficulty": 2,
+            "evidence_sentence": "However, new jobs are appearing all the time. ⑤, jobs in technology and health care are growing quickly.",
+            "context_clue": "However, new jobs are appearing all the time. ⑤, jobs in technology and health care are growing quickly.",
+            "clue_argument": "后句是前句“新工作出现”的具体例子，故用for example。"
+          },
+          {
+            "stem": "⑥, it is important to keep learning.",
+            "options": [
+              "Therefore",
+              "However",
+              "For example",
+              "Instead"
+            ],
+            "answer": "Therefore",
+            "explanation": "因为工作世界变化快且新工作不断出现，所以持续学习很重要，therefore表示因果。However表示转折，For example表示举例，Instead表示替代，均不符合此处因果关系。",
+            "knowledge_points": [
+              "m2:提分优先",
+              "grammar:comparatives_superlatives"
+            ],
+            "grammar_tags": [
+              "comparatives_superlatives"
+            ],
+            "book_source": "必修2 U3",
+            "difficulty": 3,
+            "evidence_sentence": "However, new jobs are appearing all the time. ⑤, jobs in technology and health care are growing quickly. ⑥, it is important to keep learning.",
+            "context_clue": "However, new jobs are appearing all the time. ⑤, jobs in technology and health care are growing quickly. ⑥, it is important to keep learning.",
+            "clue_argument": "前文说明工作变化快，后文得出结论“持续学习很重要”，故用therefore。"
+          },
+          {
+            "stem": "A person with many skills is ⑦ than one with only a few.",
+            "options": [
+              "more able",
+              "most able",
+              "abler",
+              "able"
+            ],
+            "answer": "more able",
+            "explanation": "than表明此处需要比较级，able的比较级是more able。most able是最高级，abler是错误的比较级形式，able是原级，均不能与than连用。",
+            "knowledge_points": [
+              "m2:提分优先",
+              "grammar:with_compound"
+            ],
+            "grammar_tags": [
+              "with_compound"
+            ],
+            "book_source": "选必一 U1",
+            "difficulty": 2,
+            "evidence_sentence": "A person with many skills is ⑦ than one with only a few.",
+            "context_clue": "A person with many skills is ⑦ than one with only a few.",
+            "clue_argument": "than提示比较级，able的比较级为more able。"
+          },
+          {
+            "stem": "The most ⑧ thing is to stay curious and open to new ideas.",
+            "options": [
+              "important",
+              "importance",
+              "importantly",
+              "import"
+            ],
+            "answer": "important",
+            "explanation": "the most后接形容词构成最高级，修饰thing，important是形容词。importance是名词，importantly是副词，import是动词或名词，均不能直接修饰thing。",
+            "knowledge_points": [
+              "m2:提分优先",
+              "grammar:with_compound"
+            ],
+            "grammar_tags": [
+              "with_compound"
+            ],
+            "book_source": "选必一 U1",
+            "difficulty": 3,
+            "evidence_sentence": "The most ⑧ thing is to stay curious and open to new ideas.",
+            "context_clue": "The most ⑧ thing is to stay curious and open to new ideas.",
+            "clue_argument": "the most后需形容词，important修饰thing。"
+          },
+          {
+            "stem": "⑨ a clear plan can help you reach your goal.",
+            "options": [
+              "To make",
+              "Making",
+              "Made",
+              "Make"
+            ],
+            "answer": "To make",
+            "explanation": "此处表示目的“为了制定一个清晰的计划”，用不定式to make作目的状语。Making是现在分词，Made是过去分词，Make是动词原形，均不能在此表示目的。",
+            "knowledge_points": [
+              "m2:提分优先",
+              "grammar:infinitive_nonfinite"
+            ],
+            "grammar_tags": [
+              "infinitive_nonfinite"
+            ],
+            "book_source": "必修2 U3",
+            "difficulty": 3,
+            "evidence_sentence": "⑨ a clear plan can help you reach your goal.",
+            "context_clue": "⑨ a clear plan can help you reach your goal.",
+            "clue_argument": "制定计划是帮助实现目标的目的，故用不定式to make。"
+          },
+          {
+            "stem": "You should also be ready ⑩ new challenges.",
+            "options": [
+              "to face",
+              "facing",
+              "faced",
+              "face"
+            ],
+            "answer": "to face",
+            "explanation": "be ready to do sth.是固定搭配，表示“准备好做某事”，故用不定式to face。facing是现在分词，faced是过去分词，face是动词原形，均不符合be ready后的不定式要求。",
+            "knowledge_points": [
+              "m2:提分优先",
+              "grammar:infinitive_nonfinite"
+            ],
+            "grammar_tags": [
+              "infinitive_nonfinite"
+            ],
+            "book_source": "必修2 U3",
+            "difficulty": 3,
+            "evidence_sentence": "You should also be ready ⑩ new challenges.",
+            "context_clue": "You should also be ready ⑩ new challenges.",
+            "clue_argument": "be ready后接不定式，表示准备好面对新挑战。"
+          }
+        ],
+        "validation": {
+          "word_count": 141,
+          "unknown_words": [],
+          "vocabulary_resolutions": [
+            {
+              "original": "students",
+              "matched_entry": "student",
+              "rules": [
+                "plural_s"
+              ]
+            },
+            {
+              "original": "skills",
+              "matched_entry": "skill",
+              "rules": [
+                "plural_s"
+              ]
+            },
+            {
+              "original": "interests",
+              "matched_entry": "interest",
+              "rules": [
+                "plural_s"
+              ]
+            },
+            {
+              "original": "jobs",
+              "matched_entry": "job",
+              "rules": [
+                "plural_s"
+              ]
+            },
+            {
+              "original": "engineering",
+              "matched_entry": "engineer",
+              "rules": [
+                "inflection_ing"
+              ]
+            },
+            {
+              "original": "others",
+              "matched_entry": "other",
+              "rules": [
+                "plural_s"
+              ]
+            },
+            {
+              "original": "communication",
+              "matched_entry": "communicate",
+              "rules": [
+                "derivation_tion_to_te"
+              ]
+            },
+            {
+              "original": "is",
+              "matched_entry": "be",
+              "rules": [
+                "irregular_inflection"
+              ]
+            },
+            {
+              "original": "changing",
+              "matched_entry": "change",
+              "rules": [
+                "inflection_ing_restore_e"
+              ]
+            },
+            {
+              "original": "jobs",
+              "matched_entry": "job",
+              "rules": [
+                "plural_s"
+              ]
+            },
+            {
+              "original": "are",
+              "matched_entry": "be",
+              "rules": [
+                "irregular_inflection"
+              ]
+            },
+            {
+              "original": "becoming",
+              "matched_entry": "become",
+              "rules": [
+                "inflection_ing_restore_e"
+              ]
+            },
+            {
+              "original": "tasks",
+              "matched_entry": "task",
+              "rules": [
+                "plural_s"
+              ]
+            },
+            {
+              "original": "did",
+              "matched_entry": "do",
+              "rules": [
+                "irregular_inflection"
+              ]
+            },
+            {
+              "original": "are",
+              "matched_entry": "be",
+              "rules": [
+                "irregular_inflection"
+              ]
+            },
+            {
+              "original": "done",
+              "matched_entry": "do",
+              "rules": [
+                "irregular_inflection"
+              ]
+            },
+            {
+              "original": "machines",
+              "matched_entry": "machine",
+              "rules": [
+                "plural_s"
+              ]
+            },
+            {
+              "original": "jobs",
+              "matched_entry": "job",
+              "rules": [
+                "plural_s"
+              ]
+            },
+            {
+              "original": "are",
+              "matched_entry": "be",
+              "rules": [
+                "irregular_inflection"
+              ]
+            },
+            {
+              "original": "appearing",
+              "matched_entry": "appear",
+              "rules": [
+                "inflection_ing"
+              ]
+            },
+            {
+              "original": "jobs",
+              "matched_entry": "job",
+              "rules": [
+                "plural_s"
+              ]
+            },
+            {
+              "original": "are",
+              "matched_entry": "be",
+              "rules": [
+                "irregular_inflection"
+              ]
+            },
+            {
+              "original": "growing",
+              "matched_entry": "grow",
+              "rules": [
+                "inflection_ing"
+              ]
+            },
+            {
+              "original": "quickly",
+              "matched_entry": "quick",
+              "rules": [
+                "derivation_ly"
+              ]
+            },
+            {
+              "original": "is",
+              "matched_entry": "be",
+              "rules": [
+                "irregular_inflection"
+              ]
+            },
+            {
+              "original": "learning",
+              "matched_entry": "learn",
+              "rules": [
+                "inflection_ing"
+              ]
+            },
+            {
+              "original": "skills",
+              "matched_entry": "skill",
+              "rules": [
+                "plural_s"
+              ]
+            },
+            {
+              "original": "is",
+              "matched_entry": "be",
+              "rules": [
+                "irregular_inflection"
+              ]
+            },
+            {
+              "original": "is",
+              "matched_entry": "be",
+              "rules": [
+                "irregular_inflection"
+              ]
+            },
+            {
+              "original": "ideas",
+              "matched_entry": "idea",
+              "rules": [
+                "plural_s"
+              ]
+            },
+            {
+              "original": "challenges",
+              "matched_entry": "challenge",
+              "rules": [
+                "plural_s"
+              ]
+            }
+          ],
+          "flesch_reading_ease": 78.41
+        },
+        "pro_audit": {
+          "coherent": true,
+          "coherence_reason": "The passage is a coherent text about career planning and the changing job market, with logical progression and connected ideas.",
+          "questions": [
+            {
+              "question_index": 1,
+              "clear_best": true,
+              "best_option": "Before",
+              "reason": "The context indicates that considering skills and interests should happen before choosing a career, making 'Before' the only logical choice.",
+              "direct_lexical_leak": false,
+              "distractors_plausible": true
+            },
+            {
+              "question_index": 2,
+              "clear_best": true,
+              "best_option": "knowledge",
+              "reason": "The blank requires a noun after 'special', and 'knowledge' is the correct noun form, while the other options are verb forms.",
+              "direct_lexical_leak": false,
+              "distractors_plausible": true
+            },
+            {
+              "question_index": 3,
+              "clear_best": true,
+              "best_option": "patience",
+              "reason": "The blank requires an abstract noun parallel to 'communication', and 'patience' is the only noun form among the options.",
+              "direct_lexical_leak": false,
+              "distractors_plausible": true
+            },
+            {
+              "question_index": 4,
+              "clear_best": true,
+              "best_option": "disappearing",
+              "reason": "The structure 'are becoming' requires a present participle, making 'disappearing' the only grammatically correct choice.",
+              "direct_lexical_leak": false,
+              "distractors_plausible": true
+            },
+            {
+              "question_index": 5,
+              "clear_best": true,
+              "best_option": "For example",
+              "reason": "The sentence provides an example of new jobs appearing, so 'For example' is the appropriate transition.",
+              "direct_lexical_leak": false,
+              "distractors_plausible": true
+            },
+            {
+              "question_index": 6,
+              "clear_best": true,
+              "best_option": "Therefore",
+              "reason": "The previous sentences establish a cause, and this sentence is a logical conclusion, so 'Therefore' is the best fit.",
+              "direct_lexical_leak": false,
+              "distractors_plausible": true
+            },
+            {
+              "question_index": 7,
+              "clear_best": true,
+              "best_option": "more able",
+              "reason": "The comparative 'than' requires a comparative form, and 'more able' is the correct comparative of 'able'.",
+              "direct_lexical_leak": false,
+              "distractors_plausible": true
+            },
+            {
+              "question_index": 8,
+              "clear_best": true,
+              "best_option": "important",
+              "reason": "The superlative 'the most' requires an adjective, and 'important' is the only adjective among the options.",
+              "direct_lexical_leak": false,
+              "distractors_plausible": true
+            },
+            {
+              "question_index": 9,
+              "clear_best": true,
+              "best_option": "To make",
+              "reason": "The infinitive 'To make' correctly expresses purpose, while the other forms do not fit the sentence structure.",
+              "direct_lexical_leak": false,
+              "distractors_plausible": true
+            },
+            {
+              "question_index": 10,
+              "clear_best": true,
+              "best_option": "to face",
+              "reason": "The phrase 'be ready to do something' requires an infinitive, making 'to face' the only correct choice.",
+              "direct_lexical_leak": false,
+              "distractors_plausible": true
+            }
+          ]
+        }
+      },
+      "cost_cny": 0.110127,
+      "flash_requests": [
+        {
+          "purpose": "generate:grammar_fill:M2-FULL-GRAMMAR-06",
+          "attempt": 1,
+          "status": "validation_error",
+          "prompt_tokens": 4525,
+          "completion_tokens": 1572,
+          "total_tokens": 6097,
+          "elapsed_seconds": 7.971191999968141,
+          "finish_reason": "stop",
+          "request_id": "5f899174-9522-405c-83c8-f8aff39f8a2d",
+          "error": "M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"decisions\", \"salary\", \"motivate\", \"vet\", \"salary\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 5}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 6}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 9}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 10}]",
+          "model_id": "deepseek-flash",
+          "transport": "json_object",
+          "prompt_version": "m2-gen-v2",
+          "cost_cny": 0.021626,
+          "raw_content": "{\n  \"passage\": \"Choosing a career is one of the most important decisions in life. Many students wonder ① they should follow their interests or choose a job with a good salary. In my opinion, interest should come first. If you do something you love, you will be more ② (motivate) to work hard. For example, my cousin is ③ (passion) about animals, so she decided to become a vet. She believes that helping animals is the ④ (mean) thing in her life. Of course, salary is also important, but it is not ⑤ (important) than job satisfaction. Some jobs are ⑥ (stress) than others, but if you enjoy them, you can handle the pressure. With ⑦ (technology) developing so fast, many new jobs will appear in the future. For instance, AI engineers and robot designers will be in great demand. To prepare for these jobs, we need to be ⑧ (create) and willing to learn new skills. It is also important ⑨ (develop) good communication skills. In conclusion, choosing a career is not easy, but if we follow our hearts and work hard, we can ⑩ (achieve) our goals.\",\n  \"questions\": [\n    {\n      \"question_index\": 1,\n      \"stem\": \"Choose the best option for blank ①.\",\n      \"options\": [\"that\", \"whether\", \"what\", \"which\"],\n      \"answer\": \"whether\",\n      \"explanation\": \"此处需要连词引导宾语从句，表示“是否”，whether符合句意。that无实义，what和which在从句中作成分，此处不缺成分。\",\n      \"evidence_sentence\": \"Many students wonder ① they should follow their interests or choose a job with a good salary.\",\n      \"context_clue\": \"\",\n      \"clue_argument\": \"\"\n    },\n    {\n      \"question_index\": 2,\n      \"stem\": \"Choose the best option for blank ②.\",\n      \"options\": [\"motivate\", \"motivating\", \"motivated\", \"motivation\"],\n      \"answer\": \"motivated\",\n      \"explanation\": \"此处需要形容词作表语，表示“有动力的”，motivated符合。motivate是动词，motivating令人……的，motivation是名词。\",\n      \"evidence_sentence\": \"If you do something you love, you will be more ② (motivate) to work hard.\",\n      \"context_clue\": \"\",\n      \"clue_argument\": \"\"\n    },\n    {\n      \"question_index\": 3,\n      \"stem\": \"Choose the best option for blank ③.\",\n      \"options\": [\"passion\", \"passionate\", \"passionately\", \"passionless\"],\n      \"answer\": \"passionate\",\n      \"explanation\": \"be passionate about是固定搭配，意为“对……充满热情”，此处需要形容词。passion是名词，passionately是副词，passionless无此词。\",\n      \"evidence_sentence\": \"For example, my cousin is ③ (passion) about animals, so she decided to become a vet.\",\n      \"context_clue\": \"\",\n      \"clue_argument\": \"\"\n    },\n    {\n      \"question_index\": 4,\n      \"stem\": \"Choose the best option for blank ④.\",\n      \"options\": [\"meaning\", \"meaningful\", \"meaningless\", \"mean\"],\n      \"answer\": \"meaningful\",\n      \"explanation\": \"此处需要形容词修饰thing，表示“有意义的”，meaningful符合。meaning是名词，meaningless无意义的，mean是动词或形容词“吝啬的”。\",\n      \"evidence_sentence\": \"She believes that helping animals is the ④ (mean) thing in her life.\",\n      \"context_clue\": \"\",\n      \"clue_argument\": \"\"\n    },\n    {\n      \"question_index\": 5,\n      \"stem\": \"Choose the best option for blank ⑤.\",\n      \"options\": [\"important\", \"more important\", \"most important\", \"importanter\"],\n      \"answer\": \"more important\",\n      \"explanation\": \"句中有than，所以用比较级more important。important是多音节形容词，比较级加more。\",\n      \"evidence_sentence\": \"Of course, salary is also important, but it is not ⑤ (important) than job satisfaction.\",\n      \"context_clue\": \"\",\n      \"clue_argument\": \"\"\n    },\n    {\n      \"question_index\": 6,\n      \"stem\": \"Choose the best option for blank ⑥.\",\n      \"options\": [\"stressful\", \"more stressful\", \"most stressful\", \"stressfully\"],\n      \"answer\": \"more stressful\",\n      \"explanation\": \"句中有than，所以用比较级more stressful。stressful是多音节形容词，比较级加more。\",\n      \"evidence_sentence\": \"Some jobs are ⑥ (stress) than others, but if you enjoy them, you can handle the pressure.\",\n      \"context_clue\": \"\",\n      \"clue_argument\": \"\"\n    },\n    {\n      \"question_index\": 7,\n      \"stem\": \"Choose the best option for blank ⑦.\",\n      \"options\": [\"technology\", \"technological\", \"technologically\", \"technologist\"],\n      \"answer\": \"technology\",\n      \"explanation\": \"with复合结构中，with后接名词+现在分词，表示“随着科技发展”，此处需要名词technology。technological是形容词，technologically是副词，technologist是名词“技术专家”。\",\n      \"evidence_sentence\": \"With ⑦ (technology) developing so fast, many new jobs will appear in the future.\",\n      \"context_clue\": \"\",\n      \"clue_argument\": \"\"\n    },\n    {\n      \"question_index\": 8,\n      \"stem\": \"Choose the best option for blank ⑧.\",\n      \"options\": [\"create\", \"creative\", \"creatively\", \"creation\"],\n      \"answer\": \"creative\",\n      \"explanation\": \"此处需要形容词作表语，表示“有创造力的”，creative符合。create是动词，creatively是副词，creation是名词。\",\n      \"evidence_sentence\": \"To prepare for these jobs, we need to be ⑧ (create) and willing to learn new skills.\",\n      \"context_clue\": \"\",\n      \"clue_argument\": \"\"\n    },\n    {\n      \"question_index\": 9,\n      \"stem\": \"Choose the best option for blank ⑨.\",\n      \"options\": [\"develop\", \"developing\", \"to develop\", \"developed\"],\n      \"answer\": \"to develop\",\n      \"explanation\": \"It is important to do sth.是固定句型，it作形式主语，真正主语是不定式。\",\n      \"evidence_sentence\": \"It is also important ⑨ (develop) good communication skills.\",\n      \"context_clue\": \"\",\n      \"clue_argument\": \"\"\n    },\n    {\n      \"question_index\": 10,\n      \"stem\": \"Choose the best option for blank ⑩.\",\n      \"options\": [\"achieve\", \"achieving\", \"to achieve\", \"achieved\"],\n      \"answer\": \"achieve\",\n      \"explanation\": \"情态动词can后接动词原形，所以用achieve。\",\n      \"evidence_sentence\": \"In conclusion, choosing a career is not easy, but if we follow our hearts and work hard, we can ⑩ (achieve) our goals.\",\n      \"context_clue\": \"\",\n      \"clue_argument\": \"\"\n    }\n  ]\n}"
+        },
+        {
+          "purpose": "generate:grammar_fill:M2-FULL-GRAMMAR-06",
+          "attempt": 1,
+          "status": "validation_error",
+          "prompt_tokens": 4703,
+          "completion_tokens": 1489,
+          "total_tokens": 6192,
+          "elapsed_seconds": 7.257996200001799,
+          "finish_reason": "stop",
+          "request_id": "fbc759a7-e6d7-48ed-bf1a-0f540297f009",
+          "error": "M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 97, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"decision\"]}]",
+          "model_id": "deepseek-flash",
+          "transport": "json_object",
+          "prompt_version": "m2-gen-v2",
+          "cost_cny": 0.021318,
+          "raw_content": "{\n  \"passage\": \"Many students wonder about their future jobs. ① they think about careers, they often ask what makes a job good. A ② job is not only about money. It also needs ③ and a clear aim. Some students want to be doctors, while others hope to become ④. These jobs are all ⑤ than they look. In fact, the ⑥ job may be the one you love most. ⑦ a clear plan, you can reach your goal step by step. You should ⑧ your interests and abilities. ⑨ a decision early can help you choose the right path. It is important ⑩ hard and never give up.\",\n  \"questions\": [\n    {\n      \"question_index\": 1,\n      \"stem\": \"① ___\",\n      \"options\": [\"When\", \"Before\", \"Because\", \"Although\"],\n      \"answer\": \"When\",\n      \"explanation\": \"此处表示“当……时”，用When引导时间状语从句。Before表示“在……之前”，Because表示“因为”，均不符合语境。\",\n      \"evidence_sentence\": \"Many students wonder about their future jobs.\",\n      \"context_clue\": \"Many students wonder about their future jobs. ① they think about careers, they often ask what makes a job good.\",\n      \"clue_argument\": \"时间状语从句，表示当思考职业时。\"\n    },\n    {\n      \"question_index\": 2,\n      \"stem\": \"② ___\",\n      \"options\": [\"satisfying\", \"satisfied\", \"satisfaction\", \"satisfy\"],\n      \"answer\": \"satisfying\",\n      \"explanation\": \"修饰job用形容词satisfying，表示“令人满意的”。satisfied修饰人，satisfaction是名词，satisfy是动词。\",\n      \"evidence_sentence\": \"Many students wonder about their future jobs.\",\n      \"context_clue\": \"A ② job is not only about money.\",\n      \"clue_argument\": \"形容词修饰job，表示令人满意的工作。\"\n    },\n    {\n      \"question_index\": 3,\n      \"stem\": \"③ ___\",\n      \"options\": [\"patience\", \"patient\", \"patiently\", \"impatient\"],\n      \"answer\": \"patience\",\n      \"explanation\": \"and连接并列名词，此处需要名词patience。patient是形容词，patiently是副词，impatient是形容词。\",\n      \"evidence_sentence\": \"Many students wonder about their future jobs.\",\n      \"context_clue\": \"It also needs ③ and a clear aim.\",\n      \"clue_argument\": \"与aim并列，需要名词。\"\n    },\n    {\n      \"question_index\": 4,\n      \"stem\": \"④ ___\",\n      \"options\": [\"scientists\", \"science\", \"scientific\", \"scientifically\"],\n      \"answer\": \"scientists\",\n      \"explanation\": \"become后接表示人的名词，scientists意为“科学家”。science是学科，scientific是形容词，scientifically是副词。\",\n      \"evidence_sentence\": \"Many students wonder about their future jobs.\",\n      \"context_clue\": \"Some students want to be doctors, while others hope to become ④.\",\n      \"clue_argument\": \"与doctors并列，表示职业的人。\"\n    },\n    {\n      \"question_index\": 5,\n      \"stem\": \"⑤ ___\",\n      \"options\": [\"harder\", \"hard\", \"hardest\", \"hardly\"],\n      \"answer\": \"harder\",\n      \"explanation\": \"than提示比较级，hard的比较级是harder。hard是原级，hardest是最高级，hardly是副词“几乎不”。\",\n      \"evidence_sentence\": \"Many students wonder about their future jobs.\",\n      \"context_clue\": \"These jobs are all ⑤ than they look.\",\n      \"clue_argument\": \"than前用比较级。\"\n    },\n    {\n      \"question_index\": 6,\n      \"stem\": \"⑥ ___\",\n      \"options\": [\"best\", \"better\", \"good\", \"well\"],\n      \"answer\": \"best\",\n      \"explanation\": \"the后接最高级best，表示“最好的”。better是比较级，good是原级，well是副词。\",\n      \"evidence_sentence\": \"Many students wonder about their future jobs.\",\n      \"context_clue\": \"In fact, the ⑥ job may be the one you love most.\",\n      \"clue_argument\": \"the后接最高级，表示最好的工作。\"\n    },\n    {\n      \"question_index\": 7,\n      \"stem\": \"⑦ ___\",\n      \"options\": [\"With\", \"Without\", \"Under\", \"By\"],\n      \"answer\": \"With\",\n      \"explanation\": \"with a clear plan表示“有清晰的计划”，符合语境。Without表示“没有”，Under表示“在……下”，By表示“通过”，均不恰当。\",\n      \"evidence_sentence\": \"Many students wonder about their future jobs.\",\n      \"context_clue\": \"⑦ a clear plan, you can reach your goal step by step.\",\n      \"clue_argument\": \"表示伴随“有”，用with。\"\n    },\n    {\n      \"question_index\": 8,\n      \"stem\": \"⑧ ___\",\n      \"options\": [\"develop\", \"developing\", \"developed\", \"development\"],\n      \"answer\": \"develop\",\n      \"explanation\": \"should后接动词原形develop。developing是现在分词，developed是过去分词，development是名词。\",\n      \"evidence_sentence\": \"Many students wonder about their future jobs.\",\n      \"context_clue\": \"You should ⑧ your interests and abilities.\",\n      \"clue_argument\": \"情态动词should后接动词原形。\"\n    },\n    {\n      \"question_index\": 9,\n      \"stem\": \"⑨ ___\",\n      \"options\": [\"Making\", \"Make\", \"Made\", \"To make\"],\n      \"answer\": \"Making\",\n      \"explanation\": \"动名词短语作主语，用Making。Make是动词原形，Made是过去分词，To make虽可作主语但此处不自然。\",\n      \"evidence_sentence\": \"Many students wonder about their future jobs.\",\n      \"context_clue\": \"⑨ a decision early can help you choose the right path.\",\n      \"clue_argument\": \"动名词作主语。\"\n    },\n    {\n      \"question_index\": 10,\n      \"stem\": \"⑩ ___\",\n      \"options\": [\"to work\", \"work\", \"working\", \"worked\"],\n      \"answer\": \"to work\",\n      \"explanation\": \"It is important to do sth. 是固定句型，用不定式to work。work是动词原形，working是动名词，worked是过去分词。\",\n      \"evidence_sentence\": \"Many students wonder about their future jobs.\",\n      \"context_clue\": \"It is important ⑩ hard and never give up.\",\n      \"clue_argument\": \"It is important to do sth. 句型。\"\n    }\n  ]\n}"
+        },
+        {
+          "purpose": "generate:grammar_fill:M2-FULL-GRAMMAR-06",
+          "attempt": 1,
+          "status": "ok",
+          "prompt_tokens": 4792,
+          "completion_tokens": 1972,
+          "total_tokens": 6764,
+          "elapsed_seconds": 10.000817200052552,
+          "finish_reason": "stop",
+          "request_id": "04ba8158-691e-4371-8027-5075f8feac72",
+          "error": null,
+          "model_id": "deepseek-flash",
+          "transport": "json_object",
+          "prompt_version": "m2-gen-v2",
+          "cost_cny": 0.02536,
+          "raw_content": "{\n  \"passage\": \"Many students wonder what job they will do in the future. ① they choose a career, they should think about their skills and interests. Some jobs need special ②, such as engineering or medicine. Others require ③ and good communication. The world of work is changing fast, and some old jobs are becoming ④. For example, many tasks that people once did by hand are now done by machines. However, new jobs are appearing all the time. ⑤, jobs in technology and health care are growing quickly. ⑥, it is important to keep learning. A person with many skills is ⑦ than one with only a few. The most ⑧ thing is to stay curious and open to new ideas. ⑨ a clear plan can help you reach your goal. You should also be ready ⑩ new challenges. With hard work and a positive attitude, you can build a bright future.\",\n  \"questions\": [\n    {\n      \"question_index\": 1,\n      \"stem\": \"① ___ they choose a career, they should think about their skills and interests.\",\n      \"options\": [\"Before\", \"After\", \"While\", \"Since\"],\n      \"answer\": \"Before\",\n      \"explanation\": \"根据语境，学生应在选择职业之前考虑技能和兴趣，before表示“在……之前”，符合逻辑。After表示之后，while表示同时，since表示自从或因为，均不符合此处时间先后关系。\",\n      \"evidence_sentence\": \"Many students wonder what job they will do in the future. ① they choose a career, they should think about their skills and interests.\",\n      \"context_clue\": \"Many students wonder what job they will do in the future. ① they choose a career, they should think about their skills and interests.\",\n      \"clue_argument\": \"考虑技能和兴趣应发生在选择职业之前，故用before。\"\n    },\n    {\n      \"question_index\": 2,\n      \"stem\": \"Some jobs need special ②, such as engineering or medicine.\",\n      \"options\": [\"knowledge\", \"know\", \"known\", \"knowing\"],\n      \"answer\": \"knowledge\",\n      \"explanation\": \"need后接名词作宾语，special knowledge表示“专业知识”，knowledge是know的名词形式。know是动词，known是过去分词，knowing是动名词，均不能直接作need的宾语且不符合此处名词需求。\",\n      \"evidence_sentence\": \"Some jobs need special ②, such as engineering or medicine.\",\n      \"context_clue\": \"Some jobs need special ②, such as engineering or medicine.\",\n      \"clue_argument\": \"special后需名词，engineering和medicine属于专业知识。\"\n    },\n    {\n      \"question_index\": 3,\n      \"stem\": \"Others require ③ and good communication.\",\n      \"options\": [\"patience\", \"patient\", \"patiently\", \"patients\"],\n      \"answer\": \"patience\",\n      \"explanation\": \"require后接名词，与good communication并列，patience是不可数名词，表示“耐心”。patient作形容词或名词（病人），patiently是副词，patients是复数名词，均不符合此处与communication并列的抽象名词要求。\",\n      \"evidence_sentence\": \"Others require ③ and good communication.\",\n      \"context_clue\": \"Others require ③ and good communication.\",\n      \"clue_argument\": \"与good communication并列，需要抽象名词patience。\"\n    },\n    {\n      \"question_index\": 4,\n      \"stem\": \"The world of work is changing fast, and some old jobs are becoming ④.\",\n      \"options\": [\"disappearing\", \"disappear\", \"disappeared\", \"disappears\"],\n      \"answer\": \"disappearing\",\n      \"explanation\": \"are becoming后接现在分词构成进行时，表示正在消失，disappearing符合语法。disappear是动词原形，disappeared是过去分词，disappears是第三人称单数，均不能用于be becoming之后。\",\n      \"evidence_sentence\": \"The world of work is changing fast, and some old jobs are becoming ④.\",\n      \"context_clue\": \"The world of work is changing fast, and some old jobs are becoming ④.\",\n      \"clue_argument\": \"are becoming后需现在分词，表示正在消失。\"\n    },\n    {\n      \"question_index\": 5,\n      \"stem\": \"⑤, jobs in technology and health care are growing quickly.\",\n      \"options\": [\"For example\", \"However\", \"In conclusion\", \"Instead\"],\n      \"answer\": \"For example\",\n      \"explanation\": \"前文说新工作不断出现，此处举例说明技术和医疗领域的工作增长快，for example表示举例。However表示转折，In conclusion表示总结，Instead表示替代，均不符合此处举例关系。\",\n      \"evidence_sentence\": \"However, new jobs are appearing all the time. ⑤, jobs in technology and health care are growing quickly.\",\n      \"context_clue\": \"However, new jobs are appearing all the time. ⑤, jobs in technology and health care are growing quickly.\",\n      \"clue_argument\": \"后句是前句“新工作出现”的具体例子，故用for example。\"\n    },\n    {\n      \"question_index\": 6,\n      \"stem\": \"⑥, it is important to keep learning.\",\n      \"options\": [\"Therefore\", \"However\", \"For example\", \"Instead\"],\n      \"answer\": \"Therefore\",\n      \"explanation\": \"因为工作世界变化快且新工作不断出现，所以持续学习很重要，therefore表示因果。However表示转折，For example表示举例，Instead表示替代，均不符合此处因果关系。\",\n      \"evidence_sentence\": \"However, new jobs are appearing all the time. ⑤, jobs in technology and health care are growing quickly. ⑥, it is important to keep learning.\",\n      \"context_clue\": \"However, new jobs are appearing all the time. ⑤, jobs in technology and health care are growing quickly. ⑥, it is important to keep learning.\",\n      \"clue_argument\": \"前文说明工作变化快，后文得出结论“持续学习很重要”，故用therefore。\"\n    },\n    {\n      \"question_index\": 7,\n      \"stem\": \"A person with many skills is ⑦ than one with only a few.\",\n      \"options\": [\"more able\", \"most able\", \"abler\", \"able\"],\n      \"answer\": \"more able\",\n      \"explanation\": \"than表明此处需要比较级，able的比较级是more able。most able是最高级，abler是错误的比较级形式，able是原级，均不能与than连用。\",\n      \"evidence_sentence\": \"A person with many skills is ⑦ than one with only a few.\",\n      \"context_clue\": \"A person with many skills is ⑦ than one with only a few.\",\n      \"clue_argument\": \"than提示比较级，able的比较级为more able。\"\n    },\n    {\n      \"question_index\": 8,\n      \"stem\": \"The most ⑧ thing is to stay curious and open to new ideas.\",\n      \"options\": [\"important\", \"importance\", \"importantly\", \"import\"],\n      \"answer\": \"important\",\n      \"explanation\": \"the most后接形容词构成最高级，修饰thing，important是形容词。importance是名词，importantly是副词，import是动词或名词，均不能直接修饰thing。\",\n      \"evidence_sentence\": \"The most ⑧ thing is to stay curious and open to new ideas.\",\n      \"context_clue\": \"The most ⑧ thing is to stay curious and open to new ideas.\",\n      \"clue_argument\": \"the most后需形容词，important修饰thing。\"\n    },\n    {\n      \"question_index\": 9,\n      \"stem\": \"⑨ a clear plan can help you reach your goal.\",\n      \"options\": [\"To make\", \"Making\", \"Made\", \"Make\"],\n      \"answer\": \"To make\",\n      \"explanation\": \"此处表示目的“为了制定一个清晰的计划”，用不定式to make作目的状语。Making是现在分词，Made是过去分词，Make是动词原形，均不能在此表示目的。\",\n      \"evidence_sentence\": \"⑨ a clear plan can help you reach your goal.\",\n      \"context_clue\": \"⑨ a clear plan can help you reach your goal.\",\n      \"clue_argument\": \"制定计划是帮助实现目标的目的，故用不定式to make。\"\n    },\n    {\n      \"question_index\": 10,\n      \"stem\": \"You should also be ready ⑩ new challenges.\",\n      \"options\": [\"to face\", \"facing\", \"faced\", \"face\"],\n      \"answer\": \"to face\",\n      \"explanation\": \"be ready to do sth.是固定搭配，表示“准备好做某事”，故用不定式to face。facing是现在分词，faced是过去分词，face是动词原形，均不符合be ready后的不定式要求。\",\n      \"evidence_sentence\": \"You should also be ready ⑩ new challenges.\",\n      \"context_clue\": \"You should also be ready ⑩ new challenges.\",\n      \"clue_argument\": \"be ready后接不定式，表示准备好面对新挑战。\"\n    }\n  ]\n}"
+        }
+      ],
+      "judge_requests": [
+        {
+          "purpose": "audit:grammar_fill:M2-FULL-GRAMMAR-06",
+          "attempt": 1,
+          "status": "ok",
+          "prompt_tokens": 2097,
+          "completion_tokens": 850,
+          "total_tokens": 2947,
+          "elapsed_seconds": 9.357029200065881,
+          "finish_reason": "stop",
+          "request_id": "fefd67ea-4c76-4634-b0a8-71f66e2d53db",
+          "error": null,
+          "model_id": "deepseek-v4-pro",
+          "transport": "json_object",
+          "prompt_version": "m2-full-judge-v1",
+          "cost_cny": 0.041823,
+          "raw_content": "{\n  \"coherent\": true,\n  \"coherence_reason\": \"The passage is a coherent text about career planning and the changing job market, with logical progression and connected ideas.\",\n  \"questions\": [\n    {\n      \"question_index\": 1,\n      \"clear_best\": true,\n      \"best_option\": \"Before\",\n      \"reason\": \"The context indicates that considering skills and interests should happen before choosing a career, making 'Before' the only logical choice.\",\n      \"direct_lexical_leak\": false,\n      \"distractors_plausible\": true\n    },\n    {\n      \"question_index\": 2,\n      \"clear_best\": true,\n      \"best_option\": \"knowledge\",\n      \"reason\": \"The blank requires a noun after 'special', and 'knowledge' is the correct noun form, while the other options are verb forms.\",\n      \"direct_lexical_leak\": false,\n      \"distractors_plausible\": true\n    },\n    {\n      \"question_index\": 3,\n      \"clear_best\": true,\n      \"best_option\": \"patience\",\n      \"reason\": \"The blank requires an abstract noun parallel to 'communication', and 'patience' is the only noun form among the options.\",\n      \"direct_lexical_leak\": false,\n      \"distractors_plausible\": true\n    },\n    {\n      \"question_index\": 4,\n      \"clear_best\": true,\n      \"best_option\": \"disappearing\",\n      \"reason\": \"The structure 'are becoming' requires a present participle, making 'disappearing' the only grammatically correct choice.\",\n      \"direct_lexical_leak\": false,\n      \"distractors_plausible\": true\n    },\n    {\n      \"question_index\": 5,\n      \"clear_best\": true,\n      \"best_option\": \"For example\",\n      \"reason\": \"The sentence provides an example of new jobs appearing, so 'For example' is the appropriate transition.\",\n      \"direct_lexical_leak\": false,\n      \"distractors_plausible\": true\n    },\n    {\n      \"question_index\": 6,\n      \"clear_best\": true,\n      \"best_option\": \"Therefore\",\n      \"reason\": \"The previous sentences establish a cause, and this sentence is a logical conclusion, so 'Therefore' is the best fit.\",\n      \"direct_lexical_leak\": false,\n      \"distractors_plausible\": true\n    },\n    {\n      \"question_index\": 7,\n      \"clear_best\": true,\n      \"best_option\": \"more able\",\n      \"reason\": \"The comparative 'than' requires a comparative form, and 'more able' is the correct comparative of 'able'.\",\n      \"direct_lexical_leak\": false,\n      \"distractors_plausible\": true\n    },\n    {\n      \"question_index\": 8,\n      \"clear_best\": true,\n      \"best_option\": \"important\",\n      \"reason\": \"The superlative 'the most' requires an adjective, and 'important' is the only adjective among the options.\",\n      \"direct_lexical_leak\": false,\n      \"distractors_plausible\": true\n    },\n    {\n      \"question_index\": 9,\n      \"clear_best\": true,\n      \"best_option\": \"To make\",\n      \"reason\": \"The infinitive 'To make' correctly expresses purpose, while the other forms do not fit the sentence structure.\",\n      \"direct_lexical_leak\": false,\n      \"distractors_plausible\": true\n    },\n    {\n      \"question_index\": 10,\n      \"clear_best\": true,\n      \"best_option\": \"to face\",\n      \"reason\": \"The phrase 'be ready to do something' requires an infinitive, making 'to face' the only correct choice.\",\n      \"direct_lexical_leak\": false,\n      \"distractors_plausible\": true\n    }\n  ]\n}"
+        }
+      ]
+    }
+  ],
+  "failures": [
+    {
+      "passage_group_id": "M2-FULL-CLOZE-04",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-04:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 91, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"structure\", \"message\": \"cloze blank (1) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (2) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (3) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (4) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (5) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (6) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (7) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (8) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (9) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (10) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (11) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (12) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (13) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (14) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (15) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"chen\", \"leo\", \"chen\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"chen\", \"wang\", \"leo\", \"steadily\", \"wang\", \"leo\", \"practising\", \"wang\"]}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"anxious\", \"confident\", \"curious\", \"reliable\", \"ambitious\", \"achieve\", \"adapt\", \"encourage\", \"persuade\", \"concentrate\", \"gradually\", \"eventually\", \"independently\", \"confidence\", \"opportunity\"], \"actual\": [\"anxious\", \"confident\", \"curious\", \"reliable\", \"ambitious\", \"achieve\", \"adapt\", \"encouraged\", \"persuaded\", \"concentrate\", \"gradually\", \"eventually\", \"independently\", \"independently\", \"confidence\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 121, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lily\", \"wang\", \"ben\", \"ben\", \"lily\", \"wang\", \"lily\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 11}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-CLOZE-01",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-01:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 151, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"structure\", \"message\": \"cloze blank (1) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (2) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (3) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (4) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (5) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (6) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (7) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (8) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (9) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (10) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (11) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (12) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (13) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (14) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (15) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"hua\", \"wang\", \"li\", \"hua\", \"zhang\", \"wei\", \"li\", \"hua\", \"zhang\", \"wei\", \"contest\", \"contest\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"hua\", \"wang\", \"li\", \"hua\", \"zhang\", \"wei\", \"forgot\", \"li\", \"hua\", \"wang\", \"zhang\", \"wei\", \"spoken\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 151, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"hua\", \"wang\", \"li\", \"hua\", \"wang\", \"li\", \"hua\", \"timetable\", \"wang\", \"li\", \"hua\"]}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-CLOZE-02",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-02:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 253, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 1, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 2, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 3, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 4, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 5, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 6, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 7, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 8, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 9, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 10, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 11, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 12, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 13, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 14, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 15, \"path\": [\"word_count\"]}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"tom\", \"lily\", \"li\", \"other's\", \"tom\", \"lily\", \"tom\", \"lily\", \"li\", \"tom\", \"lily\", \"li\"]}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contribute\", \"determine\", \"discover\", \"efficient\", \"essential\", \"improve\", \"manage\", \"prefer\", \"reduce\"], \"actual\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contribute\", \"determine\", \"discovery\", \"efficient\", \"essential\", \"improve\", \"manage\", \"prefer\", \"reduce\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 222, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"structure\", \"message\": \"cloze blank (1) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (2) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (3) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (4) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (5) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (6) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (7) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (8) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (9) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (10) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (11) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (12) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (13) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (14) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (15) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"tom\", \"lily\", \"tom\", \"tom\", \"lily\", \"group's\", \"forgot\", \"deadline\", \"lily\", \"tom\", \"tom\", \"lily\"]}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contribute\", \"determine\", \"discover\", \"efficient\", \"essential\", \"improve\", \"manage\", \"prefer\", \"reduce\"], \"actual\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contributing\", \"determine\", \"discovery\", \"efficient\", \"essential\", \"improve\", \"manage\", \"prefer\", \"reduced\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"biggest\"]}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contribute\", \"determine\", \"discover\", \"efficient\", \"essential\", \"improve\", \"manage\", \"prefer\", \"reduce\"], \"actual\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contribute\", \"determine\", \"discover\", \"efficient\", \"essential\", \"improved\", \"manage\", \"prefer\", \"reduce\"]}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-CLOZE-03",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-03:QUESTION_COUNT_MISMATCH actual=14 expected=15; M2_RECORD_GATE_FAILED [{\"category\": \"structure\", \"message\": \"cloze blank (1) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (2) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (3) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (4) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (5) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (6) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (7) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (8) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (9) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (10) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (11) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (12) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (13) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (14) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (15) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"high-school\", \"leo\", \"leo\", \"well-being\", \"leo\", \"late-night\", \"leo\", \"freedom\"]}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"respect\", \"support\", \"responsible\", \"solution\", \"avoid\", \"value\", \"conduct\", \"choice\", \"effort\", \"environment\", \"experience\", \"purpose\", \"understand\", \"identify\", \"allow\"], \"actual\": [\"respect\", \"supported\", \"responsible\", \"solution\", \"avoid\", \"value\", \"conduct\", \"choice\", \"effort\", \"environment\", \"experience\", \"purpose\", \"understand\", \"identify\", \"allow\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"tom\", \"high-school\", \"tom\", \"li\", \"tom\", \"self-control\", \"late-night\", \"li\", \"tom\", \"li\", \"importance\", \"self-control\"]}, {\"question_index\": 13, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"understand\"]}, {\"question_index\": 15, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"allow\"]}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-GRAMMAR-01",
+      "type": "grammar_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:grammar_fill:M2-FULL-GRAMMAR-01:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 114, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"growth\", \"lily\", \"windowsill\", \"sunlight\", \"lily\", \"lily\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 102, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"windowsill\", \"lily\", \"lily\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 6}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 110, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"growth\", \"balcony\", \"cupboard\", \"th\", \"headmaster\"]}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-GRAMMAR-02",
+      "type": "grammar_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:grammar_fill:M2-FULL-GRAMMAR-02:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 108, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"participants\", \"relay\", \"runner\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 106, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"ming\", \"practising\", \"li\", \"ming\", \"broke\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 114, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"relay\", \"practise\"]}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-CLOZE-06",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-06:M2_RECORD_GATE_FAILED [{\"category\": \"structure\", \"message\": \"cloze blank (1) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (2) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (3) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (4) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (5) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (6) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (7) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (8) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (9) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (10) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (11) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (12) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (13) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (14) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (15) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"chen\", \"leo\", \"realized\", \"problem-solving\", \"chen\", \"leo\", \"chen's\", \"leo\", \"documentaries\", \"decisions\", \"leo\", \"guidance\", \"supportive\", \"leo's\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"chen\", \"self-knowledge\", \"leo\", \"chen\", \"leo\", \"chen\", \"leo\", \"chen\", \"leo\", \"chen\", \"leo\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"chen\", \"high-school\", \"wang\", \"self-knowledge\", \"chen\", \"wang\", \"decisions\", \"chen\", \"decisions\", \"supportive\", \"chen's\", \"unclear\", \"wang\", \"direction\", \"realistic\", \"chen\"]}, {\"question_index\": 7, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"conduct\"]}, {\"question_index\": 9, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"effort\"]}, {\"question_index\": 10, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"environment\", \"environmental\"]}, {\"question_index\": 11, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"experienc\"]}, {\"question_index\": 12, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"purposeful\"]}, {\"question_index\": 13, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"understand\"]}, {\"question_index\": 14, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"identify\"]}, {\"question_index\": 15, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"allow\"]}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"respect\", \"support\", \"responsible\", \"solution\", \"avoid\", \"value\", \"conduct\", \"choice\", \"effort\", \"environment\", \"experience\", \"purpose\", \"understand\", \"identify\", \"allow\"], \"actual\": [\"respect\", \"support\", \"responsible\", \"solution\", \"avoid\", \"value\", \"conducted\", \"choice\", \"effort\", \"environment\", \"experience\", \"purpose\", \"understand\", \"identify\", \"allow\"]}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-CLOZE-05",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-05:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 246, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"leo\", \"nina\", \"led\", \"maya\", \"leo\", \"nina\", \"reuse\", \"maya\", \"leo\"]}, {\"question_index\": 5, \"code\": \"H7_OPTION_ECHOES_STEM\", \"message\": \"A cloze option appears in another form in the stem.\", \"echoed_lemma\": [\"choose\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"structure\", \"message\": \"cloze blank (1) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (2) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (3) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (4) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (5) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (6) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (7) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (8) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (9) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (10) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (11) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (12) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (13) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (14) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (15) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"leo\", \"nina\", \"maya\", \"reusable\", \"leo\", \"maya\", \"twice\"]}, {\"question_index\": 8, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"determin\", \"determine\"]}, {\"question_index\": 12, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"improv\"]}, {\"question_index\": 13, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"manag\", \"manage\"]}, {\"question_index\": 14, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"use\"]}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contribute\", \"determine\", \"discover\", \"efficient\", \"essential\", \"improve\", \"manage\", \"prefer\", \"reduce\"], \"actual\": [\"accept\", \"who\", \"balance\", \"benefit\", \"challenge\", \"who\", \"contribute\", \"determine\", \"discover\", \"efficient\", \"essential\", \"has improved\", \"manage\", \"using\", \"reduced\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"tom\", \"lucy\", \"jack\", \"tom\", \"lucy\", \"jack\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 7}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 12}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 15}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contribute\", \"determine\", \"discover\", \"efficient\", \"essential\", \"improve\", \"manage\", \"prefer\", \"reduce\"], \"actual\": [\"accept\", \"who\", \"share\", \"challenge\", \"benefit\", \"communicate\", \"contributed\", \"determine\", \"discover\", \"efficient\", \"essential\", \"improved\", \"manage\", \"prefer\", \"reduced\"]}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-GRAMMAR-04",
+      "type": "grammar_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:grammar_fill:M2-FULL-GRAMMAR-04:M2_RECORD_GATE_FAILED [{\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 2, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"cleft_basic\"], \"grammar_tag_allowed_book_tags\": {\"cleft_basic\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 3, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"cleft_basic\"], \"grammar_tag_allowed_book_tags\": {\"cleft_basic\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"sunset\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 2, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"cleft_basic\"], \"grammar_tag_allowed_book_tags\": {\"cleft_basic\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 3, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"cleft_basic\"], \"grammar_tag_allowed_book_tags\": {\"cleft_basic\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lin\", \"hangzhou\", \"high-speed\", \"lin\", \"boatman\", \"lin\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 2, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"cleft_basic\"], \"grammar_tag_allowed_book_tags\": {\"cleft_basic\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 3, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"cleft_basic\"], \"grammar_tag_allowed_book_tags\": {\"cleft_basic\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lin\", \"hangzhou\", \"boatman\", \"boatman's\", \"heard\", \"visitors\", \"lin\", \"boatman\", \"visitors\", \"boatman\"]}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-GRAMMAR-03",
+      "type": "grammar_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:grammar_fill:M2-FULL-GRAMMAR-03:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"clean-up\", \"participant\", \"clean-up\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 8}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"clean-up\", \"li\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 10}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 210, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"heard\", \"li\", \"hua\", \"chen\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 9}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 10}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-GRAMMAR-05",
+      "type": "grammar_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:grammar_fill:M2-FULL-GRAMMAR-05:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 94, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"led\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 93, \"minimum\": 120, \"maximum\": 180}}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 71, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"hua\", \"traditional\", \"led\", \"li\", \"hua\"]}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-01",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-01:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"pasta\", \"staple\", \"traditional\", \"sauce\", \"hunger\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"importance\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"hua\", \"year's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-03",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-03:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"lin\", \"tao\", \"deskmate\", \"app's\", \"practised\", \"app's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"intelligence\", \"li\", \"ming\", \"rely\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"intelligence\", \"li\", \"ming\", \"practise\", \"chen\", \"li\", \"ming\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-04",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-04:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"immune\", \"meanwhile\", \"day's\", \"discard\", \"night's\", \"mood\", \"physical\", \"growth\", \"alert\", \"tempted\", \"sacrifice\", \"well-rested\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"mood\", \"easily\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"night's\", \"organizes\", \"late-night\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-02",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-02:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"school's\", \"decisions\", \"chen\", \"disagreed\", \"maya\", \"unused\", \"leo\", \"maya\", \"leo\", \"maya\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"anna\", \"ben\", \"lucy\", \"anna\", \"ben\", \"lucy\", \"clean-up\", \"mayor\", \"lucy\", \"cannot\", \"anna\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"tom\", \"lily\", \"jack\", \"tom\", \"lily\", \"jack\", \"tom\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-06",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-06:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"traditional\", \"couplets\", \"year's\", \"symbolise\", \"gala\", \"traditional\", \"reunion\", \"warmth\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"reunion\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"grandparents\", \"importance\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-05",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-05:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"alex\", \"children's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"sixteen-year-old\", \"maya\", \"centre's\", \"li\", \"programme's\", \"maya\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"chen\", \"chen\", \"wang\", \"lei\", \"man's\", \"centre's\", \"chen\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-08",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-08:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"sportsmanship\", \"li\", \"opponents\", \"fought\", \"shook\", \"applauded\", \"team's\", \"sportsmanship\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"runner\", \"li\", \"wei\", \"spoke\", \"x\", \"relay\", \"unexpected\", \"li\", \"wei\", \"runner\", \"li\", \"wei\", \"chen\", \"spoke\", \"li\", \"wei\", \"runner\", \"li\", \"wei\", \"li\", \"wei\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"chen\", \"li\", \"wei\", \"team's\", \"chen\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-07",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-07:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"rubbish-filled\", \"lee\", \"chen\", \"wooden\", \"sat\", \"benches\", \"lee\", \"benches\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 263, \"minimum\": 1, \"maximum\": 250}}, {\"category\": \"question_schema\", \"message\": \"263 is greater than the maximum of 250\", \"question_index\": 1, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"263 is greater than the maximum of 250\", \"question_index\": 2, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"263 is greater than the maximum of 250\", \"question_index\": 3, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"263 is greater than the maximum of 250\", \"question_index\": 4, \"path\": [\"word_count\"]}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"chen\", \"dislike\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"wang\", \"wang\", \"wang\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-09",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-09:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"enthusiasm\", \"emma\", \"chen\", \"emma\", \"importance\", \"emma\", \"emma\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lily\", \"high-school\", \"wang\", \"lily\", \"practised\", \"lily\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"ming\", \"beijing\", \"practised\", \"wang\", \"li\", \"ming\", \"orchestra\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-10",
+      "type": "reading",
+      "category": "R5",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-10:R5_EVIDENCE_SENTENCE_INVALID index=3; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"today's\", \"realizing\", \"browsing\", \"lily\", \"advertisers\", \"lily\", \"one's\", \"government's\", \"lily\", \"combination\", \"regulation\", \"misuse\", \"sacrificing\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"ads\", \"password\", \"twice\", \"combination\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-11",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-11:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"marine\", \"microplastics\", \"particles\", \"single-use\", \"production\", \"reusable\", \"straws\", \"clean-ups\", \"eco-friendly\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"sink\", \"sunlight\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenport\", \"clean-up\", \"mia\", \"leo\", \"anna\", \"mia\", \"leo\", \"anna\", \"spoke\", \"clean-up\", \"mia\", \"cannot\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-12",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-12:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"visitors\", \"hands-on\", \"historians\", \"high-school\", \"museum's\", \"arrange\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"textbooks\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"workshop\", \"workshop\", \"led\", \"workshops\", \"museum's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-13",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-13:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"e-books\", \"audiobooks\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"library's\", \"visitors\", \"m\", \"p\", \"m\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"librarian\", \"caf\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-15",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-15:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"sam\", \"sat\", \"leo\", \"beginner\", \"sam\", \"leo's\", \"leo's\", \"competition\", \"leo\", \"sam\", \"leo\", \"spoke\", \"leo\", \"sam\", \"sam\", \"leo\", \"forgot\", \"leo\", \"sat\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lily\", \"emma\", \"lily\", \"emma\", \"emma\", \"lily\", \"lily\", \"emma\", \"emma\", \"spoke\", \"lily\", \"sat\", \"apart\", \"emma\", \"lily\", \"lily\", \"emma\", \"lily\", \"emma\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"tom\", \"jack\", \"tom\", \"jack's\", \"tom\", \"broke\", \"tom\", \"jack\", \"tom\", \"jack's\", \"jack\", \"jack\", \"cannot\", \"tom\", \"jack\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-16",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-16:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"chen\", \"sat\", \"leo\", \"math\", \"distractions\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"ming\", \"li\", \"ming\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"tom\", \"math\", \"math\", \"tom\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-14",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-14:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 289, \"minimum\": 1, \"maximum\": 250}}, {\"category\": \"question_schema\", \"message\": \"289 is greater than the maximum of 250\", \"question_index\": 1, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"289 is greater than the maximum of 250\", \"question_index\": 2, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"289 is greater than the maximum of 250\", \"question_index\": 3, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"289 is greater than the maximum of 250\", \"question_index\": 4, \"path\": [\"word_count\"]}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"renewable\", \"panels\", \"turbines\", \"renewable\", \"unlike\", \"traditional\", \"centralised\", \"renewable\", \"growth\", \"renewables\", \"installing\", \"panels\", \"turbines\", \"investing\", \"storage\", \"hurdles\", \"direction\", \"proportion\", \"renewable\", \"renewable\", \"environmental\", \"necessity\", \"co-operation\", \"sustainable\", \"embrace\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenhill\", \"lily\", \"lily\", \"council\", \"chen\", \"panels\", \"panels\", \"sunlight\", \"school's\", \"greenhill\", \"lily\", \"person's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenhill\", \"noisy\", \"chen\", \"greenhill\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-17",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-17:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"wildlife\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"protection\", \"protection\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"li\", \"visitors\", \"li\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-18",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-18:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"hua\", \"wang\", \"li\", \"hua\", \"pace\", \"pause\", \"li\", \"hua's\", \"biggest\", \"wang\", \"li\", \"hua\", \"traditional\", \"face-to-face\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"cannot\", \"offline\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"chen\", \"chen\", \"discussion\", \"chen\", \"zhang\", \"wei\", \"chen\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-20",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-20:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"grandson\", \"leo\", \"led\", \"inventions\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"invention\", \"bicycle\", \"invention\", \"inventions\", \"inventions\", \"inventions\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"anna\", \"fetch\", \"anna\", \"anna\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-19",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-19:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"sustainable\", \"tourism\", \"overcrowding\", \"sustainable\", \"tourism\", \"tourism\", \"sustainable\", \"tourism\", \"educate\", \"visitors\", \"importance\", \"conservation\", \"travellers\", \"fragile\", \"ecosystems\", \"protection\", \"educational\", \"sustainable\", \"tourism\", \"eco-friendly\", \"single-use\", \"sustainable\", \"tourism\", \"trend\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"visitors\", \"li\", \"guesthouse\", \"visitors\", \"traveller\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 257, \"minimum\": 1, \"maximum\": 250}}, {\"category\": \"question_schema\", \"message\": \"257 is greater than the maximum of 250\", \"question_index\": 1, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"257 is greater than the maximum of 250\", \"question_index\": 2, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"257 is greater than the maximum of 250\", \"question_index\": 3, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"257 is greater than the maximum of 250\", \"question_index\": 4, \"path\": [\"word_count\"]}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenfield\", \"tourism\", \"visitors\", \"visitors\", \"visitors\", \"visitors\", \"visitors\", \"greenfield\", \"tourism\", \"visitors\", \"tourism\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-21",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-21:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"high-school\", \"happiness\", \"counseling\", \"stress-management\", \"workshops\", \"okay\", \"cope\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"ming\", \"wang\", \"unhappy\", \"li\", \"ming\", \"li\", \"ming\", \"li\", \"ming\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"tom\", \"tom\", \"tom\", \"tom's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-22",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-22:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenfield\", \"chen\", \"workshops\", \"landfills\", \"town's\", \"chen\", \"sustainable\", \"greenfield's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenfield\", \"circular\", \"reuse\", \"furniture\", \"workshops\", \"broken\", \"apart\", \"greenfield\", \"environmental\", \"town's\", \"circular\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenfield\", \"circular\", \"broken\", \"thrown\", \"anna\", \"landfills\", \"furniture\", \"reused\", \"greenfield\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-23",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-23:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"exploration\", \"buzz\", \"aldrin\", \"samples\", \"moon's\", \"iss\", \"iss\", \"exploration\", \"exploration\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"buzz\", \"aldrin\", \"armstrong\", \"led\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 251, \"minimum\": 1, \"maximum\": 250}}, {\"category\": \"question_schema\", \"message\": \"251 is greater than the maximum of 250\", \"question_index\": 1, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"251 is greater than the maximum of 250\", \"question_index\": 2, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"251 is greater than the maximum of 250\", \"question_index\": 3, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"251 is greater than the maximum of 250\", \"question_index\": 4, \"path\": [\"word_count\"]}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"buzz\", \"aldrin\", \"michael\", \"collins\", \"armstrong\", \"iss\", \"exploration\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "passage_group_id": "M2-FULL-READING-24",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-24:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"rang\", \"s\", \"unsafe\", \"attractive\", \"visitors\", \"town's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"unsafe\", \"visitors\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenfield\", \"council\", \"chen\", \"town's\", \"lee\", \"unsafe\", \"discussion\", \"council\", \"greenfield\", \"easily\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    }
+  ],
+  "total_cost_cny": 0.110127
+}

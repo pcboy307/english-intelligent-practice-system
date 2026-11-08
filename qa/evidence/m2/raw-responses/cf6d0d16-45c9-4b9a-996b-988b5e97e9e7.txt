@@ -1,0 +1,55 @@
+{
+  "passage": "Li Ming is a high-school student who often stays up late. Last week, he felt tired in class and could not focus. His teacher, Ms. Wang, noticed this and gave him some advice. She said that if he went to bed before eleven every night, he would feel more energetic. Li Ming decided to follow her suggestion. He set a fixed bedtime and stopped using his phone in bed. After a few days, he found that he could concentrate better. However, he still felt sleepy in the morning because he had to get up early. Ms. Wang explained that a regular routine is important. She suggested that he should also take a short walk after dinner. Li Ming tried this, and it helped him relax. Now he believes that good habits lead to good health. (1) ______. For example, he used to drink coffee late in the afternoon, which kept him awake. Now he avoids it. (2) ______. These small changes have made a big difference. (3) ______. He has also started to eat more vegetables and fruit. (4) ______. As a result, he feels much better and has more energy for his studies. (5) ______. He knows that keeping a healthy routine is a lifelong benefit.\n\nOptions:\nA. He also stopped eating heavy meals before bed.\nB. He has learned to manage his time better.\nC. He used to skip breakfast, but now he eats a healthy one.\nD. He also reduced his screen time in the evening.\nE. He has joined a sports club to exercise regularly.\nF. He now goes to bed at the same time every night.\nG. He has started to drink more water during the day.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the sentence that best fits blank (1).",
+      "options": ["A. He also stopped eating heavy meals before bed.", "B. He has learned to manage his time better.", "C. He used to skip breakfast, but now he eats a healthy one.", "D. He also reduced his screen time in the evening.", "E. He has joined a sports club to exercise regularly.", "F. He now goes to bed at the same time every night.", "G. He has started to drink more water during the day."],
+      "answer": "D",
+      "explanation": "前文提到他不再在床上用手机，D选项“他也减少了晚上的屏幕时间”与此衔接自然。A和B虽然也是健康习惯，但与“手机”这一具体线索无关。",
+      "evidence_sentence": "",
+      "context_clue": "He set a fixed bedtime and stopped using his phone in bed.",
+      "clue_argument": "前一句提到停止在床上用手机，D选项的“减少屏幕时间”与之呼应。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the sentence that best fits blank (2).",
+      "options": ["A. He also stopped eating heavy meals before bed.", "B. He has learned to manage his time better.", "C. He used to skip breakfast, but now he eats a healthy one.", "D. He also reduced his screen time in the evening.", "E. He has joined a sports club to exercise regularly.", "F. He now goes to bed at the same time every night.", "G. He has started to drink more water during the day."],
+      "answer": "A",
+      "explanation": "前文说下午不喝咖啡，A选项“他也停止睡前吃大餐”是另一个睡前习惯的改变，逻辑一致。B和C与睡前习惯无关。",
+      "evidence_sentence": "",
+      "context_clue": "Now he avoids it.",
+      "clue_argument": "前文提到避免下午喝咖啡，A选项的“停止睡前吃大餐”是类似的习惯调整。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the sentence that best fits blank (3).",
+      "options": ["A. He also stopped eating heavy meals before bed.", "B. He has learned to manage his time better.", "C. He used to skip breakfast, but now he eats a healthy one.", "D. He also reduced his screen time in the evening.", "E. He has joined a sports club to exercise regularly.", "F. He now goes to bed at the same time every night.", "G. He has started to drink more water during the day."],
+      "answer": "F",
+      "explanation": "前文说这些小的改变起了很大作用，F选项“他现在每晚同一时间睡觉”是具体的好习惯，与“固定就寝时间”呼应。B和E与睡眠时间无直接关系。",
+      "evidence_sentence": "",
+      "context_clue": "These small changes have made a big difference.",
+      "clue_argument": "前文提到固定就寝时间，F选项的“同一时间睡觉”直接对应。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the sentence that best fits blank (4).",
+      "options": ["A. He also stopped eating heavy meals before bed.", "B. He has learned to manage his time better.", "C. He used to skip breakfast, but now he eats a healthy one.", "D. He also reduced his screen time in the evening.", "E. He has joined a sports club to exercise regularly.", "F. He now goes to bed at the same time every night.", "G. He has started to drink more water during the day."],
+      "answer": "C",
+      "explanation": "前文说他开始多吃蔬菜水果，C选项“他过去不吃早餐，现在吃健康早餐”是另一个饮食改善，与“饮食”话题一致。E和G虽然也是健康行为，但与“吃”的线索不直接衔接。",
+      "evidence_sentence": "",
+      "context_clue": "He has also started to eat more vegetables and fruit.",
+      "clue_argument": "前一句提到饮食改变，C选项的“吃健康早餐”同属饮食方面。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the sentence that best fits blank (5).",
+      "options": ["A. He also stopped eating heavy meals before bed.", "B. He has learned to manage his time better.", "C. He used to skip breakfast, but now he eats a healthy one.", "D. He also reduced his screen time in the evening.", "E. He has joined a sports club to exercise regularly.", "F. He now goes to bed at the same time every night.", "G. He has started to drink more water during the day."],
+      "answer": "E",
+      "explanation": "前文说他感觉更好、学习精力更足，E选项“他加入了体育俱乐部定期锻炼”是另一个健康习惯，与“健康作息”主题一致。B和G与运动无关，且B侧重时间管理，不如E直接。",
+      "evidence_sentence": "",
+      "context_clue": "As a result, he feels much better and has more energy for his studies.",
+      "clue_argument": "前文提到精力更足，E选项的“定期锻炼”能带来更多精力，逻辑合理。"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"translations": {"clean-up": "清理", "long-term": "长期"}}

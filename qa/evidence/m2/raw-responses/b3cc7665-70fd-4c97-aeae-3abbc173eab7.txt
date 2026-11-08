@@ -1,0 +1,45 @@
+{
+  "passage": "When Lily first used the new study app, she was excited. The app, called StudyPal, had been designed to help students learn more efficiently. It analyzed her answers and suggested exercises. However, Lily soon noticed that she was just repeating easy questions. She was not really thinking. Her teacher, Mr. Chen, explained that the app was a tool, not a teacher. He said, 'If you rely on it too much, you will not develop your own skills.' Lily decided to use the app only for practice. She started to ask herself why she made mistakes. Slowly, her grades improved. Now she uses StudyPal wisely, and she feels more confident.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word 'analyzed' most likely mean in the passage?",
+      "options": ["examined", "ignored", "copied", "forgot"],
+      "answer": "examined",
+      "explanation": "词义猜测题。根据上下文，学习应用会“分析”她的答案并给出练习建议，因此“analyzed”意为“检查、分析”，与“examined”最接近。A项正确。B项“ignored”（忽视）和C项“copied”（复制）与语境不符，因为应用需要处理答案信息才能给出建议。",
+      "evidence_sentence": "It analyzed her answers and suggested exercises.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is Mr. Chen's attitude towards using the app?",
+      "options": ["He thinks it should be used with care.", "He believes it is completely useless.", "He wants students to stop using it.", "He thinks it can replace teachers."],
+      "answer": "He thinks it should be used with care.",
+      "explanation": "观点态度题。陈老师说应用是工具而非老师，并提醒过度依赖会妨碍技能发展，说明他认为应谨慎使用。A项正确。B项“完全无用”和C项“停止使用”都过于绝对，与“工具”的说法矛盾。",
+      "evidence_sentence": "He said, 'If you rely on it too much, you will not develop your own skills.'",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["A study app should be used wisely as a tool.", "Study apps are always harmful to students.", "Teachers should not allow apps in class.", "Lily's grades improved because of the app alone."],
+      "answer": "A study app should be used wisely as a tool.",
+      "explanation": "主旨大意题。文章讲述莉莉起初盲目使用学习应用，后来在老师建议下合理使用，成绩提高，强调应用是工具，应明智使用。A项正确。B项“总是有害”和C项“禁止使用”都过于极端，与文章不符。",
+      "evidence_sentence": "Now she uses StudyPal wisely, and she feels more confident.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What did Lily do after talking with Mr. Chen?",
+      "options": ["She used the app only for practice.", "She stopped using the app completely.", "She bought a new study app.", "She asked her classmates for help."],
+      "answer": "She used the app only for practice.",
+      "explanation": "细节理解题。文中明确提到“Lily decided to use the app only for practice.”，因此A项正确。B项“完全停止使用”和C项“买新应用”在文中均未提及，属于无中生有。",
+      "evidence_sentence": "Lily decided to use the app only for practice.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

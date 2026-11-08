@@ -1,0 +1,95 @@
+{
+  "passage": "Last year, the student joined the school basketball team. He was not tall, but he loved the game. His coach told him to keep trying. In the first match, he missed every shot（投篮）. He felt awful and wanted to give up. His teacher said, \"(1) ______\" He decided to practise（练习） every morning. A classmate helped him after class. Slowly, he got better. (2) ______ he had not practised so hard, he would not have improved. Before the next match, he was nervous. (3) ______ did he know that his hard work would pay off. He scored ten points and the team won. (4) ______ the team to win, everyone must work together, he thought. After the match, his teacher smiled. \"(5) ______\" she said. The student learned that failure is not the end. It is a step towards success.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "Failure is the mother of success.",
+        "Practice makes perfect.",
+        "Every coin has two sides.",
+        "Actions speak louder than words.",
+        "A friend in need is a friend indeed.",
+        "Where there is a will, there is a way.",
+        "Rome was not built in a day."
+      ],
+      "answer": "A",
+      "explanation": "老师的话应鼓励学生面对失败，A“失败是成功之母”最贴合语境。B强调练习，C强调事物两面性，均不如A直接回应失败。",
+      "evidence_sentence": "His teacher said, \"(1) ______\" He decided to practise every morning.",
+      "context_clue": "His teacher said, \"(1) ______\" He decided to practise every morning.",
+      "clue_argument": "老师的话应鼓励学生面对失败，A最合适。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "If he had not practised so hard, he would not have improved.",
+        "If he practised so hard, he would not have improved.",
+        "If he had practised so hard, he would have improved.",
+        "If he did not practise so hard, he would not improve.",
+        "If he has not practised so hard, he would not have improved.",
+        "If he were not practising so hard, he would not have improved.",
+        "If he had not practised so hard, he would have improved."
+      ],
+      "answer": "A",
+      "explanation": "此处为与过去事实相反的虚拟语气，条件句用had done，主句用would not have done，A正确。B时态错误，C逻辑相反，均不正确。",
+      "evidence_sentence": "(2) ______ he had not practised so hard, he would not have improved.",
+      "context_clue": "(2) ______ he had not practised so hard, he would not have improved.",
+      "clue_argument": "与过去事实相反，条件句用had done，主句用would not have done。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "Little did he know that his hard work would pay off.",
+        "Little he knew that his hard work would pay off.",
+        "Did he little know that his hard work would pay off.",
+        "He little did know that his hard work would pay off.",
+        "Little did he knew that his hard work would pay off.",
+        "Little he did know that his hard work would pay off.",
+        "Little did he known that his hard work would pay off."
+      ],
+      "answer": "A",
+      "explanation": "否定副词Little置于句首引起部分倒装，助动词did提前，动词用原形know，A正确。B未倒装，C语序错误，均不正确。",
+      "evidence_sentence": "(3) ______ did he know that his hard work would pay off.",
+      "context_clue": "(3) ______ did he know that his hard work would pay off.",
+      "clue_argument": "否定副词Little置于句首，需部分倒装。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "For the team to win, everyone must work together.",
+        "For the team winning, everyone must work together.",
+        "For the team won, everyone must work together.",
+        "For the team to winning, everyone must work together.",
+        "For the team win, everyone must work together.",
+        "For the team to have won, everyone must work together.",
+        "For the team to be won, everyone must work together."
+      ],
+      "answer": "A",
+      "explanation": "for sb to do sth表示目的，此处用不定式to win，A正确。B用winning，C用won，均不符合for...to do结构。",
+      "evidence_sentence": "(4) ______ the team to win, everyone must work together, he thought.",
+      "context_clue": "(4) ______ the team to win, everyone must work together, he thought.",
+      "clue_argument": "for sb to do sth表示目的，用不定式to win。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "If you had given up, you would not have scored.",
+        "If you gave up, you would not have scored.",
+        "If you had given up, you would have scored.",
+        "If you give up, you would not have scored.",
+        "If you have given up, you would not have scored.",
+        "If you were giving up, you would not have scored.",
+        "If you had not given up, you would not have scored."
+      ],
+      "answer": "A",
+      "explanation": "老师总结过去，与过去事实相反，条件句用had done，主句用would not have done，A正确。B时态错误，C逻辑相反，均不正确。",
+      "evidence_sentence": "\"(5) ______\" she said.",
+      "context_clue": "\"(5) ______\" she said.",
+      "clue_argument": "与过去事实相反，条件句用had done，主句用would not have done。"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "passage": "The Spring Festival is the most important traditional festival in China. It usually falls in January or February according to the lunar calendar（农历）. Before the festival, families clean their houses and put up red paper-cuts（剪纸）and spring festival couplets（春联）. On the eve, family members gather for a big dinner. Dumplings are a must in the north, while rice cakes are popular in the south. After dinner, many people watch the Spring Festival Gala on TV or stay up late to welcome the new year. Children receive red envelopes with money from their elders. The festival is a time for family reunion and giving thanks. However, some young people complain that the traditions are boring. They prefer to travel or play on their phones. A teacher in Beijing says that students should learn about the cultural meaning behind the customs. She suggests that every student should write a short passage about how their family celebrates the festival. In this way, they can understand why the festival matters. The festival is not just about food and gifts; it is about love and respect for family.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "The Spring Festival is a time for family reunion and cultural understanding.",
+        "Young people dislike the Spring Festival because of boring traditions.",
+        "The Spring Festival is celebrated only in northern China.",
+        "Students should write passages about their family celebrations."
+      ],
+      "answer": "The Spring Festival is a time for family reunion and cultural understanding.",
+      "explanation": "文章首句指出春节是最重要的传统节日，后文描述家庭团聚、传统习俗以及老师建议学生理解文化意义，故主旨是春节是家庭团聚和文化理解的时刻。B项只是部分年轻人的抱怨，不是主旨；C项与文中南北习俗均提及不符。",
+      "evidence_sentence": "The Spring Festival is the most important traditional festival in China.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what do children receive during the Spring Festival?",
+      "options": [
+        "Red envelopes with money.",
+        "New clothes from their parents.",
+        "Books about traditions.",
+        "Tickets to travel abroad."
+      ],
+      "answer": "Red envelopes with money.",
+      "explanation": "文中明确提到“Children receive red envelopes with money from their elders.”，因此孩子收到的是装有压岁钱的红包。B项和C项文中未提及；D项与部分年轻人选择旅游混淆。",
+      "evidence_sentence": "Children receive red envelopes with money from their elders.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can be inferred about the teacher's suggestion?",
+      "options": [
+        "She wants students to understand the cultural value of the festival.",
+        "She thinks students should stop celebrating the festival.",
+        "She believes young people are always lazy.",
+        "She wants students to travel during the festival."
+      ],
+      "answer": "She wants students to understand the cultural value of the festival.",
+      "explanation": "老师建议学生写短文介绍家庭如何庆祝春节，并说这样他们能理解节日为何重要，可推断她希望学生理解节日的文化价值。B项与建议写短文矛盾；C项文中未提“总是懒惰”。",
+      "evidence_sentence": "She suggests that every student should write a short passage about how their family celebrates the festival.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"matters\" in the passage most probably mean?",
+      "options": [
+        "Is important.",
+        "Is a problem.",
+        "Takes place.",
+        "Needs care."
+      ],
+      "answer": "Is important.",
+      "explanation": "文中“understand why the festival matters”指理解节日为何重要，与后文“not just about food and gifts; it is about love and respect”呼应，故matters意为“重要”。B项“是问题”与语境不符；C项“发生”虽为matter的常见义，但此处不适用。",
+      "evidence_sentence": "In this way, they can understand why the festival matters.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

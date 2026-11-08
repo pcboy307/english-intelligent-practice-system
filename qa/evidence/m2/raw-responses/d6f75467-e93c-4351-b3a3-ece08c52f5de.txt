@@ -1,0 +1,45 @@
+{
+  "passage": "Last spring, a group of students at a local high school started a volunteer programme to help elderly people in their community. The idea came from a class discussion about social responsibility. The students decided to visit the elderly twice a week, helping them with housework and chatting with them. At first, some students were nervous because they had never done anything like this before. However, after a few visits, they became more confident and began to enjoy the experience. One student said, \"I used to think volunteering was just about giving time, but now I realise it's also about learning from others.\" The programme was so successful that the school decided to expand it to include more students and activities. The local government praised the students for their efforts and encouraged other schools to follow their example. The students learned that even small actions can make a big difference to someone's life.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What did the students decide to do twice a week?",
+      "options": ["Visit the elderly", "Clean the school", "Teach children", "Plant trees"],
+      "answer": "Visit the elderly",
+      "explanation": "文章明确提到学生决定每周探望老人两次，帮助他们做家务和聊天。A项正确。B项“打扫学校”和C项“教孩子”在文中未提及，属于无中生有。",
+      "evidence_sentence": "The students decided to visit the elderly twice a week, helping them with housework and chatting with them.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about the students' initial feelings?",
+      "options": ["They were excited", "They were nervous", "They were bored", "They were angry"],
+      "answer": "They were nervous",
+      "explanation": "文中提到“At first, some students were nervous”，因此可以推断他们最初感到紧张。B项正确。A项“兴奋”和C项“无聊”与原文不符，原文明确说他们紧张。",
+      "evidence_sentence": "At first, some students were nervous because they had never done anything like this before.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"expand\" in the passage probably mean?",
+      "options": ["To make larger", "To stop", "To reduce", "To change"],
+      "answer": "To make larger",
+      "explanation": "根据上下文，项目非常成功，学校决定“expand”它，包括更多学生和活动，因此“expand”意为“扩大”。A项正确。B项“停止”和C项“减少”与成功后的逻辑相反。",
+      "evidence_sentence": "The programme was so successful that the school decided to expand it to include more students and activities.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main purpose of the passage?",
+      "options": ["To describe a volunteer programme", "To criticise the school", "To advertise a product", "To tell a funny story"],
+      "answer": "To describe a volunteer programme",
+      "explanation": "文章主要描述了一个学生志愿者项目的发起、过程和成果，目的是介绍这个项目。A项正确。B项“批评学校”和C项“推销产品”在文中没有依据。",
+      "evidence_sentence": "Last spring, a group of students at a local high school started a volunteer programme to help elderly people in their community.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

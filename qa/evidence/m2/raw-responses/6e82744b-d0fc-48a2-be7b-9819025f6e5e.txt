@@ -1,0 +1,45 @@
+{
+  "passage": "When the school sports meeting began, the student felt nervous about the 400-metre race. Her teacher, who had trained her for weeks, reminded her to focus on her own pace. During the race, she fell and hurt her knee. A classmate who saw this stopped to help her up, even though it meant losing the race. The student finished last, but the crowd cheered loudly. Later, her teacher said, \"The spirit of sport is not only about winning. It is about courage and kindness.\" The student realised that true victory lies in helping others. If she had won the race but ignored her friend, she would not have felt proud. From that day on, she understood that sports can build character and friendship.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"spirit\" in the passage most probably mean?",
+      "options": ["energy", "courage", "mind", "strength"],
+      "answer": "courage",
+      "explanation": "根据上下文，老师说的\"The spirit of sport is not only about winning. It is about courage and kindness.\"表明spirit在这里指勇气和善良。A energy（能量）和D strength（力量）都不符合语境。",
+      "evidence_sentence": "The spirit of sport is not only about winning. It is about courage and kindness.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the teacher's attitude towards the student's action?",
+      "options": ["She is angry because the student lost.", "She thinks winning is the most important.", "She praises the student for showing courage and kindness.", "She is disappointed that the student fell."],
+      "answer": "She praises the student for showing courage and kindness.",
+      "explanation": "老师的话\"The spirit of sport is not only about winning. It is about courage and kindness.\"表明她赞赏学生的勇气和善良。A和B都强调赢，与老师的话矛盾。",
+      "evidence_sentence": "The spirit of sport is not only about winning. It is about courage and kindness.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Winning is the most important thing in sports.", "Sports can teach us courage and kindness.", "Falling in a race is a terrible experience.", "Teachers should train students harder."],
+      "answer": "Sports can teach us courage and kindness.",
+      "explanation": "全文通过学生摔倒后同学帮助她、老师点评等情节，说明体育精神在于勇气和善良。A和C都偏离主题。",
+      "evidence_sentence": "From that day on, she understood that sports can build character and friendship.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What would have happened if the student had won the race but ignored her friend?",
+      "options": ["She would have felt proud.", "She would not have felt proud.", "She would have been praised by the teacher.", "She would have lost the race."],
+      "answer": "She would not have felt proud.",
+      "explanation": "文中虚拟语气句\"If she had won the race but ignored her friend, she would not have felt proud.\"直接给出答案。A和C与原文相反。",
+      "evidence_sentence": "If she had won the race but ignored her friend, she would not have felt proud.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

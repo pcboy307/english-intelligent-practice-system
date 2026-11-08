@@ -1,0 +1,65 @@
+{
+  "passage": "In today's digital age, personal privacy has become a hot topic. When you download a free app, you may be asked to allow access to your contacts or location. Not only does this seem harmless, but it also often leads to unexpected consequences. For example, a simple flashlight app might request your camera permission. Why would a flashlight need your camera? The answer is simple: your data can be sold to advertisers. Many companies make money by collecting and sharing user information. This raises an important question: who really owns your data? According to a recent survey, over 70% of teenagers are worried about their online privacy, yet few take action to protect it. It is the lack of awareness that puts them at risk. Some experts argue that digital privacy is more important than ever because our lives are increasingly online. While technology brings convenience, it also challenges our control over personal information. Therefore, it is crucial to read privacy policies and adjust settings to protect yourself.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the passage say about free apps?",
+      "options": [
+        "They often ask for unnecessary permissions.",
+        "They are always safe to use.",
+        "They never collect personal data.",
+        "They are designed for teenagers only."
+      ],
+      "answer": "They often ask for unnecessary permissions.",
+      "explanation": "文章提到免费应用常要求访问联系人、位置甚至相机等权限，这些权限可能并非必要。B项“总是安全”与原文相反；C项“从不收集数据”与原文“收集并分享用户信息”矛盾。",
+      "evidence_sentence": "When you download a free app, you may be asked to allow access to your contacts or location.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can be inferred about teenagers from the survey?",
+      "options": [
+        "They are concerned but not proactive.",
+        "They do not care about privacy.",
+        "They always read privacy policies.",
+        "They trust all apps completely."
+      ],
+      "answer": "They are concerned but not proactive.",
+      "explanation": "调查显示超过70%的青少年担心在线隐私，但很少有人采取行动保护，说明他们担忧却不主动。B项“不关心”与“担心”矛盾；C项“总是阅读隐私政策”与“很少有人采取行动”不符。",
+      "evidence_sentence": "over 70% of teenagers are worried about their online privacy, yet few take action to protect it.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"consequences\" in the passage probably mean?",
+      "options": [
+        "Results",
+        "Benefits",
+        "Reasons",
+        "Choices"
+      ],
+      "answer": "Results",
+      "explanation": "根据上下文，允许访问权限看似无害，但常导致“意想不到的后果”，consequences意为“结果、后果”。B项“好处”与“意想不到的”及后文数据被出售的负面语境不符；C项“原因”逻辑不通。",
+      "evidence_sentence": "Not only does this seem harmless, but it also often leads to unexpected consequences.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To warn readers about digital privacy risks.",
+        "To advertise a privacy protection app.",
+        "To criticize teenagers for using apps.",
+        "To explain how to make money online."
+      ],
+      "answer": "To warn readers about digital privacy risks.",
+      "explanation": "文章通过免费应用权限、数据出售和调查结果等，提醒读者注意数字隐私风险，并建议采取措施。B项“宣传应用”无中生有；C项“批评青少年”并非主旨，作者只是客观陈述调查。",
+      "evidence_sentence": "Therefore, it is crucial to read privacy policies and adjust settings to protect yourself.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

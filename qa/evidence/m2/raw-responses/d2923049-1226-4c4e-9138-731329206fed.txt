@@ -1,0 +1,105 @@
+{
+  "passage": "The Future of Work\n\nWhat will the future of work look like? Nobody knows exactly, but experts agree that technology will change many jobs. Some people worry that robots will take over, ①______ others believe new jobs will appear. For example, AI will create a need for people who can ②______ (programme) machines. Also, the ③______ (invent) of new tools will require creative thinkers. The ④______ (depend) on technology will grow, so workers must be ready to learn new skills. In fact, the most ⑤______ (success) people will be those who keep learning. Compared with today, the workplace of tomorrow will be ⑥______ (flexible) and more global. Many companies will offer jobs that can be done from anywhere, ⑦______ (connect) workers around the world. This means people will need to be ⑧______ (skill) at using digital tools. To prepare, students should focus on ⑨______ (develop) their creativity and problem-solving abilities. They also need ⑩______ (learn) how to work with others. In short, the future is bright for those who are willing to adapt.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the correct word for blank ①.",
+      "options": ["while", "because", "so", "if"],
+      "answer": "while",
+      "explanation": "此处表示对比，while 意为“而”，连接两个相反的观点。because 表原因，so 表结果，if 表条件，均不符合对比关系。while 正确。",
+      "evidence_sentence": "Some people worry that robots will take over, ①______ others believe new jobs will appear.",
+      "context_clue": "Some people worry that robots will take over, ①______ others believe new jobs will appear.",
+      "clue_argument": "前后分句为对比关系，需用 while 连接。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Fill in blank ② with the correct form of 'programme'.",
+      "options": ["programme", "programmes", "programming", "programmed"],
+      "answer": "programme",
+      "explanation": "can 后接动词原形，programme 在此作动词，意为“编程”。programmes 是第三人称单数，programming 是现在分词，programmed 是过去式，均不能直接跟在 can 后。programme 正确。",
+      "evidence_sentence": "For example, AI will create a need for people who can ②______ (programme) machines.",
+      "context_clue": "For example, AI will create a need for people who can ②______ (programme) machines.",
+      "clue_argument": "情态动词 can 后需接动词原形。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Fill in blank ③ with the correct form of 'invent'.",
+      "options": ["invent", "invention", "inventive", "inventor"],
+      "answer": "invention",
+      "explanation": "定冠词 the 后需接名词，invention 意为“发明”，符合语境。invent 是动词，inventive 是形容词，inventor 是“发明家”，均不符合 the ... of 结构。invention 正确。",
+      "evidence_sentence": "Also, the ③______ (invent) of new tools will require creative thinkers.",
+      "context_clue": "Also, the ③______ (invent) of new tools will require creative thinkers.",
+      "clue_argument": "the 后需要名词，表示“新工具的发明”。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Fill in blank ④ with the correct form of 'depend'.",
+      "options": ["depend", "dependent", "dependence", "dependable"],
+      "answer": "dependence",
+      "explanation": "定冠词 the 后需接名词，dependence 意为“依赖”，符合语境。depend 是动词，dependent 是形容词，dependable 是形容词，均不能作主语中心词。dependence 正确。",
+      "evidence_sentence": "The ④______ (depend) on technology will grow, so workers must be ready to learn new skills.",
+      "context_clue": "The ④______ (depend) on technology will grow, so workers must be ready to learn new skills.",
+      "clue_argument": "the ... on technology 作主语，需要名词形式。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Fill in blank ⑤ with the correct form of 'success'.",
+      "options": ["success", "successful", "successfully", "succeed"],
+      "answer": "successful",
+      "explanation": "the most 后接形容词构成最高级，successful 意为“成功的”，修饰 people。success 是名词，successfully 是副词，succeed 是动词，均不能用于 the most ... 结构。successful 正确。",
+      "evidence_sentence": "In fact, the most ⑤______ (success) people will be those who keep learning.",
+      "context_clue": "In fact, the most ⑤______ (success) people will be those who keep learning.",
+      "clue_argument": "the most 后需形容词，修饰 people。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Fill in blank ⑥ with the correct form of 'flexible'.",
+      "options": ["flexible", "more flexible", "most flexible", "flexibly"],
+      "answer": "more flexible",
+      "explanation": "句中有 than 标志，且 flexible 是多音节形容词，比较级用 more flexible。flexible 是原级，most flexible 是最高级，flexibly 是副词，均不符合比较级结构。more flexible 正确。",
+      "evidence_sentence": "Compared with today, the workplace of tomorrow will be ⑥______ (flexible) and more global.",
+      "context_clue": "Compared with today, the workplace of tomorrow will be ⑥______ (flexible) and more global.",
+      "clue_argument": "与 more global 并列，且含比较意味，需用比较级。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Fill in blank ⑦ with the correct form of 'connect'.",
+      "options": ["connect", "connected", "connecting", "to connect"],
+      "answer": "connecting",
+      "explanation": "此处用现在分词作结果状语，表示自然而然的结果，connect 与主句主语 Many companies 是主动关系。connect 是原形，connected 是过去分词，to connect 是不定式，均不能作结果状语。connecting 正确。",
+      "evidence_sentence": "Many companies will offer jobs that can be done from anywhere, ⑦______ (connect) workers around the world.",
+      "context_clue": "Many companies will offer jobs that can be done from anywhere, ⑦______ (connect) workers around the world.",
+      "clue_argument": "逗号后需非谓语动词作结果状语，且与主语为主动关系。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Fill in blank ⑧ with the correct form of 'skill'.",
+      "options": ["skill", "skilled", "skillful", "skillfully"],
+      "answer": "skilled",
+      "explanation": "be skilled at 是固定搭配，意为“擅长”，skilled 是形容词。skill 是名词，skillful 虽也是形容词但通常说 be skillful at 较少见，skillfully 是副词，不能作表语。skilled 正确。",
+      "evidence_sentence": "This means people will need to be ⑧______ (skill) at using digital tools.",
+      "context_clue": "This means people will need to be ⑧______ (skill) at using digital tools.",
+      "clue_argument": "be ... at 结构需要形容词，skilled 与 at 搭配表示“擅长”。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Fill in blank ⑨ with the correct form of 'develop'.",
+      "options": ["develop", "developing", "developed", "to develop"],
+      "answer": "developing",
+      "explanation": "focus on 后接动名词，developing 作介词宾语。develop 是原形，developed 是过去分词，to develop 是不定式，均不能直接跟在介词 on 后。developing 正确。",
+      "evidence_sentence": "To prepare, students should focus on ⑨______ (develop) their creativity and problem-solving abilities.",
+      "context_clue": "To prepare, students should focus on ⑨______ (develop) their creativity and problem-solving abilities.",
+      "clue_argument": "介词 on 后需动名词作宾语。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Fill in blank ⑩ with the correct form of 'learn'.",
+      "options": ["learn", "learning", "learned", "to learn"],
+      "answer": "to learn",
+      "explanation": "need 后接不定式，表示“需要做某事”，to learn 符合。learn 是原形，learning 是动名词，learned 是过去分词，均不能直接跟在 need 后表示主动含义。to learn 正确。",
+      "evidence_sentence": "They also need ⑩______ (learn) how to work with others.",
+      "context_clue": "They also need ⑩______ (learn) how to work with others.",
+      "clue_argument": "need 后接不定式表示“需要做”。"
+    }
+  ]
+}

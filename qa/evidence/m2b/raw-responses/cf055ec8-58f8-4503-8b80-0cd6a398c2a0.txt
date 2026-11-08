@@ -1,0 +1,19 @@
+{
+  "explanations": [
+    {
+      "question_index": 1,
+      "explanation": "正确答案是elderly，因为语境提到在俱乐部帮助邻居中的老人，elderly people意为老年人，符合帮助对象。wealthy意为富有的，与帮助老人的语境不符；famous意为著名的，也不符合；foreign意为外国的，同样不恰当。本题考察形容词词义辨析，需根据上下文选择符合逻辑的词汇。",
+      "invalid": false
+    },
+    {
+      "question_index": 2,
+      "explanation": "正确答案是optimistic，因为与confident并列，表示积极乐观的情绪，符合现在感觉更好的语境。curious意为好奇的，generous意为慷慨的，patient意为耐心的，这些词都不能与confident形成合理的并列，且不符合成长后心态变好的描述。本题考察形容词词义辨析及语境理解。",
+      "invalid": false
+    },
+    {
+      "question_index": 3,
+      "explanation": "正确答案是commits，commit mistakes是固定搭配，意为犯错误，符合每个人都会犯错的语境。repeats意为重复，avoids意为避免，corrects意为改正，它们与mistakes搭配时意思分别为重复错误、避免错误、改正错误，都不符合‘每个人都会犯错’这一普遍事实。本题考察动词词义辨析及固定搭配。",
+      "invalid": false
+    }
+  ]
+}

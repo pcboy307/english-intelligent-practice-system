@@ -1,0 +1,65 @@
+{
+  "passage": "Every year, millions of tons of plastic waste enter the ocean. This pollution harms marine life and threatens human health. Scientists have found that tiny plastic pieces, called microplastics, are now everywhere in the sea. These particles come from larger plastic items that break down over time. Fish and other sea animals often mistake them for food. As a result, the plastic enters the food chain and can eventually reach our dinner tables.\n\nTo tackle this problem, many countries have started to take action. For example, some cities have banned single-use plastic bags, while others have introduced recycling programs. In 2019, the United Nations reported that over 60 countries had adopted rules to reduce plastic waste. However, experts say that these efforts are not enough. They believe that we need a global agreement to limit plastic production and improve waste management.\n\nIndividuals can also make a difference. Simple actions like using reusable bags, avoiding plastic straws, and participating in beach clean-ups can help reduce the amount of plastic that reaches the ocean. Moreover, by supporting companies that use eco-friendly packaging, consumers can encourage businesses to change their practices. Every small step counts in the fight against ocean plastic pollution.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Ocean plastic pollution is a serious problem that requires action from governments and individuals.",
+        "Microplastics are the only type of plastic pollution in the ocean.",
+        "Recycling programs have completely solved the plastic problem.",
+        "Fish are the main source of plastic in the ocean."
+      ],
+      "answer": "Ocean plastic pollution is a serious problem that requires action from governments and individuals.",
+      "explanation": "文章首段指出海洋塑料污染的严重性，后两段分别从国家和个人角度提出应对措施，因此主旨是海洋塑料污染需要政府和个人的共同行动。错误选项B错在“only”，文中还提到大型塑料；C错在“completely solved”，文中说努力还不够。",
+      "evidence_sentence": "Every year, millions of tons of plastic waste enter the ocean. This pollution harms marine life and threatens human health.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what is a direct consequence of microplastics in the sea?",
+      "options": [
+        "They are eaten by sea animals and enter the food chain.",
+        "They make the ocean water look cleaner.",
+        "They help fish grow faster.",
+        "They are easily removed by recycling programs."
+      ],
+      "answer": "They are eaten by sea animals and enter the food chain.",
+      "explanation": "文章第一段明确提到“Fish and other sea animals often mistake them for food. As a result, the plastic enters the food chain”，因此微塑料被海洋动物误食并进入食物链是直接后果。B和C与原文相反；D文中未提及回收项目能轻易去除微塑料。",
+      "evidence_sentence": "Fish and other sea animals often mistake them for food. As a result, the plastic enters the food chain and can eventually reach our dinner tables.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can be inferred about the effectiveness of current efforts to reduce ocean plastic?",
+      "options": [
+        "They are insufficient and need to be strengthened.",
+        "They have already solved the problem completely.",
+        "They are opposed by most countries.",
+        "They focus only on cleaning up beaches."
+      ],
+      "answer": "They are insufficient and need to be strengthened.",
+      "explanation": "文章第二段提到“experts say that these efforts are not enough”以及“need a global agreement”，由此可推断当前措施不够，需要加强。B与原文相反；C文中未提及多数国家反对；D片面，因为措施还包括禁令和回收等。",
+      "evidence_sentence": "However, experts say that these efforts are not enough.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "As used in the passage, the word “tackle” in paragraph 2 is closest in meaning to ______.",
+      "options": [
+        "deal with",
+        "give up",
+        "run after",
+        "take over"
+      ],
+      "answer": "deal with",
+      "explanation": "“tackle”在句中意为“处理，应对”，与“deal with”意思最接近，因为后文提到各国开始采取行动应对塑料问题。B“放弃”与语境相反；C“追赶”和D“接管”均不符合此处语境。",
+      "evidence_sentence": "To tackle this problem, many countries have started to take action.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

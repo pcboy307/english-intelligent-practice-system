@@ -1,0 +1,122 @@
+{
+  "passage": "Last term, the student felt (1)________ about using digital tools for study because she feared losing focus. Her teacher, who was always (2)________ about new technology, suggested a learning app. At first, she was not (3)________ that the app could help. However, the teacher explained that the app was (4)________ and had been tested by many students. The student was (5)________ to improve her grades, so she decided to try it. Only by setting daily goals could she (6)________ her progress. The teacher recommended that she (7)________ her study plan to fit the app's schedule. Soon, she was (8)________ by her classmates to join an online study group. The group's support (9)________ her to keep going even when tasks were hard. If she (10)________ on one subject at a time, she found she could finish more. (11)________, she built a habit of reviewing notes each evening. The teacher insisted that she (12)________ check her understanding with short quizzes. (13)________, she could study (14)________ without constant help, and her (15)________ grew. She also valued the (16)________ to learn at her own pace.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank (1).",
+      "options": ["anxious", "angry", "bored", "excited"],
+      "answer": "anxious",
+      "explanation": "上下文提到她害怕失去专注，因此感到焦虑。anxious 意为“焦虑的”，符合语境。angry（生气的）和 bored（无聊的）与“害怕失去专注”不符。",
+      "evidence_sentence": "Last term, the student felt (1)________ about using digital tools for study because she feared losing focus.",
+      "context_clue": "Last term, the student felt (1)________ about using digital tools for study because she feared losing focus.",
+      "clue_argument": "because she feared losing focus 表明情绪是焦虑，故选 anxious。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank (2).",
+      "options": ["confident", "curious", "worried", "doubtful"],
+      "answer": "curious",
+      "explanation": "老师对新科技总是充满好奇，才会推荐学习应用。curious 意为“好奇的”，符合语境。worried（担心的）和 doubtful（怀疑的）与推荐应用的行为矛盾。",
+      "evidence_sentence": "Her teacher, who was always (2)________ about new technology, suggested a learning app.",
+      "context_clue": "Her teacher, who was always (2)________ about new technology, suggested a learning app.",
+      "clue_argument": "suggested a learning app 说明老师对新科技感兴趣，故选 curious。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank (3).",
+      "options": ["confident", "afraid", "sure", "aware"],
+      "answer": "confident",
+      "explanation": "她一开始不相信应用能帮助她，即不自信。confident 意为“自信的”，符合语境。afraid（害怕的）和 aware（意识到的）与“not...that the app could help”搭配不当。",
+      "evidence_sentence": "At first, she was not (3)________ that the app could help.",
+      "context_clue": "At first, she was not (3)________ that the app could help.",
+      "clue_argument": "not confident that... 表示“不相信……”，与后文尝试形成对比。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank (4).",
+      "options": ["reliable", "expensive", "complex", "popular"],
+      "answer": "reliable",
+      "explanation": "老师解释应用可靠且经过许多学生测试。reliable 意为“可靠的”，符合语境。expensive（昂贵的）和 complex（复杂的）与“经过测试”不构成合理因果关系。",
+      "evidence_sentence": "However, the teacher explained that the app was (4)________ and had been tested by many students.",
+      "context_clue": "However, the teacher explained that the app was (4)________ and had been tested by many students.",
+      "clue_argument": "had been tested by many students 说明应用可靠，故选 reliable。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank (5).",
+      "options": ["ambitious", "lazy", "careless", "shy"],
+      "answer": "ambitious",
+      "explanation": "她渴望提高成绩，说明她有抱负。ambitious 意为“有雄心的”，符合语境。lazy（懒惰的）和 careless（粗心的）与“decided to try it”矛盾。",
+      "evidence_sentence": "The student was (5)________ to improve her grades, so she decided to try it.",
+      "context_clue": "The student was (5)________ to improve her grades, so she decided to try it.",
+      "clue_argument": "to improve her grades 表明她有目标，故选 ambitious。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank (6).",
+      "options": ["achieve", "avoid", "ignore", "forget"],
+      "answer": "achieve",
+      "explanation": "设定每日目标才能取得进步。achieve 意为“取得”，符合语境。avoid（避免）和 ignore（忽视）与 progress 搭配不当。",
+      "evidence_sentence": "Only by setting daily goals could she (6)________ her progress.",
+      "context_clue": "Only by setting daily goals could she (6)________ her progress.",
+      "clue_argument": "achieve progress 是固定搭配，意为“取得进步”。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank (7).",
+      "options": ["adapt", "adopt", "accept", "avoid"],
+      "answer": "adapt",
+      "explanation": "老师建议她调整学习计划以适应应用的时间表。adapt 意为“调整”，符合语境。adopt（采用）和 accept（接受）与“to fit”搭配不当。",
+      "evidence_sentence": "The teacher recommended that she (7)________ her study plan to fit the app's schedule.",
+      "context_clue": "The teacher recommended that she (7)________ her study plan to fit the app's schedule.",
+      "clue_argument": "adapt...to fit... 表示“调整……以适应……”，故选 adapt。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank (8).",
+      "options": ["encouraged", "forced", "prevented", "blamed"],
+      "answer": "encouraged",
+      "explanation": "同学鼓励她加入在线学习小组。encouraged 意为“鼓励”，符合语境。forced（强迫）和 prevented（阻止）与“join”的积极语境不符。",
+      "evidence_sentence": "Soon, she was (8)________ by her classmates to join an online study group.",
+      "context_clue": "Soon, she was (8)________ by her classmates to join an online study group.",
+      "clue_argument": "join an online study group 是积极行为，需要鼓励，故选 encouraged。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank (9).",
+      "options": ["persuaded", "warned", "reminded", "threatened"],
+      "answer": "persuaded",
+      "explanation": "小组的支持说服她坚持下去。persuaded 意为“说服”，符合语境。warned（警告）和 threatened（威胁）与“keep going”的积极支持矛盾。",
+      "evidence_sentence": "The group's support (9)________ her to keep going even when tasks were hard.",
+      "context_clue": "The group's support (9)________ her to keep going even when tasks were hard.",
+      "clue_argument": "support 和 keep going 表明是说服她坚持，故选 persuaded。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank (10).",
+      "options": ["concentrate", "waste", "spend", "divide"],
+      "answer": "concentrate",
+      "explanation": "如果她一次专注于一个科目，就能完成更多。concentrate 意为“集中注意力”，符合语境。waste（浪费）和 divide（分开）与“finish more”不构成条件关系。",
+      "evidence_sentence": "If she (10)________ on one subject at a time, she found she could finish more.",
+      "context_clue": "If she (10)________ on one subject at a time, she found she could finish more.",
+      "clue_argument": "concentrate on 是固定搭配，且与 finish more 形成条件关系。"
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank (11).",
+      "options": ["Gradually", "Suddenly", "Finally", "Immediately"],
+      "answer": "Gradually",
+      "explanation": "她逐渐养成了每晚复习笔记的习惯。Gradually 意为“逐渐地”，符合语境。Suddenly（突然）和 Immediately（立刻）与习惯养成的过程不符。",
+      "evidence_sentence": "(11)________, she built a habit of reviewing notes each evening.",
+      "context_clue": "(11)________, she built a habit of reviewing notes each evening.",
+      "clue_argument": "built a habit 是渐进过程，故选 Gradually。"
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank (12).",
+      "options": ["eventually", "rarely", "never", "hardly"],
+      "answer": "eventually",
+      "explanation": "老师坚持她最终要用小测验检查理解。eventually 意为“最终”，符合语境。rarely（很少）和 never（从不）与“insisted”的坚决语气矛盾。",
+      "evidence_sentence": "The teacher insisted that she (12)________ check her understanding with short quizzes.",
+      "context_clue": "The teacher insisted that she (12)________ check her understanding with short quizzes.",
+   

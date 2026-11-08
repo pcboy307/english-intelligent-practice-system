@@ -1,0 +1,65 @@
+{
+  "passage": "In our school, sport is not only about winning. Last year, our team took part in a city match. Before the match, our coach, Mr Chen, told us that the spirit of sport is more important than the score. He said that if we respected every player, we would be true winners. During the match, a player on the other team fell down. Our best player, Li Wei, stopped and helped him stand up. The other team's players were surprised, but they smiled and thanked him. Although we lost the match, we felt proud. After the match, Mr Chen said, \"You showed great spirit today. A true champion is not only strong but also kind.\" We all agreed. This experience taught us that sport is about friendship and respect. It is not just about medals. We will always remember that day.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"spirit\" in the passage most probably mean?",
+      "options": [
+        "The soul of a person",
+        "The true meaning and values of sport",
+        "A kind of drink",
+        "The energy of the body"
+      ],
+      "answer": "The true meaning and values of sport",
+      "explanation": "词义猜测题。根据上下文，教练说体育精神比分数更重要，且后文提到尊重、友谊和帮助对手，可知spirit指体育的真正意义和价值。A项指人的灵魂，C项指一种饮料，均不符合语境。",
+      "evidence_sentence": "Before the match, our coach, Mr Chen, told us that the spirit of sport is more important than the score.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "Why did the writer's team feel proud after losing the match?",
+      "options": [
+        "Because they won the match.",
+        "Because they showed good sportsmanship by helping an opponent.",
+        "Because the coach praised them for scoring.",
+        "Because they received medals."
+      ],
+      "answer": "Because they showed good sportsmanship by helping an opponent.",
+      "explanation": "目的态度题。根据文中Li Wei帮助摔倒的对手以及教练的表扬，可知他们因展现良好体育精神而自豪。A项与原文“we lost the match”矛盾；C项教练表扬的是精神而非得分；D项文中未提及获得奖牌。",
+      "evidence_sentence": "Although we lost the match, we felt proud.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Winning is the most important thing in sport.",
+        "Sport is about friendship and respect, not just winning.",
+        "Li Wei is the best player in the team.",
+        "The coach is very strict with the players."
+      ],
+      "answer": "Sport is about friendship and respect, not just winning.",
+      "explanation": "主旨大意题。文章通过一场比赛说明体育精神比分数更重要，强调友谊和尊重。A项与文章主旨相反；C项和D项只是细节，不是主旨。",
+      "evidence_sentence": "This experience taught us that sport is about friendship and respect.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What did the coach say would happen if they respected every player?",
+      "options": [
+        "They would win the match.",
+        "They would be true winners.",
+        "They would get medals.",
+        "They would become famous."
+      ],
+      "answer": "They would be true winners.",
+      "explanation": "细节理解题。根据教练的话“if we respected every player, we would be true winners”可知答案。A项文中未说尊重就一定能赢；C项和D项文中均未提及。",
+      "evidence_sentence": "He said that if we respected every player, we would be true winners.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "passage": "When the student first joined the school basketball team, she felt nervous and alone. Her classmate, a tall girl with a warm smile, noticed her sitting by the bench and came over. \"Don't worry,\" she said. \"I'll help you.\" That simple promise was the beginning of a friendship built on trust. Over the next months, they practised together every afternoon. The classmate taught her how to shoot and how to stay calm under pressure. The student learned that trust grows when someone keeps their word. One day, during an important match, the student missed a crucial shot. She expected her friend to be angry, but instead the classmate said, \"If you had taken your time, you would have scored. But it's okay—we all make mistakes.\" Those words made the student realize that true friendship means accepting each other's weaknesses. From then on, she became more confident. She also learned to support others in the same way. Their friendship became a source of strength for both of them.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What did the classmate promise to do when she first spoke to the student?",
+      "options": ["To help her", "To teach her to shoot", "To play in the match", "To sit by the bench"],
+      "answer": "To help her",
+      "explanation": "文章明确提到同学说“I'll help you.”，因此她承诺帮助她。选项B“教她投篮”是后来发生的事，不是最初的承诺；选项C“参加比赛”和选项D“坐在长椅旁”与原文不符。",
+      "evidence_sentence": "\"Don't worry,\" she said. \"I'll help you.\"",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about the classmate from her words after the student missed the shot?",
+      "options": ["She was angry about the mistake.", "She understood and forgave the mistake.", "She thought the student was careless.", "She wanted to take the shot herself."],
+      "answer": "She understood and forgave the mistake.",
+      "explanation": "同学说“If you had taken your time, you would have scored. But it's okay—we all make mistakes.”，表明她理解并原谅了错误。选项A“她对错误感到生气”与“it's okay”矛盾；选项C“她认为学生粗心”并非她的意思；选项D“她想自己投篮”文中未提及。",
+      "evidence_sentence": "She expected her friend to be angry, but instead the classmate said, \"If you had taken your time, you would have scored. But it's okay—we all make mistakes.\"",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"crucial\" in the passage most probably mean?",
+      "options": ["Very important", "Very easy", "Very quick", "Very strange"],
+      "answer": "Very important",
+      "explanation": "根据上下文，学生错过了一个“crucial shot”，随后朋友安慰她，说明这个投篮很重要。因此“crucial”意为“非常重要的”。选项B“非常容易”、选项C“非常快”和选项D“非常奇怪”都不符合语境。",
+      "evidence_sentence": "One day, during an important match, the student missed a crucial shot.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main purpose of the passage?",
+      "options": ["To show how friendship and trust develop.", "To explain the rules of basketball.", "To describe a school match in detail.", "To advise students to join sports teams."],
+      "answer": "To show how friendship and trust develop.",
+      "explanation": "文章通过学生和同学之间的故事，展示了友谊和信任如何建立和发展。选项B“解释篮球规则”文中未涉及；选项C“详细描述一场学校比赛”只是故事的一部分，不是主要目的；选项D“建议学生参加运动队”也不是文章的重点。",
+      "evidence_sentence": "That simple promise was the beginning of a friendship built on trust.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "passage": "Last spring, a notice was put up on the school board by the student union. It asked for volunteers to help at a community centre every Saturday. The student, a girl named Li Hua, was interested and signed up immediately. Her teacher, Mr. Wang, encouraged her to join because he believed volunteering could build character. At the centre, Li Hua helped elderly people learn to use smartphones. She was patient and kind, and soon many of them could make video calls to their families. One day, a classmate asked her why she gave up her weekends. Li Hua smiled and said, \"When I see their happy faces, I feel my effort is worth it.\" The experience also helped her become more confident. She learned that small actions can bring big changes. Now she volunteers regularly and encourages others to do the same.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What was put up on the school board?",
+      "options": ["A notice", "A poster", "A letter", "A map"],
+      "answer": "A notice",
+      "explanation": "文章第一句提到“a notice was put up on the school board”，因此是通知。A项正确。B项海报和C项信件在文中未提及，属于无中生有；D项地图也不符合原文。",
+      "evidence_sentence": "Last spring, a notice was put up on the school board by the student union.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "Why did Mr. Wang encourage Li Hua to join the volunteer work?",
+      "options": ["He thought it could build character.", "He wanted her to learn to use smartphones.", "He needed help at the community centre.", "He believed it would improve her grades."],
+      "answer": "He thought it could build character.",
+      "explanation": "文中明确说“he believed volunteering could build character”，因此B项正确。A项“学习使用智能手机”是李华帮助老人的内容，不是王老师鼓励的原因；C项“需要帮忙”文中未提；D项“提高成绩”文中未提。",
+      "evidence_sentence": "Her teacher, Mr. Wang, encouraged her to join because he believed volunteering could build character.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"patient\" in the passage mean?",
+      "options": ["Able to wait calmly", "Feeling sick", "Being very smart", "Feeling angry"],
+      "answer": "Able to wait calmly",
+      "explanation": "根据上下文，李华耐心地教老人使用智能手机，因此“patient”意为“有耐心的”。A项正确。B项“生病”是patient作为名词或形容词的另一含义，但此处不符；C项“聪明”和D项“生气”与语境不符。",
+      "evidence_sentence": "She was patient and kind, and soon many of them could make video calls to their families.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the writer's attitude towards volunteering?",
+      "options": ["Supportive", "Doubtful", "Uninterested", "Critical"],
+      "answer": "Supportive",
+      "explanation": "文章描述了志愿服务的积极影响，如让老人开心、让李华更自信，并提到她鼓励他人参与，因此作者持支持态度。A项正确。B项怀疑、C项不感兴趣和D项批评都与文章积极肯定的语气不符。",
+      "evidence_sentence": "Now she volunteers regularly and encourages others to do the same.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

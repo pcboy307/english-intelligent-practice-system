@@ -1,0 +1,1 @@
+{"translations": {"deadlines": "截止日期", "importance": "重要性", "ranked": "排名"}}

@@ -1,0 +1,45 @@
+{
+  "passage": "When the school sports meeting was announced, the student felt nervous. She had never competed in a long race before. Her teacher, who had noticed her fear, offered simple advice: \"Run your own race.\" A classmate, who was the team's best runner, also encouraged her. On the day of the race, the student started too fast. By the middle of the course, her legs ached and she wanted to stop. Then she heard her classmates cheering. She remembered the teacher's words and found a steady speed. In the final metres, she passed two runners and finished third. She did not win, but she achieved her personal best. Later, the teacher said, \"The spirit of sport is not only about medals. It is about courage and effort.\" The student was given a small award for her effort. If she had given up, she would have lost more than a race. She learned that true victory lies in trying your best.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"steady\" in the passage most probably mean?",
+      "options": ["slow", "regular", "fast", "tired"],
+      "answer": "regular",
+      "explanation": "“Steady” 在文中指稳定的速度，与 regular 意思最接近。A 项 slow 和 C 项 fast 都强调速度的快慢，不符合语境；D 项 tired 表示疲倦，也不符合。",
+      "evidence_sentence": "She remembered the teacher's words and found a steady speed.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the teacher's attitude towards the spirit of sport?",
+      "options": ["Winning medals is the most important thing.", "Courage and effort matter more than medals.", "Only talented runners can succeed.", "Races are too dangerous for students."],
+      "answer": "Courage and effort matter more than medals.",
+      "explanation": "老师明确说体育精神不只是奖牌，而是勇气和努力。A 项强调奖牌最重要，与原文相反；C 项说只有有天赋的跑步者才能成功，文中并未提到天赋，且与鼓励学生的态度不符。",
+      "evidence_sentence": "The spirit of sport is not only about medals. It is about courage and effort.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["A student won a running race.", "A student learned the true meaning of sports spirit.", "A teacher trained a student to run faster.", "A classmate helped a student win a medal."],
+      "answer": "A student learned the true meaning of sports spirit.",
+      "explanation": "文章主要讲述学生通过比赛领悟到体育精神在于勇气和努力。A 项说学生赢了比赛，但文中她只得了第三名；C 项说老师训练学生跑得更快，文中老师只是给了建议，并非训练。",
+      "evidence_sentence": "She learned that true victory lies in trying your best.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What would have happened if the student had given up during the race?",
+      "options": ["She would have won the race.", "She would have lost more than a race.", "She would have been given a medal.", "She would have become the team's best runner."],
+      "answer": "She would have lost more than a race.",
+      "explanation": "文中虚拟语气句表明如果她放弃，她失去的将不止是一场比赛。A 项说她本会赢得比赛，与放弃的结果矛盾；C 项说她本会得到奖牌，也不符合放弃的后果。",
+      "evidence_sentence": "If she had given up, she would have lost more than a race.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -393,6 +393,7 @@ def validate_generated_passage(
     )
     unknown_words = audit["unknown"]
     unknown_ratio = audit["unknown_ratio"]
+    vocabulary_resolutions = audit["resolutions"]
     if unknown_words:
         failures.append(
             GateFailure(
@@ -634,6 +635,15 @@ def validate_generated_passage(
             "question_count": len(questions),
             "unknown_words": unknown_words,
             "unknown_ratio": round(unknown_ratio, 6),
+            "vocabulary_resolutions": vocabulary_resolutions,
+            "vocabulary_resolution_count": len(vocabulary_resolutions),
+            "vocabulary_resolution_rate": round(
+                len(vocabulary_resolutions)
+                / audit["single_word_denominator"],
+                6,
+            )
+            if audit["single_word_denominator"]
+            else 0.0,
             "glossed_terms": glossed_terms,
             "single_word_denominator": audit["single_word_denominator"],
         },

@@ -1,0 +1,1 @@
+{"translations": {"importance": "重要性", "installed": "安装", "panel": "面板", "panels": "面板", "renewable": "可再生", "supportive": "支持"}}

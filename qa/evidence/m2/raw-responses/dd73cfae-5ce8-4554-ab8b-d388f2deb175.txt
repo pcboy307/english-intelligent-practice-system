@@ -1,0 +1,46 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a connected narrative about a student learning communication skills, with each paragraph building on the previous one.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A directly follows from the context of listening and leads to the classmates feeling respected.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "C",
+      "reason": "Option C is a specific example of asking a simple question to check understanding, matching the context.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "F",
+      "reason": "Option F logically connects the idea of tone being important and the teacher's advice about softening requests.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "D",
+      "reason": "Option D fits the narrative of realizing the mistake, which is supported by the following apology.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "G",
+      "reason": "Option G aligns with the concluding thought about the importance of communication skills for everyone.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

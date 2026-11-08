@@ -1,0 +1,65 @@
+{
+  "passage": "Last spring, a notice was put up on the school board by the student union. It said that a community library needed volunteers to help children with reading on Saturday mornings. Many students were attracted by the idea, and among them was a girl named Li Hua. She had always loved books, so she decided to join the programme.\n\nAt first, Li Hua felt a bit nervous. She was not sure whether she could keep the children interested. However, her teacher encouraged her and said, \"Your patience will make a difference.\" So Li Hua went to the library every Saturday. She read stories aloud and helped the children choose books. Slowly, she became more confident.\n\nOne day, a boy named Zhang Wei came to the library. He was very shy and refused to speak. Li Hua did not give up. She sat beside him and showed him a picture book about animals. To her surprise, Zhang Wei began to smile and point at the pictures. After that, he came every week and even started to read simple sentences.\n\nBy the end of the term, Li Hua had helped more than ten children. She realised that volunteering was not just about giving time; it was also about gaining happiness. She said, \"When I see their progress, I feel that my effort is worthwhile.\"",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What was put up on the school board by the student union?",
+      "options": [
+        "A notice about a reading programme",
+        "A list of new books",
+        "A plan for a sports meeting",
+        "A poster for a music concert"
+      ],
+      "answer": "A notice about a reading programme",
+      "explanation": "文章第一句提到“a notice was put up on the school board by the student union”，且通知内容是关于社区图书馆需要志愿者帮助孩子阅读，因此选A。B项“新书清单”和C项“运动会计划”在文中均未提及，属于无中生有。",
+      "evidence_sentence": "Last spring, a notice was put up on the school board by the student union.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about Li Hua from the passage?",
+      "options": [
+        "She was forced to volunteer by her teacher.",
+        "She found volunteering meaningful and rewarding.",
+        "She only helped one child during the term.",
+        "She stopped going to the library after a month."
+      ],
+      "answer": "She found volunteering meaningful and rewarding",
+      "explanation": "文章最后一段说“She realised that volunteering was not just about giving time; it was also about gaining happiness.”以及“my effort is worthwhile”，可以推断她认为志愿服务有意义且值得。A项“被老师强迫”与原文“her teacher encouraged her”不符；C项“只帮助了一个孩子”与原文“helped more than ten children”矛盾。",
+      "evidence_sentence": "She realised that volunteering was not just about giving time; it was also about gaining happiness.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"progress\" in the last paragraph most probably mean?",
+      "options": [
+        "Improvement",
+        "Difficulty",
+        "Mistake",
+        "Silence"
+      ],
+      "answer": "Improvement",
+      "explanation": "根据上下文，Li Hua帮助孩子们阅读，看到他们的“progress”让她觉得努力值得，因此“progress”意为“进步、提高”，与improvement同义。B项“困难”和C项“错误”与语境不符，因为看到困难或错误不会让她觉得努力值得。",
+      "evidence_sentence": "When I see their progress, I feel that my effort is worthwhile.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To encourage students to do volunteer work",
+        "To introduce a community library",
+        "To describe a boy's reading problems",
+        "To complain about the school's notice"
+      ],
+      "answer": "To encourage students to do volunteer work",
+      "explanation": "文章通过李华参加志愿阅读项目的经历，展示了志愿服务带来的快乐和意义，最后强调“volunteering was not just about giving time; it was also about gaining happiness”，目的是鼓励学生参与志愿服务。B项“介绍社区图书馆”和C项“描述男孩的阅读问题”只是细节，不是写作目的。",
+      "evidence_sentence": "She realised that volunteering was not just about giving time; it was also about gaining happiness.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

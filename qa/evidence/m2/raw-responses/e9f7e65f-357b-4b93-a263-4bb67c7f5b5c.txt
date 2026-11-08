@@ -1,0 +1,126 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative about a student's group project experience, with a clear sequence of events and logical connections between sentences.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "accept",
+      "reason": "The context 'every member should ____ a fair share of the work' requires a verb meaning to take on or agree to, and 'accept' is the only option that fits logically.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "appreciate",
+      "reason": "The phrase 'did not ____ how much her partner helped' implies a lack of recognition or gratitude, making 'appreciate' the clear choice.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "balance",
+      "reason": "The sentence 'tasks were hard to ____' suggests difficulty in managing or handling tasks, and 'balance' fits the context of workload distribution.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "benefit",
+      "reason": "The phrase 'When you ____ from clear rules, everyone wins' indicates a positive outcome, and 'benefit' is the only option that conveys gaining an advantage.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "challenge",
+      "reason": "The context 'found the ____ of speaking up scary' suggests a difficult or daunting task, and 'challenge' is the most appropriate noun.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 6,
+      "clear_best": true,
+      "best_option": "communicate",
+      "reason": "The phrase 'learned to ____ honestly each week' implies open and truthful exchange, and 'communicate' directly fits the context.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 7,
+      "clear_best": true,
+      "best_option": "contribute",
+      "reason": "The sentence 'With each member ____ ideas' requires a verb meaning to provide or offer, and 'contribute' is the clear choice.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 8,
+      "clear_best": true,
+      "best_option": "determine",
+      "reason": "The phrase 'did they ____ the real problem' means to identify or figure out, and 'determine' fits perfectly.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 9,
+      "clear_best": true,
+      "best_option": "discover",
+      "reason": "The context 'began to ____ new ways' suggests finding or uncovering, and 'discover' is the most logical verb.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 10,
+      "clear_best": true,
+      "best_option": "efficient",
+      "reason": "The phrase 'done in an ____ way' implies a positive manner, and 'efficient' is the only adjective that fits the context of successful completion.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 11,
+      "clear_best": true,
+      "best_option": "essential",
+      "reason": "The sentence 'It was trust, not luck, that was ____ for success' requires an adjective meaning necessary, and 'essential' is the clear choice.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 12,
+      "clear_best": true,
+      "best_option": "improve",
+      "reason": "The phrase 'could have ____ the plan sooner' suggests making it better, and 'improve' fits the positive context.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 13,
+      "clear_best": true,
+      "best_option": "manage",
+      "reason": "The context 'learned to ____ her time and feelings better' requires a verb meaning to handle or control, and 'manage' is the only suitable option.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 14,
+      "clear_best": true,
+      "best_option": "prefer",
+      "reason": "The phrase 'should ____ clear roles over vague promises' indicates a choice in favor of one over another, and 'prefer' directly conveys that meaning.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 15,
+      "clear_best": true,
+      "best_option": "reduce",
+      "reason": "The context 'agreed to ____ waste' implies decreasing or minimizing, and 'reduce' is the clear and logical choice.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

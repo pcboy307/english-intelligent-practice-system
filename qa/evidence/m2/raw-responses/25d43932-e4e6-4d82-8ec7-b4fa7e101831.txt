@@ -1,0 +1,45 @@
+{
+  "passage": "In 2023, a high school student named Li Wei joined a space camp in Beijing. The camp aimed to teach students about space exploration. Li Wei was excited but also nervous. On the first day, the students watched a video about astronauts on the International Space Station. Li Wei was amazed by how astronauts live in zero gravity. They sleep in special bags attached to the wall, and they eat food from tubes. The camp instructors explained that space exploration helps us understand the universe and develop new technologies. For example, many everyday products, like memory foam and water filters, were first created for space missions. Li Wei learned that space travel is not just about adventure; it is also about scientific progress. However, space exploration is expensive and risky. Some people argue that the money should be spent on problems on Earth, such as poverty and pollution. Li Wei thought about this. He realised that both are important. After the camp, Li Wei decided to study science and maybe become an aerospace engineer. He wants to help design safer and cheaper rockets. His teacher, Ms. Wang, encouraged him. She said, \"Space is the final frontier, but we must also take care of our home planet.\" Li Wei agreed. He believes that space exploration and environmental protection can go hand in hand. With hard work and creativity, his generation can achieve great things.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"frontier\" in the passage most likely mean?",
+      "options": ["A border or new area to explore", "A type of rocket", "A scientific instrument", "A space station"],
+      "answer": "A border or new area to explore",
+      "explanation": "词义猜测题。根据上下文，老师说的“Space is the final frontier”指的是太空是人类探索的最后新领域，因此frontier意为“边界或待探索的新领域”。A项“边界或新探索领域”符合；B项“一种火箭”和C项“科学仪器”与语境无关，故错误。",
+      "evidence_sentence": "Space is the final frontier, but we must also take care of our home planet.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's attitude towards space exploration?",
+      "options": ["Supportive but cautious", "Completely opposed", "Indifferent", "Uncertain"],
+      "answer": "Supportive but cautious",
+      "explanation": "作者态度题。文章提到太空探索有助于理解宇宙和发展新技术，但也指出其昂贵且有风险，最后引用老师的话强调要兼顾地球，表明作者支持但谨慎。A项“支持但谨慎”正确；B项“完全反对”和C项“漠不关心”与文章不符，故错误。",
+      "evidence_sentence": "He believes that space exploration and environmental protection can go hand in hand.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Space exploration has both benefits and challenges.", "Li Wei wants to become an astronaut.", "Space camps are popular in China.", "The International Space Station is important."],
+      "answer": "Space exploration has both benefits and challenges.",
+      "explanation": "主旨大意题。文章主要讲述了太空探索的好处（如促进科技发展）和挑战（如费用高、有风险），并提到学生对此的思考。A项“太空探索既有益处也有挑战”概括了全文；B项“李伟想成为宇航员”是细节；C项“太空营在中国很流行”未提及；D项“国际空间站很重要”是部分内容，故错误。",
+      "evidence_sentence": "Li Wei learned that space travel is not just about adventure; it is also about scientific progress.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, what did Li Wei decide to do after the camp?",
+      "options": ["Study science and maybe become an aerospace engineer", "Become an astronaut", "Work for the space camp", "Study environmental protection"],
+      "answer": "Study science and maybe become an aerospace engineer",
+      "explanation": "细节理解题。根据文章倒数第三句“After the camp, Li Wei decided to study science and maybe become an aerospace engineer.”可知，李伟决定学习科学，可能成为航空航天工程师。A项正确；B项“成为宇航员”未提及；C项“为太空营工作”未提及；D项“学习环境保护”与原文不符，故错误。",
+      "evidence_sentence": "After the camp, Li Wei decided to study science and maybe become an aerospace engineer.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

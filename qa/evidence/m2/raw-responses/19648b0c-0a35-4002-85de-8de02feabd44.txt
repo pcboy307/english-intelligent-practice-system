@@ -1,0 +1,65 @@
+{
+  "passage": "Last year, the student and her classmates noticed that their school produced a lot of rubbish every day. They decided to take action on climate change. First, they organised a recycling programme, and they placed bins for paper, plastic and food waste in every classroom. The student also gave a speech at a school meeting, and she encouraged everyone to use less paper and to turn off lights when leaving a room. At first, some students were careless, but the group did not give up. They made posters and asked teachers to remind students about the programme. After three months, the school reduced its waste by 30 per cent. The student felt proud because her small actions had made a big difference. She believes that if everyone takes small steps, we can protect our planet together.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To describe how a school reduced waste through student action.",
+        "To explain why recycling is difficult for students.",
+        "To compare different types of rubbish.",
+        "To warn students about the dangers of climate change."
+      ],
+      "answer": "To describe how a school reduced waste through student action.",
+      "explanation": "文章主要讲述了学生和同学采取行动减少学校垃圾的故事，目的是描述学生如何通过行动减少浪费。B项说解释回收对学生来说为什么困难，文章并未强调困难；D项说警告学生气候变化的危险，文章重点在行动而非警告。",
+      "evidence_sentence": "Last year, the student and her classmates noticed that their school produced a lot of rubbish every day.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Students can make a difference by taking small actions to fight climate change.",
+        "Recycling is the only way to solve climate change.",
+        "Teachers should be responsible for school waste.",
+        "The school should buy more bins for classrooms."
+      ],
+      "answer": "Students can make a difference by taking small actions to fight climate change.",
+      "explanation": "文章通过学生组织回收项目、减少浪费的例子，说明学生通过小行动可以对抗气候变化。B项说回收是解决气候变化的唯一方法，过于绝对；C项说老师应负责学校垃圾，与文章强调学生行动不符。",
+      "evidence_sentence": "She believes that if everyone takes small steps, we can protect our planet together.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what did the student do to encourage others?",
+      "options": [
+        "She gave a speech at a school meeting.",
+        "She wrote a letter to the head teacher.",
+        "She organised a recycling competition.",
+        "She made a video about climate change."
+      ],
+      "answer": "She gave a speech at a school meeting.",
+      "explanation": "文章明确提到学生在学校会议上发表演讲，鼓励大家少用纸、随手关灯。B项写信给校长、C项组织回收比赛、D项制作视频在文中均未提及。",
+      "evidence_sentence": "The student also gave a speech at a school meeting, and she encouraged everyone to use less paper and to turn off lights when leaving a room.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the student from the passage?",
+      "options": [
+        "She is proud of her efforts to reduce waste.",
+        "She thinks the programme was a failure.",
+        "She believes individual actions are useless.",
+        "She wants to stop the recycling programme."
+      ],
+      "answer": "She is proud of her efforts to reduce waste.",
+      "explanation": "文章提到学生感到自豪，因为她的行动带来了改变，可以推断她对自己的努力感到自豪。B项认为项目失败、C项认为个人行动无用、D项想停止项目，都与文章内容矛盾。",
+      "evidence_sentence": "The student felt proud because her small actions had made a big difference.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

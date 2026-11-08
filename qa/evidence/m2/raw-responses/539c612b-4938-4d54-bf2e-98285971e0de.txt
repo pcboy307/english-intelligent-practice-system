@@ -1,0 +1,105 @@
+{
+  "passage": "Last year, our school held a sports meeting that many students will never forget. The event, ① by the student union, attracted hundreds of participants. Everyone was excited about the games ② on the playground. ③ the opening ceremony, we felt a strong sense of teamwork. The relay race was the most ④ event of the day. ⑤ the rope, we cheered for our classmates. ⑥ surprised us most was the courage of a runner who fell but got up. We all knew ⑦ he would finish the race. The teacher announced ⑧ the winner would receive a special medal. ⑨ the race ended, we took a group photo. ⑩ we were tired, we felt proud and happy.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank ①.",
+      "options": ["organising", "organised", "to organise", "organise"],
+      "answer": "organised",
+      "explanation": "此处需用过去分词作后置定语，表示“被学生会组织的”，与event构成被动关系。organising表示主动进行，to organise表示目的，均不符合被动含义。",
+      "evidence_sentence": "The event, ① by the student union, attracted hundreds of participants.",
+      "context_clue": "The event, ① by the student union, attracted hundreds of participants.",
+      "clue_argument": "event与organise是被动关系，用过去分词作定语。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank ②.",
+      "options": ["holding", "held", "to hold", "hold"],
+      "answer": "held",
+      "explanation": "games与hold是被动关系，表示“被举行的比赛”，用过去分词作后置定语。holding表示主动，to hold表示目的，均不表示被动。",
+      "evidence_sentence": "Everyone was excited about the games ② on the playground.",
+      "context_clue": "Everyone was excited about the games ② on the playground.",
+      "clue_argument": "games与hold是被动关系，用过去分词。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank ③.",
+      "options": ["Watching", "Watched", "To watch", "Watch"],
+      "answer": "Watching",
+      "explanation": "此处用现在分词作时间状语，表示“在观看开幕式时”，主语we与watch是主动关系。Watched表示被动，To watch表示目的，均不符合。",
+      "evidence_sentence": "③ the opening ceremony, we felt a strong sense of teamwork.",
+      "context_clue": "③ the opening ceremony, we felt a strong sense of teamwork.",
+      "clue_argument": "we与watch是主动关系，用现在分词作状语。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank ④.",
+      "options": ["exciting", "excited", "excite", "excitement"],
+      "answer": "exciting",
+      "explanation": "修饰物event，表示“令人兴奋的”，用现在分词形式的形容词exciting。excited修饰人，excite是动词，excitement是名词，均不恰当。",
+      "evidence_sentence": "The relay race was the most ④ event of the day.",
+      "context_clue": "The relay race was the most ④ event of the day.",
+      "clue_argument": "修饰event（物），用exciting。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank ⑤.",
+      "options": ["Pulling", "Pulled", "To pull", "Pull"],
+      "answer": "Pulling",
+      "explanation": "此处用现在分词作伴随状语，表示“拉绳子时”，主语we与pull是主动关系。Pulled表示被动，To pull表示目的，均不符合。",
+      "evidence_sentence": "⑤ the rope, we cheered for our classmates.",
+      "context_clue": "⑤ the rope, we cheered for our classmates.",
+      "clue_argument": "we与pull是主动关系，用现在分词作伴随状语。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best option for blank ⑥.",
+      "options": ["That", "What", "Which", "Whether"],
+      "answer": "What",
+      "explanation": "此处引导主语从句，并在从句中作主语，表示“最让我们惊讶的事情”，用What。That只起连接作用不作成分，Which表示“哪一个”，Whether表示“是否”，均不符。",
+      "evidence_sentence": "⑥ surprised us most was the courage of a runner who fell but got up.",
+      "context_clue": "⑥ surprised us most was the courage of a runner who fell but got up.",
+      "clue_argument": "从句缺主语，用What引导主语从句。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best option for blank ⑦.",
+      "options": ["that", "what", "which", "whether"],
+      "answer": "that",
+      "explanation": "此处引导宾语从句，从句意思完整，不缺成分，用that。what需在从句中作成分，which表示“哪一个”，whether表示“是否”，均不符合。",
+      "evidence_sentence": "We all knew ⑦ he would finish the race.",
+      "context_clue": "We all knew ⑦ he would finish the race.",
+      "clue_argument": "宾语从句意思完整，用that。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best option for blank ⑧.",
+      "options": ["that", "what", "if", "which"],
+      "answer": "that",
+      "explanation": "此处引导宾语从句，从句意思完整，用that。what需作成分，if表示“是否”，which表示“哪一个”，均不符合。",
+      "evidence_sentence": "The teacher announced ⑧ the winner would receive a special medal.",
+      "context_clue": "The teacher announced ⑧ the winner would receive a special medal.",
+      "clue_argument": "宾语从句意思完整，用that。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best option for blank ⑨.",
+      "options": ["When", "While", "As", "Since"],
+      "answer": "When",
+      "explanation": "此处表示“当比赛结束时”，用When引导时间状语从句。While强调持续，As强调伴随，Since表示“自从”或“既然”，均不最恰当。",
+      "evidence_sentence": "⑨ the race ended, we took a group photo.",
+      "context_clue": "⑨ the race ended, we took a group photo.",
+      "clue_argument": "表示“当……时”，用When。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best option for blank ⑩.",
+      "options": ["Although", "Because", "So", "If"],
+      "answer": "Although",
+      "explanation": "此处表示让步“虽然我们累了，但感到自豪”，用Although。Because表示原因，So表示结果，If表示条件，均不符合逻辑。",
+      "evidence_sentence": "⑩ we were tired, we felt proud and happy.",
+      "context_clue": "⑩ we were tired, we felt proud and happy.",
+      "clue_argument": "前后为让步关系，用Although。"
+    }
+  ]
+}

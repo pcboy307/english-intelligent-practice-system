@@ -1,0 +1,1 @@
+{"translations": {"bedtime": "就寝时间", "cannot": "不能", "daytime": "白天", "easily": "容易地", "mood": "心情", "workload": "工作量"}}

@@ -1,0 +1,1 @@
+{"translations": {"drank": "喝", "long-term": "长期", "m": "米", "mood": "心情", "short-term": "短期"}}

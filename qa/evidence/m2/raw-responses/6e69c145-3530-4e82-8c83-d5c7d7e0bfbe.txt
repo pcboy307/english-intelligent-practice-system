@@ -1,0 +1,105 @@
+{
+  "passage": "Last month, my class visited ①______ art museum in the city center. We were excited because ②______ exhibition of Chinese calligraphy was said to be the best in years. Our teacher, Ms. Chen, had arranged the trip ③______ advance, and she told us to gather ④______ the main entrance at nine. When we arrived, we were amazed ⑤______ the huge crowd. Inside, a guide explained that the works dated back ⑥______ the Tang Dynasty. ⑦______ of the paintings was carefully restored, and each had its own story. I was particularly drawn to one landscape, ⑧______ colors seemed to glow. ⑨______ I had never studied calligraphy before, I found the brushwork fascinating. ⑩______ the end of the visit, we all agreed it was an unforgettable experience.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the correct article for blank ①.",
+      "options": ["a", "an", "the", "no article"],
+      "answer": "an",
+      "explanation": "此处表示泛指“一家艺术博物馆”，且art以元音音素开头，故用an。A项a用于辅音音素开头的词前，C项the表示特指，均不符合语境。",
+      "evidence_sentence": "Last month, my class visited ①______ art museum in the city center.",
+      "context_clue": "Last month, my class visited ①______ art museum in the city center.",
+      "clue_argument": "首次提及且art以元音音素开头，需用不定冠词an。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the correct article for blank ②.",
+      "options": ["a", "an", "the", "no article"],
+      "answer": "the",
+      "explanation": "此处特指“那个中国书法展览”，因为后面有of Chinese calligraphy修饰，表示特定展览，故用定冠词the。A项a和B项an表示泛指，不符合特指语境。",
+      "evidence_sentence": "We were excited because ②______ exhibition of Chinese calligraphy was said to be the best in years.",
+      "context_clue": "We were excited because ②______ exhibition of Chinese calligraphy was said to be the best in years.",
+      "clue_argument": "exhibition后有of短语限定，表示特指，用the。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the correct preposition for blank ③.",
+      "options": ["in", "on", "at", "by"],
+      "answer": "in",
+      "explanation": "固定搭配in advance意为“提前”，符合句意“老师提前安排了这次旅行”。B项on advance无此搭配，C项at advance也不正确。",
+      "evidence_sentence": "Our teacher, Ms. Chen, had arranged the trip ③______ advance, and she told us to gather ④______ the main entrance at nine.",
+      "context_clue": "Our teacher, Ms. Chen, had arranged the trip ③______ advance, and she told us to gather ④______ the main entrance at nine.",
+      "clue_argument": "arrange sth in advance是固定短语，表示提前安排。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the correct preposition for blank ④.",
+      "options": ["in", "on", "at", "by"],
+      "answer": "at",
+      "explanation": "表示在某个具体地点（如入口处）集合，常用at the main entrance。A项in表示在内部，B项on表示在表面上，均不准确。",
+      "evidence_sentence": "Our teacher, Ms. Chen, had arranged the trip ③______ advance, and she told us to gather ④______ the main entrance at nine.",
+      "context_clue": "Our teacher, Ms. Chen, had arranged the trip ③______ advance, and she told us to gather ④______ the main entrance at nine.",
+      "clue_argument": "gather at the entrance表示在入口处集合，at用于具体地点。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the correct preposition for blank ⑤.",
+      "options": ["at", "by", "with", "for"],
+      "answer": "at",
+      "explanation": "be amazed at意为“对……感到惊讶”，是固定搭配。B项by也可表示“被……惊讶”，但通常用于被动语态，此处不如at常见；C项with和D项for不搭配amazed。",
+      "evidence_sentence": "When we arrived, we were amazed ⑤______ the huge crowd.",
+      "context_clue": "When we arrived, we were amazed ⑤______ the huge crowd.",
+      "clue_argument": "be amazed at是固定搭配，表示对某事感到惊讶。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the correct pronoun for blank ⑥.",
+      "options": ["them", "these", "those", "they"],
+      "answer": "those",
+      "explanation": "此处用those指代“那些（唐代的）作品”，以避免重复，且后面有定语从句修饰。A项them是宾格，不能作主语；B项these指近指，与过去时间不符。",
+      "evidence_sentence": "Inside, a guide explained that the works dated back ⑥______ the Tang Dynasty.",
+      "context_clue": "Inside, a guide explained that the works dated back ⑥______ the Tang Dynasty.",
+      "clue_argument": "date back to后接时间，此处需用代词those指代the works。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the correct pronoun for blank ⑦.",
+      "options": ["Each", "Every", "All", "Both"],
+      "answer": "Each",
+      "explanation": "each of + 复数名词，表示“每一个”，谓语动词用单数，与后面的was一致。B项Every不能直接接of；C项All和D项Both接of时谓语用复数，与was不一致。",
+      "evidence_sentence": "⑦______ of the paintings was carefully restored, and each had its own story.",
+      "context_clue": "⑦______ of the paintings was carefully restored, and each had its own story.",
+      "clue_argument": "each of + 复数名词作主语，谓语用单数，与was一致。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the correct pronoun for blank ⑧.",
+      "options": ["whose", "which", "that", "its"],
+      "answer": "whose",
+      "explanation": "此处引导定语从句，修饰one landscape，表示“它的颜色”，whose在从句中作定语。B项which和C项that作主语或宾语，不能表示所属关系；D项its不能引导从句。",
+      "evidence_sentence": "I was particularly drawn to one landscape, ⑧______ colors seemed to glow.",
+      "context_clue": "I was particularly drawn to one landscape, ⑧______ colors seemed to glow.",
+      "clue_argument": "定语从句中缺定语，表示“它的”，用whose。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the correct conjunction for blank ⑨.",
+      "options": ["Although", "Because", "Since", "Unless"],
+      "answer": "Although",
+      "explanation": "句意“虽然我以前从未学过书法，但我发现笔法很迷人”，前后为让步关系，用Although。B项Because和C项Since表示原因，D项Unless表示条件，均不符合逻辑。",
+      "evidence_sentence": "⑨______ I had never studied calligraphy before, I found the brushwork fascinating.",
+      "context_clue": "⑨______ I had never studied calligraphy before, I found the brushwork fascinating.",
+      "clue_argument": "前后分句为让步关系，用Although引导让步状语从句。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the correct conjunction for blank ⑩.",
+      "options": ["In", "At", "By", "On"],
+      "answer": "At",
+      "explanation": "at the end of意为“在……结束时”，是固定短语。A项In the end意为“最后”，但不接of；C项By the end of后常接过去完成时，且表示“到……末为止”；D项On the end无此搭配。",
+      "evidence_sentence": "⑩______ the end of the visit, we all agreed it was an unforgettable experience.",
+      "context_clue": "⑩______ the end of the visit, we all agreed it was an unforgettable experience.",
+      "clue_argument": "at the end of表示“在……结束时”，符合语境。"
+    }
+  ]
+}

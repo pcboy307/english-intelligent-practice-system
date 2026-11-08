@@ -1,0 +1,65 @@
+{
+  "passage": "Museums are no longer silent halls where visitors simply look at objects behind glass. Today, many museums have become active classrooms. For example, the City Museum in our town started a programme called \"Hands-On History\" three years ago. The programme, which was designed by a team of teachers and historians, invites high-school students to handle copies of ancient tools and to act out scenes from the past. Last month, a group of students visited the museum and spent a whole morning learning how people in the past made paper. They were amazed to discover that the process, which once took days, could be understood in a few hours with the help of a guide. The museum's director believes that if students could visit museums more often, they would develop a deeper love for history. She also suggests that every school should arrange at least one museum visit each term. Such visits, she argues, are not just about seeing rare objects; they are about building a bridge between the past and the present. The students who joined the programme last month said they had never imagined that history could be so exciting. They left the museum with a new understanding of how people lived long ago.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the museum's \"Hands-On History\" programme?",
+      "options": [
+        "To train students to become professional historians.",
+        "To sell copies of ancient tools to schools.",
+        "To help students learn history through active experience.",
+        "To replace traditional classroom teaching completely."
+      ],
+      "answer": "To help students learn history through active experience.",
+      "explanation": "文章第一段提到博物馆推出“Hands-On History”项目，让学生动手操作古代工具的复制品并表演历史场景，目的是通过体验式活动学习历史。A项“培养专业历史学家”和B项“向学校出售工具复制品”在文中均无依据，属于过度推断或曲解。",
+      "evidence_sentence": "invites high-school students to handle copies of ancient tools and to act out scenes from the past.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Museums should display more rare objects behind glass.",
+        "Museum education programmes benefit students by making history come alive.",
+        "Students should visit museums only when they study ancient paper-making.",
+        "The City Museum has the largest collection of ancient tools in the country."
+      ],
+      "answer": "Museum education programmes benefit students by making history come alive.",
+      "explanation": "全文围绕博物馆教育项目展开，强调通过动手体验让学生对历史产生兴趣并加深理解，因此主旨是博物馆教育项目使学生受益。A项与文章首句“no longer silent halls”相悖；C项将参观条件绝对化，文中并未限定只学造纸；D项文中未提及收藏规模。",
+      "evidence_sentence": "Such visits, she argues, are not just about seeing rare objects; they are about building a bridge between the past and the present.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the museum's director suggest schools do?",
+      "options": [
+        "Arrange at least one museum visit each term.",
+        "Send students to work as museum guides.",
+        "Focus their history lessons only on ancient paper-making.",
+        "Reduce the number of traditional classroom lessons."
+      ],
+      "answer": "Arrange at least one museum visit each term.",
+      "explanation": "文中明确提到“She also suggests that every school should arrange at least one museum visit each term.”，因此正确答案是每学期至少安排一次博物馆参观。B项“让学生当导游”、C项“只关注造纸”和D项“减少课堂课程”均未在文中提及。",
+      "evidence_sentence": "She also suggests that every school should arrange at least one museum visit each term.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the students who joined the programme last month?",
+      "options": [
+        "They had little interest in history before the visit.",
+        "They found the visit boring and too long.",
+        "They already knew everything about paper-making.",
+        "They preferred looking at objects behind glass."
+      ],
+      "answer": "They had little interest in history before the visit.",
+      "explanation": "文中提到学生们说“they had never imagined that history could be so exciting”，说明他们之前对历史并不感兴趣，参观后态度转变。B项与“so exciting”矛盾；C项与“were amazed to discover”矛盾；D项与文章首句批评“behind glass”的倾向相反。",
+      "evidence_sentence": "The students who joined the programme last month said they had never imagined that history could be so exciting.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

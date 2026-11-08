@@ -1,0 +1,1 @@
+{"translations": {"annual": "每年的", "biggest": "最大的", "practised": "熟练的"}}

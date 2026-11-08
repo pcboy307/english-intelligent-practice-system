@@ -1,0 +1,65 @@
+{
+  "passage": "In a small town, a student named Li Hua noticed that her school used a lot of electricity. She wanted to help the environment. With her teacher's support, she started a project to use renewable energy. They put solar panels on the roof of the school gym. The panels turn sunlight into power. At first, some classmates doubted the idea. They thought it was too expensive. But Li Hua explained that the sun's energy is free and clean. After a few months, the school saved money on its electricity bill. The student felt proud. Her teacher said, 'This project shows how small actions can lead to big changes.' Now, other schools in the area are following their example. Li Hua hopes that one day all schools will use clean energy. She believes that young people can make a difference.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about Li Hua's classmates at first?",
+      "options": [
+        "They supported the project.",
+        "They were not sure about the project.",
+        "They wanted to join the project.",
+        "They thought the project was easy."
+      ],
+      "answer": "They were not sure about the project.",
+      "explanation": "文章提到一些同学起初怀疑这个想法，认为太贵，因此推断他们不确定。A项支持与原文相反；C项想加入文中未提及。",
+      "evidence_sentence": "At first, some classmates doubted the idea.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word 'renewable' most likely mean in the passage?",
+      "options": [
+        "Can be easily replaced",
+        "Can be used again and again",
+        "Can be bought cheaply",
+        "Can be made by students"
+      ],
+      "answer": "Can be used again and again",
+      "explanation": "根据上下文，太阳能是可再生能源，意味着可以反复使用。A项“容易替换”不符合；C项“便宜”不是词义。",
+      "evidence_sentence": "They put solar panels on the roof of the school gym. The panels turn sunlight into power.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Why did Li Hua start the project?",
+      "options": [
+        "To save money for herself",
+        "To help the environment",
+        "To become famous",
+        "To finish her homework"
+      ],
+      "answer": "To help the environment",
+      "explanation": "文章明确说她想帮助环境。A项为自己省钱不对；C项出名文中未提。",
+      "evidence_sentence": "She wanted to help the environment.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Solar panels are expensive.",
+        "Students can make a difference by using clean energy.",
+        "Schools should save money.",
+        "Teachers should support students."
+      ],
+      "answer": "Students can make a difference by using clean energy.",
+      "explanation": "文章主要讲述学生通过可再生能源项目带来改变。A项只是细节；C项不是主旨。",
+      "evidence_sentence": "She believes that young people can make a difference.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

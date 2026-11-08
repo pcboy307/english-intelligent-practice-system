@@ -1,0 +1,55 @@
+{
+  "passage": "Planning a trip abroad can be exciting, but it also requires careful thought. Last month, a student and her classmate decided to visit Singapore during the summer holiday. They spent hours discussing (1) they should pack for the journey. The student wanted to bring many clothes, (2) her classmate suggested taking only a few essential items. \"We can buy things there if necessary,\" her classmate said. However, the student insisted that they (3) a first-aid kit because accidents might happen. In the end, they agreed to share the load. Before leaving, their passports (4) by the travel agency, and their flight tickets were printed. They also learned that the hotel (5) near the airport, which would save them time. On the day of departure, they arrived at the airport early, feeling both nervous and excited. The trip turned out to be a wonderful experience, and they promised to plan more carefully next time.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank (1).",
+      "options": ["what", "which", "that", "whether"],
+      "answer": "A",
+      "explanation": "此处需要宾语从句的引导词，表示“什么”，用what；which表示“哪一个”，that无实际意义，whether表示“是否”，均不符合语境。A正确。",
+      "evidence_sentence": "",
+      "context_clue": "They spent hours discussing (1) they should pack for the journey.",
+      "clue_argument": "discussing后接宾语从句，pack缺少宾语，用what引导。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank (2).",
+      "options": ["but", "so", "or", "for"],
+      "answer": "A",
+      "explanation": "前后句为转折关系，用but；so表示结果，or表示选择，for表示原因，均不符合逻辑。A正确。",
+      "evidence_sentence": "",
+      "context_clue": "The student wanted to bring many clothes, (2) her classmate suggested taking only a few essential items.",
+      "clue_argument": "前后意思相反，形成对比，用转折连词but。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank (3).",
+      "options": ["take", "took", "taking", "to take"],
+      "answer": "A",
+      "explanation": "insist that从句中谓语动词用should+动词原形，should可省略，故用take；took是过去式，taking是现在分词，to take是不定式，均不符合。A正确。",
+      "evidence_sentence": "",
+      "context_clue": "However, the student insisted that they (3) a first-aid kit because accidents might happen.",
+      "clue_argument": "insist表示“坚持要求”时，从句用虚拟语气(should) do。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank (4).",
+      "options": ["were checked", "are checked", "have checked", "will check"],
+      "answer": "A",
+      "explanation": "护照是被检查，且事情发生在过去，用一般过去时的被动语态were checked；are checked是一般现在时被动，have checked是主动完成时，will check是主动将来时，均不符合。A正确。",
+      "evidence_sentence": "",
+      "context_clue": "Before leaving, their passports (4) by the travel agency, and their flight tickets were printed.",
+      "clue_argument": "passports与check是被动关系，且与were printed时态一致，用一般过去时被动。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank (5).",
+      "options": ["was located", "is located", "has located", "will locate"],
+      "answer": "A",
+      "explanation": "酒店位于机场附近是过去的状态，用一般过去时的被动语态was located；is located是一般现在时被动，has located是主动完成时，will locate是主动将来时，均不符合。A正确。",
+      "evidence_sentence": "",
+      "context_clue": "They also learned that the hotel (5) near the airport, which would save them time.",
+      "clue_argument": "主句learned为过去时，宾语从句表示过去状态，hotel与locate是被动关系，用was located。"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "passage": "Last month, our class visited the City Museum. The trip (1) by our history teacher, Mr. Chen, who wanted us to learn about local culture. We were excited because the museum (2) a special pottery show for weeks. Upon arrival, we saw many ancient pots. (3) impressed us most was a small bowl from the Han Dynasty. Our guide explained (4) it was used for drinking tea. We also saw a beautiful vase (5) was decorated with blue patterns. The visit was both fun and educational.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank (1).",
+      "options": [
+        "A. was organized",
+        "B. organized",
+        "C. is organizing",
+        "D. has organized",
+        "E. will organize",
+        "F. organizing",
+        "G. to organize"
+      ],
+      "answer": "A",
+      "explanation": "此处需被动语态，表示旅行被组织。B和C是主动形式，不符合语境。",
+      "evidence_sentence": "The trip (1) by our history teacher, Mr. Chen, who wanted us to learn about local culture.",
+      "context_clue": "The trip (1) by our history teacher, Mr. Chen, who wanted us to learn about local culture.",
+      "clue_argument": "by our history teacher indicates passive voice."
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank (2).",
+      "options": [
+        "A. had prepared",
+        "B. prepared",
+        "C. prepares",
+        "D. is preparing",
+        "E. will prepare",
+        "F. has prepared",
+        "G. was preparing"
+      ],
+      "answer": "A",
+      "explanation": "过去完成时表示在参观前已准备好展览。B和C时态不对，不能体现先后关系。",
+      "evidence_sentence": "We were excited because the museum (2) a special pottery show for weeks.",
+      "context_clue": "We were excited because the museum (2) a special pottery show for weeks.",
+      "clue_argument": "for weeks and past context indicate past perfect."
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank (3).",
+      "options": [
+        "A. It",
+        "B. What",
+        "C. That",
+        "D. This",
+        "E. Which",
+        "F. As",
+        "G. There"
+      ],
+      "answer": "B",
+      "explanation": "强调句型It was...that，此处需What引导主语从句。A和C不能直接作主语。",
+      "evidence_sentence": "(3) impressed us most was a small bowl from the Han Dynasty.",
+      "context_clue": "(3) impressed us most was a small bowl from the Han Dynasty.",
+      "clue_argument": "The clause needs a subject; 'What' means 'the thing that'."
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank (4).",
+      "options": [
+        "A. that",
+        "B. what",
+        "C. which",
+        "D. whether",
+        "E. if",
+        "F. how",
+        "G. why"
+      ],
+      "answer": "A",
+      "explanation": "宾语从句用that引导，表示陈述事实。B和C不能引导陈述句宾语从句。",
+      "evidence_sentence": "Our guide explained (4) it was used for drinking tea.",
+      "context_clue": "Our guide explained (4) it was used for drinking tea.",
+      "clue_argument": "explained takes a that-clause stating a fact."
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank (5).",
+      "options": [
+        "A. which",
+        "B. who",
+        "C. where",
+        "D. when",
+        "E. what",
+        "F. whose",
+        "G. whom"
+      ],
+      "answer": "A",
+      "explanation": "定语从句修饰物vase，用which。B指人，C指地点，均不对。",
+      "evidence_sentence": "We also saw a beautiful vase (5) was decorated with blue patterns.",
+      "context_clue": "We also saw a beautiful vase (5) was decorated with blue patterns.",
+      "clue_argument": "The relative pronoun refers to 'vase' (a thing) and is the subject of 'was decorated'."
+    }
+  ]
+}

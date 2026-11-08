@@ -1,0 +1,95 @@
+{
+  "passage": "Tom was a student who often felt stressed about his studies. He wanted to improve his learning habits but didn't know how. One day, he read an article about efficient study habits. It said that setting clear goals is important. Tom decided to try a new method. He planned to study for 25 minutes and then take a 5-minute break. This technique, called the Pomodoro method, helped him stay focused. He also learned that reviewing notes regularly is necessary. (1) He also found that explaining concepts to others deepened his understanding. Tom shared his new habits with his friend Lisa. Lisa was skeptical at first, but Tom encouraged her to give it a try. (2) She agreed to join him for a study session. They met at the library every afternoon. (3) They were reminded by the librarian to keep quiet. Tom noticed that Lisa was easily distracted by her phone. He suggested that she should put it away. (4) If she turned off notifications, she would concentrate better. Lisa followed his advice and saw improvement. Their teacher, Mr. Smith, was impressed by their progress. He recommended that they should share their strategies with the class. (5) They were happy to help others. By the end of the term, both Tom and Lisa had developed strong study habits and felt more confident.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the sentence that best fits blank (1).",
+      "options": [
+        "A. He also found that explaining concepts to others deepened his understanding.",
+        "B. She also found that explaining concepts to others deepened her understanding.",
+        "C. They also found that explaining concepts to others deepened their understanding.",
+        "D. It also found that explaining concepts to others deepened its understanding.",
+        "E. We also found that explaining concepts to others deepened our understanding.",
+        "F. You also found that explaining concepts to others deepened your understanding.",
+        "G. I also found that explaining concepts to others deepened my understanding."
+      ],
+      "answer": "A",
+      "explanation": "前文主语是Tom，此处用He指代Tom，且his与Tom一致，故选A。B项主语She指代Lisa，但Lisa尚未出现；C项They指代复数，但前文只有Tom一人，均错误。",
+      "evidence_sentence": "",
+      "context_clue": "Tom decided to try a new method. He planned to study for 25 minutes and then take a 5-minute break.",
+      "clue_argument": "前文主语为Tom，代词需用He，且his与Tom一致。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the sentence that best fits blank (2).",
+      "options": [
+        "A. He agreed to join him for a study session.",
+        "B. She agreed to join him for a study session.",
+        "C. They agreed to join him for a study session.",
+        "D. It agreed to join him for a study session.",
+        "E. We agreed to join him for a study session.",
+        "F. You agreed to join him for a study session.",
+        "G. I agreed to join him for a study session."
+      ],
+      "answer": "B",
+      "explanation": "前文提到Lisa，此处用She指代Lisa，him指代Tom，故选B。A项He指代Tom，但Tom是邀请者，不是同意者；C项They指代复数，但Lisa是单数，均错误。",
+      "evidence_sentence": "",
+      "context_clue": "Lisa was skeptical at first, but Tom encouraged her to give it a try.",
+      "clue_argument": "前文主语为Lisa，代词需用She，him指代Tom。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the sentence that best fits blank (3).",
+      "options": [
+        "A. He was reminded by the librarian to keep quiet.",
+        "B. She was reminded by the librarian to keep quiet.",
+        "C. They were reminded by the librarian to keep quiet.",
+        "D. It was reminded by the librarian to keep quiet.",
+        "E. We were reminded by the librarian to keep quiet.",
+        "F. You were reminded by the librarian to keep quiet.",
+        "G. I was reminded by the librarian to keep quiet."
+      ],
+      "answer": "C",
+      "explanation": "前文提到They met at the library every afternoon，此处用They指代Tom和Lisa，且were与复数一致，故选C。A项He和B项She均为单数，与复数主语不一致，均错误。",
+      "evidence_sentence": "",
+      "context_clue": "They met at the library every afternoon.",
+      "clue_argument": "前文主语为They，指代Tom和Lisa，被动语态需用were。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the sentence that best fits blank (4).",
+      "options": [
+        "A. If he turned off notifications, he would concentrate better.",
+        "B. If she turned off notifications, she would concentrate better.",
+        "C. If they turned off notifications, they would concentrate better.",
+        "D. If it turned off notifications, it would concentrate better.",
+        "E. If we turned off notifications, we would concentrate better.",
+        "F. If you turned off notifications, you would concentrate better.",
+        "G. If I turned off notifications, I would concentrate better."
+      ],
+      "answer": "B",
+      "explanation": "前文提到Lisa was easily distracted by her phone，此处用She指代Lisa，且与her一致，故选B。A项He指代Tom，但Tom并未分心；C项They指代复数，但Lisa是单数，均错误。",
+      "evidence_sentence": "",
+      "context_clue": "Tom noticed that Lisa was easily distracted by her phone.",
+      "clue_argument": "前文主语为Lisa，代词需用She，与her一致。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the sentence that best fits blank (5).",
+      "options": [
+        "A. He was happy to help others.",
+        "B. She was happy to help others.",
+        "C. They were happy to help others.",
+        "D. It was happy to help others.",
+        "E. We were happy to help others.",
+        "F. You were happy to help others.",
+        "G. I was happy to help others."
+      ],
+      "answer": "C",
+      "explanation": "前文提到Tom和Lisa，此处用They指代两人，且were与复数一致，故选C。A项He和B项She均为单数，与复数主语不一致，均错误。",
+      "evidence_sentence": "",
+      "context_clue": "He recommended that they should share their strategies with the class.",
+      "clue_argument": "前文主语为they，指代Tom和Lisa，需用They were。"
+    }
+  ]
+}

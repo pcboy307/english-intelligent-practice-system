@@ -1,0 +1,65 @@
+{
+  "passage": "Last month, a class from a local high school visited the city museum. The students were excited because the museum had recently opened a new hands-on area, designed to make history feel real. The student had expected a quiet walk through glass cases, but instead she found herself building a small ancient bridge with wooden blocks. Her teacher explained that the museum's education team creates such activities so that students can learn by doing. A classmate, who had never enjoyed history before, was soon deeply involved in a group task about trade routes. The museum's purpose is clear: to turn visitors into active learners. If the museum had not offered these hands-on experiences, many students would have left with only a vague memory of old objects. The student learned that museums are not just places to look—they are places to think and create. She now believes that every school should arrange such visits, and she has recommended the museum to her friends.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the museum's new hands-on area?",
+      "options": [
+        "To make history feel real through activities",
+        "To display valuable objects in glass cases",
+        "To train students to become tour guides",
+        "To sell books about ancient history"
+      ],
+      "answer": "To make history feel real through activities",
+      "explanation": "文章第一段明确提到动手区旨在让历史变得真实，并通过活动实现。A项正确。B项是传统展览方式，不是动手区的目的；C项文中未提及；D项文中未提及。因此选A。",
+      "evidence_sentence": "The students were excited because the museum had recently opened a new hands-on area, designed to make history feel real.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Museums should focus on protecting ancient objects.",
+        "Hands-on experiences make museum learning more effective.",
+        "Students prefer visiting museums to studying in class.",
+        "Teachers should not take students to museums."
+      ],
+      "answer": "Hands-on experiences make museum learning more effective.",
+      "explanation": "全文通过学生参与动手活动的经历，说明博物馆动手体验能让学生主动学习，印象更深。B项概括了主旨。A项与文章强调的动手体验相反；C项文中未比较偏好；D项与老师支持参观矛盾。因此选B。",
+      "evidence_sentence": "The museum's purpose is clear: to turn visitors into active learners.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What did the student do in the hands-on area?",
+      "options": [
+        "She built a small ancient bridge with wooden blocks.",
+        "She listened to a lecture about trade routes.",
+        "She wrote a report on old objects.",
+        "She guided other visitors around the museum."
+      ],
+      "answer": "She built a small ancient bridge with wooden blocks.",
+      "explanation": "文中明确提到学生用木块搭建了一座古代小桥。A项是直接细节。B项是同学参与的活动；C项和D项文中未提及。因此选A。",
+      "evidence_sentence": "The student had expected a quiet walk through glass cases, but instead she found herself building a small ancient bridge with wooden blocks.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the classmate's change in attitude?",
+      "options": [
+        "The classmate now finds history more interesting.",
+        "The classmate still dislikes history.",
+        "The classmate wants to become a museum guide.",
+        "The classmate prefers traditional exhibits."
+      ],
+      "answer": "The classmate now finds history more interesting.",
+      "explanation": "文中说这位同学以前不喜欢历史，但很快投入到关于贸易路线的任务中，可推断其态度变得更积极。A项合理。B项与投入任务矛盾；C项过度推断；D项文中未提及。因此选A。",
+      "evidence_sentence": "A classmate, who had never enjoyed history before, was soon deeply involved in a group task about trade routes.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"translations": {"pace": "步速", "quizzes": "测验"}}

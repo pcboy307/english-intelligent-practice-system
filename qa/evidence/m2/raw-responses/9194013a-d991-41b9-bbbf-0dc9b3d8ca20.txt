@@ -1,0 +1,1 @@
+{"translations": {"sustainable": "可持续", "traveller": "旅客"}}

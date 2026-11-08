@@ -1,0 +1,136 @@
+{
+  "passage": "When online learning first became common, many students felt (1) ____ about using new platforms. One student, however, was (2) ____ that she could manage the technology. She was (3) ____ about how digital tools might help her learn faster. Her teacher, who was always (4) ____, provided clear guides and quick replies. The student was (5) ____ to improve her skills, so she set a high goal. Only by practising daily could she (6) ____ real progress. Her teacher suggested that she (7) ____ her study habits to the online format. Classmates were (8) ____ to join discussion groups, and the student was (9) ____ by her teacher to try new apps. If she (10) ____ on one task at a time, she found she could finish more. (11) ____, she built a routine that worked for her. It was important that she (12) ____ find a balance between screen time and rest. With her parents (13) ____ checking her progress, she learned to manage her time. Over months, her (14) ____ grew as she saw her own improvement. Each new course gave her another (15) ____ to learn and share.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank (1).",
+      "options": ["anxious", "angry", "bored", "excited"],
+      "answer": "anxious",
+      "explanation": "上下文提到许多学生对使用新平台感到担忧，anxious 表示“焦虑的”，符合语境。angry 和 bored 虽然也是情绪词，但文中没有生气的对象或无聊的线索，因此不正确。",
+      "evidence_sentence": "When online learning first became common, many students felt (1) ____ about using new platforms.",
+      "context_clue": "When online learning first became common, many students felt (1) ____ about using new platforms.",
+      "clue_argument": "新平台带来不确定性，学生常感到焦虑。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank (2).",
+      "options": ["confident", "careful", "nervous", "shy"],
+      "answer": "confident",
+      "explanation": "however 表示转折，说明这个学生与其他人不同，她相信自己能应对技术，confident 意为“自信的”。nervous 和 shy 与转折逻辑矛盾，因此错误。",
+      "evidence_sentence": "One student, however, was (2) ____ that she could manage the technology.",
+      "context_clue": "One student, however, was (2) ____ that she could manage the technology.",
+      "clue_argument": "however 提示与前面焦虑情绪相反，表示自信。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank (3).",
+      "options": ["curious", "afraid", "tired", "angry"],
+      "answer": "curious",
+      "explanation": "后文说她想了解数字工具如何帮助学习，curious 表示“好奇的”，符合探索新工具的心理。afraid 和 tired 不能体现想了解新事物的积极态度，因此错误。",
+      "evidence_sentence": "She was (3) ____ about how digital tools might help her learn faster.",
+      "context_clue": "She was (3) ____ about how digital tools might help her learn faster.",
+      "clue_argument": "想了解工具如何帮助学习，说明充满好奇。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank (4).",
+      "options": ["reliable", "strict", "funny", "quiet"],
+      "answer": "reliable",
+      "explanation": "老师提供清晰的指南并快速回复，说明老师是可靠的，reliable 意为“可靠的”。strict 和 funny 与提供指南和快速回复无关，因此错误。",
+      "evidence_sentence": "Her teacher, who was always (4) ____, provided clear guides and quick replies.",
+      "context_clue": "Her teacher, who was always (4) ____, provided clear guides and quick replies.",
+      "clue_argument": "提供清晰指南和快速回复体现可靠。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank (5).",
+      "options": ["ambitious", "lazy", "careless", "slow"],
+      "answer": "ambitious",
+      "explanation": "学生设定高目标，说明她有抱负，ambitious 意为“有雄心的”。lazy 和 careless 与设定高目标的行为相反，因此错误。",
+      "evidence_sentence": "The student was (5) ____ to improve her skills, so she set a high goal.",
+      "context_clue": "The student was (5) ____ to improve her skills, so she set a high goal.",
+      "clue_argument": "设定高目标体现有抱负。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank (6).",
+      "options": ["achieve", "avoid", "forget", "lose"],
+      "answer": "achieve",
+      "explanation": "只有每天练习才能取得进步，achieve 意为“取得”，与 progress 搭配。avoid 和 forget 不能与 progress 搭配表示取得进步，因此错误。",
+      "evidence_sentence": "Only by practising daily could she (6) ____ real progress.",
+      "context_clue": "Only by practising daily could she (6) ____ real progress.",
+      "clue_argument": "与 progress 搭配表示取得进步。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank (7).",
+      "options": ["adapt", "copy", "ignore", "refuse"],
+      "answer": "adapt",
+      "explanation": "老师建议她调整学习习惯以适应在线形式，adapt 意为“调整，适应”。ignore 和 refuse 与适应新形式相反，因此错误。",
+      "evidence_sentence": "Her teacher suggested that she (7) ____ her study habits to the online format.",
+      "context_clue": "Her teacher suggested that she (7) ____ her study habits to the online format.",
+      "clue_argument": "与 to the online format 搭配表示调整以适应。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank (8).",
+      "options": ["encourage", "force", "warn", "punish"],
+      "answer": "encourage",
+      "explanation": "同学们被鼓励加入讨论小组，encourage 意为“鼓励”，符合积极的学习氛围。force 和 punish 语气过于负面，因此错误。",
+      "evidence_sentence": "Classmates were (8) ____ to join discussion groups,",
+      "context_clue": "Classmates were (8) ____ to join discussion groups,",
+      "clue_argument": "加入讨论小组是积极行为，需要鼓励。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank (9).",
+      "options": ["persuade", "prevent", "protect", "pull"],
+      "answer": "persuade",
+      "explanation": "老师说服学生尝试新应用，persuade 意为“说服”。prevent 和 protect 不能表示说服某人做某事，因此错误。",
+      "evidence_sentence": "and the student was (9) ____ by her teacher to try new apps.",
+      "context_clue": "and the student was (9) ____ by her teacher to try new apps.",
+      "clue_argument": "老师让学生尝试新应用，是说服行为。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank (10).",
+      "options": ["concentrate", "depend", "insist", "spend"],
+      "answer": "concentrate",
+      "explanation": "如果她一次专注于一个任务，就能完成更多，concentrate 意为“集中注意力”。depend 和 insist 不能与 on one task 搭配表示专注，因此错误。",
+      "evidence_sentence": "If she (10) ____ on one task at a time, she found she could finish more.",
+      "context_clue": "If she (10) ____ on one task at a time, she found she could finish more.",
+      "clue_argument": "与 on one task 搭配表示专注于一个任务。"
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank (11).",
+      "options": ["gradually", "suddenly", "hardly", "finally"],
+      "answer": "gradually",
+      "explanation": "她逐渐建立了适合自己的常规，gradually 意为“逐渐地”，强调过程。suddenly 和 hardly 与建立常规的渐进过程不符，因此错误。",
+      "evidence_sentence": "(11) ____, she built a routine that worked for her.",
+      "context_clue": "(11) ____, she built a routine that worked for her.",
+      "clue_argument": "建立常规是一个渐进过程。"
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank (12).",
+      "options": ["eventually", "immediately", "rarely", "seldom"],
+      "answer": "eventually",
+      "explanation": "她最终找到了屏幕时间和休息之间的平衡，eventually 意为“最终”。immediately 和 rarely 与找到平衡的时间过程不符，因此错误。",
+      "evidence_sentence": "It was important that she (12) ____ find a balance between screen time and rest.",
+      "context_clue": "It was important that she (12) ____ find a balance between screen time and rest.",
+      "clue_argument": "找到平衡是经过一段时间后的最终结果。"
+    },
+    {
+      "question_index": 13,
+      "stem": "Choose the best word for blank (13).",
+      "options": ["independently", "angrily", "carelessly", "slowly"],
+      "answer": "independently",
+      "explanation": "在父母不干预的情况下，她独立检查进度，independently 意为“独立地”。angrily 和 carelessly 与学习管理时间的语境不符，因此错误。",
+      "evidence_sentence": "With her parents (13) ____ checking her progress, she learned to manage her time.",
+      "context_clue": "With her parents (13) ____ checking her progress, she learned to manage her time.",
+      "clue_argument": "父母不干预，她独立检查进度。"
+    },
+    {
+      "question_index": 14,
+      "stem": "Choos

@@ -1,0 +1,1 @@
+{"translations": {"cannot": "不能"}}

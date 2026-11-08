@@ -1,0 +1,95 @@
+{
+  "passage": "Reading habits shape a student's life. Some students read only for exams, (1) ______. A classmate once said that reading was boring, (2) ______. Her teacher advised that she (3) ______ a short story every night. The student who follows this advice will find that reading (4) ______ her mind. (5) ______, good readers become better thinkers. In fact, the number of students who enjoy reading (6) ______ growing. It is daily practice that makes reading a habit.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the sentence that best fits blank (1).",
+      "options": [
+        "A. Others read for pleasure and discovery.",
+        "B. Reading is a waste of time.",
+        "C. Exams are the only goal.",
+        "D. Pleasure comes from exams.",
+        "E. Discovery is not important.",
+        "F. Time is limited for reading.",
+        "G. Goals are set by teachers."
+      ],
+      "answer": "A",
+      "explanation": "前句说有些学生只为考试而读，此处需要对比：另一些学生为乐趣和发现而读，A项形成语义对比。B项否定阅读，C项重复考试目标，均不能与“Some students”形成对比。因此选A。",
+      "evidence_sentence": "Some students read only for exams, (1) ______.",
+      "context_clue": "Some students read only for exams, (1) ______.",
+      "clue_argument": "some...others...对比结构"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the sentence that best fits blank (2).",
+      "options": [
+        "A. and she loved it",
+        "B. but she had never tried it",
+        "C. so she read every day",
+        "D. because she had many books",
+        "E. yet she finished it",
+        "F. for she enjoyed stories",
+        "G. or she borrowed novels"
+      ],
+      "answer": "B",
+      "explanation": "前句说阅读无聊，后句应解释原因：她从未尝试过，B项形成转折对比。A项与“boring”矛盾，C项与“boring”矛盾。因此选B。",
+      "evidence_sentence": "A classmate once said that reading was boring, (2) ______.",
+      "context_clue": "A classmate once said that reading was boring, (2) ______.",
+      "clue_argument": "boring与never tried形成对比"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the sentence that best fits blank (3).",
+      "options": [
+        "A. reads",
+        "B. read",
+        "C. reading",
+        "D. to read",
+        "E. has read",
+        "F. will read",
+        "G. is reading"
+      ],
+      "answer": "B",
+      "explanation": "advise后的宾语从句用虚拟语气(should) do，此处应为read，B项正确。A项reads不是虚拟形式，C项reading不能作谓语。因此选B。",
+      "evidence_sentence": "Her teacher advised that she (3) ______ a short story every night.",
+      "context_clue": "Her teacher advised that she (3) ______ a short story every night.",
+      "clue_argument": "advise that sb (should) do"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the sentence that best fits blank (4).",
+      "options": [
+        "A. benefit",
+        "B. benefits",
+        "C. beneficial",
+        "D. beneficially",
+        "E. benefited",
+        "F. benefiting",
+        "G. benefits from"
+      ],
+      "answer": "B",
+      "explanation": "主语reading是单数，谓语用benefits，B项正确。A项benefit是原形，C项beneficial是形容词不能作谓语。因此选B。",
+      "evidence_sentence": "The student who follows this advice will find that reading (4) ______ her mind.",
+      "context_clue": "The student who follows this advice will find that reading (4) ______ her mind.",
+      "clue_argument": "reading作主语，谓语用单数"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the sentence that best fits blank (5).",
+      "options": [
+        "A. Therefore",
+        "B. However",
+        "C. Instead",
+        "D. Otherwise",
+        "E. Besides",
+        "F. Meanwhile",
+        "G. Similarly"
+      ],
+      "answer": "A",
+      "explanation": "前句说阅读有益，后句说好读者成为更好的思考者，是因果关系，A项Therefore正确。B项However表转折，C项Instead表替代，均不符合逻辑。因此选A。",
+      "evidence_sentence": "(5) ______, good readers become better thinkers.",
+      "context_clue": "(5) ______, good readers become better thinkers.",
+      "clue_argument": "前因后果，用Therefore"
+    }
+  ]
+}

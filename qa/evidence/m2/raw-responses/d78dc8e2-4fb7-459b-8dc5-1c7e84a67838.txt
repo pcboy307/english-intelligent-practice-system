@@ -1,0 +1,132 @@
+{
+  "passage": "Last term, our science teacher, Ms. Li, asked our group to build a model bridge for the school fair. At first, we argued about everything. Tom wanted a big design, but Lily said it was too difficult. I felt nervous because I did not know how to start. Ms. Li told us that it was important that every member (1) ________ the ideas of others. She also said that we should (2) ________ each other's help, because no one can do everything alone. We decided to (3) ________ our time between planning and building. Tom and Lily began to (4) ________ from working together: Tom was good at drawing, and Lily was good at making things. However, we faced a serious (5) ________ when our first bridge fell down. We learned that we needed to (6) ________ clearly about what went wrong. Ms. Li suggested that each of us (7) ________ one special skill to the team. Only in this way could we (8) ________ what to do next. After a long talk, we made a (9) ________: Tom would draw the plan, Lily would build, and I would check the strength. Our work became more (10) ________ because everyone knew their job. It was teamwork that was (11) ________ for our success. If we had not listened to each other, we would not have (12) ________ the bridge. In the end, we (13) ________ to finish on time. Ms. Li said she would (14) ________ us to share our story with the class. We also found a way to (15) ________ waste by using old boxes. Our bridge won a prize, and we learned that teamwork and responsibility go hand in hand.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank (1).",
+      "options": ["refuse", "accept", "ignore", "reject"],
+      "answer": "accept",
+      "explanation": "句意：李老师告诉我们，每个成员接受他人的想法很重要。accept 意为“接受”，符合语境。refuse 和 reject 都表示“拒绝”，与团队合作精神相反，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "Ms. Li told us that it was important that every member (1) ________ the ideas of others.",
+      "clue_argument": "“important”后的主语从句用虚拟语气，且团队合作需要接受他人想法，故选 accept。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank (2).",
+      "options": ["appreciate", "dislike", "hate", "ignore"],
+      "answer": "appreciate",
+      "explanation": "句意：她还说我们应该感激彼此的帮助。appreciate 意为“感激”，符合语境。dislike 和 hate 都表示“不喜欢”，与感激帮助的语境不符，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "She also said that we should (2) ________ each other's help, because no one can do everything alone.",
+      "clue_argument": "because 从句说明没人能独自完成一切，因此要感激他人帮助，选 appreciate。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank (3).",
+      "options": ["balance", "waste", "ignore", "forget"],
+      "answer": "balance",
+      "explanation": "句意：我们决定平衡规划与搭建的时间。balance 意为“平衡”，符合语境。waste 和 ignore 分别表示“浪费”和“忽视”，与合理分配时间的语境不符，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "We decided to (3) ________ our time between planning and building.",
+      "clue_argument": "在 planning 和 building 之间分配时间，需要“平衡”，故选 balance。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank (4).",
+      "options": ["benefit", "suffer", "lose", "harm"],
+      "answer": "benefit",
+      "explanation": "句意：汤姆和莉莉开始从合作中受益。benefit 意为“受益”，符合语境。suffer 和 harm 表示“遭受”和“伤害”，与积极合作的语境相反，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "Tom and Lily began to (4) ________ from working together: Tom was good at drawing, and Lily was good at making things.",
+      "clue_argument": "冒号后说明两人各有所长，合作能带来好处，故选 benefit。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank (5).",
+      "options": ["challenge", "gift", "prize", "joy"],
+      "answer": "challenge",
+      "explanation": "句意：然而，当我们的第一座桥倒塌时，我们面临一个严重的挑战。challenge 意为“挑战”，符合语境。gift 和 prize 分别表示“礼物”和“奖品”，与桥倒塌的困难情境不符，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "However, we faced a serious (5) ________ when our first bridge fell down.",
+      "clue_argument": "桥倒塌是困难，因此是“挑战”，选 challenge。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank (6).",
+      "options": ["communicate", "quarrel", "compete", "hide"],
+      "answer": "communicate",
+      "explanation": "句意：我们了解到需要清楚地沟通哪里出了问题。communicate 意为“沟通”，符合语境。quarrel 和 compete 表示“争吵”和“竞争”，不利于解决问题，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "We learned that we needed to (6) ________ clearly about what went wrong.",
+      "clue_argument": "要弄清问题所在，需要清楚地“沟通”，故选 communicate。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank (7).",
+      "options": ["contribute", "take", "borrow", "hide"],
+      "answer": "contribute",
+      "explanation": "句意：李老师建议我们每个人为团队贡献一项特殊技能。contribute 意为“贡献”，符合语境。take 和 borrow 表示“拿”和“借”，不能与“to the team”搭配表示贡献，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "Ms. Li suggested that each of us (7) ________ one special skill to the team.",
+      "clue_argument": "suggest 后的从句用虚拟语气，且与 to the team 搭配表示“贡献”，选 contribute。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank (8).",
+      "options": ["determine", "forget", "ignore", "doubt"],
+      "answer": "determine",
+      "explanation": "句意：只有这样我们才能确定下一步做什么。determine 意为“确定”，符合语境。forget 和 ignore 表示“忘记”和“忽视”，与需要决定下一步的语境不符，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "Only in this way could we (8) ________ what to do next.",
+      "clue_argument": "“Only in this way”倒装句表示只有通过沟通才能“确定”下一步，选 determine。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank (9).",
+      "options": ["discovery", "mistake", "promise", "decision"],
+      "answer": "discovery",
+      "explanation": "句意：经过长谈，我们有了一个发现：汤姆画图，莉莉搭建，我检查强度。discovery 意为“发现”，符合语境。mistake 和 promise 表示“错误”和“承诺”，与分工安排的语境不符，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "After a long talk, we made a (9) ________: Tom would draw the plan, Lily would build, and I would check the strength.",
+      "clue_argument": "冒号后是分工安排，这是讨论后的“发现”，且 make a discovery 为固定搭配，故选 discovery。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank (10).",
+      "options": ["efficient", "slow", "careless", "noisy"],
+      "answer": "efficient",
+      "explanation": "句意：我们的工作变得更高效，因为每个人都知道自己的职责。efficient 意为“高效的”，符合语境。slow 和 careless 表示“缓慢的”和“粗心的”，与分工明确带来的积极效果相反，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "Our work became more (10) ________ because everyone knew their job.",
+      "clue_argument": "每个人清楚职责，工作会变得更“高效”，选 efficient。"
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank (11).",
+      "options": ["essential", "useless", "boring", "strange"],
+      "answer": "essential",
+      "explanation": "句意：正是团队合作对我们的成功至关重要。essential 意为“必不可少的”，符合语境。useless 和 boring 表示“无用的”和“无聊的”，与强调团队合作重要性的语境相反，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "It was teamwork that was (11) ________ for our success.",
+      "clue_argument": "强调句型 It was...that... 强调团队合作对成功的重要性，故选 essential。"
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank (12).",
+      "options": ["improve", "damage", "lose", "break"],
+      "answer": "improve",
+      "explanation": "句意：如果我们没有互相倾听，我们就不会改进这座桥。improve 意为“改进”，符合语境。damage 和 break 表示“损坏”和“打破”，与虚拟语气中积极的结果不符，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "If we had not listened to each other, we would not have (12) ________ the bridge.",
+      "clue_argument": "与过去事实相反的虚拟语气中，倾听彼此会带来积极结果，即“改进”桥，选 improve。"
+    },
+    {
+      "question_index": 13,
+      "stem": "Choose the best word for blank (13).",
+      "options": ["manage", "fail", "refuse", "forget"],
+      "answer": "manage",
+      "explanation": "句意：最后，我们设法按时完成了。manage 意为“设法完成”，符合语境。fail 和 refuse 表示“失败”和“拒绝”，与成功完成的语境相反，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "In the end, we (13) ________ to finish on time.",
+      "clue_argument": "manage

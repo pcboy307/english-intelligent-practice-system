@@ -1,0 +1,65 @@
+{
+  "passage": "Why do we sleep? For years, scientists have studied this question. A recent study shows that sleep is very important for learning. When students sleep well, their brains organise new information. The study found that teenagers who sleep eight to ten hours every night do better in tests. However, many high school students do not get enough sleep. They stay up late to study or use their phones. As a result, they feel tired and cannot focus in class. One student said, 'I wish I had more time to sleep.' Her teacher advises students to keep a regular sleep schedule. If students followed this advice, they would feel more energetic. The brain needs sleep to stay healthy. So, next time you want to stay up late, think about your brain. Sleep is not a waste of time; it is a key to success.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer from the passage about students who do not get enough sleep?",
+      "options": [
+        "They may have difficulty paying attention in class.",
+        "They always get better grades than others.",
+        "They never use their phones before bed.",
+        "They need less sleep than other students."
+      ],
+      "answer": "They may have difficulty paying attention in class.",
+      "explanation": "文章提到睡眠不足的学生感到疲倦且无法集中注意力，因此可以推断他们上课可能难以专心。A项正确。B项与文章相反，文章说睡眠好的学生成绩更好；C项无依据，文章说学生熬夜可能用手机。",
+      "evidence_sentence": "As a result, they feel tired and cannot focus in class.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "The word \"organise\" in the passage is closest in meaning to ______.",
+      "options": [
+        "arrange",
+        "forget",
+        "ignore",
+        "waste"
+      ],
+      "answer": "arrange",
+      "explanation": "文章说睡眠帮助大脑整理新信息，organise意为“整理、安排”，与arrange意思最接近。B项forget（忘记）和C项ignore（忽视）都与“整理信息”相反，故排除。",
+      "evidence_sentence": "When students sleep well, their brains organise new information.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To persuade students to get enough sleep.",
+        "To explain how to use phones wisely.",
+        "To compare different study methods.",
+        "To describe a typical school day."
+      ],
+      "answer": "To persuade students to get enough sleep.",
+      "explanation": "作者通过研究说明睡眠对学习的重要性，并建议学生保持规律作息，目的是说服学生获得充足睡眠。B项“解释如何明智使用手机”和C项“比较不同学习方法”都不是文章重点。",
+      "evidence_sentence": "So, next time you want to stay up late, think about your brain.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Sleep is essential for learning and health.",
+        "Students should study late every night.",
+        "Phones are the main cause of poor sleep.",
+        "Teachers should give less homework."
+      ],
+      "answer": "Sleep is essential for learning and health.",
+      "explanation": "文章主要论述睡眠对学习和健康的重要性，并呼吁学生重视睡眠。B项“学生应该每晚学习到很晚”与文章相反；C项“手机是睡眠不足的主要原因”只是文章提到的细节，不是主旨。",
+      "evidence_sentence": "Sleep is not a waste of time; it is a key to success.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

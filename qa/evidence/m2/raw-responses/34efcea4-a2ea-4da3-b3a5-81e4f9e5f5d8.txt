@@ -1,0 +1,45 @@
+{
+  "passage": "In recent years, artificial intelligence (AI) has become a popular tool in education. Many students use AI apps to help with their homework and study. For example, Li Ming, a high school student, uses an AI app to check his answers. He says it helps him learn faster. However, some teachers worry that students may depend on AI too much. They believe that AI should be used as a tool, not as a replacement for thinking. If students rely on AI for every problem, they may lose the ability to solve problems on their own. Therefore, schools should teach students how to use AI properly. The purpose of using AI in learning is to support students, not to do the work for them. It is important that students should use AI wisely and still develop their own skills. In this way, AI can be a helpful partner in education.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"replacement\" in the passage most likely mean?",
+      "options": ["substitute", "tool", "helper", "partner"],
+      "answer": "substitute",
+      "explanation": "根据上下文，AI不应成为思考的替代品，因此replacement意为“替代物”。A项substitute符合；B项tool和C项helper是工具或帮助者，与替代含义不同，故错误。",
+      "evidence_sentence": "They believe that AI should be used as a tool, not as a replacement for thinking.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the purpose of using AI in learning according to the passage?",
+      "options": ["To support students", "To do homework for students", "To replace teachers", "To make students lazy"],
+      "answer": "To support students",
+      "explanation": "文章明确指出使用AI的目的是支持学生，而不是替他们完成作业。A项正确；B项和C项与文章内容相反，文章强调AI不是替代思考或老师，故错误。",
+      "evidence_sentence": "The purpose of using AI in learning is to support students, not to do the work for them.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["AI should be used wisely in education", "AI can replace teachers", "Students should not use AI", "AI makes learning harder"],
+      "answer": "AI should be used wisely in education",
+      "explanation": "文章主要讨论AI在教育中的合理使用，强调学生应明智使用AI。A项概括了主旨；B项和C项过于极端，与文章不符，故错误。",
+      "evidence_sentence": "It is important that students should use AI wisely and still develop their own skills.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, what may happen if students rely on AI for every problem?",
+      "options": ["They may lose problem-solving ability", "They will learn faster", "They will become more creative", "They will depend less on teachers"],
+      "answer": "They may lose problem-solving ability",
+      "explanation": "文章提到如果学生依赖AI解决每个问题，可能会失去独立解决问题的能力。A项正确；B项和C项与文章意思相反，文章未提及这些好处，故错误。",
+      "evidence_sentence": "If students rely on AI for every problem, they may lose the ability to solve problems on their own.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "passage": "A student named Alex wanted to improve his study habits. He often felt stressed because he did not know how to plan his time. One day, his teacher gave him some advice. She said that (1) he should do first was to make a weekly schedule. She also suggested that he (2) a short break every hour. Alex followed her advice. He found that (3) was easier to focus when he studied in a quiet place. His classmate, Jamie, noticed his progress and asked for help. Alex told Jamie that if he (4) more attention in class, he would spend less time reviewing at home. Jamie tried this and saw good results. Later, the teacher told the class that (5) important that students take care of their health while studying. She recommended that everyone (6) enough sleep and eat well. Alex and Jamie became more efficient and less stressed. They learned that good habits lead to success.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the correct option for blank (1).",
+      "options": ["that", "what", "which", "how"],
+      "answer": "B",
+      "explanation": "此处需要名词性从句的引导词，并在从句中作do的宾语，表示“他首先应该做的事情”，what符合。that只起连接作用不作成分；which表示“哪一个”，语意不符。因此选B。that和which是主要干扰项，that不能作宾语，which强调选择，均不正确。",
+      "evidence_sentence": "",
+      "context_clue": "She said that (1) he should do first was to make a weekly schedule.",
+      "clue_argument": "从句缺少宾语，且表示“所……的事情”，用what引导主语从句。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the correct option for blank (2).",
+      "options": ["takes", "took", "take", "taking"],
+      "answer": "C",
+      "explanation": "suggest表示“建议”时，其后的宾语从句用虚拟语气，谓语动词用“(should) + 动词原形”，所以用take。takes和took不是动词原形；taking不能作谓语。因此选C。takes和took是主要干扰项，它们不是虚拟语气要求的动词原形形式，故错误。",
+      "evidence_sentence": "",
+      "context_clue": "She also suggested that he (2) a short break every hour.",
+      "clue_argument": "suggest表建议，从句谓语用(should) do，故填动词原形take。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the correct option for blank (3).",
+      "options": ["this", "that", "it", "one"],
+      "answer": "C",
+      "explanation": "此处是形式主语，真正的主语是后面的不定式to focus，所以用it。this和that是指示代词，不能作形式主语；one表示“一个”，语意不通。因此选C。this和that是主要干扰项，它们不能充当形式主语，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "He found that (3) was easier to focus when he studied in a quiet place.",
+      "clue_argument": "不定式to focus是真正主语，空格处需形式主语it。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the correct option for blank (4).",
+      "options": ["pays", "paid", "will pay", "would pay"],
+      "answer": "B",
+      "explanation": "此处是if引导的虚拟条件句，表示与现在事实相反，从句谓语用一般过去时（be动词用were），主句用would + 动词原形。所以填paid。pays是现在时，will pay和would pay是情态动词形式，均不符合。因此选B。pays和will pay是主要干扰项，它们不是虚拟条件句的过去式形式，故错误。",
+      "evidence_sentence": "",
+      "context_clue": "Alex told Jamie that if he (4) more attention in class, he would spend less time reviewing at home.",
+      "clue_argument": "与现在事实相反的虚拟条件句，从句用一般过去时，故填paid。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the correct option for blank (5).",
+      "options": ["it is", "that is", "this is", "there is"],
+      "answer": "A",
+      "explanation": "此处是主语从句，真正的主语是that students take care of their health while studying，空格处需要形式主语it，构成it is important that...。that is和this is不能作形式主语；there is表示“有”，语意不通。因此选A。that is和this is是主要干扰项，它们不能充当形式主语，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "Later, the teacher told the class that (5) important that students take care of their health while studying.",
+      "clue_argument": "that从句是真正主语，需用it作形式主语，构成it is important that...。"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "passage": "Last spring, a group of students decided to turn an unused corner of their school yard into a city garden. Their teacher, Ms. Chen, explained that the project would not only beautify the campus but also teach them about teamwork and responsibility. The students were excited, but they faced a challenge: the soil was poor and the area was often littered with rubbish. They organised a clean-up day and collected old bottles and paper for recycling. A local gardener advised them to grow plants that need little water, such as beans and tomatoes. The students took turns watering the garden every morning before class. By summer, the garden was full of green leaves and bright flowers. It was the students' hard work that made the garden a success. Now, the garden is a favourite spot for reading and relaxing, and it reminds everyone that small actions can bring big changes.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the city garden project?",
+      "options": [
+        "To grow vegetables for the school canteen.",
+        "To teach students about teamwork and responsibility.",
+        "To create a place for reading and relaxing.",
+        "To recycle old bottles and paper."
+      ],
+      "answer": "To teach students about teamwork and responsibility.",
+      "explanation": "文章开头提到老师解释项目不仅美化校园，还教学生团队合作和责任。A、C是结果或部分活动，不是主要目的。",
+      "evidence_sentence": "Their teacher, Ms. Chen, explained that the project would not only beautify the campus but also teach them about teamwork and responsibility.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Students face many challenges in school.",
+        "A city garden project brings benefits to students and the school.",
+        "Gardening is a difficult hobby for students.",
+        "Teachers should organise more projects."
+      ],
+      "answer": "A city garden project brings benefits to students and the school.",
+      "explanation": "全文讲述学生将荒地变成花园的过程及带来的好处，如美化校园、学习团队合作等。A、C只涉及细节或片面观点。",
+      "evidence_sentence": "Now, the garden is a favourite spot for reading and relaxing, and it reminds everyone that small actions can bring big changes.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What did the students do every morning before class?",
+      "options": [
+        "They cleaned up the rubbish.",
+        "They collected old bottles.",
+        "They watered the garden.",
+        "They read in the garden."
+      ],
+      "answer": "They watered the garden.",
+      "explanation": "文中明确提到学生每天早上上课前轮流给花园浇水。A、B是清理日活动，不是每天早上的事。",
+      "evidence_sentence": "The students took turns watering the garden every morning before class.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the students from the passage?",
+      "options": [
+        "They gave up when the soil was poor.",
+        "They worked hard and cooperated to make the garden successful.",
+        "They relied on the gardener to do most of the work.",
+        "They only cared about beautifying the campus."
+      ],
+      "answer": "They worked hard and cooperated to make the garden successful.",
+      "explanation": "从学生组织清理、轮流浇水等行为可推断他们努力合作使花园成功。A与事实相反，C夸大园丁作用。",
+      "evidence_sentence": "It was the students' hard work that made the garden a success.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

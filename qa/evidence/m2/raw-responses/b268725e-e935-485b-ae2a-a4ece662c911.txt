@@ -1,0 +1,65 @@
+{
+  "passage": "Sustainable tourism is a way of travelling that aims to protect the environment and support local communities. It is not just about enjoying beautiful places; it is about making sure those places remain beautiful for future generations. Many popular destinations suffer from overcrowding and pollution, which can harm both nature and local culture. However, sustainable tourism offers a solution. For example, some hotels now use solar energy and recycle waste. Tourists are encouraged to respect local traditions and buy products made by local people. This approach helps to reduce the negative effects of tourism and to spread the economic benefits more widely. Moreover, sustainable tourism can educate visitors about the importance of conservation. When travellers learn about the fragile ecosystems they visit, they are more likely to support protection efforts. It is this educational aspect that makes sustainable tourism so valuable. Everyone can contribute: choosing eco-friendly accommodations, using public transport, and avoiding single-use plastics are simple steps. By making these choices, tourists can help to ensure that their trips have a positive impact. In conclusion, sustainable tourism is not a passing trend but a necessary shift towards a more responsible way of exploring the world.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can be inferred about the educational aspect of sustainable tourism?",
+      "options": [
+        "It helps tourists understand why conservation is important.",
+        "It is the main reason why people choose to travel.",
+        "It makes travel more expensive for everyone.",
+        "It is only useful for local communities."
+      ],
+      "answer": "It helps tourists understand why conservation is important.",
+      "explanation": "文章提到可持续旅游能教育游客关于保护的重要性，并使他们更可能支持保护工作，因此可以推断它帮助游客理解保护的重要性。A项正确。B项错误，因为文章没有说教育是旅行的主要原因；C项错误，因为文章没有提到教育会让旅行更贵。",
+      "evidence_sentence": "When travellers learn about the fragile ecosystems they visit, they are more likely to support protection efforts.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "The word \"fragile\" in the passage is closest in meaning to ______.",
+      "options": [
+        "easily damaged",
+        "very large",
+        "extremely beautiful",
+        "difficult to find"
+      ],
+      "answer": "easily damaged",
+      "explanation": "根据上下文，fragile ecosystems 指的是脆弱的生态系统，需要保护，因此fragile意为“易受伤害的”，与easily damaged意思最接近。A项正确。B项“非常大的”和C项“极其美丽的”都不符合语境，因为文章强调的是保护的必要性。",
+      "evidence_sentence": "When travellers learn about the fragile ecosystems they visit, they are more likely to support protection efforts.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the author's attitude towards sustainable tourism?",
+      "options": [
+        "Supportive",
+        "Doubtful",
+        "Indifferent",
+        "Critical"
+      ],
+      "answer": "Supportive",
+      "explanation": "作者在文中强调可持续旅游的好处，称其为“必要的转变”，并鼓励大家采取行动，因此态度是支持的。A项正确。B项“怀疑的”和D项“批评的”与文章积极推荐的口吻不符。",
+      "evidence_sentence": "In conclusion, sustainable tourism is not a passing trend but a necessary shift towards a more responsible way of exploring the world.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Sustainable tourism is important and everyone can contribute to it.",
+        "Tourism always causes environmental problems.",
+        "Local communities should stop welcoming tourists.",
+        "Solar energy is the best solution for hotels."
+      ],
+      "answer": "Sustainable tourism is important and everyone can contribute to it.",
+      "explanation": "文章主要介绍了可持续旅游的概念、好处以及每个人可以如何参与，因此主旨是可持续旅游很重要且人人可参与。A项正确。B项过于绝对，文章说的是“许多”目的地有问题；C项文章未提及；D项只是文章中的一个例子，不是主旨。",
+      "evidence_sentence": "Everyone can contribute: choosing eco-friendly accommodations, using public transport, and avoiding single-use plastics are simple steps.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

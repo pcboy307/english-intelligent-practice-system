@@ -1,0 +1,105 @@
+{
+  "passage": "Last summer, my family took a trip to the coast. It was my father who first suggested the idea. ① It was the clean beaches and the fresh sea air that attracted us most. ② What we enjoyed most was simply walking along the shore at sunset. ③ It was not until we arrived at the small fishing village that we truly relaxed. We ④ had been driving for six hours before we finally reached the hotel. By the time we checked in, the sun ⑤ had set. We ⑥ were unpacking our bags when we heard a loud noise outside. The next morning, we decided to explore the nearby market. The market ⑦ is full of colourful stalls selling local food. The fish ⑧ is very fresh there. The people ⑨ are friendly and welcoming. We bought ⑩ a beautiful handmade basket as a souvenir. It was a memorable trip.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank ①.",
+      "options": ["It was the clean beaches and the fresh sea air that attracted us most.", "The clean beaches and the fresh sea air attracted us most.", "It is the clean beaches and the fresh sea air that attracted us most.", "It were the clean beaches and the fresh sea air that attracted us most."],
+      "answer": "It was the clean beaches and the fresh sea air that attracted us most.",
+      "explanation": "此处强调主语，用强调句型It was...that...，且原句为过去时。B项缺少强调结构；C项时态错误。",
+      "evidence_sentence": "It was the clean beaches and the fresh sea air that attracted us most.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank ②.",
+      "options": ["What we enjoyed most was simply walking along the shore at sunset.", "It was we enjoyed most simply walking along the shore at sunset.", "What we enjoyed most simply walking along the shore at sunset.", "That we enjoyed most was simply walking along the shore at sunset."],
+      "answer": "What we enjoyed most was simply walking along the shore at sunset.",
+      "explanation": "此处用What引导的主语从句，was后接动名词作表语。B项结构混乱；C项缺少谓语was。",
+      "evidence_sentence": "What we enjoyed most was simply walking along the shore at sunset.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank ③.",
+      "options": ["It was not until we arrived at the small fishing village that we truly relaxed.", "It was not until we arrived at the small fishing village when we truly relaxed.", "It was until we arrived at the small fishing village that we truly relaxed.", "It was not until we arrived at the small fishing village that we truly relax."],
+      "answer": "It was not until we arrived at the small fishing village that we truly relaxed.",
+      "explanation": "not until的强调句型为It was not until...that...，主句用过去时。B项连接词错误；C项缺少not。",
+      "evidence_sentence": "It was not until we arrived at the small fishing village that we truly relaxed.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank ④.",
+      "options": ["had been driving", "drove", "were driving", "have been driving"],
+      "answer": "had been driving",
+      "explanation": "此处表示到达之前一直在开车，用过去完成进行时。B项一般过去时不能体现持续；C项过去进行时缺少“过去的过去”含义。",
+      "evidence_sentence": "We had been driving for six hours before we finally reached the hotel.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank ⑤.",
+      "options": ["had set", "set", "has set", "was setting"],
+      "answer": "had set",
+      "explanation": "By the time引导的从句用一般过去时，主句表示“过去的过去”，用过去完成时。B项时态错误；C项现在完成时与过去时不一致。",
+      "evidence_sentence": "By the time we checked in, the sun had set.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best option for blank ⑥.",
+      "options": ["were unpacking", "unpacked", "have unpacked", "had unpacked"],
+      "answer": "were unpacking",
+      "explanation": "此处表示过去某个时刻正在进行的动作，用过去进行时。B项一般过去时不能表示正在进行；C项现在完成时与过去语境不符。",
+      "evidence_sentence": "We were unpacking our bags when we heard a loud noise outside.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best option for blank ⑦.",
+      "options": ["is", "are", "was", "were"],
+      "answer": "is",
+      "explanation": "主语The market为单数，描述当前状态用is。B项are用于复数；C项was时态与上下文现在时不一致。",
+      "evidence_sentence": "The market is full of colourful stalls selling local food.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best option for blank ⑧.",
+      "options": ["is", "are", "was", "were"],
+      "answer": "is",
+      "explanation": "fish在此表示鱼肉，不可数，谓语用单数is。B项are用于复数；C项was时态错误。",
+      "evidence_sentence": "The fish is very fresh there.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best option for blank ⑨.",
+      "options": ["are", "is", "was", "were"],
+      "answer": "are",
+      "explanation": "主语The people表示人们，是复数，谓语用are。B项is用于单数；C项was时态错误。",
+      "evidence_sentence": "The people are friendly and welcoming.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best option for blank ⑩.",
+      "options": ["a", "an", "the", "不填"],
+      "answer": "a",
+      "explanation": "此处表示“一个”手工篮子，beautiful以辅音音素开头，用a。B项an用于元音音素前；C项the表示特指，此处非特指。",
+      "evidence_sentence": "We bought a beautiful handmade basket as a souvenir.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

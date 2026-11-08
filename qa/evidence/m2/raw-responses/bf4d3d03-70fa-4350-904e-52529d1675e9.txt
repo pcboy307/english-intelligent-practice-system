@@ -1,0 +1,155 @@
+{
+  "passage": "Last term, three students in Class Two faced a new digital learning project. Lily, who was (1) anxious about online lessons, often stayed silent. Her teacher, Mr. Wang, noticed that she needed (2) confident support, so he paired her with Ben, a (3) curious boy who loved asking questions. Ben showed her that a (4) reliable study plan could make a big difference. If Lily were more (5) ambitious, she could (6) achieve better results, he said. She decided to (7) adapt her habits and (8) encourage herself daily. Mr. Wang tried to (9) persuade her to (10) concentrate on one task at a time. (11) Gradually, Lily began to work (12) eventually on her own, and she could study (13) independently. Her (14) confidence grew, and she found a new (15) opportunity to help others.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank (1).",
+      "options": ["anxious", "angry", "happy", "proud"],
+      "answer": "anxious",
+      "explanation": "Lily 对网课感到焦虑，所以常常沉默；angry、happy 与沉默不搭配。",
+      "evidence_sentence": "",
+      "context_clue": "Lily, who was (1) anxious about online lessons, often stayed silent.",
+      "clue_argument": "silent 暗示负面情绪，anxious 最符合。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank (2).",
+      "options": ["confident", "careful", "lazy", "rude"],
+      "answer": "confident",
+      "explanation": "老师给她自信的支持，帮助她不再沉默；careful、lazy 与支持不搭配。",
+      "evidence_sentence": "",
+      "context_clue": "Her teacher, Mr. Wang, noticed that she needed (2) confident support, so he paired her with Ben.",
+      "clue_argument": "support 需要正面形容词，confident 合适。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank (3).",
+      "options": ["curious", "shy", "tired", "quiet"],
+      "answer": "curious",
+      "explanation": "Ben 喜欢问问题，说明他好奇；shy、quiet 与爱提问矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "Ben, a (3) curious boy who loved asking questions.",
+      "clue_argument": "loved asking questions 直接提示 curious。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank (4).",
+      "options": ["reliable", "boring", "expensive", "difficult"],
+      "answer": "reliable",
+      "explanation": "可靠的学习计划能带来改变；boring、expensive 与计划效果无关。",
+      "evidence_sentence": "",
+      "context_clue": "Ben showed her that a (4) reliable study plan could make a big difference.",
+      "clue_argument": "make a big difference 需要正面形容词，reliable 符合。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank (5).",
+      "options": ["ambitious", "afraid", "careless", "unhappy"],
+      "answer": "ambitious",
+      "explanation": "如果 Lily 更有雄心，就能取得更好成绩；afraid、careless 与取得好成绩矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "If Lily were more (5) ambitious, she could (6) achieve better results.",
+      "clue_argument": "与 achieve better results 搭配，ambitious 最合适。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank (6).",
+      "options": ["achieve", "avoid", "forget", "lose"],
+      "answer": "achieve",
+      "explanation": "取得更好成绩用 achieve；avoid、lose 与好成绩相反。",
+      "evidence_sentence": "",
+      "context_clue": "she could (6) achieve better results",
+      "clue_argument": "better results 提示 achieve。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank (7).",
+      "options": ["adapt", "refuse", "ignore", "stop"],
+      "answer": "adapt",
+      "explanation": "她决定调整习惯，adapt 表示适应、调整；refuse、ignore 与积极改变矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "She decided to (7) adapt her habits and (8) encourage herself daily.",
+      "clue_argument": "habits 需要改变，adapt 合适。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank (8).",
+      "options": ["encourage", "blame", "punish", "warn"],
+      "answer": "encourage",
+      "explanation": "她每天鼓励自己；blame、punish 是负面行为，不符合语境。",
+      "evidence_sentence": "",
+      "context_clue": "and (8) encourage herself daily",
+      "clue_argument": "herself daily 提示正面自我激励，encourage 正确。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank (9).",
+      "options": ["persuade", "force", "allow", "order"],
+      "answer": "persuade",
+      "explanation": "王老师试图说服她一次专注一件事；force、order 语气过强，allow 不搭配。",
+      "evidence_sentence": "",
+      "context_clue": "Mr. Wang tried to (9) persuade her to (10) concentrate on one task at a time.",
+      "clue_argument": "persuade sb to do 表示说服某人做某事。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank (10).",
+      "options": ["concentrate", "waste", "spread", "divide"],
+      "answer": "concentrate",
+      "explanation": "一次专注一个任务用 concentrate；waste、divide 与专注矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "to (10) concentrate on one task at a time",
+      "clue_argument": "on one task at a time 提示 concentrate。"
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank (11).",
+      "options": ["Gradually", "Suddenly", "Luckily", "Finally"],
+      "answer": "Gradually",
+      "explanation": "她逐渐开始独立学习；Suddenly 表示突然，与过程不符。",
+      "evidence_sentence": "",
+      "context_clue": "(11) Gradually, Lily began to work (12) eventually on her own.",
+      "clue_argument": "began to work on her own 是渐进过程，Gradually 合适。"
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank (12).",
+      "options": ["eventually", "immediately", "rarely", "hardly"],
+      "answer": "eventually",
+      "explanation": "她最终能独立学习；immediately 与逐渐过程矛盾，rarely、hardly 否定独立。",
+      "evidence_sentence": "",
+      "context_clue": "Lily began to work (12) eventually on her own",
+      "clue_argument": "与 Gradually 呼应，eventually 表示最终。"
+    },
+    {
+      "question_index": 13,
+      "stem": "Choose the best word for blank (13).",
+      "options": ["independently", "angrily", "carelessly", "slowly"],
+      "answer": "independently",
+      "explanation": "她能独立学习；angrily、carelessly 与学习态度无关。",
+      "evidence_sentence": "",
+      "context_clue": "and she could study (13) independently.",
+      "clue_argument": "on her own 提示 independently。"
+    },
+    {
+      "question_index": 14,
+      "stem": "Choose the best word for blank (14).",
+      "options": ["confidence", "fear", "sadness", "doubt"],
+      "answer": "confidence",
+      "explanation": "她的信心增长；fear、doubt 与 grew 搭配表示负面增长，不合语境。",
+      "evidence_sentence": "",
+      "context_clue": "Her (14) confidence grew, and she found a new (15) opportunity to help others.",
+      "clue_argument": "grew 与正面名词 confidence 搭配。"
+    },
+    {
+      "question_index": 15,
+      "stem": "Choose the best word for blank (15).",
+      "options": ["opportunity", "problem", "accident", "mistake"],
+      "answer": "opportunity",
+      "explanation": "她找到帮助别人的新机会；problem、mistake 是负面词，不符合。",
+      "evidence_sentence": "",
+      "context_clue": "she found a new (15) opportunity to help others.",
+      "clue_argument": "to help others 是积极机会，opportunity 正确。"
+    }
+  ]
+}

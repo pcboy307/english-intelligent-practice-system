@@ -1,0 +1,65 @@
+{
+  "passage": "A circular（循环的） economy is a system in which materials are reused（再利用） and waste is reduced. In a small town, a student named Alex started a project to make the school more sustainable. He noticed that many old books and broken（破损的） desks were thrown（被扔掉） away. With his teacher's help, Alex set up a repair club. Students learned to fix desks and chairs, and they collected old books to give to younger children. Not only did the project reduce waste, but it also saved money for the school. The repaired furniture was used again, and the books found new homes. Alex's project shows that small actions can make a big difference. By reusing and repairing, we can protect our environment and build a better future.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the author's main purpose in writing the passage?",
+      "options": [
+        "To explain how a circular economy works.",
+        "To describe Alex's project and its benefits.",
+        "To criticize schools for wasting resources.",
+        "To compare different types of economies."
+      ],
+      "answer": "To describe Alex's project and its benefits.",
+      "explanation": "文章主要描述了Alex的修复项目及其带来的好处，因此选B。A项虽然提到了循环经济，但文章重点在项目；C项文章并未批评学校，而是提出解决方案；D项文章没有比较不同经济类型。",
+      "evidence_sentence": "Alex's project shows that small actions can make a big difference.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Reusing and repairing can help protect the environment.",
+        "Students should not throw away old books.",
+        "Schools should spend more money on new furniture.",
+        "Alex's teacher started a repair club."
+      ],
+      "answer": "Reusing and repairing can help protect the environment.",
+      "explanation": "文章主旨是重复使用和修理有助于保护环境，因此选A。B项只是文章中的一个细节；C项与文章节约用钱的意图相反；D项是老师帮助Alex，而不是老师发起俱乐部。",
+      "evidence_sentence": "By reusing and repairing, we can protect our environment and build a better future.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what happened to the repaired furniture?",
+      "options": [
+        "It was sold to other schools.",
+        "It was thrown away again.",
+        "It was used again.",
+        "It was given to younger children."
+      ],
+      "answer": "It was used again.",
+      "explanation": "文章提到修理好的家具被再次使用，因此选C。A项文章未提及出售；B项与文章相反；D项是旧书给了年幼的孩子，不是家具。",
+      "evidence_sentence": "The repaired furniture was used again, and the books found new homes.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about Alex's project from the passage?",
+      "options": [
+        "It was expensive to start.",
+        "It was supported by the teacher.",
+        "It failed to reduce waste.",
+        "It only helped younger children."
+      ],
+      "answer": "It was supported by the teacher.",
+      "explanation": "从“在老师的帮助下”可以推断项目得到了老师的支持，因此选B。A项文章未提及花费；C项与文章减少浪费的结果相反；D项项目还修理了家具，不只帮助年幼的孩子。",
+      "evidence_sentence": "With his teacher's help, Alex set up a repair club.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

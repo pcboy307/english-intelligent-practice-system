@@ -1,0 +1,1 @@
+{"translations": {"crisis": "危机", "investing": "投资", "microplastics": "微塑料", "single-use": "一次性"}}

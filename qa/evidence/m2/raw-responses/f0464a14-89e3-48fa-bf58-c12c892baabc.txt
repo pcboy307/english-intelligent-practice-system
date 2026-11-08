@@ -1,0 +1,1 @@
+{"translations": {"deskmate": "同桌", "forgot": "忘记", "pace": "步伐"}}

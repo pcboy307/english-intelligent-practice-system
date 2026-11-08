@@ -1,0 +1,65 @@
+{
+  "passage": "Last spring, a museum in our city started a programme called \"History in Your Hands\". The museum, which was built in 1920, had always been a quiet place where visitors looked at objects behind glass. The new programme changed that. Students from local schools were invited to handle copies of ancient tools and to act as young guides. The student, who had never visited a museum before, was chosen to lead a group of primary school children. Her teacher, who had organised the visit, watched with pride. The programme aims to make history active and personal. According to the museum director, the purpose is not only to teach facts but also to encourage young people to ask questions. If the museum had not started this programme, many students would never have discovered the joy of learning from real objects. The director suggests that every school should take part in such activities. One activity, which lasts two hours, includes a short talk and a hands-on session. The student said, \"I used to think museums were boring, but now I want to become a history teacher.\" The museum plans to expand the programme next year.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the museum's new programme?",
+      "options": [
+        "To make history active and personal for students.",
+        "To sell copies of ancient tools to visitors.",
+        "To train students to become museum directors.",
+        "To replace all the old objects in the museum."
+      ],
+      "answer": "To make history active and personal for students.",
+      "explanation": "文章明确说“The programme aims to make history active and personal”，所以A正确。B和C是错误干扰项，文中没有提到卖工具或培训馆长。",
+      "evidence_sentence": "The programme aims to make history active and personal.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "A museum programme helps students learn history in an active way.",
+        "The museum was built in 1920 and has many ancient tools.",
+        "The student wants to become a history teacher in the future.",
+        "Primary school children are too young to visit museums."
+      ],
+      "answer": "A museum programme helps students learn history in an active way.",
+      "explanation": "全文围绕博物馆新项目让学生动手体验历史展开，A概括了主旨。B和C只是细节，不是全文主旨。",
+      "evidence_sentence": "Last spring, a museum in our city started a programme called \"History in Your Hands\".",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what does the director suggest?",
+      "options": [
+        "Every school should take part in such activities.",
+        "Students should not touch ancient objects.",
+        "The museum should close its doors to visitors.",
+        "Teachers should lead all the museum tours."
+      ],
+      "answer": "Every school should take part in such activities.",
+      "explanation": "文中直接说“The director suggests that every school should take part in such activities”，所以A正确。B和C与文章内容相反。",
+      "evidence_sentence": "The director suggests that every school should take part in such activities.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the student's attitude towards museums after the programme?",
+      "options": [
+        "She has become more interested in history and museums.",
+        "She still thinks museums are boring and useless.",
+        "She wants to stop visiting museums altogether.",
+        "She believes museums should only show old objects."
+      ],
+      "answer": "She has become more interested in history and museums.",
+      "explanation": "学生说“I used to think museums were boring, but now I want to become a history teacher”，说明她态度转变，对历史更感兴趣，A正确。B和C与她的新态度矛盾。",
+      "evidence_sentence": "The student said, \"I used to think museums were boring, but now I want to become a history teacher.\"",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

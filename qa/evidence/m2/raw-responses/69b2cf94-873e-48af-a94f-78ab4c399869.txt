@@ -1,0 +1,65 @@
+{
+  "passage": "In the small town of Greenfield, three friends—Maya, Leo, and Sam—decided to take action on climate change after a powerful storm flooded their neighborhood. Maya, who had always been passionate about the environment, organized a community meeting. She explained that although individual actions might seem small, they could add up to significant change. Leo, skilled at building, suggested installing solar panels on the school roof. Sam, good at persuading people, convinced local businesses to donate materials. Over the next six months, they worked tirelessly. They faced many challenges: some residents doubted their plan, and funding was slow to arrive. However, with determination and teamwork, they succeeded. The solar panels now power the school, reducing carbon emissions by 30%. Their story shows that when people come together with a common purpose, they can make a real difference. As Maya often says, “Every small step counts, and together we can create a sustainable future.”",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To describe the destructive effects of a storm",
+        "To explain how solar panels work",
+        "To show that collective action can address climate change",
+        "To criticize residents who doubted the plan"
+      ],
+      "answer": "To show that collective action can address climate change",
+      "explanation": "文章通过三个朋友合作推动社区太阳能项目的故事，说明集体行动能应对气候变化。A项只涉及开头风暴，B项未解释技术原理，D项并非写作目的。",
+      "evidence_sentence": "Their story shows that when people come together with a common purpose, they can make a real difference.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "Which sentence best states the main idea of the passage?",
+      "options": [
+        "A storm flooded Greenfield and caused damage.",
+        "Three friends overcame challenges to install solar panels, demonstrating the power of teamwork.",
+        "Maya was passionate about the environment and organized a meeting.",
+        "Solar panels reduce carbon emissions by 30%."
+      ],
+      "answer": "Three friends overcame challenges to install solar panels, demonstrating the power of teamwork.",
+      "explanation": "文章主旨是三个朋友克服困难安装太阳能板，展示团队合作的力量。A、C、D都是细节，不能概括全文。",
+      "evidence_sentence": "However, with determination and teamwork, they succeeded.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what did Sam contribute to the project?",
+      "options": [
+        "He organized a community meeting.",
+        "He installed solar panels on the school roof.",
+        "He persuaded local businesses to donate materials.",
+        "He reduced carbon emissions by 30%."
+      ],
+      "answer": "He persuaded local businesses to donate materials.",
+      "explanation": "细节题。文中明确提到Sam说服当地企业捐赠材料。A是Maya做的，B是Leo建议的，D是项目结果。",
+      "evidence_sentence": "Sam, good at persuading people, convinced local businesses to donate materials.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can be inferred about the friends' project from the passage?",
+      "options": [
+        "It was completed without any difficulties.",
+        "It received support from all residents from the start.",
+        "It required persistence and collaboration to overcome obstacles.",
+        "It was mainly funded by the local government."
+      ],
+      "answer": "It required persistence and collaboration to overcome obstacles.",
+      "explanation": "推断题。文中提到他们面临质疑和资金困难，但凭借决心和团队合作成功，可推断需要坚持与合作。A、B与原文相反，D未提及。",
+      "evidence_sentence": "They faced many challenges: some residents doubted their plan, and funding was slow to arrive. However, with determination and teamwork, they succeeded.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

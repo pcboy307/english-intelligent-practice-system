@@ -1,0 +1,65 @@
+{
+  "passage": "In a small town, the student noticed that the climate was changing. Summers were hotter, and the river was lower than before. She wanted to act. Her teacher said, \"We can reduce waste and save energy.\" The student started a club with a classmate. They put bins in every classroom and asked students to recycle paper and plastic. At first, few people cared. But the student did not give up. She made a poster that said, \"Small actions can make a big difference.\" Slowly, more students joined. They planted trees near the school and turned off lights when leaving rooms. The teacher helped them write a report. The report showed that the school's waste had dropped by half in one year. The student felt proud. She believes that if everyone takes action, we can protect our planet. Her teacher agrees. \"You have shown that young people can lead change,\" she said. The student smiles. She knows the work is not finished, but she is ready to continue.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the student's attitude towards taking action on climate change?",
+      "options": [
+        "She is determined and hopeful.",
+        "She is doubtful and worried.",
+        "She is careless and lazy.",
+        "She is angry and disappointed."
+      ],
+      "answer": "She is determined and hopeful.",
+      "explanation": "文章中学生面对起初无人关心的情况没有放弃，坚持行动并相信大家共同努力能保护地球，可见她坚定且充满希望。B项“怀疑担心”和D项“愤怒失望”与文中积极态度矛盾，故错误。",
+      "evidence_sentence": "She believes that if everyone takes action, we can protect our planet.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "A student leads a school project to fight climate change.",
+        "The climate is changing faster than before.",
+        "Trees are important for the environment.",
+        "Teachers should write reports about waste."
+      ],
+      "answer": "A student leads a school project to fight climate change.",
+      "explanation": "全文围绕一名学生发起环保社团、带动同学减少浪费和节约能源展开，主旨是她带领学校项目应对气候变化。B项只是背景，C项和D项只是细节，均不能概括全文。",
+      "evidence_sentence": "The student started a club with a classmate.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the report, what happened to the school's waste in one year?",
+      "options": [
+        "It dropped by half.",
+        "It doubled.",
+        "It stayed the same.",
+        "It increased a little."
+      ],
+      "answer": "It dropped by half.",
+      "explanation": "文中明确提到报告显示学校垃圾在一年内减少了一半。B项“翻倍”、C项“保持不变”和D项“略有增加”都与原文数据相反。",
+      "evidence_sentence": "The report showed that the school's waste had dropped by half in one year.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the student from the last paragraph?",
+      "options": [
+        "She will keep working on climate action.",
+        "She thinks the work is already finished.",
+        "She wants to stop the club soon.",
+        "She is tired and will give up."
+      ],
+      "answer": "She will keep working on climate action.",
+      "explanation": "结尾说学生知道工作尚未完成，但她准备好继续，由此可推知她将继续致力于气候行动。B项“认为工作已完成”和D项“疲倦放弃”与原文“not finished”和“ready to continue”直接矛盾。",
+      "evidence_sentence": "She knows the work is not finished, but she is ready to continue.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

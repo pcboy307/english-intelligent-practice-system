@@ -1,0 +1,57 @@
+{
+  "passage": "The Spring Festival is the most important festival in China. It usually comes in January or February. Before the festival, people clean their houses and buy new clothes. They also put up red paper-cuts on windows and doors. On the eve of the festival, families get together and have a big dinner. Dumplings are a must in the north. After dinner, many people watch a special TV programme. Children get red packets with money from their parents. At midnight, people set off fireworks to welcome the new year. The next morning, people visit their relatives and friends. They say good wishes to each other. The Spring Festival lasts about fifteen days. The Lantern Festival marks the end of the celebration. On that day, people eat sweet dumplings and watch lanterns. The Spring Festival is a time for family reunion and joy.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "The Spring Festival is a time for family and celebration.",
+        "The Spring Festival is celebrated in many countries.",
+        "People eat dumplings during the Spring Festival.",
+        "Children receive red packets during the Spring Festival."
+      ],
+      "answer": "The Spring Festival is a time for family and celebration.",
+      "explanation": "文章介绍了春节前的准备、除夕团圆饭、看节目、放烟花、拜年以及元宵节结束庆祝，整体说明春节是家庭团聚和庆祝的节日。A项概括全文；B项文中未提及；C项只是细节，不是主旨。",
+      "evidence_sentence": "The Spring Festival is a time for family reunion and joy."
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what do people do on the eve of the Spring Festival?",
+      "options": [
+        "They clean their houses.",
+        "They have a big dinner with family.",
+        "They visit relatives and friends.",
+        "They watch lanterns."
+      ],
+      "answer": "They have a big dinner with family.",
+      "explanation": "文中明确提到除夕夜家人团聚并吃大餐。A项是节前活动；C项是第二天早上的活动；D项是元宵节的活动。",
+      "evidence_sentence": "On the eve of the festival, families get together and have a big dinner."
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about the Spring Festival from the passage?",
+      "options": [
+        "It is celebrated for only one day.",
+        "It is a time when families come together.",
+        "It is not celebrated in northern China.",
+        "It ends with the Lantern Festival."
+      ],
+      "answer": "It is a time when families come together.",
+      "explanation": "文章提到除夕家人团聚、第二天拜访亲友，以及结尾说春节是家庭团聚的时刻，可推断春节是家人团聚的时期。A项与“持续约十五天”矛盾；C项与“北方吃饺子”矛盾；D项是事实细节，不是推断。",
+      "evidence_sentence": "The Spring Festival is a time for family reunion and joy."
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"marks\" in the passage mean?",
+      "options": [
+        "Shows",
+        "Ends",
+        "Starts",
+        "Celebrates"
+      ],
+      "answer": "Shows",
+      "explanation": "文中“The Lantern Festival marks the end of the celebration”意为元宵节标志着庆祝活动的结束，marks意为“标志、表明”。B项“结束”是错误理解；C项“开始”与文意相反；D项“庆祝”不符合语境。",
+      "evidence_sentence": "The Lantern Festival marks the end of the celebration."
+    }
+  ]
+}

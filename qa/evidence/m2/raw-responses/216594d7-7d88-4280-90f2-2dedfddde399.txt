@@ -1,0 +1,65 @@
+{
+  "passage": "Last spring, the student noticed that a corner of the school yard was just bare soil and rubbish. She believed that the space could become something beautiful and useful. She asked her teacher for advice, and the teacher agreed that a small garden would benefit the whole school. The student formed a club with a classmate and two other students. They spent several afternoons clearing the ground and pulling out weeds. A local gardener donated some young plants, and the school allowed the club to use a small budget for tools. By early summer, the first flowers had opened, and the once-empty corner had become a lively green space. The student later wrote in the school newspaper that the garden was not only about growing plants; it was also about bringing people together. She explained that working on the project had taught her how to cooperate and how to solve problems step by step. The club now meets every Friday afternoon to water the plants and plan new additions. The teacher says the garden has become a favourite place for students to relax and read during breaks. The student hopes that other classes will start similar projects, and she is confident that even a small piece of land can make a big difference.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the student's main purpose in starting the garden project?",
+      "options": [
+        "To turn an unused corner into a beautiful and useful space.",
+        "To grow vegetables for the school kitchen.",
+        "To win a prize in a school competition.",
+        "To finish a task given by the local government."
+      ],
+      "answer": "To turn an unused corner into a beautiful and useful space.",
+      "explanation": "文章第一段明确提到学生认为那块空地可以变得美丽且有用，并为此成立社团。A项正确。B项“为学校厨房种菜”文中未提及；C项“赢得比赛”文中无依据，属于无中生有。",
+      "evidence_sentence": "She believed that the space could become something beautiful and useful.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "A school garden project brought students together and taught them useful skills.",
+        "The school should spend more money on gardening tools.",
+        "Local gardeners are the best people to teach students about plants.",
+        "Students should spend more time outdoors instead of in classrooms."
+      ],
+      "answer": "A school garden project brought students together and taught them useful skills.",
+      "explanation": "全文围绕学生发起花园项目展开，强调其美化环境、促进合作与问题解决能力的作用。A项概括准确。B项“学校应多花钱买工具”只是细节，非主旨；C项“当地园丁是最好的老师”文中未强调，属于过度推断。",
+      "evidence_sentence": "She explained that working on the project had taught her how to cooperate and how to solve problems step by step.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What did the club members do first to prepare the ground?",
+      "options": [
+        "They cleared the ground and pulled out weeds.",
+        "They bought young plants from a local gardener.",
+        "They wrote an article for the school newspaper.",
+        "They asked the teacher for gardening tools."
+      ],
+      "answer": "They cleared the ground and pulled out weeds.",
+      "explanation": "第三段明确说他们花了几个下午清理地面和拔草。A项正确。B项“从园丁那里买植物”与原文“园丁捐赠”不符；C项“写文章”是后来发生的，时间顺序错误。",
+      "evidence_sentence": "They spent several afternoons clearing the ground and pulling out weeds.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the student's view of the garden project?",
+      "options": [
+        "She thinks small actions can lead to meaningful change.",
+        "She believes the garden will soon become the largest in the city.",
+        "She doubts whether other classes will start similar projects.",
+        "She feels the project was too difficult to continue."
+      ],
+      "answer": "She thinks small actions can lead to meaningful change.",
+      "explanation": "文章结尾学生说“即使一小块土地也能带来大不同”，可推断她相信小行动能带来有意义的改变。A项正确。B项“将成为城市最大花园”文中无依据；C项“怀疑其他班级会效仿”与原文“希望其他班级开展类似项目”矛盾。",
+      "evidence_sentence": "The student hopes that other classes will start similar projects, and she is confident that even a small piece of land can make a big difference.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

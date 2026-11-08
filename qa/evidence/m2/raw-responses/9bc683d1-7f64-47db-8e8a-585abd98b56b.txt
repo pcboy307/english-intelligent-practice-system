@@ -1,0 +1,1 @@
+{"translations": {"cannot": "不能", "connection": "连接", "librarians": "图书管理员", "located": "位于", "storehouses": "仓库"}}

@@ -1,0 +1,1 @@
+{"translations": {"apart": "分开", "interruption": "中断"}}

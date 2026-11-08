@@ -1,0 +1,105 @@
+{
+  "passage": "Last summer, my cousin and I decided to take a train trip to the coast. ① It was the chance to travel together that made us excited. ② It was in a small town that we first met the old station master, who told us many stories. ③ It was because of his advice that we changed our plan and visited a nearby island. By the time we arrived at the station, the train ④ had already left. We ⑤ waited for the next one for two hours. While we were waiting, we ⑥ were chatting about our dream trips. The station master, together with two other passengers, ⑦ was very kind to us. Neither of the two passengers ⑧ knew the way to the island, but they helped us find a map. The information about the ferries ⑨ is posted on the wall. We also learned that ⑩ the island is a popular place for tourists.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank ①.",
+      "options": ["It", "That", "This", "There"],
+      "answer": "It",
+      "explanation": "此处是强调句型 It was ... that ...，强调主语 the chance to travel together，因此用 It。That 不能用于强调句型的开头；This 不能构成强调句型。",
+      "evidence_sentence": "It was the chance to travel together that made us excited.",
+      "context_clue": "It was the chance to travel together that made us excited.",
+      "clue_argument": "强调句型结构要求用 It 作形式主语。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank ②.",
+      "options": ["that", "where", "which", "when"],
+      "answer": "that",
+      "explanation": "此处是强调句型 It was in a small town that ...，强调地点状语，连接词用 that。Where 不能用于强调句型；Which 不能连接强调句型的状语部分。",
+      "evidence_sentence": "It was in a small town that we first met the old station master, who told us many stories.",
+      "context_clue": "It was in a small town that we first met the old station master, who told us many stories.",
+      "clue_argument": "强调地点状语时，强调句型仍用 that 连接。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank ③.",
+      "options": ["that", "because", "since", "as"],
+      "answer": "that",
+      "explanation": "此处是强调句型 It was because of his advice that ...，强调原因状语，连接词用 that。Because 不能用于强调句型的连接；Since 和 As 也不能用于强调句型。",
+      "evidence_sentence": "It was because of his advice that we changed our plan and visited a nearby island.",
+      "context_clue": "It was because of his advice that we changed our plan and visited a nearby island.",
+      "clue_argument": "强调原因状语时，强调句型用 that 连接。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank ④.",
+      "options": ["had left", "has left", "left", "was leaving"],
+      "answer": "had left",
+      "explanation": "By the time 引导的从句用一般过去时，主句表示过去的过去，用过去完成时 had left。Has left 是现在完成时，与过去时间不符；Left 是一般过去时，不能表示过去的过去。",
+      "evidence_sentence": "By the time we arrived at the station, the train had already left.",
+      "context_clue": "By the time we arrived at the station, the train had already left.",
+      "clue_argument": "By the time + 过去时，主句常用过去完成时。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank ⑤.",
+      "options": ["waited", "wait", "are waiting", "have waited"],
+      "answer": "waited",
+      "explanation": "全文叙述过去的事情，此处用一般过去时 waited。Wait 是原形，不能单独作谓语；Are waiting 是现在进行时，与过去语境不符。",
+      "evidence_sentence": "We waited for the next one for two hours.",
+      "context_clue": "We waited for the next one for two hours.",
+      "clue_argument": "叙述过去发生的动作，用一般过去时。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best option for blank ⑥.",
+      "options": ["were chatting", "chatted", "have chatted", "are chatting"],
+      "answer": "were chatting",
+      "explanation": "While 引导的从句表示过去某时正在进行的动作，主句用过去进行时 were chatting。Chatted 是一般过去时，不能表示正在进行；Have chatted 是现在完成时，与过去语境不符。",
+      "evidence_sentence": "While we were waiting, we were chatting about our dream trips.",
+      "context_clue": "While we were waiting, we were chatting about our dream trips.",
+      "clue_argument": "While 从句表示过去正在进行，主句也常用过去进行时。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best option for blank ⑦.",
+      "options": ["was", "were", "is", "are"],
+      "answer": "was",
+      "explanation": "主语 The station master 是单数，together with two other passengers 是附加成分，不影响谓语单复数，且全文为过去时，故用 was。Were 是复数形式，与主语不一致；Is 是现在时，与过去语境不符。",
+      "evidence_sentence": "The station master, together with two other passengers, was very kind to us.",
+      "context_clue": "The station master, together with two other passengers, was very kind to us.",
+      "clue_argument": "together with 连接的部分不影响主语单复数，谓语与 The station master 一致。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best option for blank ⑧.",
+      "options": ["knew", "knows", "know", "known"],
+      "answer": "knew",
+      "explanation": "Neither of ... 作主语时谓语用单数，且全文为过去时，故用 knew。Knows 是现在时单数，与过去语境不符；Know 是原形，不能用于过去时。",
+      "evidence_sentence": "Neither of the two passengers knew the way to the island, but they helped us find a map.",
+      "context_clue": "Neither of the two passengers knew the way to the island, but they helped us find a map.",
+      "clue_argument": "Neither of + 复数名词作主语，谓语用单数，且时态为过去。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best option for blank ⑨.",
+      "options": ["is", "are", "was", "were"],
+      "answer": "is",
+      "explanation": "主语 The information 是不可数名词，谓语用单数；此处描述现在的事实，用 is。Are 是复数形式，与主语不一致；Was 是过去时，与现在语境不符。",
+      "evidence_sentence": "The information about the ferries is posted on the wall.",
+      "context_clue": "The information about the ferries is posted on the wall.",
+      "clue_argument": "information 为不可数名词，谓语用单数。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best option for blank ⑩.",
+      "options": ["the", "a", "an", "不填"],
+      "answer": "the",
+      "explanation": "此处特指前文提到的那个岛，用定冠词 the。A 用于泛指单数可数名词，此处不泛指；An 用于元音音素开头的词前，island 以元音音素开头但此处需特指。",
+      "evidence_sentence": "We also learned that the island is a popular place for tourists.",
+      "context_clue": "We also learned that the island is a popular place for tourists.",
+      "clue_argument": "特指前文提到的 island，用定冠词 the。"
+    }
+  ]
+}

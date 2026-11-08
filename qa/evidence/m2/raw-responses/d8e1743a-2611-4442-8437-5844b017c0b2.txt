@@ -1,0 +1,65 @@
+{
+  "passage": "In the small town of Willow Bay, tourism had brought money but also trouble. Maya, a local teacher, noticed that the beach was often covered with plastic bottles left by visitors. She decided to act. With her students, she started a weekend clean-up group. They also asked hotels to use less packaging. At first, some business owners worried about losing customers. But Maya explained that a clean beach would attract more visitors in the long run. Slowly, attitudes changed. The town council introduced a rule: shops could not give free plastic bags. Instead, they sold reusable cloth bags. Tourists liked the idea and shared photos online. Soon, Willow Bay became known as a green destination. Maya’s efforts show that sustainable tourism is possible when local people take the lead. It was this community spirit that turned a problem into an opportunity.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can be inferred about the business owners' initial reaction to Maya's idea?",
+      "options": [
+        "They supported it immediately.",
+        "They were concerned about their profits.",
+        "They ignored Maya completely.",
+        "They wanted to leave the town."
+      ],
+      "answer": "They were concerned about their profits.",
+      "explanation": "文中提到一些企业主担心失去顾客，说明他们起初担心利润受影响。A项与原文相反，C项和D项在文中没有依据。",
+      "evidence_sentence": "At first, some business owners worried about losing customers.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "The word 'sustainable' in the passage is closest in meaning to ______.",
+      "options": [
+        "profitable",
+        "environmentally friendly",
+        "temporary",
+        "expensive"
+      ],
+      "answer": "environmentally friendly",
+      "explanation": "结合上下文，可持续旅游强调环保和长期发展，因此“environmentally friendly”最接近。A项只强调盈利，C项强调短暂，D项强调昂贵，都不符合语境。",
+      "evidence_sentence": "Maya’s efforts show that sustainable tourism is possible when local people take the lead.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the author's attitude towards Maya's actions?",
+      "options": [
+        "Doubtful",
+        "Critical",
+        "Supportive",
+        "Indifferent"
+      ],
+      "answer": "Supportive",
+      "explanation": "作者用“community spirit”和“turned a problem into an opportunity”等积极表述，显示支持态度。A项怀疑和B项批评与原文语气不符，D项漠不关心也不正确。",
+      "evidence_sentence": "It was this community spirit that turned a problem into an opportunity.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Tourism always causes environmental problems.",
+        "Local communities can promote sustainable tourism.",
+        "Plastic bags should be banned everywhere.",
+        "Hotels should stop using packaging."
+      ],
+      "answer": "Local communities can promote sustainable tourism.",
+      "explanation": "文章通过Maya和社区的努力说明可持续旅游是可能的，因此B项概括了主旨。A项过于绝对，C项和D项只是文中细节，不是主旨。",
+      "evidence_sentence": "Maya’s efforts show that sustainable tourism is possible when local people take the lead.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

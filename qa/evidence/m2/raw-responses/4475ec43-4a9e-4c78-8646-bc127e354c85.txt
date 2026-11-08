@@ -1,0 +1,65 @@
+{
+  "passage": "The City Museum's education program, which was started by Dr. Chen in 2015, brings history to life for local high school students. Every week, students visit the museum to examine real artifacts, such as ancient pottery and tools. The program's goal is to help students connect classroom lessons with genuine historical objects. If the museum had not offered this program, many students would never have seen such items up close. The museum also requires that each student should write a short report after every visit. These reports help students reflect on what they have learned. One student, Ming, said, \"I used to think history was just dates in textbooks, but now I feel I am touching the past.\" The program has been so successful that other schools have asked to join. Dr. Chen hopes that the program will continue to grow and that more students will benefit from it. The museum's hands-on approach has clearly made a difference in how students view history.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the museum's education program?",
+      "options": [
+        "To help students connect classroom lessons with real historical objects.",
+        "To train students to become museum guides.",
+        "To sell ancient pottery to schools.",
+        "To replace textbooks with online materials."
+      ],
+      "answer": "To help students connect classroom lessons with real historical objects.",
+      "explanation": "文章第一段明确指出项目目标是帮助学生将课堂学习与真实历史文物联系起来。A项是原文的同义转述；B项和C项在文中没有依据，且C项与博物馆教育目的不符。因此B和C是错误选项。",
+      "evidence_sentence": "The program's goal is to help students connect classroom lessons with genuine historical objects.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "The museum's education program effectively connects students with history.",
+        "Dr. Chen started the program in 2015.",
+        "Students must write reports after visits.",
+        "Other schools want to join the program."
+      ],
+      "answer": "The museum's education program effectively connects students with history.",
+      "explanation": "全文围绕博物馆教育项目如何让学生接触真实历史并产生积极影响展开。A项概括了全文主旨；B项和C项只是文中的细节，不能概括全文。因此B和C是错误选项。",
+      "evidence_sentence": "The museum's hands-on approach has clearly made a difference in how students view history.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what is required of each student after every visit?",
+      "options": [
+        "To write a short report.",
+        "To give a presentation.",
+        "To interview Dr. Chen.",
+        "To donate an artifact."
+      ],
+      "answer": "To write a short report.",
+      "explanation": "文中明确提到博物馆要求每个学生每次参观后写一篇简短报告。A项是原文直接信息；B项、C项和D项在文中均未提及。因此B和D是错误选项。",
+      "evidence_sentence": "The museum also requires that each student should write a short report after every visit.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can be inferred about the program from the passage?",
+      "options": [
+        "It has positively changed students' attitudes toward history.",
+        "It is too expensive for most schools.",
+        "It focuses only on ancient pottery.",
+        "It has replaced traditional classroom teaching."
+      ],
+      "answer": "It has positively changed students' attitudes toward history.",
+      "explanation": "文中提到学生Ming说以前认为历史只是课本上的日期，现在感觉在触摸过去，且最后一句说项目改变了学生对历史的看法，可推断项目积极改变了学生的态度。A项符合推断；B项和C项在文中没有依据，D项夸大了项目作用。因此B和C是错误选项。",
+      "evidence_sentence": "The museum's hands-on approach has clearly made a difference in how students view history.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

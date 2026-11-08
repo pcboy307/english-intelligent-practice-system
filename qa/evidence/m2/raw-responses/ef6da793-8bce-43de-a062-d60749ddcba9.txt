@@ -1,0 +1,65 @@
+{
+  "passage": "Digital privacy is a hot topic among teenagers. A recent survey at a high school asked students what they do to protect their personal information online. The results were surprising. Only a small number of students said they read the privacy rules before they click \"agree\". Most students simply accept them without thinking. One student explained, \"I know my data is collected, but I don't know how to stop it.\" Her teacher, however, believes that students can take simple steps. \"It is not the app that steals your data,\" she said. \"It is often the permissions you give that matter most.\" She advises students to turn off location services when they are not needed and to use strong passwords. The student now checks her phone settings every week. She also talks with her classmates about what they share online. \"The more careful you are,\" she says, \"the safer your digital life will be.\" The survey shows that awareness is growing, but there is still a long way to go.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What did the survey find about most students?",
+      "options": [
+        "They read privacy rules carefully.",
+        "They accept privacy rules without thinking.",
+        "They never use apps.",
+        "They always turn off location services."
+      ],
+      "answer": "They accept privacy rules without thinking.",
+      "explanation": "文章明确说大多数学生不假思索地接受隐私规则，因此选此项。A项与原文相反，原文说只有少数学生阅读隐私规则；C项过于绝对，原文并未说学生从不使用应用。",
+      "evidence_sentence": "Most students simply accept them without thinking.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about the teacher's opinion?",
+      "options": [
+        "Apps are always safe.",
+        "Students should not use phones.",
+        "Students can protect their privacy by managing permissions.",
+        "Privacy rules are useless."
+      ],
+      "answer": "Students can protect their privacy by managing permissions.",
+      "explanation": "老师认为数据泄露往往是因为学生给出的权限，并建议关闭位置服务、使用强密码，由此可推断管理权限有助于保护隐私。A项与老师观点相反；B项过度推断，老师并未建议禁用手机。",
+      "evidence_sentence": "She advises students to turn off location services when they are not needed and to use strong passwords.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"awareness\" in the last sentence most probably mean?",
+      "options": [
+        "Knowledge or understanding.",
+        "Money.",
+        "Equipment.",
+        "Permission."
+      ],
+      "answer": "Knowledge or understanding.",
+      "explanation": "根据上下文，调查显示学生对数字隐私的意识在增长，awareness意为“意识、认识”。B项“金钱”与语境无关；C项“设备”也不符合句意。",
+      "evidence_sentence": "The survey shows that awareness is growing, but there is still a long way to go.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the author's attitude towards students' digital privacy?",
+      "options": [
+        "Worried but hopeful.",
+        "Angry and disappointed.",
+        "Uninterested.",
+        "Completely satisfied."
+      ],
+      "answer": "Worried but hopeful.",
+      "explanation": "作者一方面指出学生隐私保护不足，另一方面也说意识在增长、仍有很长的路要走，态度是担忧但抱有希望。B项“愤怒和失望”语气过重；D项“完全满意”与原文“仍有很长的路要走”矛盾。",
+      "evidence_sentence": "The survey shows that awareness is growing, but there is still a long way to go.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

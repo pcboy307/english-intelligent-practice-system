@@ -1,0 +1,1 @@
+{"translations": {"assembly": "集会", "downside": "缺点", "invention": "发明", "repetitive": "重复", "t": "T", "wages": "工资", "workshop": "车间"}}

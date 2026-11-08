@@ -1,0 +1,1 @@
+{"translations": {"broken": "破碎", "circular": "圆形", "grant": "授予", "reusing": "再利用"}}

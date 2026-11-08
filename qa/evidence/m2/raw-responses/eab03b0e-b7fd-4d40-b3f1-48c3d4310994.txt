@@ -1,0 +1,65 @@
+{
+  "passage": "Many people think that protecting wildlife is a job only for scientists. However, a group of students at a high school in Beijing decided that they could make a difference. Last spring, they started a club called \"Friends of Wildlife\". Their aim was to help animals in their local area. First, they learned that many birds were being hurt by plastic waste. So they organised a weekend clean-up at a nearby park. They collected over 200 plastic bags and bottles. Then, they put up posters to remind people not to litter. The club also invited a local expert to give a talk. She explained how animals' homes are being destroyed by human activities. The students were shocked and wanted to do more. They wrote a letter to the local government, suggesting that more trees should be planted along the river. To their surprise, the government replied and promised to take action. Now the club has 50 members, and they meet every Friday. They believe that if everyone helped, the world would be a better place for both humans and animals. Their teacher says, \"It is important that young people should care about nature.\" The students feel proud of what they have achieved.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To describe how students started a wildlife protection club and made efforts to help.",
+        "To explain why scientists are the only ones who can protect wildlife.",
+        "To warn people about the dangers of plastic waste.",
+        "To compare different ways of protecting animals."
+      ],
+      "answer": "To describe how students started a wildlife protection club and made efforts to help.",
+      "explanation": "文章主要讲述了学生们成立野生动物保护俱乐部并采取行动保护动物的故事，因此目的是描述他们的努力。A项正确。B项与首句\"Many people think that protecting wildlife is a job only for scientists\"相反，且文章强调学生也能做出改变；C项只是文中提到的一个细节，并非全文目的。",
+      "evidence_sentence": "Many people think that protecting wildlife is a job only for scientists. However, a group of students at a high school in Beijing decided that they could make a difference.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Students can make a difference in wildlife protection through small actions.",
+        "Plastic waste is the biggest threat to birds.",
+        "The local government is responsible for protecting animals.",
+        "Only experts can solve environmental problems."
+      ],
+      "answer": "Students can make a difference in wildlife protection through small actions.",
+      "explanation": "全文通过学生成立俱乐部、清理垃圾、写信建议等具体行动，说明学生也能为野生动物保护做出贡献。A项概括了主旨。B项只是文中提到的一个具体问题，不是主旨；D项与文章首句批评的观点一致，但文章旨在反驳它。",
+      "evidence_sentence": "However, a group of students at a high school in Beijing decided that they could make a difference.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what did the students do to help protect wildlife?",
+      "options": [
+        "They cleaned up plastic waste in a park and put up posters.",
+        "They planted trees along the river themselves.",
+        "They gave a talk about wildlife protection.",
+        "They collected money for an animal shelter."
+      ],
+      "answer": "They cleaned up plastic waste in a park and put up posters.",
+      "explanation": "文中明确提到学生们在公园清理塑料垃圾并张贴海报提醒人们不要乱扔垃圾。A项正确。B项错误，他们只是建议政府种树，并未亲自种树；C项错误，是一位专家来做讲座，不是学生。",
+      "evidence_sentence": "So they organised a weekend clean-up at a nearby park. They collected over 200 plastic bags and bottles. Then, they put up posters to remind people not to litter.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer from the teacher's words in the last paragraph?",
+      "options": [
+        "Young people should take responsibility for protecting nature.",
+        "Students should focus more on their studies than on clubs.",
+        "The government should do more to protect animals.",
+        "The club has achieved all its goals."
+      ],
+      "answer": "Young people should take responsibility for protecting nature.",
+      "explanation": "老师的话\"It is important that young people should care about nature\"暗示年轻人应当关心自然、承担保护自然的责任。A项符合推断。B项与老师鼓励的态度相反；C项是过度推断，老师的话并未直接提及政府。",
+      "evidence_sentence": "Their teacher says, \"It is important that young people should care about nature.\"",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

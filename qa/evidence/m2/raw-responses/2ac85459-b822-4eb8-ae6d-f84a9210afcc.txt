@@ -1,0 +1,1 @@
+{"translations": {"panels": "面板", "problem-solving": "解决问题", "renewable": "可再生", "shaded": "遮阴"}}

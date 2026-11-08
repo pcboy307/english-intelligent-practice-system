@@ -1,0 +1,65 @@
+{
+  "passage": "When the student first joined the school drama club, she felt alone. She believed that nobody would notice her. Her teacher, however, saw something special in her. The teacher advised her to try out for the lead role in the spring play. The student was afraid to act in front of others, but she decided to accept the challenge. A classmate, who had been in the club for two years, offered to help her practise. They met every afternoon for a month. Slowly, the student began to trust her classmate. She learned that friendship is built on shared effort and honest advice. On the night of the performance, the student forgot her lines for a moment. Her classmate, standing backstage, whispered the words to her. The student finished the play with confidence. After the show, she thanked her classmate and said, \"If you had not helped me, I would have given up.\" The teacher smiled and told them that true friendship means being there for each other. The student realised that trust is not something you find by chance; it is something you build together.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What did the teacher advise the student to do?",
+      "options": [
+        "To join the drama club",
+        "To try out for the lead role",
+        "To practise every afternoon",
+        "To thank her classmate"
+      ],
+      "answer": "To try out for the lead role",
+      "explanation": "文中明确提到老师建议她尝试主角角色。A项是已经发生的事，不是建议；C项是同学帮助她的做法，不是老师的建议。",
+      "evidence_sentence": "The teacher advised her to try out for the lead role in the spring play.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about the student's feelings after the performance?",
+      "options": [
+        "She felt angry with her classmate.",
+        "She felt grateful to her classmate.",
+        "She felt sorry for the teacher.",
+        "She felt afraid of acting again."
+      ],
+      "answer": "She felt grateful to her classmate",
+      "explanation": "从她感谢同学并说“如果你没帮我，我早就放弃了”可以推断她心怀感激。A项与感谢矛盾；D项与“with confidence”矛盾。",
+      "evidence_sentence": "After the show, she thanked her classmate and said, \"If you had not helped me, I would have given up.\"",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"whispered\" most probably mean in the passage?",
+      "options": [
+        "Spoke very quietly",
+        "Shouted loudly",
+        "Wrote down",
+        "Sang beautifully"
+      ],
+      "answer": "Spoke very quietly",
+      "explanation": "根据语境，同学在后台低声提示台词，所以whispered意为“低声说”。B项“大声喊”与后台提示不符；C项“写下”与口头提示不符。",
+      "evidence_sentence": "Her classmate, standing backstage, whispered the words to her.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To explain how to act in a play",
+        "To show the importance of friendship and trust",
+        "To describe a teacher's daily work",
+        "To warn students against joining clubs"
+      ],
+      "answer": "To show the importance of friendship and trust",
+      "explanation": "全文通过学生和同学之间的互助故事，说明友谊和信任的重要性。A项只是故事背景，不是主旨；D项与文章鼓励参与社团的态度相反。",
+      "evidence_sentence": "The student realised that trust is not something you find by chance; it is something you build together.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

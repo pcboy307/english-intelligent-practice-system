@@ -1,0 +1,95 @@
+{
+  "passage": "Last month, our school held a science fair. The student and her teacher planned a project about clean water. A classmate helped them build a small filter. (1) It was the student who first had the idea of using sand and charcoal. (2) The filter was tested many times before the fair. (3) Only after several failures did they get clear water. (4) The student felt proud of their work. (5) What they enjoyed most was explaining the filter to visitors. Their project won a prize, and they learned that teamwork makes hard tasks easier.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the sentence that best fits blank (1).",
+      "options": [
+        "It was the student who first had the idea of using sand and charcoal.",
+        "The teacher bought some new books for the library.",
+        "They decided to visit the museum on Saturday.",
+        "The classmate forgot to bring his homework.",
+        "The school built a new playground last year.",
+        "Many students enjoy playing basketball after school.",
+        "The science fair was held in the gym."
+      ],
+      "answer": "A",
+      "explanation": "空白后一句提到“他们”反复测试过滤器，说明主意是学生提出的。A项用强调句引出学生，与上下文衔接自然。B、C项与科学展项目无关，D项与帮助建过滤器的同学矛盾。",
+      "evidence_sentence": "The student and her teacher planned a project about clean water.",
+      "context_clue": "A classmate helped them build a small filter.",
+      "clue_argument": "后文说他们测试过滤器，说明主意来自学生，A项符合逻辑。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the sentence that best fits blank (2).",
+      "options": [
+        "The filter was tested many times before the fair.",
+        "The student forgot to bring her notes.",
+        "They watched a movie about animals.",
+        "The teacher gave a speech about history.",
+        "The fair was cancelled because of rain.",
+        "The classmate lost his wallet on the bus.",
+        "The school band played music at noon."
+      ],
+      "answer": "A",
+      "explanation": "后文“Only after several failures did they get clear water”说明过滤器经过多次测试。A项被动语态“was tested”与“failures”呼应。B、C项与测试过滤器无关，D项是无关演讲。",
+      "evidence_sentence": "Only after several failures did they get clear water.",
+      "context_clue": "Only after several failures did they get clear water.",
+      "clue_argument": "“several failures”表明测试多次，A项“tested many times”直接对应。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the sentence that best fits blank (3).",
+      "options": [
+        "Only after several failures did they get clear water.",
+        "They decided to plant more trees in the garden.",
+        "The student's mother cooked dinner for the family.",
+        "The classmate bought a new bicycle yesterday.",
+        "The teacher read a story about a brave king.",
+        "The science fair was moved to the library.",
+        "Many visitors came to see the art show."
+      ],
+      "answer": "A",
+      "explanation": "前文说过滤器经过多次测试，后文说学生感到自豪，A项“Only after several failures did they get clear water”用部分倒装承接测试结果，逻辑连贯。B、C项与过滤器测试无关，D项是无关故事。",
+      "evidence_sentence": "The filter was tested many times before the fair.",
+      "context_clue": "The filter was tested many times before the fair.",
+      "clue_argument": "“tested many times”暗示有失败，A项“several failures”与之呼应。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the sentence that best fits blank (4).",
+      "options": [
+        "The student felt proud of their work.",
+        "The teacher decided to retire early.",
+        "The classmate moved to another city.",
+        "The school closed for the summer holiday.",
+        "The visitors left without saying goodbye.",
+        "The project was forgotten after the fair.",
+        "The student's parents bought a new car."
+      ],
+      "answer": "A",
+      "explanation": "前文说他们最终得到清水，后文说项目获奖，A项“The student felt proud of their work”符合成功后的心情。B、C项与项目成功无关，D项与后文获奖矛盾。",
+      "evidence_sentence": "Only after several failures did they get clear water.",
+      "context_clue": "Only after several failures did they get clear water.",
+      "clue_argument": "成功得到清水后自然感到自豪，A项承上启下。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the sentence that best fits blank (5).",
+      "options": [
+        "What they enjoyed most was explaining the filter to visitors.",
+        "The student wanted to buy a new phone.",
+        "The teacher forgot to lock the classroom.",
+        "The classmate was late for the school bus.",
+        "The fair was held in the school hall.",
+        "Many students brought their lunch to school.",
+        "The principal gave a speech about safety."
+      ],
+      "answer": "A",
+      "explanation": "后文“Their project won a prize”说明项目受到认可，A项“What they enjoyed most was explaining the filter to visitors”用主语从句强调他们喜欢向参观者解释过滤器，与获奖呼应。B、C项与项目展示无关，D项与获奖无直接关系。",
+      "evidence_sentence": "Their project won a prize, and they learned that teamwork makes hard tasks easier.",
+      "context_clue": "Their project won a prize, and they learned that teamwork makes hard tasks easier.",
+      "clue_argument": "获奖说明展示成功，A项“explaining the filter to visitors”是展示环节。"
+    }
+  ]
+}

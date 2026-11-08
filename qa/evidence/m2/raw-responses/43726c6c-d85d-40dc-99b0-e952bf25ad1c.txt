@@ -1,0 +1,65 @@
+{
+  "passage": "Climate change is one of the biggest challenges of our time. Many young people are taking action. Last year, a group of students at a high school started a club called Green Future. The club aims to reduce waste and save energy. At first, only a few students joined, but soon more than fifty members were active. They organised recycling programmes and planted trees on campus. They also encouraged their classmates to walk or cycle to school instead of taking cars. The student leader, a girl named Lily, said, \"We want to make a difference, so we take small steps every day.\" The club's efforts have already had a positive effect. The school's waste has decreased by 30 per cent, and more students are aware of environmental issues. However, some students still think their actions are too small to matter. Lily disagrees. She believes that if everyone does their part, the combined effect will be huge. With more and more young people joining the movement, the future looks greener.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the author's main purpose in writing the passage?",
+      "options": [
+        "To explain the causes of climate change.",
+        "To describe how a student club is taking action on climate change.",
+        "To argue that young people cannot solve environmental problems.",
+        "To compare different schools' environmental programmes."
+      ],
+      "answer": "To describe how a student club is taking action on climate change.",
+      "explanation": "文章主要描述了Green Future社团如何通过具体行动应对气候变化，因此目的是描述学生社团的行动。A项错误，因为文章没有解释气候变化的原因；C项错误，因为文章整体是积极鼓励的，并非论证年轻人无法解决问题。",
+      "evidence_sentence": "Last year, a group of students at a high school started a club called Green Future.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Students should focus on their studies instead of environmental issues.",
+        "A student club's actions have raised awareness and reduced waste.",
+        "Climate change is too difficult for individuals to address.",
+        "Recycling programmes are the only way to save energy."
+      ],
+      "answer": "A student club's actions have raised awareness and reduced waste.",
+      "explanation": "文章的主旨是学生社团的行动提高了意识并减少了浪费。A项错误，因为文章鼓励学生参与环保行动；C项错误，因为文章强调个人行动的重要性。",
+      "evidence_sentence": "The club's efforts have already had a positive effect. The school's waste has decreased by 30 per cent, and more students are aware of environmental issues.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what have the club's efforts achieved?",
+      "options": [
+        "They have reduced the school's waste by 30 per cent.",
+        "They have completely stopped climate change.",
+        "They have persuaded all students to cycle to school.",
+        "They have planted trees in the local community."
+      ],
+      "answer": "They have reduced the school's waste by 30 per cent.",
+      "explanation": "文章明确提到学校的浪费减少了30%。B项错误，因为文章没有说完全阻止气候变化；C项错误，因为文章只说鼓励，并未说所有学生都骑车。",
+      "evidence_sentence": "The school's waste has decreased by 30 per cent, and more students are aware of environmental issues.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can be inferred about Lily's attitude towards individual actions?",
+      "options": [
+        "She thinks individual actions are useless.",
+        "She believes individual actions can make a big difference when combined.",
+        "She is unsure whether individual actions matter.",
+        "She thinks only government actions can solve the problem."
+      ],
+      "answer": "She believes individual actions can make a big difference when combined.",
+      "explanation": "从Lily的话可以推断，她认为如果每个人都尽自己的一份力，综合效果会很大。A项错误，因为她不同意这种观点；C项错误，因为她很确定。",
+      "evidence_sentence": "She believes that if everyone does their part, the combined effect will be huge.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

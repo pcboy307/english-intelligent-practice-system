@@ -1,0 +1,1 @@
+{"translations": {"coal": "煤炭", "panels": "面板", "renewable": "可再生"}}

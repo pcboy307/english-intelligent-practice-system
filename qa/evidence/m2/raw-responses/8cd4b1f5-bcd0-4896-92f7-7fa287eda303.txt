@@ -1,0 +1,105 @@
+{
+  "passage": "Last spring, my cousin and I took a trip to the coast. It was not the destination but the journey that made the trip unforgettable. We had planned everything carefully, yet nothing went as expected. By the time we reached the station, the train had already left. We waited for the next one, and while we sat on the platform（站台）, we talked about how we would spend the week. When we finally arrived, the sun was setting. The next morning, we rented bikes and rode along the shore. The scenery was amazing. Every view seemed more beautiful than the last. Our favourite part was a small fishing village where the local people were very friendly. One afternoon, a sudden storm hit, so we stayed in a café and played cards. Looking back, I realise that the unexpected moments were the best. The trip taught me that travel is not just about seeing new places; it is also about enjoying the time you spend with the people you love.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "It was not the destination but the journey ______ made the trip unforgettable.",
+      "options": ["that", "what", "which", "who"],
+      "answer": "that",
+      "explanation": "此处是强调句型 It was ... that ...，强调主语 the journey，连接词用 that。what 不能用于强调句；which 不能引导强调句。",
+      "evidence_sentence": "It was not the destination but the journey that made the trip unforgettable.",
+      "context_clue": "It was not the destination but the journey ______ made the trip unforgettable.",
+      "clue_argument": "强调句型结构 It was ... that ... 需要 that。"
+    },
+    {
+      "question_index": 2,
+      "stem": "It was in a small fishing village ______ we met the friendly local people.",
+      "options": ["that", "where", "which", "when"],
+      "answer": "that",
+      "explanation": "这是强调地点的强调句，结构为 It was in a small fishing village that ...，不能用 where。where 引导定语从句但此处不是定语从句；which 不能用于强调句。",
+      "evidence_sentence": "Our favourite part was a small fishing village where the local people were very friendly.",
+      "context_clue": "It was in a small fishing village ______ we met the friendly local people.",
+      "clue_argument": "强调地点状语的强调句用 that。"
+    },
+    {
+      "question_index": 3,
+      "stem": "It was the unexpected moments ______ taught me the most.",
+      "options": ["that", "what", "which", "who"],
+      "answer": "that",
+      "explanation": "强调主语 the unexpected moments 的强调句，用 that。what 不能用于强调句；which 不能引导强调句。",
+      "evidence_sentence": "Looking back, I realise that the unexpected moments were the best.",
+      "context_clue": "It was the unexpected moments ______ taught me the most.",
+      "clue_argument": "强调主语时用 that。"
+    },
+    {
+      "question_index": 4,
+      "stem": "By the time we reached the station, the train ______ already left.",
+      "options": ["had", "has", "was", "would"],
+      "answer": "had",
+      "explanation": "by the time 引导的从句用一般过去时，主句表示“过去的过去”，用过去完成时 had left。has 是现在完成时，与过去时间不符；was 不能构成完成时。",
+      "evidence_sentence": "By the time we reached the station, the train had already left.",
+      "context_clue": "By the time we reached the station, the train ______ already left.",
+      "clue_argument": "by the time + 过去时，主句用过去完成时。"
+    },
+    {
+      "question_index": 5,
+      "stem": "When we finally arrived, the sun ______ setting.",
+      "options": ["was", "is", "has been", "had been"],
+      "answer": "was",
+      "explanation": "描述过去某一时刻正在进行的动作，用过去进行时 was setting。is 是现在时；has been 是现在完成时。",
+      "evidence_sentence": "When we finally arrived, the sun was setting.",
+      "context_clue": "When we finally arrived, the sun ______ setting.",
+      "clue_argument": "过去某时正在发生，用过去进行时。"
+    },
+    {
+      "question_index": 6,
+      "stem": "The next morning, we rented bikes and ______ along the shore.",
+      "options": ["rode", "ride", "riding", "ridden"],
+      "answer": "rode",
+      "explanation": "and 连接两个并列的谓语动词，前面 rented 是过去式，所以后面也用过去式 rode。ride 是原形；riding 不能作谓语。",
+      "evidence_sentence": "The next morning, we rented bikes and rode along the shore.",
+      "context_clue": "The next morning, we rented bikes and ______ along the shore.",
+      "clue_argument": "并列谓语时态一致，用过去式。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Every view ______ more beautiful than the last.",
+      "options": ["seemed", "seem", "seeming", "to seem"],
+      "answer": "seemed",
+      "explanation": "主语 Every view 是单数，谓语用单数；全文是过去时，所以用 seemed。seem 是原形，与单数主语不一致；seeming 不能作谓语。",
+      "evidence_sentence": "Every view seemed more beautiful than the last.",
+      "context_clue": "Every view ______ more beautiful than the last.",
+      "clue_argument": "every + 单数名词作主语，谓语用单数。"
+    },
+    {
+      "question_index": 8,
+      "stem": "The local people ______ very friendly.",
+      "options": ["were", "was", "is", "has been"],
+      "answer": "were",
+      "explanation": "主语 The local people 是复数，且全文为过去时，所以用 were。was 是单数；is 是现在时。",
+      "evidence_sentence": "Our favourite part was a small fishing village where the local people were very friendly.",
+      "context_clue": "The local people ______ very friendly.",
+      "clue_argument": "people 作主语视为复数，过去时用 were。"
+    },
+    {
+      "question_index": 9,
+      "stem": "One afternoon, a sudden storm ______, so we stayed in a café.",
+      "options": ["hit", "hits", "hitting", "to hit"],
+      "answer": "hit",
+      "explanation": "主语 a sudden storm 是单数，全文为过去时，所以用 hit（过去式）。hits 是现在时单数；hitting 不能作谓语。",
+      "evidence_sentence": "One afternoon, a sudden storm hit, so we stayed in a café and played cards.",
+      "context_clue": "One afternoon, a sudden storm ______, so we stayed in a café.",
+      "clue_argument": "单数主语，过去时用 hit。"
+    },
+    {
+      "question_index": 10,
+      "stem": "The trip taught me that travel is not just about seeing new places; it is also about enjoying ______ time you spend with the people you love.",
+      "options": ["the", "a", "an", "/"],
+      "answer": "the",
+      "explanation": "time 后面有定语从句 you spend with the people you love 限定，表示特指，用定冠词 the。a 和 an 表示泛指，不符合语境。",
+      "evidence_sentence": "The trip taught me that travel is not just about seeing new places; it is also about enjoying the time you spend with the people you love.",
+      "context_clue": "it is also about enjoying ______ time you spend with the people you love.",
+      "clue_argument": "后有定语从句限定，特指这段时间，用 the。"
+    }
+  ]
+}

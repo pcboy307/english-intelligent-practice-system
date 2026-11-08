@@ -1,0 +1,105 @@
+{
+  "passage": "Last month, our community centre organised a volunteer clean-up day. Many people joined, and everyone was excited to help. ①______ we arrived at the park, we were given gloves and bags. If I ②______ more free time, I would volunteer every week. If everyone ③______ a small part, the community would be much cleaner. I wish I ④______ more people to join us next time. The organiser suggested that each volunteer ⑤______ at least two hours. It is important that every participant ⑥______ the safety rules. Our teacher recommended that we ⑦______ our own water bottles. Not only ⑧______ the clean-up make the park beautiful, but it also brought neighbours together. Only after we finished ⑨______ we realise how much rubbish we had collected. Hardly ⑩______ we started when it began to rain, but we did not give up.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "①______",
+      "options": ["When", "Before", "After", "While"],
+      "answer": "When",
+      "explanation": "此处表示“当我们到达公园时”，用When引导时间状语从句。Before和After与语境不符，While强调持续，不适用。",
+      "evidence_sentence": "When we arrived at the park, we were given gloves and bags.",
+      "context_clue": "When we arrived at the park, we were given gloves and bags.",
+      "clue_argument": "表示到达那一刻的动作，用When。"
+    },
+    {
+      "question_index": 2,
+      "stem": "②______",
+      "options": ["have", "had", "will have", "would have"],
+      "answer": "had",
+      "explanation": "if从句表示与现在事实相反的假设，谓语用一般过去时，故用had。have和will have不符合虚拟语气，would have用于主句。",
+      "evidence_sentence": "If I had more free time, I would volunteer every week.",
+      "context_clue": "If I had more free time, I would volunteer every week.",
+      "clue_argument": "与现在事实相反，if从句用过去时。"
+    },
+    {
+      "question_index": 3,
+      "stem": "③______",
+      "options": ["does", "did", "do", "doing"],
+      "answer": "did",
+      "explanation": "if从句表示与现在事实相反，用一般过去时，主语everyone为单数，故用did。does和do不是过去式，doing不能作谓语。",
+      "evidence_sentence": "If everyone did a small part, the community would be much cleaner.",
+      "context_clue": "If everyone did a small part, the community would be much cleaner.",
+      "clue_argument": "与现在事实相反，用过去式did。"
+    },
+    {
+      "question_index": 4,
+      "stem": "④______",
+      "options": ["can persuade", "could persuade", "persuade", "persuaded"],
+      "answer": "could persuade",
+      "explanation": "wish后的宾语从句表示与现在事实相反的愿望，用could+动词原形。can persuade不是虚拟形式，persuade和persuaded时态不对。",
+      "evidence_sentence": "I wish I could persuade more people to join us next time.",
+      "context_clue": "I wish I could persuade more people to join us next time.",
+      "clue_argument": "wish从句与现在事实相反，用could do。"
+    },
+    {
+      "question_index": 5,
+      "stem": "⑤______",
+      "options": ["spends", "spend", "spent", "spending"],
+      "answer": "spend",
+      "explanation": "suggest表示建议时，从句用should+动词原形，should可省略，故用spend。spends和spent不是原形，spending不能作谓语。",
+      "evidence_sentence": "The organiser suggested that each volunteer spend at least two hours.",
+      "context_clue": "The organiser suggested that each volunteer spend at least two hours.",
+      "clue_argument": "suggest表建议，从句用(should) do。"
+    },
+    {
+      "question_index": 6,
+      "stem": "⑥______",
+      "options": ["follows", "follow", "followed", "following"],
+      "answer": "follow",
+      "explanation": "It is important that句型中，从句用should+动词原形，should省略，故用follow。follows和followed不是原形，following不能作谓语。",
+      "evidence_sentence": "It is important that every participant follow the safety rules.",
+      "context_clue": "It is important that every participant follow the safety rules.",
+      "clue_argument": "important后的主语从句用(should) do。"
+    },
+    {
+      "question_index": 7,
+      "stem": "⑦______",
+      "options": ["bring", "brought", "brings", "bringing"],
+      "answer": "bring",
+      "explanation": "recommend表示建议，从句用should+动词原形，should省略，故用bring。brought和brings不是原形，bringing不能作谓语。",
+      "evidence_sentence": "Our teacher recommended that we bring our own water bottles.",
+      "context_clue": "Our teacher recommended that we bring our own water bottles.",
+      "clue_argument": "recommend表建议，从句用(should) do。"
+    },
+    {
+      "question_index": 8,
+      "stem": "⑧______",
+      "options": ["the clean-up made", "the clean-up did make", "did the clean-up make", "the clean-up makes"],
+      "answer": "did the clean-up make",
+      "explanation": "Not only位于句首时，主句用部分倒装，即助动词+主语+谓语，故用did the clean-up make。其他选项未倒装或时态不对。",
+      "evidence_sentence": "Not only did the clean-up make the park beautiful, but it also brought neighbours together.",
+      "context_clue": "Not only did the clean-up make the park beautiful, but it also brought neighbours together.",
+      "clue_argument": "Not only句首，主句部分倒装。"
+    },
+    {
+      "question_index": 9,
+      "stem": "⑨______",
+      "options": ["we did", "did we", "we do", "do we"],
+      "answer": "did we",
+      "explanation": "Only+状语从句位于句首时，主句用部分倒装，即助动词+主语，故用did we。we did未倒装，we do和do we时态不对。",
+      "evidence_sentence": "Only after we finished did we realise how much rubbish we had collected.",
+      "context_clue": "Only after we finished did we realise how much rubbish we had collected.",
+      "clue_argument": "Only+状语从句句首，主句部分倒装。"
+    },
+    {
+      "question_index": 10,
+      "stem": "⑩______",
+      "options": ["we had started", "had we started", "we started", "did we start"],
+      "answer": "had we started",
+      "explanation": "Hardly位于句首时，主句用部分倒装，且表示“一……就……”，用过去完成时，故用had we started。we had started未倒装，we started和did we start时态不对。",
+      "evidence_sentence": "Hardly had we started when it began to rain, but we did not give up.",
+      "context_clue": "Hardly had we started when it began to rain, but we did not give up.",
+      "clue_argument": "Hardly句首，主句部分倒装且用过去完成时。"
+    }
+  ]
+}

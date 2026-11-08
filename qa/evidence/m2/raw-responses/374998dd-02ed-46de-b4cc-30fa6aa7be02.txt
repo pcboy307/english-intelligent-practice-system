@@ -1,0 +1,65 @@
+{
+  "passage": "Learning a musical instrument is a journey that requires patience and practice. Many students begin with great enthusiasm, but soon find that progress is slow. Emma, a high school student, started learning the piano two years ago. At first, she expected to play beautiful songs quickly. However, she discovered that mastering basic skills took much longer than she had imagined. Her teacher, Mr. Chen, often reminded her that daily practice is the key to improvement. Emma learned to set small goals for each week. She also joined the school band, where she played with other students. Working in a group taught her the importance of listening and cooperating. Now, Emma can play several pieces well, and she feels proud of her achievement. She believes that learning music has not only given her a skill but also helped her become more patient and confident. For Emma, music is more than a hobby; it is a way to express herself and connect with others.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about Emma's initial expectation of learning the piano?",
+      "options": [
+        "She thought it would be easy to play songs quickly.",
+        "She knew it would take years to master.",
+        "She expected to join the school band immediately.",
+        "She believed she had no talent for music."
+      ],
+      "answer": "She thought it would be easy to play songs quickly.",
+      "explanation": "文章提到Emma起初期望很快就能弹奏优美的歌曲，但发现掌握基本技能花的时间比她想象的长得多，因此可以推断她最初认为学钢琴并快速弹奏是容易的。A项正确。B项说她认为需要多年才能掌握，与原文相反；C项说她期望立即加入乐队，原文未提及；D项说她认为自己没有音乐天赋，原文也未提及。",
+      "evidence_sentence": "At first, she expected to play beautiful songs quickly. However, she discovered that mastering basic skills took much longer than she had imagined.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"mastering\" in the passage most likely mean?",
+      "options": [
+        "Learning to control or use something completely",
+        "Teaching someone else a skill",
+        "Practicing for a short time",
+        "Forgetting something gradually"
+      ],
+      "answer": "Learning to control or use something completely",
+      "explanation": "根据上下文，Emma发现“mastering basic skills”花的时间比她想象的长，这里的mastering指“掌握、精通”，即学会完全控制或使用某项技能。A项正确。B项“教别人技能”不符合语境；C项“短时间练习”与原文“took much longer”矛盾；D项“逐渐忘记”意思相反。",
+      "evidence_sentence": "However, she discovered that mastering basic skills took much longer than she had imagined.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To show the benefits of learning music",
+        "To criticize students who give up easily",
+        "To explain how to join a school band",
+        "To compare different musical instruments"
+      ],
+      "answer": "To show the benefits of learning music",
+      "explanation": "文章通过Emma学习钢琴的经历，说明学习音乐不仅让她掌握了一项技能，还使她更有耐心和自信，并成为表达自我和与他人联系的方式，因此作者的主要目的是展示学习音乐的好处。A项正确。B项“批评轻易放弃的学生”并非文章重点；C项“解释如何加入学校乐队”只是文中一个细节；D项“比较不同乐器”文中未涉及。",
+      "evidence_sentence": "She believes that learning music has not only given her a skill but also helped her become more patient and confident.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Learning a musical instrument requires patience and brings personal growth.",
+        "School bands are the best place to learn music.",
+        "Daily practice is the only way to become a musician.",
+        "Music is a hobby that everyone should take up."
+      ],
+      "answer": "Learning a musical instrument requires patience and brings personal growth.",
+      "explanation": "文章以Emma学钢琴为例，说明学习乐器需要耐心和练习，并且能带来个人成长，如变得更有耐心和自信。A项概括了全文主旨。B项“学校乐队是最好的学音乐的地方”过于绝对且非重点；C项“每日练习是成为音乐家的唯一途径”文中未说“唯一”；D项“音乐是每个人都应从事的爱好”文中未提及。",
+      "evidence_sentence": "Learning a musical instrument is a journey that requires patience and practice.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

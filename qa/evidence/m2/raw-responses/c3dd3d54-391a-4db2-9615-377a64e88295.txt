@@ -1,0 +1,65 @@
+{
+  "passage": "Many high-school students today feel great pressure from their studies. They worry about exams, grades, and their future. This stress can affect their health and happiness. If students learned to manage their time better, they would feel less anxious. Experts suggest that schools should offer more support, such as counseling and stress-management workshops. Students also need to know that it is okay to ask for help. One important factor is sleep. Teenagers who get enough sleep are better able to focus in class. Another key is balance. Students should take breaks and do activities they enjoy, like sports or music. Parents can help by listening and not adding extra pressure. In conclusion, study pressure is a serious issue, but with the right strategies, students can cope and succeed.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Study pressure is a serious problem, but students can manage it with proper strategies.",
+        "Students should spend all their time studying to get good grades.",
+        "Parents are the main cause of study pressure.",
+        "Schools should cancel all exams to reduce stress."
+      ],
+      "answer": "Study pressure is a serious problem, but students can manage it with proper strategies.",
+      "explanation": "文章首句提出学习压力问题，随后给出管理时间、寻求帮助、睡眠和平衡等策略，最后总结学生可以应对并成功。A项概括了全文主旨。B项与文中强调的平衡休息矛盾；C项文中未说父母是主要原因，只说父母可以帮助。",
+      "evidence_sentence": "In conclusion, study pressure is a serious issue, but with the right strategies, students can cope and succeed.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what do experts suggest schools should do?",
+      "options": [
+        "Give students more homework.",
+        "Offer counseling and stress-management workshops.",
+        "Reduce the number of teachers.",
+        "Cancel all after-school activities."
+      ],
+      "answer": "Offer counseling and stress-management workshops.",
+      "explanation": "文中明确提到“Experts suggest that schools should offer more support, such as counseling and stress-management workshops.”B项与原文一致。A项和D项与文中建议相反；C项文中未提及。",
+      "evidence_sentence": "Experts suggest that schools should offer more support, such as counseling and stress-management workshops.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer from the passage about sleep?",
+      "options": [
+        "Students who sleep less can focus better.",
+        "Enough sleep is important for students' focus in class.",
+        "Sleep has nothing to do with study pressure.",
+        "Teenagers need less sleep than adults."
+      ],
+      "answer": "Enough sleep is important for students' focus in class.",
+      "explanation": "文中说“Teenagers who get enough sleep are better able to focus in class.”由此可推断充足睡眠对课堂专注很重要。A项与原文相反；C项与文中将睡眠列为重要因素矛盾；D项文中未比较青少年和成人的睡眠需求。",
+      "evidence_sentence": "Teenagers who get enough sleep are better able to focus in class.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"cope\" in the last sentence most likely mean?",
+      "options": [
+        "give up",
+        "deal with",
+        "run away",
+        "complain about"
+      ],
+      "answer": "deal with",
+      "explanation": "“cope”在句中意为“应对、处理”，与“deal with”意思最接近。A项“放弃”、C项“逃跑”和D项“抱怨”都不符合“with the right strategies”的语境。",
+      "evidence_sentence": "In conclusion, study pressure is a serious issue, but with the right strategies, students can cope and succeed.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

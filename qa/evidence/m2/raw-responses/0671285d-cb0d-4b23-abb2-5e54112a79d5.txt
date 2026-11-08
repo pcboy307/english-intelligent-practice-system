@@ -1,0 +1,1 @@
+{"translations": {"luggage": "行李", "receptionist": "接待员", "twice": "两次"}}

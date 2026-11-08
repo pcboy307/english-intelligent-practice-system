@@ -1,0 +1,45 @@
+{
+  "passage": "Online learning has become a normal part of school life. Last term, the student tried a new online course. At first, she found it difficult to focus because her home was noisy. Her teacher advised her to set a fixed study time and to use headphones. She followed this advice, and her ability to concentrate improved. A classmate also joined the same course, and they began to review lessons together through video calls. According to a recent survey, students who study online often need a clear plan. The student created a weekly schedule and stuck to it. As a result, she not only kept up with her work but also discovered that learning online can be convenient. However, she missed the direct conversations with teachers. She realised that online learning works best when it is combined with classroom interaction. Her teacher agreed and said that the goal of online learning is to support, not replace, traditional lessons. The student now feels more confident and active in both online and offline classes.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"concentrate\" most likely mean in the passage?",
+      "options": ["to give full attention", "to feel tired", "to become angry", "to move quickly"],
+      "answer": "to give full attention",
+      "explanation": "根据上下文，学生因家里吵闹而难以集中注意力，老师建议固定学习时间并戴耳机，之后她集中注意力的能力提高了。因此concentrate意为“集中注意力”。A项“感到疲倦”和C项“变得生气”与语境不符，故错误。",
+      "evidence_sentence": "At first, she found it difficult to focus because her home was noisy.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the teacher's attitude towards online learning?",
+      "options": ["It should replace traditional lessons.", "It is not useful for students.", "It can support classroom learning.", "It is too difficult for most students."],
+      "answer": "It can support classroom learning.",
+      "explanation": "老师明确说在线学习的目标是支持而非取代传统课堂，因此老师认为在线学习可以辅助课堂学习。A项“应取代传统课堂”与原文相反，B项“对学生没用”也不符合老师观点，故错误。",
+      "evidence_sentence": "Her teacher agreed and said that the goal of online learning is to support, not replace, traditional lessons.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Online learning has both benefits and challenges.", "Students should never study online.", "Online courses are always easier than traditional ones.", "Teachers do not like online learning."],
+      "answer": "Online learning has both benefits and challenges.",
+      "explanation": "文章讲述了在线学习的好处（方便、能跟上进度）和挑战（难以集中、缺少直接交流），并指出最好与课堂互动结合，因此主旨是在线学习既有优点也有挑战。B项“学生绝不应在线学习”过于绝对，C项“在线课程总是更简单”文中未提，故错误。",
+      "evidence_sentence": "However, she missed the direct conversations with teachers.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What did the student do to improve her online learning?",
+      "options": ["She bought a new computer.", "She studied only with her teacher.", "She stopped taking the course.", "She made a weekly schedule and followed it."],
+      "answer": "She made a weekly schedule and followed it.",
+      "explanation": "文中提到学生制定了每周计划并坚持执行，这帮助她跟上了学习进度。A项“买了新电脑”文中未提，B项“只和老师学习”与她和同学一起复习不符，故错误。",
+      "evidence_sentence": "The student created a weekly schedule and stuck to it.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

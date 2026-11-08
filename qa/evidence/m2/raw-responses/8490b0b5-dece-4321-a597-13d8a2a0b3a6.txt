@@ -1,0 +1,55 @@
+{
+  "passage": "Last term, Li Ming often felt tired after studying, so he asked his teacher Ms. Wang for help. She told him that a good study habit is (1) matters most. He learned to keep (2) small notebook for his daily plan. Every evening, the plan (3) checked by him before bed. If he (4) more breaks, he would not feel so tired. Ms. Wang also suggested that he (5) take a short walk after each hour of study. Li Ming followed her advice, and soon his grades improved.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank (1).",
+      "options": ["A. It is a good study habit that matters most.", "B. A good study habit is what matters most.", "C. What matters most is a good study habit.", "D. That a good study habit matters most is true.", "E. A good study habit matters most, which is true.", "F. It matters most that a good study habit.", "G. What a good study habit matters most."],
+      "answer": "B",
+      "explanation": "空格处需要主语从句作宾语，B项“what matters most”是正确的主语从句结构。A项和C项虽然也有从句，但A项中“It is...that”强调句在此处不适用，C项语序不符合宾语从句要求。",
+      "evidence_sentence": "She told him that a good study habit is (1) matters most.",
+      "context_clue": "She told him that a good study habit is (1) matters most.",
+      "clue_argument": "空格后是“matters most”，需要一个能作主语的关系代词或连接代词，B项“what”引导主语从句最合适。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank (2).",
+      "options": ["A. He learned to keep a small notebook for his daily plan.", "B. He learned to keep the small notebook for his daily plan.", "C. He learned to keep small notebook for his daily plan.", "D. He learned to keep an small notebook for his daily plan.", "E. He learned to keep some small notebook for his daily plan.", "F. He learned to keep any small notebook for his daily plan.", "G. He learned to keep this small notebook for his daily plan."],
+      "answer": "A",
+      "explanation": "第一次提到“small notebook”，用不定冠词a表示泛指。B项定冠词the表示特指，但此处是首次提及；C项缺少冠词，D项an用在辅音音素开头的small前错误。",
+      "evidence_sentence": "He learned to keep (2) small notebook for his daily plan.",
+      "context_clue": "He learned to keep (2) small notebook for his daily plan.",
+      "clue_argument": "首次提及单数可数名词notebook，且small以辅音音素开头，应用不定冠词a。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank (3).",
+      "options": ["A. Every evening, the plan is checked by him before bed.", "B. Every evening, the plan was checked by him before bed.", "C. Every evening, the plan has checked by him before bed.", "D. Every evening, the plan is checking by him before bed.", "E. Every evening, the plan was checking by him before bed.", "F. Every evening, the plan has been checked by him before bed.", "G. Every evening, the plan had checked by him before bed."],
+      "answer": "B",
+      "explanation": "故事发生在过去（Last term），且“every evening”表示过去习惯性动作，应用一般过去时的被动语态was checked。A项现在时与上下文时态不符；C项缺少been，D项is checking是主动进行时，均错误。",
+      "evidence_sentence": "Every evening, the plan (3) checked by him before bed.",
+      "context_clue": "Every evening, the plan (3) checked by him before bed.",
+      "clue_argument": "主语the plan与check是被动关系，且全文为过去时，故用was checked。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank (4).",
+      "options": ["A. If he takes more breaks, he would not feel so tired.", "B. If he took more breaks, he would not feel so tired.", "C. If he had taken more breaks, he would not feel so tired.", "D. If he take more breaks, he would not feel so tired.", "E. If he has taken more breaks, he would not feel so tired.", "F. If he was taking more breaks, he would not feel so tired.", "G. If he would take more breaks, he would not feel so tired."],
+      "answer": "B",
+      "explanation": "这是一个与现在事实相反的虚拟条件句，if从句用一般过去时took，主句用would+动词原形。A项从句用现在时，C项从句用过去完成时表示与过去相反，均不符合语境。",
+      "evidence_sentence": "If he (4) more breaks, he would not feel so tired.",
+      "context_clue": "If he (4) more breaks, he would not feel so tired.",
+      "clue_argument": "主句是would not feel，表示与现在事实相反，if从句应用一般过去时。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank (5).",
+      "options": ["A. Ms. Wang also suggested that he takes a short walk after each hour of study.", "B. Ms. Wang also suggested that he took a short walk after each hour of study.", "C. Ms. Wang also suggested that he take a short walk after each hour of study.", "D. Ms. Wang also suggested that he has taken a short walk after each hour of study.", "E. Ms. Wang also suggested that he had taken a short walk after each hour of study.", "F. Ms. Wang also suggested that he is taking a short walk after each hour of study.", "G. Ms. Wang also suggested that he will take a short walk after each hour of study."],
+      "answer": "C",
+      "explanation": "suggest表示“建议”时，其后的宾语从句用虚拟语气，即should+动词原形，should可以省略，所以用take。A项takes是陈述语气，B项took是过去时，均不符合虚拟语气要求。",
+      "evidence_sentence": "Ms. Wang also suggested that he (5) take a short walk after each hour of study.",
+      "context_clue": "Ms. Wang also suggested that he (5) take a short walk after each hour of study.",
+      "clue_argument": "suggest作“建议”讲时，从句谓语用(should) + 动词原形，故选take。"
+    }
+  ]
+}

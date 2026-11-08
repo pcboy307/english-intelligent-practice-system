@@ -1,0 +1,46 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent text about healthy daily routines, with sentences logically connected through examples, explanations, and advice.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A provides a specific example that directly supports the preceding general statement about a healthy routine.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A uses 'This' to refer back to the previous sentence and explains the benefit, maintaining coherence.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A logically continues the discussion of benefits of a regular schedule, leading to the advice in the next sentence.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A uses 'Therefore' to introduce a logical consequence of the previous statement and connects to the following relaxation advice.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A introduces the topic of pre-bed activities, which is elaborated by the subsequent examples.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

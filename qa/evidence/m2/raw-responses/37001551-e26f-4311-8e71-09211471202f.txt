@@ -1,0 +1,45 @@
+{
+  "passage": "When the virus closed schools, Maya, a fifteen-year-old student, found learning online difficult. Her home was noisy, and she missed asking her teacher questions directly. At first, she watched recorded lessons without taking notes. After two weeks, her grades dropped. Then her teacher, Mr. Chen, spoke with her online. He suggested she organize a quiet study corner and pause videos to write summaries. Maya tried this plan. She paused often and rewatched difficult parts. Slowly, her understanding improved. By the end of the term, she preferred online learning because she could control her pace. She even helped a classmate who was struggling. Maya realized that online learning works best when students take active control of their own study habits.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"noisy\" in the passage mean?",
+      "options": ["Quiet", "Full of sound", "Bright", "Empty"],
+      "answer": "Full of sound",
+      "explanation": "根据上下文，Maya的家很吵，所以“noisy”意为“充满声音的”。A“Quiet”和D“Empty”与语境相反，因为安静或空荡的环境不会妨碍学习。",
+      "evidence_sentence": "Her home was noisy, and she missed asking her teacher questions directly.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is Mr. Chen's attitude toward Maya's online learning?",
+      "options": ["Supportive", "Indifferent", "Critical", "Confused"],
+      "answer": "Supportive",
+      "explanation": "陈老师主动与Maya交流并给出建议，表明他是支持她的。B“Indifferent”和C“Critical”不符合，因为漠不关心或批评不会促使他提供具体帮助。",
+      "evidence_sentence": "He suggested she organize a quiet study corner and pause videos to write summaries.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Online learning requires active student control.", "Teachers should record more lessons.", "Maya preferred traditional school.", "Online learning is always easier."],
+      "answer": "Online learning requires active student control.",
+      "explanation": "文章主要讲述Maya通过主动调整学习方法适应在线学习，强调学生主动控制的重要性。B“Teachers should record more lessons”和C“Maya preferred traditional school”只是细节或与文意相反。",
+      "evidence_sentence": "Maya realized that online learning works best when students take active control of their own study habits.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, why did Maya's grades drop at first?",
+      "options": ["She watched lessons without taking notes.", "She had no computer.", "Her teacher was too busy.", "She studied too much."],
+      "answer": "She watched lessons without taking notes.",
+      "explanation": "文中明确提到Maya起初只看录播课而不做笔记，导致成绩下降。B“She had no computer”和C“Her teacher was too busy”文中未提及，属于无中生有。",
+      "evidence_sentence": "At first, she watched recorded lessons without taking notes. After two weeks, her grades dropped.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

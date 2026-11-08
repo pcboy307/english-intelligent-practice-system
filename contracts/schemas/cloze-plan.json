@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.english-practice/schemas/cloze-plan.json",
+  "title": "Cloze target-word plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["targets"],
+  "properties": {
+    "targets": {
+      "type": "array",
+      "minItems": 15,
+      "maxItems": 15,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "question_index",
+          "target_word",
+          "part_of_speech",
+          "semantic_field",
+          "intended_context"
+        ],
+        "properties": {
+          "question_index": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 15
+          },
+          "target_word": {
+            "type": "string",
+            "pattern": "^[A-Za-z]+$"
+          },
+          "part_of_speech": {"type": "string", "minLength": 1},
+          "semantic_field": {"type": "string", "minLength": 1},
+          "intended_context": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

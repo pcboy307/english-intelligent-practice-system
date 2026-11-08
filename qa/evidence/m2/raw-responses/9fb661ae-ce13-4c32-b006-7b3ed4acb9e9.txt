@@ -1,0 +1,65 @@
+{
+  "passage": "In the small town of Greenfield, the Smith family decided to try solar power. Mr. Smith, a math teacher, was tired of high electricity bills. His daughter Emma, a high school student, had learned about renewable energy in class. Together, they convinced Mrs. Smith to install solar panels on their roof. At first, neighbors were skeptical. They thought solar panels were expensive and unreliable. But after one year, the Smiths saved 40% on their energy costs. The panels even produced extra power, which the local utility company bought from them. Emma started a club at school to share what she had learned. The club organized a community workshop, and many families attended. Slowly, more houses in Greenfield got solar panels. The town council then approved a plan to use wind energy as well. The Smiths' small step sparked a community-wide change. Now Greenfield is known for its clean energy efforts, and Emma hopes to study environmental science in college.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can be inferred about the neighbors' initial attitude toward solar panels?",
+      "options": [
+        "They were supportive and eager to install them.",
+        "They doubted the panels' cost-effectiveness and reliability.",
+        "They believed the panels would increase their property value.",
+        "They thought the Smiths were wasting money on a trend."
+      ],
+      "answer": "They doubted the panels' cost-effectiveness and reliability.",
+      "explanation": "根据第一段，邻居们认为太阳能板昂贵且不可靠，因此他们持怀疑态度。A选项与原文相反；C选项原文未提及。",
+      "evidence_sentence": "They thought solar panels were expensive and unreliable.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word 'skeptical' in the passage most likely mean?",
+      "options": [
+        "Doubtful",
+        "Supportive",
+        "Indifferent",
+        "Enthusiastic"
+      ],
+      "answer": "Doubtful",
+      "explanation": "根据上下文，邻居们认为太阳能板昂贵且不可靠，因此他们持怀疑态度。B选项支持与原文相反；D选项热情也不符合。",
+      "evidence_sentence": "At first, neighbors were skeptical.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Why did Emma start a club at school?",
+      "options": [
+        "To share her knowledge about solar energy.",
+        "To organize a community workshop.",
+        "To convince her parents to install solar panels.",
+        "To study environmental science."
+      ],
+      "answer": "To share her knowledge about solar energy.",
+      "explanation": "原文提到Emma创办俱乐部是为了分享她所学到的知识。B选项是俱乐部组织的活动，不是创办目的；C选项是她父母已经安装后的事。",
+      "evidence_sentence": "Emma started a club at school to share what she had learned.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "The Smith family's efforts led to community-wide adoption of renewable energy.",
+        "Solar panels are expensive and unreliable.",
+        "Emma wants to study environmental science in college.",
+        "The town council approved a plan to use wind energy."
+      ],
+      "answer": "The Smith family's efforts led to community-wide adoption of renewable energy.",
+      "explanation": "文章主要讲述了Smith一家安装太阳能板后，带动了整个社区采用可再生能源。B选项是邻居最初的错误看法；C和D是细节，不是主旨。",
+      "evidence_sentence": "The Smiths' small step sparked a community-wide change.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

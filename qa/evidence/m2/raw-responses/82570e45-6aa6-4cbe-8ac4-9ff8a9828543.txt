@@ -1,0 +1,95 @@
+{
+  "passage": "Last spring, the school outdoor club planned a weekend hike. The student and her teacher chose a safe route. (1) ______, they checked the weather report and packed enough water. On Saturday morning, they set off early. The path was steep, but everyone kept a steady pace. (2) ______, the group reached the top by noon and enjoyed a wonderful view. After lunch, a classmate noticed dark clouds above the hills. (3) ______, the teacher advised the group to start walking down at once. On the way back, the student felt tired but happy. (4) ______, she suggested that everyone should share photos online to encourage more students to join. By evening, they were safely home. (5) ______, the hike became a popular topic at school, and many students asked about the next trip.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "Before setting out, they checked the weather report and packed enough water.",
+        "After reaching the top, they took a long rest.",
+        "During the hike, they got lost in the forest.",
+        "At the end of the day, they missed the last bus.",
+        "In the middle of the night, they heard a strange noise.",
+        "While climbing, they forgot to bring any food.",
+        "On the way back, they met a friendly guide."
+      ],
+      "answer": "A",
+      "explanation": "空白处位于出发前，后文提到周六一早出发，因此“出发前查看天气并带足水”符合逻辑。B和C分别描述登顶后和徒步中迷路，与后文时间顺序矛盾。",
+      "evidence_sentence": "Last spring, the school outdoor club planned a weekend hike.",
+      "context_clue": "On Saturday morning, they set off early.",
+      "clue_argument": "前文计划徒步，后文一早出发，空白处应填出发前的准备。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "As a result, the group reached the top by noon and enjoyed a wonderful view.",
+        "However, they decided to turn back immediately.",
+        "For example, they stopped to take many photos.",
+        "In contrast, the weather became much worse.",
+        "Meanwhile, they lost their map and felt worried.",
+        "Otherwise, they would have stayed at home.",
+        "Therefore, they missed the beautiful view."
+      ],
+      "answer": "A",
+      "explanation": "前文说大家保持稳定步伐，空白后应接积极结果，“结果中午登顶并欣赏美景”符合因果。B和C分别表示转折返回和举例拍照，与“保持步伐”不构成因果。",
+      "evidence_sentence": "The path was steep, but everyone kept a steady pace.",
+      "context_clue": "The path was steep, but everyone kept a steady pace.",
+      "clue_argument": "保持稳定步伐导致顺利登顶，空白处应填结果。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "Seeing the dark clouds, the teacher advised the group to start walking down at once.",
+        "Because the sun was shining, they decided to stay longer.",
+        "Although they were tired, they continued to climb higher.",
+        "Since they had enough time, they took a long nap.",
+        "If it rained, they would camp on the top.",
+        "Unless they hurried, they would miss the sunrise.",
+        "Even though it was early, they went home."
+      ],
+      "answer": "A",
+      "explanation": "前文提到同学注意到山上方乌云，后文应接老师建议立即下山，符合安全逻辑。B和C分别因阳光和继续攀登，与乌云预警矛盾。",
+      "evidence_sentence": "After lunch, a classmate noticed dark clouds above the hills.",
+      "context_clue": "After lunch, a classmate noticed dark clouds above the hills.",
+      "clue_argument": "乌云预示天气变化，老师应建议立即下山。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "Feeling tired but happy, she suggested that everyone should share photos online to encourage more students to join.",
+        "Because she was angry, she refused to talk to anyone.",
+        "Although she was happy, she decided never to hike again.",
+        "Since it was late, she went to bed without dinner.",
+        "If she had time, she would buy new boots.",
+        "Unless it rained, she would stay at home.",
+        "Even though she was tired, she ran all the way home."
+      ],
+      "answer": "A",
+      "explanation": "前文说学生感到累但快乐，空白处应接她建议分享照片鼓励更多同学参加，符合情感和目的。B和C分别表示生气拒绝和不再徒步，与“累但快乐”矛盾。",
+      "evidence_sentence": "On the way back, the student felt tired but happy.",
+      "context_clue": "On the way back, the student felt tired but happy.",
+      "clue_argument": "累但快乐的心情促使她提出分享照片的建议。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "In the end, the hike became a popular topic at school, and many students asked about the next trip.",
+        "At first, nobody knew about the hike.",
+        "In addition, the teacher cancelled all future trips.",
+        "However, the students felt disappointed and stayed home.",
+        "For example, they decided to sell their boots.",
+        "Meanwhile, the school closed the outdoor club.",
+        "As a result, the hike was soon forgotten."
+      ],
+      "answer": "A",
+      "explanation": "前文说大家安全到家，后文应接徒步成为学校热门话题、许多学生询问下次活动，形成积极结果。B和C分别表示无人知晓和取消活动，与后文“许多学生询问”矛盾。",
+      "evidence_sentence": "By evening, they were safely home.",
+      "context_clue": "By evening, they were safely home.",
+      "clue_argument": "安全回家后，徒步活动成为话题并吸引更多学生。"
+    }
+  ]
+}

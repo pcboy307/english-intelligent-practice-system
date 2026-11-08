@@ -1,0 +1,65 @@
+{
+  "passage": "Food is a window into culture. What we eat, how we cook it, and when we share it reveal who we are. In China, for example, dumplings are more than a dish; they are a symbol of family unity. During Spring Festival, families gather to make dumplings together, and the shape of a dumpling looks like an ancient gold coin, which represents good fortune. Similarly, in Italy, pasta is a daily staple, but each region has its own traditional shape and sauce. These differences show that food is deeply connected to local history and geography. Moreover, food customs often reflect social values. In many cultures, offering food to guests is a sign of hospitality. In Japan, the presentation of a meal is as important as its taste, which reflects a respect for nature and beauty. Not only does food satisfy hunger, but it also communicates identity. So the next time you sit down to eat, remember that you are tasting a piece of human history.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Food is a reflection of culture and identity.",
+        "Dumplings are the most popular food in China.",
+        "Italian pasta is better than Chinese dumplings.",
+        "Japanese food presentation is unique."
+      ],
+      "answer": "Food is a reflection of culture and identity.",
+      "explanation": "文章首句点明主题，后文用中国饺子、意大利面和日本料理等例子说明食物与文化、身份的紧密联系。A项概括全文；B项和D项只是文中提到的细节，不能作为主旨；C项文中未比较优劣。",
+      "evidence_sentence": "Food is a window into culture.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what do dumplings symbolize in China?",
+      "options": [
+        "Family unity and good fortune.",
+        "Wealth and power.",
+        "Long life and health.",
+        "Happiness and friendship."
+      ],
+      "answer": "Family unity and good fortune.",
+      "explanation": "文中明确提到饺子象征家庭团聚和好运。A项准确；B项和D项文中未提及；C项是常见误解，但文中无依据。",
+      "evidence_sentence": "they are a symbol of family unity",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can be inferred about food from the passage?",
+      "options": [
+        "Food customs are influenced by local history and geography.",
+        "Food is only for satisfying hunger.",
+        "All cultures have the same food customs.",
+        "Food presentation is not important in Japan."
+      ],
+      "answer": "Food customs are influenced by local history and geography.",
+      "explanation": "文中提到意大利面因地区不同而有不同形状和酱料，并指出食物与当地历史和地理紧密相连，由此可推断饮食习俗受历史和地理影响。A项正确；B项与文章相反；C项与多样性矛盾；D项与日本重视摆盘的事实相反。",
+      "evidence_sentence": "These differences show that food is deeply connected to local history and geography.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"staple\" in the passage most likely mean?",
+      "options": [
+        "A basic and important food.",
+        "A special tool for cooking.",
+        "A type of sauce.",
+        "A rare delicious dish."
+      ],
+      "answer": "A basic and important food.",
+      "explanation": "根据上下文，意大利面是日常主食，每个地区有不同形状和酱料，因此staple意为“主食”。A项符合；B项和C项与烹饪工具或酱料无关；D项“稀有美味”与日常主食矛盾。",
+      "evidence_sentence": "in Italy, pasta is a daily staple",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

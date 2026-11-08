@@ -1,0 +1,65 @@
+{
+  "passage": "When Maya joined the school orchestra, she could hardly read music. Her teacher, Mr. Chen, suggested that she practice sight-reading for ten minutes every day. At first, Maya felt frustrated because she made many mistakes. However, Mr. Chen encouraged her to focus on small improvements rather than perfection. After a month, Maya noticed that she was recognizing notes more quickly. She also began to enjoy the feeling of playing a piece smoothly for the first time. By the end of the term, Maya was chosen to play a solo in the concert. She realized that consistent practice, rather than natural talent, had made the difference. Mr. Chen smiled and said, \"Learning music is like building a house—you need a solid foundation.\"",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can be inferred about Maya's initial attitude toward sight-reading?",
+      "options": [
+        "She was confident about her ability.",
+        "She found it difficult and discouraging.",
+        "She thought it was a waste of time.",
+        "She preferred playing solos."
+      ],
+      "answer": "She found it difficult and discouraging.",
+      "explanation": "文章提到Maya起初感到沮丧，因为犯了很多错误，可推断她觉得困难且气馁。A项说她自信，与原文相反；C项说她认为浪费时间，文中未提及。",
+      "evidence_sentence": "At first, Maya felt frustrated because she made many mistakes.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "The word \"recognizing\" in the passage is closest in meaning to ______.",
+      "options": [
+        "identifying",
+        "ignoring",
+        "memorizing",
+        "writing"
+      ],
+      "answer": "identifying",
+      "explanation": "recognizing意为“认出”，与identifying（识别）意思最接近。B项ignoring（忽视）意思相反；C项memorizing（记忆）不准确，因为上下文是快速认出音符。",
+      "evidence_sentence": "After a month, Maya noticed that she was recognizing notes more quickly.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is Mr. Chen's attitude toward Maya's progress?",
+      "options": [
+        "He is disappointed with her slow improvement.",
+        "He is supportive and encouraging.",
+        "He is indifferent to her efforts.",
+        "He is strict and demanding."
+      ],
+      "answer": "He is supportive and encouraging.",
+      "explanation": "陈老师鼓励Maya关注小进步而非完美，并微笑肯定她的努力，可见他支持且鼓励学生。A项失望和C项漠不关心与原文不符。",
+      "evidence_sentence": "However, Mr. Chen encouraged her to focus on small improvements rather than perfection.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Natural talent is essential for learning music.",
+        "Sight-reading is the most important music skill.",
+        "Consistent practice leads to improvement in music learning.",
+        "School orchestras help students make friends."
+      ],
+      "answer": "Consistent practice leads to improvement in music learning.",
+      "explanation": "文章通过Maya坚持练习最终进步的故事，说明持续练习带来提高。A项强调天赋，与原文相反；B项过于片面，文中未说视奏最重要。",
+      "evidence_sentence": "She realized that consistent practice, rather than natural talent, had made the difference.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

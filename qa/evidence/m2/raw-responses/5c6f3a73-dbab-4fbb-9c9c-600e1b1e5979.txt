@@ -1,0 +1,1 @@
+{"translations": {"overnight": "通宵", "shortcut": "捷径", "sunrise": "日出", "terracotta": "陶土", "warriors": "武士"}}

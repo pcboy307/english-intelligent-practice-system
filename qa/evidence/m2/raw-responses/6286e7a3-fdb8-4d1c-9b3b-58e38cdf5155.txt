@@ -1,0 +1,65 @@
+{
+  "passage": "Last summer, my friend Alex and I joined a volunteer programme at a local community centre. We were told that the centre had been chosen to host a weekend reading camp for children from nearby villages. Although we were nervous at first, we quickly became excited when we saw the bright smiles of the kids. Our task was simple: read stories aloud and organise fun activities. However, we soon realised that many children had never owned a book of their own. This discovery deeply touched us. We decided to start a book donation drive in our school. To our surprise, hundreds of books were collected within a week. The children's joy was beyond description. Looking back, I believe volunteering is not just about giving; it is about growing together. The experience taught me that even small actions can create big changes. Now I often encourage my classmates to join such activities, because everyone has the ability to make a difference.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What were Alex and the author told about the community centre?",
+      "options": [
+        "It had been chosen to host a reading camp.",
+        "It had been built by the children.",
+        "It had been closed for the summer.",
+        "It had been moved to another village."
+      ],
+      "answer": "It had been chosen to host a reading camp.",
+      "explanation": "文中提到“We were told that the centre had been chosen to host a weekend reading camp”，说明中心被选中举办阅读营。A项正确。B项“被孩子们建造”和C项“暑假关闭”文中均未提及，属于无中生有。因此选A。",
+      "evidence_sentence": "We were told that the centre had been chosen to host a weekend reading camp for children from nearby villages.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about the book donation drive?",
+      "options": [
+        "It was a great success.",
+        "It was poorly organised.",
+        "It collected only a few books.",
+        "It was cancelled at the last minute."
+      ],
+      "answer": "It was a great success.",
+      "explanation": "根据“To our surprise, hundreds of books were collected within a week.”可知，一周内收集了数百本书，说明活动非常成功。A项正确。B项“组织很差”和C项“只收集了几本书”与原文矛盾。因此选A。",
+      "evidence_sentence": "To our surprise, hundreds of books were collected within a week.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"touched\" in paragraph 2 most nearly mean?",
+      "options": [
+        "moved",
+        "hit",
+        "contacted",
+        "reached"
+      ],
+      "answer": "moved",
+      "explanation": "“This discovery deeply touched us.” 意为这个发现深深触动了我们，touched 在此表示“感动”，与 moved 意思最接近。B项“hit”指物理撞击，C项“contacted”指联系，D项“reached”指到达，均不符合语境。因此选A。",
+      "evidence_sentence": "This discovery deeply touched us.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To encourage volunteering.",
+        "To complain about the community centre.",
+        "To describe a difficult trip.",
+        "To explain how to collect books."
+      ],
+      "answer": "To encourage volunteering.",
+      "explanation": "文章结尾作者说“Now I often encourage my classmates to join such activities”，并且全文讲述了志愿活动带来的积极变化，目的是鼓励人们参与志愿服务。A项正确。B项“抱怨社区中心”和C项“描述艰难旅程”与文章内容不符。因此选A。",
+      "evidence_sentence": "Now I often encourage my classmates to join such activities, because everyone has the ability to make a difference.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "passage": "Last spring, the student's class took a trip to a wind farm（风电场） outside the city. The student had read about renewable energy, but seeing the huge white turbines（涡轮机） turning slowly in the wind was a different experience. Her teacher explained that the farm could produce enough electricity for thousands of homes without burning coal. The student was amazed. She had always thought that clean energy was a future dream, but here it was, working quietly on the hills. Back at school, she started a project with two classmates. They wanted to find out how much energy their school used and whether it could use more renewable sources. They spent weeks collecting data and talking to the school engineer. Their conclusion was simple: the school could save money and reduce pollution by using solar panels（太阳能板） on the roof. The project was not easy. Some students doubted that it would make a difference. But the student and her team did not give up. They presented their findings to the school leaders, who agreed to test the idea on one building. A year later, the solar panels were in place, and the school's energy bill had dropped by 15%. The student learned that even small actions can lead to big changes. Her teacher was proud, and the student felt more confident about the future of renewable energy.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about the student's attitude toward renewable energy after the trip?",
+      "options": [
+        "She became more hopeful about its practical use.",
+        "She thought it was too expensive to be useful.",
+        "She decided to become an engineer.",
+        "She believed it would never replace coal."
+      ],
+      "answer": "She became more hopeful about its practical use.",
+      "explanation": "文章提到学生原以为清洁能源是未来的梦想，但看到风电场在运转后感到惊讶，并开始做项目，说明她对可再生能源的实际应用更有信心。A项正确。B项和D项与文章相反，文章没有提到她认为太贵或永远无法替代煤炭。",
+      "evidence_sentence": "She had always thought that clean energy was a future dream, but here it was, working quietly on the hills."
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"reduce\" in paragraph 2 most likely mean?",
+      "options": [
+        "make smaller",
+        "increase",
+        "produce",
+        "measure"
+      ],
+      "answer": "make smaller",
+      "explanation": "根据上下文，学校可以通过使用太阳能板来节省开支和减少污染，所以reduce意为“减少”，即make smaller。B项increase意为“增加”，与语境相反；C项produce意为“产生”，不符合此处逻辑。",
+      "evidence_sentence": "the school could save money and reduce pollution by using solar panels（太阳能板） on the roof."
+    },
+    {
+      "question_index": 3,
+      "stem": "Why did the student and her team present their findings to the school leaders?",
+      "options": [
+        "To persuade them to try solar panels.",
+        "To show off their hard work.",
+        "To ask for more time to finish the project.",
+        "To complain about the school's energy use."
+      ],
+      "answer": "To persuade them to try solar panels.",
+      "explanation": "学生团队向学校领导展示研究结果，目的是说服他们尝试使用太阳能板，因为领导同意在一栋建筑上测试这个想法。B项“炫耀”和D项“抱怨”都不符合文章内容。",
+      "evidence_sentence": "They presented their findings to the school leaders, who agreed to test the idea on one building."
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Small actions can lead to meaningful changes in energy use.",
+        "Wind farms are better than solar panels.",
+        "Students should not doubt their teachers.",
+        "Renewable energy is too difficult for schools to use."
+      ],
+      "answer": "Small actions can lead to meaningful changes in energy use.",
+      "explanation": "文章讲述了学生通过一个小项目最终促使学校使用太阳能板并节省能源的故事，最后点明“即使小的行动也能带来大的改变”，因此A项概括了主旨。B项比较风能和太阳能，文章并未比较；D项与文章事实相反。",
+      "evidence_sentence": "The student learned that even small actions can lead to big changes."
+    }
+  ]
+}

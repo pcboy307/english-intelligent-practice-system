@@ -1,0 +1,64 @@
+{
+  "sentences": [
+    "On the morning of the science fair, a student felt (1) because her project was not finished.",
+    "Her teacher noticed her worry and reminded her to stay (2) while presenting her ideas.",
+    "She had always been (3) about how plants grow, so she chose a simple experiment.",
+    "Her classmate promised to bring extra soil and proved to be very (4) that day.",
+    "The student was (5) and hoped to win a prize at the regional competition.",
+    "She worked hard to (6) her goal of completing the display before noon.",
+    "At first, she struggled to (7) to the noisy gym where the fair was held.",
+    "Her teacher continued to (8) her with kind words and helpful suggestions.",
+    "She tried to (9) her classmate to join the gardening club next semester.",
+    "During the final hour, she managed to (10) on her poster and ignore distractions.",
+    "(11) the project began to take shape as she added labels and photos.",
+    "After many small fixes, she (12) finished the display just before the judges arrived.",
+    "She answered their questions (13) and explained each step of her experiment.",
+    "Her (14) grew as she saw visitors nodding and smiling at her work.",
+    "The teacher said the fair was a valuable (15) for every student to learn and grow.",
+    "Walking home, she felt proud of how much she had changed since the first day."
+  ],
+  "target_words": [
+    "anxious",
+    "confident",
+    "curious",
+    "reliable",
+    "ambitious",
+    "achieve",
+    "adapt",
+    "encourage",
+    "persuade",
+    "concentrate",
+    "gradually",
+    "eventually",
+    "independently",
+    "confidence",
+    "opportunity"
+  ],
+  "complex_structures": [
+    {
+      "sentence_index": 2,
+      "structure_type": "adverbial_clause",
+      "evidence": "while presenting her ideas"
+    },
+    {
+      "sentence_index": 3,
+      "structure_type": "noun_clause",
+      "evidence": "how plants grow"
+    },
+    {
+      "sentence_index": 7,
+      "structure_type": "relative_clause",
+      "evidence": "where the fair was held"
+    },
+    {
+      "sentence_index": 11,
+      "structure_type": "adverbial_clause",
+      "evidence": "as she added labels and photos"
+    },
+    {
+      "sentence_index": 16,
+      "structure_type": "noun_clause",
+      "evidence": "how much she had changed since the first day"
+    }
+  ]
+}

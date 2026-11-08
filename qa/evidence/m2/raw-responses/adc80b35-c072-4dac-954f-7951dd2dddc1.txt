@@ -1,0 +1,65 @@
+{
+  "passage": "When Maya joined the school band, she could not read music. She copied finger positions from a friend and hid her confusion. Her teacher, Mr. Chen, noticed that she played by ear but froze when a new score appeared. He gave her a simple sight-reading exercise every morning. At first, Maya felt embarrassed because she made many mistakes. Mr. Chen told her that mistakes were part of learning, not proof of failure. Slowly, she began to recognize patterns and predict the next note. Six months later, the band performed at a city concert. Maya played a short solo. After the concert, she said, \"I used to think talent was a gift you either had or lacked. Now I know that practice and patience can build skill.\" Mr. Chen smiled and added, \"What matters is not how fast you learn, but whether you keep trying.\"",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can be inferred about Maya's attitude toward learning music at the beginning?",
+      "options": [
+        "She was confident but lazy.",
+        "She felt insecure and tried to hide her difficulties.",
+        "She refused to join the band.",
+        "She believed practice was unnecessary."
+      ],
+      "answer": "She felt insecure and tried to hide her difficulties.",
+      "explanation": "从她抄指法并隐藏困惑可知她缺乏自信并试图掩饰。A项说她自信懒惰与原文矛盾；C项说她拒绝加入乐队，但原文明确她加入了。",
+      "evidence_sentence": "She copied finger positions from a friend and hid her confusion.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "The phrase \"froze when a new score appeared\" in the passage most probably means that Maya ______.",
+      "options": [
+        "became unable to act",
+        "felt very cold",
+        "stopped the music",
+        "forgot her friend"
+      ],
+      "answer": "became unable to act",
+      "explanation": "结合上下文，Maya面对新乐谱时“froze”指她僵住、不知所措。B项“感到寒冷”是字面误解；C项“停止音乐”不准确，因为她并未在演奏中。",
+      "evidence_sentence": "Her teacher, Mr. Chen, noticed that she played by ear but froze when a new score appeared.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is Mr. Chen's purpose in giving Maya daily sight-reading exercises?",
+      "options": [
+        "To punish her for making mistakes.",
+        "To help her overcome her weakness in reading music.",
+        "To prepare her for a competition.",
+        "To test her natural talent."
+      ],
+      "answer": "To help her overcome her weakness in reading music.",
+      "explanation": "陈老师注意到Maya视奏困难，因此给她每日练习，目的是帮助她克服弱点。A项说惩罚她，与老师鼓励的态度相反；D项说测试天赋，但老师强调的是练习而非天赋。",
+      "evidence_sentence": "He gave her a simple sight-reading exercise every morning.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Talent is the most important factor in music.",
+        "Mistakes should be avoided at all costs.",
+        "Practice and patience can turn weakness into skill.",
+        "School bands often perform at city concerts."
+      ],
+      "answer": "Practice and patience can turn weakness into skill.",
+      "explanation": "全文通过Maya从不会识谱到独奏的转变，说明练习和耐心能培养技能。A项强调天赋最重要，与文章主旨相反；B项说应不惜代价避免错误，但文中老师认为错误是学习的一部分。",
+      "evidence_sentence": "Now I know that practice and patience can build skill.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

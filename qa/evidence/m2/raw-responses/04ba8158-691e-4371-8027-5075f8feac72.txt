@@ -1,0 +1,105 @@
+{
+  "passage": "Many students wonder what job they will do in the future. ① they choose a career, they should think about their skills and interests. Some jobs need special ②, such as engineering or medicine. Others require ③ and good communication. The world of work is changing fast, and some old jobs are becoming ④. For example, many tasks that people once did by hand are now done by machines. However, new jobs are appearing all the time. ⑤, jobs in technology and health care are growing quickly. ⑥, it is important to keep learning. A person with many skills is ⑦ than one with only a few. The most ⑧ thing is to stay curious and open to new ideas. ⑨ a clear plan can help you reach your goal. You should also be ready ⑩ new challenges. With hard work and a positive attitude, you can build a bright future.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "① ___ they choose a career, they should think about their skills and interests.",
+      "options": ["Before", "After", "While", "Since"],
+      "answer": "Before",
+      "explanation": "根据语境，学生应在选择职业之前考虑技能和兴趣，before表示“在……之前”，符合逻辑。After表示之后，while表示同时，since表示自从或因为，均不符合此处时间先后关系。",
+      "evidence_sentence": "Many students wonder what job they will do in the future. ① they choose a career, they should think about their skills and interests.",
+      "context_clue": "Many students wonder what job they will do in the future. ① they choose a career, they should think about their skills and interests.",
+      "clue_argument": "考虑技能和兴趣应发生在选择职业之前，故用before。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Some jobs need special ②, such as engineering or medicine.",
+      "options": ["knowledge", "know", "known", "knowing"],
+      "answer": "knowledge",
+      "explanation": "need后接名词作宾语，special knowledge表示“专业知识”，knowledge是know的名词形式。know是动词，known是过去分词，knowing是动名词，均不能直接作need的宾语且不符合此处名词需求。",
+      "evidence_sentence": "Some jobs need special ②, such as engineering or medicine.",
+      "context_clue": "Some jobs need special ②, such as engineering or medicine.",
+      "clue_argument": "special后需名词，engineering和medicine属于专业知识。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Others require ③ and good communication.",
+      "options": ["patience", "patient", "patiently", "patients"],
+      "answer": "patience",
+      "explanation": "require后接名词，与good communication并列，patience是不可数名词，表示“耐心”。patient作形容词或名词（病人），patiently是副词，patients是复数名词，均不符合此处与communication并列的抽象名词要求。",
+      "evidence_sentence": "Others require ③ and good communication.",
+      "context_clue": "Others require ③ and good communication.",
+      "clue_argument": "与good communication并列，需要抽象名词patience。"
+    },
+    {
+      "question_index": 4,
+      "stem": "The world of work is changing fast, and some old jobs are becoming ④.",
+      "options": ["disappearing", "disappear", "disappeared", "disappears"],
+      "answer": "disappearing",
+      "explanation": "are becoming后接现在分词构成进行时，表示正在消失，disappearing符合语法。disappear是动词原形，disappeared是过去分词，disappears是第三人称单数，均不能用于be becoming之后。",
+      "evidence_sentence": "The world of work is changing fast, and some old jobs are becoming ④.",
+      "context_clue": "The world of work is changing fast, and some old jobs are becoming ④.",
+      "clue_argument": "are becoming后需现在分词，表示正在消失。"
+    },
+    {
+      "question_index": 5,
+      "stem": "⑤, jobs in technology and health care are growing quickly.",
+      "options": ["For example", "However", "In conclusion", "Instead"],
+      "answer": "For example",
+      "explanation": "前文说新工作不断出现，此处举例说明技术和医疗领域的工作增长快，for example表示举例。However表示转折，In conclusion表示总结，Instead表示替代，均不符合此处举例关系。",
+      "evidence_sentence": "However, new jobs are appearing all the time. ⑤, jobs in technology and health care are growing quickly.",
+      "context_clue": "However, new jobs are appearing all the time. ⑤, jobs in technology and health care are growing quickly.",
+      "clue_argument": "后句是前句“新工作出现”的具体例子，故用for example。"
+    },
+    {
+      "question_index": 6,
+      "stem": "⑥, it is important to keep learning.",
+      "options": ["Therefore", "However", "For example", "Instead"],
+      "answer": "Therefore",
+      "explanation": "因为工作世界变化快且新工作不断出现，所以持续学习很重要，therefore表示因果。However表示转折，For example表示举例，Instead表示替代，均不符合此处因果关系。",
+      "evidence_sentence": "However, new jobs are appearing all the time. ⑤, jobs in technology and health care are growing quickly. ⑥, it is important to keep learning.",
+      "context_clue": "However, new jobs are appearing all the time. ⑤, jobs in technology and health care are growing quickly. ⑥, it is important to keep learning.",
+      "clue_argument": "前文说明工作变化快，后文得出结论“持续学习很重要”，故用therefore。"
+    },
+    {
+      "question_index": 7,
+      "stem": "A person with many skills is ⑦ than one with only a few.",
+      "options": ["more able", "most able", "abler", "able"],
+      "answer": "more able",
+      "explanation": "than表明此处需要比较级，able的比较级是more able。most able是最高级，abler是错误的比较级形式，able是原级，均不能与than连用。",
+      "evidence_sentence": "A person with many skills is ⑦ than one with only a few.",
+      "context_clue": "A person with many skills is ⑦ than one with only a few.",
+      "clue_argument": "than提示比较级，able的比较级为more able。"
+    },
+    {
+      "question_index": 8,
+      "stem": "The most ⑧ thing is to stay curious and open to new ideas.",
+      "options": ["important", "importance", "importantly", "import"],
+      "answer": "important",
+      "explanation": "the most后接形容词构成最高级，修饰thing，important是形容词。importance是名词，importantly是副词，import是动词或名词，均不能直接修饰thing。",
+      "evidence_sentence": "The most ⑧ thing is to stay curious and open to new ideas.",
+      "context_clue": "The most ⑧ thing is to stay curious and open to new ideas.",
+      "clue_argument": "the most后需形容词，important修饰thing。"
+    },
+    {
+      "question_index": 9,
+      "stem": "⑨ a clear plan can help you reach your goal.",
+      "options": ["To make", "Making", "Made", "Make"],
+      "answer": "To make",
+      "explanation": "此处表示目的“为了制定一个清晰的计划”，用不定式to make作目的状语。Making是现在分词，Made是过去分词，Make是动词原形，均不能在此表示目的。",
+      "evidence_sentence": "⑨ a clear plan can help you reach your goal.",
+      "context_clue": "⑨ a clear plan can help you reach your goal.",
+      "clue_argument": "制定计划是帮助实现目标的目的，故用不定式to make。"
+    },
+    {
+      "question_index": 10,
+      "stem": "You should also be ready ⑩ new challenges.",
+      "options": ["to face", "facing", "faced", "face"],
+      "answer": "to face",
+      "explanation": "be ready to do sth.是固定搭配，表示“准备好做某事”，故用不定式to face。facing是现在分词，faced是过去分词，face是动词原形，均不符合be ready后的不定式要求。",
+      "evidence_sentence": "You should also be ready ⑩ new challenges.",
+      "context_clue": "You should also be ready ⑩ new challenges.",
+      "clue_argument": "be ready后接不定式，表示准备好面对新挑战。"
+    }
+  ]
+}

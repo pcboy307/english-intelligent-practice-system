@@ -1,0 +1,65 @@
+{
+  "passage": "In today's digital age, our personal information is more exposed than ever. Every time we download an app or click on a link, we may be sharing data without realizing it. Not only do companies collect our browsing habits, but they also track our locations. This raises a serious question: who should be responsible for protecting our privacy?\n\nRecently, a high school student named Lily discovered that a popular app was selling her contact list to advertisers. She was shocked and decided to take action. She wrote an article for the school newspaper, explaining how apps often require access to personal data that is not necessary for their function. Her article encouraged many students to check their privacy settings.\n\nWhat Lily learned is that digital privacy is not just about hiding secrets; it is about having control over one's own information. She believes that it is the government's duty to make stricter laws, and that companies should be required to explain clearly what data they collect. However, she also admits that individuals must play a part by being careful about what they share online.\n\nThe most effective solution, according to Lily, is a combination of education and regulation. Schools should teach students how to protect their privacy, and laws should punish those who misuse personal data. Only then can we enjoy the benefits of technology without sacrificing our basic rights.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What did Lily do after she found out that an app was selling her contact list?",
+      "options": [
+        "She stopped using all apps immediately.",
+        "She wrote an article for the school newspaper.",
+        "She reported the app to the government.",
+        "She asked her friends to delete the app."
+      ],
+      "answer": "She wrote an article for the school newspaper.",
+      "explanation": "文章明确提到Lily发现后决定采取行动，并为校报写了一篇文章。A项“立即停用所有应用”和C项“向政府举报”文中均未提及，属于无中生有。",
+      "evidence_sentence": "She wrote an article for the school newspaper, explaining how apps often require access to personal data that is not necessary for their function.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can be inferred about Lily's view on responsibility for digital privacy?",
+      "options": [
+        "Only the government is responsible.",
+        "Only individuals are responsible.",
+        "Both companies and individuals share responsibility.",
+        "Companies should not be trusted at all."
+      ],
+      "answer": "Both companies and individuals share responsibility.",
+      "explanation": "文中提到Lily认为政府应制定更严格的法律，公司应明确解释收集的数据，同时个人也要小心分享信息，说明她认为多方都有责任。A项“只有政府负责”和B项“只有个人负责”都过于片面，与原文不符。",
+      "evidence_sentence": "She believes that it is the government's duty to make stricter laws, and that companies should be required to explain clearly what data they collect.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"misuse\" in the last paragraph most likely mean?",
+      "options": [
+        "Use something in a wrong or harmful way.",
+        "Share something with others.",
+        "Collect something for a good purpose.",
+        "Protect something carefully."
+      ],
+      "answer": "Use something in a wrong or harmful way.",
+      "explanation": "根据上下文，法律应惩罚那些“misuse”个人数据的人，结合前文公司出售数据等行为，可推断misuse意为“滥用”。B项“分享”和D项“保护”与惩罚的语境不符。",
+      "evidence_sentence": "Schools should teach students how to protect their privacy, and laws should punish those who misuse personal data.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To warn readers about the dangers of all apps.",
+        "To argue that digital privacy requires combined efforts.",
+        "To compare different apps that collect data.",
+        "To suggest that individuals should stop using technology."
+      ],
+      "answer": "To argue that digital privacy requires combined efforts.",
+      "explanation": "文章通过Lily的例子讨论了数字隐私问题，最后强调教育、法律和个人共同作用，因此主要目的是论证需要多方共同努力。A项“警告所有应用的危险”过于绝对，D项“建议停止使用技术”与原文“享受技术好处”矛盾。",
+      "evidence_sentence": "The most effective solution, according to Lily, is a combination of education and regulation.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

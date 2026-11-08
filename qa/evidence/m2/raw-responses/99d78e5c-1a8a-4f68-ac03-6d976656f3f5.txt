@@ -1,0 +1,126 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative about a student and teacher starting a green club and their subsequent actions.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "accept",
+      "reason": "The context 'not everyone would (1) the idea' and later participation indicate 'accept' is the only word that fits logically.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "appreciate",
+      "reason": "The teacher asked students to realize the amount of rubbish, and 'appreciate' means to understand or recognize, fitting the context.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "balance",
+      "reason": "The phrase 'school work with protecting nature' suggests finding a balance between the two, and 'balance' is the only option that makes sense.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "benefit",
+      "reason": "The club would gain from sorting waste and saving paper, and 'benefit from' is a common collocation.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "challenge",
+      "reason": "The phrase 'So great was the (5) that many students joined' indicates a challenge that motivated students, and 'challenge' fits the context.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 6,
+      "clear_best": true,
+      "best_option": "communicate",
+      "reason": "The classmate led talks with younger children, so 'communicate' is the appropriate verb for interacting well.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 7,
+      "clear_best": true,
+      "best_option": "contribute",
+      "reason": "Posters were contributed to the project, and 'contribute to' means to give or add, fitting the passive construction.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 8,
+      "clear_best": true,
+      "best_option": "determine",
+      "reason": "The teacher said if we determine our habits early, we can make a difference, and 'determine' means to decide or establish.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 9,
+      "clear_best": true,
+      "best_option": "discover",
+      "reason": "The student hoped to discover new ways to reuse old things, and 'discover' means to find something new.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 10,
+      "clear_best": true,
+      "best_option": "efficient",
+      "reason": "The request was to use both sides of paper efficiently, and 'efficient' is the only adjective that makes sense.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 11,
+      "clear_best": true,
+      "best_option": "essential",
+      "reason": "The statement 'It is essential that we act now' conveys urgency, and 'essential' means necessary.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 12,
+      "clear_best": true,
+      "best_option": "improve",
+      "reason": "They have improved the recycling system step by step, and 'improve' means to make better.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 13,
+      "clear_best": true,
+      "best_option": "manage",
+      "reason": "They have managed to keep the playground clean, and 'manage to do' means to succeed in doing something.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 14,
+      "clear_best": true,
+      "best_option": "prefer",
+      "reason": "The structure 'prefer doing to doing' is used to express preference, and 'prefer' is the only verb that fits.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 15,
+      "clear_best": true,
+      "best_option": "reduce",
+      "reason": "They reduced the waste by half, and 'reduce' means to make smaller or less.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

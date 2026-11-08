@@ -1,0 +1,1 @@
+{"translations": {"arrange": "安排", "hands-on": "动手", "vague": "模糊", "wooden": "木制"}}

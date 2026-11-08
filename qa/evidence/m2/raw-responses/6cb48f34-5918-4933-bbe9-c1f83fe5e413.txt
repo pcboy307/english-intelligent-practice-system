@@ -1,0 +1,65 @@
+{
+  "passage": "When the student first read about climate change, she felt worried but also far away from the problem. Her teacher, however, asked the class to think about one simple question: what can we do today? The student decided to act. She started a small group with a classmate, and they planned to make their school greener. At first, they only collected paper for recycling. Then they noticed that the lights in empty classrooms were often left on. They wrote a short report and gave it to the school office. The office agreed to let students check the lights each afternoon. In just one month, the school used less electricity. The student also spoke to younger children about turning off taps and not wasting food. She explained that small actions, when many people do them together, can have a big effect. Her teacher was proud of the group and said their work showed real purpose. The student learned that climate action does not always begin with governments or big companies. It can begin with a student, a classmate, and a teacher who care enough to start.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To explain why governments must act on climate change",
+        "To show that small actions by students can make a difference",
+        "To describe how to save electricity at home",
+        "To argue that recycling is the best way to help the environment"
+      ],
+      "answer": "To show that small actions by students can make a difference",
+      "explanation": "文章通过学生和同学、老师一起采取小行动并取得效果的故事，说明小行动也能带来改变。选项A强调政府行动，与文章结尾“climate action does not always begin with governments”矛盾；选项D把回收说成最好方式，文章并未比较各种方式，故错误。",
+      "evidence_sentence": "The student learned that climate action does not always begin with governments or big companies.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Students should always follow their teacher's advice.",
+        "Recycling paper is the most important school activity.",
+        "A student group took simple steps to help the environment.",
+        "Climate change is too difficult for young people to understand."
+      ],
+      "answer": "A student group took simple steps to help the environment.",
+      "explanation": "全文主要讲述学生成立小组，从回收纸张到检查电灯、宣传节水节粮，采取简单步骤保护环境。选项A把老师的建议绝对化，文章并未说“总是”听从；选项D与文章中学生能理解并行动的事实相反，故错误。",
+      "evidence_sentence": "She started a small group with a classmate, and they planned to make their school greener.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what did the student group do after they noticed lights left on in empty classrooms?",
+      "options": [
+        "They turned off the lights themselves every day.",
+        "They wrote a report and gave it to the school office.",
+        "They asked the government for help.",
+        "They stopped collecting paper for recycling."
+      ],
+      "answer": "They wrote a report and gave it to the school office.",
+      "explanation": "文章明确提到，他们注意到空教室的灯经常亮着后，写了一份简短报告交给学校办公室。选项A说他们每天自己关灯，但文章说办公室同意让学生每天下午检查灯，并非学生直接关灯；选项C说向政府求助，文章未提及，故错误。",
+      "evidence_sentence": "They wrote a short report and gave it to the school office.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the student's teacher from the passage?",
+      "options": [
+        "The teacher did not believe students could help with climate change.",
+        "The teacher encouraged students to take action in their own school.",
+        "The teacher thought only governments could solve climate problems.",
+        "The teacher asked students to focus only on their studies."
+      ],
+      "answer": "The teacher encouraged students to take action in their own school.",
+      "explanation": "老师让学生思考“我们今天能做什么”，并支持学生小组的行动，还表扬他们，说明老师鼓励学生在学校采取行动。选项A说老师不相信学生能帮忙，与老师表扬学生矛盾；选项C说老师认为只有政府能解决，与文章结尾学生学到的道理相反，故错误。",
+      "evidence_sentence": "Her teacher, however, asked the class to think about one simple question: what can we do today?",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

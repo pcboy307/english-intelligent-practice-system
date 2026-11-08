@@ -1,0 +1,126 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a connected narrative about a student's growth from anxiety to confidence with support from teacher, deskmate, and parents.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "anxious",
+      "reason": "The context of starting senior high and feeling about new subjects suggests anxiety, which aligns with the later help from the teacher.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "confident",
+      "reason": "The teacher helped her become more confident, which contrasts with her initial anxiety and fits the positive growth narrative.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "curious",
+      "reason": "Asking many questions in class indicates curiosity about everything around her.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "reliable",
+      "reason": "A deskmate who never forgets to bring notes is reliable, and the other options do not fit the described behavior.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "ambitious",
+      "reason": "Wanting to enter a top university and working hard every day indicates ambition.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 6,
+      "clear_best": true,
+      "best_option": "achieve",
+      "reason": "The phrase 'achieve her dream' is a common collocation meaning to realize one's dream.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 7,
+      "clear_best": true,
+      "best_option": "adapt",
+      "reason": "The phrase 'adapt to' means to adjust to something, which fits the fast pace of school life.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 8,
+      "clear_best": true,
+      "best_option": "encourage",
+      "reason": "Parents would encourage her when she felt tired, which is a supportive action.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 9,
+      "clear_best": true,
+      "best_option": "persuade",
+      "reason": "The teacher persuaded her to join the debate club, meaning the teacher convinced her to do it.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 10,
+      "clear_best": true,
+      "best_option": "concentrate",
+      "reason": "The phrase 'concentrate on' means to focus attention on something, which fits with studies.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 11,
+      "clear_best": true,
+      "best_option": "gradually",
+      "reason": "The word 'gradually' fits the context of slow change over time, as indicated by 'slowly learned'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 12,
+      "clear_best": true,
+      "best_option": "eventually",
+      "reason": "The word 'eventually' means in the end, which fits the hypothetical situation of finding her own way.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 13,
+      "clear_best": true,
+      "best_option": "independently",
+      "reason": "The phrase 'on her own' suggests independence, so 'independently' is the best fit.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 14,
+      "clear_best": true,
+      "best_option": "confidence",
+      "reason": "True confidence comes from small daily progress, which aligns with the theme of self-growth.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 15,
+      "clear_best": true,
+      "best_option": "opportunity",
+      "reason": "The phrase 'opportunity to grow' is a natural collocation meaning a chance to develop.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

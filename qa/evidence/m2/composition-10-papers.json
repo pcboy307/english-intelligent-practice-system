@@ -1,0 +1,584 @@
+{
+  "student_id": "4c2cddb9-50eb-4983-b117-ac9b989599c9",
+  "paper_count": 10,
+  "papers": [
+    {
+      "session_id": "1a2e7766-d7c3-4da2-b520-0eae2b1294d1",
+      "question_count": 29,
+      "score": 100.0,
+      "paper_mode": "reading",
+      "fallback_used": true,
+      "fallback_reason": "NO_EXACT_GROUPED_ASSEMBLY",
+      "book_quota_expected": {
+        "必修": 6,
+        "选必一": 9,
+        "选必二": 13,
+        "cross_book": 1
+      },
+      "book_quota_actual": {
+        "选必二": 9,
+        "选必一": 8,
+        "必修": 8,
+        "cross_book": 4
+      },
+      "difficulty_quota_expected": {
+        "easy": 12,
+        "medium": 11,
+        "hard": 6
+      },
+      "difficulty_actual": {
+        "medium": 11,
+        "easy": 12,
+        "hard": 6
+      },
+      "grammar_tag_max": 3,
+      "topics": [
+        "循环经济",
+        "未来职业",
+        "青春成长与自我认识"
+      ],
+      "selected_passage_groups": [
+        "M2-FULL-CLOZE-01",
+        "M2-FULL-GRAMMAR-06",
+        "M2-FULL-READING-22"
+      ],
+      "hard_constraint_rejection_counts": {
+        "BOOK_QUOTA_MISMATCH": 870,
+        "DIFFICULTY_MISMATCH": 883,
+        "GRAMMAR_TAG_REPEAT_EXCEEDS_3": 808,
+        "KNOWLEDGE_POINT_REPEAT_EXCEEDS_3": 900
+      },
+      "valid_skeleton_count": 0,
+      "weight_witness": {
+        "selected_score": 1.0,
+        "rejected_candidate_score": 1.0,
+        "rejected_candidate_groups": [
+          "M2-FULL-CLOZE-01",
+          "M2-FULL-GRAMMAR-05",
+          "M2-FULL-READING-11"
+        ]
+      }
+    },
+    {
+      "session_id": "8a6443ff-835a-45ba-8a47-1dfd2794455c",
+      "question_count": 30,
+      "score": 100.0,
+      "paper_mode": "gap_fill",
+      "fallback_used": true,
+      "fallback_reason": "NO_EXACT_GROUPED_ASSEMBLY",
+      "book_quota_expected": {
+        "必修": 6,
+        "选必一": 9,
+        "选必二": 14,
+        "cross_book": 1
+      },
+      "book_quota_actual": {
+        "选必一": 9,
+        "选必二": 10,
+        "必修": 11
+      },
+      "difficulty_quota_expected": {
+        "easy": 12,
+        "medium": 12,
+        "hard": 6
+      },
+      "difficulty_actual": {
+        "medium": 10,
+        "easy": 14,
+        "hard": 6
+      },
+      "grammar_tag_max": 3,
+      "topics": [
+        "团队合作与责任",
+        "艺术与文化",
+        "高效学习习惯"
+      ],
+      "selected_passage_groups": [
+        "M2-FULL-CLOZE-02",
+        "M2-FULL-GAP-01",
+        "M2-FULL-GRAMMAR-05"
+      ],
+      "hard_constraint_rejection_counts": {
+        "BOOK_QUOTA_MISMATCH": 348,
+        "DIFFICULTY_MISMATCH": 358,
+        "GRAMMAR_TAG_REPEAT_EXCEEDS_3": 319,
+        "KNOWLEDGE_POINT_REPEAT_EXCEEDS_3": 360
+      },
+      "valid_skeleton_count": 0,
+      "weight_witness": {
+        "selected_score": 1.0,
+        "rejected_candidate_score": 0.7,
+        "rejected_candidate_groups": [
+          "M2-FULL-CLOZE-01",
+          "M2-FULL-GRAMMAR-05",
+          "M2-FULL-GAP-07"
+        ]
+      }
+    },
+    {
+      "session_id": "b1db0365-e9d7-4edd-91c1-4c5e26f17bba",
+      "question_count": 29,
+      "score": 100.0,
+      "paper_mode": "reading",
+      "fallback_used": true,
+      "fallback_reason": "NO_EXACT_GROUPED_ASSEMBLY",
+      "book_quota_expected": {
+        "必修": 6,
+        "选必一": 9,
+        "选必二": 13,
+        "cross_book": 1
+      },
+      "book_quota_actual": {
+        "选必二": 9,
+        "选必一": 8,
+        "必修": 8,
+        "cross_book": 4
+      },
+      "difficulty_quota_expected": {
+        "easy": 12,
+        "medium": 11,
+        "hard": 6
+      },
+      "difficulty_actual": {
+        "medium": 11,
+        "easy": 12,
+        "hard": 6
+      },
+      "grammar_tag_max": 3,
+      "topics": [
+        "循环经济",
+        "未来职业",
+        "青春成长与自我认识"
+      ],
+      "selected_passage_groups": [
+        "M2-FULL-CLOZE-01",
+        "M2-FULL-GRAMMAR-06",
+        "M2-FULL-READING-22"
+      ],
+      "hard_constraint_rejection_counts": {
+        "BOOK_QUOTA_MISMATCH": 870,
+        "DIFFICULTY_MISMATCH": 883,
+        "GRAMMAR_TAG_REPEAT_EXCEEDS_3": 808,
+        "KNOWLEDGE_POINT_REPEAT_EXCEEDS_3": 900
+      },
+      "valid_skeleton_count": 0,
+      "weight_witness": {
+        "selected_score": 0.4,
+        "rejected_candidate_score": 0.4,
+        "rejected_candidate_groups": [
+          "M2-FULL-CLOZE-01",
+          "M2-FULL-GRAMMAR-05",
+          "M2-FULL-READING-22"
+        ]
+      }
+    },
+    {
+      "session_id": "241ba8fa-5651-4307-a6b2-a1925a734b85",
+      "question_count": 30,
+      "score": 100.0,
+      "paper_mode": "gap_fill",
+      "fallback_used": true,
+      "fallback_reason": "NO_EXACT_GROUPED_ASSEMBLY",
+      "book_quota_expected": {
+        "必修": 6,
+        "选必一": 9,
+        "选必二": 14,
+        "cross_book": 1
+      },
+      "book_quota_actual": {
+        "选必一": 9,
+        "选必二": 10,
+        "必修": 11
+      },
+      "difficulty_quota_expected": {
+        "easy": 12,
+        "medium": 12,
+        "hard": 6
+      },
+      "difficulty_actual": {
+        "hard": 5,
+        "easy": 14,
+        "medium": 11
+      },
+      "grammar_tag_max": 3,
+      "topics": [
+        "数字学习与选择",
+        "环保社团",
+        "艺术与文化"
+      ],
+      "selected_passage_groups": [
+        "M2-FULL-CLOZE-04",
+        "M2-FULL-GAP-07",
+        "M2-FULL-GRAMMAR-05"
+      ],
+      "hard_constraint_rejection_counts": {
+        "BOOK_QUOTA_MISMATCH": 348,
+        "DIFFICULTY_MISMATCH": 358,
+        "GRAMMAR_TAG_REPEAT_EXCEEDS_3": 319,
+        "KNOWLEDGE_POINT_REPEAT_EXCEEDS_3": 360
+      },
+      "valid_skeleton_count": 0,
+      "weight_witness": {
+        "selected_score": 0.8,
+        "rejected_candidate_score": 0.4,
+        "rejected_candidate_groups": [
+          "M2-FULL-CLOZE-02",
+          "M2-FULL-GRAMMAR-05",
+          "M2-FULL-GAP-01"
+        ]
+      }
+    },
+    {
+      "session_id": "11d5e5b9-daff-4a0e-a818-863cb68f486d",
+      "question_count": 29,
+      "score": 100.0,
+      "paper_mode": "reading",
+      "fallback_used": true,
+      "fallback_reason": "NO_EXACT_GROUPED_ASSEMBLY",
+      "book_quota_expected": {
+        "必修": 6,
+        "选必一": 9,
+        "选必二": 13,
+        "cross_book": 1
+      },
+      "book_quota_actual": {
+        "选必二": 9,
+        "选必一": 8,
+        "必修": 8,
+        "cross_book": 4
+      },
+      "difficulty_quota_expected": {
+        "easy": 12,
+        "medium": 11,
+        "hard": 6
+      },
+      "difficulty_actual": {
+        "medium": 11,
+        "easy": 12,
+        "hard": 6
+      },
+      "grammar_tag_max": 3,
+      "topics": [
+        "循环经济",
+        "未来职业",
+        "青春成长与自我认识"
+      ],
+      "selected_passage_groups": [
+        "M2-FULL-CLOZE-01",
+        "M2-FULL-GRAMMAR-06",
+        "M2-FULL-READING-22"
+      ],
+      "hard_constraint_rejection_counts": {
+        "BOOK_QUOTA_MISMATCH": 870,
+        "DIFFICULTY_MISMATCH": 883,
+        "GRAMMAR_TAG_REPEAT_EXCEEDS_3": 808,
+        "KNOWLEDGE_POINT_REPEAT_EXCEEDS_3": 900
+      },
+      "valid_skeleton_count": 0,
+      "weight_witness": {
+        "selected_score": 0.4,
+        "rejected_candidate_score": 0.4,
+        "rejected_candidate_groups": [
+          "M2-FULL-CLOZE-01",
+          "M2-FULL-GRAMMAR-05",
+          "M2-FULL-READING-22"
+        ]
+      }
+    },
+    {
+      "session_id": "b1ea610c-02a9-4f33-9bd6-d01763c2161f",
+      "question_count": 30,
+      "score": 100.0,
+      "paper_mode": "gap_fill",
+      "fallback_used": true,
+      "fallback_reason": "NO_EXACT_GROUPED_ASSEMBLY",
+      "book_quota_expected": {
+        "必修": 6,
+        "选必一": 9,
+        "选必二": 14,
+        "cross_book": 1
+      },
+      "book_quota_actual": {
+        "选必一": 9,
+        "选必二": 10,
+        "必修": 11
+      },
+      "difficulty_quota_expected": {
+        "easy": 12,
+        "medium": 12,
+        "hard": 6
+      },
+      "difficulty_actual": {
+        "medium": 11,
+        "easy": 14,
+        "hard": 5
+      },
+      "grammar_tag_max": 3,
+      "topics": [
+        "团队合作与责任",
+        "艺术与文化",
+        "面对失败"
+      ],
+      "selected_passage_groups": [
+        "M2-FULL-CLOZE-02",
+        "M2-FULL-GAP-05",
+        "M2-FULL-GRAMMAR-05"
+      ],
+      "hard_constraint_rejection_counts": {
+        "BOOK_QUOTA_MISMATCH": 348,
+        "DIFFICULTY_MISMATCH": 358,
+        "GRAMMAR_TAG_REPEAT_EXCEEDS_3": 319,
+        "KNOWLEDGE_POINT_REPEAT_EXCEEDS_3": 360
+      },
+      "valid_skeleton_count": 0,
+      "weight_witness": {
+        "selected_score": 0.5,
+        "rejected_candidate_score": 0.25,
+        "rejected_candidate_groups": [
+          "M2-FULL-CLOZE-01",
+          "M2-FULL-GRAMMAR-05",
+          "M2-FULL-GAP-07"
+        ]
+      }
+    },
+    {
+      "session_id": "e8b891ff-efb5-425d-b0ae-7fea184913ce",
+      "question_count": 29,
+      "score": 100.0,
+      "paper_mode": "reading",
+      "fallback_used": true,
+      "fallback_reason": "NO_EXACT_GROUPED_ASSEMBLY",
+      "book_quota_expected": {
+        "必修": 6,
+        "选必一": 9,
+        "选必二": 13,
+        "cross_book": 1
+      },
+      "book_quota_actual": {
+        "选必二": 9,
+        "选必一": 8,
+        "必修": 8,
+        "cross_book": 4
+      },
+      "difficulty_quota_expected": {
+        "easy": 12,
+        "medium": 11,
+        "hard": 6
+      },
+      "difficulty_actual": {
+        "medium": 11,
+        "easy": 12,
+        "hard": 6
+      },
+      "grammar_tag_max": 3,
+      "topics": [
+        "循环经济",
+        "未来职业",
+        "青春成长与自我认识"
+      ],
+      "selected_passage_groups": [
+        "M2-FULL-CLOZE-01",
+        "M2-FULL-GRAMMAR-06",
+        "M2-FULL-READING-22"
+      ],
+      "hard_constraint_rejection_counts": {
+        "BOOK_QUOTA_MISMATCH": 870,
+        "DIFFICULTY_MISMATCH": 883,
+        "GRAMMAR_TAG_REPEAT_EXCEEDS_3": 808,
+        "KNOWLEDGE_POINT_REPEAT_EXCEEDS_3": 900
+      },
+      "valid_skeleton_count": 0,
+      "weight_witness": {
+        "selected_score": 0.1,
+        "rejected_candidate_score": 0.1,
+        "rejected_candidate_groups": [
+          "M2-FULL-CLOZE-01",
+          "M2-FULL-GRAMMAR-05",
+          "M2-FULL-READING-22"
+        ]
+      }
+    },
+    {
+      "session_id": "fd1d852a-d6bb-4c84-aa05-83f2403012f2",
+      "question_count": 30,
+      "score": 100.0,
+      "paper_mode": "gap_fill",
+      "fallback_used": true,
+      "fallback_reason": "NO_EXACT_GROUPED_ASSEMBLY",
+      "book_quota_expected": {
+        "必修": 6,
+        "选必一": 9,
+        "选必二": 14,
+        "cross_book": 1
+      },
+      "book_quota_actual": {
+        "选必一": 9,
+        "选必二": 10,
+        "必修": 11
+      },
+      "difficulty_quota_expected": {
+        "easy": 12,
+        "medium": 12,
+        "hard": 6
+      },
+      "difficulty_actual": {
+        "medium": 10,
+        "easy": 14,
+        "hard": 6
+      },
+      "grammar_tag_max": 3,
+      "topics": [
+        "团队合作与责任",
+        "艺术与文化",
+        "高效学习习惯"
+      ],
+      "selected_passage_groups": [
+        "M2-FULL-CLOZE-02",
+        "M2-FULL-GAP-01",
+        "M2-FULL-GRAMMAR-05"
+      ],
+      "hard_constraint_rejection_counts": {
+        "BOOK_QUOTA_MISMATCH": 348,
+        "DIFFICULTY_MISMATCH": 358,
+        "GRAMMAR_TAG_REPEAT_EXCEEDS_3": 319,
+        "KNOWLEDGE_POINT_REPEAT_EXCEEDS_3": 360
+      },
+      "valid_skeleton_count": 0,
+      "weight_witness": {
+        "selected_score": 0.3,
+        "rejected_candidate_score": 0.15,
+        "rejected_candidate_groups": [
+          "M2-FULL-CLOZE-01",
+          "M2-FULL-GRAMMAR-05",
+          "M2-FULL-GAP-07"
+        ]
+      }
+    },
+    {
+      "session_id": "d8b45eb2-f5b1-43f6-9e00-efc1bb653f37",
+      "question_count": 29,
+      "score": 100.0,
+      "paper_mode": "reading",
+      "fallback_used": true,
+      "fallback_reason": "NO_EXACT_GROUPED_ASSEMBLY",
+      "book_quota_expected": {
+        "必修": 6,
+        "选必一": 9,
+        "选必二": 13,
+        "cross_book": 1
+      },
+      "book_quota_actual": {
+        "选必二": 9,
+        "选必一": 8,
+        "必修": 8,
+        "cross_book": 4
+      },
+      "difficulty_quota_expected": {
+        "easy": 12,
+        "medium": 11,
+        "hard": 6
+      },
+      "difficulty_actual": {
+        "medium": 11,
+        "easy": 12,
+        "hard": 6
+      },
+      "grammar_tag_max": 3,
+      "topics": [
+        "循环经济",
+        "未来职业",
+        "青春成长与自我认识"
+      ],
+      "selected_passage_groups": [
+        "M2-FULL-CLOZE-01",
+        "M2-FULL-GRAMMAR-06",
+        "M2-FULL-READING-22"
+      ],
+      "hard_constraint_rejection_counts": {
+        "BOOK_QUOTA_MISMATCH": 870,
+        "DIFFICULTY_MISMATCH": 883,
+        "GRAMMAR_TAG_REPEAT_EXCEEDS_3": 808,
+        "KNOWLEDGE_POINT_REPEAT_EXCEEDS_3": 900
+      },
+      "valid_skeleton_count": 0,
+      "weight_witness": {
+        "selected_score": 0.1,
+        "rejected_candidate_score": 0.1,
+        "rejected_candidate_groups": [
+          "M2-FULL-CLOZE-01",
+          "M2-FULL-GRAMMAR-05",
+          "M2-FULL-READING-22"
+        ]
+      }
+    },
+    {
+      "session_id": "9122d3a0-c9c6-40d5-b8fc-ea03431fe46d",
+      "question_count": 30,
+      "score": 100.0,
+      "paper_mode": "gap_fill",
+      "fallback_used": true,
+      "fallback_reason": "NO_EXACT_GROUPED_ASSEMBLY",
+      "book_quota_expected": {
+        "必修": 6,
+        "选必一": 9,
+        "选必二": 14,
+        "cross_book": 1
+      },
+      "book_quota_actual": {
+        "选必一": 9,
+        "选必二": 10,
+        "必修": 11
+      },
+      "difficulty_quota_expected": {
+        "easy": 12,
+        "medium": 12,
+        "hard": 6
+      },
+      "difficulty_actual": {
+        "hard": 6,
+        "easy": 14,
+        "medium": 10
+      },
+      "grammar_tag_max": 3,
+      "topics": [
+        "数字学习与选择",
+        "艺术与文化",
+        "高效学习习惯"
+      ],
+      "selected_passage_groups": [
+        "M2-FULL-CLOZE-04",
+        "M2-FULL-GAP-01",
+        "M2-FULL-GRAMMAR-05"
+      ],
+      "hard_constraint_rejection_counts": {
+        "BOOK_QUOTA_MISMATCH": 348,
+        "DIFFICULTY_MISMATCH": 358,
+        "GRAMMAR_TAG_REPEAT_EXCEEDS_3": 319,
+        "KNOWLEDGE_POINT_REPEAT_EXCEEDS_3": 360
+      },
+      "valid_skeleton_count": 0,
+      "weight_witness": {
+        "selected_score": 0.3,
+        "rejected_candidate_score": 0.15,
+        "rejected_candidate_groups": [
+          "M2-FULL-CLOZE-01",
+          "M2-FULL-GRAMMAR-05",
+          "M2-FULL-GAP-07"
+        ]
+      }
+    }
+  ],
+  "pair_overlap_checks": [
+    {
+      "pair": 1,
+      "first_session": "a31b4594-8d36-49df-9dc2-b0688799573d",
+      "second_session": "39e15856-d9c8-46fc-9853-f778a8ef49a9",
+      "passage_overlap": [],
+      "passage_mutex_ok": true
+    }
+  ],
+  "all_scores_100": true,
+  "all_tag_caps_ok": true,
+  "all_passages_exclusive": true,
+  "fallback_paper_count": 10
+}

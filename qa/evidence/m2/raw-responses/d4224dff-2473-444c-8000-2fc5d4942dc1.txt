@@ -1,0 +1,65 @@
+{
+  "passage": "Stress is a common problem for high school students. Many students feel worried before exams or when they have too much homework. If a student feels stressed, it is important to take action. First, they should talk to someone they trust, like a parent or a teacher. Second, they should take breaks and do something they enjoy, such as listening to music or playing sports. Third, they should get enough sleep and eat healthy food. It is also helpful to remember that everyone feels stress sometimes. If students follow these tips, they will be able to manage stress better. However, some students ignore the signs of stress. They think that if they study harder, they will feel better. But this often makes things worse. A healthy balance between study and rest is key. Schools can also help by offering support and creating a friendly environment. Students should know that it is okay to ask for help. With the right support, every student can succeed.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "High school students often feel stressed and need to study harder.",
+        "Stress is a common problem and students should take steps to manage it.",
+        "Schools should remove all exams to reduce student stress.",
+        "Only parents can help students deal with stress."
+      ],
+      "answer": "Stress is a common problem and students should take steps to manage it.",
+      "explanation": "文章主要讲述学习压力常见，并给出管理压力的建议，因此B正确。A项“需要更努力学习”与文章建议平衡学习与休息矛盾；C项“取消所有考试”文中未提及，属于过度推断。",
+      "evidence_sentence": "Stress is a common problem for high school students. Many students feel worried before exams or when they have too much homework.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what should a student do if they feel stressed?",
+      "options": [
+        "They should study harder and ignore the stress.",
+        "They should talk to someone they trust.",
+        "They should stop doing any sports.",
+        "They should eat more junk food."
+      ],
+      "answer": "They should talk to someone they trust.",
+      "explanation": "文章明确建议“talk to someone they trust”，因此B正确。A项“更努力学习并忽视压力”与文章建议相反；C项“停止运动”文中未提，且运动是建议的放松方式；D项“吃更多垃圾食品”与健康饮食建议矛盾。",
+      "evidence_sentence": "First, they should talk to someone they trust, like a parent or a teacher.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer from the passage about students who ignore stress?",
+      "options": [
+        "They will feel better if they study harder.",
+        "They may make their situation worse.",
+        "They never feel stressed.",
+        "They always ask for help."
+      ],
+      "answer": "They may make their situation worse.",
+      "explanation": "文中提到“this often makes things worse”，因此可推断忽视压力可能使情况更糟，B正确。A项“更努力学习会感觉更好”与原文相反；C项“从不感到压力”与事实不符；D项“总是求助”与忽视压力的行为矛盾。",
+      "evidence_sentence": "But this often makes things worse.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"balance\" in the passage most likely mean?",
+      "options": [
+        "A situation where study and rest are equal and healthy.",
+        "A tool used for weighing things.",
+        "A state of being very busy.",
+        "A way of studying all the time."
+      ],
+      "answer": "A situation where study and rest are equal and healthy.",
+      "explanation": "根据上下文“A healthy balance between study and rest is key”，balance指学习与休息之间的健康平衡，A正确。B项是“天平”的字面义，与语境不符；C项“非常忙碌”和D项“一直学习”都与健康平衡相反。",
+      "evidence_sentence": "A healthy balance between study and rest is key.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "passage": "Last month, the student felt stressed because she had too many tasks and too little time. Her teacher advised that she should make a weekly plan. The student decided to try. On Monday, she listed all her tasks and marked the most important ones. She also set aside time for rest. By Wednesday, she had finished two big projects and still had time for badminton. A classmate asked how she did it. The student explained that a clear plan helped her focus and avoid wasting time. Now she feels more confident and less worried. She believes that good time management is a skill everyone can learn. It is not about doing more, but about doing what matters first.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Time management can help students reduce stress and achieve more.",
+        "Students should spend more time on sports.",
+        "Teachers should make plans for their students.",
+        "Badminton is the best way to relax."
+      ],
+      "answer": "Time management can help students reduce stress and achieve more.",
+      "explanation": "文章主要讲述学生通过制定计划管理时间，从而减轻压力并完成任务，因此A正确。B和C是片面或错误的推断，文章并未建议学生多花时间运动或让老师代做计划。",
+      "evidence_sentence": "She believes that good time management is a skill everyone can learn.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what had the student finished by Wednesday?",
+      "options": [
+        "She had finished two big projects.",
+        "She had finished all her homework.",
+        "She had made a weekly plan.",
+        "She had played badminton for two hours."
+      ],
+      "answer": "She had finished two big projects.",
+      "explanation": "文中明确提到“By Wednesday, she had finished two big projects”，因此B正确。A和D在文中未提及或与原文不符，C是周一做的事情，不是周三前完成的。",
+      "evidence_sentence": "By Wednesday, she had finished two big projects and still had time for badminton.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about the student's classmate?",
+      "options": [
+        "The classmate was curious about the student's method.",
+        "The classmate was jealous of the student's success.",
+        "The classmate did not like making plans.",
+        "The classmate had already finished all tasks."
+      ],
+      "answer": "The classmate was curious about the student's method.",
+      "explanation": "同学问“how she did it”，表明同学对她的方法感到好奇，因此A正确。B和C在文中没有依据，D也无法从文中推断。",
+      "evidence_sentence": "A classmate asked how she did it.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"focus\" in the passage probably mean?",
+      "options": [
+        "To give attention to something",
+        "To become less stressed",
+        "To finish a task quickly",
+        "To make a weekly plan"
+      ],
+      "answer": "To give attention to something",
+      "explanation": "根据上下文“a clear plan helped her focus and avoid wasting time”，focus意为集中注意力，因此A正确。B和C是结果而非词义，D是具体行为，不是focus的含义。",
+      "evidence_sentence": "The student explained that a clear plan helped her focus and avoid wasting time.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

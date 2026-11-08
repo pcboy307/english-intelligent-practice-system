@@ -1,0 +1,65 @@
+{
+  "passage": "Every year, millions of tons of plastic waste enter the ocean. This plastic does not disappear; it breaks into tiny pieces called microplastics. These tiny pieces are now found everywhere—in sea water, in fish, and even in the air we breathe. Scientists have discovered that microplastics can harm marine animals. For example, fish often mistake plastic for food, and this can make them sick. The good news is that people around the world are taking action. Many countries have banned single-use plastic bags, and volunteers organise beach clean-ups. Students can help too: by using reusable bottles and bags, and by spreading awareness. The problem is huge, but every small action counts. If we all work together, we can reduce plastic pollution and protect our oceans for future generations.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Plastic waste is a serious problem, but actions are being taken to reduce it.",
+        "Microplastics are only found in the ocean.",
+        "Fish are the main cause of plastic pollution.",
+        "Beach clean-ups are the only solution to plastic pollution."
+      ],
+      "answer": "Plastic waste is a serious problem, but actions are being taken to reduce it.",
+      "explanation": "文章主要讲述了海洋塑料污染的严重性以及人们正在采取的行动。选项A概括了全文主旨。B项错误，因为微塑料不仅存在于海洋，还存在于空气等地方；C项错误，因为鱼类是受害者而非原因。",
+      "evidence_sentence": "The problem is huge, but every small action counts.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what can happen when fish mistake plastic for food?",
+      "options": [
+        "They grow faster.",
+        "They become sick.",
+        "They move to cleaner water.",
+        "They stop eating altogether."
+      ],
+      "answer": "They become sick.",
+      "explanation": "文章提到鱼将塑料误认为食物会使它们生病。选项B与原文一致。A项和D项在文中没有依据，C项也未提及。",
+      "evidence_sentence": "fish often mistake plastic for food, and this can make them sick.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about the writer's attitude towards solving the plastic problem?",
+      "options": [
+        "Hopeless, because the problem is too big.",
+        "Positive, because small actions can make a difference.",
+        "Uncertain, because no one knows what to do.",
+        "Angry, because governments are not doing enough."
+      ],
+      "answer": "Positive, because small actions can make a difference.",
+      "explanation": "作者在最后说“每一个小行动都很重要”，并呼吁大家共同努力，这表明作者持积极态度。A项与作者呼吁行动矛盾；B项正确；C项与文中提到的多种行动矛盾；D项作者并未表达愤怒。",
+      "evidence_sentence": "If we all work together, we can reduce plastic pollution and protect our oceans for future generations.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"banned\" in the passage most likely mean?",
+      "options": [
+        "Encouraged",
+        "Forbidden",
+        "Produced",
+        "Recycled"
+      ],
+      "answer": "Forbidden",
+      "explanation": "根据上下文，许多国家禁止使用一次性塑料袋，因此“banned”意为“禁止”。B项正确。A项“鼓励”与语境相反；C项“生产”和D项“回收”都不符合“禁止”的含义。",
+      "evidence_sentence": "Many countries have banned single-use plastic bags",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

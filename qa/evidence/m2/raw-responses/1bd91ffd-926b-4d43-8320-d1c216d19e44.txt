@@ -1,0 +1,46 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative about a school environmental club, with a logical sequence of events and connected ideas.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "The passive voice 'was set up' is clearly correct because the club is the recipient of the action, and the past tense matches the context.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "B",
+      "reason": "The subjunctive mood after 'it is important that' requires the base form 'take', making B the only correct choice.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "B",
+      "reason": "The gerund 'collecting' is required after the linking verb 'was' to function as a noun phrase describing the project.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "C",
+      "reason": "The preposition 'about' must be followed by a gerund, so 'saving' is the only grammatically correct option.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "C",
+      "reason": "The fixed expression 'make a big difference' requires the noun 'difference', making C the clear best answer.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "passage": "Last month, our school held a science fair. The student and her teacher planned a project about clean water. They built a simple water system with sand and stone. (1) It was not easy, but they worked hard. A classmate helped them carry the heavy materials. The student wanted to show how dirty water could become clear. (2) Her teacher advised her to test the system many times. (3) The results were recorded in a notebook every day. (4) Only after many tests did they feel confident. (5) It was their teamwork that made the project successful. On the day of the fair, many visitors came. The student explained the system clearly. Her teacher smiled and said, \"You have done a great job.\"",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "It was not easy, but they worked hard.",
+        "They decided to give up the project.",
+        "The teacher bought new books for the class.",
+        "The fair was cancelled because of rain.",
+        "The student forgot to bring her notebook.",
+        "A visitor asked many questions about the school.",
+        "The classmate won a prize for singing."
+      ],
+      "answer": "A",
+      "explanation": "前文说他们用沙子和石头建了一个简单的净水系统，后文说他们努力，因此“这不容易，但他们努力”最连贯。B和C与后文努力及项目成功矛盾。",
+      "evidence_sentence": "They built a simple water system with sand and stone.",
+      "context_clue": "They built a simple water system with sand and stone.",
+      "clue_argument": "建系统需要努力，后文也提到worked hard。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "Her teacher advised her to test the system many times.",
+        "The student decided to change the topic.",
+        "The classmate lost the notebook.",
+        "The teacher cancelled the science fair.",
+        "They bought new sand from the shop.",
+        "The visitor took many photos.",
+        "The student forgot her teacher's advice."
+      ],
+      "answer": "A",
+      "explanation": "后文说“结果每天被记录在笔记本里”，说明老师建议她多次测试系统。B和C与后文记录结果不衔接。",
+      "evidence_sentence": "The student wanted to show how dirty water could become clear.",
+      "context_clue": "The student wanted to show how dirty water could become clear.",
+      "clue_argument": "要展示净水效果，需要多次测试。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "The results were recorded in a notebook every day.",
+        "The student forgot to bring the notebook.",
+        "The teacher bought a new notebook for herself.",
+        "The classmate drew a picture of the school.",
+        "The fair was moved to another room.",
+        "The visitor asked about the weather.",
+        "They decided to stop testing."
+      ],
+      "answer": "A",
+      "explanation": "前文建议多次测试，后文说多次测试后才有信心，因此“结果每天被记录”最合理。B和C与测试记录无关。",
+      "evidence_sentence": "Her teacher advised her to test the system many times.",
+      "context_clue": "Her teacher advised her to test the system many times.",
+      "clue_argument": "测试后需要记录结果。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "Only after many tests did they feel confident.",
+        "They felt confident before any test.",
+        "The student gave up after one test.",
+        "The teacher forgot the project.",
+        "The classmate left the school.",
+        "The fair started without them.",
+        "They decided to change the project."
+      ],
+      "answer": "A",
+      "explanation": "前文说结果每天被记录，后文说项目成功，因此“多次测试后他们才有信心”最连贯。B和C与后文成功矛盾。",
+      "evidence_sentence": "The results were recorded in a notebook every day.",
+      "context_clue": "The results were recorded in a notebook every day.",
+      "clue_argument": "记录结果说明测试多次，之后才有信心。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "It was their teamwork that made the project successful.",
+        "The student worked alone all the time.",
+        "The teacher did all the work herself.",
+        "The classmate refused to help them.",
+        "The project failed because of the rain.",
+        "The visitor bought the system.",
+        "They forgot to bring the materials."
+      ],
+      "answer": "A",
+      "explanation": "前文提到同学帮忙搬材料、老师建议测试，后文说学生讲解成功，因此“是他们的团队合作使项目成功”最合适。B和C与团队合作矛盾。",
+      "evidence_sentence": "A classmate helped them carry the heavy materials.",
+      "context_clue": "A classmate helped them carry the heavy materials.",
+      "clue_argument": "同学帮忙体现团队合作，所以成功源于团队合作。"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"translations": {"practise": "练习", "scales": "音阶", "solo": "独奏"}}

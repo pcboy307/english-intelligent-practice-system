@@ -1,0 +1,65 @@
+{
+  "passage": "When AI first entered the workplace, many workers feared it would replace them. In one office, a manager decided to test a new AI tool for sorting emails. At first, the staff watched nervously as the AI sorted hundreds of emails in minutes. However, instead of replacing the workers, the AI handled repetitive tasks, allowing the team to focus on creative projects. The manager noted that with the AI managing routine work, employees had more time to develop new ideas. One worker, who had been worried about losing her job, now uses the AI to check her reports for errors. She says the tool has become a helpful assistant rather than a rival. The company's experience shows that automation, when used wisely, can create opportunities rather than destroy them. The key is to see AI as a partner, not a replacement.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What did the manager do to test the new AI tool?",
+      "options": [
+        "He asked the staff to watch the AI carefully.",
+        "He used it to sort emails.",
+        "He replaced all the workers with AI.",
+        "He developed new creative projects."
+      ],
+      "answer": "He used it to sort emails.",
+      "explanation": "文章提到经理决定测试一个新的AI工具来分类邮件。A项是员工紧张观看，不是经理测试的方式；C项与文章相反，AI没有取代工人。因此选B。",
+      "evidence_sentence": "In one office, a manager decided to test a new AI tool for sorting emails.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can be inferred about the worker who was initially worried?",
+      "options": [
+        "She lost her job because of the AI.",
+        "She now uses the AI to check her reports.",
+        "She refuses to work with the AI.",
+        "She believes the AI is a rival."
+      ],
+      "answer": "She now uses the AI to check her reports.",
+      "explanation": "文章提到这位工人现在使用AI检查报告中的错误，并认为它是助手而非对手。A项错误，她没有失业；C项和D项与文章相反。因此选B。",
+      "evidence_sentence": "One worker, who had been worried about losing her job, now uses the AI to check her reports for errors.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"repetitive\" most likely mean in the passage?",
+      "options": [
+        "Creative and new",
+        "Done many times in the same way",
+        "Requiring much thought",
+        "Difficult and challenging"
+      ],
+      "answer": "Done many times in the same way",
+      "explanation": "根据上下文，AI处理的是重复性任务，让团队专注于创造性项目，因此repetitive意为“重复的”。A项是创造性的，与重复相反；C项需要思考，也不符合。因此选B。",
+      "evidence_sentence": "However, instead of replacing the workers, the AI handled repetitive tasks, allowing the team to focus on creative projects.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the author's attitude towards AI in the workplace?",
+      "options": [
+        "Worried and negative",
+        "Doubtful and confused",
+        "Positive and hopeful",
+        "Uninterested and neutral"
+      ],
+      "answer": "Positive and hopeful",
+      "explanation": "文章最后指出，如果明智地使用自动化，可以创造机会而不是破坏机会，并建议将AI视为合作伙伴。A项担忧和消极与文章相反；B项怀疑和困惑也不符合。因此选C。",
+      "evidence_sentence": "The company's experience shows that automation, when used wisely, can create opportunities rather than destroy them.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

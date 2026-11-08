@@ -1,0 +1,1 @@
+{"translations": {"broken": "破碎", "circular": "圆形", "reused": "重用", "threw": "扔", "thrown": "抛出", "workshops": "工坊"}}

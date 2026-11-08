@@ -1,0 +1,65 @@
+{
+  "passage": "Digital privacy is a growing concern for teenagers. A recent survey of high-school students found that over 70 per cent worry about their personal information online. Many students share photos and locations without thinking. However, not only do they risk their privacy, but they also expose themselves to possible dangers. The student, for example, once posted a photo of her new phone on a social media platform（平台）. Within hours, a stranger sent her a message asking for her address. Her teacher advised her to check her privacy settings. What surprised her most was that she had never noticed how much information was public. She learned that it is important to think before posting. Now she regularly reviews her account and shares less. She believes that the smallest action can make the biggest difference. Her classmate also started to care more about digital safety. Together, they encourage others to protect their personal data.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the survey show about high-school students?",
+      "options": [
+        "Most of them share photos without thinking.",
+        "Over 70 per cent worry about their personal information online.",
+        "They never check their privacy settings.",
+        "They all have social media accounts."
+      ],
+      "answer": "Over 70 per cent worry about their personal information online.",
+      "explanation": "文章第一段明确提到调查发现超过70%的高中生担心网上的个人信息。A项是部分学生的行为，并非调查结果；C项过于绝对，文中只说许多人没有思考就分享。因此选B。",
+      "evidence_sentence": "A recent survey of high-school students found that over 70 per cent worry about their personal information online.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about the student from the passage?",
+      "options": [
+        "She will stop using social media.",
+        "She has become more careful about what she posts.",
+        "She no longer trusts her teacher.",
+        "She thinks privacy is not important."
+      ],
+      "answer": "She has become more careful about what she posts.",
+      "explanation": "文中提到她现在定期检查账户并减少分享，还认为最小的行动也能带来最大的改变，可以推断她变得更加谨慎。A项文中未提及她停止使用社交媒体；D项与她的行为矛盾。因此选B。",
+      "evidence_sentence": "Now she regularly reviews her account and shares less.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"expose\" in paragraph 1 most probably mean?",
+      "options": [
+        "protect",
+        "hide",
+        "make open to harm",
+        "share"
+      ],
+      "answer": "make open to harm",
+      "explanation": "根据上下文，学生分享照片和位置会暴露自己，使自己面临可能的危险，因此expose意为“使暴露于危险”。A项protect（保护）和B项hide（隐藏）与语境相反。因此选C。",
+      "evidence_sentence": "However, not only do they risk their privacy, but they also expose themselves to possible dangers.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the author's main purpose in writing the passage?",
+      "options": [
+        "To warn students about the dangers of sharing personal information online.",
+        "To introduce a new social media platform.",
+        "To compare different privacy settings.",
+        "To praise students for their online behaviour."
+      ],
+      "answer": "To warn students about the dangers of sharing personal information online.",
+      "explanation": "文章通过调查和学生事例，强调数字隐私的重要性，并鼓励学生保护个人信息，主要目的是警告学生注意分享个人信息的危险。B项和C项文中未提及；D项与文章批评学生随意分享的态度不符。因此选A。",
+      "evidence_sentence": "Digital privacy is a growing concern for teenagers.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

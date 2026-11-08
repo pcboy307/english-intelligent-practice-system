@@ -1,0 +1,1 @@
+{"translations": {"seafood": "海鲜", "unforgettable": "难忘"}}

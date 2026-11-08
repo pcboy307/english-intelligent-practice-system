@@ -1,0 +1,38 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a connected narrative about a student's experience in a debating club, developing trust and friendship with a classmate.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "She invited the student to sit with the team.",
+      "reason": "The correct answer is directly stated in the passage, while the other options are clearly contradicted or unsupported.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "She is loyal and keeps her promises.",
+      "reason": "The student's refusal to share the secret demonstrates loyalty and promise-keeping, making that option clearly best.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "Able to be trusted",
+      "reason": "The context of being dependable when someone is weak supports the meaning 'able to be trusted', and the other options are unrelated.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "To show that friendship is built on trust and support",
+      "reason": "The passage's narrative and concluding statements emphasize trust and support as the essence of friendship, making this option clearly the main purpose.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

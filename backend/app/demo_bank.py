@@ -29,6 +29,7 @@ class DemoQuestion:
     grammar_tags: list[str]
     book_source: str
     difficulty: int
+    topic_value: str | None = None
 
     @property
     def question_order(self) -> int:
@@ -79,6 +80,8 @@ class DemoQuestion:
 
     @property
     def topic(self) -> str:
+        if self.topic_value:
+            return self.topic_value
         return {
             "DEMO-CLOZE-01": "environment",
             "DEMO-CLOZE-02": "transport",

@@ -1,0 +1,38 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative about a student's experience with online learning, with a clear sequence of events and a concluding opinion.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "pay attention",
+      "reason": "The context 'hard to focus because her little brother was often noisy' clearly indicates that focus means to concentrate or pay attention, making 'pay attention' the best choice.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "Supportive",
+      "reason": "The author's concluding statement that online learning 'can be a useful tool' when used wisely clearly indicates a supportive attitude, unlike the other options.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "Online learning can be helpful if used properly.",
+      "reason": "The passage's main idea is encapsulated in the final sentence, and the other options either contradict the text or are not supported.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "She could replay parts of the lesson.",
+      "reason": "The passage explicitly states that the most surprising aspect was the ability to replay parts of the lesson, directly matching the correct option.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "passage": "When Maya moved to a new school, she felt lonely and unsure. A classmate named Leo noticed her sitting alone at lunch and invited her to join his table. At first, Maya was hesitant, but Leo's warm smile made her feel welcome. Over the next few weeks, they discovered a shared love for science and often studied together after class. One day, Maya accidentally broke Leo's favorite model rocket. She was terrified that he would be angry, but instead, Leo said, \"If you had told me the truth immediately, I would have understood. Accidents happen.\" Maya was relieved and promised to be more careful. From then on, their friendship grew stronger. They learned that trust is built on honesty and that true friends accept each other's mistakes. When Leo faced a difficult math test, Maya helped him study, and he passed with flying colors. Their bond became a source of strength for both of them.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What did Leo do when he first noticed Maya?",
+      "options": [
+        "He invited her to join his table at lunch.",
+        "He helped her with her science homework.",
+        "He gave her a model rocket.",
+        "He asked her to study with him after class."
+      ],
+      "answer": "He invited her to join his table at lunch.",
+      "explanation": "细节题。文章第二句提到Leo邀请Maya加入他的餐桌，因此A正确。B和C是后来发生的事，不是最初的行为。",
+      "evidence_sentence": "A classmate named Leo noticed her sitting alone at lunch and invited her to join his table.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about Leo from his reaction to the broken rocket?",
+      "options": [
+        "He values honesty more than the rocket.",
+        "He does not care about his belongings.",
+        "He expects Maya to buy him a new rocket.",
+        "He wants to end the friendship."
+      ],
+      "answer": "He values honesty more than the rocket.",
+      "explanation": "推理题。Leo说如果Maya立刻说实话他会理解，表明他更看重诚实而非物品，因此A正确。B和D与他的宽容态度相反。",
+      "evidence_sentence": "If you had told me the truth immediately, I would have understood.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the phrase \"with flying colors\" most likely mean in the passage?",
+      "options": [
+        "With a very high score.",
+        "With colorful pens.",
+        "With great difficulty.",
+        "With little effort."
+      ],
+      "answer": "With a very high score.",
+      "explanation": "词义猜测题。根据上下文，Maya帮助Leo学习数学，他考试“with flying colors”，结合“passed”可知是高分通过，因此A正确。B和C不符合语境。",
+      "evidence_sentence": "When Leo faced a difficult math test, Maya helped him study, and he passed with flying colors.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To show how trust and honesty strengthen friendship.",
+        "To explain how to build a model rocket.",
+        "To describe the challenges of a new school.",
+        "To compare two students' study habits."
+      ],
+      "answer": "To show how trust and honesty strengthen friendship.",
+      "explanation": "目的意图题。文章通过Maya和Leo的故事说明了信任和诚实如何巩固友谊，因此A正确。B和C只是细节，不是主旨。",
+      "evidence_sentence": "They learned that trust is built on honesty and that true friends accept each other's mistakes.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"translations": {"distractions": "分心", "easily": "容易", "pace": "节奏", "pause": "暂停", "self-discipline": "自律", "tablets": "药片"}}

@@ -1,0 +1,45 @@
+{
+  "passage": "In 2023, a student named Li Hua joined a school space club. She was curious about the universe. Her teacher, Mr. Wang, showed the club a video about China's space station. Li Hua was amazed. She decided to learn more about space exploration. She read books and watched documentaries. She learned that astronauts face many challenges. They must be brave and healthy. They also need to work as a team. Li Hua was inspired. She wanted to become an astronaut. However, she knew it was difficult. She needed to study hard and exercise every day. Mr. Wang encouraged her. He said, \"With hard work, you can achieve your dream.\" Li Hua also learned about the benefits of space exploration. Satellites help us communicate and predict weather. Space research leads to new technologies. These technologies improve our daily lives. Li Hua realized that space exploration is not just about going to space. It is about improving life on Earth. She became more determined. She started a space club at her school. Many classmates joined. They built model rockets and learned about planets. Li Hua felt proud. She knew that every small step could lead to a big dream.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"inspired\" in the passage mean?",
+      "options": ["Encouraged", "Confused", "Frightened", "Bored"],
+      "answer": "Encouraged",
+      "explanation": "词义理解题。根据上下文，李华被太空探索所激励，想要成为宇航员，因此\"inspired\"意为\"受到鼓舞\"。A项\"Encouraged\"符合；B项\"Confused\"（困惑）和C项\"Frightened\"（害怕）与语境不符，故错误。",
+      "evidence_sentence": "Li Hua was inspired. She wanted to become an astronaut.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's purpose in writing this passage?",
+      "options": ["To describe the life of an astronaut", "To encourage students to pursue space dreams", "To explain how to build model rockets", "To compare Chinese and foreign space programs"],
+      "answer": "To encourage students to pursue space dreams",
+      "explanation": "写作目的题。文章讲述了李华受太空探索启发并开始追求梦想的故事，旨在鼓励学生追求太空梦想。B项正确；A项\"描述宇航员生活\"只是部分细节，并非主旨；C项\"解释如何制作模型火箭\"是文中一个活动，不是目的，故错误。",
+      "evidence_sentence": "She knew that every small step could lead to a big dream.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Space exploration is too difficult for students.", "Li Hua's interest in space exploration led her to take action.", "Astronauts need to be brave and healthy.", "Model rockets are fun to build."],
+      "answer": "Li Hua's interest in space exploration led her to take action.",
+      "explanation": "主旨大意题。文章主要讲述李华对太空探索产生兴趣，并通过学习和行动（如创办社团）追求梦想。B项概括了全文；A项\"太空探索对学生太难\"与文章鼓励的态度相反；C项\"宇航员需要勇敢健康\"是细节；D项\"模型火箭有趣\"是细节，故错误。",
+      "evidence_sentence": "She started a space club at her school.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, what did Li Hua do after she learned about the benefits of space exploration?",
+      "options": ["She decided to become an astronaut.", "She started a space club at her school.", "She built model rockets with her classmates.", "She watched documentaries about space."],
+      "answer": "She started a space club at her school.",
+      "explanation": "细节理解题。文章提到李华了解太空探索的好处后，她变得更加坚定，并创办了太空社团。B项正确；A项\"决定成为宇航员\"发生在了解好处之前；C项\"和同学制作模型火箭\"是创办社团后的活动；D项\"看纪录片\"也是之前的行为，故错误。",
+      "evidence_sentence": "She started a space club at her school.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

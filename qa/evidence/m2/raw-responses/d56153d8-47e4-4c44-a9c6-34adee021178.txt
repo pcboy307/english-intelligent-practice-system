@@ -1,0 +1,1 @@
+{"translations": {"relay": "接力", "runner": "跑者", "runners": "跑者", "teammates": "队友"}}

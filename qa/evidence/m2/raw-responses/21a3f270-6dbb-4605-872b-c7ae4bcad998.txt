@@ -1,0 +1,95 @@
+{
+  "passage": "Good communication is not a gift but a skill. Last month, our class held a workshop on listening. The speaker, Ms. Chen, began with a simple question: “When did someone last listen to you completely?” Many of us could not remember. She explained that most people listen only to reply, not to understand. (1) ______. This habit often creates misunderstandings. For example, my friend Tom often interrupts others. One day, he argued with his classmate Lily because he had not let her finish. Ms. Chen suggested a simple method: listen without planning your answer. (2) ______. Only then can you truly hear the speaker’s message. She also stressed the importance of asking questions. (3) ______. A good question shows that you care. However, asking too many questions can feel like an interrogation. (4) ______. If we all practiced active listening, many conflicts would disappear. (5) ______. Communication would become much smoother. Ms. Chen ended the workshop with a challenge: try to listen fully in every conversation for one week. The results might surprise you.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the sentence that best fits gap (1).",
+      "options": [
+        "A. This means we often miss the speaker’s real meaning.",
+        "B. Therefore, we should speak more clearly.",
+        "C. As a result, listening becomes easier.",
+        "D. For instance, we should take notes.",
+        "E. In contrast, speaking is more important.",
+        "F. However, we rarely practice speaking.",
+        "G. Besides, we should avoid eye contact."
+      ],
+      "answer": "A",
+      "explanation": "前文说人们只听以回应而非理解，A项“这意味着我们常错过说话者的真实意思”承接自然。B项转向说话清晰，C项说倾听变容易，均与上下文矛盾。",
+      "evidence_sentence": "She explained that most people listen only to reply, not to understand.",
+      "context_clue": "She explained that most people listen only to reply, not to understand.",
+      "clue_argument": "前句指出只听以回应而非理解，A项解释其后果，逻辑连贯。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the sentence that best fits gap (2).",
+      "options": [
+        "A. This method helps you focus on the speaker.",
+        "B. This method makes you forget the speaker.",
+        "C. This method is too difficult to learn.",
+        "D. This method wastes your time.",
+        "E. This method requires a quiet room.",
+        "F. This method is only for teachers.",
+        "G. This method should be avoided."
+      ],
+      "answer": "A",
+      "explanation": "前文建议“不计划答案地倾听”，A项“这个方法帮你专注于说话者”正面说明其作用。B项说忘记说话者，C项说太难，均与建议目的相反。",
+      "evidence_sentence": "Ms. Chen suggested a simple method: listen without planning your answer.",
+      "context_clue": "Ms. Chen suggested a simple method: listen without planning your answer.",
+      "clue_argument": "该方法旨在专注倾听，A项直接说明其好处，衔接顺畅。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the sentence that best fits gap (3).",
+      "options": [
+        "A. Questions can help clarify what the speaker means.",
+        "B. Questions should be avoided in conversations.",
+        "C. Questions often make people angry.",
+        "D. Questions are only for interviews.",
+        "E. Questions show you are not listening.",
+        "F. Questions are a waste of time.",
+        "G. Questions should be very personal."
+      ],
+      "answer": "A",
+      "explanation": "前文强调提问的重要性，A项“问题能帮助澄清说话者的意思”正面解释原因。B项建议避免提问，C项说使人愤怒，均与“重要性”矛盾。",
+      "evidence_sentence": "She also stressed the importance of asking questions.",
+      "context_clue": "She also stressed the importance of asking questions.",
+      "clue_argument": "空格需解释提问为何重要，A项说明其澄清作用，符合逻辑。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the sentence that best fits gap (4).",
+      "options": [
+        "A. So we should ask as many questions as possible.",
+        "B. But a few thoughtful questions are enough.",
+        "C. Therefore, never ask any questions.",
+        "D. For example, questions are always welcome.",
+        "E. In addition, questions make people comfortable.",
+        "F. However, questions are not important.",
+        "G. Besides, we should ask personal questions."
+      ],
+      "answer": "B",
+      "explanation": "前文说问题太多像审问，B项“但几个深思熟虑的问题就够了”形成转折，给出平衡建议。A项主张尽可能多问，C项完全否定提问，均与语境不符。",
+      "evidence_sentence": "However, asking too many questions can feel like an interrogation.",
+      "context_clue": "However, asking too many questions can feel like an interrogation.",
+      "clue_argument": "前句警告问题过多，B项用But转折提出适量提问，语义对比合理。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the sentence that best fits gap (5).",
+      "options": [
+        "A. If we listened more, we would understand each other better.",
+        "B. If we listened more, we will understand each other better.",
+        "C. If we listened more, we understood each other better.",
+        "D. If we listen more, we would understand each other better.",
+        "E. If we had listened more, we will understand each other better.",
+        "F. If we listen more, we will understood each other better.",
+        "G. If we listened more, we would have understood each other better."
+      ],
+      "answer": "A",
+      "explanation": "前文用虚拟语气“If we all practiced... would disappear”，A项保持过去虚拟结构，语义连贯。B项主句用will，D项从句用listen，均与虚拟语气不一致。",
+      "evidence_sentence": "If we all practiced active listening, many conflicts would disappear.",
+      "context_clue": "If we all practiced active listening, many conflicts would disappear.",
+      "clue_argument": "前句为过去虚拟，A项结构一致，表达与现在事实相反的假设。"
+    }
+  ]
+}

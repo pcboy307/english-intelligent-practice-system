@@ -1,0 +1,65 @@
+{
+  "passage": "In the small town of Greenhill, a group of students noticed that the local bird population was declining. They formed a club called \"Friends of Wildlife\" to protect the birds. The club's first project was to build nesting boxes. Maria, the club president, organized a weekend event to construct and hang the boxes. Many neighbors joined, and the students were excited to see birds using the boxes within weeks. However, the club soon faced a challenge. Some residents complained that the birds were noisy and made a mess. Maria listened to their concerns and proposed a solution: the club would clean the areas under the boxes regularly and plant trees to provide natural habitats away from houses. The residents agreed, and the conflict was resolved peacefully. The club's efforts were recognized by the town council, which provided funding for more projects. The students learned that protecting wildlife requires patience and cooperation. They also realized that small actions can make a big difference. Today, Greenhill is known for its thriving bird population, and the club continues to educate others about the importance of wildlife conservation.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To describe how a student club solved a problem and protected birds.",
+        "To explain why birds are noisy and messy.",
+        "To argue that town councils should fund all student clubs.",
+        "To compare different types of nesting boxes."
+      ],
+      "answer": "To describe how a student club solved a problem and protected birds.",
+      "explanation": "文章主要讲述了学生俱乐部如何通过建造鸟巢箱和解决居民投诉来保护鸟类。A项概括了全文主旨；B项只是问题的一部分，不是目的；C项过度推断，文章只提到镇议会资助了更多项目，并未主张所有俱乐部都应获得资助。因此B和C错误。",
+      "evidence_sentence": "The students learned that protecting wildlife requires patience and cooperation.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "Which sentence best expresses the main idea of the passage?",
+      "options": [
+        "Protecting wildlife requires patience and cooperation.",
+        "Birds can be noisy and make a mess.",
+        "The town council provided funding for more projects.",
+        "Greenhill is known for its thriving bird population."
+      ],
+      "answer": "Protecting wildlife requires patience and cooperation.",
+      "explanation": "文章通过学生俱乐部保护鸟类的经历，最终得出的启示是保护野生动物需要耐心和合作。A项是对全文主旨的准确概括；B项只是居民抱怨的内容，属于细节；C项也是细节，不是主旨。因此B和C错误。",
+      "evidence_sentence": "The students learned that protecting wildlife requires patience and cooperation.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What did Maria propose to solve the residents' complaints?",
+      "options": [
+        "Cleaning under the boxes and planting trees away from houses.",
+        "Removing all the nesting boxes from the neighborhood.",
+        "Asking the residents to move to another town.",
+        "Building more nesting boxes near the houses."
+      ],
+      "answer": "Cleaning under the boxes and planting trees away from houses.",
+      "explanation": "文中明确提到Maria提议俱乐部定期清理鸟巢箱下方的区域，并种植树木以提供远离房屋的自然栖息地。A项与原文一致；B项与原文相反；C项文中未提及；D项与原文不符。因此B和C错误。",
+      "evidence_sentence": "Maria listened to their concerns and proposed a solution: the club would clean the areas under the boxes regularly and plant trees to provide natural habitats away from houses.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can be inferred about the students from the passage?",
+      "options": [
+        "They are willing to listen and adapt to others' concerns.",
+        "They gave up easily when facing complaints.",
+        "They ignored the residents' opinions.",
+        "They only care about birds, not people."
+      ],
+      "answer": "They are willing to listen and adapt to others' concerns.",
+      "explanation": "从文中Maria倾听居民担忧并提出解决方案可以看出，学生们愿意倾听并调整自己的做法。A项符合推断；B项与事实相反，他们并未放弃；C项与事实相反，他们倾听了居民意见。因此B和C错误。",
+      "evidence_sentence": "Maria listened to their concerns and proposed a solution",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

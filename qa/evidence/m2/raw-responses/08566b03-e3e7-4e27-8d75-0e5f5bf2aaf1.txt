@@ -1,0 +1,45 @@
+{
+  "passage": "The electric light is one of the most important inventions in history. Before it, people used candles and oil lamps, which were dim and dangerous. In 1879, Thomas Edison made a light bulb that could work for many hours. This invention changed lives. People could work and read at night, and streets became safer. Factories could run after dark, which increased production. Over time, electric lights appeared in homes, schools, and hospitals. Today, we take light for granted, but it was once a luxury. The electric light is a symbol of human progress.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What was one problem with candles and oil lamps before the electric light?",
+      "options": ["They were expensive.", "They were dim and dangerous.", "They were hard to find.", "They produced too much smoke."],
+      "answer": "They were dim and dangerous.",
+      "explanation": "文章第一段提到“which were dim and dangerous”，说明蜡烛和油灯昏暗且危险。A项“昂贵”和C项“难找”在文中未提及，属于无中生有。",
+      "evidence_sentence": "Before it, people used candles and oil lamps, which were dim and dangerous.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can be inferred about the effect of the electric light on factories?",
+      "options": ["Factories could produce more goods.", "Factories had to close earlier.", "Factories became more dangerous.", "Factories used fewer workers."],
+      "answer": "Factories could produce more goods.",
+      "explanation": "文中说“Factories could run after dark, which increased production”，可推断电灯使工厂能夜间生产，从而增加产量。B项“更早关门”与文意相反；C项“更危险”文中未提。",
+      "evidence_sentence": "Factories could run after dark, which increased production.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word “luxury” in the last paragraph mean?",
+      "options": ["Something common.", "Something expensive but not necessary.", "Something dangerous.", "Something modern."],
+      "answer": "Something expensive but not necessary.",
+      "explanation": "根据上下文“Today, we take light for granted, but it was once a luxury.”可知，luxury指过去电灯是奢侈的、不常见的东西。A项“常见”与文意相反；C项“危险”和D项“现代”不符合语境。",
+      "evidence_sentence": "Today, we take light for granted, but it was once a luxury.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the author's main purpose in writing the passage?",
+      "options": ["To describe how to make a light bulb.", "To show the importance of the electric light.", "To compare candles and oil lamps.", "To criticize the use of electric lights."],
+      "answer": "To show the importance of the electric light.",
+      "explanation": "文章主要讲述电灯的发明及其对生活、工厂、街道等的积极影响，目的是说明电灯的重要性。A项“描述制作灯泡”不是重点；D项“批评电灯”与文意相反。",
+      "evidence_sentence": "The electric light is one of the most important inventions in history.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

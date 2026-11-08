@@ -1,0 +1,65 @@
+{
+  "passage": "Last spring, the student's science club took on a project on renewable（可再生的）energy. Their teacher, Ms. Li, asked them to find a way to power the school garden without using electricity from coal. A classmate suggested solar panels（太阳能板）, but the club had a small budget. The student did some research online and found that a local company donated used panels to schools. She wrote a letter, and the company agreed to give them six panels. The club installed（安装）them on the garden shed roof over two weekends. At first, the panels only produced enough power for a few lights. Then the student had an idea: she asked the shop class to build a small wind turbine（风力发电机）from recycled materials. When the turbine was added, the system could charge batteries for the garden tools. Ms. Li was surprised by the improvement. She said, \"You have shown that clean energy is not just a dream for big companies.\" The project won a city award, and the club used the prize money to buy more equipment. Now the garden lights shine every evening, and the student feels proud that her team turned a small idea into real change.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about the student from the passage?",
+      "options": [
+        "She is good at solving problems with limited resources.",
+        "She prefers to work alone on projects.",
+        "She thinks solar panels are too expensive to use.",
+        "She wants to become an engineer in the future."
+      ],
+      "answer": "She is good at solving problems with limited resources.",
+      "explanation": "文章提到俱乐部预算少，学生通过写信获得捐赠的太阳能板，又用回收材料制作风力发电机，说明她善于在资源有限的情况下解决问题。选项B与文中“a classmate suggested”及团队合作矛盾；选项C与文中使用太阳能板的事实相反。",
+      "evidence_sentence": "The student did some research online and found that a local company donated used panels to schools.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"improvement\" in the passage most likely mean?",
+      "options": [
+        "A change that makes something better",
+        "A problem that needs to be fixed",
+        "A plan for spending money",
+        "A prize given for winning"
+      ],
+      "answer": "A change that makes something better",
+      "explanation": "文中提到添加风力发电机后系统能为工具充电，李老师对此感到惊讶，因此“improvement”指使事物变得更好的改变。选项B“需要解决的问题”与积极语境相反；选项C“花钱计划”与上下文无关。",
+      "evidence_sentence": "When the turbine was added, the system could charge batteries for the garden tools. Ms. Li was surprised by the improvement.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Why does the author mention Ms. Li's words?",
+      "options": [
+        "To show that the project changed her view of clean energy.",
+        "To prove that she is a strict teacher.",
+        "To explain why the club had a small budget.",
+        "To suggest that big companies should help schools."
+      ],
+      "answer": "To show that the project changed her view of clean energy.",
+      "explanation": "李老师说“你们已经表明清洁能源不只是大公司的梦想”，这表明学生的项目让她对清洁能源有了新的认识。选项B“严格的老师”在文中没有依据；选项C“解释预算少的原因”与引用老师的话无关。",
+      "evidence_sentence": "She said, \"You have shown that clean energy is not just a dream for big companies.\"",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "A student team used creative ideas to bring clean energy to their school garden.",
+        "Solar panels are too expensive for most schools to buy.",
+        "Wind turbines are more useful than solar panels.",
+        "A science club won an award for growing vegetables."
+      ],
+      "answer": "A student team used creative ideas to bring clean energy to their school garden.",
+      "explanation": "全文讲述学生团队通过获得捐赠的太阳能板和制作风力发电机，为学校花园提供清洁能源，并最终获奖，因此主旨是学生用创意实现清洁能源。选项B“太阳能板太贵”与文中获得捐赠不符；选项C“风力发电机更有用”文中未比较两者优劣。",
+      "evidence_sentence": "Now the garden lights shine every evening, and the student feels proud that her team turned a small idea into real change.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

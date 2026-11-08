@@ -1,0 +1,45 @@
+{
+  "passage": "In a high school in Beijing, a student named Li Hua found that using AI（人工智能）apps for study was a new experience. At first, she used an AI app to check her homework answers. The app gave quick answers, which made her feel able to finish tasks faster. However, her teacher noticed that Li Hua's test scores were falling. The teacher advised her to use AI as a tool, not as a copy machine. Li Hua then changed her method: she used AI to explain difficult maths problems, but she always tried to solve them herself first. She also shared her experience with a classmate, Wang Ming, who had similar problems. Together, they set a rule: use AI for learning, not for cheating. By the end of the term, both had improved. The teacher was proud of their progress. She said, \"AI is like a helpful friend, but you must be the one who thinks.\" The school now holds workshops to teach students how to use AI wisely. Li Hua believes that if students use AI properly, it can be a great aid. She also suggests that every student should learn to balance AI use and personal effort.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"aid\" in the last paragraph most likely mean?",
+      "options": ["helper", "problem", "copy", "test"],
+      "answer": "helper",
+      "explanation": "根据上下文，Li Hua认为如果学生正确使用AI，它可以是一个很大的帮助，因此aid意为“助手”。A项helper正确。B项problem（问题）和C项copy（复制）与语境不符，因为文章强调AI是学习工具而非问题或抄袭手段。",
+      "evidence_sentence": "Li Hua believes that if students use AI properly, it can be a great aid.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the teacher's attitude towards using AI for study?",
+      "options": ["Supportive but cautious", "Completely opposed", "Uninterested", "Very excited"],
+      "answer": "Supportive but cautious",
+      "explanation": "老师建议Li Hua把AI当作工具而不是抄写机器，并说AI像朋友但必须自己思考，这表明老师支持但谨慎。A项正确。B项完全反对和C项不感兴趣与老师的具体建议不符。",
+      "evidence_sentence": "The teacher advised her to use AI as a tool, not as a copy machine.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["AI can be helpful if used wisely for learning.", "AI should never be used by students.", "Teachers should ban AI apps in schools.", "Students should rely on AI for all homework."],
+      "answer": "AI can be helpful if used wisely for learning.",
+      "explanation": "文章通过Li Hua的经历说明，合理使用AI能促进学习，因此主旨是AI若明智使用则有益。A项正确。B项说学生绝不应使用AI，与文章鼓励合理使用矛盾；C项说老师应禁止AI应用，但文中老师只是建议正确使用，并未主张禁止。",
+      "evidence_sentence": "Li Hua believes that if students use AI properly, it can be a great aid.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, what rule did Li Hua and Wang Ming set?",
+      "options": ["Use AI for learning, not for cheating.", "Never use AI apps again.", "Only use AI for maths problems.", "Share AI answers with classmates."],
+      "answer": "Use AI for learning, not for cheating.",
+      "explanation": "文中明确提到他们制定了一条规则：Use AI for learning, not for cheating。A项正确。B项说再也不使用AI应用，与文中他们继续使用AI学习矛盾；C项说只用于数学题，但文中未提及此限制。",
+      "evidence_sentence": "Together, they set a rule: use AI for learning, not for cheating.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

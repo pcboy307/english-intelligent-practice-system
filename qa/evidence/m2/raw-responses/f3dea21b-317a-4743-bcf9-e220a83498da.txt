@@ -1,0 +1,38 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a single narrative about a school garden project, with a clear chronological and logical flow.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "To suggest turning the waste ground into a garden",
+      "reason": "The passage states the students' letter explained the benefits of a garden, which directly supports the suggestion to create one.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "How a school garden project brought people together",
+      "reason": "The passage focuses on the collaborative effort and community involvement in the garden project, making this the central theme.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "By early summer",
+      "reason": "The passage explicitly states 'by early summer the first seeds were in the soil,' making this the correct time.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "The students learned valuable lessons beyond classroom study.",
+      "reason": "Ms Chen's statement that the project taught more than any textbook implies the students gained important non-academic lessons.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

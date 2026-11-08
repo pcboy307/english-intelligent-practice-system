@@ -1,0 +1,38 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a single connected text about a museum education programme with logical progression and related details.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "To make history more alive for students",
+      "reason": "The passage explicitly states the programme aims to make history more alive, making this the only correct option.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "A museum education programme benefits students and needs support",
+      "reason": "The passage consistently highlights the programme's benefits and the need for support, making this the clear main idea.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "Give more support to museum education",
+      "reason": "The director's suggestion is directly quoted in the passage, making this the only correct answer.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "She now has a more positive attitude towards museums",
+      "reason": "The passage states the experience changed her mind, implying a positive shift, while other options are unsupported or contradicted.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

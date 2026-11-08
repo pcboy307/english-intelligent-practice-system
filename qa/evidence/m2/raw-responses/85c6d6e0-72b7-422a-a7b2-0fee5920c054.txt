@@ -1,0 +1,65 @@
+{
+  "passage": "Climate change is one of the biggest challenges facing our planet. Many young people are taking action. At a high school in Beijing, a group of students started a club called Green Future. The student who leads the club says, \"We want to make a difference.\" Last year, the club organised a campaign to reduce plastic waste. They asked students to bring reusable bottles and bags. The school agreed to install more water fountains so that students could refill their bottles. As a result, the amount of plastic bottles used at school dropped by 40 per cent. The club also planted trees in the schoolyard. These trees help absorb carbon dioxide（二氧化碳）. The students believe that small actions can add up. Their teacher, Ms Li, says, \"I am proud of what they have achieved. They show that young people care about the environment.\" The club's next project is to encourage students to walk or cycle to school instead of taking cars. They hope to work with other schools to spread their ideas. The student leader explains, \"We are not experts, but we can learn and act. Everyone can do something.\" The club's efforts have inspired many students to think about their daily habits. With more and more young people joining, the future looks a little greener.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To describe how a student club takes action on climate change.",
+        "To explain the causes of climate change.",
+        "To compare different environmental problems.",
+        "To criticise students for not doing enough."
+      ],
+      "answer": "To describe how a student club takes action on climate change.",
+      "explanation": "文章主要介绍了一个学生环保社团采取的具体行动，如减少塑料使用、植树等，目的是描述这些行动。B项（解释气候变化的原因）在文中未提及；C项（比较不同环境问题）也未涉及；D项（批评学生做得不够）与文章赞扬学生行动的态度相反。",
+      "evidence_sentence": "At a high school in Beijing, a group of students started a club called Green Future.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Students can make a difference through small actions.",
+        "Plastic pollution is the biggest problem.",
+        "Only experts can solve climate change.",
+        "Schools should ban plastic bottles."
+      ],
+      "answer": "Students can make a difference through small actions.",
+      "explanation": "文章通过学生社团的具体行动说明小行动也能带来改变，主旨是学生通过小行动可以有所作为。B项（塑料污染是最大问题）过于片面；C项（只有专家能解决气候变化）与文中学生行动矛盾；D项（学校应禁止塑料瓶）文中未提及。",
+      "evidence_sentence": "The students believe that small actions can add up.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what happened after the club asked students to bring reusable bottles?",
+      "options": [
+        "The school installed more water fountains.",
+        "The school banned plastic bags.",
+        "Students stopped drinking water.",
+        "The club planted more trees."
+      ],
+      "answer": "The school installed more water fountains.",
+      "explanation": "文中提到，俱乐部要求学生带可重复使用的水瓶后，学校同意安装更多的饮水机。B项（学校禁止塑料袋）未提及；C项（学生停止喝水）明显错误；D项（俱乐部种更多树）是后来另一项活动，不是直接结果。",
+      "evidence_sentence": "The school agreed to install more water fountains so that students could refill their bottles.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the student leader's attitude towards climate action?",
+      "options": [
+        "She believes that everyone can contribute.",
+        "She thinks only young people should act.",
+        "She doubts whether small actions are useful.",
+        "She feels that experts are not needed."
+      ],
+      "answer": "She believes that everyone can contribute.",
+      "explanation": "学生领袖说“我们不是专家，但我们可以学习和行动。每个人都能做点什么”，这表明她认为每个人都能做出贡献。B项（她认为只有年轻人应该行动）过于绝对；C项（她怀疑小行动是否有用）与文章相反；D项（她认为不需要专家）文中未提及。",
+      "evidence_sentence": "The student leader explains, \"We are not experts, but we can learn and act. Everyone can do something.\"",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

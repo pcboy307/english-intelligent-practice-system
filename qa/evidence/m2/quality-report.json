@@ -1,0 +1,60 @@
+{
+  "bank": {
+    "id": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2",
+    "status": "active"
+  },
+  "passed": true,
+  "criteria": {
+    "R1": {
+      "passed": 300,
+      "checked": 300,
+      "rate": 1.0
+    },
+    "R2": {
+      "passed": 90,
+      "checked": 90,
+      "rate": 1.0
+    },
+    "R3": {
+      "passed": 90,
+      "checked": 90,
+      "rate": 1.0
+    },
+    "R4": {
+      "passed": 100,
+      "checked": 100,
+      "rate": 1.0
+    },
+    "R5": {
+      "passed": 100,
+      "checked": 100,
+      "rate": 1.0
+    },
+    "R6": {
+      "passed": 47,
+      "checked": 47,
+      "rate": 1.0
+    },
+    "R7": {
+      "passed": 1,
+      "checked": 1,
+      "rate": 1.0
+    },
+    "R8": {
+      "passed": 47,
+      "checked": 47,
+      "rate": 1.0
+    },
+    "R9": {
+      "passed": 300,
+      "checked": 300,
+      "rate": 1.0
+    },
+    "R10": {
+      "passed": 300,
+      "checked": 300,
+      "rate": 1.0
+    }
+  },
+  "failures": []
+}

@@ -1,0 +1,38 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a connected narrative about Li Wei's camp experience and its impact.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "Predicting",
+      "reason": "In context, 'forecasting' means predicting weather, and the other options do not fit as well.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "To encourage students to explore space",
+      "reason": "The passage's purpose is to inspire interest in space exploration, as shown by the camp's effect on Li Wei.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "A camp experience inspired a student to pursue science.",
+      "reason": "The main idea is the camp's inspirational effect on Li Wei, which is the central theme.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "Because there is no gravity.",
+      "reason": "The passage explicitly states astronauts float because of zero gravity, making this the clear answer.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

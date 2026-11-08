@@ -1,0 +1,65 @@
+{
+  "passage": "Last spring, a group of students at a small town school noticed that the local forest was becoming quieter. Birds that once sang every morning were rarely heard. The students decided to act. They formed a wildlife club and invited a scientist to give a talk. The scientist explained that many animals were being harmed by litter and by the loss of trees. She said, \"If we do not protect these animals now, their homes will disappear forever.\" The students took her advice seriously. They organised weekend clean-ups and put up signs asking people not to drop rubbish. They also built small wooden boxes for birds to nest in. A local newspaper reported their work, and soon other schools joined in. The club's aim was simple: to make the town a safer place for wildlife. By the end of the year, the students had recorded more bird songs than before. Their teacher was proud of them. She said that it was important that every citizen should take responsibility for nature. The students learned that even small actions can make a big difference.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the students' wildlife club?",
+      "options": [
+        "To make the town a safer place for wildlife.",
+        "To build a new school building.",
+        "To sell wooden boxes to local people.",
+        "To invite a scientist to give a talk."
+      ],
+      "answer": "To make the town a safer place for wildlife.",
+      "explanation": "文章明确说俱乐部目标是让小镇成为野生动物更安全的地方，因此选A。B项“建新校舍”文中未提；C项“卖木箱”与文中“为鸟做巢箱”不符。",
+      "evidence_sentence": "The club's aim was simple: to make the town a safer place for wildlife.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the passage mainly about?",
+      "options": [
+        "How a scientist gave a talk about birds.",
+        "How students took action to protect local wildlife.",
+        "Why the local newspaper reported the students.",
+        "How to build wooden boxes for birds."
+      ],
+      "answer": "How students took action to protect local wildlife.",
+      "explanation": "全文讲述学生成立俱乐部并采取清理垃圾、做巢箱等行动保护野生动物，因此选B。A项只是文中一个细节；D项只是行动之一，不能概括全文。",
+      "evidence_sentence": "The students decided to act. They formed a wildlife club",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the scientist, what will happen if people do not protect the animals now?",
+      "options": [
+        "The students will form a club.",
+        "The birds will sing more often.",
+        "Their homes will disappear forever.",
+        "The town will become quieter."
+      ],
+      "answer": "Their homes will disappear forever.",
+      "explanation": "科学家原话指出如果不保护动物，它们的家园将永远消失，因此选C。A项是学生后来的行动；B项与原文“鸟鸣减少”相反。",
+      "evidence_sentence": "If we do not protect these animals now, their homes will disappear forever.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer from the teacher's words at the end of the passage?",
+      "options": [
+        "Only students should care for nature.",
+        "The club's work was not very useful.",
+        "Everyone has a duty to protect nature.",
+        "The scientist will visit the school again."
+      ],
+      "answer": "Everyone has a duty to protect nature.",
+      "explanation": "老师说每个公民都应对自然负责，可推断保护自然人人有责，因此选C。A项“只有学生”缩小了范围；B项与老师“骄傲”的态度矛盾。",
+      "evidence_sentence": "She said that it was important that every citizen should take responsibility for nature.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

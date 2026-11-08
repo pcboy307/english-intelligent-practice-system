@@ -1,0 +1,45 @@
+{
+  "passage": "In 2023, a high school student named Li Wei joined a summer camp about space exploration. The camp was led by her teacher, Mr. Chen, and included a classmate, Wang Fang. They visited a space centre where engineers were building a new rocket. Li Wei was amazed by the huge rocket and asked many questions. Mr. Chen explained that the rocket would carry a satellite into space to help with weather forecasting. Wang Fang was curious about how astronauts live in space. A friendly engineer showed them a model of a space station and explained that astronauts float because of zero gravity. He also said that teamwork is very important on a space mission. After the visit, Li Wei decided to study science and technology in university. She realised that space exploration is not just about adventure; it is also about improving life on Earth. The camp inspired her to work hard and follow her dream.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"forecasting\" in the passage most likely mean?",
+      "options": ["Guessing", "Predicting", "Recording", "Changing"],
+      "answer": "Predicting",
+      "explanation": "根据上下文，卫星帮助进行天气预报，因此forecasting意为“预测”。A项“猜测”和C项“记录”都不符合语境，因为天气预报是基于科学数据的预测，而非随意猜测或单纯记录。",
+      "evidence_sentence": "Mr. Chen explained that the rocket would carry a satellite into space to help with weather forecasting.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": ["To describe how a rocket is built", "To encourage students to explore space", "To explain the dangers of space travel", "To compare different space centres"],
+      "answer": "To encourage students to explore space",
+      "explanation": "文章讲述了夏令营如何激发学生对太空探索的兴趣，并鼓励他们追求梦想，因此目的是鼓励学生探索太空。A项只是细节，C项文中未提及危险，D项没有比较不同太空中心。",
+      "evidence_sentence": "The camp inspired her to work hard and follow her dream.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Space exploration is only about adventure.", "A camp experience inspired a student to pursue science.", "Astronauts face many challenges in space.", "Rockets are used to carry satellites."],
+      "answer": "A camp experience inspired a student to pursue science.",
+      "explanation": "全文围绕Li Wei参加太空夏令营的经历及其对她的启发展开，因此主旨是夏令营经历激励学生追求科学。A项与原文相反，C项和D项只是文中提到的细节，并非主旨。",
+      "evidence_sentence": "After the visit, Li Wei decided to study science and technology in university.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, why do astronauts float in space?",
+      "options": ["Because they wear special suits.", "Because there is no gravity.", "Because they are in a space station.", "Because they exercise every day."],
+      "answer": "Because there is no gravity.",
+      "explanation": "文中工程师明确解释宇航员漂浮是因为零重力。A项文中未提及特殊服装导致漂浮，C项空间站只是地点，不是原因，D项锻炼与漂浮无关。",
+      "evidence_sentence": "A friendly engineer showed them a model of a space station and explained that astronauts float because of zero gravity.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

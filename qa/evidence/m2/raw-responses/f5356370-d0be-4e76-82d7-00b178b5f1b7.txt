@@ -1,0 +1,95 @@
+{
+  "passage": "Last month, the student noticed that her group project was falling apart. Everyone had ideas, but nobody was listening. She decided to organise a meeting to improve their communication. At first, some members talked over each other. The student then suggested a simple rule: each person should speak for two minutes without interruption. (1) ______. This small change made a big difference. (2) ______. By the end of the meeting, they had agreed on a clear plan. The student also learned that good communication requires patience. (3) ______. She realised that listening is as important as speaking. (4) ______. In the end, their project was a success. (5) ______. They all agreed that better communication had saved their teamwork.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "A. To everyone's surprise, this simple rule worked well.",
+        "B. The meeting was cancelled due to bad weather.",
+        "C. They decided to abandon the project entirely.",
+        "D. The teacher gave them a new assignment.",
+        "E. Some members refused to follow any rules.",
+        "F. The student forgot to bring her notes.",
+        "G. They argued about the meeting time for hours."
+      ],
+      "answer": "A",
+      "explanation": "前文提到学生建议每人发言两分钟不被打断，后文说这个小改变带来了大不同，因此A“这个简单规则效果很好”最连贯。B和C与后文成功的结果矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "The student then suggested a simple rule: each person should speak for two minutes without interruption.",
+      "clue_argument": "规则被提出后，后文说“made a big difference”，说明规则有效，故选A。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "A. As a result, everyone felt heard and respected.",
+        "B. However, the meeting ended in chaos.",
+        "C. They decided to cancel all future meetings.",
+        "D. The student was blamed for the failure.",
+        "E. Nobody wanted to share their ideas.",
+        "F. The project was delayed by a month.",
+        "G. They spent the rest of the time playing games."
+      ],
+      "answer": "A",
+      "explanation": "前文说规则带来大不同，后文说他们达成清晰计划，因此A“每个人都感到被倾听和尊重”符合逻辑。B和C与后文积极结果相反。",
+      "evidence_sentence": "",
+      "context_clue": "This small change made a big difference.",
+      "clue_argument": "“made a big difference”暗示积极变化，A正是积极结果，故选A。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "A. She also learned that patience is a key part of good communication.",
+        "B. She decided to give up on the project.",
+        "C. She refused to listen to her teammates.",
+        "D. She thought communication was a waste of time.",
+        "E. She wanted to work alone from then on.",
+        "F. She forgot all about the meeting.",
+        "G. She argued with her teacher about the rules."
+      ],
+      "answer": "A",
+      "explanation": "前文说学生学到良好沟通需要耐心，A“她还学到耐心是良好沟通的关键部分”直接承接。B、C、D、E都表达放弃或负面态度，与后文成功不符。",
+      "evidence_sentence": "",
+      "context_clue": "The student also learned that good communication requires patience.",
+      "clue_argument": "“also learned”提示另一条经验，A中的“also learned”与之呼应，故选A。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "A. In contrast, she used to think speaking was the only thing that mattered.",
+        "B. Therefore, she decided to do all the talking herself.",
+        "C. Similarly, she believed listening was unnecessary.",
+        "D. As a result, she stopped listening to others.",
+        "E. For example, she often interrupted her teammates.",
+        "F. However, she never spoke during meetings.",
+        "G. In addition, she ignored all advice."
+      ],
+      "answer": "A",
+      "explanation": "前文说“倾听和说话一样重要”，A用“In contrast”对比她过去认为说话最重要的想法，形成语义对比，最连贯。B、C、D、E都延续负面行为，与后文成功矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "She realised that listening is as important as speaking.",
+      "clue_argument": "“as important as”表明倾听与说话同等重要，A通过对比过去错误想法强化这一认识，故选A。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "A. If they had not improved their communication, they would have failed.",
+        "B. If they improved their communication, they would fail.",
+        "C. Unless they improve their communication, they will fail.",
+        "D. If they improve their communication, they would have succeeded.",
+        "E. If they had improved their communication, they would fail.",
+        "F. If they did not improve their communication, they would have failed.",
+        "G. If they have improved their communication, they would fail."
+      ],
+      "answer": "A",
+      "explanation": "前文说项目成功了，后文说更好的沟通挽救了团队合作，A用虚拟语气表示与过去事实相反的假设：“如果他们没改善沟通，就会失败”，符合语境。B、C、D、E、F、G时态或逻辑错误。",
+      "evidence_sentence": "",
+      "context_clue": "In the end, their project was a success.",
+      "clue_argument": "项目成功是事实，A用“If...had not..., would have failed”表示对过去的虚拟，强调沟通的重要性，故选A。"
+    }
+  ]
+}

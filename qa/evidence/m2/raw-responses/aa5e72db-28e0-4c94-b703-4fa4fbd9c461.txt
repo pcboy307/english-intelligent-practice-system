@@ -1,0 +1,65 @@
+{
+  "passage": "In 1879, a young inventor in America wanted to change how people lived after dark. He tested many materials for a lamp that could glow without fire. After hundreds of trials, he found a thin thread that burned slowly and gave light for many hours. This small lamp, the light bulb（灯泡）, soon appeared in homes and streets. Before it, people used oil lamps or candles, which were dirty and dangerous. The new light let students read at night and let shops stay open longer. Some people feared the change, but most welcomed it. The inventor did not stop there. He also built a system to send electric power to every house. This system made the lamp useful for everyone, not just the rich. His work showed that one idea can touch daily life for millions. Today we take light for granted（认为理所当然）, but it was once a wonder. The story reminds us that patient effort can turn a simple idea into a life-changing tool.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What did the inventor test many materials for?",
+      "options": [
+        "To build a lamp that could glow without fire",
+        "To make oil lamps cheaper",
+        "To create a new kind of candle",
+        "To send messages over long distances"
+      ],
+      "answer": "To build a lamp that could glow without fire",
+      "explanation": "细节题。文章第一句说他想改变人们天黑后的生活，第二句明确说他测试许多材料是为了造一种不用火就能发光的灯。B项“让油灯更便宜”和C项“发明新蜡烛”都是无中生有，文中只提到油灯和蜡烛是旧方式，并未说要改进它们，因此排除。",
+      "evidence_sentence": "He tested many materials for a lamp that could glow without fire.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about the light bulb from the passage?",
+      "options": [
+        "It was immediately popular with everyone.",
+        "It made night activities easier for many people.",
+        "It was too expensive for most people to buy.",
+        "It replaced all other forms of lighting at once."
+      ],
+      "answer": "It made night activities easier for many people.",
+      "explanation": "推断题。文中说新灯让学生能在晚上读书，商店能开得更久，由此可推断它让许多人的夜间活动更方便。A项“立刻受到所有人欢迎”与文中“有些人害怕变化”矛盾；C项“太贵”文中未提，只说电力系统让灯对所有人有用，并非说灯本身贵，因此排除。",
+      "evidence_sentence": "The new light let students read at night and let shops stay open longer.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the underlined word \"wonder\" in the passage mean?",
+      "options": [
+        "A common thing",
+        "A surprising and amazing thing",
+        "A dangerous tool",
+        "A cheap product"
+      ],
+      "answer": "A surprising and amazing thing",
+      "explanation": "词义猜测题。根据上下文“今天我们认为灯是理所当然的，但它曾经是一个wonder”，以及前文说这个发明改变了数百万人的生活，可推断wonder意为“令人惊奇的事物”。A项“普通事物”与“take for granted”形成对比，不合逻辑；C项“危险工具”文中未提，因此排除。",
+      "evidence_sentence": "Today we take light for granted（认为理所当然）, but it was once a wonder.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To explain how to build a light bulb",
+        "To show that patient effort can lead to life-changing inventions",
+        "To criticize the use of oil lamps",
+        "To compare different inventors"
+      ],
+      "answer": "To show that patient effort can lead to life-changing inventions",
+      "explanation": "写作目的题。文章最后一句点明主旨：这个故事提醒我们，耐心的努力能把一个简单的想法变成改变生活的工具。A项“解释如何造灯泡”是细节而非目的；C项“批评油灯”文中只是客观比较，并非批评；D项“比较不同发明家”文中只提到一位发明家，因此排除。",
+      "evidence_sentence": "The story reminds us that patient effort can turn a simple idea into a life-changing tool.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

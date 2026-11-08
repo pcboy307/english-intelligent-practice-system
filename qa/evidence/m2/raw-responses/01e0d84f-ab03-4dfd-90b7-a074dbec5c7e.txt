@@ -1,0 +1,45 @@
+{
+  "passage": "Tom and Jack were best friends. One afternoon, Tom borrowed Jack's new camera to take photos for a school project. He promised to return it the next day. However, while Tom was riding his bike home, the camera fell out of his bag and broke. Tom felt terrible. He was afraid that Jack would be angry and that their friendship would end. He thought about hiding the truth, but he knew that honesty was important. The next morning, Tom went to Jack's house. He told Jack what had happened and said sorry. Jack was quiet for a moment. Then he said, \"Thank you for telling me the truth. A camera can be replaced, but a friend cannot.\" Tom was surprised and moved. He offered to do extra chores to pay for the repair. Jack smiled and said, \"Let's share the cost. That's what friends are for.\" From that day on, their friendship became even stronger. They learned that trust is built on honesty, and that being brave enough to admit a mistake is the first step to keeping a friendship.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What did Tom borrow from Jack?",
+      "options": ["A new camera", "A school bag", "A bike", "A project"],
+      "answer": "A new camera",
+      "explanation": "文章开头明确提到Tom向Jack借了一台新相机。选项B、C、D均与借出物品不符，故错误。",
+      "evidence_sentence": "Tom borrowed Jack's new camera to take photos for a school project.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about Jack from his words \"A camera can be replaced, but a friend cannot\"?",
+      "options": ["He valued friendship more than the camera.", "He was too angry to speak.", "He did not care about the camera at all.", "He wanted Tom to buy him a new camera."],
+      "answer": "He valued friendship more than the camera.",
+      "explanation": "从Jack的话可以看出，他认为友谊比相机更重要。选项B、C、D均与Jack宽容的态度不符，故错误。",
+      "evidence_sentence": "A camera can be replaced, but a friend cannot.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"admit\" in the last paragraph most likely mean?",
+      "options": ["To agree that something is true", "To refuse to say something", "To forget about something", "To hide something from others"],
+      "answer": "To agree that something is true",
+      "explanation": "根据上下文，\"admit a mistake\"意为承认错误，因此admit意为承认。选项B、C、D分别表示拒绝、忘记和隐藏，均不符合语境，故错误。",
+      "evidence_sentence": "being brave enough to admit a mistake is the first step to keeping a friendship.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main purpose of the passage?",
+      "options": ["To show that honesty and trust strengthen friendship.", "To explain how to repair a camera.", "To warn students not to borrow things.", "To describe a school project."],
+      "answer": "To show that honesty and trust strengthen friendship.",
+      "explanation": "文章通过Tom和Jack的故事说明诚实和信任能巩固友谊。选项B、C、D均偏离文章主旨，故错误。",
+      "evidence_sentence": "They learned that trust is built on honesty, and that being brave enough to admit a mistake is the first step to keeping a friendship.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

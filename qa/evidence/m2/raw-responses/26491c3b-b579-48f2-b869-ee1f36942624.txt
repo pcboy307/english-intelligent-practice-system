@@ -1,0 +1,1 @@
+{"translations": {"analyse": "分析", "heard": "听见", "mood": "心情", "practise": "练习", "practised": "练习过", "shots": "射击", "tryout": "试训", "twice": "两次"}}

@@ -1,0 +1,1 @@
+{"translations": {"couplets": "对联", "cultural": "文化", "importance": "重要性", "reunion": "团聚"}}

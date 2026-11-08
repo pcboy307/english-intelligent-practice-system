@@ -1,0 +1,1 @@
+{"translations": {"decisions": "决定", "hasty": "仓促", "importance": "重要性", "supportive": "支持"}}

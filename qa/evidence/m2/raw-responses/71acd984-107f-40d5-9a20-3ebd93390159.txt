@@ -1,0 +1,1 @@
+{"translations": {"beautify": "美化", "chen": "陈", "clean-up": "清理", "unused": "未使用"}}

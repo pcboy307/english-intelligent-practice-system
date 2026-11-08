@@ -1,0 +1,65 @@
+{
+  "passage": "Last month, a museum in our city started a new education programme for high school students. The programme, which was designed by a team of teachers and museum guides, aims to make history more alive. Students are encouraged to touch copies of ancient objects and to take part in small dramas. The student, who had never visited a museum before, said the experience changed her mind. Her teacher, who organised the visit, believes that such programmes should be offered to every school. A classmate, whose father works at the museum, helped to prepare the activities. According to the museum director, the programme has already welcomed over 500 students. If the museum had more money, it would open a second room for hands-on learning. The director suggests that the government should give more support to museum education. The museum also plans to train students as young guides. These guides, who will wear special uniforms, will lead tours for younger children. The programme is free, but booking is required. Many parents have said that their children now ask to visit museums at weekends. The museum hopes that this interest will grow into a lifelong love of learning.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the new museum programme?",
+      "options": [
+        "To make history more alive for students",
+        "To train students as museum directors",
+        "To sell ancient objects to schools",
+        "To replace school history lessons"
+      ],
+      "answer": "To make history more alive for students",
+      "explanation": "文章首段明确说该项目旨在“make history more alive”。其他选项均无依据。错误选项B和C分别夸大了培训对象和活动性质，文中未提及。",
+      "evidence_sentence": "The programme, which was designed by a team of teachers and museum guides, aims to make history more alive.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "A museum education programme benefits students and needs support",
+        "Students prefer drama to traditional history lessons",
+        "Museums should charge for educational programmes",
+        "Parents are unhappy with the new museum programme"
+      ],
+      "answer": "A museum education programme benefits students and needs support",
+      "explanation": "全文围绕博物馆教育项目的益处及需要更多支持展开。选项B、C、D均与原文不符：文中未比较戏剧与传统课，项目免费，家长是支持的。",
+      "evidence_sentence": "The director suggests that the government should give more support to museum education.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the director suggest the government should do?",
+      "options": [
+        "Give more support to museum education",
+        "Build more museums in the city",
+        "Offer free tickets to all students",
+        "Train more museum guides"
+      ],
+      "answer": "Give more support to museum education",
+      "explanation": "文中直接引用主任的建议：“the government should give more support to museum education”。其他选项虽看似合理，但文中未提及。错误选项B和C分别涉及建博物馆和免费票，均非主任建议。",
+      "evidence_sentence": "The director suggests that the government should give more support to museum education.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the student mentioned in the passage?",
+      "options": [
+        "She now has a more positive attitude towards museums",
+        "She wants to become a museum guide",
+        "She has visited many museums before",
+        "She did not enjoy the drama activity"
+      ],
+      "answer": "She now has a more positive attitude towards museums",
+      "explanation": "文中说这位学生“had never visited a museum before”且“the experience changed her mind”，可推断她态度变积极。选项B、C、D均无依据：她未表示想当导游，之前没去过博物馆，也未说不喜欢戏剧。错误选项B和C分别过度推断和与原文矛盾。",
+      "evidence_sentence": "The student, who had never visited a museum before, said the experience changed her mind.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

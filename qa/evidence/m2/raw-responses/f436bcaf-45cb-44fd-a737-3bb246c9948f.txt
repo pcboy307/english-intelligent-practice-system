@@ -1,0 +1,105 @@
+{
+  "passage": "Last year, our school held an annual sports meeting. The event, ① ______ by the Students' Union, attracted hundreds of participants. ② ______ by the enthusiastic crowd, the athletes gave their best. ③ ______ the opening ceremony, the headmaster delivered a speech. ④ ______ the relay race was the most exciting part. ⑤ ______ the final whistle, the results were announced. ⑥ ______ the students were excited about was the tug-of-war. ⑦ ______ the winner was going to be remained a mystery until the end. ⑧ ______ the committee had decided was to award medals to all participants. ⑨ ______ the sun set, the sports meeting came to an end. ⑩ ______ everyone was tired, they felt happy.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Blank ①",
+      "options": ["organizing", "organized", "to organize", "organize"],
+      "answer": "organized",
+      "explanation": "此处需要过去分词作后置定语，表示“被组织的”，与The event构成被动关系。A项organizing表示主动；C项to organize表示目的，均不符合语境。",
+      "evidence_sentence": "The event, ① ______ by the Students' Union, attracted hundreds of participants.",
+      "context_clue": "The event, ① ______ by the Students' Union, attracted hundreds of participants.",
+      "clue_argument": "event与organize是被动关系，用过去分词作定语。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Blank ②",
+      "options": ["Encouraging", "Encouraged", "To encourage", "Encourage"],
+      "answer": "Encouraged",
+      "explanation": "此处需要过去分词作状语，表示运动员“受到鼓舞”，与主语the athletes是被动关系。A项Encouraging表示主动；C项To encourage表示目的，均不恰当。",
+      "evidence_sentence": "② ______ by the enthusiastic crowd, the athletes gave their best.",
+      "context_clue": "② ______ by the enthusiastic crowd, the athletes gave their best.",
+      "clue_argument": "athletes与encourage是被动关系，用过去分词作状语。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Blank ③",
+      "options": ["Following", "Followed", "To follow", "Follow"],
+      "answer": "Following",
+      "explanation": "此处需要现在分词作时间状语，表示“在开幕式之后”，与主句主语the headmaster是主动关系。B项Followed表示被动；C项To follow表示目的，均不符合。",
+      "evidence_sentence": "③ ______ the opening ceremony, the headmaster delivered a speech.",
+      "context_clue": "③ ______ the opening ceremony, the headmaster delivered a speech.",
+      "clue_argument": "headmaster与follow是主动关系，用现在分词作状语。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Blank ④",
+      "options": ["Running", "Run", "To run", "Ran"],
+      "answer": "Running",
+      "explanation": "此处需要动名词作主语，表示“跑接力赛”这件事。B项Run是动词原形；C项To run表示目的，均不能作主语。",
+      "evidence_sentence": "④ ______ the relay race was the most exciting part.",
+      "context_clue": "④ ______ the relay race was the most exciting part.",
+      "clue_argument": "句子缺主语，用动名词running表示活动。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Blank ⑤",
+      "options": ["Hearing", "Heard", "To hear", "Hear"],
+      "answer": "Hearing",
+      "explanation": "此处需要现在分词作时间状语，表示“听到终场哨声时”，与主句主语the results是主动关系？实际上，主句主语the results与hear是被动关系？但此处是独立主格？不，这里主句主语是the results，但hear的逻辑主语是people，因此用现在分词作状语，表示“人们听到”。B项Heard表示被动；C项To hear表示目的，均不恰当。",
+      "evidence_sentence": "⑤ ______ the final whistle, the results were announced.",
+      "context_clue": "⑤ ______ the final whistle, the results were announced.",
+      "clue_argument": "此处是现在分词作时间状语，逻辑主语是people，表示主动。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Blank ⑥",
+      "options": ["That", "What", "Which", "Whether"],
+      "answer": "What",
+      "explanation": "此处需要主语从句的连接词，并在从句中作about的宾语，表示“学生们兴奋的事情”，用what。A项That只起连接作用，不作成分；C项Which表示“哪一个”，不符合。",
+      "evidence_sentence": "⑥ ______ the students were excited about was the tug-of-war.",
+      "context_clue": "⑥ ______ the students were excited about was the tug-of-war.",
+      "clue_argument": "从句缺about的宾语，用what引导主语从句。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Blank ⑦",
+      "options": ["Who", "Whom", "Whose", "Which"],
+      "answer": "Who",
+      "explanation": "此处需要主语从句的连接词，表示“谁将成为赢家”，在从句中作主语，用who。B项Whom作宾语；C项Whose表示所属，均不符合。",
+      "evidence_sentence": "⑦ ______ the winner was going to be remained a mystery until the end.",
+      "context_clue": "⑦ ______ the winner was going to be remained a mystery until the end.",
+      "clue_argument": "从句缺主语，表示“谁”，用who。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Blank ⑧",
+      "options": ["That", "What", "Which", "Whether"],
+      "answer": "What",
+      "explanation": "此处需要主语从句的连接词，并在从句中作decided的宾语，表示“委员会已经决定的事情”，用what。A项That不作成分；C项Which表示“哪一个”，不符合。",
+      "evidence_sentence": "⑧ ______ the committee had decided was to award medals to all participants.",
+      "context_clue": "⑧ ______ the committee had decided was to award medals to all participants.",
+      "clue_argument": "从句缺decided的宾语，用what引导主语从句。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Blank ⑨",
+      "options": ["As", "While", "When", "Since"],
+      "answer": "As",
+      "explanation": "此处需要时间状语从句的连接词，表示“随着太阳落山”，强调伴随变化，用as。B项While强调同时；C项When表示当……时，均不如as贴切。",
+      "evidence_sentence": "⑨ ______ the sun set, the sports meeting came to an end.",
+      "context_clue": "⑨ ______ the sun set, the sports meeting came to an end.",
+      "clue_argument": "表示“随着”，用as引导时间状语从句。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Blank ⑩",
+      "options": ["Although", "Because", "So", "But"],
+      "answer": "Although",
+      "explanation": "此处需要让步状语从句的连接词，表示“虽然每个人都很累，但他们感到快乐”，用although。B项Because表示原因；C项So表示结果，均不符合逻辑。",
+      "evidence_sentence": "⑩ ______ everyone was tired, they felt happy.",
+      "context_clue": "⑩ ______ everyone was tired, they felt happy.",
+      "clue_argument": "前后是让步关系，用although引导状语从句。"
+    }
+  ]
+}

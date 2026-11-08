@@ -1,0 +1,65 @@
+{
+  "passage": "Last spring, a group of students decided to turn an unused corner of their school yard into a small city garden. Their teacher, Ms. Chen, supported the idea. She told the class that it was important that every student should have a role in the project. The students were excited and quickly formed teams. One team was responsible for collecting old boxes and bottles for recycling. Another team dug the soil and planted seeds. A third team designed a simple watering system using plastic bottles. Every afternoon, the students took turns to care for the garden. They watered the plants, pulled out wild grass, and recorded how tall the seedlings grew. By early summer, the garden was full of green leaves and bright flowers. Neighbours noticed the change and often stopped to admire the students' work. Some even brought extra plants from their own homes. The students learned that teamwork and patience can turn a forgotten place into something beautiful. Ms. Chen was proud of what they had achieved. She said, 'It is not just a garden; it is a lesson about community and care.' The project also taught the students that small actions can make a big difference. They plan to continue the garden next year and hope to grow vegetables to share with the school kitchen.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To describe how a school garden project benefited students and the community.",
+        "To explain the steps of planting seeds in a garden.",
+        "To compare different types of city gardens.",
+        "To argue that schools should have more sports fields."
+      ],
+      "answer": "To describe how a school garden project benefited students and the community.",
+      "explanation": "文章主要描述了学生如何将校园角落改造成花园，并从中学习团队合作和社区关怀。A项概括了全文主旨；B项只涉及种植步骤，是细节；C项文中没有比较不同花园；D项与文章内容无关。因此A正确，B和D是主要干扰项。",
+      "evidence_sentence": "Last spring, a group of students decided to turn an unused corner of their school yard into a small city garden.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "A school garden project taught students about teamwork and community.",
+        "Students should spend more time doing outdoor activities.",
+        "Ms. Chen is a very strict teacher.",
+        "Gardens are more beautiful than sports fields."
+      ],
+      "answer": "A school garden project taught students about teamwork and community.",
+      "explanation": "文章通过描述学生合作建设花园的过程，强调了团队合作和社区关怀的重要性。A项准确概括了主旨；B项是过度推断；C项文中没有提到老师严格；D项文中没有比较花园和运动场。因此A正确，B和D是主要干扰项。",
+      "evidence_sentence": "The students learned that teamwork and patience can turn a forgotten place into something beautiful.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what did the students do every afternoon?",
+      "options": [
+        "They took turns to care for the garden.",
+        "They played football in the yard.",
+        "They cleaned the classroom.",
+        "They visited their neighbours."
+      ],
+      "answer": "They took turns to care for the garden.",
+      "explanation": "文中明确提到每天下午学生们轮流照料花园。A项与原文一致；B项文中没有提到踢足球；C项文中没有提到打扫教室；D项文中提到邻居主动来欣赏，但学生没有去拜访邻居。因此A正确，B和D是主要干扰项。",
+      "evidence_sentence": "Every afternoon, the students took turns to care for the garden.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the neighbours' attitude towards the garden?",
+      "options": [
+        "They supported the project by giving plants.",
+        "They were worried about the noise.",
+        "They wanted to take over the garden.",
+        "They did not notice the garden at all."
+      ],
+      "answer": "They supported the project by giving plants.",
+      "explanation": "文中提到邻居们注意到变化并常停下来欣赏，有些人还从家里带来额外的植物，这表明他们支持这个项目。A项符合推断；B项文中没有提到噪音问题；C项文中没有说邻居想接管花园；D项与原文相反，邻居注意到了花园。因此A正确，B和D是主要干扰项。",
+      "evidence_sentence": "Neighbours noticed the change and often stopped to admire the students' work. Some even brought extra plants from their own homes.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

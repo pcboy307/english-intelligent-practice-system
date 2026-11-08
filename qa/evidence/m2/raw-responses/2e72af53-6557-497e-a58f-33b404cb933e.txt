@@ -1,0 +1,105 @@
+{
+  "passage": "Last spring, the student and her classmate planned a trip to Hangzhou. It was the classmate who first found a cheap train ticket online. The student said, \"It is not the destination but the journey that matters.\" Before leaving, they ① the schedule carefully. They ② the station early, but the train ③ late. While they waited, the student ④ about her first train ride ten years ago. She ⑤ on a train only twice since then. By the time they arrived, the sun ⑥. At the hotel, the receptionist told them that a map and a bottle of water ⑦ in every room. The student was happy because her luggage ⑧ light. \"The streets ⑨ clean and the people are friendly,\" she said. They also learned that ⑩ old bridge near the lake was built 800 years ago. It was a wonderful trip.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank ①.",
+      "options": ["checked", "check", "checking", "to check"],
+      "answer": "checked",
+      "explanation": "句子描述过去旅行前的动作，用一般过去时；checking不能作谓语，to check表目的但此处需要谓语，check原形与过去语境不符。因此选checked。两个主要干扰项check和checking错误：check是原形，与过去时间不符；checking是现在分词，不能单独作谓语。",
+      "evidence_sentence": "Before leaving, they ① the schedule carefully.",
+      "context_clue": "Before leaving, they ① the schedule carefully.",
+      "clue_argument": "过去旅行前的动作，用一般过去时。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank ②.",
+      "options": ["arrived at", "arrived", "reached", "got"],
+      "answer": "arrived at",
+      "explanation": "arrive at表示到达小地点，station是小地点，且句子需要过去式；arrived缺少介词，reached是及物动词但后面直接跟the station也可以，但选项reached没有介词，而空格后是the station，reached the station也正确，但arrived at更常见；got需要to。两个主要干扰项arrived和reached错误：arrived后缺介词at；reached虽可及物，但此处与arrived at相比不够准确，且选项reached缺少介词。",
+      "evidence_sentence": "They ② the station early, but the train ③ late.",
+      "context_clue": "They ② the station early, but the train ③ late.",
+      "clue_argument": "到达车站用arrive at，过去时。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank ③.",
+      "options": ["was", "were", "is", "are"],
+      "answer": "was",
+      "explanation": "主语the train是单数，且故事发生在过去，用was；were是复数过去式，is和are是现在时。两个主要干扰项were和is错误：were与单数主语不一致；is时态错误。",
+      "evidence_sentence": "They ② the station early, but the train ③ late.",
+      "context_clue": "They ② the station early, but the train ③ late.",
+      "clue_argument": "主语the train单数，过去时用was。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank ④.",
+      "options": ["was thinking", "thought", "thinks", "is thinking"],
+      "answer": "was thinking",
+      "explanation": "while引导的从句表示过去某时正在进行的动作，用过去进行时was thinking；thought一般过去时表示动作完成，thinks和is thinking是现在时。两个主要干扰项thought和thinks错误：thought不能表示正在进行的动作；thinks时态错误。",
+      "evidence_sentence": "While they waited, the student ④ about her first train ride ten years ago.",
+      "context_clue": "While they waited, the student ④ about her first train ride ten years ago.",
+      "clue_argument": "while从句表示过去正在进行，用过去进行时。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank ⑤.",
+      "options": ["has been", "was", "is", "had been"],
+      "answer": "has been",
+      "explanation": "since then表示从过去到现在，用现在完成时has been；was一般过去时，is现在时，had been过去完成时。两个主要干扰项was和is错误：was不能表示持续到现在；is时态错误。",
+      "evidence_sentence": "She ⑤ on a train only twice since then.",
+      "context_clue": "She ⑤ on a train only twice since then.",
+      "clue_argument": "since then提示现在完成时。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best option for blank ⑥.",
+      "options": ["had set", "set", "has set", "sets"],
+      "answer": "had set",
+      "explanation": "by the time they arrived表示过去某个时间之前完成的动作，用过去完成时had set；set一般过去时，has set现在完成时，sets一般现在时。两个主要干扰项set和has set错误：set不能表示过去的过去；has set时态错误。",
+      "evidence_sentence": "By the time they arrived, the sun ⑥.",
+      "context_clue": "By the time they arrived, the sun ⑥.",
+      "clue_argument": "by the time+过去时，主句用过去完成时。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best option for blank ⑦.",
+      "options": ["were", "was", "are", "is"],
+      "answer": "were",
+      "explanation": "主语a map and a bottle of water是复数，且主句told是过去时，宾语从句用were；was单数，are和is现在时。两个主要干扰项was和are错误：was与复数主语不一致；are时态错误。",
+      "evidence_sentence": "At the hotel, the receptionist told them that a map and a bottle of water ⑦ in every room.",
+      "context_clue": "At the hotel, the receptionist told them that a map and a bottle of water ⑦ in every room.",
+      "clue_argument": "主语是并列复数，过去时用were。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best option for blank ⑧.",
+      "options": ["was", "were", "is", "are"],
+      "answer": "was",
+      "explanation": "主语her luggage是不可数名词，视为单数，且故事过去，用was；were复数，is和are现在时。两个主要干扰项were和is错误：were与单数主语不一致；is时态错误。",
+      "evidence_sentence": "The student was happy because her luggage ⑧ light.",
+      "context_clue": "The student was happy because her luggage ⑧ light.",
+      "clue_argument": "luggage不可数，单数，过去时用was。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best option for blank ⑨.",
+      "options": ["are", "is", "was", "were"],
+      "answer": "are",
+      "explanation": "直接引语中描述现在的情况，主语the streets是复数，用are；is单数，was和were过去时。两个主要干扰项is和was错误：is与复数主语不一致；was时态错误。",
+      "evidence_sentence": "\"The streets ⑨ clean and the people are friendly,\" she said.",
+      "context_clue": "\"The streets ⑨ clean and the people are friendly,\" she said.",
+      "clue_argument": "直接引语现在时，主语复数用are。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best option for blank ⑩.",
+      "options": ["an", "a", "the", "不填"],
+      "answer": "an",
+      "explanation": "old以元音音素开头，且第一次提到，用不定冠词an；a用于辅音音素开头，the表特指，不填缺少冠词。两个主要干扰项a和the错误：a与元音音素不符；the表示特指，此处首次提及。",
+      "evidence_sentence": "They also learned that ⑩ old bridge near the lake was built 800 years ago.",
+      "context_clue": "They also learned that ⑩ old bridge near the lake was built 800 years ago.",
+      "clue_argument": "old以元音音素开头，首次提及用an。"
+    }
+  ]
+}

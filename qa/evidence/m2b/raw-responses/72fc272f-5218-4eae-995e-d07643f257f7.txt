@@ -1,0 +1,40 @@
+{
+  "questions": [
+    {
+      "question_index": 7,
+      "stem": "In the club, we worked on a project to help (7) ______ people in our neighbourhood.",
+      "options": ["elderly", "wealthy", "famous", "foreign"],
+      "answer": "elderly",
+      "knowledge_points": ["adjective meaning in context: elderly people = old people"],
+      "grammar_tags": ["infinitive_nonfinite"],
+      "book_source": "选必二 U2",
+      "difficulty": 3,
+      "invalid": false,
+      "invalid_reason": ""
+    },
+    {
+      "question_index": 11,
+      "stem": "Now I feel more (11) ______ and confident.",
+      "options": ["optimistic", "generous", "curious", "patient"],
+      "answer": "optimistic",
+      "knowledge_points": ["adjective meaning in context: optimistic = hopeful about the future"],
+      "grammar_tags": ["comparatives_superlatives"],
+      "book_source": "选必一 U4",
+      "difficulty": 4,
+      "invalid": false,
+      "invalid_reason": ""
+    },
+    {
+      "question_index": 12,
+      "stem": "I understand that growing up takes time, and that everyone (12) ______ mistakes.",
+      "options": ["makes", "does", "takes", "gives"],
+      "answer": "makes",
+      "knowledge_points": ["verb collocation: make a mistake"],
+      "grammar_tags": ["subject_verb_agreement"],
+      "book_source": "必修一 U3",
+      "difficulty": 2,
+      "invalid": false,
+      "invalid_reason": ""
+    }
+  ]
+}

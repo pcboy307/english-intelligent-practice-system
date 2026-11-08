@@ -1,0 +1,45 @@
+{
+  "passage": "In 1969, three brave astronauts travelled to the moon. Neil Armstrong and Buzz Aldrin walked on its surface, while Michael Collins stayed in the spacecraft above. Armstrong said, \"That's one small step for man, one giant leap for mankind.\" People around the world watched on TV and cheered. The astronauts collected rocks and took photos. They left a flag and a sign that said, \"We came in peace for all mankind.\" After they returned, scientists studied the rocks to learn about the moon. The trip showed that human courage and technology could achieve amazing things. Today, many countries work together on the International Space Station (ISS). Astronauts from America, Russia, China and other nations live and work in space for months. They do science experiments and learn how to live in zero gravity. This teamwork is important because it brings nations closer. Space travel is still dangerous and expensive, but it gives us new knowledge and new technology. For example, satellite technology helps us predict weather and communicate. Space research also leads to medical advances. However, some people argue that we should spend money on problems on Earth, like poverty and disease. Others believe that space exploration is a necessary step for the future of humanity. They say that exploring space is part of human nature. In the end, space travel is a choice that requires careful thought. It is not just about going to the moon or Mars; it is about what we can learn and how we can work together.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"leap\" in the passage most likely mean?",
+      "options": ["jump", "step", "walk", "run"],
+      "answer": "jump",
+      "explanation": "“Leap”在文中与“step”并列，表示“跳跃”，比喻巨大的进步。A项“jump”符合语境；B项“step”是原词，不是解释；C项“walk”和D项“run”与“leap”的跳跃含义不符。",
+      "evidence_sentence": "That's one small step for man, one giant leap for mankind.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's attitude towards space exploration?",
+      "options": ["Supportive", "Doubtful", "Critical", "Uninterested"],
+      "answer": "Supportive",
+      "explanation": "作者引用阿姆斯特朗的话并强调太空探索带来新知识和新技术，整体态度是支持的。A项“Supportive”正确；B项“Doubtful”和C项“Critical”与文中积极表述不符；D项“Uninterested”明显错误。",
+      "evidence_sentence": "Space travel is still dangerous and expensive, but it gives us new knowledge and new technology.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Space exploration has both benefits and costs.", "The 1969 moon landing was a great success.", "The International Space Station is important.", "Space travel is too dangerous to continue."],
+      "answer": "Space exploration has both benefits and costs.",
+      "explanation": "文章既讲了太空探索的好处，也提到其花费和风险，主旨是利弊并存。A项概括全面；B项和C项只是细节；D项与文章结论不符。",
+      "evidence_sentence": "Space travel is still dangerous and expensive, but it gives us new knowledge and new technology.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, why is teamwork on the ISS important?",
+      "options": ["It helps astronauts learn to live in zero gravity.", "It brings nations closer together.", "It makes space travel less expensive.", "It allows astronauts to stay in space for months."],
+      "answer": "It brings nations closer together.",
+      "explanation": "文中明确说团队合作重要是因为它使国家之间更亲近。B项直接对应原文；A项和D项是宇航员在空间站的活动，不是团队合作重要的原因；C项文中未提及。",
+      "evidence_sentence": "This teamwork is important because it brings nations closer.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

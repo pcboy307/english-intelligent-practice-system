@@ -1,0 +1,45 @@
+{
+  "passage": "Public libraries are important places in our communities. They offer free books, computers, and quiet study areas. Many libraries also run reading programmes for children and adults. These programmes help people improve their reading skills and enjoy learning. One library in our city recently started a new service. It lends tools and kitchen equipment to local people. This service is popular because it helps people save money and try new things. The library staff are friendly and helpful. They organise events such as book clubs and author talks. These events bring people together and create a sense of community. The library is also a safe place for students to do homework after school. Some students use the library every day. They say it is a quiet and comfortable place to study. The library has a large collection of books in many languages. It also has a special section for local history. People can learn about the past of their city. The library is funded by the government and by donations. It is free for everyone to use. Many people believe that public libraries are more important than ever. They provide access to information and technology for all citizens. In a world where many things cost money, the library remains a free and welcoming space. It is a place where people can learn, connect, and grow.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"funded\" in the passage most likely mean?",
+      "options": ["supported with money", "built with bricks", "visited by many people", "closed for repairs"],
+      "answer": "supported with money",
+      "explanation": "“funded”意为“提供资金”，与“supported with money”相符。A项“用砖建造”和B项“被许多人参观”都不符合上下文，因为该词与政府拨款和捐赠有关。",
+      "evidence_sentence": "The library is funded by the government and by donations.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's attitude towards public libraries?",
+      "options": ["They are no longer necessary.", "They are valuable community resources.", "They are too expensive to run.", "They are only for students."],
+      "answer": "They are valuable community resources.",
+      "explanation": "作者认为图书馆是“free and welcoming space”，并说它们“more important than ever”，可见态度是肯定的。A项“不再必要”和C项“运行成本太高”与原文相反，因为原文强调免费和重要。",
+      "evidence_sentence": "Many people believe that public libraries are more important than ever.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Public libraries offer many services and are important to communities.", "Public libraries only lend books to children.", "Public libraries are too noisy for studying.", "Public libraries should charge for their services."],
+      "answer": "Public libraries offer many services and are important to communities.",
+      "explanation": "文章介绍了图书馆的多种服务（借书、电脑、活动、工具借用）并强调其社区重要性，因此主旨是A。B项“只借书给孩子”和C项“太吵不适合学习”都片面或与原文不符，原文提到图书馆是安静的学习场所。",
+      "evidence_sentence": "Public libraries are important places in our communities.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, how is the library funded?",
+      "options": ["By the government and donations", "By selling books", "By charging for computer use", "By local businesses only"],
+      "answer": "By the government and donations",
+      "explanation": "原文明确说“The library is funded by the government and by donations.”，因此选A。B项“卖书”和C项“收电脑使用费”在文中未提及，且与“免费”矛盾。",
+      "evidence_sentence": "The library is funded by the government and by donations.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

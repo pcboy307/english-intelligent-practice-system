@@ -1,0 +1,1 @@
+{"translations": {"clean-up": "清理", "importance": "重要性", "production": "生产", "reusable": "可重复使用", "reused": "再利用", "single-use": "一次性", "straws": "吸管"}}

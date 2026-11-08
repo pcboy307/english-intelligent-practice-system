@@ -1,0 +1,38 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a unified description of the Spring Festival, covering traditions, family gatherings, and cultural significance in a logical sequence.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "The Spring Festival is a celebration of family and cultural traditions.",
+      "reason": "This option accurately summarizes the main idea, while the others are specific details or narrower aspects.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "Red envelopes with money",
+      "reason": "The passage explicitly states that children receive red envelopes with money, making this option clearly correct.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "They still try to connect with their families.",
+      "reason": "The passage says they will call to send greetings, which directly supports this inference.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "To show respect for",
+      "reason": "In the context of honouring traditions, 'show respect for' is the most accurate meaning.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

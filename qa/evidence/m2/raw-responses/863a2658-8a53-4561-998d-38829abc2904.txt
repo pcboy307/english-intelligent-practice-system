@@ -1,0 +1,65 @@
+{
+  "passage": "In 2023, a student in a small town noticed that her community centre used a lot of electricity. She wanted to help. With her teacher's support, she started a project to bring renewable energy to the centre. They decided to install solar panels（太阳能板）on the roof. The student organised a fundraiser and asked local businesses for support. Many people were happy to help. After months of planning, the panels were finally installed. Now, the centre gets most of its power from the sun. The student feels proud of what they achieved. She says, 'When we work together, we can make a difference.' Her teacher agrees, adding that the project has inspired other schools to follow suit. The student hopes to study engineering in the future so she can continue to develop clean energy solutions.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about the student from the passage?",
+      "options": [
+        "She is concerned about the environment.",
+        "She wants to become a teacher.",
+        "She dislikes her community centre.",
+        "She thinks solar panels are too expensive."
+      ],
+      "answer": "She is concerned about the environment.",
+      "explanation": "文章提到学生注意到社区中心用电多并想帮忙，还发起了可再生能源项目，可推断她关心环境。她希望学工程而非当老师，也未表示不喜欢社区中心或认为太阳能板太贵。",
+      "evidence_sentence": "She wanted to help. With her teacher's support, she started a project to bring renewable energy to the centre.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word 'fundraiser' most likely mean in the passage?",
+      "options": [
+        "An event to collect money.",
+        "A type of solar panel.",
+        "A person who installs panels.",
+        "A plan to save energy."
+      ],
+      "answer": "An event to collect money.",
+      "explanation": "根据上下文，学生组织fundraiser并寻求企业支持，目的是为安装太阳能板筹款，因此fundraiser意为筹款活动。它不是太阳能板类型、安装人员或节能计划。",
+      "evidence_sentence": "The student organised a fundraiser and asked local businesses for support.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the teacher's attitude towards the project?",
+      "options": [
+        "Supportive.",
+        "Doubtful.",
+        "Uninterested.",
+        "Critical."
+      ],
+      "answer": "Supportive.",
+      "explanation": "老师支持学生项目，提供帮助，并同意项目激励了其他学校，可见态度是支持性的。老师没有怀疑、不感兴趣或批评。",
+      "evidence_sentence": "Her teacher agrees, adding that the project has inspired other schools to follow suit.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "A student's project brings solar energy to her community.",
+        "Solar panels are expensive to install.",
+        "Teachers should encourage students to study engineering.",
+        "Community centres use too much electricity."
+      ],
+      "answer": "A student's project brings solar energy to her community.",
+      "explanation": "文章主要讲述一名学生发起项目为社区中心安装太阳能板，并产生积极影响，因此主旨是学生项目为社区带来太阳能。太阳能板昂贵、老师应鼓励学工程、社区中心用电多都是细节或未提及。",
+      "evidence_sentence": "She started a project to bring renewable energy to the centre.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

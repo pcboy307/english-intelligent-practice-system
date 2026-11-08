@@ -1,0 +1,65 @@
+{
+  "passage": "In the small town of Greenfield, a group of students decided to make their town a model of sustainable tourism. They had learned that tourism can bring money but also harm the environment. The student leader, a girl named Mia, suggested that they start a project to encourage visitors to respect nature. Her teacher, Mr. Chen, supported the idea and helped them apply for a small budget from the local government.\n\nFirst, the students designed a website to promote eco-friendly activities. They organised walking tours that avoided busy roads and highlighted the town's ancient trees. They also set up recycling bins along the beach and asked tourists to take their rubbish home. According to Mia, it was the teamwork that made the project successful. Many visitors were happy to join in, and some even volunteered to help clean the beach.\n\nHowever, not everyone agreed. A local businessman argued that limiting tourist numbers would reduce profits. The students listened carefully and then presented data showing that sustainable tourism could attract wealthier visitors who stay longer. They also explained that protecting the environment would keep the town beautiful for future generations. In the end, the businessman accepted their plan.\n\nThe project has now run for two years. The town has seen an increase in visitors who respect the environment, and the beach is cleaner than before. The students have learned that small actions can lead to big changes. They are now planning to share their experience with other schools.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can be inferred about the students' project from the passage?",
+      "options": [
+        "It was successful because of teamwork.",
+        "It was opposed by all local businesses.",
+        "It focused only on recycling.",
+        "It received no support from the government."
+      ],
+      "answer": "It was successful because of teamwork.",
+      "explanation": "文章提到Mia认为正是团队合作使项目成功，因此可以推断团队合作是成功的原因。A项正确。B项错误，因为只有一位商人反对，并非所有企业；C项错误，项目还包括步行游览和网站等；D项错误，他们获得了政府预算支持。",
+      "evidence_sentence": "According to Mia, it was the teamwork that made the project successful.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"wealthier\" in paragraph 3 most likely mean?",
+      "options": [
+        "richer",
+        "more generous",
+        "more educated",
+        "more interested"
+      ],
+      "answer": "richer",
+      "explanation": "根据上下文，学生们展示数据表明可持续旅游能吸引更富有的游客，他们停留更久，因此wealthier意为“更富有的”，与richer同义。A项正确。B项“更慷慨的”、C项“受教育程度更高的”、D项“更感兴趣的”均不符合语境。",
+      "evidence_sentence": "The students listened carefully and then presented data showing that sustainable tourism could attract wealthier visitors who stay longer.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the author's attitude towards the students' project?",
+      "options": [
+        "Supportive.",
+        "Doubtful.",
+        "Critical.",
+        "Uninterested."
+      ],
+      "answer": "Supportive.",
+      "explanation": "文章描述了项目的积极成果，如海滩更干净、游客增加，并提到学生学到小行动能带来大变化，表明作者持支持态度。A项正确。B项怀疑、C项批评、D项不感兴趣均与文章语气不符。",
+      "evidence_sentence": "The students have learned that small actions can lead to big changes.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Students in a town started a sustainable tourism project that brought positive changes.",
+        "A businessman disagreed with students about tourism.",
+        "Tourism always harms the environment.",
+        "The town's beach was polluted by tourists."
+      ],
+      "answer": "Students in a town started a sustainable tourism project that brought positive changes.",
+      "explanation": "全文讲述了Greenfield镇的学生发起可持续旅游项目，克服困难并取得积极成果，因此A项概括了主旨。B项只是细节；C项过于绝对且文章未说旅游总是有害；D项是局部信息。",
+      "evidence_sentence": "In the small town of Greenfield, a group of students decided to make their town a model of sustainable tourism.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

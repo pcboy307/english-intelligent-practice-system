@@ -1,0 +1,95 @@
+{
+  "passage": "Last month, the student felt tired every morning because he often stayed up late. His teacher gave him a simple plan. (1) If he followed the plan, he would feel more energetic. The plan included a regular bedtime and a short walk after dinner. (2) The student who had always been weak in PE decided to try it. He also set a rule for his phone: (3) he had been using it for hours before bed, so he would leave it in another room. (4) Therefore, his sleep improved quickly. (5) What his teacher said was true: a good routine makes a big difference. Soon he was active in class and ready for each day.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the sentence that best fits blank (1).",
+      "options": [
+        "If he followed the plan, he would feel more energetic.",
+        "He follows the plan and feels more energetic.",
+        "If he follows the plan, he will feel more energetic.",
+        "He followed the plan, so he felt more energetic.",
+        "If he had followed the plan, he would have felt more energetic.",
+        "He is following the plan and feels more energetic.",
+        "If he would follow the plan, he felt more energetic."
+      ],
+      "answer": "A",
+      "explanation": "此处为与现在事实相反的虚拟条件句，主句用would+动词原形，从句用一般过去时，故选A。B、C、D、E、F、G均不符合该语法结构；其中B和C为真实条件句，与后文“felt tired”的语境不符。",
+      "evidence_sentence": "",
+      "context_clue": "Last month, the student felt tired every morning because he often stayed up late. His teacher gave him a simple plan.",
+      "clue_argument": "语境暗示计划是假设性的，且与过去事实相反，需用虚拟语气。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the sentence that best fits blank (2).",
+      "options": [
+        "The student who had always been weak in PE decided to try it.",
+        "The student, who had always been weak in PE, decided to try it.",
+        "The student which had always been weak in PE decided to try it.",
+        "The student who had always been weak in PE, decided to try it.",
+        "The student who had always been weak in PE decided to try it.",
+        "The student who had always been weak in PE decided to try it.",
+        "The student who had always been weak in PE decided to try it."
+      ],
+      "answer": "A",
+      "explanation": "此处需要限制性定语从句修饰the student，关系代词who在从句中作主语，且前后无逗号，故选A。B为非限制性定语从句，与语境不符；C中which不能指人；D中逗号位置错误。",
+      "evidence_sentence": "",
+      "context_clue": "The plan included a regular bedtime and a short walk after dinner.",
+      "clue_argument": "后文提到学生决定尝试，需用定语从句说明是哪个学生。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the sentence that best fits blank (3).",
+      "options": [
+        "he had been using it for hours before bed, so he would leave it in another room.",
+        "he has been using it for hours before bed, so he would leave it in another room.",
+        "he was using it for hours before bed, so he would leave it in another room.",
+        "he used it for hours before bed, so he would leave it in another room.",
+        "he had used it for hours before bed, so he would leave it in another room.",
+        "he is using it for hours before bed, so he would leave it in another room.",
+        "he uses it for hours before bed, so he would leave it in another room."
+      ],
+      "answer": "A",
+      "explanation": "此处表示过去某一时间点之前一直在进行的动作，且对过去造成影响，用过去完成进行时，故选A。B为现在完成进行时，时态不符；C为过去进行时，不能表示持续到过去的动作；D为一般过去时，缺少持续含义。",
+      "evidence_sentence": "",
+      "context_clue": "He also set a rule for his phone:",
+      "clue_argument": "冒号后解释规则原因，需用过去完成进行时表示一直持续的动作。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the sentence that best fits blank (4).",
+      "options": [
+        "Therefore, his sleep improved quickly.",
+        "However, his sleep improved quickly.",
+        "For example, his sleep improved quickly.",
+        "In addition, his sleep improved quickly.",
+        "Otherwise, his sleep improved quickly.",
+        "Instead, his sleep improved quickly.",
+        "Besides, his sleep improved quickly."
+      ],
+      "answer": "A",
+      "explanation": "前文提到他采取措施把手机放在另一个房间，后文“睡眠改善”是结果，因此用Therefore表示因果，故选A。B表示转折，C表示举例，D表示递进，均不符合逻辑关系。",
+      "evidence_sentence": "",
+      "context_clue": "he would leave it in another room.",
+      "clue_argument": "前后为因果关系，前因后果，需用因果连接词。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the sentence that best fits blank (5).",
+      "options": [
+        "What his teacher said was true: a good routine makes a big difference.",
+        "That his teacher said was true: a good routine makes a big difference.",
+        "Whether his teacher said was true: a good routine makes a big difference.",
+        "If his teacher said was true: a good routine makes a big difference.",
+        "Because his teacher said was true: a good routine makes a big difference.",
+        "Although his teacher said was true: a good routine makes a big difference.",
+        "When his teacher said was true: a good routine makes a big difference."
+      ],
+      "answer": "A",
+      "explanation": "此处需要主语从句，且从句中said缺少宾语，用what引导，表示“老师所说的话”，故选A。B中that不能充当宾语；C中whether表示“是否”，语义不符；D中if不能引导主语从句。",
+      "evidence_sentence": "",
+      "context_clue": "Soon he was active in class and ready for each day.",
+      "clue_argument": "后文总结老师的话是正确的，需用主语从句概括老师所说内容。"
+    }
+  ]
+}

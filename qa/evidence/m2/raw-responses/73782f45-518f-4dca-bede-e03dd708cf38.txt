@@ -1,0 +1,1 @@
+{"translations": {"plentiful": "丰富", "sunlight": "阳光", "windowsill": "窗台"}}

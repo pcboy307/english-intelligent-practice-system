@@ -1,0 +1,38 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a unified narrative about a student club's actions to protect wildlife, with a clear sequence of events and connected ideas.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "To describe how a student club works to protect wildlife",
+      "reason": "The passage focuses on the club's activities and purpose, making this option clearly the best.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "Students can help protect wildlife through simple actions",
+      "reason": "The passage emphasizes that students' simple actions make a difference, aligning with this main idea.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "The local environment would become much safer for wildlife",
+      "reason": "The passage explicitly states this outcome in the conditional sentence.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "They believe their actions can encourage others to act",
+      "reason": "The students hope their story will encourage other schools, indicating this belief.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

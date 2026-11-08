@@ -1,0 +1,65 @@
+{
+  "passage": "Every year, many high-school students feel heavy study pressure. The student, who sits at the back of the classroom, often stays up late to review. Her teacher notices that she looks tired and advises her to take short breaks. If she followed this advice, she would feel more energetic. The teacher also suggests that she should talk to a classmate when she feels stressed. The student decides to try. She begins to share her worries with a friend, and they study together after school. Slowly, she learns that asking for help is not a sign of weakness. Now she believes that balance is the key to success. She still works hard, but she no longer feels alone. The pressure is still there, yet she has found a way to manage it.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Students should study alone to avoid distraction.",
+        "Study pressure can be managed with balance and support.",
+        "Teachers should give students more homework.",
+        "Friendship is more important than academic success."
+      ],
+      "answer": "Study pressure can be managed with balance and support.",
+      "explanation": "文章主要讲述学生通过平衡学习和寻求支持来应对学习压力。A项“独自学习”与原文“share her worries with a friend”矛盾；C项“多留作业”文中未提且与教师建议相反。",
+      "evidence_sentence": "Now she believes that balance is the key to success.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the teacher advise the student to do?",
+      "options": [
+        "To study harder every evening.",
+        "To take short breaks.",
+        "To stop doing homework.",
+        "To talk to her parents."
+      ],
+      "answer": "To take short breaks.",
+      "explanation": "文中明确提到老师建议她短暂休息。A项“更努力学习”与建议相反；C项“停止做作业”文中未提。",
+      "evidence_sentence": "Her teacher notices that she looks tired and advises her to take short breaks.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about the student from the passage?",
+      "options": [
+        "She no longer feels any pressure.",
+        "She has stopped studying hard.",
+        "She has learned to accept help from others.",
+        "She prefers to study alone."
+      ],
+      "answer": "She has learned to accept help from others.",
+      "explanation": "从她开始与朋友分享担忧并一起学习可以推断她学会了接受帮助。A项“不再感到压力”与原文“The pressure is still there”矛盾；B项“不再努力学习”与“She still works hard”矛盾。",
+      "evidence_sentence": "She begins to share her worries with a friend, and they study together after school.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"balance\" in the passage most likely mean?",
+      "options": [
+        "A state of equal or correct proportions.",
+        "A tool for weighing things.",
+        "A way of studying without breaks.",
+        "A type of school subject."
+      ],
+      "answer": "A state of equal or correct proportions.",
+      "explanation": "根据上下文，学生认识到平衡是成功的关键，指学习与休息的合理比例。B项“称重工具”是字面意思，不符语境；C项“不休息的学习方式”与平衡相反。",
+      "evidence_sentence": "Now she believes that balance is the key to success.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

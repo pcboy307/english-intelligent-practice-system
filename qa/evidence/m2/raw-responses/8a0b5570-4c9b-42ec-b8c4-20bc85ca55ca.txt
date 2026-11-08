@@ -1,0 +1,65 @@
+{
+  "passage": "When the school sports meet was announced, the student felt both excited and nervous. She had trained for the 800-metre race for months, but she knew that her classmate, a fast runner, would be her strongest competitor. On the day of the race, the student started well and stayed near the front. However, during the second lap, she suddenly fell and hurt her knee. The classmate, who was running just behind her, stopped at once. Instead of running ahead to win, the classmate helped the student stand up and walked with her to the finish line. The crowd cheered loudly for both of them. Later, the teacher said, \"Winning a medal is great, but the spirit of sport is greater. You showed true sportsmanship today.\" The student did not win a prize, but she learned an important lesson. If she had not received help, she would have felt lonely and disappointed. Instead, she felt proud of her classmate and of the friendship they shared. From that day on, she understood that the real victory lies not in beating others but in supporting them.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"sportsmanship\" most probably mean in the passage?",
+      "options": [
+        "The skill of winning races",
+        "Fair and kind behaviour in sport",
+        "The training before a match",
+        "The prize given to winners"
+      ],
+      "answer": "Fair and kind behaviour in sport",
+      "explanation": "词义猜测题。根据老师的话“Winning a medal is great, but the spirit of sport is greater. You showed true sportsmanship today.”可知，sportsmanship指在体育中表现出的公平和友善行为，而不是赢得比赛的技巧或奖品。A项“赢得比赛的技巧”和D项“给获胜者的奖品”都偏离了语境中帮助他人的行为。",
+      "evidence_sentence": "Winning a medal is great, but the spirit of sport is greater. You showed true sportsmanship today.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the teacher's attitude towards the classmate's action?",
+      "options": [
+        "Doubtful",
+        "Supportive",
+        "Uninterested",
+        "Critical"
+      ],
+      "answer": "Supportive",
+      "explanation": "态度推断题。老师的话“Winning a medal is great, but the spirit of sport is greater. You showed true sportsmanship today.”表明老师赞赏同学的行为，因此是支持的态度。A项“怀疑的”和D项“批评的”与老师表扬的语气相反。",
+      "evidence_sentence": "Winning a medal is great, but the spirit of sport is greater. You showed true sportsmanship today.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Training hard is the key to winning races.",
+        "Friendship and support matter more than winning.",
+        "School sports meets are exciting events.",
+        "Falling down can teach you a lesson."
+      ],
+      "answer": "Friendship and support matter more than winning.",
+      "explanation": "主旨大意题。文章讲述了同学放弃获胜机会帮助摔倒的学生，最后学生明白“the real victory lies not in beating others but in supporting them”，说明友谊和支持比获胜更重要。A项“刻苦训练是赢得比赛的关键”和C项“学校运动会是激动人心的活动”都只是细节或片面内容，不能概括全文主旨。",
+      "evidence_sentence": "From that day on, she understood that the real victory lies not in beating others but in supporting them.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, how would the student have felt if she had not received help?",
+      "options": [
+        "Proud and happy",
+        "Lonely and disappointed",
+        "Angry and confused",
+        "Excited and nervous"
+      ],
+      "answer": "Lonely and disappointed",
+      "explanation": "细节理解题。文中明确提到“If she had not received help, she would have felt lonely and disappointed.”，因此答案是“Lonely and disappointed”。A项“自豪和快乐”是得到帮助后的感受，C项“生气和困惑”文中未提及。",
+      "evidence_sentence": "If she had not received help, she would have felt lonely and disappointed.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

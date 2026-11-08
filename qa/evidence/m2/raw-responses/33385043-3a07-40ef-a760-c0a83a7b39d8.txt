@@ -1,0 +1,65 @@
+{
+  "passage": "Every year, millions of tons of plastic waste（塑料垃圾）enter the ocean. This pollution is a serious problem for marine life. Sea animals often mistake plastic bags for food. Turtles, for example, cannot tell the difference between a floating bag and a jellyfish. When they eat the plastic, it blocks their stomachs and they starve. Birds are also affected. They feed plastic pieces to their babies without knowing it is dangerous. Over time, the plastic breaks into tiny bits called microplastics（微塑料）. These tiny bits are eaten by fish, and the fish are eaten by larger animals—including humans. Scientists are worried about the long-term effects on human health. To solve this problem, we must reduce our use of plastic. Simple actions like using cloth bags and refusing plastic straws can make a big difference. Governments should also pass laws to limit single-use plastics. The ocean is a shared resource, and protecting it is everyone's responsibility.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Plastic pollution harms ocean life and requires action.",
+        "Turtles often mistake plastic bags for jellyfish.",
+        "Microplastics are found in fish.",
+        "Governments should ban all plastic."
+      ],
+      "answer": "Plastic pollution harms ocean life and requires action.",
+      "explanation": "文章首句指出每年有数百万吨塑料垃圾进入海洋，随后说明其对海洋生物的危害，最后呼吁减少塑料使用并采取行动，因此主旨是塑料污染危害海洋生物并需要采取行动。B和C只是细节，D过于绝对，文章说的是限制一次性塑料而非禁止所有塑料。",
+      "evidence_sentence": "Every year, millions of tons of plastic waste（塑料垃圾）enter the ocean. This pollution is a serious problem for marine life.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what happens to plastic over time?",
+      "options": [
+        "It breaks into tiny bits called microplastics.",
+        "It is eaten only by turtles.",
+        "It disappears completely.",
+        "It becomes food for jellyfish."
+      ],
+      "answer": "It breaks into tiny bits called microplastics.",
+      "explanation": "文章明确提到“Over time, the plastic breaks into tiny bits called microplastics”，即塑料随时间分解成微塑料。A正确。B错在“only”，因为许多动物都受影响；C错在“完全消失”，与原文不符。",
+      "evidence_sentence": "Over time, the plastic breaks into tiny bits called microplastics（微塑料）.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can be inferred about the effect of microplastics on humans?",
+      "options": [
+        "Humans may consume microplastics through seafood.",
+        "Humans are not affected by microplastics.",
+        "Microplastics only harm sea animals.",
+        "Microplastics are too small to enter the food chain."
+      ],
+      "answer": "Humans may consume microplastics through seafood.",
+      "explanation": "文章说微塑料被鱼吃掉，鱼又被更大的动物吃掉，包括人类，因此可以推断人类可能通过海鲜摄入微塑料。A正确。B和C与原文矛盾，D与“进入食物链”矛盾。",
+      "evidence_sentence": "These tiny bits are eaten by fish, and the fish are eaten by larger animals—including humans.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"resource\" most likely mean in the last sentence?",
+      "options": [
+        "Something valuable that can be used.",
+        "A type of plastic waste.",
+        "A law passed by the government.",
+        "A place where fish live."
+      ],
+      "answer": "Something valuable that can be used.",
+      "explanation": "最后一句说“海洋是共享的资源，保护它是每个人的责任”，resource指有价值且可利用的东西。A正确。B、C、D均不符合语境，资源不是塑料垃圾、法律或鱼类的栖息地。",
+      "evidence_sentence": "The ocean is a shared resource, and protecting it is everyone's responsibility.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

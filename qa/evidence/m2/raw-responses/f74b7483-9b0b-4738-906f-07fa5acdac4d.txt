@@ -1,0 +1,86 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a connected narrative about a student's experiment on music and plant growth, with each sentence logically following the previous one.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "who",
+      "reason": "The relative pronoun 'who' correctly refers to the person 'the student' and functions as the subject of the clause.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "that",
+      "reason": "The relative pronoun 'that' correctly refers to the thing 'an experiment' and functions as the object of the verb 'test'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "which",
+      "reason": "The relative pronoun 'which' correctly refers to the thing 'a plant' and functions as the subject of the clause.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "which",
+      "reason": "In a non-restrictive clause, 'which' is required to refer to the thing 'a small bean plant' and functions as the object of 'placed'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "was measured",
+      "reason": "The passive past tense 'was measured' correctly matches the singular subject 'height' and the past narrative context.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 6,
+      "clear_best": true,
+      "best_option": "which",
+      "reason": "In a non-restrictive clause, 'which' is required to refer to the thing 'a second plant' and functions as the subject of 'received'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 7,
+      "clear_best": true,
+      "best_option": "whose",
+      "reason": "The relative pronoun 'whose' correctly indicates possession, linking 'the student' to 'teacher'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 8,
+      "clear_best": true,
+      "best_option": "exposed",
+      "reason": "The past participle 'exposed' correctly forms a passive reduced relative clause modifying 'the plant'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 9,
+      "clear_best": true,
+      "best_option": "were recorded",
+      "reason": "The passive past tense 'were recorded' correctly matches the plural subject 'results' and the past narrative context.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 10,
+      "clear_best": true,
+      "best_option": "tested",
+      "reason": "The past participle 'tested' correctly forms a passive reduced relative clause modifying 'question'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

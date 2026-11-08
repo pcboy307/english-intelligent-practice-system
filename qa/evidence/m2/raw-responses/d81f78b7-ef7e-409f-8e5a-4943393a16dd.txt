@@ -1,0 +1,1 @@
+{"translations": {"chen": "陈", "circular": "圆形", "reusing": "再利用", "thrown": "抛出"}}

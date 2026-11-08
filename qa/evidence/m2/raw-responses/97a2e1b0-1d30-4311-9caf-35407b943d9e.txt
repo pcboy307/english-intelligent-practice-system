@@ -1,0 +1,1 @@
+{"translations": {"heard": "听说", "reunions": "团聚", "wrappers": "包裹", "zongzi": "粽子"}}

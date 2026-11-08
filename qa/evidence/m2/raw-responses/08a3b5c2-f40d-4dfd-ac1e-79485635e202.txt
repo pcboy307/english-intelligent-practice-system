@@ -1,0 +1,125 @@
+{
+  "passage": "Last month, our class was asked to organise a charity sale for a local community centre. The student, who was in charge, told us that we should accept every idea, even the simple ones. At first, we did not appreciate how much planning was needed. We had to balance our study time with the project, and many of us felt worried. However, we soon saw the benefit of working as a team. The student suggested challenging each group to finish one task, and we began to communicate more clearly. With everyone contributing a small part, the sale became a success. Only by working together did we determine the best way to solve problems. We were surprised to discover that the most efficient method was to share jobs fairly. It was teamwork that made the essential difference. If we had not listened to each other, we would not have improved so quickly. The student learned to manage her time better, and she would prefer that we should always keep our promises. In the end, the non-defining relative clause, which I had never noticed before, helped us reduce waste and build trust.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "The student told us that we should ______ every idea.",
+      "options": ["accept", "refuse", "ignore", "doubt"],
+      "answer": "accept",
+      "explanation": "should后接动词原形，表示建议，accept符合语境。refuse和ignore与后文“even the simple ones”矛盾，故排除。",
+      "evidence_sentence": "The student, who was in charge, told us that we should accept every idea, even the simple ones.",
+      "context_clue": "The student, who was in charge, told us that we should accept every idea, even the simple ones.",
+      "clue_argument": "should后接动词原形，且与even the simple ones呼应，表示接受每个想法。"
+    },
+    {
+      "question_index": 2,
+      "stem": "At first, we did not ______ how much planning was needed.",
+      "options": ["appreciate", "forget", "ignore", "deny"],
+      "answer": "appreciate",
+      "explanation": "did not后接动词原形，appreciate表示“意识到”，符合语境。forget和ignore与后文“how much planning was needed”不搭配，故排除。",
+      "evidence_sentence": "At first, we did not appreciate how much planning was needed.",
+      "context_clue": "At first, we did not appreciate how much planning was needed.",
+      "clue_argument": "did not后接动词原形，且后文说明后来才意识到计划的重要性。"
+    },
+    {
+      "question_index": 3,
+      "stem": "We had to ______ our study time with the project.",
+      "options": ["balance", "waste", "spend", "save"],
+      "answer": "balance",
+      "explanation": "had to后接动词原形，balance...with...表示“平衡”，符合语境。waste和spend不与with搭配表示平衡，故排除。",
+      "evidence_sentence": "We had to balance our study time with the project, and many of us felt worried.",
+      "context_clue": "We had to balance our study time with the project, and many of us felt worried.",
+      "clue_argument": "balance...with...表示平衡学习与项目，符合语境。"
+    },
+    {
+      "question_index": 4,
+      "stem": "We soon saw the ______ of working as a team.",
+      "options": ["benefit", "problem", "danger", "cost"],
+      "answer": "benefit",
+      "explanation": "the后接名词，benefit表示“好处”，与working as a team搭配。problem和danger与后文积极结果矛盾，故排除。",
+      "evidence_sentence": "However, we soon saw the benefit of working as a team.",
+      "context_clue": "However, we soon saw the benefit of working as a team.",
+      "clue_argument": "the后接名词，且与working as a team搭配表示团队合作的好处。"
+    },
+    {
+      "question_index": 5,
+      "stem": "The student suggested ______ each group to finish one task.",
+      "options": ["challenging", "praising", "blaming", "ignoring"],
+      "answer": "challenging",
+      "explanation": "suggest后接动名词，challenging表示“挑战”，符合语境。praising和blaming与后文“finish one task”不搭配，故排除。",
+      "evidence_sentence": "The student suggested challenging each group to finish one task, and we began to communicate more clearly.",
+      "context_clue": "The student suggested challenging each group to finish one task, and we began to communicate more clearly.",
+      "clue_argument": "suggest后接动名词，challenging each group to finish one task符合语境。"
+    },
+    {
+      "question_index": 6,
+      "stem": "We began to ______ more clearly.",
+      "options": ["communicate", "compete", "complain", "compare"],
+      "answer": "communicate",
+      "explanation": "began to后接动词原形，communicate表示“交流”，符合语境。compete和complain与more clearly不搭配，故排除。",
+      "evidence_sentence": "We began to communicate more clearly.",
+      "context_clue": "We began to communicate more clearly.",
+      "clue_argument": "began to后接动词原形，且与more clearly搭配表示更清晰地交流。"
+    },
+    {
+      "question_index": 7,
+      "stem": "With everyone ______ a small part, the sale became a success.",
+      "options": ["contributing", "taking", "making", "giving"],
+      "answer": "contributing",
+      "explanation": "with复合结构中用现在分词，contributing表示“贡献”，符合语境。taking和making与a small part不搭配，故排除。",
+      "evidence_sentence": "With everyone contributing a small part, the sale became a success.",
+      "context_clue": "With everyone contributing a small part, the sale became a success.",
+      "clue_argument": "with复合结构用现在分词，contributing a small part表示每人贡献一点。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Only by working together did we ______ the best way to solve problems.",
+      "options": ["determine", "find", "make", "take"],
+      "answer": "determine",
+      "explanation": "did后接动词原形，determine表示“确定”，符合语境。find和make与the best way搭配不如determine准确，故排除。",
+      "evidence_sentence": "Only by working together did we determine the best way to solve problems.",
+      "context_clue": "Only by working together did we determine the best way to solve problems.",
+      "clue_argument": "did后接动词原形，determine the best way表示确定最佳方法。"
+    },
+    {
+      "question_index": 9,
+      "stem": "We were surprised to ______ that the most efficient method was to share jobs fairly.",
+      "options": ["discover", "invent", "create", "design"],
+      "answer": "discover",
+      "explanation": "to后接动词原形，discover表示“发现”，符合语境。invent和create与that从句不搭配，故排除。",
+      "evidence_sentence": "We were surprised to discover that the most efficient method was to share jobs fairly.",
+      "context_clue": "We were surprised to discover that the most efficient method was to share jobs fairly.",
+      "clue_argument": "to后接动词原形，discover that...表示发现。"
+    },
+    {
+      "question_index": 10,
+      "stem": "The most ______ method was to share jobs fairly.",
+      "options": ["efficient", "effective", "expensive", "excellent"],
+      "answer": "efficient",
+      "explanation": "the most后接形容词，efficient表示“高效的”，符合语境。effective和expensive与method搭配不如efficient准确，故排除。",
+      "evidence_sentence": "We were surprised to discover that the most efficient method was to share jobs fairly.",
+      "context_clue": "We were surprised to discover that the most efficient method was to share jobs fairly.",
+      "clue_argument": "the most后接形容词，efficient method表示高效的方法。"
+    },
+    {
+      "question_index": 11,
+      "stem": "It was teamwork that made the ______ difference.",
+      "options": ["essential", "small", "bad", "quick"],
+      "answer": "essential",
+      "explanation": "the后接形容词，essential表示“至关重要的”，符合语境。small和bad与difference搭配不符合积极语境，故排除。",
+      "evidence_sentence": "It was teamwork that made the essential difference.",
+      "context_clue": "It was teamwork that made the essential difference.",
+      "clue_argument": "强调句型中essential difference表示至关重要的区别。"
+    },
+    {
+      "question_index": 12,
+      "stem": "If we had not listened to each other, we would not have ______ so quickly.",
+      "options": ["improved", "changed", "moved", "turned"],
+      "answer": "improved",
+      "explanation": "would not have后接过去分词，improved表示“改进”，符合语境。changed和moved与so quickly不搭配，故排除。",
+      "evidence_sentence": "If we had not listened to each other, we would not have improved so quickly.",
+      "context_clue": "If we had not listened to each other, we would not have improved so quickly.",
+      "clue_argument": "虚拟语气中would not have后接过去分词，improved表示进步。"
+    },
+    {
+      "quest

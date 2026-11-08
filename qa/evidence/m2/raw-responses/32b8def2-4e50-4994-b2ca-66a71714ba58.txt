@@ -1,0 +1,65 @@
+{
+  "passage": "In today's digital age, our personal information is often collected by apps and websites. A recent survey shows that most teenagers share their location and photos online without thinking. However, not only do they risk their privacy, but they also expose themselves to possible dangers. The student, for example, once downloaded a game that asked for her contacts. She did not realize that the app was selling her data to companies. Her teacher explained that such information can be used to target ads or even to steal identities. What worries experts most is that young people often ignore privacy settings. It is the lack of awareness that makes them easy targets. Therefore, schools should teach digital safety. The student now checks permissions before installing any app. She also advises her classmates to do the same. Protecting privacy is more important than ever, and it starts with small daily choices.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the survey mentioned in the passage show?",
+      "options": [
+        "Most teenagers share personal information online without thinking.",
+        "Most teenagers carefully protect their privacy.",
+        "Most teenagers do not use apps.",
+        "Most teenagers avoid sharing photos."
+      ],
+      "answer": "Most teenagers share personal information online without thinking.",
+      "explanation": "文章第一段明确提到调查显示大多数青少年不假思索地在线分享位置和照片。A项概括了这一点；B项与原文相反；C项文中未提及青少年不使用应用。因此选A。",
+      "evidence_sentence": "A recent survey shows that most teenagers share their location and photos online without thinking.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can be inferred about the student's game app?",
+      "options": [
+        "It was designed to teach digital safety.",
+        "It collected her contacts without her full awareness.",
+        "It was recommended by her teacher.",
+        "It helped her protect her privacy."
+      ],
+      "answer": "It collected her contacts without her full awareness.",
+      "explanation": "文中提到学生下载的游戏要求获取联系人信息，且她没意识到应用在出售数据，可推断应用在她不完全知情的情况下收集了联系人。A项与教学安全相反；C项文中未说老师推荐；D项与隐私保护相反。因此选B。",
+      "evidence_sentence": "The student, for example, once downloaded a game that asked for her contacts. She did not realize that the app was selling her data to companies.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"target\" in paragraph 2 most nearly mean?",
+      "options": [
+        "Aim at",
+        "Ignore",
+        "Protect",
+        "Collect"
+      ],
+      "answer": "Aim at",
+      "explanation": "第二段中\"target ads\"意为定向投放广告，target意为\"瞄准\"。A项\"Aim at\"最接近；B项\"Ignore\"（忽视）与语境不符；C项\"Protect\"（保护）与广告投放无关。因此选A。",
+      "evidence_sentence": "Her teacher explained that such information can be used to target ads or even to steal identities.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the author's main purpose in writing the passage?",
+      "options": [
+        "To warn teenagers about digital privacy risks and encourage safety measures.",
+        "To advertise a new game app for teenagers.",
+        "To criticize schools for not teaching technology.",
+        "To compare different privacy settings."
+      ],
+      "answer": "To warn teenagers about digital privacy risks and encourage safety measures.",
+      "explanation": "文章通过调查和事例说明青少年数字隐私风险，并建议学校教授数字安全，学生也应检查权限，目的是警示并鼓励采取安全措施。B项广告应用与主旨相反；C项批评学校并非重点；D项比较设置文中未涉及。因此选A。",
+      "evidence_sentence": "Protecting privacy is more important than ever, and it starts with small daily choices.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

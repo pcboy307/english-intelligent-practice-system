@@ -255,6 +255,63 @@ class M2Repository:
             ).fetchone()["count"]
         )
 
+    def replace_passage_questions(
+        self,
+        *,
+        bank_id: str,
+        batch_id: str,
+        record: dict[str, Any],
+    ) -> list[str]:
+        passage_group_id = record["passage_group_id"]
+        passage = self.connection.execute(
+            """
+            UPDATE passages
+            SET content=%s, word_count=%s, updated_at=now()
+            WHERE bank_id=%s AND passage_group_id=%s
+            RETURNING id
+            """,
+            (
+                record["passage"],
+                _word_count(record["passage"]),
+                bank_id,
+                passage_group_id,
+            ),
+        ).fetchone()
+        if not passage:
+            raise KeyError(f"PASSAGE_NOT_FOUND:{passage_group_id}")
+        ids = []
+        for index, question in enumerate(record["questions"], start=1):
+            question_id = f"{passage_group_id}-Q{index:02d}"
+            updated = self.connection.execute(
+                """
+                UPDATE questions
+                SET type=%s, stem=%s, options=%s, answer=%s, explanation=%s,
+                    knowledge_points=%s, grammar_tags=%s, book_source=%s,
+                    difficulty=%s, status='draft', batch_id=%s, updated_at=now()
+                WHERE bank_id=%s AND passage_group_id=%s AND id=%s
+                RETURNING id
+                """,
+                (
+                    record["type"],
+                    question["stem"],
+                    Jsonb(question["options"]),
+                    Jsonb(question["answer"]),
+                    question["explanation"],
+                    question["knowledge_points"],
+                    question["grammar_tags"],
+                    question["book_source"],
+                    question["difficulty"],
+                    batch_id,
+                    bank_id,
+                    passage_group_id,
+                    question_id,
+                ),
+            ).fetchone()
+            if not updated:
+                raise KeyError(f"QUESTION_NOT_FOUND:{question_id}")
+            ids.append(question_id)
+        return ids
+
     def set_bank_status(
         self,
         bank_id: str,

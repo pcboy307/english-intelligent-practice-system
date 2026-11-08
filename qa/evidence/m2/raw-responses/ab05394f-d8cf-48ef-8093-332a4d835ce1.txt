@@ -1,0 +1,38 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a single, connected text about the invention of the electric light, its effects, and a concluding reflection.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "It allowed people to work after dark.",
+      "reason": "This option directly matches the evidence sentence and is the only one supported by the passage.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "It changed how people lived.",
+      "reason": "The passage explicitly states the invention changed lives, making this the only inferable option.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "not bright",
+      "reason": "The word 'dim' is defined as 'not bright' in context, and the other options are clearly incorrect.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "Objective.",
+      "reason": "The author presents both positive and negative effects, indicating an objective attitude.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

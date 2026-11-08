@@ -1,0 +1,65 @@
+{
+  "passage": "Every year, millions of tons of plastic waste enter the ocean. This plastic does not disappear; it breaks into tiny pieces called microplastics（微塑料）. These tiny pieces are now found everywhere in the sea, from the surface to the deep bottom. Scientists have discovered that fish and other sea animals often mistake microplastics for food. When they eat these pieces, the plastic can harm their bodies and even kill them. The plastic also moves up the food chain. When humans eat seafood, they may take in microplastics too. This is a serious problem for human health. To solve it, we must reduce plastic use and improve waste management. Many countries are taking action. For example, some have banned free plastic bags in shops. Others are building better recycling systems. But these efforts are not enough. Everyone can help by using less plastic, recycling more, and joining beach clean-ups. The ocean is important to all life on Earth. Protecting it is our shared duty.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Microplastics are harmless to sea animals.",
+        "Plastic waste harms the ocean and requires action.",
+        "Only fish are affected by plastic waste.",
+        "Recycling is the only solution to plastic pollution."
+      ],
+      "answer": "Plastic waste harms the ocean and requires action.",
+      "explanation": "文章主要讲述海洋塑料垃圾（尤其是微塑料）对海洋生物和人类的危害，并呼吁采取行动减少塑料使用和改善废物管理。A选项与原文相反，C选项过于片面，D选项过于绝对。",
+      "evidence_sentence": "Every year, millions of tons of plastic waste enter the ocean.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what happens when sea animals eat microplastics?",
+      "options": [
+        "They grow faster.",
+        "They become food for humans.",
+        "Their bodies can be harmed.",
+        "They stop eating other food."
+      ],
+      "answer": "Their bodies can be harmed.",
+      "explanation": "文章明确提到，当海洋动物吃下微塑料时，塑料会损害它们的身体，甚至导致死亡。A选项与原文相反，B选项是塑料沿食物链传递的结果，并非直接后果，D选项文中未提及。",
+      "evidence_sentence": "When they eat these pieces, the plastic can harm their bodies and even kill them.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can be inferred about the efforts to solve the plastic problem?",
+      "options": [
+        "They have completely solved the problem.",
+        "They are not enough and need everyone's help.",
+        "They are only done by governments.",
+        "They are too expensive for most countries."
+      ],
+      "answer": "They are not enough and need everyone's help.",
+      "explanation": "文章提到一些国家采取行动（如禁用免费塑料袋、建设回收系统），但随后指出这些努力还不够，并呼吁每个人通过减少塑料使用、回收和参与海滩清理来帮忙。A选项与原文矛盾，C选项忽略了个人行动，D选项文中未提及。",
+      "evidence_sentence": "But these efforts are not enough. Everyone can help by using less plastic, recycling more, and joining beach clean-ups.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"banned\" in the passage most likely mean?",
+      "options": [
+        "Encouraged",
+        "Forbidden",
+        "Provided",
+        "Sold"
+      ],
+      "answer": "Forbidden",
+      "explanation": "根据上下文，一些国家“banned free plastic bags in shops”，即禁止商店提供免费塑料袋，这是减少塑料使用的措施。因此“banned”意为“禁止”。A选项“鼓励”与减少塑料的语境相反，C选项“提供”和D选项“销售”都不符合“减少塑料使用”的语境。",
+      "evidence_sentence": "For example, some have banned free plastic bags in shops.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

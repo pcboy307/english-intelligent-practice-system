@@ -1,0 +1,45 @@
+{
+  "passage": "Online learning has become a common way for students to study. Last term, a student named Li Hua decided to take an online course to improve her English. At first, she found it difficult to focus because her home was sometimes loud. However, she learned to create a quiet study corner and set a fixed timetable. Her teacher, Ms. Wang, shared recorded lessons and gave feedback through messages. Li Hua also joined an online study group with a classmate. They discussed problems and encouraged each other. After three months, Li Hua's listening and speaking skills improved greatly. She realized that online learning requires self-discipline and active participation. Not only did she pass her final exam, but she also became more confident in using English. Online learning, when used wisely, can be a valuable tool for high school students.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"focus\" in the passage most likely mean?",
+      "options": ["pay attention", "take a break", "give up", "make noise"],
+      "answer": "pay attention",
+      "explanation": "根据上下文，Li Hua 发现很难集中注意力，因为家里有时很吵，所以 focus 意为“集中注意力”。选项B“休息”和C“放弃”与语境不符，因为文中她后来学会了创造安静角落并设定时间表，说明她是想专心学习。",
+      "evidence_sentence": "At first, she found it difficult to focus because her home was sometimes loud.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's attitude towards online learning?",
+      "options": ["Doubtful", "Supportive", "Critical", "Uninterested"],
+      "answer": "Supportive",
+      "explanation": "文章最后说“Online learning, when used wisely, can be a valuable tool”，表明作者支持在线学习。选项A“怀疑”和C“批评”与文章结尾的积极评价矛盾，因为文中明确肯定了在线学习的价值。",
+      "evidence_sentence": "Online learning, when used wisely, can be a valuable tool for high school students.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Online learning has both advantages and challenges.", "Li Hua failed her English exam.", "Teachers should not use recorded lessons.", "Online learning is only for university students."],
+      "answer": "Online learning has both advantages and challenges.",
+      "explanation": "文章讲述了Li Hua参加在线课程的经历，既提到了困难（难以集中注意力），也提到了收获（技能提高、通过考试），因此主旨是在线学习既有挑战也有优势。选项B“考试失败”与原文相反，选项C“老师不应使用录播课”文中未提及且与事实不符。",
+      "evidence_sentence": "She realized that online learning requires self-discipline and active participation.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, what did Li Hua do to improve her online learning?",
+      "options": ["She moved to a new house.", "She set a fixed timetable and joined a study group.", "She stopped using recorded lessons.", "She asked her teacher to give private lessons."],
+      "answer": "She set a fixed timetable and joined a study group.",
+      "explanation": "文中提到她“set a fixed timetable”并“joined an online study group”，这些是她为提高在线学习效果所做的努力。选项A“搬家”文中未提及，选项C“停止使用录播课”与原文相反，因为她使用了老师分享的录播课。",
+      "evidence_sentence": "However, she learned to create a quiet study corner and set a fixed timetable.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "passage": "In today's digital age, apps and websites collect personal information. A student named Li Hua recently discovered that a shopping app was sharing her location with other companies. She felt worried and decided to take action. She read the app's privacy policy and found that it allowed data sharing by default. Li Hua turned off the location permission and told her classmates about the risk. Her teacher invited a guest speaker to discuss digital privacy. The speaker explained that many apps ask for more data than they need. He advised students to check permissions regularly and to use strong passwords. Li Hua learned that protecting privacy requires constant attention. She now checks her settings every month and encourages her friends to do the same. What surprised her most was how quickly small changes improved her sense of security. She believes that digital privacy is everyone's responsibility.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What did Li Hua discover about the shopping app?",
+      "options": [
+        "It was sharing her location with other companies.",
+        "It was charging her extra fees.",
+        "It was selling her photos.",
+        "It was sending her unwanted messages."
+      ],
+      "answer": "It was sharing her location with other companies.",
+      "explanation": "文章第一段明确提到购物应用将她的位置信息分享给其他公司。A项正确。B项“收取额外费用”和C项“出售照片”文中均未提及，属于无中生有。",
+      "evidence_sentence": "A student named Li Hua recently discovered that a shopping app was sharing her location with other companies.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about Li Hua's attitude towards digital privacy from the passage?",
+      "options": [
+        "She thinks it is not important.",
+        "She believes it requires ongoing effort.",
+        "She feels it is the government's sole responsibility.",
+        "She thinks only adults need to worry about it."
+      ],
+      "answer": "She believes it requires ongoing effort.",
+      "explanation": "文章提到Li Hua现在每月检查设置并鼓励朋友也这样做，说明她认为保护隐私需要持续努力。B项正确。A项“认为不重要”与她的行为矛盾；C项“认为只是政府的责任”文中未提及，属于过度推断。",
+      "evidence_sentence": "She now checks her settings every month and encourages her friends to do the same.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"permission\" most likely mean in the passage?",
+      "options": [
+        "The act of allowing something.",
+        "A type of password.",
+        "A security setting.",
+        "A legal document."
+      ],
+      "answer": "The act of allowing something.",
+      "explanation": "根据上下文，Li Hua关闭了位置“permission”，即关闭了应用获取位置的允许。A项“允许的行为”最符合语境。B项“一种密码”和C项“安全设置”都不准确，permission强调的是许可而非具体设置。",
+      "evidence_sentence": "Li Hua turned off the location permission and told her classmates about the risk.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To warn people about the dangers of shopping apps.",
+        "To explain how to use strong passwords.",
+        "To emphasize the importance of protecting digital privacy.",
+        "To compare different apps' privacy policies."
+      ],
+      "answer": "To emphasize the importance of protecting digital privacy.",
+      "explanation": "文章通过Li Hua的经历和老师的建议，强调保护数字隐私的重要性。C项正确。A项“警告购物应用的危险”过于片面；B项“解释如何使用强密码”只是细节，不是主旨。",
+      "evidence_sentence": "She believes that digital privacy is everyone's responsibility.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

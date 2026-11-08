@@ -1,0 +1,95 @@
+{
+  "passage": "Planning a trip abroad can be exciting, but it also requires careful preparation. Last month, the student and her classmate decided to visit Singapore during the summer holiday. They had saved money for months, yet they still worried about the cost. (1) ______ They compared prices online and chose a budget airline that allowed each of them one small bag. (2) ______ They wanted to avoid paying extra fees at the airport. The student's teacher advised them to check the weather forecast before packing. (3) ______ She also reminded them that their passports must be valid for at least six months. (4) ______ The classmate suggested taking a basic medicine kit（药箱） in case of minor health problems. They agreed that travel insurance should be bought before departure. (5) ______ On the day of the flight, they arrived at the airport two hours early, feeling both nervous and excited.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the sentence that best fits blank (1).",
+      "options": [
+        "A. To save money, they booked tickets three months in advance.",
+        "B. They decided to cancel the trip because of the high cost.",
+        "C. They borrowed a large sum of money from a bank.",
+        "D. They planned to travel without any luggage.",
+        "E. They asked their teacher to pay for their tickets.",
+        "F. They chose the most expensive hotel in the city.",
+        "G. They forgot to check the price of the flight."
+      ],
+      "answer": "A",
+      "explanation": "前文提到他们担心费用，因此提前三个月订票以省钱符合逻辑。B和C与后文继续旅行的情节矛盾，且C的贷款行为不合理。错误选项B和C均不符合语境。",
+      "evidence_sentence": "They had saved money for months, yet they still worried about the cost.",
+      "context_clue": "They had saved money for months, yet they still worried about the cost.",
+      "clue_argument": "担心费用，所以提前订票省钱。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the sentence that best fits blank (2).",
+      "options": [
+        "A. They packed only one small bag each to avoid extra fees.",
+        "B. They brought three large suitcases for the trip.",
+        "C. They decided to buy new clothes at the airport.",
+        "D. They forgot to pack their passports.",
+        "E. They planned to carry many gifts for friends.",
+        "F. They chose to travel with no bags at all.",
+        "G. They asked the airline to carry their bags for free."
+      ],
+      "answer": "A",
+      "explanation": "后文提到他们想避免支付额外费用，因此每人只带一个小包符合逻辑。B和E会增加行李费用，与目的相反。错误选项B和E均与避免额外费用的意图矛盾。",
+      "evidence_sentence": "They wanted to avoid paying extra fees at the airport.",
+      "context_clue": "They wanted to avoid paying extra fees at the airport.",
+      "clue_argument": "避免额外费用，所以只带一个小包。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the sentence that best fits blank (3).",
+      "options": [
+        "A. She told them to pack warm clothes for cold weather.",
+        "B. She suggested they check the weather forecast before packing.",
+        "C. She advised them to ignore the weather and pack quickly.",
+        "D. She said the weather would be the same as at home.",
+        "E. She recommended they pack only summer clothes.",
+        "F. She warned them that it would snow in Singapore.",
+        "G. She asked them to buy winter coats at the airport."
+      ],
+      "answer": "B",
+      "explanation": "前文老师建议他们打包前查看天气预报，因此B直接复现该建议。A和F与新加坡夏季气候不符，且F的降雪不可能。错误选项A和F均与热带气候常识矛盾。",
+      "evidence_sentence": "The student's teacher advised them to check the weather forecast before packing.",
+      "context_clue": "The student's teacher advised them to check the weather forecast before packing.",
+      "clue_argument": "老师建议查看天气预报。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the sentence that best fits blank (4).",
+      "options": [
+        "A. They were reminded that their passports must be valid for at least six months.",
+        "B. They were told that passports were not necessary for the trip.",
+        "C. They decided to travel without any identification.",
+        "D. They were advised to leave their passports at home.",
+        "E. They were warned that their passports had expired.",
+        "F. They were asked to renew their passports after the trip.",
+        "G. They were told to use their student cards instead of passports."
+      ],
+      "answer": "A",
+      "explanation": "前文提到老师提醒护照有效期至少六个月，因此A复现该信息。B和D与出国旅行需要护照的常识矛盾。错误选项B和D均忽视了护照的必要性。",
+      "evidence_sentence": "She also reminded them that their passports must be valid for at least six months.",
+      "context_clue": "She also reminded them that their passports must be valid for at least six months.",
+      "clue_argument": "老师提醒护照有效期要求。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the sentence that best fits blank (5).",
+      "options": [
+        "A. They agreed that travel insurance should be bought before departure.",
+        "B. They decided to buy insurance after they returned home.",
+        "C. They thought insurance was a waste of money and skipped it.",
+        "D. They were told that insurance could be bought at the airport.",
+        "E. They planned to borrow insurance from a friend.",
+        "F. They forgot to buy insurance until the last minute.",
+        "G. They believed insurance was not needed for a short trip."
+      ],
+      "answer": "A",
+      "explanation": "前文提到他们同意出发前购买旅行保险，因此A直接复现该决定。B和C与出发前购买保险的决定相反。错误选项B和C均违背了提前购买保险的共识。",
+      "evidence_sentence": "They agreed that travel insurance should be bought before departure.",
+      "context_clue": "They agreed that travel insurance should be bought before departure.",
+      "clue_argument": "他们同意出发前购买旅行保险。"
+    }
+  ]
+}

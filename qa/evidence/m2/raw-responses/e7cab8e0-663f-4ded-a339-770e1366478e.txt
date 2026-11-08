@@ -1,0 +1,55 @@
+{
+  "passage": "Last month, our class visited the city museum. The student had wanted to go for a long time, so she was very excited. The museum (1) ______ by a famous designer in 1990, and it has become a symbol of our city. The student had visited it once before, but this time she went with her teacher and a classmate. The teacher said that (2) ______ the museum was important for their history project. (3) ______ the student noticed first was a huge dinosaur model in the hall. She also learned (4) ______ the ancient people lived. The museum has many interesting objects (5) ______ tell stories about the past. After the visit, the student wrote a report about her experience. She hopes to go again next year.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank (1).",
+      "options": ["A. was built", "B. built", "C. is building", "D. has built"],
+      "answer": "A",
+      "explanation": "此处需要被动语态，且时间为1990年，故用一般过去时的被动语态was built。B和D是主动语态，C是现在进行时，均不符合语境。",
+      "evidence_sentence": "The museum (1) ______ by a famous designer in 1990, and it has become a symbol of our city.",
+      "context_clue": "The museum (1) ______ by a famous designer in 1990, and it has become a symbol of our city.",
+      "clue_argument": "by a famous designer表明被动，in 1990表明一般过去时。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank (2).",
+      "options": ["A. visit", "B. visiting", "C. visited", "D. to visit"],
+      "answer": "B",
+      "explanation": "that从句中缺少主语，动名词visiting作主语，表示“参观博物馆”这件事。A是动词原形，C是过去式/过去分词，D是不定式，均不能直接作主语。",
+      "evidence_sentence": "The teacher said that (2) ______ the museum was important for their history project.",
+      "context_clue": "The teacher said that (2) ______ the museum was important for their history project.",
+      "clue_argument": "从句谓语是was，前面需要主语，动名词visiting符合。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank (3).",
+      "options": ["A. That", "B. What", "C. Which", "D. It"],
+      "answer": "B",
+      "explanation": "这是一个主语从句，从句中noticed缺少宾语，所以用what引导，表示“学生首先注意到的东西”。A That引导主语从句时不做成分，C Which需要先行词，D It不能引导从句。",
+      "evidence_sentence": "(3) ______ the student noticed first was a huge dinosaur model in the hall.",
+      "context_clue": "(3) ______ the student noticed first was a huge dinosaur model in the hall.",
+      "clue_argument": "noticed后缺宾语，用what引导主语从句。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank (4).",
+      "options": ["A. what", "B. which", "C. how", "D. that"],
+      "answer": "C",
+      "explanation": "此处需要表示“如何”的宾语从句，how在从句中作方式状语。A what和B which需要在从句中作主语或宾语，D that只起连接作用，不表示方式。",
+      "evidence_sentence": "She also learned (4) ______ the ancient people lived.",
+      "context_clue": "She also learned (4) ______ the ancient people lived.",
+      "clue_argument": "lived是不及物动词，需要方式状语，用how。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank (5).",
+      "options": ["A. who", "B. whom", "C. which", "D. where"],
+      "answer": "C",
+      "explanation": "先行词objects是物，定语从句中缺少主语，所以用which引导。A who和B whom指人，D where在从句中作地点状语，均不符合。",
+      "evidence_sentence": "The museum has many interesting objects (5) ______ tell stories about the past.",
+      "context_clue": "The museum has many interesting objects (5) ______ tell stories about the past.",
+      "clue_argument": "先行词objects是物，从句缺主语，用which。"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "passage": "Last spring, our school's Green Club faced a serious problem: the waste we produced was increasing every week. Three students—Maya, Leo, and I—decided to take action. We knew that we could not 1. _____ the situation any longer, so we organized a meeting to discuss solutions. At first, some members doubted whether our efforts would 2. _____ the environment. However, we believed that it was our duty to find a 3. _____ between convenience and conservation. We explained that every small action could 4. _____ the community in the long run. The biggest 5. _____ was to get more students involved. We created a poster campaign to 6. _____ our message clearly. We also set up recycling bins, and many old boxes 7. _____ to the project by local shops. If we 8. _____ to act earlier, the problem would not have become so serious. We were excited to 9. _____ that even simple changes made a difference. To make the project more 10. _____, we introduced a weekly competition between classes. It is 11. _____ that we should continue these efforts. Since last year, our recycling rate 12. _____ greatly. We now 13. _____ to handle more waste than before. Many students 14. _____ to bring reusable bottles rather than buying plastic ones. As a result, we have 15. _____ the amount of plastic waste by half.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank 1.",
+      "options": ["accept", "receive", "admit", "allow"],
+      "answer": "accept",
+      "explanation": "此处需要表示“接受现状”的动词，accept the situation 是固定搭配。receive 强调收到具体物品，admit 强调承认错误，均不符合语境。",
+      "evidence_sentence": "",
+      "context_clue": "We knew that we could not 1. _____ the situation any longer, so we organized a meeting to discuss solutions.",
+      "clue_argument": "accept the situation 意为“接受现状”，与后文“组织会议讨论解决方案”形成因果。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank 2.",
+      "options": ["appreciate", "enjoy", "like", "love"],
+      "answer": "appreciate",
+      "explanation": "此处需要表示“意识到并感激”的动词，appreciate the environment 意为“感激环境”，符合语境。enjoy 和 like 仅表示喜欢，love 程度过强，均不贴切。",
+      "evidence_sentence": "",
+      "context_clue": "At first, some members doubted whether our efforts would 2. _____ the environment.",
+      "clue_argument": "appreciate 在此意为“感激、意识到……的价值”，与 doubted 形成对比。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank 3.",
+      "options": ["balance", "harmony", "agreement", "peace"],
+      "answer": "balance",
+      "explanation": "此处需要表示“平衡”的名词，balance between A and B 是固定搭配。harmony 常与 with 连用，agreement 和 peace 不搭配 between...and...。",
+      "evidence_sentence": "",
+      "context_clue": "However, we believed that it was our duty to find a 3. _____ between convenience and conservation.",
+      "clue_argument": "balance between convenience and conservation 意为“在便利与保护之间找到平衡”。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank 4.",
+      "options": ["benefit", "help", "assist", "support"],
+      "answer": "benefit",
+      "explanation": "此处需要表示“使……受益”的动词，benefit the community 是常用搭配。help 和 assist 后常接人，support 强调支持，均不如 benefit 准确。",
+      "evidence_sentence": "",
+      "context_clue": "We explained that every small action could 4. _____ the community in the long run.",
+      "clue_argument": "benefit the community 意为“使社区受益”，与 in the long run 搭配合理。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank 5.",
+      "options": ["challenge", "problem", "difficulty", "trouble"],
+      "answer": "challenge",
+      "explanation": "此处需要表示“挑战”的名词，the biggest challenge 意为“最大的挑战”。problem 和 difficulty 虽近义，但 challenge 更强调需要应对的困难，且与后文“让更多学生参与”呼应。",
+      "evidence_sentence": "",
+      "context_clue": "The biggest 5. _____ was to get more students involved.",
+      "clue_argument": "challenge 与“让更多学生参与”这一任务搭配，突出其难度。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank 6.",
+      "options": ["communicate", "convey", "express", "tell"],
+      "answer": "communicate",
+      "explanation": "此处需要表示“传达”的动词，communicate our message 是常见搭配。convey 和 express 也可表示传达，但 communicate 更强调信息的传递与交流，且与 poster campaign 呼应。",
+      "evidence_sentence": "",
+      "context_clue": "We created a poster campaign to 6. _____ our message clearly.",
+      "clue_argument": "communicate our message 意为“传达我们的信息”，与 poster campaign 搭配自然。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank 7.",
+      "options": ["contribute", "donate", "give", "offer"],
+      "answer": "contribute",
+      "explanation": "此处需要表示“贡献”的动词，contribute to 是固定搭配。donate 和 give 后常接具体物品，offer 强调主动提供，均不如 contribute to 准确。",
+      "evidence_sentence": "",
+      "context_clue": "We also set up recycling bins, and many old boxes 7. _____ to the project by local shops.",
+      "clue_argument": "contribute to the project 意为“为项目做贡献”，与 by local shops 构成被动。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank 8.",
+      "options": ["determine", "decide", "resolve", "settle"],
+      "answer": "determine",
+      "explanation": "此处需要表示“决定”的动词，determine to do 意为“决定做某事”。decide 和 resolve 也可表示决定，但 determine 更强调下定决心，且与虚拟语气搭配自然。",
+      "evidence_sentence": "",
+      "context_clue": "If we 8. _____ to act earlier, the problem would not have become so serious.",
+      "clue_argument": "determine to act 意为“决心行动”，与虚拟语气过去完成时搭配。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank 9.",
+      "options": ["discover", "find", "learn", "realize"],
+      "answer": "discover",
+      "explanation": "此处需要表示“发现”的动词，discover that... 意为“发现……”。find 和 learn 也可表示发现，但 discover 更强调首次发现，且与 excited 搭配自然。",
+      "evidence_sentence": "",
+      "context_clue": "We were excited to 9. _____ that even simple changes made a difference.",
+      "clue_argument": "discover that... 意为“发现……”，与 excited 构成合理搭配。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank 10.",
+      "options": ["efficient", "effective", "efficacious", "effectual"],
+      "answer": "efficient",
+      "explanation": "此处需要表示“高效的”形容词，efficient 强调效率高。effective 强调有效果，efficacious 和 effectual 较正式，均不如 efficient 常用。",
+      "evidence_sentence": "",
+      "context_clue": "To make the project more 10. _____, we introduced a weekly competition between classes.",
+      "clue_argument": "make the project more efficient 意为“使项目更高效”，与引入竞赛呼应。"
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank 11.",
+      "options": ["essential", "important", "necessary", "vital"],
+      "answer": "essential",
+      "explanation": "此处需要表示“必要的”形容词，It is essential that... 是虚拟语气句型。important 和 necessary 也可表示必要，但 essential 语气更强，且常用于此句型。",
+      "evidence_sentence": "",
+      "context_clue": "It is 11. _____ that we should continue these efforts.",
+      "clue_argument": "It is essential that... 是固定句型，意为“……是必要的”。"
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank 12.",
+      "options": ["improve", "increase", "enhance", "develop"],
+      "answer": "improve",
+      "explanation": "此处需要表示“改善”的动词，improve 与 rate 搭配表示“提高比率”。increase 仅表示增加，enhance 强调提升价值，develop 强调发展，均不贴切。",
+      "evidence_sentence": "",
+      "context_clue": "Since last year, our recycling rate 12. _____ greatly.",
+      "clue_argument": "improve 与 recycling rate 搭配，表示“回收率提高”。"
+    },
+    {
+      "question_index": 13,
+      "stem": "Choose the best word for blank 13.",
+      "options": ["manage", "handle", "deal", "cope"],
+      "answer": "manage",
+      "explanation": "此处需要表示“设法做到”的动词，manage to do 意为“设法完成”。handle 和 deal 后常接名词，cope 后接 with，均不符合语法。",
+      "evidence_sentence": "",
+      "context_clue": "We now 13. _____ to handle more waste than before.",
+      "clue_argument": "manage to handle 意为“设法处理”，符合语境。"
+    },
+    {
+      "question_index": 14,
+      "stem": "Choose the best word for blank 14.",
+    

@@ -1,0 +1,65 @@
+{
+  "passage": "In today's digital age, apps and websites collect personal information every day. Not only do they track what we buy, but they also record where we go and whom we talk to. This can make life convenient, but it also raises serious questions about privacy.\n\nA student in Beijing recently discovered that a shopping app had shared her address with other companies. She had never agreed to this. Her teacher explained that many apps ask for permission to access contacts and location, and users often click \"agree\" without reading. \"What worries me most,\" the teacher said, \"is that we don't know how our data is used.\"\n\nIt was this lack of control that made the student decide to take action. She started reading privacy notices carefully and turned off unnecessary permissions. She also encouraged her classmates to do the same.\n\nHowever, protecting privacy is not always easy. Some apps require access to personal data to work properly. The student learned that the most important step is to share only what is necessary. \"The less you share, the safer you are,\" she said. \"But the biggest challenge is that many people don't realise the risk until it is too late.\"\n\nGovernments are also taking action. New laws now require companies to explain clearly how they use personal data. Still, experts say that users must remain careful. Digital privacy is not just a personal matter; it is a shared responsibility.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What did the student discover about the shopping app?",
+      "options": [
+        "It had shared her address with other companies.",
+        "It had charged her extra money.",
+        "It had sent her unwanted messages.",
+        "It had deleted her account."
+      ],
+      "answer": "It had shared her address with other companies.",
+      "explanation": "细节题。文章第二段明确提到“a shopping app had shared her address with other companies”。A项正确。B项“多收钱”和C项“发 unwanted messages”文中均未提及，属于无中生有。",
+      "evidence_sentence": "A student in Beijing recently discovered that a shopping app had shared her address with other companies.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about the student's attitude towards privacy protection?",
+      "options": [
+        "She thinks it is unnecessary.",
+        "She believes it requires personal effort.",
+        "She thinks only governments can solve it.",
+        "She feels it is too late to act."
+      ],
+      "answer": "She believes it requires personal effort.",
+      "explanation": "推理题。文章第三段提到学生决定采取行动，开始仔细阅读隐私声明并关闭不必要的权限，还鼓励同学这样做，说明她认为个人努力很重要。B项正确。A项“认为不必要”与她的行动矛盾；C项“只有政府能解决”忽略了她的个人行动；D项“觉得为时已晚”是她引述别人可能太晚意识到风险，而非她自己的态度。",
+      "evidence_sentence": "She started reading privacy notices carefully and turned off unnecessary permissions.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"permissions\" in paragraph 3 most likely mean?",
+      "options": [
+        "Rights to access something",
+        "Rules for using apps",
+        "Warnings about danger",
+        "Payments for services"
+      ],
+      "answer": "Rights to access something",
+      "explanation": "词义猜测题。根据第三段“turned off unnecessary permissions”以及第二段“ask for permission to access contacts and location”，可知permissions指应用获取用户信息的“许可/权限”，即访问某物的权利。A项正确。B项“使用应用的规则”过于宽泛；C项“危险警告”和D项“服务付款”与上下文不符。",
+      "evidence_sentence": "She started reading privacy notices carefully and turned off unnecessary permissions.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the author's main purpose in writing the passage?",
+      "options": [
+        "To warn readers about the risks of digital privacy and suggest action.",
+        "To explain how to use shopping apps safely.",
+        "To compare different privacy laws in different countries.",
+        "To criticize companies for collecting personal data."
+      ],
+      "answer": "To warn readers about the risks of digital privacy and suggest action.",
+      "explanation": "写作目的题。文章通过学生案例说明数字隐私风险，并提到个人和政府的应对措施，最后强调“Digital privacy is not just a personal matter; it is a shared responsibility”，旨在提醒读者注意风险并采取行动。A项正确。B项“解释如何安全使用购物应用”只是部分内容；C项“比较不同国家的隐私法”文中未涉及；D项“批评公司收集数据”片面，文章也提到政府行动和个人责任。",
+      "evidence_sentence": "Digital privacy is not just a personal matter; it is a shared responsibility.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

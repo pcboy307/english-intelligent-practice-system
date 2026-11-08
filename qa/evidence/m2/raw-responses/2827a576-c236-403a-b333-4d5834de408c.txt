@@ -1,0 +1,46 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a connected narrative about a student planning a trip to Singapore with logical progression.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "B",
+      "reason": "Option B explains why she needed the teacher's advice, connecting the teacher's suggestion to her lack of experience.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "C",
+      "reason": "Option C provides the reason for focusing on important sites, directly matching the given context clue.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A logically follows from having only five days and leads to booking a hotel.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "B",
+      "reason": "Option B fits the sequence of trip preparations before booking a hotel.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "C",
+      "reason": "Option C directly connects to the following sentence about customs rules.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

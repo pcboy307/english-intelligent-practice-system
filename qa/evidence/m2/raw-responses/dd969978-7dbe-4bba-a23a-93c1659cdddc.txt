@@ -1,0 +1,65 @@
+{
+  "passage": "Last spring, our biology class visited a nature park near the city. Our teacher, Ms. Li, told us that many wild animals were losing their homes because people were cutting down trees. She asked us to think about how we could help. At first, I thought one student could not do much. But Ms. Li said, \"If everyone did a small thing, it would make a big difference.\" We decided to start a club to protect the birds and other animals in the park. We put up signs and asked visitors not to litter. We also built small homes for birds. After a few months, we saw more birds in the park. Ms. Li was proud of us. She said, \"It is important that everyone should care about nature.\" Now I believe that even young people can make a difference. We must act now to save the animals and their homes.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To describe a nature park",
+        "To encourage students to protect animals",
+        "To explain how to build bird homes",
+        "To complain about visitors"
+      ],
+      "answer": "To encourage students to protect animals",
+      "explanation": "文章通过讲述班级保护动物的行动，鼓励学生参与动物保护。A项只是细节，C项是具体做法，均非主旨。",
+      "evidence_sentence": "Now I believe that even young people can make a difference.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Students can help protect animals.",
+        "Birds need better homes.",
+        "Ms. Li is a strict teacher.",
+        "The park is very large."
+      ],
+      "answer": "Students can help protect animals.",
+      "explanation": "全文围绕学生通过实际行动保护动物展开，主旨是学生也能为动物保护出力。B项是细节，C项文中未提，均不准确。",
+      "evidence_sentence": "We decided to start a club to protect the birds and other animals in the park.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to Ms. Li, what would happen if everyone did a small thing?",
+      "options": [
+        "It would make a big difference.",
+        "It would be too late.",
+        "It would cost a lot of money.",
+        "It would be boring."
+      ],
+      "answer": "It would make a big difference.",
+      "explanation": "文中Ms. Li直接说如果每个人都做一点小事，就会产生很大影响。B、C、D项均未在文中提及。",
+      "evidence_sentence": "If everyone did a small thing, it would make a big difference.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer from the passage?",
+      "options": [
+        "The students will stop helping animals.",
+        "The park will be closed soon.",
+        "Ms. Li doesn't care about animals.",
+        "The students feel good about their work."
+      ],
+      "answer": "The students feel good about their work.",
+      "explanation": "从学生们看到更多鸟、老师感到骄傲以及作者现在的信念可以推断他们对自己的工作感觉良好。A、B、C项与文意相反或无依据。",
+      "evidence_sentence": "Ms. Li was proud of us.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

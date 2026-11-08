@@ -1,0 +1,45 @@
+{
+  "passage": "Online learning has become a common way for students to study. Last year, my classmate Li Hua missed many lessons because of a foot injury. Our teacher, Ms. Wang, suggested that he join an online course. At first, Li Hua was worried about keeping up with the class. However, the online course allowed him to watch recorded lessons at his own pace. He could pause the video whenever he needed to take notes. After two months, Li Hua's grades improved greatly. He told me that the ability to review lessons repeatedly was the biggest advantage. Ms. Wang also noticed that online learning helped students become more independent. She said, \"Not only did Li Hua catch up, but he also became more confident.\" Now, our school offers both traditional and online classes. Many students believe that online learning is a useful tool, but they also agree that face-to-face communication with teachers is important. Therefore, a balanced approach might be the best choice.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"advantage\" in the passage most likely mean?",
+      "options": ["A benefit", "A problem", "A method", "A challenge"],
+      "answer": "A benefit",
+      "explanation": "“advantage”在上下文中指“优势、好处”，与benefit同义。B项problem意为“问题”，C项method意为“方法”，均不符合语境。",
+      "evidence_sentence": "He told me that the ability to review lessons repeatedly was the biggest advantage.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is Ms. Wang's attitude towards online learning?",
+      "options": ["She supports it.", "She is against it.", "She is unsure about it.", "She is worried about it."],
+      "answer": "She supports it.",
+      "explanation": "王老师建议李华参加在线课程，并指出在线学习帮助学生更独立，说明她支持在线学习。B项“反对”和D项“担心”与原文不符。",
+      "evidence_sentence": "Ms. Wang also noticed that online learning helped students become more independent.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Online learning has both benefits and limitations.", "Li Hua's foot injury changed his life.", "Ms. Wang is a very good teacher.", "Traditional classes are better than online classes."],
+      "answer": "Online learning has both benefits and limitations.",
+      "explanation": "文章既介绍了在线学习的好处（如可重复观看、培养独立性），也提到面对面交流的重要性，因此主旨是在线学习有利有弊。B项和C项是细节，D项文中未明确比较优劣。",
+      "evidence_sentence": "Many students believe that online learning is a useful tool, but they also agree that face-to-face communication with teachers is important.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, what did Li Hua do to catch up with his class?",
+      "options": ["He watched recorded lessons at his own pace.", "He asked his classmates for help.", "He attended extra classes at school.", "He studied with Ms. Wang after school."],
+      "answer": "He watched recorded lessons at his own pace.",
+      "explanation": "文中明确提到李华通过在线课程按照自己的节奏观看录播课来补课。B、C、D项在文中均未提及。",
+      "evidence_sentence": "However, the online course allowed him to watch recorded lessons at his own pace.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

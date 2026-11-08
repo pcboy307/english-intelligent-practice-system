@@ -1,0 +1,65 @@
+{
+  "passage": "When Maria moved to the city, she noticed a vacant lot near her apartment. It was filled with weeds and rubbish. Maria believed that the space could become a community garden. She shared her idea with her neighbors, and they agreed to help. They spent several weekends clearing the lot and building raised beds. Maria suggested that everyone should grow something different so that the garden would have variety. Today, the garden is full of vegetables and flowers. It is the garden that has brought the neighbors together. Maria feels proud of what they have achieved. The garden not only provides fresh food but also creates a sense of community.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is Maria's main purpose in the passage?",
+      "options": [
+        "To describe the problems of city life.",
+        "To encourage people to grow their own food.",
+        "To show how a community garden can bring people together.",
+        "To explain how to build raised beds."
+      ],
+      "answer": "To show how a community garden can bring people together.",
+      "explanation": "文章主要讲述Maria提议将空地变成社区花园，邻居们共同参与，最终花园不仅提供食物还增强了社区凝聚力。A项只提到城市生活问题，B项虽相关但不是主要目的，C项准确概括了文章主旨，D项只是细节。因此选C。",
+      "evidence_sentence": "The garden not only provides fresh food but also creates a sense of community.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Maria moved to a new city.",
+        "A community garden can transform a vacant lot and unite neighbors.",
+        "Neighbors should grow different vegetables.",
+        "Raised beds are easy to build."
+      ],
+      "answer": "A community garden can transform a vacant lot and unite neighbors.",
+      "explanation": "文章讲述了Maria和邻居们将废弃空地改造成社区花园，并因此加强了邻里联系。A项是背景信息，B项概括了全文主旨，C项是Maria的建议，D项是细节。因此选B。",
+      "evidence_sentence": "It is the garden that has brought the neighbors together.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What did Maria suggest that everyone should do?",
+      "options": [
+        "Build raised beds.",
+        "Clear the lot every weekend.",
+        "Grow something different.",
+        "Sell vegetables to the community."
+      ],
+      "answer": "Grow something different.",
+      "explanation": "文中明确提到Maria建议每个人种不同的东西，这样花园会有多样性。A项是大家一起做的事，B项是清理空地的行为，C项与原文一致，D项未提及。因此选C。",
+      "evidence_sentence": "Maria suggested that everyone should grow something different so that the garden would have variety.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can be inferred about the neighbors from the passage?",
+      "options": [
+        "They were initially unwilling to help.",
+        "They prefer flowers to vegetables.",
+        "They enjoy working together and feel a sense of community.",
+        "They plan to sell the garden."
+      ],
+      "answer": "They enjoy working together and feel a sense of community.",
+      "explanation": "文章提到花园把邻居们聚在一起，并创造了社区感，可以推断邻居们享受合作并感受到社区归属感。A项与原文“agreed to help”矛盾，B项未提及，C项合理推断，D项无依据。因此选C。",
+      "evidence_sentence": "It is the garden that has brought the neighbors together.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

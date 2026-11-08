@@ -1,0 +1,1 @@
+{"translations": {"clause": "从句", "non-defining": "非限定"}}

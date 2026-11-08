@@ -1,0 +1,55 @@
+{
+  "passage": "Last September, our school’s environmental club launched a campaign to reduce plastic waste. The campaign (1) ______ by students who were concerned about the amount of plastic in the cafeteria. Every week, club members (2) ______ the recycling bins to make sure they were used correctly. The club leader suggested that every student (3) ______ a reusable water bottle to school. She also recommended (4) ______ old newspapers to make posters for the campaign. Thanks to the students’ hard work, the campaign was a great success. The (5) ______ of plastic waste in our school dropped by 40% in just two months. Many students now bring their own bottles and bags, and the club hopes to expand the campaign to nearby schools next year.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the correct option for blank (1).",
+      "options": ["was organized", "organized", "was organizing", "has organized"],
+      "answer": "was organized",
+      "explanation": "此处需用被动语态，表示“活动被学生组织”，且时间为过去，故用一般过去时的被动语态 was organized。A项 organized 是主动语态，C项 was organizing 是过去进行时，均不符合被动含义。",
+      "evidence_sentence": "The campaign (1) ______ by students who were concerned about the amount of plastic in the cafeteria.",
+      "context_clue": "The campaign (1) ______ by students who were concerned about the amount of plastic in the cafeteria.",
+      "clue_argument": "by students 表明 campaign 是被组织的，需用被动语态。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the correct option for blank (2).",
+      "options": ["checks", "check", "checked", "checking"],
+      "answer": "checked",
+      "explanation": "根据上下文，俱乐部成员每周检查回收箱，动作发生在过去，且与 were used 时态一致，故用一般过去时 checked。B项 check 是原形，C项 checking 是现在分词，均不能作谓语。",
+      "evidence_sentence": "Every week, club members (2) ______ the recycling bins to make sure they were used correctly.",
+      "context_clue": "Every week, club members (2) ______ the recycling bins to make sure they were used correctly.",
+      "clue_argument": "从句 were used 为过去时，主句动作也发生在过去，需用过去式。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the correct option for blank (3).",
+      "options": ["bring", "brings", "brought", "bringing"],
+      "answer": "bring",
+      "explanation": "suggest 表示“建议”时，其后的宾语从句用虚拟语气，谓语动词用 should + 动词原形，should 可省略，故用 bring。B项 brings 是第三人称单数，C项 brought 是过去式，均不符合虚拟语气要求。",
+      "evidence_sentence": "The club leader suggested that every student (3) ______ a reusable water bottle to school.",
+      "context_clue": "The club leader suggested that every student (3) ______ a reusable water bottle to school.",
+      "clue_argument": "suggest 表建议，从句谓语用 (should) + 动词原形。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the correct option for blank (4).",
+      "options": ["reuse", "reusing", "to reuse", "reused"],
+      "answer": "reusing",
+      "explanation": "recommend 后接动名词作宾语，表示“建议做某事”，故用 reusing。A项 reuse 是动词原形，C项 to reuse 是不定式，均不符合 recommend doing 的用法。",
+      "evidence_sentence": "She also recommended (4) ______ old newspapers to make posters for the campaign.",
+      "context_clue": "She also recommended (4) ______ old newspapers to make posters for the campaign.",
+      "clue_argument": "recommend 后接动名词，表示建议做某事。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the correct option for blank (5).",
+      "options": ["reduction", "reduce", "reducing", "reduced"],
+      "answer": "reduction",
+      "explanation": "此处需要名词作主语，表示“减少”，故用 reduction。B项 reduce 是动词，C项 reducing 是动名词，D项 reduced 是形容词或过去分词，均不能直接作主语。",
+      "evidence_sentence": "The (5) ______ of plastic waste in our school dropped by 40% in just two months.",
+      "context_clue": "The (5) ______ of plastic waste in our school dropped by 40% in just two months.",
+      "clue_argument": "定冠词 the 后需名词，且与 of 搭配，表示“减少”。"
+    }
+  ]
+}

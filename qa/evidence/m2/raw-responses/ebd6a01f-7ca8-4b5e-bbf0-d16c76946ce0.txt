@@ -1,0 +1,45 @@
+{
+  "passage": "True sportsmanship is not about winning medals but about respect and fairness. Last year, our school held a charity basketball game. The student who organised it was a quiet girl from our class. She spent weeks training the team, yet she never asked for praise. During the game, a classmate fell and hurt his knee. The player who had the ball stopped at once and helped him up, even though this cost his team a chance to score. The crowd cheered for his kindness, not for the score. After the game, the coach said, \"A true champion is one who respects others.\" The girl who had worked so hard smiled and said, \"If I had wanted only to win, I would have felt empty. But because we helped each other, we all won.\" The event was covered by the local newspaper, and the story was shared online. Many students were inspired by the team's spirit. Sportsmanship, therefore, is not just about ability; it is about character.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"empty\" in the passage most nearly mean?",
+      "options": ["tired", "meaningless", "hungry", "alone"],
+      "answer": "meaningless",
+      "explanation": "“Empty”在此处表示“空虚的、无意义的”，与 meaningless 最接近。A 项 tired 指身体疲劳，C 项 hungry 指饥饿，均不符合语境。",
+      "evidence_sentence": "If I had wanted only to win, I would have felt empty.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the coach's attitude towards true sportsmanship?",
+      "options": ["He thinks winning is the most important.", "He believes respect for others defines a true champion.", "He doubts the value of charity games.", "He feels the team should have scored more."],
+      "answer": "He believes respect for others defines a true champion.",
+      "explanation": "教练说“A true champion is one who respects others.”，表明他认为尊重他人是真正冠军的标志。A 项“认为赢最重要”与教练的话矛盾，C 项“怀疑慈善赛价值”文中无依据。",
+      "evidence_sentence": "A true champion is one who respects others.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Winning is everything in sports.", "Sportsmanship is about respect and character, not just winning.", "Charity games are more important than regular games.", "The girl was praised for her hard work."],
+      "answer": "Sportsmanship is about respect and character, not just winning.",
+      "explanation": "文章通过慈善篮球赛的故事说明体育精神在于尊重和品格，而非仅仅获胜。A 项与文章主旨相反，C 项文中未比较慈善赛与常规赛的重要性。",
+      "evidence_sentence": "Sportsmanship, therefore, is not just about ability; it is about character.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What did the girl say she would have felt if she had wanted only to win?",
+      "options": ["She would have felt proud.", "She would have felt empty.", "She would have felt excited.", "She would have felt tired."],
+      "answer": "She would have felt empty.",
+      "explanation": "女孩说“If I had wanted only to win, I would have felt empty.”，即如果只想赢，她会感到空虚。A 项 proud、C 项 excited 均与原文不符。",
+      "evidence_sentence": "If I had wanted only to win, I would have felt empty.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

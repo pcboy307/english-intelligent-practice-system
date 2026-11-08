@@ -1,0 +1,65 @@
+{
+  "passage": "In the small town of Riverton, three students—Mia, Ben, and Zoe—decided to take action on climate change. Mia, who had always been passionate about the environment, organized a recycling program at school. Ben, good with tools, built a community garden to grow local food. Zoe, a skilled speaker, persuaded local shops to reduce plastic use. Although they faced doubts from some adults, the trio worked tirelessly. Their efforts cut waste and inspired others. Because they acted locally, they proved that small steps can lead to big changes.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the author's main purpose in writing the passage?",
+      "options": [
+        "To describe the personal hobbies of three students.",
+        "To show that local actions can address climate change.",
+        "To criticize adults for not taking action.",
+        "To explain how to build a community garden."
+      ],
+      "answer": "To show that local actions can address climate change.",
+      "explanation": "文章通过三个学生的具体行动说明局部行动能应对气候变化。A项只关注个人爱好，偏离主题；C项文中未批评成年人，属于无中生有。",
+      "evidence_sentence": "Because they acted locally, they proved that small steps can lead to big changes.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Students should focus on their studies instead of community work.",
+        "Three students made a difference through environmental projects.",
+        "Recycling is the most effective way to fight climate change.",
+        "Adults are responsible for solving environmental problems."
+      ],
+      "answer": "Three students made a difference through environmental projects.",
+      "explanation": "全文围绕三个学生通过环保项目带来改变展开。A项与文章鼓励行动的态度相反；C项文中未比较各种方法的效果，属于过度推断。",
+      "evidence_sentence": "Their efforts cut waste and inspired others.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what did Ben do to help?",
+      "options": [
+        "He organized a recycling program.",
+        "He persuaded shops to reduce plastic use.",
+        "He built a community garden.",
+        "He gave speeches about climate change."
+      ],
+      "answer": "He built a community garden.",
+      "explanation": "文中明确提到Ben built a community garden。A项是Mia做的事；B项是Zoe做的事，均张冠李戴。",
+      "evidence_sentence": "Ben, good with tools, built a community garden to grow local food.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can be inferred about the three students from the passage?",
+      "options": [
+        "They gave up when facing doubts.",
+        "They relied on adults to solve problems.",
+        "They were determined and resourceful.",
+        "They wanted to become famous."
+      ],
+      "answer": "They were determined and resourceful.",
+      "explanation": "从他们克服怀疑、坚持行动可推断出坚定且善于想办法。A项与文中worked tirelessly矛盾；B项与they acted locally矛盾。",
+      "evidence_sentence": "Although they faced doubts from some adults, the trio worked tirelessly.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

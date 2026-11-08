@@ -1,0 +1,105 @@
+{
+  "passage": "Last Friday, the school sports meeting took place on the playground. The student ①______ (choose) as the team leader had trained hard for weeks. Her teacher, ②______ (satisfy) with the progress, encouraged everyone. ③______ (organise) the event well was a big challenge. The student kept ④______ (remind) her teammates to stay calm. ⑤______ (compete) in the relay race, she felt both excited and nervous. ⑥______ the coach said was very important. The student believed ⑦______ teamwork could overcome any difficulty. ⑧______ made her proud was that everyone tried their best. ⑨______ the race started, the playground was full of cheers. ⑩______ she crossed the finish line, she smiled with joy.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Blank ①: The student ______ (choose) as the team leader had trained hard for weeks.",
+      "options": ["choosing", "chosen", "to choose", "choose"],
+      "answer": "chosen",
+      "explanation": "此处需要过去分词作后置定语，表示“被选为队长的学生”，与student构成被动关系。现在分词choosing表示主动，不定式to choose表示目的，均不符合语境。",
+      "evidence_sentence": "The student ①______ (choose) as the team leader had trained hard for weeks.",
+      "context_clue": "The student ①______ (choose) as the team leader had trained hard for weeks.",
+      "clue_argument": "student与choose是被动关系，用过去分词作定语。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Blank ②: Her teacher, ______ (satisfy) with the progress, encouraged everyone.",
+      "options": ["satisfying", "satisfied", "to satisfy", "satisfy"],
+      "answer": "satisfied",
+      "explanation": "此处需要过去分词作状语，表示老师“感到满意”，be satisfied with是固定搭配。现在分词satisfying表示“令人满意的”，不符合语境。",
+      "evidence_sentence": "Her teacher, ②______ (satisfy) with the progress, encouraged everyone.",
+      "context_clue": "Her teacher, ②______ (satisfy) with the progress, encouraged everyone.",
+      "clue_argument": "be satisfied with表示“对……满意”，用过去分词作状语。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Blank ③: ______ (organise) the event well was a big challenge.",
+      "options": ["Organise", "Organised", "Organising", "To organise"],
+      "answer": "Organising",
+      "explanation": "此处需要动名词作主语，表示“组织好这次活动”这件事。不定式To organise也可作主语，但表示具体的一次性动作，而此处是泛指，且与was搭配，动名词更常见。",
+      "evidence_sentence": "③______ (organise) the event well was a big challenge.",
+      "context_clue": "③______ (organise) the event well was a big challenge.",
+      "clue_argument": "动名词作主语表示一般性行为。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Blank ④: The student kept ______ (remind) her teammates to stay calm.",
+      "options": ["remind", "reminded", "reminding", "to remind"],
+      "answer": "reminding",
+      "explanation": "keep doing sth.表示“一直做某事”，此处需要动名词作宾语。remind是动词原形，reminded是过去式，to remind是不定式，均不能用于keep之后。",
+      "evidence_sentence": "The student kept ④______ (remind) her teammates to stay calm.",
+      "context_clue": "The student kept ④______ (remind) her teammates to stay calm.",
+      "clue_argument": "keep后接动名词表示反复进行的动作。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Blank ⑤: ______ (compete) in the relay race, she felt both excited and nervous.",
+      "options": ["Competed", "To compete", "Competing", "Compete"],
+      "answer": "Competing",
+      "explanation": "此处需要现在分词作时间状语，表示“在参加接力赛时”，与主语she是主动关系。过去分词Competed表示被动，不定式To compete表示目的，均不符合。",
+      "evidence_sentence": "⑤______ (compete) in the relay race, she felt both excited and nervous.",
+      "context_clue": "⑤______ (compete) in the relay race, she felt both excited and nervous.",
+      "clue_argument": "she与compete是主动关系，用现在分词作状语。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Blank ⑥: ______ the coach said was very important.",
+      "options": ["That", "What", "Which", "Whether"],
+      "answer": "What",
+      "explanation": "此处需要主语从句，且从句中said缺少宾语，故用what引导，表示“教练说的话”。that引导主语从句时不做成分，which表示“哪一个”，whether表示“是否”，均不符合。",
+      "evidence_sentence": "⑥______ the coach said was very important.",
+      "context_clue": "⑥______ the coach said was very important.",
+      "clue_argument": "said后缺宾语，用what引导主语从句。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Blank ⑦: The student believed ______ teamwork could overcome any difficulty.",
+      "options": ["that", "what", "which", "if"],
+      "answer": "that",
+      "explanation": "此处需要宾语从句，从句意思完整，不缺成分，故用that引导。what和which在从句中需充当成分，if表示“是否”，不符合语境。",
+      "evidence_sentence": "The student believed ⑦______ teamwork could overcome any difficulty.",
+      "context_clue": "The student believed ⑦______ teamwork could overcome any difficulty.",
+      "clue_argument": "宾语从句意思完整，用that引导。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Blank ⑧: ______ made her proud was that everyone tried their best.",
+      "options": ["That", "What", "Which", "It"],
+      "answer": "What",
+      "explanation": "此处需要主语从句，且从句中made缺少主语，故用what引导，表示“让她骄傲的事情”。that引导主语从句时不做成分，which表示“哪一个”，it不能引导从句。",
+      "evidence_sentence": "⑧______ made her proud was that everyone tried their best.",
+      "context_clue": "⑧______ made her proud was that everyone tried their best.",
+      "clue_argument": "made缺主语，用what引导主语从句。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Blank ⑨: ______ the race started, the playground was full of cheers.",
+      "options": ["While", "As soon as", "Until", "Unless"],
+      "answer": "As soon as",
+      "explanation": "此处需要时间状语从句，表示“比赛一开始，操场就充满了欢呼声”，as soon as表示“一……就……”。while表示“当……时”，until表示“直到”，unless表示“除非”，均不符合逻辑。",
+      "evidence_sentence": "⑨______ the race started, the playground was full of cheers.",
+      "context_clue": "⑨______ the race started, the playground was full of cheers.",
+      "clue_argument": "比赛开始和欢呼声几乎同时发生，用as soon as。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Blank ⑩: ______ she crossed the finish line, she smiled with joy.",
+      "options": ["Because", "Although", "When", "If"],
+      "answer": "When",
+      "explanation": "此处需要时间状语从句，表示“当她冲过终点线时”，用when引导。because表示原因，although表示让步，if表示条件，均不符合语境。",
+      "evidence_sentence": "⑩______ she crossed the finish line, she smiled with joy.",
+      "context_clue": "⑩______ she crossed the finish line, she smiled with joy.",
+      "clue_argument": "表示“当……时”，用when引导时间状语从句。"
+    }
+  ]
+}

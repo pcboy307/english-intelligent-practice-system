@@ -1,0 +1,105 @@
+{
+  "passage": "Last summer, my cousin and I took a trip to the coast. It was not the destination but the journey that made the trip unforgettable. ① It was in a small town that we first tasted real seafood. ② It was the friendly driver who showed us the way to the beach. ③ It was not until noon that we finally reached the hotel. By the time we arrived, the sun ④ had set behind the hills. We ⑤ were walking along the shore when we saw a dolphin jump. We ⑥ had been planning this trip for months, so we were very excited. The next morning, the number of tourists ⑦ was surprisingly large. Neither the hotel nor the restaurants ⑧ were prepared for so many visitors. Each of the boats ⑨ was full, so we decided to wait. We bought ⑩ a map and explored the old harbour. The trip taught us that patience and preparation are the keys to a happy journey.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank ①.",
+      "options": ["It was in a small town that", "It was a small town that", "It was in a small town where", "It was a small town where"],
+      "answer": "It was in a small town that",
+      "explanation": "此处强调地点状语in a small town，需用强调句型It was...that，且地点前需加介词in。A项结构完整；B项缺少介词in，C项where不能用于强调句，D项既缺介词又误用where。",
+      "evidence_sentence": "It was in a small town that we first tasted real seafood.",
+      "context_clue": "It was in a small town that we first tasted real seafood.",
+      "clue_argument": "强调地点状语需用It was + 地点 + that。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank ②.",
+      "options": ["It was the friendly driver who", "It was the friendly driver that", "It was the friendly driver which", "It was the friendly driver whose"],
+      "answer": "It was the friendly driver who",
+      "explanation": "强调人时可用who或that，但此处先行词为the friendly driver，who更自然；that也可但选项中有who更佳。C项which不能指人，D项whose表所属，均错误。",
+      "evidence_sentence": "It was the friendly driver who showed us the way to the beach.",
+      "context_clue": "It was the friendly driver who showed us the way to the beach.",
+      "clue_argument": "强调人时用who连接。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank ③.",
+      "options": ["It was not until noon that", "It was not until noon when", "It was until noon that", "It was not until noon which"],
+      "answer": "It was not until noon that",
+      "explanation": "not until的强调句型为It was not until...that...，that不可换成when或which。B项误用when，C项缺少not，D项误用which。",
+      "evidence_sentence": "It was not until noon that we finally reached the hotel.",
+      "context_clue": "It was not until noon that we finally reached the hotel.",
+      "clue_argument": "not until强调句固定用that。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank ④.",
+      "options": ["had set", "has set", "was setting", "sets"],
+      "answer": "had set",
+      "explanation": "到达酒店是过去动作，太阳落山发生在到达之前，即过去的过去，用过去完成时had set。B项现在完成时与过去语境不符，C项过去进行时不能表示先于到达的动作，D项一般现在时错误。",
+      "evidence_sentence": "By the time we arrived, the sun had set behind the hills.",
+      "context_clue": "By the time we arrived, the sun had set behind the hills.",
+      "clue_argument": "By the time + 过去时，主句用过去完成时。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank ⑤.",
+      "options": ["were walking", "walked", "had walked", "have walked"],
+      "answer": "were walking",
+      "explanation": "此处表示过去某个时刻正在进行的动作，用过去进行时were walking。B项一般过去时不能表示正在进行，C项过去完成时表示更早完成，D项现在完成时与过去语境矛盾。",
+      "evidence_sentence": "We were walking along the shore when we saw a dolphin jump.",
+      "context_clue": "We were walking along the shore when we saw a dolphin jump.",
+      "clue_argument": "when引导的突然动作前，主句用过去进行时。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best option for blank ⑥.",
+      "options": ["had been planning", "have been planning", "were planning", "planned"],
+      "answer": "had been planning",
+      "explanation": "计划旅行从过去更早开始并持续到过去某时，用过去完成进行时had been planning。B项现在完成进行时与过去语境不符，C项过去进行时不能强调持续到过去某时，D项一般过去时缺少持续含义。",
+      "evidence_sentence": "We had been planning this trip for months, so we were very excited.",
+      "context_clue": "We had been planning this trip for months, so we were very excited.",
+      "clue_argument": "for months且动作持续到过去，用过去完成进行时。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best option for blank ⑦.",
+      "options": ["was", "were", "is", "are"],
+      "answer": "was",
+      "explanation": "主语the number of tourists表示“游客数量”，中心词number为单数，谓语用单数was。B项were误将tourists当主语，C项is时态错误，D项are时态和数均错。",
+      "evidence_sentence": "The next morning, the number of tourists was surprisingly large.",
+      "context_clue": "The next morning, the number of tourists was surprisingly large.",
+      "clue_argument": "the number of + 复数名词，谓语用单数。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best option for blank ⑧.",
+      "options": ["were", "was", "are", "is"],
+      "answer": "were",
+      "explanation": "neither...nor...连接两个主语时，谓语与最近的主语the restaurants保持一致，用复数were。B项was与复数主语不一致，C项are时态错误，D项is时态和数均错。",
+      "evidence_sentence": "Neither the hotel nor the restaurants were prepared for so many visitors.",
+      "context_clue": "Neither the hotel nor the restaurants were prepared for so many visitors.",
+      "clue_argument": "neither...nor...遵循就近原则，靠近restaurants用复数。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best option for blank ⑨.",
+      "options": ["was", "were", "are", "is"],
+      "answer": "was",
+      "explanation": "each of + 复数名词作主语时，谓语用单数，且叙述过去事件用was。B项were数错误，C项are时态和数均错，D项is时态错误。",
+      "evidence_sentence": "Each of the boats was full, so we decided to wait.",
+      "context_clue": "Each of the boats was full, so we decided to wait.",
+      "clue_argument": "each of + 复数名词，谓语用单数。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best option for blank ⑩.",
+      "options": ["a", "an", "the", "不填"],
+      "answer": "a",
+      "explanation": "map为可数名词单数，首次提及用不定冠词a。B项an用于元音音素前，map以辅音音素开头，C项the表特指，D项不填缺少冠词。",
+      "evidence_sentence": "We bought a map and explored the old harbour.",
+      "context_clue": "We bought a map and explored the old harbour.",
+      "clue_argument": "首次提及可数名词单数用不定冠词a。"
+    }
+  ]
+}

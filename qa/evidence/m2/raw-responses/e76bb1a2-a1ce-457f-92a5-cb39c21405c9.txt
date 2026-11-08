@@ -1,0 +1,155 @@
+{
+  "passage": "Lily was a shy girl who often felt (1)____ before speaking in class. Her teacher noticed this and said, \"It is your effort that makes you (2)____.\" Lily was (3)____ about why some students seemed so sure of themselves. Her classmate Tom was always (4)____; he never forgot to bring his homework. Lily admired him. She was also (5)____ to become a top student, so she decided to (6)____ her goal step by step. At first, she found it hard to (7)____ to the new study routine. But her teacher would (8)____ her to keep trying. Slowly, she was (9)____ by her own progress to work harder. She began to (10)____ on her studies, which made her parents proud. (11)____, she became more outgoing. If she had not met such a supportive teacher, she would not have (12)____ gained so much. Now she can study (13)____ and has built real (14)____. She believes that every student should be given the (15)____ to grow.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank (1).",
+      "options": ["anxious", "angry", "bored", "excited"],
+      "answer": "anxious",
+      "explanation": "上下文提到Lily害羞且在发言前感到紧张，anxious意为“焦虑的”，符合语境；angry（生气的）和bored（无聊的）与害羞紧张的情绪不符。",
+      "evidence_sentence": "",
+      "context_clue": "Lily was a shy girl who often felt (1)____ before speaking in class.",
+      "clue_argument": "shy和before speaking暗示紧张不安，anxious最贴切。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank (2).",
+      "options": ["confident", "careful", "patient", "polite"],
+      "answer": "confident",
+      "explanation": "老师的话是鼓励Lily，努力使她自信，confident意为“自信的”，与后文她逐渐外向相呼应；careful（小心的）和patient（耐心的）不能直接对应努力的结果。",
+      "evidence_sentence": "",
+      "context_clue": "Her teacher noticed this and said, \"It is your effort that makes you (2)____.\"",
+      "clue_argument": "effort makes you... 老师鼓励她，confident符合成长主题。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank (3).",
+      "options": ["curious", "afraid", "sure", "tired"],
+      "answer": "curious",
+      "explanation": "Lily想知道为什么有些学生那么自信，curious意为“好奇的”，符合语境；afraid（害怕的）和tired（疲倦的）与“想知道”不符。",
+      "evidence_sentence": "",
+      "context_clue": "Lily was (3)____ about why some students seemed so sure of themselves.",
+      "clue_argument": "about why... 表示想知道原因，curious最合适。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank (4).",
+      "options": ["reliable", "funny", "lazy", "strict"],
+      "answer": "reliable",
+      "explanation": "Tom从不忘记带作业，说明他可靠，reliable意为“可靠的”；funny（有趣的）和lazy（懒惰的）与从不忘记带作业矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "Her classmate Tom was always (4)____; he never forgot to bring his homework.",
+      "clue_argument": "never forgot to bring homework 表明可靠，reliable正确。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank (5).",
+      "options": ["ambitious", "generous", "honest", "modest"],
+      "answer": "ambitious",
+      "explanation": "Lily想成为优等生，说明她有抱负，ambitious意为“有雄心的”；generous（慷慨的）和modest（谦虚的）不能体现想成为优等生的目标。",
+      "evidence_sentence": "",
+      "context_clue": "She was also (5)____ to become a top student, so she decided to (6)____ her goal step by step.",
+      "clue_argument": "become a top student 显示有抱负，ambitious符合。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank (6).",
+      "options": ["achieve", "avoid", "ignore", "refuse"],
+      "answer": "achieve",
+      "explanation": "Lily决定一步步实现目标，achieve意为“实现”；avoid（避免）和ignore（忽视）与“目标”搭配不当。",
+      "evidence_sentence": "",
+      "context_clue": "so she decided to (6)____ her goal step by step.",
+      "clue_argument": "goal 需要动词 achieve 搭配，表示实现目标。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank (7).",
+      "options": ["adapt", "object", "reply", "turn"],
+      "answer": "adapt",
+      "explanation": "Lily发现很难适应新的学习常规，adapt意为“适应”；object（反对）和reply（回复）不能与to the new routine搭配表示适应。",
+      "evidence_sentence": "",
+      "context_clue": "At first, she found it hard to (7)____ to the new study routine.",
+      "clue_argument": "adapt to 是固定搭配，意为适应。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank (8).",
+      "options": ["encourage", "force", "order", "warn"],
+      "answer": "encourage",
+      "explanation": "老师鼓励她继续尝试，encourage意为“鼓励”；force（强迫）和order（命令）语气过强，不符合老师支持的角色。",
+      "evidence_sentence": "",
+      "context_clue": "But her teacher would (8)____ her to keep trying.",
+      "clue_argument": "keep trying 需要鼓励，encourage最合适。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank (9).",
+      "options": ["persuade", "blame", "punish", "scare"],
+      "answer": "persuade",
+      "explanation": "她逐渐被自己的进步说服而更努力，persuade意为“说服”；blame（责备）和punish（惩罚）与进步带来的积极影响不符。",
+      "evidence_sentence": "",
+      "context_clue": "Slowly, she was (9)____ by her own progress to work harder.",
+      "clue_argument": "by her own progress to work harder 表示被说服，persuade正确。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank (10).",
+      "options": ["concentrate", "depend", "insist", "spend"],
+      "answer": "concentrate",
+      "explanation": "她开始专注于学习，concentrate意为“集中注意力”；depend（依赖）和insist（坚持）不能与on her studies搭配表示专注。",
+      "evidence_sentence": "",
+      "context_clue": "She began to (10)____ on her studies, which made her parents proud.",
+      "clue_argument": "concentrate on 是固定搭配，意为专注于。"
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank (11).",
+      "options": ["gradually", "suddenly", "finally", "immediately"],
+      "answer": "gradually",
+      "explanation": "她逐渐变得外向，gradually意为“逐渐地”；suddenly（突然）和immediately（立刻）与成长过程的渐进性不符。",
+      "evidence_sentence": "",
+      "context_clue": "(11)____, she became more outgoing.",
+      "clue_argument": "成长是渐进过程，gradually符合语境。"
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank (12).",
+      "options": ["eventually", "hardly", "rarely", "seldom"],
+      "answer": "eventually",
+      "explanation": "如果没遇到支持她的老师，她最终不会获得这么多，eventually意为“最终”；hardly（几乎不）和rarely（很少）与句意矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "If she had not met such a supportive teacher, she would not have (12)____ gained so much.",
+      "clue_argument": "与过去事实相反的虚拟语气中，eventually表示最终结果。"
+    },
+    {
+      "question_index": 13,
+      "stem": "Choose the best word for blank (13).",
+      "options": ["independently", "carelessly", "lazily", "noisily"],
+      "answer": "independently",
+      "explanation": "她现在能独立学习，independently意为“独立地”；carelessly（粗心地）和lazily（懒惰地）与积极成长不符。",
+      "evidence_sentence": "",
+      "context_clue": "Now she can study (13)____ and has built real (14)____.",
+      "clue_argument": "study independently 表示独立学习，符合成长主题。"
+    },
+    {
+      "question_index": 14,
+      "stem": "Choose the best word for blank (14).",
+      "options": ["confidence", "courage", "patience", "pride"],
+      "answer": "confidence",
+      "explanation": "她建立了真正的自信，confidence意为“自信”；courage（勇气）和patience（耐心）虽为近义但不如confidence直接对应自我认识。",
+      "evidence_sentence": "",
+      "context_clue": "Now she can study (13)____ and has built real (14)____.",
+      "clue_argument": "built real confidence 表示建立自信，与全文成长呼应。"
+    },
+    {
+      "question_index": 15,
+      "stem": "Choose the best word for blank (15).",
+      "options": ["opportunity", "challenge", "pressure", "problem"],
+      "answer": "opportunity",
+      "explanation": "她认为每个学生都应得到成长的机会，opportunity意为“机会”；challenge（挑战）和pressure（压力）不如opportunity积极。",
+      "evidence_sentence": "",
+      "context_clue": "She believes that every student should be given the (15)____ to grow.",
+      "clue_argument": "be given the opportunity to grow 是常见搭配，表示给予成长机会。"
+    }
+  ]
+}

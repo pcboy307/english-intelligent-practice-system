@@ -1,0 +1,57 @@
+{
+  "passage": "Wild animals are an important part of our world. They keep nature in balance and bring joy to many people. However, many wild animals are in danger today. Their homes are being destroyed, and they are often hunted for their fur or body parts. If we do nothing, many species will disappear forever. Governments should make strict laws to protect wild animals. They should also set up more nature reserves where animals can live safely. As students, we can help by learning about wildlife and sharing what we know with others. We can also avoid buying products made from wild animals. Every small action counts. Together, we can make a difference and ensure that future generations can see these beautiful creatures in the wild.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To call on people to protect wild animals",
+        "To describe the beauty of wild animals",
+        "To explain how animals are hunted",
+        "To compare different kinds of wild animals"
+      ],
+      "answer": "To call on people to protect wild animals",
+      "explanation": "文章开头强调野生动物的重要性，接着指出它们面临危险，最后呼吁大家采取行动保护它们，因此作者的主要目的是号召人们保护野生动物。A项只涉及动物美丽，B项只提到狩猎方式，均片面，不是全文主旨。",
+      "evidence_sentence": "Together, we can make a difference and ensure that future generations can see these beautiful creatures in the wild."
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Wild animals are being threatened and we should take action to protect them.",
+        "Governments should make strict laws to protect wild animals.",
+        "Students can help protect wildlife by learning and sharing knowledge.",
+        "Many wild animals are hunted for their fur or body parts."
+      ],
+      "answer": "Wild animals are being threatened and we should take action to protect them.",
+      "explanation": "文章先说明野生动物的重要性，再指出它们面临的威胁，然后提出政府和学生可以采取的保护措施，整体主旨是野生动物正受到威胁，我们应该采取行动保护它们。B、C、D项都是文章提到的具体细节，不能概括全文主旨。",
+      "evidence_sentence": "However, many wild animals are in danger today."
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what would happen if we did nothing to protect wild animals?",
+      "options": [
+        "Many species would disappear forever.",
+        "Wild animals would find new homes.",
+        "Governments would make strict laws.",
+        "Students would learn more about wildlife."
+      ],
+      "answer": "Many species would disappear forever.",
+      "explanation": "文中明确说“If we do nothing, many species will disappear forever.”，即如果我们不采取行动，许多物种会永远消失。B项与原文相反，C、D项是保护措施，不是不作为的后果。",
+      "evidence_sentence": "If we do nothing, many species will disappear forever."
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer from the passage about protecting wild animals?",
+      "options": [
+        "Everyone can contribute to wildlife protection.",
+        "Only governments can solve the problem.",
+        "Students are too young to help.",
+        "Buying wild animal products is acceptable."
+      ],
+      "answer": "Everyone can contribute to wildlife protection.",
+      "explanation": "文章提到政府应制定法律和建立保护区，学生可以通过学习和分享知识来帮忙，并说“Every small action counts.”，由此可推断每个人都能为保护野生动物出力。B项与原文不符，C项与“As students, we can help”矛盾，D项与“avoid buying products made from wild animals”相反。",
+      "evidence_sentence": "Every small action counts."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "passage": "The Spring Festival is the most important traditional festival in China. It usually falls in January or February according to the lunar calendar. Before the festival, families clean their houses to sweep away bad luck and put up red couplets and paper-cuts. On New Year's Eve, all family members gather for a big dinner. Dumplings are a must in northern China because they look like ancient gold coins, which symbolise wealth. After dinner, many people watch the Spring Festival Gala on TV while children get lucky money in red envelopes. The festival lasts about fifteen days and ends with the Lantern Festival. During this time, people visit relatives and friends, exchange gifts, and enjoy traditional foods. The Spring Festival is not just a holiday; it is a time for family reunion and a celebration of Chinese culture. It is essential that families should spend time together during this special period. Many people travel long distances to be with their loved ones. The joy and warmth of the festival make it a favourite among all ages.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "The Spring Festival is a time for family reunion and cultural celebration.",
+        "Dumplings are the most popular food during the Spring Festival.",
+        "The Lantern Festival marks the end of the Spring Festival.",
+        "People watch the Spring Festival Gala on New Year's Eve."
+      ],
+      "answer": "The Spring Festival is a time for family reunion and cultural celebration.",
+      "explanation": "文章主要介绍了春节的家庭团聚和文化庆祝意义。A项概括了全文主旨；B、C、D项只是文中的细节，不能概括全文。",
+      "evidence_sentence": "The Spring Festival is not just a holiday; it is a time for family reunion and a celebration of Chinese culture."
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, why do people clean their houses before the festival?",
+      "options": [
+        "To welcome guests.",
+        "To sweep away bad luck.",
+        "To prepare for the big dinner.",
+        "To put up red couplets."
+      ],
+      "answer": "To sweep away bad luck.",
+      "explanation": "文中明确提到人们打扫房屋是为了扫除厄运。A、C、D项在文中未提及或不是打扫房屋的原因。",
+      "evidence_sentence": "Before the festival, families clean their houses to sweep away bad luck and put up red couplets and paper-cuts."
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer from the passage about the Spring Festival?",
+      "options": [
+        "It is celebrated only in northern China.",
+        "It is a public holiday lasting for a month.",
+        "It plays an important role in family bonds.",
+        "It is mainly for children to get lucky money."
+      ],
+      "answer": "It plays an important role in family bonds.",
+      "explanation": "文中提到春节是家庭团聚的时刻，许多人长途旅行与亲人相聚，可推断春节对家庭纽带很重要。A、B、D项与文意不符或过于片面。",
+      "evidence_sentence": "Many people travel long distances to be with their loved ones."
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"symbolise\" in the passage most probably mean?",
+      "options": [
+        "stand for",
+        "look like",
+        "taste like",
+        "bring back"
+      ],
+      "answer": "stand for",
+      "explanation": "symbolise意为“象征”，与stand for意思相近。B项“看起来像”、C项“尝起来像”、D项“带回”均不符合语境。",
+      "evidence_sentence": "Dumplings are a must in northern China because they look like ancient gold coins, which symbolise wealth."
+    }
+  ]
+}

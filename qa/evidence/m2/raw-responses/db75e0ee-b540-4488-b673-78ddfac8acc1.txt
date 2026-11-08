@@ -1,0 +1,126 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative about a student's journey toward her goal of helping others, with logical progression and connected ideas.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "respect",
+      "reason": "The context of a student talking with her teacher about her future suggests 'respect' as the most appropriate word.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "support",
+      "reason": "The student needs her family's 'support' to study medicine, which fits the positive context.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "responsible",
+      "reason": "The structure 'So responsible did she feel...' correctly uses inversion and fits the meaning of feeling a duty that almost led to giving up.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "solution",
+      "reason": "The phrase 'a simple solution was found' is idiomatic and matches the positive outcome described.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "avoid",
+      "reason": "The phrase 'To avoid wasting time' makes sense as a purpose for making a plan.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 6,
+      "clear_best": true,
+      "best_option": "value",
+      "reason": "The context of appreciating every small step suggests 'value' as the most appropriate verb.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 7,
+      "clear_best": true,
+      "best_option": "conduct",
+      "reason": "The collocation 'conduct a survey' is standard and fits the context.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 8,
+      "clear_best": true,
+      "best_option": "choice",
+      "reason": "The phrase 'That first choice' refers back to her decision to pursue medicine, and 'choice' fits the context.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 9,
+      "clear_best": true,
+      "best_option": "effort",
+      "reason": "The contrast with 'quick success' indicates that 'effort' is the intended word.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 10,
+      "clear_best": true,
+      "best_option": "environment",
+      "reason": "The phrase 'caring environment' is a common collocation and fits the sentence's meaning.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 11,
+      "clear_best": true,
+      "best_option": "experience",
+      "reason": "The verb 'experience' collocates with 'real joy' and fits the context of feeling joy while helping.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 12,
+      "clear_best": true,
+      "best_option": "purpose",
+      "reason": "The phrase 'main purpose' is idiomatic and matches the explanation 'to serve others well'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 13,
+      "clear_best": true,
+      "best_option": "understand",
+      "reason": "The hope that people will 'understand' her choice is logical and positive.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 14,
+      "clear_best": true,
+      "best_option": "identify",
+      "reason": "The phrase 'identify her own strengths and weaknesses' is a common expression meaning to recognize them.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 15,
+      "clear_best": true,
+      "best_option": "allow",
+      "reason": "The structure 'allow her to follow' is correct and fits the meaning of parental permission.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

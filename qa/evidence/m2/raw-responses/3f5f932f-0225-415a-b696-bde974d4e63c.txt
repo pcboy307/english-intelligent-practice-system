@@ -1,0 +1,1 @@
+{"translations": {"musician": "音乐家", "practised": "熟练的"}}

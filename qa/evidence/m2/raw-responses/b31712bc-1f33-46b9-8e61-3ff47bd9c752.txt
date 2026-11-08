@@ -1,0 +1,1 @@
+{"translations": {"annual": "年度", "burst": "爆发", "lane": "车道", "runner": "跑者"}}

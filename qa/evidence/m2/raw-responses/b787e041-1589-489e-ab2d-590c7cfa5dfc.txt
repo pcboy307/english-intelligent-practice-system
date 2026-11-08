@@ -1,0 +1,38 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a connected narrative about a student's experience with AI in learning, with a clear progression from problem to resolution.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "took",
+      "reason": "In context, 'accepted' means 'took' the suggestions, as the student accepted them without thinking.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "She supports using AI as a helpful tool with caution.",
+      "reason": "The teacher believes AI should be a tool, not a master, and praises balanced use, indicating support with caution.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "Students should use AI wisely to support their learning.",
+      "reason": "The passage emphasizes using AI wisely as a tool, not a master, which is the central theme.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "AI should be used to help learning, not to replace it.",
+      "reason": "The classmate explicitly says to use AI to help learn, not to do the learning for us.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

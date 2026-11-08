@@ -1,0 +1,45 @@
+{
+  "passage": "In recent years, machines and AI have changed many jobs. Some people fear that robots will take away their work. However, a teacher in a city school has a different view. Last year, her school bought several robots to help with simple tasks. The robots can clean floors and carry books. 'They do the boring parts,' she says. 'So I have more time to help students.' One of her students, a boy who loves computers, was worried at first. He thought his mother, a factory worker, might lose her job. But his mother's factory now uses robots for dangerous work, and she has learned to control them. 'I am not afraid anymore,' she says. 'I have a better job now.' The teacher agrees. She believes that people and machines can work well together. Humans are good at thinking and caring, while robots are good at doing the same thing again and again. The key is to learn new skills. The student has started a computer club at school. He wants to help others understand AI. 'We should not stop progress,' he says. 'We should get ready for it.' The teacher smiles. 'That is the right attitude,' she says. 'With the right preparation, we can all benefit from the changes.'",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What did the school buy last year?",
+      "options": ["Several robots", "New computers", "More books", "A new building"],
+      "answer": "Several robots",
+      "explanation": "文章明确提到去年学校买了几台机器人来帮忙做简单任务，因此选A。B项“新电脑”和C项“更多书”在文中没有作为学校购买的东西出现，属于无中生有。所以B和C是错误选项。",
+      "evidence_sentence": "Last year, her school bought several robots to help with simple tasks.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about the student's mother from the passage?",
+      "options": ["She lost her job because of robots.", "She now has a better job after learning to control robots.", "She is afraid of robots and refuses to use them.", "She works at the school with the teacher."],
+      "answer": "She now has a better job after learning to control robots.",
+      "explanation": "文中提到学生的母亲在工厂工作，工厂用机器人做危险工作，她学会了控制它们，并说“我现在有更好的工作了”，因此可以推断出B。A项“她因为机器人失去了工作”与原文相反；C项“她害怕机器人并拒绝使用”也与原文“我不再害怕了”矛盾。所以A和C是错误选项。",
+      "evidence_sentence": "But his mother's factory now uses robots for dangerous work, and she has learned to control them. 'I am not afraid anymore,' she says. 'I have a better job now.'",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word 'boring' most nearly mean in the passage?",
+      "options": ["Dull and repetitive", "Dangerous and risky", "Easy and quick", "Important and useful"],
+      "answer": "Dull and repetitive",
+      "explanation": "文中老师说机器人做“boring parts”，后面又提到机器人擅长“doing the same thing again and again”，说明boring指的是枯燥重复的工作，因此选A。B项“危险和冒险”是工厂里机器人做的工作的特点，但不是boring的意思；C项“容易和快速”也不符合上下文。所以B和C是错误选项。",
+      "evidence_sentence": "'They do the boring parts,' she says. 'So I have more time to help students.'",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the teacher's attitude towards machines and AI in the workplace?",
+      "options": ["Worried and negative", "Positive and hopeful", "Uninterested and cold", "Angry and disappointed"],
+      "answer": "Positive and hopeful",
+      "explanation": "老师认为人和机器可以很好地合作，并说“有了正确的准备，我们都能从变化中受益”，这表现出积极乐观的态度，因此选B。A项“担忧和消极”与她的观点相反；C项“不感兴趣和冷淡”也不符合她微笑并赞同的态度。所以A和C是错误选项。",
+      "evidence_sentence": "'With the right preparation, we can all benefit from the changes.'",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

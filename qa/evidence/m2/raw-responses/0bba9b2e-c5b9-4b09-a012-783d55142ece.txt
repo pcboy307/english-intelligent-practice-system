@@ -1,0 +1,65 @@
+{
+  "passage": "Last spring, a class from a city high school visited the local museum. The trip was organised by their history teacher, who believed that objects could teach as much as books. The students were divided into small groups, and each group was given a simple task: choose one object and explain why it mattered. The student in Group One chose an ancient bowl, which was displayed in a glass case. She noticed a small crack on its side and wondered who had used it long ago. Her teacher explained that the bowl was made by a village potter, whose name was never recorded. This detail made the object feel more real to the students. Later, a classmate asked whether the museum should return such objects to their home countries. The teacher did not give a simple answer. Instead, she asked the class to consider different views. If the museum returned every object, she said, some visitors might never see them. However, if museums kept everything, local people might lose their own history. The discussion continued on the bus back to school. The student later wrote in her diary that the visit had changed her mind about museums. They were not just quiet rooms full of old things; they were places where questions were raised and ideas were shared.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the teacher's task for the students?",
+      "options": [
+        "To encourage them to think about the value of museum objects.",
+        "To test their memory of historical dates.",
+        "To prepare them for a written exam.",
+        "To teach them how to clean ancient bowls."
+      ],
+      "answer": "To encourage them to think about the value of museum objects.",
+      "explanation": "文章提到老师让学生选一件物品并解释其重要性，目的是引导他们思考博物馆物品的价值。A项符合此意；B项“测试历史日期记忆”和D项“教他们清洁古碗”在文中均无依据，属于无中生有。",
+      "evidence_sentence": "each group was given a simple task: choose one object and explain why it mattered.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Museum visits can raise questions and change how students think.",
+        "Ancient bowls are the most important objects in museums.",
+        "Teachers should not take students on school trips.",
+        "Museums should return all objects to their home countries."
+      ],
+      "answer": "Museum visits can raise questions and change how students think.",
+      "explanation": "全文讲述学生参观博物馆后，通过讨论和思考改变了对博物馆的看法，主旨是博物馆参观能引发问题并改变学生思维。A项概括准确；B项“古碗最重要”和D项“博物馆应归还所有物品”只是文中讨论的细节或一方观点，并非主旨。",
+      "evidence_sentence": "The student later wrote in her diary that the visit had changed her mind about museums.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What did the teacher say might happen if museums kept everything?",
+      "options": [
+        "Local people might lose their own history.",
+        "Visitors might never see the objects.",
+        "The objects would be broken.",
+        "Students would stop visiting museums."
+      ],
+      "answer": "Local people might lose their own history.",
+      "explanation": "文中老师明确说，如果博物馆保留一切，当地人可能会失去自己的历史。A项是原文直接信息；B项是“归还所有物品”的后果，C项和D项文中未提及，均属干扰。",
+      "evidence_sentence": "However, if museums kept everything, local people might lose their own history.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can be inferred about the student's attitude toward museums after the visit?",
+      "options": [
+        "She now sees museums as places for thinking and discussion.",
+        "She thinks museums are boring and should be closed.",
+        "She believes museums should only display ancient bowls.",
+        "She wants to become a museum guard."
+      ],
+      "answer": "She now sees museums as places for thinking and discussion.",
+      "explanation": "文章结尾学生日记中写道，博物馆不是装满旧物的安静房间，而是提出问题、分享想法的地方，由此可推断她改变了对博物馆的看法。A项符合推断；B项“认为博物馆无聊应关闭”与文意相反，D项“想当博物馆保安”文中无依据。",
+      "evidence_sentence": "They were not just quiet rooms full of old things; they were places where questions were raised and ideas were shared.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

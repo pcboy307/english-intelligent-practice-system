@@ -1,0 +1,45 @@
+{
+  "passage": "The public library in my town is a special place. It is a large building with many books, and it is open to everyone. The library, which was built in 1990, has a big reading room and a computer area. People can borrow books for free, and they can also use the internet. The library is not just a place for books; it is also a community centre. Every Saturday, there is a story time for children. The librarian, who is very kind, reads stories to the kids. Many people visit the library to study, read, or meet friends. The library is important because it gives everyone a chance to learn. It does not cost any money to enter, so even poor people can enjoy it. In my opinion, the public library is one of the best places in our town. It helps people of all ages. For example, my grandfather goes there to read newspapers, and my sister goes there to do her homework. The library also has a small café where you can buy drinks and snacks. The staff are friendly and always ready to help. I think everyone should use the public library. It is a wonderful resource for our community.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"free\" mean in the passage?",
+      "options": ["without cost", "not busy", "not a prisoner", "not fixed"],
+      "answer": "without cost",
+      "explanation": "根据上下文，图书馆的书可以免费借阅，所以free意为“免费的”。A选项“没有成本”正确；B选项“不忙”和C选项“不是囚犯”与语境不符。",
+      "evidence_sentence": "People can borrow books for free, and they can also use the internet.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's attitude towards the public library?",
+      "options": ["Positive", "Negative", "Indifferent", "Critical"],
+      "answer": "Positive",
+      "explanation": "作者在文中说图书馆是“最好的地方之一”，并认为“每个人都应该使用公共图书馆”，态度是积极的。A选项“积极的”正确；B选项“消极的”和C选项“漠不关心的”与作者的热情推荐不符。",
+      "evidence_sentence": "In my opinion, the public library is one of the best places in our town.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["The public library is a valuable community resource.", "The library has many books and computers.", "The librarian is very kind to children.", "The library was built in 1990."],
+      "answer": "The public library is a valuable community resource.",
+      "explanation": "文章主要介绍了公共图书馆的多种功能和它对社区的重要性，最后总结它是“宝贵的资源”。A选项概括了全文主旨；B选项和C选项只是文中提到的细节，不是主旨。",
+      "evidence_sentence": "It is a wonderful resource for our community.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, when was the library built?",
+      "options": ["In 1990", "In 1999", "In 2000", "In 1980"],
+      "answer": "In 1990",
+      "explanation": "文中明确提到图书馆建于1990年。A选项“1990年”与原文一致；B选项“1999年”和C选项“2000年”都是错误的年份。",
+      "evidence_sentence": "The library, which was built in 1990, has a big reading room and a computer area.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

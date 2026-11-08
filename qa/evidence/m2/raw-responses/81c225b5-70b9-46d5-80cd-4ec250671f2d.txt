@@ -1,0 +1,1 @@
+{"translations": {"luckily": "幸运地"}}

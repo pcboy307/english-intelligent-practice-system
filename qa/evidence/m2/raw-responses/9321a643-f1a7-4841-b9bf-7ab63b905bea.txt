@@ -1,0 +1,1 @@
+{"translations": {"competitor": "竞争者", "runner": "跑者", "sportsmanship": "体育精神"}}

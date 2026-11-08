@@ -1,0 +1,1 @@
+{"translations": {"forgotten": "遗忘", "textbook": "教科书"}}

@@ -1,0 +1,38 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a unified narrative about the history and significance of the Greenfield Library, with a clear chronological structure.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "They believed that education should be accessible to all.",
+      "reason": "The passage explicitly states the founders believed books should be available to everyone, making this option clearly correct.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "very small",
+      "reason": "The context 'only about 200 books' directly indicates 'tiny' means very small, making this option clearly correct.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "Admiring",
+      "reason": "The author uses positive language like 'heart of the community' and 'symbol of commitment', clearly indicating admiration.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "Small efforts can lead to lasting community achievements.",
+      "reason": "The passage concludes with this exact message, making it the clear main idea.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

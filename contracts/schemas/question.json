@@ -115,7 +115,11 @@
     "status": {"type": "string", "enum": ["draft", "reviewed", "published", "archived"]},
     "batch_id": {"type": "string", "minLength": 1},
     "created_at": {"type": "string", "format": "date-time"},
-    "updated_at": {"type": "string", "format": "date-time"}
+    "updated_at": {"type": "string", "format": "date-time"},
+    "context_clue": {"type": "string", "minLength": 1},
+    "clue_argument": {"type": "string", "minLength": 1},
+    "invalid": {"type": "boolean"},
+    "invalid_reason": {"type": "string"}
   },
   "allOf": [
     {

@@ -1,0 +1,1 @@
+{"translations": {"misunderstandings": "误解", "practised": "练习", "soften": "软化", "spoke": "说话", "spoken": "口语"}}

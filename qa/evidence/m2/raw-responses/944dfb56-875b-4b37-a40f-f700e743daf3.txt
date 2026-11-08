@@ -1,0 +1,65 @@
+{
+  "passage": "When my grandfather was a boy, he had to walk five kilometres to school every day. He often said that the invention of the bicycle changed his life. It gave him more time to study and play. Later, when he was a young man, he worked in a factory. The factory used machines that were powered by electricity. This was a big change because before that, most work was done by hand. My grandfather believed that electricity was the most important invention of his time. He said it made work faster and easier. Today, I use a computer and the internet every day. I can talk to my friends abroad and find information quickly. My grandfather is amazed by these inventions. He thinks that the internet has changed our lives even more than electricity did. He often tells me that we should be thankful for these inventions. He also says that we must use them wisely. I agree with him. Inventions have made our lives better, but we must not forget the simple joys of life, like walking and talking with family.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What did the invention of the bicycle give the grandfather?",
+      "options": [
+        "More time to study and play",
+        "A job in a factory",
+        "Money to buy a computer",
+        "A way to talk to friends abroad"
+      ],
+      "answer": "More time to study and play",
+      "explanation": "文章提到自行车让祖父有更多时间学习和玩耍。A项是自行车带来的好处，B项是后来在工厂工作，C项和D项是电脑和互联网的作用，与自行车无关。",
+      "evidence_sentence": "It gave him more time to study and play.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about the grandfather's opinion of the internet?",
+      "options": [
+        "He thinks it is less important than electricity.",
+        "He thinks it has changed our lives even more than electricity did.",
+        "He thinks it is not useful at all.",
+        "He thinks it is too expensive for most people."
+      ],
+      "answer": "He thinks it has changed our lives even more than electricity did.",
+      "explanation": "文章明确说祖父认为互联网对生活的改变甚至比电更大。A项与原文相反，C项和D项文中未提及，属于无中生有。",
+      "evidence_sentence": "He thinks that the internet has changed our lives even more than electricity did.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word 'amazed' in the passage mean?",
+      "options": [
+        "Very surprised",
+        "Very angry",
+        "Very tired",
+        "Very bored"
+      ],
+      "answer": "Very surprised",
+      "explanation": "根据上下文，祖父对现代发明感到惊奇，所以amazed意思是“非常惊讶”。B项“非常生气”、C项“非常累”、D项“非常无聊”都不符合语境。",
+      "evidence_sentence": "My grandfather is amazed by these inventions.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the author's purpose in writing this passage?",
+      "options": [
+        "To show how inventions have improved our lives",
+        "To complain about modern technology",
+        "To explain how to use a computer",
+        "To describe the grandfather's daily routine"
+      ],
+      "answer": "To show how inventions have improved our lives",
+      "explanation": "文章通过祖父和作者的经历说明发明如何改善生活。B项与文章态度相反，C项和D项只是文章的部分细节，不是写作目的。",
+      "evidence_sentence": "Inventions have made our lives better, but we must not forget the simple joys of life, like walking and talking with family.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

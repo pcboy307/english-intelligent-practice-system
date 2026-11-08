@@ -1,0 +1,1 @@
+{"translations": {"bedtime": "就寝时间", "decision": "决定", "easily": "容易地", "rewarded": "获得奖励"}}

@@ -1,0 +1,95 @@
+{
+  "passage": "Reading habits are important for students. Some students read every day, but others seldom open a book. (1) ______. For example, a student who reads for twenty minutes each evening can finish many books in a year. (2) ______. However, a student who never reads may find long texts difficult. (3) ______. Teachers often suggest that students should set a fixed reading time. (4) ______. In this way, reading becomes a regular part of life. (5) ______. Therefore, building a good reading habit early can help students in many ways.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the sentence that best fits blank (1).",
+      "options": [
+        "A. This daily habit helps them learn new words and ideas.",
+        "B. Many students prefer watching films to reading books.",
+        "C. Reading in the morning is better than reading at night.",
+        "D. Some students read only comic books for fun.",
+        "E. Libraries are quiet places for study.",
+        "F. Teachers often give students homework every day.",
+        "G. Reading habits are not important for young people."
+      ],
+      "answer": "A",
+      "explanation": "前文说有些学生每天阅读，后文举例说明每天读二十分钟能读很多书，因此A“这种日常习惯帮助他们学习新词和想法”最衔接。B和D虽然提到阅读，但没有承接“每天阅读的好处”这一对比逻辑，故排除B和D。",
+      "evidence_sentence": "",
+      "context_clue": "Some students read every day, but others seldom open a book.",
+      "clue_argument": "前句对比每天阅读和很少阅读，后句举例说明每天阅读的成果，空白处应总结每天阅读的好处。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the sentence that best fits blank (2).",
+      "options": [
+        "A. This daily habit helps them learn new words and ideas.",
+        "B. Many students prefer watching films to reading books.",
+        "C. Reading in the morning is better than reading at night.",
+        "D. Some students read only comic books for fun.",
+        "E. Libraries are quiet places for study.",
+        "F. Teachers often give students homework every day.",
+        "G. Reading habits are not important for young people."
+      ],
+      "answer": "B",
+      "explanation": "前文讲每天阅读的好处，后文用However转折说从不阅读的学生可能觉得长文章难，因此空白处应引入对比情况，B“许多学生更喜欢看电影而不是读书”符合语义转折。A重复了第一空的内容，C讨论阅读时间，均不能与后文形成对比，故排除A和C。",
+      "evidence_sentence": "",
+      "context_clue": "However, a student who never reads may find long texts difficult.",
+      "clue_argument": "后句用However引出不阅读的困难，空白处应提出与阅读习惯相反的现象。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the sentence that best fits blank (3).",
+      "options": [
+        "A. This daily habit helps them learn new words and ideas.",
+        "B. Many students prefer watching films to reading books.",
+        "C. Reading in the morning is better than reading at night.",
+        "D. Some students read only comic books for fun.",
+        "E. Libraries are quiet places for study.",
+        "F. Teachers often give students homework every day.",
+        "G. Reading habits are not important for young people."
+      ],
+      "answer": "D",
+      "explanation": "前文说不阅读的学生觉得长文章难，后文说老师建议固定阅读时间，空白处应描述一种不理想的阅读习惯，D“有些学生只为了好玩读漫画书”符合对比。B已在第二空使用，E讲图书馆环境，不能承接“阅读困难”的对比，故排除B和E。",
+      "evidence_sentence": "",
+      "context_clue": "However, a student who never reads may find long texts difficult.",
+      "clue_argument": "前句指出不阅读的困难，空白处应举例说明阅读范围狭窄的情况，与后文老师建议形成对比。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the sentence that best fits blank (4).",
+      "options": [
+        "A. This daily habit helps them learn new words and ideas.",
+        "B. Many students prefer watching films to reading books.",
+        "C. Reading in the morning is better than reading at night.",
+        "D. Some students read only comic books for fun.",
+        "E. Libraries are quiet places for study.",
+        "F. Teachers often give students homework every day.",
+        "G. Reading habits are not important for young people."
+      ],
+      "answer": "C",
+      "explanation": "前文说老师建议固定阅读时间，后文说这样阅读成为生活常规，空白处应补充关于阅读时间安排的建议，C“早上阅读比晚上阅读更好”符合。A重复第一空，F讲作业，与阅读时间建议无关，故排除A和F。",
+      "evidence_sentence": "",
+      "context_clue": "Teachers often suggest that students should set a fixed reading time.",
+      "clue_argument": "前句提出固定阅读时间，空白处应具体说明时间选择，与后文“成为常规”衔接。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the sentence that best fits blank (5).",
+      "options": [
+        "A. This daily habit helps them learn new words and ideas.",
+        "B. Many students prefer watching films to reading books.",
+        "C. Reading in the morning is better than reading at night.",
+        "D. Some students read only comic books for fun.",
+        "E. Libraries are quiet places for study.",
+        "F. Teachers often give students homework every day.",
+        "G. Reading habits are not important for young people."
+      ],
+      "answer": "E",
+      "explanation": "前文说阅读成为生活常规，后文用Therefore总结早期阅读习惯的好处，空白处应提供支持阅读的环境条件，E“图书馆是安静的学习场所”符合。B已在第二空使用，G否定阅读习惯的重要性，与全文主旨相反，故排除B和G。",
+      "evidence_sentence": "",
+      "context_clue": "In this way, reading becomes a regular part of life.",
+      "clue_argument": "前句说阅读成为常规，空白处应补充有助于阅读的环境，与后文总结形成因果。"
+    }
+  ]
+}

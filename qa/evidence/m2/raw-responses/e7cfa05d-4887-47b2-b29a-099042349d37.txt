@@ -1,0 +1,86 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative about a student's community service experience with connected ideas.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "Before",
+      "reason": "The past perfect tense 'had never thought' indicates the action occurred before the club began, making 'Before' the only logical choice.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "collecting",
+      "reason": "The fixed phrase 'spend time doing something' requires the gerund 'collecting'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "had",
+      "reason": "The main clause 'would organise' signals a second conditional, requiring the past simple 'had' in the if-clause.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "could persuade",
+      "reason": "After 'wish' for a present unreal situation, 'could' is the correct modal verb.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "invite",
+      "reason": "The verb 'suggest' triggers the subjunctive mood, requiring the base form 'invite'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 6,
+      "clear_best": true,
+      "best_option": "state",
+      "reason": "The structure 'It is important that' requires the subjunctive mood, using the base form 'state'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 7,
+      "clear_best": true,
+      "best_option": "arrive",
+      "reason": "The verb 'insisted' (meaning demanded) requires the subjunctive mood, using the base form 'arrive'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 8,
+      "clear_best": true,
+      "best_option": "can",
+      "reason": "The inversion after 'Only by...' requires an auxiliary verb, and 'can' fits the present tense and meaning.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 9,
+      "clear_best": true,
+      "best_option": "do",
+      "reason": "The inversion after 'Not only' requires the auxiliary 'do' to form the present simple question form.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 10,
+      "clear_best": true,
+      "best_option": "that",
+      "reason": "The structure 'Such is...that...' introduces a result clause, making 'that' the only correct choice.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

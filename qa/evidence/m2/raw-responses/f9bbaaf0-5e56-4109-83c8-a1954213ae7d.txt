@@ -1,0 +1,65 @@
+{
+  "passage": "Li Ming and Wang Fang are classmates who are preparing for the final exams. Last month, Li Ming felt very stressed because he had too much homework and too little sleep. He often stayed up late to review, but his grades did not improve. One day, Wang Fang noticed that Li Ming looked tired and suggested that he should talk to their teacher, Ms. Chen. Li Ming was unsure, but he followed her advice. Ms. Chen listened carefully and told him that it was important to take breaks and exercise. She also said that if he managed his time better, he would feel less anxious. Li Ming decided to make a study plan. He started going to bed earlier and took a short walk every evening. After two weeks, he felt more energetic and could concentrate better in class. Wang Fang was happy to see his improvement. She realized that sharing worries with others can be helpful. Now Li Ming believes that balancing study and rest is the key to success.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Students should study late every night to get good grades.",
+        "Talking to others and managing time can reduce study stress.",
+        "Teachers should give less homework to students.",
+        "Exercise is more important than studying."
+      ],
+      "answer": "Talking to others and managing time can reduce study stress.",
+      "explanation": "文章主要讲述李明在压力下向老师求助并制定计划，从而减轻压力。A和C只是片面信息，并非主旨；B概括了全文核心。",
+      "evidence_sentence": "Ms. Chen listened carefully and told him that it was important to take breaks and exercise.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What did Ms. Chen suggest Li Ming should do?",
+      "options": [
+        "He should study harder every day.",
+        "He should take breaks and exercise.",
+        "He should stop doing homework.",
+        "He should ask his parents for help."
+      ],
+      "answer": "He should take breaks and exercise.",
+      "explanation": "陈老师明确建议他休息和锻炼。A和C与原文相反，D未提及；B直接对应原文。",
+      "evidence_sentence": "Ms. Chen listened carefully and told him that it was important to take breaks and exercise.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about Wang Fang from the passage?",
+      "options": [
+        "She is a caring and helpful classmate.",
+        "She is better at studying than Li Ming.",
+        "She does not like Ms. Chen.",
+        "She never feels stressed."
+      ],
+      "answer": "She is a caring and helpful classmate.",
+      "explanation": "王芳注意到李明的疲惫并建议他找老师，说明她关心同学。B、C、D在文中没有依据；A符合推断。",
+      "evidence_sentence": "One day, Wang Fang noticed that Li Ming looked tired and suggested that he should talk to their teacher, Ms. Chen.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"concentrate\" in the passage probably mean?",
+      "options": [
+        "pay attention",
+        "feel sleepy",
+        "become angry",
+        "take a break"
+      ],
+      "answer": "pay attention",
+      "explanation": "根据上下文，李明休息好后在课堂上能更好地集中注意力。B、C、D与语境不符；A是concentrate的恰当释义。",
+      "evidence_sentence": "After two weeks, he felt more energetic and could concentrate better in class.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

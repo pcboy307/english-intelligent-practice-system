@@ -1,0 +1,57 @@
+{
+  "passage": "In 1958, the small town of Greenfield, which sits beside a wide river, faced a serious problem. The old stone bridge, which had served the town for over a century, was too narrow for modern trucks. The town council, whose members were mostly local business owners, decided to build a new bridge. They believed that a wider bridge would bring more trade and help the town grow. However, not everyone agreed. Mrs. Chen, an elderly shop owner, argued that the new bridge would be the most expensive project in the town's history. She worried that the town could not afford it. But Mr. Lee, a young engineer, explained that the old bridge was unsafe and that a new one would be cheaper to repair in the long run. After months of discussion, the council voted to go ahead. The new bridge opened in 1962 and quickly became the busiest crossing in the area. It connected Greenfield with the main road, so farmers could sell their goods more easily. Today, the bridge is still in use, and a small sign near it tells the story of how the town worked together to solve a difficult problem.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can be inferred about Mrs. Chen's attitude toward the new bridge?",
+      "options": [
+        "She supported it because it would bring more trade.",
+        "She was worried about its cost.",
+        "She thought it would be too narrow for trucks.",
+        "She believed it would be the busiest crossing."
+      ],
+      "answer": "She was worried about its cost.",
+      "explanation": "文中提到 Mrs. Chen 认为新桥是镇上历史上最昂贵的工程，并担心镇上负担不起，因此推断她担心成本。A 项是镇议会的观点，C 项是旧桥的问题，均与 Mrs. Chen 的态度不符。",
+      "evidence_sentence": "Mrs. Chen, an elderly shop owner, argued that the new bridge would be the most expensive project in the town's history."
+    },
+    {
+      "question_index": 2,
+      "stem": "As used in the passage, the word \"afford\" most nearly means ______.",
+      "options": [
+        "to have enough money for",
+        "to build quickly",
+        "to repair completely",
+        "to discuss at length"
+      ],
+      "answer": "to have enough money for",
+      "explanation": "afford 在文中意为“负担得起（费用）”，与“有足够的钱做某事”意思最接近。B 项“快速建造”和 C 项“彻底修理”都与该词在语境中的含义无关。",
+      "evidence_sentence": "She worried that the town could not afford it."
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To explain how to build a bridge.",
+        "To describe a town's history and its bridge.",
+        "To argue that old bridges should be replaced.",
+        "To compare two different towns."
+      ],
+      "answer": "To describe a town's history and its bridge.",
+      "explanation": "文章讲述了 Greenfield 镇因旧桥问题而修建新桥的历史过程，目的是描述小镇的历史及其桥梁。A 项“解释如何建桥”和 C 项“主张应更换旧桥”都偏离了文章以叙述历史为主的写作目的。",
+      "evidence_sentence": "Today, the bridge is still in use, and a small sign near it tells the story of how the town worked together to solve a difficult problem."
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "A town solved a problem through discussion and cooperation.",
+        "Old bridges are always more expensive than new ones.",
+        "Farmers need wider bridges to sell their goods.",
+        "Mrs. Chen was the most important person in Greenfield."
+      ],
+      "answer": "A town solved a problem through discussion and cooperation.",
+      "explanation": "文章主要讲述 Greenfield 镇通过讨论与合作解决了旧桥问题，最终建成新桥并促进了发展。B 项“旧桥总比新桥贵”和 C 项“农民需要更宽的桥”都只是文中细节，不能概括全文主旨。",
+      "evidence_sentence": "Today, the bridge is still in use, and a small sign near it tells the story of how the town worked together to solve a difficult problem."
+    }
+  ]
+}

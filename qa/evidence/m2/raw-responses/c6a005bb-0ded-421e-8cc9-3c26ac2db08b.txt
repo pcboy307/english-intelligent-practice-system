@@ -1,0 +1,65 @@
+{
+  "passage": "Last spring, the student joined a volunteer group at her school. The group helps older people in the community. Every Saturday morning, the student and her classmate visit an old people's home. They clean rooms, read newspapers aloud, and talk with the residents. The student noticed that many residents smiled when they heard news from the outside world. One resident, an old teacher, told the student that loneliness is a serious problem for many old people. The student decided to do more. She asked her teacher for advice, and together they started a reading club. Now, volunteers take turns reading books to the residents. The club has been running for three months, and more students have joined. The student feels that volunteering is not just about helping others; it is also about learning and growing. She believes that small actions can bring big changes.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the volunteer group do every Saturday morning?",
+      "options": [
+        "They clean rooms and read newspapers to residents.",
+        "They cook meals for the residents.",
+        "They take the residents to the park.",
+        "They teach the residents to use computers."
+      ],
+      "answer": "They clean rooms and read newspapers to residents.",
+      "explanation": "细节题。文章提到他们打扫房间、读报纸并与老人交谈。A选项符合原文。B和C选项文中未提及，属于无中生有；D选项也未被提到，因此错误。",
+      "evidence_sentence": "They clean rooms, read newspapers aloud, and talk with the residents.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about the student from the passage?",
+      "options": [
+        "She is willing to spend time helping others.",
+        "She wants to become a teacher in the future.",
+        "She thinks volunteering is a waste of time.",
+        "She only volunteers during holidays."
+      ],
+      "answer": "She is willing to spend time helping others.",
+      "explanation": "推断题。文章说学生每周六去敬老院，还主动创办读书俱乐部，可见她愿意花时间帮助他人。A选项合理。B选项文中没有依据；C选项与文章态度相反；D选项与“每周六”矛盾。",
+      "evidence_sentence": "Every Saturday morning, the student and her classmate visit an old people's home.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"loneliness\" most probably mean in the passage?",
+      "options": [
+        "Being alone and feeling sad.",
+        "Being busy with work.",
+        "Being happy with friends.",
+        "Being angry with others."
+      ],
+      "answer": "Being alone and feeling sad.",
+      "explanation": "词义猜测题。根据上下文，老人说孤独是严重问题，且志愿者去陪伴老人，可推断loneliness意为“孤独、寂寞”。A选项正确。B选项“忙于工作”与语境不符；C选项“和朋友开心”是反义；D选项“生气”也不符合。",
+      "evidence_sentence": "One resident, an old teacher, told the student that loneliness is a serious problem for many old people.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To encourage students to take part in volunteering.",
+        "To introduce an old people's home.",
+        "To explain how to start a reading club.",
+        "To complain about the problems of old people."
+      ],
+      "answer": "To encourage students to take part in volunteering.",
+      "explanation": "主旨意图题。文章讲述了学生参加志愿活动并创办读书俱乐部的经历，最后强调小行动带来大改变，旨在鼓励学生参与志愿服务。A选项正确。B选项只是文章部分内容；C选项过于具体；D选项不是文章目的。",
+      "evidence_sentence": "She believes that small actions can bring big changes.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "passage": "Every year, millions of tons of plastic waste（塑料垃圾） enter the ocean. This plastic does not disappear. Sunlight and waves break it into tiny pieces called microplastics（微塑料）. These pieces are now found everywhere in the sea, from the surface to the deep bottom. Scientists have found them inside fish, sea birds, and even in salt. This is a serious problem for the whole world.\n\nA student named Li Hua learned about this problem in her geography class. Her teacher explained that plastic bags and bottles are the most common waste on beaches. Li Hua decided to act. She started a club at her school to clean the local beach every month. At first, only three classmates joined her. They collected 20 bags of rubbish on the first day. After that, Li Hua gave a speech at the school meeting. She showed photos of dead birds with plastic in their stomachs. Many students were shocked and wanted to help. Now the club has over 50 members.\n\nHowever, cleaning beaches is not enough. Li Hua's teacher said, 'We must also reduce the plastic we use.' The club started a campaign to ask students to bring their own water bottles and bags to school. They also wrote a letter to a local supermarket, asking it to use paper bags. The supermarket agreed. Li Hua believes that small actions can lead to big changes. She says, 'The ocean is not a bin. It is our home.'",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the passage mainly about?",
+      "options": [
+        "The causes of ocean plastic pollution and one student's efforts to reduce it.",
+        "How microplastics are formed by sunlight and waves.",
+        "The importance of bringing water bottles to school.",
+        "Why supermarkets should use paper bags."
+      ],
+      "answer": "The causes of ocean plastic pollution and one student's efforts to reduce it.",
+      "explanation": "文章先说明海洋塑料污染的成因，再重点讲述李华发起清理和减少塑料的行动，因此主旨是污染成因与个人努力。B、C、D都只是文中提到的细节，不能概括全文。",
+      "evidence_sentence": "Every year, millions of tons of plastic waste（塑料垃圾） enter the ocean.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what happens to plastic waste in the ocean over time?",
+      "options": [
+        "It is broken into tiny pieces called microplastics.",
+        "It is completely removed by ocean animals.",
+        "It turns into safe salt in the water.",
+        "It floats to the surface and disappears."
+      ],
+      "answer": "It is broken into tiny pieces called microplastics.",
+      "explanation": "文中明确说阳光和海浪把塑料分解成微塑料，因此A正确。B、C、D均与原文不符：动物并未清除塑料，塑料也不会变成盐或消失。",
+      "evidence_sentence": "Sunlight and waves break it into tiny pieces called microplastics（微塑料）.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about Li Hua from the passage?",
+      "options": [
+        "She is a determined student who cares about the environment.",
+        "She is a teacher who organizes beach clean-ups.",
+        "She thinks cleaning beaches alone can solve the problem.",
+        "She believes only adults can make a difference."
+      ],
+      "answer": "She is a determined student who cares about the environment.",
+      "explanation": "李华主动成立社团、坚持每月清理海滩并推动减少塑料，可见她关心环境且有决心，因此A正确。B错在她不是老师；C错在她知道清理不够；D错在她相信小行动也能带来大变化。",
+      "evidence_sentence": "She started a club at her school to clean the local beach every month.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"reduce\" in paragraph 3 most probably mean?",
+      "options": [
+        "To make something smaller in amount.",
+        "To collect something from the sea.",
+        "To reuse something many times.",
+        "To throw something away."
+      ],
+      "answer": "To make something smaller in amount.",
+      "explanation": "结合老师说的“减少我们使用的塑料”以及后文自带水瓶和布袋的做法，reduce意为“减少数量”，因此A正确。B是收集，C是重复使用，D是丢弃，均不符合语境。",
+      "evidence_sentence": "We must also reduce the plastic we use.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

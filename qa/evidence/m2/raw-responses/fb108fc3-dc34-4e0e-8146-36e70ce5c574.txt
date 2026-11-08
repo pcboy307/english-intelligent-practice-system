@@ -1,0 +1,65 @@
+{
+  "passage": "Last year, a student in a small town noticed that her school used a lot of electricity. She wanted to help the environment, so she started a project to bring renewable energy to her school. With the help of her teacher, she wrote a plan for using solar panels（太阳能板） on the school roof. The teacher was supportive and helped her present the idea to the school leaders. At first, some classmates doubted the plan because it seemed expensive. However, the student explained that the panels would save money over time and reduce pollution. After months of effort, the school agreed to try a small solar project. The student felt proud when the first panel was installed. Now, she gives talks to other students about the importance of clean energy. Her teacher says the project has made the whole school more aware of environmental issues. The student believes that small actions can lead to big changes.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about the student from the passage?",
+      "options": [
+        "She is determined and cares about the environment.",
+        "She is afraid of speaking in public.",
+        "She thinks solar panels are too expensive.",
+        "She wants to become a teacher."
+      ],
+      "answer": "She is determined and cares about the environment.",
+      "explanation": "文章提到她主动发起项目、写计划、说服学校，说明她有决心并关心环境。A项正确。B项与她在全班面前解释计划不符；C项是她同学最初的看法，不是她的观点。",
+      "evidence_sentence": "She wanted to help the environment, so she started a project to bring renewable energy to her school.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"supportive\" in the passage probably mean?",
+      "options": [
+        "Giving help and encouragement",
+        "Being strict and serious",
+        "Feeling doubtful and worried",
+        "Staying quiet and inactive"
+      ],
+      "answer": "Giving help and encouragement",
+      "explanation": "根据后文老师帮助她向学校领导展示想法，可知supportive意为“给予帮助和鼓励”。A项正确。B项与帮助行为相反；C项是同学的怀疑态度，不是老师的。",
+      "evidence_sentence": "The teacher was supportive and helped her present the idea to the school leaders.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Why does the student give talks to other students?",
+      "options": [
+        "To encourage them to care about clean energy.",
+        "To show off her successful project.",
+        "To ask them for money for more panels.",
+        "To finish a homework assignment."
+      ],
+      "answer": "To encourage them to care about clean energy.",
+      "explanation": "文章说她就清洁能源的重要性给其他学生做演讲，目的是鼓励他们关注清洁能源。A项正确。B项文中未提及炫耀；C项文中未提到筹钱。",
+      "evidence_sentence": "Now, she gives talks to other students about the importance of clean energy.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "A student's project brings renewable energy to her school.",
+        "Solar panels are too expensive for most schools.",
+        "Teachers should not support student projects.",
+        "Small towns have more environmental problems."
+      ],
+      "answer": "A student's project brings renewable energy to her school.",
+      "explanation": "全文讲述一名学生发起项目，最终为学校安装太阳能板，并宣传清洁能源，核心是学生项目带来可再生能源。A项正确。B项是文中提到的初期质疑，不是主旨；C项与老师支持的事实相反。",
+      "evidence_sentence": "She wanted to help the environment, so she started a project to bring renewable energy to her school.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

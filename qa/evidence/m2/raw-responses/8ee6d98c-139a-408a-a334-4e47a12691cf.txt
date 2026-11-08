@@ -1,0 +1,65 @@
+{
+  "passage": "Food is more than fuel. It is a language that families speak across generations. In many cultures, the kitchen is the classroom where children first learn who they are. My grandmother, who grew up in a small village, taught my mother to make dumplings every New Year. My mother, in turn, is now teaching me. So important is this tradition that we gather early in the morning to prepare the filling together. The process is slow, but the result is delicious. What makes the tradition valuable is not the food itself but the time we spend together. My grandmother often says that a family that cooks together stays together. I believe her. When we share a meal, we share stories, laughter, and love. This is why food culture matters: it connects us to our past and to each other. In a fast-paced world, taking time to cook and eat together is a simple but powerful way to keep family bonds strong.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Food is mainly for survival.",
+        "Cooking is a difficult skill to learn.",
+        "Food culture strengthens family bonds.",
+        "Grandmothers are the best cooks."
+      ],
+      "answer": "Food culture strengthens family bonds.",
+      "explanation": "文章开篇指出食物是家庭跨代交流的语言，后文强调一起做饭吃饭能分享故事、笑声和爱，从而保持家庭纽带牢固。A项只提生存，忽略了文化情感层面；B项说做饭难学，文中未提且非主旨。",
+      "evidence_sentence": "In a fast-paced world, taking time to cook and eat together is a simple but powerful way to keep family bonds strong.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, when do the family members gather to prepare the filling?",
+      "options": [
+        "In the evening.",
+        "Early in the morning.",
+        "At noon.",
+        "Late at night."
+      ],
+      "answer": "Early in the morning.",
+      "explanation": "文中明确提到“we gather early in the morning to prepare the filling together”，因此是清晨。A项晚上、C项中午、D项深夜均与原文不符。",
+      "evidence_sentence": "So important is this tradition that we gather early in the morning to prepare the filling together.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about the author's attitude towards the tradition?",
+      "options": [
+        "Doubtful.",
+        "Indifferent.",
+        "Supportive.",
+        "Critical."
+      ],
+      "answer": "Supportive.",
+      "explanation": "作者引用祖母的话并表示相信，还强调传统有价值、食物文化重要，可见其态度是支持的。A项怀疑、B项漠不关心、D项批评均与作者积极肯定的语气相反。",
+      "evidence_sentence": "I believe her.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word 'delicious' in the passage most nearly mean?",
+      "options": [
+        "Very tasty.",
+        "Very quick.",
+        "Very difficult.",
+        "Very expensive."
+      ],
+      "answer": "Very tasty.",
+      "explanation": "delicious意为“美味的”，与very tasty同义。B项quick（快的）、C项difficult（难的）、D项expensive（贵的）均与词义无关。",
+      "evidence_sentence": "The process is slow, but the result is delicious.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

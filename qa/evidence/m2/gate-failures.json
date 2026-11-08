@@ -1,350 +1,584 @@
 {
-  "generated_at": "2026-11-07T11:32:44.242359+00:00",
-  "failure_counts": {
-    "book_tag": 1,
-    "grammar_tag": 2,
-    "question_count": 1,
-    "structure": 32,
-    "vocabulary_scope": 1
-  },
-  "attempts": [
+  "failure_count": 82,
+  "failures": [
     {
-      "passage_type": "cloze",
-      "attempt": 1,
-      "accepted": false,
-      "failures": [
-        {
-          "category": "structure",
-          "message": "Generated passage is missing required fields.",
-          "question_index": null,
-          "details": {
-            "missing": [
-              "book_source",
-              "difficulty",
-              "passage",
-              "passage_group_id",
-              "questions",
-              "topic"
-            ]
-          }
-        }
-      ],
-      "metrics": {},
-      "prompt_tokens": 0,
-      "completion_tokens": 0,
-      "total_tokens": 0,
-      "elapsed_seconds": 900.0166123999516
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-CLOZE-01",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-01:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lin\", \"chen\", \"lin\", \"chen\", \"lin\", \"lin\", \"chen\", \"lin\", \"lin\"]}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"anxious\", \"confident\", \"curious\", \"reliable\", \"ambitious\", \"achieve\", \"adapt\", \"encourage\", \"persuade\", \"concentrate\", \"gradually\", \"eventually\", \"independently\", \"confidence\", \"opportunity\"], \"actual\": [\"anxious\", \"confident\", \"curious\", \"reliable\", \"ambitious\", \"achieve\", \"adapt\", \"encourage\", \"persuaded\", \"concentrate\", \"gradually\", \"eventually\", \"independently\", \"confidence\", \"opportunity\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 162, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"structure\", \"message\": \"cloze blank (1) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (2) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (3) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (4) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (5) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (6) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (7) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (8) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (9) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (10) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (11) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (12) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (13) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (14) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (15) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lin\", \"chen\", \"lin\", \"chen\", \"lin\", \"chen\", \"lin\"]}]"
     },
     {
-      "passage_type": "cloze",
-      "attempt": 2,
-      "accepted": false,
-      "failures": [
-        {
-          "category": "question_count",
-          "message": "Question count does not match the type-specific structure.",
-          "question_index": null,
-          "details": {
-            "actual": 14,
-            "expected": 15
-          }
-        },
-        {
-          "category": "structure",
-          "message": "cloze blank (3) is missing",
-          "question_index": null,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "cloze blank (4) is missing",
-          "question_index": null,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "cloze blank (5) is missing",
-          "question_index": null,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "cloze blank (6) is missing",
-          "question_index": null,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "cloze blank (7) is missing",
-          "question_index": null,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "cloze blank (8) is missing",
-          "question_index": null,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "cloze blank (9) is missing",
-          "question_index": null,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "cloze blank (10) is missing",
-          "question_index": null,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "cloze blank (11) is missing",
-          "question_index": null,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "cloze blank (12) is missing",
-          "question_index": null,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "cloze blank (13) is missing",
-          "question_index": null,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "cloze blank (14) is missing",
-          "question_index": null,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "cloze blank (15) is missing",
-          "question_index": null,
-          "details": {}
-        },
-        {
-          "category": "vocabulary_scope",
-          "message": "Passage contains words outside the 3413-entry whitelist.",
-          "question_index": null,
-          "details": {
-            "unknown_words": [
-              "media",
-              "children's",
-              "communication"
-            ]
-          }
-        },
-        {
-          "category": "structure",
-          "message": "Explanation must contain at least three sentences.",
-          "question_index": 1,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "Explanation must contain at least three sentences.",
-          "question_index": 2,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "Explanation must contain at least three sentences.",
-          "question_index": 3,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "Explanation must contain at least three sentences.",
-          "question_index": 4,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "Explanation must contain at least three sentences.",
-          "question_index": 5,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "Explanation must contain at least three sentences.",
-          "question_index": 6,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "Explanation must contain at least three sentences.",
-          "question_index": 7,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "Explanation must contain at least three sentences.",
-          "question_index": 8,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "Explanation must contain at least three sentences.",
-          "question_index": 9,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "Explanation must contain at least three sentences.",
-          "question_index": 10,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "Question options may not contain empty values.",
-          "question_index": 12,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "Question answer must be non-empty.",
-          "question_index": 12,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "Explanation must contain at least three sentences.",
-          "question_index": 12,
-          "details": {}
-        },
-        {
-          "category": "structure",
-          "message": "Explanation must contain at least three sentences.",
-          "question_index": 13,
-          "details": {}
-        },
-        {
-          "category": "grammar_tag",
-          "message": "Question grammar tags differ from the pilot schedule.",
-          "question_index": 13,
-          "details": {
-            "expected": [
-              "prepositions"
-            ],
-            "actual": [
-              "comparatives_superlatives"
-            ]
-          }
-        },
-        {
-          "category": "structure",
-          "message": "Explanation must contain at least three sentences.",
-          "question_index": 14,
-          "details": {}
-        },
-        {
-          "category": "book_tag",
-          "message": "Question book source differs from the pilot schedule.",
-          "question_index": 14,
-          "details": {
-            "expected": "必修三 U2",
-            "actual": "跨册综合"
-          }
-        },
-        {
-          "category": "structure",
-          "message": "Question difficulty differs from the pilot schedule.",
-          "question_index": 14,
-          "details": {
-            "expected": 3,
-            "actual": 4
-          }
-        },
-        {
-          "category": "grammar_tag",
-          "message": "Question grammar tags differ from the pilot schedule.",
-          "question_index": 14,
-          "details": {
-            "expected": [
-              "comparatives_superlatives"
-            ],
-            "actual": [
-              "tense_system"
-            ]
-          }
-        }
-      ],
-      "metrics": {
-        "type": "cloze",
-        "word_count": 182,
-        "question_count": 14,
-        "unknown_words": [
-          "media",
-          "children's",
-          "communication"
-        ],
-        "unknown_ratio": 0.016484,
-        "glossed_terms": [],
-        "single_word_denominator": 182
-      },
-      "prompt_tokens": 1691,
-      "completion_tokens": 2433,
-      "total_tokens": 4124,
-      "elapsed_seconds": 566.7330356000457
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-CLOZE-04",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-04:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 149, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"mia\", \"chen\", \"mia\", \"platform\", \"leo\", \"chen\", \"format\", \"mia\", \"leo\", \"notifications\", \"mia\", \"realized\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 134, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"mia\", \"leo\", \"chen\", \"mia\", \"chen\", \"mia\", \"leo\"]}]"
     },
     {
-      "passage_type": "cloze",
-      "attempt": 3,
-      "accepted": false,
-      "failures": [
-        {
-          "category": "structure",
-          "message": "Generated passage is missing required fields.",
-          "question_index": null,
-          "details": {
-            "missing": [
-              "book_source",
-              "difficulty",
-              "passage",
-              "passage_group_id",
-              "questions",
-              "topic"
-            ]
-          }
-        }
-      ],
-      "metrics": {},
-      "prompt_tokens": 0,
-      "completion_tokens": 0,
-      "total_tokens": 0,
-      "elapsed_seconds": 2366.8640474999556
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-CLOZE-03",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-03:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 270, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"question_schema\", \"message\": \"270 is greater than the maximum of 250\", \"question_index\": 1, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"270 is greater than the maximum of 250\", \"question_index\": 2, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"270 is greater than the maximum of 250\", \"question_index\": 3, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"270 is greater than the maximum of 250\", \"question_index\": 4, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"270 is greater than the maximum of 250\", \"question_index\": 5, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"270 is greater than the maximum of 250\", \"question_index\": 6, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"270 is greater than the maximum of 250\", \"question_index\": 7, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"270 is greater than the maximum of 250\", \"question_index\": 8, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"270 is greater than the maximum of 250\", \"question_index\": 9, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"270 is greater than the maximum of 250\", \"question_index\": 10, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"270 is greater than the maximum of 250\", \"question_index\": 11, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"270 is greater than the maximum of 250\", \"question_index\": 12, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"270 is greater than the maximum of 250\", \"question_index\": 13, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"270 is greater than the maximum of 250\", \"question_index\": 14, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"270 is greater than the maximum of 250\", \"question_index\": 15, \"path\": [\"word_count\"]}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lena\", \"high-school\", \"scrolling\", \"skip\", \"dizzy\", \"sat\", \"lifestyle\", \"body's\", \"bedtime\", \"lena\", \"lena\", \"craved\", \"late-night\", \"rewarded\", \"self-discipline\", \"self-discipline\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lena\", \"high-school\", \"scrolling\", \"skipping\", \"dizzy\", \"sat\", \"lena\", \"realized\", \"bedtime\", \"perfection\", \"discipline\"]}]"
     },
     {
-      "passage_type": "cloze",
-      "attempt": 4,
-      "accepted": false,
-      "failures": [
-        {
-          "category": "structure",
-          "message": "Generated passage is missing required fields.",
-          "question_index": null,
-          "details": {
-            "missing": [
-              "book_source",
-              "difficulty",
-              "passage",
-              "passage_group_id",
-              "questions",
-              "topic"
-            ]
-          }
-        }
-      ],
-      "metrics": {},
-      "prompt_tokens": 0,
-      "completion_tokens": 0,
-      "total_tokens": 0,
-      "elapsed_seconds": 3266.88298330002
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-CLOZE-02",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-02:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 157, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"chen\", \"assigned\", \"importance\", \"tom\", \"tom\", \"organized\", \"disagreements\", \"chen\", \"competition\"]}, {\"question_index\": 8, \"code\": \"H7_OPTION_ECHOES_STEM\", \"message\": \"A cloze option appears in another form in the stem.\", \"echoed_lemma\": [\"choose\"]}, {\"question_index\": 10, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"effective\", \"efficient\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"structure\", \"message\": \"cloze blank (1) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (2) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (3) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (4) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (5) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (6) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (7) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (8) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (9) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (10) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (11) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (12) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (13) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (14) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (15) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"assigned\", \"environmental\", \"protection\", \"tom\", \"chen\", \"realized\"]}, {\"question_index\": 7, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"contribut\"]}, {\"question_index\": 12, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"improv\"]}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contribute\", \"determine\", \"discover\", \"efficient\", \"essential\", \"improve\", \"manage\", \"prefer\", \"reduce\"], \"actual\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contributing\", \"determine\", \"discovery\", \"reduced\", \"that\", \"improved\", \"manage\", \"prefer\", \"which\"]}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-GRAMMAR-01",
+      "type": "grammar_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:grammar_fill:M2-FULL-GRAMMAR-01:M2_RECORD_GATE_FAILED [{\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 5, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"relative_clauses_non_defining\"], \"grammar_tag_allowed_book_tags\": {\"relative_clauses_non_defining\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"exploration\", \"ecology\", \"wildflower\", \"unchanged\", \"wildflower\", \"observation\", \"sample\", \"examined\", \"twice\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 99, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 5, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"relative_clauses_non_defining\"], \"grammar_tag_allowed_book_tags\": {\"relative_clauses_non_defining\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"wildflowers\", \"easily\", \"outdoor\", \"li\", \"hua\", \"samples\", \"protection\"]}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-GRAMMAR-02",
+      "type": "grammar_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:grammar_fill:M2-FULL-GRAMMAR-02:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 98, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 4, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"v_ing_nonfinite\"], \"grammar_tag_allowed_book_tags\": {\"v_ing_nonfinite\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"annual\", \"participants\", \"enthusiastic\", \"headmaster\", \"relay\", \"tug-of-war\", \"participants\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 115, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 4, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"v_ing_nonfinite\"], \"grammar_tag_allowed_book_tags\": {\"v_ing_nonfinite\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"annual\", \"participants\", \"relay\", \"tug-of-war\", \"runners\", \"tug-of-war\", \"headmaster\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-CLOZE-05",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-05:M2_RECORD_GATE_FAILED [{\"category\": \"structure\", \"message\": \"cloze blank (1) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (2) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (3) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (4) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (5) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (6) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (7) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (8) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (9) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (10) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (11) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (12) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (13) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (14) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (15) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"school's\", \"maya\", \"leo\", \"organized\", \"convenience\", \"conservation\", \"biggest\", \"campaign\", \"competition\", \"reusable\"]}, {\"question_index\": 14, \"code\": \"H7_OPTION_ECHOES_STEM\", \"message\": \"A cloze option appears in another form in the stem.\", \"echoed_lemma\": [\"choose\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"leo\", \"school's\", \"maya\", \"organized\", \"campaign\", \"leo\", \"chen\", \"enthusiasm\", \"maya\", \"leo\", \"chen\", \"twice\", \"maya\"]}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-CLOZE-06",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-06:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"deserved\", \"lin\", \"realize\", \"hasty\", \"decision\", \"maya's\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"decision\", \"self-discovery\", \"maya\", \"drawn\", \"teacher's\", \"maya\", \"realized\", \"confusion\", \"hasty\", \"decision\", \"school's\", \"maya\", \"supportive\"]}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-GRAMMAR-03",
+      "type": "grammar_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:grammar_fill:M2-FULL-GRAMMAR-03:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"session\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"riverside\", \"chen\", \"organize\", \"wang\", \"chen\", \"wang\"]}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-GRAMMAR-04",
+      "type": "grammar_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:grammar_fill:M2-FULL-GRAMMAR-04:M2_RECORD_GATE_FAILED [{\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 2, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"cleft_basic\"], \"grammar_tag_allowed_book_tags\": {\"cleft_basic\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 3, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"cleft_basic\"], \"grammar_tag_allowed_book_tags\": {\"cleft_basic\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lena\", \"chengdu\", \"lhasa\", \"unforgettable\", \"lhasa\", \"platform\", \"sunlight\", \"realize\", \"guidebook\", \"lena\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 2, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"cleft_basic\"], \"grammar_tag_allowed_book_tags\": {\"cleft_basic\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 3, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"cleft_basic\"], \"grammar_tag_allowed_book_tags\": {\"cleft_basic\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lena\", \"chengdu\", \"lhasa\", \"unforgettable\", \"platform\", \"realized\", \"lena\", \"breathtaking\", \"unforgettable\"]}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-GRAMMAR-06",
+      "type": "grammar_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:grammar_fill:M2-FULL-GRAMMAR-06:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"technical\", \"portfolio\", \"internship\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 5}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 6}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 7}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 8}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 9}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 10}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"decisions\", \"student's\", \"lily\", \"tom\", \"lily\", \"tom\", \"profession\", \"lily\", \"tom\"]}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-GRAMMAR-05",
+      "type": "grammar_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:grammar_fill:M2-FULL-GRAMMAR-05:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 115, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"exhibition\", \"chen\", \"arranged\", \"tang\", \"restored\", \"drawn\", \"colors\", \"glow\", \"brushwork\", \"unforgettable\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 118, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"exhibition\", \"arranged\", \"chen\", \"tang\", \"restored\", \"colors\", \"glow\", \"chen\", \"brushwork\", \"chen\", \"unforgettable\"]}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-02",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-02:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenfield\", \"maya\", \"leo\", \"sam\", \"neighborhood\", \"maya\", \"passionate\", \"organized\", \"leo\", \"installing\", \"panels\", \"sam\", \"tirelessly\", \"panels\", \"carbon\", \"emissions\", \"maya\", \"sustainable\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"riverton\", \"mia\", \"ben\", \"zoe\", \"mia\", \"passionate\", \"organized\", \"ben\", \"zoe\", \"trio\", \"tirelessly\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-03",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-03:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"smartlearn\", \"lily\", \"hard-working\", \"smartlearn\", \"analyzed\", \"exact\", \"chen\", \"rely\", \"smartlearn\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lily\", \"studypal\", \"analyzed\", \"lily\", \"chen\", \"rely\", \"lily\", \"studypal\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-01",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-01:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"grandchildren\", \"tasty\", \"deserves\", \"preparation\", \"traditional\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"fuel\", \"laughter\", \"fast-paced\", \"bonds\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-04",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-04:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"woken\", \"woken\", \"dr\", \"chen\", \"led\", \"long-term\", \"storage\", \"cannot\", \"woken\", \"dr\", \"chen\", \"awakenings\", \"immune\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"dr\", \"chen\", \"short-term\", \"long-term\", \"storage\", \"mood\", \"immune\", \"cannot\", \"dr\", \"chen\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-06",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-06:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"reunion\", \"mooncakes\", \"traditional\", \"pastry\", \"lotus\", \"paste\", \"yolk\", \"chang'e\", \"goddess\", \"flew\", \"festival's\", \"core\", \"apart\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"mooncakes\", \"pastry\", \"lotus\", \"paste\", \"yolk\", \"goddess\", \"chang'e\", \"flew\", \"video-call\", \"mooncakes\", \"festival's\", \"core\", \"apart\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-05",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-05:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"seventeen-year-old\", \"maya\", \"chen\", \"maya\", \"gomez\", \"chop\", \"maya\", \"unexpected\", \"maya\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"chen\", \"stack\", \"clipboard\", \"donors\", \"supervisor\", \"maya\", \"relied\", \"van\", \"maya's\", \"recognized\", \"council\", \"biggest\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-07",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-07:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maria\", \"vacant\", \"maria\", \"neighbors\", \"maria\", \"neighbors\", \"maria\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"neighborhood\", \"vacant\", \"chen\", \"broken\", \"chen\", \"neighbors\", \"carpenter\", \"sunflowers\", \"area's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-08",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-08:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 258, \"minimum\": 1, \"maximum\": 250}}, {\"category\": \"question_schema\", \"message\": \"258 is greater than the maximum of 250\", \"question_index\": 1, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"258 is greater than the maximum of 250\", \"question_index\": 2, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"258 is greater than the maximum of 250\", \"question_index\": 3, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"258 is greater than the maximum of 250\", \"question_index\": 4, \"path\": [\"word_count\"]}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"blew\", \"scoreboard\", \"exhausted\", \"maya\", \"shook\", \"referee\", \"opponent\", \"leo\", \"applauded\", \"leo\", \"maya\", \"analyse\", \"sportsmanship\", \"shown\", \"humble\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"sportsmanship\", \"led\", \"leo\", \"maya\", \"leo\", \"referee\", \"maya\", \"teammate\", \"leo\", \"applauded\", \"maya's\", \"shot\", \"easily\", \"leo's\", \"shook\", \"maya's\", \"principal\", \"maya\", \"humble\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-09",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-09:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"orchestra\", \"chen\", \"sight-reading\", \"maya\", \"chen\", \"perfection\", \"maya\", \"recognizing\", \"maya\", \"solo\", \"realized\", \"natural\", \"chen\", \"foundation\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"hid\", \"confusion\", \"chen\", \"froze\", \"sight-reading\", \"maya\", \"chen\", \"recognize\", \"maya\", \"solo\", \"chen\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-10",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-10:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"realize\", \"advertising\", \"maya\", \"greediest\", \"installed\", \"forgotten\", \"maya\", \"one-time\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"today's\", \"unexpected\", \"flashlight\", \"flashlight\", \"advertisers\", \"convenience\", \"policies\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-12",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-12:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"toward\", \"genuine\", \"artifacts\", \"dr\", \"chen\", \"pottery\", \"ming\", \"connection\", \"examine\", \"program's\", \"textbooks\", \"museum's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"museum's\", \"dr\", \"chen\", \"examine\", \"artifacts\", \"pottery\", \"program's\", \"genuine\", \"ming\", \"textbooks\", \"dr\", \"chen\", \"museum's\", \"hands-on\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-11",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-11:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"microplastics\", \"deep-sea\", \"sediments\", \"marine\", \"seabirds\", \"fragments\", \"coastal\", \"single-use\", \"investing\", \"dissolve\", \"seawater\", \"cannot\", \"production\", \"absorbed\", \"absorb\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"sunlight\", \"microplastics\", \"deep-sea\", \"sediments\", \"arctic\", \"seabirds\", \"led\", \"dr\", \"maya\", \"chen\", \"coastal\", \"samples\", \"fragments\", \"sample\", \"fragments\", \"dr\", \"chen\", \"single-use\", \"investing\", \"dr\", \"chen\", \"cannot\", \"production\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-14",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-14:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenfield\", \"smith\", \"install\", \"panels\", \"neighbors\", \"skeptical\", \"unreliable\", \"johnson\", \"smiths\", \"renewable\", \"installation\", \"carbon\", \"footprint\", \"neighbors\", \"johnson\", \"council\", \"organized\", \"workshop\", \"renewable\", \"smiths\", \"sparked\", \"community-wide\", \"sustainability\", \"greenfield\", \"smiths\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenfield\", \"smith\", \"smith\", \"math\", \"emma\", \"renewable\", \"smith\", \"install\", \"panels\", \"neighbors\", \"skeptical\", \"panels\", \"unreliable\", \"smiths\", \"panels\", \"utility\", \"emma\", \"organized\", \"workshop\", \"greenfield\", \"panels\", \"council\", \"smiths\", \"sparked\", \"community-wide\", \"greenfield\", \"emma\", \"environmental\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-13",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-13:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"man's\", \"coding\", \"maria\", \"librarian\", \"maria\", \"workshops\", \"resumes\", \"pace\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"workshops\", \"resumes\", \"visitors\", \"library's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-16",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-16:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"leo\", \"skeptical\", \"deadline\", \"leo\", \"math\", \"sessions\", \"assignments\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"chen\", \"chen\", \"maya\", \"maya\", \"maya\", \"ranked\", \"importance\", \"maya\", \"tom\", \"math\", \"tom\", \"maya\", \"chen\", \"maya's\", \"maya\", \"realized\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-15",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-15:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"unsure\", \"leo\", \"maya\", \"cautious\", \"loyalty\", \"leo\", \"maya\", \"leo\", \"family's\", \"maya\", \"grand\", \"maya\", \"realized\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"daniel's\", \"tom\", \"daniel\", \"tom\", \"sat\", \"daniel\", \"daniel\", \"daniel\", \"tom\", \"tom\", \"daniel\", \"part-time\", \"daniel\", \"tom\", \"grand\", \"daniel\", \"tom\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-18",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-18:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"pandemic\", \"maya\", \"fifteen-year-old\", \"paused\", \"maya\", \"chen\", \"maya\", \"noisy\", \"unexpected\", \"pause\", \"rewatch\", \"explanations\", \"chen\", \"spoke\", \"discussion\", \"maya\", \"realized\", \"maya\", \"organize\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"fifteen-year-old\", \"noisy\", \"chen\", \"spoke\", \"organize\", \"pause\", \"maya\", \"paused\", \"rewatched\", \"pace\", \"maya\", \"realized\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-19",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-19:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"seaside\", \"coral\", \"recognized\", \"scattered\", \"once-clear\", \"tourism\", \"tourism\", \"maya\", \"maya\", \"footprints\", \"visitors\", \"clean-ups\", \"maya\", \"clean-ups\", \"maya\", \"realized\", \"sustainable\", \"tourism\", \"visitors\", \"granddaughter\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"willow\", \"tourism\", \"maya\", \"visitors\", \"clean-up\", \"maya\", \"visitors\", \"council\", \"reusable\", \"willow\", \"maya's\", \"sustainable\", \"tourism\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-17",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-17:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenhill\", \"chased\", \"maria\", \"organized\", \"behavior\", \"migration\", \"club's\", \"entertain\", \"wildlife\", \"neighbors\", \"chasing\", \"wildlife\", \"maria's\", \"observation\", \"maria\", \"driven\", \"campaign\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenhill\", \"declining\", \"wildlife\", \"club's\", \"nesting\", \"maria\", \"organized\", \"construct\", \"neighbors\", \"noisy\", \"maria\", \"proposed\", \"natural\", \"resolved\", \"club's\", \"recognized\", \"council\", \"wildlife\", \"realized\", \"greenhill\", \"thriving\", \"educate\", \"importance\", \"wildlife\", \"conservation\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-20",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-20:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"inventor\", \"alexander\", \"graham\", \"telegraphs\", \"invention\", \"telephone\", \"other's\", \"telephone\", \"laid\", \"bell's\", \"recognized\", \"associated\", \"telephone\", \"telephone\", \"bell's\", \"unchanged\", \"apart\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"hua's\", \"li\", \"hua\", \"inventions\", \"reshaped\", \"telephone\", \"li\", \"hua's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-21",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-21:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"ming\", \"li\", \"ming\", \"wang\", \"fang\", \"revision\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"ming\", \"wang\", \"fang\", \"li\", \"ming\", \"wang\", \"fang\", \"li\", \"ming\", \"chen\", \"li\", \"ming\", \"unsure\", \"chen\", \"li\", \"ming\", \"wang\", \"fang\", \"realized\", \"li\", \"ming\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-24",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-24:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"textile\", \"mill\", \"torn\", \"bigger\", \"mill\", \"photographs\", \"neighborhood\", \"wooden\", \"mill\", \"visitors\", \"mill\", \"workplace\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"great-grandmother\", \"town's\", \"visitors\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-23",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-23:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"s\", \"exploration\", \"contest\", \"superpowers\", \"probes\", \"spacex\", \"accessible\", \"debris\", \"broken\", \"collision\", \"debris\", \"capture\", \"defunct\", \"drag\", \"meanwhile\", \"filters\", \"unexpected\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"starlet\", \"maria\", \"low-cost\", \"broken\", \"maria\", \"collisions\", \"starlet\", \"toward\", \"starlet\", \"starlet's\", \"maria\", \"starlet\", \"exploration\", \"farther\", \"team's\", \"maria's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-22",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-22:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"landfills\", \"rethink\", \"rewear\", \"manchester\", \"mia\", \"chen\", \"rewear\", \"circular\", \"reused\", \"thrown\", \"panels\", \"panels\", \"sewn\", \"insulation\", \"mia\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenfield\", \"dealt\", \"school-wide\", \"led\", \"mia\", \"chen\", \"broken\", \"thrown\", \"workshops\", \"worn-out\", \"sewn\", \"panels\", \"reused\", \"organized\", \"swap\", \"circular\", \"mia\", \"rethinking\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-READING-25",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-25:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 254, \"minimum\": 1, \"maximum\": 250}}, {\"category\": \"question_schema\", \"message\": \"254 is greater than the maximum of 250\", \"question_index\": 1, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"254 is greater than the maximum of 250\", \"question_index\": 2, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"254 is greater than the maximum of 250\", \"question_index\": 3, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"254 is greater than the maximum of 250\", \"question_index\": 4, \"path\": [\"word_count\"]}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"riverside\", \"installed\", \"automated\", \"cardboard\", \"employees\", \"twice\", \"workforce\", \"dana\", \"cole\", \"subtle\", \"greasy\", \"batch\", \"marcus\", \"reed\", \"toward\", \"maintenance\", \"marcus\", \"plant's\", \"technician\", \"dana\", \"visitors\", \"automation\", \"riverside\", \"contest\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"riverside\", \"installed\", \"automated\", \"dana\", \"cole\", \"cardboard\", \"twice\", \"workforce\", \"shrink\", \"dana's\", \"supervisor\", \"marcus\", \"reed\", \"jammed\", \"bent\", \"dana\", \"dana\", \"technicians\", \"maintenance\", \"quality-control\", \"dana\", \"visitors\", \"automation\", \"riverside\", \"subtle\", \"repetitive\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-GAP-01",
+      "type": "gap_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:gap_fill:M2-FULL-GAP-01:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"chen\", \"leo\", \"suggestion\", \"importance\", \"unimportant\", \"chen\", \"leo\", \"twenty-four\", \"leo\", \"chen\", \"sessions\", \"leo\", \"risen\", \"steadily\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 5}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"chen\", \"leo\", \"chen\", \"leo\", \"twenty-five\", \"leo\", \"chen\", \"leo\", \"leo\", \"chen\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 5}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-GAP-02",
+      "type": "gap_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:gap_fill:M2-FULL-GAP-02:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"annual\", \"lily\", \"filtration\", \"filter\", \"gravel\", \"lily\", \"chen\", \"filter\", \"lily\", \"colorful\", \"lily\", \"preparation\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 5}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"annual\", \"lily\", \"filter\", \"lily\", \"filter\", \"explanation\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 5}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-GAP-03",
+      "type": "gap_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:gap_fill:M2-FULL-GAP-03:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"tom\", \"skipped\", \"tom\", \"bedtime\", \"lily\", \"tom\", \"lily\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 5}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"productive\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-GAP-06",
+      "type": "gap_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:gap_fill:M2-FULL-GAP-06:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"exhibition\", \"organized\", \"chen\", \"collector's\", \"pottery\", \"potters\", \"clay\", \"educational\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"chen\", \"pottery\", \"arrival\", \"han\", \"vase\", \"educational\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 5}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-GAP-07",
+      "type": "gap_fill",
+      "category": "content",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:gap_fill:M2-FULL-GAP-07:GAP_ANSWER_INVALID index=1; GAP_ANSWER_INVALID index=1"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-GAP-05",
+      "type": "gap_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:gap_fill:M2-FULL-GAP-05:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"mia\", \"quit\", \"practised\", \"easily\", \"leo\", \"mia\", \"leo\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 5}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"mia\", \"leo\", \"practised\", \"easily\", \"mia\", \"leo\", \"mia\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-GAP-04",
+      "type": "gap_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:gap_fill:M2-FULL-GAP-04:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"ridge\", \"organized\", \"lee\", \"led\", \"sunset\", \"muddy\", \"slippery\", \"lee\", \"mud\", \"hid\", \"wooden\", \"hut\", \"drank\", \"lee\", \"outdoor\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 5}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"unsafe\", \"chen\", \"trail\", \"trail\", \"muddy\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 5}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-GAP-09",
+      "type": "gap_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:gap_fill:M2-FULL-GAP-09:GAP_ANSWER_INVALID index=1; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lena\", \"yunnan\", \"checklist\", \"sunscreen\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 5}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-GAP-10",
+      "type": "gap_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:gap_fill:M2-FULL-GAP-10:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"grand\", \"session\", \"non-reader\", \"decision\", \"enthusiasm\", \"lifelong\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 5}]; M2_RECORD_GATE_FAILED [{\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 5}]"
+    },
+    {
+      "source_file": "run-checkpoint.pre-qualitybar.json",
+      "passage_group_id": "M2-FULL-GAP-08",
+      "type": "gap_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:gap_fill:M2-FULL-GAP-08:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"unheard\", \"mentor\", \"maya\", \"maya\", \"repeat-back\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 5}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"workshop\", \"chen\", \"misunderstandings\", \"tom\", \"lily\", \"chen\", \"speaker's\", \"importance\", \"interrogation\", \"chen\", \"workshop\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 5}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-CLOZE-04",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-04:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 91, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"structure\", \"message\": \"cloze blank (1) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (2) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (3) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (4) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (5) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (6) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (7) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (8) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (9) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (10) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (11) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (12) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (13) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (14) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (15) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"chen\", \"leo\", \"chen\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"chen\", \"wang\", \"leo\", \"steadily\", \"wang\", \"leo\", \"practising\", \"wang\"]}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"anxious\", \"confident\", \"curious\", \"reliable\", \"ambitious\", \"achieve\", \"adapt\", \"encourage\", \"persuade\", \"concentrate\", \"gradually\", \"eventually\", \"independently\", \"confidence\", \"opportunity\"], \"actual\": [\"anxious\", \"confident\", \"curious\", \"reliable\", \"ambitious\", \"achieve\", \"adapt\", \"encouraged\", \"persuaded\", \"concentrate\", \"gradually\", \"eventually\", \"independently\", \"independently\", \"confidence\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 121, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lily\", \"wang\", \"ben\", \"ben\", \"lily\", \"wang\", \"lily\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 11}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-CLOZE-01",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-01:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 151, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"structure\", \"message\": \"cloze blank (1) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (2) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (3) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (4) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (5) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (6) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (7) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (8) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (9) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (10) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (11) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (12) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (13) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (14) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (15) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"hua\", \"wang\", \"li\", \"hua\", \"zhang\", \"wei\", \"li\", \"hua\", \"zhang\", \"wei\", \"contest\", \"contest\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"hua\", \"wang\", \"li\", \"hua\", \"zhang\", \"wei\", \"forgot\", \"li\", \"hua\", \"wang\", \"zhang\", \"wei\", \"spoken\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 151, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"hua\", \"wang\", \"li\", \"hua\", \"wang\", \"li\", \"hua\", \"timetable\", \"wang\", \"li\", \"hua\"]}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-CLOZE-02",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-02:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 253, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 1, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 2, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 3, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 4, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 5, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 6, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 7, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 8, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 9, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 10, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 11, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 12, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 13, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 14, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"253 is greater than the maximum of 250\", \"question_index\": 15, \"path\": [\"word_count\"]}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"tom\", \"lily\", \"li\", \"other's\", \"tom\", \"lily\", \"tom\", \"lily\", \"li\", \"tom\", \"lily\", \"li\"]}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contribute\", \"determine\", \"discover\", \"efficient\", \"essential\", \"improve\", \"manage\", \"prefer\", \"reduce\"], \"actual\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contribute\", \"determine\", \"discovery\", \"efficient\", \"essential\", \"improve\", \"manage\", \"prefer\", \"reduce\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 222, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"structure\", \"message\": \"cloze blank (1) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (2) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (3) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (4) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (5) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (6) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (7) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (8) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (9) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (10) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (11) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (12) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (13) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (14) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (15) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"tom\", \"lily\", \"tom\", \"tom\", \"lily\", \"group's\", \"forgot\", \"deadline\", \"lily\", \"tom\", \"tom\", \"lily\"]}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contribute\", \"determine\", \"discover\", \"efficient\", \"essential\", \"improve\", \"manage\", \"prefer\", \"reduce\"], \"actual\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contributing\", \"determine\", \"discovery\", \"efficient\", \"essential\", \"improve\", \"manage\", \"prefer\", \"reduced\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"biggest\"]}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contribute\", \"determine\", \"discover\", \"efficient\", \"essential\", \"improve\", \"manage\", \"prefer\", \"reduce\"], \"actual\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contribute\", \"determine\", \"discover\", \"efficient\", \"essential\", \"improved\", \"manage\", \"prefer\", \"reduce\"]}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-CLOZE-03",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-03:QUESTION_COUNT_MISMATCH actual=14 expected=15; M2_RECORD_GATE_FAILED [{\"category\": \"structure\", \"message\": \"cloze blank (1) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (2) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (3) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (4) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (5) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (6) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (7) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (8) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (9) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (10) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (11) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (12) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (13) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (14) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (15) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"high-school\", \"leo\", \"leo\", \"well-being\", \"leo\", \"late-night\", \"leo\", \"freedom\"]}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"respect\", \"support\", \"responsible\", \"solution\", \"avoid\", \"value\", \"conduct\", \"choice\", \"effort\", \"environment\", \"experience\", \"purpose\", \"understand\", \"identify\", \"allow\"], \"actual\": [\"respect\", \"supported\", \"responsible\", \"solution\", \"avoid\", \"value\", \"conduct\", \"choice\", \"effort\", \"environment\", \"experience\", \"purpose\", \"understand\", \"identify\", \"allow\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"tom\", \"high-school\", \"tom\", \"li\", \"tom\", \"self-control\", \"late-night\", \"li\", \"tom\", \"li\", \"importance\", \"self-control\"]}, {\"question_index\": 13, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"understand\"]}, {\"question_index\": 15, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"allow\"]}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-GRAMMAR-01",
+      "type": "grammar_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:grammar_fill:M2-FULL-GRAMMAR-01:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 114, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"growth\", \"lily\", \"windowsill\", \"sunlight\", \"lily\", \"lily\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 102, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"windowsill\", \"lily\", \"lily\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 6}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 110, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"growth\", \"balcony\", \"cupboard\", \"th\", \"headmaster\"]}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-GRAMMAR-02",
+      "type": "grammar_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:grammar_fill:M2-FULL-GRAMMAR-02:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 108, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"participants\", \"relay\", \"runner\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 106, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"ming\", \"practising\", \"li\", \"ming\", \"broke\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 114, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"relay\", \"practise\"]}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-CLOZE-06",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-06:M2_RECORD_GATE_FAILED [{\"category\": \"structure\", \"message\": \"cloze blank (1) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (2) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (3) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (4) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (5) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (6) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (7) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (8) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (9) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (10) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (11) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (12) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (13) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (14) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (15) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"chen\", \"leo\", \"realized\", \"problem-solving\", \"chen\", \"leo\", \"chen's\", \"leo\", \"documentaries\", \"decisions\", \"leo\", \"guidance\", \"supportive\", \"leo's\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"chen\", \"self-knowledge\", \"leo\", \"chen\", \"leo\", \"chen\", \"leo\", \"chen\", \"leo\", \"chen\", \"leo\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"chen\", \"high-school\", \"wang\", \"self-knowledge\", \"chen\", \"wang\", \"decisions\", \"chen\", \"decisions\", \"supportive\", \"chen's\", \"unclear\", \"wang\", \"direction\", \"realistic\", \"chen\"]}, {\"question_index\": 7, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"conduct\"]}, {\"question_index\": 9, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"effort\"]}, {\"question_index\": 10, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"environment\", \"environmental\"]}, {\"question_index\": 11, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"experienc\"]}, {\"question_index\": 12, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"purposeful\"]}, {\"question_index\": 13, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"understand\"]}, {\"question_index\": 14, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"identify\"]}, {\"question_index\": 15, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"allow\"]}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"respect\", \"support\", \"responsible\", \"solution\", \"avoid\", \"value\", \"conduct\", \"choice\", \"effort\", \"environment\", \"experience\", \"purpose\", \"understand\", \"identify\", \"allow\"], \"actual\": [\"respect\", \"support\", \"responsible\", \"solution\", \"avoid\", \"value\", \"conducted\", \"choice\", \"effort\", \"environment\", \"experience\", \"purpose\", \"understand\", \"identify\", \"allow\"]}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-CLOZE-05",
+      "type": "cloze",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:cloze:M2-FULL-CLOZE-05:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 246, \"minimum\": 170, \"maximum\": 220}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"leo\", \"nina\", \"led\", \"maya\", \"leo\", \"nina\", \"reuse\", \"maya\", \"leo\"]}, {\"question_index\": 5, \"code\": \"H7_OPTION_ECHOES_STEM\", \"message\": \"A cloze option appears in another form in the stem.\", \"echoed_lemma\": [\"choose\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"structure\", \"message\": \"cloze blank (1) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (2) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (3) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (4) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (5) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (6) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (7) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (8) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (9) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (10) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (11) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (12) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (13) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (14) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"structure\", \"message\": \"cloze blank (15) is missing\", \"question_index\": null, \"details\": {}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"leo\", \"nina\", \"maya\", \"reusable\", \"leo\", \"maya\", \"twice\"]}, {\"question_index\": 8, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"determin\", \"determine\"]}, {\"question_index\": 12, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"improv\"]}, {\"question_index\": 13, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"manag\", \"manage\"]}, {\"question_index\": 14, \"code\": \"H6_OPTION_SAME_LEMMA\", \"message\": \"Cloze options repeat the same lemma.\", \"repeated_lemma\": [\"use\"]}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contribute\", \"determine\", \"discover\", \"efficient\", \"essential\", \"improve\", \"manage\", \"prefer\", \"reduce\"], \"actual\": [\"accept\", \"who\", \"balance\", \"benefit\", \"challenge\", \"who\", \"contribute\", \"determine\", \"discover\", \"efficient\", \"essential\", \"has improved\", \"manage\", \"using\", \"reduced\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"tom\", \"lucy\", \"jack\", \"tom\", \"lucy\", \"jack\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 7}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 12}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 15}, {\"category\": \"HIGH_FREQUENCY_TARGET_MISMATCH\", \"expected\": [\"accept\", \"appreciate\", \"balance\", \"benefit\", \"challenge\", \"communicate\", \"contribute\", \"determine\", \"discover\", \"efficient\", \"essential\", \"improve\", \"manage\", \"prefer\", \"reduce\"], \"actual\": [\"accept\", \"who\", \"share\", \"challenge\", \"benefit\", \"communicate\", \"contributed\", \"determine\", \"discover\", \"efficient\", \"essential\", \"improved\", \"manage\", \"prefer\", \"reduced\"]}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-GRAMMAR-04",
+      "type": "grammar_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:grammar_fill:M2-FULL-GRAMMAR-04:M2_RECORD_GATE_FAILED [{\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 2, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"cleft_basic\"], \"grammar_tag_allowed_book_tags\": {\"cleft_basic\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 3, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"cleft_basic\"], \"grammar_tag_allowed_book_tags\": {\"cleft_basic\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"sunset\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 2, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"cleft_basic\"], \"grammar_tag_allowed_book_tags\": {\"cleft_basic\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 3, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"cleft_basic\"], \"grammar_tag_allowed_book_tags\": {\"cleft_basic\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lin\", \"hangzhou\", \"high-speed\", \"lin\", \"boatman\", \"lin\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 2, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"cleft_basic\"], \"grammar_tag_allowed_book_tags\": {\"cleft_basic\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"book_tag\", \"message\": \"Rejected: book_tag is incompatible with the grammar tag set.\", \"question_index\": 3, \"details\": {\"code\": \"BOOK_TAG_INCOMPATIBLE\", \"reason\": \"BOOK_TAG_NOT_IN_INTERSECTION\", \"book_tag\": \"选必二\", \"grammar_tags\": [\"cleft_basic\"], \"grammar_tag_allowed_book_tags\": {\"cleft_basic\": [\"必修\", \"选必一\", \"跨册\"]}, \"allowed_book_tag_intersection\": [\"必修\", \"选必一\", \"跨册\"], \"conflict_pairs\": []}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lin\", \"hangzhou\", \"boatman\", \"boatman's\", \"heard\", \"visitors\", \"lin\", \"boatman\", \"visitors\", \"boatman\"]}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-GRAMMAR-03",
+      "type": "grammar_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:grammar_fill:M2-FULL-GRAMMAR-03:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"clean-up\", \"participant\", \"clean-up\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 8}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"clean-up\", \"li\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 10}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 210, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"heard\", \"li\", \"hua\", \"chen\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 9}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 10}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-GRAMMAR-05",
+      "type": "grammar_fill",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:grammar_fill:M2-FULL-GRAMMAR-05:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 94, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"led\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 93, \"minimum\": 120, \"maximum\": 180}}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 71, \"minimum\": 120, \"maximum\": 180}}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"hua\", \"traditional\", \"led\", \"li\", \"hua\"]}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-01",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-01:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"pasta\", \"staple\", \"traditional\", \"sauce\", \"hunger\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"importance\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"hua\", \"year's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-03",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-03:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"lin\", \"tao\", \"deskmate\", \"app's\", \"practised\", \"app's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"intelligence\", \"li\", \"ming\", \"rely\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"intelligence\", \"li\", \"ming\", \"practise\", \"chen\", \"li\", \"ming\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-04",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-04:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"immune\", \"meanwhile\", \"day's\", \"discard\", \"night's\", \"mood\", \"physical\", \"growth\", \"alert\", \"tempted\", \"sacrifice\", \"well-rested\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"mood\", \"easily\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"night's\", \"organizes\", \"late-night\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-02",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-02:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"school's\", \"decisions\", \"chen\", \"disagreed\", \"maya\", \"unused\", \"leo\", \"maya\", \"leo\", \"maya\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"anna\", \"ben\", \"lucy\", \"anna\", \"ben\", \"lucy\", \"clean-up\", \"mayor\", \"lucy\", \"cannot\", \"anna\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"tom\", \"lily\", \"jack\", \"tom\", \"lily\", \"jack\", \"tom\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-06",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-06:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"traditional\", \"couplets\", \"year's\", \"symbolise\", \"gala\", \"traditional\", \"reunion\", \"warmth\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"reunion\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"grandparents\", \"importance\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-05",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-05:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"alex\", \"children's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"maya\", \"sixteen-year-old\", \"maya\", \"centre's\", \"li\", \"programme's\", \"maya\"]}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"chen\", \"chen\", \"wang\", \"lei\", \"man's\", \"centre's\", \"chen\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-08",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-08:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"sportsmanship\", \"li\", \"opponents\", \"fought\", \"shook\", \"applauded\", \"team's\", \"sportsmanship\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"runner\", \"li\", \"wei\", \"spoke\", \"x\", \"relay\", \"unexpected\", \"li\", \"wei\", \"runner\", \"li\", \"wei\", \"chen\", \"spoke\", \"li\", \"wei\", \"runner\", \"li\", \"wei\", \"li\", \"wei\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"chen\", \"li\", \"wei\", \"team's\", \"chen\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-07",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-07:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"rubbish-filled\", \"lee\", \"chen\", \"wooden\", \"sat\", \"benches\", \"lee\", \"benches\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 263, \"minimum\": 1, \"maximum\": 250}}, {\"category\": \"question_schema\", \"message\": \"263 is greater than the maximum of 250\", \"question_index\": 1, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"263 is greater than the maximum of 250\", \"question_index\": 2, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"263 is greater than the maximum of 250\", \"question_index\": 3, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"263 is greater than the maximum of 250\", \"question_index\": 4, \"path\": [\"word_count\"]}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"chen\", \"dislike\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"wang\", \"wang\", \"wang\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-09",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-09:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"enthusiasm\", \"emma\", \"chen\", \"emma\", \"importance\", \"emma\", \"emma\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lily\", \"high-school\", \"wang\", \"lily\", \"practised\", \"lily\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"ming\", \"beijing\", \"practised\", \"wang\", \"li\", \"ming\", \"orchestra\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-10",
+      "type": "reading",
+      "category": "R5",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-10:R5_EVIDENCE_SENTENCE_INVALID index=3; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"today's\", \"realizing\", \"browsing\", \"lily\", \"advertisers\", \"lily\", \"one's\", \"government's\", \"lily\", \"combination\", \"regulation\", \"misuse\", \"sacrificing\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"ads\", \"password\", \"twice\", \"combination\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-11",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-11:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"marine\", \"microplastics\", \"particles\", \"single-use\", \"production\", \"reusable\", \"straws\", \"clean-ups\", \"eco-friendly\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"sink\", \"sunlight\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenport\", \"clean-up\", \"mia\", \"leo\", \"anna\", \"mia\", \"leo\", \"anna\", \"spoke\", \"clean-up\", \"mia\", \"cannot\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-12",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-12:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"visitors\", \"hands-on\", \"historians\", \"high-school\", \"museum's\", \"arrange\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"textbooks\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"workshop\", \"workshop\", \"led\", \"workshops\", \"museum's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-13",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-13:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"e-books\", \"audiobooks\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"library's\", \"visitors\", \"m\", \"p\", \"m\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"librarian\", \"caf\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-15",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-15:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"sam\", \"sat\", \"leo\", \"beginner\", \"sam\", \"leo's\", \"leo's\", \"competition\", \"leo\", \"sam\", \"leo\", \"spoke\", \"leo\", \"sam\", \"sam\", \"leo\", \"forgot\", \"leo\", \"sat\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"lily\", \"emma\", \"lily\", \"emma\", \"emma\", \"lily\", \"lily\", \"emma\", \"emma\", \"spoke\", \"lily\", \"sat\", \"apart\", \"emma\", \"lily\", \"lily\", \"emma\", \"lily\", \"emma\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"tom\", \"jack\", \"tom\", \"jack's\", \"tom\", \"broke\", \"tom\", \"jack\", \"tom\", \"jack's\", \"jack\", \"jack\", \"cannot\", \"tom\", \"jack\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-16",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-16:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"leo\", \"chen\", \"sat\", \"leo\", \"math\", \"distractions\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"ming\", \"li\", \"ming\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"tom\", \"math\", \"math\", \"tom\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-14",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-14:M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 289, \"minimum\": 1, \"maximum\": 250}}, {\"category\": \"question_schema\", \"message\": \"289 is greater than the maximum of 250\", \"question_index\": 1, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"289 is greater than the maximum of 250\", \"question_index\": 2, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"289 is greater than the maximum of 250\", \"question_index\": 3, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"289 is greater than the maximum of 250\", \"question_index\": 4, \"path\": [\"word_count\"]}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"renewable\", \"panels\", \"turbines\", \"renewable\", \"unlike\", \"traditional\", \"centralised\", \"renewable\", \"growth\", \"renewables\", \"installing\", \"panels\", \"turbines\", \"investing\", \"storage\", \"hurdles\", \"direction\", \"proportion\", \"renewable\", \"renewable\", \"environmental\", \"necessity\", \"co-operation\", \"sustainable\", \"embrace\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenhill\", \"lily\", \"lily\", \"council\", \"chen\", \"panels\", \"panels\", \"sunlight\", \"school's\", \"greenhill\", \"lily\", \"person's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenhill\", \"noisy\", \"chen\", \"greenhill\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-17",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-17:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"wildlife\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"protection\", \"protection\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"li\", \"visitors\", \"li\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-18",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-18:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"hua\", \"wang\", \"li\", \"hua\", \"pace\", \"pause\", \"li\", \"hua's\", \"biggest\", \"wang\", \"li\", \"hua\", \"traditional\", \"face-to-face\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"cannot\", \"offline\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"chen\", \"chen\", \"discussion\", \"chen\", \"zhang\", \"wei\", \"chen\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-20",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-20:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"grandson\", \"leo\", \"led\", \"inventions\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"invention\", \"bicycle\", \"invention\", \"inventions\", \"inventions\", \"inventions\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"anna\", \"fetch\", \"anna\", \"anna\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-19",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-19:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"sustainable\", \"tourism\", \"overcrowding\", \"sustainable\", \"tourism\", \"tourism\", \"sustainable\", \"tourism\", \"educate\", \"visitors\", \"importance\", \"conservation\", \"travellers\", \"fragile\", \"ecosystems\", \"protection\", \"educational\", \"sustainable\", \"tourism\", \"eco-friendly\", \"single-use\", \"sustainable\", \"tourism\", \"trend\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"visitors\", \"li\", \"guesthouse\", \"visitors\", \"traveller\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 257, \"minimum\": 1, \"maximum\": 250}}, {\"category\": \"question_schema\", \"message\": \"257 is greater than the maximum of 250\", \"question_index\": 1, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"257 is greater than the maximum of 250\", \"question_index\": 2, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"257 is greater than the maximum of 250\", \"question_index\": 3, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"257 is greater than the maximum of 250\", \"question_index\": 4, \"path\": [\"word_count\"]}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenfield\", \"tourism\", \"visitors\", \"visitors\", \"visitors\", \"visitors\", \"visitors\", \"greenfield\", \"tourism\", \"visitors\", \"tourism\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-21",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-21:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"high-school\", \"happiness\", \"counseling\", \"stress-management\", \"workshops\", \"okay\", \"cope\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"li\", \"ming\", \"wang\", \"unhappy\", \"li\", \"ming\", \"li\", \"ming\", \"li\", \"ming\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"tom\", \"tom\", \"tom\", \"tom's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-22",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-22:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenfield\", \"chen\", \"workshops\", \"landfills\", \"town's\", \"chen\", \"sustainable\", \"greenfield's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenfield\", \"circular\", \"reuse\", \"furniture\", \"workshops\", \"broken\", \"apart\", \"greenfield\", \"environmental\", \"town's\", \"circular\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenfield\", \"circular\", \"broken\", \"thrown\", \"anna\", \"landfills\", \"furniture\", \"reused\", \"greenfield\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-23",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-23:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"exploration\", \"buzz\", \"aldrin\", \"samples\", \"moon's\", \"iss\", \"iss\", \"exploration\", \"exploration\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"buzz\", \"aldrin\", \"armstrong\", \"led\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"word_count\", \"message\": \"Passage word count is outside the type-specific range.\", \"question_index\": null, \"details\": {\"word_count\": 251, \"minimum\": 1, \"maximum\": 250}}, {\"category\": \"question_schema\", \"message\": \"251 is greater than the maximum of 250\", \"question_index\": 1, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"251 is greater than the maximum of 250\", \"question_index\": 2, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"251 is greater than the maximum of 250\", \"question_index\": 3, \"path\": [\"word_count\"]}, {\"category\": \"question_schema\", \"message\": \"251 is greater than the maximum of 250\", \"question_index\": 4, \"path\": [\"word_count\"]}, {\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"buzz\", \"aldrin\", \"michael\", \"collins\", \"armstrong\", \"iss\", \"exploration\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
+    },
+    {
+      "source_file": "run-checkpoint.qualitybar-first.json",
+      "passage_group_id": "M2-FULL-READING-24",
+      "type": "reading",
+      "category": "R6",
+      "message": "DEEPSEEK_REPAIR_EXHAUSTED:generate:reading:M2-FULL-READING-24:M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"rang\", \"s\", \"unsafe\", \"attractive\", \"visitors\", \"town's\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"unsafe\", \"visitors\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]; M2_RECORD_GATE_FAILED [{\"category\": \"R6_vocabulary_scope\", \"unknown_words\": [\"greenfield\", \"council\", \"chen\", \"town's\", \"lee\", \"unsafe\", \"discussion\", \"council\", \"greenfield\", \"easily\"]}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 1}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 2}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 3}, {\"category\": \"R10_DISTRACTOR_EXPLANATION_MISSING\", \"question_index\": 4}]"
     }
-  ]
+  ],
+  "category_counts": {
+    "R5": 1,
+    "R6": 80,
+    "content": 1
+  }
 }

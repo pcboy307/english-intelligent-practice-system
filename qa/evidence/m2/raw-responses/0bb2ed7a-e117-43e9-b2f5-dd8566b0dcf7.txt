@@ -1,0 +1,1 @@
+{"translations": {"decision": "决定", "wildlife": "野生动物"}}

@@ -1,0 +1,1 @@
+{"translations": {"absorb": "吸收", "biggest": "最大", "campaign": "活动", "carbon": "碳", "install": "安装", "refill": "补充", "reusable": "可重复使用", "schoolyard": "校园"}}

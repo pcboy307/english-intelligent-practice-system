@@ -1,0 +1,95 @@
+{
+  "passage": "Good study habits help students succeed. (1) ______ For example, the student reviews her notes every evening. This simple routine makes a big difference. (2) ______ She also keeps a small notebook for new words. (3) ______ When the student studies for exams, the material is reviewed in short sessions. (4) ______ If she had more time, she would practise speaking every day. (5) ______ The teacher suggests that she should take short breaks. These habits lead to better results.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "A. One important habit is to set a clear goal each week.",
+        "B. The student often forgets to bring her books.",
+        "C. Many students dislike homework.",
+        "D. The teacher gives too much homework.",
+        "E. She prefers to study in the morning.",
+        "F. They play football after school.",
+        "G. He never listens in class."
+      ],
+      "answer": "A",
+      "explanation": "空白后举例说明学生每晚复习笔记，这是具体的学习习惯，A项“每周设定明确目标”与上下文衔接最自然。B项忘记带书和D项作业太多都与良好习惯无关，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "Good study habits help students succeed. (1) ______ For example, the student reviews her notes every evening.",
+      "clue_argument": "后文举例说明具体习惯，A项提出一种习惯，衔接顺畅。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "A. One important habit is to set a clear goal each week.",
+        "B. The student often forgets to bring her books.",
+        "C. Many students dislike homework.",
+        "D. The teacher gives too much homework.",
+        "E. She prefers to study in the morning.",
+        "F. They play football after school.",
+        "G. He never listens in class."
+      ],
+      "answer": "E",
+      "explanation": "空白前说复习笔记有作用，空白后说她还用小本子记新词，E项“她更喜欢早上学习”是另一个习惯，与前后文并列。B项忘记带书和D项作业太多都是负面行为，不符合语境。",
+      "evidence_sentence": "",
+      "context_clue": "This simple routine makes a big difference. (2) ______ She also keeps a small notebook for new words.",
+      "clue_argument": "后文“also”提示此处应填另一个学习习惯，E项符合。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "A. One important habit is to set a clear goal each week.",
+        "B. The student often forgets to bring her books.",
+        "C. Many students dislike homework.",
+        "D. The teacher gives too much homework.",
+        "E. She prefers to study in the morning.",
+        "F. They play football after school.",
+        "G. He never listens in class."
+      ],
+      "answer": "C",
+      "explanation": "空白后说考试时材料被分成短时段复习，C项“许多学生不喜欢作业”引出学习中的常见问题，与后文形成对比。B项忘记带书和D项作业太多都是具体负面行为，与后文衔接不紧密。",
+      "evidence_sentence": "",
+      "context_clue": "She also keeps a small notebook for new words. (3) ______ When the student studies for exams, the material is reviewed in short sessions.",
+      "clue_argument": "后文描述有效复习方法，C项提出常见问题，形成转折铺垫。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "A. One important habit is to set a clear goal each week.",
+        "B. The student often forgets to bring her books.",
+        "C. Many students dislike homework.",
+        "D. The teacher gives too much homework.",
+        "E. She prefers to study in the morning.",
+        "F. They play football after school.",
+        "G. He never listens in class."
+      ],
+      "answer": "D",
+      "explanation": "空白前说材料被分成短时段复习，D项“老师布置太多作业”是学生可能面临的困难，与后文虚拟条件句“如果她有更多时间”相呼应。B项忘记带书和C项不喜欢作业与时间不足的语境不符。",
+      "evidence_sentence": "",
+      "context_clue": "When the student studies for exams, the material is reviewed in short sessions. (4) ______ If she had more time, she would practise speaking every day.",
+      "clue_argument": "后文虚拟语气暗示时间不足，D项作业太多导致时间少，逻辑连贯。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "A. One important habit is to set a clear goal each week.",
+        "B. The student often forgets to bring her books.",
+        "C. Many students dislike homework.",
+        "D. The teacher gives too much homework.",
+        "E. She prefers to study in the morning.",
+        "F. They play football after school.",
+        "G. He never listens in class."
+      ],
+      "answer": "B",
+      "explanation": "空白后老师建议她短暂休息，B项“学生经常忘记带书”是需要改进的习惯，与老师建议形成因果。A项设定目标和E项早上学习都是好习惯，与需要建议的语境不符。",
+      "evidence_sentence": "",
+      "context_clue": "If she had more time, she would practise speaking every day. (5) ______ The teacher suggests that she should take short breaks.",
+      "clue_argument": "后文老师给出建议，说明学生有不良习惯，B项符合。"
+    }
+  ]
+}

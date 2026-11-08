@@ -1,0 +1,65 @@
+{
+  "passage": "Food is a window into culture. In China, the way people eat shows what they value. A family dinner often includes many dishes shared from the centre of the table. This shows the idea that everyone belongs together. In the West, people usually order their own food, which shows a focus on personal choice. These differences are not about right or wrong. They are about different histories and beliefs. What we eat and how we eat it can tell us a lot about who we are. For example, the use of chopsticks in China is more than a habit; it is a tradition that goes back thousands of years. In many Western countries, the fork and knife are common tools for eating. The way food is served also matters. In China, a host often puts food into a guest's bowl to show kindness. In the West, guests usually serve themselves. These small actions carry deep cultural meanings. So, when we study food, we are really studying people. Food is not just about filling the stomach; it is about feeding the soul and connecting with others.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Chinese and Western food cultures are very different.",
+        "Food is a reflection of cultural values and beliefs.",
+        "Chopsticks are better than forks and knives.",
+        "Family dinners are important in China."
+      ],
+      "answer": "Food is a reflection of cultural values and beliefs.",
+      "explanation": "文章首句指出食物是了解文化的窗口，随后通过中西方饮食方式的对比说明饮食反映文化价值观。A项只提到差异，未点明文化反映；C项是主观比较，文中未说哪种更好。",
+      "evidence_sentence": "Food is a window into culture.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what does the use of chopsticks in China show?",
+      "options": [
+        "It is just a daily habit.",
+        "It is a tradition with a long history.",
+        "It is a symbol of personal choice.",
+        "It is a tool for serving guests."
+      ],
+      "answer": "It is a tradition with a long history.",
+      "explanation": "文中明确提到筷子在中国不仅仅是一种习惯，而是有着数千年历史的传统。A项说只是日常习惯，与原文不符；C项说个人选择的象征，文中未提。",
+      "evidence_sentence": "For example, the use of chopsticks in China is more than a habit; it is a tradition that goes back thousands of years.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer from the passage about cultural differences in eating?",
+      "options": [
+        "They are based on different histories and beliefs.",
+        "They show that Western culture is more advanced.",
+        "They are not important to understand.",
+        "They will disappear in the future."
+      ],
+      "answer": "They are based on different histories and beliefs.",
+      "explanation": "文中提到这些差异无关对错，而是关于不同的历史和信仰，由此可推断饮食文化差异源于历史与信仰的不同。B项说西方文化更先进，文中未提且违背原文；C项说不重要，与文章主旨相反。",
+      "evidence_sentence": "These differences are not about right or wrong. They are about different histories and beliefs.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"deep\" most nearly mean in the passage?",
+      "options": [
+        "far down",
+        "serious",
+        "strong",
+        "dark"
+      ],
+      "answer": "strong",
+      "explanation": "文中\"deep cultural meanings\"指深刻的文化含义，deep在此表示强烈的、深刻的，与strong意思最接近。A项far down指物理深度；D项dark指颜色深，均不符合语境。",
+      "evidence_sentence": "These small actions carry deep cultural meanings.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

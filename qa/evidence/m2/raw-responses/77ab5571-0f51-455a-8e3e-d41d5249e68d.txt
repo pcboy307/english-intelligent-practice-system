@@ -1,0 +1,45 @@
+{
+  "passage": "When the student first heard about AI in education, she was curious but also worried. Her teacher explained that AI can be a helpful tool if used wisely. The student decided to try an AI app to help with her English homework. At first, she used it to check her grammar, but soon she relied on it too much. One day, her teacher noticed that her writing had become less creative. The teacher advised her to use AI as a guide, not a replacement for her own thinking. The student then changed her approach: she would write her ideas first and then ask the AI for suggestions. She also shared this method with a classmate who was struggling. Together, they learned that AI should support learning, not replace it. The student felt proud of her progress and thanked her teacher for the advice.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"curious\" most likely mean in the passage?",
+      "options": ["Bored", "Interested", "Afraid", "Angry"],
+      "answer": "Interested",
+      "explanation": "“Curious” 在句中表示“好奇的”，与 interested 意思最接近。Bored 和 Afraid 分别表示“无聊的”和“害怕的”，与语境不符。",
+      "evidence_sentence": "When the student first heard about AI in education, she was curious but also worried.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the teacher's attitude towards using AI in learning?",
+      "options": ["Completely opposed", "Supportive but cautious", "Uninterested", "Very enthusiastic"],
+      "answer": "Supportive but cautious",
+      "explanation": "老师建议学生把 AI 当作指导而非替代，说明老师支持但谨慎。Completely opposed 和 Very enthusiastic 分别表示完全反对和非常热情，与老师建议“用作指导”不符。",
+      "evidence_sentence": "The teacher advised her to use AI as a guide, not a replacement for her own thinking.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["AI should be used wisely to support learning.", "AI can replace teachers in the future.", "Students should not use AI at all.", "AI makes homework easier but less creative."],
+      "answer": "AI should be used wisely to support learning.",
+      "explanation": "文章通过学生使用 AI 的经历说明 AI 应作为辅助工具，合理使用。AI can replace teachers 和 Students should not use AI at all 都过于绝对，与文章主旨不符。",
+      "evidence_sentence": "Together, they learned that AI should support learning, not replace it.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What did the student do after her teacher's advice?",
+      "options": ["She stopped using AI completely.", "She wrote her ideas first and then asked AI for suggestions.", "She shared her AI app with her teacher.", "She asked her classmate to do her homework."],
+      "answer": "She wrote her ideas first and then asked AI for suggestions.",
+      "explanation": "文中明确提到学生改变了方法：先写自己的想法，再让 AI 提建议。She stopped using AI completely 和 She asked her classmate to do her homework 都与原文事实不符。",
+      "evidence_sentence": "She would write her ideas first and then ask the AI for suggestions.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

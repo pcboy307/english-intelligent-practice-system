@@ -1,0 +1,1 @@
+{"translations": {"mooncakes": "月饼", "reunion": "团圆"}}

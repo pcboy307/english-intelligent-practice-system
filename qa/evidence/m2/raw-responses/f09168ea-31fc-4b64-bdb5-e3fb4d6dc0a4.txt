@@ -1,0 +1,65 @@
+{
+  "passage": "Last spring, a group of students decided to turn an empty corner of their school yard into a small city garden. The student who first suggested the idea said that the space should be used for something green. Her teacher agreed and helped them ask the school for support. At first, the work was harder than they expected. They had to clear stones, carry soil, and build simple wooden boxes for plants. A classmate who knew about gardening showed them how to plant seeds. By early summer, the first small leaves appeared. The garden soon became a favourite place. Students went there during breaks to water the plants and watch insects. The project also taught them something important: it was teamwork that made the garden possible. When autumn came, they collected seeds for next year. The garden is still there, and each new class takes care of it. The students hope that more schools should start similar projects. They believe that a small green space can change how people feel about their city.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To describe how a school garden was created and what it taught students.",
+        "To explain why city gardens are better than school yards.",
+        "To compare different types of gardens in cities.",
+        "To persuade students to grow their own vegetables at home."
+      ],
+      "answer": "To describe how a school garden was created and what it taught students.",
+      "explanation": "文章主要叙述学校花园的创建过程及其教育意义。A项概括了全文；B项文章未比较优劣；C项未讨论花园类型。",
+      "evidence_sentence": "Last spring, a group of students decided to turn an empty corner of their school yard into a small city garden.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "Which sentence best states the main idea of the passage?",
+      "options": [
+        "A school garden project brought students together and taught them valuable lessons.",
+        "Students should spend more time doing physical work outdoors.",
+        "Gardens are the best way to use empty spaces in cities.",
+        "Teachers should always support student ideas."
+      ],
+      "answer": "A school garden project brought students together and taught them valuable lessons.",
+      "explanation": "文章强调花园项目促进团队合作并带来教育收获。A项准确概括；B项过于宽泛；C项“best”太绝对。",
+      "evidence_sentence": "The project also taught them something important: it was teamwork that made the garden possible.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What did the students do when autumn came?",
+      "options": [
+        "They collected seeds for next year.",
+        "They built new wooden boxes.",
+        "They asked the school for more support.",
+        "They showed new students how to plant."
+      ],
+      "answer": "They collected seeds for next year.",
+      "explanation": "文中明确提到秋天时学生们收集种子。A项与原文一致；B、C项发生在初期；D项未提及。",
+      "evidence_sentence": "When autumn came, they collected seeds for next year.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the students' attitude toward the garden project?",
+      "options": [
+        "They are proud of what they have done and want others to join.",
+        "They think the project was too difficult to continue.",
+        "They believe the garden should be replaced by a playground.",
+        "They are unsure whether the garden will survive the winter."
+      ],
+      "answer": "They are proud of what they have done and want others to join.",
+      "explanation": "从“hope that more schools should start similar projects”可推知他们自豪并希望推广。A项合理；B、C、D项与文意不符。",
+      "evidence_sentence": "The students hope that more schools should start similar projects.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "passage": "Online learning has become a big part of school life. Last year, a student in Grade 10 had to stay home for two weeks because of a bad cold. Her teacher quickly set up a plan so she could keep up with the class. Every morning, the student joined a video lesson on her laptop. At first, she found it hard to focus because her little brother was often noisy. However, her teacher gave her a simple tip: use headphones and sit in a quiet corner. The student also learned to take notes during the video and to ask questions in the chat box. After a few days, she felt more confident. What surprised her most was that she could replay parts of the lesson she did not understand. This was something she could not do in a normal classroom. Her classmate, who was also learning online for a week, agreed that the recorded lessons were a big help. Not only did the student finish all her homework on time, but she also got a better score on the next test. She now believes that online learning, when used wisely, can be a useful tool for students who cannot attend school in person.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"focus\" in the passage probably mean?",
+      "options": ["pay attention", "take a break", "feel bored", "ask for help"],
+      "answer": "pay attention",
+      "explanation": "根据上下文，学生发现很难集中注意力，因为弟弟很吵，所以focus意为“集中注意力”。A项“pay attention”符合；B项“take a break”和C项“feel bored”与语境不符，因为学生是在努力听讲而非休息或感到无聊。",
+      "evidence_sentence": "At first, she found it hard to focus because her little brother was often noisy.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's attitude towards online learning?",
+      "options": ["Doubtful", "Supportive", "Uninterested", "Critical"],
+      "answer": "Supportive",
+      "explanation": "文章最后说“online learning, when used wisely, can be a useful tool”，表明作者支持在线学习。A项“Doubtful”和D项“Critical”与作者明确肯定的态度相反，因为作者举了学生成功的例子并总结其有用。",
+      "evidence_sentence": "She now believes that online learning, when used wisely, can be a useful tool for students who cannot attend school in person.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Online learning can be helpful if used properly.", "Students should not study at home.", "Teachers prefer online lessons to classroom lessons.", "Online learning is always better than classroom learning."],
+      "answer": "Online learning can be helpful if used properly.",
+      "explanation": "全文通过一个学生在线学习的经历，说明在线学习如果使用得当是有帮助的。B项“Students should not study at home”与文章相反；C项“Teachers prefer online lessons”文中未提及；D项“always better”过于绝对，文中只说“when used wisely”。",
+      "evidence_sentence": "She now believes that online learning, when used wisely, can be a useful tool for students who cannot attend school in person.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What did the student find most surprising about online learning?",
+      "options": ["She could replay parts of the lesson.", "She could chat with classmates.", "She could finish homework faster.", "She could use headphones."],
+      "answer": "She could replay parts of the lesson.",
+      "explanation": "文中明确说“What surprised her most was that she could replay parts of the lesson she did not understand.”，因此A项正确。B项“chat with classmates”文中只提到在聊天框提问，并非最惊讶的事；C项“finish homework faster”文中说按时完成，未说更快；D项“use headphones”是老师的建议，不是最惊讶的事。",
+      "evidence_sentence": "What surprised her most was that she could replay parts of the lesson she did not understand.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative with a clear sequence of events and logical transitions.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Therefore correctly indicates the cause-effect relationship between the storm and the change of plans.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "G",
+      "reason": "Later appropriately signals the temporal sequence of events.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "C",
+      "reason": "Suddenly effectively conveys the unexpected appearance of the bird.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "G",
+      "reason": "Finally correctly marks the concluding action of the sequence.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "G",
+      "reason": "In short properly introduces a summary of the experience.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "passage": "Last spring, the school art club decided to organise a cultural festival. The student, her teacher, and a classmate worked together for weeks. They wanted to celebrate ①______ rich traditions of Chinese art. ②______ festival would include painting, calligraphy, and a short drama. The student was responsible ③______ the painting workshop. She had learned a lot ④______ her grandmother, who was a skilled artist. Her teacher helped ⑤______ the schedule and invited a local artist to give a talk. The classmate, ⑥______ job was to design the poster, worked late into the night. ⑦______ poster was bright and colourful, and everyone admired it. The student was proud of ⑧______ because she had never organised an event before. ⑨______ the festival day arrived, the whole school was excited. ⑩______ it rained in the afternoon, the students moved the activities indoors and the festival was a great success.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the correct article for blank ①.",
+      "options": ["a", "an", "the", "no article"],
+      "answer": "the",
+      "explanation": "此处特指中国艺术的丰富传统，用定冠词the；a和an表示泛指，不符合语境。",
+      "evidence_sentence": "They wanted to celebrate ①______ rich traditions of Chinese art.",
+      "context_clue": "They wanted to celebrate ①______ rich traditions of Chinese art.",
+      "clue_argument": "特指中国艺术的丰富传统，需用定冠词。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the correct article for blank ②.",
+      "options": ["A", "An", "The", "no article"],
+      "answer": "The",
+      "explanation": "上文已提到cultural festival，再次提及用定冠词The；A和An表示泛指，不符合。",
+      "evidence_sentence": "②______ festival would include painting, calligraphy, and a short drama.",
+      "context_clue": "②______ festival would include painting, calligraphy, and a short drama.",
+      "clue_argument": "指上文提到的文化节，用定冠词。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the correct preposition for blank ③.",
+      "options": ["for", "of", "to", "with"],
+      "answer": "for",
+      "explanation": "be responsible for是固定搭配，意为“对……负责”；of、to、with均不构成此搭配。",
+      "evidence_sentence": "The student was responsible ③______ the painting workshop.",
+      "context_clue": "The student was responsible ③______ the painting workshop.",
+      "clue_argument": "固定短语be responsible for表示负责。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the correct preposition for blank ④.",
+      "options": ["from", "with", "by", "to"],
+      "answer": "from",
+      "explanation": "learn from sb.意为“向某人学习”；with、by、to均不能与learn构成此意。",
+      "evidence_sentence": "She had learned a lot ④______ her grandmother, who was a skilled artist.",
+      "context_clue": "She had learned a lot ④______ her grandmother, who was a skilled artist.",
+      "clue_argument": "learn from表示向某人学习。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the correct preposition for blank ⑤.",
+      "options": ["with", "to", "for", "at"],
+      "answer": "with",
+      "explanation": "help with sth.意为“帮助做某事”；help to后接动词原形，help for和help at不是正确搭配。",
+      "evidence_sentence": "Her teacher helped ⑤______ the schedule and invited a local artist to give a talk.",
+      "context_clue": "Her teacher helped ⑤______ the schedule and invited a local artist to give a talk.",
+      "clue_argument": "help with后接名词，表示帮助处理某事。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the correct pronoun for blank ⑥.",
+      "options": ["whose", "who", "which", "whom"],
+      "answer": "whose",
+      "explanation": "此处引导定语从句，表示“他的工作”，用whose；who和whom指人但不在从句中作定语，which指物。",
+      "evidence_sentence": "The classmate, ⑥______ job was to design the poster, worked late into the night.",
+      "context_clue": "The classmate, ⑥______ job was to design the poster, worked late into the night.",
+      "clue_argument": "修饰job，表示所属关系，用whose。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the correct pronoun for blank ⑦.",
+      "options": ["The", "A", "This", "That"],
+      "answer": "The",
+      "explanation": "上文已提到poster，再次提及用定冠词The；A表示泛指，This和That虽可指代但此处强调特指，The最合适。",
+      "evidence_sentence": "⑦______ poster was bright and colourful, and everyone admired it.",
+      "context_clue": "⑦______ poster was bright and colourful, and everyone admired it.",
+      "clue_argument": "指上文提到的海报，用定冠词。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the correct pronoun for blank ⑧.",
+      "options": ["herself", "her", "she", "hers"],
+      "answer": "herself",
+      "explanation": "be proud of oneself表示“为自己感到骄傲”，主语是she，故用反身代词herself；her是宾格，she是主格，hers是名词性物主代词。",
+      "evidence_sentence": "The student was proud of ⑧______ because she had never organised an event before.",
+      "context_clue": "The student was proud of ⑧______ because she had never organised an event before.",
+      "clue_argument": "主语和宾语指同一人，用反身代词。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the correct conjunction for blank ⑨.",
+      "options": ["When", "While", "As", "Since"],
+      "answer": "When",
+      "explanation": "此处表示“当节日那天到来时”，用When引导时间状语从句；While强调持续，As强调同时，Since表示原因或自从。",
+      "evidence_sentence": "⑨______ the festival day arrived, the whole school was excited.",
+      "context_clue": "⑨______ the festival day arrived, the whole school was excited.",
+      "clue_argument": "表示当某个时间点到来时，用When。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the correct conjunction for blank ⑩.",
+      "options": ["Although", "Because", "So", "But"],
+      "answer": "Although",
+      "explanation": "前后句为让步关系，意为“虽然下午下雨，但活动移到室内并成功”，用Although；Because表原因，So表结果，But表转折但不能与主句直接连用。",
+      "evidence_sentence": "⑩______ it rained in the afternoon, the students moved the activities indoors and the festival was a great success.",
+      "context_clue": "⑩______ it rained in the afternoon, the students moved the activities indoors and the festival was a great success.",
+      "clue_argument": "前后为让步关系，用Although引导让步状语从句。"
+    }
+  ]
+}

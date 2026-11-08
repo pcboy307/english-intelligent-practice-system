@@ -1,0 +1,95 @@
+{
+  "passage": "Last month, the student felt tired every morning because he often stayed up late. His teacher, Ms. Li, noticed his pale face and advised him to keep a healthy daily routine. She said, \"If you went to bed before ten, you would feel much better.\" The student decided to follow her advice. He started with small changes: he set an alarm for 10 p.m. to remind him to stop using his phone, and he began to take a short walk after dinner. A classmate, Tom, who had similar problems, joined him. They agreed that they would not use screens after nine. At first, it was hard, but they encouraged each other. After two weeks, the student found that he could focus better in class. His teacher was pleased and said, \"The habit that you have built will benefit you for years.\" Now the student goes to bed early every night. He has more energy, and his grades have improved. The key is consistency: once you start, you will see the difference.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the sentence that best fits blank (1).",
+      "options": [
+        "If you went to bed before ten, you would feel much better.",
+        "If you go to bed before ten, you will feel much better.",
+        "If you had gone to bed before ten, you would have felt much better.",
+        "If you go to bed before ten, you would feel much better.",
+        "If you went to bed before ten, you will feel much better.",
+        "If you had gone to bed before ten, you would feel much better.",
+        "If you go to bed before ten, you felt much better."
+      ],
+      "answer": "A",
+      "explanation": "此处为与现在事实相反的虚拟条件句，从句用一般过去时，主句用would+动词原形。B、C时态或语气错误，D、E、F、G搭配不当。错误选项B和C分别误用了真实条件句和与过去相反的虚拟语气。",
+      "evidence_sentence": "",
+      "context_clue": "His teacher, Ms. Li, noticed his pale face and advised him to keep a healthy daily routine. She said, \"If you went to bed before ten, you would feel much better.\"",
+      "clue_argument": "老师建议他保持健康作息，并用虚拟语气说明与现在事实相反的假设。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the sentence that best fits blank (2).",
+      "options": [
+        "A classmate, Tom, who had similar problems, joined him.",
+        "A classmate, Tom, which had similar problems, joined him.",
+        "A classmate, Tom, whose had similar problems, joined him.",
+        "A classmate, Tom, whom had similar problems, joined him.",
+        "A classmate, Tom, who had similar problems, joined him.",
+        "A classmate, Tom, who had similar problems, joined him.",
+        "A classmate, Tom, who had similar problems, joined him."
+      ],
+      "answer": "A",
+      "explanation": "先行词Tom指人，在非限制性定语从句中作主语，用who引导。B用which指人错误，C用whose后缺名词，D用whom作主语错误。错误选项B和C分别误用了关系代词which和whose。",
+      "evidence_sentence": "",
+      "context_clue": "A classmate, Tom, who had similar problems, joined him.",
+      "clue_argument": "Tom是同学，指人，从句缺主语，故用who。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the sentence that best fits blank (3).",
+      "options": [
+        "They agreed that they would not use screens after nine.",
+        "They agreed that they will not use screens after nine.",
+        "They agreed that they had not used screens after nine.",
+        "They agreed that they were not using screens after nine.",
+        "They agreed that they have not used screens after nine.",
+        "They agreed that they are not using screens after nine.",
+        "They agreed that they will not have used screens after nine."
+      ],
+      "answer": "A",
+      "explanation": "主句agreed为过去时，宾语从句表示过去的将来，用would+动词原形。B、E、F时态不一致，C、D、G意义或时态错误。错误选项B和C分别误用了将来时和过去完成时。",
+      "evidence_sentence": "",
+      "context_clue": "They agreed that they would not use screens after nine.",
+      "clue_argument": "主句为过去时，从句表示过去的将来，用would。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the sentence that best fits blank (4).",
+      "options": [
+        "The habit that you have built will benefit you for years.",
+        "The habit that you have built benefit you for years.",
+        "The habit that you have built benefits you for years.",
+        "The habit that you have built have benefited you for years.",
+        "The habit that you have built is benefit you for years.",
+        "The habit that you have built are benefiting you for years.",
+        "The habit that you have built has been benefit you for years."
+      ],
+      "answer": "A",
+      "explanation": "主语The habit为单数，谓语动词用will benefit，与从句时态一致。B主谓不一致，C时态与从句不协调，D、E、F、G结构或意义错误。错误选项B和C分别误用了动词原形和一般现在时。",
+      "evidence_sentence": "",
+      "context_clue": "His teacher was pleased and said, \"The habit that you have built will benefit you for years.\"",
+      "clue_argument": "主语The habit是单数，谓语用will benefit表示将来。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the sentence that best fits blank (5).",
+      "options": [
+        "The key is consistency: once you start, you will see the difference.",
+        "The key is consistency: once you start, you would see the difference.",
+        "The key is consistency: once you started, you will see the difference.",
+        "The key is consistency: once you start, you see the difference.",
+        "The key is consistency: once you will start, you see the difference.",
+        "The key is consistency: once you start, you saw the difference.",
+        "The key is consistency: once you start, you have seen the difference."
+      ],
+      "answer": "A",
+      "explanation": "once引导时间状语从句，用一般现在时表将来，主句用一般将来时。B、C、D、E、F、G时态或语气错误。错误选项B和C分别误用了过去将来时和过去时。",
+      "evidence_sentence": "",
+      "context_clue": "The key is consistency: once you start, you will see the difference.",
+      "clue_argument": "once从句用一般现在时表将来，主句用一般将来时。"
+    }
+  ]
+}

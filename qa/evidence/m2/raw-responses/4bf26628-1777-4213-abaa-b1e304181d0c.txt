@@ -1,0 +1,1 @@
+{"translations": {"alike": "相似", "enriches": "丰富", "lifelong": "终身", "relies": "依赖", "robotics": "机器人学", "workshops": "工作坊"}}

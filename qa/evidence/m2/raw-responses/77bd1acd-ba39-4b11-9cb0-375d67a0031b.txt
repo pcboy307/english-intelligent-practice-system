@@ -1,0 +1,46 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a connected narrative about a student and teacher preparing for and participating in a science fair, with each blank logically linking to the surrounding sentences.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A directly continues the idea of planning by stating the duration of their work, and the pronoun 'they' refers to the student and teacher.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A explains the robot's actions that caused classmates to smile, with 'it' referring to the robot.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A connects the robot's placement to its visibility, leading to visitors stopping to watch.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A shows the student's pride, which is reinforced by the teacher's praise in the following sentence.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A provides a reason for the student's hope to join the next fair by expressing her increased love for science.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "passage": "Last month, my friend Leo and I decided to improve our time management. We had often felt stressed because we left homework until the last minute. Our teacher, Ms. Chen, suggested that we should make a weekly plan. At first, we thought it was a waste of time, but we agreed to try it for one week. On Monday morning, we sat down and listed all our tasks. Then we divided them into small steps and set a time for each step. For example, Leo planned to spend twenty minutes every evening reviewing his notes. I decided to finish my math exercises before dinner. By Wednesday, we had already noticed a difference. We felt calmer and had more free time. On Friday, we even had time to play badminton. The plan helped us see how much time we actually had. We also learned to avoid distractions, like checking our phones too often. Now we continue to use this method, and our stress has greatly reduced. We believe that good planning can benefit everyone.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Making a weekly plan can help with time management.",
+        "Playing badminton is a good way to relax.",
+        "Teachers should give less homework.",
+        "Checking phones often is a bad habit."
+      ],
+      "answer": "Making a weekly plan can help with time management.",
+      "explanation": "文章主要讲述了作者和朋友通过制定每周计划来改善时间管理，从而减轻压力。B和C只是细节或未提及，D是次要观点。",
+      "evidence_sentence": "Last month, my friend Leo and I decided to improve our time management.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What had Leo and the author often felt before they made the plan?",
+      "options": [
+        "Stressed because they left homework until the last minute.",
+        "Excited about playing badminton.",
+        "Confident about their time management.",
+        "Bored with their teacher's advice."
+      ],
+      "answer": "Stressed because they left homework until the last minute.",
+      "explanation": "文中明确提到他们经常感到压力，因为把作业留到最后一刻。A选项与此一致。B、C、D均与原文不符。",
+      "evidence_sentence": "We had often felt stressed because we left homework until the last minute.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about the author and Leo from the passage?",
+      "options": [
+        "They will probably continue to use the weekly plan.",
+        "They will stop using the plan after one week.",
+        "They think the plan is a waste of time.",
+        "They have more stress now than before."
+      ],
+      "answer": "They will probably continue to use the weekly plan.",
+      "explanation": "文章最后说“Now we continue to use this method”，可以推断他们会继续使用这个计划。B、C、D与原文矛盾。",
+      "evidence_sentence": "Now we continue to use this method, and our stress has greatly reduced.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"distractions\" in the passage most likely mean?",
+      "options": [
+        "Things that take your attention away.",
+        "Activities that help you focus.",
+        "Tasks that are very important.",
+        "People who give you advice."
+      ],
+      "answer": "Things that take your attention away.",
+      "explanation": "根据上下文，“distractions”指的是像频繁看手机这样让人分心的事物。A选项最符合。B、C、D意思相反或不相关。",
+      "evidence_sentence": "We also learned to avoid distractions, like checking our phones too often.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"translations": {"automation": "自动化", "employees": "员工", "repetitive": "重复性", "rival": "对手", "workplace": "职场"}}

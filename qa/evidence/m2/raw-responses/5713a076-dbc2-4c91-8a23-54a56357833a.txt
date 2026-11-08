@@ -1,0 +1,95 @@
+{
+  "passage": "Maintaining a healthy daily routine is essential for students. (1) Many teenagers stay up late playing games, so they feel tired the next day. (2) A regular sleep schedule helps the body recover and improves concentration. (3) If students go to bed at the same time every night, they will find it easier to wake up early. (4) Eating breakfast is also important because it provides energy for morning classes. (5) Therefore, developing good habits early can lead to a healthier and more productive life.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "Many teenagers stay up late playing games, so they feel tired the next day.",
+        "Many teenagers stay up late playing games, but they feel energetic the next day.",
+        "Many teenagers go to bed early, so they feel tired the next day.",
+        "Many teenagers stay up late playing games, and they always feel refreshed.",
+        "Many teenagers sleep well, so they feel tired the next day.",
+        "Many teenagers stay up late playing games, for they feel tired the next day.",
+        "Many teenagers stay up late playing games, yet they feel tired the next day."
+      ],
+      "answer": "A",
+      "explanation": "A选项正确，因为上下文讨论健康作息，熬夜导致次日疲劳是合理的因果关系。B选项逻辑矛盾（熬夜却精力充沛），C选项与常识不符（早睡却疲劳），所以B和C错误。",
+      "evidence_sentence": "Many teenagers stay up late playing games, so they feel tired the next day.",
+      "context_clue": "Maintaining a healthy daily routine is essential for students.",
+      "clue_argument": "上下文强调健康作息的重要性，因此应选说明不良作息后果的句子。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "A regular sleep schedule helps the body recover and improves concentration.",
+        "A regular sleep schedule helps the body recover but reduces concentration.",
+        "An irregular sleep schedule helps the body recover and improves concentration.",
+        "A regular sleep schedule harms the body and reduces concentration.",
+        "A regular sleep schedule helps the body recover and improves concentration, which is beneficial.",
+        "A regular sleep schedule helps the body recover, so it improves concentration.",
+        "A regular sleep schedule helps the body recover, for it improves concentration."
+      ],
+      "answer": "A",
+      "explanation": "A选项正确，因为规律作息对恢复和注意力都有益。B选项“减少注意力”与常识矛盾，C选项“不规律作息”与上下文倡导规律作息冲突，所以B和C错误。",
+      "evidence_sentence": "A regular sleep schedule helps the body recover and improves concentration.",
+      "context_clue": "Many teenagers stay up late playing games, so they feel tired the next day.",
+      "clue_argument": "前文提到熬夜导致疲劳，因此后文应提出规律作息的好处。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "If students go to bed at the same time every night, they will find it easier to wake up early.",
+        "If students go to bed at the same time every night, they would find it easier to wake up early.",
+        "If students went to bed at the same time every night, they will find it easier to wake up early.",
+        "If students go to bed at the same time every night, they found it easier to wake up early.",
+        "If students go to bed at the same time every night, they will find it easier to wake up early, which is good.",
+        "If students go to bed at the same time every night, they will find it easier to wake up early, so they can.",
+        "If students go to bed at the same time every night, they will find it easier to wake up early, but they won't."
+      ],
+      "answer": "A",
+      "explanation": "A选项正确，因为主句用将来时，条件句用一般现在时，符合真实条件句的语法。B选项主句用would与现在时条件句不匹配，C选项条件句用过去时与主句将来时不一致，所以B和C错误。",
+      "evidence_sentence": "If students go to bed at the same time every night, they will find it easier to wake up early.",
+      "context_clue": "A regular sleep schedule helps the body recover and improves concentration.",
+      "clue_argument": "前文说明规律作息的好处，此处进一步说明固定就寝时间对早起的好处。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "Eating breakfast is also important because it provides energy for morning classes.",
+        "Eating breakfast is also important because they provide energy for morning classes.",
+        "Eating breakfast are also important because it provides energy for morning classes.",
+        "Eating breakfast is also important because it provide energy for morning classes.",
+        "Eating breakfast is also important because it provides energy for morning classes, too.",
+        "Eating breakfast is also important because it provides energy for morning classes, as well.",
+        "Eating breakfast is also important because it provides energy for morning classes, also."
+      ],
+      "answer": "A",
+      "explanation": "A选项正确，因为主语Eating breakfast是单数，谓语用is，代词it指代eating breakfast。B选项代词they指代错误，C选项主谓不一致（are），所以B和C错误。",
+      "evidence_sentence": "Eating breakfast is also important because it provides energy for morning classes.",
+      "context_clue": "If students go to bed at the same time every night, they will find it easier to wake up early.",
+      "clue_argument": "前文提到早起，早餐能为上午的课程提供能量，逻辑衔接自然。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "Therefore, developing good habits early can lead to a healthier and more productive life.",
+        "Therefore, developing good habits early can lead to a healthier and more productive life, which is true.",
+        "Therefore, developing good habits early can lead to a healthier and more productive life, and that is a fact.",
+        "Therefore, developing good habits early can lead to a healthier and more productive life, as we know.",
+        "Therefore, developing good habits early can lead to a healthier and more productive life, so it is.",
+        "Therefore, developing good habits early can lead to a healthier and more productive life, but it may not.",
+        "Therefore, developing good habits early can lead to a healthier and more productive life, for it is."
+      ],
+      "answer": "A",
+      "explanation": "A选项正确，因为总结上文，用Therefore引出结论，且句子简洁完整。B、C、D选项添加了冗余的定语从句或插入语，使句子不简洁，所以B和C错误。",
+      "evidence_sentence": "Therefore, developing good habits early can lead to a healthier and more productive life.",
+      "context_clue": "Eating breakfast is also important because it provides energy for morning classes.",
+      "clue_argument": "前文列举了睡眠和早餐等好习惯，此处用Therefore总结好习惯的长期益处。"
+    }
+  ]
+}

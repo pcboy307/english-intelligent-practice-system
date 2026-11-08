@@ -1,0 +1,46 @@
+{
+  "status": "delivered_with_documented_composition_fallback",
+  "bank": {
+    "name": "M2 Bank #2",
+    "status": "active",
+    "passages": 47,
+    "questions": 300
+  },
+  "contracts": [
+    "contracts/quality-bar-v1.md",
+    "contracts/high-frequency-cloze-words.json",
+    "contracts/vocabulary-normalization.json",
+    "config/m2-quota-allocation.json",
+    "config/m2-full-schedule.json"
+  ],
+  "evidence": [
+    "qa/evidence/m2/quality-report.json",
+    "qa/evidence/m2/coverage-report.json",
+    "qa/evidence/m2/generation-cost-report.json",
+    "qa/evidence/m2/gate-failures.json",
+    "qa/evidence/m2/bank2-counts.txt",
+    "qa/evidence/m2/composition-10-papers.json",
+    "qa/evidence/m2/difficulty-distribution.json",
+    "qa/evidence/m2/book-distribution.json",
+    "qa/evidence/m2/bank2-lifecycle-repair.json",
+    "qa/evidence/m2/manual-sample-20.md",
+    "qa/evidence/m2/browser-acceptance.json",
+    "qa/evidence/m2/browser-acceptance/report-current.png"
+  ],
+  "documents": [
+    "M2-status.md",
+    "docs/交接说明.md"
+  ],
+  "external_backup": {
+    "archive": "D:\\M2-backup-20261108-004700.zip",
+    "checksum_sidecar": "D:\\M2-backup-20261108-004700.sha256"
+  },
+  "verification": {
+    "pytest": "100 passed",
+    "M0_CHECK": "PASS",
+    "API_CONTRACT_CHECK": "PASS calls=10",
+    "R1_R10": "all 100 percent",
+    "published_bank": "47 passages / 300 questions / 0 draft"
+  },
+  "known_limitation": "All ten composition runs used the recorded question-level fallback; per-paper book/difficulty ratios are not a strict legacy four-rule pass."
+}

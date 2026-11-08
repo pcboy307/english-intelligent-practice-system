@@ -1,0 +1,65 @@
+{
+  "passage": "In a small town, a student named Li Hua noticed that old clothes were often thrown away. She decided to start a recycling programme at her school. The programme, which she called 'Wear Again', collects used clothes and gives them to families in need. Li Hua believes that reusing clothes is better than making new ones because it saves resources. Not only does this programme help the environment, but it also teaches students about the value of sharing. The clothes are cleaned and sorted by volunteers every weekend. So far, over 500 items have been donated. Li Hua hopes that by recycling, we can reduce waste and protect our planet. She also encourages others to join her by organising workshops on how to repair clothes. By doing so, we can all contribute to a circular economy（循环经济）.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To describe how to make new clothes.",
+        "To introduce a school recycling programme.",
+        "To explain why clothes are expensive.",
+        "To criticise students for wasting resources."
+      ],
+      "answer": "To introduce a school recycling programme.",
+      "explanation": "文章主要介绍了Li Hua发起的旧衣回收项目及其意义，因此目的是介绍这个校园回收项目。A项错误，文章未描述制作新衣服的过程；D项错误，文章没有批评学生浪费，而是鼓励参与。",
+      "evidence_sentence": "She decided to start a recycling programme at her school.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Recycling clothes can help the environment and people in need.",
+        "Students should buy more new clothes.",
+        "Volunteers are too busy to help.",
+        "Old clothes are useless and should be thrown away."
+      ],
+      "answer": "Recycling clothes can help the environment and people in need.",
+      "explanation": "文章通过Li Hua的项目说明回收旧衣既能帮助有需要的人，又能保护环境。B项错误，文章鼓励回收而非购买新衣；D项错误，文章明确反对丢弃旧衣。",
+      "evidence_sentence": "Li Hua believes that reusing clothes is better than making new ones because it saves resources.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "How are the collected clothes processed?",
+      "options": [
+        "They are sold in shops.",
+        "They are burned for energy.",
+        "They are cleaned and sorted by volunteers.",
+        "They are sent to factories to make new clothes."
+      ],
+      "answer": "They are cleaned and sorted by volunteers.",
+      "explanation": "文中明确提到衣服由志愿者每周清洗和分类。A项错误，文章说衣服是捐赠而非出售；B项错误，文章未提及焚烧。",
+      "evidence_sentence": "The clothes are cleaned and sorted by volunteers every weekend.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can be inferred about Li Hua from the passage?",
+      "options": [
+        "She is careless about the environment.",
+        "She wants to make money from old clothes.",
+        "She is active in community service.",
+        "She thinks recycling is too difficult."
+      ],
+      "answer": "She is active in community service.",
+      "explanation": "Li Hua发起回收项目并组织工作坊，说明她积极参与社区服务。A项错误，她关心环境；B项错误，项目是捐赠而非盈利。",
+      "evidence_sentence": "She also encourages others to join her by organising workshops on how to repair clothes.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

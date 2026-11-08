@@ -1,0 +1,64 @@
+{
+  "sentences": [
+    "Before the important science exam, one student felt (1) and could hardly eat her breakfast.",
+    "Her teacher noticed this and reminded her to stay (2) because she had prepared well.",
+    "The teacher was always (3) about new ways to help students learn difficult ideas.",
+    "A classmate promised to study with her and proved to be a (4) partner every evening.",
+    "Together they set a(n) (5) goal to finish the whole review guide before Friday.",
+    "Working steadily, they managed to (6) their goal and felt proud of the effort.",
+    "When the student moved to a new school last year, she had to (7) to different rules.",
+    "Her coach would always (8) her to keep trying even after a poor practice.",
+    "One afternoon, the classmate tried to (9) her to join the school debate club.",
+    "During homework time, she found it hard to (10) with so many distractions around.",
+    "By practicing focus daily, she (11) improved her ability to finish tasks on time.",
+    "After many weeks of effort, she (12) completed the challenging project with pride.",
+    "Her teacher praised her because she had worked (13) without asking for any help.",
+    "That success gave her real (14) in her own ability to handle difficult work.",
+    "She realized that the club offered a valuable (15) to grow and meet new friends.",
+    "Looking back, she felt grateful for the support that helped her become stronger."
+  ],
+  "target_words": [
+    "anxious",
+    "confident",
+    "curious",
+    "reliable",
+    "ambitious",
+    "achieve",
+    "adapt",
+    "encourage",
+    "persuade",
+    "concentrate",
+    "gradually",
+    "eventually",
+    "independently",
+    "confidence",
+    "opportunity"
+  ],
+  "complex_structures": [
+    {
+      "sentence_index": 2,
+      "structure_type": "adverbial_clause",
+      "evidence": "because she had prepared well"
+    },
+    {
+      "sentence_index": 6,
+      "structure_type": "participial_phrase",
+      "evidence": "Working steadily"
+    },
+    {
+      "sentence_index": 7,
+      "structure_type": "adverbial_clause",
+      "evidence": "When the student moved to a new school last year"
+    },
+    {
+      "sentence_index": 13,
+      "structure_type": "adverbial_clause",
+      "evidence": "because she had worked independently without asking for any help"
+    },
+    {
+      "sentence_index": 15,
+      "structure_type": "noun_clause",
+      "evidence": "that the club offered a valuable opportunity to grow and meet new friends"
+    }
+  ]
+}

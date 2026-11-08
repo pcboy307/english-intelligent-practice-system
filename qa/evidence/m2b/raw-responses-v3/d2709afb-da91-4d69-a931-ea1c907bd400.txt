@@ -1,0 +1,224 @@
+{
+  "coherence": {
+    "verdict": "coherent",
+    "characters_consistent": true,
+    "timeline_present": true,
+    "connections_present": true,
+    "reason": "The passage follows a student and her classmate/teacher through a school term, with clear temporal progression from start to final month and causal links between worry, support, effort, and success."
+  },
+  "items": [
+    {
+      "question_index": 1,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "anxious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "exact",
+          "reason": "Fits the blank grammatically and semantically, conveying worry about the exam."
+        },
+        {
+          "option_index": 2,
+          "option": "uneasy",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Milder and vaguer than 'anxious', not capturing the strong worry implied by the clue."
+        },
+        {
+          "option_index": 3,
+          "option": "concerned",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Suggests mild care rather than the intense worry that the teacher acts upon."
+        },
+        {
+          "option_index": 4,
+          "option": "restless",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "unrelated",
+          "reason": "Describes inability to stay still, not worry about an exam."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "direct_lexical_relationship": false,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue mentions 'the worry', which directly points to 'anxious' as the feeling, while the distractors do not match the intensity or nature of worry."
+      },
+      "answer_collocation": {
+        "phrase": "anxious",
+        "standard": true,
+        "reason": "'Anxious about' is a standard collocation for feeling worried about something."
+      }
+    },
+    {
+      "question_index": 2,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "confident",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "exact",
+          "reason": "Fits the blank as the opposite of worry, indicating self-assurance before the test."
+        },
+        {
+          "option_index": 2,
+          "option": "assured",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Usually describes being told something, not a personal feeling of self-belief."
+        },
+        {
+          "option_index": 3,
+          "option": "hopeful",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Means expecting good outcomes generally, not feeling sure of oneself."
+        },
+        {
+          "option_index": 4,
+          "option": "optimistic",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Similar to hopeful, not specifically about self-confidence."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "direct_lexical_relationship": false,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue shows the student felt worried, so the teacher helped her feel the opposite, which is 'confident'; the other options do not directly oppose worry."
+      },
+      "answer_collocation": {
+        "phrase": "confident",
+        "standard": true,
+        "reason": "'Feel more confident' is a standard expression for gaining self-assurance."
+      }
+    },
+    {
+      "question_index": 3,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "curious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "exact",
+          "reason": "Fits the blank as showing eagerness to learn, supported by asking many questions."
+        },
+        {
+          "option_index": 2,
+          "option": "inquisitive",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Close but typically describes a probing habit rather than positive eagerness about subjects."
+        },
+        {
+          "option_index": 3,
+          "option": "interested",
+          "grammar_ok": false,
+          "semantic_ok": false,
+          "idiomatic": false,
+          "relation_to_answer": "near_synonym",
+          "reason": "Requires 'in' not 'about', so it is grammatically incorrect here."
+        },
+        {
+          "option_index": 4,
+          "option": "attentive",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "unrelated",
+          "reason": "Means paying attention, not asking questions to learn."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "direct_lexical_relationship": false,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue is not directly related; however, the sentence itself provides the support: asking many thoughtful questions indicates curiosity. The distractors do not fit as well semantically or grammatically."
+      },
+      "answer_collocation": {
+        "phrase": "curious",
+        "standard": true,
+        "reason": "'Curious about' is a standard collocation for wanting to know about something."
+      }
+    },
+    {
+      "question_index": 4,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "reliable",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "exact",
+          "reason": "Fits the blank as someone who can be counted on, supported by keeping promises."
+        },
+        {
+          "option_index": 2,
+          "option": "dependable",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Close but stresses being needed for support rather than keeping promises."
+        },
+        {
+          "option_index": 3,
+          "option": "trustworthy",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Stresses honesty rather than reliability in action."
+        },
+        {
+          "option_index": 4,
+          "option": "consistent",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "unrelated",
+          "reason": "Means unchanging, not dependable in keeping promises."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "direct_lexical_relationship": false,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue is not directly related; however, the relative clause 'who always kept every promise she made' directly supports 'reliable' and excludes the others."
+      },
+      "answer_collocation": {
+        "phrase": "reliable",
+        "standard": true,
+        "reason": "'A reliable friend' is a standard collocation."
+      }
+    },
+    {
+      "question_index": 5,
+      "

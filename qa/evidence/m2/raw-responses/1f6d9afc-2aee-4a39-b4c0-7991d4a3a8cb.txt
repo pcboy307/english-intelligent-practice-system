@@ -1,0 +1,45 @@
+{
+  "passage": "Public libraries are important places in our communities. They are not just buildings full of books; they are centres of learning and connection. In many towns, the public library is a place where people of all ages can go to read, study, or simply relax. The library, which is often located in the town centre, provides free access to books, computers, and the internet. This is especially helpful for students who may not have these resources at home.\n\nOne of the main purposes of a public library is to support education. Librarians are trained to help visitors find information and use digital tools. They also organise activities such as reading groups and homework clubs. These programmes are designed to encourage a love of reading and to help people develop new skills. The library is a place where everyone is welcome, regardless of their background.\n\nHowever, public libraries face challenges. Many libraries have limited budgets, so they cannot always buy new books or update their technology. Some libraries have had to reduce their opening hours. Despite these difficulties, libraries remain valuable. They provide a quiet space for study and a safe place for children after school. They also offer free events that bring the community together.\n\nIn conclusion, public libraries are more than just storehouses of books. They are vital community spaces that promote learning and equality. It is important that we support them so that they can continue to serve the public.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"resources\" most likely mean in the passage?",
+      "options": ["books and materials", "money and budgets", "computers and internet", "helpful things or tools"],
+      "answer": "helpful things or tools",
+      "explanation": "根据上下文，图书馆提供免费使用书籍、电脑和互联网的机会，这些对家里没有这些资源的学生尤其有帮助。因此resources指的是有用的东西或工具。A和C只是部分例子，不够全面；B与语境不符。",
+      "evidence_sentence": "This is especially helpful for students who may not have these resources at home.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's attitude towards public libraries?",
+      "options": ["Supportive", "Critical", "Indifferent", "Doubtful"],
+      "answer": "Supportive",
+      "explanation": "作者在文中强调图书馆的重要性，认为它们是学习和社区连接的中心，并呼吁大家支持图书馆。因此作者的态度是支持的。B和D与作者呼吁支持的态度相反；C表示漠不关心，也不符合文中积极的描述。",
+      "evidence_sentence": "It is important that we support them so that they can continue to serve the public.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Public libraries are important community spaces that need support.", "Public libraries are facing budget problems.", "Public libraries provide free books and computers.", "Public libraries organise reading activities."],
+      "answer": "Public libraries are important community spaces that need support.",
+      "explanation": "文章从图书馆的作用、面临的挑战以及仍然重要的价值等方面展开，最后总结图书馆是重要的社区空间，需要我们的支持。因此主旨是A。B、C、D都是文章提到的细节，不是主旨。",
+      "evidence_sentence": "In conclusion, public libraries are more than just storehouses of books. They are vital community spaces that promote learning and equality.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, what has happened to some libraries because of limited budgets?",
+      "options": ["They have been closed down.", "They have had to reduce their opening hours.", "They have stopped buying new books.", "They have started charging for services."],
+      "answer": "They have had to reduce their opening hours.",
+      "explanation": "文中明确提到，由于预算有限，一些图书馆不得不减少开放时间。因此B正确。A、C、D在文中均未提及。",
+      "evidence_sentence": "Some libraries have had to reduce their opening hours.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

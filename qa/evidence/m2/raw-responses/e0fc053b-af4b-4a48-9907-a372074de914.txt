@@ -1,0 +1,65 @@
+{
+  "passage": "Lily, a high-school student, had always loved music. Last year, she decided to learn the violin. At first, she found it very difficult. Her fingers hurt, and the notes sounded terrible. She almost gave up. However, her teacher, Mr. Wang, encouraged her. He said, \"Learning an instrument is like learning a language. You need patience and practice.\" Lily listened and kept trying. She practised for an hour every day after school. Slowly, she improved. Six months later, she could play a simple song. Her parents were amazed. They said, \"We are proud of you!\" Lily felt a great sense of achievement. She realised that hard work brings results. Now, she plays in the school band. She also helps other students who are learning music. She tells them, \"Don't be afraid of making mistakes. Every mistake is a step towards success.\" Music has become an important part of her life. It gives her joy and confidence. She believes that everyone can learn music if they are willing to try.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about Lily from the passage?",
+      "options": [
+        "She gave up learning the violin.",
+        "She is now a music teacher.",
+        "She has become more confident through learning music.",
+        "She plays the violin only for competitions."
+      ],
+      "answer": "She has become more confident through learning music.",
+      "explanation": "文章提到音乐给她带来快乐和自信，可以推断她通过学习音乐变得更自信。A项说她放弃了，与原文不符；B项说她现在是音乐老师，文中未提及。",
+      "evidence_sentence": "It gives her joy and confidence.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"achievement\" in the passage mean?",
+      "options": [
+        "Something difficult to understand.",
+        "A feeling of being tired.",
+        "Something done successfully.",
+        "A kind of musical instrument."
+      ],
+      "answer": "Something done successfully.",
+      "explanation": "根据上下文，Lily经过努力后能演奏一首简单的歌曲，她感到一种成就感，因此achievement意为“成功完成的事情”。A项“难以理解的事情”和B项“疲惫的感觉”都不符合语境。",
+      "evidence_sentence": "She realised that hard work brings results.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the author's attitude towards learning music?",
+      "options": [
+        "Doubtful.",
+        "Supportive.",
+        "Critical.",
+        "Uninterested."
+      ],
+      "answer": "Supportive.",
+      "explanation": "作者通过Lily的故事说明努力学习音乐能带来成果和自信，并鼓励大家尝试，因此态度是支持的。A项“怀疑的”和C项“批评的”与文章主旨相反。",
+      "evidence_sentence": "She believes that everyone can learn music if they are willing to try.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Learning music requires expensive instruments.",
+        "Hard work and patience lead to success in learning music.",
+        "Only talented people can learn to play music.",
+        "Music teachers are not helpful to students."
+      ],
+      "answer": "Hard work and patience lead to success in learning music.",
+      "explanation": "文章通过Lily学习小提琴的经历，说明努力和耐心能带来成功。A项“需要昂贵乐器”文中未提；C项“只有有天赋的人才能学”与原文相反。",
+      "evidence_sentence": "She realised that hard work brings results.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

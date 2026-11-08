@@ -1,0 +1,1 @@
+{"translations": {"convenience": "便利", "footprint": "足迹", "guidance": "指导", "inform": "告知", "protection": "保护", "unknowingly": "不知不觉"}}

@@ -1,0 +1,64 @@
+{
+  "sentences": [
+    "On the morning of the big exam, the student felt (1) and could hardly eat any breakfast.",
+    "Her teacher, who had watched her prepare for weeks, told her to stay (2) and trust her work.",
+    "The student was (3) about the new topics that the test would cover that day.",
+    "Her classmate, a (4) friend, had promised to review the notes with her after school.",
+    "The student was (5) and hoped to win a scholarship for the next year.",
+    "She wanted to (6) her goal through steady effort and careful practice.",
+    "During the first week at the new school, she had to (7) to unfamiliar rules and faces.",
+    "Her teacher would (8) her to keep trying whenever she felt like giving up.",
+    "The teacher tried to (9) her classmate to join the science club with her.",
+    "She found it hard to (10) on homework when her phone kept buzzing nearby.",
+    "(11), she built better study habits and stopped checking messages so often.",
+    "(12), after many weeks of practice, she passed the exam with a strong score.",
+    "She learned to work (13) on projects without waiting for her teacher's help.",
+    "That success gave her the (14) to speak up more often in class discussions.",
+    "Her teacher praised her growth and offered her a new (15) to lead a study group.",
+    "The student accepted the challenge and promised to help her classmate prepare too."
+  ],
+  "target_words": [
+    "anxious",
+    "confident",
+    "curious",
+    "reliable",
+    "ambitious",
+    "achieve",
+    "adapt",
+    "encourage",
+    "persuade",
+    "concentrate",
+    "gradually",
+    "eventually",
+    "independently",
+    "confidence",
+    "opportunity"
+  ],
+  "complex_structures": [
+    {
+      "sentence_index": 2,
+      "structure_type": "relative_clause",
+      "evidence": "who had watched her prepare for weeks"
+    },
+    {
+      "sentence_index": 3,
+      "structure_type": "relative_clause",
+      "evidence": "that the test would cover that day"
+    },
+    {
+      "sentence_index": 8,
+      "structure_type": "adverbial_clause",
+      "evidence": "whenever she felt like giving up"
+    },
+    {
+      "sentence_index": 10,
+      "structure_type": "adverbial_clause",
+      "evidence": "when her phone kept buzzing nearby"
+    },
+    {
+      "sentence_index": 13,
+      "structure_type": "infinitive_phrase",
+      "evidence": "to work independently on projects"
+    }
+  ]
+}

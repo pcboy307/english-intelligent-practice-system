@@ -1,0 +1,65 @@
+{
+  "passage": "Public libraries are important places in our communities. They offer free books, computers, and quiet study areas to everyone. The student, who visits the library every week, finds it a helpful place for homework. Her teacher often recommends the library because it has many useful resources. A classmate, whose mother works there, says the library is always busy after school. The library is not just a place for books; it is a centre for learning and friendship. Many people believe that public libraries are necessary for a fair society. They give people of all ages the chance to read, learn, and connect with others. The library also hosts events like reading clubs and homework help sessions. These activities are enjoyed by both children and adults. The student feels lucky to have such a place nearby. She thinks everyone should support the library and use its services.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"resources\" most likely mean in the passage?",
+      "options": [
+        "books and computers",
+        "teachers and classmates",
+        "events and activities",
+        "buildings and streets"
+      ],
+      "answer": "books and computers",
+      "explanation": "根据上下文，图书馆提供免费书籍、电脑和安静的学习区，因此“resources”指书籍和电脑等资源。错误选项“teachers and classmates”和“events and activities”在文中并未被描述为图书馆提供的资源。",
+      "evidence_sentence": "They offer free books, computers, and quiet study areas to everyone.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's attitude towards public libraries?",
+      "options": [
+        "Supportive",
+        "Doubtful",
+        "Uninterested",
+        "Critical"
+      ],
+      "answer": "Supportive",
+      "explanation": "作者在文中强调图书馆的重要性，并认为每个人应该支持和使用图书馆，态度是支持的。错误选项“Doubtful”和“Critical”与文中“necessary for a fair society”等正面描述不符。",
+      "evidence_sentence": "Many people believe that public libraries are necessary for a fair society.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Public libraries are valuable community resources.",
+        "The student visits the library every week.",
+        "Libraries only offer books to children.",
+        "The library is a quiet place for study."
+      ],
+      "answer": "Public libraries are valuable community resources.",
+      "explanation": "文章主要介绍公共图书馆为社区提供多种资源和服务，强调其重要性。错误选项“The student visits the library every week”只是细节，“Libraries only offer books to children”与文中提供电脑和活动等事实不符。",
+      "evidence_sentence": "The library is not just a place for books; it is a centre for learning and friendship.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, which activities are enjoyed by both children and adults?",
+      "options": [
+        "Reading clubs and homework help sessions",
+        "Free books and computers",
+        "Quiet study areas",
+        "Events like reading clubs and homework help sessions"
+      ],
+      "answer": "Events like reading clubs and homework help sessions",
+      "explanation": "文中明确提到图书馆举办的活动如读书俱乐部和作业辅导课程受到儿童和成人的喜爱。错误选项“Free books and computers”和“Quiet study areas”是图书馆提供的资源，但并非特指被儿童和成人共同喜爱的活动。",
+      "evidence_sentence": "The library also hosts events like reading clubs and homework help sessions. These activities are enjoyed by both children and adults.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

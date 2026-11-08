@@ -1,0 +1,38 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a unified text discussing stress management for high school students with logical progression and connected ideas.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "Stress is a common problem and students should take steps to manage it.",
+      "reason": "This option accurately summarizes the main idea of the passage, while the other options are either too narrow, incorrect, or unsupported.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "They should talk to someone they trust.",
+      "reason": "This option directly matches the advice given in the passage, while the other options contradict or are not mentioned in the text.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "They may make their situation worse.",
+      "reason": "This option is directly supported by the sentence 'But this often makes things worse,' while the other options are contradicted by the passage.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "A situation where study and rest are equal and healthy.",
+      "reason": "This option correctly interprets 'balance' in the context of a healthy equilibrium between study and rest, while the other options are literal or unrelated.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "passage": "Last year, a student in a coastal town noticed that the beach near her school was losing sand faster than usual. She decided to act. She wrote a short report for her science class, explaining that rising sea levels and stronger storms were making the problem worse. Her teacher, who had lived in the town for thirty years, agreed to help. Together with a classmate, they organised a weekend clean-up and planted grass on the dunes to hold the sand in place. The student also spoke at a town meeting, asking local leaders to support a long-term plan. At first, some adults doubted that a teenager could make a difference. However, the student kept collecting data and sharing it with the community. By the end of the year, the town had approved a small budget for coastal protection. The student's purpose was not to become famous but to protect the place she loved. Her teacher later said, \"She showed that even a young person can lead change when she is willing to work with others.\" The classmate added that the project had taught them all how small actions, repeated over time, can add up to real results.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the student's main purpose in writing the report and speaking at the town meeting?",
+      "options": [
+        "To become famous in her town.",
+        "To protect the beach she loves by taking action.",
+        "To finish her science homework quickly.",
+        "To prove that adults are wrong."
+      ],
+      "answer": "To protect the beach she loves by taking action.",
+      "explanation": "文章明确说学生的目的不是出名，而是保护她所爱的地方，并采取行动。A项“出名”与原文相反；D项“证明大人错了”文中未提及，她只是与社区合作。",
+      "evidence_sentence": "The student's purpose was not to become famous but to protect the place she loved.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "A student led a community effort to protect a beach from climate change effects.",
+        "A teacher and a classmate planted grass on the dunes.",
+        "The town approved a budget for coastal protection.",
+        "Rising sea levels are the only cause of beach loss."
+      ],
+      "answer": "A student led a community effort to protect a beach from climate change effects.",
+      "explanation": "全文讲述一名学生发起并带领社区行动保护海滩，应对气候变化影响。B项和C项只是文中的细节，不是主旨；D项“唯一原因”过于绝对，文中还提到更强风暴。",
+      "evidence_sentence": "She decided to act. She wrote a short report for her science class, explaining that rising sea levels and stronger storms were making the problem worse.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what did the student and her group do to hold the sand in place?",
+      "options": [
+        "They built a wall along the beach.",
+        "They planted grass on the dunes.",
+        "They collected money from tourists.",
+        "They wrote a letter to the government."
+      ],
+      "answer": "They planted grass on the dunes.",
+      "explanation": "文中明确提到他们组织清理活动并在沙丘上种草以固定沙子。A项“建墙”、C项“向游客收钱”、D项“给政府写信”均未在文中出现。",
+      "evidence_sentence": "Together with a classmate, they organised a weekend clean-up and planted grass on the dunes to hold the sand in place.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can be inferred about the student's project from the last two sentences?",
+      "options": [
+        "The project was a complete failure.",
+        "The student became famous after the project.",
+        "Small repeated actions can lead to meaningful change.",
+        "The town refused to support any future plans."
+      ],
+      "answer": "Small repeated actions can lead to meaningful change.",
+      "explanation": "最后两句引用老师和同学的话，强调年轻人可以带领改变，小行动重复积累能带来真实结果，由此可推断C项。A项“完全失败”与事实相反；B项“出名”文中明确否定；D项“拒绝支持”与镇里批准预算矛盾。",
+      "evidence_sentence": "The classmate added that the project had taught them all how small actions, repeated over time, can add up to real results.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

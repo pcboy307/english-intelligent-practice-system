@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Some days are full of joy, while others seem dark and (1) ______.",
+      "options": ["gloomy", "bright", "cheerful", "sunny"],
+      "answer": "gloomy",
+      "knowledge_points": ["adjective meaning in context: dark and depressing"],
+      "grammar_tags": ["tense_system"],
+      "book_source": "选必二 U1",
+      "difficulty": 1,
+      "invalid": false,
+      "invalid_reason": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "Last year, I felt very (2) ______ about my future.",
+      "options": ["uncertain", "confident", "sure", "certain"],
+      "answer": "uncertain",
+      "knowledge_points": ["adjective meaning in context: not knowing what will happen"],
+      "grammar_tags": ["tense_system"],
+      "book_source": "选必二 U2",
+      "difficulty": 1,
+      "invalid": false,
+      "invalid_reason": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "I did not know what I wanted to do, and I often (3) ______ with my parents about small things.",
+      "options": ["argued", "agreed", "laughed", "talked"],
+      "answer": "argued",
+      "knowledge_points": ["verb meaning in context: to disagree angrily"],
+      "grammar_tags": ["tense_system"],
+      "book_source": "选必二 U3",
+      "difficulty": 2,
+      "invalid": false,
+      "invalid_reason": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "My best friend noticed that I was (4) ______ and asked me to join a school club.",
+      "options": ["lonely", "happy", "cheerful", "sociable"],
+      "answer": "lonely",
+      "knowledge_points": ["adjective meaning in context: sad because alone"],
+      "grammar_tags": ["noun_clauses"],
+      "book_source": "选必二 U4",
+      "difficulty": 2,
+      "invalid": false,
+      "invalid_reason": ""
+    },
+    {
+      "question_index": 5,
+      "stem": "At first, I was (5) ______ to try because I was afraid of making mistakes.",
+      "options": ["reluctant", "eager", "willing", "keen"],
+      "answer": "reluctant",
+      "knowledge_points": ["adjective meaning in context: unwilling"],
+      "grammar_tags": ["noun_clauses"],
+      "book_source": "选必二 U5",
+      "difficulty": 3,
+      "invalid": false,
+      "invalid_reason": ""
+    }
+  ]
+}

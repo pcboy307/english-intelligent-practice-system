@@ -174,3 +174,66 @@ def test_generating_bank_can_start_a_replacement_job_after_previous_job_fails() 
             assert second["status"] == "queued"
             assert second["id"] != first["id"]
             assert repo.get_bank(bank["id"])["generation_job_id"] == second["id"]
+
+
+def test_replace_passage_questions_updates_the_fixed_passage_and_all_questions() -> None:
+    with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+        with connection.transaction(force_rollback=True):
+            repo = M2Repository(connection)
+            bank = repo.create_bank(
+                name=f"M2 replace test {uuid.uuid4()}",
+                target_size=300,
+                difficulty_profile="standard",
+            )
+            job = repo.create_generation_job(
+                bank["id"],
+                target_passages=47,
+                batch_size=10,
+                approved_by="pytest",
+                reason="replace passage test",
+            )
+            original = valid_reading()
+            repo.insert_passage(
+                bank_id=bank["id"],
+                job_id=job["id"],
+                batch_id="M2-TEST-ORIGINAL",
+                record=original,
+            )
+            replacement = valid_reading()
+            replacement["passage_group_id"] = original["passage_group_id"]
+            replacement["passage"] = (
+                "Students now read a new short book about rest and recovery. "
+                "The teacher asks them to compare two examples."
+            )
+            replacement["questions"][0]["stem"] = "Why do students read the book?"
+
+            repo.replace_passage_questions(
+                bank_id=bank["id"],
+                batch_id="M2-TEST-REPLACEMENT",
+                record=replacement,
+            )
+
+            passage = connection.execute(
+                """
+                SELECT content, word_count
+                FROM passages
+                WHERE bank_id=%s AND passage_group_id=%s
+                """,
+                (bank["id"], original["passage_group_id"]),
+            ).fetchone()
+            question = connection.execute(
+                """
+                SELECT stem, batch_id
+                FROM questions
+                WHERE bank_id=%s AND id=%s
+                """,
+                (
+                    bank["id"],
+                    f"{original['passage_group_id']}-Q01",
+                ),
+            ).fetchone()
+
+            assert passage["content"] == replacement["passage"]
+            assert passage["word_count"] == 19
+            assert question["stem"] == "Why do students read the book?"
+            assert question["batch_id"] == "M2-TEST-REPLACEMENT"

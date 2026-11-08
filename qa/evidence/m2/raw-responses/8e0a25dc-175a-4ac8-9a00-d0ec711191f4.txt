@@ -1,0 +1,65 @@
+{
+  "passage": "For years, scientists have studied why we sleep. A recent experiment at a university sleep lab may offer new clues. Twenty volunteers spent two nights in the lab. On the first night, they slept normally. On the second, they were woken every hour. The next morning, the volunteers took a memory test. Those who had slept normally remembered far more words than those who had been woken. Dr. Chen, who led the study, explained that deep sleep helps the brain move information into long-term storage. If the brain does not get enough deep sleep, it cannot do this important job well. However, some volunteers who were woken still performed surprisingly well. Dr. Chen believes that these people may have caught up on deep sleep during the short periods between awakenings. She also warns that one bad night is not a disaster. The brain is flexible, and it can recover quickly. Still, she advises teenagers to keep regular sleep hours. Not only does regular sleep improve memory, but it also strengthens the immune system. So, next time you stay up late, remember: your brain needs its rest.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can be inferred from the passage about the volunteers who were woken every hour?",
+      "options": [
+        "They could not remember any words at all.",
+        "They remembered fewer words than those who slept normally.",
+        "They performed better on the memory test.",
+        "They did not need any deep sleep."
+      ],
+      "answer": "They remembered fewer words than those who slept normally.",
+      "explanation": "文章指出，那些正常睡眠的志愿者比被唤醒的志愿者记住的单词多得多，因此可以推断被唤醒的志愿者记住的单词较少。A选项说他们一个单词都记不住，过于绝对；C选项说他们表现更好，与原文相反。",
+      "evidence_sentence": "Those who had slept normally remembered far more words than those who had been woken.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"flexible\" in the passage most nearly mean?",
+      "options": [
+        "able to change",
+        "easily broken",
+        "very tired",
+        "quickly damaged"
+      ],
+      "answer": "able to change",
+      "explanation": "根据上下文，大脑是灵活的，可以快速恢复，因此flexible意为“能够变化的”。B选项“容易破碎的”和D选项“快速受损的”都与“恢复”的语境矛盾。",
+      "evidence_sentence": "The brain is flexible, and it can recover quickly.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is Dr. Chen's attitude towards teenagers' sleep habits?",
+      "options": [
+        "She is worried that they sleep too much.",
+        "She advises them to keep regular sleep hours.",
+        "She thinks they should study late at night.",
+        "She believes sleep is not important for them."
+      ],
+      "answer": "She advises them to keep regular sleep hours.",
+      "explanation": "文章明确提到Dr. Chen建议青少年保持规律的睡眠时间，因此她的态度是建议他们保持规律作息。A选项说她担心他们睡太多，文中未提及；C选项说她认为他们应该熬夜学习，与原文相反。",
+      "evidence_sentence": "Still, she advises teenagers to keep regular sleep hours.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Deep sleep is important for memory and health.",
+        "Volunteers in a sleep lab were woken every hour.",
+        "Dr. Chen is a famous sleep scientist.",
+        "Teenagers often stay up late."
+      ],
+      "answer": "Deep sleep is important for memory and health.",
+      "explanation": "文章通过实验说明深度睡眠对记忆巩固的重要性，并提到规律睡眠还能增强免疫系统，因此主旨是深度睡眠对记忆和健康很重要。B选项只是实验的一个细节；C选项文中未提及Dr. Chen是否著名；D选项是文中提到的一个现象，但不是主旨。",
+      "evidence_sentence": "Dr. Chen, who led the study, explained that deep sleep helps the brain move information into long-term storage.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "passage": "Last month, our school held a science fair. The student and her teacher planned a project about clean water. (1) They wanted to build a simple filter using sand and charcoal. (2) The teacher explained that the filter's effectiveness depended on the size of the particles. (3) The filter was tested many times before the fair. (4) Not only did the project attract attention, but it also won a prize. (5) It was the teamwork that made the project successful. A classmate said, \"I admire your work.\" The student smiled and replied, \"We learned a lot.\"",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "A. They wanted to build a simple filter using sand and charcoal.",
+        "B. He decided to paint a picture of the filter.",
+        "C. She forgot to bring the materials.",
+        "D. They argued about the colour of the filter.",
+        "E. The teacher cancelled the project.",
+        "F. The student bought a new phone.",
+        "G. They watched a movie instead."
+      ],
+      "answer": "A",
+      "explanation": "空白后提到过滤器的效果，因此A选项“他们想用沙子和木炭制作一个简单的过滤器”最符合逻辑。B和C与上下文无关，因为B是画画，C是忘记带材料。",
+      "evidence_sentence": "",
+      "context_clue": "The student and her teacher planned a project about clean water.",
+      "clue_argument": "项目关于净水，所以下一步是制作过滤器。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "A. They wanted to build a simple filter using sand and charcoal.",
+        "B. He decided to paint a picture of the filter.",
+        "C. She forgot to bring the materials.",
+        "D. They argued about the colour of the filter.",
+        "E. The teacher cancelled the project.",
+        "F. The student bought a new phone.",
+        "G. They watched a movie instead."
+      ],
+      "answer": "B",
+      "explanation": "空白后解释过滤器的效果取决于颗粒大小，因此B选项“他决定画一幅过滤器的画”与上下文不符。A和C都不合适，因为A是制作过滤器，C是忘记带材料。",
+      "evidence_sentence": "",
+      "context_clue": "The teacher explained that the filter's effectiveness depended on the size of the particles.",
+      "clue_argument": "老师解释原理，说明之前有相关活动，但B选项与解释无关。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "A. They wanted to build a simple filter using sand and charcoal.",
+        "B. He decided to paint a picture of the filter.",
+        "C. She forgot to bring the materials.",
+        "D. They argued about the colour of the filter.",
+        "E. The teacher cancelled the project.",
+        "F. The student bought a new phone.",
+        "G. They watched a movie instead."
+      ],
+      "answer": "C",
+      "explanation": "空白后说“过滤器在展览前被测试了很多次”，因此C选项“她忘记带材料了”会造成冲突，但后文说测试了，说明材料最终有了。A和D都不合适，因为A是制作过滤器，D是争论颜色。",
+      "evidence_sentence": "",
+      "context_clue": "The filter was tested many times before the fair.",
+      "clue_argument": "测试需要材料，所以之前可能忘记带材料。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "A. They wanted to build a simple filter using sand and charcoal.",
+        "B. He decided to paint a picture of the filter.",
+        "C. She forgot to bring the materials.",
+        "D. They argued about the colour of the filter.",
+        "E. The teacher cancelled the project.",
+        "F. The student bought a new phone.",
+        "G. They watched a movie instead."
+      ],
+      "answer": "D",
+      "explanation": "空白后说“这个项目不仅吸引了注意，还获得了奖品”，因此D选项“他们争论过滤器的颜色”与后文成功不符。A和E都不合适，因为A是制作过滤器，E是取消项目。",
+      "evidence_sentence": "",
+      "context_clue": "Not only did the project attract attention, but it also won a prize.",
+      "clue_argument": "项目成功，所以之前的小争论不影响结果。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "A. They wanted to build a simple filter using sand and charcoal.",
+        "B. He decided to paint a picture of the filter.",
+        "C. She forgot to bring the materials.",
+        "D. They argued about the colour of the filter.",
+        "E. The teacher cancelled the project.",
+        "F. The student bought a new phone.",
+        "G. They watched a movie instead."
+      ],
+      "answer": "E",
+      "explanation": "空白后说“是团队合作使项目成功”，因此E选项“老师取消了项目”与成功矛盾。A和F都不合适，因为A是制作过滤器，F是买新手机。",
+      "evidence_sentence": "",
+      "context_clue": "It was the teamwork that made the project successful.",
+      "clue_argument": "强调团队合作，说明项目没有取消。"
+    }
+  ]
+}

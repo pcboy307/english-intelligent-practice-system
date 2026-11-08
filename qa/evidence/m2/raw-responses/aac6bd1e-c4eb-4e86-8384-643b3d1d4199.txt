@@ -1,0 +1,65 @@
+{
+  "passage": "In 2023, the town of Greenfield started a recycling programme, which aimed to reduce waste and protect the environment. At first, many residents were confused about what could be recycled. However, a local teacher, Ms. Chen, decided to take action. She organised workshops to explain the benefits of recycling and showed students how to sort rubbish properly. Not only did she teach them the basics, but she also encouraged them to create art from used materials. The students were inspired and soon began to influence their families. Old newspapers were turned into beautiful paper flowers, and plastic bottles were used to make flower pots. The programme was supported by the local government, and recycling bins were placed around the town. Within a year, the amount of waste going to landfills had dropped by 30%. The town's success shows that small actions can lead to big changes. Ms. Chen believes that by working together, we can build a more sustainable future. Her efforts have been recognised by the community, and she hopes that other towns will follow Greenfield's example.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To explain how to recycle different materials.",
+        "To describe a successful recycling programme and its benefits.",
+        "To criticise people who do not recycle.",
+        "To compare recycling programmes in different towns."
+      ],
+      "answer": "To describe a successful recycling programme and its benefits.",
+      "explanation": "文章主要介绍了Greenfield镇的回收项目及其成效，因此目的是描述一个成功的项目及其好处。A项只涉及如何回收，C项批评不回收的人，D项比较不同城镇，均不符合文章主旨。",
+      "evidence_sentence": "In 2023, the town of Greenfield started a recycling programme, which aimed to reduce waste and protect the environment.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Recycling is difficult for small towns.",
+        "A teacher's efforts led to a successful recycling programme.",
+        "Students should not make art from rubbish.",
+        "The government should pay for recycling bins."
+      ],
+      "answer": "A teacher's efforts led to a successful recycling programme.",
+      "explanation": "文章主要讲述陈老师通过组织工作坊和鼓励学生，推动了回收项目的成功，因此主旨是老师的努力带来了成功的回收项目。A项说回收对小镇困难，C项说学生不应制作艺术，D项说政府应支付回收箱，均不是文章主旨。",
+      "evidence_sentence": "However, a local teacher, Ms. Chen, decided to take action.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what happened to old newspapers?",
+      "options": [
+        "They were thrown away.",
+        "They were turned into paper flowers.",
+        "They were sold to recycling companies.",
+        "They were used to make flower pots."
+      ],
+      "answer": "They were turned into paper flowers.",
+      "explanation": "文章明确提到旧报纸被变成了纸花，因此B项正确。A项说被扔掉，C项说卖给回收公司，D项说做花盆（那是塑料瓶的用途），均与文章不符。",
+      "evidence_sentence": "Old newspapers were turned into beautiful paper flowers, and plastic bottles were used to make flower pots.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can be inferred about Ms. Chen from the passage?",
+      "options": [
+        "She is a government official.",
+        "She believes in the power of individual actions.",
+        "She thinks recycling is too expensive.",
+        "She wants to move to another town."
+      ],
+      "answer": "She believes in the power of individual actions.",
+      "explanation": "文章提到陈老师相信通过共同努力可以建设可持续的未来，并且她认为小行动能带来大变化，因此可以推断她相信个人行动的力量。A项说她是政府官员，C项说认为回收太贵，D项说想搬走，均无依据。",
+      "evidence_sentence": "Ms. Chen believes that by working together, we can build a more sustainable future.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

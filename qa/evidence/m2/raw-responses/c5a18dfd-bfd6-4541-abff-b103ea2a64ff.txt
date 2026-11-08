@@ -1,0 +1,1 @@
+{"translations": {"competitions": "比赛", "handshake": "握手", "shook": "摇动", "teammates": "队友"}}

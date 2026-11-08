@@ -1,0 +1,38 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a connected narrative about a student's climate action, with a clear sequence of events and a concluding lesson.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "To show that small actions by students can make a difference",
+      "reason": "The correct answer directly summarizes the passage's main message, while the other options are either too narrow, contradictory, or unsupported.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "A student group took simple steps to help the environment.",
+      "reason": "This option accurately captures the main idea, while the others are either too specific, absolute, or contradicted by the text.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "They wrote a report and gave it to the school office.",
+      "reason": "The passage explicitly states this action, and the other options either add details not mentioned or contradict the text.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "The teacher encouraged students to take action in their own school.",
+      "reason": "The teacher's question and praise show encouragement, while the other options are contradicted by the passage.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

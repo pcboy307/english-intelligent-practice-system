@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "bank_name": "M2 Bank #2",
+  "totals": {
+    "passages": 47,
+    "questions": 300
+  },
+  "types": {
+    "cloze": {"passages": 6, "questions_per_passage": 15, "questions": 90},
+    "grammar_fill": {"passages": 6, "questions_per_passage": 10, "questions": 60},
+    "reading": {"passages": 25, "questions_per_passage": 4, "questions": 100},
+    "gap_fill": {"passages": 10, "questions_per_passage": 5, "questions": 50}
+  },
+  "difficulty": {"1": 45, "2": 90, "3": 105, "4": 45, "5": 15},
+  "book_tag_cloze_grammar": {
+    "选必二": 68,
+    "选必一": 45,
+    "必修": 30,
+    "跨册": 7
+  },
+  "reading_gap_elective_topic_minimum": 75,
+  "grammar_tag_targets": {
+    "relative_clauses_defining": 3,
+    "relative_clauses_non_defining": 3,
+    "passive_voice_tenses": 3,
+    "past_participle_nonfinite": 3,
+    "v_ing_nonfinite": 3,
+    "noun_clauses": 3,
+    "adverbial_clauses": 3,
+    "subjunctive_basic_if": 3,
+    "subjunctive_basic_should": 3,
+    "partial_inversion_basic": 3,
+    "cleft_basic": 3,
+    "tense_system": 3,
+    "subject_verb_agreement": 3,
+    "articles": 3,
+    "prepositions": 3,
+    "pronouns": 3,
+    "conjunctions": 3,
+    "word_formation": 3,
+    "comparatives_superlatives": 2,
+    "with_compound": 2,
+    "infinitive_nonfinite": 2
+  },
+  "cloze_coverage": {
+    "word_count": 45,
+    "occurrences_each": 2
+  },
+  "reading_subtypes": {
+    "main_idea": 20,
+    "detail": 20,
+    "inference": 20,
+    "vocabulary_in_context": 20,
+    "purpose_or_attitude": 20
+  },
+  "gap_cohesion_types": {
+    "pronoun_reference": 13,
+    "logical_connector": 13,
+    "lexical_repetition": 12,
+    "semantic_contrast": 12
+  },
+  "batch_size_max": 12,
+  "run_cost_cap_cny": 5
+}

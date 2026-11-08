@@ -1,0 +1,95 @@
+{
+  "passage": "A healthy daily routine is important for students. (1) For example, going to bed and waking up at the same time every day helps your body clock. (2) This is a habit that can improve your sleep and your mood. (3) If you follow a regular schedule, you will feel more energetic during the day. (4) Therefore, you should avoid using your phone late at night. (5) What you do before bed can affect how well you sleep. Try to relax with a book or some soft music. Remember, small changes can make a big difference to your health.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "For example, going to bed and waking up at the same time every day helps your body clock.",
+        "However, staying up late is common among students.",
+        "In addition, eating breakfast is good for you.",
+        "As a result, many students feel tired in class.",
+        "On the other hand, exercise is also important.",
+        "In conclusion, a healthy lifestyle is easy.",
+        "First, you should drink more water."
+      ],
+      "answer": "A",
+      "explanation": "本空位于段首，后文具体说明规律作息的好处，因此需要举例说明如何保持健康作息。A项“例如，每天同一时间睡觉和起床有助于你的生物钟”与后文衔接自然。B项“然而，熬夜在学生中很常见”表示转折，与后文不连贯；C项“此外，吃早餐对你有好处”虽然也是健康习惯，但后文具体讲睡眠，话题不一致。所以选A。",
+      "evidence_sentence": "A healthy daily routine is important for students.",
+      "context_clue": "For example, going to bed and waking up at the same time every day helps your body clock.",
+      "clue_argument": "后文具体说明规律作息的好处，需要举例。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "This is a habit that can improve your sleep and your mood.",
+        "For instance, many students go to bed late.",
+        "However, some people need less sleep.",
+        "Therefore, you should sleep more.",
+        "In contrast, a regular schedule is hard to keep.",
+        "As a result, you may feel sleepy.",
+        "Besides, sleep is important."
+      ],
+      "answer": "A",
+      "explanation": "本空承接上句“每天同一时间睡觉和起床”，说明这一习惯的好处。A项“这是一个能改善睡眠和心情的习惯”中的This指代上句的习惯，衔接紧密。B项“例如，许多学生晚睡”与上文不构成例证关系；C项“然而，有些人需要较少睡眠”转折不当。所以选A。",
+      "evidence_sentence": "For example, going to bed and waking up at the same time every day helps your body clock.",
+      "context_clue": "This is a habit that can improve your sleep and your mood.",
+      "clue_argument": "This指代上句提到的规律作息习惯。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "If you follow a regular schedule, you will feel more energetic during the day.",
+        "Although you follow a regular schedule, you may feel tired.",
+        "Because you follow a regular schedule, you feel sleepy.",
+        "Unless you follow a regular schedule, you will feel energetic.",
+        "If you followed a regular schedule, you would feel more energetic.",
+        "If you had followed a regular schedule, you would have felt more energetic.",
+        "If you follow a regular schedule, you would feel more energetic."
+      ],
+      "answer": "A",
+      "explanation": "本空所在句表示条件与结果，且为真实条件句，主句用将来时。A项“如果你遵循规律作息，白天你会感到更有精力”符合语境和语法。B项“虽然你遵循规律作息，你可能感到累”逻辑矛盾；C项“因为你遵循规律作息，你感到困”因果关系不当。所以选A。",
+      "evidence_sentence": "This is a habit that can improve your sleep and your mood.",
+      "context_clue": "If you follow a regular schedule, you will feel more energetic during the day.",
+      "clue_argument": "真实条件句，主将从现。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "Therefore, you should avoid using your phone late at night.",
+        "However, using your phone late at night is common.",
+        "For example, you should avoid using your phone late at night.",
+        "In addition, you should avoid using your phone late at night.",
+        "As a result, you should use your phone late at night.",
+        "Therefore, you should use your phone late at night.",
+        "However, you should avoid using your phone late at night."
+      ],
+      "answer": "A",
+      "explanation": "本空与前文“遵循规律作息会更有精力”构成因果关系，因此用Therefore表示“因此，应避免深夜使用手机”。B项“然而，深夜使用手机很常见”转折不当；C项“例如”不能表示因果。所以选A。",
+      "evidence_sentence": "If you follow a regular schedule, you will feel more energetic during the day.",
+      "context_clue": "Therefore, you should avoid using your phone late at night.",
+      "clue_argument": "前文是原因，后文是结果，用Therefore。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "What you do before bed can affect how well you sleep.",
+        "That you do before bed can affect how well you sleep.",
+        "Whether you do before bed can affect how well you sleep.",
+        "If you do before bed can affect how well you sleep.",
+        "What you do before bed can affect that you sleep well.",
+        "What do you do before bed can affect how well you sleep.",
+        "What you do before bed can affect how well do you sleep."
+      ],
+      "answer": "A",
+      "explanation": "本空需要主语从句和宾语从句。A项“你睡前做什么会影响你的睡眠质量”中What引导主语从句，how well引导宾语从句，语序正确。B项That引导主语从句时不能作do的宾语；C项Whether表示“是否”，语义不通。所以选A。",
+      "evidence_sentence": "Therefore, you should avoid using your phone late at night.",
+      "context_clue": "What you do before bed can affect how well you sleep.",
+      "clue_argument": "主语从句用What，宾语从句用how well。"
+    }
+  ]
+}

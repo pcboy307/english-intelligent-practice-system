@@ -1,0 +1,1 @@
+{"translations": {"cannot": "不能", "jellyfish": "水母", "long-term": "长期", "marine": "海洋", "single-use": "一次性", "starve": "饿死", "straws": "吸管", "turtles": "海龟"}}

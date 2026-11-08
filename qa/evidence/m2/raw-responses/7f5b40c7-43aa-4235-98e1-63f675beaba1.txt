@@ -1,0 +1,155 @@
+{
+  "passage": "When the student entered high school, she felt (1)____ about the new environment. Her teacher noticed this and said, \"It is your attitude that makes you (2)____.\" The student was (3)____ about everything around her, so she asked many questions. A classmate, who was always (4)____, helped her find her way. The student was (5)____ to do well, and she worked hard to (6)____ her goals. At first, she found it hard to (7)____ to the new life. But her parents would (8)____ her to keep going. Her teacher was (9)____ to let her join a study group. In the group, she could (10)____ on her work. (11)____, she made progress. (12)____, she became one of the top students. If she had not learned to work (13)____, she would not have gained so much (14)____. Now she believes that every student should have the (15)____ to grow.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank (1).",
+      "options": ["anxious", "angry", "happy", "proud"],
+      "answer": "anxious",
+      "explanation": "学生初入高中时对新环境感到焦虑，后文老师安慰她说明她当时不安。angry（生气）和happy（高兴）与语境不符。",
+      "evidence_sentence": "",
+      "context_clue": "When the student entered high school, she felt (1)____ about the new environment.",
+      "clue_argument": "新环境常引发不安，且后文老师安慰印证焦虑。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank (2).",
+      "options": ["confident", "careful", "lazy", "quiet"],
+      "answer": "confident",
+      "explanation": "老师强调态度使人自信，与后文学生取得进步相呼应。careful（小心）和lazy（懒惰）不能体现态度带来的积极变化。",
+      "evidence_sentence": "",
+      "context_clue": "It is your attitude that makes you (2)____.",
+      "clue_argument": "积极态度导向自信，符合成长主题。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank (3).",
+      "options": ["curious", "afraid", "bored", "tired"],
+      "answer": "curious",
+      "explanation": "学生问很多问题，说明她对周围事物好奇。afraid（害怕）和bored（无聊）与“问很多问题”矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "The student was (3)____ about everything around her, so she asked many questions.",
+      "clue_argument": "问许多问题源于好奇心。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank (4).",
+      "options": ["reliable", "funny", "shy", "strict"],
+      "answer": "reliable",
+      "explanation": "同学帮她找到方向，体现可靠。funny（滑稽）和shy（害羞）不能解释她得到帮助。",
+      "evidence_sentence": "",
+      "context_clue": "A classmate, who was always (4)____, helped her find her way.",
+      "clue_argument": "帮助他人体现可靠品质。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank (5).",
+      "options": ["ambitious", "careless", "patient", "polite"],
+      "answer": "ambitious",
+      "explanation": "学生立志做好并努力实现目标，说明她有抱负。careless（粗心）和patient（耐心）与“努力实现目标”不直接对应。",
+      "evidence_sentence": "",
+      "context_clue": "The student was (5)____ to do well, and she worked hard to (6)____ her goals.",
+      "clue_argument": "想做好并努力实现目标体现抱负。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank (6).",
+      "options": ["achieve", "avoid", "forget", "lose"],
+      "answer": "achieve",
+      "explanation": "与goals搭配，表示实现目标。avoid（避免）和lose（失去）不能与“目标”构成合理搭配。",
+      "evidence_sentence": "",
+      "context_clue": "she worked hard to (6)____ her goals.",
+      "clue_argument": "努力是为了实现目标。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank (7).",
+      "options": ["adapt", "agree", "argue", "arrive"],
+      "answer": "adapt",
+      "explanation": "新生难以适应新生活，后文父母鼓励她坚持。agree（同意）和argue（争论）与“新生活”不搭配。",
+      "evidence_sentence": "",
+      "context_clue": "At first, she found it hard to (7)____ to the new life.",
+      "clue_argument": "面对新生活需要适应。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank (8).",
+      "options": ["encourage", "blame", "stop", "warn"],
+      "answer": "encourage",
+      "explanation": "父母鼓励她继续前进。blame（责备）和stop（阻止）与“keep going”的积极方向相反。",
+      "evidence_sentence": "",
+      "context_clue": "But her parents would (8)____ her to keep going.",
+      "clue_argument": "父母支持孩子坚持下去。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank (9).",
+      "options": ["persuade", "allow", "force", "order"],
+      "answer": "persuade",
+      "explanation": "老师说服她加入学习小组。allow（允许）和force（强迫）不能体现老师主动劝说。",
+      "evidence_sentence": "",
+      "context_clue": "Her teacher was (9)____ to let her join a study group.",
+      "clue_argument": "老师主动劝说学生参与。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank (10).",
+      "options": ["concentrate", "depend", "insist", "spend"],
+      "answer": "concentrate",
+      "explanation": "在学习小组里她能集中精力学习。depend（依赖）和insist（坚持）与“on her work”搭配不当。",
+      "evidence_sentence": "",
+      "context_clue": "In the group, she could (10)____ on her work.",
+      "clue_argument": "学习小组提供专注学习的环境。"
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank (11).",
+      "options": ["gradually", "suddenly", "hardly", "rarely"],
+      "answer": "gradually",
+      "explanation": "进步是逐渐发生的。suddenly（突然）与成长过程不符，hardly（几乎不）和rarely（很少）否定进步。",
+      "evidence_sentence": "",
+      "context_clue": "(11)____, she made progress.",
+      "clue_argument": "学习进步通常逐步实现。"
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank (12).",
+      "options": ["eventually", "immediately", "luckily", "usually"],
+      "answer": "eventually",
+      "explanation": "经过努力她最终成为优等生。immediately（立刻）与过程矛盾，luckily（幸运地）不强调结果。",
+      "evidence_sentence": "",
+      "context_clue": "(12)____, she became one of the top students.",
+      "clue_argument": "长期努力带来最终成果。"
+    },
+    {
+      "question_index": 13,
+      "stem": "Choose the best word for blank (13).",
+      "options": ["independently", "carelessly", "slowly", "together"],
+      "answer": "independently",
+      "explanation": "学会独立学习才能获得自信。carelessly（粗心）和slowly（缓慢）不能带来积极结果。",
+      "evidence_sentence": "",
+      "context_clue": "If she had not learned to work (13)____, she would not have gained so much (14)____.",
+      "clue_argument": "独立学习是获得自信的重要途径。"
+    },
+    {
+      "question_index": 14,
+      "stem": "Choose the best word for blank (14).",
+      "options": ["confidence", "money", "praise", "prize"],
+      "answer": "confidence",
+      "explanation": "独立学习带来的是自信。money（金钱）和prize（奖品）与自我认识主题不符。",
+      "evidence_sentence": "",
+      "context_clue": "she would not have gained so much (14)____.",
+      "clue_argument": "成长故事强调内在自信。"
+    },
+    {
+      "question_index": 15,
+      "stem": "Choose the best word for blank (15).",
+      "options": ["opportunity", "ability", "choice", "right"],
+      "answer": "opportunity",
+      "explanation": "每个学生都应有成长的机会。ability（能力）和choice（选择）不能与“to grow”构成最佳搭配。",
+      "evidence_sentence": "",
+      "context_clue": "every student should have the (15)____ to grow.",
+      "clue_argument": "成长需要机会。"
+    }
+  ]
+}

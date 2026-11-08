@@ -1,0 +1,45 @@
+{
+  "passage": "Public libraries are important places in many communities. They offer free access to books, computers, and quiet study areas. Recently, the city library, which was built in 1990, started a new programme called \"Library at Home\". The aim of this programme is to help elderly people who cannot easily visit the library. Volunteers, who are mostly high school students, deliver books to these people and help them use digital devices. The results have been amazing. Not only does the programme bring books to people's homes, but it also builds friendships between generations. The library director says, \"We are proud of our volunteers. Their hard work has been recognised by the whole city.\" The programme has been running for six months and has already served over 200 people. Many of the elderly say they feel less lonely because of the regular visits. The library plans to expand the programme to more neighbourhoods next year. However, the library still needs more volunteers to meet the growing demand. Students who are interested can sign up at the front desk. The library is also collecting donated books to support the programme. Everyone can play a part in making the community stronger.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"amazing\" in the passage mean?",
+      "options": ["Very surprising and impressive", "Quite normal and expected", "Rather boring and dull", "Extremely difficult to believe"],
+      "answer": "Very surprising and impressive",
+      "explanation": "根据上下文，项目的结果是“amazing”，后文提到它带来了书籍和友谊，说明结果是令人惊喜和印象深刻的。A项“非常令人惊讶和印象深刻”符合语境。B项“相当正常和预期之中”与后文强调的积极效果矛盾；C项“相当无聊和乏味”是贬义，与语境不符。",
+      "evidence_sentence": "The results have been amazing.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the director's attitude towards the volunteers?",
+      "options": ["Proud and appreciative", "Doubtful and worried", "Indifferent and cold", "Critical and strict"],
+      "answer": "Proud and appreciative",
+      "explanation": "主任说“We are proud of our volunteers. Their hard work has been recognised by the whole city.”，表明他对志愿者感到骄傲和感激。A项“骄傲和感激”准确概括了这种态度。B项“怀疑和担心”与“proud”矛盾；C项“冷漠和冷淡”与表扬志愿者的语气不符。",
+      "evidence_sentence": "We are proud of our volunteers. Their hard work has been recognised by the whole city.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["A library programme helps elderly people and builds community.", "Volunteers are too busy to help the library.", "The library needs more books than volunteers.", "Elderly people prefer to stay at home alone."],
+      "answer": "A library programme helps elderly people and builds community.",
+      "explanation": "文章主要介绍图书馆的“Library at Home”项目，旨在帮助不能方便到馆的老年人，并促进代际友谊和社区建设。A项“一个图书馆项目帮助老年人并建设社区”概括了全文主旨。B项“志愿者太忙无法帮助图书馆”文中未提及；C项“图书馆需要的书比志愿者多”曲解了原文“需要更多志愿者”的意思。",
+      "evidence_sentence": "The aim of this programme is to help elderly people who cannot easily visit the library.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "How long has the programme been running?",
+      "options": ["For six months", "For one year", "For two years", "For six weeks"],
+      "answer": "For six months",
+      "explanation": "文中明确提到“The programme has been running for six months”，因此项目已经运行了六个月。A项“六个月”与原文一致。B项“一年”和C项“两年”夸大了时间；D项“六周”混淆了时间单位。",
+      "evidence_sentence": "The programme has been running for six months and has already served over 200 people.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

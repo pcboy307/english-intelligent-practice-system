@@ -1,0 +1,155 @@
+{
+  "passage": "When the student first tried digital learning, she felt (1) ______ because she did not know how to use the new platform（平台）. Her teacher, who was always (2) ______ about new tools, showed her how to log in. A classmate, (3) ______ by nature, asked many questions and soon became a (4) ______ helper. The student was (5) ______ and wanted to improve quickly. Only by practising daily could she (6) ______ her goals. She had to (7) ______ to the online system, and her teacher suggested that she (8) ______ to join a study group. The group was (9) ______ to work together, and the student was (10) ______ on her tasks. (11) ______, she made progress. The teacher insisted that she (12) ______ take a break. Working (13) ______, the student gained (14) ______. She realised that every challenge is also an (15) ______ to grow.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank (1).",
+      "options": ["anxious", "angry", "bored", "excited"],
+      "answer": "anxious",
+      "explanation": "学生因不会使用新平台而感到焦虑，与后文“不知道如何操作”一致。angry（生气）和bored（无聊）不符合语境。",
+      "evidence_sentence": "",
+      "context_clue": "When the student first tried digital learning, she felt (1) ______ because she did not know how to use the new platform（平台）.",
+      "clue_argument": "不知道如何使用新平台会导致焦虑情绪。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank (2).",
+      "options": ["confident", "curious", "nervous", "shy"],
+      "answer": "confident",
+      "explanation": "老师总是自信地使用新工具，并主动帮助学生。curious（好奇）和nervous（紧张）与“展示如何登录”的主动行为不符。",
+      "evidence_sentence": "",
+      "context_clue": "Her teacher, who was always (2) ______ about new tools, showed her how to log in.",
+      "clue_argument": "老师主动展示登录方法，体现自信。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank (3).",
+      "options": ["curious", "clever", "lazy", "polite"],
+      "answer": "curious",
+      "explanation": "同学天生好奇，所以问了很多问题。clever（聪明）和lazy（懒惰）不能解释“问很多问题”的行为。",
+      "evidence_sentence": "",
+      "context_clue": "A classmate, (3) ______ by nature, asked many questions and soon became a (4) ______ helper.",
+      "clue_argument": "问很多问题表明好奇心强。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank (4).",
+      "options": ["reliable", "cheerful", "strict", "quiet"],
+      "answer": "reliable",
+      "explanation": "同学问了很多问题后成为可靠的帮手。cheerful（愉快）和strict（严格）不能体现“帮手”的可信赖性。",
+      "evidence_sentence": "",
+      "context_clue": "A classmate, (3) ______ by nature, asked many questions and soon became a (4) ______ helper.",
+      "clue_argument": "能成为帮手说明值得信赖。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank (5).",
+      "options": ["ambitious", "careful", "patient", "polite"],
+      "answer": "ambitious",
+      "explanation": "学生有雄心，想快速提高。careful（小心）和patient（耐心）不能解释“想快速提高”的愿望。",
+      "evidence_sentence": "",
+      "context_clue": "The student was (5) ______ and wanted to improve quickly.",
+      "clue_argument": "想快速提高说明有雄心。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank (6).",
+      "options": ["achieve", "avoid", "ignore", "miss"],
+      "answer": "achieve",
+      "explanation": "只有每天练习才能实现目标。avoid（避免）和ignore（忽视）与“目标”搭配不当。",
+      "evidence_sentence": "",
+      "context_clue": "Only by practising daily could she (6) ______ her goals.",
+      "clue_argument": "练习是为了实现目标。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank (7).",
+      "options": ["adapt", "argue", "complain", "refuse"],
+      "answer": "adapt",
+      "explanation": "学生必须适应在线系统。argue（争论）和complain（抱怨）不符合“适应”的语境。",
+      "evidence_sentence": "",
+      "context_clue": "She had to (7) ______ to the online system, and her teacher suggested that she (8) ______ to join a study group.",
+      "clue_argument": "面对新系统需要适应。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank (8).",
+      "options": ["encourage", "allow", "force", "warn"],
+      "answer": "encourage",
+      "explanation": "老师建议她鼓励自己加入学习小组。allow（允许）和force（强迫）不符合“建议”的积极语气。",
+      "evidence_sentence": "",
+      "context_clue": "She had to (7) ______ to the online system, and her teacher suggested that she (8) ______ to join a study group.",
+      "clue_argument": "老师建议她鼓励自己加入小组。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank (9).",
+      "options": ["persuade", "prevent", "protect", "punish"],
+      "answer": "persuade",
+      "explanation": "小组被说服一起学习。prevent（阻止）和punish（惩罚）与“一起学习”的积极合作不符。",
+      "evidence_sentence": "",
+      "context_clue": "The group was (9) ______ to work together, and the student was (10) ______ on her tasks.",
+      "clue_argument": "小组被说服合作学习。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank (10).",
+      "options": ["concentrate", "depend", "insist", "spend"],
+      "answer": "concentrate",
+      "explanation": "学生专注于任务。depend（依赖）和insist（坚持）不能与“on her tasks”搭配表示专注。",
+      "evidence_sentence": "",
+      "context_clue": "The group was (9) ______ to work together, and the student was (10) ______ on her tasks.",
+      "clue_argument": "学习时需要专注于任务。"
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank (11).",
+      "options": ["gradually", "suddenly", "luckily", "finally"],
+      "answer": "gradually",
+      "explanation": "学生逐渐取得进步。suddenly（突然）和luckily（幸运地）不能体现持续努力的过程。",
+      "evidence_sentence": "",
+      "context_clue": "(11) ______, she made progress.",
+      "clue_argument": "持续练习带来逐渐的进步。"
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank (12).",
+      "options": ["eventually", "actually", "immediately", "recently"],
+      "answer": "eventually",
+      "explanation": "老师坚持她最终要休息。actually（实际上）和immediately（立即）不符合“坚持”所暗示的最终结果。",
+      "evidence_sentence": "",
+      "context_clue": "The teacher insisted that she (12) ______ take a break.",
+      "clue_argument": "老师坚持她最终要休息。"
+    },
+    {
+      "question_index": 13,
+      "stem": "Choose the best word for blank (13).",
+      "options": ["independently", "carefully", "quickly", "silently"],
+      "answer": "independently",
+      "explanation": "学生独立学习，从而获得自信。carefully（小心地）和quickly（快速地）不能解释自信的来源。",
+      "evidence_sentence": "",
+      "context_clue": "Working (13) ______, the student gained (14) ______.",
+      "clue_argument": "独立学习能培养自信。"
+    },
+    {
+      "question_index": 14,
+      "stem": "Choose the best word for blank (14).",
+      "options": ["confidence", "courage", "experience", "knowledge"],
+      "answer": "confidence",
+      "explanation": "独立学习让学生获得自信。courage（勇气）和knowledge（知识）与“独立工作”的直接结果不如自信贴切。",
+      "evidence_sentence": "",
+      "context_clue": "Working (13) ______, the student gained (14) ______.",
+      "clue_argument": "独立工作带来信心。"
+    },
+    {
+      "question_index": 15,
+      "stem": "Choose the best word for blank (15).",
+      "options": ["opportunity", "challenge", "choice", "problem"],
+      "answer": "opportunity",
+      "explanation": "每个挑战也是成长的机会。challenge（挑战）和problem（问题）与“成长”的积极意义不符。",
+      "evidence_sentence": "",
+      "context_clue": "She realised that every challenge is also an (15) ______ to grow.",
+      "clue_argument": "挑战可以转化为成长的机会。"
+    }
+  ]
+}

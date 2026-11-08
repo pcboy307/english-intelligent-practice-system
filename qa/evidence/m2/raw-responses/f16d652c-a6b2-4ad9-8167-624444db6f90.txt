@@ -1,0 +1,95 @@
+{
+  "passage": "Last spring, our school planned a weekend hike in the nearby hills. (1) ______, we had to change our route because heavy rain made the main path unsafe. Mr. Chen, our teacher, suggested a shorter trail through the forest. (2) ______, the new plan was announced to all students on Friday morning. On Saturday, we met at the school gate early. The trail was muddy, so we walked slowly and carefully. (3) ______, we reached a small lake where we stopped for lunch. After lunch, the sun came out and the weather became pleasant. (4) ______, we continued our walk and enjoyed the fresh air. By late afternoon, we returned to school, tired but happy. (5) ______, everyone agreed that the trip was a success despite the change.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "However, the weather forecast was not good.",
+        "Therefore, we decided to cancel the trip.",
+        "For example, some students brought raincoats.",
+        "In addition, the bus arrived on time.",
+        "As a result, we stayed at home.",
+        "Meanwhile, the teacher checked the equipment.",
+        "Finally, we reached the top of the hill."
+      ],
+      "answer": "A",
+      "explanation": "前文说计划徒步，后文说因大雨不得不改变路线，此处需要转折关系。A项“然而，天气预报不好”引出后文的变化，逻辑连贯。B项“因此取消”与后文“改变路线”矛盾；C项“例如”举例关系不成立。",
+      "evidence_sentence": "Last spring, our school planned a weekend hike in the nearby hills.",
+      "context_clue": "Last spring, our school planned a weekend hike in the nearby hills. (1) ______, we had to change our route because heavy rain made the main path unsafe.",
+      "clue_argument": "后文“had to change our route”表明计划有变，需要转折词引出原因。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "However, the students were unhappy.",
+        "Therefore, the new plan was shared with everyone.",
+        "For instance, Mr. Chen brought a map.",
+        "In contrast, the old route was longer.",
+        "As a result, the hike was cancelled.",
+        "Meanwhile, the rain stopped.",
+        "Finally, we started the hike."
+      ],
+      "answer": "B",
+      "explanation": "前文老师建议新路线，后文说新计划在周五早上通知所有学生，此处是因果关系。B项“因此，新计划被分享给每个人”承上启下。A项“然而学生不高兴”与后文通知无关；C项“例如”举例关系不成立。",
+      "evidence_sentence": "Mr. Chen, our teacher, suggested a shorter trail through the forest.",
+      "context_clue": "Mr. Chen, our teacher, suggested a shorter trail through the forest. (2) ______, the new plan was announced to all students on Friday morning.",
+      "clue_argument": "前文提出建议，后文说计划被宣布，需要因果连接词。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "However, the path was very steep.",
+        "Therefore, we walked slowly and carefully.",
+        "For example, we saw many birds.",
+        "In addition, we brought enough water.",
+        "As a result, we got lost in the forest.",
+        "Meanwhile, the sun was shining.",
+        "Finally, we reached a small lake."
+      ],
+      "answer": "G",
+      "explanation": "前文说小路泥泞，我们走得很慢，后文说我们到达一个小湖并停下来吃午饭，此处需要表示时间顺序或结果的连接。G项“最后，我们到达一个小湖”与后文“stopped for lunch”自然衔接。A项“然而路很陡”与后文到达湖泊不连贯；B项“因此我们走得很慢”与前文重复。",
+      "evidence_sentence": "The trail was muddy, so we walked slowly and carefully.",
+      "context_clue": "The trail was muddy, so we walked slowly and carefully. (3) ______, we reached a small lake where we stopped for lunch.",
+      "clue_argument": "后文“reached a small lake”表明到达某地，需要表示时间推进的选项。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "However, it started to rain again.",
+        "Therefore, we decided to go back.",
+        "For example, we took many photos.",
+        "In addition, we were very tired.",
+        "As a result, we continued our walk.",
+        "Meanwhile, the teacher called us.",
+        "Finally, we returned to school."
+      ],
+      "answer": "E",
+      "explanation": "前文说午饭后太阳出来，天气变好，后文说我们继续走路并享受新鲜空气，此处是因果关系。E项“结果，我们继续走路”与后文“continued our walk”一致。A项“然而又开始下雨”与“天气变好”矛盾；B项“因此决定回去”与后文继续走路矛盾。",
+      "evidence_sentence": "After lunch, the sun came out and the weather became pleasant.",
+      "context_clue": "After lunch, the sun came out and the weather became pleasant. (4) ______, we continued our walk and enjoyed the fresh air.",
+      "clue_argument": "天气变好导致继续走路，需要因果连接词。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "However, the trip was too short.",
+        "Therefore, everyone agreed that the trip was a success.",
+        "For instance, we saw a beautiful lake.",
+        "In contrast, the old route was better.",
+        "As a result, we decided to go home.",
+        "Meanwhile, the teacher was tired.",
+        "Finally, we reached the top."
+      ],
+      "answer": "B",
+      "explanation": "前文说我们傍晚回到学校，累但开心，后文说尽管有变化大家都认为旅行成功，此处是总结因果关系。B项“因此，大家都同意旅行是成功的”与后文“everyone agreed that the trip was a success”直接对应。A项“然而旅行太短”与成功结论矛盾；C项“例如我们看到了美丽的湖”与总结无关。",
+      "evidence_sentence": "By late afternoon, we returned to school, tired but happy.",
+      "context_clue": "By late afternoon, we returned to school, tired but happy. (5) ______, everyone agreed that the trip was a success despite the change.",
+      "clue_argument": "后文“everyone agreed that the trip was a success”是总结性结论，需要因果连接词引出。"
+    }
+  ]
+}

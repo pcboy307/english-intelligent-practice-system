@@ -1,0 +1,140 @@
+{
+  "passage": "When the student first tried digital learning, she felt anxious because she did not know how to use the new platform（平台）. Her teacher, who was always curious about new tools, helped her. \"If you were ambitious, you would see this as a chance to grow,\" the teacher said. The student began to adapt her study habits. She was encouraged by a classmate who had already learned online. \"Never before have I seen such a reliable app,\" the classmate said. The student decided to concentrate on one task at a time. Gradually, she became more confident. She used the app to achieve her goals. The teacher suggested that she should eventually try a group project. Working independently, the student learned to manage her time with the app. Her confidence grew, and she found a new opportunity to learn.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank 1.",
+      "options": ["anxious", "angry", "bored", "excited"],
+      "answer": "anxious",
+      "explanation": "根据上下文，学生第一次尝试数字化学习时因为不知道如何使用新平台而感到焦虑。anxious意为“焦虑的”，符合语境。angry（生气的）和bored（无聊的）都不符合“不知道如何使用”带来的情绪。",
+      "evidence_sentence": "When the student first tried digital learning, she felt anxious because she did not know how to use the new platform（平台）.",
+      "context_clue": "When the student first tried digital learning, she felt anxious because she did not know how to use the new platform（平台）.",
+      "clue_argument": "不知道如何使用新平台会导致焦虑，因此选anxious。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank 2.",
+      "options": ["confident", "nervous", "shy", "afraid"],
+      "answer": "confident",
+      "explanation": "在老师和同学的帮助下，学生逐渐变得自信。confident意为“自信的”，与前文“anxious”形成对比。nervous（紧张的）和shy（害羞的）不符合逐渐进步的趋势。",
+      "evidence_sentence": "Gradually, she became more confident.",
+      "context_clue": "Gradually, she became more confident.",
+      "clue_argument": "逐渐进步使她变得自信，因此选confident。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank 3.",
+      "options": ["curious", "careless", "lazy", "rude"],
+      "answer": "curious",
+      "explanation": "老师对新工具总是充满好奇，所以帮助了学生。curious意为“好奇的”，符合老师探索新工具的特点。careless（粗心的）和lazy（懒惰的）与老师帮助学生的行为矛盾。",
+      "evidence_sentence": "Her teacher, who was always curious about new tools, helped her.",
+      "context_clue": "Her teacher, who was always curious about new tools, helped her.",
+      "clue_argument": "老师对新工具好奇，因此选curious。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank 4.",
+      "options": ["reliable", "expensive", "difficult", "boring"],
+      "answer": "reliable",
+      "explanation": "同学称赞这个应用可靠，因为它帮助了学习。reliable意为“可靠的”，符合应用值得信赖的语境。expensive（昂贵的）和boring（无聊的）与同学称赞的语气不符。",
+      "evidence_sentence": "\"Never before have I seen such a reliable app,\" the classmate said.",
+      "context_clue": "\"Never before have I seen such a reliable app,\" the classmate said.",
+      "clue_argument": "同学用never before倒装句强调应用的可靠性，因此选reliable。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank 5.",
+      "options": ["ambitious", "lazy", "shy", "careless"],
+      "answer": "ambitious",
+      "explanation": "老师用虚拟语气说“如果你有雄心，你就会把这看作成长的机会”。ambitious意为“有雄心的”，鼓励学生积极面对挑战。lazy（懒惰的）和shy（害羞的）与成长机会的语境不符。",
+      "evidence_sentence": "\"If you were ambitious, you would see this as a chance to grow,\" the teacher said.",
+      "context_clue": "\"If you were ambitious, you would see this as a chance to grow,\" the teacher said.",
+      "clue_argument": "老师鼓励学生有雄心，因此选ambitious。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank 6.",
+      "options": ["achieve", "give up", "avoid", "fail"],
+      "answer": "achieve",
+      "explanation": "学生使用应用来实现目标。achieve意为“实现”，与goals搭配。give up（放弃）和avoid（避免）与积极使用应用的行为矛盾。",
+      "evidence_sentence": "She used the app to achieve her goals.",
+      "context_clue": "She used the app to achieve her goals.",
+      "clue_argument": "使用应用是为了实现目标，因此选achieve。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank 7.",
+      "options": ["adapt", "refuse", "forget", "ignore"],
+      "answer": "adapt",
+      "explanation": "学生开始调整学习习惯以适应数字化学习。adapt意为“调整，适应”，符合语境。refuse（拒绝）和ignore（忽视）与积极学习的态度相反。",
+      "evidence_sentence": "The student began to adapt her study habits.",
+      "context_clue": "The student began to adapt her study habits.",
+      "clue_argument": "为了适应数字化学习，学生调整习惯，因此选adapt。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank 8.",
+      "options": ["encourage", "discourage", "blame", "punish"],
+      "answer": "encourage",
+      "explanation": "学生受到一位已经学会在线学习的同学的鼓励。encourage意为“鼓励”，符合同学帮助的语境。discourage（使泄气）和blame（责备）与同学的支持行为相反。",
+      "evidence_sentence": "She was encouraged by a classmate who had already learned online.",
+      "context_clue": "She was encouraged by a classmate who had already learned online.",
+      "clue_argument": "同学的支持使学生受到鼓励，因此选encourage。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank 9.",
+      "options": ["persuade", "force", "warn", "remind"],
+      "answer": "persuade",
+      "explanation": "老师通过建议说服学生尝试小组项目。persuade意为“说服”，符合老师引导学生尝试新事物的语境。force（强迫）和warn（警告）语气过强或不符。",
+      "evidence_sentence": "The teacher suggested that she should eventually try a group project.",
+      "context_clue": "The teacher suggested that she should eventually try a group project.",
+      "clue_argument": "老师建议她尝试小组项目，即说服她尝试，因此选persuade。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank 10.",
+      "options": ["concentrate", "worry", "complain", "hesitate"],
+      "answer": "concentrate",
+      "explanation": "学生决定一次只专注于一个任务。concentrate意为“集中注意力”，与on one task at a time搭配。worry（担心）和complain（抱怨）不符合积极的学习策略。",
+      "evidence_sentence": "The student decided to concentrate on one task at a time.",
+      "context_clue": "The student decided to concentrate on one task at a time.",
+      "clue_argument": "一次只专注于一个任务，因此选concentrate。"
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank 11.",
+      "options": ["gradually", "suddenly", "rarely", "never"],
+      "answer": "gradually",
+      "explanation": "学生逐渐变得更加自信。gradually意为“逐渐地”，符合一个渐进的过程。suddenly（突然地）和rarely（很少）与逐渐进步的逻辑不符。",
+      "evidence_sentence": "Gradually, she became more confident.",
+      "context_clue": "Gradually, she became more confident.",
+      "clue_argument": "自信是逐渐建立的，因此选gradually。"
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank 12.",
+      "options": ["eventually", "immediately", "seldom", "hardly"],
+      "answer": "eventually",
+      "explanation": "老师建议她最终尝试一个小组项目。eventually意为“最终”，表示经过一段时间后。immediately（立即）和seldom（很少）与建议的长期目标不符。",
+      "evidence_sentence": "The teacher suggested that she should eventually try a group project.",
+      "context_clue": "The teacher suggested that she should eventually try a group project.",
+      "clue_argument": "小组项目是最终目标，因此选eventually。"
+    },
+    {
+      "question_index": 13,
+      "stem": "Choose the best word for blank 13.",
+      "options": ["independently", "carelessly", "slowly", "noisily"],
+      "answer": "independently",
+      "explanation": "学生独立工作，学会了用应用管理时间。independently意为“独立地”，符合自主学习的语境。carelessly（粗心地）和noisily（吵闹地）与学习行为无关。",
+      "evidence_sentence": "Working independently, the student learned to manage her time with the app.",
+      "context_clue": "Working independently, the student learned to manage her time with the app.",
+      "clue_argument": "学生独立工作，因此选independently。"
+    },
+    {
+      "question_index": 14,
+      "stem": "Choose the best word for blank 14.",
+      "options": ["confidence", "doubt", "fear", "sadness"],
+      "answer": "confidence",
+      "explanation": "学生的信心增长了，并发现了新的学习机会。confidence意为“信心”，与前文“confident”呼应。doubt（怀疑）和fear（恐惧）与积极结果相反。",
+      "evidence_sentence": "Her confidence g

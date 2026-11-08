@@ -1,0 +1,65 @@
+{
+  "passage": "When the city museum launched its \"Museum in the Classroom\" program, few teachers expected it to change their students' attitudes toward history. The program, which brings genuine artifacts into schools, was designed by Dr. Chen, a former history professor. She believed that if students could touch a piece of pottery from the Ming Dynasty, they would feel a personal connection to the past. The program also requires that each participating class should visit the museum at least once a month. During these visits, students work in small groups to examine objects and ask questions. Many students, who had previously found history boring, now say they look forward to the visits. The program's main goal is not to replace textbooks but to make learning more engaging. By encouraging curiosity, it helps students understand that history is not just a list of dates but a story of real people. The museum's efforts have been praised by educators, and similar programs are now being adopted in other cities.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the purpose of the \"Museum in the Classroom\" program?",
+      "options": [
+        "To replace traditional history textbooks.",
+        "To make history learning more engaging.",
+        "To train students to become museum guides.",
+        "To sell museum artifacts to schools."
+      ],
+      "answer": "To make history learning more engaging.",
+      "explanation": "文章明确说明项目的主要目标不是取代教科书，而是让学习更有趣。A项与原文相反；D项原文未提及。",
+      "evidence_sentence": "The program's main goal is not to replace textbooks but to make learning more engaging.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Museums should focus on preserving artifacts.",
+        "The program brings history to life for students.",
+        "Teachers are against using artifacts in class.",
+        "Students prefer visiting museums to reading books."
+      ],
+      "answer": "The program brings history to life for students.",
+      "explanation": "全文围绕博物馆教育项目如何让学生对历史产生兴趣展开，强调让历史变得生动。A项偏离主题；C项与原文相反。",
+      "evidence_sentence": "By encouraging curiosity, it helps students understand that history is not just a list of dates but a story of real people.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what is required of each participating class?",
+      "options": [
+        "To visit the museum at least once a month.",
+        "To donate artifacts to the museum.",
+        "To write a report about the program.",
+        "To invite Dr. Chen to give a lecture."
+      ],
+      "answer": "To visit the museum at least once a month.",
+      "explanation": "原文明确提到项目要求每个参与班级每月至少参观博物馆一次。B、C、D项均未在文中提及。",
+      "evidence_sentence": "The program also requires that each participating class should visit the museum at least once a month.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can be inferred about the program from the last sentence?",
+      "options": [
+        "It has been copied without changes.",
+        "It is spreading to other places.",
+        "It has failed to attract students.",
+        "It is limited to one city."
+      ],
+      "answer": "It is spreading to other places.",
+      "explanation": "最后一句提到类似项目正在其他城市被采用，可推断该项目正在推广。A项“原样照搬”无依据；C项与原文学生态度相反。",
+      "evidence_sentence": "The museum's efforts have been praised by educators, and similar programs are now being adopted in other cities.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

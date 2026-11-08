@@ -1,0 +1,1 @@
+{"translations": {"convenience": "便利", "granted": "假定", "invention": "发明", "inventions": "发明", "telephone": "电话", "toward": "朝向"}}

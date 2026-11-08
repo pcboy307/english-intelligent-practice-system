@@ -1,0 +1,65 @@
+{
+  "passage": "Why do we sleep? For years, scientists believed sleep was simply a time when the body rested. However, recent research shows that the brain is very active during sleep. While we are asleep, the brain organises memories and clears waste. A student who studies late at night may feel that she is learning more, but in fact, without enough sleep, her brain cannot store what she has learned. If she slept well after studying, she would remember more. Sleep also affects mood. A classmate who sleeps only five hours may become angry easily. The average teenager needs eight to ten hours of sleep, yet many get less. One reason is the bright screen of a phone, which tells the brain it is still daytime. Another reason is a heavy workload. To improve sleep, experts advise keeping a regular bedtime and avoiding coffee in the afternoon. Not only does sleep help us remember, but it also keeps us healthy. So next time you think about staying up late, remember: sleep is not wasted time; it is when your brain works hardest.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer from the passage about a student who studies late at night?",
+      "options": [
+        "She will remember more if she sleeps well after studying.",
+        "She learns more effectively than during the day.",
+        "She should avoid sleeping to study more.",
+        "She will always feel angry the next day."
+      ],
+      "answer": "She will remember more if she sleeps well after studying.",
+      "explanation": "文章指出，如果她学习后睡得好，会记得更多，因此可推断睡眠有助于记忆。A和C曲解了文章意思，文章并未说熬夜学习更有效或应避免睡眠；B和D过于绝对或与文章不符。",
+      "evidence_sentence": "If she slept well after studying, she would remember more.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"organises\" most likely mean in the passage?",
+      "options": [
+        "arranges",
+        "forgets",
+        "ignores",
+        "destroys"
+      ],
+      "answer": "arranges",
+      "explanation": "根据上下文，大脑在睡眠中整理记忆，因此organises意为“整理、安排”。A和B意思相反，文章说的是大脑积极整理而非忘记；C和D与文章内容不符，大脑并非忽视或破坏记忆。",
+      "evidence_sentence": "While we are asleep, the brain organises memories and clears waste.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To explain the importance of sleep for brain and health.",
+        "To advise students to study late at night.",
+        "To describe how to use a phone before bed.",
+        "To compare teenage sleep with adult sleep."
+      ],
+      "answer": "To explain the importance of sleep for brain and health.",
+      "explanation": "文章主要说明睡眠对大脑记忆和健康的重要性，并建议改善睡眠。A和B与文章主旨相反，文章反对熬夜学习；C和D只是文中细节，并非写作目的。",
+      "evidence_sentence": "Not only does sleep help us remember, but it also keeps us healthy.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Sleep is essential for memory and health.",
+        "Teenagers need less sleep than adults.",
+        "Phones are the only cause of poor sleep.",
+        "Studying late at night is always harmful."
+      ],
+      "answer": "Sleep is essential for memory and health.",
+      "explanation": "全文围绕睡眠对记忆和健康的重要性展开，因此主旨是睡眠必不可少。A和B错误，文章说青少年需要8-10小时睡眠，并非更少；C和D过于绝对，文章提到多种原因，且熬夜并非总是有害。",
+      "evidence_sentence": "Not only does sleep help us remember, but it also keeps us healthy.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "passage": "When the student first tried online learning, she felt (1) anxious because she had to study alone at home. Her teacher, who was always (2) confident about technology, told her that being (3) curious would help her learn faster. The student found a study app that was (4) reliable and easy to use. She was (5) ambitious and wanted to (6) achieve good grades, so she decided to (7) adapt to the new way of learning. Her parents (8) encouraged her to keep going. They (9) persuaded her to join an online study group. If she could (10) concentrate on her tasks, she would finish them quickly. (11) Gradually, she learned to manage her time. The teacher suggested that she (12) eventually set a daily goal. With her parents (13) independently supporting her, she gained (14) confidence in her ability. Now she sees online learning as a great (15) opportunity to grow.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank (1).",
+      "options": ["anxious", "angry", "bored", "excited"],
+      "answer": "anxious",
+      "explanation": "学生刚开始线上学习时感到焦虑，因为要独自在家学习。A项“焦虑的”符合语境；B项“生气的”和C项“无聊的”与后文“独自学习”的紧张感不符。",
+      "evidence_sentence": "",
+      "context_clue": "When the student first tried online learning, she felt (1) anxious because she had to study alone at home.",
+      "clue_argument": "because she had to study alone at home 说明她感到紧张不安，因此选 anxious。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank (2).",
+      "options": ["confident", "careful", "nervous", "shy"],
+      "answer": "confident",
+      "explanation": "老师对技术总是很有信心，所以能给学生建议。A项“自信的”符合语境；B项“小心的”和C项“紧张的”与老师鼓励学生的形象不符。",
+      "evidence_sentence": "",
+      "context_clue": "Her teacher, who was always (2) confident about technology, told her that being (3) curious would help her learn faster.",
+      "clue_argument": "老师能给出建议，说明她对技术有信心，因此选 confident。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank (3).",
+      "options": ["curious", "lazy", "polite", "strict"],
+      "answer": "curious",
+      "explanation": "老师告诉学生保持好奇心能帮助她学得更快。A项“好奇的”符合语境；B项“懒惰的”和C项“礼貌的”与“帮助学习”无关。",
+      "evidence_sentence": "",
+      "context_clue": "Her teacher, who was always (2) confident about technology, told her that being (3) curious would help her learn faster.",
+      "clue_argument": "好奇心有助于学习，因此选 curious。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank (4).",
+      "options": ["reliable", "expensive", "boring", "difficult"],
+      "answer": "reliable",
+      "explanation": "学生找到一个可靠且易用的学习应用。A项“可靠的”符合语境；B项“昂贵的”和C项“无聊的”与“易用”不并列。",
+      "evidence_sentence": "",
+      "context_clue": "The student found a study app that was (4) reliable and easy to use.",
+      "clue_argument": "与 easy to use 并列，说明应用质量好，因此选 reliable。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank (5).",
+      "options": ["ambitious", "lazy", "careless", "quiet"],
+      "answer": "ambitious",
+      "explanation": "学生有抱负，想取得好成绩。A项“有雄心的”符合语境；B项“懒惰的”和C项“粗心的”与“想取得好成绩”矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "She was (5) ambitious and wanted to (6) achieve good grades, so she decided to (7) adapt to the new way of learning.",
+      "clue_argument": "想取得好成绩说明她有抱负，因此选 ambitious。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank (6).",
+      "options": ["achieve", "avoid", "forget", "refuse"],
+      "answer": "achieve",
+      "explanation": "学生想取得好成绩。A项“取得”符合语境；B项“避免”和C项“忘记”与“好成绩”不搭配。",
+      "evidence_sentence": "",
+      "context_clue": "She was (5) ambitious and wanted to (6) achieve good grades, so she decided to (7) adapt to the new way of learning.",
+      "clue_argument": "与 good grades 搭配，表示取得好成绩，因此选 achieve。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank (7).",
+      "options": ["adapt", "argue", "complain", "quit"],
+      "answer": "adapt",
+      "explanation": "学生决定适应新的学习方式。A项“适应”符合语境；B项“争论”和C项“抱怨”与积极学习的态度不符。",
+      "evidence_sentence": "",
+      "context_clue": "She was (5) ambitious and wanted to (6) achieve good grades, so she decided to (7) adapt to the new way of learning.",
+      "clue_argument": "面对新的学习方式，积极的学生会去适应，因此选 adapt。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank (8).",
+      "options": ["encouraged", "blamed", "ignored", "stopped"],
+      "answer": "encouraged",
+      "explanation": "父母鼓励她坚持下去。A项“鼓励”符合语境；B项“责备”和C项“忽视”与支持她学习的行为相反。",
+      "evidence_sentence": "",
+      "context_clue": "Her parents (8) encouraged her to keep going.",
+      "clue_argument": "keep going 表示坚持，父母应是鼓励她，因此选 encouraged。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank (9).",
+      "options": ["persuaded", "forced", "warned", "promised"],
+      "answer": "persuaded",
+      "explanation": "父母说服她加入在线学习小组。A项“说服”符合语境；B项“强迫”和C项“警告”与积极的建议不符。",
+      "evidence_sentence": "",
+      "context_clue": "They (9) persuaded her to join an online study group.",
+      "clue_argument": "加入学习小组是积极建议，父母通过说服让她加入，因此选 persuaded。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank (10).",
+      "options": ["concentrate", "worry", "dream", "play"],
+      "answer": "concentrate",
+      "explanation": "如果她能集中注意力，就能快速完成任务。A项“集中注意力”符合语境；B项“担心”和C项“做梦”与完成任务无关。",
+      "evidence_sentence": "",
+      "context_clue": "If she could (10) concentrate on her tasks, she would finish them quickly.",
+      "clue_argument": "与 on her tasks 搭配，表示专注于任务，因此选 concentrate。"
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank (11).",
+      "options": ["Gradually", "Suddenly", "Finally", "Luckily"],
+      "answer": "Gradually",
+      "explanation": "她逐渐学会了管理时间。A项“逐渐地”符合语境；B项“突然”和C项“最后”与学习管理时间的过程不符。",
+      "evidence_sentence": "",
+      "context_clue": "(11) Gradually, she learned to manage her time.",
+      "clue_argument": "学会管理时间是一个渐进的过程，因此选 Gradually。"
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank (12).",
+      "options": ["eventually", "immediately", "rarely", "suddenly"],
+      "answer": "eventually",
+      "explanation": "老师建议她最终设定每日目标。A项“最终”符合语境；B项“立即”和C项“很少”与建议她设定目标不符。",
+      "evidence_sentence": "",
+      "context_clue": "The teacher suggested that she (12) eventually set a daily goal.",
+      "clue_argument": "老师建议她最终设定每日目标，表示经过一段时间后，因此选 eventually。"
+    },
+    {
+      "question_index": 13,
+      "stem": "Choose the best word for blank (13).",
+      "options": ["independently", "angrily", "carelessly", "slowly"],
+      "answer": "independently",
+      "explanation": "在父母独立支持下，她获得了信心。A项“独立地”符合语境；B项“生气地”和C项“粗心地”与支持她学习的态度不符。",
+      "evidence_sentence": "",
+      "context_clue": "With her parents (13) independently supporting her, she gained (14) confidence in her ability.",
+      "clue_argument": "父母支持她独立学习，因此选 independently。"
+    },
+    {
+      "question_index": 14,
+      "stem": "Choose the best word for blank (14).",
+      "options": ["confidence", "fear", "doubt", "sadness"],
+      "answer": "confidence",
+      "explanation": "她对自己的能力获得了信心。A项“信心”符合语境；B项“恐惧”和C项“怀疑”与积极的结果相反。",
+      "evidence_sentence": "",
+      "context_clue": "With her parents (13) independently supporting her, she gained (14) confidence in her ability.",
+      "clue_argument": "在父母支持下，她获得的是信心，因此选 confidence。"
+    },
+    {
+      "question_index": 15,
+      "stem": "Choose the best word for blank (15).",
+      "options": ["opportunity", "problem", "danger", "mistake"],
+      "answer": "opportunity",
+      "explanation": "现在她把在线学习看作成长的好机会。A项“机会”符合语境；B项“问题”和C项“危险”与积极态度不符。",
+      "evidence_sentence": "",
+      "context_clue": "Now she sees online learning as a great (15) opportunity to grow.",
+      "clue_argument": "把在线学习看作成长的好机会，因此选 opportunity。"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "passage": "When the student first tried digital learning, she felt anxious about using so many apps. Her teacher, who was patient, helped her feel confident. The student was curious about how the platform（平台）worked, and she soon found it reliable. If she were more ambitious, she would set higher goals. Only by practising daily did she achieve small successes. It was important that she should adapt to the new system. She was encouraged by her classmates to keep going. She had been persuaded to join a study group, which helped her concentrate. Gradually, she learned to manage her time. It was suggested that she should eventually try online tests. With her teacher guiding her, she worked independently. Her confidence grew, and she saw every opportunity to learn.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "When the student first tried digital learning, she felt ___ about using so many apps.",
+      "options": ["anxious", "angry", "bored", "excited"],
+      "answer": "anxious",
+      "explanation": "上下文提到许多应用可能带来压力，因此感到焦虑。焦虑符合语境；生气和无聊与‘许多应用’无直接因果，且后文老师帮助她自信，说明起初是负面情绪。",
+      "evidence_sentence": "When the student first tried digital learning, she felt anxious about using so many apps.",
+      "context_clue": "When the student first tried digital learning, she felt anxious about using so many apps.",
+      "clue_argument": "‘so many apps’暗示挑战，导致焦虑情绪。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Her teacher, who was patient, helped her feel ___.",
+      "options": ["confident", "confused", "curious", "calm"],
+      "answer": "confident",
+      "explanation": "老师的耐心帮助应使学生感到自信。自信与‘帮助’的积极结果一致；困惑和好奇不是帮助的直接目标，平静虽可能但不如自信贴切。",
+      "evidence_sentence": "Her teacher, who was patient, helped her feel confident.",
+      "context_clue": "Her teacher, who was patient, helped her feel confident.",
+      "clue_argument": "‘patient’和‘helped’暗示积极情绪结果。"
+    },
+    {
+      "question_index": 3,
+      "stem": "The student was ___ about how the platform worked.",
+      "options": ["curious", "worried", "sure", "tired"],
+      "answer": "curious",
+      "explanation": "学生对平台如何运作感到好奇，才会去探索并发现它可靠。好奇符合探索行为；担心和疲倦与后文积极发现不符，确定则不需要探索。",
+      "evidence_sentence": "The student was curious about how the platform（平台）worked, and she soon found it reliable.",
+      "context_clue": "The student was curious about how the platform（平台）worked, and she soon found it reliable.",
+      "clue_argument": "‘how the platform worked’引发好奇心，后文‘found it reliable’是探索结果。"
+    },
+    {
+      "question_index": 4,
+      "stem": "She soon found the platform ___.",
+      "options": ["reliable", "expensive", "difficult", "boring"],
+      "answer": "reliable",
+      "explanation": "后文她坚持使用并取得进步，说明平台可靠。可靠与积极结果一致；昂贵、困难或无聊会阻碍持续使用。",
+      "evidence_sentence": "The student was curious about how the platform（平台）worked, and she soon found it reliable.",
+      "context_clue": "The student was curious about how the platform（平台）worked, and she soon found it reliable.",
+      "clue_argument": "‘soon found’后接积极形容词，与后续坚持使用形成因果。"
+    },
+    {
+      "question_index": 5,
+      "stem": "If she were more ___, she would set higher goals.",
+      "options": ["ambitious", "careful", "friendly", "honest"],
+      "answer": "ambitious",
+      "explanation": "设定更高目标是有雄心的表现。雄心与‘set higher goals’直接对应；细心、友好、诚实不直接导致设定更高目标。",
+      "evidence_sentence": "If she were more ambitious, she would set higher goals.",
+      "context_clue": "If she were more ambitious, she would set higher goals.",
+      "clue_argument": "虚拟条件句‘set higher goals’需要‘ambitious’作为动机。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Only by practising daily did she ___ small successes.",
+      "options": ["achieve", "avoid", "forget", "lose"],
+      "answer": "achieve",
+      "explanation": "每天练习是为了取得小成功。取得与‘successes’搭配；避免、忘记、失去与成功矛盾。",
+      "evidence_sentence": "Only by practising daily did she achieve small successes.",
+      "context_clue": "Only by practising daily did she achieve small successes.",
+      "clue_argument": "‘practising daily’是取得成功的途径，‘achieve’与‘successes’搭配。"
+    },
+    {
+      "question_index": 7,
+      "stem": "It was important that she should ___ to the new system.",
+      "options": ["adapt", "object", "refer", "reply"],
+      "answer": "adapt",
+      "explanation": "适应新系统是重要的事。适应与‘to the new system’搭配；反对、提及、回复都不符合‘重要’的积极建议。",
+      "evidence_sentence": "It was important that she should adapt to the new system.",
+      "context_clue": "It was important that she should adapt to the new system.",
+      "clue_argument": "‘to the new system’需要表示‘适应’的动词。"
+    },
+    {
+      "question_index": 8,
+      "stem": "She was ___ by her classmates to keep going.",
+      "options": ["encouraged", "forced", "ordered", "warned"],
+      "answer": "encouraged",
+      "explanation": "同学鼓励她坚持下去，符合积极支持。被迫、命令、警告与‘keep going’的积极氛围不符。",
+      "evidence_sentence": "She was encouraged by her classmates to keep going.",
+      "context_clue": "She was encouraged by her classmates to keep going.",
+      "clue_argument": "‘by her classmates’和‘keep going’暗示鼓励。"
+    },
+    {
+      "question_index": 9,
+      "stem": "She had been ___ to join a study group, which helped her concentrate.",
+      "options": ["persuaded", "allowed", "invited", "reminded"],
+      "answer": "persuaded",
+      "explanation": "被说服加入学习小组，从而帮助集中注意力。说服意味着经过劝说后行动；允许、邀请、提醒不强调劝说过程。",
+      "evidence_sentence": "She had been persuaded to join a study group, which helped her concentrate.",
+      "context_clue": "She had been persuaded to join a study group, which helped her concentrate.",
+      "clue_argument": "‘join a study group’是劝说后的结果，‘persuaded’强调成功劝说。"
+    },
+    {
+      "question_index": 10,
+      "stem": "The study group helped her ___.",
+      "options": ["concentrate", "compete", "complain", "continue"],
+      "answer": "concentrate",
+      "explanation": "学习小组通常帮助集中注意力。集中与‘study group’的辅助功能一致；竞争、抱怨、继续不如集中贴切。",
+      "evidence_sentence": "She had been persuaded to join a study group, which helped her concentrate.",
+      "context_clue": "She had been persuaded to join a study group, which helped her concentrate.",
+      "clue_argument": "‘study group’的功能是帮助‘concentrate’。"
+    },
+    {
+      "question_index": 11,
+      "stem": "___ , she learned to manage her time.",
+      "options": ["Gradually", "Suddenly", "Luckily", "Finally"],
+      "answer": "Gradually",
+      "explanation": "时间管理能力是逐步形成的。逐渐与‘learned to manage’的过程性一致；突然、幸运、最终不如逐渐强调过程。",
+      "evidence_sentence": "Gradually, she learned to manage her time.",
+      "context_clue": "Gradually, she learned to manage her time.",
+      "clue_argument": "‘learned to manage’是渐进过程，‘gradually’修饰过程。"
+    },
+    {
+      "question_index": 12,
+      "stem": "It was suggested that she should ___ try online tests.",
+      "options": ["eventually", "immediately", "hardly", "seldom"],
+      "answer": "eventually",
+      "explanation": "建议她最终尝试在线测试，符合学习进展。最终与逐步学习后尝试新事物一致；立即、几乎不、很少与建议的积极尝试不符。",
+      "evidence_sentence": "It was suggested that she should eventually try online tests.",
+      "context_clue": "It was suggested that she should eventually try online tests.",
+      "clue_argument": "‘try online tests’是学习进展后的下一步，‘eventually’表示最终。"
+    },
+    {
+      "question_index": 13,
+      "stem": "With her teacher guiding her, she worked ___.",
+      "options": ["independently", "slowly", "noisily", "carelessly"],
+      "answer": "independently",
+      "explanation": "在老师指导下独立工作，强调自主性。独立与‘with her teacher guiding’形成对比；缓慢、吵闹、粗心与学习语境不符。",
+      "evidence_sentence": "With her teacher guiding her, she worked independently.",
+      "context_clue": "With her teacher guiding her, she worked independently.",
+      "clue_argument": "‘With her teacher guiding her’提供支持，但‘worked independently’强调自主。"
+    },
+    {
+      "question_index": 14,
+      "stem": "Her ___ grew, and she saw every opportunity to learn.",
+      "options": ["confidence", "doubt", "fear", "sadness"],
+      "answer": "confidence",
+      "explanation": "自信增长使她看到学习机

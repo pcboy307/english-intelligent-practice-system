@@ -1,0 +1,65 @@
+{
+  "passage": "The City Museum has a new education programme. Many people visit it every year. The museum wants to help students learn history in a direct way. In the past, students only read about ancient objects in books. Now they can see and touch copies of them. Last month, a group of students visited the museum. They attended a workshop about ancient China. The workshop was led by an expert, who explained how people lived long ago. The students were excited because they could try on ancient clothes and use old tools. The museum also invites teachers to plan lessons with its staff. If the museum had more money, it would offer more free workshops. The director believes that every child should have the chance to learn from real objects. He suggests that the city should give more support to museum education. One student said, \"I never liked history before, but now I want to learn more.\" The museum's goal is to make learning active and fun. It hopes that more schools will join the programme. The programme, which started last year, has already helped thousands of students. It is a good example of how museums can be great classrooms.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the museum's new education programme?",
+      "options": [
+        "To help students learn history in a direct way",
+        "To sell ancient objects to visitors",
+        "To train students to become museum staff",
+        "To replace school history lessons"
+      ],
+      "answer": "To help students learn history in a direct way",
+      "explanation": "文章第一段明确指出博物馆的新教育项目旨在帮助学生以直接的方式学习历史。第二项“向游客出售古代物品”和第三项“培训学生成为博物馆员工”在文中均无依据，属于无中生有。",
+      "evidence_sentence": "The museum wants to help students learn history in a direct way.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the passage mainly about?",
+      "options": [
+        "The history of the City Museum",
+        "How the museum's education programme helps students learn",
+        "The problems of modern schools",
+        "The life of an ancient Chinese expert"
+      ],
+      "answer": "How the museum's education programme helps students learn",
+      "explanation": "全文围绕博物馆教育项目展开，介绍其目的、活动、学生反馈及未来期望，因此主旨是该项目如何帮助学生学习。第一项“博物馆的历史”和第三项“现代学校的问题”均非文章重点，属于偏离主题。",
+      "evidence_sentence": "The City Museum has a new education programme.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what does the director suggest?",
+      "options": [
+        "The museum should close its workshops",
+        "Students should study history only from books",
+        "The city should give more support to museum education",
+        "Teachers should not plan lessons with museum staff"
+      ],
+      "answer": "The city should give more support to museum education",
+      "explanation": "文中明确提到主任建议城市应给予博物馆教育更多支持。第一项“博物馆应关闭工作坊”和第四项“教师不应与博物馆员工一起备课”与原文意思相反，属于曲解文意。",
+      "evidence_sentence": "He suggests that the city should give more support to museum education.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the student mentioned in the passage?",
+      "options": [
+        "The student disliked history before the visit.",
+        "The student wants to become a museum expert.",
+        "The student has visited the museum many times.",
+        "The student thinks history is boring now."
+      ],
+      "answer": "The student disliked history before the visit.",
+      "explanation": "学生说“我以前从不喜欢历史，但现在我想学更多”，可推断他以前不喜欢历史。第二项“想成为博物馆专家”和第三项“参观过博物馆很多次”在文中没有依据，属于过度推断。",
+      "evidence_sentence": "One student said, \"I never liked history before, but now I want to learn more.\"",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

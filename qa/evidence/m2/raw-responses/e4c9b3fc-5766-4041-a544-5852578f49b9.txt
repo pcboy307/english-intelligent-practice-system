@@ -1,0 +1,95 @@
+{
+  "passage": "Last term, the student tried out for the school basketball team. He practised every afternoon for weeks, but on the day of the tryout he felt very nervous. (1) ______, he missed several easy shots and lost the ball twice. When the coach read out the list of new players, his name was not on it. That evening, he sat alone in his room and thought about giving up the sport forever. (2) ______, he had trained so hard, he might have made the team. His teacher noticed his low mood the next morning and gave him some advice. \"Failure is not the end,\" she said. \"It is a chance to learn and grow.\" (3) ______ had he heard such encouraging words from a teacher. He decided to treat the experience as a lesson rather than a loss. He began to analyse his weaknesses and set small goals for himself. (4) ______ improve his shooting, he stayed after school each day to practise with a classmate. Slowly, his confidence returned. (5) ______ he had given up after the first failure, he would never have discovered how much he could improve. This term, he tried out again and made the team. Looking back, he realised that failure had taught him more than success ever could.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "As a result",
+        "For example",
+        "In contrast",
+        "In addition",
+        "However",
+        "Meanwhile",
+        "After all"
+      ],
+      "answer": "A",
+      "explanation": "前文说他很紧张，后文说他投丢球、丢球，这是因果关系，所以选 As a result。B 项 For example 用于举例，但这里不是举例；C 项 In contrast 表对比，但上下文没有对比关系。",
+      "evidence_sentence": "He practised every afternoon for weeks, but on the day of the tryout he felt very nervous.",
+      "context_clue": "He practised every afternoon for weeks, but on the day of the tryout he felt very nervous. (1) ______, he missed several easy shots and lost the ball twice.",
+      "clue_argument": "紧张导致发挥失常，前后为因果关系。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "If",
+        "Unless",
+        "Although",
+        "Because",
+        "When",
+        "Before",
+        "Since"
+      ],
+      "answer": "A",
+      "explanation": "此处是虚拟语气，表示与过去事实相反，主句用 might have made，从句用 If he had trained。B 项 Unless 表示除非，不合逻辑；C 项 Although 表示让步，但这里需要条件。",
+      "evidence_sentence": "That evening, he sat alone in his room and thought about giving up the sport forever.",
+      "context_clue": "That evening, he sat alone in his room and thought about giving up the sport forever. (2) ______, he had trained so hard, he might have made the team.",
+      "clue_argument": "与过去事实相反的假设，用 If 引导虚拟条件句。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "Seldom",
+        "Often",
+        "Always",
+        "Sometimes",
+        "Usually",
+        "Never",
+        "Once"
+      ],
+      "answer": "A",
+      "explanation": "否定副词 Seldom 置于句首引起部分倒装，助动词 had 提前，符合语境：他很少听到这样鼓励的话。B 项 Often 置于句首不倒装，且意思不符；C 项 Always 也不倒装。",
+      "evidence_sentence": "\"Failure is not the end,\" she said. \"It is a chance to learn and grow.\"",
+      "context_clue": "\"Failure is not the end,\" she said. \"It is a chance to learn and grow.\" (3) ______ had he heard such encouraging words from a teacher.",
+      "clue_argument": "否定词置于句首，部分倒装，表示“很少”。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "To",
+        "For",
+        "With",
+        "By",
+        "In",
+        "On",
+        "At"
+      ],
+      "answer": "A",
+      "explanation": "动词不定式 To improve 表示目的，意为“为了提高投篮”。B 项 For 不能直接接动词原形；C 项 With 表伴随，但这里需要目的状语。",
+      "evidence_sentence": "He began to analyse his weaknesses and set small goals for himself.",
+      "context_clue": "He began to analyse his weaknesses and set small goals for himself. (4) ______ improve his shooting, he stayed after school each day to practise with a classmate.",
+      "clue_argument": "不定式作目的状语，表示“为了……”。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "If",
+        "Unless",
+        "Although",
+        "Because",
+        "When",
+        "Before",
+        "Since"
+      ],
+      "answer": "A",
+      "explanation": "此处是虚拟语气，表示与过去事实相反，主句用 would never have discovered，从句用 If he had given up。B 项 Unless 表示除非，不合逻辑；C 项 Although 表示让步，但这里需要条件。",
+      "evidence_sentence": "Slowly, his confidence returned.",
+      "context_clue": "Slowly, his confidence returned. (5) ______ he had given up after the first failure, he would never have discovered how much he could improve.",
+      "clue_argument": "与过去事实相反的假设，用 If 引导虚拟条件句。"
+    }
+  ]
+}

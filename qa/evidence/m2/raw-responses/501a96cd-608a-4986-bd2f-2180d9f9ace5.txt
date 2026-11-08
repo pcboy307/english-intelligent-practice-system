@@ -1,0 +1,1 @@
+{"translations": {"annual": "年度", "broken": "破损", "relay": "接力", "runners": "跑者"}}

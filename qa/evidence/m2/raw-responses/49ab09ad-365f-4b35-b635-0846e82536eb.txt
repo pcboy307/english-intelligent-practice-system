@@ -1,0 +1,65 @@
+{
+  "passage": "In the small coastal town of Green Bay, tourism had once been a mixed blessing. Every summer, thousands of visitors arrived, bringing money but also litter, noise, and damage to the beaches. Three years ago, the town decided to change. The local government, together with residents and business owners, started a programme called \"Green Steps\". The aim was simple: to make tourism sustainable, so that visitors could enjoy the area without harming it for future generations.\n\nOne key change was to limit the number of cars in the town centre. Instead, visitors are encouraged to walk, cycle, or use electric buses. The town also built wooden walkways over the sand dunes to protect the plants and animals that live there. Local guides now lead small groups on nature tours, teaching tourists about the fragile ecosystem. \"It is not just about attracting more people,\" says the town's mayor. \"It is about attracting the right kind of visitors — those who respect the environment.\"\n\nThe results have been encouraging. Since the programme began, litter has dropped by 40 per cent, and the number of visitors has remained steady. Local businesses have benefited too, as tourists are willing to pay a little more for eco-friendly services. The town's success shows that tourism and nature can coexist if people work together.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can be inferred about the town's attitude towards tourism before the programme?",
+      "options": [
+        "They welcomed all visitors without any concern.",
+        "They were aware of the problems but unsure how to solve them.",
+        "They wanted to stop tourism completely.",
+        "They believed tourism had no negative effects."
+      ],
+      "answer": "They were aware of the problems but unsure how to solve them.",
+      "explanation": "文章第一段提到旅游业曾带来垃圾、噪音和破坏，说明他们意识到问题，但直到三年前才开始改变，可推断此前不知如何解决。A选项说他们毫无顾虑地欢迎所有游客，与文中提到的负面影响矛盾；C选项说他们想完全停止旅游业，文中并未提及，且他们后来是寻求可持续发展而非禁止。",
+      "evidence_sentence": "Every summer, thousands of visitors arrived, bringing money but also litter, noise, and damage to the beaches.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "The phrase \"mixed blessing\" in the first paragraph most probably means ______.",
+      "options": [
+        "something that has both advantages and disadvantages",
+        "something that is completely harmful",
+        "something that brings only benefits",
+        "something that is difficult to understand"
+      ],
+      "answer": "something that has both advantages and disadvantages",
+      "explanation": "根据第一段，旅游业带来金钱但也带来垃圾、噪音和破坏，说明它既有好处也有坏处，因此“mixed blessing”意为“利弊兼有的事物”。B选项说完全有害，忽略了文中提到的金钱收益；C选项说只带来好处，忽略了负面影响。",
+      "evidence_sentence": "Every summer, thousands of visitors arrived, bringing money but also litter, noise, and damage to the beaches.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the mayor's purpose in saying \"It is not just about attracting more people... but the right kind of visitors\"?",
+      "options": [
+        "To emphasize the importance of quality over quantity in tourism.",
+        "To complain about the number of tourists.",
+        "To suggest that tourism should be stopped.",
+        "To show that local businesses are more important than visitors."
+      ],
+      "answer": "To emphasize the importance of quality over quantity in tourism.",
+      "explanation": "市长的话强调要吸引尊重环境的游客，而不是单纯增加游客数量，目的是突出旅游质量比数量更重要。B选项说抱怨游客数量，但市长并未抱怨数量，而是关注游客类型；C选项说建议停止旅游业，与市长支持可持续旅游的立场相反。",
+      "evidence_sentence": "\"It is not just about attracting more people,\" says the town's mayor. \"It is about attracting the right kind of visitors — those who respect the environment.\"",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Sustainable tourism can benefit both the environment and the local economy.",
+        "Tourism always causes damage to the environment.",
+        "The town of Green Bay has stopped all tourism.",
+        "Local businesses are against sustainable tourism."
+      ],
+      "answer": "Sustainable tourism can benefit both the environment and the local economy.",
+      "explanation": "文章主要讲述Green Bay通过可持续旅游项目，既保护了环境又使当地经济受益，因此主旨是可持续旅游能兼顾环境与经济。B选项说旅游业总是破坏环境，过于绝对，且文章展示了积极改变；C选项说该镇停止了所有旅游业，与文中游客数量保持稳定矛盾。",
+      "evidence_sentence": "The town's success shows that tourism and nature can coexist if people work together.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

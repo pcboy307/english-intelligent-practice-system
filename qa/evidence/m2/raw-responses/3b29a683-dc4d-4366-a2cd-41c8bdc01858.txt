@@ -1,0 +1,65 @@
+{
+  "passage": "In the small town of Greenfield, the local factory was once a place of noise and busy hands. Workers like Mr. Chen, a skilled engineer, spent long hours on the production line. However, over the past decade, automation has changed everything. Robots now perform many of the repetitive tasks that people used to do. According to a recent report, the factory has increased its output by 40% since 2015, with fewer workers on the floor.\n\nMr. Chen, who has worked there for twenty years, was initially worried about losing his job. But instead of being replaced, he was retrained to operate and maintain the new machines. \"I had to learn new skills,\" he says. \"It was challenging, but the company offered training courses.\" Now, Mr. Chen supervises a team of robots, ensuring they work correctly. He feels proud of his new role.\n\nNot everyone has been as lucky. Some workers, especially those with limited education, found it hard to adapt. The factory did offer some support, but not everyone could keep up. As a result, a few had to leave. The local government has started a programme to help these workers find new jobs or learn new skills.\n\nDespite the challenges, many believe that automation is beneficial. It has made the factory safer and more efficient. Mr. Chen agrees. \"We can't stop progress,\" he says. \"We just need to make sure everyone has a chance to move forward with it.\"",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What has happened to the factory's output since 2015?",
+      "options": [
+        "It has increased by 40%.",
+        "It has decreased by 40%.",
+        "It has remained the same.",
+        "It has doubled."
+      ],
+      "answer": "It has increased by 40%.",
+      "explanation": "文章明确提到工厂产量自2015年以来增加了40%。A项正确；B项“减少了40%”与原文相反；C项“保持不变”与原文不符。",
+      "evidence_sentence": "According to a recent report, the factory has increased its output by 40% since 2015, with fewer workers on the floor.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about Mr. Chen's attitude towards automation?",
+      "options": [
+        "He is strongly against it.",
+        "He is uncertain about its benefits.",
+        "He accepts it and sees the need to adapt.",
+        "He believes it will replace all workers."
+      ],
+      "answer": "He accepts it and sees the need to adapt.",
+      "explanation": "从Mr. Chen的言行可知，他接受了自动化并认为需要适应，如他说“We can't stop progress”和“everyone has a chance to move forward with it”。A项“强烈反对”与原文相反；B项“不确定其好处”与原文不符。",
+      "evidence_sentence": "\"We can't stop progress,\" he says. \"We just need to make sure everyone has a chance to move forward with it.\"",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"supervises\" in paragraph 2 most likely mean?",
+      "options": [
+        "Watches over and directs",
+        "Repairs and fixes",
+        "Designs and builds",
+        "Cleans and maintains"
+      ],
+      "answer": "Watches over and directs",
+      "explanation": "根据上下文，Mr. Chen的新角色是“supervises a team of robots, ensuring they work correctly”，即监督和指导机器人工作。A项“监督和指导”符合语境；B项“修理”和C项“设计”都不符合“ensuring they work correctly”的语境。",
+      "evidence_sentence": "Now, Mr. Chen supervises a team of robots, ensuring they work correctly.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To argue that automation should be stopped.",
+        "To show both the benefits and challenges of automation.",
+        "To criticize the factory for replacing workers.",
+        "To explain how robots are built."
+      ],
+      "answer": "To show both the benefits and challenges of automation.",
+      "explanation": "文章既提到了自动化带来的好处（如产量增加、工作更安全高效），也提到了挑战（如部分工人难以适应），因此作者的主要目的是展示自动化的利弊。A项“主张停止自动化”和C项“批评工厂”都过于片面。",
+      "evidence_sentence": "Despite the challenges, many believe that automation is beneficial.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"translations": {"forgot": "忘记", "practised": "练习"}}

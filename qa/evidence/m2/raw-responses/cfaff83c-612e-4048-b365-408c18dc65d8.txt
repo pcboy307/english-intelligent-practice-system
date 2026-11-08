@@ -1,0 +1,1 @@
+{"translations": {"happily": "快乐地", "practised": "熟练的"}}

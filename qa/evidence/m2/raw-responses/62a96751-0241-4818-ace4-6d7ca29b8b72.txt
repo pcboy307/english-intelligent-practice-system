@@ -1,0 +1,65 @@
+{
+  "passage": "Last month, a class from a local high school visited the city museum. The students were excited, but some of them thought a museum was just a quiet building full of old objects. Their teacher, Ms. Chen, wanted them to see that museums are active learning places. She had organised the visit because she believed that objects, when explained well, can bring history to life. At the entrance, a guide welcomed the class and asked, \"If you could touch any object here, which one would you choose?\" The question made everyone think. The guide then explained that many museums now offer hands-on activities, which help visitors understand how people lived in the past. During the tour, the students learned that the museum runs weekly programmes for schools. These programmes include drama, art, and even cooking lessons based on old recipes. One student, Li Hua, was surprised to hear that the museum also trains teenage volunteers. \"It is important that every visitor should feel welcome,\" the guide said. After the visit, Ms. Chen asked her class to write a short report. Most students agreed that the museum was not boring at all. They had discovered that learning can happen anywhere, and that a museum is a place where curiosity is encouraged.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is Ms. Chen's main purpose in organising the museum visit?",
+      "options": [
+        "To show students that museums are active learning places.",
+        "To test students on their knowledge of history.",
+        "To give students a break from their usual lessons.",
+        "To encourage students to become museum guides."
+      ],
+      "answer": "To show students that museums are active learning places.",
+      "explanation": "文章开头提到，陈老师想让学生看到博物馆是活跃的学习场所。A项正确。B项“测试学生历史知识”和C项“让学生从常规课程中休息”在文中没有依据，故错误。",
+      "evidence_sentence": "Their teacher, Ms. Chen, wanted them to see that museums are active learning places.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Museums are quiet places full of old objects.",
+        "Museums can be exciting places for learning.",
+        "Students should visit museums more often.",
+        "Museums need more teenage volunteers."
+      ],
+      "answer": "Museums can be exciting places for learning.",
+      "explanation": "全文通过学生参观博物馆的经历，说明博物馆可以是令人兴奋的学习场所。B项正确。A项与文章主旨相反；C项和D项只是文章的部分内容，不是主旨，故错误。",
+      "evidence_sentence": "They had discovered that learning can happen anywhere, and that a museum is a place where curiosity is encouraged.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what does the guide say about visitors?",
+      "options": [
+        "They should pay for the school programmes.",
+        "They should feel welcome at the museum.",
+        "They should volunteer at the museum.",
+        "They should write a report after the visit."
+      ],
+      "answer": "They should feel welcome at the museum.",
+      "explanation": "导游说：“重要的是每位参观者都应该感到受欢迎。”B项正确。A项“应该为学校项目付费”和C项“应该在博物馆做志愿者”在文中未提及，故错误。",
+      "evidence_sentence": "\"It is important that every visitor should feel welcome,\" the guide said.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the students' attitude towards museums after the visit?",
+      "options": [
+        "They still think museums are boring.",
+        "They are more interested in museums than before.",
+        "They want to become museum guides.",
+        "They prefer hands-on activities to traditional lessons."
+      ],
+      "answer": "They are more interested in museums than before.",
+      "explanation": "文章最后说大多数学生同意博物馆一点也不无聊，并发现学习可以在任何地方发生。由此可推知，他们对博物馆更感兴趣了。B项正确。A项与原文相反；C项和D项在文中没有依据，故错误。",
+      "evidence_sentence": "Most students agreed that the museum was not boring at all.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "passage": "The public library in our town, which was built in 1990, has changed a lot. It used to be a quiet place with only paper books. Now it offers more services. The library has a new area where people can use computers and the internet for free. Many students go there after school to do their homework. The library also holds events every month. Last week, a writer came to talk about his new book. The event was attended by more than 100 people. The library's purpose is to serve the whole community. It provides a space for learning and sharing. The staff are friendly and helpful. They help visitors find information and use the equipment. The library is open from 9 a.m. to 9 p.m. every day except Monday. It has become a popular place for people of all ages.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"services\" in the passage most likely mean?",
+      "options": ["Helpful activities provided for people", "Books and magazines", "Computers and the internet", "Events and talks"],
+      "answer": "Helpful activities provided for people",
+      "explanation": "根据上下文，图书馆现在提供更多“服务”，包括免费使用电脑、举办活动等，这些都是为人们提供的帮助性活动。A项“书籍和杂志”只是图书馆传统的一部分，不是新服务；C项“电脑和互联网”只是服务的一部分，不够全面。因此选A。",
+      "evidence_sentence": "Now it offers more services.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's attitude towards the changes in the library?",
+      "options": ["Positive", "Negative", "Uninterested", "Worried"],
+      "answer": "Positive",
+      "explanation": "作者描述了图书馆的新变化，如免费使用电脑、举办活动、成为受欢迎的场所，语气是积极的。B项“消极”与文中“popular place”等描述不符；D项“担忧”在文中没有依据。因此选A。",
+      "evidence_sentence": "It has become a popular place for people of all ages.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["The public library has improved its services and become popular.", "The public library was built in 1990.", "Many students do homework in the library.", "A writer visited the library last week."],
+      "answer": "The public library has improved its services and become popular.",
+      "explanation": "文章主要介绍了图书馆的变化：增加了新服务，举办活动，成为受欢迎的场所。B项只是文章开头提到的一个细节；C项和D项都是文章中的具体例子，不是主旨。因此选A。",
+      "evidence_sentence": "The public library in our town, which was built in 1990, has changed a lot.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "How often is the library open?",
+      "options": ["Every day except Monday", "Every day", "Only on weekdays", "Only on weekends"],
+      "answer": "Every day except Monday",
+      "explanation": "文中明确提到“The library is open from 9 a.m. to 9 p.m. every day except Monday.”，即除周一外每天开放。B项“每天”忽略了周一的例外；C项“仅工作日”和D项“仅周末”与原文不符。因此选A。",
+      "evidence_sentence": "The library is open from 9 a.m. to 9 p.m. every day except Monday.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

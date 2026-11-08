@@ -1,0 +1,57 @@
+{
+  "passage": "In many cities, a new way of thinking about waste is taking hold. It is called the circular economy（循环经济）, a system in which materials are reused and nothing is thrown away. Last year, a student and her teacher started a project at their school to put this idea into action. First, they set up boxes for used paper and plastic in every classroom. Then, they organised a weekly market where students could exchange old books and clothes. Not only did the project reduce rubbish, but it also saved money for families. The school's old computers, which were broken, were repaired by a volunteer and given to students who needed them. By the end of the term, the amount of waste had dropped by half. The student says, \"We learned that thinking carefully about what we use can make a big difference.\" The project is now being copied by other schools in the city.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To explain how a school applied the circular economy.",
+        "To argue that computers should never be thrown away.",
+        "To describe the history of the circular economy.",
+        "To compare different schools in the city."
+      ],
+      "answer": "To explain how a school applied the circular economy.",
+      "explanation": "文章主要讲述一所学校如何通过具体行动实践循环经济，因此目的是解释这一应用。A项正确。B项只涉及电脑，过于片面；C项未讨论循环经济的历史；D项没有比较不同学校。",
+      "evidence_sentence": "Last year, a student and her teacher started a project at their school to put this idea into action."
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "The circular economy can be put into practice through simple school actions.",
+        "Students should not use computers at school.",
+        "Volunteers are the most important people in schools.",
+        "Waste can never be reduced in cities."
+      ],
+      "answer": "The circular economy can be put into practice through simple school actions.",
+      "explanation": "全文围绕学校通过设立回收箱、交换市场、修理电脑等简单行动来实践循环经济，因此主旨是循环经济可以通过学校简单行动落实。A项正确。B项与文章无关；C项过度强调志愿者；D项与文章事实相反。",
+      "evidence_sentence": "Not only did the project reduce rubbish, but it also saved money for families."
+    },
+    {
+      "question_index": 3,
+      "stem": "What happened to the school's old computers?",
+      "options": [
+        "They were repaired by a volunteer.",
+        "They were sold to other schools.",
+        "They were thrown away.",
+        "They were used as boxes."
+      ],
+      "answer": "They were repaired by a volunteer.",
+      "explanation": "文章明确提到旧电脑被志愿者修理后送给需要的学生。A项正确。B项文章未提及出售；C项与文章相反；D项混淆了电脑和回收箱。",
+      "evidence_sentence": "The school's old computers, which were broken, were repaired by a volunteer and given to students who needed them."
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the project from the passage?",
+      "options": [
+        "It has inspired other schools to take similar actions.",
+        "It was stopped after one term.",
+        "It cost families more money.",
+        "It only focused on reducing paper waste."
+      ],
+      "answer": "It has inspired other schools to take similar actions.",
+      "explanation": "文章最后一句说该项目正被城市里其他学校效仿，由此可推断它启发了其他学校采取类似行动。A项正确。B项与文章相反；C项与文章相反；D项过于片面，因为项目还涉及塑料、书籍、衣服和电脑。",
+      "evidence_sentence": "The project is now being copied by other schools in the city."
+    }
+  ]
+}

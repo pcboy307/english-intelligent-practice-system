@@ -1,0 +1,65 @@
+{
+  "passage": "Many students feel busy all day but finish little. A simple plan can help. First, write down three important tasks for the day. Second, put the most difficult task first, when your mind is fresh. Third, take a short break every hour to keep your energy. If you follow this advice, you should find more free time. Last month, Li Ming, a high school student, decided to try this method. He used to spend hours on his phone before doing homework. As a result, he often went to bed late and felt tired the next morning. After he started planning, he put his phone in a drawer during study time. He finished his homework earlier and even had time to exercise. His teacher noticed his improvement and asked him to share his experience with the class. Li Ming explained that the key was not to do more, but to focus on one thing at a time. This simple change made a big difference to his daily life.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Students should spend more time on their phones.",
+        "A simple time management plan can help students finish tasks and have more free time.",
+        "Teachers should give students less homework.",
+        "Exercise is the most important activity for students."
+      ],
+      "answer": "A simple time management plan can help students finish tasks and have more free time.",
+      "explanation": "文章开头提出简单计划能帮助学生在忙碌中完成重要任务，并以李明为例说明时间管理带来的好处。干扰项A和C分别建议多玩手机和减少作业，与文章主旨相反。",
+      "evidence_sentence": "A simple plan can help.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What did Li Ming do after he started planning his time?",
+      "options": [
+        "He spent more hours on his phone.",
+        "He put his phone in a drawer during study time.",
+        "He stopped doing his homework.",
+        "He went to bed later than before."
+      ],
+      "answer": "He put his phone in a drawer during study time.",
+      "explanation": "文中明确提到李明开始做计划后，在学习时间把手机放进抽屉。干扰项A和D与原文相反，B项停止做作业文中未提及。",
+      "evidence_sentence": "After he started planning, he put his phone in a drawer during study time.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about Li Ming's teacher from the passage?",
+      "options": [
+        "The teacher was angry with Li Ming.",
+        "The teacher did not notice any change.",
+        "The teacher thought Li Ming's experience was worth sharing.",
+        "The teacher asked Li Ming to stop using his phone."
+      ],
+      "answer": "The teacher thought Li Ming's experience was worth sharing.",
+      "explanation": "老师注意到李明的进步并让他向全班分享经验，说明老师认为他的经验值得分享。干扰项A和B与原文不符，D项文中未提及。",
+      "evidence_sentence": "His teacher noticed his improvement and asked him to share his experience with the class.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"focus\" most likely mean in the passage?",
+      "options": [
+        "give attention to",
+        "worry about",
+        "run away from",
+        "look forward to"
+      ],
+      "answer": "give attention to",
+      "explanation": "根据上下文，李明说关键不是做更多，而是一次专注于一件事，因此focus意为集中注意力。干扰项B和C分别意为担心和逃避，与语境不符。",
+      "evidence_sentence": "Li Ming explained that the key was not to do more, but to focus on one thing at a time.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

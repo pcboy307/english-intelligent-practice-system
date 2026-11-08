@@ -1,0 +1,1 @@
+{"translations": {"outdoor": "户外", "pace": "步伐", "steep": "陡峭"}}

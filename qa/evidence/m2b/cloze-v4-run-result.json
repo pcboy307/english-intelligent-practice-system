@@ -1,0 +1,27 @@
+{
+  "status": "failed",
+  "finished_at": "2026-11-07T22:29:41+08:00",
+  "database_write": false,
+  "gate_results": {
+    "answer_must_be_in_options": "failed for one or more generated questions",
+    "H10_unique_answer": "failed: question 1 had option indices 1, 2, and 3 accepted",
+    "G12_coherence": "not_reached",
+    "G13_direct_lexical_relationship": "not_reached",
+    "G14_clue_distance": "not_reached on the final attempt",
+    "G15_difficulty_distribution": "failed on the preceding attempt",
+    "G16_readability_sentence_length": "not_reached"
+  },
+  "stop_reason": "Generated question batch exhausted the allowed two repair attempts without a valid, unique-answer, distortion-quality set.",
+  "database_state": {
+    "bank": "M2 Bank #2",
+    "cloze_question_count": 15,
+    "cloze_content": "previous rejected 214-word candidate retained",
+    "bank_status": "generating"
+  },
+  "verification": {
+    "targeted_pytest": "29 passed",
+    "M0_CHECK": "PASS",
+    "API_CONTRACT_CHECK": "PASS calls=10"
+  },
+  "next": "Do not use the retained v3 cloze as accepted content; a new generation strategy or manual editorial intervention is required."
+}

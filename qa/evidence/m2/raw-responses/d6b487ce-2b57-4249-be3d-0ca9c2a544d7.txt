@@ -1,0 +1,65 @@
+{
+  "passage": "Last year, a high school science class started a project on renewable energy. The students wanted to show that clean power could work in their own town. They decided to build a small solar station on the school roof. With the help of their teacher, they collected used solar panels（太阳能板） and connected them to a battery. The project was not easy. At first, the panels did not produce enough electricity because the roof was often shaded by tall trees. The class held a meeting and agreed to cut back some branches after getting permission. After that, the station worked well. It powered the lights in the school garden for six months. The students were proud of their success. They also learned that renewable energy can be practical and affordable. The teacher said the project was a valuable lesson in teamwork and problem-solving. Now, other classes want to start similar projects. The school plans to add more panels next year.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about the students from the passage?",
+      "options": [
+        "They gave up when the panels did not work at first.",
+        "They solved a problem by working together.",
+        "They bought new solar panels with their own money.",
+        "They asked the town to pay for the project."
+      ],
+      "answer": "They solved a problem by working together.",
+      "explanation": "文章提到班级开会并合作解决问题，因此可以推断他们通过合作解决了问题。A项错误，因为他们没有放弃而是继续解决；C项错误，因为文中说他们收集的是旧太阳能板，不是用自己钱买新的。",
+      "evidence_sentence": "The class held a meeting and agreed to cut back some branches after getting permission.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"affordable\" in the passage most likely mean?",
+      "options": [
+        "expensive",
+        "difficult",
+        "cheap enough",
+        "dangerous"
+      ],
+      "answer": "cheap enough",
+      "explanation": "affordable意为“负担得起的”，即价格足够便宜。A项expensive意思相反；B项difficult指困难，与价格无关。",
+      "evidence_sentence": "They also learned that renewable energy can be practical and affordable.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Why did the class cut back some branches?",
+      "options": [
+        "To make the roof look nicer.",
+        "To get more sunlight for the solar panels.",
+        "To sell the wood for money.",
+        "To create a place for a garden."
+      ],
+      "answer": "To get more sunlight for the solar panels.",
+      "explanation": "文章说太阳能板因树荫而发电不足，所以剪枝是为了获得更多阳光。A项错误，剪枝不是为了美观；C项错误，文中没有提到卖木材。",
+      "evidence_sentence": "At first, the panels did not produce enough electricity because the roof was often shaded by tall trees.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Solar panels are too expensive for schools.",
+        "A school project showed that renewable energy can work well.",
+        "Trees should never be cut down near schools.",
+        "Students should study science instead of doing projects."
+      ],
+      "answer": "A school project showed that renewable energy can work well.",
+      "explanation": "全文讲述学生通过项目证明可再生能源可行，因此主旨是学校项目展示了可再生能源的有效性。A项错误，文中说affordable；C项错误，文中只是剪枝，并非说永远不能砍树。",
+      "evidence_sentence": "The students wanted to show that clean power could work in their own town.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

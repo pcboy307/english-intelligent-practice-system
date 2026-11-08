@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "bank": {
+    "id": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2",
+    "name": "M2 Bank #2",
+    "status": "active"
+  },
+  "repair_batch": "M2-GAP-OPTION-REPAIR",
+  "passage_group_ids": [
+    "M2-FULL-GAP-05",
+    "M2-FULL-GAP-06",
+    "M2-FULL-GAP-07"
+  ],
+  "published_question_ids": [
+    "M2-FULL-GAP-05-Q01",
+    "M2-FULL-GAP-05-Q02",
+    "M2-FULL-GAP-05-Q03",
+    "M2-FULL-GAP-05-Q04",
+    "M2-FULL-GAP-05-Q05",
+    "M2-FULL-GAP-06-Q01",
+    "M2-FULL-GAP-06-Q02",
+    "M2-FULL-GAP-06-Q03",
+    "M2-FULL-GAP-06-Q04",
+    "M2-FULL-GAP-06-Q05",
+    "M2-FULL-GAP-07-Q01",
+    "M2-FULL-GAP-07-Q02",
+    "M2-FULL-GAP-07-Q03",
+    "M2-FULL-GAP-07-Q04",
+    "M2-FULL-GAP-07-Q05"
+  ],
+  "published_this_run": 15,
+  "published_counts": {
+    "passages": 47,
+    "questions": 300,
+    "draft_questions": 0
+  },
+  "completed_at": "2026-11-07T16:41:04.511435+00:00"
+}

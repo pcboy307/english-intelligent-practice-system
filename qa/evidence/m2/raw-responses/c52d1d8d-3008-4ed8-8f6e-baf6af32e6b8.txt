@@ -1,0 +1,80 @@
+{
+  "passage": "Last summer, my friends and I decided to go camping in the mountains. We were all excited about (1) ______ away from the city and enjoying nature. However, we knew that we had to prepare carefully. Before the trip, we (2) ______ by our teacher to bring enough water and food. We also learned that (3) ______ is very important when hiking in the wild. On the first day, we set up our tent near a river. In the evening, we sat around the fire and sang songs. The next morning, we went hiking. The path was steep, and we had to be careful. Our teacher suggested that we (4) ______ together and not go too far ahead. We followed her advice and had a great time. On the last day, we packed up and cleaned (5) ______ area. We left with happy memories and a strong sense of achievement.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank (1).",
+      "options": [
+        "getting",
+        "to get",
+        "get",
+        "got"
+      ],
+      "answer": "getting",
+      "explanation": "介词 about 后需接动名词，表示“对于离开城市感到兴奋”。B 项 to get 是不定式，不能作介词宾语；C 项 get 是动词原形，不能用于介词后。",
+      "evidence_sentence": "We were all excited about (1) ______ away from the city and enjoying nature.",
+      "context_clue": "We were all excited about (1) ______ away from the city and enjoying nature.",
+      "clue_argument": "介词 about 后需用动名词形式。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank (2).",
+      "options": [
+        "were warned",
+        "warned",
+        "are warned",
+        "have warned"
+      ],
+      "answer": "were warned",
+      "explanation": "根据上下文，老师警告我们是在过去（去年夏天），且我们是被警告，所以用一般过去时的被动语态。B 项 warned 是主动语态；C 项 are warned 是现在时被动，时态不符。",
+      "evidence_sentence": "Before the trip, we (2) ______ by our teacher to bring enough water and food.",
+      "context_clue": "Before the trip, we (2) ______ by our teacher to bring enough water and food.",
+      "clue_argument": "主语 we 是动作承受者，且时间发生在过去，需用过去被动语态。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank (3).",
+      "options": [
+        "safety",
+        "safe",
+        "safely",
+        "save"
+      ],
+      "answer": "safety",
+      "explanation": "此处需要名词作主语，表示“安全”很重要。B 项 safe 是形容词；C 项 safely 是副词；D 项 save 是动词，均不能作主语。",
+      "evidence_sentence": "We also learned that (3) ______ is very important when hiking in the wild.",
+      "context_clue": "We also learned that (3) ______ is very important when hiking in the wild.",
+      "clue_argument": "从句缺少主语，需用名词形式。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank (4).",
+      "options": [
+        "stay",
+        "stayed",
+        "staying",
+        "to stay"
+      ],
+      "answer": "stay",
+      "explanation": "suggest 表示“建议”时，其后的宾语从句用虚拟语气，谓语动词用 should + 动词原形，should 可以省略，所以用 stay。B 项 stayed 是过去式；C 项 staying 是现在分词，均不符合虚拟语气结构。",
+      "evidence_sentence": "Our teacher suggested that we (4) ______ together and not go too far ahead.",
+      "context_clue": "Our teacher suggested that we (4) ______ together and not go too far ahead.",
+      "clue_argument": "suggest 表建议时，从句谓语用 (should) + 动词原形。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank (5).",
+      "options": [
+        "the",
+        "a",
+        "an",
+        "不填"
+      ],
+      "answer": "the",
+      "explanation": "此处特指前面提到的露营区域，所以用定冠词 the。B 项 a 和 C 项 an 表示泛指，不符合语境；D 项不填则缺少冠词，area 前通常需要限定词。",
+      "evidence_sentence": "On the last day, we packed up and cleaned (5) ______ area.",
+      "context_clue": "On the last day, we packed up and cleaned (5) ______ area.",
+      "clue_argument": "area 在此特指露营区域，需用定冠词。"
+    }
+  ]
+}

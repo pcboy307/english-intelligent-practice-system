@@ -1,0 +1,65 @@
+{
+  "passage": "The old bell tower in our town, which stands beside the river, is the oldest building here. It was built in 1902, when the town was much smaller than it is today. For many years, the bell rang every morning to wake the workers. Then, in the 1970s, the factory closed, and the tower became quiet. Some people wanted to pull it down, but a group of citizens, who loved its history, asked the town to keep it. The town agreed, and the tower was repaired. Today, the tower is more popular than ever. Tourists come to take photos, and students visit to learn about local history. The town should protect this tower so that future generations can enjoy it. Last spring, a classmate and I joined a volunteer group to clean the tower. We worked hard, and we felt proud. The tower is not just an old building; it is a symbol of our town's spirit.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about the bell tower from the passage?",
+      "options": [
+        "It was built when the town was larger.",
+        "It has always been a popular tourist spot.",
+        "It was saved because people valued its history.",
+        "It was pulled down in the 1970s."
+      ],
+      "answer": "It was saved because people valued its history.",
+      "explanation": "文章提到一些市民热爱它的历史并请求保留，说明它因人们重视历史而被保存。错误选项A与原文“town was much smaller”相反；B与原文“became quiet”矛盾；D与原文“keep it”矛盾。",
+      "evidence_sentence": "Some people wanted to pull it down, but a group of citizens, who loved its history, asked the town to keep it.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"quiet\" in the passage most nearly mean?",
+      "options": [
+        "Silent",
+        "Busy",
+        "Noisy",
+        "Crowded"
+      ],
+      "answer": "Silent",
+      "explanation": "“quiet”在文中指钟楼不再响铃，因此最接近“silent”。错误选项B“Busy”和C“Noisy”与原文意思相反；D“Crowded”指拥挤，与上下文不符。",
+      "evidence_sentence": "Then, in the 1970s, the factory closed, and the tower became quiet.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the author's attitude towards the bell tower?",
+      "options": [
+        "Indifferent",
+        "Critical",
+        "Supportive",
+        "Worried"
+      ],
+      "answer": "Supportive",
+      "explanation": "作者建议保护钟楼，并称其为城镇精神的象征，态度是支持的。错误选项A“Indifferent”表示漠不关心，与作者积极建议不符；B“Critical”表示批评，文中没有批评；D“Worried”表示担忧，文中没有体现担忧。",
+      "evidence_sentence": "The town should protect this tower so that future generations can enjoy it.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "The bell tower is the oldest building in town.",
+        "The bell tower has a long history and should be protected.",
+        "The factory closed in the 1970s.",
+        "Volunteers cleaned the tower last spring."
+      ],
+      "answer": "The bell tower has a long history and should be protected.",
+      "explanation": "文章主要讲述钟楼的历史并呼吁保护它。错误选项A只提到最古老建筑，是细节；C和D也是细节，不能概括全文。",
+      "evidence_sentence": "The town should protect this tower so that future generations can enjoy it.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

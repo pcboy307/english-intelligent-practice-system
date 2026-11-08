@@ -1,0 +1,1 @@
+{"translations": {"bench": "长凳", "okay": "好的", "practised": "熟练的", "realize": "意识到", "shot": "射击"}}

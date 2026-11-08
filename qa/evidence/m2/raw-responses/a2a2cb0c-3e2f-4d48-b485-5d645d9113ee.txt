@@ -1,0 +1,1 @@
+{"translations": {"coexist": "共存", "dunes": "沙丘", "eco-friendly": "环保", "ecosystem": "生态系统", "fragile": "脆弱", "sustainable": "可持续", "walkways": "步道", "wooden": "木质"}}

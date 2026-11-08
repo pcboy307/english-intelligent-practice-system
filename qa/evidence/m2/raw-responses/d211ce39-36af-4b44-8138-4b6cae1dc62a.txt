@@ -1,0 +1,55 @@
+{
+  "passage": "Last term, our school started an environmental club called Green Hands. The club quickly became popular because many students wanted to help the planet. At the first meeting, the student explained that the club (1) ______ to teach us how to protect nature. She said it was important that every member (2) ______ part in at least one activity each month. One of our first projects was (3) ______ old newspapers and bottles. We also learned about (4) ______ energy by turning off lights and using less water. The teacher told us that small actions can make a big (5) ______. Now, more than fifty students are active in the club, and we feel proud of what we have achieved.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank (1).",
+      "options": ["A. was set up", "B. set up", "C. has set up", "D. is setting up", "E. will set up", "F. had set up", "G. sets up"],
+      "answer": "A",
+      "explanation": "俱乐部是被建立的，应用被动语态；且时间为上学期，故用一般过去时的被动语态 was set up。B、C 为主动语态，与主语 the club 是被动关系不符，因此错误。",
+      "evidence_sentence": "At the first meeting, the student explained that the club (1) ______ to teach us how to protect nature.",
+      "context_clue": "At the first meeting, the student explained that the club (1) ______ to teach us how to protect nature.",
+      "clue_argument": "俱乐部是被建立来教我们保护自然的，且发生在过去，故用一般过去时被动语态。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank (2).",
+      "options": ["A. takes", "B. take", "C. took", "D. is taking", "E. has taken", "F. will take", "G. taking"],
+      "answer": "B",
+      "explanation": "在 It is important that 句型中，从句谓语常用虚拟语气，即 (should) + 动词原形，故用 take。A 为第三人称单数，C 为过去式，均不符合虚拟语气要求，因此错误。",
+      "evidence_sentence": "She said it was important that every member (2) ______ part in at least one activity each month.",
+      "context_clue": "She said it was important that every member (2) ______ part in at least one activity each month.",
+      "clue_argument": "It is important that 从句需用虚拟语气，谓语用动词原形。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank (3).",
+      "options": ["A. collect", "B. collecting", "C. collected", "D. to collect", "E. collects", "F. collection", "G. being collected"],
+      "answer": "B",
+      "explanation": "was 后接动名词作表语，表示“收集旧报纸和瓶子”这件事，故用 collecting。A 为动词原形，D 为不定式，均不能直接作表语，因此错误。",
+      "evidence_sentence": "One of our first projects was (3) ______ old newspapers and bottles.",
+      "context_clue": "One of our first projects was (3) ______ old newspapers and bottles.",
+      "clue_argument": "主语为“项目”，表语需用动名词说明项目内容。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank (4).",
+      "options": ["A. save", "B. saved", "C. saving", "D. to save", "E. saves", "F. savior", "G. being saved"],
+      "answer": "C",
+      "explanation": "介词 about 后需接动名词作宾语，故用 saving。A 为动词原形，D 为不定式，均不能作介词宾语，因此错误。",
+      "evidence_sentence": "We also learned about (4) ______ energy by turning off lights and using less water.",
+      "context_clue": "We also learned about (4) ______ energy by turning off lights and using less water.",
+      "clue_argument": "about 是介词，后接动名词 saving 表示“节约能源”。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank (5).",
+      "options": ["A. different", "B. differently", "C. difference", "D. differ", "E. differences", "F. indifferent", "G. differencing"],
+      "answer": "C",
+      "explanation": "make a big difference 是固定搭配，意为“产生很大影响”，此处需名词 difference。A 为形容词，D 为动词，均不能用于该搭配，因此错误。",
+      "evidence_sentence": "The teacher told us that small actions can make a big (5) ______.",
+      "context_clue": "The teacher told us that small actions can make a big (5) ______.",
+      "clue_argument": "make a big difference 为固定短语，需填名词 difference。"
+    }
+  ]
+}

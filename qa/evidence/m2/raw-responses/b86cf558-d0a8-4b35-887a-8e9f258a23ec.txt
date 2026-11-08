@@ -1,0 +1,65 @@
+{
+  "passage": "Food is a window into culture. In China, people often share dishes at a round table, which shows the importance of family and friendship. In many Western countries, however, each person has their own plate. This difference reflects different ideas about the individual and the group. Chinese meals usually include rice or noodles as a basic food, while Western meals may center on bread or potatoes. Chopsticks and forks are tools that carry history. What we eat and how we eat it can tell us who we are. Food is not just about filling the stomach; it is also about connecting with others. When we try food from another culture, we learn to understand and respect it. So the next time you sit down to eat, think about the story on your plate.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Food is only about filling the stomach.",
+        "Food reflects culture and connects people.",
+        "Chinese food is better than Western food.",
+        "People should eat with chopsticks."
+      ],
+      "answer": "Food reflects culture and connects people.",
+      "explanation": "文章首句点明食物是了解文化的窗口，后文对比中西餐桌习惯并强调食物连接人与人，故主旨为食物反映文化并连接人们。A项过于片面，C项文中未比较优劣，均错误。",
+      "evidence_sentence": "Food is a window into culture.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what does sharing dishes at a round table show?",
+      "options": [
+        "The importance of family and friendship.",
+        "The love for rice and noodles.",
+        "The use of chopsticks.",
+        "The difference between East and West."
+      ],
+      "answer": "The importance of family and friendship.",
+      "explanation": "文中明确提到围坐圆桌共享菜肴显示了家庭和友谊的重要性。B、C项是文中提到的其他细节，并非共享菜肴所显示的内容，故错误。",
+      "evidence_sentence": "In China, people often share dishes at a round table, which shows the importance of family and friendship.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer from the passage about trying food from another culture?",
+      "options": [
+        "It helps us learn to understand and respect that culture.",
+        "It makes us want to change our own eating habits.",
+        "It is the best way to fill the stomach.",
+        "It shows that Western food is more individual."
+      ],
+      "answer": "It helps us learn to understand and respect that culture.",
+      "explanation": "文中说当我们尝试另一种文化的食物时，我们学会理解和尊重它，由此可推断尝试他国食物有助于理解和尊重该文化。B项文中未提及改变习惯，C项与文章主旨不符，均错误。",
+      "evidence_sentence": "When we try food from another culture, we learn to understand and respect it.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"basic\" in the passage most nearly mean?",
+      "options": [
+        "Simple",
+        "Main",
+        "Cheap",
+        "Healthy"
+      ],
+      "answer": "Main",
+      "explanation": "文中说中国餐通常以米饭或面条作为基本食物，与西方以面包或土豆为主食对比，此处basic意为“主要的”。A项“简单的”、C项“便宜的”均不符合语境，故错误。",
+      "evidence_sentence": "Chinese meals usually include rice or noodles as a basic food, while Western meals may center on bread or potatoes.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

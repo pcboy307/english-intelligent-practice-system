@@ -1,0 +1,1 @@
+{"translations": {"clean-up": "清理", "dunes": "沙丘", "long-term": "长期", "protection": "保护", "spoke": "辐条"}}

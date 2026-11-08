@@ -1,0 +1,233 @@
+{
+  "coherence": {
+    "verdict": "coherent",
+    "characters_consistent": true,
+    "timeline_present": true,
+    "connections_present": true,
+    "reason": "The passage follows a student through a science fair day, with consistent characters (student, teacher, classmate) and a clear chronological timeline from morning to walking home. Sentences are logically connected through cause-effect and sequence."
+  },
+  "items": [
+    {
+      "question_index": 1,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "anxious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "exact",
+          "reason": "Fits the blank as an adjective describing the student's feeling of worry."
+        },
+        {
+          "option_index": 2,
+          "option": "uneasy",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Similar meaning but less intense than 'anxious' and not as directly tied to visible worry."
+        },
+        {
+          "option_index": 3,
+          "option": "concerned",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Close in meaning but often implies caring about someone else rather than personal nervousness."
+        },
+        {
+          "option_index": 4,
+          "option": "restless",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "confusable",
+          "reason": "Means unable to stay still, which does not match the described worry."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "direct_lexical_relationship": false,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue 'Her teacher noticed her worry' directly supports 'anxious' as a strong feeling of worry and excludes milder or unrelated options."
+      },
+      "answer_collocation": {
+        "phrase": "anxious",
+        "standard": true,
+        "reason": "'Felt anxious' is a standard and natural collocation."
+      }
+    },
+    {
+      "question_index": 2,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "confident",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "exact",
+          "reason": "Fits as an adjective describing the desired state while presenting."
+        },
+        {
+          "option_index": 2,
+          "option": "assured",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Similar but often implies being reassured by others, not self-belief."
+        },
+        {
+          "option_index": 3,
+          "option": "certain",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "confusable",
+          "reason": "Refers to factual sureness, not confidence in presenting."
+        },
+        {
+          "option_index": 4,
+          "option": "hopeful",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "confusable",
+          "reason": "Relates to expecting good results, not self-assurance."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "direct_lexical_relationship": false,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue about feeling anxious contrasts with staying confident, supporting the answer and excluding options that do not fit the contrast."
+      },
+      "answer_collocation": {
+        "phrase": "confident",
+        "standard": true,
+        "reason": "'Stay confident' is a standard collocation."
+      }
+    },
+    {
+      "question_index": 3,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "curious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "exact",
+          "reason": "Fits as an adjective describing interest in how plants grow."
+        },
+        {
+          "option_index": 2,
+          "option": "inquisitive",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Similar but more about asking many questions."
+        },
+        {
+          "option_index": 3,
+          "option": "interested",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Too general and weaker than 'curious' in this context."
+        },
+        {
+          "option_index": 4,
+          "option": "eager",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "confusable",
+          "reason": "Means keen to act, not wanting to know about plants."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "direct_lexical_relationship": false,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue about bringing extra soil for a plant experiment supports curiosity about plants, excluding options that do not imply a desire to learn."
+      },
+      "answer_collocation": {
+        "phrase": "curious",
+        "standard": true,
+        "reason": "'Curious about' is a standard collocation."
+      }
+    },
+    {
+      "question_index": 4,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "reliable",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "exact",
+          "reason": "Fits as an adjective describing someone who keeps promises."
+        },
+        {
+          "option_index": 2,
+          "option": "dependable",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "near_synonym",
+          "reason": "Close synonym but less common with 'proved to be very'."
+        },
+        {
+          "option_index": 3,
+          "option": "steady",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "confusable",
+          "reason": "Describes manner, not keeping promises."
+        },
+        {
+          "option_index": 4,
+          "option": "trustworthy",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "confusable",
+          "reason": "About honesty, not practical help."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "direct_lexical_relationship": false,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue about promising to bring soil supports 'reliable' as keeping promises, excluding options that do not fit the context."
+      },
+      "answer_collocation": {
+        "phrase": "reliable",
+        "standard": true,
+        "reason": "'Proved to be very reliable' is a standard collocation."
+      }
+    },
+    {
+      "question_index": 5,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "ambitious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "exact",
+          "reason": "Fits as an adjective describing someone with a strong desire to succeed."
+        },

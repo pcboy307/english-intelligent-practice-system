@@ -1,0 +1,65 @@
+{
+  "passage": "The Spring Festival is the most important traditional festival in China. It usually falls in January or February according to the lunar calendar（农历）. Before the festival, families clean their houses to sweep away bad luck and put up red decorations, such as spring festival couplets（春联）and paper-cuts. On the eve of the festival, family members gather for a big dinner. Dumplings are a must in northern China, while in the south people often enjoy rice cakes and other special foods. After dinner, many families watch the Spring Festival Gala on TV or play games together. Children receive red envelopes with money from their elders, which is believed to bring good luck. The festival also includes fireworks and visits to relatives and friends. However, in recent years, some cities have limited fireworks to reduce air pollution. The Spring Festival is not just a holiday; it is a time for family reunion and a celebration of Chinese culture. It reminds people of the importance of family and tradition, and it helps pass on these values to the next generation.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "The Spring Festival is a time for family reunion and cultural celebration.",
+        "Fireworks are the most exciting part of the Spring Festival.",
+        "Children receive red envelopes during the Spring Festival.",
+        "The Spring Festival is celebrated only in northern China."
+      ],
+      "answer": "The Spring Festival is a time for family reunion and cultural celebration.",
+      "explanation": "文章首句点明春节是最重要的传统节日，后文围绕家庭团聚和文化庆祝展开，因此主旨是家庭团聚和文化庆祝。A选项概括全面；B选项只提到烟花，是细节；C选项只提到红包，是细节；D选项与文中南北习俗均提及不符。",
+      "evidence_sentence": "The Spring Festival is not just a holiday; it is a time for family reunion and a celebration of Chinese culture.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what do children receive from their elders during the Spring Festival?",
+      "options": [
+        "Red envelopes with money.",
+        "New clothes.",
+        "Fireworks.",
+        "Spring festival couplets."
+      ],
+      "answer": "Red envelopes with money.",
+      "explanation": "文中明确提到“Children receive red envelopes with money from their elders”，因此答案是红包。A选项正确；B选项文中未提及新衣服；C选项烟花是节日活动，不是长辈给孩子的礼物；D选项春联是装饰品，不是给孩子的。",
+      "evidence_sentence": "Children receive red envelopes with money from their elders, which is believed to bring good luck.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about fireworks during the Spring Festival in recent years?",
+      "options": [
+        "Some cities have limited them to reduce air pollution.",
+        "They are completely banned everywhere.",
+        "They are more popular than before.",
+        "They are only allowed in the countryside."
+      ],
+      "answer": "Some cities have limited them to reduce air pollution.",
+      "explanation": "文中提到“in recent years, some cities have limited fireworks to reduce air pollution”，由此可推断一些城市为了减少空气污染而限制烟花。A选项正确；B选项“完全禁止”过于绝对；C选项与限制趋势相反；D选项文中未提及只允许在农村。",
+      "evidence_sentence": "However, in recent years, some cities have limited fireworks to reduce air pollution.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"pass on\" in the last sentence most likely mean?",
+      "options": [
+        "To give something to the next generation.",
+        "To walk past something.",
+        "To refuse something.",
+        "To forget something."
+      ],
+      "answer": "To give something to the next generation.",
+      "explanation": "“pass on these values to the next generation”意为把这些价值观传递给下一代，因此“pass on”意为传递。A选项正确；B选项“走过”与语境不符；C选项“拒绝”意思相反；D选项“忘记”与传递相反。",
+      "evidence_sentence": "It reminds people of the importance of family and tradition, and it helps pass on these values to the next generation.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

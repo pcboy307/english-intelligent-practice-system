@@ -1,0 +1,65 @@
+{
+  "passage": "In 1893, a young engineer named Henry Ford (亨利·福特) built his first car in a small workshop in America. At that time, cars were expensive toys for the rich. Ford had a different dream: he wanted to make a car that ordinary families could afford. To achieve this, he introduced the moving assembly line in 1913. Workers stayed in one place while the car moved past them. This method cut the time to build a car from over 12 hours to about 90 minutes. As a result, the price of the Model T (T型车) dropped from $850 to $300, and millions of people could buy one. This invention changed how people lived. Families could travel farther and faster than before. It also created many jobs and helped build the modern road system. However, the assembly line had a downside: work became repetitive and boring. Some workers left because they could not stand the same action all day. Ford then raised wages to keep them. Today, the assembly line is used in many industries, from food to electronics. The idea that a product can be made quickly and cheaply has shaped our world. It shows how a simple change in the way we work can have a huge effect on society.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What was Henry Ford's goal when he built his first car?",
+      "options": [
+        "To make cars for rich people only.",
+        "To make a car that ordinary families could afford.",
+        "To build the fastest car in the world.",
+        "To create a new kind of road system."
+      ],
+      "answer": "To make a car that ordinary families could afford.",
+      "explanation": "文章明确提到福特想要制造普通家庭买得起的汽车。A选项与原文相反，原文说当时的汽车是富人的玩具；C选项原文未提及；D选项是汽车普及后的结果，不是福特最初的目标。",
+      "evidence_sentence": "Ford had a different dream: he wanted to make a car that ordinary families could afford.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can be inferred about the effect of the assembly line on workers?",
+      "options": [
+        "It made their work more interesting.",
+        "It required them to move around constantly.",
+        "It made their work repetitive and boring.",
+        "It helped them earn less money."
+      ],
+      "answer": "It made their work repetitive and boring.",
+      "explanation": "文章提到流水线使工作变得重复和无聊，一些工人因此离开。A选项与原文相反；B选项错误，因为工人是固定在一个地方；D选项原文说福特提高了工资，而不是减少。",
+      "evidence_sentence": "However, the assembly line had a downside: work became repetitive and boring.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "The word \"downside\" in the passage is closest in meaning to ______.",
+      "options": [
+        "disadvantage",
+        "benefit",
+        "advantage",
+        "improvement"
+      ],
+      "answer": "disadvantage",
+      "explanation": "根据上下文，downside指流水线的负面方面，即工作变得重复无聊，所以意思是“缺点”。B、C、D都是褒义词，与上下文不符。",
+      "evidence_sentence": "However, the assembly line had a downside: work became repetitive and boring.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To explain how to build a car.",
+        "To show the history and impact of an important invention.",
+        "To complain about the problems of modern industry.",
+        "To compare different car companies."
+      ],
+      "answer": "To show the history and impact of an important invention.",
+      "explanation": "文章讲述了福特汽车流水线的发明过程及其对价格、生活、就业等方面的影响，目的是展示一项重要发明的历史和影响。A选项太具体，文章并非教人造车；C选项文章虽提到缺点但并非抱怨；D选项文章没有比较不同公司。",
+      "evidence_sentence": "It shows how a simple change in the way we work can have a huge effect on society.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

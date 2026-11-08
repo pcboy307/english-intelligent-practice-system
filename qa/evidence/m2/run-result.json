@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "passages": 47,
+  "questions": 300,
+  "cost_cny": 3.063101,
+  "cost_scope": "sum of accepted passage request ledgers; discarded attempt usage is retained in raw responses but not included in this total",
+  "failures": [],
+  "activation": {
+    "bank_id": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2",
+    "passages": 47,
+    "questions": 300,
+    "previous_active_bank_id": "00000000-0000-4000-8000-000000000002"
+  }
+}

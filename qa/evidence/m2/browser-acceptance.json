@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "browser": "Expo Web via agent-browser",
+  "url": "http://127.0.0.1:8081",
+  "bank": "M2 Bank #2",
+  "question_count": 29,
+  "submitted": true,
+  "report_generated": true,
+  "correct_answer_green_background": true,
+  "score": 58.62,
+  "weakness_analysis_source": "llm",
+  "weakness_analysis_length": 218,
+  "session_id": "6e07c87f-5d58-4d9a-b12a-31b1bbc4989b",
+  "student_id": "1f62caec-5d59-4fb8-b0e6-8db4953c61dc",
+  "artifacts": {
+    "before_submit": "qa/evidence/m2/browser-acceptance/before-submit.png",
+    "report_screenshot": "qa/evidence/m2/browser-acceptance/report-current.png",
+    "report_snapshot": "qa/evidence/m2/browser-acceptance/report-current-snapshot.txt",
+    "report_dom": "qa/evidence/m2/browser-acceptance/report-current-dom.txt"
+  }
+}

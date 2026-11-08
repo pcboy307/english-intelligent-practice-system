@@ -1,0 +1,1 @@
+{"translations": {"businessman": "商人", "chen": "陈", "eco-friendly": "环保", "sustainable": "可持续"}}

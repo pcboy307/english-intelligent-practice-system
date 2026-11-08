@@ -1,0 +1,57 @@
+{
+  "passage": "During the Spring Festival, food is more than something to eat. It carries wishes for good luck. The student learned this from her grandmother, who always made dumplings shaped like old gold pieces. \"The shape shows that we hope for wealth,\" her grandmother said. At first, the student thought this was just a fun activity. However, when she helped her teacher prepare a New Year meal, she began to understand the deeper meaning. The teacher explained that a whole fish is served because the Chinese word for fish sounds like \"surplus\". Not only do families enjoy the delicious dishes, but they also share stories and pass on traditions. The student realized that these customs, which have been kept for centuries, connect people to their past. She decided to learn more about the stories behind each dish. Now she believes that food is a bridge between generations.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Spring Festival food is only for fun.",
+        "Spring Festival food carries cultural meaning and connects generations.",
+        "The student prefers Western food to Chinese food.",
+        "The teacher is a better cook than the grandmother."
+      ],
+      "answer": "Spring Festival food carries cultural meaning and connects generations.",
+      "explanation": "文章主要讲述春节食物承载文化意义并连接代际。A项说食物只是为了好玩，与原文不符；C项说学生更喜欢西餐，文中未提及。",
+      "evidence_sentence": "The student realized that these customs, which have been kept for centuries, connect people to their past."
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, why is a whole fish served during the New Year meal?",
+      "options": [
+        "Because it is the cheapest food.",
+        "Because the word for fish sounds like 'surplus'.",
+        "Because the teacher likes fish.",
+        "Because it is easy to cook."
+      ],
+      "answer": "Because the word for fish sounds like 'surplus'.",
+      "explanation": "文中明确说鱼被端上桌是因为‘鱼’听起来像‘余’。A项说鱼最便宜，文中未提；C项说老师喜欢鱼，不是原因。",
+      "evidence_sentence": "The teacher explained that a whole fish is served because the Chinese word for fish sounds like \"surplus\"."
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about the student's attitude towards food traditions after the experience?",
+      "options": [
+        "She thinks they are boring.",
+        "She wants to learn more about them.",
+        "She believes they are too old-fashioned.",
+        "She is not interested in them."
+      ],
+      "answer": "She wants to learn more about them.",
+      "explanation": "从文中‘她决定了解更多关于每道菜背后的故事’可以推断她有兴趣学习。A项说无聊，C项说过时，D项说不感兴趣，都与原文矛盾。",
+      "evidence_sentence": "She decided to learn more about the stories behind each dish."
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word 'bridge' in the last sentence most likely mean?",
+      "options": [
+        "A structure over a river",
+        "A connection between people",
+        "A type of food",
+        "A game"
+      ],
+      "answer": "A connection between people",
+      "explanation": "在上下文中，‘bridge’比喻连接不同代人的纽带。A项是字面意思，不符合语境；C项和D项与上下文无关。",
+      "evidence_sentence": "Now she believes that food is a bridge between generations."
+    }
+  ]
+}

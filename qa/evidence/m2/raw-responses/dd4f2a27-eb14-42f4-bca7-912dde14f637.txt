@@ -1,0 +1,65 @@
+{
+  "passage": "Every year, many high-school students feel heavy study pressure. The student in this story is no different. Before important exams, she often stays up late and worries about her scores. Her teacher notices that she looks tired and decides to help. The teacher says, \"If you were to plan your time better, you would feel less stressed.\" She also suggests that the student should take short breaks between study periods. The student follows this advice and begins to use a simple timetable. She finds that she can finish her homework more quickly and still have time to relax. However, she still feels nervous when a test is near. A classmate who has faced the same problem tells her, \"It is important that you should believe in yourself.\" The student learns to focus on her daily progress rather than only on final results. She also starts to exercise for twenty minutes each evening, which helps her sleep better. After several weeks, her stress level drops, and her grades improve. She realises that pressure is not always bad; it can push us to grow when we manage it well.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Study pressure can be managed with good planning and a positive attitude.",
+        "Students should never worry about their exam scores.",
+        "Teachers are the only people who can solve study problems.",
+        "Exercise is the best way to improve grades."
+      ],
+      "answer": "Study pressure can be managed with good planning and a positive attitude.",
+      "explanation": "文章主要讲述一名学生通过合理规划时间、积极心态和锻炼来应对学习压力，因此A正确。B过于绝对，文章并未说完全不担心分数；C错误，因为同学也提供了帮助；D片面，锻炼只是方法之一。",
+      "evidence_sentence": "She realises that pressure is not always bad; it can push us to grow when we manage it well.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the teacher, what should the student do to feel less stressed?",
+      "options": [
+        "She should study late every night.",
+        "She should plan her time better.",
+        "She should stop doing homework.",
+        "She should take longer exams."
+      ],
+      "answer": "She should plan her time better.",
+      "explanation": "老师明确说“If you were to plan your time better, you would feel less stressed”，因此B正确。A与文章相反；C文章未提及停止做作业；D曲解了考试。",
+      "evidence_sentence": "The teacher says, \"If you were to plan your time better, you would feel less stressed.\"",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about the student from the passage?",
+      "options": [
+        "She never listens to her teacher.",
+        "She gives up when facing pressure.",
+        "She is willing to try new ways to reduce stress.",
+        "She thinks exercise is a waste of time."
+      ],
+      "answer": "She is willing to try new ways to reduce stress.",
+      "explanation": "学生听从老师建议制定时间表并开始锻炼，说明她愿意尝试新方法减压，因此C正确。A与文章相反；B文章未提及放弃；D与文章相反，她开始锻炼并受益。",
+      "evidence_sentence": "The student follows this advice and begins to use a simple timetable.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"drops\" in the passage most probably mean?",
+      "options": [
+        "Falls.",
+        "Rises.",
+        "Stays the same.",
+        "Disappears."
+      ],
+      "answer": "Falls.",
+      "explanation": "根据上下文“her stress level drops, and her grades improve”，压力水平下降与成绩提高形成对比，因此drops意为“下降”，A正确。B“上升”与语境相反；C“保持不变”不符合逻辑；D“消失”过于绝对。",
+      "evidence_sentence": "After several weeks, her stress level drops, and her grades improve.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

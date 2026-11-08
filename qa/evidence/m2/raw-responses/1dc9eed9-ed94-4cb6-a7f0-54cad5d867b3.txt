@@ -1,0 +1,45 @@
+{
+  "passage": "Public libraries are important places in our communities. They offer free access to books, computers, and quiet study spaces. Many libraries also run programmes such as reading clubs and homework help. These services are especially helpful for students and families who may not have resources at home. In recent years, public libraries have changed to meet new needs. For example, some libraries now lend tools, musical instruments, and even kitchen equipment. They have also added digital services, which allow people to borrow e-books and audiobooks online. However, libraries still face challenges. Budget cuts have forced some to reduce opening hours, and many are struggling to attract young people. To stay relevant, libraries must continue to adapt. They can offer more technology training and create welcoming spaces for teenagers. The main purpose of this passage is to show that public libraries are valuable but must keep changing to serve their communities well.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"resources\" most likely mean in the passage?",
+      "options": ["money", "materials or support", "books", "computers"],
+      "answer": "materials or support",
+      "explanation": "根据上下文，资源指的是家庭可能缺乏的材料或支持，如图书、电脑等。A项money和C项books只是资源的一部分，不够全面。",
+      "evidence_sentence": "These services are especially helpful for students and families who may not have resources at home.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's attitude towards public libraries?",
+      "options": ["Doubtful", "Supportive", "Critical", "Indifferent"],
+      "answer": "Supportive",
+      "explanation": "作者认为图书馆有价值，并建议它们适应变化，态度是支持的。A项Doubtful和C项Critical与作者观点不符。",
+      "evidence_sentence": "The main purpose of this passage is to show that public libraries are valuable but must keep changing to serve their communities well.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Public libraries are no longer useful.", "Public libraries need more funding.", "Public libraries are valuable but must adapt to change.", "Public libraries should focus only on books."],
+      "answer": "Public libraries are valuable but must adapt to change.",
+      "explanation": "文章主要说明图书馆有价值，但需要不断改变以适应社区需求。A项说图书馆不再有用，B项只强调资金，D项只关注图书，都偏离主旨。",
+      "evidence_sentence": "The main purpose of this passage is to show that public libraries are valuable but must keep changing to serve their communities well.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, what has been done to some libraries because of budget cuts?",
+      "options": ["They have been closed down.", "Their opening hours have been reduced.", "They have been given more computers.", "They have been moved to new buildings."],
+      "answer": "Their opening hours have been reduced.",
+      "explanation": "文中提到预算削减迫使一些图书馆减少开放时间。A项关闭、C项增加电脑、D项搬迁均未提及。",
+      "evidence_sentence": "Budget cuts have forced some to reduce opening hours, and many are struggling to attract young people.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

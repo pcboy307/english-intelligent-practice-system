@@ -1,0 +1,1 @@
+{"translations": {"beaten": "被打败", "opponent": "对手", "shook": "摇动"}}

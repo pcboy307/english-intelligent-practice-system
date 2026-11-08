@@ -1,0 +1,1 @@
+{"translations": {"clean-up": "清理", "guesthouse": "客栈", "handmade": "手工", "sustainable": "可持续"}}

@@ -1,0 +1,105 @@
+{
+  "passage": "Last week, our school held its annual sports meeting. The student ①______ (choose) as the team leader felt nervous at first, but her teacher encouraged her. A classmate ②______ (give) a chance to run the final race trained hard every day. ③______ (win) the relay race was the team's biggest goal. The student kept ④______ (practise) passing the baton after school. ⑤______ (work) together as a team made everyone proud. The teacher announced ⑥______ the final race would start at 3 p.m. The student believed ⑦______ her team could succeed. ⑧______ excited her most was the cheering from the crowd. ⑨______ the race began, everyone shouted loudly. She ran as fast as she could ⑩______ she wanted to win.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the correct form for blank ①.",
+      "options": ["choosing", "chosen", "to choose", "choose"],
+      "answer": "chosen",
+      "explanation": "此处需要过去分词作后置定语，修饰the student，表示“被选为队长的学生”。A项choosing表示主动进行，C项to choose表示目的，均不符合语境。",
+      "evidence_sentence": "The student ①______ (choose) as the team leader felt nervous at first, but her teacher encouraged her.",
+      "context_clue": "The student ①______ (choose) as the team leader felt nervous at first, but her teacher encouraged her.",
+      "clue_argument": "student与choose是被动关系，且作定语，故用过去分词。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the correct form for blank ②.",
+      "options": ["giving", "given", "to give", "give"],
+      "answer": "given",
+      "explanation": "此处需要过去分词作后置定语，修饰A classmate，表示“被给予机会的同学”。A项giving表示主动，C项to give表示目的，均不恰当。",
+      "evidence_sentence": "A classmate ②______ (give) a chance to run the final race trained hard every day.",
+      "context_clue": "A classmate ②______ (give) a chance to run the final race trained hard every day.",
+      "clue_argument": "classmate与give是被动关系，作定语用过去分词。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the correct form for blank ③.",
+      "options": ["Win", "Won", "Winning", "To win"],
+      "answer": "Winning",
+      "explanation": "此处需要动名词作主语，表示“赢得接力赛”这件事。A项Win是动词原形，不能作主语；B项Won是过去分词，也不能作主语。",
+      "evidence_sentence": "③______ (win) the relay race was the team's biggest goal.",
+      "context_clue": "③______ (win) the relay race was the team's biggest goal.",
+      "clue_argument": "句子缺主语，且表示一般行为，用动名词。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the correct form for blank ④.",
+      "options": ["practise", "to practise", "practising", "practised"],
+      "answer": "practising",
+      "explanation": "keep doing sth. 是固定搭配，意为“一直做某事”，所以用动名词practising。A项practise是动词原形，B项to practise是不定式，均不符合搭配。",
+      "evidence_sentence": "The student kept ④______ (practise) passing the baton after school.",
+      "context_clue": "The student kept ④______ (practise) passing the baton after school.",
+      "clue_argument": "keep后接动名词作宾语。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the correct form for blank ⑤.",
+      "options": ["Work", "Worked", "Working", "To work"],
+      "answer": "Working",
+      "explanation": "此处需要动名词作主语，表示“团队合作”这件事。A项Work是动词原形，不能作主语；B项Worked是过去分词，也不能作主语。",
+      "evidence_sentence": "⑤______ (work) together as a team made everyone proud.",
+      "context_clue": "⑤______ (work) together as a team made everyone proud.",
+      "clue_argument": "句子缺主语，表示一般行为，用动名词。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the correct word for blank ⑥.",
+      "options": ["that", "what", "whether", "if"],
+      "answer": "that",
+      "explanation": "announce后接宾语从句，从句意思完整，不缺成分，用that引导。B项what在从句中作主语或宾语，C项whether和D项if表示“是否”，均不符合语境。",
+      "evidence_sentence": "The teacher announced ⑥______ the final race would start at 3 p.m.",
+      "context_clue": "The teacher announced ⑥______ the final race would start at 3 p.m.",
+      "clue_argument": "宾语从句不缺成分，用that引导。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the correct word for blank ⑦.",
+      "options": ["that", "what", "which", "who"],
+      "answer": "that",
+      "explanation": "believe后接宾语从句，从句意思完整，不缺成分，用that引导。B项what在从句中作成分，C项which和D项who是连接代词，均不恰当。",
+      "evidence_sentence": "The student believed ⑦______ her team could succeed.",
+      "context_clue": "The student believed ⑦______ her team could succeed.",
+      "clue_argument": "宾语从句不缺成分，用that引导。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the correct word for blank ⑧.",
+      "options": ["That", "What", "Whether", "If"],
+      "answer": "What",
+      "explanation": "此处需要主语从句，且从句中缺少主语，表示“最让她兴奋的事情”，用what引导。A项That引导主语从句时从句不缺成分，C项Whether和D项If表示“是否”，均不符合。",
+      "evidence_sentence": "⑧______ excited her most was the cheering from the crowd.",
+      "context_clue": "⑧______ excited her most was the cheering from the crowd.",
+      "clue_argument": "主语从句缺主语，用what引导。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the correct word for blank ⑨.",
+      "options": ["When", "While", "As", "Since"],
+      "answer": "When",
+      "explanation": "此处表示“当比赛开始时”，用when引导时间状语从句。B项While强调持续，C项As强调伴随，D项Since表示“自从”或“既然”，均不如when准确。",
+      "evidence_sentence": "⑨______ the race began, everyone shouted loudly.",
+      "context_clue": "⑨______ the race began, everyone shouted loudly.",
+      "clue_argument": "表示“当……时”，用when引导时间状语从句。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the correct word for blank ⑩.",
+      "options": ["because", "so", "though", "unless"],
+      "answer": "because",
+      "explanation": "此处表示原因“因为她想赢”，用because引导原因状语从句。B项so表示结果，C项though表示让步，D项unless表示条件，均不符合逻辑。",
+      "evidence_sentence": "She ran as fast as she could ⑩______ she wanted to win.",
+      "context_clue": "She ran as fast as she could ⑩______ she wanted to win.",
+      "clue_argument": "前后为因果关系，用because引导原因状语从句。"
+    }
+  ]
+}

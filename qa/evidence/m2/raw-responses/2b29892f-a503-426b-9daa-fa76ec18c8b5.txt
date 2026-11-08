@@ -1,0 +1,155 @@
+{
+  "passage": "When Li Hua entered high school, she felt (1) about the new environment. Her teacher, Ms. Wang, told her that it was practice that made her (2) step by step. Li Hua was (3) about everything around her, so she asked many questions. Ms. Wang was a (4) person who always kept her promises. Li Hua was (5) to improve, and she worked hard every day. She wanted to (6) her goal of becoming a volunteer. At first, she found it hard to (7) to the new timetable. Her parents (8) her to keep going. Later, she was (9) by her friend to join the school club. There she could (10) on her studies and activities. (11), she learned to manage her time well. (12), she became a club leader. She could work (13) and made many friends. Her (14) grew with each small success. Ms. Wang suggested that she (15) to take every chance to learn. Li Hua finally found her own way to grow.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank (1).",
+      "options": ["anxious", "angry", "bored", "proud"],
+      "answer": "anxious",
+      "explanation": "根据后文她不断提问、需要老师鼓励，可知她初入高中时感到焦虑。选 anxious 表示“焦虑的”。angry（生气的）和 bored（无聊的）都不符合新生面对新环境的典型情绪，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "When Li Hua entered high school, she felt (1) about the new environment.",
+      "clue_argument": "新生面对新环境常感到焦虑，后文提问和鼓励也支持此情绪。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank (2).",
+      "options": ["confident", "careful", "calm", "curious"],
+      "answer": "confident",
+      "explanation": "老师告诉她练习会让她逐步变得自信，与后文她努力进步相呼应。confident 意为“自信的”。careful（小心的）和 calm（平静的）不能体现通过练习获得的成长，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "Her teacher, Ms. Wang, told her that it was practice that made her (2) step by step.",
+      "clue_argument": "练习带来的是自信的逐步建立。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank (3).",
+      "options": ["curious", "nervous", "shy", "serious"],
+      "answer": "curious",
+      "explanation": "因为对周围一切好奇，所以她问了很多问题。curious 意为“好奇的”。nervous（紧张的）和 shy（害羞的）与“问很多问题”不构成因果，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "Li Hua was (3) about everything around her, so she asked many questions.",
+      "clue_argument": "so 表示因果，问很多问题说明她好奇。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank (4).",
+      "options": ["reliable", "honest", "kind", "patient"],
+      "answer": "reliable",
+      "explanation": "王老师总是信守承诺，说明她是一个可靠的人。reliable 意为“可靠的”。honest（诚实的）和 kind（善良的）不能直接对应“信守承诺”这一行为，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "Ms. Wang was a (4) person who always kept her promises.",
+      "clue_argument": "总是信守承诺是可靠的表现。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank (5).",
+      "options": ["ambitious", "active", "able", "afraid"],
+      "answer": "ambitious",
+      "explanation": "她渴望进步并每天努力，说明她有抱负。ambitious 意为“有雄心的”。active（积极的）和 able（有能力的）不能体现“渴望进步”的强烈愿望，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "Li Hua was (5) to improve, and she worked hard every day.",
+      "clue_argument": "每天努力进步体现她有抱负。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank (6).",
+      "options": ["achieve", "win", "reach", "get"],
+      "answer": "achieve",
+      "explanation": "她想要实现成为志愿者的目标。achieve 意为“实现”，常与 goal 搭配。win（赢得）和 reach（到达）不能与 goal 构成最佳搭配，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "She wanted to (6) her goal of becoming a volunteer.",
+      "clue_argument": "achieve one's goal 是固定搭配，表示实现目标。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank (7).",
+      "options": ["adapt", "adjust", "fit", "match"],
+      "answer": "adapt",
+      "explanation": "她发现很难适应新的时间表。adapt 意为“适应”，常与 to 连用。adjust（调整）和 fit（适合）虽近义，但 adapt to 更强调适应新环境，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "At first, she found it hard to (7) to the new timetable.",
+      "clue_argument": "adapt to 表示适应，符合语境。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank (8).",
+      "options": ["encourage", "force", "allow", "remind"],
+      "answer": "encourage",
+      "explanation": "父母鼓励她坚持下去。encourage 意为“鼓励”。force（强迫）和 allow（允许）不能体现积极支持，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "Her parents (8) her to keep going.",
+      "clue_argument": "父母支持她继续努力，encourage 最符合。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank (9).",
+      "options": ["persuade", "advise", "order", "warn"],
+      "answer": "persuade",
+      "explanation": "她被朋友说服加入学校社团。persuade 意为“说服”。advise（建议）和 order（命令）不能体现“被说服”的结果，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "Later, she was (9) by her friend to join the school club.",
+      "clue_argument": "be persuaded by sb. to do 表示被某人说服做某事。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank (10).",
+      "options": ["concentrate", "focus", "depend", "insist"],
+      "answer": "concentrate",
+      "explanation": "在社团里她可以专注于学习和活动。concentrate 意为“集中（注意力）”，常与 on 连用。focus 也可与 on 连用，但 concentrate 更强调集中精力，且与后文 manage time 呼应，故排除 focus。depend（依赖）和 insist（坚持）不符合语境。",
+      "evidence_sentence": "",
+      "context_clue": "There she could (10) on her studies and activities.",
+      "clue_argument": "concentrate on 表示专注于。"
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank (11).",
+      "options": ["gradually", "suddenly", "finally", "immediately"],
+      "answer": "gradually",
+      "explanation": "她逐渐学会了管理时间。gradually 意为“逐渐地”。suddenly（突然）和 immediately（立刻）与学习管理时间的过程不符，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "(11), she learned to manage her time well.",
+      "clue_argument": "学会管理时间是一个渐进过程。"
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank (12).",
+      "options": ["eventually", "actually", "probably", "especially"],
+      "answer": "eventually",
+      "explanation": "最终她成为了社团负责人。eventually 意为“最终”。actually（实际上）和 probably（可能）不能表示时间上的最终结果，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "(12), she became a club leader.",
+      "clue_argument": "经过努力最终成为负责人。"
+    },
+    {
+      "question_index": 13,
+      "stem": "Choose the best word for blank (13).",
+      "options": ["independently", "alone", "hardly", "quickly"],
+      "answer": "independently",
+      "explanation": "她能够独立工作并交了很多朋友。independently 意为“独立地”。alone（独自）和 hardly（几乎不）不符合“能独立工作”的积极含义，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "She could work (13) and made many friends.",
+      "clue_argument": "独立工作与交朋友并列，体现成长。"
+    },
+    {
+      "question_index": 14,
+      "stem": "Choose the best word for blank (14).",
+      "options": ["confidence", "courage", "pride", "patience"],
+      "answer": "confidence",
+      "explanation": "随着每次小成功，她的自信心增强了。confidence 意为“自信”。courage（勇气）和 pride（骄傲）不能直接与“小成功”构成增长关系，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "Her (14) grew with each small success.",
+      "clue_argument": "小成功带来的是自信的增长。"
+    },
+    {
+      "question_index": 15,
+      "stem": "Choose the best word for blank (15).",
+      "options": ["opportunity", "chance", "choice", "decision"],
+      "answer": "opportunity",
+      "explanation": "王老师建议她抓住每一个学习的机会。opportunity 意为“机会”。chance 也可表示机会，但 opportunity 更正式且与 take 搭配更佳；choice（选择）和 decision（决定）不符合语境，故排除。",
+      "evidence_sentence": "",
+      "context_clue": "Ms. Wang suggested that she (15) to take every chance to learn.",
+      "clue_argument": "take every opportunity 是常见搭配，表示抓住每个机会。"
+    }
+  ]
+}

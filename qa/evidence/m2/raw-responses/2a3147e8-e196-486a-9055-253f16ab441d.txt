@@ -1,0 +1,95 @@
+{
+  "passage": "Last term, the school basketball team lost an important match. The student felt awful. (1) ______, she did not give up. She knew that failure was a chance to learn. Her teacher told her, \"If you practise a little every day, you will get better.\" (2) ______, she began to train after class. (3) ______, she met a classmate who also loved basketball. They practised together and helped each other. (4) ______, they decided to try again next season. (5) ______, they won their first game. The student learned that failure is not the end.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "However, she did not give up.",
+        "Therefore, she did not give up.",
+        "For example, she did not give up.",
+        "In addition, she did not give up.",
+        "As a result, she did not give up.",
+        "Besides, she did not give up.",
+        "Instead, she did not give up."
+      ],
+      "answer": "A",
+      "explanation": "前文说她感到糟糕，后文说她没放弃，语义转折，故选However。B项Therefore表因果，逻辑相反；C项For example表举例，此处并非举例。",
+      "evidence_sentence": "The student felt awful. (1) ______, she did not give up.",
+      "context_clue": "The student felt awful. (1) ______, she did not give up.",
+      "clue_argument": "前后为转折关系，需用转折连接词。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "However, she began to train after class.",
+        "Therefore, she began to train after class.",
+        "For example, she began to train after class.",
+        "In addition, she began to train after class.",
+        "As a result, she began to train after class.",
+        "Besides, she began to train after class.",
+        "Instead, she began to train after class."
+      ],
+      "answer": "B",
+      "explanation": "老师建议每天练习，所以她开始训练，因果关系，故选Therefore。A项However表转折，逻辑相反；C项For example表举例，此处并非举例。",
+      "evidence_sentence": "Her teacher told her, \"If you practise a little every day, you will get better.\" (2) ______, she began to train after class.",
+      "context_clue": "Her teacher told her, \"If you practise a little every day, you will get better.\" (2) ______, she began to train after class.",
+      "clue_argument": "老师建议与开始训练之间是因果关系。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "However, she met a classmate who also loved basketball.",
+        "Therefore, she met a classmate who also loved basketball.",
+        "For example, she met a classmate who also loved basketball.",
+        "In addition, she met a classmate who also loved basketball.",
+        "As a result, she met a classmate who also loved basketball.",
+        "Besides, she met a classmate who also loved basketball.",
+        "Later, she met a classmate who also loved basketball."
+      ],
+      "answer": "G",
+      "explanation": "此处表示时间先后，后来遇到同学，故选Later。A项However表转折，此处无转折；B项Therefore表因果，此处非因果。",
+      "evidence_sentence": "(3) ______, she met a classmate who also loved basketball.",
+      "context_clue": "(3) ______, she met a classmate who also loved basketball.",
+      "clue_argument": "叙述训练后发生的事，需时间连接词。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "However, they decided to try again next season.",
+        "Therefore, they decided to try again next season.",
+        "For example, they decided to try again next season.",
+        "In addition, they decided to try again next season.",
+        "As a result, they decided to try again next season.",
+        "Besides, they decided to try again next season.",
+        "Instead, they decided to try again next season."
+      ],
+      "answer": "B",
+      "explanation": "他们一起练习互相帮助，所以决定下赛季再试，因果关系，故选Therefore。A项However表转折，逻辑相反；C项For example表举例，此处非举例。",
+      "evidence_sentence": "They practised together and helped each other. (4) ______, they decided to try again next season.",
+      "context_clue": "They practised together and helped each other. (4) ______, they decided to try again next season.",
+      "clue_argument": "一起练习是决定再试的原因，需因果连接词。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "However, they won their first game.",
+        "Therefore, they won their first game.",
+        "For example, they won their first game.",
+        "In addition, they won their first game.",
+        "As a result, they won their first game.",
+        "Besides, they won their first game.",
+        "Instead, they won their first game."
+      ],
+      "answer": "E",
+      "explanation": "他们再次尝试，结果赢了第一场比赛，故选As a result。A项However表转折，逻辑相反；B项Therefore虽也表因果，但此处强调结果，As a result更贴切。",
+      "evidence_sentence": "(5) ______, they won their first game.",
+      "context_clue": "(5) ______, they won their first game.",
+      "clue_argument": "再次尝试导致赢得比赛，需结果连接词。"
+    }
+  ]
+}

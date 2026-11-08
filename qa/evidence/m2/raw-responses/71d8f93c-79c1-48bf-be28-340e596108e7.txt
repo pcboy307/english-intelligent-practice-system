@@ -1,0 +1,105 @@
+{
+  "passage": "Last year, the school sports meeting was a big event. The student ①______ (choose) as the team leader worked hard. Her teacher ②______ (invite) to be the coach gave useful advice. ③______ (train) for weeks, the team improved quickly. They practised ④______ (run) every afternoon. ⑤______ (win) the match was their dream. The student believed ⑥______ hard work would pay off. ⑦______ the coach said encouraged everyone. ⑧______ they would win was still a question. ⑨______ the day came, they felt nervous. ⑩______ they started, they forgot their fear.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the correct form for blank ①.",
+      "options": ["choosing", "chosen", "to choose", "choose"],
+      "answer": "chosen",
+      "explanation": "此处需要过去分词作后置定语，表示“被选为队长的学生”，与student是被动关系。choosing表示主动进行，to choose表示目的，均不符合语境。",
+      "evidence_sentence": "The student ①______ (choose) as the team leader worked hard.",
+      "context_clue": "The student ①______ (choose) as the team leader worked hard.",
+      "clue_argument": "student与choose是被动关系，用过去分词作定语。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the correct form for blank ②.",
+      "options": ["inviting", "invited", "to invite", "invite"],
+      "answer": "invited",
+      "explanation": "此处需要过去分词作后置定语，表示“被邀请当教练的老师”，与teacher是被动关系。inviting表示主动，to invite表示目的，均不正确。",
+      "evidence_sentence": "Her teacher ②______ (invite) to be the coach gave useful advice.",
+      "context_clue": "Her teacher ②______ (invite) to be the coach gave useful advice.",
+      "clue_argument": "teacher与invite是被动关系，用过去分词作定语。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the correct form for blank ③.",
+      "options": ["Training", "Trained", "To train", "Train"],
+      "answer": "Training",
+      "explanation": "此处需要现在分词作状语，表示主动进行的动作“训练了几周”，主语the team与train是主动关系。Trained表示被动，To train表示目的，均不符合。",
+      "evidence_sentence": "③______ (train) for weeks, the team improved quickly.",
+      "context_clue": "③______ (train) for weeks, the team improved quickly.",
+      "clue_argument": "team与train是主动关系，用现在分词作状语。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the correct form for blank ④.",
+      "options": ["run", "to run", "running", "ran"],
+      "answer": "running",
+      "explanation": "practise后接动名词作宾语，表示“练习跑步”，所以用running。run是动词原形，to run是不定式，ran是过去式，均不能作practise的宾语。",
+      "evidence_sentence": "They practised ④______ (run) every afternoon.",
+      "context_clue": "They practised ④______ (run) every afternoon.",
+      "clue_argument": "practise后接动名词，表示练习做某事。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the correct form for blank ⑤.",
+      "options": ["Win", "Won", "Winning", "To win"],
+      "answer": "Winning",
+      "explanation": "此处需要动名词作主语，表示“赢得比赛”这件事，所以用Winning。Win是动词原形，Won是过去式，To win虽可作主语但表示具体动作，此处更强调抽象概念，且选项中有动名词更合适。",
+      "evidence_sentence": "⑤______ (win) the match was their dream.",
+      "context_clue": "⑤______ (win) the match was their dream.",
+      "clue_argument": "主语位置需要动名词，表示抽象概念。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the correct word for blank ⑥.",
+      "options": ["that", "what", "which", "if"],
+      "answer": "that",
+      "explanation": "believed后接宾语从句，从句意思完整，不缺成分，用that引导。what需要在从句中充当主语或宾语，which表示“哪一个”，if表示“是否”，均不符合。",
+      "evidence_sentence": "The student believed ⑥______ hard work would pay off.",
+      "context_clue": "The student believed ⑥______ hard work would pay off.",
+      "clue_argument": "宾语从句意思完整，用that引导。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the correct word for blank ⑦.",
+      "options": ["That", "What", "Which", "Whether"],
+      "answer": "What",
+      "explanation": "此处需要主语从句，从句中said缺少宾语，用what充当said的宾语。That在主语从句中不充当成分，Which表示“哪一个”，Whether表示“是否”，均不正确。",
+      "evidence_sentence": "⑦______ the coach said encouraged everyone.",
+      "context_clue": "⑦______ the coach said encouraged everyone.",
+      "clue_argument": "主语从句中said缺宾语，用what。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the correct word for blank ⑧.",
+      "options": ["That", "What", "Whether", "If"],
+      "answer": "Whether",
+      "explanation": "此处需要主语从句，表示“他们是否会赢还是个问题”，用Whether引导。That引导主语从句时不能位于句首，What需要在从句中充当成分，If不能引导主语从句。",
+      "evidence_sentence": "⑧______ they would win was still a question.",
+      "context_clue": "⑧______ they would win was still a question.",
+      "clue_argument": "主语从句表示“是否”，用Whether。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the correct word for blank ⑨.",
+      "options": ["When", "While", "As", "Since"],
+      "answer": "When",
+      "explanation": "此处需要时间状语从句，表示“当那天到来时”，用When。While强调持续，As强调伴随，Since表示“自从”，均不最合适。",
+      "evidence_sentence": "⑨______ the day came, they felt nervous.",
+      "context_clue": "⑨______ the day came, they felt nervous.",
+      "clue_argument": "表示“当……时”，用When引导时间状语从句。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the correct word for blank ⑩.",
+      "options": ["As soon as", "Because", "Although", "Unless"],
+      "answer": "As soon as",
+      "explanation": "此处需要时间状语从句，表示“他们一开始就忘记了恐惧”，用As soon as。Because表示原因，Although表示让步，Unless表示条件，均不符合逻辑。",
+      "evidence_sentence": "⑩______ they started, they forgot their fear.",
+      "context_clue": "⑩______ they started, they forgot their fear.",
+      "clue_argument": "表示“一……就……”，用As soon as。"
+    }
+  ]
+}

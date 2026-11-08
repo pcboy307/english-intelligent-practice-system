@@ -1,0 +1,95 @@
+{
+  "passage": "Last month, our school held a science fair. The student who organised it was very excited. (1) She had worked on her project for weeks. Her teacher, who helped her, was proud. (2) The teacher praised her creativity. The project was about plants. (3) The plants were watered every day by the student. A classmate asked her how she did it. (4) Never had she seen such a detailed report. The student explained her method. (5) It was her teacher who encouraged her to join the fair. Everyone learned a lot from the event.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "She had worked on her project for weeks.",
+        "They had worked on their project for weeks.",
+        "He had worked on his project for weeks.",
+        "It had worked on its project for weeks.",
+        "We had worked on our project for weeks.",
+        "You had worked on your project for weeks.",
+        "I had worked on my project for weeks."
+      ],
+      "answer": "A",
+      "explanation": "前文提到“The student who organised it was very excited”，主语是The student，指代女孩，因此用She。B项They指代复数，C项He指代男性，均与语境不符。",
+      "evidence_sentence": "The student who organised it was very excited.",
+      "context_clue": "The student who organised it was very excited.",
+      "clue_argument": "前句主语是单数The student，且后文用her，故用She。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "The teacher praised her creativity.",
+        "The teacher praised his creativity.",
+        "The teacher praised their creativity.",
+        "The teacher praised its creativity.",
+        "The teacher praised our creativity.",
+        "The teacher praised your creativity.",
+        "The teacher praised my creativity."
+      ],
+      "answer": "A",
+      "explanation": "前文提到“Her teacher, who helped her, was proud”，说明老师帮助的是女孩，因此用her。B项his指男性，C项their指复数，均不匹配。",
+      "evidence_sentence": "Her teacher, who helped her, was proud.",
+      "context_clue": "Her teacher, who helped her, was proud.",
+      "clue_argument": "前句用her指代学生，故此处用her。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "The plants were watered every day by the student.",
+        "The plants are watered every day by the student.",
+        "The plants have been watered every day by the student.",
+        "The plants will be watered every day by the student.",
+        "The plants had been watered every day by the student.",
+        "The plants are being watered every day by the student.",
+        "The plants will have been watered every day by the student."
+      ],
+      "answer": "A",
+      "explanation": "全文用过去时，且植物每天被学生浇水是过去习惯性动作，用一般过去时的被动语态were watered。B项are watered是现在时，C项have been watered是现在完成时，均与全文时态不一致。",
+      "evidence_sentence": "The project was about plants.",
+      "context_clue": "The project was about plants.",
+      "clue_argument": "全文叙述过去事件，且浇水是过去反复动作，故用一般过去时被动。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "Never had she seen such a detailed report.",
+        "Never she had seen such a detailed report.",
+        "Never has she seen such a detailed report.",
+        "Never she has seen such a detailed report.",
+        "Never did she saw such a detailed report.",
+        "Never she did see such a detailed report.",
+        "Never was she seen such a detailed report."
+      ],
+      "answer": "A",
+      "explanation": "否定词Never置于句首时，句子需部分倒装，即把助动词had提到主语she之前，构成Never had she seen。B项未倒装，C项时态has与过去语境不符。",
+      "evidence_sentence": "A classmate asked her how she did it.",
+      "context_clue": "A classmate asked her how she did it.",
+      "clue_argument": "Never开头需部分倒装，且叙述过去，用had。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "It was her teacher who encouraged her to join the fair.",
+        "It was her teacher that encouraged her to join the fair.",
+        "It was her teacher which encouraged her to join the fair.",
+        "It was her teacher whom encouraged her to join the fair.",
+        "It was her teacher whose encouraged her to join the fair.",
+        "It was her teacher what encouraged her to join the fair.",
+        "It was her teacher where encouraged her to join the fair."
+      ],
+      "answer": "A",
+      "explanation": "强调句型It was...who...用于强调人，此处强调her teacher，用who。B项that也可但不如who常用，C项which不能指人，D项whom在句中作主语不恰当。",
+      "evidence_sentence": "The student explained her method.",
+      "context_clue": "The student explained her method.",
+      "clue_argument": "强调人且作主语，用who引导。"
+    }
+  ]
+}

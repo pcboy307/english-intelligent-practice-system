@@ -1,0 +1,1 @@
+{"translations": {"blew": "吹", "coal": "煤", "install": "安装", "lit": "点燃", "motor": "马达", "natural": "自然", "renewable": "可再生", "turbine": "涡轮", "unlike": "不像"}}

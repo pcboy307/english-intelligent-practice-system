@@ -1,0 +1,105 @@
+{
+  "passage": "Last year, our school held a sports meeting. The student ① ______ (choose) as the best athlete was my classmate. She had spent months ② ______ (train) for the 800-metre race. ③ ______ (encourage) by her teacher, she never gave up. ④ ______ (run) every morning helped her build strength. ⑤ ______ (compete) in the final, she felt nervous but focused. ⑥ ______ she won the race surprised everyone. ⑦ ______ made her proud was the support from her classmates. ⑧ ______ the coach said was true: teamwork matters. ⑨ ______ she crossed the finish line, everyone cheered. ⑩ ______ the race was over, she thanked her team.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the correct form for blank ①.",
+      "options": ["choosing", "chosen", "to choose", "choose"],
+      "answer": "chosen",
+      "explanation": "此处需要过去分词作后置定语，修饰 the student，表示“被选为最佳运动员的学生”，choose 与 student 是被动关系，所以用 chosen。choosing 表示主动进行，to choose 表示目的或将来，均不符合语境。",
+      "evidence_sentence": "The student ① ______ (choose) as the best athlete was my classmate.",
+      "context_clue": "The student ① ______ (choose) as the best athlete was my classmate.",
+      "clue_argument": "student 与 choose 是被动关系，用过去分词作定语。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the correct form for blank ②.",
+      "options": ["train", "to train", "training", "trained"],
+      "answer": "training",
+      "explanation": "spend time (in) doing sth 是固定搭配，表示“花费时间做某事”，所以用动名词 training。train 是动词原形，to train 是不定式，trained 是过去分词，均不能用于该结构。",
+      "evidence_sentence": "She had spent months ② ______ (train) for the 800-metre race.",
+      "context_clue": "She had spent months ② ______ (train) for the 800-metre race.",
+      "clue_argument": "spend time doing 结构要求动名词。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the correct form for blank ③.",
+      "options": ["Encouraging", "Encouraged", "To encourage", "Encourage"],
+      "answer": "Encouraged",
+      "explanation": "此处需要过去分词作状语，表示“被老师鼓励”，she 与 encourage 是被动关系，所以用 Encouraged。Encouraging 表示主动，To encourage 表示目的，Encourage 是动词原形，均不合适。",
+      "evidence_sentence": "③ ______ (encourage) by her teacher, she never gave up.",
+      "context_clue": "③ ______ (encourage) by her teacher, she never gave up.",
+      "clue_argument": "she 与 encourage 是被动关系，用过去分词作状语。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the correct form for blank ④.",
+      "options": ["Run", "To run", "Running", "Ran"],
+      "answer": "Running",
+      "explanation": "此处需要动名词作主语，表示“每天早上跑步”这件事，所以用 Running。Run 是动词原形，To run 虽可作主语但表示具体动作，Ran 是过去式，均不如 Running 符合语境。",
+      "evidence_sentence": "④ ______ (run) every morning helped her build strength.",
+      "context_clue": "④ ______ (run) every morning helped her build strength.",
+      "clue_argument": "句子缺主语，动名词 running 表示习惯性动作。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the correct form for blank ⑤.",
+      "options": ["Compete", "To compete", "Competing", "Competed"],
+      "answer": "Competing",
+      "explanation": "此处需要现在分词作状语，表示“在决赛中竞争时”，she 与 compete 是主动关系，所以用 Competing。Compete 是动词原形，To compete 表示目的，Competed 是过去分词，均不符合。",
+      "evidence_sentence": "⑤ ______ (compete) in the final, she felt nervous but focused.",
+      "context_clue": "⑤ ______ (compete) in the final, she felt nervous but focused.",
+      "clue_argument": "she 与 compete 是主动关系，用现在分词作时间状语。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the correct word for blank ⑥.",
+      "options": ["That", "What", "Which", "Whether"],
+      "answer": "That",
+      "explanation": "此处需要主语从句的连接词，从句 she won the race 意思完整，不缺成分，所以用 That。What 在从句中作主语或宾语，Which 表示“哪一个”，Whether 表示“是否”，均不符合。",
+      "evidence_sentence": "⑥ ______ she won the race surprised everyone.",
+      "context_clue": "⑥ ______ she won the race surprised everyone.",
+      "clue_argument": "从句意思完整，用 that 引导主语从句。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the correct word for blank ⑦.",
+      "options": ["That", "What", "Which", "It"],
+      "answer": "What",
+      "explanation": "此处需要主语从句的连接代词，从句 made her proud 缺少主语，所以用 What，表示“让她骄傲的事情”。That 在从句中不作成分，Which 表示“哪一个”，It 不能引导从句。",
+      "evidence_sentence": "⑦ ______ made her proud was the support from her classmates.",
+      "context_clue": "⑦ ______ made her proud was the support from her classmates.",
+      "clue_argument": "从句缺主语，用 what 引导主语从句。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the correct word for blank ⑧.",
+      "options": ["That", "What", "Which", "Whether"],
+      "answer": "What",
+      "explanation": "此处需要主语从句的连接代词，从句 the coach said 缺少宾语，所以用 What，表示“教练说的话”。That 在从句中不作成分，Which 表示“哪一个”，Whether 表示“是否”，均不符合。",
+      "evidence_sentence": "⑧ ______ the coach said was true: teamwork matters.",
+      "context_clue": "⑧ ______ the coach said was true: teamwork matters.",
+      "clue_argument": "said 后缺宾语，用 what 引导主语从句。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the correct word for blank ⑨.",
+      "options": ["As", "While", "When", "Since"],
+      "answer": "As",
+      "explanation": "此处需要时间状语从句的连接词，表示“当……时”，强调两个动作同时发生，用 As 最自然。While 强调持续性，When 可指时间点，Since 表示“自从”，均不如 As 贴切。",
+      "evidence_sentence": "⑨ ______ she crossed the finish line, everyone cheered.",
+      "context_clue": "⑨ ______ she crossed the finish line, everyone cheered.",
+      "clue_argument": "表示“当……时”，两个动作同时发生，用 as。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the correct word for blank ⑩.",
+      "options": ["Because", "Although", "After", "Unless"],
+      "answer": "After",
+      "explanation": "此处需要时间状语从句的连接词，表示“在比赛结束后”，用 After 符合逻辑。Because 表示原因，Although 表示让步，Unless 表示条件，均不符合语境。",
+      "evidence_sentence": "⑩ ______ the race was over, she thanked her team.",
+      "context_clue": "⑩ ______ the race was over, she thanked her team.",
+      "clue_argument": "比赛结束后感谢团队，用 after 引导时间状语从句。"
+    }
+  ]
+}

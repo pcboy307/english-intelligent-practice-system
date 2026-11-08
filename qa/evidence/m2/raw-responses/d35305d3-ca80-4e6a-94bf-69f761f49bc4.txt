@@ -1,0 +1,128 @@
+{
+  "passage": "Last term, the student felt (1) anxious about learning online because she feared falling behind. Her teacher noticed this and said, \"You can be (2) confident if you plan your week carefully.\" The student was (3) curious about how digital tools could help, so she tried a study app（应用程序）. At first, she found the app not very (4) reliable, as it sometimes lost her notes. However, her teacher was (5) ambitious for her and said, \"If you set small goals, you will (6) achieve more.\" The student decided to (7) adapt her routine. She was (8) encouraged by a classmate who shared tips. Together they (9) persuaded each other to (10) concentrate on one task at a time. (11) Gradually, the student improved. Her teacher suggested that she should (12) eventually review her progress weekly. With her teacher's support, she learned to work (13) independently. By the end of the term, her (14) confidence had grown, and she saw every online lesson as an (15) opportunity to learn.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank (1).",
+      "options": ["anxious", "angry", "absent", "active"],
+      "answer": "anxious",
+      "explanation": "上下文提到她担心落后，所以感到焦虑。A项“焦虑的”符合语境；B项“生气的”和C项“缺席的”与担心落后的情绪无关。",
+      "evidence_sentence": "Last term, the student felt (1) anxious about learning online because she feared falling behind.",
+      "context_clue": "Last term, the student felt (1) anxious about learning online because she feared falling behind.",
+      "clue_argument": "feared falling behind indicates worry, so anxious fits."
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank (2).",
+      "options": ["confident", "careful", "calm", "curious"],
+      "answer": "confident",
+      "explanation": "老师鼓励她如果仔细计划就能有信心。A项“自信的”符合鼓励语境；B项“仔细的”和C项“平静的”不能直接回应她的焦虑。",
+      "evidence_sentence": "Her teacher noticed this and said, \"You can be (2) confident if you plan your week carefully.\"",
+      "context_clue": "Her teacher noticed this and said, \"You can be (2) confident if you plan your week carefully.\"",
+      "clue_argument": "teacher's encouragement to plan carefully suggests building confidence."
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank (3).",
+      "options": ["curious", "crazy", "clever", "cute"],
+      "answer": "curious",
+      "explanation": "学生想知道数字工具如何帮助学习，所以是好奇的。A项“好奇的”符合探索新工具的心理；B项“疯狂的”和C项“聪明的”不表示想了解。",
+      "evidence_sentence": "The student was (3) curious about how digital tools could help, so she tried a study app（应用程序）.",
+      "context_clue": "The student was (3) curious about how digital tools could help, so she tried a study app（应用程序）.",
+      "clue_argument": "trying an app to see how it helps shows curiosity."
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank (4).",
+      "options": ["reliable", "rapid", "real", "recent"],
+      "answer": "reliable",
+      "explanation": "应用有时丢失笔记，说明它不可靠。A项“可靠的”符合语境；B项“快速的”和C项“真实的”与丢失笔记的问题无关。",
+      "evidence_sentence": "At first, she found the app not very (4) reliable, as it sometimes lost her notes.",
+      "context_clue": "At first, she found the app not very (4) reliable, as it sometimes lost her notes.",
+      "clue_argument": "losing notes shows the app cannot be trusted, so not reliable."
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank (5).",
+      "options": ["ambitious", "afraid", "angry", "average"],
+      "answer": "ambitious",
+      "explanation": "老师对她有雄心，希望她设定小目标取得更多。A项“有雄心的”符合老师的高期望；B项“害怕的”和C项“生气的”与鼓励目标不符。",
+      "evidence_sentence": "However, her teacher was (5) ambitious for her and said, \"If you set small goals, you will (6) achieve more.\"",
+      "context_clue": "However, her teacher was (5) ambitious for her and said, \"If you set small goals, you will (6) achieve more.\"",
+      "clue_argument": "setting goals to achieve more reflects ambition."
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank (6).",
+      "options": ["achieve", "accept", "avoid", "attend"],
+      "answer": "achieve",
+      "explanation": "设定小目标是为了取得更多成就。A项“取得”与more搭配合理；B项“接受”和C项“避免”不能与more构成目标达成的意思。",
+      "evidence_sentence": "However, her teacher was (5) ambitious for her and said, \"If you set small goals, you will (6) achieve more.\"",
+      "context_clue": "However, her teacher was (5) ambitious for her and said, \"If you set small goals, you will (6) achieve more.\"",
+      "clue_argument": "small goals lead to achieving more."
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank (7).",
+      "options": ["adapt", "add", "admire", "advise"],
+      "answer": "adapt",
+      "explanation": "学生决定调整她的日常安排以适应新情况。A项“调整”符合改变routine的语境；B项“增加”和C项“钦佩”不能与routine搭配表示调整。",
+      "evidence_sentence": "The student decided to (7) adapt her routine.",
+      "context_clue": "The student decided to (7) adapt her routine.",
+      "clue_argument": "changing a routine to suit new needs means adapt."
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank (8).",
+      "options": ["encourage", "educate", "expect", "express"],
+      "answer": "encourage",
+      "explanation": "同学分享技巧，使她受到鼓励。A项“鼓励”符合被动语态was encouraged；B项“教育”和C项“期待”不能表达受到支持而振作。",
+      "evidence_sentence": "She was (8) encouraged by a classmate who shared tips.",
+      "context_clue": "She was (8) encouraged by a classmate who shared tips.",
+      "clue_argument": "a classmate sharing tips gives support, so she was encouraged."
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank (9).",
+      "options": ["persuade", "protect", "promise", "punish"],
+      "answer": "persuade",
+      "explanation": "他们互相说服一次只专注一个任务。A项“说服”符合persuade each other to do；B项“保护”和C项“承诺”不能表示互相劝说。",
+      "evidence_sentence": "Together they (9) persuaded each other to (10) concentrate on one task at a time.",
+      "context_clue": "Together they (9) persuaded each other to (10) concentrate on one task at a time.",
+      "clue_argument": "they influenced each other to focus, so persuaded."
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank (10).",
+      "options": ["concentrate", "celebrate", "compare", "complete"],
+      "answer": "concentrate",
+      "explanation": "一次只专注一个任务。A项“专注”与on one task搭配；B项“庆祝”和C项“比较”不能表示集中注意力。",
+      "evidence_sentence": "Together they (9) persuaded each other to (10) concentrate on one task at a time.",
+      "context_clue": "Together they (9) persuaded each other to (10) concentrate on one task at a time.",
+      "clue_argument": "doing one task at a time requires concentration."
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank (11).",
+      "options": ["gradually", "generally", "greatly", "gently"],
+      "answer": "gradually",
+      "explanation": "学生逐步进步，需要一个表示过程缓慢的词。A项“逐渐地”符合improved的过程；B项“一般地”和C项“大大地”不能体现逐步变化。",
+      "evidence_sentence": "(11) Gradually, the student improved.",
+      "context_clue": "(11) Gradually, the student improved.",
+      "clue_argument": "improvement over time is gradual."
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank (12).",
+      "options": ["eventually", "especially", "exactly", "enough"],
+      "answer": "eventually",
+      "explanation": "老师建议她最终每周复习进度。A项“最终”符合建议中表示结果的安排；B项“尤其”和C项“确切地”不能表示时间上的最终。",
+      "evidence_sentence": "Her teacher suggested that she should (12) eventually review her progress weekly.",
+      "context_clue": "Her teacher suggested that she should (12) eventually review her progress weekly.",
+      "clue_argument": "reviewing progress weekly is a final step in the plan."
+    },
+    {
+      "question_index": 13,
+      "stem": "Choose the best word for blank (13).",
+      "options": ["independently", "immediately", "importantly", "increasingly"],
+      "answer": "independ

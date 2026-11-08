@@ -1,0 +1,65 @@
+{
+  "passage": "Last spring, a community centre in our town started a weekend reading programme for children. The idea was simple: older students would read stories to younger ones while parents attended a free English class. Many people thought the plan was a good one, but few believed it would last. They were wrong. The programme has been running for six months, and it is now supported by more than forty volunteers. Among them is Maya, a sixteen-year-old student who first joined because her teacher recommended it. At first, she was nervous. She had never worked with small children before, and she worried that they would not listen to her. However, after a few weeks, she discovered that the children loved her funny voices and her patient manner. Maya now spends two hours every Saturday at the centre. She says the experience has helped her become more confident and more responsible. The centre's director, Mr Li, explains that the programme is not only about reading. It is also about building a sense of community. When people give their time to help others, they create trust and friendship that last far beyond the classroom. The programme's success has encouraged other neighbourhoods to start similar projects. Maya hopes that more students will join, because, as she puts it, \"You receive far more than you give.\"",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "How long has the reading programme been running?",
+      "options": [
+        "For six months",
+        "For two hours",
+        "For a few weeks",
+        "For forty days"
+      ],
+      "answer": "For six months",
+      "explanation": "文章明确提到“The programme has been running for six months”，因此项目已运行六个月。选项“For two hours”是Maya每周六做志愿者的时长，不是项目持续时间；选项“For a few weeks”是Maya适应工作的时间，也不正确。",
+      "evidence_sentence": "The programme has been running for six months, and it is now supported by more than forty volunteers.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about Maya from the passage?",
+      "options": [
+        "She was confident before she joined the programme.",
+        "She has grown personally through her volunteer work.",
+        "She only joined the programme to improve her English.",
+        "She plans to stop volunteering after six months."
+      ],
+      "answer": "She has grown personally through her volunteer work.",
+      "explanation": "文章说Maya起初紧张，但后来发现孩子们喜欢她，并且“the experience has helped her become more confident and more responsible”，由此可推断她在志愿服务中获得了个人成长。选项“She was confident before she joined the programme.”与原文“At first, she was nervous.”矛盾；选项“She only joined the programme to improve her English.”在文中没有依据，她加入是因为老师推荐。",
+      "evidence_sentence": "She says the experience has helped her become more confident and more responsible.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"patient\" most nearly mean in the passage?",
+      "options": [
+        "Able to wait calmly without getting angry",
+        "A person receiving medical care",
+        "Quick to become annoyed",
+        "Very strict with children"
+      ],
+      "answer": "Able to wait calmly without getting angry",
+      "explanation": "在文中“patient manner”指Maya对待孩子的态度，结合她“funny voices”和孩子们喜欢她，可判断“patient”意为“有耐心的”，即能平静等待、不发怒。选项“A person receiving medical care”是“patient”作名词时的含义，不符合此处形容词用法；选项“Quick to become annoyed”意思相反。",
+      "evidence_sentence": "However, after a few weeks, she discovered that the children loved her funny voices and her patient manner.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To explain how to organise a reading class",
+        "To show the positive effects of volunteering",
+        "To compare different community programmes",
+        "To warn students about the difficulties of volunteering"
+      ],
+      "answer": "To show the positive effects of volunteering",
+      "explanation": "文章通过Maya的成长和项目成功说明志愿服务带来的积极影响，如增强自信、建立社区信任，因此作者主要目的是展示志愿服务的正面效果。选项“To explain how to organise a reading class”偏离重点，文章未提供组织步骤；选项“To compare different community programmes”也没有比较不同项目。",
+      "evidence_sentence": "When people give their time to help others, they create trust and friendship that last far beyond the classroom.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

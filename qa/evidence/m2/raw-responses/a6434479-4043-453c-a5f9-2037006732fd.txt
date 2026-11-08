@@ -1,0 +1,95 @@
+{
+  "passage": "Last spring, our school organised an outdoor activity in the nearby hills. The student and her classmate planned to hike to the top, but they had to change their plan because a sudden storm was coming. (1) _____, they decided to stay near the foot of the hill and explore the forest instead. While they were walking, the classmate noticed that the path was covered with fallen leaves, so they walked slowly and carefully. (2) _____, they found a small stream and stopped to rest. The student took out her camera to take photos of the beautiful scenery. (3) _____, she saw a rare bird in the trees and felt very excited. Her teacher had told them that safety should always come first, so they agreed that they should not go too far from the group. (4) _____, they returned to the meeting point before the rain started. On the way back, the student realised that the trip had been a great success. (5) _____, she learned that being prepared and working together can turn a difficult situation into a happy memory.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "Therefore, they decided to stay near the foot of the hill and explore the forest instead.",
+        "However, they decided to stay near the foot of the hill and explore the forest instead.",
+        "For example, they decided to stay near the foot of the hill and explore the forest instead.",
+        "In addition, they decided to stay near the foot of the hill and explore the forest instead.",
+        "As a result, they decided to stay near the foot of the hill and explore the forest instead.",
+        "Besides, they decided to stay near the foot of the hill and explore the forest instead.",
+        "Otherwise, they decided to stay near the foot of the hill and explore the forest instead."
+      ],
+      "answer": "A",
+      "explanation": "前文说因为暴风雨要来，他们不得不改变计划，所以这里用 Therefore 表示因果关系，与后文“决定留在山脚探索森林”逻辑一致；B 项 However 表转折，与“改变计划”的因果关系不符，C 项 For example 表举例，不能连接原因和决定。",
+      "evidence_sentence": "The student and her classmate planned to hike to the top, but they had to change their plan because a sudden storm was coming.",
+      "context_clue": "The student and her classmate planned to hike to the top, but they had to change their plan because a sudden storm was coming.",
+      "clue_argument": "暴风雨导致计划改变，因此用因果连接词 Therefore。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "However, they found a small stream and stopped to rest.",
+        "For example, they found a small stream and stopped to rest.",
+        "Therefore, they found a small stream and stopped to rest.",
+        "In contrast, they found a small stream and stopped to rest.",
+        "Besides, they found a small stream and stopped to rest.",
+        "Otherwise, they found a small stream and stopped to rest.",
+        "Later, they found a small stream and stopped to rest."
+      ],
+      "answer": "G",
+      "explanation": "前文描述他们小心地走，后文说发现小溪并停下来休息，这是时间上的先后顺序，用 Later 最合适；A 项 However 表转折，与发现小溪的顺承关系不符，C 项 Therefore 表因果，但发现小溪并非小心走路的结果。",
+      "evidence_sentence": "While they were walking, the classmate noticed that the path was covered with fallen leaves, so they walked slowly and carefully.",
+      "context_clue": "While they were walking, the classmate noticed that the path was covered with fallen leaves, so they walked slowly and carefully.",
+      "clue_argument": "走路之后发现小溪，是时间顺序，用 Later。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "However, she saw a rare bird in the trees and felt very excited.",
+        "Therefore, she saw a rare bird in the trees and felt very excited.",
+        "Suddenly, she saw a rare bird in the trees and felt very excited.",
+        "For example, she saw a rare bird in the trees and felt very excited.",
+        "In addition, she saw a rare bird in the trees and felt very excited.",
+        "Otherwise, she saw a rare bird in the trees and felt very excited.",
+        "In contrast, she saw a rare bird in the trees and felt very excited."
+      ],
+      "answer": "C",
+      "explanation": "前文说学生拿出相机拍照，后文说看到稀有鸟类并感到兴奋，这是突然发生的事，用 Suddenly 最自然；A 项 However 表转折，但前后并无对比关系，B 项 Therefore 表因果，但看到鸟并非拍照的结果。",
+      "evidence_sentence": "The student took out her camera to take photos of the beautiful scenery.",
+      "context_clue": "The student took out her camera to take photos of the beautiful scenery.",
+      "clue_argument": "拍照时突然看到稀有鸟，用 Suddenly 表示意外发现。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "However, they returned to the meeting point before the rain started.",
+        "For example, they returned to the meeting point before the rain started.",
+        "Therefore, they returned to the meeting point before the rain started.",
+        "In contrast, they returned to the meeting point before the rain started.",
+        "Besides, they returned to the meeting point before the rain started.",
+        "Otherwise, they returned to the meeting point before the rain started.",
+        "Finally, they returned to the meeting point before the rain started."
+      ],
+      "answer": "G",
+      "explanation": "前文说他们同意不应离队伍太远，后文说他们在下雨前回到集合点，这是整个活动的最后一步，用 Finally 表示顺序的结束；A 项 However 表转折，与顺承关系不符，C 项 Therefore 表因果，但“回到集合点”并非“同意不离太远”的直接结果。",
+      "evidence_sentence": "Her teacher had told them that safety should always come first, so they agreed that they should not go too far from the group.",
+      "context_clue": "Her teacher had told them that safety should always come first, so they agreed that they should not go too far from the group.",
+      "clue_argument": "活动结束前回到集合点，用 Finally 表示最后一步。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "However, she learned that being prepared and working together can turn a difficult situation into a happy memory.",
+        "For example, she learned that being prepared and working together can turn a difficult situation into a happy memory.",
+        "Therefore, she learned that being prepared and working together can turn a difficult situation into a happy memory.",
+        "In contrast, she learned that being prepared and working together can turn a difficult situation into a happy memory.",
+        "Besides, she learned that being prepared and working together can turn a difficult situation into a happy memory.",
+        "Otherwise, she learned that being prepared and working together can turn a difficult situation into a happy memory.",
+        "In short, she learned that being prepared and working together can turn a difficult situation into a happy memory."
+      ],
+      "answer": "G",
+      "explanation": "前文说学生意识到这次旅行很成功，后文总结她学到的道理，用 In short 表示总结；A 项 However 表转折，与总结关系不符，B 项 For example 表举例，不能引出总结性结论。",
+      "evidence_sentence": "On the way back, the student realised that the trip had been a great success.",
+      "context_clue": "On the way back, the student realised that the trip had been a great success.",
+      "clue_argument": "最后总结旅行收获，用 In short 表示概括。"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "passage": "In the small town of Willow Creek, the old train station, which had been closed for over thirty years, was the most puzzling building for the local teenagers. They often wondered why it was still standing when everything else around it had changed. The station, built in 1910, was once the busiest place in town, but as cars became more common, fewer people used the trains. By the 1980s, the station was abandoned. However, a group of students, led by their history teacher, decided to investigate its past. They interviewed elderly residents and searched old newspapers. They discovered that the station had been a key stop on a route that connected farms to the city market. The students felt that the station should be preserved as a historical site. They organised a community meeting and presented their findings. The town council agreed, and now the station is a small museum. The students learned that even forgotten places can hold valuable stories.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can be inferred about the students' attitude towards the old station?",
+      "options": [
+        "They thought it was a waste of space.",
+        "They were curious and wanted to learn more.",
+        "They wanted to destroy it.",
+        "They believed it was too old to be useful."
+      ],
+      "answer": "They were curious and wanted to learn more.",
+      "explanation": "文章提到学生们对老车站感到困惑并决定调查其历史，说明他们充满好奇并想了解更多。A和C与文章不符，因为学生们后来努力保护车站，而不是认为它浪费空间或想摧毁它。",
+      "evidence_sentence": "They often wondered why it was still standing when everything else around it had changed.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "As used in the passage, the word \"puzzling\" most nearly means ______.",
+      "options": [
+        "confusing",
+        "exciting",
+        "boring",
+        "frightening"
+      ],
+      "answer": "confusing",
+      "explanation": "根据上下文，学生们对车站为何依然存在感到困惑，因此“puzzling”意为“令人困惑的”。B和D与语境不符，因为文章没有提到令人兴奋或害怕，而是强调难以理解。",
+      "evidence_sentence": "They often wondered why it was still standing when everything else around it had changed.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Why did the students organise a community meeting?",
+      "options": [
+        "To ask for money to repair the station.",
+        "To share their research and gain support.",
+        "To complain about the town council.",
+        "To plan a trip to the city market."
+      ],
+      "answer": "To share their research and gain support.",
+      "explanation": "学生们组织社区会议是为了展示他们的发现并争取支持，从而保护车站。A和C在文中没有依据，因为他们没有提到筹款或抱怨。",
+      "evidence_sentence": "They organised a community meeting and presented their findings.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Old buildings are always worth saving.",
+        "Students can make a difference by exploring local history.",
+        "Train stations are no longer needed.",
+        "The town council is responsible for historical sites."
+      ],
+      "answer": "Students can make a difference by exploring local history.",
+      "explanation": "文章主要讲述了学生们通过调查当地历史，成功保护了老车站，说明他们能有所作为。A过于绝对，C和D不是文章的重点。",
+      "evidence_sentence": "The students learned that even forgotten places can hold valuable stories.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

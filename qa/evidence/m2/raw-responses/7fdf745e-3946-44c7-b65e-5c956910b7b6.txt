@@ -1,0 +1,65 @@
+{
+  "passage": "Every year, millions of tons of plastic waste enter the ocean. This plastic does not disappear; it breaks into tiny pieces called microplastics（微塑料）. These small pieces are eaten by fish and other sea animals. As a result, the plastic enters the food chain and can harm human health. Scientists have warned that the problem is getting worse. They have found microplastics in sea salt, drinking water, and even in human blood. The plastic pollution has been called a global crisis. Many countries are now taking action. For example, some have banned single-use plastic bags. Others are investing in better recycling systems. However, experts say that cleaning up the ocean is not enough. We must also reduce the amount of plastic we produce. Everyone can help by using less plastic and recycling more. The future of our ocean depends on the choices we make today.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Plastic pollution in the ocean is a serious problem that requires action.",
+        "Microplastics are only found in the ocean.",
+        "Recycling is the only solution to plastic pollution.",
+        "Fish are the main cause of ocean pollution."
+      ],
+      "answer": "Plastic pollution in the ocean is a serious problem that requires action.",
+      "explanation": "文章主要讲述了海洋塑料污染的严重性以及需要采取行动。选项B错误，因为微塑料不仅存在于海洋；选项C错误，因为回收只是解决方案之一，并非唯一。",
+      "evidence_sentence": "Every year, millions of tons of plastic waste enter the ocean.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what happens to plastic waste in the ocean?",
+      "options": [
+        "It breaks into tiny pieces called microplastics.",
+        "It is eaten by fish and disappears.",
+        "It is recycled by scientists.",
+        "It turns into sea salt."
+      ],
+      "answer": "It breaks into tiny pieces called microplastics.",
+      "explanation": "文章明确指出塑料废物在海洋中分解成微塑料。选项B错误，因为鱼吃微塑料但塑料不会消失；选项C错误，因为科学家没有回收塑料。",
+      "evidence_sentence": "This plastic does not disappear; it breaks into tiny pieces called microplastics（微塑料）.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can be inferred about the effect of microplastics on human health?",
+      "options": [
+        "They can enter the human body through the food chain.",
+        "They are completely harmless to humans.",
+        "They only affect sea animals.",
+        "They are too small to cause any health problems."
+      ],
+      "answer": "They can enter the human body through the food chain.",
+      "explanation": "文章提到微塑料被鱼吃掉，进入食物链，可能危害人类健康，因此可以推断微塑料通过食物链进入人体。选项B和D与文章相反；选项C错误，因为文章提到对人类健康有害。",
+      "evidence_sentence": "As a result, the plastic enters the food chain and can harm human health.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"crisis\" in the passage most likely mean?",
+      "options": [
+        "A serious problem that needs urgent attention.",
+        "A small issue that is easy to solve.",
+        "A type of plastic material.",
+        "A solution to pollution."
+      ],
+      "answer": "A serious problem that needs urgent attention.",
+      "explanation": "根据上下文，塑料污染被称为全球危机，意味着它是一个需要紧急关注的严重问题。选项B意思相反；选项C和D不符合语境。",
+      "evidence_sentence": "The plastic pollution has been called a global crisis.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "passage": "Planning a trip abroad can be exciting, but it also requires careful thought. Last month, a student and her classmate began preparing for a school journey to Singapore. They made a list of things to do. First, they checked their passports. (1) ______ They knew that without the right papers, they could not leave the country. Next, they looked at their budget. They wanted to travel cheaply, so they decided to stay in a simple hotel. (2) ______ They also planned to eat at local food centres instead of expensive restaurants. Then they thought about what to pack. (3) ______ They read that the weather there is often hot and rainy, so they chose light clothes and an umbrella. (4) ______ They also packed a small first-aid kit. Finally, they told their teacher about their plan. (5) ______ She advised them to buy travel insurance and to keep a copy of their documents. The student felt nervous at first, but after all the preparation, she became confident. She learned that good planning makes any journey safer and more enjoyable.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "They made sure the passports were valid for at least six months.",
+        "They forgot to check the date on the passports.",
+        "They decided to leave their passports at home.",
+        "They lost their passports at the airport.",
+        "They applied for new passports at the last minute.",
+        "They borrowed passports from a friend.",
+        "They put their passports in the hotel safe."
+      ],
+      "answer": "A",
+      "explanation": "前文说他们检查护照，后文说没有正确文件就不能出国，因此A“确保护照有效期至少六个月”最符合逻辑。B和C与后文矛盾，因为忘记检查或把护照留在家都会导致无法出国。",
+      "evidence_sentence": "",
+      "context_clue": "They knew that without the right papers, they could not leave the country.",
+      "clue_argument": "后文强调正确文件的重要性，所以前一句应说明确保护照有效。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "They booked an expensive five-star hotel.",
+        "They decided to camp on the beach.",
+        "They chose a cheap hotel near the underground station.",
+        "They asked their parents to pay for everything.",
+        "They cancelled the trip because of the cost.",
+        "They stayed in a hotel far from the city centre.",
+        "They shared a room with a stranger."
+      ],
+      "answer": "C",
+      "explanation": "前文说想省钱并决定住简单旅馆，C“选择地铁站附近的便宜旅馆”既省钱又方便，最符合语境。A和B分别与省钱和住旅馆矛盾，因为五星酒店太贵，露营不是住旅馆。",
+      "evidence_sentence": "",
+      "context_clue": "They wanted to travel cheaply, so they decided to stay in a simple hotel.",
+      "clue_argument": "简单旅馆对应便宜的选择，且地铁站附近方便出行。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "They packed heavy winter coats and boots.",
+        "They checked the weather forecast for Singapore.",
+        "They decided to buy clothes after arriving.",
+        "They packed only formal clothes for dinners.",
+        "They forgot to bring any luggage.",
+        "They borrowed a tent from a friend.",
+        "They planned to wear the same clothes every day."
+      ],
+      "answer": "B",
+      "explanation": "后文说当地天气炎热多雨，因此B“查看新加坡天气预报”是合理的下一步。A和C与后文选择轻便衣服和雨伞矛盾，因为冬装和到达后再买都不符合提前准备。",
+      "evidence_sentence": "",
+      "context_clue": "They read that the weather there is often hot and rainy, so they chose light clothes and an umbrella.",
+      "clue_argument": "因为天气热且多雨，所以需要提前查看天气预报。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "They packed heavy sweaters and gloves.",
+        "They decided to buy an umbrella at the airport.",
+        "They forgot to pack any medicine.",
+        "They packed light clothes and an umbrella.",
+        "They packed only one set of clothes.",
+        "They left their luggage at home.",
+        "They borrowed clothes from a friend."
+      ],
+      "answer": "D",
+      "explanation": "前文说他们选择轻便衣服和雨伞，D“他们打包了轻便衣服和雨伞”直接复现该决定，衔接自然。A和B与已做的决定矛盾，因为冬装和到机场再买雨伞都不符合提前准备。",
+      "evidence_sentence": "",
+      "context_clue": "They read that the weather there is often hot and rainy, so they chose light clothes and an umbrella.",
+      "clue_argument": "前一句已说明选择轻便衣服和雨伞，此处应总结打包内容。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "The teacher was too busy to help them.",
+        "The teacher refused to give any advice.",
+        "The teacher told them to cancel the trip.",
+        "The teacher asked them to travel alone.",
+        "The teacher checked their plan and gave useful advice.",
+        "The teacher forgot about their journey.",
+        "The teacher said they needed no preparation."
+      ],
+      "answer": "E",
+      "explanation": "后文说老师建议买旅行保险并保留文件副本，因此E“老师检查了他们的计划并给出有用建议”最符合逻辑。A和B与后文老师给出建议矛盾，因为太忙或拒绝建议都不会有后文的建议。",
+      "evidence_sentence": "",
+      "context_clue": "She advised them to buy travel insurance and to keep a copy of their documents.",
+      "clue_argument": "后文老师给出具体建议，说明她检查了计划并提供帮助。"
+    }
+  ]
+}

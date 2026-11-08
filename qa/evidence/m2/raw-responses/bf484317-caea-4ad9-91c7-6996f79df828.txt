@@ -1,0 +1,1 @@
+{"translations": {"bulb": "灯泡", "dim": "昏暗", "invention": "发明", "production": "生产"}}

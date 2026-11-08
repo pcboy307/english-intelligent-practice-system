@@ -1,0 +1,105 @@
+{
+  "passage": "Last year, our school held its annual sports meeting. The event, ①______ by the student union, attracted hundreds of participants. Everyone was excited about the relay race and the tug-of-war. ②______ by the cheers of the crowd, the runners gave their best. ③______ the rope in the tug-of-war, the team members pulled with all their strength. ④______ the games was a great way to build team spirit. ⑤______ the final whistle, we all felt a sense of achievement. The headmaster announced ⑥______ the winners would receive medals. We were proud of ⑦______ we had achieved. ⑧______ the sun set, the sports meeting came to an end. ⑨______ we were tired, we felt happy. ⑩______ we left the field, we promised to do better next year.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "①______",
+      "options": ["organizing", "organized", "to organize", "organize"],
+      "answer": "organized",
+      "explanation": "此处需要过去分词作后置定语，表示“被学生会组织的”，与event构成被动关系。现在分词organizing表示主动，to organize表示目的，均不符合语境。",
+      "evidence_sentence": "The event, ①______ by the student union, attracted hundreds of participants.",
+      "context_clue": "The event, ①______ by the student union, attracted hundreds of participants.",
+      "clue_argument": "event与organize是被动关系，用过去分词作定语。"
+    },
+    {
+      "question_index": 2,
+      "stem": "②______",
+      "options": ["Encouraging", "Encouraged", "To encourage", "Encourage"],
+      "answer": "Encouraged",
+      "explanation": "此处需要过去分词作状语，表示“受到人群欢呼的鼓励”，与主语runners构成被动关系。现在分词Encouraging表示主动，不符合逻辑。",
+      "evidence_sentence": "②______ by the cheers of the crowd, the runners gave their best.",
+      "context_clue": "②______ by the cheers of the crowd, the runners gave their best.",
+      "clue_argument": "runners与encourage是被动关系，用过去分词作状语。"
+    },
+    {
+      "question_index": 3,
+      "stem": "③______",
+      "options": ["Holding", "Held", "To hold", "Hold"],
+      "answer": "Holding",
+      "explanation": "此处需要现在分词作伴随状语，表示“握着绳子”，与主语team members构成主动关系。过去分词Held表示被动，不符合语境。",
+      "evidence_sentence": "③______ the rope in the tug-of-war, the team members pulled with all their strength.",
+      "context_clue": "③______ the rope in the tug-of-war, the team members pulled with all their strength.",
+      "clue_argument": "team members与hold是主动关系，用现在分词作伴随状语。"
+    },
+    {
+      "question_index": 4,
+      "stem": "④______",
+      "options": ["Joining", "Joined", "To join", "Join"],
+      "answer": "Joining",
+      "explanation": "此处需要动名词作主语，表示“参加比赛是一种好方式”。过去分词Joined不能作主语，To join表示目的，不符合句意。",
+      "evidence_sentence": "④______ the games was a great way to build team spirit.",
+      "context_clue": "④______ the games was a great way to build team spirit.",
+      "clue_argument": "动名词作主语，表示一般性行为。"
+    },
+    {
+      "question_index": 5,
+      "stem": "⑤______",
+      "options": ["Hearing", "Heard", "To hear", "Hear"],
+      "answer": "Hearing",
+      "explanation": "此处需要现在分词作时间状语，表示“听到终场哨声时”，与主语we构成主动关系。过去分词Heard表示被动，不符合逻辑。",
+      "evidence_sentence": "⑤______ the final whistle, we all felt a sense of achievement.",
+      "context_clue": "⑤______ the final whistle, we all felt a sense of achievement.",
+      "clue_argument": "we与hear是主动关系，用现在分词作时间状语。"
+    },
+    {
+      "question_index": 6,
+      "stem": "⑥______",
+      "options": ["that", "which", "what", "whether"],
+      "answer": "that",
+      "explanation": "此处需要连接词引导宾语从句，表示“宣布获胜者将获得奖牌”，从句意思完整，用that。which不能引导宾语从句，what需要在从句中充当成分。",
+      "evidence_sentence": "The headmaster announced ⑥______ the winners would receive medals.",
+      "context_clue": "The headmaster announced ⑥______ the winners would receive medals.",
+      "clue_argument": "宾语从句意思完整，用that引导。"
+    },
+    {
+      "question_index": 7,
+      "stem": "⑦______",
+      "options": ["what", "that", "which", "how"],
+      "answer": "what",
+      "explanation": "此处需要连接代词引导宾语从句，并在从句中作achieved的宾语，表示“我们所取得的成就”。that和which不能充当宾语，how表示方式。",
+      "evidence_sentence": "We were proud of ⑦______ we had achieved.",
+      "context_clue": "We were proud of ⑦______ we had achieved.",
+      "clue_argument": "从句缺少宾语，用what引导。"
+    },
+    {
+      "question_index": 8,
+      "stem": "⑧______",
+      "options": ["As", "Although", "Because", "Unless"],
+      "answer": "As",
+      "explanation": "此处需要连词引导时间状语从句，表示“随着太阳落山”，用As。Although表示让步，Because表示原因，Unless表示条件，均不符合语境。",
+      "evidence_sentence": "⑧______ the sun set, the sports meeting came to an end.",
+      "context_clue": "⑧______ the sun set, the sports meeting came to an end.",
+      "clue_argument": "表示“随着”，用As引导时间状语从句。"
+    },
+    {
+      "question_index": 9,
+      "stem": "⑨______",
+      "options": ["Although", "Because", "So", "Unless"],
+      "answer": "Although",
+      "explanation": "此处需要连词引导让步状语从句，表示“虽然我们累了，但我们感到快乐”，用Although。Because表示原因，So表示结果，Unless表示条件。",
+      "evidence_sentence": "⑨______ we were tired, we felt happy.",
+      "context_clue": "⑨______ we were tired, we felt happy.",
+      "clue_argument": "前后为让步关系，用Although。"
+    },
+    {
+      "question_index": 10,
+      "stem": "⑩______",
+      "options": ["Before", "After", "While", "Since"],
+      "answer": "Before",
+      "explanation": "此处需要连词引导时间状语从句，表示“在离开场地之前，我们承诺明年做得更好”，用Before。After表示之后，While表示同时，Since表示自从，均不符合逻辑。",
+      "evidence_sentence": "⑩______ we left the field, we promised to do better next year.",
+      "context_clue": "⑩______ we left the field, we promised to do better next year.",
+      "clue_argument": "承诺发生在离开之前，用Before。"
+    }
+  ]
+}

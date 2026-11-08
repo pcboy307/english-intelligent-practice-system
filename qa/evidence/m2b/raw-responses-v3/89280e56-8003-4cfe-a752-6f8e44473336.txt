@@ -1,0 +1,235 @@
+{
+  "items": [
+    {
+      "question_index": 1,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "anxious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adjective describing her feeling before an exam, and collocates with 'uneasy'."
+        },
+        {
+          "option_index": 2,
+          "option": "calm",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Grammatically valid but semantically contradicts the context clue of shaking and worrying."
+        },
+        {
+          "option_index": 3,
+          "option": "proud",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Grammatically valid but semantically does not fit with 'uneasy' and the clue of worry."
+        },
+        {
+          "option_index": 4,
+          "option": "bored",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Grammatically valid but semantically does not match the clue of active worry."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly describes worry and nervousness, which supports 'anxious' and excludes calm, proud, and bored."
+      },
+      "answer_collocation": {
+        "phrase": "anxious",
+        "standard": true,
+        "reason": "'Anxious' is a standard adjective to describe feeling worried before an exam."
+      }
+    },
+    {
+      "question_index": 2,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "confident",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adjective describing feeling after practice, and is idiomatic."
+        },
+        {
+          "option_index": 2,
+          "option": "nervous",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Grammatically valid but semantically contradicts the positive effect of practice implied by the clue."
+        },
+        {
+          "option_index": 3,
+          "option": "angry",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Grammatically valid but semantically unrelated to feeling about a speech contest after practice."
+        },
+        {
+          "option_index": 4,
+          "option": "sleepy",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Grammatically valid but semantically unrelated to feeling sure about a contest."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue describes fear and doubt, which contrasts with 'confident' and excludes nervous, angry, and sleepy."
+      },
+      "answer_collocation": {
+        "phrase": "confident",
+        "standard": true,
+        "reason": "'Confident' is a standard adjective to describe feeling sure after practice."
+      }
+    },
+    {
+      "question_index": 3,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "curious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adjective describing someone who asks how something works."
+        },
+        {
+          "option_index": 2,
+          "option": "generous",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Grammatically valid but semantically does not fit asking about a radio."
+        },
+        {
+          "option_index": 3,
+          "option": "lazy",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Grammatically valid but semantically contradicts actively asking questions."
+        },
+        {
+          "option_index": 4,
+          "option": "shy",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Grammatically valid but semantically does not fit asking a question about how something works."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue shows a focus on understanding a problem, which supports 'curious' and excludes generous, lazy, and shy."
+      },
+      "answer_collocation": {
+        "phrase": "curious",
+        "standard": true,
+        "reason": "'Curious' is a standard adjective to describe someone who asks questions."
+      }
+    },
+    {
+      "question_index": 4,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "generous",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adjective describing someone who shares lunch."
+        },
+        {
+          "option_index": 2,
+          "option": "selfish",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Grammatically valid but semantically contradicts sharing lunch."
+        },
+        {
+          "option_index": 3,
+          "option": "careless",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Grammatically valid but semantically unrelated to sharing lunch."
+        },
+        {
+          "option_index": 4,
+          "option": "strict",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Grammatically valid but semantically unrelated to sharing lunch."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly describes giving and kindness, which supports 'generous' and excludes selfish, careless, and strict."
+      },
+      "answer_collocation": {
+        "phrase": "generous",
+        "standard": true,
+        "reason": "'Generous' is a standard adjective to describe someone who gives to others."
+      }
+    },
+    {
+      "question_index": 5,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "motivated",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adjective describing someone with a clear goal who studies late."
+        },
+        {
+          "option_index": 2,
+          "option": "relaxed",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Grammatically valid but semantically contradicts studying late for a goal."
+        },
+        {
+          "option_index": 3,
+          "option": "confused",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Grammatically valid but semantically contradicts having a clear goal."
+        },
+        {
+          "option_index": 4,
+          "option": "silent",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Grammatically valid but semantically unrelated to effort toward a goal."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue shows purposeful, active behaviour, which supports 'motivated' and exclu

@@ -1,0 +1,65 @@
+{
+  "passage": "Food is a window into culture. When the student traveled to Beijing, she noticed that her host family always served a whole fish at dinner. She learned that a whole fish, whose head and tail remain, symbolizes a good beginning and end. The host explained that serving the fish head to the guest is a sign of respect. The student was curious about why chopsticks are never left standing upright in rice. Her teacher told her that this looks like incense for the dead, so it is avoided. At a festival, she saw people making dumplings together. The shape of a dumpling looks like an ancient gold ingot, which represents wealth. The student realized that sharing food is not just about eating; it is about passing on values. She decided to write an article about these customs. Her classmate, who had never traveled abroad, was surprised by how much meaning food carries. The student concluded that understanding a culture through its food is one of the most interesting ways to learn.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Food customs reflect cultural values and meanings.",
+        "Chinese people always serve fish at dinner.",
+        "The student prefers dumplings to other foods.",
+        "Traveling abroad is the best way to learn."
+      ],
+      "answer": "Food customs reflect cultural values and meanings.",
+      "explanation": "文章通过鱼、筷子和饺子等例子说明饮食习俗承载文化价值。A概括全文；B和C只是细节或未提及，D过于绝对。",
+      "evidence_sentence": "The student realized that sharing food is not just about eating; it is about passing on values.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "Why is a whole fish served at dinner according to the passage?",
+      "options": [
+        "It symbolizes a good beginning and end.",
+        "It is the cheapest food available.",
+        "It is the host's favorite dish.",
+        "It is required by law."
+      ],
+      "answer": "It symbolizes a good beginning and end.",
+      "explanation": "文中明确说整鱼象征好的开始和结束。A是原文细节；B、C、D均未提及或与原文不符。",
+      "evidence_sentence": "She learned that a whole fish, whose head and tail remain, symbolizes a good beginning and end.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can be inferred about the classmate?",
+      "options": [
+        "The classmate has little experience with foreign food customs.",
+        "The classmate has traveled to many countries.",
+        "The classmate dislikes Chinese food.",
+        "The classmate is an expert on culture."
+      ],
+      "answer": "The classmate has little experience with foreign food customs.",
+      "explanation": "同学从未出国，因此对食物含义感到惊讶，可推知他缺乏相关经验。B与原文相反；C、D无依据。",
+      "evidence_sentence": "Her classmate, who had never traveled abroad, was surprised by how much meaning food carries.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word 'symbolizes' in the passage most nearly mean?",
+      "options": [
+        "represents",
+        "cooks",
+        "tastes",
+        "sells"
+      ],
+      "answer": "represents",
+      "explanation": "symbolizes意为“象征”，与represents意思最接近。cooks（烹饪）、tastes（品尝）和sells（出售）都不符合语境。",
+      "evidence_sentence": "She learned that a whole fish, whose head and tail remain, symbolizes a good beginning and end.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

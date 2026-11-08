@@ -1,0 +1,1 @@
+{"translations": {"automation": "自动化", "beneficial": "有益", "production": "生产", "repetitive": "重复", "retrained": "再培训", "supervises": "监督"}}

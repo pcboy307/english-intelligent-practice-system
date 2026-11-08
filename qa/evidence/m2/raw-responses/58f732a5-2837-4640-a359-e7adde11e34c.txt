@@ -1,0 +1,55 @@
+{
+  "passage": "Last Friday, the student and her classmate visited the city museum. The museum (1) ______ by a famous architect in 1950, and it has become a popular place for learning. Before the trip, the student had read a lot about the museum, so she was eager to see the ancient art. When they arrived, a guide told them that the museum (2) ______ thousands of visitors every year. The student was surprised by the large number of tourists. (3) ______ impressed her most was a beautiful painting from the Tang Dynasty. She asked the guide (4) ______ the painting had been restored. The guide explained that experts had worked on it for months. Later, they saw a collection of old coins (5) ______ were displayed in a glass case. The student took many notes and bought a book about the museum. She hopes to visit again soon.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank (1).",
+      "options": ["A. was built", "B. built", "C. is building", "D. has built"],
+      "answer": "A",
+      "explanation": "句子主语 museum 与 build 是被动关系，且时间状语 in 1950 表示过去，所以用一般过去时的被动语态 was built。B 是主动语态，C 是现在进行时，D 是主动完成时，均不符合被动和时态要求。",
+      "evidence_sentence": "",
+      "context_clue": "The museum (1) ______ by a famous architect in 1950",
+      "clue_argument": "by a famous architect 表明被动，in 1950 表明过去时。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank (2).",
+      "options": ["A. attracts", "B. attracted", "C. is attracting", "D. has attracted"],
+      "answer": "A",
+      "explanation": "直接引语中讲述博物馆每年吸引成千上万游客，是客观事实，用一般现在时 attracts。B 是过去时，与 every year 矛盾；C 是现在进行时，表示暂时性动作，不适用；D 是现在完成时，强调影响，但此处陈述习惯性事实，一般现在时更合适。",
+      "evidence_sentence": "",
+      "context_clue": "the museum (2) ______ thousands of visitors every year",
+      "clue_argument": "every year 表示经常性动作，用一般现在时。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank (3).",
+      "options": ["A. It", "B. What", "C. That", "D. Which"],
+      "answer": "B",
+      "explanation": "此处需要主语从句的引导词，并在从句中作主语，表示“最让她印象深刻的东西”，用 What。A 项 It 不能引导主语从句；C 项 That 引导主语从句时只起连接作用，不作成分；D 项 Which 表示“哪一个”，不符合语境。",
+      "evidence_sentence": "",
+      "context_clue": "(3) ______ impressed her most was a beautiful painting from the Tang Dynasty.",
+      "clue_argument": "从句缺少主语，且意为“...的事物”，用 What。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank (4).",
+      "options": ["A. that", "B. whether", "C. what", "D. how"],
+      "answer": "D",
+      "explanation": "宾语从句中缺少方式状语，表示“如何被修复”，用 how。A 项 that 只起连接作用，不充当成分；B 项 whether 表示“是否”，不符合语境；C 项 what 不能作方式状语。",
+      "evidence_sentence": "",
+      "context_clue": "She asked the guide (4) ______ the painting had been restored.",
+      "clue_argument": "从句成分完整，但缺少“如何”的方式状语，用 how。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank (5).",
+      "options": ["A. which", "B. who", "C. whose", "D. where"],
+      "answer": "A",
+      "explanation": "先行词 old coins 是物，定语从句中缺少主语，用 which。B 项 who 指人；C 项 whose 表示所属关系；D 项 where 作地点状语，均不符合。",
+      "evidence_sentence": "",
+      "context_clue": "a collection of old coins (5) ______ were displayed in a glass case",
+      "clue_argument": "先行词是物，从句缺主语，用 which。"
+    }
+  ]
+}

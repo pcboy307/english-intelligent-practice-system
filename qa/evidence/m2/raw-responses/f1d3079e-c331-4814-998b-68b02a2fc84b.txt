@@ -1,0 +1,105 @@
+{
+  "passage": "Last week, our school held its annual sports meeting. The student ①________ (choose) as the team leader had trained hard for months. Her teacher, ②________ (encourage) by her progress, gave her extra advice. ③________ (run) the final race was her biggest challenge. She practised ④________ (start) quickly every morning. ⑤________ (cheer) loudly, her classmates stood by the track. We all knew ⑥________ she had done her best. The question was ⑦________ she could beat the champion from Class Two. ⑧________ the coach said was true: she needed to stay calm. ⑨________ the race began, she felt nervous. She kept running ⑩________ she crossed the finish line. In the end, she won a silver medal, and everyone cheered.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the correct form for blank ①.",
+      "options": ["choosing", "chosen", "to choose", "choose"],
+      "answer": "chosen",
+      "explanation": "此处用过去分词作后置定语，修饰the student，表示“被选为队长的学生”。choosing表示主动进行，to choose表示目的或将来，均不符合语境。",
+      "evidence_sentence": "The student ①________ (choose) as the team leader had trained hard for months.",
+      "context_clue": "The student ①________ (choose) as the team leader had trained hard for months.",
+      "clue_argument": "student与choose是被动关系，且动作已完成，故用过去分词。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the correct form for blank ②.",
+      "options": ["encouraging", "encouraged", "to encourage", "encourage"],
+      "answer": "encouraged",
+      "explanation": "此处用过去分词作原因状语，表示老师“受到鼓舞”。encouraging表示主动，to encourage表示目的，均不符合逻辑。",
+      "evidence_sentence": "Her teacher, ②________ (encourage) by her progress, gave her extra advice.",
+      "context_clue": "Her teacher, ②________ (encourage) by her progress, gave her extra advice.",
+      "clue_argument": "teacher与encourage是被动关系，故用过去分词。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the correct form for blank ③.",
+      "options": ["Run", "Running", "To run", "Ran"],
+      "answer": "Running",
+      "explanation": "此处用动名词作主语，表示“跑决赛”这件事。Run是动词原形不能作主语，To run虽可作主语但此处强调一般行为，Ran是过去式。",
+      "evidence_sentence": "③________ (run) the final race was her biggest challenge.",
+      "context_clue": "③________ (run) the final race was her biggest challenge.",
+      "clue_argument": "句子缺主语，且was是谓语，故用动名词Running作主语。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the correct form for blank ④.",
+      "options": ["start", "starting", "to start", "started"],
+      "answer": "starting",
+      "explanation": "practise后接动名词作宾语，表示“练习起跑”。start是动词原形，to start是不定式，started是过去式，均不符合practise的用法。",
+      "evidence_sentence": "She practised ④________ (start) quickly every morning.",
+      "context_clue": "She practised ④________ (start) quickly every morning.",
+      "clue_argument": "practise doing sth.是固定搭配，故用动名词starting。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the correct form for blank ⑤.",
+      "options": ["Cheer", "Cheering", "To cheer", "Cheered"],
+      "answer": "Cheering",
+      "explanation": "此处用现在分词作伴随状语，表示同学们“大声欢呼”的同时站在跑道旁。Cheer是动词原形，To cheer表示目的，Cheered是过去式，均不能作伴随状语。",
+      "evidence_sentence": "⑤________ (cheer) loudly, her classmates stood by the track.",
+      "context_clue": "⑤________ (cheer) loudly, her classmates stood by the track.",
+      "clue_argument": "classmates与cheer是主动关系，且作伴随状语，故用现在分词Cheering。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the correct word for blank ⑥.",
+      "options": ["that", "what", "which", "whether"],
+      "answer": "that",
+      "explanation": "此处用that引导宾语从句，表示“我们知道她已尽力”。what不能引导陈述句宾语从句，which和whether不符合句意。",
+      "evidence_sentence": "We all knew ⑥________ she had done her best.",
+      "context_clue": "We all knew ⑥________ she had done her best.",
+      "clue_argument": "从句成分完整，句意确定，故用that引导宾语从句。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the correct word for blank ⑦.",
+      "options": ["that", "what", "whether", "which"],
+      "answer": "whether",
+      "explanation": "此处用whether引导表语从句，表示“问题是她能否打败二班的冠军”。that无词义，what不能引导表语从句，which不符合句意。",
+      "evidence_sentence": "The question was ⑦________ she could beat the champion from Class Two.",
+      "context_clue": "The question was ⑦________ she could beat the champion from Class Two.",
+      "clue_argument": "表语从句表示“是否”，故用whether。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the correct word for blank ⑧.",
+      "options": ["That", "What", "Whether", "Which"],
+      "answer": "What",
+      "explanation": "此处用what引导主语从句，并在从句中作said的宾语，表示“教练说的话”。That无词义且不充当成分，Whether和Which不符合句意。",
+      "evidence_sentence": "⑧________ the coach said was true: she needed to stay calm.",
+      "context_clue": "⑧________ the coach said was true: she needed to stay calm.",
+      "clue_argument": "主语从句缺said的宾语，故用what。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the correct word for blank ⑨.",
+      "options": ["While", "When", "Before", "After"],
+      "answer": "When",
+      "explanation": "此处用When引导时间状语从句，表示“比赛开始时”。While强调持续，Before和After不符合逻辑。",
+      "evidence_sentence": "⑨________ the race began, she felt nervous.",
+      "context_clue": "⑨________ the race began, she felt nervous.",
+      "clue_argument": "表示“当……时”，且begin是短暂动作，故用When。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the correct word for blank ⑩.",
+      "options": ["until", "because", "although", "if"],
+      "answer": "until",
+      "explanation": "此处用until引导时间状语从句，表示“她一直跑直到冲过终点线”。because表原因，although表让步，if表条件，均不符合句意。",
+      "evidence_sentence": "She kept running ⑩________ she crossed the finish line.",
+      "context_clue": "She kept running ⑩________ she crossed the finish line.",
+      "clue_argument": "kept running与crossed the finish line之间是“直到”关系，故用until。"
+    }
+  ]
+}

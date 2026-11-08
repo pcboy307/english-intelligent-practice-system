@@ -1,0 +1,278 @@
+{
+  "items": [
+    {
+      "question_index": 1,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "curious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the context of asking questions to learn."
+        },
+        {
+          "option_index": 2,
+          "option": "generous",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Generous means giving, unrelated to asking questions."
+        },
+        {
+          "option_index": 3,
+          "option": "honest",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Honest means truthful, not directly related to asking questions."
+        },
+        {
+          "option_index": 4,
+          "option": "polite",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Polite means courteous, but asking questions doesn't imply politeness."
+        }
+      ],
+      "answer_collocation": {
+        "phrase": "curious",
+        "standard": true,
+        "reason": "Curious girl is a standard collocation."
+      }
+    },
+    {
+      "question_index": 2,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "confident",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Confident matches believing in one's own ability."
+        },
+        {
+          "option_index": 2,
+          "option": "calm",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Calm means not nervous, but doesn't imply belief in ability."
+        },
+        {
+          "option_index": 3,
+          "option": "proud",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Proud means feeling satisfaction, not necessarily belief in ability."
+        },
+        {
+          "option_index": 4,
+          "option": "brave",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Brave means courageous, but not specifically about self-belief."
+        }
+      ],
+      "answer_collocation": {
+        "phrase": "confident",
+        "standard": true,
+        "reason": "Feels confident is a standard expression."
+      }
+    },
+    {
+      "question_index": 3,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "anxious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Anxious matches worried before an exam."
+        },
+        {
+          "option_index": 2,
+          "option": "angry",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Angry doesn't fit the context of worry."
+        },
+        {
+          "option_index": 3,
+          "option": "lonely",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Lonely means feeling alone, not necessarily worried."
+        },
+        {
+          "option_index": 4,
+          "option": "tired",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Tired means needing rest, not specifically worried."
+        }
+      ],
+      "answer_collocation": {
+        "phrase": "anxious",
+        "standard": true,
+        "reason": "Feels anxious is a standard expression."
+      }
+    },
+    {
+      "question_index": 4,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "patient",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Patient matches waiting calmly."
+        },
+        {
+          "option_index": 2,
+          "option": "kind",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Kind means nice, but doesn't specifically relate to waiting calmly."
+        },
+        {
+          "option_index": 3,
+          "option": "quiet",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Quiet means not talking, but waiting calmly implies patience."
+        },
+        {
+          "option_index": 4,
+          "option": "careful",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Careful means cautious, not necessarily patient."
+        }
+      ],
+      "answer_collocation": {
+        "phrase": "patient",
+        "standard": true,
+        "reason": "Is patient is a standard expression."
+      }
+    },
+    {
+      "question_index": 5,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "manage",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Manage her time well is idiomatic."
+        },
+        {
+          "option_index": 2,
+          "option": "spend",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": false,
+          "reason": "Spend time well is possible but less idiomatic than manage time."
+        },
+        {
+          "option_index": 3,
+          "option": "save",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": false,
+          "reason": "Save time means to use less time, not balance activities."
+        },
+        {
+          "option_index": 4,
+          "option": "waste",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": false,
+          "reason": "Waste time is negative, contradicts balancing successfully."
+        }
+      ],
+      "answer_collocation": {
+        "phrase": "manage",
+        "standard": true,
+        "reason": "Manage time is a standard collocation."
+      }
+    },
+    {
+      "question_index": 6,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "improve",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Improve his English fits making it better."
+        },
+        {
+          "option_index": 2,
+          "option": "learn",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Learn English is possible but doesn't imply improvement."
+        },
+        {
+          "option_index": 3,
+          "option": "study",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Study English is possible but doesn't imply improvement."
+        },
+        {
+          "option_index": 4,
+          "option": "practise",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Practise English is possible but doesn't imply improvement."
+        }
+      ],
+      "answer_collocation": {
+        "phrase": "improve",
+        "standard": true,
+        "reason": "Improve his English is a standard collocation."
+      }
+    },
+    {
+      "question_index": 7,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "achieve",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Achieve her dream is a common collocation."
+        },
+        {
+          "option_index": 2,
+          "option": "imagine",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Imagine a dream is possible but not about realizing it."
+        },
+        {
+          "option_index": 3,
+          "option": "describe",
+          "grammar_ok": true,
+     

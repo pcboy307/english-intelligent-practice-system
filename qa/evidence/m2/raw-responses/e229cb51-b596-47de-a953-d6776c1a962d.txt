@@ -1,0 +1,65 @@
+{
+  "passage": "Climate change is a big problem for our planet. Many young people want to take action. In a small town, three students decided to start a club called Green Future. The members were Tom, a boy who loved science, Lily, a girl who cared about animals, and Jack, a quiet student who liked to plan. At first, they did not agree on what to do. Tom wanted to plant trees, Lily wanted to clean the river, and Jack wanted to save energy at school. They argued for a week. Then their teacher, Ms. Green, said, \"You can do all three if you work together.\" So they made a plan. On Saturday, they planted twenty trees near the school. On Sunday, they cleaned the river and collected ten bags of rubbish. They also asked students to turn off lights and computers when not in use. The club grew from three members to thirty in one month. The town government noticed their work and gave them a small award. Tom said, \"We learned that small actions can make a big difference.\" Now Green Future continues to meet every week, and more students are joining. They believe that everyone can help fight climate change.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the purpose of the passage?",
+      "options": [
+        "To encourage students to take action against climate change.",
+        "To explain how to plant trees correctly.",
+        "To describe the history of a town.",
+        "To compare different types of pollution."
+      ],
+      "answer": "To encourage students to take action against climate change.",
+      "explanation": "文章通过三个学生成立环保俱乐部并采取行动的故事，鼓励学生参与应对气候变化。A项正确。B项只涉及种树细节，不是全文目的；C项城镇历史未提及，故错误。",
+      "evidence_sentence": "They believe that everyone can help fight climate change.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Small actions by students can help fight climate change.",
+        "Planting trees is the best way to save the planet.",
+        "The town government should give more awards.",
+        "Students should not argue with each other."
+      ],
+      "answer": "Small actions by students can help fight climate change.",
+      "explanation": "文章主要讲述三个学生通过种树、清理河流和节约能源等小行动来应对气候变化，说明小行动也能带来改变。A项正确。B项过于绝对且片面；C项不是文章重点；D项偏离主题。",
+      "evidence_sentence": "We learned that small actions can make a big difference.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "How many bags of rubbish did the students collect when they cleaned the river?",
+      "options": [
+        "Ten bags.",
+        "Twenty bags.",
+        "Thirty bags.",
+        "Three bags."
+      ],
+      "answer": "Ten bags.",
+      "explanation": "文中明确提到“collected ten bags of rubbish”，因此他们收集了十袋垃圾。A项正确。B项二十是种树的数量；C项三十是俱乐部成员人数；D项三是初始成员数，均与垃圾袋数不符。",
+      "evidence_sentence": "On Sunday, they cleaned the river and collected ten bags of rubbish.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the students from the passage?",
+      "options": [
+        "They are willing to work together to solve problems.",
+        "They prefer to work alone rather than in a team.",
+        "They think climate change is not a serious problem.",
+        "They only care about winning awards."
+      ],
+      "answer": "They are willing to work together to solve problems.",
+      "explanation": "从他们最初意见不合，到在老师建议下合作完成三项任务，可以推断他们愿意合作解决问题。A项正确。B项与文中合作行为相反；C项与“Climate change is a big problem”矛盾；D项获奖只是结果，并非唯一目的。",
+      "evidence_sentence": "So they made a plan.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

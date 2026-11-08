@@ -1,0 +1,38 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative about a student's experience learning music, with a clear sequence of events and a unifying theme.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "She was unsure and lacked experience.",
+      "reason": "The evidence sentence directly states she felt nervous and had never played an instrument, clearly supporting this option.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "encouraged",
+      "reason": "The context of sharing tips and supporting each other indicates 'cheered' means encouraged, not shouted, laughed, or complained.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "Supportive",
+      "reason": "The passage's positive tone and the concluding statement that anyone can learn music show the author's supportive attitude.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "Music learning helps students grow in skills and teamwork.",
+      "reason": "The passage explicitly states music taught her not only violin but also how to work with others, matching this main idea.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

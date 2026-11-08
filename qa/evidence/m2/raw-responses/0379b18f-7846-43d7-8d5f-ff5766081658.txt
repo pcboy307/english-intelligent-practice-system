@@ -1,0 +1,38 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a single, connected narrative about Li Hua's recycling programme.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "To introduce a school recycling programme.",
+      "reason": "The passage describes Li Hua's initiative to start a recycling programme, making this the main purpose.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "Recycling clothes can help the environment and people in need.",
+      "reason": "The passage emphasizes the dual benefits of recycling clothes, which aligns with this option.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "They are cleaned and sorted by volunteers.",
+      "reason": "The passage explicitly states that volunteers clean and sort the clothes.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "She is active in community service.",
+      "reason": "Li Hua's initiative and workshops demonstrate her active involvement in community service.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

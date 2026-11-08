@@ -1,0 +1,45 @@
+{
+  "passage": "Last year, the student joined the school band. At first, she could hardly read music, and she often felt like giving up. Her teacher, however, encouraged her to practise a little every day. The student followed this advice. She arrived early to play scales before class, and she stayed late to repeat difficult passages. Slowly, her ability improved. By the spring concert, she was able to perform a solo in front of the whole school. Her teacher smiled and said, \"You have made amazing progress.\" The student realised that success comes from daily effort, not from talent alone. Now she helps younger members, showing them how to keep time and how to listen to others. Music has taught her patience and teamwork, and she hopes to continue playing for many years.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about the student's attitude at the beginning?",
+      "options": ["She was confident about her ability.", "She wanted to quit but was encouraged.", "She disliked her teacher.", "She had already mastered music."],
+      "answer": "She wanted to quit but was encouraged.",
+      "explanation": "文章提到她起初几乎不会读谱，常常想放弃，但老师鼓励她每天练习，因此可推断她想放弃但受到鼓励。A项说她自信，与原文“felt like giving up”矛盾；C项说她不喜欢老师，与老师鼓励她的事实不符。",
+      "evidence_sentence": "At first, she could hardly read music, and she often felt like giving up. Her teacher, however, encouraged her to practise a little every day.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"progress\" in the passage most probably mean?",
+      "options": ["Improvement", "Performance", "Practice", "Patience"],
+      "answer": "Improvement",
+      "explanation": "根据上下文，学生每天练习后能力提高，老师说她取得了惊人的进步，因此progress意为“进步、提高”。B项performance指表演，C项practice指练习，D项patience指耐心，均不符合语境。",
+      "evidence_sentence": "Slowly, her ability improved. By the spring concert, she was able to perform a solo in front of the whole school. Her teacher smiled and said, \"You have made amazing progress.\"",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the teacher's purpose in saying \"You have made amazing progress\"?",
+      "options": ["To praise the student's effort.", "To criticise the student's playing.", "To ask the student to practise more.", "To compare the student with others."],
+      "answer": "To praise the student's effort.",
+      "explanation": "老师微笑着说这句话，是对学生每天坚持练习并取得进步的表扬和肯定。B项批评、C项要求多练习、D项与他人比较，均与老师微笑表扬的语境不符。",
+      "evidence_sentence": "Her teacher smiled and said, \"You have made amazing progress.\"",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Talent is the key to success in music.", "Daily effort leads to success and personal growth.", "School bands are more important than other clubs.", "Teachers should give students more advice."],
+      "answer": "Daily effort leads to success and personal growth.",
+      "explanation": "文章通过学生每天坚持练习最终成功的故事，说明成功来自日常努力，并让她学会了耐心和团队合作。A项强调天赋，与原文“not from talent alone”相反；C项和D项均不是文章主旨。",
+      "evidence_sentence": "The student realised that success comes from daily effort, not from talent alone.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

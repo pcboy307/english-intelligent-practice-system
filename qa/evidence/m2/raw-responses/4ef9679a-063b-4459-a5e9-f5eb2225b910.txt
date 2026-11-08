@@ -1,0 +1,46 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a single connected narrative about a museum visit, with each sentence logically following from the previous one.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A correctly uses the past simple passive 'was built' to match the past time adverbial 'about sixty years ago'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A correctly uses the past simple passive 'were made' to match the past time adverbial 'more than a thousand years ago'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A correctly uses the emphatic structure 'It was ... that ...' with the past tense 'caught'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A correctly uses 'whether' to introduce an indirect yes/no question with the past perfect 'had used'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A correctly uses the relative pronoun 'which' to introduce a defining relative clause modifying 'village'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

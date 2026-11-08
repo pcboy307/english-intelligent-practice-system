@@ -1,0 +1,1 @@
+{"translations": {"first-aid": "急救", "load": "负载"}}

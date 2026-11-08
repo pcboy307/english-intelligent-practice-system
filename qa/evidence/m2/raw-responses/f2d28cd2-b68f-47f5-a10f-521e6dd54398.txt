@@ -1,0 +1,1 @@
+{"translations": {"cramming": "死记硬背", "distractions": "分心", "flashcards": "闪卡", "quizzed": "测验", "re-reading": "重读"}}

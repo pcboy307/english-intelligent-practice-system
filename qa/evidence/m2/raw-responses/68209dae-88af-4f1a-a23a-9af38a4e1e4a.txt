@@ -1,0 +1,65 @@
+{
+  "passage": "Last spring, a student noticed that a corner of her school yard was empty and dry. She believed that the space could become a small city garden. Her teacher agreed and said it was important that every class should take part. A classmate suggested that they should ask the local community for help. The student wrote a short plan and posted it online. Within a week, neighbours gave tools, seeds and old wood. On a sunny Saturday, the group built four raised beds. The student's job was to fill them with soil, while others planted tomatoes and beans. It was the teamwork that turned the dry corner into a green place. By July, the garden was full of flowers and vegetables. Students took turns to water the plants and collect rubbish. The student felt proud when younger children came to look and learn. She now believes that small actions can change a city. The garden has also become a quiet spot where people can relax after class. What began as an empty corner is now a shared treasure for the whole school.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the writer's main purpose in the passage?",
+      "options": [
+        "To show how a school garden project brought people together",
+        "To explain how to grow tomatoes and beans in raised beds",
+        "To argue that school yards should never be used for gardens",
+        "To describe a student's daily life in a city school"
+      ],
+      "answer": "To show how a school garden project brought people together",
+      "explanation": "文章通过学生发起花园项目、邻居帮助、同学合作等内容，说明项目如何把人们聚在一起。B和C分别只涉及种植细节和反对观点，均非全文目的。",
+      "evidence_sentence": "It was the teamwork that turned the dry corner into a green place.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "A small city garden can teach students about plants",
+        "A student's idea for a school garden grew into a shared success",
+        "Neighbours should give tools and seeds to schools",
+        "Children learn best when they work outside"
+      ],
+      "answer": "A student's idea for a school garden grew into a shared success",
+      "explanation": "全文围绕学生提议建花园，最终成为全校共享的成果，这是主旨。A和C只是文中部分细节，不能概括全文。",
+      "evidence_sentence": "What began as an empty corner is now a shared treasure for the whole school.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what did the student do on the sunny Saturday?",
+      "options": [
+        "She posted a short plan online.",
+        "She asked the local community for help.",
+        "She filled the raised beds with soil.",
+        "She collected rubbish with younger children."
+      ],
+      "answer": "She filled the raised beds with soil.",
+      "explanation": "文中明确说学生的任务是填土。A和B是之前做的事，D是后来做的事，时间不符。",
+      "evidence_sentence": "The student's job was to fill them with soil, while others planted tomatoes and beans.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the student from the last paragraph?",
+      "options": [
+        "She no longer works in the garden.",
+        "She wants to become a farmer.",
+        "She believes small actions can make a difference.",
+        "She thinks the garden is only for younger children."
+      ],
+      "answer": "She believes small actions can make a difference.",
+      "explanation": "文中说她现在相信小行动能改变城市，可推断她认为小行动有意义。A和D与原文相反，B无依据。",
+      "evidence_sentence": "She now believes that small actions can change a city.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

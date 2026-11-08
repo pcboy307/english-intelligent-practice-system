@@ -1,0 +1,130 @@
+{
+  "passage": "Last term, the student noticed that her daily habits were harming her health. She decided to 1 her body and build a balanced routine. Her teacher offered to 2 her efforts, saying, \"If you 3 for your choices, you will feel proud.\" The student agreed that the best 4 was to start small. She began to 5 late-night snacks and to 6 the advice of her coach. Only by changing her daily 7 could she improve. She made the 8 to walk to school each day, and every small 9 was recorded in her diary. With a supportive 10 at home, she kept going. If she had known earlier how much better she would feel, she would have started sooner, because the 11 was truly worth it. Her main 12 was to stay healthy, and her teacher 13 that she should 14 her weak points. Now she 15 herself more time to rest, and she feels much happier.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank 1.",
+      "options": ["respect", "ignore", "damage", "forget"],
+      "answer": "respect",
+      "explanation": "respect 意为“尊重”，与后文“build a balanced routine”一致。ignore 和 damage 与健康生活的语境相反，故排除。",
+      "evidence_sentence": "She decided to respect her body and build a balanced routine.",
+      "context_clue": "She decided to respect her body and build a balanced routine.",
+      "clue_argument": "respect 与 build a balanced routine 构成语义搭配。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank 2.",
+      "options": ["support", "refuse", "doubt", "punish"],
+      "answer": "support",
+      "explanation": "support 意为“支持”，老师支持学生的努力符合语境。refuse 和 punish 与老师鼓励学生的态度不符，故排除。",
+      "evidence_sentence": "Her teacher offered to support her efforts, saying, \"If you are responsible for your choices, you will feel proud.\"",
+      "context_clue": "Her teacher offered to support her efforts, saying, \"If you are responsible for your choices, you will feel proud.\"",
+      "clue_argument": "offer to support 表示主动提供支持。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank 3.",
+      "options": ["responsible", "responsibility", "responsibly", "response"],
+      "answer": "responsible",
+      "explanation": "be responsible for 是固定搭配，意为“对……负责”。responsibility 是名词，responsibly 是副词，均不能作表语，故排除。",
+      "evidence_sentence": "If you are responsible for your choices, you will feel proud.",
+      "context_clue": "If you are responsible for your choices, you will feel proud.",
+      "clue_argument": "are 后需形容词作表语，responsible 符合。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank 4.",
+      "options": ["solution", "problem", "question", "reason"],
+      "answer": "solution",
+      "explanation": "solution 意为“解决办法”，与“start small”对应。problem 和 question 是需要解决的问题，不是办法，故排除。",
+      "evidence_sentence": "The student agreed that the best solution was to start small.",
+      "context_clue": "The student agreed that the best solution was to start small.",
+      "clue_argument": "the best solution was to start small 说明 solution 指解决办法。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank 5.",
+      "options": ["avoid", "enjoy", "cook", "buy"],
+      "answer": "avoid",
+      "explanation": "avoid 意为“避免”，避免深夜零食符合健康习惯。enjoy 和 buy 与健康目标矛盾，故排除。",
+      "evidence_sentence": "She began to avoid late-night snacks and to value the advice of her coach.",
+      "context_clue": "She began to avoid late-night snacks and to value the advice of her coach.",
+      "clue_argument": "avoid late-night snacks 是健康行为。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank 6.",
+      "options": ["value", "waste", "hide", "drop"],
+      "answer": "value",
+      "explanation": "value 意为“重视”，重视教练的建议符合语境。waste 和 drop 表示不重视，与后文“improve”矛盾，故排除。",
+      "evidence_sentence": "She began to avoid late-night snacks and to value the advice of her coach.",
+      "context_clue": "She began to avoid late-night snacks and to value the advice of her coach.",
+      "clue_argument": "value the advice 表示重视建议。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank 7.",
+      "options": ["conduct", "conducts", "conducting", "conducted"],
+      "answer": "conduct",
+      "explanation": "daily conduct 意为“日常行为”，此处需名词。conducts 是动词第三人称单数，conducting 和 conducted 是分词，均不能作名词，故排除。",
+      "evidence_sentence": "Only by changing her daily conduct could she improve.",
+      "context_clue": "Only by changing her daily conduct could she improve.",
+      "clue_argument": "daily 后需名词，conduct 作名词表示行为。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank 8.",
+      "options": ["choice", "choose", "chose", "choosing"],
+      "answer": "choice",
+      "explanation": "make the choice 是固定搭配，意为“做出选择”。choose 是动词，chose 是过去式，choosing 是分词，均不能作 make 的宾语，故排除。",
+      "evidence_sentence": "She made the choice to walk to school each day, and every small effort was recorded in her diary.",
+      "context_clue": "She made the choice to walk to school each day, and every small effort was recorded in her diary.",
+      "clue_argument": "made the choice 是固定搭配。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank 9.",
+      "options": ["effort", "efforts", "effortless", "effortlessly"],
+      "answer": "effort",
+      "explanation": "every small effort 意为“每一份小小的努力”，effort 作可数名词单数。efforts 是复数，effortless 是形容词，effortlessly 是副词，故排除。",
+      "evidence_sentence": "She made the choice to walk to school each day, and every small effort was recorded in her diary.",
+      "context_clue": "She made the choice to walk to school each day, and every small effort was recorded in her diary.",
+      "clue_argument": "every small 后接单数名词 effort。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank 10.",
+      "options": ["environment", "environments", "environmental", "environmentally"],
+      "answer": "environment",
+      "explanation": "a supportive environment 意为“支持性的环境”，environment 作名词。environments 是复数，environmental 是形容词，environmentally 是副词，故排除。",
+      "evidence_sentence": "With a supportive environment at home, she kept going.",
+      "context_clue": "With a supportive environment at home, she kept going.",
+      "clue_argument": "a supportive 后接单数名词 environment。"
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank 11.",
+      "options": ["experience", "experiences", "experienced", "experiencing"],
+      "answer": "experience",
+      "explanation": "the experience 意为“这段经历”，作主语。experiences 是复数，experienced 是形容词或过去式，experiencing 是分词，故排除。",
+      "evidence_sentence": "If she had known earlier how much better she would feel, she would have started sooner, because the experience was truly worth it.",
+      "context_clue": "If she had known earlier how much better she would feel, she would have started sooner, because the experience was truly worth it.",
+      "clue_argument": "the 后需单数名词 experience。"
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank 12.",
+      "options": ["purpose", "purposes", "purposeful", "purposely"],
+      "answer": "purpose",
+      "explanation": "main purpose 意为“主要目的”，purpose 作名词。purposes 是复数，purposeful 是形容词，purposely 是副词，故排除。",
+      "evidence_sentence": "Her main purpose was to stay healthy, and her teacher suggested that she should identify her weak points.",
+      "context_clue": "Her main purpose was to stay healthy, and her teacher suggested that she should identify her weak points.",
+      "clue_argument": "main 后接单数名词 purpose。"
+    },
+    {
+      "question_index": 13,
+      "stem": "Choose the best word for blank 13.",
+      "options": ["suggested", "suggests", "suggesting", "suggestion"],
+      "answer": "suggested",
+      "explanation": "主句时态为过去时，suggest 也应用过去式 suggested。suggests 是现在时，suggesting 是分词，suggestion 是名词，故排除。",
+      "evidence_sentence": "Her main purpose was to stay heal

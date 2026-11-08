@@ -1,6 +1,9 @@
-bank_id=6fab59cd-c1fa-4a7a-8532-41bde57d18f2
-question_count=0
-passage_count=0
-question_type_counts={}
-passage_type_counts={}
-pilot_status=failed
+M2 Bank #2: {"id": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2", "name": "M2 Bank #2", "status": "active", "target_size": 300}
+passages_published: 47
+questions_total: 300
+draft_questions: 0
+cloze: 90
+gap_fill: 50
+grammar_fill: 60
+reading: 100
+practice_sessions: 719

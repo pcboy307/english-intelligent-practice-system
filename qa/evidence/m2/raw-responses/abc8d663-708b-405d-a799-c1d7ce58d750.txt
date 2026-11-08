@@ -1,0 +1,46 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage tells a continuous story about a student's experience with basketball tryouts and personal growth.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "As a result correctly indicates the causal relationship between feeling nervous and missing shots.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "If is required for the third conditional structure expressing a hypothetical past condition.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Seldom triggers subject-auxiliary inversion and fits the meaning of rarely hearing such encouragement.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "To introduces an infinitive of purpose, correctly expressing why he stayed after school.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "If is needed for the third conditional expressing a hypothetical past condition and its consequence.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

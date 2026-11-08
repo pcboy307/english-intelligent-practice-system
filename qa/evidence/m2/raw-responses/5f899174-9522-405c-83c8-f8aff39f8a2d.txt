@@ -1,0 +1,105 @@
+{
+  "passage": "Choosing a career is one of the most important decisions in life. Many students wonder ① they should follow their interests or choose a job with a good salary. In my opinion, interest should come first. If you do something you love, you will be more ② (motivate) to work hard. For example, my cousin is ③ (passion) about animals, so she decided to become a vet. She believes that helping animals is the ④ (mean) thing in her life. Of course, salary is also important, but it is not ⑤ (important) than job satisfaction. Some jobs are ⑥ (stress) than others, but if you enjoy them, you can handle the pressure. With ⑦ (technology) developing so fast, many new jobs will appear in the future. For instance, AI engineers and robot designers will be in great demand. To prepare for these jobs, we need to be ⑧ (create) and willing to learn new skills. It is also important ⑨ (develop) good communication skills. In conclusion, choosing a career is not easy, but if we follow our hearts and work hard, we can ⑩ (achieve) our goals.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank ①.",
+      "options": ["that", "whether", "what", "which"],
+      "answer": "whether",
+      "explanation": "此处需要连词引导宾语从句，表示“是否”，whether符合句意。that无实义，what和which在从句中作成分，此处不缺成分。",
+      "evidence_sentence": "Many students wonder ① they should follow their interests or choose a job with a good salary.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank ②.",
+      "options": ["motivate", "motivating", "motivated", "motivation"],
+      "answer": "motivated",
+      "explanation": "此处需要形容词作表语，表示“有动力的”，motivated符合。motivate是动词，motivating令人……的，motivation是名词。",
+      "evidence_sentence": "If you do something you love, you will be more ② (motivate) to work hard.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank ③.",
+      "options": ["passion", "passionate", "passionately", "passionless"],
+      "answer": "passionate",
+      "explanation": "be passionate about是固定搭配，意为“对……充满热情”，此处需要形容词。passion是名词，passionately是副词，passionless无此词。",
+      "evidence_sentence": "For example, my cousin is ③ (passion) about animals, so she decided to become a vet.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank ④.",
+      "options": ["meaning", "meaningful", "meaningless", "mean"],
+      "answer": "meaningful",
+      "explanation": "此处需要形容词修饰thing，表示“有意义的”，meaningful符合。meaning是名词，meaningless无意义的，mean是动词或形容词“吝啬的”。",
+      "evidence_sentence": "She believes that helping animals is the ④ (mean) thing in her life.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank ⑤.",
+      "options": ["important", "more important", "most important", "importanter"],
+      "answer": "more important",
+      "explanation": "句中有than，所以用比较级more important。important是多音节形容词，比较级加more。",
+      "evidence_sentence": "Of course, salary is also important, but it is not ⑤ (important) than job satisfaction.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best option for blank ⑥.",
+      "options": ["stressful", "more stressful", "most stressful", "stressfully"],
+      "answer": "more stressful",
+      "explanation": "句中有than，所以用比较级more stressful。stressful是多音节形容词，比较级加more。",
+      "evidence_sentence": "Some jobs are ⑥ (stress) than others, but if you enjoy them, you can handle the pressure.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best option for blank ⑦.",
+      "options": ["technology", "technological", "technologically", "technologist"],
+      "answer": "technology",
+      "explanation": "with复合结构中，with后接名词+现在分词，表示“随着科技发展”，此处需要名词technology。technological是形容词，technologically是副词，technologist是名词“技术专家”。",
+      "evidence_sentence": "With ⑦ (technology) developing so fast, many new jobs will appear in the future.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best option for blank ⑧.",
+      "options": ["create", "creative", "creatively", "creation"],
+      "answer": "creative",
+      "explanation": "此处需要形容词作表语，表示“有创造力的”，creative符合。create是动词，creatively是副词，creation是名词。",
+      "evidence_sentence": "To prepare for these jobs, we need to be ⑧ (create) and willing to learn new skills.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best option for blank ⑨.",
+      "options": ["develop", "developing", "to develop", "developed"],
+      "answer": "to develop",
+      "explanation": "It is important to do sth.是固定句型，it作形式主语，真正主语是不定式。",
+      "evidence_sentence": "It is also important ⑨ (develop) good communication skills.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best option for blank ⑩.",
+      "options": ["achieve", "achieving", "to achieve", "achieved"],
+      "answer": "achieve",
+      "explanation": "情态动词can后接动词原形，所以用achieve。",
+      "evidence_sentence": "In conclusion, choosing a career is not easy, but if we follow our hearts and work hard, we can ⑩ (achieve) our goals.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

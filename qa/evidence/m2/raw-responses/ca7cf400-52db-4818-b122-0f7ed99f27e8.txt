@@ -1,0 +1,38 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a connected narrative about a student learning time management through a sequence of events.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "The student learned to manage time by prioritising tasks.",
+      "reason": "Option A correctly summarizes the main idea, while the others are details or false statements.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "She listed all her tasks and ranked them by importance.",
+      "reason": "This option directly matches the passage's description of Monday's actions, while the others are incorrect or refer to other days.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "She has become more confident in managing her time.",
+      "reason": "This inference is supported by the final sentence, while the others are unsupported or contradicted.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "unable to focus",
+      "reason": "The context contrasts 'focused' with 'distracted', making 'unable to focus' the correct meaning.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

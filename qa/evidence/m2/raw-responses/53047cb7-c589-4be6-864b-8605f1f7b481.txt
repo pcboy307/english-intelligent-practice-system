@@ -1,0 +1,105 @@
+{
+  "passage": "Last month, our science club started a project ①______ aimed to test how plants grow. We chose three pots, each of ②______ received the same amount of soil. The pot ③______ was placed on the windowsill got the most light. Lily, ④______ joined the club last year, recorded the height of each plant every day. The results, ⑤______ surprised us all, showed that light matters greatly. The project, ⑥______ we finished last week, taught us patience. The data ⑦______ carefully by Lily each morning. Now the final report ⑧______ by the whole team. The plants ⑨______ in the school garden next week. We are proud of the work ⑩______ by our club.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "①______",
+      "options": ["which", "who", "whose", "where"],
+      "answer": "which",
+      "explanation": "此处需要关系代词指代project，在定语从句中作主语，应用which。who指人，whose表示所属，均不符合。",
+      "evidence_sentence": "Last month, our science club started a project ①______ aimed to test how plants grow.",
+      "context_clue": "Last month, our science club started a project ①______ aimed to test how plants grow.",
+      "clue_argument": "先行词project是物，从句缺主语，用which。"
+    },
+    {
+      "question_index": 2,
+      "stem": "②______",
+      "options": ["which", "them", "what", "those"],
+      "answer": "which",
+      "explanation": "“each of which”引导非限制性定语从句，指代three pots。them不能引导从句，what不能用于此处。",
+      "evidence_sentence": "We chose three pots, each of ②______ received the same amount of soil.",
+      "context_clue": "We chose three pots, each of ②______ received the same amount of soil.",
+      "clue_argument": "介词of后需要关系代词which指代pots。"
+    },
+    {
+      "question_index": 3,
+      "stem": "③______",
+      "options": ["that", "which", "who", "where"],
+      "answer": "that",
+      "explanation": "先行词pot被序数词或最高级修饰时，关系代词常用that。which虽可指物，但此处习惯用that。who指人，where作状语。",
+      "evidence_sentence": "The pot ③______ was placed on the windowsill got the most light.",
+      "context_clue": "The pot ③______ was placed on the windowsill got the most light.",
+      "clue_argument": "先行词pot有特定限定，用that引导定语从句。"
+    },
+    {
+      "question_index": 4,
+      "stem": "④______",
+      "options": ["who", "which", "whom", "whose"],
+      "answer": "who",
+      "explanation": "非限制性定语从句先行词Lily是人，在从句中作主语，用who。which指物，whom作宾语，whose表所属。",
+      "evidence_sentence": "Lily, ④______ joined the club last year, recorded the height of each plant every day.",
+      "context_clue": "Lily, ④______ joined the club last year, recorded the height of each plant every day.",
+      "clue_argument": "先行词Lily是人，从句缺主语，用who。"
+    },
+    {
+      "question_index": 5,
+      "stem": "⑤______",
+      "options": ["which", "that", "what", "who"],
+      "answer": "which",
+      "explanation": "非限制性定语从句指代整个主句内容，用which。that不能引导非限制性定语从句，what不能引导定语从句。",
+      "evidence_sentence": "The results, ⑤______ surprised us all, showed that light matters greatly.",
+      "context_clue": "The results, ⑤______ surprised us all, showed that light matters greatly.",
+      "clue_argument": "逗号后非限制性定语从句，指代前文内容用which。"
+    },
+    {
+      "question_index": 6,
+      "stem": "⑥______",
+      "options": ["which", "that", "who", "where"],
+      "answer": "which",
+      "explanation": "非限制性定语从句先行词the project，在从句中作finished的宾语，用which。that不用于非限制性定语从句。",
+      "evidence_sentence": "The project, ⑥______ we finished last week, taught us patience.",
+      "context_clue": "The project, ⑥______ we finished last week, taught us patience.",
+      "clue_argument": "非限制性定语从句，先行词project作宾语，用which。"
+    },
+    {
+      "question_index": 7,
+      "stem": "⑦______",
+      "options": ["were recorded", "was recorded", "are recorded", "recorded"],
+      "answer": "were recorded",
+      "explanation": "主语The data是复数，且由each morning可知用一般过去时被动语态，故用were recorded。was recorded单数错误，are recorded时态错误。",
+      "evidence_sentence": "The data ⑦______ carefully by Lily each morning.",
+      "context_clue": "The data ⑦______ carefully by Lily each morning.",
+      "clue_argument": "data复数，过去时被动，用were recorded。"
+    },
+    {
+      "question_index": 8,
+      "stem": "⑧______",
+      "options": ["is being written", "is writing", "has written", "writes"],
+      "answer": "is being written",
+      "explanation": "Now表示现在进行时，report与write是被动关系，故用is being written。is writing主动错误，has written时态不符。",
+      "evidence_sentence": "Now the final report ⑧______ by the whole team.",
+      "context_clue": "Now the final report ⑧______ by the whole team.",
+      "clue_argument": "Now提示现在进行时，report被写，用被动。"
+    },
+    {
+      "question_index": 9,
+      "stem": "⑨______",
+      "options": ["will be planted", "will plant", "are planted", "planted"],
+      "answer": "will be planted",
+      "explanation": "next week表示将来，plants与plant是被动关系，用一般将来时被动will be planted。will plant主动错误，are planted时态错误。",
+      "evidence_sentence": "The plants ⑨______ in the school garden next week.",
+      "context_clue": "The plants ⑨______ in the school garden next week.",
+      "clue_argument": "next week将来时，植物被种植，用被动。"
+    },
+    {
+      "question_index": 10,
+      "stem": "⑩______",
+      "options": ["done", "doing", "to do", "do"],
+      "answer": "done",
+      "explanation": "此处需要过去分词作后置定语修饰work，表示被动和完成，用done。doing表主动进行，to do表将来，均不符。",
+      "evidence_sentence": "We are proud of the work ⑩______ by our club.",
+      "context_clue": "We are proud of the work ⑩______ by our club.",
+      "clue_argument": "work与do是被动关系，用过去分词done作定语。"
+    }
+  ]
+}

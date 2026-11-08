@@ -1,0 +1,1 @@
+{"translations": {"default": "默认", "passwords": "密码", "policy": "策略"}}

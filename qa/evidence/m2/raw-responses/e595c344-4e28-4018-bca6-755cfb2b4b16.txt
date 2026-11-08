@@ -1,0 +1,65 @@
+{
+  "passage": "Learning a musical instrument is a challenge that many students face. Last year, a student decided to learn the piano. She believed that music could help her relax and improve her memory. However, she soon found that practising for hours was boring. Her teacher advised her to set small goals. For example, she aimed to play one song well each week. With her teacher's encouragement, she began to enjoy the progress she made. Now, she plays in the school band and feels proud of her achievement. Music learning, therefore, is not just about talent; it is about patience and practice.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about the student's initial attitude towards learning the piano?",
+      "options": [
+        "She was confident and excited.",
+        "She was doubtful and anxious.",
+        "She was bored and frustrated.",
+        "She was indifferent and careless."
+      ],
+      "answer": "She was bored and frustrated.",
+      "explanation": "文章提到她很快发现练习几个小时很无聊，说明她最初的态度是厌倦和沮丧。A项说她自信兴奋，与文意相反；B项说她怀疑焦虑，文中未提及。",
+      "evidence_sentence": "However, she soon found that practising for hours was boring.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "The word \"boring\" in the passage is closest in meaning to ______.",
+      "options": [
+        "interesting",
+        "tiring",
+        "dull",
+        "easy"
+      ],
+      "answer": "dull",
+      "explanation": "“boring”意为“无聊的”，与“dull”意思最接近。A项“interesting”是反义词；B项“tiring”强调累，不准确。",
+      "evidence_sentence": "However, she soon found that practising for hours was boring.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the teacher's purpose in advising the student to set small goals?",
+      "options": [
+        "To help her win a competition.",
+        "To make practice more manageable.",
+        "To test her musical talent.",
+        "To reduce her practice time."
+      ],
+      "answer": "To make practice more manageable.",
+      "explanation": "老师建议设定小目标，是为了让练习更容易管理，从而保持兴趣。A项赢得比赛、C项测试天赋、D项减少练习时间均不是目的。",
+      "evidence_sentence": "Her teacher advised her to set small goals.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Talent is the key to music learning.",
+        "Music learning requires patience and practice.",
+        "Students should avoid boring activities.",
+        "Teachers should set goals for students."
+      ],
+      "answer": "Music learning requires patience and practice.",
+      "explanation": "文章通过学生学钢琴的经历，说明音乐学习需要耐心和练习。A项强调天赋，与文意不符；C项过于绝对；D项片面。",
+      "evidence_sentence": "Music learning, therefore, is not just about talent; it is about patience and practice.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

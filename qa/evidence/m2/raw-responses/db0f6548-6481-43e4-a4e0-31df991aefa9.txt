@@ -1,0 +1,65 @@
+{
+  "passage": "Public libraries have long been called the 'poor man's university,' but today they serve everyone. In many cities, the library is the only place where people can use the Internet for free, borrow books without paying, and attend classes on everything from coding to cooking. Take the case of Maria, a single mother who moved to a new city last year. She had no computer at home, so she went to the local library to apply for jobs online. The librarian, who noticed her struggle with the keyboard, offered her a free weekly computer class. Within two months, Maria found a job at a hotel. Her story is not unusual. Libraries also host reading groups for children, English conversation clubs for immigrants, and workshops on writing resumes. Some people argue that libraries are no longer necessary because most information is available online. However, not everyone has a smartphone or a quiet place to study. The library provides a safe, warm space where anyone can learn at their own pace. Moreover, libraries often lend out tools, musical instruments, and even seeds for gardens. In short, the modern library is much more than a building full of books; it is a community center that changes lives.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the phrase 'poor man's university' in the first sentence suggest about public libraries?",
+      "options": [
+        "They are only for poor people.",
+        "They offer free education to those who cannot afford it.",
+        "They are old-fashioned and no longer useful.",
+        "They charge money for classes."
+      ],
+      "answer": "They offer free education to those who cannot afford it.",
+      "explanation": "该短语比喻公共图书馆为经济困难的人提供免费学习机会，就像大学一样。A项错误，因为图书馆对所有人开放；C项错误，因为文章强调图书馆的现代作用。",
+      "evidence_sentence": "Public libraries have long been called the 'poor man's university,' but today they serve everyone.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's attitude towards the idea that libraries are no longer necessary?",
+      "options": [
+        "Supportive",
+        "Neutral",
+        "Disapproving",
+        "Uncertain"
+      ],
+      "answer": "Disapproving",
+      "explanation": "作者用However转折，指出并非所有人都有网络和安静的学习空间，并强调图书馆提供安全温暖的环境，表明作者不赞同图书馆不再必要的观点。A项支持错误；B项中立错误，因为作者明确反驳。",
+      "evidence_sentence": "However, not everyone has a smartphone or a quiet place to study.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Libraries are only useful for borrowing books.",
+        "Maria's success story is the most important part.",
+        "Modern libraries serve as community centers that change lives.",
+        "Online information has made libraries unnecessary."
+      ],
+      "answer": "Modern libraries serve as community centers that change lives.",
+      "explanation": "文章通过Maria的例子和其他服务说明现代图书馆是社区中心，能改变人们的生活。A项过于片面；D项与作者观点相反。",
+      "evidence_sentence": "In short, the modern library is much more than a building full of books; it is a community center that changes lives.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, which of the following is NOT mentioned as something libraries offer?",
+      "options": [
+        "Free Internet access",
+        "Job application help",
+        "Tools and musical instruments",
+        "Free meals for children"
+      ],
+      "answer": "Free meals for children",
+      "explanation": "文章提到图书馆提供免费网络、求职帮助、工具和乐器，但没有提到免费儿童餐。A、B、C项均在文中明确提及。",
+      "evidence_sentence": "Moreover, libraries often lend out tools, musical instruments, and even seeds for gardens.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage tells a coherent story about a student's adaptation to online learning.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "anxious",
+      "reason": "The context 'because she could not follow the online lessons' directly implies anxiety.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "confident",
+      "reason": "The phrase 'with daily practice' suggests building confidence over time.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "curious",
+      "reason": "The phrase 'about new apps' indicates curiosity, which motivates showing how to use the tool.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "reliable",
+      "reason": "The consequence 'so the student learned to save her work often' implies the platform was not dependable.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "ambitious",
+      "reason": "The conditional 'would try the extra tasks' indicates a desire for achievement, which aligns with ambition.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 6,
+      "clear_best": true,
+      "best_option": "achieve",
+      "reason": "The object 'real progress' collocates naturally with 'achieve'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 7,
+      "clear_best": true,
+      "best_option": "adapt",
+      "reason": "The phrase 'her study habits to the online setting' requires a verb meaning to adjust, which is 'adapt'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 8,
+      "clear_best": true,
+      "best_option": "encourage",
+      "reason": "The context 'to ask questions in the chat room' suggests students were motivated or urged to participate.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 9,
+      "clear_best": true,
+      "best_option": "persuade",
+      "reason": "The phrase 'her parents to let her study at home' implies she convinced them, which is 'persuaded'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 10,
+      "clear_best": true,
+      "best_option": "concentrate",
+      "reason": "The phrase 'for forty minutes' suggests focused attention, which is 'concentrated'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 11,
+      "clear_best": true,
+      "best_option": "gradually",
+      "reason": "The phrase 'building good habits' implies a slow, step-by-step process, which is 'gradually'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 12,
+      "clear_best": true,
+      "best_option": "eventually",
+      "reason": "The context 'set a clear goal for each week' suggests a final outcome after persistence, which is 'eventually'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 13,
+      "clear_best": true,
+      "best_option": "independently",
+      "reason": "The phrase 'checking her progress' suggests the teacher did it on her own, which is 'independently'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 14,
+      "clear_best": true,
+      "best_option": "confidence",
+      "reason": "The phrase 'in her ability' collocates with 'confidence'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 15,
+      "clear_best": true,
+      "best_option": "opportunity",
+      "reason": "The phrase 'to learn' requires a noun meaning a chance, which is 'opportunity'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

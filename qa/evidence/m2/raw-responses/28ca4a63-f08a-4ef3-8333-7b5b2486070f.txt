@@ -1,0 +1,95 @@
+{
+  "passage": "Reading habits are important for students. (1) Many students today spend too much time on their phones and too little time reading books. (2) It is necessary that every student should read for at least twenty minutes a day. (3) Students who read regularly often do better in school. (4) The enjoyment of reading can be a lifelong pleasure. (5) Regular reading habits are beneficial for students' language skills.\n\nA: However, some students say they are too busy to read.\nB: Therefore, schools should provide more reading time.\nC: In fact, reading can be a fun activity.\nD: For example, a student who reads daily learns more words.\nE: As a result, their writing improves.\nF: Moreover, reading helps students relax.\nG: In conclusion, reading habits matter.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the sentence that best fits blank (1).",
+      "options": [
+        "However, some students say they are too busy to read.",
+        "Therefore, schools should provide more reading time.",
+        "In fact, reading can be a fun activity.",
+        "For example, a student who reads daily learns more words.",
+        "As a result, their writing improves.",
+        "Moreover, reading helps students relax.",
+        "In conclusion, reading habits matter."
+      ],
+      "answer": "A",
+      "explanation": "前句说学生花太多时间在手机上而读书太少，A项用However引出对比，指出有些学生说太忙没时间读书，符合语义转折。B项Therefore表结果，C项In fact表强调，均不能与前后句形成对比。",
+      "evidence_sentence": "Many students today spend too much time on their phones and too little time reading books.",
+      "context_clue": "Many students today spend too much time on their phones and too little time reading books.",
+      "clue_argument": "前句描述负面现象，后句应转折提出另一种情况，A项However符合。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the sentence that best fits blank (2).",
+      "options": [
+        "However, some students say they are too busy to read.",
+        "Therefore, schools should provide more reading time.",
+        "In fact, reading can be a fun activity.",
+        "For example, a student who reads daily learns more words.",
+        "As a result, their writing improves.",
+        "Moreover, reading helps students relax.",
+        "In conclusion, reading habits matter."
+      ],
+      "answer": "B",
+      "explanation": "前句提到学生读书少，B项用Therefore引出建议，即学校应提供更多阅读时间，符合因果关系。A项However表转折，C项In fact表强调，均不能与前后句形成因果。",
+      "evidence_sentence": "Many students today spend too much time on their phones and too little time reading books.",
+      "context_clue": "Many students today spend too much time on their phones and too little time reading books.",
+      "clue_argument": "前句指出问题，后句应提出解决办法，B项Therefore符合因果逻辑。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the sentence that best fits blank (3).",
+      "options": [
+        "However, some students say they are too busy to read.",
+        "Therefore, schools should provide more reading time.",
+        "In fact, reading can be a fun activity.",
+        "For example, a student who reads daily learns more words.",
+        "As a result, their writing improves.",
+        "Moreover, reading helps students relax.",
+        "In conclusion, reading habits matter."
+      ],
+      "answer": "C",
+      "explanation": "前句建议学校提供阅读时间，C项用In fact强调阅读其实可以很有趣，与后句“常读书的学生成绩更好”形成语义对比。A项However表转折，B项Therefore表结果，均不能与前后句形成对比。",
+      "evidence_sentence": "Students who read regularly often do better in school.",
+      "context_clue": "Students who read regularly often do better in school.",
+      "clue_argument": "后句说常读书的学生成绩更好，前句应强调阅读的乐趣，C项In fact符合对比。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the sentence that best fits blank (4).",
+      "options": [
+        "However, some students say they are too busy to read.",
+        "Therefore, schools should provide more reading time.",
+        "In fact, reading can be a fun activity.",
+        "For example, a student who reads daily learns more words.",
+        "As a result, their writing improves.",
+        "Moreover, reading helps students relax.",
+        "In conclusion, reading habits matter."
+      ],
+      "answer": "D",
+      "explanation": "前句说常读书的学生成绩更好，D项用For example举例说明每天读书的学生学到更多单词，与后句“享受阅读是终身乐趣”形成对比。A项However表转折，B项Therefore表结果，均不能与前后句形成对比。",
+      "evidence_sentence": "Students who read regularly often do better in school.",
+      "context_clue": "Students who read regularly often do better in school.",
+      "clue_argument": "前句是概括，后句应举例，D项For example符合举例关系。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the sentence that best fits blank (5).",
+      "options": [
+        "However, some students say they are too busy to read.",
+        "Therefore, schools should provide more reading time.",
+        "In fact, reading can be a fun activity.",
+        "For example, a student who reads daily learns more words.",
+        "As a result, their writing improves.",
+        "Moreover, reading helps students relax.",
+        "In conclusion, reading habits matter."
+      ],
+      "answer": "G",
+      "explanation": "前句说规律阅读习惯对学生语言技能有益，G项用In conclusion总结全文，指出阅读习惯很重要，与后文无矛盾。A项However表转折，B项Therefore表结果，均不能作为总结句。",
+      "evidence_sentence": "Regular reading habits are beneficial for students' language skills.",
+      "context_clue": "Regular reading habits are beneficial for students' language skills.",
+      "clue_argument": "前句是具体益处，后句应总结全文，G项In conclusion符合总结关系。"
+    }
+  ]
+}

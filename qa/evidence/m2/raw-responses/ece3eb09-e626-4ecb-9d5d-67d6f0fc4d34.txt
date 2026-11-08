@@ -1,0 +1,95 @@
+{
+  "passage": "Reading habits shape how we learn and grow. (1) ______ Many students, however, struggle to build a daily reading routine. The student, who loves stories, reads for twenty minutes every evening. Her teacher noticed that it was this small habit that improved her vocabulary. (2) ______ A classmate, by contrast, reads only when he has to. His teacher suggested that he should start with short articles. (3) ______ Another student, whose schedule is packed, listens to audiobooks on the bus. (4) ______ The key difference is not ability but consistency. (5) ______",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the sentence that best fits blank (1).",
+      "options": [
+        "A. Some people believe that reading is a waste of time.",
+        "B. Reading widely can open doors to new worlds.",
+        "C. However, reading is often seen as a boring task.",
+        "D. For example, many students enjoy reading comics.",
+        "E. In contrast, watching TV is more popular.",
+        "F. Therefore, schools should ban digital devices.",
+        "G. As a result, libraries are becoming less important."
+      ],
+      "answer": "B",
+      "explanation": "首句应总起阅读的益处，B“广泛阅读能打开新世界的大门”与下文“阅读习惯塑造学习与成长”衔接自然。A和C都否定阅读，与段落积极基调相反；D举例过早，E引入电视对比偏离主题。",
+      "evidence_sentence": "Reading habits shape how we learn and grow.",
+      "context_clue": "Reading habits shape how we learn and grow.",
+      "clue_argument": "首句提出阅读习惯的积极作用，B选项正面阐述阅读价值，语义一致。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the sentence that best fits blank (2).",
+      "options": [
+        "A. She also enjoys writing short stories in her free time.",
+        "B. Her teacher believes that reading should be a daily habit.",
+        "C. In contrast, her classmate rarely reads for pleasure.",
+        "D. Therefore, she spends little time on homework.",
+        "E. For instance, she reads only on weekends.",
+        "F. However, her teacher disagrees with this approach.",
+        "G. As a result, she has little interest in reading."
+      ],
+      "answer": "C",
+      "explanation": "前文讲该学生每天坚持阅读，后文用“by contrast”引出同学只在必要时阅读，C“相比之下，她的同学很少为了乐趣而阅读”形成对比，衔接顺畅。A和B都继续讲同一人，无法与后文对比衔接；D和G与上文积极阅读习惯矛盾。",
+      "evidence_sentence": "Her teacher noticed that it was this small habit that improved her vocabulary.",
+      "context_clue": "A classmate, by contrast, reads only when he has to.",
+      "clue_argument": "后文明确用by contrast引出对比，C选项以In contrast开头，语义形成对照。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the sentence that best fits blank (3).",
+      "options": [
+        "A. He finds long novels too difficult to finish.",
+        "B. She, on the other hand, prefers reading novels.",
+        "C. The teacher also advises him to read aloud.",
+        "D. Therefore, he never reads anything at all.",
+        "E. In contrast, the student who loves stories reads every day.",
+        "F. For example, he reads only when he has to.",
+        "G. As a result, his vocabulary is improving quickly."
+      ],
+      "answer": "E",
+      "explanation": "前文说同学只在必要时阅读，后文转向“另一个学生”，此处需要对比回指爱读故事的学生，E“相比之下，爱读故事的那个学生每天阅读”形成语义对比。A和C仍围绕同学，无法与后文“另一个学生”衔接；D过于绝对且与“start with short articles”矛盾。",
+      "evidence_sentence": "A classmate, by contrast, reads only when he has to.",
+      "context_clue": "Another student, whose schedule is packed, listens to audiobooks on the bus.",
+      "clue_argument": "后文引入另一个学生，E选项用In contrast回指前文爱阅读的学生，形成对比。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the sentence that best fits blank (4).",
+      "options": [
+        "A. She finds audiobooks convenient and enjoyable.",
+        "B. He, however, refuses to try any new method.",
+        "C. In contrast, the classmate who reads only when necessary seldom finishes a book.",
+        "D. Therefore, listening is better than reading.",
+        "E. For instance, she listens while doing housework.",
+        "F. As a result, she has no time to read at all.",
+        "G. However, audiobooks are not real reading."
+      ],
+      "answer": "C",
+      "explanation": "前文介绍第三个学生用听书利用通勤时间，后文总结“关键差异不是能力而是坚持”，此处应对比前文“只在必要时阅读”的同学，C“相比之下，那个只在必要时阅读的同学很少读完一本书”形成对比并呼应坚持主题。A和E继续描述同一学生，无法形成对比；D和G偏离“坚持”这一结论。",
+      "evidence_sentence": "Another student, whose schedule is packed, listens to audiobooks on the bus.",
+      "context_clue": "The key difference is not ability but consistency.",
+      "clue_argument": "后文强调坚持的差异，C选项通过对比突出“很少读完”与坚持阅读的差异。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the sentence that best fits blank (5).",
+      "options": [
+        "A. So reading is not important for students.",
+        "B. In contrast, ability matters more than habit.",
+        "C. Therefore, teachers should assign more homework.",
+        "D. However, students should read only for exams.",
+        "E. For example, some students read faster than others.",
+        "F. As a result, building a daily reading habit is worth the effort.",
+        "G. In short, reading habits are difficult to change."
+      ],
+      "answer": "F",
+      "explanation": "前文总结“关键差异不是能力而是坚持”，此处应得出“培养每日阅读习惯值得努力”的结论，F语义连贯。A否定阅读重要性，与全文矛盾；B说能力比习惯更重要，与原文“not ability but consistency”直接相反。",
+      "evidence_sentence": "The key difference is not ability but consistency.",
+      "context_clue": "The key difference is not ability but consistency.",
+      "clue_argument": "原文强调坚持而非能力，F选项得出培养每日习惯值得努力的结论，逻辑一致。"
+    }
+  ]
+}

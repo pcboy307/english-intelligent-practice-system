@@ -1,0 +1,105 @@
+{
+  "passage": "Last month, a group of students carried out a science project on water quality. The student ① led the team was named Li Hua. They chose a river ② flows through their town. The river, ③ they had studied in class, was said to be polluted. They collected samples from three spots ④ were near factories. The samples, ⑤ were tested in the school lab, showed high levels of waste. The results, ⑥ surprised everyone, were shared online. Since then, the river ⑦ has been cleaned by volunteers every week. A new report ⑧ will be published next month. The old factory ⑨ was closed last year. Now the water ⑩ looks much clearer.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the correct word for blank ①.",
+      "options": ["who", "which", "whose", "whom"],
+      "answer": "who",
+      "explanation": "先行词the student指人，在定语从句中作主语，用who。which指物，whose表所属，均不符合；whom作宾语。",
+      "evidence_sentence": "The student ① led the team was named Li Hua.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the correct word for blank ②.",
+      "options": ["who", "which", "whose", "whom"],
+      "answer": "which",
+      "explanation": "先行词a river指物，在定语从句中作主语，用which。who指人，whose表所属，whom作宾语，均不对。",
+      "evidence_sentence": "They chose a river ② flows through their town.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the correct word for blank ③.",
+      "options": ["which", "that", "who", "where"],
+      "answer": "which",
+      "explanation": "非限制性定语从句不能用that，先行词the river指物，用which。who指人，where作状语，均不对。",
+      "evidence_sentence": "The river, ③ they had studied in class, was said to be polluted.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the correct word for blank ④.",
+      "options": ["that", "which", "who", "where"],
+      "answer": "that",
+      "explanation": "先行词three spots指物，在定语从句中作主语，可用that。which也可但选项中that更佳；who指人，where作状语，不对。",
+      "evidence_sentence": "They collected samples from three spots ④ were near factories.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the correct word for blank ⑤.",
+      "options": ["which", "that", "who", "whose"],
+      "answer": "which",
+      "explanation": "非限制性定语从句不能用that，先行词the samples指物，用which。who指人，whose表所属，不对。",
+      "evidence_sentence": "The samples, ⑤ were tested in the school lab, showed high levels of waste.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the correct word for blank ⑥.",
+      "options": ["which", "that", "who", "where"],
+      "answer": "which",
+      "explanation": "非限制性定语从句不能用that，先行词the results指物，用which。who指人，where作状语，不对。",
+      "evidence_sentence": "The results, ⑥ surprised everyone, were shared online.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the correct word for blank ⑦.",
+      "options": ["has been cleaned", "was cleaned", "is cleaned", "will be cleaned"],
+      "answer": "has been cleaned",
+      "explanation": "由since then可知用现在完成时，且river与clean是被动关系，用现在完成时的被动语态。was cleaned过去时，is cleaned一般现在时，will be cleaned将来时，均不符合。",
+      "evidence_sentence": "Since then, the river ⑦ has been cleaned by volunteers every week.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the correct word for blank ⑧.",
+      "options": ["will be published", "is published", "was published", "has been published"],
+      "answer": "will be published",
+      "explanation": "由next month可知用一般将来时，report与publish是被动关系，用一般将来时的被动语态。is published一般现在时，was published过去时，has been published现在完成时，均不对。",
+      "evidence_sentence": "A new report ⑧ will be published next month.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the correct word for blank ⑨.",
+      "options": ["was closed", "is closed", "will be closed", "has been closed"],
+      "answer": "was closed",
+      "explanation": "由last year可知用一般过去时，factory与close是被动关系，用一般过去时的被动语态。is closed一般现在时，will be closed将来时，has been closed现在完成时，均不对。",
+      "evidence_sentence": "The old factory ⑨ was closed last year.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the correct word for blank ⑩.",
+      "options": ["looks", "looking", "looked", "to look"],
+      "answer": "looks",
+      "explanation": "句子缺少谓语，主语the water是第三人称单数，用一般现在时looks。looking非谓语，looked过去式，to look不定式，均不能单独作谓语。",
+      "evidence_sentence": "Now the water ⑩ looks much clearer.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

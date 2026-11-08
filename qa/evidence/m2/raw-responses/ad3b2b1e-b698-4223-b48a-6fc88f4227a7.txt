@@ -1,0 +1,95 @@
+{
+  "passage": "Planning a trip abroad can be exciting, but it also requires careful preparation. Last month, the student and her teacher discussed a journey to Singapore. The teacher advised her to make a list of things to do. (1) ______ The student wanted to visit many places, but she had only five days. (2) ______ She decided to focus on the most important sites. (3) ______ (4) ______ (5) ______ After that, she booked a hotel near the airport and packed her bags. She also learned that some items, like medicine, must be declared at customs. In the end, her careful planning made the trip smooth and enjoyable.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "She had already travelled to many countries before.",
+        "However, she had never planned a trip by herself.",
+        "She wanted to buy a new suitcase for the journey.",
+        "Therefore, she asked her teacher for help.",
+        "The teacher suggested a short trip to a nearby city.",
+        "She was not sure whether she needed a passport.",
+        "She decided to cancel the trip because of the cost."
+      ],
+      "answer": "B",
+      "explanation": "前文说老师建议她列清单，后文说她只想去很多地方但时间不够，说明她缺乏独立计划旅行的经验，因此B“然而，她从未自己计划过旅行”最连贯。A和C与上下文无关，不能解释她需要老师建议的原因。",
+      "evidence_sentence": "",
+      "context_clue": "The teacher advised her to make a list of things to do.",
+      "clue_argument": "老师建议列清单，暗示学生缺乏经验，B中的“never planned by herself”与之呼应。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "She had plenty of time to see everything.",
+        "She wanted to visit every attraction in the city.",
+        "However, she had only five days.",
+        "She decided to extend her stay for a month.",
+        "She was not interested in visiting any sites.",
+        "She had already visited all the places before.",
+        "She planned to travel with a large group."
+      ],
+      "answer": "C",
+      "explanation": "前文说她想参观很多地方，后文说她决定只关注最重要的景点，因此C“然而，她只有五天”形成转折，解释了她必须取舍的原因。A和B与后文“focus on the most important sites”矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "The student wanted to visit many places, but she had only five days.",
+      "clue_argument": "时间有限与想去的景点多形成对比，C直接点明时间限制。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "She decided to focus on the most important sites.",
+        "She booked a flight to another country.",
+        "She forgot to bring her passport.",
+        "She bought a guidebook about Europe.",
+        "She asked her teacher to plan the whole trip.",
+        "She decided to stay at home instead.",
+        "She wanted to learn a new language."
+      ],
+      "answer": "A",
+      "explanation": "前文说时间只有五天，后文说“After that, she booked a hotel”，因此这里应是她做出取舍的决定，A“她决定只关注最重要的景点”最符合逻辑。B和C与后文预订酒店和打包行李的顺利进程不符。",
+      "evidence_sentence": "",
+      "context_clue": "She had only five days.",
+      "clue_argument": "时间有限，自然要选择重点景点，A是合理的决定。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "She packed her bags without checking the weather.",
+        "She then checked the weather forecast for her destination.",
+        "She decided to travel without a plan.",
+        "She bought a ticket for a concert.",
+        "She forgot to bring her camera.",
+        "She asked her teacher to come along.",
+        "She cancelled her hotel booking."
+      ],
+      "answer": "B",
+      "explanation": "后文说“After that, she booked a hotel”，说明前面应是另一项准备活动，B“然后她查看了目的地的天气预报”符合旅行准备的顺序。A和C与“careful planning”的主题相反。",
+      "evidence_sentence": "",
+      "context_clue": "After that, she booked a hotel near the airport and packed her bags.",
+      "clue_argument": "预订酒店和打包是准备步骤，查看天气也是合理的前置步骤，B符合时间顺序。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "She decided to travel without a passport.",
+        "She ignored the customs rules.",
+        "She also checked the customs rules for her destination.",
+        "She bought too many souvenirs.",
+        "She missed her flight.",
+        "She lost her luggage.",
+        "She forgot to book a hotel."
+      ],
+      "answer": "C",
+      "explanation": "后文提到“some items, like medicine, must be declared at customs”，因此C“她还查看了目的地的海关规定”与后文自然衔接。A和B与后文她了解海关规定的事实矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "She also learned that some items, like medicine, must be declared at customs.",
+      "clue_argument": "后文关于海关申报的信息提示她事先查看了海关规定，C是合理的准备步骤。"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"translations": {"circular": "循环", "reusing": "再利用", "thrown": "被扔", "workshops": "工作坊"}}

@@ -1,0 +1,1 @@
+{"translations": {"blew": "吹", "coal": "煤", "panels": "面板", "renewable": "可再生", "shone": "照耀", "spoke": "说", "windmill": "风车"}}

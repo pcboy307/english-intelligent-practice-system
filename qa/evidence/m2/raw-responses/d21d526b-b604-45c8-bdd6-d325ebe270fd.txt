@@ -1,0 +1,105 @@
+{
+  "passage": "Last summer, my family and I went on a trip to the coast. It was not the destination but the journey that taught us something. We ①______ to take the train instead of driving, and that decision made all the difference. The train ②______ at 8 a.m., and we were all excited. While we were waiting on the platform（站台）, my father bought some snacks. The journey took about four hours, and we ③______ at the seaside town by noon. We had booked a small hotel near the beach. When we arrived, the sun ④______ brightly, and the sea looked beautiful. We quickly changed and went to the beach. My sister and I ⑤______ in the sea while our parents watched. Later, we ⑥______ a delicious seafood lunch at a local restaurant. The next day, we visited a museum. The exhibits ⑦______ very interesting, and we learned a lot about the history of the town. My favourite part ⑧______ the old fishing boats. In the evening, we took a walk along the coast. The view was amazing. We ⑨______ to go back next year. It was ⑩______ unforgettable trip.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank ①.",
+      "options": ["decided", "decide", "deciding", "to decide"],
+      "answer": "decided",
+      "explanation": "此处叙述过去的事情，谓语动词用一般过去时，故选decided。A项decided正确；B项decide是原形，C项deciding是现在分词，均不符合时态要求。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank ②.",
+      "options": ["left", "leaves", "leaving", "to leave"],
+      "answer": "left",
+      "explanation": "根据上下文，火车在早上8点出发是过去发生的事，用一般过去时，故选left。A项left正确；B项leaves是一般现在时，C项leaving是现在分词，均不符合语境。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank ③.",
+      "options": ["arrived", "arrive", "arriving", "to arrive"],
+      "answer": "arrived",
+      "explanation": "句子描述过去中午到达，用一般过去时，故选arrived。A项arrived正确；B项arrive是原形，C项arriving是现在分词，均不符合时态。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank ④.",
+      "options": ["was shining", "shines", "has shone", "will shine"],
+      "answer": "was shining",
+      "explanation": "此处描述到达时太阳正照耀，用过去进行时，故选was shining。A项was shining正确；B项shines是一般现在时，C项has shone是现在完成时，均不符合语境。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank ⑤.",
+      "options": ["swam", "swim", "swimming", "to swim"],
+      "answer": "swam",
+      "explanation": "叙述过去发生的动作，用一般过去时，故选swam。A项swam正确；B项swim是原形，C项swimming是现在分词，均不符合时态。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best option for blank ⑥.",
+      "options": ["had", "have", "having", "to have"],
+      "answer": "had",
+      "explanation": "描述过去吃午餐，用一般过去时，故选had。A项had正确；B项have是原形，C项having是现在分词，均不符合时态。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best option for blank ⑦.",
+      "options": ["were", "was", "are", "is"],
+      "answer": "were",
+      "explanation": "主语The exhibits是复数，且描述过去，故用were。A项were正确；B项was是单数，C项are是现在时，均不符合。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best option for blank ⑧.",
+      "options": ["was", "were", "is", "are"],
+      "answer": "was",
+      "explanation": "主语My favourite part是单数，且描述过去，故用was。A项was正确；B项were是复数，C项is是现在时，均不符合。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best option for blank ⑨.",
+      "options": ["hope", "hopes", "hoping", "to hope"],
+      "answer": "hope",
+      "explanation": "主语We是复数，一般现在时用hope。A项hope正确；B项hopes是第三人称单数，C项hoping是现在分词，均不符合。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best option for blank ⑩.",
+      "options": ["an", "a", "the", "不填"],
+      "answer": "an",
+      "explanation": "unforgettable以元音音素开头，且表示“一次难忘的旅行”，用不定冠词an。A项an正确；B项a用于辅音音素前，C项the表示特指，均不符合。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

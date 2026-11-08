@@ -1,0 +1,86 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative about a student's career aspirations and related actions, with logical connections between sentences.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "if",
+      "reason": "The blank requires a conditional conjunction, and 'if' is the only option that fits the condition-result structure.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "interested",
+      "reason": "The phrase 'be interested in' is a fixed expression, and 'interested' is the only adjective that correctly completes it for a person.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "teaching",
+      "reason": "The blank requires a noun to serve as the subject, and 'teaching' is the only gerund that functions as a noun.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "better",
+      "reason": "The presence of 'than' signals a comparative, making 'better' the only correct choice.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "most",
+      "reason": "The structure 'the ___ important' requires a superlative, and 'most' is the only superlative form among the options.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 6,
+      "clear_best": true,
+      "best_option": "working",
+      "reason": "The sentence uses 'is' followed by a present participle to form the present continuous tense, so 'working' is correct.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 7,
+      "clear_best": true,
+      "best_option": "to learn",
+      "reason": "The verb 'want' is followed by an infinitive, so 'to learn' is the only correct option.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 8,
+      "clear_best": true,
+      "best_option": "to study",
+      "reason": "The verb 'advise' takes an object followed by an infinitive, so 'to study' is the only correct option.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 9,
+      "clear_best": true,
+      "best_option": "to become",
+      "reason": "The verb 'hope' is followed by an infinitive, so 'to become' is the only correct option.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 10,
+      "clear_best": true,
+      "best_option": "to study",
+      "reason": "The verb 'plan' is followed by an infinitive, so 'to study' is the only correct option.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

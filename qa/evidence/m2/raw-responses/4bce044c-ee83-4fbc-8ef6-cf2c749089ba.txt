@@ -1,0 +1,65 @@
+{
+  "passage": "Last spring, our class started a garden on an unused corner of the school yard. The student who first suggested the idea said that we should use the space to grow vegetables. At first, only three of us were interested, but our teacher encouraged us to invite others. We wrote a short notice and put it on the classroom board. Soon, a dozen classmates joined. We divided the work: some dug the soil, some planted seeds, and others watered the plants every morning. The garden became a place where we could relax and talk. By June, we had harvested tomatoes and beans. We sold them at a small market and used the money to buy books for the school library. The project taught us that teamwork can turn an empty corner into something useful. It was the garden that brought us closer together.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To describe how a school garden was started and what it achieved.",
+        "To explain why vegetables are expensive.",
+        "To persuade students to become farmers.",
+        "To compare different types of gardens."
+      ],
+      "answer": "To describe how a school garden was started and what it achieved.",
+      "explanation": "文章主要叙述了班级花园从提议、种植到收获并资助图书馆的过程，因此目的是描述花园的创建与成果。A项概括准确；B项关于蔬菜价格，文中未提及；C项劝说学生成为农民，属于过度推断。",
+      "evidence_sentence": "Last spring, our class started a garden on an unused corner of the school yard.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Gardening is a difficult hobby.",
+        "Teamwork can turn an empty space into something valuable.",
+        "Students should sell vegetables to make money.",
+        "Teachers should organize more outdoor activities."
+      ],
+      "answer": "Teamwork can turn an empty space into something valuable.",
+      "explanation": "文章最后一句点明主题：团队合作能把空角落变成有用的东西，且全文围绕合作建花园展开。A项说园艺是困难的爱好，文中未强调；C项说学生应卖菜赚钱，偏离了团队合作的主旨。",
+      "evidence_sentence": "The project taught us that teamwork can turn an empty corner into something useful.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What did the students do with the money from selling vegetables?",
+      "options": [
+        "They bought books for the school library.",
+        "They bought more seeds.",
+        "They went on a trip.",
+        "They donated it to charity."
+      ],
+      "answer": "They bought books for the school library.",
+      "explanation": "文中明确提到卖菜的钱用来为学校图书馆买书。A项与原文一致；B项买种子、C项去旅行、D项捐给慈善机构均未在文中出现。",
+      "evidence_sentence": "We sold them at a small market and used the money to buy books for the school library.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can we infer about the students from the passage?",
+      "options": [
+        "They became more united through the project.",
+        "They disliked working in the garden.",
+        "They wanted to become professional gardeners.",
+        "They thought the project was a waste of time."
+      ],
+      "answer": "They became more united through the project.",
+      "explanation": "文章结尾说“正是花园让我们更亲近”，可推断项目增强了团结。A项符合推断；B项说他们不喜欢园艺，与“放松交谈”矛盾；D项说认为项目浪费时间，与积极成果矛盾。",
+      "evidence_sentence": "It was the garden that brought us closer together.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

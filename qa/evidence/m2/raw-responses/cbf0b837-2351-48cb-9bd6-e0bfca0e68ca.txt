@@ -1,0 +1,95 @@
+{
+  "passage": "Learning how to study efficiently is a skill that can change a student's school life. The student used to spend hours reading notes without remembering much. Her teacher advised her to try active recall, a method in which you test yourself instead of just re-reading. (1) ________. She started using flashcards and quizzed herself every evening. (2) ________. The student also learned to space out her practice. Instead of cramming the night before an exam, she reviewed a little each day. (3) ________. Another habit she picked up was to remove distractions. She put her phone in another room and kept only her books on the desk. (4) ________. Finally, she made a weekly plan and stuck to it. (5) ________. Within a month, her grades improved and she felt less stressed. Efficient study habits, not longer hours, made the real difference.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "A. This advice sounded strange at first, but she decided to give it a try.",
+        "B. The teacher gave her a new notebook.",
+        "C. She forgot to bring her homework.",
+        "D. The class went on a field trip.",
+        "E. Her friend borrowed her dictionary.",
+        "F. The exam was moved to next week.",
+        "G. She bought a new schoolbag."
+      ],
+      "answer": "A",
+      "explanation": "前文提到老师建议她尝试主动回忆，A项“这个建议起初听起来奇怪，但她决定试一试”能自然承接并引出后文她开始使用闪卡。B项和C项与老师的建议无关，无法形成连贯的逻辑。",
+      "evidence_sentence": "Her teacher advised her to try active recall, a method in which you test yourself instead of just re-reading.",
+      "context_clue": "The student used to spend hours reading notes without remembering much. Her teacher advised her to try active recall, a method in which you test yourself instead of just re-reading.",
+      "clue_argument": "前文提出建议，后文描述行动，需要一句表示接受建议的过渡句。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "A. The results were surprising: she remembered far more than before.",
+        "B. She lost her flashcards on the bus.",
+        "C. Her teacher was absent that day.",
+        "D. She decided to stop studying altogether.",
+        "E. The library was closed for repairs.",
+        "F. She forgot to do her homework.",
+        "G. Her phone rang during the test."
+      ],
+      "answer": "A",
+      "explanation": "前文说她开始用闪卡自测，A项“结果令人惊讶：她记得比以前多得多”说明了这种方法的积极效果，与后文继续改进学习方法相衔接。B项和C项都是无关的干扰事件，不能解释她学习上的变化。",
+      "evidence_sentence": "She started using flashcards and quizzed herself every evening.",
+      "context_clue": "She started using flashcards and quizzed herself every evening.",
+      "clue_argument": "前文描述行动，后文应说明该行动带来的结果，A项符合逻辑。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "A. This method helped her remember information for much longer.",
+        "B. She bought a new phone instead.",
+        "C. Her teacher gave her extra homework.",
+        "D. She decided to study only on weekends.",
+        "E. The exam was cancelled.",
+        "F. She forgot her notebook at home.",
+        "G. Her classmate moved to another city."
+      ],
+      "answer": "A",
+      "explanation": "前文介绍她学会了间隔练习，A项“这种方法帮助她更长久地记住信息”直接说明了间隔练习的好处，与后文“另一个习惯”形成并列。B项和C项与间隔练习的效果无关，无法承接上下文。",
+      "evidence_sentence": "Instead of cramming the night before an exam, she reviewed a little each day.",
+      "context_clue": "Instead of cramming the night before an exam, she reviewed a little each day.",
+      "clue_argument": "前文描述间隔练习的做法，后文应说明其效果，A项符合。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "A. As a result, she could focus on her work without interruption.",
+        "B. She bought a new desk lamp.",
+        "C. Her friend called her to chat.",
+        "D. She decided to study in the living room.",
+        "E. The phone battery died.",
+        "F. She lost her books.",
+        "G. Her teacher praised her handwriting."
+      ],
+      "answer": "A",
+      "explanation": "前文说她将手机放到另一个房间，A项“结果，她可以不受干扰地专注于学习”说明了这一做法的效果，与后文制定周计划形成递进。B项和C项与减少干扰无关，不能解释她专注力的提升。",
+      "evidence_sentence": "She put her phone in another room and kept only her books on the desk.",
+      "context_clue": "She put her phone in another room and kept only her books on the desk.",
+      "clue_argument": "前文描述减少干扰的行为，后文应说明其带来的专注效果，A项符合。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "A. This made her study time more organized and less stressful.",
+        "B. She forgot to follow the plan.",
+        "C. Her teacher gave her a new plan.",
+        "D. She decided to study abroad.",
+        "E. The plan was too difficult to make.",
+        "F. She lost her planner.",
+        "G. Her classmate copied her plan."
+      ],
+      "answer": "A",
+      "explanation": "前文说她制定了周计划并坚持执行，A项“这使她的学习时间更有条理、压力更小”总结了计划的好处，并与后文成绩提高、压力减轻相呼应。B项和C项与坚持计划的结果矛盾或无关，无法形成合理结论。",
+      "evidence_sentence": "Finally, she made a weekly plan and stuck to it.",
+      "context_clue": "Finally, she made a weekly plan and stuck to it.",
+      "clue_argument": "前文描述制定并执行计划，后文应说明其积极影响，A项符合。"
+    }
+  ]
+}

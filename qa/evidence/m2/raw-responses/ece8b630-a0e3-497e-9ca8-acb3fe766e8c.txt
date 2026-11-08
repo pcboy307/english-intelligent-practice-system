@@ -1,0 +1,105 @@
+{
+  "passage": "Last summer, my cousin and I went on a trip to the coast. ① it was the first time we had travelled alone that made us excited. We took a train that ② us through mountains and along rivers. The journey ③ about six hours, but we didn't mind because the views were amazing. While we ④ on the train, we met an old man who told us stories about the places we passed. He said he ⑤ to that town every year since he was a child. By the time we arrived, we ⑥ over a hundred photos. The next day, we visited a small fishing village. The people there ⑦ very friendly. One of the villagers, a woman in her sixties, ⑧ us how to fish. She said that fishing ⑨ the main source of income for the village for generations. In the evening, we enjoyed ⑩ beautiful sunset over the sea. It was a trip we would never forget.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the correct word for blank ①.",
+      "options": ["That", "It", "This", "There"],
+      "answer": "It",
+      "explanation": "此处是强调句型 It was ... that ...，强调 the first time we had travelled alone。That 不能引导强调句的开头；This 和 There 不符合强调句结构。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the correct word for blank ②.",
+      "options": ["took", "takes", "is taking", "has taken"],
+      "answer": "took",
+      "explanation": "主句时态为过去时，且火车带我们穿过群山是过去发生的动作，故用一般过去时 took。takes 是现在时；is taking 是现在进行时；has taken 是现在完成时，均与过去语境不符。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the correct word for blank ③.",
+      "options": ["takes", "took", "is taking", "has taken"],
+      "answer": "took",
+      "explanation": "旅程花费六小时是过去发生的动作，应用一般过去时 took。takes 是现在时；is taking 是现在进行时；has taken 是现在完成时，均不符合过去时态。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the correct word for blank ④.",
+      "options": ["sat", "were sitting", "have sat", "had sat"],
+      "answer": "were sitting",
+      "explanation": "此处表示过去某个时间点正在进行的动作，用过去进行时 were sitting。sat 是一般过去时；have sat 是现在完成时；had sat 是过去完成时，均不能表示过去正在进行。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the correct word for blank ⑤.",
+      "options": ["goes", "went", "had gone", "has gone"],
+      "answer": "had gone",
+      "explanation": "“自从他是孩子起每年都去”表示在过去某个时间点之前已完成的动作，用过去完成时 had gone。goes 是现在时；went 是一般过去时；has gone 是现在完成时，均不能表示过去的过去。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the correct word for blank ⑥.",
+      "options": ["took", "had taken", "have taken", "take"],
+      "answer": "had taken",
+      "explanation": "“到我们到达时，我们已经拍了一百多张照片”表示在过去某个时间点之前完成的动作，用过去完成时 had taken。took 是一般过去时；have taken 是现在完成时；take 是现在时，均不符合。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the correct word for blank ⑦.",
+      "options": ["is", "are", "was", "were"],
+      "answer": "were",
+      "explanation": "主语 The people 是复数，且故事发生在过去，故用 were。is 和 was 是单数；are 是现在时，均不符合。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the correct word for blank ⑧.",
+      "options": ["teach", "teaches", "taught", "has taught"],
+      "answer": "taught",
+      "explanation": "句子描述过去发生的事，且主语 One of the villagers 是单数，谓语用过去式 taught。teach 是原形；teaches 是现在时单数；has taught 是现在完成时，均不符合过去时态。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the correct word for blank ⑨.",
+      "options": ["is", "are", "was", "were"],
+      "answer": "was",
+      "explanation": "主语 fishing 是不可数名词，视为单数，且从句时态为过去，故用 was。is 是现在时；are 和 were 是复数，均不符合。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the correct word for blank ⑩.",
+      "options": ["a", "an", "the", "不填"],
+      "answer": "the",
+      "explanation": "此处特指海上的日落，用定冠词 the。a 和 an 表示泛指；不填则缺少冠词，均不符合特指含义。",
+      "evidence_sentence": "",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

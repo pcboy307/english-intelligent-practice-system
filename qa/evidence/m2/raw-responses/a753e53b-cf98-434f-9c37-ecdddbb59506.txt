@@ -1,0 +1,65 @@
+{
+  "passage": "When the student first joined the school debate club, she felt nervous and alone. A classmate noticed her sitting by herself and invited her to practise together. At first, the student was not sure if she could trust anyone, because she had been hurt by a friend before. However, the classmate was patient and honest. They met every afternoon for two weeks, and slowly the student began to share her ideas and fears. One day, the classmate made a mistake during a practice debate, and the student felt disappointed. But then she remembered how kind the classmate had been. She decided to accept the mistake and help her friend improve. If the student had not learned to trust, she would have lost a valuable friendship. By the day of the competition, they were a strong team. They did not win first prize, but they won something more important: a friendship built on trust. The student realised that true friends are those who stay with you when things are difficult. She also learned that trust is not given quickly; it grows through shared experiences and honest communication. From that day on, she promised to be a reliable friend to others.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What did the classmate do when she saw the student sitting alone?",
+      "options": [
+        "She invited the student to practise together.",
+        "She ignored the student.",
+        "She laughed at the student.",
+        "She told the teacher."
+      ],
+      "answer": "She invited the student to practise together.",
+      "explanation": "文章第一段明确提到同学注意到学生独自坐着并邀请她一起练习。A项正确；B项“忽视”和C项“嘲笑”与原文相反，因为同学主动提供帮助。",
+      "evidence_sentence": "A classmate noticed her sitting by herself and invited her to practise together.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer from the sentence 'If the student had not learned to trust, she would have lost a valuable friendship'?",
+      "options": [
+        "The student did not learn to trust.",
+        "The student learned to trust and kept the friendship.",
+        "The student lost the friendship.",
+        "The student never trusted anyone."
+      ],
+      "answer": "The student learned to trust and kept the friendship.",
+      "explanation": "该句为虚拟语气，表示与过去事实相反：学生实际上学会了信任，因此没有失去友谊。B项正确；A项和C项与虚拟语气所表达的相反事实不符。",
+      "evidence_sentence": "If the student had not learned to trust, she would have lost a valuable friendship.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word 'reliable' most likely mean in the passage?",
+      "options": [
+        "Able to be trusted",
+        "Quick to get angry",
+        "Easy to forget",
+        "Hard to please"
+      ],
+      "answer": "Able to be trusted",
+      "explanation": "根据上下文，学生承诺成为他人“reliable”的朋友，结合前文关于信任的讨论，该词意为“可信赖的”。A项正确；B项“易怒”和D项“难以取悦”与友谊中信任的主题无关。",
+      "evidence_sentence": "From that day on, she promised to be a reliable friend to others.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To explain how to win a debate competition",
+        "To show that trust is important in friendship",
+        "To describe the rules of the debate club",
+        "To complain about a classmate's mistake"
+      ],
+      "answer": "To show that trust is important in friendship",
+      "explanation": "文章通过学生与同学建立信任的故事，强调了友谊中信任的重要性。B项正确；A项和C项只是故事背景，并非主旨；D项与文章积极态度相反。",
+      "evidence_sentence": "The student realised that true friends are those who stay with you when things are difficult.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

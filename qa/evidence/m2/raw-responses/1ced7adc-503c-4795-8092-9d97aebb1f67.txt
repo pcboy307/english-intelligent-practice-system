@@ -1,0 +1,65 @@
+{
+  "passage": "In a small town, a student named Lily learned about renewable energy. Her teacher explained that wind and solar power can reduce pollution. Lily decided to start a project. She and her classmate Tom built a small wind turbine（风力涡轮机） for the school garden. At first, it did not work well. The blades were too heavy. Lily felt disappointed, but her teacher encouraged her to try again. They used lighter materials, and the turbine began to spin, producing enough electricity to light a small lamp. The project was a success. Lily realized that even small actions can make a difference. She now believes that renewable energy is the key to a cleaner future.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about Lily's attitude towards renewable energy after the project?",
+      "options": [
+        "She thinks it is too difficult to use.",
+        "She believes it is important for the future.",
+        "She doubts its effectiveness.",
+        "She wants to give up on it."
+      ],
+      "answer": "She believes it is important for the future.",
+      "explanation": "文章最后一句“She now believes that renewable energy is the key to a cleaner future.”表明她认为可再生能源对未来很重要。A和C错误，因为文章没有说她认为太难或怀疑其效果；她成功完成了项目并持积极态度。",
+      "evidence_sentence": "She now believes that renewable energy is the key to a cleaner future.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"renewable\" most likely mean in the passage?",
+      "options": [
+        "Can be easily replaced",
+        "Can be naturally restored",
+        "Can be quickly used up",
+        "Can be artificially created"
+      ],
+      "answer": "Can be naturally restored",
+      "explanation": "根据上下文，风能和太阳能是可再生的，意味着它们可以自然恢复。A、C、D都不符合“renewable”在能源语境中的含义。",
+      "evidence_sentence": "Her teacher explained that wind and solar power can reduce pollution.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Why did the teacher encourage Lily to try again?",
+      "options": [
+        "To help her learn from failure.",
+        "To make her finish the project quickly.",
+        "To show that the turbine was useless.",
+        "To test her patience."
+      ],
+      "answer": "To help her learn from failure.",
+      "explanation": "老师鼓励Lily再试一次，是为了帮助她从失败中学习并最终成功。B、C、D都不符合老师的教育目的。",
+      "evidence_sentence": "Lily felt disappointed, but her teacher encouraged her to try again.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Wind turbines are easy to build.",
+        "Small actions can contribute to a cleaner future.",
+        "Students should avoid difficult projects.",
+        "Teachers should not interfere in projects."
+      ],
+      "answer": "Small actions can contribute to a cleaner future.",
+      "explanation": "文章通过Lily的项目说明小行动也能带来改变，最终强调可再生能源是清洁未来的关键。A、C、D都不是文章的主旨。",
+      "evidence_sentence": "Lily realized that even small actions can make a difference.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

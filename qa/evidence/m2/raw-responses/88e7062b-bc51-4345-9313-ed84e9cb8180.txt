@@ -1,0 +1,1 @@
+{"translations": {"documentary": "纪录片", "li": "李", "lifetime": "一生", "shown": "展示", "wildlife": "野生动物", "yuan": "元"}}

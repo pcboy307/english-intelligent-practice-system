@@ -1,0 +1,105 @@
+{
+  "passage": "Last year, our school held a sports meeting. The student ① ______ (choose) as the team leader was very responsible. Her teacher ② ______ (invite) to watch the opening ceremony. ③ ______ (practise) every day helped the team improve quickly. We saw the athletes ④ ______ (run) on the track with great energy. ⑤ ______ (face) with strong opponents, they never gave up. ⑥ ______ the coach said encouraged everyone. We all believed ⑦ ______ we could win. The news ⑧ ______ our class won the relay race spread fast. ⑨ ______ the race ended, we cheered loudly. ⑩ ______ we were tired, we felt proud.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the correct word for blank ①.",
+      "options": ["choosing", "chosen", "to choose", "choose"],
+      "answer": "chosen",
+      "explanation": "此处需要过去分词作后置定语，修饰 the student，表示“被选为队长的学生”。choosing 是现在分词，表主动；to choose 表目的，均不符合语境。",
+      "evidence_sentence": "The student ① ______ (choose) as the team leader was very responsible.",
+      "context_clue": "The student ① ______ (choose) as the team leader was very responsible.",
+      "clue_argument": "student 与 choose 是被动关系，用过去分词作定语。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the correct word for blank ②.",
+      "options": ["inviting", "invited", "to invite", "invite"],
+      "answer": "invited",
+      "explanation": "主语 her teacher 与 invite 是被动关系，且句子描述过去的事，所以用一般过去时的被动语态 was invited。inviting 是主动形式；to invite 表目的，均不正确。",
+      "evidence_sentence": "Her teacher ② ______ (invite) to watch the opening ceremony.",
+      "context_clue": "Her teacher ② ______ (invite) to watch the opening ceremony.",
+      "clue_argument": "teacher 被邀请，且事情发生在过去，用 was invited。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the correct word for blank ③.",
+      "options": ["Practise", "Practised", "Practising", "To practise"],
+      "answer": "Practising",
+      "explanation": "此处需要动名词作主语，表示“每天训练”这件事。Practise 是动词原形，不能作主语；Practised 是过去分词，也不作主语。",
+      "evidence_sentence": "③ ______ (practise) every day helped the team improve quickly.",
+      "context_clue": "③ ______ (practise) every day helped the team improve quickly.",
+      "clue_argument": "空格处作主语，表示习惯性动作，用动名词。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the correct word for blank ④.",
+      "options": ["run", "to run", "running", "ran"],
+      "answer": "running",
+      "explanation": "see sb. doing sth. 表示“看见某人正在做某事”，所以用现在分词 running 作宾语补足语。run 是原形，不能作宾补；to run 表示看见动作的全过程，与语境不符。",
+      "evidence_sentence": "We saw the athletes ④ ______ (run) on the track with great energy.",
+      "context_clue": "We saw the athletes ④ ______ (run) on the track with great energy.",
+      "clue_argument": "see sb. doing 表示看见动作正在进行。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the correct word for blank ⑤.",
+      "options": ["Face", "Faced", "Facing", "To face"],
+      "answer": "Faced",
+      "explanation": "be faced with 意为“面临”，此处用过去分词短语作状语，表示“面对强劲的对手”。Face 是原形，不能单独作状语；Facing 虽也可表主动，但固定搭配是 be faced with。",
+      "evidence_sentence": "⑤ ______ (face) with strong opponents, they never gave up.",
+      "context_clue": "⑤ ______ (face) with strong opponents, they never gave up.",
+      "clue_argument": "固定搭配 be faced with，此处用过去分词作状语。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the correct word for blank ⑥.",
+      "options": ["That", "What", "Which", "Whether"],
+      "answer": "What",
+      "explanation": "主语从句中缺少宾语，且表示“教练所说的话”，用 what 引导主语从句。That 在主语从句中不作成分；Which 表示“哪一个”，不符合语境。",
+      "evidence_sentence": "⑥ ______ the coach said encouraged everyone.",
+      "context_clue": "⑥ ______ the coach said encouraged everyone.",
+      "clue_argument": "said 后缺宾语，用 what 引导主语从句。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the correct word for blank ⑦.",
+      "options": ["that", "what", "whether", "which"],
+      "answer": "that",
+      "explanation": "believe 后接宾语从句，从句意思完整，不缺成分，用 that 引导。what 在从句中作成分；whether 表示“是否”，不符合语境。",
+      "evidence_sentence": "We all believed ⑦ ______ we could win.",
+      "context_clue": "We all believed ⑦ ______ we could win.",
+      "clue_argument": "宾语从句意思完整，用 that 引导。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the correct word for blank ⑧.",
+      "options": ["that", "what", "whether", "which"],
+      "answer": "that",
+      "explanation": "news 后接同位语从句，解释 news 的内容，从句意思完整，用 that 引导。what 在从句中作成分；whether 表示“是否”，不符合语境。",
+      "evidence_sentence": "The news ⑧ ______ our class won the relay race spread fast.",
+      "context_clue": "The news ⑧ ______ our class won the relay race spread fast.",
+      "clue_argument": "同位语从句说明 news 的内容，用 that 引导。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the correct word for blank ⑨.",
+      "options": ["Because", "Although", "After", "If"],
+      "answer": "After",
+      "explanation": "根据语境“比赛结束后我们大声欢呼”，用 After 引导时间状语从句。Because 表原因，Although 表让步，If 表条件，均不符合逻辑。",
+      "evidence_sentence": "⑨ ______ the race ended, we cheered loudly.",
+      "context_clue": "⑨ ______ the race ended, we cheered loudly.",
+      "clue_argument": "欢呼发生在比赛结束之后，用 After 引导时间状语从句。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the correct word for blank ⑩.",
+      "options": ["Because", "Although", "So", "Unless"],
+      "answer": "Although",
+      "explanation": "前后句是让步关系：“虽然我们累了，但感到自豪”，用 Although 引导让步状语从句。Because 表原因，So 表结果，Unless 表条件，均不符合逻辑。",
+      "evidence_sentence": "⑩ ______ we were tired, we felt proud.",
+      "context_clue": "⑩ ______ we were tired, we felt proud.",
+      "clue_argument": "累和自豪之间是让步关系，用 Although 引导。"
+    }
+  ]
+}

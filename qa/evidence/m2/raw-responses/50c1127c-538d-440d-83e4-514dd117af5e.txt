@@ -1,0 +1,46 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative about a student improving study habits, with each blank logically following from the preceding context.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A directly connects the teacher's advice to the student's decision to try it, leading into the next sentence about using flashcards.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A logically describes the positive outcome of using flashcards, which fits the narrative of improvement.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A explains the benefit of spacing out practice, which is the main point of the preceding sentence.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A states the result of removing distractions, which is the focus of the previous sentence.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "A",
+      "reason": "Option A summarizes the positive effect of making and sticking to a weekly plan, aligning with the concluding improvement.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

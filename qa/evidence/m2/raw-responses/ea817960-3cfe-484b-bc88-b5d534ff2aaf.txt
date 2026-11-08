@@ -1,0 +1,45 @@
+{
+  "passage": "In 1961, Yuri Gagarin became the first human in space. His 108-minute flight showed that people could survive in space. Since then, space exploration has grown. In 1969, Neil Armstrong and Buzz Aldrin walked on the moon. They collected rocks and took photos. These samples helped scientists understand the moon's history. Today, the International Space Station (ISS) is a home for astronauts. They live and work there for months. They do experiments in biology, physics, and medicine. The ISS is a symbol of international cooperation. Space technology also helps us on Earth. Satellites watch the weather and help us communicate. However, space travel is expensive and dangerous. Some people argue that we should spend money on problems like climate change and poverty instead. But others believe that space exploration brings benefits. It creates jobs and encourages young people to study science. In the future, humans may travel to Mars. This is an exciting challenge. It will require new technology and international teamwork. Space exploration shows the human ability to dream and achieve.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"samples\" most likely mean in the passage?",
+      "options": ["Examples of technology", "Small amounts of material for study", "Photos taken in space", "Rocks from Earth"],
+      "answer": "Small amounts of material for study",
+      "explanation": "词义猜测题。根据上下文，宇航员在月球上收集岩石和拍照，这些样本帮助科学家了解月球历史，因此samples指供研究用的少量材料。A项“技术示例”与语境不符；C项“太空照片”是另一项活动，不是samples。",
+      "evidence_sentence": "They collected rocks and took photos. These samples helped scientists understand the moon's history.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's attitude towards space exploration?",
+      "options": ["Doubtful", "Supportive", "Critical", "Uninterested"],
+      "answer": "Supportive",
+      "explanation": "作者态度题。文章列举了太空探索的成就和益处，如国际合作、技术应用、创造就业和激励年轻人，最后说“太空探索展示了人类梦想和实现的能力”，表明作者支持太空探索。A项“怀疑”和C项“批评”与文章整体积极的基调不符。",
+      "evidence_sentence": "Space exploration shows the human ability to dream and achieve.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["The history and benefits of space exploration", "How to become an astronaut", "The dangers of space travel", "The cost of the International Space Station"],
+      "answer": "The history and benefits of space exploration",
+      "explanation": "主旨大意题。文章从人类首次进入太空讲起，介绍了太空探索的发展、国际空间站的作用、太空技术对地球的帮助以及未来的挑战，最后总结太空探索的意义，因此主旨是太空探索的历史和益处。B项“如何成为宇航员”文中未提及；C项“太空旅行的危险”只是文中提到的一个方面，不是主旨。",
+      "evidence_sentence": "Since then, space exploration has grown.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, what do some people argue about space travel?",
+      "options": ["It should be stopped because it is too expensive.", "We should spend money on problems like climate change and poverty instead.", "It brings no benefits to young people.", "It is not dangerous enough."],
+      "answer": "We should spend money on problems like climate change and poverty instead.",
+      "explanation": "细节理解题。文中明确提到“Some people argue that we should spend money on problems like climate change and poverty instead.”，即有些人认为应该把钱花在气候变化和贫困等问题上。A项“应该停止因为太贵”文中未说停止；C项“对年轻人没有好处”与文中“鼓励年轻人学科学”相反。",
+      "evidence_sentence": "Some people argue that we should spend money on problems like climate change and poverty instead.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

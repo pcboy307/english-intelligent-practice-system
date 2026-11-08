@@ -1,0 +1,65 @@
+{
+  "passage": "Last month, the student felt stressed because she had too many tasks and too little time. Her teacher advised that she should make a weekly plan and focus on one thing at a time. The student decided to try this advice. On Monday, she listed all her tasks and ranked them by importance. She put the most important task first and planned to finish it before lunch. However, a classmate asked for help with homework, and she agreed. As a result, she did not finish her own task until late afternoon. The next day, she set a timer for 25 minutes and worked without stopping. She found that she could complete more in a short, focused period than in a long, distracted one. By Friday, she had finished all her tasks and even had time to relax. She realised that time management is not about doing more; it is about doing what matters first. Now she feels more confident and less worried about deadlines.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "The student learned to manage time by prioritising tasks.",
+        "The student stopped helping her classmate.",
+        "The teacher gave the student a weekly plan.",
+        "The student finished all tasks on Monday."
+      ],
+      "answer": "The student learned to manage time by prioritising tasks.",
+      "explanation": "文章主要讲述学生通过制定计划、按重要性排序任务来学会时间管理。A项概括了全文主旨；B项和C项只是细节，不是主旨。",
+      "evidence_sentence": "She realised that time management is not about doing more; it is about doing what matters first.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What did the student do on Monday?",
+      "options": [
+        "She set a timer for 25 minutes.",
+        "She listed all her tasks and ranked them by importance.",
+        "She finished all her tasks before lunch.",
+        "She asked her teacher for advice."
+      ],
+      "answer": "She listed all her tasks and ranked them by importance.",
+      "explanation": "根据文章，周一学生列出了所有任务并按重要性排序。A项是周二的做法；C项与原文不符；D项是之前发生的事。",
+      "evidence_sentence": "On Monday, she listed all her tasks and ranked them by importance.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about the student from the passage?",
+      "options": [
+        "She will never help her classmate again.",
+        "She prefers to work without any plan.",
+        "She has become more confident in managing her time.",
+        "She thinks time management means doing more tasks."
+      ],
+      "answer": "She has become more confident in managing her time.",
+      "explanation": "文章最后提到她现在更自信、更少担心截止日期，可以推断她在时间管理上更有信心。A项过于绝对；B项与原文相反；D项与原文矛盾。",
+      "evidence_sentence": "Now she feels more confident and less worried about deadlines.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"distracted\" in the passage most likely mean?",
+      "options": [
+        "unable to focus",
+        "very efficient",
+        "well organised",
+        "easily tired"
+      ],
+      "answer": "unable to focus",
+      "explanation": "根据上下文，短时间专注工作比长时间分心工作更有效，因此distracted意为“分心的”，即无法集中注意力。B项和C项是褒义，与语境不符；D项“容易疲倦”不是该词的意思。",
+      "evidence_sentence": "She found that she could complete more in a short, focused period than in a long, distracted one.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

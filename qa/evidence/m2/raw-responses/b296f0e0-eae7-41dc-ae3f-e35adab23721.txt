@@ -1,0 +1,95 @@
+{
+  "passage": "Last month, the student noticed that her classmate often sat alone at lunch. She wanted to start a conversation but felt nervous. Her teacher advised her to use simple communication skills. \"First, ask open questions,\" the teacher said. \"(1) ________\" The student tried this the next day. She asked, \"What do you think of the new club?\" Her classmate smiled and answered. (2) ________ They talked for twenty minutes. (3) ________ The student learned that small actions can make a big difference. If she had not listened carefully, the talk would have ended quickly. (4) ________ Now she always greets others with a smile. If everyone practised these skills, our school would be a friendlier place. (5) ________",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "A. This shows you care about their answer.",
+        "B. You should never ask questions.",
+        "C. Talking is a waste of time.",
+        "D. I always eat lunch alone.",
+        "E. The club meets on Monday.",
+        "F. She forgot her homework.",
+        "G. He bought a new phone."
+      ],
+      "answer": "A",
+      "explanation": "根据老师建议“ask open questions”可知，认真倾听能显示关心，故选A；B和C与沟通技巧主题相反，D和E与上下文无关。",
+      "evidence_sentence": "",
+      "context_clue": "Her teacher advised her to use simple communication skills. \"First, ask open questions,\" the teacher said.",
+      "clue_argument": "老师建议问开放性问题，A选项“这表明你关心他们的回答”是合理的后续建议。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "A. She decided to ignore him.",
+        "B. The teacher gave a long speech.",
+        "C. They found they shared a love for music.",
+        "D. The bell rang for the next class.",
+        "E. He moved to another city.",
+        "F. She bought a new notebook.",
+        "G. The weather was very cold."
+      ],
+      "answer": "C",
+      "explanation": "前文提到同学微笑回答，后文说他们聊了二十分钟，C选项“他们发现彼此都热爱音乐”能自然衔接对话内容；A和B与积极沟通的语境矛盾，D和E与后文“聊了二十分钟”不连贯。",
+      "evidence_sentence": "",
+      "context_clue": "Her classmate smiled and answered. (2) ________ They talked for twenty minutes.",
+      "clue_argument": "同学微笑回答后，双方发现共同兴趣，才能继续聊二十分钟。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "A. The student felt bored and left.",
+        "B. The classmate refused to speak again.",
+        "C. The teacher punished them for talking.",
+        "D. The conversation helped them become friends.",
+        "E. They argued about the club.",
+        "F. The student forgot her homework.",
+        "G. The classmate moved away."
+      ],
+      "answer": "D",
+      "explanation": "后文说学生学到小行动能带来大不同，D选项“对话帮助他们成为朋友”符合积极结果；A和B与“聊了二十分钟”及后文积极语气矛盾，C和E与沟通技巧主题不符。",
+      "evidence_sentence": "",
+      "context_clue": "They talked for twenty minutes. (3) ________ The student learned that small actions can make a big difference.",
+      "clue_argument": "聊了二十分钟后，对话促进友谊，才能引出“小行动带来大不同”的感悟。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "A. She was glad she had listened carefully.",
+        "B. She wished she had never spoken.",
+        "C. The talk ended in an argument.",
+        "D. The classmate ignored her completely.",
+        "E. She decided to stop talking forever.",
+        "F. The teacher was angry with her.",
+        "G. She forgot the whole conversation."
+      ],
+      "answer": "A",
+      "explanation": "前文虚拟语气“If she had not listened carefully, the talk would have ended quickly”表明认真倾听避免了糟糕结果，A选项“她很高兴自己认真倾听了”符合逻辑；B和C与虚拟语气表达的正面结果相反，D和E与后文“现在她总是微笑问候”矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "If she had not listened carefully, the talk would have ended quickly. (4) ________ Now she always greets others with a smile.",
+      "clue_argument": "虚拟语气说明认真倾听使对话没有很快结束，因此她感到庆幸。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "A. Communication skills are not important.",
+        "B. We should avoid talking to new people.",
+        "C. Only teachers can give advice.",
+        "D. Small talk always causes trouble.",
+        "E. Everyone should learn to communicate well.",
+        "F. The student never spoke again.",
+        "G. The classmate moved to another school."
+      ],
+      "answer": "E",
+      "explanation": "前文虚拟语气“If everyone practised these skills, our school would be a friendlier place”呼吁大家练习沟通技巧，E选项“每个人都应该学会好好沟通”与之呼应；A和B与全文主旨相反，C和D过于绝对且不符合语境。",
+      "evidence_sentence": "",
+      "context_clue": "If everyone practised these skills, our school would be a friendlier place. (5) ________",
+      "clue_argument": "虚拟语气表达对所有人练习沟通技巧的期望，因此结论是每个人都应学会沟通。"
+    }
+  ]
+}

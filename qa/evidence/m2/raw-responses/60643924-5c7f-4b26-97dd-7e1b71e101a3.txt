@@ -1,0 +1,65 @@
+{
+  "passage": "Last month, my friend Leo and I decided to start a study group. We had been struggling with our homework because we kept putting things off until the last minute. Leo suggested that we should make a weekly plan together. At first, I was skeptical, but we agreed to try it for a month. Every Sunday evening, we met at the library and listed all our tasks for the week. Then we divided each task into smaller steps and set a deadline for each step. For example, Leo had a history essay due on Friday, so he planned to finish the research by Tuesday and write the first draft by Wednesday. I had a math test on Thursday, so I scheduled review sessions on Monday and Wednesday. We also promised to check in with each other every day to stay on track. After four weeks, we were amazed by the result. Not only had we completed all our assignments on time, but we also felt less stressed. Our grades improved, and we even had more free time for hobbies. Now we continue to meet every Sunday, and time management has become a habit for both of us.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "A study group can help students manage their time better.",
+        "Leo and the author became best friends.",
+        "The library is the best place to study.",
+        "History essays are harder than math tests."
+      ],
+      "answer": "A study group can help students manage their time better.",
+      "explanation": "文章主要讲述了作者和Leo成立学习小组，通过制定每周计划来管理时间，最终取得了良好效果。B项只是细节，C项未提及，D项是无关比较。",
+      "evidence_sentence": "Last month, my friend Leo and I decided to start a study group.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what had Leo planned to do by Tuesday?",
+      "options": [
+        "Finish the research for his history essay.",
+        "Write the first draft of his history essay.",
+        "Review for his math test.",
+        "Meet the author at the library."
+      ],
+      "answer": "Finish the research for his history essay.",
+      "explanation": "文中明确提到Leo计划在周二前完成历史论文的研究。B项是周三的任务，C项是作者的任务，D项是每周日的活动。",
+      "evidence_sentence": "Leo had a history essay due on Friday, so he planned to finish the research by Tuesday",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about the author's attitude towards the study group at the beginning?",
+      "options": [
+        "Doubtful.",
+        "Enthusiastic.",
+        "Indifferent.",
+        "Confident."
+      ],
+      "answer": "Doubtful.",
+      "explanation": "文中提到作者一开始持怀疑态度（skeptical），因此可以推断作者最初是怀疑的。B项和D项与skeptical相反，C项不准确。",
+      "evidence_sentence": "At first, I was skeptical, but we agreed to try it for a month.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"skeptical\" in the passage most likely mean?",
+      "options": [
+        "Having doubts.",
+        "Feeling excited.",
+        "Being angry.",
+        "Feeling tired."
+      ],
+      "answer": "Having doubts.",
+      "explanation": "根据上下文，作者一开始对学习小组的效果持怀疑态度，因此skeptical意为“怀疑的”。B项兴奋的，C项生气的，D项疲倦的，均不符合语境。",
+      "evidence_sentence": "At first, I was skeptical, but we agreed to try it for a month.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

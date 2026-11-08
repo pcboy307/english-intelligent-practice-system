@@ -1,0 +1,105 @@
+{
+  "passage": "Last term, our science club began a small project on water quality. The student who first suggested the idea was a classmate ① has always been curious about nature. The teacher ② guided us chose a simple question: how clean is the water in our school pond? We formed a team ③ members shared the work fairly. The plan, ④ was written on the board, had three steps. First, we collected water in bottles, ⑤ were then labelled with the date and place. The pond, ⑥ is near the library, receives rain from the playground. Our teacher, ⑦ advice we trusted, warned us to be careful. The bottles ⑧ were kept in a cool box before testing. Each test ⑨ done twice to reduce mistakes. In the end, the results ⑩ were shown to the whole school, and many students became interested in science.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank ①.",
+      "options": ["who", "which", "whose", "whom"],
+      "answer": "who",
+      "explanation": "先行词a classmate指人，在定语从句中作主语，故用who。which指物不能指人，whose表示所属关系但此处不缺定语，故排除which和whose。",
+      "evidence_sentence": "The student who first suggested the idea was a classmate ① has always been curious about nature.",
+      "context_clue": "The student who first suggested the idea was a classmate ① has always been curious about nature.",
+      "clue_argument": "先行词a classmate指人，从句缺主语。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank ②.",
+      "options": ["who", "which", "whose", "whom"],
+      "answer": "who",
+      "explanation": "先行词The teacher指人，在定语从句中作主语，故用who。which指物，whose后需接名词，whom作宾语，均不符合。",
+      "evidence_sentence": "The teacher ② guided us chose a simple question: how clean is the water in our school pond?",
+      "context_clue": "The teacher ② guided us chose a simple question: how clean is the water in our school pond?",
+      "clue_argument": "先行词The teacher指人，从句缺主语。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank ③.",
+      "options": ["whose", "who", "which", "whom"],
+      "answer": "whose",
+      "explanation": "先行词a team指团队，从句中members前需要表示所属关系的定语，故用whose。who和whom指人，which不能表示所属，均排除。",
+      "evidence_sentence": "We formed a team ③ members shared the work fairly.",
+      "context_clue": "We formed a team ③ members shared the work fairly.",
+      "clue_argument": "members前缺所属关系定语，用whose。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank ④.",
+      "options": ["which", "who", "whose", "whom"],
+      "answer": "which",
+      "explanation": "非限制性定语从句先行词The plan指物，从句缺主语，故用which。who和whom指人，whose后需接名词，均不符合。",
+      "evidence_sentence": "The plan, ④ was written on the board, had three steps.",
+      "context_clue": "The plan, ④ was written on the board, had three steps.",
+      "clue_argument": "先行词The plan指物，非限制性从句缺主语。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank ⑤.",
+      "options": ["which", "who", "whose", "whom"],
+      "answer": "which",
+      "explanation": "非限制性定语从句先行词bottles指物，从句缺主语，故用which。who和whom指人，whose后需接名词，均排除。",
+      "evidence_sentence": "First, we collected water in bottles, ⑤ were then labelled with the date and place.",
+      "context_clue": "First, we collected water in bottles, ⑤ were then labelled with the date and place.",
+      "clue_argument": "先行词bottles指物，非限制性从句缺主语。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank ⑥.",
+      "options": ["which", "who", "whose", "whom"],
+      "answer": "which",
+      "explanation": "非限制性定语从句先行词The pond指物，从句缺主语，故用which。who和whom指人，whose后需接名词，均不符合。",
+      "evidence_sentence": "The pond, ⑥ is near the library, receives rain from the playground.",
+      "context_clue": "The pond, ⑥ is near the library, receives rain from the playground.",
+      "clue_argument": "先行词The pond指物，非限制性从句缺主语。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank ⑦.",
+      "options": ["whose", "who", "which", "whom"],
+      "answer": "whose",
+      "explanation": "非限制性定语从句先行词Our teacher指人，advice前需要表示所属关系的定语，故用whose。who和whom不能表示所属，which指物，均排除。",
+      "evidence_sentence": "Our teacher, ⑦ advice we trusted, warned us to be careful.",
+      "context_clue": "Our teacher, ⑦ advice we trusted, warned us to be careful.",
+      "clue_argument": "advice前缺所属关系定语，用whose。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank ⑧.",
+      "options": ["which", "who", "whose", "whom"],
+      "answer": "which",
+      "explanation": "非限制性定语从句先行词The bottles指物，从句缺主语，故用which。who和whom指人，whose后需接名词，均不符合。",
+      "evidence_sentence": "The bottles ⑧ were kept in a cool box before testing.",
+      "context_clue": "The bottles ⑧ were kept in a cool box before testing.",
+      "clue_argument": "先行词The bottles指物，非限制性从句缺主语。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank ⑨.",
+      "options": ["was", "were", "is", "are"],
+      "answer": "was",
+      "explanation": "主语Each test为单数，且文章叙述过去的事情，被动语态用was done。were和are与单数主语不一致，is时态不符，均排除。",
+      "evidence_sentence": "Each test ⑨ done twice to reduce mistakes.",
+      "context_clue": "Each test ⑨ done twice to reduce mistakes.",
+      "clue_argument": "主语Each test单数，过去时被动用was。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank ⑩.",
+      "options": ["were", "was", "are", "is"],
+      "answer": "were",
+      "explanation": "主语the results为复数，且叙述过去，被动语态用were shown。was与复数主语不一致，are和is时态不符，均排除。",
+      "evidence_sentence": "In the end, the results ⑩ were shown to the whole school, and many students became interested in science.",
+      "context_clue": "In the end, the results ⑩ were shown to the whole school, and many students became interested in science.",
+      "clue_argument": "主语the results复数，过去时被动用were。"
+    }
+  ]
+}

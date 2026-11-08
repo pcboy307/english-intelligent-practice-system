@@ -1,0 +1,45 @@
+{
+  "passage": "Last summer, a group of students from a local high school decided to spend their holiday helping others. The student, along with her teacher and a classmate, joined a community volunteer programme. Their first task was to clean up a nearby park. When they arrived, they were shocked by the amount of rubbish. The student said, \"We must take action now.\" They worked for hours, and by noon, the park looked much better. In the afternoon, they visited an old people's home. The student's teacher had organised a small concert for the elderly. The student played the violin, and her classmate sang songs. The old people were delighted and clapped along. The student felt a deep sense of satisfaction. She realised that volunteering is not just about giving time; it is about sharing love. The experience also taught her the importance of teamwork. She encouraged her friends to join future activities. \"Even a small act of kindness can make a big difference,\" she said. The programme continued throughout the summer, and more students became involved. By the end, the student had learned that true happiness comes from helping others.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What was the students' first volunteer task?",
+      "options": ["To clean up a nearby park.", "To visit an old people's home.", "To organise a concert.", "To teach children at school."],
+      "answer": "To clean up a nearby park.",
+      "explanation": "文章明确提到“Their first task was to clean up a nearby park.”，因此答案是清理公园。B和C是下午的活动，D文中未提及，所以这两个选项错误。",
+      "evidence_sentence": "Their first task was to clean up a nearby park.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about the student from the passage?",
+      "options": ["She is a caring and responsible person.", "She prefers singing to playing the violin.", "She thinks volunteering is a waste of time.", "She wants to become a professional musician."],
+      "answer": "She is a caring and responsible person.",
+      "explanation": "从她主动参与志愿活动、为老人演奏并鼓励朋友加入可知，她是一个有爱心、有责任感的人。B文中未比较；C与她的行为矛盾；D文中无依据，因此B和C错误。",
+      "evidence_sentence": "She encouraged her friends to join future activities.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the underlined word \"delighted\" in the passage mean?",
+      "options": ["Very happy", "Quite tired", "A little nervous", "Rather surprised"],
+      "answer": "Very happy",
+      "explanation": "根据上下文，老人听到音乐后“clapped along”，说明他们非常高兴，所以“delighted”意为“非常快乐”。B、C、D均不符合语境，因此错误。",
+      "evidence_sentence": "The old people were delighted and clapped along.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main purpose of the passage?",
+      "options": ["To encourage students to do volunteer work.", "To describe a park clean-up in detail.", "To explain how to play the violin.", "To compare different volunteer programmes."],
+      "answer": "To encourage students to do volunteer work.",
+      "explanation": "文章通过讲述学生参与志愿服务的经历和收获，旨在鼓励更多学生参与志愿活动。B、C只是细节或无关内容，D文中未比较，因此B和D错误。",
+      "evidence_sentence": "She encouraged her friends to join future activities.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

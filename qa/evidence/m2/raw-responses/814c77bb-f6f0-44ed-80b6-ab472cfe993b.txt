@@ -1,0 +1,45 @@
+{
+  "passage": "True sportsmanship is not just about winning. It is about respect, fairness, and effort. At our school, the basketball team, which had never won a championship, finally reached the final last year. Their coach, Mr. Li, always told them, \"If you respect your opponents, you will earn respect.\" In the final, they faced a stronger team. Our players fought hard but lost by two points. Instead of complaining, they shook hands with the winners and congratulated them. The crowd applauded their attitude. Later, the other team's captain said, \"Your team showed us what real sportsmanship means.\" Our players learned that victory is not everything. They also learned that if they had given up earlier, they would not have felt proud of their effort. This experience taught them that true success lies in how you play the game.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"applauded\" in the passage most likely mean?",
+      "options": ["praised", "criticized", "ignored", "questioned"],
+      "answer": "praised",
+      "explanation": "根据上下文，观众对队员们的行为表示赞赏，因此applauded意为“称赞”。A“praised”符合语境；B“criticized”和C“ignored”与观众积极反应相反。",
+      "evidence_sentence": "The crowd applauded their attitude.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": ["To show that sportsmanship matters more than winning", "To describe how to win a basketball game", "To criticize the coach for not winning", "To explain the rules of basketball"],
+      "answer": "To show that sportsmanship matters more than winning",
+      "explanation": "文章通过球队虽败犹荣的经历，强调体育精神比胜利更重要。A概括了主旨；B和D偏离重点，C与文章态度相反。",
+      "evidence_sentence": "True sportsmanship is not just about winning.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["True success lies in sportsmanship and effort, not just winning.", "The basketball team won the championship last year.", "The coach was disappointed with the team's performance.", "The other team was unfair in the final."],
+      "answer": "True success lies in sportsmanship and effort, not just winning.",
+      "explanation": "全文围绕体育精神展开，说明真正的成功在于努力和尊重。A准确概括；B与事实不符，C文中未提及，D无依据。",
+      "evidence_sentence": "This experience taught them that true success lies in how you play the game.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, what would have happened if the players had given up earlier?",
+      "options": ["They would not have felt proud of their effort.", "They would have won the game.", "They would have been praised by the other team.", "They would have learned more about sportsmanship."],
+      "answer": "They would not have felt proud of their effort.",
+      "explanation": "文中明确说如果早点放弃，他们就不会为自己的努力感到自豪。A与原文一致；B、C、D均与原文逻辑不符。",
+      "evidence_sentence": "They also learned that if they had given up earlier, they would not have felt proud of their effort.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "passage": "The student often thinks about her future job. She knows that she must work hard ① she wants to succeed. Her teacher says that a good education is the ② step towards a bright future. The student is very ③ and always finishes her homework on time. She wants to become a ④ because she loves science. In class, she is ⑤ than most of her classmates at maths. However, her best friend is the ⑥ student in the whole class at English. The student often studies ⑦ her friend, and they help each other. ⑧ a clear plan, she feels more confident about her future. She hopes ⑨ a scientist who can help people. She also plans ⑩ more books about science this year.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank ①.",
+      "options": ["if", "because", "so", "but"],
+      "answer": "if",
+      "explanation": "此处表示条件关系，用if引导条件状语从句。because表原因，so表结果，均不符合逻辑；but表转折，也不合适。",
+      "evidence_sentence": "She knows that she must work hard ① she wants to succeed.",
+      "context_clue": "She knows that she must work hard ① she wants to succeed.",
+      "clue_argument": "条件关系，用if。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank ②.",
+      "options": ["first", "one", "once", "only"],
+      "answer": "first",
+      "explanation": "序数词first表示“第一步”，符合语境。one是基数词，once是副词，only是形容词，均不能直接修饰step表示顺序。",
+      "evidence_sentence": "Her teacher says that a good education is the ② step towards a bright future.",
+      "context_clue": "Her teacher says that a good education is the ② step towards a bright future.",
+      "clue_argument": "表示“第一步”用序数词first。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank ③.",
+      "options": ["hard-working", "lazy", "careless", "silly"],
+      "answer": "hard-working",
+      "explanation": "根据后文“always finishes her homework on time”可知她勤奋，故选hard-working。lazy（懒惰）、careless（粗心）、silly（愚蠢）均与语境矛盾。",
+      "evidence_sentence": "The student is very ③ and always finishes her homework on time.",
+      "context_clue": "The student is very ③ and always finishes her homework on time.",
+      "clue_argument": "按时完成作业说明她勤奋。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank ④.",
+      "options": ["scientist", "artist", "musician", "teacher"],
+      "answer": "scientist",
+      "explanation": "根据“because she loves science”可知她想成为科学家。artist（艺术家）、musician（音乐家）、teacher（教师）与“热爱科学”不直接对应。",
+      "evidence_sentence": "She wants to become a ④ because she loves science.",
+      "context_clue": "She wants to become a ④ because she loves science.",
+      "clue_argument": "热爱科学，所以想成为科学家。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank ⑤.",
+      "options": ["better", "good", "best", "well"],
+      "answer": "better",
+      "explanation": "句中有than，表示比较，用比较级better。good是原级，best是最高级，well是副词原级，均不能与than连用。",
+      "evidence_sentence": "In class, she is ⑤ than most of her classmates at maths.",
+      "context_clue": "In class, she is ⑤ than most of her classmates at maths.",
+      "clue_argument": "有than，用比较级better。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank ⑥.",
+      "options": ["best", "better", "good", "well"],
+      "answer": "best",
+      "explanation": "句中有in the whole class，表示最高级，用best。better是比较级，good和well是原级，均不符合最高级语境。",
+      "evidence_sentence": "However, her best friend is the ⑥ student in the whole class at English.",
+      "context_clue": "However, her best friend is the ⑥ student in the whole class at English.",
+      "clue_argument": "有in the whole class，用最高级best。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank ⑦.",
+      "options": ["with", "and", "but", "or"],
+      "answer": "with",
+      "explanation": "with her friend表示“和她的朋友一起”，符合语境。and、but、or是连词，不能直接连接名词短语作状语。",
+      "evidence_sentence": "The student often studies ⑦ her friend, and they help each other.",
+      "context_clue": "The student often studies ⑦ her friend, and they help each other.",
+      "clue_argument": "表示“和……一起”用with。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank ⑧.",
+      "options": ["With", "Without", "For", "By"],
+      "answer": "With",
+      "explanation": "With a clear plan表示“有了清晰的计划”，符合后文“更自信”的逻辑。Without（没有）与自信矛盾，For和By不能这样搭配。",
+      "evidence_sentence": "⑧ a clear plan, she feels more confident about her future.",
+      "context_clue": "⑧ a clear plan, she feels more confident about her future.",
+      "clue_argument": "有了计划才更自信，用With。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank ⑨.",
+      "options": ["to be", "be", "being", "been"],
+      "answer": "to be",
+      "explanation": "hope to do sth.是固定搭配，用不定式to be。be、being、been均不能直接跟在hope后作宾语。",
+      "evidence_sentence": "She hopes ⑨ a scientist who can help people.",
+      "context_clue": "She hopes ⑨ a scientist who can help people.",
+      "clue_argument": "hope后接不定式，用to be。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank ⑩.",
+      "options": ["to read", "read", "reading", "reads"],
+      "answer": "to read",
+      "explanation": "plan to do sth.是固定搭配，用不定式to read。read、reading、reads均不能直接跟在plan后作宾语。",
+      "evidence_sentence": "She also plans ⑩ more books about science this year.",
+      "context_clue": "She also plans ⑩ more books about science this year.",
+      "clue_argument": "plan后接不定式，用to read。"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "passage": "Last summer, my family took a trip to the coast. It was not the destination but the journey that made the trip special. ① It was in a small town by the sea that we first tasted fresh fish. ② It was the friendly bus driver who told us where to find the best beach. ③ It was not until we reached the top of the hill that we saw the whole bay. By the time we arrived at the hotel, the sun had already set. We were tired but excited. While we were waiting for dinner, we talked about our plans for the next day. We had been planning this trip for months, so we wanted everything to be perfect. The next morning, a group of tourists were taking photos near the harbour. Neither my sister nor I was ready to leave the beach. The number of visitors to the small town increases every summer. ⑩ A trip like this gives us a chance to relax and enjoy nature. We hope to return one day.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "It was in a small town by the sea ____ we first tasted fresh fish.",
+      "options": ["that", "which", "where", "when"],
+      "answer": "that",
+      "explanation": "此处是强调句型 It was ... that ...，强调地点状语 in a small town by the sea，因此用 that。which 不能用于强调句；where 虽然可引导定语从句，但这里不是定语从句。",
+      "evidence_sentence": "It was in a small town by the sea that we first tasted fresh fish.",
+      "context_clue": "It was in a small town by the sea that we first tasted fresh fish.",
+      "clue_argument": "强调句型结构要求填 that。"
+    },
+    {
+      "question_index": 2,
+      "stem": "It was the friendly bus driver ____ told us where to find the best beach.",
+      "options": ["who", "which", "whom", "whose"],
+      "answer": "who",
+      "explanation": "强调句强调主语 the friendly bus driver，指人，因此用 who。which 指物；whom 是宾格，不能作主语。",
+      "evidence_sentence": "It was the friendly bus driver who told us where to find the best beach.",
+      "context_clue": "It was the friendly bus driver who told us where to find the best beach.",
+      "clue_argument": "强调人作主语用 who。"
+    },
+    {
+      "question_index": 3,
+      "stem": "It was not until we reached the top of the hill ____ we saw the whole bay.",
+      "options": ["that", "when", "then", "which"],
+      "answer": "that",
+      "explanation": "这是强调句型 It was not until ... that ...，强调时间状语，因此填 that。when 不能用于该强调结构；then 是副词，不能连接从句。",
+      "evidence_sentence": "It was not until we reached the top of the hill that we saw the whole bay.",
+      "context_clue": "It was not until we reached the top of the hill that we saw the whole bay.",
+      "clue_argument": "not until 强调句固定用 that。"
+    },
+    {
+      "question_index": 4,
+      "stem": "By the time we arrived at the hotel, the sun ____ already set.",
+      "options": ["had", "has", "was", "would"],
+      "answer": "had",
+      "explanation": "by the time 引导的从句用一般过去时，主句表示过去的过去，用过去完成时 had set。has 是现在完成时；was 不能与 set 构成完成时。",
+      "evidence_sentence": "By the time we arrived at the hotel, the sun had already set.",
+      "context_clue": "By the time we arrived at the hotel, the sun had already set.",
+      "clue_argument": "过去的过去用过去完成时。"
+    },
+    {
+      "question_index": 5,
+      "stem": "While we ____ for dinner, we talked about our plans for the next day.",
+      "options": ["were waiting", "waited", "have waited", "are waiting"],
+      "answer": "were waiting",
+      "explanation": "while 引导的时间状语从句表示过去某时正在进行的动作，用过去进行时 were waiting。waited 是一般过去时，不能表示持续；have waited 是现在完成时，与过去语境不符。",
+      "evidence_sentence": "While we were waiting for dinner, we talked about our plans for the next day.",
+      "context_clue": "While we were waiting for dinner, we talked about our plans for the next day.",
+      "clue_argument": "while 从句表示过去正在进行。"
+    },
+    {
+      "question_index": 6,
+      "stem": "We ____ this trip for months, so we wanted everything to be perfect.",
+      "options": ["had been planning", "planned", "have planned", "were planning"],
+      "answer": "had been planning",
+      "explanation": "for months 表示持续到过去某时，且动作在此之前一直进行，用过去完成进行时 had been planning。planned 不能表示持续；have planned 是现在完成时，与过去语境不符。",
+      "evidence_sentence": "We had been planning this trip for months, so we wanted everything to be perfect.",
+      "context_clue": "We had been planning this trip for months, so we wanted everything to be perfect.",
+      "clue_argument": "持续到过去的动作用过去完成进行时。"
+    },
+    {
+      "question_index": 7,
+      "stem": "The next morning, a group of tourists ____ taking photos near the harbour.",
+      "options": ["were", "was", "is", "are"],
+      "answer": "were",
+      "explanation": "a group of tourists 作主语时，谓语与 tourists 保持一致，用复数 were。was 是单数；is/are 是现在时，与 The next morning 的过去语境不符。",
+      "evidence_sentence": "The next morning, a group of tourists were taking photos near the harbour.",
+      "context_clue": "The next morning, a group of tourists were taking photos near the harbour.",
+      "clue_argument": "a group of + 复数名词作主语，谓语用复数。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Neither my sister nor I ____ ready to leave the beach.",
+      "options": ["was", "were", "am", "are"],
+      "answer": "was",
+      "explanation": "neither ... nor ... 连接主语时，谓语遵循就近原则，与 I 一致，但这里叙述过去，用 was。were 是复数；am/are 是现在时，与语境不符。",
+      "evidence_sentence": "Neither my sister nor I was ready to leave the beach.",
+      "context_clue": "Neither my sister nor I was ready to leave the beach.",
+      "clue_argument": "neither...nor 就近原则，且叙述过去。"
+    },
+    {
+      "question_index": 9,
+      "stem": "The number of visitors to the small town ____ every summer.",
+      "options": ["increases", "increase", "are increasing", "have increased"],
+      "answer": "increases",
+      "explanation": "the number of ... 作主语表示数量，谓语用单数，且 every summer 表示一般现在时，用 increases。increase 是复数形式；are increasing/have increased 与主语单数不一致。",
+      "evidence_sentence": "The number of visitors to the small town increases every summer.",
+      "context_clue": "The number of visitors to the small town increases every summer.",
+      "clue_argument": "the number of 作主语谓语用单数。"
+    },
+    {
+      "question_index": 10,
+      "stem": "____ trip like this gives us a chance to relax and enjoy nature.",
+      "options": ["A", "An", "The", "不填"],
+      "answer": "A",
+      "explanation": "trip 是可数名词单数，此处表示泛指一次旅行，用不定冠词 A。An 用于元音音素前；The 表示特指，不填则缺少冠词。",
+      "evidence_sentence": "A trip like this gives us a chance to relax and enjoy nature.",
+      "context_clue": "A trip like this gives us a chance to relax and enjoy nature.",
+      "clue_argument": "泛指一次旅行用不定冠词 A。"
+    }
+  ]
+}

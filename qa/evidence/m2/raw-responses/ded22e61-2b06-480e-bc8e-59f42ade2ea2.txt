@@ -1,0 +1,1 @@
+{"translations": {"arranged": "安排", "decision": "决定", "self-knowledge": "自知", "workplace": "职场"}}

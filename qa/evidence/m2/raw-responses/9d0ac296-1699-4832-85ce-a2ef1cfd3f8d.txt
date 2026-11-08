@@ -1,0 +1,1 @@
+{"translations": {"luckily": "幸好", "pause": "暂停", "replay": "重放"}}

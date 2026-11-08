@@ -1,0 +1,105 @@
+{
+  "passage": "Last term, our science club started a project ①______ aimed to test how light affects plant growth. The idea ②______ we chose was simple: grow beans in pots. The pot ③______ we placed on the sunny balcony grew faster than the one in the dark cupboard. Our teacher, ④______ guided us patiently, was very encouraging. We also read about a famous experiment, ⑤______ was done by a scientist in the 19th century. The results ⑥______ we recorded were surprising. In the final report, the data ⑦______ carefully by each member. Now the report ⑧______ by the whole school. Last week, the project ⑨______ by the headmaster as the best one. The plants ⑩______ in the lab are watered every day.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the correct word for blank ①.",
+      "options": ["which", "who", "whose", "where"],
+      "answer": "which",
+      "explanation": "先行词project是物，在定语从句中作主语，用which。who指人，whose表所属，where作地点状语，均不符合。",
+      "evidence_sentence": "Last term, our science club started a project ①______ aimed to test how light affects plant growth.",
+      "context_clue": "Last term, our science club started a project ①______ aimed to test how light affects plant growth.",
+      "clue_argument": "先行词是物，从句缺主语。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the correct word for blank ②.",
+      "options": ["that", "who", "whose", "where"],
+      "answer": "that",
+      "explanation": "先行词idea是物，从句缺宾语，可用that。who指人，whose表所属，where作状语，均不对。",
+      "evidence_sentence": "The idea ②______ we chose was simple: grow beans in pots.",
+      "context_clue": "The idea ②______ we chose was simple: grow beans in pots.",
+      "clue_argument": "先行词是物，从句缺宾语。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the correct word for blank ③.",
+      "options": ["that", "who", "whose", "when"],
+      "answer": "that",
+      "explanation": "先行词pot是物，从句缺宾语，用that。who指人，whose表所属，when作时间状语，均不对。",
+      "evidence_sentence": "The pot ③______ we placed on the sunny balcony grew faster than the one in the dark cupboard.",
+      "context_clue": "The pot ③______ we placed on the sunny balcony grew faster than the one in the dark cupboard.",
+      "clue_argument": "先行词是物，从句缺宾语。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the correct word for blank ④.",
+      "options": ["who", "which", "whose", "where"],
+      "answer": "who",
+      "explanation": "非限制性定语从句先行词teacher指人，用who。which指物，whose表所属，where作状语，均不对。",
+      "evidence_sentence": "Our teacher, ④______ guided us patiently, was very encouraging.",
+      "context_clue": "Our teacher, ④______ guided us patiently, was very encouraging.",
+      "clue_argument": "先行词指人，从句缺主语。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the correct word for blank ⑤.",
+      "options": ["which", "who", "whose", "where"],
+      "answer": "which",
+      "explanation": "非限制性定语从句先行词experiment指物，用which。who指人，whose表所属，where作状语，均不对。",
+      "evidence_sentence": "We also read about a famous experiment, ⑤______ was done by a scientist in the 19th century.",
+      "context_clue": "We also read about a famous experiment, ⑤______ was done by a scientist in the 19th century.",
+      "clue_argument": "先行词是物，从句缺主语。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the correct word for blank ⑥.",
+      "options": ["which", "who", "whose", "where"],
+      "answer": "which",
+      "explanation": "先行词results是物，从句缺宾语，用which。who指人，whose表所属，where作状语，均不对。",
+      "evidence_sentence": "The results ⑥______ we recorded were surprising.",
+      "context_clue": "The results ⑥______ we recorded were surprising.",
+      "clue_argument": "先行词是物，从句缺宾语。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the correct word for blank ⑦.",
+      "options": ["was checked", "checked", "is checked", "has checked"],
+      "answer": "was checked",
+      "explanation": "data与check是被动关系，且描述过去动作，用一般过去时被动语态was checked。checked是主动，is checked是现在时，has checked是主动完成，均不对。",
+      "evidence_sentence": "In the final report, the data ⑦______ carefully by each member.",
+      "context_clue": "In the final report, the data ⑦______ carefully by each member.",
+      "clue_argument": "主语data是动作承受者，时间为过去。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the correct word for blank ⑧.",
+      "options": ["is being read", "is reading", "has read", "reads"],
+      "answer": "is being read",
+      "explanation": "report与read是被动关系，且now表示正在进行，用现在进行时被动语态is being read。is reading是主动进行，has read是主动完成，reads是主动一般现在时，均不对。",
+      "evidence_sentence": "Now the report ⑧______ by the whole school.",
+      "context_clue": "Now the report ⑧______ by the whole school.",
+      "clue_argument": "主语report是动作承受者，now表示进行。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the correct word for blank ⑨.",
+      "options": ["was praised", "praised", "is praised", "has praised"],
+      "answer": "was praised",
+      "explanation": "project与praise是被动关系，Last week表示过去，用一般过去时被动语态was praised。praised是主动，is praised是现在时，has praised是主动完成，均不对。",
+      "evidence_sentence": "Last week, the project ⑨______ by the headmaster as the best one.",
+      "context_clue": "Last week, the project ⑨______ by the headmaster as the best one.",
+      "clue_argument": "主语project是动作承受者，时间为过去。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the correct word for blank ⑩.",
+      "options": ["grown", "growing", "to grow", "grow"],
+      "answer": "grown",
+      "explanation": "plants与grow是被动关系，且作后置定语表示被动完成，用过去分词grown。growing表主动进行，to grow表目的，grow是动词原形，均不对。",
+      "evidence_sentence": "The plants ⑩______ in the lab are watered every day.",
+      "context_clue": "The plants ⑩______ in the lab are watered every day.",
+      "clue_argument": "plants是grow的承受者，作定语表被动。"
+    }
+  ]
+}

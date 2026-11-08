@@ -1,0 +1,45 @@
+{
+  "passage": "In 1961, Yuri Gagarin became the first human to travel into space. His 108-minute flight showed that people could survive above Earth. Since then, space exploration has grown quickly. In 1969, Neil Armstrong and Buzz Aldrin walked on the moon. They collected rocks and set up experiments. These early missions were dangerous, but they proved that careful planning could overcome great risks. Today, the International Space Station (ISS) is a home in space. Astronauts from many countries live and work there for months. They do science experiments that help us on Earth. For example, they study how the human body changes in microgravity (微重力). This research may help doctors treat bone loss. Space technology also touches our daily lives. Satellites help us predict weather, navigate with GPS, and communicate across the world. However, space travel is expensive and creates space junk. Scientists are working on ways to clean up orbits. The student, her teacher, and a classmate discussed these issues in class. The teacher said, \"Space exploration is not just about adventure. It is about working together to solve problems that affect everyone.\" The classmate added that international cooperation is key. The student realized that space is not a race but a shared future.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"overcome\" in paragraph 1 most likely mean?",
+      "options": ["accept", "avoid", "defeat", "ignore"],
+      "answer": "defeat",
+      "explanation": "根据第一段“careful planning could overcome great risks”，overcome意为“克服”，与defeat（战胜）意思最接近。A项accept意为“接受”，C项avoid意为“避免”，均不符合语境。",
+      "evidence_sentence": "These early missions were dangerous, but they proved that careful planning could overcome great risks.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the teacher's attitude toward space exploration?",
+      "options": ["Doubtful", "Supportive", "Uninterested", "Critical"],
+      "answer": "Supportive",
+      "explanation": "老师的话“Space exploration is not just about adventure. It is about working together to solve problems that affect everyone.”表明她支持太空探索，认为它有助于解决人类共同问题。A项Doubtful（怀疑的）和D项Critical（批评的）与老师积极肯定的语气不符。",
+      "evidence_sentence": "The teacher said, \"Space exploration is not just about adventure. It is about working together to solve problems that affect everyone.\"",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Space exploration has a history and brings both benefits and challenges.", "The ISS is the most important space station.", "Space travel is too expensive to continue.", "Only astronauts can contribute to space science."],
+      "answer": "Space exploration has a history and brings both benefits and challenges.",
+      "explanation": "文章从早期太空飞行讲到国际空间站，再谈到太空科技的好处和太空垃圾等问题，最后强调合作，主旨是太空探索既有历史又有益处和挑战。B项只提到ISS，是细节；C项说太空旅行太贵不应继续，与文章不符。",
+      "evidence_sentence": "Space technology also touches our daily lives. However, space travel is expensive and creates space junk.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, what do astronauts on the ISS study?",
+      "options": ["How to build rockets", "How the human body changes in microgravity", "How to grow food on Earth", "How to predict weather"],
+      "answer": "How the human body changes in microgravity",
+      "explanation": "文中明确提到“they study how the human body changes in microgravity”，即宇航员研究人体在微重力下的变化。A项“如何建造火箭”和C项“如何在地球上种植食物”文中未提及。",
+      "evidence_sentence": "For example, they study how the human body changes in microgravity (微重力).",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

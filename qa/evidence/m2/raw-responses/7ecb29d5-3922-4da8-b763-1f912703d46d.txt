@@ -1,0 +1,55 @@
+{
+  "passage": "Last spring, our school's environment club started a recycling programme. The student, her teacher and a classmate met after class to plan it. First, the club decided that a recycling box should be placed in every classroom. The teacher explained that each box (1) ______ by the club every Friday. Second, the classmate said that every member (2) ______ a short report about the waste each week. Third, the student suggested that the school (3) ______ more bins near the playground. Fourth, the club thought about (4) ______ old paper into small notebooks. Finally, the teacher talked about the (5) ______ of the programme: it would help the whole school care for the environment.\n\nOptions:\nA. should be checked\nB. must write\nC. should buy\nD. making\nE. importance\nF. is checked\nG. writes",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best option for blank (1).",
+      "options": ["A. should be checked", "B. must write", "C. should buy", "D. making", "E. importance", "F. is checked", "G. writes"],
+      "answer": "A",
+      "explanation": "此处表示“建议回收箱应当被检查”，用should be done的被动结构；F项is checked只是一般现在时被动，缺少建议语气，B项must write是主动且与主语搭配不当。",
+      "evidence_sentence": "The teacher explained that each box (1) ______ by the club every Friday.",
+      "context_clue": "The teacher explained that each box (1) ______ by the club every Friday.",
+      "clue_argument": "by the club提示被动，explained后的建议内容用should be done。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best option for blank (2).",
+      "options": ["A. should be checked", "B. must write", "C. should buy", "D. making", "E. importance", "F. is checked", "G. writes"],
+      "answer": "B",
+      "explanation": "主语every member是单数，表示“必须写一份简短报告”，用must write；G项writes缺少情态动词且与后面的a short report搭配不完整，C项should buy语义不符。",
+      "evidence_sentence": "Second, the classmate said that every member (2) ______ a short report about the waste each week.",
+      "context_clue": "Second, the classmate said that every member (2) ______ a short report about the waste each week.",
+      "clue_argument": "every member后接单数谓语，a short report提示“写报告”。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best option for blank (3).",
+      "options": ["A. should be checked", "B. must write", "C. should buy", "D. making", "E. importance", "F. is checked", "G. writes"],
+      "answer": "C",
+      "explanation": "suggested that后接虚拟语气should do，表示“学校应当买更多垃圾桶”，用should buy；A项should be checked是被动且语义不符，D项making不能作谓语。",
+      "evidence_sentence": "Third, the student suggested that the school (3) ______ more bins near the playground.",
+      "context_clue": "Third, the student suggested that the school (3) ______ more bins near the playground.",
+      "clue_argument": "suggested that从句用should do虚拟语气，more bins提示“买”。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best option for blank (4).",
+      "options": ["A. should be checked", "B. must write", "C. should buy", "D. making", "E. importance", "F. is checked", "G. writes"],
+      "answer": "D",
+      "explanation": "about是介词，后接动名词making，表示“把旧纸做成小笔记本”；B项must write是谓语动词不能作介词宾语，E项importance是名词且语义不符。",
+      "evidence_sentence": "Fourth, the club thought about (4) ______ old paper into small notebooks.",
+      "context_clue": "Fourth, the club thought about (4) ______ old paper into small notebooks.",
+      "clue_argument": "介词about后接v-ing，old paper into small notebooks提示“制作”。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best option for blank (5).",
+      "options": ["A. should be checked", "B. must write", "C. should buy", "D. making", "E. importance", "F. is checked", "G. writes"],
+      "answer": "E",
+      "explanation": "the后需要名词，importance表示“重要性”，与后文“帮助全校关心环境”呼应；D项making是动名词不能直接作the的中心词，F项is checked是谓语结构不能作名词。",
+      "evidence_sentence": "Finally, the teacher talked about the (5) ______ of the programme: it would help the whole school care for the environment.",
+      "context_clue": "Finally, the teacher talked about the (5) ______ of the programme: it would help the whole school care for the environment.",
+      "clue_argument": "the...of结构需要名词，冒号后解释其重要性。"
+    }
+  ]
+}

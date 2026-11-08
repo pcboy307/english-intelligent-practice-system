@@ -1,0 +1,151 @@
+{
+  "passage": "Last spring, the student and her teacher started a green club. At first, few classmates would (1) the idea that small actions matter. The teacher asked them to (2) how much waste they made each day. The student tried to (3) schoolwork and club duties, but it was hard. She wanted to show that recycling could (4) everyone. The first big (5) was a school-wide clean-up day. To (6) the plan clearly, the club made posters and spoke in class. Every bottle and paper box (7) separately. The student believed that one person could (8) the result. If they worked together, they would (9) new ways to reuse old things. The teacher said it was (10) that every student join in. She also asked that the school (11) a more (12) system for sorting rubbish. Over the year, the club has (13) to (14) five large bins of waste each month. Most students now (15) cycling to school to taking the bus. Their story shows that small steps can make a big difference.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank (1).",
+      "options": ["accept", "refuse", "ignore", "doubt"],
+      "answer": "accept",
+      "explanation": "句意：很少有人愿意接受“小行动也重要”这一想法。accept表示“接受”，符合语境。refuse（拒绝）和ignore（忽视）与后文大家参与行动矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "At first, few classmates would (1) the idea that small actions matter.",
+      "clue_argument": "would后接动词原形，且与the idea搭配，表示接受某种观点。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank (2).",
+      "options": ["appreciate", "measure", "produce", "avoid"],
+      "answer": "appreciate",
+      "explanation": "句意：老师让他们体会自己每天制造多少垃圾。appreciate在此表示“意识到、体会”，符合语境。measure（测量）和produce（生产）虽可搭配waste，但不如appreciate贴合“体会问题”的意图。",
+      "evidence_sentence": "",
+      "context_clue": "The teacher asked them to (2) how much waste they made each day.",
+      "clue_argument": "ask sb to do sth，且后接how much waste，表示体会/认识到垃圾量。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank (3).",
+      "options": ["balance", "finish", "forget", "change"],
+      "answer": "balance",
+      "explanation": "句意：学生试图平衡学业和社团职责。balance...and...表示“平衡两者”，符合语境。finish（完成）和forget（忘记）不能与and构成平衡关系。",
+      "evidence_sentence": "",
+      "context_clue": "The student tried to (3) schoolwork and club duties, but it was hard.",
+      "clue_argument": "balance A and B 是固定搭配，表示平衡学业与社团职责。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank (4).",
+      "options": ["benefit", "harm", "cost", "bother"],
+      "answer": "benefit",
+      "explanation": "句意：她想证明回收能使每个人受益。benefit表示“使受益”，符合积极语境。harm（伤害）和cost（花费）与回收的正面作用相反。",
+      "evidence_sentence": "",
+      "context_clue": "She wanted to show that recycling could (4) everyone.",
+      "clue_argument": "could后接动词原形，且everyone作宾语，表示使每个人受益。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank (5).",
+      "options": ["challenge", "chance", "choice", "change"],
+      "answer": "challenge",
+      "explanation": "句意：第一个大挑战是全校大扫除日。challenge表示“挑战”，符合语境。chance（机会）和choice（选择）不能表示困难任务。",
+      "evidence_sentence": "",
+      "context_clue": "The first big (5) was a school-wide clean-up day.",
+      "clue_argument": "the first big后接名词，且与clean-up day对应，表示挑战。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank (6).",
+      "options": ["communicate", "hide", "copy", "forget"],
+      "answer": "communicate",
+      "explanation": "句意：为了清楚地传达计划，社团制作海报并在班上发言。communicate表示“传达、沟通”，符合语境。hide（隐藏）和forget（忘记）与制作海报发言矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "To (6) the plan clearly, the club made posters and spoke in class.",
+      "clue_argument": "To do sth表示目的，后接the plan，表示传达计划。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank (7).",
+      "options": ["contribute", "collect", "waste", "produce"],
+      "answer": "contribute",
+      "explanation": "句意：每个瓶子和纸盒都被分别贡献/投入到回收中。contribute表示“贡献”，此处被动语态表示被投入回收。collect（收集）和waste（浪费）不符合被动语境。",
+      "evidence_sentence": "",
+      "context_clue": "Every bottle and paper box (7) separately.",
+      "clue_argument": "被动语态was contributed表示被贡献/投入，与separately搭配。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank (8).",
+      "options": ["determine", "decide", "depend", "describe"],
+      "answer": "determine",
+      "explanation": "句意：学生相信一个人也能决定结果。determine表示“决定”，符合语境。decide（决定）虽近义，但determine更强调对结果的决定作用；depend（依赖）和describe（描述）不合。",
+      "evidence_sentence": "",
+      "context_clue": "The student believed that one person could (8) the result.",
+      "clue_argument": "could后接动词原形，且the result作宾语，表示决定结果。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank (9).",
+      "options": ["discover", "invent", "find", "search"],
+      "answer": "discover",
+      "explanation": "句意：如果一起努力，他们会发现重复利用旧物的新方法。discover表示“发现”，符合语境。invent（发明）强调创造新事物；find（找到）和search（搜索）不如discover贴合“发现方法”。",
+      "evidence_sentence": "",
+      "context_clue": "If they worked together, they would (9) new ways to reuse old things.",
+      "clue_argument": "would后接动词原形，且new ways作宾语，表示发现新方法。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank (10).",
+      "options": ["efficient", "essential", "enough", "easy"],
+      "answer": "efficient",
+      "explanation": "句意：老师要求学校采用更高效的系统来分类垃圾。efficient表示“高效的”，符合语境。essential（必要的）和enough（足够的）不能修饰system表示效率。",
+      "evidence_sentence": "",
+      "context_clue": "She also asked that the school (11) a more (10) system for sorting rubbish.",
+      "clue_argument": "more后接形容词，修饰system，表示更高效的系统。"
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank (11).",
+      "options": ["essential", "efficient", "enough", "easy"],
+      "answer": "essential",
+      "explanation": "句意：老师说每个学生都参与是至关重要的。essential表示“至关重要的”，符合语境。efficient（高效的）和enough（足够的）不能表示重要性。",
+      "evidence_sentence": "",
+      "context_clue": "The teacher said it was (11) that every student join in.",
+      "clue_argument": "it was essential that... 是虚拟语气句型，表示至关重要。"
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank (12).",
+      "options": ["improve", "increase", "reduce", "change"],
+      "answer": "improve",
+      "explanation": "句意：一年来，社团已经改进到每月管理五大箱垃圾。improve表示“改进、改善”，符合语境。increase（增加）和reduce（减少）与manage five large bins不搭配。",
+      "evidence_sentence": "",
+      "context_clue": "Over the year, the club has (12) to (13) five large bins of waste each month.",
+      "clue_argument": "has后接过去分词，且与to manage搭配，表示已经改进到能管理。"
+    },
+    {
+      "question_index": 13,
+      "stem": "Choose the best word for blank (13).",
+      "options": ["manage", "control", "handle", "deal"],
+      "answer": "manage",
+      "explanation": "句意：社团已经能够每月管理五大箱垃圾。manage表示“管理、设法做到”，符合语境。control（控制）和handle（处理）虽近义，但manage to do更强调成功做到。",
+      "evidence_sentence": "",
+      "context_clue": "Over the year, the club has (12) to (13) five large bins of waste each month.",
+      "clue_argument": "to后接动词原形，且与five large bins搭配，表示管理。"
+    },
+    {
+      "question_index": 14,
+      "stem": "Choose the best word for blank (14).",
+      "options": ["prefer", "enjoy", "like", "love"],
+      "answer": "prefer",
+      "explanation": "句意：大多数学生现在更喜欢骑车上学而不是坐公交。prefer...to...表示“更喜欢前者”，符合语境。enjoy（享受）和like（喜欢）不能与to doing构成比较结构。",
+      "evidence_sentence": "",
+      "context_clue": "Most students now (14) cycling to school to taking the bus.",
+      "clue_argument": "prefer A to B 是固定搭配，表示更喜欢A而不是B。"
+    },
+    {
+      "question_index": 15,
+      "stem": "Choose the best word for blank (15).",
+      "options": ["reduce", "recycle", "reuse", "remove"],
+      "answer": "reduce",
+      "explanation": "句意：他们的故事表明小步骤能大大减少差异。reduce表示“减少”，符合语境。recycle（回收）和reuse（重复使用）不能与difference搭配表示减少差异。",
+      "evidence_sentence": "",
+      "context_clue": "Their story shows that small steps

@@ -1,0 +1,45 @@
+{
+  "passage": "Online learning has become a big part of school life. Last term, the student tried a new online course for the first time. At first, she felt nervous because she could not see her teacher face to face. However, her teacher posted short videos and clear instructions every morning. The student watched them on her laptop and took notes carefully. Soon she found that learning online was convenient and fun. She could pause a video when she did not understand a point, and she could replay it as often as she liked. Her classmate also joined the same course, and they often discussed difficult questions in a chat group. One day, the student missed a lesson because she was ill. She worried about falling behind. Luckily, her classmate shared the notes and helped her catch up. The teacher also sent a message to encourage her. The student realised that online learning does not mean learning alone. With the help of her teacher and classmates, she stayed active and made good progress. Now she believes that online learning can be a useful way to study, as long as students stay focused and ask for help when needed.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"convenient\" in the passage most likely mean?",
+      "options": ["easy to use and helpful", "boring and slow", "expensive and difficult", "noisy and crowded"],
+      "answer": "easy to use and helpful",
+      "explanation": "词义推断题。根据上下文，学生可以暂停和重播视频，说明在线学习很方便。错误选项B（boring and slow）和C（expensive and difficult）与文中“fun”和“convenient”的积极描述矛盾。",
+      "evidence_sentence": "Soon she found that learning online was convenient and fun.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the writer's attitude towards online learning?",
+      "options": ["Supportive but with conditions", "Completely negative", "Uninterested", "Confused"],
+      "answer": "Supportive but with conditions",
+      "explanation": "态度意图题。文章结尾说在线学习有用，但前提是学生保持专注并寻求帮助，说明作者有条件地支持。错误选项B（Completely negative）和C（Uninterested）与文中“useful way to study”及积极描述不符。",
+      "evidence_sentence": "Now she believes that online learning can be a useful way to study, as long as students stay focused and ask for help when needed.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Online learning can be effective with support and focus.", "Online learning is always better than classroom learning.", "Students should never learn online.", "Teachers do not need to help online students."],
+      "answer": "Online learning can be effective with support and focus.",
+      "explanation": "主旨大意题。全文讲述学生通过在线学习取得进步，强调老师同学帮助和专注的重要性。错误选项B（always better）和C（never learn online）过于绝对，与文章客观态度不符。",
+      "evidence_sentence": "With the help of her teacher and classmates, she stayed active and made good progress.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "Why did the student worry one day?",
+      "options": ["She missed a lesson because she was ill.", "She lost her laptop.", "Her teacher did not post videos.", "Her classmate refused to help her."],
+      "answer": "She missed a lesson because she was ill.",
+      "explanation": "细节理解题。文中明确提到学生因生病缺课而担心落后。错误选项B（lost her laptop）和D（classmate refused to help）在文中没有依据，且与同学分享笔记的事实相反。",
+      "evidence_sentence": "One day, the student missed a lesson because she was ill. She worried about falling behind.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

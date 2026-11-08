@@ -1,0 +1,45 @@
+{
+  "passage": "In the 1960s, space exploration was a contest between two superpowers. Today, it is a global effort. Countries like China, India, and Japan have sent probes to the Moon and Mars, while private companies such as SpaceX have reduced the cost of launching satellites. This shift has made space more accessible, but it has also raised concerns about space debris. Thousands of pieces of old rockets and broken satellites circle the Earth at high speeds. A single collision could create a chain reaction, damaging working spacecraft. To address this, scientists are developing technologies to remove debris. For example, a European mission plans to capture a defunct satellite with a net and drag it into the atmosphere, where it will burn up. Such missions are expensive, but they are necessary to keep space safe for future generations. Meanwhile, the International Space Station continues to host astronauts from many countries, conducting experiments that benefit life on Earth. From better water filters to medical devices, space research has improved our daily lives in unexpected ways. As we look to the stars, we must also look after the space around our planet.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"defunct\" in the passage most likely mean?",
+      "options": ["no longer working", "newly launched", "very large", "secretly built"],
+      "answer": "no longer working",
+      "explanation": "“Defunct”意为“不再工作的”，与后文“drag it into the atmosphere, where it will burn up”相呼应。A项“新发射的”与语境相反；C项“非常大的”和D项“秘密建造的”在文中无依据。",
+      "evidence_sentence": "a European mission plans to capture a defunct satellite with a net and drag it into the atmosphere, where it will burn up.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's attitude towards space debris removal missions?",
+      "options": ["Supportive but aware of costs", "Doubtful about their effectiveness", "Indifferent to their necessity", "Critical of their environmental impact"],
+      "answer": "Supportive but aware of costs",
+      "explanation": "作者提到“Such missions are expensive, but they are necessary”，表明支持但意识到成本。B项“怀疑有效性”与“necessary”矛盾；C项“漠不关心”与作者强调必要性不符；D项“批评环境影响”文中未提及。",
+      "evidence_sentence": "Such missions are expensive, but they are necessary to keep space safe for future generations.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Space exploration has become more global and accessible, but it brings challenges like space debris that require solutions.", "Private companies have made space travel cheaper than government programs.", "Space debris is the biggest threat to future space missions.", "International cooperation in space has led to many medical breakthroughs."],
+      "answer": "Space exploration has become more global and accessible, but it brings challenges like space debris that require solutions.",
+      "explanation": "文章首段提到太空探索从竞赛变为全球努力，并指出太空垃圾问题及解决措施，最后总结要保护太空环境。A项概括了这些要点；B项只提到私人公司降低成本，是细节；C项夸大了太空垃圾的威胁；D项只提到国际合作的医疗成果，是部分内容。",
+      "evidence_sentence": "This shift has made space more accessible, but it has also raised concerns about space debris.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, what is one benefit of space research mentioned?",
+      "options": ["It has led to better water filters and medical devices.", "It has reduced the cost of space travel.", "It has cleaned up all space debris.", "It has made the International Space Station obsolete."],
+      "answer": "It has led to better water filters and medical devices.",
+      "explanation": "文中明确提到“From better water filters to medical devices, space research has improved our daily lives”。B项是私人公司的作用；C项与事实相反；D项文中未提及。",
+      "evidence_sentence": "From better water filters to medical devices, space research has improved our daily lives in unexpected ways.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

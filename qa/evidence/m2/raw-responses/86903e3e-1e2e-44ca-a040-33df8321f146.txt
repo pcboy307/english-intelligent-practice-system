@@ -1,0 +1,45 @@
+{
+  "passage": "In many cities, the public library is more than a place to borrow books. It is a community centre where people of all ages can learn, meet, and grow. Last year, our town opened a new public library, which quickly became a favourite spot for students and adults alike. The library offers free internet access, quiet study rooms, and weekly activities such as reading clubs and craft workshops. These services are designed to support lifelong learning and to bring neighbours together. Not only does the library provide books, but it also hosts talks by local writers and scientists. The staff believe that everyone should have the chance to explore new ideas, regardless of their background. Many visitors say the library has changed their daily lives. For example, a retired teacher now volunteers to help children with their homework, and a group of teenagers has started a robotics club there. The building itself is bright and welcoming, with large windows and comfortable seating. It is open seven days a week, and membership is completely free. The library is funded by the local government, and it relies on donations to expand its collection. In short, the public library is a valuable resource that enriches the whole community.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"enriches\" in the last sentence most likely mean?",
+      "options": ["Improves the quality of", "Makes more expensive", "Takes away from", "Limits the growth of"],
+      "answer": "Improves the quality of",
+      "explanation": "根据上下文，图书馆为社区提供学习、活动和资源，因此“enriches”意为“使丰富、提升质量”。A项“Improves the quality of”符合语境；B项“Makes more expensive”和C项“Takes away from”与图书馆免费、有益的形象相反，故错误。",
+      "evidence_sentence": "In short, the public library is a valuable resource that enriches the whole community.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": ["To argue that libraries should replace schools", "To show the positive role of public libraries in the community", "To complain about the cost of running a library", "To describe the history of an old library"],
+      "answer": "To show the positive role of public libraries in the community",
+      "explanation": "文章通篇介绍公共图书馆提供的服务、活动及其对社区和个人的积极影响，因此作者的主要目的是展示公共图书馆在社区中的积极作用。A项“To argue that libraries should replace schools”文中未提及且不合理；C项“To complain about the cost of running a library”与文中“membership is completely free”及积极语气矛盾，故错误。",
+      "evidence_sentence": "In short, the public library is a valuable resource that enriches the whole community.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Which of the following best summarizes the main idea of the passage?",
+      "options": ["Public libraries are only useful for borrowing books.", "Public libraries offer various services that benefit the whole community.", "Public libraries are too expensive for most people to use.", "Public libraries are mainly funded by private donations."],
+      "answer": "Public libraries offer various services that benefit the whole community.",
+      "explanation": "文章第一段即点明图书馆不仅是借书的地方，而是社区中心，随后列举了免费网络、学习室、活动等服务，并说明其惠及不同人群，因此B项最能概括主旨。A项“Public libraries are only useful for borrowing books.”与原文“more than a place to borrow books”直接矛盾；C项“Public libraries are too expensive for most people to use.”与“membership is completely free”相反，故错误。",
+      "evidence_sentence": "In many cities, the public library is more than a place to borrow books. It is a community centre where people of all ages can learn, meet, and grow.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, how is the new public library funded?",
+      "options": ["By the local government and donations", "By membership fees", "By selling books", "By private companies only"],
+      "answer": "By the local government and donations",
+      "explanation": "文中明确提到“The library is funded by the local government, and it relies on donations to expand its collection.”，因此资金来源包括地方政府和捐赠。B项“By membership fees”与“membership is completely free”矛盾；C项“By selling books”文中未提及，故错误。",
+      "evidence_sentence": "The library is funded by the local government, and it relies on donations to expand its collection.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

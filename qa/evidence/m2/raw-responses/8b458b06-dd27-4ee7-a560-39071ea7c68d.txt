@@ -1,0 +1,95 @@
+{
+  "passage": "The student wanted to build better study habits. (1) ______ She decided to start with small, daily actions. First, she made a simple plan and shared it with her teacher. (2) ______ The plan included short breaks and a fixed time for review. (3) ______ She also asked a classmate to check her progress each week. (4) ______ If she had not asked for help, she would have given up early. (5) ______ Her teacher suggested that she should keep a learning diary. Now she feels more confident and focused.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "A. However, she often felt tired and lost focus.",
+        "B. Therefore, she bought a new notebook.",
+        "C. For example, she watched a movie last night.",
+        "D. In addition, her teacher gave her a book.",
+        "E. As a result, she forgot her homework.",
+        "F. Meanwhile, her classmate went home early.",
+        "G. Besides, she joined a sports club."
+      ],
+      "answer": "A",
+      "explanation": "前文说想建立更好的学习习惯，后文说她决定从小事做起，A项“然而她常感到疲倦和注意力不集中”承上启下，说明需要改变。B项买笔记本与上下文逻辑不符，C项看电影是无关例子。",
+      "evidence_sentence": "The student wanted to build better study habits.",
+      "context_clue": "The student wanted to build better study habits. (1) ______ She decided to start with small, daily actions.",
+      "clue_argument": "前后为转折关系，指出问题所在。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "A. However, she often felt tired and lost focus.",
+        "B. Therefore, she bought a new notebook.",
+        "C. For example, she watched a movie last night.",
+        "D. In addition, her teacher gave her a book.",
+        "E. As a result, she forgot her homework.",
+        "F. Meanwhile, her classmate went home early.",
+        "G. Besides, she joined a sports club."
+      ],
+      "answer": "D",
+      "explanation": "前文说她与老师分享计划，D项“此外，老师给了她一本书”承接老师这一角色，提供额外帮助。B项买笔记本与分享计划无关，E项忘记作业与积极计划矛盾。",
+      "evidence_sentence": "First, she made a simple plan and shared it with her teacher.",
+      "context_clue": "First, she made a simple plan and shared it with her teacher. (2) ______ The plan included short breaks and a fixed time for review.",
+      "clue_argument": "老师给出建议或资源，与计划相关。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "A. However, she often felt tired and lost focus.",
+        "B. Therefore, she bought a new notebook.",
+        "C. For example, she watched a movie last night.",
+        "D. In addition, her teacher gave her a book.",
+        "E. As a result, she forgot her homework.",
+        "F. Meanwhile, her classmate went home early.",
+        "G. Besides, she joined a sports club."
+      ],
+      "answer": "B",
+      "explanation": "前文提到计划包括短暂休息和固定复习时间，B项“因此，她买了一个新笔记本”是执行计划的合理行动。A项疲倦与计划执行矛盾，F项同学早回家与她的学习无关。",
+      "evidence_sentence": "The plan included short breaks and a fixed time for review.",
+      "context_clue": "The plan included short breaks and a fixed time for review. (3) ______ She also asked a classmate to check her progress each week.",
+      "clue_argument": "为落实计划而采取的具体行动。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "A. However, she often felt tired and lost focus.",
+        "B. Therefore, she bought a new notebook.",
+        "C. For example, she watched a movie last night.",
+        "D. In addition, her teacher gave her a book.",
+        "E. As a result, she forgot her homework.",
+        "F. Meanwhile, her classmate went home early.",
+        "G. Besides, she joined a sports club."
+      ],
+      "answer": "F",
+      "explanation": "前文说她请同学每周检查进度，F项“与此同时，她的同学早早回家了”形成对比，暗示同学未能帮忙，为后文虚拟条件句铺垫。C项看电影是无关例子，G项参加社团与学习习惯无关。",
+      "evidence_sentence": "She also asked a classmate to check her progress each week.",
+      "context_clue": "She also asked a classmate to check her progress each week. (4) ______ If she had not asked for help, she would have given up early.",
+      "clue_argument": "同学的行为与请求帮助形成对照。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "A. However, she often felt tired and lost focus.",
+        "B. Therefore, she bought a new notebook.",
+        "C. For example, she watched a movie last night.",
+        "D. In addition, her teacher gave her a book.",
+        "E. As a result, she forgot her homework.",
+        "F. Meanwhile, her classmate went home early.",
+        "G. Besides, she joined a sports club."
+      ],
+      "answer": "E",
+      "explanation": "前文虚拟条件句说她若没求助早就放弃了，E项“结果，她忘了作业”说明求助后仍有问题，引出老师建议记学习日记。B项买笔记本已用过，G项参加社团与后文建议无关。",
+      "evidence_sentence": "If she had not asked for help, she would have given up early.",
+      "context_clue": "If she had not asked for help, she would have given up early. (5) ______ Her teacher suggested that she should keep a learning diary.",
+      "clue_argument": "问题导致老师进一步建议。"
+    }
+  ]
+}

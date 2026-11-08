@@ -1,0 +1,37 @@
+{
+  "passage": "Online learning has become a big part of school life. Students can attend classes on a computer at home, and they can watch videos again if they do not understand something. This is very helpful for students who are ill or who live far from school. However, online learning also has problems. Some students find it hard to focus when they are alone at home. They may chat with friends or play games instead of listening to the teacher. Also, not everyone has a good computer or fast internet. This can make learning difficult. To solve these problems, schools and teachers are trying new ways. For example, some teachers record short videos and share them before class. Then students can spend class time asking questions and working together. This way, online learning becomes more active. Another idea is to have online study groups. Students can meet in a video call and help each other with homework. Many students say that studying with friends keeps them interested. Of course, online learning cannot replace the classroom completely. But when used well, it can give students more chances to learn. The key is to use technology in a smart way and to keep a balance between online and offline study.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What does the word \"focus\" in the passage most likely mean?",
+      "options": ["pay attention", "take a break", "feel excited", "ask questions"],
+      "answer": "pay attention",
+      "explanation": "根据上下文，学生在家里独自学习时很难集中注意力，所以focus意为“集中注意力”。A“休息”和C“感到兴奋”都不符合语境，因为后文提到聊天或玩游戏是分心的表现，而不是休息或兴奋。",
+      "evidence_sentence": "Some students find it hard to focus when they are alone at home."
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the author's attitude towards online learning?",
+      "options": ["It is completely useless.", "It has both advantages and disadvantages.", "It should replace the classroom.", "It is only good for sick students."],
+      "answer": "It has both advantages and disadvantages.",
+      "explanation": "作者既提到了在线学习的好处（如生病或住得远的学生也能上课），也提到了问题（如难以集中注意力、设备网络问题），并建议合理使用，因此态度是辩证的。A“完全无用”和C“应取代课堂”都过于绝对，与原文不符。",
+      "evidence_sentence": "However, online learning also has problems."
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the main idea of the passage?",
+      "options": ["Online learning is better than classroom learning.", "Students should not use computers at home.", "Online learning has benefits and challenges, and we should use it wisely.", "Teachers should stop giving homework online."],
+      "answer": "Online learning has benefits and challenges, and we should use it wisely.",
+      "explanation": "文章第一段讲了在线学习的好处，第二段讲了问题，第三段讲了解决办法，最后总结要明智地使用技术并保持平衡，因此主旨是全面看待在线学习。A“比课堂学习更好”和B“不应在家用电脑”都片面或错误。",
+      "evidence_sentence": "The key is to use technology in a smart way and to keep a balance between online and offline study."
+    },
+    {
+      "question_index": 4,
+      "stem": "According to the passage, what can students do in online study groups?",
+      "options": ["They can play games together.", "They can help each other with homework.", "They can watch videos again.", "They can chat with the teacher."],
+      "answer": "They can help each other with homework.",
+      "explanation": "文中明确提到在线学习小组中，学生可以通过视频通话互相帮助完成作业。A“一起玩游戏”是分心的表现，不是学习小组的目的；C“再看视频”是另一项功能，不是学习小组的活动。",
+      "evidence_sentence": "Students can meet in a video call and help each other with homework."
+    }
+  ]
+}

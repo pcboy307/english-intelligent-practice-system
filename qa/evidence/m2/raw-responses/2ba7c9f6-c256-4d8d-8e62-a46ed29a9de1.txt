@@ -1,0 +1,1 @@
+{"translations": {"forgot": "忘记", "supportive": "支持"}}

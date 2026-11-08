@@ -1,0 +1,65 @@
+{
+  "passage": "In a small town, a student named Li Hua noticed that her school used a lot of electricity. She wanted to help. With her teacher's support, she started a project on renewable energy. Renewable energy comes from natural sources like the sun and wind, and it can be used again and again without running out. Li Hua and her classmates built a small solar panel model. They also learned that wind power can produce electricity when the wind blows. The project was a success. The school decided to put solar panels on the roof. Li Hua felt proud because her idea made a difference. She believes that if everyone takes action, we can protect our planet for future generations.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about Li Hua from the passage?",
+      "options": [
+        "She is concerned about the environment.",
+        "She wants to become a scientist.",
+        "She dislikes her school.",
+        "She thinks renewable energy is useless."
+      ],
+      "answer": "She is concerned about the environment.",
+      "explanation": "文章提到Li Hua注意到学校用电多并想帮忙，还发起了可再生能源项目，说明她关心环境。她希望成为科学家这一点文中没有依据，她不喜欢学校也与她主动帮忙矛盾。",
+      "evidence_sentence": "In a small town, a student named Li Hua noticed that her school used a lot of electricity. She wanted to help.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "The word 'renewable' in the passage is closest in meaning to ______.",
+      "options": [
+        "able to be used again",
+        "expensive to produce",
+        "difficult to find",
+        "harmful to nature"
+      ],
+      "answer": "able to be used again",
+      "explanation": "文中紧接着解释“it can be used again and again without running out”，因此renewable意为“可再生的”，即能再次使用。昂贵和难以找到在文中没有对应信息，且与定义不符。",
+      "evidence_sentence": "Renewable energy comes from natural sources like the sun and wind, and it can be used again and again without running out.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Why did Li Hua start the project?",
+      "options": [
+        "To reduce the school's electricity use.",
+        "To win a prize for her class.",
+        "To become famous in her town.",
+        "To finish her homework quickly."
+      ],
+      "answer": "To reduce the school's electricity use.",
+      "explanation": "Li Hua注意到学校用电多并想帮忙，于是发起了可再生能源项目，目的是减少用电。赢得奖品和出名在文中均未提及，与她的动机不符。",
+      "evidence_sentence": "In a small town, a student named Li Hua noticed that her school used a lot of electricity. She wanted to help. With her teacher's support, she started a project on renewable energy.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "A student's project on renewable energy made a difference.",
+        "Solar panels are too expensive for schools.",
+        "Wind power is better than solar power.",
+        "Students should study harder at school."
+      ],
+      "answer": "A student's project on renewable energy made a difference.",
+      "explanation": "全文讲述了Li Hua发起可再生能源项目并最终使学校安装太阳能板的故事，强调个人行动能带来改变。太阳能板太贵和风能比太阳能好都不是文章重点，文章也没有比较两者优劣。",
+      "evidence_sentence": "The project was a success. The school decided to put solar panels on the roof. Li Hua felt proud because her idea made a difference.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

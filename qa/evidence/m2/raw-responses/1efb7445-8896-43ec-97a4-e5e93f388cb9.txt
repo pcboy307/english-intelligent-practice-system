@@ -1,0 +1,1 @@
+{"translations": {"footwork": "步法", "practise": "练习", "shot": "射门"}}

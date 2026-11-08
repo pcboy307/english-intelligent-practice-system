@@ -1,0 +1,1 @@
+{"translations": {"sportsmanship": "体育精神"}}

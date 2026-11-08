@@ -1,0 +1,95 @@
+{
+  "passage": "Last month, our school held its annual science fair. My classmate Lily and I decided to build a water filter for our project. We used a plastic bottle, some sand, and small stones. (1) It was a simple idea, but we were proud of it. On the day of the fair, many students came to see our display. Lily explained how the filter worked while I showed the results. (2) Her clear explanation impressed everyone. The judges asked us several questions, and our answers were carefully checked. (3) Our project was praised by the head teacher. (4) Not only did we win a prize, but we also learned the value of teamwork. (5) It was teamwork that made our success possible. We will never forget that day.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best sentence for blank (1).",
+      "options": [
+        "A. It was a simple idea, but we were proud of it.",
+        "B. They were too expensive to buy.",
+        "C. He wanted to join another group.",
+        "D. She forgot to bring the materials.",
+        "E. We finished the project in one hour.",
+        "F. The teacher gave us a new task.",
+        "G. It was raining heavily that morning."
+      ],
+      "answer": "A",
+      "explanation": "上下文说我们用塑料瓶、沙子和石子做过滤器，这是一个简单的想法，但我们为它感到自豪。A选项中的It指代这个想法，与前后文衔接自然。B选项说太贵买不起，与自制过滤器矛盾；C选项说他想加入别组，与Lily和我的合作不符。",
+      "evidence_sentence": "We used a plastic bottle, some sand, and small stones.",
+      "context_clue": "We used a plastic bottle, some sand, and small stones.",
+      "clue_argument": "前文提到材料简单，后文说感到自豪，A选项的simple idea与materials呼应，proud与后文成功呼应。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best sentence for blank (2).",
+      "options": [
+        "A. It was a simple idea, but we were proud of it.",
+        "B. They were too expensive to buy.",
+        "C. He wanted to join another group.",
+        "D. She forgot to bring the materials.",
+        "E. We finished the project in one hour.",
+        "F. The teacher gave us a new task.",
+        "G. It was raining heavily that morning."
+      ],
+      "answer": "B",
+      "explanation": "前文说Lily解释过滤器如何工作，我展示结果，B选项“她的清晰解释给大家留下深刻印象”与Lily的解释直接衔接，Her指代Lily。A选项重复了第一空的内容；C选项中的He指代不明且与Lily不符。",
+      "evidence_sentence": "Lily explained how the filter worked while I showed the results.",
+      "context_clue": "Lily explained how the filter worked while I showed the results.",
+      "clue_argument": "Lily explained对应Her clear explanation，impressed everyone对应后文评委提问。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best sentence for blank (3).",
+      "options": [
+        "A. It was a simple idea, but we were proud of it.",
+        "B. They were too expensive to buy.",
+        "C. He wanted to join another group.",
+        "D. She forgot to bring the materials.",
+        "E. We finished the project in one hour.",
+        "F. The teacher gave us a new task.",
+        "G. It was raining heavily that morning."
+      ],
+      "answer": "C",
+      "explanation": "前文说评委问了我们几个问题，我们的回答被仔细检查，C选项“我们的项目受到校长表扬”是检查后的积极结果，Our project指代我们的过滤器项目。A选项与检查回答无关；D选项说Lily忘带材料，与后文成功矛盾。",
+      "evidence_sentence": "The judges asked us several questions, and our answers were carefully checked.",
+      "context_clue": "The judges asked us several questions, and our answers were carefully checked.",
+      "clue_argument": "answers were carefully checked后应接结果，Our project was praised是合理结果。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best sentence for blank (4).",
+      "options": [
+        "A. It was a simple idea, but we were proud of it.",
+        "B. They were too expensive to buy.",
+        "C. He wanted to join another group.",
+        "D. She forgot to bring the materials.",
+        "E. We finished the project in one hour.",
+        "F. The teacher gave us a new task.",
+        "G. It was raining heavily that morning."
+      ],
+      "answer": "D",
+      "explanation": "前文说项目受到表扬，D选项“我们不仅获奖，还学到了团队合作的价值”用Not only...but also...倒装，与表扬形成递进，we指代Lily和我。A选项重复第一空；E选项说一小时完成项目，与后文成功无关。",
+      "evidence_sentence": "Our project was praised by the head teacher.",
+      "context_clue": "Our project was praised by the head teacher.",
+      "clue_argument": "受到表扬后进一步说获奖和学到团队合作，D选项的Not only...but also...与表扬形成递进。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best sentence for blank (5).",
+      "options": [
+        "A. It was a simple idea, but we were proud of it.",
+        "B. They were too expensive to buy.",
+        "C. He wanted to join another group.",
+        "D. She forgot to bring the materials.",
+        "E. We finished the project in one hour.",
+        "F. The teacher gave us a new task.",
+        "G. It was raining heavily that morning."
+      ],
+      "answer": "E",
+      "explanation": "前文说我们学到了团队合作的价值，E选项“正是团队合作使我们的成功成为可能”用强调句型It was...that...总结全文，teamwork呼应前文。A选项重复第一空；F选项说老师给新任务，与结尾总结不符。",
+      "evidence_sentence": "Not only did we win a prize, but we also learned the value of teamwork.",
+      "context_clue": "Not only did we win a prize, but we also learned the value of teamwork.",
+      "clue_argument": "前文强调teamwork，E选项用强调句型突出teamwork，与learned the value of teamwork呼应。"
+    }
+  ]
+}

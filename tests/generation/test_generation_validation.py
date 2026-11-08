@@ -96,6 +96,45 @@ def test_accepts_glossed_professional_word_as_the_documented_exception() -> None
     assert report.metrics["glossed_terms"] == ["photosynthesis"]
 
 
+def test_vocabulary_audit_resolves_inflections_and_derivations_with_an_audit_trail() -> None:
+    passage = (
+        BASE_WORDS
+        + " Students discuss difficulties, curiosity, and western traditions. "
+        "They successfully gained valuable experience from the program."
+    )
+
+    report = validate_generated_passage(reading_payload(passage=passage))
+
+    assert GateCategory.VOCABULARY_SCOPE not in categories(report)
+    assert report.metrics["unknown_words"] == []
+    resolutions = {
+        item["original"]: item
+        for item in report.metrics["vocabulary_resolutions"]
+    }
+    assert resolutions["difficulties"]["matched_entry"] == "difficult"
+    assert resolutions["difficulties"]["rules"] == [
+        "plural_ies_to_y",
+        "y_to_root",
+    ]
+    assert resolutions["curiosity"]["matched_entry"] == "curious"
+    assert resolutions["curiosity"]["rules"] == ["derivation_ity_to_ous"]
+    assert resolutions["western"]["matched_entry"] == "west"
+    assert resolutions["western"]["rules"] == ["derivation_ern_to_base"]
+    assert resolutions["successfully"]["matched_entry"] == "success"
+    assert resolutions["successfully"]["rules"] == [
+        "derivation_ly",
+        "derivation_ful",
+    ]
+    assert resolutions["valuable"]["matched_entry"] == "value"
+    assert resolutions["valuable"]["rules"] == [
+        "derivation_able_restore_e"
+    ]
+    assert resolutions["program"]["matched_entry"] == "programme"
+    assert resolutions["program"]["rules"] == [
+        "spelling_variant_programme"
+    ]
+
+
 def test_rejects_grammar_tag_outside_the_21_id_whitelist() -> None:
     payload = reading_payload()
     payload["questions"][0]["grammar_tags"] = ["invented_tag"]

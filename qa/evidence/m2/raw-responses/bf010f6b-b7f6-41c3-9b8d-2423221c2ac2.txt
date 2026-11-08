@@ -1,0 +1,65 @@
+{
+  "passage": "Last year, a student in a small town noticed that her school's electricity bill was very high. She talked with her teacher, and they decided to start a project on renewable energy. The student learned that renewable energy comes from natural sources like sunlight, wind, and water. These sources are clean and can be used again and again. With the help of a classmate, she built a small model of a wind turbine（风力涡轮机） to show how wind can produce power. The project was a success. The student explained that renewable energy is important because it reduces pollution and helps fight climate change. Her teacher was proud and said, 'You have shown that even small actions can make a big difference.' The student hopes to study engineering in the future and work on clean energy solutions.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about the student's attitude towards renewable energy?",
+      "options": [
+        "She thinks it is too expensive.",
+        "She believes it is a promising solution.",
+        "She is unsure about its benefits.",
+        "She prefers traditional energy sources."
+      ],
+      "answer": "She believes it is a promising solution.",
+      "explanation": "文章提到学生希望未来学习工程并从事清洁能源工作，表明她认为可再生能源是有前景的解决方案。A和C错误：文中未提及昂贵或不确定，且她积极行动。",
+      "evidence_sentence": "The student hopes to study engineering in the future and work on clean energy solutions.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word 'renewable' most likely mean in the passage?",
+      "options": [
+        "Can be easily replaced",
+        "Can be naturally restored",
+        "Can be quickly used up",
+        "Can be artificially created"
+      ],
+      "answer": "Can be naturally restored",
+      "explanation": "根据上下文，可再生能源来自自然且可反复使用，因此'renewable'意为可自然恢复的。A和C错误：A项'容易替换'不准确，C项'快速耗尽'与文意相反。",
+      "evidence_sentence": "These sources are clean and can be used again and again.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Why did the student start the project?",
+      "options": [
+        "To reduce the school's electricity bill",
+        "To win a science competition",
+        "To become famous",
+        "To help her teacher"
+      ],
+      "answer": "To reduce the school's electricity bill",
+      "explanation": "文章首句提到学生注意到电费很高，随后与老师决定开展可再生能源项目，因此目的是降低电费。B和C错误：文中未提及竞赛或出名。",
+      "evidence_sentence": "Last year, a student in a small town noticed that her school's electricity bill was very high.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "A student's project on renewable energy and its benefits.",
+        "How to build a wind turbine model.",
+        "The importance of reducing electricity bills.",
+        "The student's future career plans."
+      ],
+      "answer": "A student's project on renewable energy and its benefits.",
+      "explanation": "文章主要讲述一名学生开展可再生能源项目并说明其好处。B和C错误：B是细节，C是部分原因，均非主旨。",
+      "evidence_sentence": "She talked with her teacher, and they decided to start a project on renewable energy.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

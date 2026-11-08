@@ -1,0 +1,65 @@
+{
+  "passage": "When the local wildlife park announced that its elephant area would be closed for repairs, many visitors were disappointed. The park's director explained that the decision had been made after experts studied the animals' needs. \"If we had more space, we would keep the elephants outside all year,\" she said. \"But the old building is not safe.\" A group of students decided to help. They organised a weekend sale and raised money for a new elephant house. The director was impressed. \"It is important that every citizen should take action to protect wild animals,\" she told them. The students also wrote letters to the government, asking for support. Their teacher said, \"If everyone cared more about nature, many species would not be in danger.\" The park now plans to open the new area next spring. The students hope their efforts will encourage others to join them.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the director's attitude towards the park's decision to close the elephant area?",
+      "options": [
+        "She regrets making the decision.",
+        "She believes it is a necessary step.",
+        "She thinks the students caused the problem.",
+        "She is unsure whether it will help."
+      ],
+      "answer": "She believes it is a necessary step.",
+      "explanation": "文章提到主任说旧建筑不安全，并解释决定是基于专家研究，说明她认为关闭是必要措施。A项“后悔”文中无依据；C项“认为是学生造成问题”与原文不符，学生是来帮忙的。",
+      "evidence_sentence": "But the old building is not safe.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Elephants in the wildlife park are in danger.",
+        "Students and the park work together to protect animals.",
+        "The government should give more money to wildlife parks.",
+        "The wildlife park will be closed forever."
+      ],
+      "answer": "Students and the park work together to protect animals.",
+      "explanation": "全文讲述了公园因安全原因关闭大象区，学生筹款并写信寻求支持，主任和老师都强调保护动物的重要性，因此主旨是学生与公园合作保护动物。A项“大象处于危险中”只是部分细节；D项“公园将永久关闭”与原文“计划明年春天开放新区域”矛盾。",
+      "evidence_sentence": "A group of students decided to help.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what would the director do if there were more space?",
+      "options": [
+        "She would keep the elephants outside all year.",
+        "She would close the park earlier.",
+        "She would sell the elephants.",
+        "She would ask students for more money."
+      ],
+      "answer": "She would keep the elephants outside all year.",
+      "explanation": "主任明确说：“If we had more space, we would keep the elephants outside all year.” 这是一个与现在事实相反的虚拟条件句，表明如果有更多空间，她会全年把大象养在户外。B、C、D项在文中均未提及。",
+      "evidence_sentence": "If we had more space, we would keep the elephants outside all year,",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can be inferred about the students from the passage?",
+      "options": [
+        "They are afraid of wild animals.",
+        "They want to become park directors.",
+        "They are active in protecting wildlife.",
+        "They think the park should be closed."
+      ],
+      "answer": "They are active in protecting wildlife.",
+      "explanation": "学生主动组织义卖筹款、写信给政府寻求支持，并希望鼓励他人加入，这些行为表明他们积极保护野生动物。A项“害怕野生动物”无依据；B项“想成为公园主任”属过度推断；D项“认为公园应关闭”与原文相反。",
+      "evidence_sentence": "They organised a weekend sale and raised money for a new elephant house.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

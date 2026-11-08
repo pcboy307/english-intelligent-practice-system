@@ -1,0 +1,65 @@
+{
+  "passage": "In a small town, a student named Lily learned about renewable energy（可再生能源） from her teacher. The teacher explained that renewable energy comes from natural sources like the sun, wind, and water. Unlike coal and oil, these sources do not run out. Lily was curious and decided to start a project. She and her classmate Tom built a small model of a wind turbine（风力涡轮机） using recycled materials. They used a plastic bottle, some paper, and a small motor. When the wind blew, the turbine turned and lit a tiny light. The project was a success. Lily's teacher was impressed and encouraged them to share their work with the whole school. At the school science fair, many students were surprised to see how simple materials could produce electricity. Lily explained that if we use more renewable energy, we can reduce pollution and protect the environment. She also mentioned that renewable energy is becoming cheaper and more efficient every year. The school decided to install solar panels（太阳能电池板） on the roof to save energy. Lily felt proud that her small project had led to a big change. She believes that everyone can make a difference by choosing clean energy.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can be inferred about Lily's project from the passage?",
+      "options": [
+        "It was too expensive to build.",
+        "It inspired the school to take action.",
+        "It failed to produce any electricity.",
+        "It was copied from a website."
+      ],
+      "answer": "It inspired the school to take action.",
+      "explanation": "文章提到Lily的项目成功后，学校决定安装太阳能板，说明她的项目启发了学校采取行动。A项错误，因为项目使用回收材料，并不昂贵；C项错误，因为项目成功点亮了小灯。",
+      "evidence_sentence": "The school decided to install solar panels（太阳能电池板） on the roof to save energy.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word 'efficient' most likely mean in the passage?",
+      "options": [
+        "costing less money",
+        "working well without waste",
+        "looking more beautiful",
+        "taking more time"
+      ],
+      "answer": "working well without waste",
+      "explanation": "根据上下文，'efficient'与'cheaper'并列，描述可再生能源的优点，结合常识，efficient意为“高效”，即工作良好且不浪费。A项只涉及成本，不全面；D项与高效相反。",
+      "evidence_sentence": "She also mentioned that renewable energy is becoming cheaper and more efficient every year.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To explain how to build a wind turbine.",
+        "To encourage the use of renewable energy.",
+        "To compare different types of energy.",
+        "To describe a school science fair."
+      ],
+      "answer": "To encourage the use of renewable energy.",
+      "explanation": "文章通过Lily的项目展示了可再生能源的好处，并提到减少污染、保护环境，最后说每个人都能通过选择清洁能源做出改变，目的是鼓励使用可再生能源。A项过于具体；D项只是文章的一部分。",
+      "evidence_sentence": "She believes that everyone can make a difference by choosing clean energy.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Renewable energy is expensive and difficult to use.",
+        "A student's project showed the benefits of renewable energy.",
+        "Wind turbines are the best source of renewable energy.",
+        "Schools should stop using electricity."
+      ],
+      "answer": "A student's project showed the benefits of renewable energy.",
+      "explanation": "文章主要讲述Lily通过项目展示可再生能源的好处，并带动学校采取行动，因此B项概括了全文。A项与文章相反，文章说可再生能源变得更便宜；C项过于绝对，文章并未比较各种可再生能源。",
+      "evidence_sentence": "Lily felt proud that her small project had led to a big change.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

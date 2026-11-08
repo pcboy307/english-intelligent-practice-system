@@ -1,0 +1,65 @@
+{
+  "passage": "Maya, a high school junior, often felt stressed because she never had enough time. One Monday, she complained to her teacher, Ms. Chen. Ms. Chen suggested that Maya should make a weekly plan. At first, Maya was doubtful. She thought planning would take too much time. However, she decided to try it for one week.\n\nOn Sunday evening, Maya listed all her tasks: homework, a science project, and soccer practice. Then she ranked them by importance. She put the science project first because it was due on Friday. She scheduled two hours each day for homework and one hour for the project. She also left some free time for rest.\n\nBy Wednesday, Maya had finished half of her project. She felt less anxious. She even had time to help her friend Tom with his math. Tom was surprised and asked how she did it. Maya explained that a clear plan helped her focus. She said she would continue planning every week.\n\nMs. Chen noticed Maya's improvement. She told the class that good time management is not about doing more; it is about doing what matters first. Maya agreed. She realized that a simple plan had changed her life.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Making a weekly plan can help reduce stress and improve time management.",
+        "Students should always put their science projects first.",
+        "Teachers should give students less homework.",
+        "Helping friends with math is a waste of time."
+      ],
+      "answer": "Making a weekly plan can help reduce stress and improve time management.",
+      "explanation": "文章主要讲述Maya通过制定周计划减轻压力、改善时间管理，因此A正确。B和C是片面或无关的细节，不是主旨；D与文章相反，文章说帮助朋友后她仍有时间。",
+      "evidence_sentence": "She realized that a simple plan had changed her life.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what had Maya finished by Wednesday?",
+      "options": [
+        "Half of her science project.",
+        "All of her homework for the week.",
+        "Her soccer practice for the month.",
+        "Tom's math assignment."
+      ],
+      "answer": "Half of her science project.",
+      "explanation": "文中明确提到到周三时Maya已经完成了项目的一半，因此A正确。B和C在文中没有依据；D是她帮助Tom，而不是完成Tom的作业。",
+      "evidence_sentence": "By Wednesday, Maya had finished half of her project.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can be inferred about Tom from the passage?",
+      "options": [
+        "He was impressed by Maya's time management.",
+        "He did not need any help with math.",
+        "He was angry that Maya helped him.",
+        "He had already finished his science project."
+      ],
+      "answer": "He was impressed by Maya's time management.",
+      "explanation": "Tom感到惊讶并询问Maya是如何做到的，可以推断他对Maya的时间管理感到佩服，因此A正确。B与文中Maya帮助他学数学矛盾；C文中未提及生气；D文中未提及Tom的项目。",
+      "evidence_sentence": "Tom was surprised and asked how she did it.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"anxious\" most nearly mean in the passage?",
+      "options": [
+        "Worried",
+        "Excited",
+        "Bored",
+        "Confident"
+      ],
+      "answer": "Worried",
+      "explanation": "文中Maya在完成一半项目后感到less anxious，结合前文她感到压力大，可知anxious意为“焦虑的”，与worried最接近，因此A正确。B和C与语境不符；D与“less anxious”相反。",
+      "evidence_sentence": "She felt less anxious.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

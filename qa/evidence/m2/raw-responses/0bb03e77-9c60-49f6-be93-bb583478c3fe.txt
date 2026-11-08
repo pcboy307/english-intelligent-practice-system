@@ -1,0 +1,86 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a connected narrative about two students visiting an art centre, with logical progression and cohesive devices.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "The",
+      "reason": "The definite article 'The' is required because the centre has been previously mentioned, making it specific.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "The",
+      "reason": "The definite article 'The' is appropriate because the student is specific from the earlier context.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "on",
+      "reason": "The preposition 'on' is used with specific days like Saturday.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "at",
+      "reason": "The preposition 'at' is used with specific times like nine o'clock.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "at",
+      "reason": "The preposition 'at' is used with locations like the gate.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 6,
+      "clear_best": true,
+      "best_option": "of",
+      "reason": "The preposition 'of' is required in the phrase 'the story of each one'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 7,
+      "clear_best": true,
+      "best_option": "how",
+      "reason": "The word 'how' is used to ask about the manner or way something is made.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 8,
+      "clear_best": true,
+      "best_option": "yourself",
+      "reason": "The reflexive pronoun 'yourself' is needed to emphasize that the person can try it on their own.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 9,
+      "clear_best": true,
+      "best_option": "so",
+      "reason": "The conjunction 'so' indicates a cause-effect relationship between the classmate's nervousness and the student's encouragement.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 10,
+      "clear_best": true,
+      "best_option": "of",
+      "reason": "The preposition 'of' is part of the fixed phrase 'proud of'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

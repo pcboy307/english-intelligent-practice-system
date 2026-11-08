@@ -1,0 +1,1 @@
+{"translations": {"competition": "竞争", "eye-opening": "大开眼界", "organized": "有条理", "realized": "意识到"}}

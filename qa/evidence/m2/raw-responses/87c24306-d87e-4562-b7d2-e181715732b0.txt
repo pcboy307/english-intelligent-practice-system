@@ -1,0 +1,65 @@
+{
+  "passage": "In a small town, a student named Lily learned about renewable energy. Her teacher explained that the sun, wind, and water can create power without polluting the air. Lily was curious and decided to start a project. She and her classmate, Tom, built a small wind turbine（风力涡轮机）for the science fair. At first, it didn't work. They were disappointed but didn't give up. They read books and asked their teacher for advice. After several tries, the turbine finally produced enough electricity to light a small bulb. The whole class cheered. Lily realized that renewable energy is not just a science topic; it is a way to protect the environment. She now encourages others to use less electricity and to support clean energy. Her teacher is proud of her efforts and believes that young people can make a difference.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer about Lily from the passage?",
+      "options": [
+        "She is afraid of failure.",
+        "She is determined and creative.",
+        "She dislikes working with others.",
+        "She thinks renewable energy is useless."
+      ],
+      "answer": "She is determined and creative.",
+      "explanation": "Lily didn't give up after failure and built a turbine, showing determination and creativity。A和C错误，因为文中她与同学合作且不放弃。",
+      "evidence_sentence": "They were disappointed but didn't give up.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"renewable\" most likely mean in the passage?",
+      "options": [
+        "Can be easily replaced",
+        "Can be naturally restored",
+        "Can be bought cheaply",
+        "Can be used once"
+      ],
+      "answer": "Can be naturally restored",
+      "explanation": "根据上下文，可再生能源来自太阳、风和水，这些资源可以自然补充。A和C错误，因为文中未提及替换或价格。",
+      "evidence_sentence": "Her teacher explained that the sun, wind, and water can create power without polluting the air.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "Why does the author mention Lily's teacher?",
+      "options": [
+        "To show that teachers are strict.",
+        "To explain the source of Lily's inspiration.",
+        "To prove that school projects are easy.",
+        "To criticize the teacher's methods."
+      ],
+      "answer": "To explain the source of Lily's inspiration.",
+      "explanation": "老师解释了可再生能源，激发了Lily的兴趣和项目。A和D错误，因为文中没有体现老师的严格或批评。",
+      "evidence_sentence": "Her teacher explained that the sun, wind, and water can create power without polluting the air.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Renewable energy is difficult to understand.",
+        "Students can make a difference through renewable energy projects.",
+        "Wind turbines are the best source of energy.",
+        "Teachers should give students more advice."
+      ],
+      "answer": "Students can make a difference through renewable energy projects.",
+      "explanation": "文章讲述了Lily通过项目学习可再生能源并鼓励他人，表明学生能有所作为。A和C错误，因为文章强调理解和行动，而非困难或比较能源。",
+      "evidence_sentence": "She now encourages others to use less electricity and to support clean energy.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

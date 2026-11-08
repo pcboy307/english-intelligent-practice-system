@@ -1,0 +1,1 @@
+{"translations": {"hands-on": "实践", "lifelong": "终身"}}

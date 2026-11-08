@@ -1,0 +1,45 @@
+{
+  "passage": "The invention of the electric light changed lives. Before it, people used candles and oil lamps. These were dim and dangerous. In 1879, Thomas Edison made a practical light bulb. This invention had a huge effect. It allowed people to work and read after dark. Streets became safer at night. Factories could run longer, which increased production. However, the light bulb also brought problems. It led to more energy use and light pollution. Today, we depend on electric light everywhere. We should remember that every invention has two sides. We must use technology wisely to improve our lives without harming the environment.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What was one effect of the light bulb according to the passage?",
+      "options": ["It made candles more popular.", "It allowed people to work after dark.", "It reduced energy use.", "It caused more accidents."],
+      "answer": "It allowed people to work after dark.",
+      "explanation": "细节题。文章提到“It allowed people to work and read after dark.”，因此B正确。A和C与原文相反；D未提及。A和C是主要干扰项，它们与文章内容矛盾。",
+      "evidence_sentence": "It allowed people to work and read after dark.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can be inferred about the light bulb from the passage?",
+      "options": ["It was invented in the 18th century.", "It had only positive effects.", "It was not widely used.", "It changed how people lived."],
+      "answer": "It changed how people lived.",
+      "explanation": "推断题。文章首句“The invention of the electric light changed lives.”以及后文描述其影响，可推断它改变了人们的生活方式。A时间错误；B与“two sides”矛盾；C未提及。A和B是主要干扰项，A与年份不符，B与文章矛盾。",
+      "evidence_sentence": "The invention of the electric light changed lives.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word \"dim\" in the passage mean?",
+      "options": ["bright", "not bright", "expensive", "safe"],
+      "answer": "not bright",
+      "explanation": "词义猜测题。根据上下文“These were dim and dangerous.”，与“dangerous”并列，且对比现代电灯，可知dim意为“not bright”。A是反义词；C和D与语境不符。A和C是主要干扰项，A意思相反，C与光线强弱无关。",
+      "evidence_sentence": "These were dim and dangerous.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the author's attitude towards the light bulb?",
+      "options": ["Completely positive.", "Completely negative.", "Objective.", "Uninterested."],
+      "answer": "Objective.",
+      "explanation": "态度题。文章既提到电灯的好处，也提到其带来的问题，并说“every invention has two sides”，表明作者态度客观。A和B过于片面；D无依据。A和B是主要干扰项，它们只强调一面，与文章平衡的观点不符。",
+      "evidence_sentence": "We should remember that every invention has two sides.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"translations": {"natural": "自然", "naturally": "自然地", "renewable": "可再生", "sunlight": "阳光"}}

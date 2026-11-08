@@ -1,0 +1,1 @@
+{"translations": {"high-school": "高中"}}

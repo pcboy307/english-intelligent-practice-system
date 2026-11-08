@@ -1,0 +1,195 @@
+{
+  "coherence": {
+    "verdict": "coherent",
+    "characters_consistent": true,
+    "timeline_present": true,
+    "connections_present": true,
+    "reason": "The passage follows a student and her classmate through a narrative arc: initial anxiety before an exam, teacher's reassurance, shared ambition, hard work, adaptation to a new school, continued encouragement, gradual improvement, and eventual success. Characters are consistent (the student, her teacher, her classmate), the timeline is clear (before exam, during preparation, after moving, over months, finally), and sentences are linked with cohesive devices (pronouns, conjunctions, temporal markers)."
+  },
+  "items": [
+    {
+      "question_index": 1,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "anxious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "exact",
+          "reason": "Fits grammatically as an adjective after 'felt'; semantically matches the context of sleeplessness and teacher's reassurance; idiomatic in 'felt anxious'."
+        },
+        {
+          "option_index": 2,
+          "option": "eager",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "confusable",
+          "reason": "Grammatically valid but semantically wrong: 'eager' is positive excitement, which does not explain sleeplessness or the need for reassurance."
+        },
+        {
+          "option_index": 3,
+          "option": "calm",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "antonym",
+          "reason": "Grammatically valid but semantically contradicts the context: a calm person would not have trouble sleeping or need reassurance."
+        },
+        {
+          "option_index": 4,
+          "option": "proud",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "unrelated",
+          "reason": "Grammatically valid but semantically unrelated: pride does not cause sleeplessness or require calming."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "direct_lexical_relationship": false,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue is copied verbatim and shows the teacher's response to the student's state, indicating a negative emotion that requires calming; it excludes positive or neutral options."
+      },
+      "answer_collocation": {
+        "phrase": "anxious",
+        "standard": true,
+        "reason": "'Felt anxious' is a standard English collocation."
+      }
+    },
+    {
+      "question_index": 2,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "confident",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "exact",
+          "reason": "Fits grammatically after 'stay'; semantically, the teacher wants her to feel assured because she prepared well; idiomatic in 'stay confident'."
+        },
+        {
+          "option_index": 2,
+          "option": "nervous",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "antonym",
+          "reason": "Grammatically valid but semantically wrong: the teacher would not tell her to stay nervous; it contradicts the reason 'because she had prepared well'."
+        },
+        {
+          "option_index": 3,
+          "option": "modest",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "unrelated",
+          "reason": "Grammatically valid but semantically unrelated: modesty is about humility, not about feeling assured after preparation."
+        },
+        {
+          "option_index": 4,
+          "option": "silent",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "unrelated",
+          "reason": "Grammatically valid but semantically unrelated: silence is not a state of assurance or preparation."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "direct_lexical_relationship": false,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue is verbatim and shows the student's prior anxiety, making the teacher's advice to be confident logical; it excludes nervous (opposite), modest and silent (unrelated)."
+      },
+      "answer_collocation": {
+        "phrase": "confident",
+        "standard": true,
+        "reason": "'Stay confident' is a standard English collocation."
+      }
+    },
+    {
+      "question_index": 3,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "curious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "exact",
+          "reason": "Fits grammatically after 'was always'; semantically, curiosity about plants explains reading many books; idiomatic in 'curious about'."
+        },
+        {
+          "option_index": 2,
+          "option": "careless",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "antonym",
+          "reason": "Grammatically valid but semantically wrong: carelessness would not motivate reading many books; it is a negative trait."
+        },
+        {
+          "option_index": 3,
+          "option": "content",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "unrelated",
+          "reason": "Grammatically valid but semantically unrelated: being content means satisfied, which would not drive the extra effort of reading many books."
+        },
+        {
+          "option_index": 4,
+          "option": "cautious",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "confusable",
+          "reason": "Grammatically valid but semantically wrong: cautious means careful about risk, not eager to learn; it does not explain reading many books."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "direct_lexical_relationship": false,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue is verbatim but does not directly support the answer; however, the result clause 'so she read many books' strongly implies curiosity. The clue alone is not decisive, but combined with the sentence it supports the answer and excludes distractors."
+      },
+      "answer_collocation": {
+        "phrase": "curious",
+        "standard": true,
+        "reason": "'Curious about' is a standard English collocation."
+      }
+    },
+    {
+      "question_index": 4,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "reliable",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "relation_to_answer": "exact",
+          "reason": "Fits grammatically before 'friend'; semantically, keeping promises defines reliability; idiomatic in 'reliable friend'."
+        },
+        {
+          "option_index": 2,
+          "option": "cheerful",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "relation_to_answer": "unrelated",
+          "reason": "Grammatically valid but semantically unrelated: cheerfulness does not imply keeping promises."
+        },
+        {
+          "option_index": 3,
+          "option": "talkative",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": tru

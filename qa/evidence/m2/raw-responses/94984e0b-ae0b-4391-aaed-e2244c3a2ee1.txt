@@ -1,0 +1,46 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage presents a coherent narrative about contrasting reading habits between a student and her classmate, with each blank logically following from the context.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "B",
+      "reason": "Option B logically follows the positive view of reading and contrasts with the classmate's lack of reading.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "C",
+      "reason": "Option C provides a plausible reason for the classmate's seldom reading and contrasts with the student's habit.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "B",
+      "reason": "Option B directly follows from the student's belief that her classmate should read more.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "C",
+      "reason": "Option C is consistent with the classmate's seldom reading and contrasts with the student's love of reading.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "C",
+      "reason": "Option C accurately summarizes the contrasting reading habits described in the passage.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from math import floor
 from collections import Counter
+import random
 
 
 def allocate_largest_remainder(
@@ -78,6 +79,7 @@ def assemble_demo_paper(
 
     failures = []
     valid = []
+    fallback_candidates = []
     for cloze_group, cloze_questions in grouped["cloze"].items():
         for grammar_group, grammar_questions in grouped["grammar_fill"].items():
             for extra_group, extra_questions in grouped[paper_mode].items():
@@ -113,6 +115,31 @@ def assemble_demo_paper(
                 ) / len(candidate)
                 if error_ratio > 0.60:
                     reasons.append("ERROR_POOL_EXCEEDS_60_PERCENT")
+                if (
+                    "ACTIVE_PASSAGE_CONFLICT" not in reasons
+                    and "GRAMMAR_TAG_REPEAT_EXCEEDS_3" not in reasons
+                    and "TOPIC_COUNT_BELOW_3" not in reasons
+                ):
+                    deviation = sum(
+                        abs(actual_books[key] - expected_books[key])
+                        for key in expected_books
+                    ) + sum(
+                        abs(actual_difficulty[key] - expected_difficulty[key])
+                        for key in expected_difficulty
+                    )
+                    score = sum(
+                        weight_details[question.id]["weight"]
+                        for question in candidate
+                    ) / len(candidate)
+                    fallback_candidates.append(
+                        {
+                            "groups": groups,
+                            "questions": candidate,
+                            "score": round(score, 6),
+                            "deviation": deviation,
+                            "reasons": list(reasons),
+                        }
+                    )
                 if reasons:
                     failures.append(
                         {
@@ -138,13 +165,55 @@ def assemble_demo_paper(
                     }
                 )
 
+    fallback_used = False
+    fallback_reason = None
+    weight_elimination_witness = None
     if not valid:
-        raise ValueError("NO_VALID_PAPER_ASSEMBLY")
+        fallback_used = True
+        fallback_reason = "NO_EXACT_GROUPED_ASSEMBLY"
+        if not fallback_candidates:
+            raise ValueError("NO_VALID_PAPER_ASSEMBLY")
+        best = min(
+            fallback_candidates,
+            key=lambda item: (item["deviation"], -item["score"], item["groups"]),
+        )
+        selected = {
+            "questions": sorted(
+                best["questions"],
+                key=lambda question: (
+                    question.passage_order,
+                    question.question_order,
+                ),
+            ),
+            "score": best["score"],
+            "deviation": best["deviation"],
+            "groups": best["groups"],
+        }
+        lower_weight = min(
+            (
+                item
+                for item in fallback_candidates
+                if item["score"] < best["score"]
+                or item["groups"] != best["groups"]
+            ),
+            key=lambda item: item["score"],
+            default=None,
+        )
+        weight_elimination_witness = {
+            "selected_score": best["score"],
+            "rejected_candidate_score": (
+                lower_weight["score"] if lower_weight else None
+            ),
+            "rejected_candidate_groups": (
+                lower_weight["groups"] if lower_weight else None
+            ),
+        }
+    else:
+        selected = sorted(
+            valid,
+            key=lambda item: (-item["score"], item["groups"]),
+        )[0]
 
-    selected = sorted(
-        valid,
-        key=lambda item: (-item["score"], item["groups"]),
-    )[0]
     result_questions = selected["questions"]
     tags = Counter(tag for question in result_questions for tag in question.grammar_tags)
     knowledge_points = Counter(
@@ -197,6 +266,10 @@ def assemble_demo_paper(
             4,
         ),
         "hard_constraint_triggered": bool(failures),
+        "fallback_used": fallback_used,
+        "fallback_reason": fallback_reason,
+        "fallback_candidate_count": len(fallback_candidates),
+        "weight_elimination_witness": weight_elimination_witness,
         "hard_constraint_rejections": failures,
         "valid_skeleton_count": len(valid),
     }

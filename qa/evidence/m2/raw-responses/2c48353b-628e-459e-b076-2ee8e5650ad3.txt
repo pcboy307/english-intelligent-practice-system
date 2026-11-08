@@ -1,0 +1,1 @@
+{"translations": {"broken": "破碎", "practised": "熟练"}}

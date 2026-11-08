@@ -1,0 +1,1 @@
+{"translations": {"opponents": "对手", "practise": "练习", "relay": "接力"}}

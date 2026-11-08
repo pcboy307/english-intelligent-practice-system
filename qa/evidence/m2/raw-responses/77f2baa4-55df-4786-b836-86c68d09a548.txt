@@ -1,0 +1,65 @@
+{
+  "passage": "Why do we sleep? For years, scientists have studied this question. The brain does not simply rest at night. Instead, it works hard to organise memories. During deep sleep, the brain replays what we have learned and moves important information into long-term storage. If a student studies for an exam but stays up all night, the brain has no chance to do this work. As a result, the student may remember less than a classmate who slept well. Sleep also affects mood and health. People who often get too little sleep are more likely to feel stressed and get sick. So, what can we do? Experts advise going to bed at the same time every night and avoiding screens before sleep. Only in this way can we give our brains the rest they need to work well the next day.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What can we infer from the passage about a student who stays up all night before an exam?",
+      "options": [
+        "The student will remember more than a classmate who slept well.",
+        "The student may remember less because the brain cannot organise memories well.",
+        "The student's brain will rest completely during the night.",
+        "The student will feel less stressed the next day."
+      ],
+      "answer": "The student may remember less because the brain cannot organise memories well.",
+      "explanation": "文章指出，如果学生熬夜，大脑就没有机会整理记忆，因此可能记得更少。A和C与原文矛盾，因为熬夜并不能让大脑休息或增强记忆。",
+      "evidence_sentence": "If a student studies for an exam but stays up all night, the brain has no chance to do this work.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What does the word \"organise\" most likely mean in the passage?",
+      "options": [
+        "To put things in order",
+        "To forget things",
+        "To make things larger",
+        "To hide things"
+      ],
+      "answer": "To put things in order",
+      "explanation": "根据上下文，大脑在睡眠中“replays what we have learned and moves important information into long-term storage”，即整理记忆。B、C、D均不符合语境。",
+      "evidence_sentence": "During deep sleep, the brain replays what we have learned and moves important information into long-term storage.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What is the author's main purpose in writing this passage?",
+      "options": [
+        "To explain why sleep is important and give advice on good sleep habits.",
+        "To compare the sleep habits of students and scientists.",
+        "To warn people against taking exams.",
+        "To describe how the brain works during the day."
+      ],
+      "answer": "To explain why sleep is important and give advice on good sleep habits.",
+      "explanation": "文章先说明睡眠对记忆和健康的重要性，最后给出建议，因此主要目的是解释睡眠的重要性并给出建议。B、C、D均不是文章重点。",
+      "evidence_sentence": "Experts advise going to bed at the same time every night and avoiding screens before sleep.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Sleep is important for memory and health, and we should develop good sleep habits.",
+        "Students should study all night before exams.",
+        "The brain rests completely during sleep.",
+        "Screens help people sleep better."
+      ],
+      "answer": "Sleep is important for memory and health, and we should develop good sleep habits.",
+      "explanation": "全文围绕睡眠对记忆和健康的好处以及如何改善睡眠展开，因此A是主旨。B、C、D均与文章内容不符。",
+      "evidence_sentence": "Sleep also affects mood and health.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "passage": "Last summer, my cousin and I took a trip to the coast. It was not the destination but the journey that made the trip special. We travelled by train, and it was the slow pace that allowed us to enjoy the view. The train was old, but it was the friendly conductor who made everyone feel welcome. While we were waiting at the station, we met a student who was also going to the beach. She said she had visited the coast three times before. By the time we arrived, the sun had already set. The next morning, we went to the beach. The sound of the waves was relaxing. There were many shells on the sand. A group of tourists was taking photos near the water. The number of visitors increases every year. Each of the students in our group was excited to swim. Neither the hotel nor the restaurants were expensive. We saw a beautiful sunset. It was a memorable trip.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "It was not the destination but the journey ______ made the trip special.",
+      "options": ["that", "which", "who", "what"],
+      "answer": "that",
+      "explanation": "此处是强调句型 It was...that...，强调主语 the journey，因此用 that。which 不能用于强调句；who 只指人，不能指物。",
+      "evidence_sentence": "It was not the destination but the journey that made the trip special.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "It was the slow pace ______ allowed us to enjoy the view.",
+      "options": ["that", "which", "who", "where"],
+      "answer": "that",
+      "explanation": "这是强调句型 It was...that...，强调主语 the slow pace，所以用 that。which 不能用于强调句；who 只指人，不能指物。",
+      "evidence_sentence": "It was the slow pace that allowed us to enjoy the view.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "It was the friendly conductor ______ made everyone feel welcome.",
+      "options": ["who", "which", "that", "whom"],
+      "answer": "who",
+      "explanation": "强调句型中强调人时可用 who 或 that，但选项中 who 更合适，因为先行词是人。which 不能指人；whom 是宾格，这里需要主格。",
+      "evidence_sentence": "It was the friendly conductor who made everyone feel welcome.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "While we ______ at the station, we met a student who was also going to the beach.",
+      "options": ["were waiting", "waited", "are waiting", "wait"],
+      "answer": "were waiting",
+      "explanation": "while 引导的时间状语从句表示过去某时正在进行的动作，用过去进行时 were waiting。waited 是一般过去时，不能表示持续；are waiting 是现在进行时，时态不符。",
+      "evidence_sentence": "While we were waiting at the station, we met a student who was also going to the beach.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 5,
+      "stem": "She said she ______ the coast three times before.",
+      "options": ["had visited", "has visited", "visited", "visits"],
+      "answer": "had visited",
+      "explanation": "主句是过去时 said，从句表示过去的过去，用过去完成时 had visited。has visited 是现在完成时，与过去时不一致；visited 是一般过去时，不能表示更早的动作。",
+      "evidence_sentence": "She said she had visited the coast three times before.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 6,
+      "stem": "By the time we arrived, the sun ______ already set.",
+      "options": ["had", "has", "was", "is"],
+      "answer": "had",
+      "explanation": "by the time 引导的从句用一般过去时，主句表示过去的过去，用过去完成时 had set。has 是现在完成时，时态不符；was 不能构成完成时。",
+      "evidence_sentence": "By the time we arrived, the sun had already set.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 7,
+      "stem": "The number of visitors ______ every year.",
+      "options": ["increases", "increase", "are increasing", "have increased"],
+      "answer": "increases",
+      "explanation": "the number of... 作主语时谓语用单数，且 every year 表示一般现在时，所以用 increases。increase 是复数形式；are increasing 是复数进行时。",
+      "evidence_sentence": "The number of visitors increases every year.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 8,
+      "stem": "Each of the students in our group ______ excited to swim.",
+      "options": ["was", "were", "are", "be"],
+      "answer": "was",
+      "explanation": "each of... 作主语时谓语用单数，且叙述过去，用 was。were 是复数；are 是现在时复数。",
+      "evidence_sentence": "Each of the students in our group was excited to swim.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 9,
+      "stem": "Neither the hotel nor the restaurants ______ expensive.",
+      "options": ["were", "was", "is", "be"],
+      "answer": "were",
+      "explanation": "neither...nor... 连接主语时，谓语与最近的主语 the restaurants 一致，用复数 were。was 是单数；is 是现在时单数。",
+      "evidence_sentence": "Neither the hotel nor the restaurants were expensive.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 10,
+      "stem": "We saw ______ beautiful sunset.",
+      "options": ["a", "an", "the", "不填"],
+      "answer": "a",
+      "explanation": "sunset 是可数名词单数，此处表示泛指，且 beautiful 以辅音音素开头，用 a。an 用于元音音素前；the 表示特指，此处不特指。",
+      "evidence_sentence": "We saw a beautiful sunset.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

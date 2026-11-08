@@ -1,0 +1,65 @@
+{
+  "passage": "Last year, a group of students at a high school started a club called Protect Our Friends. The club was formed after a documentary about endangered animals was shown in the school hall. The students learned that many wild animals are being threatened by habitat loss and illegal hunting. They decided to take action. Their first project was to raise money for a local wildlife shelter. They organised a charity run and collected over 5,000 yuan. The money was used to buy food and medical supplies for injured animals. The club also invited a scientist to give a talk. She explained how human activities affect wildlife and what we can do to help. The students were shocked to hear that some species could disappear within our lifetime. They realised that if we did not act now, many animals would be lost forever. The club now works with other schools to spread awareness. They believe that every small effort counts. Their teacher, Ms. Li, is proud of their work. She says, 'These students have shown that young people can make a difference.' The club's next goal is to plant trees in the local park to provide habitats for birds and insects. They hope more students will join them.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To describe how a student club works to protect wildlife.",
+        "To explain why some animals are endangered.",
+        "To advertise a charity run for a wildlife shelter.",
+        "To compare different ways of protecting animals."
+      ],
+      "answer": "To describe how a student club works to protect wildlife.",
+      "explanation": "文章主要描述了一个学生俱乐部为保护野生动物所开展的活动，因此A项正确。B项只是文中提到的一个细节，并非全文目的；C项是具体活动之一，不是主旨；D项文中没有比较不同方法。",
+      "evidence_sentence": "Last year, a group of students at a high school started a club called Protect Our Friends.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "Which of the following best summarises the main idea of the passage?",
+      "options": [
+        "Students can make a difference by taking action to protect wildlife.",
+        "Wild animals are being threatened by habitat loss and illegal hunting.",
+        "A scientist gave a talk about endangered species at a school.",
+        "The club raised money to buy food for injured animals."
+      ],
+      "answer": "Students can make a difference by taking action to protect wildlife.",
+      "explanation": "文章通过学生俱乐部的行动说明年轻人也能为保护野生动物做出贡献，因此A项正确。B项是背景信息，不是主旨；C项和D项都是具体细节，不能概括全文。",
+      "evidence_sentence": "She says, 'These students have shown that young people can make a difference.'",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "According to the passage, what would happen if we did not act now?",
+      "options": [
+        "Many animals would be lost forever.",
+        "The club would stop working.",
+        "The scientist would give another talk.",
+        "The shelter would close down."
+      ],
+      "answer": "Many animals would be lost forever.",
+      "explanation": "文中明确提到，如果我们现在不采取行动，许多动物将永远消失，因此A项正确。B项、C项和D项在文中均未提及。",
+      "evidence_sentence": "They realised that if we did not act now, many animals would be lost forever.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What can be inferred about the students' future plans from the passage?",
+      "options": [
+        "They will continue their efforts to protect wildlife.",
+        "They will stop the club after planting trees.",
+        "They will focus only on raising money.",
+        "They will invite more scientists to give talks."
+      ],
+      "answer": "They will continue their efforts to protect wildlife.",
+      "explanation": "文章提到俱乐部的下一个目标是种树，并希望更多学生加入，可以推断他们会继续努力保护野生动物，因此A项正确。B项与文意相反；C项过于片面；D项文中没有依据。",
+      "evidence_sentence": "The club's next goal is to plant trees in the local park to provide habitats for birds and insects.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

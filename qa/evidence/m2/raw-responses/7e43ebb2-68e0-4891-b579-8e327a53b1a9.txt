@@ -1,0 +1,95 @@
+{
+  "passage": "Last term, the student tried out for the school basketball team and was cut on the final day. At first she felt like giving up, but her teacher encouraged her to see the failure as a chance to grow. (1) She decided to practise her shooting for an hour every morning before class. (2) If she had not missed that last shot in the trial, she would never have discovered how much she needed to improve her footwork. (3) Only after weeks of hard practice did she begin to feel truly confident on the court. (4) Her goal was to make the team the following year, so she kept a diary of every small improvement. (5) If she had given up then, she would not have become the player her classmates now admire. Her story shows that failure is not the end; it is often the beginning of real progress.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the sentence that best fits blank (1).",
+      "options": [
+        "She decided to practise her shooting for an hour every morning before class.",
+        "She gave up basketball completely and never touched a ball again.",
+        "Her teacher told her to stop playing sports and focus only on study.",
+        "She immediately became the best player on the team without any effort.",
+        "She forgot about the trial and never thought about basketball again.",
+        "She asked her parents to buy her a new phone as a reward.",
+        "She refused to listen to any advice from her teacher or friends."
+      ],
+      "answer": "A",
+      "explanation": "前文说老师鼓励她把失败看作成长的机会，因此她决定每天早起练习投篮，符合逻辑。B和D都表示放弃或立刻成功，与“努力成长”的主题矛盾。",
+      "evidence_sentence": "",
+      "context_clue": "At first she felt like giving up, but her teacher encouraged her to see the failure as a chance to grow.",
+      "clue_argument": "老师鼓励她成长，所以接下来应是积极行动。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the sentence that best fits blank (2).",
+      "options": [
+        "If she had not missed that last shot in the trial, she would never have discovered how much she needed to improve her footwork.",
+        "If she missed that last shot, she will never discover her weakness.",
+        "She missed the shot because she did not want to join the team.",
+        "Missing the shot made her angry with her teacher for a long time.",
+        "She was glad she missed the shot so she could stop playing basketball.",
+        "The missed shot was the only reason she failed the exam.",
+        "She never thought about that missed shot again after the trial."
+      ],
+      "answer": "A",
+      "explanation": "此处用虚拟语气表达与过去事实相反的假设：如果没投丢那一球，她就不会发现自己的不足，与后文“练习”形成因果。B时态错误，C和E与“积极面对失败”的主题不符。",
+      "evidence_sentence": "",
+      "context_clue": "At first she felt like giving up, but her teacher encouraged her to see the failure as a chance to grow.",
+      "clue_argument": "失败让她发现不足，所以虚拟假设应强调“没失败就不会发现”。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the sentence that best fits blank (3).",
+      "options": [
+        "Only after weeks of hard practice did she begin to feel truly confident on the court.",
+        "Only after weeks of hard practice she began to feel truly confident on the court.",
+        "She began to feel truly confident only after weeks of hard practice on the court.",
+        "After weeks of hard practice, she began to feel truly confident on the court.",
+        "She felt confident on the court before she started practising hard.",
+        "Weeks of hard practice made her feel less confident on the court.",
+        "She never felt confident on the court no matter how hard she practised."
+      ],
+      "answer": "A",
+      "explanation": "“Only + 状语”置于句首时，主句需部分倒装，即“did she begin”，因此A正确。B未倒装，C和D语序普通，不符合倒装要求。",
+      "evidence_sentence": "",
+      "context_clue": "Only after weeks of hard practice did she begin to feel truly confident on the court.",
+      "clue_argument": "Only短语开头，主句要部分倒装。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the sentence that best fits blank (4).",
+      "options": [
+        "Her goal was to make the team the following year, so she kept a diary of every small improvement.",
+        "Her goal was making the team the following year, so she kept a diary of every small improvement.",
+        "Her goal was make the team the following year, so she kept a diary of every small improvement.",
+        "Her goal was made the team the following year, so she kept a diary of every small improvement.",
+        "Her goal was to making the team the following year, so she kept a diary of every small improvement.",
+        "Her goal was to be made the team the following year, so she kept a diary of every small improvement.",
+        "Her goal was to have made the team the following year, so she kept a diary of every small improvement."
+      ],
+      "answer": "A",
+      "explanation": "be动词后接不定式作表语，表示目的或将来动作，结构为“was to make”，因此A正确。B用动名词，C缺to，D用过去分词，均不符合语法。",
+      "evidence_sentence": "",
+      "context_clue": "Her goal was to make the team the following year, so she kept a diary of every small improvement.",
+      "clue_argument": "goal was后需用不定式作表语。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the sentence that best fits blank (5).",
+      "options": [
+        "If she had given up then, she would not have become the player her classmates now admire.",
+        "If she gave up then, she would not have become the player her classmates now admire.",
+        "If she had given up then, she would not become the player her classmates now admire.",
+        "If she has given up then, she would not have become the player her classmates now admire.",
+        "If she gave up then, she will not become the player her classmates now admire.",
+        "If she had given up then, she will not have become the player her classmates now admire.",
+        "If she gives up then, she would not have become the player her classmates now admire."
+      ],
+      "answer": "A",
+      "explanation": "这是与过去事实相反的虚拟语气，if从句用had done，主句用would have done，因此A正确。B从句时态错误，C主句缺have，D从句用has given，均不符合虚拟语气结构。",
+      "evidence_sentence": "",
+      "context_clue": "If she had given up then, she would not have become the player her classmates now admire.",
+      "clue_argument": "与过去事实相反，if从句用had done，主句用would have done。"
+    }
+  ]
+}

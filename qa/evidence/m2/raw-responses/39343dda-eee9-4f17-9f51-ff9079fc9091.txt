@@ -1,0 +1,127 @@
+{
+  "passage": "Last term, our science teacher, Ms. Chen, assigned a group project on water pollution. She insisted that every member (1) ______ a fair share of the work. At first, we did not (2) ______ the importance of planning, so we wasted two weeks. Then Tom, our leader, learned to (3) ______ team spirit with personal study time. He explained that the project would (4) ______ everyone if we cooperated. We faced the (5) ______ of collecting data from the river. It was important that we (6) ______ clearly with each other. Tom, (7) ______ his positive attitude, helped us (8) ______ our roles. Only by working together could we (9) ______ the real causes of pollution. Our efforts were (10) ______ organized by a shared online folder. It was teamwork that proved (11) ______ to our success. If we had not shared tasks, we would not have (12) ______ our report so much. We also learned how to (13) ______ disagreements calmly. Ms. Chen suggested that we (14) ______ cooperation to competition. In the end, our group, (15) ______ members supported each other, produced an excellent project.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "Choose the best word for blank (1).",
+      "options": ["accept", "receive", "take", "hold"],
+      "answer": "accept",
+      "explanation": "accept 表示“接受”责任，符合老师坚持每人应承担公平份额的语境。receive 强调收到，take 和 hold 不与 fair share 搭配表示承担责任。",
+      "evidence_sentence": "She insisted that every member (1) ______ a fair share of the work.",
+      "context_clue": "She insisted that every member (1) ______ a fair share of the work.",
+      "clue_argument": "insisted that 从句中动词用原形，表示建议，accept a fair share 是固定搭配。"
+    },
+    {
+      "question_index": 2,
+      "stem": "Choose the best word for blank (2).",
+      "options": ["appreciate", "enjoy", "like", "love"],
+      "answer": "appreciate",
+      "explanation": "appreciate 表示“理解、意识到”，符合起初没意识到计划重要性的语境。enjoy, like, love 都表示喜爱，不能表示“理解”。",
+      "evidence_sentence": "At first, we did not (2) ______ the importance of planning, so we wasted two weeks.",
+      "context_clue": "At first, we did not (2) ______ the importance of planning, so we wasted two weeks.",
+      "clue_argument": "did not 后接动词原形，appreciate the importance 意为“意识到重要性”。"
+    },
+    {
+      "question_index": 3,
+      "stem": "Choose the best word for blank (3).",
+      "options": ["balance", "combine", "mix", "match"],
+      "answer": "balance",
+      "explanation": "balance 表示“平衡”，符合把团队精神与个人学习时间平衡的语境。combine 和 mix 表示混合，match 表示匹配，都不如 balance 贴切。",
+      "evidence_sentence": "Then Tom, our leader, learned to (3) ______ team spirit with personal study time.",
+      "context_clue": "Then Tom, our leader, learned to (3) ______ team spirit with personal study time.",
+      "clue_argument": "learned to 后接动词原形，balance A with B 意为“平衡 A 与 B”。"
+    },
+    {
+      "question_index": 4,
+      "stem": "Choose the best word for blank (4).",
+      "options": ["benefit", "help", "assist", "support"],
+      "answer": "benefit",
+      "explanation": "benefit 表示“使受益”，符合合作会让每个人受益的语境。help, assist, support 虽近义，但 benefit 更强调受益，且与 everyone 搭配自然。",
+      "evidence_sentence": "He explained that the project would (4) ______ everyone if we cooperated.",
+      "context_clue": "He explained that the project would (4) ______ everyone if we cooperated.",
+      "clue_argument": "would 后接动词原形，benefit everyone 意为“使每个人受益”。"
+    },
+    {
+      "question_index": 5,
+      "stem": "Choose the best word for blank (5).",
+      "options": ["challenge", "difficulty", "problem", "trouble"],
+      "answer": "challenge",
+      "explanation": "challenge 表示“挑战”，符合从河里收集数据的困难任务。difficulty, problem, trouble 虽近义，但 challenge 更强调需要应对的挑战性任务。",
+      "evidence_sentence": "We faced the (5) ______ of collecting data from the river.",
+      "context_clue": "We faced the (5) ______ of collecting data from the river.",
+      "clue_argument": "the 后接名词，challenge of doing sth 意为“做某事的挑战”。"
+    },
+    {
+      "question_index": 6,
+      "stem": "Choose the best word for blank (6).",
+      "options": ["communicate", "talk", "speak", "say"],
+      "answer": "communicate",
+      "explanation": "communicate 表示“交流”，符合彼此清晰沟通的语境。talk, speak, say 虽与说话有关，但 communicate clearly with each other 更正式且搭配自然。",
+      "evidence_sentence": "It was important that we (6) ______ clearly with each other.",
+      "context_clue": "It was important that we (6) ______ clearly with each other.",
+      "clue_argument": "It was important that 从句中用动词原形，communicate with sb 意为“与某人交流”。"
+    },
+    {
+      "question_index": 7,
+      "stem": "Choose the best word for blank (7).",
+      "options": ["contribute", "donate", "give", "provide"],
+      "answer": "contribute",
+      "explanation": "contribute 表示“贡献”，符合汤姆以积极态度帮助我们的语境。donate 指捐赠，give 和 provide 不与 to our success 搭配表示贡献。",
+      "evidence_sentence": "Tom, (7) ______ his positive attitude, helped us (8) ______ our roles.",
+      "context_clue": "Tom, (7) ______ his positive attitude, helped us (8) ______ our roles.",
+      "clue_argument": "with 复合结构，contribute to 意为“对……做出贡献”。"
+    },
+    {
+      "question_index": 8,
+      "stem": "Choose the best word for blank (8).",
+      "options": ["determine", "decide", "choose", "settle"],
+      "answer": "determine",
+      "explanation": "determine 表示“确定”，符合帮助我们确定角色的语境。decide, choose, settle 虽近义，但 determine roles 更强调明确分配。",
+      "evidence_sentence": "Tom, (7) ______ his positive attitude, helped us (8) ______ our roles.",
+      "context_clue": "Tom, (7) ______ his positive attitude, helped us (8) ______ our roles.",
+      "clue_argument": "help sb (to) do sth，determine our roles 意为“确定我们的角色”。"
+    },
+    {
+      "question_index": 9,
+      "stem": "Choose the best word for blank (9).",
+      "options": ["discover", "find", "invent", "create"],
+      "answer": "discover",
+      "explanation": "discover 表示“发现”，符合发现污染真正原因的语境。find 虽近义，但 discover 更强调首次发现；invent 和 create 表示发明创造。",
+      "evidence_sentence": "Only by working together could we (9) ______ the real causes of pollution.",
+      "context_clue": "Only by working together could we (9) ______ the real causes of pollution.",
+      "clue_argument": "could 后接动词原形，discover the causes 意为“发现原因”。"
+    },
+    {
+      "question_index": 10,
+      "stem": "Choose the best word for blank (10).",
+      "options": ["efficient", "effective", "efficiently", "effectively"],
+      "answer": "efficient",
+      "explanation": "efficient 表示“高效的”，符合努力被共享文件夹高效组织的语境。effective 表示“有效的”，efficiently 和 effectively 是副词，不能修饰 organized 作表语。",
+      "evidence_sentence": "Our efforts were (10) ______ organized by a shared online folder.",
+      "context_clue": "Our efforts were (10) ______ organized by a shared online folder.",
+      "clue_argument": "were 后接形容词作表语，efficient 修饰 organized 表示高效地组织。"
+    },
+    {
+      "question_index": 11,
+      "stem": "Choose the best word for blank (11).",
+      "options": ["essential", "important", "necessary", "vital"],
+      "answer": "essential",
+      "explanation": "essential 表示“必不可少的”，符合团队合作对成功至关重要的语境。important, necessary, vital 虽近义，但 essential 更强调绝对必要。",
+      "evidence_sentence": "It was teamwork that proved (11) ______ to our success.",
+      "context_clue": "It was teamwork that proved (11) ______ to our success.",
+      "clue_argument": "proved 后接形容词作表语，essential to 意为“对……必不可少”。"
+    },
+    {
+      "question_index": 12,
+      "stem": "Choose the best word for blank (12).",
+      "options": ["improve", "better", "enhance", "perfect"],
+      "answer": "improve",
+      "explanation": "improve 表示“改进、提高”，符合如果没有分担任务就不会改进报告的语境。better 作动词较少用，enhance 和 perfect 搭配不如 improve 自然。",
+      "evidence_sentence": "If we had not shared tasks, we would not have (12) ______ our report so much.",
+      "context_clue": "If we had not shared tasks, we would not have (12) ______ our report so much.",
+      "clue_argument": "would not have done 结构，improve our report 意为“改进我们的报告”。"
+    },
+    {
+      "question_index": 13,
+      "stem": "Choose the best word for blank (13).",
+      "opt

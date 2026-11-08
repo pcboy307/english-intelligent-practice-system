@@ -1,0 +1,261 @@
+{
+  "items": [
+    {
+      "question_index": 1,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "anxious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adjective describing her feeling before the exam."
+        },
+        {
+          "option_index": 2,
+          "option": "joyful",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Contradicts the clue that she was worried and nervous."
+        },
+        {
+          "option_index": 3,
+          "option": "calm",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Opposite of being worried and nervous."
+        },
+        {
+          "option_index": 4,
+          "option": "proud",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Pride is not indicated by worry and nervousness."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly describes a negative, uneasy feeling, matching 'anxious' and excluding others."
+      },
+      "answer_collocation": {
+        "phrase": "anxious before the big exam",
+        "standard": true,
+        "reason": "Common and natural English phrase."
+      }
+    },
+    {
+      "question_index": 2,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "confident",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adjective describing his state when the task began."
+        },
+        {
+          "option_index": 2,
+          "option": "shy",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Contradicts self-belief indicated by the clue."
+        },
+        {
+          "option_index": 3,
+          "option": "angry",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "No anger is mentioned in the context."
+        },
+        {
+          "option_index": 4,
+          "option": "tired",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Fatigue is not related to self-belief."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates self-belief, which is synonymous with confidence."
+      },
+      "answer_collocation": {
+        "phrase": "confident when the new task began",
+        "standard": true,
+        "reason": "Natural and grammatically correct phrase."
+      }
+    },
+    {
+      "question_index": 3,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "curious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adjective describing a student eager to learn."
+        },
+        {
+          "option_index": 2,
+          "option": "lazy",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Contradicts eagerness to learn."
+        },
+        {
+          "option_index": 3,
+          "option": "rude",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Asking questions to learn is not rudeness."
+        },
+        {
+          "option_index": 4,
+          "option": "silent",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Contradicts the fact that she asked many questions."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates a desire to learn, which is the definition of curious."
+      },
+      "answer_collocation": {
+        "phrase": "curious student asked many questions",
+        "standard": true,
+        "reason": "Common and natural English phrase."
+      }
+    },
+    {
+      "question_index": 4,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "reliable",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adjective describing a friend who keeps promises."
+        },
+        {
+          "option_index": 2,
+          "option": "careless",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Keeping promises requires care, not carelessness."
+        },
+        {
+          "option_index": 3,
+          "option": "selfish",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Trustworthiness is not self-interest."
+        },
+        {
+          "option_index": 4,
+          "option": "noisy",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Noise has nothing to do with keeping promises."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates dependability, which is synonymous with reliable."
+      },
+      "answer_collocation": {
+        "phrase": "reliable friend always keeps a promise",
+        "standard": true,
+        "reason": "Natural and grammatically correct phrase."
+      }
+    },
+    {
+      "question_index": 5,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "ambitious",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as an adjective describing a brother with a strong desire to succeed."
+        },
+        {
+          "option_index": 2,
+          "option": "timid",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Contradicts a strong desire to succeed."
+        },
+        {
+          "option_index": 3,
+          "option": "content",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Wanting to lead and succeed is not being satisfied with things as they are."
+        },
+        {
+          "option_index": 4,
+          "option": "careless",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Ambition is not carelessness."
+        }
+      ],
+      "context_clue_assessment": {
+        "clue_is_verbatim": true,
+        "supports_answer": true,
+        "excludes_distractors": true,
+        "reason": "The clue directly indicates a drive to succeed, which is the definition of ambitious."
+      },
+      "answer_collocation": {
+        "phrase": "ambitious brother plans to lead a team",
+        "standard": true,
+        "reason": "Natural and grammatically correct phrase."
+      }
+    },
+    {
+      "question_index": 6,
+      "option_assessments": [
+        {
+          "option_index": 1,
+          "option": "achieve",
+          "grammar_ok": true,
+          "semantic_ok": true,
+          "idiomatic": true,
+          "reason": "Fits the blank as a verb meaning to reach a goal."
+        },
+        {
+          "option_index": 2,
+          "option": "abandon",
+          "grammar_ok": true,
+          "semantic_ok": false,
+          "idiomatic": true,
+          "reason": "Giving up does not reach an aim."
+        

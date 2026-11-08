@@ -1,0 +1,1 @@
+{"translations": {"campaign": "运动", "council": "委员会"}}

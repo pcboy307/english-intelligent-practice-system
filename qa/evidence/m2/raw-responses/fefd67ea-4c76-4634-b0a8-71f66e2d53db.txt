@@ -1,0 +1,86 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent text about career planning and the changing job market, with logical progression and connected ideas.",
+  "questions": [
+    {
+      "question_index": 1,
+      "clear_best": true,
+      "best_option": "Before",
+      "reason": "The context indicates that considering skills and interests should happen before choosing a career, making 'Before' the only logical choice.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 2,
+      "clear_best": true,
+      "best_option": "knowledge",
+      "reason": "The blank requires a noun after 'special', and 'knowledge' is the correct noun form, while the other options are verb forms.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 3,
+      "clear_best": true,
+      "best_option": "patience",
+      "reason": "The blank requires an abstract noun parallel to 'communication', and 'patience' is the only noun form among the options.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 4,
+      "clear_best": true,
+      "best_option": "disappearing",
+      "reason": "The structure 'are becoming' requires a present participle, making 'disappearing' the only grammatically correct choice.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 5,
+      "clear_best": true,
+      "best_option": "For example",
+      "reason": "The sentence provides an example of new jobs appearing, so 'For example' is the appropriate transition.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 6,
+      "clear_best": true,
+      "best_option": "Therefore",
+      "reason": "The previous sentences establish a cause, and this sentence is a logical conclusion, so 'Therefore' is the best fit.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 7,
+      "clear_best": true,
+      "best_option": "more able",
+      "reason": "The comparative 'than' requires a comparative form, and 'more able' is the correct comparative of 'able'.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 8,
+      "clear_best": true,
+      "best_option": "important",
+      "reason": "The superlative 'the most' requires an adjective, and 'important' is the only adjective among the options.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 9,
+      "clear_best": true,
+      "best_option": "To make",
+      "reason": "The infinitive 'To make' correctly expresses purpose, while the other forms do not fit the sentence structure.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    },
+    {
+      "question_index": 10,
+      "clear_best": true,
+      "best_option": "to face",
+      "reason": "The phrase 'be ready to do something' requires an infinitive, making 'to face' the only correct choice.",
+      "direct_lexical_leak": false,
+      "distractors_plausible": true
+    }
+  ]
+}

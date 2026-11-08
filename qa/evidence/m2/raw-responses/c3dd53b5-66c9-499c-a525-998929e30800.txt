@@ -1,0 +1,65 @@
+{
+  "passage": "When the student first joined the school debating club, she felt nervous because she knew nobody. A classmate noticed her standing alone and invited her to sit with the team. At first, the student doubted whether she could trust anyone so quickly. However, the classmate shared her own story of feeling lost in a new school, and the student began to relax. They practised together every Tuesday and Thursday, and slowly the student learned that trust grows through small, honest actions. One afternoon, the classmate told the student a secret about a family problem. The student promised to keep it private. The next week, another club member asked the student what she knew. She simply said, “I don’t know anything about that.” If she had shared the secret, the classmate would have been deeply hurt. Instead, the classmate later thanked her and said, “I knew I could depend on you.” From that day on, their friendship became stronger. The student realised that true friendship is not about always having fun; it is about being reliable when someone is weak. She also learned to listen without judging, and to speak up when a friend needed support. By the end of the term, the two students were leading the club together, and the student often told new members, “Trust is built slowly, but it can be broken in a second.”",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What did the classmate do when she first saw the student standing alone?",
+      "options": [
+        "She invited the student to sit with the team.",
+        "She asked the student to leave the club.",
+        "She told the student a secret immediately.",
+        "She ignored the student completely."
+      ],
+      "answer": "She invited the student to sit with the team.",
+      "explanation": "文章明确提到同学注意到学生独自站着，并邀请她与团队坐在一起。A项正确；B项与原文相反，同学没有让学生离开；D项说完全忽视，与原文“noticed her standing alone and invited her”矛盾。",
+      "evidence_sentence": "A classmate noticed her standing alone and invited her to sit with the team.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "What can we infer about the student's character from her response to the other club member?",
+      "options": [
+        "She is forgetful and cannot remember secrets.",
+        "She is loyal and keeps her promises.",
+        "She is afraid of the classmate and avoids trouble.",
+        "She is eager to share gossip with others."
+      ],
+      "answer": "She is loyal and keeps her promises.",
+      "explanation": "学生答应保守秘密，面对询问时选择说“不知道”，这体现她忠诚且信守承诺。B项正确；A项说她健忘，但原文未提她忘记；D项说她急于分享八卦，与她的沉默回应相反。",
+      "evidence_sentence": "She simply said, “I don’t know anything about that.”",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What does the word “reliable” most likely mean in the passage?",
+      "options": [
+        "Able to be trusted",
+        "Quick to become angry",
+        "Easily forgotten",
+        "Full of fun"
+      ],
+      "answer": "Able to be trusted",
+      "explanation": "根据上下文，真正的友谊在于朋友脆弱时“reliable”，即可以依靠、值得信任。A项“Able to be trusted”符合语境；B项“容易生气”与支持朋友矛盾；C项“容易被忘记”与友谊的核心品质无关。",
+      "evidence_sentence": "The student realised that true friendship is not about always having fun; it is about being reliable when someone is weak.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What is the main purpose of the passage?",
+      "options": [
+        "To explain how to join a debating club",
+        "To show that friendship is built on trust and support",
+        "To describe a family problem in detail",
+        "To argue that secrets should never be kept"
+      ],
+      "answer": "To show that friendship is built on trust and support",
+      "explanation": "全文通过学生与同学的故事，说明友谊建立在信任与支持之上。B项正确；A项只是故事背景，不是主旨；D项与文中保守秘密的行为相反。",
+      "evidence_sentence": "The student realised that true friendship is not about always having fun; it is about being reliable when someone is weak.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

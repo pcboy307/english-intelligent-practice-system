@@ -1,0 +1,1 @@
+{"translations": {"natural": "自然", "panel": "面板", "panels": "面板", "renewable": "可再生"}}

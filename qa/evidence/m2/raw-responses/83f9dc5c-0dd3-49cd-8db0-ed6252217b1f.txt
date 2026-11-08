@@ -1,0 +1,65 @@
+{
+  "passage": "Last month, the student felt stressed because she had too many tasks and too little time. Her teacher advised that she should make a weekly plan and focus on one thing at a time. The student decided to try this advice. She listed all her tasks and ranked them by importance. She also set aside time for rest and exercise. After two weeks, she had finished her project ahead of time and felt much calmer. She realised that good time management is not about doing more, but about doing what matters most. Now she shares her method with a classmate who often feels rushed.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "The student learned that making a plan and focusing on priorities can reduce stress.",
+        "The student finished her project ahead of time because she worked day and night.",
+        "The teacher told the student to stop doing any exercise.",
+        "The student shares her method with a classmate who never feels rushed."
+      ],
+      "answer": "The student learned that making a plan and focusing on priorities can reduce stress.",
+      "explanation": "文章开头学生压力大，老师建议制定计划并一次专注一件事，学生尝试后压力减轻，说明计划与专注能减压。B项错在“worked day and night”文中未提；C项与文中“set aside time for rest and exercise”相反。",
+      "evidence_sentence": "Her teacher advised that she should make a weekly plan and focus on one thing at a time.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what had the student done by the end of two weeks?",
+      "options": [
+        "She had finished her project ahead of time.",
+        "She had stopped sharing her method.",
+        "She had given up her weekly plan.",
+        "She had started to feel more stressed."
+      ],
+      "answer": "She had finished her project ahead of time.",
+      "explanation": "文中明确说“After two weeks, she had finished her project ahead of time”，即两周后她提前完成了项目。B项“停止分享”与文末“Now she shares”矛盾；C项“放弃计划”文中无据。",
+      "evidence_sentence": "After two weeks, she had finished her project ahead of time and felt much calmer.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about the student's classmate?",
+      "options": [
+        "The classmate often feels rushed and may benefit from the student's method.",
+        "The classmate has already finished all her tasks.",
+        "The classmate refuses to listen to the student.",
+        "The classmate is the teacher's favourite student."
+      ],
+      "answer": "The classmate often feels rushed and may benefit from the student's method.",
+      "explanation": "文中说同学“often feels rushed”，而学生现在分享自己的方法，可推断同学可能从中受益。B项“已完成所有任务”文中未提；C项“拒绝听”无依据。",
+      "evidence_sentence": "Now she shares her method with a classmate who often feels rushed.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"ranked\" most probably mean in the passage?",
+      "options": [
+        "put in order of importance",
+        "forgot completely",
+        "wrote down quickly",
+        "threw away"
+      ],
+      "answer": "put in order of importance",
+      "explanation": "根据上下文“listed all her tasks and ranked them by importance”，ranked 与 by importance 搭配，意为“按重要性排序”。B项“完全忘记”与“listed”矛盾；D项“扔掉”不合逻辑。",
+      "evidence_sentence": "She listed all her tasks and ranked them by importance.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "passage": "Many students feel busy all day but finish little. The problem is often not a lack of time but a lack of planning. A simple weekly plan can help. First, write down every task on a calendar. Second, mark the most important tasks and do them first. Third, keep a small budget of spare time for rest and surprise events. Last week, a student named Tom tried this method. He had a math test and a history project due on Friday. On Monday, he made a plan and decided to study math for forty minutes each evening. He also set aside Tuesday afternoon for the project. On Wednesday, a friend asked him to play basketball. Tom checked his plan and saw that he could spare one hour, so he said yes. By Thursday night, he had finished both tasks and felt calm. His teacher said that good time management is a skill, not a talent. It can be learned and improved with practice. Students who plan ahead are more likely to succeed and less likely to feel stress. Therefore, taking ten minutes to plan each week is a wise choice.",
+  "questions": [
+    {
+      "question_index": 1,
+      "stem": "What is the main idea of the passage?",
+      "options": [
+        "Students should avoid playing sports during exam weeks.",
+        "A simple weekly plan can help students manage their time well.",
+        "Math tests are more important than history projects.",
+        "Teachers should give students fewer tasks."
+      ],
+      "answer": "A simple weekly plan can help students manage their time well.",
+      "explanation": "文章开头指出问题在于缺乏计划，并举例说明每周计划能帮助学生完成任务、减轻压力，因此主旨是每周计划有助于时间管理。干扰项A和C只是文中细节或无关比较，并非全文主旨。",
+      "evidence_sentence": "A simple weekly plan can help.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 2,
+      "stem": "According to the passage, what had Tom finished by Thursday night?",
+      "options": [
+        "Only his math test preparation.",
+        "Only his history project.",
+        "Both his math test preparation and his history project.",
+        "Neither of the two tasks."
+      ],
+      "answer": "Both his math test preparation and his history project.",
+      "explanation": "文中明确提到到周四晚上Tom已经完成了两项任务，即数学考试准备和历史项目。干扰项A和B都只提到其中一项，不完整。",
+      "evidence_sentence": "By Thursday night, he had finished both tasks and felt calm.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 3,
+      "stem": "What can we infer about Tom's friend from the passage?",
+      "options": [
+        "The friend did not have a plan for the week.",
+        "The friend was not good at basketball.",
+        "The friend did not want to play with Tom.",
+        "The friend had already finished all his tasks."
+      ],
+      "answer": "The friend did not have a plan for the week.",
+      "explanation": "文中说朋友周三邀请Tom打篮球，而Tom通过查看计划才决定是否去，可以推断朋友可能没有类似的计划。干扰项B和C与文中朋友邀请打球的事实矛盾。",
+      "evidence_sentence": "On Wednesday, a friend asked him to play basketball.",
+      "context_clue": "",
+      "clue_argument": ""
+    },
+    {
+      "question_index": 4,
+      "stem": "What does the word \"budget\" most probably mean in the passage?",
+      "options": [
+        "A plan for spending money.",
+        "A large amount of something.",
+        "A limited amount kept for a purpose.",
+        "A list of tasks to finish."
+      ],
+      "answer": "A limited amount kept for a purpose.",
+      "explanation": "文中\"keep a small budget of spare time for rest and surprise events\"指留出一小部分空闲时间用于休息和意外事件，因此budget意为“为某目的保留的有限数量”。干扰项A是budget的常见含义但不符合语境，D指的是任务清单而非时间储备。",
+      "evidence_sentence": "Third, keep a small budget of spare time for rest and surprise events.",
+      "context_clue": "",
+      "clue_argument": ""
+    }
+  ]
+}
