@@ -262,15 +262,26 @@ export function BankSwitchDialog({
               选择要启用的题库；当前题库不可重复选择，也不可删除。
             </Text>
           </View>
-          <Pressable
-            accessibilityRole="button"
-            disabled={busy}
-            onPress={chooseImportFile}
-            style={[styles.toolbarButton, busy && styles.disabledOutline]}
-            testID="bank-import-open"
-          >
-            <Text style={styles.toolbarButtonText}>导入题库</Text>
-          </Pressable>
+          <View style={styles.headerActions}>
+            <Pressable
+              accessibilityRole="button"
+              disabled={busy}
+              onPress={chooseImportFile}
+              style={[styles.toolbarButton, busy && styles.disabledOutline]}
+              testID="bank-import-open"
+            >
+              <Text style={styles.toolbarButtonText}>导入题库</Text>
+            </Pressable>
+            <Pressable
+              accessibilityRole="button"
+              disabled={busy}
+              onPress={onCancel}
+              style={[styles.toolbarButton, busy && styles.disabledOutline]}
+              testID="bank-switch-cancel"
+            >
+              <Text style={styles.toolbarButtonText}>关闭</Text>
+            </Pressable>
+          </View>
         </View>
 
         <ScrollView style={styles.list}>
@@ -344,17 +355,6 @@ export function BankSwitchDialog({
         {busy && busyLabel ? (
           <Text style={styles.loading}>{busyLabel}…</Text>
         ) : null}
-        <View style={styles.actions}>
-          <Pressable
-            accessibilityRole="button"
-            disabled={busy}
-            onPress={onCancel}
-            style={styles.secondaryButton}
-            testID="bank-switch-cancel"
-          >
-            <Text style={styles.secondaryText}>关闭</Text>
-          </Pressable>
-        </View>
       </>
     );
   }
@@ -626,12 +626,17 @@ const styles = StyleSheet.create({
   },
   headerRow: {
     flexDirection: "row",
+    flexWrap: "wrap",
     justifyContent: "space-between",
     alignItems: "flex-start",
     gap: tokens.spacing.cardPadding,
   },
   headerCopy: {
     flex: 1,
+  },
+  headerActions: {
+    flexDirection: "row",
+    gap: tokens.web_desktop.optionGap,
   },
   title: {
     color: tokens.color.primaryText,
