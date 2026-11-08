@@ -1,0 +1,54 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage presents a coherent narrative about a school's experience with laptops, moving from initial expectations to lessons learned and concluding with a clear message.",
+  "questions": [
+    {
+      "question_index": 1,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The main idea is explicitly supported by the passage's conclusion that a device only helps when a clear task sits behind it, and the other options contradict the passage."
+    },
+    {
+      "question_index": 2,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The inference is directly supported by the example where covering fewer topics led to higher scores on judgment questions, and the other options are overgeneralizations or unsupported."
+    },
+    {
+      "question_index": 3,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The writer's attitude is clearly cautious approval, as the passage acknowledges benefits but emphasizes the need for clear purpose and limits, while the other options are extreme or unsupported."
+    },
+    {
+      "question_index": 4,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "In context, 'log' refers to a written record of task switches, and the other options do not fit the meaning or context."
+    }
+  ]
+}

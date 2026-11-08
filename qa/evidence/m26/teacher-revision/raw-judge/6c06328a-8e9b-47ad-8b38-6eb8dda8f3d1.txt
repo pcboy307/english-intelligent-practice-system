@@ -1,0 +1,66 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative about a school's waste reduction project, with each paragraph logically connected.",
+  "questions": [
+    {
+      "question_index": 1,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "Option A logically explains why the first plan failed, as it highlights the lack of data, which is supported by the subsequent sentence about the second attempt working for a reason unrelated to enthusiasm."
+    },
+    {
+      "question_index": 2,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "Option B directly connects to the following sentence about plastic falling because paper boxes replaced bags, making it the only logical fit."
+    },
+    {
+      "question_index": 3,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "Option C introduces the rule about switching off lights, which is then explained in the next sentence, creating a clear cause-effect relationship."
+    },
+    {
+      "question_index": 4,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "Option E logically follows the mention of vegetable waste being turned into soil, as it describes the outcome of the garden beds producing vegetables."
+    },
+    {
+      "question_index": 5,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "Option D illustrates the change in students' attitudes by showing they now argue about recycling, which directly supports the preceding statement about how they talk about rubbish."
+    }
+  ]
+}

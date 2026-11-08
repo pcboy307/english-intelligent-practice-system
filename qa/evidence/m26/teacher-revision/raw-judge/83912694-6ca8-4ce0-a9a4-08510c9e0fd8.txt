@@ -1,0 +1,54 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative about the maintenance and repair of the Anhe town wall, with a clear progression from history to current challenges and solutions.",
+  "questions": [
+    {
+      "question_index": 1,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The main idea is clearly supported by the passage's emphasis on ongoing care and the teacher's statement that a monument needs constant looking after."
+    },
+    {
+      "question_index": 2,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The passage states that after the cement removal, the wall's movement slowed, supporting the inference that the work was effective despite appearances."
+    },
+    {
+      "question_index": 3,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The passage explicitly says the application requires evidence that the previous year's work actually held, which aligns with ensuring public money is well spent."
+    },
+    {
+      "question_index": 4,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The context of removing cement and repairing the wall indicates that conservators are people trained to repair and preserve old buildings."
+    }
+  ]
+}

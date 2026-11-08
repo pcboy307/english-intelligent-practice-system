@@ -1,0 +1,126 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative about family life and intergenerational relationships, with each sentence contributing to the overall theme.",
+  "questions": [
+    {
+      "question_index": 1,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The relative clause requires 'who' as the subject referring to a person, and 'appeared' is the correct active verb form."
+    },
+    {
+      "question_index": 2,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The past participle 'built' correctly modifies 'the bridge' in a reduced relative clause, indicating a completed action."
+    },
+    {
+      "question_index": 3,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The simple present 'records' matches the habitual action described in the present tense context."
+    },
+    {
+      "question_index": 4,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The perfect participle 'Having discussed' correctly indicates that the discussion occurred before the decision."
+    },
+    {
+      "question_index": 5,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The noun clause requires 'whether' to express uncertainty about the plan's success."
+    },
+    {
+      "question_index": 6,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The contrast between cold weather and walking to the park is best expressed by the concessive conjunction 'Although'."
+    },
+    {
+      "question_index": 7,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The subjunctive mood requires 'if he were' to express a hypothetical present condition."
+    },
+    {
+      "question_index": 8,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The present perfect passive 'has been done' correctly agrees with the singular subject 'most of the shopping' and indicates a recent ongoing action."
+    },
+    {
+      "question_index": 9,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The definite article 'the' is required before an ordinal number to specify a particular train."
+    },
+    {
+      "question_index": 10,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The past participle 'formed' correctly modifies 'habits' in a reduced relative clause, indicating they were developed over time."
+    }
+  ]
+}

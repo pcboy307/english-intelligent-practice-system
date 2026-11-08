@@ -1,0 +1,54 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative about the maintenance and preservation of the old town wall of Anhe.",
+  "questions": [
+    {
+      "question_index": 1,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The main idea is clearly supported by the passage's emphasis on ongoing care and maintenance."
+    },
+    {
+      "question_index": 2,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The inference is directly supported by the text stating that the wall's movement slowed after the cement removal."
+    },
+    {
+      "question_index": 3,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The purpose is explicitly stated in the passage: the application requires evidence that the previous year's work actually held."
+    },
+    {
+      "question_index": 4,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The context clearly defines conservators as people who repair and preserve old buildings, and the other options are not supported."
+    }
+  ]
+}

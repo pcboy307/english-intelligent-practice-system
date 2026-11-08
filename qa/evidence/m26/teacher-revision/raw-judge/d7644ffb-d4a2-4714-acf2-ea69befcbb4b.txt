@@ -1,0 +1,54 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative about the maintenance and preservation of the old town wall of Anhe, with a clear progression from its history to current challenges and community involvement.",
+  "questions": [
+    {
+      "question_index": 1,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The main idea is clearly supported by the passage's emphasis on ongoing maintenance and the teacher's statement that a monument needs constant care."
+    },
+    {
+      "question_index": 2,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The passage explicitly states that after the cement removal, the wall's movement slowed, supporting the inference that the work was beneficial despite appearances."
+    },
+    {
+      "question_index": 3,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The passage states that the application requires evidence that the previous year's work held, which directly supports the purpose of ensuring effective use of funds."
+    },
+    {
+      "question_index": 4,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The context of removing cement and repairing the wall indicates that conservators are specialists in preservation, making the correct option clear and unambiguous."
+    }
+  ]
+}

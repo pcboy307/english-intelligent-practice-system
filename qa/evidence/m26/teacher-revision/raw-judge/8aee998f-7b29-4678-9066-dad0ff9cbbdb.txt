@@ -1,0 +1,126 @@
+{
+  "coherent": true,
+  "coherence_reason": "The passage is a coherent narrative about family life and intergenerational relationships, with each sentence contributing to the overall theme.",
+  "questions": [
+    {
+      "question_index": 1,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The relative pronoun 'who' correctly refers to the person 'volunteer', and the active voice 'appeared' is appropriate; other options are grammatically incorrect."
+    },
+    {
+      "question_index": 2,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The past participle 'built' correctly modifies 'the bridge' in a reduced relative clause, indicating a completed action in the past."
+    },
+    {
+      "question_index": 3,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The simple present tense 'records' matches the habitual action described in the context and agrees with the singular subject 'she'."
+    },
+    {
+      "question_index": 4,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The perfect participle 'Having discussed' correctly indicates that the discussion occurred before the decision, and the active voice is appropriate."
+    },
+    {
+      "question_index": 5,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The noun clause 'whether the plan would work' correctly expresses uncertainty and follows the verb 'sure' in the negative context."
+    },
+    {
+      "question_index": 6,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The concessive conjunction 'Although' correctly contrasts the cold weather with the family's decision to walk to the park."
+    },
+    {
+      "question_index": 7,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The subjunctive 'if he were' correctly expresses a hypothetical condition in the present, matching the context of a wish or suggestion."
+    },
+    {
+      "question_index": 8,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The present perfect passive 'has been done' correctly indicates an action that started in the past and continues to the present, with 'shopping' as a singular subject."
+    },
+    {
+      "question_index": 9,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The definite article 'the' is required before the ordinal number 'first' to specify a particular train, and the singular form matches the context."
+    },
+    {
+      "question_index": 10,
+      "unique_best": true,
+      "answer_supported": true,
+      "same_part_of_speech": true,
+      "same_semantic_field": true,
+      "near_synonym_distractor": false,
+      "evidence_ok": true,
+      "options_rewritten": true,
+      "verdict": "ok",
+      "reason": "The past participle 'formed' correctly modifies 'habits' in a reduced relative clause, indicating that the habits were developed over time."
+    }
+  ]
+}
