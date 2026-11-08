@@ -11,9 +11,13 @@
 - bank ID: `70b53084-eb02-40db-9ee6-f986120679c7`
 - bank status: `active` after switch verification
 - coverage snapshot: present and switch activation verified
-- known limitation: this is the 6-passage / 53-question Stage A sample bank;
-  full-paper assembly remains governed by the normal paper quotas and is not
-  guaranteed until Stage B provides the complete bank.
+- Stage A practice mode: when the normal book/difficulty/tag quotas cannot be
+  met by the sample bank, assembly uses
+  `STAGE_A_SAMPLE_QUOTA_FALLBACK`. It still requires one cloze, one grammar
+  passage, and one reading/gap passage, with three topics and no active-passage
+  conflict.
+- A real browser session assembled 29 questions and generated a 100-point
+  report successfully; the verification session was then deleted.
 - previous bank after switch: `M2 Bank #2` (`ready`)
 
 ## Passage results

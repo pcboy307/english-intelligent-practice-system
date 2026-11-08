@@ -100,12 +100,25 @@ class PostgresStore:
             "status": row["status"],
             "target_size": row["target_size"],
             "difficulty_profile": row["difficulty_profile"],
+            "coverage_snapshot": row["coverage_snapshot"],
             "created_at": row["created_at"].isoformat(),
         }
 
     def _ensure_seeded(self) -> dict:
         seeded = demo_bank()
         with self.connection() as connection:
+            existing_active = connection.execute(
+                """
+                SELECT active_bank_id
+                FROM bank_active_state
+                WHERE singleton=TRUE
+                """
+            ).fetchone()
+            has_active = bool(
+                existing_active and existing_active["active_bank_id"]
+            )
+            if has_active:
+                return seeded
             row = connection.execute(
                 "SELECT * FROM question_banks WHERE id = %s",
                 (seeded["bank_id"],),
@@ -253,6 +266,7 @@ class PostgresStore:
                 "UPDATE question_banks SET status='active' WHERE id=%s",
                 (seeded["bank_id"],),
             )
+            seeded["status"] = "active"
         return seeded
 
     def _load_questions(self) -> dict[str, DemoQuestion]:
@@ -589,6 +603,9 @@ class PostgresStore:
             },
             practice_config["paper_constraints"]["question_point_book_distribution"],
             practice_config["paper_constraints"]["book_distribution_rounding"]["tie_break_order"],
+            allow_stage_a_sample_fallback=bool(
+                (self.bank.get("coverage_snapshot") or {}).get("stage") == "A"
+            ),
         )
         session_id = str(uuid.uuid4())
         composition = {

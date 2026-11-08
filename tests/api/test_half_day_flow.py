@@ -8,6 +8,7 @@ import sys
 import uuid
 from pathlib import Path
 
+import pytest
 from fastapi.testclient import TestClient
 
 os.environ.setdefault("WEAKNESS_ANALYSIS_DISABLED", "1")
@@ -17,6 +18,17 @@ from backend.app.composer import allocate_difficulty, allocate_largest_remainder
 
 
 client = TestClient(app, client=("127.0.0.1", 41000))
+FULL_BANK_ID = "6fab59cd-c1fa-4a7a-8532-41bde57d18f2"
+
+
+@pytest.fixture(scope="module", autouse=True)
+def use_full_bank_for_half_day_flow_tests():
+    original_bank_id = store.bank["bank_id"]
+    if original_bank_id != FULL_BANK_ID:
+        store.activate_bank(FULL_BANK_ID, operator="pytest")
+    yield
+    if store.bank["bank_id"] != original_bank_id:
+        store.activate_bank(original_bank_id, operator="pytest-restore")
 
 
 def student_headers() -> dict[str, str]:

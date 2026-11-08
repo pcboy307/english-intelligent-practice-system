@@ -62,6 +62,8 @@ def assemble_demo_paper(
     active_error_ids: set[str],
     book_percentages: dict[str, float],
     tie_break_order: list[str],
+    *,
+    allow_stage_a_sample_fallback: bool = False,
 ) -> tuple[list, dict]:
     paper_mode = "reading" if paper_number % 2 == 1 else "gap_fill"
     extra_count = 4 if paper_mode == "reading" else 5
@@ -80,6 +82,7 @@ def assemble_demo_paper(
     failures = []
     valid = []
     fallback_candidates = []
+    stage_a_candidates = []
     for cloze_group, cloze_questions in grouped["cloze"].items():
         for grammar_group, grammar_questions in grouped["grammar_fill"].items():
             for extra_group, extra_questions in grouped[paper_mode].items():
@@ -115,23 +118,38 @@ def assemble_demo_paper(
                 ) / len(candidate)
                 if error_ratio > 0.60:
                     reasons.append("ERROR_POOL_EXCEEDS_60_PERCENT")
+                deviation = sum(
+                    abs(actual_books[key] - expected_books[key])
+                    for key in expected_books
+                ) + sum(
+                    abs(actual_difficulty[key] - expected_difficulty[key])
+                    for key in expected_difficulty
+                )
+                score = sum(
+                    weight_details[question.id]["weight"]
+                    for question in candidate
+                ) / len(candidate)
                 if (
                     "ACTIVE_PASSAGE_CONFLICT" not in reasons
                     and "GRAMMAR_TAG_REPEAT_EXCEEDS_3" not in reasons
                     and "TOPIC_COUNT_BELOW_3" not in reasons
                 ):
-                    deviation = sum(
-                        abs(actual_books[key] - expected_books[key])
-                        for key in expected_books
-                    ) + sum(
-                        abs(actual_difficulty[key] - expected_difficulty[key])
-                        for key in expected_difficulty
-                    )
-                    score = sum(
-                        weight_details[question.id]["weight"]
-                        for question in candidate
-                    ) / len(candidate)
                     fallback_candidates.append(
+                        {
+                            "groups": groups,
+                            "questions": candidate,
+                            "score": round(score, 6),
+                            "deviation": deviation,
+                            "reasons": list(reasons),
+                        }
+                    )
+                if (
+                    allow_stage_a_sample_fallback
+                    and "ACTIVE_PASSAGE_CONFLICT" not in reasons
+                    and "TOPIC_COUNT_BELOW_3" not in reasons
+                    and error_ratio <= 0.60
+                ):
+                    stage_a_candidates.append(
                         {
                             "groups": groups,
                             "questions": candidate,
@@ -148,9 +166,6 @@ def assemble_demo_paper(
                         }
                     )
                     continue
-                score = sum(
-                    weight_details[question.id]["weight"] for question in candidate
-                ) / len(candidate)
                 valid.append(
                     {
                         "groups": groups,
@@ -171,10 +186,14 @@ def assemble_demo_paper(
     if not valid:
         fallback_used = True
         fallback_reason = "NO_EXACT_GROUPED_ASSEMBLY"
-        if not fallback_candidates:
+        candidate_pool = fallback_candidates
+        if not candidate_pool and allow_stage_a_sample_fallback:
+            candidate_pool = stage_a_candidates
+            fallback_reason = "STAGE_A_SAMPLE_QUOTA_FALLBACK"
+        if not candidate_pool:
             raise ValueError("NO_VALID_PAPER_ASSEMBLY")
         best = min(
-            fallback_candidates,
+            candidate_pool,
             key=lambda item: (item["deviation"], -item["score"], item["groups"]),
         )
         selected = {
@@ -192,7 +211,7 @@ def assemble_demo_paper(
         lower_weight = min(
             (
                 item
-                for item in fallback_candidates
+                for item in candidate_pool
                 if item["score"] < best["score"]
                 or item["groups"] != best["groups"]
             ),
@@ -269,6 +288,10 @@ def assemble_demo_paper(
         "fallback_used": fallback_used,
         "fallback_reason": fallback_reason,
         "fallback_candidate_count": len(fallback_candidates),
+        "stage_a_sample_candidate_count": len(stage_a_candidates),
+        "stage_a_sample_fallback": (
+            fallback_reason == "STAGE_A_SAMPLE_QUOTA_FALLBACK"
+        ),
         "weight_elimination_witness": weight_elimination_witness,
         "hard_constraint_rejections": failures,
         "valid_skeleton_count": len(valid),
