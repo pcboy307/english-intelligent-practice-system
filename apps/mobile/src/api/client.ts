@@ -15,6 +15,7 @@ export type MistakePassageGroup =
   components["schemas"]["MistakePassageGroup"];
 export type MistakeBankGroup =
   components["schemas"]["MistakeBankGroup"];
+export type CoverageStats = components["schemas"]["CoverageStats"];
 export type MistakeEntry = components["schemas"]["MistakeEntry"];
 export type MistakeDetailQuestion = {
   question_id: string;
@@ -131,4 +132,8 @@ export async function startMistakeReview(passageId: string) {
     `/mistakes/review/${encodeURIComponent(passageId)}`,
     { method: "POST" },
   );
+}
+
+export async function getCoverageStats() {
+  return request<CoverageStats>("/stats/coverage?bank_id=active");
 }

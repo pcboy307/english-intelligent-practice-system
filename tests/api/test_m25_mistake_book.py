@@ -671,3 +671,79 @@ def test_m25_bank_switch_regroups_current_and_historical_mistakes() -> None:
         assert payload["total_open"] == 2
     finally:
         activate_bank(original_bank_id)
+
+
+def test_m25_coverage_counts_sessions_once_and_excludes_unsubmitted() -> None:
+    original_bank_id = store.bank["bank_id"]
+    bank = create_test_bank(
+        "M25 Coverage",
+        [
+            "M25-COVERAGE-NONE-Q01",
+            "M25-COVERAGE-ONCE-Q02",
+            "M25-COVERAGE-TWICE-Q03",
+        ],
+    )
+    try:
+        activate_bank(bank["bank_id"])
+        headers = student_headers()
+        first = direct_session(
+            headers,
+            ["M25-COVERAGE-ONCE-Q02", "M25-COVERAGE-TWICE-Q03"],
+        )
+        answer(headers, first, "M25-COVERAGE-ONCE-Q02", "anxious")
+        answer(headers, first, "M25-COVERAGE-TWICE-Q03", "calm")
+        answer(headers, first, "M25-COVERAGE-TWICE-Q03", "anxious")
+        submit(headers, first)
+
+        second = direct_session(headers, ["M25-COVERAGE-TWICE-Q03"])
+        answer(headers, second, "M25-COVERAGE-TWICE-Q03", "anxious")
+        submit(headers, second)
+
+        direct_session(headers, ["M25-COVERAGE-NONE-Q01"])
+        response = client.get(
+            "/api/v1/stats/coverage?bank_id=active",
+            headers=headers,
+        )
+        assert response.status_code == 200, response.text
+        assert response.json() == {
+            "total": 3,
+            "none": 1,
+            "once": 1,
+            "twice_plus": 1,
+            "bank_name": "M25 Coverage",
+            "as_of": response.json()["as_of"],
+        }
+        assert (
+            response.json()["none"]
+            + response.json()["once"]
+            + response.json()["twice_plus"]
+            == 3
+        )
+    finally:
+        activate_bank(original_bank_id)
+
+
+def test_m25_coverage_includes_mistake_review_sessions() -> None:
+    original_bank_id = store.bank["bank_id"]
+    bank = create_test_bank("M25 Coverage Review", ["M25-REVIEW-COUNT-Q01"])
+    try:
+        activate_bank(bank["bank_id"])
+        headers = student_headers()
+        first = direct_session(headers, ["M25-REVIEW-COUNT-Q01"])
+        answer(headers, first, "M25-REVIEW-COUNT-Q01", "calm")
+        submit(headers, first)
+
+        review = create_review(headers, bank["passage_id"])
+        answer(headers, review["session_id"], "M25-REVIEW-COUNT-Q01", "anxious")
+        submit(headers, review["session_id"])
+
+        payload = client.get(
+            "/api/v1/stats/coverage?bank_id=active",
+            headers=headers,
+        ).json()
+        assert payload["total"] == 1
+        assert payload["none"] == 0
+        assert payload["once"] == 0
+        assert payload["twice_plus"] == 1
+    finally:
+        activate_bank(original_bank_id)

@@ -191,6 +191,20 @@ def start_mistake_review(
     return session_payload(record)
 
 
+@app.get("/api/v1/stats/coverage")
+def get_coverage_stats(
+    bank_id: str = "active",
+    x_student_id: str | None = Header(default=None, alias="X-Student-Id"),
+) -> dict:
+    student_id = student_id_or_401(x_student_id)
+    if bank_id != "active":
+        raise HTTPException(
+            status_code=400,
+            detail={"code": "ONLY_ACTIVE_BANK_SUPPORTED"},
+        )
+    return store.get_coverage_stats(student_id)
+
+
 @app.get("/api/v1/practice/{session_id}")
 def get_practice(
     session_id: str,

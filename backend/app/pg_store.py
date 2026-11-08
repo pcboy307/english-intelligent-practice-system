@@ -19,6 +19,7 @@ from .demo_bank import DemoQuestion, demo_bank
 from .analysis import generate_weakness_analysis, humanize_analysis_text
 from .composer import assemble_demo_paper
 from .mistakes import (
+    coverage_statistics,
     create_review_composition,
     get_passage_mistake_detail,
     list_open_mistakes,
@@ -796,6 +797,14 @@ class PostgresStore:
                 connection,
                 student_id=student_id,
                 passage_id=passage_id,
+                active_bank_id=self.bank["bank_id"],
+            )
+
+    def get_coverage_stats(self, student_id: str) -> dict:
+        with self.connection() as connection:
+            return coverage_statistics(
+                connection,
+                student_id=student_id,
                 active_bank_id=self.bank["bank_id"],
             )
 

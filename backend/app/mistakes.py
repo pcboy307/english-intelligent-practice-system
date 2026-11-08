@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import re
 from collections import defaultdict
-from datetime import datetime
+from datetime import datetime, timezone
 
 from psycopg import Connection
 from psycopg.rows import dict_row
@@ -392,3 +392,56 @@ def create_review_composition(
 
 def session_attempt_kind(session_kind: str) -> str:
     return "review" if session_kind == "review" else "practice"
+
+
+def coverage_statistics(
+    connection: Connection,
+    *,
+    student_id: str,
+    active_bank_id: str,
+) -> dict:
+    bank = connection.execute(
+        "SELECT name FROM question_banks WHERE id=%s",
+        (active_bank_id,),
+    ).fetchone()
+    if not bank:
+        raise KeyError("ACTIVE_BANK_NOT_FOUND")
+    question_ids = [
+        row["id"]
+        for row in connection.execute(
+            """
+            SELECT id
+            FROM questions
+            WHERE bank_id=%s AND status='published'
+            """,
+            (active_bank_id,),
+        ).fetchall()
+    ]
+    appearances = {
+        row["question_id"]: row["session_count"]
+        for row in connection.execute(
+            """
+            SELECT qa.question_id, count(DISTINCT qa.session_id) AS session_count
+            FROM question_attempts qa
+            JOIN practice_sessions ps ON ps.id=qa.session_id
+            WHERE qa.student_id=%s
+              AND qa.question_id=ANY(%s)
+              AND ps.status='submitted'
+            GROUP BY qa.question_id
+            """,
+            (student_id, question_ids),
+        ).fetchall()
+    }
+    twice_plus = sum(appearances.get(question_id, 0) >= 2 for question_id in question_ids)
+    once = sum(appearances.get(question_id, 0) == 1 for question_id in question_ids)
+    none = len(question_ids) - once - twice_plus
+    total = len(question_ids)
+    assert none + once + twice_plus == total
+    return {
+        "total": total,
+        "none": none,
+        "once": once,
+        "twice_plus": twice_plus,
+        "bank_name": bank["name"],
+        "as_of": datetime.now(timezone.utc).isoformat(),
+    }
