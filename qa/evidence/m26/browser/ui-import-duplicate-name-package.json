@@ -1,0 +1,112 @@
+{
+  "format_version": "bank-v1",
+  "name": "M2 Bank #2",
+  "target_size": 4,
+  "difficulty_profile": "advanced",
+  "generated_at": "2026-11-08",
+  "composition": {
+    "cloze": 0,
+    "grammar_fill": 0,
+    "reading": 1,
+    "gap_fill": 0
+  },
+  "passages": [
+    {
+      "validation_profile": "m26",
+      "type": "reading",
+      "passage_group_id": "M26-A-READING-01",
+      "topic": "科技",
+      "book_source": "选必二 U1",
+      "difficulty": 4,
+      "passage": "Every day, millions of people carry a small device that knows where they are, what they say, and what they buy. This device, the smartphone, has become so common that few users stop to think about how much of their private life it quietly records. The ease it offers is clear, yet the cost of that ease is often hidden, and this gap calls for careful attention from ordinary citizens as well as from experts.\n\nConsider what happens when a person adds a simple program for finding a restaurant. The program may ask for permission to use the location, the camera, and the list of contacts, even though none of these is needed for the task at hand. Such requests, which appear harmless at first look, allow companies to collect detailed information about habits, friendships, and daily routines. Because most users accept the terms without reading them, the collection continues without being seen, and the data is later sold or shared with partners whose purposes remain not clear.\n\nThe deeper problem is not technology itself but the absence of meaningful choice. When a service becomes essential for work, study, or communication, refusing its conditions is hardly possible in practice, so agreement loses much of its value. Rule makers have started to respond with stricter rules, yet carrying out the rules falls behind the speed of new ideas. What is required, therefore, is not simply better software but a shared understanding that personal information belongs to the person who produces it, not to the company that happens to store it.\n\nSchools and families can play a practical part in this change. Teaching students to check permissions, to limit what they share, and to question free services that demand too much access builds habits that last a whole life. Technology will keep advancing, and no one should reject its benefits, but a society that treats privacy as a luxury rather than a right will eventually find that it has traded something precious for very little in return. Parents can also model these habits at home, reviewing app settings together and discussing why certain downloads seem questionable. Small conversations repeated over time shape expectations, and companies take note when customers ask harder questions before clicking agree.",
+      "questions": [
+        {
+          "stem": "What is the main idea of the passage?",
+          "options": [
+            "Smartphones secretly gather personal data, and people should work to protect privacy as a basic right.",
+            "Smartphone apps are too complicated for most users to understand and should be banned.",
+            "Companies that collect data should be the only ones allowed to decide how it is used.",
+            "Schools and families should stop students from using smartphones altogether."
+          ],
+          "answer": "Smartphones secretly gather personal data, and people should work to protect privacy as a basic right.",
+          "knowledge_points": [
+            "main_idea"
+          ],
+          "grammar_tags": [
+            "relative_clauses_defining"
+          ],
+          "book_source": "必修1 U1",
+          "difficulty": 3,
+          "evidence_sentence": "This device, the smartphone, has become so common that few users stop to think about how much of their private life it quietly records.",
+          "explanation": "文章第一段指出智能手机在用户不知情的情况下记录大量私人信息，第二段说明应用程序过度收集数据，第三段强调隐私应属于信息生产者而非存储公司，第四段提出学校和家庭应培养隐私保护习惯，因此主旨是智能手机秘密收集个人数据，人们应努力将隐私作为基本权利来保护。选项B错误，因为文章并未说应用程序太复杂应被禁止，而是强调用户应学会检查权限；选项C与文章观点相反，文章认为信息属于个人而非公司；选项D也错误，文章建议学校和家庭教学生限制分享和质疑过度访问，而非完全禁止使用智能手机。本题考点是归纳文章主旨大意。",
+          "reading_type": "main_idea"
+        },
+        {
+          "stem": "What can be inferred about why users often give in to app conditions?",
+          "options": [
+            "Many services are so necessary that users feel they cannot refuse the terms.",
+            "Users are usually paid by companies to accept the conditions.",
+            "Most users carefully read every term before they agree.",
+            "Rule makers have already solved the problem of unfair conditions."
+          ],
+          "answer": "Many services are so necessary that users feel they cannot refuse the terms.",
+          "knowledge_points": [
+            "inference"
+          ],
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "book_source": "选必二 U1",
+          "difficulty": 4,
+          "evidence_sentence": "When a service becomes essential for work, study, or communication, refusing its conditions is hardly possible in practice, so agreement loses much of its value.",
+          "explanation": "文章第三段明确指出，当一项服务对工作、学习或交流变得必不可少时，拒绝其条件在实践中几乎不可能，因此同意失去了大部分价值，由此可以推断用户常常屈服于应用条款是因为许多服务太必要而无法拒绝。选项B错误，文章没有提到用户因接受条件而获得报酬；选项C与文章第二段“大多数用户不阅读条款就接受”相矛盾；选项D错误，文章说规则制定者已开始回应但执行落后于新想法，问题并未解决。本题考点是根据文章内容进行推断。",
+          "reading_type": "inference"
+        },
+        {
+          "stem": "What is the author's attitude toward privacy protection?",
+          "options": [
+            "Supportive, because privacy should be treated as a right rather than a luxury.",
+            "Doubtful, because technology brings more harm than good.",
+            "Indifferent, because the problem will solve itself over time.",
+            "Opposed, because stricter rules would slow down new ideas."
+          ],
+          "answer": "Supportive, because privacy should be treated as a right rather than a luxury.",
+          "knowledge_points": [
+            "purpose_or_attitude"
+          ],
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "book_source": "选必二 U1",
+          "difficulty": 4,
+          "evidence_sentence": "a society that treats privacy as a luxury rather than a right will eventually find that it has traded something precious for very little in return.",
+          "explanation": "文章最后一段明确表示，一个将隐私视为奢侈品而非权利的社会最终会发现它用珍贵的东西换来了很少的回报，并且全文呼吁个人、学校和家庭采取行动保护隐私，因此作者对隐私保护持支持态度。选项B错误，作者并未认为技术弊大于利，而是说不应拒绝技术的好处；选项C错误，作者强调需要共同理解和行动，而非问题会自行解决；选项D错误，作者支持更严格的规则，只是指出执行落后，并未反对规则。本题考点是判断作者的态度。",
+          "reading_type": "purpose_or_attitude"
+        },
+        {
+          "stem": "What is the function of the fourth paragraph in the passage?",
+          "options": [
+            "It offers practical ways schools and families can help build lasting privacy habits.",
+            "It introduces the main problem of data collection by smartphone apps.",
+            "It explains how companies sell the data they collect from users.",
+            "It argues that technology should be rejected because of its dangers."
+          ],
+          "answer": "It offers practical ways schools and families can help build lasting privacy habits.",
+          "knowledge_points": [
+            "paragraph_function"
+          ],
+          "grammar_tags": [
+            "articles"
+          ],
+          "book_source": "必修2 U1",
+          "difficulty": 3,
+          "evidence_sentence": "Schools and families can play a practical part in this change.",
+          "explanation": "第四段开头提出学校和家庭可以在这一变化中发挥实际作用，接着具体说明教学生检查权限、限制分享、质疑免费服务等做法能培养终身习惯，并提到父母可以在家示范这些习惯，因此该段的功能是提供学校和家庭帮助建立持久隐私习惯的实用方法。选项B错误，引入数据收集主要问题的是第一、二段；选项C错误，解释公司如何出售数据的是第二段；选项D错误，该段明确说没有人应该拒绝技术的好处，并未主张拒绝技术。本题考点是理解段落功能与结构。",
+          "reading_type": "paragraph_function"
+        }
+      ],
+      "generation_observations": [],
+      "flesch_reading_ease": 48.67
+    }
+  ]
+}

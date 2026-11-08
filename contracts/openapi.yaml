@@ -1473,14 +1473,15 @@ paths:
       tags: [maintenance]
       operationId: importBank
       security: []
-      summary: 在单事务内导入题库并立即设为 active
+      summary: 在单事务内直接导入题库并立即设为 active，不执行质量校验
+      description: 仅保留题库名称非空/唯一和数据库写入所必需的最小结构检查；不运行 R11-R15 或 DeepSeek 审题。
       parameters:
         - name: semantic_check
           in: query
           required: false
           schema:
             type: boolean
-            default: true
+            default: false
       requestBody:
         required: true
         content:
@@ -1489,7 +1490,7 @@ paths:
               $ref: ./schemas/bank-import-package.json
       responses:
         "201":
-          description: 已完整写入、通过校验并切换为当前题库
+          description: 已按原始内容写入并切换为当前题库
           content:
             application/json:
               schema:

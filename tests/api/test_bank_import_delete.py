@@ -155,9 +155,28 @@ def test_import_preview_rejects_target_size_mismatch() -> None:
     )
 
 
+def test_import_rejects_an_empty_bank_name() -> None:
+    package = import_package()
+    package["name"] = "   "
+
+    response = client.post(
+        "/api/v1/banks/import",
+        json=package,
+        headers=student_headers(),
+    )
+
+    assert response.status_code == 400
+    assert response.json()["detail"]["code"] == "IMPORT_VALIDATION_FAILED"
+    assert any(
+        item["code"] == "BANK_NAME_INVALID"
+        and "不能为空" in item["message"]
+        for item in response.json()["detail"]["errors"]
+    )
+
+
 def test_invalid_import_never_writes_a_bank() -> None:
     package = import_package()
-    package["passages"][0]["questions"][0]["explanation"] = ""
+    del package["passages"][0]["questions"][0]["answer"]
     with store.connection() as connection:
         before = connection.execute(
             "SELECT count(*) AS count FROM question_banks"
@@ -176,6 +195,92 @@ def test_invalid_import_never_writes_a_bank() -> None:
             "SELECT count(*) AS count FROM question_banks"
         ).fetchone()["count"]
     assert after == before
+
+
+def test_import_bypasses_quality_validation_and_persists_content() -> None:
+    original_bank_id = store.bank["bank_id"]
+    package = import_package()
+    package["passages"][0]["questions"][0]["explanation"] = ""
+    imported_id = ""
+    try:
+        response = client.post(
+            "/api/v1/banks/import",
+            json=package,
+            headers=student_headers(),
+        )
+        assert response.status_code == 201, response.text
+        imported_id = response.json()["bank_id"]
+        with store.connection() as connection:
+            explanation = connection.execute(
+                """
+                SELECT explanation
+                FROM questions
+                WHERE bank_id=%s
+                ORDER BY id
+                LIMIT 1
+                """,
+                (imported_id,),
+            ).fetchone()["explanation"]
+        assert explanation == "导入时未提供解析。"
+    finally:
+        if imported_id:
+            with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+                with connection.transaction():
+                    connection.execute(
+                        "UPDATE question_banks SET status='archived' WHERE id=%s",
+                        (imported_id,),
+                    )
+                    connection.execute(
+                        "UPDATE question_banks SET status='ready' WHERE id=%s",
+                        (original_bank_id,),
+                    )
+                    connection.execute(
+                        "UPDATE bank_active_state SET active_bank_id=%s WHERE singleton=TRUE",
+                        (original_bank_id,),
+                    )
+                    delete_bank(connection, imported_id)
+            store.reload_active_bank()
+
+
+def test_import_accepts_a_minimal_name_and_passages_package() -> None:
+    original_bank_id = store.bank["bank_id"]
+    package = import_package()
+    for field in (
+        "format_version",
+        "target_size",
+        "difficulty_profile",
+        "generated_at",
+        "composition",
+    ):
+        package.pop(field)
+    imported_id = ""
+    try:
+        response = client.post(
+            "/api/v1/banks/import",
+            json=package,
+            headers=student_headers(),
+        )
+        assert response.status_code == 201, response.text
+        imported_id = response.json()["bank_id"]
+        assert response.json()["summary"]["questions"] == 4
+    finally:
+        if imported_id:
+            with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+                with connection.transaction():
+                    connection.execute(
+                        "UPDATE question_banks SET status='archived' WHERE id=%s",
+                        (imported_id,),
+                    )
+                    connection.execute(
+                        "UPDATE question_banks SET status='ready' WHERE id=%s",
+                        (original_bank_id,),
+                    )
+                    connection.execute(
+                        "UPDATE bank_active_state SET active_bank_id=%s WHERE singleton=TRUE",
+                        (original_bank_id,),
+                    )
+                    delete_bank(connection, imported_id)
+            store.reload_active_bank()
 
 
 def test_import_preview_rejects_non_loopback_clients() -> None:

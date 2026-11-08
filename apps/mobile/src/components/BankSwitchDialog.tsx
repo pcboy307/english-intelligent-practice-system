@@ -16,10 +16,8 @@ import {
   getSwitchableBanks,
   importBank,
   previewDeleteBank,
-  previewImportBank,
   type BankDeletePreview,
   type BankImportPackage,
-  type BankImportPreview,
   type BankImportResult,
   type SwitchableBank,
   type SwitchableBanks,
@@ -30,11 +28,6 @@ type BankSwitchDialogProps = {
   visible: boolean;
   onCancel: () => void;
   onSwitched: () => Promise<void> | void;
-};
-
-type ImportDraft = {
-  package: BankImportPackage;
-  preview: BankImportPreview;
 };
 
 type DeleteDraft = {
@@ -52,16 +45,6 @@ function reasonText(reason: unknown): string {
   return reason instanceof Error ? reason.message : String(reason);
 }
 
-function compositionText(preview: BankImportPreview): string {
-  const composition = preview.summary.composition;
-  return [
-    `完形 ${composition.cloze} 篇`,
-    `语法 ${composition.grammar_fill} 篇`,
-    `阅读 ${composition.reading} 篇`,
-    `七选五 ${composition.gap_fill} 篇`,
-  ].join(" · ");
-}
-
 function exportFileName(bank: SwitchableBank): string {
   const safeName = bank.name
     .replace(/[\\/:*?"<>|\s]+/g, "-")
@@ -77,9 +60,7 @@ export function BankSwitchDialog({
 }: BankSwitchDialogProps) {
   const [data, setData] = useState<SwitchableBanks | null>(null);
   const [selected, setSelected] = useState<SwitchableBank | null>(null);
-  const [importDraft, setImportDraft] = useState<ImportDraft | null>(null);
   const [importResult, setImportResult] = useState<BankImportResult | null>(null);
-  const [semanticCheck, setSemanticCheck] = useState(true);
   const [deleteDraft, setDeleteDraft] = useState<DeleteDraft | null>(null);
   const [deleteConfirmReady, setDeleteConfirmReady] = useState(false);
   const [error, setError] = useState("");
@@ -97,9 +78,7 @@ export function BankSwitchDialog({
     if (!visible) {
       setData(null);
       setSelected(null);
-      setImportDraft(null);
       setImportResult(null);
-      setSemanticCheck(true);
       setDeleteDraft(null);
       setDeleteConfirmReady(false);
       setError("");
@@ -131,7 +110,6 @@ export function BankSwitchDialog({
 
   function resetTransientViews() {
     setSelected(null);
-    setImportDraft(null);
     setImportResult(null);
     setDeleteDraft(null);
     setDeleteConfirmReady(false);
@@ -159,13 +137,13 @@ export function BankSwitchDialog({
     setError("");
     setNotice("");
     try {
-      const result = await DocumentPicker.getDocumentAsync({
+      const fileResult = await DocumentPicker.getDocumentAsync({
         type: "application/json",
         copyToCacheDirectory: true,
         multiple: false,
       });
-      if (result.canceled) return;
-      const asset = result.assets[0];
+      if (fileResult.canceled) return;
+      const asset = fileResult.assets[0];
       if (asset.size && asset.size > 15 * 1024 * 1024) {
         throw new Error("导入文件不能超过 15 MB");
       }
@@ -176,43 +154,29 @@ export function BankSwitchDialog({
       if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
         throw new Error("导入文件的顶层必须是 JSON 对象");
       }
+      const packageDetail = parsed as BankImportPackage;
+      const bankName =
+        typeof packageDetail.name === "string"
+          ? packageDetail.name.trim()
+          : "";
+      if (!bankName) {
+        throw new Error("题库名称不能为空");
+      }
+      if (
+        data?.banks.some(
+          (bank) =>
+            bank.name.trim().toLocaleLowerCase() ===
+            bankName.toLocaleLowerCase(),
+        )
+      ) {
+        throw new Error("题库名称已存在，请换一个名称");
+      }
       setBusy(true);
-      setBusyLabel("正在校验导入包");
-      const preview = await previewImportBank(
-        parsed as BankImportPackage,
-        false,
-      );
-      setSelected(null);
-      setDeleteDraft(null);
-      setImportDraft({
-        package: parsed as BankImportPackage,
-        preview,
-      });
-      setSemanticCheck(true);
-    } catch (reason) {
-      setError(reasonText(reason));
-    } finally {
-      setBusy(false);
-      setBusyLabel("");
-    }
-  }
-
-  async function executeImport() {
-    if (!importDraft) return;
-    setBusy(true);
-    setBusyLabel(
-      semanticCheck ? "DeepSeek 正在独立审题" : "正在写入并切换题库",
-    );
-    setError("");
-    try {
-      const result = await importBank(
-        importDraft.package,
-        semanticCheck,
-      );
+      setBusyLabel(`正在导入「${bankName}」`);
+      const importResult = await importBank(packageDetail, false);
       await onSwitched();
       await loadBanks();
-      setImportDraft(null);
-      setImportResult(result);
+      setImportResult(importResult);
     } catch (reason) {
       setError(reasonText(reason));
     } finally {
@@ -263,7 +227,6 @@ export function BankSwitchDialog({
     try {
       const preview = await previewDeleteBank(bank.bank_id);
       setSelected(null);
-      setImportDraft(null);
       setImportResult(null);
       setDeleteDraft({ bank, preview });
     } catch (reason) {
@@ -336,7 +299,6 @@ export function BankSwitchDialog({
                   setError("");
                   setNotice("");
                   setDeleteDraft(null);
-                  setImportDraft(null);
                   setImportResult(null);
                   setSelected(bank);
                 }}
@@ -463,82 +425,6 @@ export function BankSwitchDialog({
     );
   }
 
-  function renderImportView(draft: ImportDraft) {
-    return (
-      <>
-        <Text style={styles.title}>导入并切换题库</Text>
-        <Text style={styles.importName}>{draft.preview.summary.name}</Text>
-        <Text style={styles.confirmText}>
-          {draft.preview.summary.passages} 篇 · {draft.preview.summary.questions} 题
-        </Text>
-        <Text style={styles.detailText}>{compositionText(draft.preview)}</Text>
-        <Text style={styles.confirmText}>
-          导入成功后立即设为当前题库，原来的当前题库转为历史归档。
-        </Text>
-        <Pressable
-          accessibilityRole="checkbox"
-          accessibilityState={{ checked: semanticCheck }}
-          disabled={busy}
-          onPress={() => setSemanticCheck((value) => !value)}
-          style={styles.checkRow}
-          testID="bank-import-semantic-check"
-        >
-          <View
-            style={[
-              styles.checkbox,
-              semanticCheck && styles.checkboxChecked,
-            ]}
-          >
-            <Text
-              style={[
-                styles.checkboxMark,
-                semanticCheck && styles.checkboxMarkChecked,
-              ]}
-            >
-              {semanticCheck ? "✓" : ""}
-            </Text>
-          </View>
-          <View style={styles.checkCopy}>
-            <Text style={styles.checkTitle}>DeepSeek 独立审题</Text>
-            <Text style={styles.checkDetail}>
-              检查语篇连贯、答案唯一和选项质量。单次最多 ¥5，超限或任一项不通过时整库不写入。
-            </Text>
-          </View>
-        </Pressable>
-        {error ? (
-          <Text style={styles.error} testID="bank-import-error">
-            {error}
-          </Text>
-        ) : null}
-        <View style={styles.actions}>
-          <Pressable
-            accessibilityRole="button"
-            disabled={busy}
-            onPress={() => {
-              setImportDraft(null);
-              setError("");
-            }}
-            style={styles.secondaryButton}
-            testID="bank-import-cancel"
-          >
-            <Text style={styles.secondaryText}>取消</Text>
-          </Pressable>
-          <Pressable
-            accessibilityRole="button"
-            disabled={busy}
-            onPress={executeImport}
-            style={[styles.primaryButton, busy && styles.disabled]}
-            testID="bank-import-confirm"
-          >
-            <Text style={styles.primaryText}>
-              {busy ? busyLabel : "校验并导入"}
-            </Text>
-          </Pressable>
-        </View>
-      </>
-    );
-  }
-
   function renderImportResult(result: BankImportResult) {
     const audit = result.semantic_audit;
     return (
@@ -550,8 +436,8 @@ export function BankSwitchDialog({
         </Text>
         <Text style={styles.detailText}>
           {audit
-            ? `DeepSeek 审题 ${audit.audited_passages ?? 0} 篇，实际成本 ¥${audit.cost_cny.toFixed(4)}`
-            : "本次未启用 DeepSeek 独立审题"}
+            ? `独立审题 ${audit.audited_passages ?? 0} 篇`
+            : "已按原始内容直接落盘"}
         </Text>
         <View style={styles.actions}>
           <Pressable
@@ -645,11 +531,9 @@ export function BankSwitchDialog({
               ? renderImportResult(importResult)
               : deleteDraft
                 ? renderDeleteView(deleteDraft)
-                : importDraft
-                  ? renderImportView(importDraft)
-                  : selected
-                    ? renderSwitchView(selected)
-                    : renderListView()}
+                : selected
+                  ? renderSwitchView(selected)
+                  : renderListView()}
           </ScrollView>
         </View>
       </View>
@@ -839,54 +723,6 @@ const styles = StyleSheet.create({
     color: tokens.color.secondaryText,
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.auxiliary,
-    marginTop: tokens.spacing.listGap,
-  },
-  checkRow: {
-    minHeight: tokens.control.touchTargetMin,
-    flexDirection: "row",
-    alignItems: "flex-start",
-    gap: tokens.spacing.listGap,
-    borderWidth: tokens.border.width,
-    borderColor: tokens.color.secondaryBorder,
-    borderRadius: tokens.radius.medium,
-    marginTop: tokens.spacing.cardPadding,
-    padding: tokens.spacing.listGap,
-  },
-  checkbox: {
-    width: 20,
-    height: 20,
-    borderWidth: tokens.border.width,
-    borderColor: tokens.color.secondaryBorder,
-    borderRadius: tokens.radius.small,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  checkboxChecked: {
-    borderColor: tokens.color.accent,
-  },
-  checkboxMark: {
-    color: tokens.color.pageBackground,
-    fontFamily: tokens.font.uiFamily.web,
-    fontSize: tokens.font.sizes.auxiliary,
-    lineHeight: tokens.font.sizes.auxiliary,
-  },
-  checkboxMarkChecked: {
-    color: tokens.color.accent,
-  },
-  checkCopy: {
-    flex: 1,
-  },
-  checkTitle: {
-    color: tokens.color.primaryText,
-    fontFamily: tokens.font.uiFamily.web,
-    fontSize: tokens.font.sizes.auxiliary,
-    fontWeight: "600",
-  },
-  checkDetail: {
-    color: tokens.color.secondaryText,
-    fontFamily: tokens.font.uiFamily.web,
-    fontSize: tokens.font.sizes.auxiliary,
-    lineHeight: tokens.font.sizes.auxiliary * tokens.font.lineHeight.ui,
     marginTop: tokens.spacing.listGap,
   },
   actions: {

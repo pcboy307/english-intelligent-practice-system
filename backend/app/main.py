@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from uuid import UUID
 
+import psycopg
 from fastapi import FastAPI, Header, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
@@ -265,39 +266,55 @@ def preview_bank_import(
             status_code=400,
             detail={"code": str(error), "errors": error.errors},
         ) from error
+    except psycopg.errors.UniqueViolation as error:
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "code": "IMPORT_VALIDATION_FAILED",
+                "errors": [
+                    {
+                        "code": "BANK_NAME_EXISTS",
+                        "message": "题库名称已存在，请换一个名称。",
+                    }
+                ],
+            },
+        ) from error
 
 
 @app.post("/api/v1/banks/import", status_code=201)
 def import_bank_endpoint(
     request: Request,
     payload: dict,
-    semantic_check: bool = True,
+    semantic_check: bool = False,
 ) -> dict:
     require_local_request(request)
     try:
-        semantic_audit = None
-        if semantic_check:
-            normalized = normalize_import_package(payload)
-            semantic_audit = audit_records(normalized["records"])
-            if not semantic_audit["valid"]:
-                raise ImportValidationError(semantic_audit["failures"])
         with store.connection() as connection:
             with connection.transaction():
-                result = import_bank(connection, payload)
+                result = import_bank(
+                    connection,
+                    payload,
+                    strict_validation=False,
+                )
         store.reload_active_bank()
-        if semantic_audit is not None:
-            result["semantic_audit"] = {
-                "valid": True,
-                "cost_cny": semantic_audit["cost_cny"],
-                "audited_passages": semantic_audit["audited_passages"],
-                "budget_cap_cny": semantic_audit["budget_cap_cny"],
-                "budget_exceeded": False,
-            }
         return result
     except ImportValidationError as error:
         raise HTTPException(
             status_code=400,
             detail={"code": str(error), "errors": error.errors},
+        ) from error
+    except psycopg.errors.UniqueViolation as error:
+        raise HTTPException(
+            status_code=400,
+            detail={
+                "code": "IMPORT_VALIDATION_FAILED",
+                "errors": [
+                    {
+                        "code": "BANK_NAME_EXISTS",
+                        "message": "题库名称已存在，请换一个名称。",
+                    }
+                ],
+            },
         ) from error
 
 

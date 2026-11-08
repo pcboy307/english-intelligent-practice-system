@@ -88,7 +88,9 @@ export class ApiRequestError extends Error {
         ]
           .filter(Boolean)
           .join(" · ");
-        return `${item.code || "ERROR"}${location ? `（${location}）` : ""}`;
+        return `${item.message || item.code || "ERROR"}${
+          location ? `（${location}）` : ""
+        }`;
       });
     super(issues.length ? `${code}：${issues.join("；")}` : code);
     this.name = "ApiRequestError";
@@ -238,7 +240,7 @@ export async function previewImportBank(
 
 export async function importBank(
   packageDetail: BankImportPackage,
-  semanticCheck = true,
+  semanticCheck = false,
 ) {
   return request<BankImportResult>(
     `/banks/import?semantic_check=${semanticCheck ? "true" : "false"}`,

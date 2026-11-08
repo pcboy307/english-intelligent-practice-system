@@ -524,7 +524,10 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** 在单事务内导入题库并立即设为 active */
+        /**
+         * 在单事务内直接导入题库并立即设为 active，不执行质量校验
+         * @description 仅保留题库名称非空/唯一和数据库写入所必需的最小结构检查；不运行 R11-R15 或 DeepSeek 审题。
+         */
         post: operations["importBank"];
         delete?: never;
         options?: never;
@@ -2143,7 +2146,7 @@ export interface operations {
             };
         };
         responses: {
-            /** @description 已完整写入、通过校验并切换为当前题库 */
+            /** @description 已按原始内容写入并切换为当前题库 */
             201: {
                 headers: {
                     [name: string]: unknown;

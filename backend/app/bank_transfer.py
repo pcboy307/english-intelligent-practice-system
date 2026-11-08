@@ -106,6 +106,25 @@ M26_ALLOWED_TOPICS = {
     "城市交通",
 }
 ANSWER_LETTER = re.compile(r"^[A-G]$")
+UNCHECKED_ESSENTIAL_CODES = {
+    "PACKAGE_NOT_OBJECT",
+    "BANK_NAME_INVALID",
+    "PASSAGES_INVALID",
+    "PASSAGE_NOT_OBJECT",
+    "PASSAGE_ID_MISSING",
+    "PASSAGE_ID_DUPLICATE",
+    "PASSAGE_TYPE_INVALID",
+    "PASSAGE_TEXT_INVALID",
+    "QUESTION_COUNT_INVALID",
+    "QUESTION_NOT_OBJECT",
+    "OPTIONS_INVALID",
+    "OPTION_LABELS_INVALID",
+    "GAP_SHARED_OPTIONS_MISMATCH",
+    "ANSWER_INVALID",
+    "ANSWER_LETTER_INVALID",
+    "ANSWER_LETTER_OUT_OF_RANGE",
+    "ANSWER_NOT_IN_OPTIONS",
+}
 
 
 @dataclass
@@ -198,15 +217,20 @@ def _option_list(
     return [value.strip() for value in raw_options]
 
 
-def normalize_import_package(package: dict[str, Any]) -> dict[str, Any]:
+def normalize_import_package(
+    package: dict[str, Any],
+    *,
+    strict_validation: bool = True,
+) -> dict[str, Any]:
     errors: list[dict[str, Any]] = []
     if not isinstance(package, dict):
         raise ImportValidationError(
             [_error("PACKAGE_NOT_OBJECT", "Import package must be a JSON object.")]
         )
+    required_top = TOP_LEVEL_FIELDS if strict_validation else {"name", "passages"}
     unknown = sorted(set(package) - TOP_LEVEL_FIELDS)
-    missing = sorted(TOP_LEVEL_FIELDS - set(package))
-    if unknown:
+    missing = sorted(required_top - set(package))
+    if strict_validation and unknown:
         errors.append(
             _error("UNKNOWN_TOP_LEVEL_FIELDS", "Import contains unknown fields.", sample=unknown)
         )
@@ -215,7 +239,7 @@ def normalize_import_package(package: dict[str, Any]) -> dict[str, Any]:
             _error("MISSING_TOP_LEVEL_FIELDS", "Import is missing required fields.", sample=missing)
         )
     format_version = package.get("format_version")
-    if format_version not in {"bank-v1", "m26-v1"}:
+    if strict_validation and format_version not in {"bank-v1", "m26-v1"}:
         errors.append(
             _error(
                 "FORMAT_VERSION_UNSUPPORTED",
@@ -225,8 +249,14 @@ def normalize_import_package(package: dict[str, Any]) -> dict[str, Any]:
         )
     name = package.get("name")
     if not isinstance(name, str) or not name.strip() or len(name.strip()) > 80:
-        errors.append(_error("BANK_NAME_INVALID", "Bank name must contain 1-80 characters."))
-    if package.get("difficulty_profile") not in DIFFICULTY_PROFILES:
+        errors.append(
+            _error(
+                "BANK_NAME_INVALID",
+                "题库名称不能为空，长度必须在 1-80 个字符之间。",
+            )
+        )
+    difficulty_profile = package.get("difficulty_profile")
+    if strict_validation and difficulty_profile not in DIFFICULTY_PROFILES:
         errors.append(
             _error(
                 "DIFFICULTY_PROFILE_INVALID",
@@ -234,13 +264,18 @@ def normalize_import_package(package: dict[str, Any]) -> dict[str, Any]:
             )
         )
     target_size = package.get("target_size")
-    if not isinstance(target_size, int) or target_size <= 0:
+    if strict_validation and (
+        not isinstance(target_size, int) or target_size <= 0
+    ):
         errors.append(_error("TARGET_SIZE_INVALID", "target_size must be a positive integer."))
         target_size = 0
     composition = package.get("composition")
     raw_passages = package.get("passages")
     if not isinstance(composition, dict):
-        errors.append(_error("COMPOSITION_INVALID", "composition must be an object."))
+        if strict_validation:
+            errors.append(
+                _error("COMPOSITION_INVALID", "composition must be an object.")
+            )
         composition = {}
     if not isinstance(raw_passages, list) or not raw_passages:
         errors.append(_error("PASSAGES_INVALID", "passages must be a non-empty array."))
@@ -283,7 +318,7 @@ def normalize_import_package(package: dict[str, Any]) -> dict[str, Any]:
             )
             continue
         unknown_passage = sorted(set(raw) - PASSAGE_FIELDS)
-        if unknown_passage:
+        if strict_validation and unknown_passage:
             errors.append(
                 _error(
                     "UNKNOWN_PASSAGE_FIELDS",
@@ -303,6 +338,7 @@ def normalize_import_package(package: dict[str, Any]) -> dict[str, Any]:
             passage = ""
         if not isinstance(topic, str) or not topic.strip():
             errors.append(_error("TOPIC_INVALID", "topic must be non-empty.", passage_id=passage_id))
+            topic = "未分类"
         if not isinstance(book_source, str) or not _book_tag(book_source):
             errors.append(
                 _error(
@@ -312,6 +348,7 @@ def normalize_import_package(package: dict[str, Any]) -> dict[str, Any]:
                     sample=book_source,
                 )
             )
+            book_source = "跨册"
         if not isinstance(difficulty, int) or not 1 <= difficulty <= 5:
             errors.append(
                 _error(
@@ -321,6 +358,7 @@ def normalize_import_package(package: dict[str, Any]) -> dict[str, Any]:
                     sample=difficulty,
                 )
             )
+            difficulty = 3
         raw_questions = raw.get("questions")
         expected_questions = TYPE_QUESTION_COUNTS[passage_type]
         if not isinstance(raw_questions, list) or len(raw_questions) != expected_questions:
@@ -383,7 +421,7 @@ def normalize_import_package(package: dict[str, Any]) -> dict[str, Any]:
                 )
                 continue
             unknown_question = sorted(set(raw_question) - QUESTION_FIELDS)
-            if unknown_question:
+            if strict_validation and unknown_question:
                 errors.append(
                     _error(
                         "UNKNOWN_QUESTION_FIELDS",
@@ -488,6 +526,7 @@ def normalize_import_package(package: dict[str, Any]) -> dict[str, Any]:
                         question_index=question_index,
                     )
                 )
+                explanation = "导入时未提供解析。"
             grammar_tags = raw_question.get("grammar_tags")
             if (
                 not isinstance(grammar_tags, list)
@@ -503,17 +542,34 @@ def normalize_import_package(package: dict[str, Any]) -> dict[str, Any]:
                     )
                 )
                 grammar_tags = []
+            if not grammar_tags:
+                grammar_tags = ["tense_system"]
             question_difficulty = raw_question.get("difficulty", difficulty)
             question_book_source = raw_question.get("book_source", book_source)
+            if (
+                not isinstance(question_difficulty, int)
+                or not 1 <= question_difficulty <= 5
+            ):
+                question_difficulty = difficulty
+            if (
+                not isinstance(question_book_source, str)
+                or not _book_tag(question_book_source)
+            ):
+                question_book_source = book_source
+            knowledge_points = raw_question.get("knowledge_points")
+            if (
+                not isinstance(knowledge_points, list)
+                or not knowledge_points
+            ):
+                knowledge_points = [
+                    f"import:{passage_type}:{question_index}"
+                ]
             question = {
                 "stem": stem,
                 "options": options,
                 "answer": answer,
                 "explanation": str(explanation or "").strip(),
-                "knowledge_points": list(
-                    raw_question.get("knowledge_points")
-                    or [f"import:{passage_type}:{question_index}"]
-                ),
+                "knowledge_points": knowledge_points,
                 "grammar_tags": grammar_tags,
                 "book_source": question_book_source,
                 "difficulty": question_difficulty,
@@ -547,24 +603,35 @@ def normalize_import_package(package: dict[str, Any]) -> dict[str, Any]:
         records.append(record)
 
     question_count = sum(len(record["questions"]) for record in records)
-    if question_count != target_size:
-        errors.append(
-            _error(
-                "TARGET_SIZE_MISMATCH",
-                f"target_size={target_size} but import contains {question_count} questions.",
-            )
-        )
-    for type_, expected in TYPE_QUESTION_COUNTS.items():
-        declared = composition.get(type_, 0)
-        actual = actual_composition[type_]
-        if declared != actual:
+    if strict_validation:
+        if question_count != target_size:
             errors.append(
                 _error(
-                    "COMPOSITION_MISMATCH",
-                    f"{type_} composition={declared} but import contains {actual} passages.",
+                    "TARGET_SIZE_MISMATCH",
+                    f"target_size={target_size} but import contains {question_count} questions.",
                 )
             )
-    if format_version == "m26-v1":
+        for type_, expected in TYPE_QUESTION_COUNTS.items():
+            declared = composition.get(type_, 0)
+            actual = actual_composition[type_]
+            if declared != actual:
+                errors.append(
+                    _error(
+                        "COMPOSITION_MISMATCH",
+                        f"{type_} composition={declared} but import contains {actual} passages.",
+                    )
+                )
+    else:
+        target_size = question_count
+        if question_count <= 0:
+            errors.append(
+                _error(
+                    "TARGET_SIZE_INVALID",
+                    "导入包中没有可写入的题目。",
+                )
+            )
+
+    if strict_validation and format_version == "m26-v1":
         if target_size != 500:
             errors.append(
                 _error(
@@ -635,29 +702,40 @@ def normalize_import_package(package: dict[str, Any]) -> dict[str, Any]:
                     sample=topic_counts,
                 )
             )
+    if not strict_validation:
+        errors = [
+            error
+            for error in errors
+            if error["code"] in UNCHECKED_ESSENTIAL_CODES
+        ]
     if errors:
         raise ImportValidationError(errors)
 
-    machine_failures: list[dict[str, Any]] = []
-    for record in records:
-        if record["validation_profile"] == "stored":
-            continue
-        report = validate_generated_passage(record)
-        if report.accepted:
-            continue
-        for failure in report.failures:
-            machine_failures.append(
-                {
-                    **failure.as_dict(),
-                    "passage_id": record["passage_group_id"],
-                }
-            )
-    if machine_failures:
-        raise ImportValidationError(machine_failures)
+    if strict_validation:
+        machine_failures: list[dict[str, Any]] = []
+        for record in records:
+            if record["validation_profile"] == "stored":
+                continue
+            report = validate_generated_passage(record)
+            if report.accepted:
+                continue
+            for failure in report.failures:
+                machine_failures.append(
+                    {
+                        **failure.as_dict(),
+                        "passage_id": record["passage_group_id"],
+                    }
+                )
+        if machine_failures:
+            raise ImportValidationError(machine_failures)
     return {
         "name": name.strip(),
         "target_size": target_size,
-        "difficulty_profile": package["difficulty_profile"],
+        "difficulty_profile": (
+            difficulty_profile
+            if difficulty_profile in DIFFICULTY_PROFILES
+            else "standard"
+        ),
         "generated_at": package.get("generated_at"),
         "composition": actual_composition,
         "records": records,
@@ -715,7 +793,7 @@ def preview_import(connection, package: dict[str, Any]) -> dict[str, Any]:
             [
                 _error(
                     "BANK_NAME_EXISTS",
-                    "A bank with this name already exists.",
+                    "题库名称已存在，请换一个名称。",
                     sample=normalized["name"],
                 )
             ]
@@ -828,8 +906,13 @@ def export_bank(connection, bank_id: str) -> dict[str, Any]:
 def import_bank(
     connection,
     package: dict[str, Any],
+    *,
+    strict_validation: bool = True,
 ) -> dict[str, Any]:
-    normalized = normalize_import_package(package)
+    normalized = normalize_import_package(
+        package,
+        strict_validation=strict_validation,
+    )
     existing = connection.execute(
         "SELECT id::text AS id FROM question_banks WHERE lower(name)=lower(%s)",
         (normalized["name"],),
@@ -839,7 +922,7 @@ def import_bank(
             [
                 _error(
                     "BANK_NAME_EXISTS",
-                    "A bank with this name already exists.",
+                    "题库名称已存在，请换一个名称。",
                     sample=normalized["name"],
                 )
             ]

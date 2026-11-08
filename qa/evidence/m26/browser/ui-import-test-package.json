@@ -18,95 +18,95 @@
       "topic": "科技",
       "book_source": "选必二 U1",
       "difficulty": 4,
-      "passage": "Technology has changed the way students learn in many schools, and this change is not always easy to see at first. When a student uses a computer to look up information, the ability to find an answer quickly is useful, but the ability to judge whether that answer is correct matters even more. Teachers now ask learners to compare several sources before they accept a fact, which helps them build careful habits of thought. A parent might worry that a child spends too much time in front of a screen, and this concern is reasonable, yet the same screen can open a door to lessons that a small classroom could never offer. For example, a volunteer who guides an online reading group can reach students in distant villages without travelling far. Of course, technology alone cannot replace a good teacher, because a machine can give information but it cannot encourage a nervous learner or notice when someone is confused. Schools that use new tools well usually keep the teacher at the centre of the lesson and treat the computer as an aid rather than a master. The student who learns to use these tools with care will be better prepared for a world where change happens fast. In the end, the value of any device depends on the purpose behind its use, and that purpose is still set by people. A teacher who explains this purpose clearly helps students see the screen as a partner in discovery, not a shortcut. Over time, small daily choices shape habits that last far beyond the classroom walls.",
+      "passage": "Every day, millions of people carry a small device that knows where they are, what they say, and what they buy. This device, the smartphone, has become so common that few users stop to think about how much of their private life it quietly records. The ease it offers is clear, yet the cost of that ease is often hidden, and this gap calls for careful attention from ordinary citizens as well as from experts.\n\nConsider what happens when a person adds a simple program for finding a restaurant. The program may ask for permission to use the location, the camera, and the list of contacts, even though none of these is needed for the task at hand. Such requests, which appear harmless at first look, allow companies to collect detailed information about habits, friendships, and daily routines. Because most users accept the terms without reading them, the collection continues without being seen, and the data is later sold or shared with partners whose purposes remain not clear.\n\nThe deeper problem is not technology itself but the absence of meaningful choice. When a service becomes essential for work, study, or communication, refusing its conditions is hardly possible in practice, so agreement loses much of its value. Rule makers have started to respond with stricter rules, yet carrying out the rules falls behind the speed of new ideas. What is required, therefore, is not simply better software but a shared understanding that personal information belongs to the person who produces it, not to the company that happens to store it.\n\nSchools and families can play a practical part in this change. Teaching students to check permissions, to limit what they share, and to question free services that demand too much access builds habits that last a whole life. Technology will keep advancing, and no one should reject its benefits, but a society that treats privacy as a luxury rather than a right will eventually find that it has traded something precious for very little in return. Parents can also model these habits at home, reviewing app settings together and discussing why certain downloads seem questionable. Small conversations repeated over time shape expectations, and companies take note when customers ask harder questions before clicking agree.",
       "questions": [
         {
           "stem": "What is the main idea of the passage?",
           "options": [
-            "Digital tools are most valuable when teachers guide their use toward clear learning goals.",
-            "Computers should replace textbooks in every classroom as soon as possible.",
-            "Students learn best when they avoid screens and study only from printed books.",
-            "Online lessons are useful mainly because they save schools money on travel."
+            "Smartphones secretly gather personal data, and people should work to protect privacy as a basic right.",
+            "Smartphone apps are too complicated for most users to understand and should be banned.",
+            "Companies that collect data should be the only ones allowed to decide how it is used.",
+            "Schools and families should stop students from using smartphones altogether."
           ],
-          "answer": "Digital tools are most valuable when teachers guide their use toward clear learning goals.",
+          "answer": "Smartphones secretly gather personal data, and people should work to protect privacy as a basic right.",
           "knowledge_points": [
-            "main idea of a passage about technology and teaching"
+            "main_idea"
           ],
           "grammar_tags": [
             "relative_clauses_defining"
           ],
           "book_source": "必修1 U1",
           "difficulty": 3,
-          "evidence_sentence": "Schools that use new tools well usually keep the teacher at the centre of the lesson and treat the computer as an aid rather than a master.",
-          "explanation": "文章的主旨是数字工具只有在教师引导、服务于明确学习目标时才最有价值，末段“the value of any device depends on the purpose behind its use, and that purpose is still set by people”直接点明这一中心。选项B“计算机应尽快取代课本”过于极端，文章强调教师居于课堂中心、电脑只是辅助，并未主张取代课本。选项C“学生只读纸质书最好”与文中“屏幕能打开小教室无法提供的课程之门”相矛盾。选项D把在线课程的价值归结为节省差旅费，属于以偏概全，文中举例是为说明覆盖面广而非省钱。本题考点是段落主旨与概括能力。",
+          "evidence_sentence": "This device, the smartphone, has become so common that few users stop to think about how much of their private life it quietly records.",
+          "explanation": "文章第一段指出智能手机在用户不知情的情况下记录大量私人信息，第二段说明应用程序过度收集数据，第三段强调隐私应属于信息生产者而非存储公司，第四段提出学校和家庭应培养隐私保护习惯，因此主旨是智能手机秘密收集个人数据，人们应努力将隐私作为基本权利来保护。选项B错误，因为文章并未说应用程序太复杂应被禁止，而是强调用户应学会检查权限；选项C与文章观点相反，文章认为信息属于个人而非公司；选项D也错误，文章建议学校和家庭教学生限制分享和质疑过度访问，而非完全禁止使用智能手机。本题考点是归纳文章主旨大意。",
           "reading_type": "main_idea"
         },
         {
-          "stem": "What can be inferred from the passage about a machine in a classroom?",
+          "stem": "What can be inferred about why users often give in to app conditions?",
           "options": [
-            "It can supply facts but is unable to respond to a learner's emotional or mental state.",
-            "It is always more patient with nervous students than a human teacher is.",
-            "It should be given full control of the lesson once it is switched on.",
-            "It can notice confusion more quickly than any teacher can."
+            "Many services are so necessary that users feel they cannot refuse the terms.",
+            "Users are usually paid by companies to accept the conditions.",
+            "Most users carefully read every term before they agree.",
+            "Rule makers have already solved the problem of unfair conditions."
           ],
-          "answer": "It can supply facts but is unable to respond to a learner's emotional or mental state.",
+          "answer": "Many services are so necessary that users feel they cannot refuse the terms.",
           "knowledge_points": [
-            "inference about the limits of technology compared with teachers"
+            "inference"
           ],
           "grammar_tags": [
             "passive_voice_tenses"
           ],
           "book_source": "选必二 U1",
           "difficulty": 4,
-          "evidence_sentence": "a machine can give information but it cannot encourage a nervous learner or notice when someone is confused",
-          "explanation": "文中说“a machine can give information but it cannot encourage a nervous learner or notice when someone is confused”，可推断机器能提供事实信息，却无法回应学习者的情绪或心理状态，故选A。选项B说机器比人类教师更有耐心，文中并未作此比较，属于无中生有。选项C说机器一开机就应掌控整节课，与“treat the computer as an aid rather than a master”正好相反。选项D说机器比任何教师都更快察觉困惑，与原文“cannot notice when someone is confused”直接矛盾。本题考点是推理判断与细节理解。",
+          "evidence_sentence": "When a service becomes essential for work, study, or communication, refusing its conditions is hardly possible in practice, so agreement loses much of its value.",
+          "explanation": "文章第三段明确指出，当一项服务对工作、学习或交流变得必不可少时，拒绝其条件在实践中几乎不可能，因此同意失去了大部分价值，由此可以推断用户常常屈服于应用条款是因为许多服务太必要而无法拒绝。选项B错误，文章没有提到用户因接受条件而获得报酬；选项C与文章第二段“大多数用户不阅读条款就接受”相矛盾；选项D错误，文章说规则制定者已开始回应但执行落后于新想法，问题并未解决。本题考点是根据文章内容进行推断。",
           "reading_type": "inference"
         },
         {
-          "stem": "What is the writer's attitude toward technology in schools?",
+          "stem": "What is the author's attitude toward privacy protection?",
           "options": [
-            "Balanced support: tools help learning when people set a sensible purpose for them.",
-            "Complete rejection: screens do more harm than good in every case.",
-            "Uncritical enthusiasm: devices should decide what students study.",
-            "Indifference: technology makes no real difference to how students learn."
+            "Supportive, because privacy should be treated as a right rather than a luxury.",
+            "Doubtful, because technology brings more harm than good.",
+            "Indifferent, because the problem will solve itself over time.",
+            "Opposed, because stricter rules would slow down new ideas."
           ],
-          "answer": "Balanced support: tools help learning when people set a sensible purpose for them.",
+          "answer": "Supportive, because privacy should be treated as a right rather than a luxury.",
           "knowledge_points": [
-            "writer's attitude toward educational technology"
+            "purpose_or_attitude"
           ],
           "grammar_tags": [
             "noun_clauses"
           ],
           "book_source": "选必二 U1",
           "difficulty": 4,
-          "evidence_sentence": "the value of any device depends on the purpose behind its use, and that purpose is still set by people",
-          "explanation": "作者态度是平衡的支持：既承认家长对屏幕时间的担忧合理，又指出技术能带来课堂之外的资源，并强调关键在于人们设定的使用目的，故选A。选项B“完全拒绝”忽视了文中对在线阅读小组等积极作用的肯定。选项C“盲目热情、让设备决定学习内容”与“that purpose is still set by people”相悖。选项D“漠不关心”与全文反复讨论技术利弊的立场不符。本题考点是作者态度与观点推断。",
+          "evidence_sentence": "a society that treats privacy as a luxury rather than a right will eventually find that it has traded something precious for very little in return.",
+          "explanation": "文章最后一段明确表示，一个将隐私视为奢侈品而非权利的社会最终会发现它用珍贵的东西换来了很少的回报，并且全文呼吁个人、学校和家庭采取行动保护隐私，因此作者对隐私保护持支持态度。选项B错误，作者并未认为技术弊大于利，而是说不应拒绝技术的好处；选项C错误，作者强调需要共同理解和行动，而非问题会自行解决；选项D错误，作者支持更严格的规则，只是指出执行落后，并未反对规则。本题考点是判断作者的态度。",
           "reading_type": "purpose_or_attitude"
         },
         {
-          "stem": "In the passage, the word \"aid\" is closest in meaning to ______.",
+          "stem": "What is the function of the fourth paragraph in the passage?",
           "options": [
-            "a helpful support",
-            "a strict ruler",
-            "a heavy burden",
-            "a final goal"
+            "It offers practical ways schools and families can help build lasting privacy habits.",
+            "It introduces the main problem of data collection by smartphone apps.",
+            "It explains how companies sell the data they collect from users.",
+            "It argues that technology should be rejected because of its dangers."
           ],
-          "answer": "a helpful support",
+          "answer": "It offers practical ways schools and families can help build lasting privacy habits.",
           "knowledge_points": [
-            "vocabulary in context: aid"
+            "paragraph_function"
           ],
           "grammar_tags": [
             "articles"
           ],
           "book_source": "必修2 U1",
           "difficulty": 3,
-          "evidence_sentence": "treat the computer as an aid rather than a master",
-          "explanation": "文中“treat the computer as an aid rather than a master”把aid与master对举，说明aid指“有帮助的辅助手段”，与a helpful support同义。选项B“严厉的统治者”恰是master之意，与aid相反。选项C“沉重的负担”与语境中电脑作为教学帮手的意思不符。选项D“最终目标”与aid“辅助”的含义无关。本题考点是词义猜测与上下文语境理解。",
-          "reading_type": "vocabulary_in_context"
+          "evidence_sentence": "Schools and families can play a practical part in this change.",
+          "explanation": "第四段开头提出学校和家庭可以在这一变化中发挥实际作用，接着具体说明教学生检查权限、限制分享、质疑免费服务等做法能培养终身习惯，并提到父母可以在家示范这些习惯，因此该段的功能是提供学校和家庭帮助建立持久隐私习惯的实用方法。选项B错误，引入数据收集主要问题的是第一、二段；选项C错误，解释公司如何出售数据的是第二段；选项D错误，该段明确说没有人应该拒绝技术的好处，并未主张拒绝技术。本题考点是理解段落功能与结构。",
+          "reading_type": "paragraph_function"
         }
       ],
       "generation_observations": [],
-      "flesch_reading_ease": 58.78
+      "flesch_reading_ease": 48.67
     }
   ]
 }
