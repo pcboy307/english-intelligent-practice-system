@@ -3,7 +3,7 @@
   "name": "20261109_500#batch-01",
   "target_size": 53,
   "difficulty_profile": "standard",
-  "generated_at": "2026-11-09T01:38:38.384192+08:00",
+  "generated_at": "2026-11-09T02:22:31.626316+08:00",
   "composition": {
     "cloze": 2,
     "grammar_fill": 1,
@@ -36,7 +36,7 @@
             "副词：行为意图辨析"
           ],
           "grammar_tags": [
-            "noun_clauses"
+            "word_formation"
           ],
           "book_source": "选必二 U1",
           "difficulty": 3
@@ -262,7 +262,7 @@
             "形容词：谨慎态度"
           ],
           "grammar_tags": [
-            "word_formation"
+            "tense_system"
           ],
           "book_source": "选必二 U3",
           "difficulty": 4
@@ -525,7 +525,7 @@
             "动词：公共利益平衡"
           ],
           "grammar_tags": [
-            "noun_clauses"
+            "tense_system"
           ],
           "book_source": "选必二 U2",
           "difficulty": 4
@@ -905,7 +905,7 @@
             "阅读理解：主旨概括"
           ],
           "grammar_tags": [
-            "noun_clauses"
+            "word_formation"
           ],
           "book_source": "选必二 U1",
           "difficulty": 4,
@@ -1007,7 +1007,7 @@
             "阅读理解：细节定位"
           ],
           "grammar_tags": [
-            "articles"
+            "word_formation"
           ],
           "book_source": "必修1 U1",
           "difficulty": 3,
@@ -1051,7 +1051,7 @@
             "阅读理解：语境词义"
           ],
           "grammar_tags": [
-            "noun_clauses"
+            "with_compound"
           ],
           "book_source": "选必一 U2",
           "difficulty": 4,
@@ -1073,7 +1073,7 @@
             "阅读理解：段落作用"
           ],
           "grammar_tags": [
-            "relative_clauses_non_defining"
+            "tense_system"
           ],
           "book_source": "选必一 U1",
           "difficulty": 4,
@@ -1112,9 +1112,9 @@
             "七选五：转折与信息局限"
           ],
           "grammar_tags": [
-            "noun_clauses"
+            "with_compound"
           ],
-          "book_source": "选必二 U1",
+          "book_source": "跨册综合",
           "difficulty": 4,
           "cohesion_type": "logical_connector"
         },
@@ -1208,7 +1208,7 @@
             "七选五：词汇复现与结论"
           ],
           "grammar_tags": [
-            "word_formation"
+            "tense_system"
           ],
           "book_source": "选必二 U2",
           "difficulty": 4,

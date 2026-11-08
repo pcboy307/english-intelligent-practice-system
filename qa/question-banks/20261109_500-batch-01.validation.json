@@ -1,9 +1,9 @@
 {
   "file": "qa/question-banks/20261109_500-batch-01.json",
-  "sha256": "0f0991dabc5cb0ce778fc368ec4b86e9d3979aab7fc2d3f75ee1d1619cc41d77",
+  "sha256": "479eca232a58b09fe6c96a95b05d9624800ea6127efd8b1b285abe85c31e81cf",
   "format_version": "bank-v1",
   "name": "20261109_500#batch-01",
-  "bank_id": "0957a6ae-e4cf-466a-9829-bb3ce2896e8c",
+  "bank_id": "7ba9023f-ca4f-4976-8b72-7f6cdd147942",
   "status": "active",
   "schema_validation": "PASS",
   "generation_validation": {
@@ -52,5 +52,21 @@
     "questions": 53,
     "passages": 6
   },
-  "tests": "39 passed"
+  "practice_assembly": {
+    "reading_mode": {
+      "questions": 29,
+      "grammar_tag_max": 3,
+      "topics": 3,
+      "fallback_used": true
+    },
+    "gap_fill_mode": {
+      "questions": 30,
+      "grammar_tag_max": 3,
+      "topics": 3,
+      "fallback_used": true
+    },
+    "live_start_http_status": 201,
+    "live_abandon_http_status": 204
+  },
+  "tests": "29 passed"
 }
