@@ -69,4 +69,48 @@ ALTER TABLE practice_sessions
     ADD CONSTRAINT practice_sessions_session_kind_check
     CHECK (session_kind IN ('practice', 'review'));
 
+ALTER TABLE session_items
+    DROP CONSTRAINT IF EXISTS session_items_question_id_fkey;
+
+ALTER TABLE error_tags
+    DROP CONSTRAINT IF EXISTS error_tags_question_id_fkey;
+
+DO $$
+DECLARE
+    primary_key_columns TEXT;
+BEGIN
+    SELECT string_agg(a.attname, ',' ORDER BY a.attnum)
+    INTO primary_key_columns
+    FROM pg_constraint c
+    JOIN pg_attribute a
+      ON a.attrelid=c.conrelid
+     AND a.attnum=ANY(c.conkey)
+    WHERE c.conrelid='questions'::regclass
+      AND c.contype='p';
+
+    IF primary_key_columns = 'id' THEN
+        ALTER TABLE questions DROP CONSTRAINT questions_pkey;
+        ALTER TABLE questions
+            ADD CONSTRAINT questions_pkey PRIMARY KEY (bank_id, id);
+    END IF;
+END
+$$;
+
+DO $$
+BEGIN
+    IF NOT EXISTS (
+        SELECT 1
+        FROM pg_constraint
+        WHERE conname='error_tags_question_bank_fkey'
+          AND conrelid='error_tags'::regclass
+    ) THEN
+        ALTER TABLE error_tags
+            ADD CONSTRAINT error_tags_question_bank_fkey
+            FOREIGN KEY (bank_id, question_id)
+            REFERENCES questions (bank_id, id)
+            ON DELETE RESTRICT;
+    END IF;
+END
+$$;
+
 COMMIT;

@@ -333,3 +333,32 @@ def list_banks(
             "status": store.bank["status"],
         }
     ]
+
+
+@app.post("/api/v1/admin/banks/{bank_id}/activate")
+def activate_bank(
+    bank_id: str,
+    request: Request,
+    x_admin_token: str | None = Header(default=None, alias="X-Admin-Token"),
+) -> dict:
+    token = require_local_admin(request, x_admin_token)
+    try:
+        activated = store.activate_bank(bank_id, operator="admin")
+    except KeyError as error:
+        raise HTTPException(
+            status_code=404,
+            detail={"code": str(error)},
+        ) from error
+    except ValueError as error:
+        raise HTTPException(
+            status_code=409,
+            detail={"code": str(error)},
+        ) from error
+    store.admin_audit(
+        "POST",
+        f"/api/v1/admin/banks/{bank_id}/activate",
+        token,
+        "ok",
+        200,
+    )
+    return activated

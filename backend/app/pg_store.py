@@ -318,6 +318,85 @@ class PostgresStore:
     def active_bank(self) -> dict:
         return self.bank
 
+    def reload_active_bank(self) -> dict:
+        active = self._load_active_bank()
+        if not active:
+            raise RuntimeError("ACTIVE_BANK_NOT_FOUND")
+        self.bank = active
+        self.questions = self._load_questions()
+        return active
+
+    def activate_bank(self, bank_id: str, *, operator: str) -> dict:
+        with self.connection() as connection:
+            with connection.transaction():
+                target = connection.execute(
+                    """
+                    SELECT id::text AS id, name, status
+                    FROM question_banks
+                    WHERE id=%s
+                    FOR UPDATE
+                    """,
+                    (bank_id,),
+                ).fetchone()
+                if not target:
+                    raise KeyError("BANK_NOT_FOUND")
+                if target["status"] not in {"ready", "active", "archived"}:
+                    raise ValueError("BANK_NOT_READY")
+                current = connection.execute(
+                    """
+                    SELECT qb.id::text AS id
+                    FROM bank_active_state bas
+                    JOIN question_banks qb ON qb.id=bas.active_bank_id
+                    WHERE bas.singleton=TRUE
+                    """
+                ).fetchone()
+                current_id = current["id"] if current else None
+                if current_id == bank_id:
+                    return {
+                        "bank_id": bank_id,
+                        "name": target["name"],
+                        "status": "active",
+                    }
+                if current_id:
+                    connection.execute(
+                        """
+                        UPDATE question_banks
+                        SET status='archived', finished_at=now()
+                        WHERE id=%s
+                        """,
+                        (current_id,),
+                    )
+                connection.execute(
+                    """
+                    UPDATE question_banks
+                    SET status='active'
+                    WHERE id=%s
+                    """,
+                    (bank_id,),
+                )
+                connection.execute(
+                    """
+                    UPDATE bank_active_state
+                    SET active_bank_id=%s, updated_at=now()
+                    WHERE singleton=TRUE
+                    """,
+                    (bank_id,),
+                )
+                connection.execute(
+                    """
+                    INSERT INTO bank_switch_log
+                        (from_bank_id, to_bank_id, switched_at, operator)
+                    VALUES (%s, %s, now(), %s)
+                    """,
+                    (current_id, bank_id, operator),
+                )
+        active = self.reload_active_bank()
+        return {
+            "bank_id": active["bank_id"],
+            "name": active["name"],
+            "status": active["status"],
+        }
+
     def _student_state(
         self, student_id: str
     ) -> tuple[dict, dict, dict, set[str], set[str], int]:

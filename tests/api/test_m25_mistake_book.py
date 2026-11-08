@@ -15,6 +15,7 @@ from psycopg.types.json import Jsonb
 
 os.environ.setdefault("WEAKNESS_ANALYSIS_DISABLED", "1")
 
+from backend.app import main as app_main
 from backend.app.main import app, store
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -141,6 +142,86 @@ def create_review(headers: dict[str, str], passage_id: str) -> dict:
         headers=headers,
     )
     assert response.status_code == 201, response.text
+    return response.json()
+
+
+def create_test_bank(
+    name: str,
+    question_ids: list[str],
+) -> dict:
+    bank_id = str(uuid.uuid4())
+    passage_id = f"TEST-{uuid.uuid4().hex[:10]}"
+    now = datetime.now(timezone.utc)
+    with psycopg.connect(database_url()) as connection:
+        connection.execute(
+            """
+            INSERT INTO question_banks
+                (id, name, target_size, difficulty_profile, status,
+                 coverage_snapshot, finished_at)
+            VALUES (%s, %s, %s, 'standard', 'draft', %s, NULL)
+            """,
+            (
+                bank_id,
+                name,
+                len(question_ids),
+                Jsonb({"test_bank": True}),
+            ),
+        )
+        connection.execute(
+            """
+            INSERT INTO passages
+                (passage_group_id, bank_id, type, content, word_count, topic,
+                 book_source, difficulty, status)
+            VALUES (%s, %s, 'cloze', %s, 20, 'test', '必修1 U1', 2, 'published')
+            """,
+            (
+                passage_id,
+                bank_id,
+                " ".join(["word"] * 20),
+            ),
+        )
+        for index, question_id in enumerate(question_ids, start=1):
+            connection.execute(
+                """
+                INSERT INTO questions
+                    (id, bank_id, type, passage_group_id, stem, options, answer,
+                     explanation, knowledge_points, grammar_tags, book_source,
+                     difficulty, status, batch_id)
+                VALUES (%s, %s, 'cloze', %s, %s, %s, %s, %s, %s, '{}',
+                        '必修1 U1', 2, 'published', 'M25-TEST')
+                """,
+                (
+                    question_id,
+                    bank_id,
+                    passage_id,
+                    f"Choose for blank ({index}).",
+                    Jsonb(["anxious", "calm", "proud", "silent"]),
+                    Jsonb("anxious"),
+                    "anxious 与题意一致。calm 和 proud 不符合语境。",
+                    [f"test:point:{index}"],
+                ),
+            )
+        connection.execute(
+            """
+            UPDATE question_banks
+            SET status='ready', finished_at=%s
+            WHERE id=%s
+            """,
+            (now, bank_id),
+        )
+    return {
+        "bank_id": bank_id,
+        "name": name,
+        "passage_id": passage_id,
+    }
+
+
+def activate_bank(bank_id: str) -> dict:
+    response = client.post(
+        f"/api/v1/admin/banks/{bank_id}/activate",
+        headers={"X-Admin-Token": app_main.ADMIN_TOKEN},
+    )
+    assert response.status_code == 200, response.text
     return response.json()
 
 
@@ -485,3 +566,108 @@ def test_m25_report_delete_is_soft_and_preserves_learning_evidence() -> None:
         "mistakes": 1,
         "deletions": 1,
     }
+
+
+def test_m25_bank_switch_is_atomic_and_preserves_learning_state() -> None:
+    original_bank_id = store.bank["bank_id"]
+    shared = [f"M25-SHARED-{index:02d}" for index in range(1, 6)]
+    bank_a = create_test_bank(
+        "M25 Test A",
+        shared + [f"M25-A-ONLY-{index:02d}" for index in range(6, 11)],
+    )
+    bank_b = create_test_bank(
+        "M25 Test B",
+        shared + [f"M25-B-ONLY-{index:02d}" for index in range(6, 21)],
+    )
+    with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+        before = connection.execute(
+            """
+            SELECT
+              (SELECT count(*) FROM question_attempts) AS attempts,
+              (SELECT count(*) FROM mistake_items) AS mistakes,
+              (SELECT count(*) FROM error_tags) AS error_tags,
+              (SELECT count(*) FROM knowledge_mastery) AS mastery
+            """
+        ).fetchone()
+    try:
+        activated_a = activate_bank(bank_a["bank_id"])
+        assert activated_a["bank_id"] == bank_a["bank_id"]
+        assert store.bank["bank_id"] == bank_a["bank_id"]
+        activate_bank(bank_b["bank_id"])
+        assert store.bank["bank_id"] == bank_b["bank_id"]
+        activate_bank(bank_a["bank_id"])
+        assert store.bank["bank_id"] == bank_a["bank_id"]
+        activate_bank(bank_b["bank_id"])
+
+        with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+            after = connection.execute(
+                """
+                SELECT
+                  (SELECT count(*) FROM question_attempts) AS attempts,
+                  (SELECT count(*) FROM mistake_items) AS mistakes,
+                  (SELECT count(*) FROM error_tags) AS error_tags,
+                  (SELECT count(*) FROM knowledge_mastery) AS mastery
+                """
+            ).fetchone()
+            switches = connection.execute(
+                """
+                SELECT from_bank_id::text, to_bank_id::text, switched_at, operator
+                FROM bank_switch_log
+                WHERE to_bank_id IN (%s, %s)
+                ORDER BY id
+                """,
+                (bank_a["bank_id"], bank_b["bank_id"]),
+            ).fetchall()
+            active = connection.execute(
+                """
+                SELECT qb.id::text AS id
+                FROM bank_active_state bas
+                JOIN question_banks qb ON qb.id=bas.active_bank_id
+                WHERE bas.singleton=TRUE
+                """
+            ).fetchone()["id"]
+        assert after == before
+        assert active == bank_b["bank_id"]
+        assert len(switches) == 4
+        assert switches[-1]["to_bank_id"] == bank_b["bank_id"]
+        assert switches[-1]["from_bank_id"] == bank_a["bank_id"]
+        assert switches[-1]["operator"] == "admin"
+    finally:
+        activate_bank(original_bank_id)
+
+
+def test_m25_bank_switch_regroups_current_and_historical_mistakes() -> None:
+    original_bank_id = store.bank["bank_id"]
+    shared_id = "M25-SWITCH-SHARED-01"
+    old_only_id = "M25-SWITCH-OLD-02"
+    bank_a = create_test_bank("M25 Switch A", [shared_id, old_only_id])
+    bank_b = create_test_bank(
+        "M25 Switch B",
+        [shared_id, "M25-SWITCH-NEW-03"],
+    )
+    try:
+        activate_bank(bank_a["bank_id"])
+        headers = student_headers()
+        session_id = direct_session(headers, [shared_id, old_only_id])
+        answer(headers, session_id, shared_id, "calm")
+        answer(headers, session_id, old_only_id, "proud")
+        submit(headers, session_id)
+
+        activate_bank(bank_b["bank_id"])
+        payload = client.get("/api/v1/mistakes", headers=headers).json()
+        current_ids = {
+            item["question_id"]
+            for passage in payload["current_bank"]["passages"]
+            for item in passage["items"]
+        }
+        history_ids = {
+            item["question_id"]
+            for bank in payload["history_banks"]
+            for passage in bank["passages"]
+            for item in passage["items"]
+        }
+        assert current_ids == {shared_id}
+        assert old_only_id in history_ids
+        assert payload["total_open"] == 2
+    finally:
+        activate_bank(original_bank_id)
