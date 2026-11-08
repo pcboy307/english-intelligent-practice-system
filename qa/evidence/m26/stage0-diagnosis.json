@@ -1,0 +1,970 @@
+{
+  "server_port": 15432,
+  "database_name": "english_practice",
+  "practice_sessions_count": 1234,
+  "bank_id": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2",
+  "target_passage": "M2-FULL-CLOZE-04",
+  "target_snippet": "Last term, the student faced a new digital learning platform（平台）（平台）for the first time. She felt (1) anxious because she could not follow the online lessons at first. Her teacher told her that anyone could become (2) confident with daily practice. A classmate, who was always (3) curious about new apps, showed her how to use the search tool. The platform（平台） was not always (4) reliable, so the student learned to save her work often. If she were more (5) ambitious, she would try the extra tasks every week. Only by pl",
+  "target_content": "Last term, the student faced a new digital learning platform（平台）（平台）for the first time. She felt (1) anxious because she could not follow the online lessons at first. Her teacher told her that anyone could become (2) confident with daily practice. A classmate, who was always (3) curious about new apps, showed her how to use the search tool. The platform（平台） was not always (4) reliable, so the student learned to save her work often. If she were more (5) ambitious, she would try the extra tasks every week. Only by planning her time well could she (6) achieve real progress. Her teacher suggested that she (7) adapt her study habits to the online setting. Students were (8) encouraged to ask questions in the chat room. Last month, the student (9) persuaded her parents to let her study at home on rainy days. If she (10) concentrated for forty minutes, she took a short break. By (11) gradually building good habits, she improved her grades. Her teacher insisted that she (12) eventually set a clear goal for each week. With her teacher (13) independently checking her progress, she felt safe. Now she has (14) confidence in her ability, and every lesson is a new (15) opportunity to learn.",
+  "conclusion": "A_DATA_CONTAINS_ANSWER",
+  "root_cause": "Stored passage contains numbered answer words instead of a uniform underscore placeholder; the renderer prints passage text unchanged.",
+  "answer_checked_questions": 150,
+  "direct_answer_visible": {
+    "blanks": 15,
+    "passages": 1,
+    "passage_ids": [
+      "M2-FULL-CLOZE-04"
+    ]
+  },
+  "answer_form_anywhere": {
+    "blanks": 38,
+    "passages": 8
+  },
+  "malformed_placeholder": {
+    "blanks": 89,
+    "passages": 9,
+    "passage_ids": [
+      "M2-FULL-CLOZE-03",
+      "M2-FULL-CLOZE-04",
+      "M2-FULL-CLOZE-05",
+      "M2-FULL-GAP-03",
+      "M2-FULL-GAP-05",
+      "M2-FULL-GAP-06",
+      "M2-FULL-GRAMMAR-03",
+      "M2-FULL-GRAMMAR-05",
+      "M2-FULL-GRAMMAR-06"
+    ]
+  },
+  "by_type": {
+    "cloze": {
+      "passages": 6,
+      "malformed_passages": 3,
+      "malformed_slots": 45,
+      "answer_at_slot": 15,
+      "answer_anywhere_text_blanks": 16,
+      "answer_anywhere_passages": 2,
+      "answer_at_slot_passages": 1
+    },
+    "grammar_fill": {
+      "passages": 6,
+      "malformed_passages": 3,
+      "malformed_slots": 29,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 22,
+      "answer_anywhere_passages": 6,
+      "answer_at_slot_passages": 0
+    },
+    "gap_fill": {
+      "passages": 10,
+      "malformed_passages": 3,
+      "malformed_slots": 15,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 0,
+      "answer_anywhere_passages": 0,
+      "answer_at_slot_passages": 0
+    }
+  },
+  "passages": [
+    {
+      "passage_group_id": "M2-FULL-CLOZE-01",
+      "type": "cloze",
+      "malformed_word_slots": 0,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 0,
+      "answer_occurrences": [],
+      "details": []
+    },
+    {
+      "passage_group_id": "M2-FULL-CLOZE-02",
+      "type": "cloze",
+      "malformed_word_slots": 0,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 0,
+      "answer_occurrences": [],
+      "details": []
+    },
+    {
+      "passage_group_id": "M2-FULL-CLOZE-03",
+      "type": "cloze",
+      "malformed_word_slots": 15,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 0,
+      "answer_occurrences": [],
+      "details": [
+        {
+          "question_id": "M2-FULL-CLOZE-03-Q01",
+          "answer": "respect",
+          "slot_token": "for",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-03-Q02",
+          "answer": "support",
+          "slot_token": "her",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-03-Q03",
+          "answer": "responsible",
+          "slot_token": "for",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-03-Q04",
+          "answer": "solution",
+          "slot_token": "was",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-03-Q05",
+          "answer": "avoid",
+          "slot_token": "screens",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-03-Q06",
+          "answer": "value",
+          "slot_token": "the",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-03-Q07",
+          "answer": "conduct",
+          "slot_token": "could",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-03-Q08",
+          "answer": "choice",
+          "slot_token": "each",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-03-Q09",
+          "answer": "effort",
+          "slot_token": "was",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-03-Q10",
+          "answer": "environment",
+          "slot_token": "around",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-03-Q11",
+          "answer": "experience",
+          "slot_token": "earlier",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-03-Q12",
+          "answer": "purpose",
+          "slot_token": "was",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-03-Q13",
+          "answer": "understand",
+          "slot_token": "her",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-03-Q14",
+          "answer": "identify",
+          "slot_token": "the",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-03-Q15",
+          "answer": "allow",
+          "slot_token": "her",
+          "is_answer_form": false
+        }
+      ]
+    },
+    {
+      "passage_group_id": "M2-FULL-CLOZE-04",
+      "type": "cloze",
+      "malformed_word_slots": 15,
+      "answer_at_slot": 15,
+      "answer_anywhere_text_blanks": 15,
+      "answer_occurrences": [
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q01",
+          "answer": "anxious"
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q02",
+          "answer": "confident"
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q03",
+          "answer": "curious"
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q04",
+          "answer": "reliable"
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q05",
+          "answer": "ambitious"
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q06",
+          "answer": "achieve"
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q07",
+          "answer": "adapt"
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q08",
+          "answer": "encourage"
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q09",
+          "answer": "persuade"
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q10",
+          "answer": "concentrate"
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q11",
+          "answer": "gradually"
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q12",
+          "answer": "eventually"
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q13",
+          "answer": "independently"
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q14",
+          "answer": "confidence"
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q15",
+          "answer": "opportunity"
+        }
+      ],
+      "details": [
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q01",
+          "answer": "anxious",
+          "slot_token": "anxious",
+          "is_answer_form": true
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q02",
+          "answer": "confident",
+          "slot_token": "confident",
+          "is_answer_form": true
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q03",
+          "answer": "curious",
+          "slot_token": "curious",
+          "is_answer_form": true
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q04",
+          "answer": "reliable",
+          "slot_token": "reliable",
+          "is_answer_form": true
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q05",
+          "answer": "ambitious",
+          "slot_token": "ambitious",
+          "is_answer_form": true
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q06",
+          "answer": "achieve",
+          "slot_token": "achieve",
+          "is_answer_form": true
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q07",
+          "answer": "adapt",
+          "slot_token": "adapt",
+          "is_answer_form": true
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q08",
+          "answer": "encourage",
+          "slot_token": "encouraged",
+          "is_answer_form": true
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q09",
+          "answer": "persuade",
+          "slot_token": "persuaded",
+          "is_answer_form": true
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q10",
+          "answer": "concentrate",
+          "slot_token": "concentrated",
+          "is_answer_form": true
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q11",
+          "answer": "gradually",
+          "slot_token": "gradually",
+          "is_answer_form": true
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q12",
+          "answer": "eventually",
+          "slot_token": "eventually",
+          "is_answer_form": true
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q13",
+          "answer": "independently",
+          "slot_token": "independently",
+          "is_answer_form": true
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q14",
+          "answer": "confidence",
+          "slot_token": "confidence",
+          "is_answer_form": true
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-04-Q15",
+          "answer": "opportunity",
+          "slot_token": "opportunity",
+          "is_answer_form": true
+        }
+      ]
+    },
+    {
+      "passage_group_id": "M2-FULL-CLOZE-05",
+      "type": "cloze",
+      "malformed_word_slots": 15,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 0,
+      "answer_occurrences": [],
+      "details": [
+        {
+          "question_id": "M2-FULL-CLOZE-05-Q01",
+          "answer": "accept",
+          "slot_token": "the",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-05-Q02",
+          "answer": "appreciate",
+          "slot_token": "how",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-05-Q03",
+          "answer": "balance",
+          "slot_token": "school",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-05-Q04",
+          "answer": "benefit",
+          "slot_token": "from",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-05-Q05",
+          "answer": "challenge",
+          "slot_token": "that",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-05-Q06",
+          "answer": "communicate",
+          "slot_token": "well",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-05-Q07",
+          "answer": "contribute",
+          "slot_token": "to",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-05-Q08",
+          "answer": "determine",
+          "slot_token": "our",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-05-Q09",
+          "answer": "discover",
+          "slot_token": "new",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-05-Q10",
+          "answer": "efficient",
+          "slot_token": "use",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-05-Q11",
+          "answer": "essential",
+          "slot_token": "that",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-05-Q12",
+          "answer": "improve",
+          "slot_token": "the",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-05-Q13",
+          "answer": "manage",
+          "slot_token": "to",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-05-Q14",
+          "answer": "prefer",
+          "slot_token": "working",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-CLOZE-05-Q15",
+          "answer": "reduce",
+          "slot_token": "the",
+          "is_answer_form": false
+        }
+      ]
+    },
+    {
+      "passage_group_id": "M2-FULL-CLOZE-06",
+      "type": "cloze",
+      "malformed_word_slots": 0,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 1,
+      "answer_occurrences": [
+        {
+          "question_id": "M2-FULL-CLOZE-06-Q08",
+          "answer": "choice"
+        }
+      ],
+      "details": []
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-01",
+      "type": "gap_fill",
+      "malformed_word_slots": 0,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 0,
+      "answer_occurrences": [],
+      "details": []
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-02",
+      "type": "gap_fill",
+      "malformed_word_slots": 0,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 0,
+      "answer_occurrences": [],
+      "details": []
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-03",
+      "type": "gap_fill",
+      "malformed_word_slots": 5,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 0,
+      "answer_occurrences": [],
+      "details": [
+        {
+          "question_id": "M2-FULL-GAP-03-Q01",
+          "answer": "A",
+          "slot_token": "For",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GAP-03-Q02",
+          "answer": "A",
+          "slot_token": "This",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GAP-03-Q03",
+          "answer": "A",
+          "slot_token": "If",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GAP-03-Q04",
+          "answer": "A",
+          "slot_token": "Therefore",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GAP-03-Q05",
+          "answer": "A",
+          "slot_token": "What",
+          "is_answer_form": false
+        }
+      ]
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-04",
+      "type": "gap_fill",
+      "malformed_word_slots": 0,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 0,
+      "answer_occurrences": [],
+      "details": []
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-05",
+      "type": "gap_fill",
+      "malformed_word_slots": 5,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 0,
+      "answer_occurrences": [],
+      "details": [
+        {
+          "question_id": "M2-FULL-GAP-05-Q01",
+          "answer": "A",
+          "slot_token": "She",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GAP-05-Q02",
+          "answer": "A",
+          "slot_token": "If",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GAP-05-Q03",
+          "answer": "A",
+          "slot_token": "Only",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GAP-05-Q04",
+          "answer": "A",
+          "slot_token": "Her",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GAP-05-Q05",
+          "answer": "A",
+          "slot_token": "If",
+          "is_answer_form": false
+        }
+      ]
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-06",
+      "type": "gap_fill",
+      "malformed_word_slots": 5,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 0,
+      "answer_occurrences": [],
+      "details": [
+        {
+          "question_id": "M2-FULL-GAP-06-Q01",
+          "answer": "A",
+          "slot_token": "about",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GAP-06-Q02",
+          "answer": "A",
+          "slot_token": "by",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GAP-06-Q03",
+          "answer": "A",
+          "slot_token": "the",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GAP-06-Q04",
+          "answer": "A",
+          "slot_token": "people",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GAP-06-Q05",
+          "answer": "A",
+          "slot_token": "was",
+          "is_answer_form": false
+        }
+      ]
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-07",
+      "type": "gap_fill",
+      "malformed_word_slots": 0,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 0,
+      "answer_occurrences": [],
+      "details": []
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-08",
+      "type": "gap_fill",
+      "malformed_word_slots": 0,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 0,
+      "answer_occurrences": [],
+      "details": []
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-09",
+      "type": "gap_fill",
+      "malformed_word_slots": 0,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 0,
+      "answer_occurrences": [],
+      "details": []
+    },
+    {
+      "passage_group_id": "M2-FULL-GAP-10",
+      "type": "gap_fill",
+      "malformed_word_slots": 0,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 0,
+      "answer_occurrences": [],
+      "details": []
+    },
+    {
+      "passage_group_id": "M2-FULL-GRAMMAR-01",
+      "type": "grammar_fill",
+      "malformed_word_slots": 0,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 1,
+      "answer_occurrences": [
+        {
+          "question_id": "M2-FULL-GRAMMAR-01-Q10",
+          "answer": "tested"
+        }
+      ],
+      "details": []
+    },
+    {
+      "passage_group_id": "M2-FULL-GRAMMAR-02",
+      "type": "grammar_fill",
+      "malformed_word_slots": 0,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 6,
+      "answer_occurrences": [
+        {
+          "question_id": "M2-FULL-GRAMMAR-02-Q01",
+          "answer": "chosen"
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-02-Q02",
+          "answer": "encouraged"
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-02-Q03",
+          "answer": "Running"
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-02-Q04",
+          "answer": "Hearing"
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-02-Q05",
+          "answer": "Finishing"
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-02-Q07",
+          "answer": "that"
+        }
+      ],
+      "details": []
+    },
+    {
+      "passage_group_id": "M2-FULL-GRAMMAR-03",
+      "type": "grammar_fill",
+      "malformed_word_slots": 10,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 2,
+      "answer_occurrences": [
+        {
+          "question_id": "M2-FULL-GRAMMAR-03-Q03",
+          "answer": "had"
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-03-Q10",
+          "answer": "that"
+        }
+      ],
+      "details": [
+        {
+          "question_id": "M2-FULL-GRAMMAR-03-Q01",
+          "answer": "Before",
+          "slot_token": "the",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-03-Q02",
+          "answer": "collecting",
+          "slot_token": "rubbish",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-03-Q03",
+          "answer": "had",
+          "slot_token": "more",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-03-Q04",
+          "answer": "could persuade",
+          "slot_token": "more",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-03-Q05",
+          "answer": "invite",
+          "slot_token": "at",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-03-Q06",
+          "answer": "state",
+          "slot_token": "its",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-03-Q07",
+          "answer": "arrive",
+          "slot_token": "on",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-03-Q08",
+          "answer": "can",
+          "slot_token": "real",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-03-Q09",
+          "answer": "do",
+          "slot_token": "the",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-03-Q10",
+          "answer": "that",
+          "slot_token": "it",
+          "is_answer_form": false
+        }
+      ]
+    },
+    {
+      "passage_group_id": "M2-FULL-GRAMMAR-04",
+      "type": "grammar_fill",
+      "malformed_word_slots": 0,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 4,
+      "answer_occurrences": [
+        {
+          "question_id": "M2-FULL-GRAMMAR-04-Q01",
+          "answer": "It"
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-04-Q03",
+          "answer": "that"
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-04-Q07",
+          "answer": "is"
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-04-Q08",
+          "answer": "am"
+        }
+      ],
+      "details": []
+    },
+    {
+      "passage_group_id": "M2-FULL-GRAMMAR-05",
+      "type": "grammar_fill",
+      "malformed_word_slots": 9,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 6,
+      "answer_occurrences": [
+        {
+          "question_id": "M2-FULL-GRAMMAR-05-Q01",
+          "answer": "The"
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-05-Q02",
+          "answer": "The"
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-05-Q03",
+          "answer": "on"
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-05-Q06",
+          "answer": "of"
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-05-Q09",
+          "answer": "so"
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-05-Q10",
+          "answer": "of"
+        }
+      ],
+      "details": [
+        {
+          "question_id": "M2-FULL-GRAMMAR-05-Q01",
+          "answer": "The",
+          "slot_token": "centre",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-05-Q02",
+          "answer": "The",
+          "slot_token": "student",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-05-Q03",
+          "answer": "on",
+          "slot_token": "a",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-05-Q04",
+          "answer": "at",
+          "slot_token": "nine",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-05-Q05",
+          "answer": "at",
+          "slot_token": "the",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-05-Q06",
+          "answer": "of",
+          "slot_token": "each",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-05-Q07",
+          "answer": "how",
+          "slot_token": "it",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-05-Q09",
+          "answer": "so",
+          "slot_token": "the",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-05-Q10",
+          "answer": "of",
+          "slot_token": "their",
+          "is_answer_form": false
+        }
+      ]
+    },
+    {
+      "passage_group_id": "M2-FULL-GRAMMAR-06",
+      "type": "grammar_fill",
+      "malformed_word_slots": 10,
+      "answer_at_slot": 0,
+      "answer_anywhere_text_blanks": 3,
+      "answer_occurrences": [
+        {
+          "question_id": "M2-FULL-GRAMMAR-06-Q03",
+          "answer": "teaching"
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-06-Q05",
+          "answer": "most"
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-06-Q06",
+          "answer": "working"
+        }
+      ],
+      "details": [
+        {
+          "question_id": "M2-FULL-GRAMMAR-06-Q01",
+          "answer": "if",
+          "slot_token": "she",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-06-Q02",
+          "answer": "interested",
+          "slot_token": "in",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-06-Q03",
+          "answer": "teaching",
+          "slot_token": "is",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-06-Q04",
+          "answer": "better",
+          "slot_token": "than",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-06-Q05",
+          "answer": "most",
+          "slot_token": "important",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-06-Q06",
+          "answer": "working",
+          "slot_token": "with",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-06-Q07",
+          "answer": "to learn",
+          "slot_token": "more",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-06-Q08",
+          "answer": "to study",
+          "slot_token": "hard",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-06-Q09",
+          "answer": "to become",
+          "slot_token": "a",
+          "is_answer_form": false
+        },
+        {
+          "question_id": "M2-FULL-GRAMMAR-06-Q10",
+          "answer": "to study",
+          "slot_token": "biology",
+          "is_answer_form": false
+        }
+      ]
+    }
+  ]
+}
