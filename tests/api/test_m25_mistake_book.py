@@ -219,17 +219,9 @@ def create_test_bank(
 def activate_bank(bank_id: str) -> dict:
     response = client.post(
         f"/api/v1/admin/banks/{bank_id}/activate",
-        headers={"X-Admin-Token": app_main.ADMIN_TOKEN},
     )
     assert response.status_code == 200, response.text
     return response.json()
-
-
-def admin_headers(headers: dict[str, str]) -> dict[str, str]:
-    return {
-        **headers,
-        "X-Admin-Token": app_main.ADMIN_TOKEN,
-    }
 
 
 def test_m25_migration_is_idempotent_and_preserves_existing_rows() -> None:
@@ -310,6 +302,37 @@ def test_m25_coverage_tokens_and_openapi_paths_exist() -> None:
         "/maintenance/reset-coverage/preview",
         "/maintenance/reset-coverage",
     } <= declared_paths
+
+
+def test_m25_new_tables_have_referential_integrity_constraints() -> None:
+    with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+        rows = connection.execute(
+            """
+            SELECT conname, pg_get_constraintdef(oid) AS definition
+            FROM pg_constraint
+            WHERE contype='f'
+              AND conrelid IN (
+                'question_attempts'::regclass,
+                'mistake_items'::regclass,
+                'report_deletions'::regclass,
+                'bank_switch_log'::regclass
+              )
+            """
+        ).fetchall()
+    constraints = {row["conname"]: row["definition"] for row in rows}
+    assert {
+        "question_attempts_session_fk",
+        "question_attempts_bank_fk",
+        "question_attempts_question_bank_fk",
+        "mistake_items_bank_fk",
+        "mistake_items_passage_fk",
+        "report_deletions_session_fk",
+        "bank_switch_log_from_bank_fk",
+        "bank_switch_log_to_bank_fk",
+    } <= set(constraints)
+    assert "FOREIGN KEY (bank_id, question_id)" in constraints[
+        "question_attempts_question_bank_fk"
+    ]
 
 
 def test_m25_wrong_answer_records_attempt_and_opens_mistake() -> None:
@@ -638,7 +661,7 @@ def test_m25_bank_switch_is_atomic_and_preserves_learning_state() -> None:
         assert len(switches) == 4
         assert switches[-1]["to_bank_id"] == bank_b["bank_id"]
         assert switches[-1]["from_bank_id"] == bank_a["bank_id"]
-        assert switches[-1]["operator"] == "admin"
+        assert switches[-1]["operator"] == "student_ui"
     finally:
         activate_bank(original_bank_id)
 
@@ -875,7 +898,7 @@ def test_m25_clear_mistakes_only_affects_current_bank_and_student() -> None:
 
         preview = client.get(
             "/api/v1/maintenance/clear-mistakes/preview",
-            headers=admin_headers(first_headers),
+            headers=first_headers,
         )
         assert preview.status_code == 200, preview.text
         assert preview.json() == {
@@ -885,13 +908,13 @@ def test_m25_clear_mistakes_only_affects_current_bank_and_student() -> None:
         }
         cleared = client.post(
             "/api/v1/maintenance/clear-mistakes",
-            headers=admin_headers(first_headers),
+            headers=first_headers,
         )
         assert cleared.status_code == 200, cleared.text
         assert cleared.json() == {"deleted_count": 1}
         repeated = client.post(
             "/api/v1/maintenance/clear-mistakes",
-            headers=admin_headers(first_headers),
+            headers=first_headers,
         )
         assert repeated.json() == {"deleted_count": 0}
 
@@ -974,7 +997,7 @@ def test_m25_reset_coverage_deletes_by_active_question_id_only() -> None:
 
         preview = client.get(
             "/api/v1/maintenance/reset-coverage/preview",
-            headers=admin_headers(headers),
+            headers=headers,
         )
         assert preview.status_code == 200, preview.text
         assert preview.json() == {
@@ -984,13 +1007,13 @@ def test_m25_reset_coverage_deletes_by_active_question_id_only() -> None:
         }
         reset = client.post(
             "/api/v1/maintenance/reset-coverage",
-            headers=admin_headers(headers),
+            headers=headers,
         )
         assert reset.status_code == 200, reset.text
         assert reset.json() == {"deleted_count": 4}
         repeated = client.post(
             "/api/v1/maintenance/reset-coverage",
-            headers=admin_headers(headers),
+            headers=headers,
         )
         assert repeated.json() == {"deleted_count": 0}
 
@@ -1028,19 +1051,87 @@ def test_m25_reset_coverage_deletes_by_active_question_id_only() -> None:
         activate_bank(original_bank_id)
 
 
-def test_m25_maintenance_endpoints_require_local_admin_auth() -> None:
+def test_m25_maintenance_endpoints_are_loopback_only_without_token() -> None:
     headers = student_headers()
-    missing = client.get(
-        "/api/v1/maintenance/clear-mistakes/preview",
-        headers=headers,
-    )
-    assert missing.status_code == 401
-    assert missing.json()["detail"]["code"] == "ADMIN_AUTH_FAILED"
-
     remote = TestClient(app, client=("192.168.1.50", 42100))
-    denied = remote.get(
-        "/api/v1/maintenance/reset-coverage/preview",
-        headers=admin_headers(headers),
-    )
-    assert denied.status_code == 403
-    assert denied.json()["detail"]["code"] == "ADMIN_LOCAL_ONLY"
+    for method, path in (
+        ("GET", "/api/v1/maintenance/clear-mistakes/preview"),
+        ("POST", "/api/v1/maintenance/clear-mistakes"),
+        ("GET", "/api/v1/maintenance/reset-coverage/preview"),
+        ("POST", "/api/v1/maintenance/reset-coverage"),
+    ):
+        local = client.request(method, path, headers=headers)
+        assert local.status_code == 200, (method, path, local.text)
+        denied = remote.request(method, path, headers=headers)
+        assert denied.status_code == 403, (method, path, denied.text)
+        assert denied.json()["detail"]["code"] == "ADMIN_LOCAL_ONLY"
+
+
+def test_m25_bank_activation_is_loopback_only_and_logged() -> None:
+    original_bank_id = store.bank["bank_id"]
+    bank = create_test_bank("M25 No Token Switch", ["M25-NO-TOKEN-Q01"])
+    try:
+        activated = activate_bank(bank["bank_id"])
+        assert activated["bank_id"] == bank["bank_id"]
+        with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+            log = connection.execute(
+                """
+                SELECT from_bank_id::text, to_bank_id::text, switched_at, operator
+                FROM bank_switch_log
+                WHERE to_bank_id=%s
+                ORDER BY id DESC
+                LIMIT 1
+                """,
+                (bank["bank_id"],),
+            ).fetchone()
+        assert log["from_bank_id"] == original_bank_id
+        assert log["to_bank_id"] == bank["bank_id"]
+        assert log["switched_at"] is not None
+        assert log["operator"] == "student_ui"
+
+        remote = TestClient(app, client=("192.168.1.51", 42101))
+        denied = remote.post(
+            f"/api/v1/admin/banks/{original_bank_id}/activate"
+        )
+        assert denied.status_code == 403
+        assert denied.json()["detail"]["code"] == "ADMIN_LOCAL_ONLY"
+    finally:
+        activate_bank(original_bank_id)
+
+
+def test_m25_in_progress_session_survives_bank_switch_and_keeps_bank_id() -> None:
+    original_bank_id = store.bank["bank_id"]
+    bank_a = create_test_bank("M25 Running A", ["M25-RUNNING-A-Q01"])
+    bank_b = create_test_bank("M25 Running B", ["M25-RUNNING-B-Q01"])
+    headers = student_headers()
+    try:
+        activate_bank(bank_a["bank_id"])
+        session_id = direct_session(headers, ["M25-RUNNING-A-Q01"])
+        answer(headers, session_id, "M25-RUNNING-A-Q01", "anxious")
+        activate_bank(bank_b["bank_id"])
+        submit(headers, session_id)
+
+        with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+            attempt = connection.execute(
+                """
+                SELECT bank_id::text, session_id::text
+                FROM question_attempts
+                WHERE student_id=%s AND session_id=%s
+                """,
+                (headers["X-Student-Id"], session_id),
+            ).fetchone()
+            session = connection.execute(
+                """
+                SELECT bank_id::text, status
+                FROM practice_sessions
+                WHERE id=%s
+                """,
+                (session_id,),
+            ).fetchone()
+        assert attempt == {
+            "bank_id": bank_a["bank_id"],
+            "session_id": session_id,
+        }
+        assert session == {"bank_id": bank_a["bank_id"], "status": "submitted"}
+    finally:
+        activate_bank(original_bank_id)

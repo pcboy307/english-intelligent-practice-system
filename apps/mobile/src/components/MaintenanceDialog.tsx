@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Modal,
   Pressable,
   StyleSheet,
   Text,
-  TextInput,
   View,
 } from "react-native";
 
@@ -15,8 +14,8 @@ type MaintenanceDialogProps = {
   title: string;
   intro: string;
   onCancel: () => void;
-  loadPreview: (adminToken: string) => Promise<string>;
-  onConfirm: (adminToken: string) => Promise<void>;
+  loadPreview: () => Promise<string>;
+  onConfirm: () => Promise<void>;
 };
 
 export function MaintenanceDialog({
@@ -27,41 +26,42 @@ export function MaintenanceDialog({
   loadPreview,
   onConfirm,
 }: MaintenanceDialogProps) {
-  const [token, setToken] = useState("");
   const [preview, setPreview] = useState("");
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
+  const [confirmReady, setConfirmReady] = useState(false);
+  const loaderRef = useRef(loadPreview);
+  loaderRef.current = loadPreview;
 
   useEffect(() => {
     if (!visible) {
-      setToken("");
       setPreview("");
       setError("");
       setBusy(false);
-    }
-  }, [visible]);
-
-  async function readPreview() {
-    if (!token.trim()) {
-      setError("请输入本机管理口令。");
+      setConfirmReady(false);
       return;
     }
-    setBusy(true);
-    setError("");
-    try {
-      setPreview(await loadPreview(token));
-    } catch (reason) {
-      setError(String(reason));
-    } finally {
-      setBusy(false);
-    }
-  }
+    let active = true;
+    const delay = setTimeout(() => setConfirmReady(true), 1500);
+    loaderRef
+      .current()
+      .then((text) => {
+        if (active) setPreview(text);
+      })
+      .catch((reason) => {
+        if (active) setError(String(reason));
+      });
+    return () => {
+      active = false;
+      clearTimeout(delay);
+    };
+  }, [visible]);
 
   async function confirm() {
     setBusy(true);
     setError("");
     try {
-      await onConfirm(token);
+      await onConfirm();
     } catch (reason) {
       setError(String(reason));
     } finally {
@@ -80,22 +80,12 @@ export function MaintenanceDialog({
         <View style={styles.dialog} testID="maintenance-dialog">
           <Text style={styles.title}>{title}</Text>
           <Text style={styles.body}>{intro}</Text>
-          <Text style={styles.label}>本机管理口令</Text>
-          <TextInput
-            value={token}
-            onChangeText={setToken}
-            secureTextEntry
-            autoCapitalize="none"
-            autoCorrect={false}
-            style={styles.input}
-            testID="maintenance-admin-token"
-            placeholder="仅用于本次本机校验"
-            placeholderTextColor={tokens.color.tertiaryText}
-          />
           {preview ? (
             <Text style={styles.preview} testID="maintenance-preview">
               {preview}
             </Text>
+          ) : !error ? (
+            <Text style={styles.loading}>正在读取实际条数…</Text>
           ) : null}
           {error ? <Text style={styles.error}>{error}</Text> : null}
           <View style={styles.actions}>
@@ -108,31 +98,24 @@ export function MaintenanceDialog({
             >
               <Text style={styles.secondaryText}>取消</Text>
             </Pressable>
-            {preview ? (
-              <Pressable
-                accessibilityRole="button"
-                disabled={busy}
-                onPress={confirm}
-                style={[styles.dangerButton, busy && styles.disabled]}
-                testID="maintenance-confirm"
-              >
-                <Text style={styles.dangerText}>
-                  {busy ? "正在执行" : "确认，此操作不可恢复"}
-                </Text>
-              </Pressable>
-            ) : (
-              <Pressable
-                accessibilityRole="button"
-                disabled={busy}
-                onPress={readPreview}
-                style={[styles.primaryButton, busy && styles.disabled]}
-                testID="maintenance-load-preview"
-              >
-                <Text style={styles.primaryText}>
-                  {busy ? "正在读取" : "读取实际条数"}
-                </Text>
-              </Pressable>
-            )}
+            <Pressable
+              accessibilityRole="button"
+              disabled={busy || !preview || !confirmReady}
+              onPress={confirm}
+              style={[
+                styles.dangerButton,
+                (busy || !preview || !confirmReady) && styles.disabled,
+              ]}
+              testID="maintenance-confirm"
+            >
+              <Text style={styles.dangerText}>
+                {busy
+                  ? "正在执行"
+                  : confirmReady
+                    ? "确认，此操作不可恢复"
+                    : "请稍候…"}
+              </Text>
+            </Pressable>
           </View>
         </View>
       </View>
@@ -170,29 +153,17 @@ const styles = StyleSheet.create({
     lineHeight: tokens.font.sizes.body * tokens.font.lineHeight.ui,
     marginTop: tokens.spacing.listGap,
   },
-  label: {
-    color: tokens.color.primaryText,
-    fontFamily: tokens.font.uiFamily.web,
-    fontSize: tokens.font.sizes.auxiliary,
-    marginTop: tokens.spacing.section,
-  },
-  input: {
-    minHeight: tokens.control.primaryButtonHeightMin,
-    borderWidth: tokens.border.width,
-    borderColor: tokens.color.secondaryBorder,
-    borderRadius: tokens.radius.medium,
-    color: tokens.color.primaryText,
-    backgroundColor: tokens.color.cardBackground,
-    fontFamily: tokens.font.uiFamily.web,
-    fontSize: tokens.font.sizes.body,
-    marginTop: tokens.spacing.listGap,
-    paddingHorizontal: tokens.spacing.listGap,
-  },
   preview: {
     color: tokens.color.primaryText,
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.body,
     lineHeight: tokens.font.sizes.body * tokens.font.lineHeight.ui,
+    marginTop: tokens.spacing.cardPadding,
+  },
+  loading: {
+    color: tokens.color.secondaryText,
+    fontFamily: tokens.font.uiFamily.web,
+    fontSize: tokens.font.sizes.auxiliary,
     marginTop: tokens.spacing.cardPadding,
   },
   actions: {
@@ -213,19 +184,6 @@ const styles = StyleSheet.create({
   },
   secondaryText: {
     color: tokens.color.primaryText,
-    fontFamily: tokens.font.uiFamily.web,
-    fontSize: tokens.font.sizes.auxiliary,
-  },
-  primaryButton: {
-    minHeight: tokens.control.touchTargetMin,
-    borderRadius: tokens.radius.medium,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: tokens.color.primaryButtonBackground,
-    paddingHorizontal: tokens.spacing.cardPadding,
-  },
-  primaryText: {
-    color: tokens.color.primaryButtonText,
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.auxiliary,
   },

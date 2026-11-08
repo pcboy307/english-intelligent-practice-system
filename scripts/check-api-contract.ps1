@@ -15,6 +15,10 @@ $replacementPatterns = @(
   @{
     Pattern = '${encodeURIComponent(passageId)}'
     Replacement = '{passage_id}'
+  },
+  @{
+    Pattern = '${encodeURIComponent(bankId)}'
+    Replacement = '{bank_id}'
   }
 )
 

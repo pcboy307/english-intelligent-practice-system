@@ -221,3 +221,13 @@
 - 历史页新增当前 active bank 的三段覆盖堆积条，以及两个受本机口令保护的清空操作。
 - CO-005 的报告删除由物理删除修正为 `report_deletions` 软删。
 - 全量验收：118 passed、M0 PASS、API contract PASS calls=18、OpenAPI valid。
+
+## 2026-11-08 - M2.5 鉴权范围修正与首页换库
+
+- 四个 maintenance 接口取消口令校验，保留 127.0.0.1 / ::1 回环限制。
+- `POST /admin/banks/{bank_id}/activate` 同样取消口令校验，保留回环限制并继续写
+  `bank_switch_log`；其余管理接口口令校验不变。
+- 首页题库名称/题数统一取 `GET /stats/coverage`，并新增题库切换入口与两阶段确认。
+- 重做页、覆盖条和两个 maintenance 弹窗均重新浏览器验收。
+- 新增 questions 复合主键补授权记录、外键完整性审计和查询/写入路径审计。
+- 最终回归：121 passed、M0 PASS、API contract PASS calls=20、OpenAPI valid。

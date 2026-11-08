@@ -29,6 +29,7 @@ from .mistakes import (
     reset_coverage_attempts,
     reset_coverage_preview,
     session_attempt_kind,
+    switchable_banks,
 )
 from .store import SessionRecord
 
@@ -847,6 +848,14 @@ class PostgresStore:
                     active_bank_id=self.bank["bank_id"],
                 )
         return {"deleted_count": deleted_count}
+
+    def list_switchable_banks(self, student_id: str) -> dict:
+        with self.connection() as connection:
+            return switchable_banks(
+                connection,
+                student_id=student_id,
+                active_bank_id=self.bank["bank_id"],
+            )
 
     def list_reports(self, student_id: str) -> list[dict]:
         with self.connection() as connection:

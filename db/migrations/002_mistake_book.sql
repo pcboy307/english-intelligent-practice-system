@@ -58,6 +58,99 @@ CREATE TABLE IF NOT EXISTS bank_switch_log (
     operator TEXT
 );
 
+DO $$
+BEGIN
+    IF NOT EXISTS (
+        SELECT 1 FROM pg_constraint
+        WHERE conname='question_attempts_session_fk'
+          AND conrelid='question_attempts'::regclass
+    ) THEN
+        ALTER TABLE question_attempts
+            ADD CONSTRAINT question_attempts_session_fk
+            FOREIGN KEY (session_id)
+            REFERENCES practice_sessions (id)
+            ON DELETE RESTRICT;
+    END IF;
+    IF NOT EXISTS (
+        SELECT 1 FROM pg_constraint
+        WHERE conname='question_attempts_bank_fk'
+          AND conrelid='question_attempts'::regclass
+    ) THEN
+        ALTER TABLE question_attempts
+            ADD CONSTRAINT question_attempts_bank_fk
+            FOREIGN KEY (bank_id)
+            REFERENCES question_banks (id)
+            ON DELETE RESTRICT;
+    END IF;
+    IF NOT EXISTS (
+        SELECT 1 FROM pg_constraint
+        WHERE conname='question_attempts_question_bank_fk'
+          AND conrelid='question_attempts'::regclass
+    ) THEN
+        ALTER TABLE question_attempts
+            ADD CONSTRAINT question_attempts_question_bank_fk
+            FOREIGN KEY (bank_id, question_id)
+            REFERENCES questions (bank_id, id)
+            ON DELETE RESTRICT;
+    END IF;
+    IF NOT EXISTS (
+        SELECT 1 FROM pg_constraint
+        WHERE conname='mistake_items_bank_fk'
+          AND conrelid='mistake_items'::regclass
+    ) THEN
+        ALTER TABLE mistake_items
+            ADD CONSTRAINT mistake_items_bank_fk
+            FOREIGN KEY (bank_id)
+            REFERENCES question_banks (id)
+            ON DELETE RESTRICT;
+    END IF;
+    IF NOT EXISTS (
+        SELECT 1 FROM pg_constraint
+        WHERE conname='mistake_items_passage_fk'
+          AND conrelid='mistake_items'::regclass
+    ) THEN
+        ALTER TABLE mistake_items
+            ADD CONSTRAINT mistake_items_passage_fk
+            FOREIGN KEY (bank_id, passage_id)
+            REFERENCES passages (bank_id, passage_group_id)
+            ON DELETE RESTRICT;
+    END IF;
+    IF NOT EXISTS (
+        SELECT 1 FROM pg_constraint
+        WHERE conname='report_deletions_session_fk'
+          AND conrelid='report_deletions'::regclass
+    ) THEN
+        ALTER TABLE report_deletions
+            ADD CONSTRAINT report_deletions_session_fk
+            FOREIGN KEY (session_id)
+            REFERENCES practice_sessions (id)
+            ON DELETE RESTRICT;
+    END IF;
+    IF NOT EXISTS (
+        SELECT 1 FROM pg_constraint
+        WHERE conname='bank_switch_log_from_bank_fk'
+          AND conrelid='bank_switch_log'::regclass
+    ) THEN
+        ALTER TABLE bank_switch_log
+            ADD CONSTRAINT bank_switch_log_from_bank_fk
+            FOREIGN KEY (from_bank_id)
+            REFERENCES question_banks (id)
+            ON DELETE RESTRICT;
+    END IF;
+    IF NOT EXISTS (
+        SELECT 1 FROM pg_constraint
+        WHERE conname='bank_switch_log_to_bank_fk'
+          AND conrelid='bank_switch_log'::regclass
+    ) THEN
+        ALTER TABLE bank_switch_log
+            ADD CONSTRAINT bank_switch_log_to_bank_fk
+            FOREIGN KEY (to_bank_id)
+            REFERENCES question_banks (id)
+            ON DELETE RESTRICT;
+    END IF;
+END
+$$;
+
 ALTER TABLE practice_sessions
     ADD COLUMN IF NOT EXISTS session_kind VARCHAR(20)
     NOT NULL DEFAULT 'practice';

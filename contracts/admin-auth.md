@@ -7,14 +7,19 @@
 - 后端绑定 `0.0.0.0`，学生端必须能通过局域网访问。
 - 不能为了后台安全把整个服务只绑定到 `127.0.0.1`。
 
-## 2. `/admin/*` 双层门禁
+## 2. `/admin/*` 默认双层门禁与题库切换例外
 
-请求必须依次通过：
+除 `POST /admin/banks/{bank_id}/activate` 外，请求必须依次通过：
 
 1. 回环来源检查：socket 对端地址必须为 `127.0.0.1` 或 `::1`。
 2. `X-Admin-Token` 检查：使用 `secrets.compare_digest` 与 `.env` 的 `ADMIN_TOKEN` 比较。
 
 非回环来源直接返回 `403 ADMIN_LOCAL_ONLY`，不得进入 token 校验。
+
+`POST /admin/banks/{bank_id}/activate` 只检查回环来源，不校验口令，原因是切换入口
+由首页本机二次确认触发，并要求写入 `bank_switch_log`。
+
+四个 `/maintenance/*` 接口同样只接受回环来源、不校验口令，不属于 `/admin/*` token 范围。
 
 禁止依据 `X-Forwarded-For`、`Forwarded` 或任何客户端可伪造头判断来源。只使用 ASGI/Starlette socket 连接对象中的对端地址。
 
@@ -34,7 +39,7 @@
 
 ## 5. 审计
 
-所有 `/admin/*` 写操作追加 `admin_audit_log`：
+除题库切换和 maintenance 接口外，`/admin/*` 写操作追加 `admin_audit_log`：
 
 - UTC 时间；
 - HTTP method；

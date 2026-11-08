@@ -311,7 +311,10 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** 原子切换 active Bank；只影响新会话 */
+        /**
+         * 原子切换 active Bank；仅接受 socket 回环来源
+         * @description 不校验本地口令；非 127.0.0.1 / ::1 来源返回 403，并写入 bank_switch_log。
+         */
         post: operations["activateBank"];
         delete?: never;
         options?: never;
@@ -458,6 +461,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/banks": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** 列出可切换的 active / ready / archived 题库 */
+        get: operations["listSwitchableBanks"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/maintenance/clear-mistakes/preview": {
         parameters: {
             query?: never;
@@ -465,7 +485,7 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** 预览当前题库错题清空条数 */
+        /** 预览当前题库错题清空条数；仅回环来源 */
         get: operations["previewClearMistakes"];
         put?: never;
         post?: never;
@@ -484,7 +504,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** 清空当前题库的错题记录 */
+        /** 清空当前题库的错题记录；仅回环来源 */
         post: operations["clearMistakes"];
         delete?: never;
         options?: never;
@@ -499,7 +519,7 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** 预览当前题库覆盖统计重置条数 */
+        /** 预览当前题库覆盖统计重置条数；仅回环来源 */
         get: operations["previewResetCoverage"];
         put?: never;
         post?: never;
@@ -518,7 +538,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** 按当前题库 question_id 删除对应覆盖记录 */
+        /** 按当前题库 question_id 删除对应覆盖记录；仅回环来源 */
         post: operations["resetCoverage"];
         delete?: never;
         options?: never;
@@ -689,6 +709,22 @@ export interface components {
         };
         MaintenanceResult: {
             deleted_count: number;
+        };
+        SwitchableBank: {
+            /** Format: uuid */
+            bank_id: string;
+            name: string;
+            version: number;
+            question_count: number;
+            /** @enum {string} */
+            status: "active" | "ready" | "archived";
+            is_current: boolean;
+        };
+        SwitchableBanks: {
+            /** Format: uuid */
+            current_bank_id: string;
+            in_progress_count: number;
+            banks: components["schemas"]["SwitchableBank"][];
         };
         PreviewResponse: {
             /** Format: uuid */
@@ -1752,6 +1788,27 @@ export interface operations {
                     "application/json": components["schemas"]["CoverageStats"];
                 };
             };
+        };
+    };
+    listSwitchableBanks: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description 题库切换列表与当前学生未完成会话数 */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["SwitchableBanks"];
+                };
+            };
+            401: components["responses"]["ErrorResponse"];
         };
     };
     previewClearMistakes: {

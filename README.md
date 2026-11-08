@@ -52,7 +52,8 @@ python --version
 - 所有设计取值来自 `contracts/design-tokens.json`，学生端与后台代码不得硬编码颜色、字号或间距。
 - 题库按独立 Bank 管理，禁止跨 Bank 混抽、覆盖或向已存在 Bank 追加题目。
 - 交卷前答案与解析不得进入 API 响应或 App 持久化。
-- 后端监听 `0.0.0.0`；`/admin/*` 只接受本机回环来源和 `X-Admin-Token`。
+- 后端监听 `0.0.0.0`；`/admin/*` 默认只接受本机回环来源和 `X-Admin-Token`。
+- 题库切换和 maintenance 接口只接受本机回环来源，不要求口令。
 - Web 端 `device_student_id` 暂存 localStorage；这是本地演示安全降级，回到手机端必须换回 secure store。
 
 ## 端口与 CORS

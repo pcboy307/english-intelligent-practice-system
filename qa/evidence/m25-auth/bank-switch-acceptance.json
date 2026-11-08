@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "student_id": "ad369658-5237-49e8-8d65-f49021e134cb",
+  "initial_bank": {
+    "name": "M2 Bank #2",
+    "question_count": 300
+  },
+  "target_bank": {
+    "name": "M2.5 UI切换验收题库-258b1b",
+    "question_count": 5,
+    "status_before": "archived"
+  },
+  "G1": {
+    "home": "M2 Bank #2 · 共 300 题",
+    "coverage": "M2 Bank #2 · 共 300 题",
+    "identical": true
+  },
+  "G2": {
+    "current_marked": "✓ 当前",
+    "current_disabled": true,
+    "all_statuses_visible": ["active", "ready", "archived"]
+  },
+  "G3": {
+    "confirmation_sections": 6,
+    "in_progress_notice": "当前有 1 个未完成的练习，切换后仍可用原题库继续交卷，新开始的练习将使用新题库。"
+  },
+  "G4": {
+    "before": {"bank": "M2 Bank #2", "total": 300},
+    "after_cancel": {"bank": "M2 Bank #2", "total": 300},
+    "unchanged": true
+  },
+  "G5": {
+    "switch_log_rows": [
+      {
+        "from": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2",
+        "to": "3ef6bdfd-985f-4933-be8d-c0858e153f54",
+        "operator": "student_ui"
+      },
+      {
+        "from": "3ef6bdfd-985f-4933-be8d-c0858e153f54",
+        "to": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2",
+        "operator": "student_ui"
+      }
+    ]
+  },
+  "G6": {
+    "home_after_switch": "M2.5 UI切换验收题库-258b1b · 共 5 题",
+    "coverage_after_switch": "M2.5 UI切换验收题库-258b1b · 共 5 题"
+  },
+  "G7": {
+    "current_bank_mistakes": 0,
+    "history_bank": "M2 Bank #2",
+    "history_mistakes": 3
+  },
+  "G8": {
+    "in_progress_count": 1,
+    "session_status_after_switch": "submitted",
+    "attempt_bank_id": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2"
+  },
+  "G9": {
+    "local_without_token": "success",
+    "remote": "403 ADMIN_LOCAL_ONLY"
+  },
+  "G10": {
+    "final_bank": "M2 Bank #2",
+    "final_question_count": 300,
+    "current_mistakes": 3,
+    "history_banks": 0
+  },
+  "screenshots": {
+    "home_bank_count": "home-bank-count-fixed.png",
+    "bank_list": "bank-list-dialog.png",
+    "switch_confirmation": "bank-switch-confirm.png",
+    "home_after_switch": "home-after-switch.png",
+    "coverage_after_switch": "coverage-after-switch.png",
+    "mistakes_after_switch": "mistakes-after-switch.png",
+    "home_restored": "home-restored.png",
+    "coverage_restored": "coverage-restored.png",
+    "mistakes_restored": "mistakes-restored.png",
+    "clear_dialog_delay": "clear-dialog-delay.png",
+    "clear_dialog_ready": "clear-dialog-ready.png",
+    "reset_dialog": "reset-dialog-no-token.png",
+    "clear_button_top": "mistakes-clear-at-top.png"
+  }
+}

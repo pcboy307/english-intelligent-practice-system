@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "auth_scope": {
+    "maintenance": "loopback only; no token",
+    "activate_bank": "loopback only; no token; writes bank_switch_log",
+    "other_admin_endpoints": "loopback + X-Admin-Token"
+  },
+  "migration": {
+    "path": "db/migrations/002_mistake_book.sql",
+    "lines": 193
+  },
+  "checks": {
+    "G1_G10": "passed",
+    "P1": "14 FK definitions, 0 orphans",
+    "P2": "30 hits = 30 safe + 0 needs-fix",
+    "P3": "3 auth tests passed",
+    "S1": "tokens at lines 28, 29, 30",
+    "S2": "OpenAPI valid",
+    "pytest": "121 passed, 1 warning",
+    "API_CONTRACT_CHECK": "PASS calls=20"
+  },
+  "primary_key_authorization": "docs/change-log/AUTH-question-primary-key.md",
+  "screenshots": [
+    "qa/evidence/m25-auth/home-bank-count-fixed.png",
+    "qa/evidence/m25-auth/bank-list-dialog.png",
+    "qa/evidence/m25-auth/bank-switch-confirm.png",
+    "qa/evidence/m25-auth/home-after-switch.png",
+    "qa/evidence/m25-auth/coverage-after-switch.png",
+    "qa/evidence/m25-auth/mistakes-after-switch.png",
+    "qa/evidence/m25-auth/home-restored.png",
+    "qa/evidence/m25-auth/coverage-restored.png",
+    "qa/evidence/m25-auth/mistakes-restored.png",
+    "qa/evidence/m25-auth/mistakes-clear-at-top.png",
+    "qa/evidence/m25-auth/clear-dialog-delay.png",
+    "qa/evidence/m25-auth/clear-dialog-ready.png",
+    "qa/evidence/m25-auth/reset-dialog-no-token.png"
+  ]
+}

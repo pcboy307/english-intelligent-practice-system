@@ -3,28 +3,37 @@ import { useEffect, useState } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 
 import {
-  getActiveBank,
+  getCoverageStats,
   getMistakes,
   startPractice,
 } from "../src/api/client";
+import { BankSwitchDialog } from "../src/components/BankSwitchDialog";
 import { setSession } from "../src/sessionStore";
 import { tokens } from "../src/theme/tokens";
 import { useResponsiveLayout } from "../src/theme/useResponsiveLayout";
 
 export default function HomeScreen() {
   const layout = useResponsiveLayout();
-  const [bankName, setBankName] = useState("加载中");
+  const [coverage, setCoverage] = useState<{
+    bank_name: string;
+    total: number;
+  } | null>(null);
   const [error, setError] = useState("");
   const [starting, setStarting] = useState(false);
   const [mistakeCount, setMistakeCount] = useState(0);
+  const [switchVisible, setSwitchVisible] = useState(false);
+
+  async function loadHome() {
+    Promise.all([getCoverageStats(), getMistakes()])
+      .then(([nextCoverage, mistakes]) => {
+        setCoverage(nextCoverage);
+        setMistakeCount(mistakes.total_open);
+      })
+      .catch((reason) => setError(String(reason)));
+  }
 
   useEffect(() => {
-    getActiveBank()
-      .then((bank) => setBankName(bank.name))
-      .catch((reason) => setError(String(reason)));
-    getMistakes()
-      .then((mistakes) => setMistakeCount(mistakes.total_open))
-      .catch((reason) => setError(String(reason)));
+    loadHome();
   }, []);
 
   async function start() {
@@ -43,6 +52,11 @@ export default function HomeScreen() {
 
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.center}>
+      <BankSwitchDialog
+        visible={switchVisible}
+        onCancel={() => setSwitchVisible(false)}
+        onSwitched={loadHome}
+      />
       <View
         testID="home-shell"
         style={[styles.shell, { maxWidth: layout.contentMaxWidth }]}
@@ -72,7 +86,20 @@ export default function HomeScreen() {
             </Pressable>
           </View>
         </View>
-        <Text style={styles.bank}>当前题库：{bankName}</Text>
+        <View style={styles.bankLine}>
+          <Text style={styles.bank}>
+            当前题库：{coverage?.bank_name || "加载中"}
+            {coverage ? ` · 共 ${coverage.total} 题` : ""}
+          </Text>
+          <Pressable
+            accessibilityRole="button"
+            onPress={() => setSwitchVisible(true)}
+            style={styles.switchButton}
+            testID="home-switch-bank"
+          >
+            <Text style={styles.switchText}>切换</Text>
+          </Pressable>
+        </View>
         <Text style={[styles.body, { maxWidth: layout.bodyMaxWidth }]}>
           一套 30 分钟练习，包含完型填空、语法填空和阅读或七选五。交卷后查看分数、正确率、薄弱知识点和逐题解析。
         </Text>
@@ -130,6 +157,22 @@ const styles = StyleSheet.create({
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.subheading,
     marginTop: tokens.spacing.section,
+  },
+  bankLine: {
+    flexDirection: "row",
+    alignItems: "center",
+    alignSelf: "flex-start",
+    gap: tokens.web_desktop.optionGap,
+  },
+  switchButton: {
+    minHeight: tokens.control.touchTargetMin,
+    justifyContent: "center",
+    paddingHorizontal: tokens.spacing.listGap,
+  },
+  switchText: {
+    color: tokens.color.secondaryText,
+    fontFamily: tokens.font.uiFamily.web,
+    fontSize: tokens.font.sizes.auxiliary,
   },
   body: {
     color: tokens.color.secondaryText,

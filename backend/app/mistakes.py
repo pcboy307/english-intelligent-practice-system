@@ -561,3 +561,48 @@ def reset_coverage_attempts(
         (student_id, question_ids),
     ).fetchall()
     return len(rows)
+
+
+def switchable_banks(
+    connection: Connection,
+    *,
+    student_id: str,
+    active_bank_id: str,
+) -> dict:
+    rows = connection.execute(
+        """
+        SELECT qb.id::text AS id, qb.name, qb.status, qb.target_size,
+               count(q.id) FILTER (WHERE q.status='published') AS question_count
+        FROM question_banks qb
+        LEFT JOIN questions q ON q.bank_id=qb.id
+        WHERE qb.status IN ('active', 'ready', 'archived')
+        GROUP BY qb.id, qb.name, qb.status, qb.target_size, qb.created_at
+        ORDER BY (qb.id=%s) DESC, qb.created_at DESC
+        """,
+        (active_bank_id,),
+    ).fetchall()
+    in_progress = connection.execute(
+        """
+        SELECT count(*) AS count
+        FROM practice_sessions
+        WHERE student_id=%s
+          AND bank_id=%s
+          AND status='in_progress'
+        """,
+        (student_id, active_bank_id),
+    ).fetchone()["count"]
+    return {
+        "current_bank_id": active_bank_id,
+        "in_progress_count": in_progress,
+        "banks": [
+            {
+                "bank_id": row["id"],
+                "name": row["name"],
+                "version": 1,
+                "question_count": row["question_count"],
+                "status": row["status"],
+                "is_current": row["id"] == active_bank_id,
+            }
+            for row in rows
+        ],
+    }

@@ -58,14 +58,14 @@
 | E7 | 第二次执行正常返回 0 | E1/E3 |
 | E8 | 清学生 A 后，学生 B 的 `mistake_items=1` 不受影响 | E1 测试 |
 | E9 | 清空前后 questions/passages/banks/practice_reports 计数不变 | E1 测试 |
-| E10 | 缺口令返回 401 `ADMIN_AUTH_FAILED`；非回环返回 403 `ADMIN_LOCAL_ONLY` | `test_m25_maintenance_endpoints_require_local_admin_auth` |
+| E10 | 四个 maintenance 接口无口令成功；非回环 403；activate 无口令成功且写日志；前端无口令框并保留1.5秒延迟 | `qa/evidence/m25-auth/acceptance-results.md` |
 
 ## F. 回归
 
 | 判据 | 实际输出 |
 |---|---|
-| F1 | `118 passed, 1 warning` |
+| F1 | `121 passed, 1 warning` |
 | F2 | `M0_CHECK=PASS` |
-| F3 | `API_CONTRACT_CHECK=PASS calls=18` |
+| F3 | `API_CONTRACT_CHECK=PASS calls=20` |
 | F4 | `contracts/openapi.yaml is valid` |
 | F5 | 本文件及 `browser-acceptance.json` |

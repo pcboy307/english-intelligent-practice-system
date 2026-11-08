@@ -19,6 +19,9 @@ export type CoverageStats = components["schemas"]["CoverageStats"];
 export type ClearPreview = components["schemas"]["ClearPreview"];
 export type MaintenanceResult =
   components["schemas"]["MaintenanceResult"];
+export type SwitchableBanks =
+  components["schemas"]["SwitchableBanks"];
+export type SwitchableBank = components["schemas"]["SwitchableBank"];
 export type MistakeEntry = components["schemas"]["MistakeEntry"];
 export type MistakeDetailQuestion = {
   question_id: string;
@@ -141,28 +144,33 @@ export async function getCoverageStats() {
   return request<CoverageStats>("/stats/coverage?bank_id=active");
 }
 
-export async function previewClearMistakes(adminToken: string) {
-  return request<ClearPreview>("/maintenance/clear-mistakes/preview", {
-    headers: { "X-Admin-Token": adminToken },
-  });
+export async function previewClearMistakes() {
+  return request<ClearPreview>("/maintenance/clear-mistakes/preview");
 }
 
-export async function clearMistakes(adminToken: string) {
+export async function clearMistakes() {
   return request<MaintenanceResult>("/maintenance/clear-mistakes", {
     method: "POST",
-    headers: { "X-Admin-Token": adminToken },
   });
 }
 
-export async function previewResetCoverage(adminToken: string) {
-  return request<ClearPreview>("/maintenance/reset-coverage/preview", {
-    headers: { "X-Admin-Token": adminToken },
-  });
+export async function previewResetCoverage() {
+  return request<ClearPreview>("/maintenance/reset-coverage/preview");
 }
 
-export async function resetCoverage(adminToken: string) {
+export async function resetCoverage() {
   return request<MaintenanceResult>("/maintenance/reset-coverage", {
     method: "POST",
-    headers: { "X-Admin-Token": adminToken },
   });
+}
+
+export async function getSwitchableBanks() {
+  return request<SwitchableBanks>("/banks");
+}
+
+export async function activateBank(bankId: string) {
+  return request<{ bank_id: string; name: string; status: "active" }>(
+    `/admin/banks/${encodeURIComponent(bankId)}/activate`,
+    { method: "POST" },
+  );
 }

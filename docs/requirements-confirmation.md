@@ -59,12 +59,13 @@
 
 - 页面：首页、练习页、报告页；逐题解析并入报告页，报告可跳回原题回顾。
 - 当前版本运行载体为 Expo Web（`react-native-web`）；保留 React Native + Expo 源码，手机真机验收推迟。
-- 首页只读显示当前题库名称，App 不允许切换 Bank。
+- 首页显示当前 active Bank 名称与题数；本机浏览器可通过二次确认切换 Bank。
 - App 设置页必须支持数据清除：二次确认后清本地缓存并删除后端该 `device_student_id` 全部数据。
 - 主按钮固定黑底白字；强调色绝不作按钮底色。
 - 不做登录、云同步、教师端、家长端、暗色模式。
 - 视觉只读 `contracts/design-tokens.json`；白底黑字、无渐变、无阴影、无插画、圆角 ≤14、字号 ≥13。
-- 后端监听 `0.0.0.0`，学生端局域网可达；`/admin/*` 只接受 socket 回环地址并通过 `X-Admin-Token` 鉴权。
+- 后端监听 `0.0.0.0`，学生端局域网可达；`/admin/*` 默认只接受 socket 回环地址并校验 `X-Admin-Token`。
+- 题库切换与 maintenance 接口只接受 socket 回环地址，不要求口令。
 - 生成审批必须落库；审核请求必须携带 `bank_id` 并校验题目归属；交卷必须携带幂等键。
 - Web 端 `device_student_id` 使用 localStorage，属于本地演示的安全等级降级；回到手机端必须换回原生 secure store。
 - Web 布局在 `<768px` 时最大宽度 480px，桌面端内容区最大宽度 960px，正文块 760px；CSS 强制 `color-scheme: light`。

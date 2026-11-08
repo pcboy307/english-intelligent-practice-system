@@ -67,10 +67,13 @@ strict four-rule pass.
 - 历史报告删除已由物理删除修正为 `report_deletions` 软删。
 - 错题本支持当前题库/历史题库分组、完整语篇重做、其余空位灰字正确答案。
 - 历史报告页显示当前 active bank 的三段覆盖堆积条。
-- 两个维护操作均需 `X-Student-Id + X-Admin-Token + 回环来源`，并显示实时预览条数。
+- 两个维护操作需要 `X-Student-Id + 回环来源`，不校验口令，并显示实时预览条数。
+- 首页显示 active bank 名称与题数，可从相邻“切换”按钮选择全部题库；切换接口只接受回环来源、不校验口令，并写 `bank_switch_log`。
 - A/B/D/E 逐条实测见 `qa/evidence/m25/acceptance-results.md`。
 - 浏览器截图见 `qa/evidence/m25/`，记录见
   `qa/evidence/m25/browser-acceptance.json`。
+- 鉴权范围修正、首页换库、P1/P2/P3/S1/S2 原始证据见
+  `qa/evidence/m25-auth/acceptance-results.md`。
 
 ### M2.5 数据边界
 
@@ -87,9 +90,9 @@ strict four-rule pass.
 
 ## Verification
 
-- pytest: 118 passed.
+- pytest: 121 passed.
 - `M0_CHECK=PASS`
-- `API_CONTRACT_CHECK=PASS calls=18`
+- `API_CONTRACT_CHECK=PASS calls=20`
 - Accepted-generation ledger: CNY 3.063101.
 - Discarded generation attempts remain in raw-response evidence and are not
   included in that total.

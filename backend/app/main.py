@@ -205,80 +205,52 @@ def get_coverage_stats(
     return store.get_coverage_stats(student_id)
 
 
+@app.get("/api/v1/banks")
+def list_switchable_banks(
+    x_student_id: str | None = Header(default=None, alias="X-Student-Id"),
+) -> dict:
+    student_id = student_id_or_401(x_student_id)
+    return store.list_switchable_banks(student_id)
+
+
 @app.get("/api/v1/maintenance/clear-mistakes/preview")
 def preview_clear_mistakes(
     request: Request,
     x_student_id: str | None = Header(default=None, alias="X-Student-Id"),
-    x_admin_token: str | None = Header(default=None, alias="X-Admin-Token"),
 ) -> dict:
     student_id = student_id_or_401(x_student_id)
-    token = require_local_admin(request, x_admin_token)
-    preview = store.clear_mistakes_preview(student_id)
-    store.admin_audit(
-        "GET",
-        "/api/v1/maintenance/clear-mistakes/preview",
-        token,
-        "ok",
-        200,
-    )
-    return preview
+    require_local_request(request)
+    return store.clear_mistakes_preview(student_id)
 
 
 @app.post("/api/v1/maintenance/clear-mistakes")
 def clear_mistakes(
     request: Request,
     x_student_id: str | None = Header(default=None, alias="X-Student-Id"),
-    x_admin_token: str | None = Header(default=None, alias="X-Admin-Token"),
 ) -> dict:
     student_id = student_id_or_401(x_student_id)
-    token = require_local_admin(request, x_admin_token)
-    result = store.clear_mistakes(student_id)
-    store.admin_audit(
-        "POST",
-        "/api/v1/maintenance/clear-mistakes",
-        token,
-        "ok",
-        200,
-    )
-    return result
+    require_local_request(request)
+    return store.clear_mistakes(student_id)
 
 
 @app.get("/api/v1/maintenance/reset-coverage/preview")
 def preview_reset_coverage(
     request: Request,
     x_student_id: str | None = Header(default=None, alias="X-Student-Id"),
-    x_admin_token: str | None = Header(default=None, alias="X-Admin-Token"),
 ) -> dict:
     student_id = student_id_or_401(x_student_id)
-    token = require_local_admin(request, x_admin_token)
-    preview = store.reset_coverage_preview(student_id)
-    store.admin_audit(
-        "GET",
-        "/api/v1/maintenance/reset-coverage/preview",
-        token,
-        "ok",
-        200,
-    )
-    return preview
+    require_local_request(request)
+    return store.reset_coverage_preview(student_id)
 
 
 @app.post("/api/v1/maintenance/reset-coverage")
 def reset_coverage(
     request: Request,
     x_student_id: str | None = Header(default=None, alias="X-Student-Id"),
-    x_admin_token: str | None = Header(default=None, alias="X-Admin-Token"),
 ) -> dict:
     student_id = student_id_or_401(x_student_id)
-    token = require_local_admin(request, x_admin_token)
-    result = store.reset_coverage(student_id)
-    store.admin_audit(
-        "POST",
-        "/api/v1/maintenance/reset-coverage",
-        token,
-        "ok",
-        200,
-    )
-    return result
+    require_local_request(request)
+    return store.reset_coverage(student_id)
 
 
 @app.get("/api/v1/practice/{session_id}")
@@ -398,10 +370,14 @@ def get_error_tags(
     return store.get_error_tags(student_id)
 
 
-def require_local_admin(request: Request, x_admin_token: str | None) -> str:
+def require_local_request(request: Request) -> None:
     peer = request.client.host if request.client else ""
     if peer not in {"127.0.0.1", "::1"}:
         raise HTTPException(status_code=403, detail={"code": "ADMIN_LOCAL_ONLY"})
+
+
+def require_local_admin(request: Request, x_admin_token: str | None) -> str:
+    require_local_request(request)
     if not x_admin_token or not secrets.compare_digest(x_admin_token, ADMIN_TOKEN):
         raise HTTPException(status_code=401, detail={"code": "ADMIN_AUTH_FAILED"})
     return x_admin_token
@@ -429,11 +405,10 @@ def list_banks(
 def activate_bank(
     bank_id: str,
     request: Request,
-    x_admin_token: str | None = Header(default=None, alias="X-Admin-Token"),
 ) -> dict:
-    token = require_local_admin(request, x_admin_token)
+    require_local_request(request)
     try:
-        activated = store.activate_bank(bank_id, operator="admin")
+        activated = store.activate_bank(bank_id, operator="student_ui")
     except KeyError as error:
         raise HTTPException(
             status_code=404,
@@ -444,11 +419,4 @@ def activate_bank(
             status_code=409,
             detail={"code": str(error)},
         ) from error
-    store.admin_audit(
-        "POST",
-        f"/api/v1/admin/banks/{bank_id}/activate",
-        token,
-        "ok",
-        200,
-    )
     return activated

@@ -3,15 +3,18 @@ info:
   title: 高二英语智能练习系统 API
   version: 1.0.0
   description: |
-    M0 冻结候选接口。学生端使用 X-Student-Id；管理端只接受本机回环连接并使用 X-Admin-Token。
-    交卷前任何学生端响应都不得包含 answer 或 explanation。服务绑定 0.0.0.0，便于局域网真机访问。
+    学生端使用 X-Student-Id。维护接口只接受本机回环来源且不校验口令；
+    除题库切换外，其余管理接口仍需 X-Admin-Token。交卷前任何学生端响应都不得包含
+    answer 或 explanation。服务绑定 0.0.0.0，便于局域网真机访问。
 servers:
   - url: http://localhost:8000/api/v1
 tags:
   - name: student
   - name: reports
+  - name: maintenance
+    description: 仅接受 127.0.0.1 / ::1 socket 回环来源；不校验本地口令。
   - name: admin
-    description: 来源 socket 对端必须是 127.0.0.1 或 ::1；随后校验 X-Admin-Token。不得使用 X-Forwarded-For。
+    description: 来源 socket 对端必须是 127.0.0.1 或 ::1；除题库切换外仍校验 X-Admin-Token。不得使用 X-Forwarded-For。
 components:
   securitySchemes:
     StudentId:
@@ -426,6 +429,48 @@ components:
         deleted_count:
           type: integer
           minimum: 0
+    SwitchableBank:
+      type: object
+      additionalProperties: false
+      required:
+        - bank_id
+        - name
+        - version
+        - question_count
+        - status
+        - is_current
+      properties:
+        bank_id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        version:
+          type: integer
+          minimum: 1
+        question_count:
+          type: integer
+          minimum: 0
+        status:
+          type: string
+          enum: [active, ready, archived]
+        is_current:
+          type: boolean
+    SwitchableBanks:
+      type: object
+      additionalProperties: false
+      required: [current_bank_id, in_progress_count, banks]
+      properties:
+        current_bank_id:
+          type: string
+          format: uuid
+        in_progress_count:
+          type: integer
+          minimum: 0
+        banks:
+          type: array
+          items:
+            $ref: "#/components/schemas/SwitchableBank"
     PreviewResponse:
       type: object
       additionalProperties: false
@@ -993,9 +1038,9 @@ paths:
     post:
       tags: [admin]
       operationId: activateBank
-      security:
-        - AdminToken: []
-      summary: 原子切换 active Bank；只影响新会话
+      security: []
+      summary: 原子切换 active Bank；仅接受 socket 回环来源
+      description: 不校验本地口令；非 127.0.0.1 / ::1 来源返回 403，并写入 bank_switch_log。
       parameters:
         - $ref: "#/components/parameters/BankId"
       responses:
@@ -1194,14 +1239,29 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/CoverageStats"
+  /banks:
+    get:
+      tags: [student]
+      operationId: listSwitchableBanks
+      security:
+        - StudentId: []
+      summary: 列出可切换的 active / ready / archived 题库
+      responses:
+        "200":
+          description: 题库切换列表与当前学生未完成会话数
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SwitchableBanks"
+        "401":
+          $ref: "#/components/responses/ErrorResponse"
   /maintenance/clear-mistakes/preview:
     get:
-      tags: [admin]
+      tags: [maintenance]
       operationId: previewClearMistakes
       security:
         - StudentId: []
-        - AdminToken: []
-      summary: 预览当前题库错题清空条数
+      summary: 预览当前题库错题清空条数；仅回环来源
       responses:
         "200":
           description: 将删除的当前题库错题数与保留的历史错题数
@@ -1215,12 +1275,11 @@ paths:
           $ref: "#/components/responses/ErrorResponse"
   /maintenance/clear-mistakes:
     post:
-      tags: [admin]
+      tags: [maintenance]
       operationId: clearMistakes
       security:
         - StudentId: []
-        - AdminToken: []
-      summary: 清空当前题库的错题记录
+      summary: 清空当前题库的错题记录；仅回环来源
       responses:
         "200":
           description: 实际删除条数
@@ -1234,12 +1293,11 @@ paths:
           $ref: "#/components/responses/ErrorResponse"
   /maintenance/reset-coverage/preview:
     get:
-      tags: [admin]
+      tags: [maintenance]
       operationId: previewResetCoverage
       security:
         - StudentId: []
-        - AdminToken: []
-      summary: 预览当前题库覆盖统计重置条数
+      summary: 预览当前题库覆盖统计重置条数；仅回环来源
       responses:
         "200":
           description: 将删除的 attempt 条数与当前题库题数
@@ -1253,12 +1311,11 @@ paths:
           $ref: "#/components/responses/ErrorResponse"
   /maintenance/reset-coverage:
     post:
-      tags: [admin]
+      tags: [maintenance]
       operationId: resetCoverage
       security:
         - StudentId: []
-        - AdminToken: []
-      summary: 按当前题库 question_id 删除对应覆盖记录
+      summary: 按当前题库 question_id 删除对应覆盖记录；仅回环来源
       responses:
         "200":
           description: 实际删除条数

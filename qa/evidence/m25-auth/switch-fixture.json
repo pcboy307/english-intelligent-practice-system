@@ -1,0 +1,841 @@
+{
+  "student_id": "ad369658-5237-49e8-8d65-f49021e134cb",
+  "active_bank": {
+    "id": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2",
+    "name": "M2 Bank #2"
+  },
+  "target_bank": {
+    "bank_id": "3ef6bdfd-985f-4933-be8d-c0858e153f54",
+    "name": "M2.5 UI切换验收题库-258b1b",
+    "question_count": 5,
+    "passage_id": "M25-SWITCH-UI-5a81e4a2"
+  },
+  "wrong_session_id": "b5d23a8c-de29-4f86-b40b-cef1c7b6556d",
+  "in_progress_session_id": "63239286-0f5a-45d5-9cd8-99c4d04aca37",
+  "coverage": {
+    "total": 300,
+    "none": 297,
+    "once": 3,
+    "twice_plus": 0,
+    "bank_name": "M2 Bank #2",
+    "as_of": "2026-11-08T03:28:01.513990+00:00"
+  },
+  "mistakes": {
+    "current_bank": {
+      "bank_id": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2",
+      "bank_name": "M2 Bank #2",
+      "count": 3,
+      "passages": [
+        {
+          "passage_id": "M2-FULL-CLOZE-01",
+          "question_type": "cloze",
+          "items": [
+            {
+              "question_id": "M2-FULL-CLOZE-01-Q01",
+              "passage_id": "M2-FULL-CLOZE-01",
+              "question_type": "cloze",
+              "label": "第1题",
+              "wrong_count": 1,
+              "correct_streak": 0,
+              "status": "open"
+            },
+            {
+              "question_id": "M2-FULL-CLOZE-01-Q02",
+              "passage_id": "M2-FULL-CLOZE-01",
+              "question_type": "cloze",
+              "label": "第2题",
+              "wrong_count": 1,
+              "correct_streak": 0,
+              "status": "open"
+            },
+            {
+              "question_id": "M2-FULL-CLOZE-01-Q03",
+              "passage_id": "M2-FULL-CLOZE-01",
+              "question_type": "cloze",
+              "label": "第3题",
+              "wrong_count": 1,
+              "correct_streak": 0,
+              "status": "open"
+            }
+          ]
+        }
+      ]
+    },
+    "history_banks": [],
+    "total_open": 3
+  },
+  "banks": {
+    "current_bank_id": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2",
+    "in_progress_count": 1,
+    "banks": [
+      {
+        "bank_id": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2",
+        "name": "M2 Bank #2",
+        "version": 1,
+        "question_count": 300,
+        "status": "active",
+        "is_current": true
+      },
+      {
+        "bank_id": "3ef6bdfd-985f-4933-be8d-c0858e153f54",
+        "name": "M2.5 UI切换验收题库-258b1b",
+        "version": 1,
+        "question_count": 5,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "5a2228ac-026a-4558-8744-a537614f82e4",
+        "name": "M25 Running B",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "7fb9a915-cad5-4fe2-b106-dd9017d09a9b",
+        "name": "M25 Running A",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "418b7fdf-baf7-4fdb-9d61-160954244688",
+        "name": "M25 No Token Switch",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "fa4e027c-3eba-492d-9746-6d37b1e3344c",
+        "name": "M25 Reset Current",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "4a62d13d-65f4-44f4-abed-02ded625251e",
+        "name": "M25 Reset History",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "2a31c16a-65ef-4142-a92a-9d99085958a4",
+        "name": "M25 Clear Current",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "57354aa0-8822-475e-82ad-2382e3e56b0e",
+        "name": "M25 Clear History",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "b6c6d4cf-2d17-4922-9948-22886864aa39",
+        "name": "M25 Coverage Review",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "38f74c6b-ec07-49dd-95cc-3373d7b235b3",
+        "name": "M25 Coverage",
+        "version": 1,
+        "question_count": 3,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "5cfde257-806b-4486-8690-4095003ed5b6",
+        "name": "M25 Size B",
+        "version": 1,
+        "question_count": 20,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "1c231f34-d0fd-470b-86f1-b7e285dd3403",
+        "name": "M25 Size A",
+        "version": 1,
+        "question_count": 10,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "cfadb187-d275-4597-9166-ff1e2c9f6e6b",
+        "name": "M25 Switch B",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "7419c48e-0ecd-4276-9248-7b4d539ac0d5",
+        "name": "M25 Switch A",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "b86a0113-39ae-469d-812b-aeb94e68e327",
+        "name": "M25 Test B",
+        "version": 1,
+        "question_count": 20,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "56b74667-6c37-4597-9aaf-c88d407b388f",
+        "name": "M25 Test A",
+        "version": 1,
+        "question_count": 10,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "c1c4dce0-f741-4166-8f19-1ffbb4764d16",
+        "name": "M25 Test B",
+        "version": 1,
+        "question_count": 20,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "60670cbb-6447-4e3c-b625-9c027ca14482",
+        "name": "M25 Test A",
+        "version": 1,
+        "question_count": 10,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "96f26398-e2c1-4f46-a408-32cdb94093bb",
+        "name": "M25 Running B",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "ef110231-b109-48ad-a8ce-7a67a2551005",
+        "name": "M25 Running A",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "78a50e1a-8ef4-4162-80e5-250ad0636409",
+        "name": "M25 No Token Switch",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "f56f916b-e4fc-41cd-865e-57c20de69411",
+        "name": "M25 Running B",
+        "version": 1,
+        "question_count": 1,
+        "status": "ready",
+        "is_current": false
+      },
+      {
+        "bank_id": "dfd8811f-46fa-4837-b8b1-f965d19eeeea",
+        "name": "M25 Running A",
+        "version": 1,
+        "question_count": 1,
+        "status": "ready",
+        "is_current": false
+      },
+      {
+        "bank_id": "e83960ef-99cf-45d5-bacf-0c2c396f0b66",
+        "name": "M25 No Token Switch",
+        "version": 1,
+        "question_count": 1,
+        "status": "ready",
+        "is_current": false
+      },
+      {
+        "bank_id": "4e427391-3863-4b36-a18b-91496d18885b",
+        "name": "M25 Reset Current",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "16b9cc4e-a89c-4b02-b88d-3f50f7a77127",
+        "name": "M25 Reset History",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "9e3768f3-30ef-4786-98d5-0cf6dd9668de",
+        "name": "M25 Clear Current",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "44351f1e-5ccd-4385-a804-f40dda097a00",
+        "name": "M25 Clear History",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "55bb01d0-decd-4899-8122-8c8a6970e859",
+        "name": "M25 Coverage Review",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "0d714d2b-8faf-423b-b9b8-863e69dd8817",
+        "name": "M25 Coverage",
+        "version": 1,
+        "question_count": 3,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "26252c69-080b-4bb5-b83e-e277353f074b",
+        "name": "M25 Size B",
+        "version": 1,
+        "question_count": 20,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "4f8d29e0-83e9-42b8-894f-34b625b4b0ea",
+        "name": "M25 Size A",
+        "version": 1,
+        "question_count": 10,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "af2fcd6d-1393-4b73-b2b5-f6ef763a5630",
+        "name": "M25 Switch B",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "7c336a1f-22a8-40cc-8683-4bc95b52b30d",
+        "name": "M25 Switch A",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "f7634395-f256-4241-8f5d-54fdda8d37ab",
+        "name": "M25 Test B",
+        "version": 1,
+        "question_count": 20,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "b6019c33-deb3-4699-9884-dd7d9bb422ca",
+        "name": "M25 Test A",
+        "version": 1,
+        "question_count": 10,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "1f3e999c-360a-4201-bd6b-65a3259976c4",
+        "name": "M25 Size B",
+        "version": 1,
+        "question_count": 20,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "5efdb5b3-25e2-4f44-bfb3-14128841aceb",
+        "name": "M25 Size A",
+        "version": 1,
+        "question_count": 10,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "1aa5fe36-d188-43c1-89c5-f2eeda674230",
+        "name": "M25 Reset Current",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "9809667b-17e2-43eb-b217-ae575f4cc986",
+        "name": "M25 Reset History",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "a1c1f849-1389-4a8b-bfac-3c1ee7a6016d",
+        "name": "M25 Clear Current",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "53ff20f2-70ef-49dc-b5a7-556b29bb3f44",
+        "name": "M25 Clear History",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "b2a92aca-50b1-47da-a3b2-e1985092c3e5",
+        "name": "M25 Coverage Review",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "dc49e2cd-19a2-4a85-850f-01cd8a2f2393",
+        "name": "M25 Coverage",
+        "version": 1,
+        "question_count": 3,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "d05b93c2-e848-43e1-9397-b8ddbc8eadab",
+        "name": "M25 Switch B",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "d1d6d98e-392d-401e-bb29-68ffa4e4a3d1",
+        "name": "M25 Switch A",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "75bf81ce-42b5-4db0-badb-03f26fbfd1df",
+        "name": "M25 Test B",
+        "version": 1,
+        "question_count": 20,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "2e246be2-124c-49e5-9ba6-ab3d50210e35",
+        "name": "M25 Test A",
+        "version": 1,
+        "question_count": 10,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "250952f1-701a-4b2f-84c1-8ef106815b7b",
+        "name": "M25 Switch B",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "085f6458-a5e6-4140-bf0d-fc60ba1c42c7",
+        "name": "M25 Switch A",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "c7e9ad98-4de2-4aaa-9f00-9f71c7cb6fdf",
+        "name": "M25 Switch B",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "456a55a6-0b4f-47b0-b7d9-d91d1e732fa7",
+        "name": "M25 Switch A",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "d25d23a2-42e0-4477-8998-718768c6be97",
+        "name": "M2.5 历史验收题库",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "56fa69c4-a553-46ec-8330-0a39d316ee9d",
+        "name": "M25 Reset Current",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "89e82e2e-ee18-4576-aec9-5fc63a18eafa",
+        "name": "M25 Reset History",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "4002789a-d6fc-4692-8b30-0dbc35243ad6",
+        "name": "M25 Clear Current",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "59cc25a4-8846-434b-8ac0-ba3c23dd3c49",
+        "name": "M25 Clear History",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "9d26810f-ef61-48dc-a108-3e98e0bf2d07",
+        "name": "M25 Coverage Review",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "d0403231-034e-4d7b-839c-62ae3217d292",
+        "name": "M25 Coverage",
+        "version": 1,
+        "question_count": 3,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "b02d418b-8c51-4edf-82ab-f9a7b019b048",
+        "name": "M25 Switch B",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "62dc5bff-2c75-4e07-8aa4-9cfdbd24bac9",
+        "name": "M25 Switch A",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "d64a604f-0bc3-4435-baab-2591450e7fa1",
+        "name": "M25 Test B",
+        "version": 1,
+        "question_count": 20,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "b0934214-91c0-4ec0-9a5d-e5a4932bf590",
+        "name": "M25 Test A",
+        "version": 1,
+        "question_count": 10,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "8fa09634-00ed-46af-95d4-33dfbc2f5945",
+        "name": "M25 Reset Current",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "2bb5992f-3ce5-498c-ba8c-9bdfd4420d79",
+        "name": "M25 Reset History",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "bc1b1698-3df2-4cb2-a63e-0cb1a3d873b9",
+        "name": "M25 Clear Current",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "5cb09f0e-c1ff-4486-afdb-8780e6149f8a",
+        "name": "M25 Clear History",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "dd8bcf05-6ed6-4c25-8d4d-b6967e59e886",
+        "name": "M25 Reset Current",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "96ef360e-17fb-4afb-80e4-3f2cc99c4b00",
+        "name": "M25 Reset History",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "5a053944-0e96-4dff-909a-19dd2964621b",
+        "name": "M25 Clear Current",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "dbe5f971-ef72-4100-af8c-e3087762add3",
+        "name": "M25 Clear History",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "8fb444df-5fcf-4daf-9316-6a0bccc96077",
+        "name": "M25 Coverage Review",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "8aee50f8-73ad-4718-b75f-b51735a14c41",
+        "name": "M25 Coverage",
+        "version": 1,
+        "question_count": 3,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "00ffdc9b-558b-4040-894e-c3f7371d462a",
+        "name": "M25 Switch B",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "452e70e9-71d1-4d53-8443-a4ca390ed5f2",
+        "name": "M25 Switch A",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "e90068a1-3637-4c35-9faf-a8d0f6021255",
+        "name": "M25 Test B",
+        "version": 1,
+        "question_count": 20,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "89ecfd6d-dabe-4bc2-809e-eb97774266c3",
+        "name": "M25 Test A",
+        "version": 1,
+        "question_count": 10,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "6c2c2b59-4bfd-467c-9813-09185f35c15c",
+        "name": "M25 Coverage Review",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "30933c71-d55d-48f7-a370-a6b8b976b08f",
+        "name": "M25 Coverage",
+        "version": 1,
+        "question_count": 3,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "08354aab-4879-41d2-bfab-151b4f8aa72e",
+        "name": "M25 Coverage Review",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "b3ab03ff-02f3-4f2e-ad53-5a8ffe97dac3",
+        "name": "M25 Coverage",
+        "version": 1,
+        "question_count": 3,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "066d3487-e86a-4a1d-9fc6-4b78aa8e0117",
+        "name": "M25 Coverage Review",
+        "version": 1,
+        "question_count": 1,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "cd043fd3-b494-4918-9d9c-4bdcb629ae74",
+        "name": "M25 Coverage",
+        "version": 1,
+        "question_count": 3,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "8ac87619-7c8a-4379-8ac0-59c54a5bee44",
+        "name": "M25 Switch B",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "2f4a5ac3-927c-47b4-8c38-dd2fe642aeed",
+        "name": "M25 Switch A",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "236d5b35-328b-40a2-a120-bc8215618034",
+        "name": "M25 Test B",
+        "version": 1,
+        "question_count": 20,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "873c109b-48de-4b55-a27f-9ffd05ada6c1",
+        "name": "M25 Test A",
+        "version": 1,
+        "question_count": 10,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "3e6f2f5f-bbfa-4bc6-8ae0-d63a9c9a8345",
+        "name": "M25 Switch B",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "641c5dca-8bc5-49e5-96f1-a03871c9359e",
+        "name": "M25 Switch A",
+        "version": 1,
+        "question_count": 2,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "40827b26-757c-48fd-b933-59204c017421",
+        "name": "M25 Test B",
+        "version": 1,
+        "question_count": 20,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "c7956dd8-3da4-423b-b308-e5915672dcb4",
+        "name": "M25 Test A",
+        "version": 1,
+        "question_count": 10,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "778f5cbf-57df-460e-bf69-1b3a67471dca",
+        "name": "M25 Switch A",
+        "version": 1,
+        "question_count": 2,
+        "status": "ready",
+        "is_current": false
+      },
+      {
+        "bank_id": "04359754-3568-4dc0-b96d-220a971f0fb2",
+        "name": "M25 Test A",
+        "version": 1,
+        "question_count": 10,
+        "status": "ready",
+        "is_current": false
+      },
+      {
+        "bank_id": "00000000-0000-4000-8000-000000000002",
+        "name": "Demo Bank",
+        "version": 1,
+        "question_count": 80,
+        "status": "archived",
+        "is_current": false
+      },
+      {
+        "bank_id": "00000000-0000-4000-8000-000000000001",
+        "name": "Demo Bank",
+        "version": 1,
+        "question_count": 30,
+        "status": "ready",
+        "is_current": false
+      }
+    ]
+  }
+}

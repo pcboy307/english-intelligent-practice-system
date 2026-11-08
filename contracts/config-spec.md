@@ -116,7 +116,8 @@
 ### `contracts/admin-auth.md`
 
 - 服务绑定 `0.0.0.0`。
-- `/admin/*` 先校验 socket 回环来源，再校验 `X-Admin-Token`。
+- `/admin/*` 默认先校验回环来源，再校验 `X-Admin-Token`。
+- `POST /admin/banks/{bank_id}/activate` 与 `/maintenance/*` 是例外：只校验回环来源，不校验口令。
 - `ADMIN_TOKEN` 仅来自 `.env`；缺失时启动生成并写回。
 - 禁止用 `X-Forwarded-For` 判断来源。
 - token 使用 `secrets.compare_digest`。

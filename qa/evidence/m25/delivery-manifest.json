@@ -2,7 +2,7 @@
   "status": "passed",
   "migration": {
     "path": "db/migrations/002_mistake_book.sql",
-    "lines": 101,
+    "lines": 193,
     "new_tables": [
       "question_attempts",
       "mistake_items",
@@ -18,6 +18,7 @@
     "GET /api/v1/mistakes/{passage_id}",
     "POST /api/v1/mistakes/review/{passage_id}",
     "GET /api/v1/stats/coverage",
+    "GET /api/v1/banks",
     "GET /api/v1/maintenance/clear-mistakes/preview",
     "POST /api/v1/maintenance/clear-mistakes",
     "GET /api/v1/maintenance/reset-coverage/preview",
@@ -38,6 +39,7 @@
   },
   "documents": [
     "docs/change-log/CO-005-soft-delete-correction.md",
+    "docs/change-log/AUTH-question-primary-key.md",
     "M2-status.md",
     "docs/待补齐清单.md",
     "docs/交接说明.md",
@@ -51,7 +53,11 @@
     "qa/evidence/m25/pytest.txt",
     "qa/evidence/m25/checks.txt",
     "qa/evidence/m25/typecheck.txt",
-    "qa/evidence/m25/openapi.txt"
+    "qa/evidence/m25/openapi.txt",
+    "qa/evidence/m25-auth/acceptance-results.md",
+    "qa/evidence/m25-auth/bank-switch-acceptance.json",
+    "qa/evidence/m25-auth/pg-constraints.txt",
+    "qa/evidence/m25-auth/query-write-audit.md"
   ],
   "screenshots": [
     "qa/evidence/m25/home-entry.png",
@@ -65,9 +71,9 @@
     "qa/evidence/m25/mistakes-cleared.png"
   ],
   "verification": {
-    "pytest": "118 passed, 1 warning",
+    "pytest": "121 passed, 1 warning",
     "M0_CHECK": "PASS",
-    "API_CONTRACT_CHECK": "PASS calls=18",
+    "API_CONTRACT_CHECK": "PASS calls=20",
     "OpenAPI": "valid"
   }
 }

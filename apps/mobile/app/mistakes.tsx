@@ -105,12 +105,12 @@ export default function MistakesScreen() {
         title="清空错题本"
         intro="先读取当前题库的实际错题条数；历史题库的错题会保留。"
         onCancel={() => setClearVisible(false)}
-        loadPreview={async (token) => {
-          const preview = await previewClearMistakes(token);
+        loadPreview={async () => {
+          const preview = await previewClearMistakes();
           return `将清空当前题库（${preview.bank_name}）的 ${preview.count} 道错题。历史题库的 ${preview.history_count} 道错题会保留。此操作不可恢复。`;
         }}
-        onConfirm={async (token) => {
-          await clearMistakes(token);
+        onConfirm={async () => {
+          await clearMistakes();
           setMistakes(await getMistakes());
           setClearVisible(false);
         }}
@@ -126,13 +126,23 @@ export default function MistakesScreen() {
               当前待订正 {mistakes?.total_open ?? 0} 题
             </Text>
           </View>
-          <Pressable
-            accessibilityRole="button"
-            onPress={() => router.replace("/")}
-            style={styles.button}
-          >
-            <Text style={styles.buttonText}>返回首页</Text>
-          </Pressable>
+          <View style={styles.headerActions}>
+            <Pressable
+              accessibilityRole="button"
+              onPress={() => setClearVisible(true)}
+              style={styles.clearButton}
+              testID="clear-mistakes-button"
+            >
+              <Text style={styles.clearText}>清空错题本</Text>
+            </Pressable>
+            <Pressable
+              accessibilityRole="button"
+              onPress={() => router.replace("/")}
+              style={styles.button}
+            >
+              <Text style={styles.buttonText}>返回首页</Text>
+            </Pressable>
+          </View>
         </View>
         {error ? <Text style={styles.error}>{error}</Text> : null}
         {!mistakes && !error ? (
@@ -147,14 +157,6 @@ export default function MistakesScreen() {
           <View style={[styles.body, { maxWidth: layout.bodyMaxWidth }]}>
             {renderBankGroup(mistakes.current_bank, false)}
             {mistakes.history_banks.map((group) => renderBankGroup(group, true))}
-            <Pressable
-              accessibilityRole="button"
-              onPress={() => setClearVisible(true)}
-              style={styles.clearButton}
-              testID="clear-mistakes-button"
-            >
-              <Text style={styles.clearText}>清空错题本</Text>
-            </Pressable>
           </View>
         ) : null}
       </View>
@@ -175,6 +177,12 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "flex-start",
     gap: tokens.spacing.listGap,
+  },
+  headerActions: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "flex-end",
+    gap: tokens.web_desktop.optionGap,
   },
   title: {
     color: tokens.color.primaryText,
@@ -281,9 +289,7 @@ const styles = StyleSheet.create({
     marginTop: tokens.spacing.section,
   },
   clearButton: {
-    alignSelf: "flex-start",
     minHeight: tokens.control.touchTargetMin,
-    marginTop: tokens.spacing.section,
     paddingHorizontal: tokens.spacing.listGap,
     justifyContent: "center",
   },

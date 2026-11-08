@@ -53,12 +53,12 @@ export default function HistoryScreen() {
         title="重置覆盖统计"
         intro="先读取当前题库将删除的实际作答计数；历史报告不会被删除。"
         onCancel={() => setResetVisible(false)}
-        loadPreview={async (token) => {
-          const preview = await previewResetCoverage(token);
+        loadPreview={async () => {
+          const preview = await previewResetCoverage();
           return `将重置当前题库（${preview.bank_name}）共 ${preview.question_total ?? 0} 题的作答统计，实际删除 ${preview.count} 条作答计数。历史报告不会被删除。此操作不可恢复。`;
         }}
-        onConfirm={async (token) => {
-          await resetCoverage(token);
+        onConfirm={async () => {
+          await resetCoverage();
           setCoverage(await getCoverageStats());
           setResetVisible(false);
         }}
