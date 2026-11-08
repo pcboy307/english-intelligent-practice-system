@@ -321,6 +321,8 @@ def test_database_endpoint_is_absolute_and_name_is_checked() -> None:
         env=environment,
         capture_output=True,
         text=True,
+        encoding="utf-8",
+        errors="replace",
         check=False,
     )
     assert rejected.returncode != 0

@@ -26,6 +26,8 @@ ROOT = Path(__file__).resolve().parents[2]
 class GateCategory(StrEnum):
     WORD_COUNT = "word_count"
     STRUCTURE = "structure"
+    PLACEHOLDER_INTEGRITY = "placeholder_integrity"
+    GAP_OPTION_LEAK = "gap_option_leak"
     VOCABULARY_SCOPE = "vocabulary_scope"
     UNKNOWN_RATIO = "unknown_ratio"
     QUESTION_COUNT = "question_count"
@@ -167,6 +169,11 @@ TYPE_RULES = {
     },
 }
 
+FILL_PLACEHOLDER = "______"
+PLACEHOLDER_TYPES = {"cloze", "grammar_fill", "gap_fill"}
+GAP_OPTION_OVERLAP_WORDS = 6
+ANSWER_TOKEN_PATTERN = re.compile(r"[A-Za-z]+(?:['-][A-Za-z]+)*")
+
 
 @lru_cache(maxsize=1)
 def load_curriculum() -> dict[str, Any]:
@@ -252,22 +259,246 @@ def _book_tag(book_source: str) -> str:
     return ""
 
 
-def _placeholder_checks(record: dict[str, Any]) -> list[str]:
-    passage_type = record["type"]
-    passage = record["passage"]
-    if passage_type == "cloze":
-        return [
-            f"cloze blank ({index}) is missing"
-            for index in range(1, 16)
-            if f"({index})" not in passage
-        ]
+def _blank_marker(passage_type: str, index: int) -> str:
     if passage_type == "grammar_fill":
-        return [
-            f"grammar blank {chr(0x2460 + index - 1)} is missing"
-            for index in range(1, 11)
-            if chr(0x2460 + index - 1) not in passage
-        ]
-    return []
+        return chr(0x2460 + index - 1)
+    return f"({index})"
+
+
+def _answer_tokens(value: str) -> list[str]:
+    return [match.group(0).casefold() for match in ANSWER_TOKEN_PATTERN.finditer(value)]
+
+
+def _same_lemma(left: str, right: str) -> bool:
+    candidate_lemmas = _load_vocabulary_audit_module().candidate_lemmas
+    return bool(set(candidate_lemmas(left.casefold())) & set(candidate_lemmas(right.casefold())))
+
+
+def _answer_occurrence_count(passage: str, answer: str) -> int:
+    passage_tokens = _answer_tokens(passage)
+    answer_tokens = _answer_tokens(answer)
+    if not answer_tokens:
+        return 0
+    width = len(answer_tokens)
+    return sum(
+        all(
+            _same_lemma(passage_tokens[index + offset], answer_tokens[offset])
+            for offset in range(width)
+        )
+        for index in range(len(passage_tokens) - width + 1)
+    )
+
+
+def _placeholder_value_after_marker(suffix: str) -> str:
+    match = re.match(r"\s*([^\s,.;:!?()\[\]{}]+)", suffix)
+    return match.group(1) if match else ""
+
+
+def _fill_integrity_failures(
+    passage_type: str,
+    passage: str,
+    questions: list[Any],
+) -> tuple[list[GateFailure], list[dict[str, Any]]]:
+    if passage_type not in PLACEHOLDER_TYPES:
+        return [], []
+
+    answers_by_index = {
+        index: str(question.get("answer", "")).strip()
+        for index, question in enumerate(questions, start=1)
+        if isinstance(question, dict)
+    }
+    failures: list[GateFailure] = []
+    rows: list[dict[str, Any]] = []
+    expected_count = TYPE_RULES[passage_type]["questions"]
+
+    for index in range(1, expected_count + 1):
+        marker = _blank_marker(passage_type, index)
+        answer = (
+            answers_by_index.get(index, "")
+            if passage_type != "gap_fill"
+            else ""
+        )
+        answer_occurrences = _answer_occurrence_count(passage, answer) if answer else 0
+        markers = list(re.finditer(re.escape(marker), passage))
+        row = {
+            "question_index": index,
+            "marker": marker,
+            "answer": answer,
+            "answer_occurrences": answer_occurrences,
+            "slot_form": None,
+            "valid": False,
+        }
+        if not markers:
+            failures.append(
+                GateFailure(
+                    GateCategory.PLACEHOLDER_INTEGRITY,
+                    "PLACEHOLDER_MARKER_MISSING: marker is absent from the passage.",
+                    index,
+                    {"marker": marker},
+                )
+            )
+            rows.append(row)
+            continue
+        if len(markers) > 1:
+            failures.append(
+                GateFailure(
+                    GateCategory.PLACEHOLDER_INTEGRITY,
+                    "PLACEHOLDER_MARKER_DUPLICATE: marker appears more than once.",
+                    index,
+                    {"marker": marker, "count": len(markers)},
+                )
+            )
+            rows.append(row)
+            continue
+
+        suffix = passage[markers[0].end() :]
+        leading_word_fragment = re.match(r"\s*[A-Za-z]+_+", suffix)
+        trailing_word_fragment = re.match(r"\s*_+[A-Za-z]+", suffix)
+        if leading_word_fragment or trailing_word_fragment:
+            sample = (leading_word_fragment or trailing_word_fragment).group(0).strip()
+            row["slot_form"] = sample
+            failures.append(
+                GateFailure(
+                    GateCategory.PLACEHOLDER_INTEGRITY,
+                    "PLACEHOLDER_FRAGMENT: a word fragment remains beside the blank.",
+                    index,
+                    {
+                        "marker": marker,
+                        "sample": sample,
+                        "expected_placeholder": FILL_PLACEHOLDER,
+                    },
+                )
+            )
+            rows.append(row)
+            continue
+
+        if re.match(rf"\s*{re.escape(FILL_PLACEHOLDER)}(?![A-Za-z0-9_])", suffix):
+            row["slot_form"] = FILL_PLACEHOLDER
+            row["valid"] = True
+        else:
+            value = _placeholder_value_after_marker(suffix)
+            row["slot_form"] = value or FILL_PLACEHOLDER
+            if value and answer and _same_lemma(value, _answer_tokens(answer)[0]):
+                code = "PLACEHOLDER_ANSWER_WORD_LEAK"
+                message = (
+                    "PLACEHOLDER_ANSWER_WORD_LEAK: answer word occupies its blank."
+                )
+            elif suffix.lstrip().startswith("_"):
+                code = "PLACEHOLDER_FRAGMENT"
+                message = (
+                    "PLACEHOLDER_FRAGMENT: malformed underline placeholder."
+                )
+            else:
+                code = "PLACEHOLDER_MISSING"
+                message = (
+                    "PLACEHOLDER_MISSING: blank has no unified underscore placeholder."
+                )
+            failures.append(
+                GateFailure(
+                    GateCategory.PLACEHOLDER_INTEGRITY,
+                    message,
+                    index,
+                    {
+                        "marker": marker,
+                        "slot_form": row["slot_form"],
+                        "expected_placeholder": FILL_PLACEHOLDER,
+                    },
+                )
+            )
+        rows.append(row)
+
+        if answer_occurrences:
+            failures.append(
+                GateFailure(
+                    GateCategory.PLACEHOLDER_INTEGRITY,
+                    "ANSWER_WORD_APPEARS_IN_PASSAGE: answer form occurs in the passage.",
+                    index,
+                    {
+                        "answer": answer,
+                        "occurrences": answer_occurrences,
+                    },
+                )
+            )
+
+    return failures, rows
+
+
+def validate_fill_placeholder_shape(
+    passage_type: str,
+    passage: str,
+) -> list[GateFailure]:
+    failures, _ = _fill_integrity_failures(
+        passage_type,
+        passage,
+        [],
+    )
+    return failures
+
+
+def _gap_option_leak_failures(
+    passage_type: str,
+    passage: str,
+    questions: list[Any],
+) -> list[GateFailure]:
+    if passage_type != "gap_fill":
+        return []
+    passage_tokens = _answer_tokens(passage)
+    failures: list[GateFailure] = []
+    reported: set[str] = set()
+    for question_index, question in enumerate(questions, start=1):
+        if not isinstance(question, dict):
+            continue
+        for option in question.get("options") or []:
+            if not isinstance(option, str):
+                continue
+            normalized = option.strip().casefold()
+            if not normalized or normalized in reported:
+                continue
+            option_tokens = _answer_tokens(option)
+            overlap = next(
+                (
+                    option_tokens[start : start + GAP_OPTION_OVERLAP_WORDS]
+                    for start in range(
+                        len(option_tokens) - GAP_OPTION_OVERLAP_WORDS + 1
+                    )
+                    if any(
+                        passage_tokens[index : index + GAP_OPTION_OVERLAP_WORDS]
+                        == option_tokens[
+                            start : start + GAP_OPTION_OVERLAP_WORDS
+                        ]
+                        for index in range(
+                            len(passage_tokens)
+                            - GAP_OPTION_OVERLAP_WORDS
+                            + 1
+                        )
+                    )
+                ),
+                None,
+            )
+            if overlap:
+                reported.add(normalized)
+                failures.append(
+                    GateFailure(
+                        GateCategory.GAP_OPTION_LEAK,
+                        "GAP_OPTION_TEXT_LEAK: option text occurs in the passage.",
+                        question_index,
+                        {
+                            "option": option,
+                            "overlap_words": overlap,
+                            "minimum_overlap": GAP_OPTION_OVERLAP_WORDS,
+                        },
+                    )
+                )
+    return failures
+
+
+def validate_rendered_passage(
+    record: dict[str, Any],
+    rendered_passage: str,
+) -> PassageValidationReport:
+    rendered_record = dict(record)
+    rendered_record["passage"] = rendered_passage
+    return validate_generated_passage(rendered_record)
 
 
 def validate_generated_passage(
@@ -376,13 +607,15 @@ def validate_generated_passage(
             )
         )
 
-    placeholder_errors = _placeholder_checks(
-        {"type": passage_type, "passage": passage}
+    placeholder_failures, fill_integrity = _fill_integrity_failures(
+        passage_type,
+        passage,
+        questions,
     )
-    for message in placeholder_errors:
-        failures.append(
-            GateFailure(GateCategory.STRUCTURE, message)
-        )
+    failures.extend(placeholder_failures)
+    failures.extend(
+        _gap_option_leak_failures(passage_type, passage, questions)
+    )
 
     glossed_terms = _glossed_terms(passage)
     audit_text = _remove_glossed_terms(passage, glossed_terms)
@@ -646,6 +879,7 @@ def validate_generated_passage(
             else 0.0,
             "glossed_terms": glossed_terms,
             "single_word_denominator": audit["single_word_denominator"],
+            "fill_integrity": fill_integrity,
         },
     )
 

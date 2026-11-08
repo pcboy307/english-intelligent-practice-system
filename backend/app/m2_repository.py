@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import re
 from datetime import datetime, timedelta, timezone
 from typing import Any
@@ -181,13 +182,8 @@ class M2Repository:
         record: dict[str, Any],
         prevalidated: bool = False,
     ) -> list[str]:
-        if not prevalidated:
-            report = validate_generated_passage(record)
-            if not report.accepted:
-                raise ValueError(
-                    "GENERATED_PASSAGE_REJECTED:"
-                    + ",".join(item.category.value for item in report.failures)
-                )
+        # Kept for API compatibility. Prevalidation never bypasses integrity.
+        self._reject_invalid_record(record)
         questions = record["questions"]
         passage_group_id = record["passage_group_id"]
         self.connection.execute(
@@ -262,6 +258,7 @@ class M2Repository:
         batch_id: str,
         record: dict[str, Any],
     ) -> list[str]:
+        self._reject_invalid_record(record)
         passage_group_id = record["passage_group_id"]
         passage = self.connection.execute(
             """
@@ -311,6 +308,19 @@ class M2Repository:
                 raise KeyError(f"QUESTION_NOT_FOUND:{question_id}")
             ids.append(question_id)
         return ids
+
+    @staticmethod
+    def _reject_invalid_record(record: dict[str, Any]) -> None:
+        report = validate_generated_passage(record)
+        if report.accepted:
+            return
+        raise ValueError(
+            "GENERATED_PASSAGE_REJECTED:"
+            + json.dumps(
+                [failure.as_dict() for failure in report.failures],
+                ensure_ascii=False,
+            )
+        )
 
     def set_bank_status(
         self,

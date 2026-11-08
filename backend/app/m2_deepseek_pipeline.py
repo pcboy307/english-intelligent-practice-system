@@ -17,8 +17,10 @@ from .deepseek_generation import (
     run_repair_loop,
 )
 from .generation import (
+    FILL_PLACEHOLDER,
     TYPE_RULES,
     load_curriculum,
+    validate_fill_placeholder_shape,
     validate_generated_passage,
 )
 from .readability import flesch_reading_ease
@@ -71,16 +73,31 @@ def _book_tag(book_source: str) -> str:
 
 def _build_passage_prompt(spec: dict[str, Any]) -> str:
     type_rules = {
-        "cloze": "170-220 words and numbered blanks (1) through (15)",
-        "grammar_fill": "120-180 words and circled blanks ① through ⑩",
+        "cloze": (
+            f"170-220 words and numbered blanks (1) through (15), "
+            f"each written as its number followed by {FILL_PLACEHOLDER} "
+            "(for example, '(1) ______')"
+        ),
+        "grammar_fill": (
+            f"120-180 words and circled blanks ① through ⑩, "
+            f"each written as its circled label followed by {FILL_PLACEHOLDER} "
+            "(for example, '① ______')"
+        ),
         "reading": "no more than 250 words",
-        "gap_fill": "no more than 220 words and numbered blanks (1) through (5)",
+        "gap_fill": (
+            f"no more than 220 words and numbered blanks (1) through (5), "
+            f"each written as its number followed by {FILL_PLACEHOLDER} "
+            "(for example, '(1) ______')"
+        ),
     }
     return f"""
 Write only the original practice passage. Return JSON with one key, "passage".
 Type: {spec["type"]}
 Topic: {spec["topic"]}
 Required length: {type_rules[spec["type"]]}
+Every blank must contain one label followed by one space and exactly six
+underscores: {FILL_PLACEHOLDER}. Never print an answer word, option word, or
+word fragment at or beside a blank.
 Use simple vocabulary already learned in PEP 2019 required books 1-3 and
 elective required books 1-2. Do not use elective books 3-4 material.
 Do not mention real people, schools, exam IDs, brands, or named places.
@@ -105,6 +122,9 @@ Every question must include:
 
 All options in one grammar_fill question must belong to the same grammatical
 category. Assess only the assigned grammar tag.
+The correct answer must not occur anywhere in the fixed passage, including
+inflected forms. Gap-fill options must not reproduce any six-word sequence
+from the passage.
 
 Type: {spec["type"]}
 Fixed passage:
@@ -174,22 +194,18 @@ def _validate_passage_step(
             f"WORD_COUNT_OUT_OF_RANGE actual={word_count} "
             f"min={rule['min_words']} max={rule['max_words']}"
         )
-    if spec["type"] == "cloze":
-        missing = [
-            index
-            for index in range(1, 16)
-            if f"({index})" not in passage
-        ]
-        if missing:
-            raise ValueError(f"CLOZE_BLANKS_MISSING {missing}")
-    if spec["type"] == "grammar_fill":
-        missing = [
-            index
-            for index in range(1, 11)
-            if chr(0x2460 + index - 1) not in passage
-        ]
-        if missing:
-            raise ValueError(f"GRAMMAR_BLANKS_MISSING {missing}")
+    integrity_failures = validate_fill_placeholder_shape(
+        spec["type"],
+        passage,
+    )
+    if integrity_failures:
+        raise ValueError(
+            "FILL_PLACEHOLDER_INTEGRITY_FAILED:"
+            + json.dumps(
+                [failure.as_dict() for failure in integrity_failures],
+                ensure_ascii=False,
+            )
+        )
     return passage
 
 

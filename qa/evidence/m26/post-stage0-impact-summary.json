@@ -1,0 +1,20 @@
+{
+  "bank_id": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2",
+  "state1_answer_word_at_slot": {
+    "blanks": 15,
+    "passages": 1
+  },
+  "state2_missing_placeholder_non_answer_word": {
+    "blanks": 74,
+    "passages": 8
+  },
+  "open_class_answer_word_anywhere": {
+    "blanks": 20,
+    "passages": 6,
+    "function_words_excluded": true
+  },
+  "gap_option_text_leak": {
+    "passages": 6,
+    "minimum_contiguous_overlap_words": 6
+  }
+}

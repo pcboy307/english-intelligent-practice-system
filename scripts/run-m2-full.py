@@ -34,6 +34,7 @@ from backend.app.deepseek_generation import (  # noqa: E402
     run_repair_loop,
 )
 from backend.app.generation import (  # noqa: E402
+    FILL_PLACEHOLDER,
     load_curriculum,
     validate_generated_passage,
 )
@@ -315,17 +316,24 @@ Rules:
   people, with a timeline and causal links. Do not create unrelated example
   sentences. Every answer is the assigned single content word. Four options are
   four different words of the same part of speech, not morphology variants, and
-  no option lemma appears in its stem.
+  no option lemma appears in its stem. Write every numbered blank as
+  `(1) {FILL_PLACEHOLDER}` through `(15) {FILL_PLACEHOLDER}`.
 - Grammar fill: 120-180 words with circled blanks ①-⑩, exactly four options per
-  blank in the same grammatical category.
+  blank in the same grammatical category. Write every blank as
+  the circled label followed by `{FILL_PLACEHOLDER}`, for example `① ______`.
 - Reading: no more than 250 words. Every question must be comprehension-based:
   main idea, detail, inference, vocabulary in context, or purpose/attitude.
   Never ask about grammar structures. evidence_sentence must be copied verbatim
   from the passage and support the answer.
-- Gap fill: no more than 220 words with blanks (1)-(5), seven mutually
+- Gap fill: no more than 220 words with blanks `(1) {FILL_PLACEHOLDER}` through
+  `(5) {FILL_PLACEHOLDER}`, seven mutually
   distinguishable complete-sentence options of at least five words each, and
   one best option per blank. Never use single words, verb forms, or grammar
   variants as the seven options.
+- Never print an answer word, option word, or word fragment at or beside a
+  blank. The correct answer must not occur anywhere in the passage, including
+  inflected forms. Gap-fill options must not reproduce any six-word sequence
+  from the passage.
 - R10: every explanation must end with one Chinese sentence that explicitly
   explains why two major distractors are wrong. For gap fill, name two wrong
   option letters.

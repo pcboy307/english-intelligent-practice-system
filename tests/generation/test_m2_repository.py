@@ -237,3 +237,56 @@ def test_replace_passage_questions_updates_the_fixed_passage_and_all_questions()
             assert passage["word_count"] == 19
             assert question["stem"] == "Why do students read the book?"
             assert question["batch_id"] == "M2-TEST-REPLACEMENT"
+
+
+def test_prevalidated_insert_cannot_bypass_placeholder_integrity() -> None:
+    invalid = valid_reading()
+    invalid["type"] = "cloze"
+    invalid["questions"][0].update(
+        {
+            "options": ["anxious", "calm", "proud", "ready"],
+            "answer": "anxious",
+        }
+    )
+    invalid["passage"] = (
+        "The student felt (1) anxious before the test. "
+        + " ".join(
+            f"({index}) ______"
+            for index in range(2, 16)
+        )
+    )
+
+    with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+        with connection.transaction(force_rollback=True):
+            repo = M2Repository(connection)
+            bank = repo.create_bank(
+                name=f"M2 invalid insert test {uuid.uuid4()}",
+                target_size=15,
+                difficulty_profile="standard",
+            )
+            job = repo.create_generation_job(
+                bank["id"],
+                target_passages=1,
+                batch_size=1,
+                approved_by="pytest",
+                reason="placeholder integrity test",
+            )
+
+            with pytest.raises(
+                ValueError,
+                match="PLACEHOLDER_ANSWER_WORD_LEAK",
+            ):
+                repo.insert_passage(
+                    bank_id=bank["id"],
+                    job_id=job["id"],
+                    batch_id="M2-INVALID-INSERT",
+                    record=invalid,
+                    prevalidated=True,
+                )
+
+            assert repo.question_count(bank["id"]) == 0
+            passage_count = connection.execute(
+                "SELECT count(*) AS count FROM passages WHERE bank_id=%s",
+                (bank["id"],),
+            ).fetchone()["count"]
+            assert passage_count == 0
