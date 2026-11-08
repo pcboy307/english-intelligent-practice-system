@@ -471,6 +471,169 @@ components:
           type: array
           items:
             $ref: "#/components/schemas/SwitchableBank"
+    ImportIssue:
+      type: object
+      additionalProperties: true
+      required: [code]
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+        passage_id:
+          type: [string, "null"]
+        question_index:
+          type: [integer, "null"]
+        sample: {}
+    SemanticAudit:
+      type: object
+      additionalProperties: false
+      required: [valid, cost_cny]
+      properties:
+        valid:
+          type: boolean
+        cost_cny:
+          type: number
+          minimum: 0
+        failures:
+          type: array
+          items:
+            $ref: "#/components/schemas/ImportIssue"
+        audited_passages:
+          type: integer
+          minimum: 0
+        budget_cap_cny:
+          type: number
+          minimum: 0
+        budget_exceeded:
+          type: boolean
+    ImportComposition:
+      type: object
+      additionalProperties: false
+      required: [cloze, grammar_fill, reading, gap_fill]
+      properties:
+        cloze:
+          type: integer
+          minimum: 0
+        grammar_fill:
+          type: integer
+          minimum: 0
+        reading:
+          type: integer
+          minimum: 0
+        gap_fill:
+          type: integer
+          minimum: 0
+    BankImportSummary:
+      type: object
+      additionalProperties: false
+      required: [name, target_size, passages, questions, composition]
+      properties:
+        name:
+          type: string
+        target_size:
+          type: integer
+          minimum: 1
+        passages:
+          type: integer
+          minimum: 1
+        questions:
+          type: integer
+          minimum: 1
+        composition:
+          $ref: "#/components/schemas/ImportComposition"
+    BankImportPreview:
+      type: object
+      additionalProperties: false
+      required: [valid, summary, errors]
+      properties:
+        valid:
+          type: boolean
+        summary:
+          $ref: "#/components/schemas/BankImportSummary"
+        errors:
+          type: array
+          items:
+            $ref: "#/components/schemas/ImportIssue"
+        semantic_audit:
+          $ref: "#/components/schemas/SemanticAudit"
+    BankImportResult:
+      type: object
+      additionalProperties: false
+      required: [bank_id, name, status, previous_bank_id, summary]
+      properties:
+        bank_id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        status:
+          type: string
+          enum: [active]
+        previous_bank_id:
+          type: [string, "null"]
+          format: uuid
+        summary:
+          type: object
+          additionalProperties: false
+          required: [passages, questions, composition]
+          properties:
+            passages:
+              type: integer
+              minimum: 1
+            questions:
+              type: integer
+              minimum: 1
+            composition:
+              $ref: "#/components/schemas/ImportComposition"
+        semantic_audit:
+          $ref: "#/components/schemas/SemanticAudit"
+    BankDeletePreview:
+      type: object
+      additionalProperties: false
+      required:
+        - bank_id
+        - name
+        - status
+        - passages
+        - questions
+        - sessions
+        - reports
+        - attempts
+        - mistakes
+        - can_delete
+        - blocking_reason
+      properties:
+        bank_id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        status:
+          type: string
+          enum: [draft, generating, reviewing, ready, active, archived]
+        passages:
+          type: integer
+          minimum: 0
+        questions:
+          type: integer
+          minimum: 0
+        sessions:
+          type: integer
+          minimum: 0
+        reports:
+          type: integer
+          minimum: 0
+        attempts:
+          type: integer
+          minimum: 0
+        mistakes:
+          type: integer
+          minimum: 0
+        can_delete:
+          type: boolean
+        blocking_reason:
+          type: [string, "null"]
     PreviewResponse:
       type: object
       additionalProperties: false
@@ -1254,6 +1417,104 @@ paths:
               schema:
                 $ref: "#/components/schemas/SwitchableBanks"
         "401":
+          $ref: "#/components/responses/ErrorResponse"
+  /banks/import/preview:
+    post:
+      tags: [maintenance]
+      operationId: previewBankImport
+      security: []
+      summary: 校验导入包并返回摘要；不写数据库
+      parameters:
+        - name: semantic_check
+          in: query
+          required: false
+          schema:
+            type: boolean
+            default: false
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: ./schemas/bank-import-package.json
+      responses:
+        "200":
+          description: 导入包结构、题量和质量闸门校验结果
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BankImportPreview"
+        "400":
+          $ref: "#/components/responses/ErrorResponse"
+        "403":
+          $ref: "#/components/responses/ErrorResponse"
+  /banks/import:
+    post:
+      tags: [maintenance]
+      operationId: importBank
+      security: []
+      summary: 在单事务内导入题库并立即设为 active
+      parameters:
+        - name: semantic_check
+          in: query
+          required: false
+          schema:
+            type: boolean
+            default: true
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: ./schemas/bank-import-package.json
+      responses:
+        "201":
+          description: 已完整写入、通过校验并切换为当前题库
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BankImportResult"
+        "400":
+          $ref: "#/components/responses/ErrorResponse"
+        "403":
+          $ref: "#/components/responses/ErrorResponse"
+  /banks/{bank_id}/delete-preview:
+    get:
+      tags: [maintenance]
+      operationId: previewBankDelete
+      security: []
+      summary: 预览永久删除题库会移除的题量、会话、报告、作答与错题
+      parameters:
+        - $ref: "#/components/parameters/BankId"
+      responses:
+        "200":
+          description: 待删除题库的实际统计
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BankDeletePreview"
+        "403":
+          $ref: "#/components/responses/ErrorResponse"
+        "404":
+          $ref: "#/components/responses/ErrorResponse"
+        "409":
+          $ref: "#/components/responses/ErrorResponse"
+  /banks/{bank_id}:
+    delete:
+      tags: [maintenance]
+      operationId: deleteBank
+      security: []
+      summary: 永久删除非 active 题库及其全部关联数据
+      parameters:
+        - $ref: "#/components/parameters/BankId"
+      responses:
+        "204":
+          description: 已永久删除
+        "403":
+          $ref: "#/components/responses/ErrorResponse"
+        "404":
+          $ref: "#/components/responses/ErrorResponse"
+        "409":
           $ref: "#/components/responses/ErrorResponse"
   /maintenance/clear-mistakes/preview:
     get:

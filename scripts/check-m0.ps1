@@ -275,7 +275,7 @@ foreach ($path in @(
 }
 Assert-True (-not $openapi.Contains("approved_by_owner")) "Client-side owner approval must be removed"
 Assert-True (-not [regex]::IsMatch($openapi, "(?m)^security:")) "Top-level global security must be absent"
-Assert-True ([regex]::Matches($openapi, "(?m)^      security:\s*(?:\[\])?\s*$").Count -eq 34) "Every operation must declare security"
+Assert-True ([regex]::Matches($openapi, "(?m)^      security:\s*(?:\[\])?\s*$").Count -eq 38) "Every operation must declare security"
 Assert-True ([regex]::Matches($openapi, "- StudentId: \[\]").Count -eq 22) "Student security declaration mismatch"
 Assert-True ([regex]::Matches($openapi, "- AdminToken: \[\]").Count -eq 11) "Admin security declaration mismatch"
 Assert-True ($openapi.Contains("/approve-generation:")) "Generation approval path missing"

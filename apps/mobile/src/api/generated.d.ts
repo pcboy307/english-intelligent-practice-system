@@ -478,6 +478,74 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/banks/import/preview": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** 校验导入包并返回摘要；不写数据库 */
+        post: operations["previewBankImport"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/banks/import": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** 在单事务内导入题库并立即设为 active */
+        post: operations["importBank"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/banks/{bank_id}/delete-preview": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** 预览永久删除题库会移除的题量、会话、报告、作答与错题 */
+        get: operations["previewBankDelete"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/banks/{bank_id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post?: never;
+        /** 永久删除非 active 题库及其全部关联数据 */
+        delete: operations["deleteBank"];
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/maintenance/clear-mistakes/preview": {
         parameters: {
             query?: never;
@@ -725,6 +793,72 @@ export interface components {
             current_bank_id: string;
             in_progress_count: number;
             banks: components["schemas"]["SwitchableBank"][];
+        };
+        ImportIssue: {
+            code: string;
+            message?: string;
+            passage_id?: string | null;
+            question_index?: number | null;
+            sample?: unknown;
+        } & {
+            [key: string]: unknown;
+        };
+        SemanticAudit: {
+            valid: boolean;
+            cost_cny: number;
+            failures?: components["schemas"]["ImportIssue"][];
+            audited_passages?: number;
+            budget_cap_cny?: number;
+            budget_exceeded?: boolean;
+        };
+        ImportComposition: {
+            cloze: number;
+            grammar_fill: number;
+            reading: number;
+            gap_fill: number;
+        };
+        BankImportSummary: {
+            name: string;
+            target_size: number;
+            passages: number;
+            questions: number;
+            composition: components["schemas"]["ImportComposition"];
+        };
+        BankImportPreview: {
+            valid: boolean;
+            summary: components["schemas"]["BankImportSummary"];
+            errors: components["schemas"]["ImportIssue"][];
+            semantic_audit?: components["schemas"]["SemanticAudit"];
+        };
+        BankImportResult: {
+            /** Format: uuid */
+            bank_id: string;
+            name: string;
+            /** @enum {string} */
+            status: "active";
+            /** Format: uuid */
+            previous_bank_id: string | null;
+            summary: {
+                passages: number;
+                questions: number;
+                composition: components["schemas"]["ImportComposition"];
+            };
+            semantic_audit?: components["schemas"]["SemanticAudit"];
+        };
+        BankDeletePreview: {
+            /** Format: uuid */
+            bank_id: string;
+            name: string;
+            /** @enum {string} */
+            status: "draft" | "generating" | "reviewing" | "ready" | "active" | "archived";
+            passages: number;
+            questions: number;
+            sessions: number;
+            reports: number;
+            attempts: number;
+            mistakes: number;
+            can_delete: boolean;
+            blocking_reason: string | null;
         };
         PreviewResponse: {
             /** Format: uuid */
@@ -1081,6 +1215,109 @@ export interface components {
             invalid?: boolean;
             invalid_reason?: string;
         } & (unknown & unknown & unknown & unknown);
+        options: {
+            [key: string]: string;
+        } | string[];
+        "$defs-question": {
+            number: number;
+            stem?: string;
+            options?: components["schemas"]["options"];
+            answer: string;
+            explanation: string;
+            knowledge_points?: string[];
+            grammar_tags: string[];
+            book_source?: string;
+            difficulty?: number;
+            evidence_sentence?: string;
+            /** @enum {string} */
+            reading_type?: "main_idea" | "detail" | "inference" | "word_meaning" | "attitude";
+            grammar_category?: string;
+            cohesion_type?: string;
+            context_clue?: string;
+            clue_argument?: string;
+            near_synonym_calibration?: boolean;
+        };
+        composition: {
+            cloze: number;
+            grammar_fill: number;
+            reading: number;
+            gap_fill: number;
+        };
+        passage: {
+            /** @enum {string} */
+            type: "cloze" | "grammar_fill" | "reading" | "gap_fill";
+            passage_group_id: string;
+            topic: string;
+            book_source: string;
+            difficulty: number;
+            word_count?: number;
+            flesch_reading_ease?: number;
+            passage: string;
+            options?: components["schemas"]["options"];
+            questions: components["schemas"]["$defs-question"][];
+            validation_profile?: string;
+            generation_observations?: Record<string, never>;
+        } & (unknown & unknown & unknown & unknown);
+        /** Question bank import package */
+        "bank-import-package": {
+            /**
+             * @description m26-v1 enforces the complete 72-passage / 500-question quota.
+             * @enum {string}
+             */
+            format_version: "bank-v1" | "m26-v1";
+            name: string;
+            target_size: number;
+            /** @enum {string} */
+            difficulty_profile: "standard" | "foundation" | "advanced";
+            generated_at: string;
+            composition: components["schemas"]["composition"];
+            passages: components["schemas"]["passage"][];
+            $defs: {
+                composition: {
+                    cloze: number;
+                    grammar_fill: number;
+                    reading: number;
+                    gap_fill: number;
+                };
+                options: {
+                    [key: string]: string;
+                } | string[];
+                question: {
+                    number: number;
+                    stem?: string;
+                    options?: components["schemas"]["options"];
+                    answer: string;
+                    explanation: string;
+                    knowledge_points?: string[];
+                    grammar_tags: string[];
+                    book_source?: string;
+                    difficulty?: number;
+                    evidence_sentence?: string;
+                    /** @enum {string} */
+                    reading_type?: "main_idea" | "detail" | "inference" | "word_meaning" | "attitude";
+                    grammar_category?: string;
+                    cohesion_type?: string;
+                    context_clue?: string;
+                    clue_argument?: string;
+                    near_synonym_calibration?: boolean;
+                };
+                passage: {
+                    /** @enum {string} */
+                    type: "cloze" | "grammar_fill" | "reading" | "gap_fill";
+                    passage_group_id: string;
+                    topic: string;
+                    book_source: string;
+                    difficulty: number;
+                    word_count?: number;
+                    flesch_reading_ease?: number;
+                    passage: string;
+                    options?: components["schemas"]["options"];
+                    questions: components["schemas"]["$defs-question"][];
+                    validation_profile?: string;
+                    generation_observations?: Record<string, never>;
+                } & (unknown & unknown & unknown & unknown);
+            };
+        };
     };
     responses: {
         /** @description 统一错误响应 */
@@ -1809,6 +2046,110 @@ export interface operations {
                 };
             };
             401: components["responses"]["ErrorResponse"];
+        };
+    };
+    previewBankImport: {
+        parameters: {
+            query?: {
+                semantic_check?: boolean;
+            };
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["bank-import-package"];
+            };
+        };
+        responses: {
+            /** @description 导入包结构、题量和质量闸门校验结果 */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["BankImportPreview"];
+                };
+            };
+            400: components["responses"]["ErrorResponse"];
+            403: components["responses"]["ErrorResponse"];
+        };
+    };
+    importBank: {
+        parameters: {
+            query?: {
+                semantic_check?: boolean;
+            };
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["bank-import-package"];
+            };
+        };
+        responses: {
+            /** @description 已完整写入、通过校验并切换为当前题库 */
+            201: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["BankImportResult"];
+                };
+            };
+            400: components["responses"]["ErrorResponse"];
+            403: components["responses"]["ErrorResponse"];
+        };
+    };
+    previewBankDelete: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                bank_id: components["parameters"]["BankId"];
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description 待删除题库的实际统计 */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["BankDeletePreview"];
+                };
+            };
+            403: components["responses"]["ErrorResponse"];
+            404: components["responses"]["ErrorResponse"];
+            409: components["responses"]["ErrorResponse"];
+        };
+    };
+    deleteBank: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                bank_id: components["parameters"]["BankId"];
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description 已永久删除 */
+            204: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content?: never;
+            };
+            403: components["responses"]["ErrorResponse"];
+            404: components["responses"]["ErrorResponse"];
+            409: components["responses"]["ErrorResponse"];
         };
     };
     previewClearMistakes: {

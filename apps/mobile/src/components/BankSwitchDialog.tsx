@@ -1,9 +1,25 @@
+import * as DocumentPicker from "expo-document-picker";
 import { useEffect, useState } from "react";
-import { Modal, Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import {
+  Modal,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 
 import {
   activateBank,
+  deleteBank,
   getSwitchableBanks,
+  importBank,
+  previewDeleteBank,
+  previewImportBank,
+  type BankDeletePreview,
+  type BankImportPackage,
+  type BankImportPreview,
+  type BankImportResult,
   type SwitchableBank,
   type SwitchableBanks,
 } from "../api/client";
@@ -15,11 +31,35 @@ type BankSwitchDialogProps = {
   onSwitched: () => Promise<void> | void;
 };
 
+type ImportDraft = {
+  package: BankImportPackage;
+  preview: BankImportPreview;
+};
+
+type DeleteDraft = {
+  bank: SwitchableBank;
+  preview: BankDeletePreview;
+};
+
 const STATUS_LABELS: Record<string, string> = {
   active: "当前启用",
   ready: "就绪",
   archived: "历史归档",
 };
+
+function reasonText(reason: unknown): string {
+  return reason instanceof Error ? reason.message : String(reason);
+}
+
+function compositionText(preview: BankImportPreview): string {
+  const composition = preview.summary.composition;
+  return [
+    `完形 ${composition.cloze} 篇`,
+    `语法 ${composition.grammar_fill} 篇`,
+    `阅读 ${composition.reading} 篇`,
+    `七选五 ${composition.gap_fill} 篇`,
+  ].join(" · ");
+}
 
 export function BankSwitchDialog({
   visible,
@@ -28,37 +68,514 @@ export function BankSwitchDialog({
 }: BankSwitchDialogProps) {
   const [data, setData] = useState<SwitchableBanks | null>(null);
   const [selected, setSelected] = useState<SwitchableBank | null>(null);
+  const [importDraft, setImportDraft] = useState<ImportDraft | null>(null);
+  const [importResult, setImportResult] = useState<BankImportResult | null>(null);
+  const [semanticCheck, setSemanticCheck] = useState(true);
+  const [deleteDraft, setDeleteDraft] = useState<DeleteDraft | null>(null);
+  const [deleteConfirmReady, setDeleteConfirmReady] = useState(false);
   const [error, setError] = useState("");
+  const [notice, setNotice] = useState("");
   const [busy, setBusy] = useState(false);
+  const [busyLabel, setBusyLabel] = useState("");
+
+  async function loadBanks() {
+    const next = await getSwitchableBanks();
+    setData(next);
+    return next;
+  }
 
   useEffect(() => {
     if (!visible) {
       setData(null);
       setSelected(null);
+      setImportDraft(null);
+      setImportResult(null);
+      setSemanticCheck(true);
+      setDeleteDraft(null);
+      setDeleteConfirmReady(false);
       setError("");
+      setNotice("");
       setBusy(false);
+      setBusyLabel("");
       return;
     }
-    getSwitchableBanks()
-      .then(setData)
-      .catch((reason) => setError(String(reason)));
+    setBusy(true);
+    setBusyLabel("正在读取题库");
+    loadBanks()
+      .catch((reason) => setError(reasonText(reason)))
+      .finally(() => {
+        setBusy(false);
+        setBusyLabel("");
+      });
   }, [visible]);
 
+  useEffect(() => {
+    if (!deleteDraft) {
+      setDeleteConfirmReady(false);
+      return;
+    }
+    const delay = setTimeout(() => setDeleteConfirmReady(true), 1500);
+    return () => clearTimeout(delay);
+  }, [deleteDraft]);
+
   const current = data?.banks.find((bank) => bank.is_current) || null;
+
+  function resetTransientViews() {
+    setSelected(null);
+    setImportDraft(null);
+    setImportResult(null);
+    setDeleteDraft(null);
+    setDeleteConfirmReady(false);
+    setError("");
+  }
 
   async function executeSwitch() {
     if (!selected) return;
     setBusy(true);
+    setBusyLabel("正在切换题库");
     setError("");
     try {
       await activateBank(selected.bank_id);
       await onSwitched();
       onCancel();
     } catch (reason) {
-      setError(String(reason));
+      setError(reasonText(reason));
     } finally {
       setBusy(false);
+      setBusyLabel("");
     }
+  }
+
+  async function chooseImportFile() {
+    setError("");
+    setNotice("");
+    try {
+      const result = await DocumentPicker.getDocumentAsync({
+        type: "application/json",
+        copyToCacheDirectory: true,
+        multiple: false,
+      });
+      if (result.canceled) return;
+      const asset = result.assets[0];
+      if (asset.size && asset.size > 15 * 1024 * 1024) {
+        throw new Error("导入文件不能超过 15 MB");
+      }
+      const raw = asset.file
+        ? await asset.file.text()
+        : await fetch(asset.uri).then((response) => response.text());
+      const parsed: unknown = JSON.parse(raw);
+      if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
+        throw new Error("导入文件的顶层必须是 JSON 对象");
+      }
+      setBusy(true);
+      setBusyLabel("正在校验导入包");
+      const preview = await previewImportBank(
+        parsed as BankImportPackage,
+        false,
+      );
+      setSelected(null);
+      setDeleteDraft(null);
+      setImportDraft({
+        package: parsed as BankImportPackage,
+        preview,
+      });
+      setSemanticCheck(true);
+    } catch (reason) {
+      setError(reasonText(reason));
+    } finally {
+      setBusy(false);
+      setBusyLabel("");
+    }
+  }
+
+  async function executeImport() {
+    if (!importDraft) return;
+    setBusy(true);
+    setBusyLabel(
+      semanticCheck ? "DeepSeek 正在独立审题" : "正在写入并切换题库",
+    );
+    setError("");
+    try {
+      const result = await importBank(
+        importDraft.package,
+        semanticCheck,
+      );
+      await onSwitched();
+      await loadBanks();
+      setImportDraft(null);
+      setImportResult(result);
+    } catch (reason) {
+      setError(reasonText(reason));
+    } finally {
+      setBusy(false);
+      setBusyLabel("");
+    }
+  }
+
+  async function prepareDelete(bank: SwitchableBank) {
+    if (bank.is_current) return;
+    setError("");
+    setNotice("");
+    setBusy(true);
+    setBusyLabel("正在统计将删除的数据");
+    try {
+      const preview = await previewDeleteBank(bank.bank_id);
+      setSelected(null);
+      setImportDraft(null);
+      setImportResult(null);
+      setDeleteDraft({ bank, preview });
+    } catch (reason) {
+      setError(reasonText(reason));
+    } finally {
+      setBusy(false);
+      setBusyLabel("");
+    }
+  }
+
+  async function executeDelete() {
+    if (!deleteDraft) return;
+    setBusy(true);
+    setBusyLabel("正在永久删除题库");
+    setError("");
+    try {
+      await deleteBank(deleteDraft.bank.bank_id);
+      await loadBanks();
+      await onSwitched();
+      setNotice(`已永久删除「${deleteDraft.bank.name}」及其全部历史数据。`);
+      setDeleteDraft(null);
+      setDeleteConfirmReady(false);
+    } catch (reason) {
+      setError(reasonText(reason));
+    } finally {
+      setBusy(false);
+      setBusyLabel("");
+    }
+  }
+
+  function renderListView() {
+    return (
+      <>
+        <View style={styles.headerRow}>
+          <View style={styles.headerCopy}>
+            <Text style={styles.title}>切换题库</Text>
+            <Text style={styles.intro}>
+              选择要启用的题库；当前题库不可重复选择，也不可删除。
+            </Text>
+          </View>
+          <Pressable
+            accessibilityRole="button"
+            disabled={busy}
+            onPress={chooseImportFile}
+            style={[styles.toolbarButton, busy && styles.disabledOutline]}
+            testID="bank-import-open"
+          >
+            <Text style={styles.toolbarButtonText}>导入题库</Text>
+          </Pressable>
+        </View>
+
+        <ScrollView style={styles.list}>
+          {data?.banks.map((bank) => (
+            <View key={bank.bank_id} style={styles.bankRow}>
+              <Pressable
+                accessibilityRole="button"
+                disabled={bank.is_current || busy}
+                onPress={() => {
+                  setError("");
+                  setNotice("");
+                  setDeleteDraft(null);
+                  setImportDraft(null);
+                  setImportResult(null);
+                  setSelected(bank);
+                }}
+                style={styles.bankMain}
+                testID={`bank-option-${bank.bank_id}`}
+              >
+                <View style={styles.bankText}>
+                  <Text style={styles.bankName}>
+                    {bank.name} · v{bank.version}
+                  </Text>
+                  <Text style={styles.bankMeta}>
+                    {bank.question_count} 题 ·{" "}
+                    {STATUS_LABELS[bank.status] || bank.status}
+                  </Text>
+                </View>
+                <Text
+                  style={[
+                    styles.currentMark,
+                    bank.is_current && styles.currentMarkActive,
+                  ]}
+                >
+                  {bank.is_current ? "✓ 当前" : "选择"}
+                </Text>
+              </Pressable>
+              <Pressable
+                accessibilityRole="button"
+                disabled={bank.is_current || busy}
+                onPress={() => prepareDelete(bank)}
+                style={[
+                  styles.deleteRowButton,
+                  bank.is_current && styles.deleteRowButtonDisabled,
+                ]}
+                testID={`bank-delete-${bank.bank_id}`}
+              >
+                <Text
+                  style={[
+                    styles.deleteRowText,
+                    bank.is_current && styles.deleteRowTextDisabled,
+                  ]}
+                >
+                  {bank.is_current ? "当前库不可删除" : "删除"}
+                </Text>
+              </Pressable>
+            </View>
+          ))}
+        </ScrollView>
+
+        {notice ? (
+          <Text style={styles.notice} testID="bank-notice">
+            {notice}
+          </Text>
+        ) : null}
+        {error ? (
+          <Text style={styles.error} testID="bank-error">
+            {error}
+          </Text>
+        ) : null}
+        {busy && busyLabel ? (
+          <Text style={styles.loading}>{busyLabel}…</Text>
+        ) : null}
+        <View style={styles.actions}>
+          <Pressable
+            accessibilityRole="button"
+            disabled={busy}
+            onPress={onCancel}
+            style={styles.secondaryButton}
+            testID="bank-switch-cancel"
+          >
+            <Text style={styles.secondaryText}>关闭</Text>
+          </Pressable>
+        </View>
+      </>
+    );
+  }
+
+  function renderSwitchView(bank: SwitchableBank) {
+    return (
+      <>
+        <Text style={styles.title}>确认切换题库</Text>
+        <Text style={styles.confirmText}>
+          将从 {current?.name}（{current?.question_count} 题）切换到{" "}
+          {bank.name}（{bank.question_count} 题）。
+        </Text>
+        <Text style={styles.confirmText}>
+          覆盖统计的分母将变为 {bank.question_count} 题；已做过的相同题目仍计入做过。
+        </Text>
+        <Text style={styles.confirmText}>
+          {current?.name} 的错题将移入错题本的“历史题库”分组，不会丢失。
+        </Text>
+        <Text style={styles.confirmText}>历史报告不受影响。</Text>
+        <Text style={styles.warning}>
+          此操作会改变当前题库，确认后立即生效。
+        </Text>
+        {data && data.in_progress_count > 0 ? (
+          <Text style={styles.notice}>
+            当前有 {data.in_progress_count} 个未完成的练习，切换后仍可用原题库继续交卷，
+            新开始的练习将使用新题库。
+          </Text>
+        ) : null}
+        {error ? <Text style={styles.error}>{error}</Text> : null}
+        <View style={styles.actions}>
+          <Pressable
+            accessibilityRole="button"
+            disabled={busy}
+            onPress={resetTransientViews}
+            style={styles.secondaryButton}
+            testID="bank-switch-confirm-cancel"
+          >
+            <Text style={styles.secondaryText}>取消</Text>
+          </Pressable>
+          <Pressable
+            accessibilityRole="button"
+            disabled={busy}
+            onPress={executeSwitch}
+            style={[styles.primaryButton, busy && styles.disabled]}
+            testID="bank-switch-confirm"
+          >
+            <Text style={styles.primaryText}>
+              {busy ? busyLabel : "确认切换"}
+            </Text>
+          </Pressable>
+        </View>
+      </>
+    );
+  }
+
+  function renderImportView(draft: ImportDraft) {
+    return (
+      <>
+        <Text style={styles.title}>导入并切换题库</Text>
+        <Text style={styles.importName}>{draft.preview.summary.name}</Text>
+        <Text style={styles.confirmText}>
+          {draft.preview.summary.passages} 篇 · {draft.preview.summary.questions} 题
+        </Text>
+        <Text style={styles.detailText}>{compositionText(draft.preview)}</Text>
+        <Text style={styles.confirmText}>
+          导入成功后立即设为当前题库，原来的当前题库转为历史归档。
+        </Text>
+        <Pressable
+          accessibilityRole="checkbox"
+          accessibilityState={{ checked: semanticCheck }}
+          disabled={busy}
+          onPress={() => setSemanticCheck((value) => !value)}
+          style={styles.checkRow}
+          testID="bank-import-semantic-check"
+        >
+          <View
+            style={[
+              styles.checkbox,
+              semanticCheck && styles.checkboxChecked,
+            ]}
+          >
+            <Text
+              style={[
+                styles.checkboxMark,
+                semanticCheck && styles.checkboxMarkChecked,
+              ]}
+            >
+              {semanticCheck ? "✓" : ""}
+            </Text>
+          </View>
+          <View style={styles.checkCopy}>
+            <Text style={styles.checkTitle}>DeepSeek 独立审题</Text>
+            <Text style={styles.checkDetail}>
+              检查语篇连贯、答案唯一和选项质量。单次最多 ¥5，超限或任一项不通过时整库不写入。
+            </Text>
+          </View>
+        </Pressable>
+        {error ? (
+          <Text style={styles.error} testID="bank-import-error">
+            {error}
+          </Text>
+        ) : null}
+        <View style={styles.actions}>
+          <Pressable
+            accessibilityRole="button"
+            disabled={busy}
+            onPress={() => {
+              setImportDraft(null);
+              setError("");
+            }}
+            style={styles.secondaryButton}
+            testID="bank-import-cancel"
+          >
+            <Text style={styles.secondaryText}>取消</Text>
+          </Pressable>
+          <Pressable
+            accessibilityRole="button"
+            disabled={busy}
+            onPress={executeImport}
+            style={[styles.primaryButton, busy && styles.disabled]}
+            testID="bank-import-confirm"
+          >
+            <Text style={styles.primaryText}>
+              {busy ? busyLabel : "校验并导入"}
+            </Text>
+          </Pressable>
+        </View>
+      </>
+    );
+  }
+
+  function renderImportResult(result: BankImportResult) {
+    const audit = result.semantic_audit;
+    return (
+      <>
+        <Text style={styles.title}>题库已导入并启用</Text>
+        <Text style={styles.importName}>{result.name}</Text>
+        <Text style={styles.confirmText}>
+          {result.summary.passages} 篇 · {result.summary.questions} 题
+        </Text>
+        <Text style={styles.detailText}>
+          {audit
+            ? `DeepSeek 审题 ${audit.audited_passages ?? 0} 篇，实际成本 ¥${audit.cost_cny.toFixed(4)}`
+            : "本次未启用 DeepSeek 独立审题"}
+        </Text>
+        <View style={styles.actions}>
+          <Pressable
+            accessibilityRole="button"
+            onPress={onCancel}
+            style={styles.primaryButton}
+            testID="bank-import-done"
+          >
+            <Text style={styles.primaryText}>完成</Text>
+          </Pressable>
+        </View>
+      </>
+    );
+  }
+
+  function renderDeleteView(draft: DeleteDraft) {
+    const preview = draft.preview;
+    const blocked = !preview.can_delete;
+    return (
+      <>
+        <Text style={styles.title}>永久删除题库</Text>
+        <Text style={styles.importName}>{preview.name}</Text>
+        <Text style={styles.confirmText}>
+          将永久删除 {preview.passages} 篇、{preview.questions} 题，以及
+          {" "}{preview.sessions} 次会话、{preview.reports} 份报告、
+          {" "}{preview.attempts} 条作答记录、{preview.mistakes} 道错题。
+        </Text>
+        <Text style={styles.detailText}>
+          作用域：该题库的全部题目、历史报告、作答记录和错题关联。
+        </Text>
+        <Text style={styles.warning}>此操作不可恢复。</Text>
+        {blocked ? (
+          <Text style={styles.error}>
+            暂不能删除：{preview.blocking_reason || "题库正在使用"}
+          </Text>
+        ) : null}
+        {error ? (
+          <Text style={styles.error} testID="bank-delete-error">
+            {error}
+          </Text>
+        ) : null}
+        <View style={styles.actions}>
+          <Pressable
+            accessibilityRole="button"
+            disabled={busy}
+            onPress={() => {
+              setDeleteDraft(null);
+              setError("");
+            }}
+            style={styles.secondaryButton}
+            testID="bank-delete-cancel"
+          >
+            <Text style={styles.secondaryText}>取消</Text>
+          </Pressable>
+          <Pressable
+            accessibilityRole="button"
+            disabled={busy || blocked || !deleteConfirmReady}
+            onPress={executeDelete}
+            style={[
+              styles.dangerButton,
+              (busy || blocked || !deleteConfirmReady) && styles.disabled,
+            ]}
+            testID="bank-delete-confirm"
+          >
+            <Text style={styles.dangerText}>
+              {busy
+                ? busyLabel
+                : blocked
+                  ? "当前不可删除"
+                  : deleteConfirmReady
+                    ? "确认，此操作不可恢复"
+                    : "请稍候…"}
+            </Text>
+          </Pressable>
+        </View>
+      </>
+    );
   }
 
   return (
@@ -70,96 +587,17 @@ export function BankSwitchDialog({
     >
       <View style={styles.backdrop}>
         <View style={styles.dialog} testID="bank-switch-dialog">
-          {!selected ? (
-            <>
-              <Text style={styles.title}>切换题库</Text>
-              <Text style={styles.intro}>选择要启用的题库；当前题库不可重复选择。</Text>
-              <ScrollView style={styles.list}>
-                {data?.banks.map((bank) => (
-                  <Pressable
-                    accessibilityRole="button"
-                    disabled={bank.is_current}
-                    key={bank.bank_id}
-                    onPress={() => setSelected(bank)}
-                    style={[
-                      styles.bankRow,
-                      bank.is_current && styles.currentBank,
-                    ]}
-                    testID={`bank-option-${bank.bank_id}`}
-                  >
-                    <View style={styles.bankText}>
-                      <Text style={styles.bankName}>
-                        {bank.name} · v{bank.version}
-                      </Text>
-                      <Text style={styles.bankMeta}>
-                        {bank.question_count} 题 ·{" "}
-                        {STATUS_LABELS[bank.status] || bank.status}
-                      </Text>
-                    </View>
-                    <Text style={styles.currentMark}>
-                      {bank.is_current ? "✓ 当前" : "选择"}
-                    </Text>
-                  </Pressable>
-                ))}
-              </ScrollView>
-              {error ? <Text style={styles.error}>{error}</Text> : null}
-              <View style={styles.actions}>
-                <Pressable
-                  accessibilityRole="button"
-                  onPress={onCancel}
-                  style={styles.secondaryButton}
-                  testID="bank-switch-cancel"
-                >
-                  <Text style={styles.secondaryText}>取消</Text>
-                </Pressable>
-              </View>
-            </>
-          ) : (
-            <>
-              <Text style={styles.title}>确认切换题库</Text>
-              <Text style={styles.confirmText}>
-                将从 {current?.name}（{current?.question_count} 题）切换到{" "}
-                {selected.name}（{selected.question_count} 题）。
-              </Text>
-              <Text style={styles.confirmText}>
-                覆盖统计的分母将变为 {selected.question_count} 题；已做过的相同题目仍计入做过。
-              </Text>
-              <Text style={styles.confirmText}>
-                {current?.name} 的错题将移入错题本的“历史题库”分组，不会丢失。
-              </Text>
-              <Text style={styles.confirmText}>历史报告不受影响。</Text>
-              <Text style={styles.warning}>
-                此操作会改变当前题库，确认后立即生效。
-              </Text>
-              {data && data.in_progress_count > 0 ? (
-                <Text style={styles.notice}>
-                  当前有 {data.in_progress_count} 个未完成的练习，切换后仍可用原题库继续交卷，新开始的练习将使用新题库。
-                </Text>
-              ) : null}
-              {error ? <Text style={styles.error}>{error}</Text> : null}
-              <View style={styles.actions}>
-                <Pressable
-                  accessibilityRole="button"
-                  onPress={onCancel}
-                  style={styles.secondaryButton}
-                  testID="bank-switch-confirm-cancel"
-                >
-                  <Text style={styles.secondaryText}>取消</Text>
-                </Pressable>
-                <Pressable
-                  accessibilityRole="button"
-                  disabled={busy}
-                  onPress={executeSwitch}
-                  style={[styles.primaryButton, busy && styles.disabled]}
-                  testID="bank-switch-confirm"
-                >
-                  <Text style={styles.primaryText}>
-                    {busy ? "正在切换" : "确认切换"}
-                  </Text>
-                </Pressable>
-              </View>
-            </>
-          )}
+          <ScrollView contentContainerStyle={styles.content}>
+            {importResult
+              ? renderImportResult(importResult)
+              : deleteDraft
+                ? renderDeleteView(deleteDraft)
+                : importDraft
+                  ? renderImportView(importDraft)
+                  : selected
+                    ? renderSwitchView(selected)
+                    : renderListView()}
+          </ScrollView>
         </View>
       </View>
     </Modal>
@@ -176,13 +614,24 @@ const styles = StyleSheet.create({
   },
   dialog: {
     width: "100%",
-    maxWidth: 560,
-    maxHeight: "82%",
+    maxWidth: 620,
+    maxHeight: "86%",
     borderWidth: tokens.border.width,
     borderColor: tokens.color.secondaryBorder,
     borderRadius: tokens.radius.large,
     backgroundColor: tokens.color.pageBackground,
+  },
+  content: {
     padding: tokens.spacing.cardPadding,
+  },
+  headerRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    gap: tokens.spacing.cardPadding,
+  },
+  headerCopy: {
+    flex: 1,
   },
   title: {
     color: tokens.color.primaryText,
@@ -194,21 +643,50 @@ const styles = StyleSheet.create({
     color: tokens.color.secondaryText,
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.auxiliary,
+    lineHeight: tokens.font.sizes.auxiliary * tokens.font.lineHeight.ui,
     marginTop: tokens.spacing.listGap,
   },
-  list: { marginTop: tokens.spacing.cardPadding },
+  toolbarButton: {
+    minHeight: tokens.control.touchTargetMin,
+    borderWidth: tokens.border.width,
+    borderColor: tokens.color.secondaryBorder,
+    borderRadius: tokens.radius.medium,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: tokens.spacing.cardPadding,
+  },
+  toolbarButtonText: {
+    color: tokens.color.primaryText,
+    fontFamily: tokens.font.uiFamily.web,
+    fontSize: tokens.font.sizes.auxiliary,
+    fontWeight: "600",
+  },
+  disabledOutline: {
+    borderColor: tokens.color.disabled,
+  },
+  list: {
+    marginTop: tokens.spacing.cardPadding,
+    maxHeight: 430,
+  },
   bankRow: {
     minHeight: tokens.control.touchTargetMin,
     flexDirection: "row",
-    justifyContent: "space-between",
     alignItems: "center",
-    gap: tokens.spacing.listGap,
     borderTopWidth: tokens.border.width,
     borderTopColor: tokens.color.divider,
     paddingVertical: tokens.spacing.listGap,
   },
-  currentBank: { opacity: 0.7 },
-  bankText: { flex: 1 },
+  bankMain: {
+    minHeight: tokens.control.touchTargetMin,
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    gap: tokens.spacing.listGap,
+  },
+  bankText: {
+    flex: 1,
+  },
   bankName: {
     color: tokens.color.primaryText,
     fontFamily: tokens.font.uiFamily.web,
@@ -222,15 +700,49 @@ const styles = StyleSheet.create({
     marginTop: tokens.spacing.listGap,
   },
   currentMark: {
-    color: tokens.color.accent,
+    color: tokens.color.secondaryText,
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.auxiliary,
+    paddingHorizontal: tokens.spacing.listGap,
+  },
+  currentMarkActive: {
+    color: tokens.color.accent,
+  },
+  deleteRowButton: {
+    minHeight: tokens.control.touchTargetMin,
+    justifyContent: "center",
+    paddingHorizontal: tokens.spacing.listGap,
+  },
+  deleteRowButtonDisabled: {
+    maxWidth: 116,
+  },
+  deleteRowText: {
+    color: tokens.color.incorrect,
+    fontFamily: tokens.font.uiFamily.web,
+    fontSize: tokens.font.sizes.auxiliary,
+  },
+  deleteRowTextDisabled: {
+    color: tokens.color.disabled,
+  },
+  importName: {
+    color: tokens.color.primaryText,
+    fontFamily: tokens.font.uiFamily.web,
+    fontSize: tokens.font.sizes.subheading,
+    fontWeight: "600",
+    marginTop: tokens.spacing.cardPadding,
   },
   confirmText: {
     color: tokens.color.primaryText,
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.body,
     lineHeight: tokens.font.sizes.body * tokens.font.lineHeight.ui,
+    marginTop: tokens.spacing.listGap,
+  },
+  detailText: {
+    color: tokens.color.secondaryText,
+    fontFamily: tokens.font.uiFamily.web,
+    fontSize: tokens.font.sizes.auxiliary,
+    lineHeight: tokens.font.sizes.auxiliary * tokens.font.lineHeight.ui,
     marginTop: tokens.spacing.listGap,
   },
   warning: {
@@ -241,6 +753,60 @@ const styles = StyleSheet.create({
     marginTop: tokens.spacing.cardPadding,
   },
   notice: {
+    color: tokens.color.secondaryText,
+    fontFamily: tokens.font.uiFamily.web,
+    fontSize: tokens.font.sizes.auxiliary,
+    lineHeight: tokens.font.sizes.auxiliary * tokens.font.lineHeight.ui,
+    marginTop: tokens.spacing.listGap,
+  },
+  loading: {
+    color: tokens.color.secondaryText,
+    fontFamily: tokens.font.uiFamily.web,
+    fontSize: tokens.font.sizes.auxiliary,
+    marginTop: tokens.spacing.listGap,
+  },
+  checkRow: {
+    minHeight: tokens.control.touchTargetMin,
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: tokens.spacing.listGap,
+    borderWidth: tokens.border.width,
+    borderColor: tokens.color.secondaryBorder,
+    borderRadius: tokens.radius.medium,
+    marginTop: tokens.spacing.cardPadding,
+    padding: tokens.spacing.listGap,
+  },
+  checkbox: {
+    width: 20,
+    height: 20,
+    borderWidth: tokens.border.width,
+    borderColor: tokens.color.secondaryBorder,
+    borderRadius: tokens.radius.small,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  checkboxChecked: {
+    borderColor: tokens.color.accent,
+  },
+  checkboxMark: {
+    color: tokens.color.pageBackground,
+    fontFamily: tokens.font.uiFamily.web,
+    fontSize: tokens.font.sizes.auxiliary,
+    lineHeight: tokens.font.sizes.auxiliary,
+  },
+  checkboxMarkChecked: {
+    color: tokens.color.accent,
+  },
+  checkCopy: {
+    flex: 1,
+  },
+  checkTitle: {
+    color: tokens.color.primaryText,
+    fontFamily: tokens.font.uiFamily.web,
+    fontSize: tokens.font.sizes.auxiliary,
+    fontWeight: "600",
+  },
+  checkDetail: {
     color: tokens.color.secondaryText,
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.auxiliary,
@@ -281,11 +847,29 @@ const styles = StyleSheet.create({
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.auxiliary,
   },
-  disabled: { backgroundColor: tokens.color.disabled },
+  dangerButton: {
+    minHeight: tokens.control.touchTargetMin,
+    borderWidth: tokens.border.width,
+    borderColor: tokens.color.incorrect,
+    borderRadius: tokens.radius.medium,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: tokens.spacing.cardPadding,
+  },
+  dangerText: {
+    color: tokens.color.incorrect,
+    fontFamily: tokens.font.uiFamily.web,
+    fontSize: tokens.font.sizes.auxiliary,
+  },
+  disabled: {
+    backgroundColor: tokens.color.disabled,
+    borderColor: tokens.color.disabled,
+  },
   error: {
     color: tokens.color.incorrect,
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.auxiliary,
+    lineHeight: tokens.font.sizes.auxiliary * tokens.font.lineHeight.ui,
     marginTop: tokens.spacing.listGap,
   },
 });

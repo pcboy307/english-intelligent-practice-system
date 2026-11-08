@@ -22,6 +22,14 @@ export type MaintenanceResult =
 export type SwitchableBanks =
   components["schemas"]["SwitchableBanks"];
 export type SwitchableBank = components["schemas"]["SwitchableBank"];
+export type BankImportPackage =
+  components["schemas"]["bank-import-package"];
+export type BankImportPreview =
+  components["schemas"]["BankImportPreview"];
+export type BankImportResult =
+  components["schemas"]["BankImportResult"];
+export type BankDeletePreview =
+  components["schemas"]["BankDeletePreview"];
 export type MistakeEntry = components["schemas"]["MistakeEntry"];
 export type MistakeDetailQuestion = {
   question_id: string;
@@ -53,6 +61,42 @@ export function getStudentId(): string {
   return id;
 }
 
+type ApiErrorDetail = {
+  code?: string;
+  errors?: Array<{
+    code?: string;
+    message?: string;
+    passage_id?: string | null;
+    question_index?: number | null;
+    sample?: unknown;
+  }>;
+  [key: string]: unknown;
+};
+
+export class ApiRequestError extends Error {
+  readonly status: number;
+  readonly detail: ApiErrorDetail;
+
+  constructor(status: number, detail: ApiErrorDetail) {
+    const code = detail.code || `HTTP_${status}`;
+    const issues = (detail.errors || [])
+      .slice(0, 3)
+      .map((item) => {
+        const location = [
+          item.passage_id ? `篇 ${item.passage_id}` : "",
+          item.question_index ? `第 ${item.question_index} 题` : "",
+        ]
+          .filter(Boolean)
+          .join(" · ");
+        return `${item.code || "ERROR"}${location ? `（${location}）` : ""}`;
+      });
+    super(issues.length ? `${code}：${issues.join("；")}` : code);
+    this.name = "ApiRequestError";
+    this.status = status;
+    this.detail = detail;
+  }
+}
+
 async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
   const response = await fetch(`${API_BASE}${path}`, {
     ...init,
@@ -64,7 +108,11 @@ async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
   });
   if (!response.ok) {
     const payload = await response.json().catch(() => ({}));
-    throw new Error(payload.detail?.code || `HTTP ${response.status}`);
+    const detail =
+      payload.detail && typeof payload.detail === "object"
+        ? (payload.detail as ApiErrorDetail)
+        : { code: `HTTP_${response.status}` };
+    throw new ApiRequestError(response.status, detail);
   }
   if (response.status === 204) return undefined as T;
   return response.json() as Promise<T>;
@@ -173,4 +221,42 @@ export async function activateBank(bankId: string) {
     `/admin/banks/${encodeURIComponent(bankId)}/activate`,
     { method: "POST" },
   );
+}
+
+export async function previewImportBank(
+  packageDetail: BankImportPackage,
+  semanticCheck = false,
+) {
+  return request<BankImportPreview>(
+    `/banks/import/preview?semantic_check=${semanticCheck ? "true" : "false"}`,
+    {
+      method: "POST",
+      body: JSON.stringify(packageDetail),
+    },
+  );
+}
+
+export async function importBank(
+  packageDetail: BankImportPackage,
+  semanticCheck = true,
+) {
+  return request<BankImportResult>(
+    `/banks/import?semantic_check=${semanticCheck ? "true" : "false"}`,
+    {
+      method: "POST",
+      body: JSON.stringify(packageDetail),
+    },
+  );
+}
+
+export async function previewDeleteBank(bankId: string) {
+  return request<BankDeletePreview>(
+    `/banks/${encodeURIComponent(bankId)}/delete-preview`,
+  );
+}
+
+export async function deleteBank(bankId: string) {
+  return request<void>(`/banks/${encodeURIComponent(bankId)}`, {
+    method: "DELETE",
+  });
 }

@@ -12,6 +12,15 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from .pg_store import PostgresStore
+from .bank_transfer import (
+    ImportValidationError,
+    delete_bank,
+    delete_preview,
+    import_bank,
+    normalize_import_package,
+    preview_import,
+)
+from .m26_audit import audit_records
 
 ROOT = Path(__file__).resolve().parents[2]
 ENV_PATH = ROOT / ".env"
@@ -211,6 +220,109 @@ def list_switchable_banks(
 ) -> dict:
     student_id = student_id_or_401(x_student_id)
     return store.list_switchable_banks(student_id)
+
+
+@app.post("/api/v1/banks/import/preview")
+def preview_bank_import(
+    request: Request,
+    payload: dict,
+    semantic_check: bool = False,
+) -> dict:
+    require_local_request(request)
+    try:
+        with store.connection() as connection:
+            summary = preview_import(connection, payload)
+        if semantic_check:
+            normalized = normalize_import_package(payload)
+            audit = audit_records(normalized["records"])
+            summary["semantic_audit"] = {
+                "valid": audit["valid"],
+                "failures": audit["failures"],
+                "cost_cny": audit["cost_cny"],
+                "audited_passages": audit["audited_passages"],
+                "budget_cap_cny": audit["budget_cap_cny"],
+                "budget_exceeded": audit["budget_exceeded"],
+            }
+            if not audit["valid"]:
+                raise ImportValidationError(audit["failures"])
+        return summary
+    except ImportValidationError as error:
+        raise HTTPException(
+            status_code=400,
+            detail={"code": str(error), "errors": error.errors},
+        ) from error
+
+
+@app.post("/api/v1/banks/import", status_code=201)
+def import_bank_endpoint(
+    request: Request,
+    payload: dict,
+    semantic_check: bool = True,
+) -> dict:
+    require_local_request(request)
+    try:
+        semantic_audit = None
+        if semantic_check:
+            normalized = normalize_import_package(payload)
+            semantic_audit = audit_records(normalized["records"])
+            if not semantic_audit["valid"]:
+                raise ImportValidationError(semantic_audit["failures"])
+        with store.connection() as connection:
+            with connection.transaction():
+                result = import_bank(connection, payload)
+        store.reload_active_bank()
+        if semantic_audit is not None:
+            result["semantic_audit"] = {
+                "valid": True,
+                "cost_cny": semantic_audit["cost_cny"],
+                "audited_passages": semantic_audit["audited_passages"],
+                "budget_cap_cny": semantic_audit["budget_cap_cny"],
+                "budget_exceeded": False,
+            }
+        return result
+    except ImportValidationError as error:
+        raise HTTPException(
+            status_code=400,
+            detail={"code": str(error), "errors": error.errors},
+        ) from error
+
+
+@app.get("/api/v1/banks/{bank_id}/delete-preview")
+def preview_bank_delete(bank_id: str, request: Request) -> dict:
+    require_local_request(request)
+    try:
+        with store.connection() as connection:
+            return delete_preview(connection, bank_id)
+    except KeyError as error:
+        raise HTTPException(
+            status_code=404,
+            detail={"code": str(error)},
+        ) from error
+    except ValueError as error:
+        raise HTTPException(
+            status_code=409,
+            detail={"code": str(error)},
+        ) from error
+
+
+@app.delete("/api/v1/banks/{bank_id}", status_code=204)
+def delete_bank_endpoint(bank_id: str, request: Request) -> None:
+    require_local_request(request)
+    try:
+        with store.connection() as connection:
+            with connection.transaction():
+                delete_bank(connection, bank_id)
+    except KeyError as error:
+        raise HTTPException(
+            status_code=404,
+            detail={"code": str(error)},
+        ) from error
+    except ValueError as error:
+        raise HTTPException(
+            status_code=409,
+            detail={"code": str(error)},
+        ) from error
+    return None
 
 
 @app.get("/api/v1/maintenance/clear-mistakes/preview")

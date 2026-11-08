@@ -1,0 +1,112 @@
+{
+  "format_version": "bank-v1",
+  "name": "UI Import Test 20261108",
+  "target_size": 4,
+  "difficulty_profile": "advanced",
+  "generated_at": "2026-11-08",
+  "composition": {
+    "cloze": 0,
+    "grammar_fill": 0,
+    "reading": 1,
+    "gap_fill": 0
+  },
+  "passages": [
+    {
+      "validation_profile": "m26",
+      "type": "reading",
+      "passage_group_id": "M26-A-READING-01",
+      "topic": "科技",
+      "book_source": "选必二 U1",
+      "difficulty": 4,
+      "passage": "Technology has changed the way students learn in many schools, and this change is not always easy to see at first. When a student uses a computer to look up information, the ability to find an answer quickly is useful, but the ability to judge whether that answer is correct matters even more. Teachers now ask learners to compare several sources before they accept a fact, which helps them build careful habits of thought. A parent might worry that a child spends too much time in front of a screen, and this concern is reasonable, yet the same screen can open a door to lessons that a small classroom could never offer. For example, a volunteer who guides an online reading group can reach students in distant villages without travelling far. Of course, technology alone cannot replace a good teacher, because a machine can give information but it cannot encourage a nervous learner or notice when someone is confused. Schools that use new tools well usually keep the teacher at the centre of the lesson and treat the computer as an aid rather than a master. The student who learns to use these tools with care will be better prepared for a world where change happens fast. In the end, the value of any device depends on the purpose behind its use, and that purpose is still set by people. A teacher who explains this purpose clearly helps students see the screen as a partner in discovery, not a shortcut. Over time, small daily choices shape habits that last far beyond the classroom walls.",
+      "questions": [
+        {
+          "stem": "What is the main idea of the passage?",
+          "options": [
+            "Digital tools are most valuable when teachers guide their use toward clear learning goals.",
+            "Computers should replace textbooks in every classroom as soon as possible.",
+            "Students learn best when they avoid screens and study only from printed books.",
+            "Online lessons are useful mainly because they save schools money on travel."
+          ],
+          "answer": "Digital tools are most valuable when teachers guide their use toward clear learning goals.",
+          "knowledge_points": [
+            "main idea of a passage about technology and teaching"
+          ],
+          "grammar_tags": [
+            "relative_clauses_defining"
+          ],
+          "book_source": "必修1 U1",
+          "difficulty": 3,
+          "evidence_sentence": "Schools that use new tools well usually keep the teacher at the centre of the lesson and treat the computer as an aid rather than a master.",
+          "explanation": "文章的主旨是数字工具只有在教师引导、服务于明确学习目标时才最有价值，末段“the value of any device depends on the purpose behind its use, and that purpose is still set by people”直接点明这一中心。选项B“计算机应尽快取代课本”过于极端，文章强调教师居于课堂中心、电脑只是辅助，并未主张取代课本。选项C“学生只读纸质书最好”与文中“屏幕能打开小教室无法提供的课程之门”相矛盾。选项D把在线课程的价值归结为节省差旅费，属于以偏概全，文中举例是为说明覆盖面广而非省钱。本题考点是段落主旨与概括能力。",
+          "reading_type": "main_idea"
+        },
+        {
+          "stem": "What can be inferred from the passage about a machine in a classroom?",
+          "options": [
+            "It can supply facts but is unable to respond to a learner's emotional or mental state.",
+            "It is always more patient with nervous students than a human teacher is.",
+            "It should be given full control of the lesson once it is switched on.",
+            "It can notice confusion more quickly than any teacher can."
+          ],
+          "answer": "It can supply facts but is unable to respond to a learner's emotional or mental state.",
+          "knowledge_points": [
+            "inference about the limits of technology compared with teachers"
+          ],
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "book_source": "选必二 U1",
+          "difficulty": 4,
+          "evidence_sentence": "a machine can give information but it cannot encourage a nervous learner or notice when someone is confused",
+          "explanation": "文中说“a machine can give information but it cannot encourage a nervous learner or notice when someone is confused”，可推断机器能提供事实信息，却无法回应学习者的情绪或心理状态，故选A。选项B说机器比人类教师更有耐心，文中并未作此比较，属于无中生有。选项C说机器一开机就应掌控整节课，与“treat the computer as an aid rather than a master”正好相反。选项D说机器比任何教师都更快察觉困惑，与原文“cannot notice when someone is confused”直接矛盾。本题考点是推理判断与细节理解。",
+          "reading_type": "inference"
+        },
+        {
+          "stem": "What is the writer's attitude toward technology in schools?",
+          "options": [
+            "Balanced support: tools help learning when people set a sensible purpose for them.",
+            "Complete rejection: screens do more harm than good in every case.",
+            "Uncritical enthusiasm: devices should decide what students study.",
+            "Indifference: technology makes no real difference to how students learn."
+          ],
+          "answer": "Balanced support: tools help learning when people set a sensible purpose for them.",
+          "knowledge_points": [
+            "writer's attitude toward educational technology"
+          ],
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "book_source": "选必二 U1",
+          "difficulty": 4,
+          "evidence_sentence": "the value of any device depends on the purpose behind its use, and that purpose is still set by people",
+          "explanation": "作者态度是平衡的支持：既承认家长对屏幕时间的担忧合理，又指出技术能带来课堂之外的资源，并强调关键在于人们设定的使用目的，故选A。选项B“完全拒绝”忽视了文中对在线阅读小组等积极作用的肯定。选项C“盲目热情、让设备决定学习内容”与“that purpose is still set by people”相悖。选项D“漠不关心”与全文反复讨论技术利弊的立场不符。本题考点是作者态度与观点推断。",
+          "reading_type": "purpose_or_attitude"
+        },
+        {
+          "stem": "In the passage, the word \"aid\" is closest in meaning to ______.",
+          "options": [
+            "a helpful support",
+            "a strict ruler",
+            "a heavy burden",
+            "a final goal"
+          ],
+          "answer": "a helpful support",
+          "knowledge_points": [
+            "vocabulary in context: aid"
+          ],
+          "grammar_tags": [
+            "articles"
+          ],
+          "book_source": "必修2 U1",
+          "difficulty": 3,
+          "evidence_sentence": "treat the computer as an aid rather than a master",
+          "explanation": "文中“treat the computer as an aid rather than a master”把aid与master对举，说明aid指“有帮助的辅助手段”，与a helpful support同义。选项B“严厉的统治者”恰是master之意，与aid相反。选项C“沉重的负担”与语境中电脑作为教学帮手的意思不符。选项D“最终目标”与aid“辅助”的含义无关。本题考点是词义猜测与上下文语境理解。",
+          "reading_type": "vocabulary_in_context"
+        }
+      ],
+      "generation_observations": [],
+      "flesch_reading_ease": 58.78
+    }
+  ]
+}
