@@ -9,21 +9,22 @@
       "question_count": 300,
       "status": "active",
       "is_current": true
+    }
+  ],
+  "excluded_legacy_demos": [
+    {
+      "bank_id": "00000000-0000-4000-8000-000000000001",
+      "name": "Demo Bank（30题·旧版演示）",
+      "question_count": 30,
+      "status": "archived",
+      "switchable": false
     },
     {
       "bank_id": "00000000-0000-4000-8000-000000000002",
       "name": "Demo Bank（80题·归档）",
-      "version": 1,
       "question_count": 80,
       "status": "archived",
-      "is_current": false
+      "switchable": false
     }
-  ],
-  "excluded_legacy_demo": {
-    "bank_id": "00000000-0000-4000-8000-000000000001",
-    "name": "Demo Bank（30题·旧版演示）",
-    "question_count": 30,
-    "status": "archived",
-    "switchable": false
-  }
+  ]
 }

@@ -77,15 +77,13 @@
       "question_count": 300,
       "status": "active",
       "is_current": true
-    },
-    {
-      "name": "Demo Bank（80题·归档）",
-      "question_count": 80,
-      "status": "archived",
-      "is_current": false
     }
   ],
-  "temporary_banks_removed": 189,
+  "excluded_legacy_demos": [
+    "Demo Bank（30题·旧版演示）",
+    "Demo Bank（80题·归档）"
+  ],
+  "temporary_banks_removed": 219,
   "legacy_demo_source": {
     "bank_id": "00000000-0000-4000-8000-000000000001",
     "created_at": "2026-11-07T11:07:42.182188+08:00",
@@ -93,6 +91,14 @@
     "final_name": "Demo Bank（30题·旧版演示）",
     "final_status": "archived",
     "switchable": false
+  },
+  "legacy_m1_demo": {
+    "bank_id": "00000000-0000-4000-8000-000000000002",
+    "origin": "M1 期间扩到 80 题的历史 Demo Bank",
+    "final_name": "Demo Bank（80题·归档）",
+    "final_status": "archived",
+    "switchable": false,
+    "product_decision": "历史回看价值保留，但不向孩子展示切换入口"
   },
   "screenshots": {
     "home_bank_count": "home-bank-count-fixed.png",

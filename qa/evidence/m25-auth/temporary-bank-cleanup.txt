@@ -42,9 +42,19 @@ after last regression cleanup:
   errors_tags_removed_again = 8
   total_temporary_banks_removed = 189
 
+after final verification rerun:
+  temporary_banks_removed_again = 30
+  questions_removed_again = 154
+  passages_removed_again = 30
+  sessions_removed_again = 28
+  attempts_removed_again = 34
+  mistakes_removed_again = 14
+  errors_tags_removed_again = 16
+  total_temporary_banks_removed = 219
+
 after:
   candidate_banks:
     - M2 Bank #2 / 300 / active / current
-    - Demo Bank / 80 / archived
-    - Demo Bank / 30 / ready
+    - Demo Bank（80题·归档） / 80 / archived / switchable=false
+    - Demo Bank（30题·旧版演示） / 30 / archived / switchable=false
   orphan_attempts = 0

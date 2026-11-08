@@ -23,6 +23,17 @@ equal = true
 - 当前库清单：`current-db-foreign-keys.txt`
 - 比对结果：`fresh-db-comparison.json`
 
+## W3. 已删除 bank 的会话与报告残留
+
+SQL 原文：`deleted-bank-residual-check.sql`
+
+```text
+orphan_sessions = 0
+orphan_reports = 0
+```
+
+结论：无残留，不需要在历史列表中添加兼容说明。
+
 ## G. 换库
 
 | 判据 | 实际输出 |
@@ -42,12 +53,13 @@ equal = true
 
 ```text
 M2 Bank #2  300题  active   current
-Demo Bank（80题·归档） 80题 archived
 ```
 
 最终列表截图：`bank-list-final.png`。
 旧 `Demo Bank（30题·旧版演示）` 保留为 archived 且 `switchable=false`，
 不出现在孩子可见的切换列表中。来源是原始 30 题 bootstrap 演示库。
+旧 `Demo Bank（80题·归档）` 是 M1 历史演示库，供历史回看保留，但不面向孩子切换，
+同样 `switchable=false`。因此最终可切换目标只有当前 M2 一个。
 
 ## P1. 外键
 

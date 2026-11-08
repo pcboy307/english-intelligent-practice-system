@@ -1172,7 +1172,7 @@ def test_m25_bank_activation_is_loopback_only_and_logged() -> None:
         activate_bank(original_bank_id)
 
 
-def test_m25_legacy_demo_is_unique_archived_and_not_switchable() -> None:
+def test_m25_legacy_demos_are_unique_archived_and_not_switchable() -> None:
     legacy_id = "00000000-0000-4000-8000-000000000001"
     archived_m1_id = "00000000-0000-4000-8000-000000000002"
     with psycopg.connect(database_url(), row_factory=dict_row) as connection:
@@ -1189,11 +1189,14 @@ def test_m25_legacy_demo_is_unique_archived_and_not_switchable() -> None:
     assert by_id[legacy_id]["name"] != by_id[archived_m1_id]["name"]
     assert by_id[legacy_id]["status"] == "archived"
     assert by_id[legacy_id]["coverage_snapshot"]["switchable"] is False
+    assert by_id[archived_m1_id]["status"] == "archived"
+    assert by_id[archived_m1_id]["coverage_snapshot"]["switchable"] is False
 
     headers = student_headers()
     payload = client.get("/api/v1/banks", headers=headers).json()
     visible_ids = {bank["bank_id"] for bank in payload["banks"]}
     assert legacy_id not in visible_ids
+    assert archived_m1_id not in visible_ids
     assert payload["current_bank_id"] in visible_ids
 
 
