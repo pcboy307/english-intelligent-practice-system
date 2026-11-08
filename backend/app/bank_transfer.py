@@ -6,6 +6,7 @@ import hashlib
 import json
 import re
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from typing import Any
 from uuid import uuid4
 
@@ -529,8 +530,12 @@ def normalize_import_package(package: dict[str, Any]) -> dict[str, Any]:
                 if field in raw_question:
                     question[field] = raw_question[field]
             questions.append(question)
+        validation_profile = (
+            raw.get("validation_profile")
+            or ("m26" if format_version == "m26-v1" else "m2")
+        )
         record = {
-            "validation_profile": "m26",
+            "validation_profile": validation_profile,
             "type": passage_type,
             "passage_group_id": passage_id,
             "topic": topic,
@@ -635,6 +640,8 @@ def normalize_import_package(package: dict[str, Any]) -> dict[str, Any]:
 
     machine_failures: list[dict[str, Any]] = []
     for record in records:
+        if record["validation_profile"] == "stored":
+            continue
         report = validate_generated_passage(record)
         if report.accepted:
             continue
@@ -726,6 +733,95 @@ def preview_import(connection, package: dict[str, Any]) -> dict[str, Any]:
             "composition": normalized["composition"],
         },
         "errors": [],
+    }
+
+
+def export_bank(connection, bank_id: str) -> dict[str, Any]:
+    bank = connection.execute(
+        """
+        SELECT id::text AS id, name, difficulty_profile
+        FROM question_banks
+        WHERE id=%s
+        """,
+        (bank_id,),
+    ).fetchone()
+    if not bank:
+        raise KeyError("BANK_NOT_FOUND")
+
+    passage_rows = connection.execute(
+        """
+        SELECT passage_group_id, type, content, word_count, topic,
+               book_source, difficulty
+        FROM passages
+        WHERE bank_id=%s
+        ORDER BY
+            CASE type
+                WHEN 'cloze' THEN 1
+                WHEN 'grammar_fill' THEN 2
+                WHEN 'reading' THEN 3
+                WHEN 'gap_fill' THEN 4
+                ELSE 5
+            END,
+            passage_group_id
+        """,
+        (bank_id,),
+    ).fetchall()
+    question_rows = connection.execute(
+        """
+        SELECT passage_group_id, stem, options, answer, explanation,
+               knowledge_points, grammar_tags, book_source, difficulty
+        FROM questions
+        WHERE bank_id=%s
+        ORDER BY passage_group_id, id
+        """,
+        (bank_id,),
+    ).fetchall()
+
+    questions_by_passage: dict[str, list[dict[str, Any]]] = {}
+    for row in question_rows:
+        questions = questions_by_passage.setdefault(row["passage_group_id"], [])
+        questions.append(
+            {
+                "number": len(questions) + 1,
+                "stem": row["stem"],
+                "options": row["options"],
+                "answer": row["answer"],
+                "explanation": row["explanation"],
+                "knowledge_points": row["knowledge_points"],
+                "grammar_tags": row["grammar_tags"],
+                "book_source": row["book_source"],
+                "difficulty": row["difficulty"],
+            }
+        )
+
+    composition = {key: 0 for key in TYPE_QUESTION_COUNTS}
+    passages = []
+    for row in passage_rows:
+        composition[row["type"]] += 1
+        passage_questions = questions_by_passage.get(row["passage_group_id"], [])
+        exported_passage = {
+            "validation_profile": "stored",
+            "type": row["type"],
+            "passage_group_id": row["passage_group_id"],
+            "topic": row["topic"],
+            "book_source": row["book_source"],
+            "difficulty": row["difficulty"],
+            "word_count": row["word_count"],
+            "passage": row["content"],
+            "questions": passage_questions,
+        }
+        if row["type"] == "gap_fill" and passage_questions:
+            exported_passage["options"] = passage_questions[0]["options"]
+        passages.append(exported_passage)
+
+    return {
+        "format_version": "bank-v1",
+        "name": bank["name"],
+        "target_size": len(question_rows),
+        "difficulty_profile": bank["difficulty_profile"],
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "composition": composition,
+        "passages": passages,
     }
 
 

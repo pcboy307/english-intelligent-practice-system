@@ -16,6 +16,7 @@ from .bank_transfer import (
     ImportValidationError,
     delete_bank,
     delete_preview,
+    export_bank,
     import_bank,
     normalize_import_package,
     preview_import,
@@ -220,6 +221,19 @@ def list_switchable_banks(
 ) -> dict:
     student_id = student_id_or_401(x_student_id)
     return store.list_switchable_banks(student_id)
+
+
+@app.get("/api/v1/banks/{bank_id}/export")
+def export_bank_endpoint(request: Request, bank_id: str) -> dict:
+    require_local_request(request)
+    try:
+        with store.connection() as connection:
+            return export_bank(connection, bank_id)
+    except KeyError as error:
+        raise HTTPException(
+            status_code=404,
+            detail={"code": "BANK_NOT_FOUND"},
+        ) from error
 
 
 @app.post("/api/v1/banks/import/preview")

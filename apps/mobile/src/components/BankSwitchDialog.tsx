@@ -12,6 +12,7 @@ import {
 import {
   activateBank,
   deleteBank,
+  exportBank,
   getSwitchableBanks,
   importBank,
   previewDeleteBank,
@@ -59,6 +60,14 @@ function compositionText(preview: BankImportPreview): string {
     `阅读 ${composition.reading} 篇`,
     `七选五 ${composition.gap_fill} 篇`,
   ].join(" · ");
+}
+
+function exportFileName(bank: SwitchableBank): string {
+  const safeName = bank.name
+    .replace(/[\\/:*?"<>|\s]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  const date = new Date().toISOString().slice(0, 10);
+  return `${safeName || "question-bank"}-${date}.json`;
 }
 
 export function BankSwitchDialog({
@@ -212,6 +221,39 @@ export function BankSwitchDialog({
     }
   }
 
+  async function executeExport(bank: SwitchableBank) {
+    setBusy(true);
+    setBusyLabel(`正在导出「${bank.name}」`);
+    setError("");
+    setNotice("");
+    try {
+      const packageDetail = await exportBank(bank.bank_id);
+      if (typeof document === "undefined") {
+        throw new Error("当前环境不支持下载 JSON 文件");
+      }
+      const blob = new Blob(
+        [`${JSON.stringify(packageDetail, null, 2)}\n`],
+        { type: "application/json;charset=utf-8" },
+      );
+      const downloadUrl = URL.createObjectURL(blob);
+      const anchor = document.createElement("a");
+      anchor.href = downloadUrl;
+      anchor.download = exportFileName(bank);
+      document.body.appendChild(anchor);
+      anchor.click();
+      anchor.remove();
+      URL.revokeObjectURL(downloadUrl);
+      setNotice(
+        `已导出「${bank.name}」：${packageDetail.passages.length} 篇 / ${packageDetail.target_size} 题。`,
+      );
+    } catch (reason) {
+      setError(reasonText(reason));
+    } finally {
+      setBusy(false);
+      setBusyLabel("");
+    }
+  }
+
   async function prepareDelete(bank: SwitchableBank) {
     if (bank.is_current) return;
     setError("");
@@ -319,25 +361,36 @@ export function BankSwitchDialog({
                   {bank.is_current ? "✓ 当前" : "选择"}
                 </Text>
               </Pressable>
-              <Pressable
-                accessibilityRole="button"
-                disabled={bank.is_current || busy}
-                onPress={() => prepareDelete(bank)}
-                style={[
-                  styles.deleteRowButton,
-                  bank.is_current && styles.deleteRowButtonDisabled,
-                ]}
-                testID={`bank-delete-${bank.bank_id}`}
-              >
-                <Text
-                  style={[
-                    styles.deleteRowText,
-                    bank.is_current && styles.deleteRowTextDisabled,
-                  ]}
+              <View style={styles.rowActions}>
+                <Pressable
+                  accessibilityRole="button"
+                  disabled={busy}
+                  onPress={() => executeExport(bank)}
+                  style={[styles.exportRowButton, busy && styles.disabledOutline]}
+                  testID={`bank-export-${bank.bank_id}`}
                 >
-                  {bank.is_current ? "当前库不可删除" : "删除"}
-                </Text>
-              </Pressable>
+                  <Text style={styles.exportRowText}>导出</Text>
+                </Pressable>
+                <Pressable
+                  accessibilityRole="button"
+                  disabled={bank.is_current || busy}
+                  onPress={() => prepareDelete(bank)}
+                  style={[
+                    styles.deleteRowButton,
+                    bank.is_current && styles.deleteRowButtonDisabled,
+                  ]}
+                  testID={`bank-delete-${bank.bank_id}`}
+                >
+                  <Text
+                    style={[
+                      styles.deleteRowText,
+                      bank.is_current && styles.deleteRowTextDisabled,
+                    ]}
+                  >
+                    {bank.is_current ? "当前库不可删除" : "删除"}
+                  </Text>
+                </Pressable>
+              </View>
             </View>
           ))}
         </ScrollView>
@@ -712,6 +765,24 @@ const styles = StyleSheet.create({
   },
   currentMarkActive: {
     color: tokens.color.accent,
+  },
+  rowActions: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: tokens.web_desktop.optionGap,
+  },
+  exportRowButton: {
+    minHeight: tokens.control.touchTargetMin,
+    borderWidth: tokens.border.width,
+    borderColor: tokens.color.secondaryBorder,
+    borderRadius: tokens.radius.medium,
+    justifyContent: "center",
+    paddingHorizontal: tokens.spacing.listGap,
+  },
+  exportRowText: {
+    color: tokens.color.primaryText,
+    fontFamily: tokens.font.uiFamily.web,
+    fontSize: tokens.font.sizes.auxiliary,
   },
   deleteRowButton: {
     minHeight: tokens.control.touchTargetMin,

@@ -1,0 +1,1795 @@
+{
+  "format_version": "bank-v1",
+  "name": "Demo Bank",
+  "target_size": 80,
+  "difficulty_profile": "standard",
+  "generated_at": "2026-11-08T15:30:40.388006+00:00",
+  "composition": {
+    "cloze": 2,
+    "grammar_fill": 2,
+    "reading": 5,
+    "gap_fill": 2
+  },
+  "passages": [
+    {
+      "validation_profile": "stored",
+      "type": "cloze",
+      "passage_group_id": "DEMO-CLOZE-01",
+      "topic": "environment",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "word_count": 206,
+      "passage": "Last April, our class joined a beach clean. We met early in the morning and divided into small (1) so that every area could be checked. We collected bottles, paper and pieces of (2) from the sand. Everyone worked (3) because damaged glass could hurt someone. (4) the work was hard, nobody complained. Our teacher (5) that each group should record what it found. The result showed that most waste came from food packaging. We made a (6) to reduce this waste at school. Near noon, we (7) a group of birds beside the water. We moved away quietly to (8) leave them in peace. Some volunteers had (9) worked at the beach before, so they knew the safest route. We finished the task (10) using any plastic bags. The local officer said our (11) was helpful, and asked us to share the data with the community. We also agreed that the message should (12) beyond our classroom. A week later, more families joined the next beach clean. Although the beach looked cleaner, we felt (13) about the work we had done. Protecting the coast requires steady action, and every small step is part of a larger (14). We left with a clear sense of (15).",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "选择第 1 空最合适的选项。",
+          "options": [
+            "groups",
+            "teams",
+            "pieces",
+            "signs"
+          ],
+          "answer": "teams",
+          "explanation": "正确答案是 teams。small groups 表示把学生分成小组。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "team_noun"
+          ],
+          "grammar_tags": [
+            "subject_verb_agreement"
+          ],
+          "book_source": "选必二 U1",
+          "difficulty": 1
+        },
+        {
+          "number": 2,
+          "stem": "选择第 2 空最合适的选项。",
+          "options": [
+            "plastic",
+            "music",
+            "weather",
+            "silence"
+          ],
+          "answer": "plastic",
+          "explanation": "正确答案是 plastic。该名词与从沙滩收集废弃物的语境一致。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "material_noun"
+          ],
+          "grammar_tags": [
+            "articles"
+          ],
+          "book_source": "选必二 U2",
+          "difficulty": 1
+        },
+        {
+          "number": 3,
+          "stem": "选择第 3 空最合适的选项。",
+          "options": [
+            "carefully",
+            "loudly",
+            "suddenly",
+            "rarely"
+          ],
+          "answer": "carefully",
+          "explanation": "正确答案是 carefully。此处需要副词修饰 worked。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "manner_adverb"
+          ],
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "book_source": "选必二 U3",
+          "difficulty": 2
+        },
+        {
+          "number": 4,
+          "stem": "选择第 4 空最合适的选项。",
+          "options": [
+            "Because",
+            "Although",
+            "Unless",
+            "So"
+          ],
+          "answer": "Although",
+          "explanation": "正确答案是 Although。前后句是让步关系，Although 符合逻辑。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "concession"
+          ],
+          "grammar_tags": [
+            "adverbial_clauses"
+          ],
+          "book_source": "选必二 U4",
+          "difficulty": 2
+        },
+        {
+          "number": 5,
+          "stem": "选择第 5 空最合适的选项。",
+          "options": [
+            "suggested",
+            "refused",
+            "forgot",
+            "divided"
+          ],
+          "answer": "suggested",
+          "explanation": "正确答案是 suggested。该动词与教师建议记录结果这一语境一致。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "reporting_verb"
+          ],
+          "grammar_tags": [
+            "subjunctive_basic_should"
+          ],
+          "book_source": "选必二 U5",
+          "difficulty": 2
+        },
+        {
+          "number": 6,
+          "stem": "选择第 6 空最合适的选项。",
+          "options": [
+            "decision",
+            "distance",
+            "direction",
+            "difficulty"
+          ],
+          "answer": "decision",
+          "explanation": "正确答案是 decision。该名词与 make a decision 的固定搭配一致。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "decision_noun"
+          ],
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "book_source": "选必二 U1",
+          "difficulty": 3
+        },
+        {
+          "number": 7,
+          "stem": "选择第 7 空最合适的选项。",
+          "options": [
+            "noticed",
+            "covered",
+            "borrowed",
+            "replaced"
+          ],
+          "answer": "noticed",
+          "explanation": "正确答案是 noticed。该动词表示在水边注意到一群鸟。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "observation_verb"
+          ],
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "book_source": "选必二 U3",
+          "difficulty": 3
+        },
+        {
+          "number": 8,
+          "stem": "选择第 8 空最合适的选项。",
+          "options": [
+            "avoid",
+            "finish",
+            "invite",
+            "prepare"
+          ],
+          "answer": "avoid",
+          "explanation": "正确答案是 avoid。avoid doing 表示避免做某事。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "verb_pattern"
+          ],
+          "grammar_tags": [
+            "v_ing_nonfinite"
+          ],
+          "book_source": "选必一 U1",
+          "difficulty": 3
+        },
+        {
+          "number": 9,
+          "stem": "选择第 9 空最合适的选项。",
+          "options": [
+            "already",
+            "instead",
+            "hardly",
+            "perhaps"
+          ],
+          "answer": "already",
+          "explanation": "正确答案是 already。already 与该句完成时语境一致。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "time_adverb"
+          ],
+          "grammar_tags": [
+            "articles"
+          ],
+          "book_source": "选必一 U2",
+          "difficulty": 3
+        },
+        {
+          "number": 10,
+          "stem": "选择第 10 空最合适的选项。",
+          "options": [
+            "without",
+            "against",
+            "between",
+            "during"
+          ],
+          "answer": "without",
+          "explanation": "正确答案是 without。without 表示没有使用塑料袋。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "object_preposition"
+          ],
+          "grammar_tags": [
+            "prepositions"
+          ],
+          "book_source": "选必一 U3",
+          "difficulty": 3
+        },
+        {
+          "number": 11,
+          "stem": "选择第 11 空最合适的选项。",
+          "options": [
+            "effort",
+            "habit",
+            "product",
+            "promise"
+          ],
+          "answer": "effort",
+          "explanation": "正确答案是 effort。该名词与团队共同付出的努力相呼应。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "effort_noun"
+          ],
+          "grammar_tags": [
+            "pronouns"
+          ],
+          "book_source": "选必一 U4",
+          "difficulty": 4
+        },
+        {
+          "number": 12,
+          "stem": "选择第 12 空最合适的选项。",
+          "options": [
+            "reach",
+            "hide",
+            "divide",
+            "remain"
+          ],
+          "answer": "reach",
+          "explanation": "正确答案是 reach。reach 表示让信息传播得更远。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "purpose_verb"
+          ],
+          "grammar_tags": [
+            "adverbial_clauses"
+          ],
+          "book_source": "选必一 U5",
+          "difficulty": 4
+        },
+        {
+          "number": 13,
+          "stem": "选择第 13 空最合适的选项。",
+          "options": [
+            "proud",
+            "tired",
+            "afraid",
+            "silent"
+          ],
+          "answer": "proud",
+          "explanation": "正确答案是 proud。proud 与完成清理后的感受一致。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "feeling_adjective"
+          ],
+          "grammar_tags": [
+            "comparatives_superlatives"
+          ],
+          "book_source": "必修一 U4",
+          "difficulty": 4
+        },
+        {
+          "number": 14,
+          "stem": "选择第 14 空最合适的选项。",
+          "options": [
+            "project",
+            "journey",
+            "lesson",
+            "surface"
+          ],
+          "answer": "project",
+          "explanation": "正确答案是 project。该名词与前文的清理活动相呼应。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "project_noun"
+          ],
+          "grammar_tags": [
+            "pronouns"
+          ],
+          "book_source": "必修三 U2",
+          "difficulty": 5
+        },
+        {
+          "number": 15,
+          "stem": "选择第 15 空最合适的选项。",
+          "options": [
+            "achievement",
+            "attention",
+            "argument",
+            "adventure"
+          ],
+          "answer": "achievement",
+          "explanation": "正确答案是 achievement。该名词总结完成清理后的成就感。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "achievement_noun"
+          ],
+          "grammar_tags": [
+            "with_compound"
+          ],
+          "book_source": "跨册综合",
+          "difficulty": 5
+        }
+      ]
+    },
+    {
+      "validation_profile": "stored",
+      "type": "cloze",
+      "passage_group_id": "DEMO-CLOZE-02",
+      "topic": "transport",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "word_count": 197,
+      "passage": "When our town opened a bike library last year, few people expected it to become so popular. The idea is simple: residents can borrow a bike for a day and return it to any station. At first there were only twenty (1), but demand grew quickly. Volunteers check every bike (2) so that lights work well. (3) a bike is damaged, it is moved to a repair area. People must lock it after each trip and avoid (4) on narrow streets. The service has (5) become part of daily life for many workers. One student says cycling has (6) her save money and stay active. Another person was (7) by how quiet the streets felt. (8) blocking entrances, people leave a full bike at the next station. The map shows (9) stations are busiest and when more bikes are needed. If residents continue to use the service, the town (10) more stations next year. Volunteers also teach children about road (11). A bike can make short journeys more (12), and it gives neighbours a chance to know their (13). The project is not only transport; it is also a small (14) in how people understand (15) transport.",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "选择第 1 空最合适的选项。",
+          "options": [
+            "bike",
+            "bikes",
+            "biking",
+            "biked"
+          ],
+          "answer": "bikes",
+          "explanation": "正确答案是 bikes。twenty bicycles 表示可供借用的自行车数量。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "fleet_noun"
+          ],
+          "grammar_tags": [
+            "subject_verb_agreement"
+          ],
+          "book_source": "选必二 U1",
+          "difficulty": 1
+        },
+        {
+          "number": 2,
+          "stem": "选择第 2 空最合适的选项。",
+          "options": [
+            "careful",
+            "carefully",
+            "carefulness",
+            "careless"
+          ],
+          "answer": "carefully",
+          "explanation": "正确答案是 carefully。inspect 是动词，需要副词 regularly 修饰。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "inspection_adverb"
+          ],
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "book_source": "选必二 U2",
+          "difficulty": 1
+        },
+        {
+          "number": 3,
+          "stem": "选择第 3 空最合适的选项。",
+          "options": [
+            "If",
+            "Although",
+            "Because",
+            "Unless"
+          ],
+          "answer": "If",
+          "explanation": "正确答案是 If。此处表示自行车损坏后的条件，If 符合逻辑。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "condition"
+          ],
+          "grammar_tags": [
+            "adverbial_clauses"
+          ],
+          "book_source": "选必二 U3",
+          "difficulty": 2
+        },
+        {
+          "number": 4,
+          "stem": "选择第 4 空最合适的选项。",
+          "options": [
+            "ride",
+            "riding",
+            "rode",
+            "ridden"
+          ],
+          "answer": "riding",
+          "explanation": "正确答案是 riding。avoid doing 表示避免做某事。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "avoid_pattern"
+          ],
+          "grammar_tags": [
+            "v_ing_nonfinite"
+          ],
+          "book_source": "选必二 U4",
+          "difficulty": 2
+        },
+        {
+          "number": 5,
+          "stem": "选择第 5 空最合适的选项。",
+          "options": [
+            "already",
+            "instead",
+            "hardly",
+            "perhaps"
+          ],
+          "answer": "already",
+          "explanation": "正确答案是 already。already 与现在完成时搭配。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "completion_adverb"
+          ],
+          "grammar_tags": [
+            "articles"
+          ],
+          "book_source": "选必二 U5",
+          "difficulty": 2
+        },
+        {
+          "number": 6,
+          "stem": "选择第 6 空最合适的选项。",
+          "options": [
+            "help",
+            "helped",
+            "helping",
+            "helps"
+          ],
+          "answer": "helped",
+          "explanation": "正确答案是 helped。has helped 表示过去行为对现在产生的结果。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "present_perfect_result"
+          ],
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "book_source": "选必二 U1",
+          "difficulty": 3
+        },
+        {
+          "number": 7,
+          "stem": "选择第 7 空最合适的选项。",
+          "options": [
+            "surprising",
+            "surprised",
+            "surprise",
+            "surprisingly"
+          ],
+          "answer": "surprised",
+          "explanation": "正确答案是 surprised。rider 感到惊讶，使用 surprised。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "passive_feeling"
+          ],
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "book_source": "选必二 U3",
+          "difficulty": 3
+        },
+        {
+          "number": 8,
+          "stem": "选择第 8 空最合适的选项。",
+          "options": [
+            "Instead of",
+            "Because of",
+            "In spite",
+            "According to"
+          ],
+          "answer": "Instead of",
+          "explanation": "正确答案是 Instead of。Instead of 引出与后半句替代关系相符的动名词。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "contrast_preposition"
+          ],
+          "grammar_tags": [
+            "prepositions"
+          ],
+          "book_source": "选必一 U1",
+          "difficulty": 3
+        },
+        {
+          "number": 9,
+          "stem": "选择第 9 空最合适的选项。",
+          "options": [
+            "which",
+            "who",
+            "whose",
+            "when"
+          ],
+          "answer": "which",
+          "explanation": "正确答案是 which。which 指代 stations 并在从句中作主语。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "station_relative"
+          ],
+          "grammar_tags": [
+            "relative_clauses_defining"
+          ],
+          "book_source": "选必一 U2",
+          "difficulty": 3
+        },
+        {
+          "number": 10,
+          "stem": "选择第 10 空最合适的选项。",
+          "options": [
+            "adds",
+            "added",
+            "will add",
+            "would add"
+          ],
+          "answer": "will add",
+          "explanation": "正确答案是 will add。条件句描述将来，主句使用 will add。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "future_action"
+          ],
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "book_source": "选必一 U3",
+          "difficulty": 3
+        },
+        {
+          "number": 11,
+          "stem": "选择第 11 空最合适的选项。",
+          "options": [
+            "safe",
+            "safety",
+            "safely",
+            "unsafe"
+          ],
+          "answer": "safety",
+          "explanation": "正确答案是 safety。road safety 表示道路安全。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "road_safety_noun"
+          ],
+          "grammar_tags": [
+            "articles"
+          ],
+          "book_source": "选必一 U4",
+          "difficulty": 4
+        },
+        {
+          "number": 12,
+          "stem": "选择第 12 空最合适的选项。",
+          "options": [
+            "convenient",
+            "convenience",
+            "conveniently",
+            "inconvenient"
+          ],
+          "answer": "convenient",
+          "explanation": "正确答案是 convenient。make journeys more convenient 表示让出行更方便。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "convenience_adjective"
+          ],
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "book_source": "选必一 U5",
+          "difficulty": 4
+        },
+        {
+          "number": 13,
+          "stem": "选择第 13 空最合适的选项。",
+          "options": [
+            "community",
+            "communicate",
+            "communication",
+            "communal"
+          ],
+          "answer": "community",
+          "explanation": "正确答案是 community。their 指代邻里，community 表示社区。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "local_community"
+          ],
+          "grammar_tags": [
+            "pronouns"
+          ],
+          "book_source": "必修一 U4",
+          "difficulty": 4
+        },
+        {
+          "number": 14,
+          "stem": "选择第 14 空最合适的选项。",
+          "options": [
+            "step",
+            "reason",
+            "order",
+            "surface"
+          ],
+          "answer": "step",
+          "explanation": "正确答案是 step。small step 表示理解公共交通的一小步。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "progress_noun"
+          ],
+          "grammar_tags": [
+            "comparatives_superlatives"
+          ],
+          "book_source": "必修三 U2",
+          "difficulty": 5
+        },
+        {
+          "number": 15,
+          "stem": "选择第 15 空最合适的选项。",
+          "options": [
+            "public",
+            "private",
+            "strange",
+            "secret"
+          ],
+          "answer": "public",
+          "explanation": "正确答案是 public。public transport 表示公共交通。其余选项在语境或语法上不合适。",
+          "knowledge_points": [
+            "public_transport"
+          ],
+          "grammar_tags": [
+            "with_compound"
+          ],
+          "book_source": "跨册综合",
+          "difficulty": 5
+        }
+      ]
+    },
+    {
+      "validation_profile": "stored",
+      "type": "grammar_fill",
+      "passage_group_id": "DEMO-GRAMMAR-01",
+      "topic": "community garden",
+      "book_source": "选必二 U2",
+      "difficulty": 3,
+      "word_count": 135,
+      "passage": "Community gardens ① popular in many cities for many years. They give people a chance to grow their own food and meet their neighbours. A garden ② on unused land last year is now used by more than fifty families. People work together because the space ③ by everyone. Before planting, they must decide what ④ and where each plant should go. Some volunteers ⑤ in the garden for two years and know its soil well. They explain that young plants ⑥ protection from strong wind. Everyone is asked to keep the paths clear so that all visitors can move ⑦. The garden is not only beautiful ⑧ also useful. It teaches children where food comes from, and it reminds adults ⑨ about waste. If more residents join next season, the project ⑩ even stronger.",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "选择 ① 处最合适的选项。",
+          "options": [
+            "have become",
+            "had become",
+            "will become",
+            "are becoming"
+          ],
+          "answer": "have become",
+          "explanation": "正确答案是 have become。for many years 表示动作持续到现在，应使用现在完成时。",
+          "knowledge_points": [
+            "现在完成时"
+          ],
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "book_source": "选必二 U2",
+          "difficulty": 1
+        },
+        {
+          "number": 2,
+          "stem": "选择 ② 处最合适的选项。",
+          "options": [
+            "build",
+            "building",
+            "built",
+            "to build"
+          ],
+          "answer": "built",
+          "explanation": "正确答案是 built。garden 与 build 是被动关系，过去分词 built 作后置定语。",
+          "knowledge_points": [
+            "过去分词作定语"
+          ],
+          "grammar_tags": [
+            "past_participle_nonfinite"
+          ],
+          "book_source": "选必二 U4",
+          "difficulty": 1
+        },
+        {
+          "number": 3,
+          "stem": "选择 ③ 处最合适的选项。",
+          "options": [
+            "shares",
+            "shared",
+            "is shared",
+            "will share"
+          ],
+          "answer": "is shared",
+          "explanation": "正确答案是 is shared。space 与 share 是被动关系，整句为一般现在时，因此使用 is shared。",
+          "knowledge_points": [
+            "一般现在时被动语态"
+          ],
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "book_source": "选必二 U5",
+          "difficulty": 2
+        },
+        {
+          "number": 4,
+          "stem": "选择 ④ 处最合适的选项。",
+          "options": [
+            "grow",
+            "growing",
+            "to grow",
+            "grown"
+          ],
+          "answer": "to grow",
+          "explanation": "正确答案是 to grow。what 后使用不定式表示需要种植的内容，to grow 符合结构。",
+          "knowledge_points": [
+            "不定式作宾语"
+          ],
+          "grammar_tags": [
+            "infinitive_nonfinite"
+          ],
+          "book_source": "选必一 U1",
+          "difficulty": 2
+        },
+        {
+          "number": 5,
+          "stem": "选择 ⑤ 处最合适的选项。",
+          "options": [
+            "work",
+            "worked",
+            "have worked",
+            "will work"
+          ],
+          "answer": "have worked",
+          "explanation": "正确答案是 have worked。for two years 表示从过去持续到现在，应使用现在完成时。",
+          "knowledge_points": [
+            "现在完成时"
+          ],
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "book_source": "选必一 U2",
+          "difficulty": 2
+        },
+        {
+          "number": 6,
+          "stem": "选择 ⑥ 处最合适的选项。",
+          "options": [
+            "need",
+            "needs",
+            "needed",
+            "needing"
+          ],
+          "answer": "need",
+          "explanation": "正确答案是 need。主语 young plants 为复数，一般现在时谓语使用 need。",
+          "knowledge_points": [
+            "主谓一致"
+          ],
+          "grammar_tags": [
+            "subject_verb_agreement"
+          ],
+          "book_source": "选必一 U3",
+          "difficulty": 3
+        },
+        {
+          "number": 7,
+          "stem": "选择 ⑦ 处最合适的选项。",
+          "options": [
+            "safe",
+            "safety",
+            "safely",
+            "unsafe"
+          ],
+          "answer": "safely",
+          "explanation": "正确答案是 safely。move 是动词，需要用副词 safely 修饰。",
+          "knowledge_points": [
+            "副词化"
+          ],
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "book_source": "选必一 U4",
+          "difficulty": 3
+        },
+        {
+          "number": 8,
+          "stem": "选择 ⑧ 处最合适的选项。",
+          "options": [
+            "and",
+            "but",
+            "or",
+            "so"
+          ],
+          "answer": "but",
+          "explanation": "正确答案是 but。not only ... but also ... 是固定并列结构。",
+          "knowledge_points": [
+            "并列连词"
+          ],
+          "grammar_tags": [
+            "conjunctions"
+          ],
+          "book_source": "必修二 U4",
+          "difficulty": 3
+        },
+        {
+          "number": 9,
+          "stem": "选择 ⑨ 处最合适的选项。",
+          "options": [
+            "think",
+            "thinking",
+            "to think",
+            "thought"
+          ],
+          "answer": "to think",
+          "explanation": "正确答案是 to think。remind sb to do sth 是固定结构，因此使用 to think。",
+          "knowledge_points": [
+            "不定式作宾补"
+          ],
+          "grammar_tags": [
+            "infinitive_nonfinite"
+          ],
+          "book_source": "必修三 U1",
+          "difficulty": 3
+        },
+        {
+          "number": 10,
+          "stem": "选择 ⑩ 处最合适的选项。",
+          "options": [
+            "becomes",
+            "became",
+            "will become",
+            "would have become"
+          ],
+          "answer": "will become",
+          "explanation": "正确答案是 will become。条件句描述将来可能发生的结果，主句使用一般将来时 will become。",
+          "knowledge_points": [
+            "条件句中的将来表达"
+          ],
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "book_source": "必修三 U4",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "validation_profile": "stored",
+      "type": "grammar_fill",
+      "passage_group_id": "DEMO-GRAMMAR-02",
+      "topic": "school science",
+      "book_source": "选必二 U2",
+      "difficulty": 3,
+      "word_count": 135,
+      "passage": "The Green Club ① popular since it began three years ago. Old boxes ② from local shops are used to grow small plants. Each box ③ carefully before soil is added. Members work together ④ the project safe and clean. Some students ⑤ more than forty plants for two years and keep detailed records. The number of active members ⑥ now over eighty. Students plan each activity ⑦ so that everyone knows what to do. The club is small ⑧ its influence is growing. Members invite younger students ⑨ the weekend workshops. If every class took part, the school garden ⑩ an even better place for learning. The students also keep a simple notebook so that future members can learn from their experience. They also ask every class to record the number of new plants.",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "选择 ① 处最合适的选项。",
+          "options": [
+            "became",
+            "has become",
+            "will become",
+            "is becoming"
+          ],
+          "answer": "has become",
+          "explanation": "正确答案是 has become。since 引导的时间起点要求主句使用现在完成时。",
+          "knowledge_points": [
+            "现在完成时"
+          ],
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "book_source": "选必二 U2",
+          "difficulty": 1
+        },
+        {
+          "number": 2,
+          "stem": "选择 ② 处最合适的选项。",
+          "options": [
+            "collect",
+            "collecting",
+            "collected",
+            "to collect"
+          ],
+          "answer": "collected",
+          "explanation": "正确答案是 collected。boxes 与 collect 是被动关系，过去分词 collected 作后置定语。",
+          "knowledge_points": [
+            "过去分词作定语"
+          ],
+          "grammar_tags": [
+            "past_participle_nonfinite"
+          ],
+          "book_source": "选必二 U4",
+          "difficulty": 1
+        },
+        {
+          "number": 3,
+          "stem": "选择 ③ 处最合适的选项。",
+          "options": [
+            "checks",
+            "checked",
+            "is checked",
+            "will check"
+          ],
+          "answer": "is checked",
+          "explanation": "正确答案是 is checked。box 是动作承受者，使用一般现在时被动 is checked。",
+          "knowledge_points": [
+            "一般现在时被动"
+          ],
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "book_source": "选必二 U5",
+          "difficulty": 2
+        },
+        {
+          "number": 4,
+          "stem": "选择 ④ 处最合适的选项。",
+          "options": [
+            "keep",
+            "keeping",
+            "to keep",
+            "kept"
+          ],
+          "answer": "to keep",
+          "explanation": "正确答案是 to keep。work together to do 表示协作目的，使用不定式。",
+          "knowledge_points": [
+            "不定式作目的状语"
+          ],
+          "grammar_tags": [
+            "infinitive_nonfinite"
+          ],
+          "book_source": "选必一 U1",
+          "difficulty": 2
+        },
+        {
+          "number": 5,
+          "stem": "选择 ⑤ 处最合适的选项。",
+          "options": [
+            "grow",
+            "grew",
+            "have grown",
+            "will grow"
+          ],
+          "answer": "have grown",
+          "explanation": "正确答案是 have grown。for two years 表示持续到现在，使用现在完成时。",
+          "knowledge_points": [
+            "现在完成时"
+          ],
+          "grammar_tags": [
+            "tense_system"
+          ],
+          "book_source": "选必一 U2",
+          "difficulty": 2
+        },
+        {
+          "number": 6,
+          "stem": "选择 ⑥ 处最合适的选项。",
+          "options": [
+            "is",
+            "are",
+            "was",
+            "were"
+          ],
+          "answer": "is",
+          "explanation": "正确答案是 is。中心词 number 为单数，谓语使用 is。",
+          "knowledge_points": [
+            "主谓一致"
+          ],
+          "grammar_tags": [
+            "subject_verb_agreement"
+          ],
+          "book_source": "选必一 U3",
+          "difficulty": 3
+        },
+        {
+          "number": 7,
+          "stem": "选择 ⑦ 处最合适的选项。",
+          "options": [
+            "careful",
+            "carefully",
+            "carefulness",
+            "careless"
+          ],
+          "answer": "carefully",
+          "explanation": "正确答案是 carefully。plan 是动词，需要副词 carefully 修饰。",
+          "knowledge_points": [
+            "副词化"
+          ],
+          "grammar_tags": [
+            "word_formation"
+          ],
+          "book_source": "选必一 U4",
+          "difficulty": 3
+        },
+        {
+          "number": 8,
+          "stem": "选择 ⑧ 处最合适的选项。",
+          "options": [
+            "and",
+            "but",
+            "or",
+            "so"
+          ],
+          "answer": "but",
+          "explanation": "正确答案是 but。small 与 growing influence 构成转折关系。",
+          "knowledge_points": [
+            "并列连词"
+          ],
+          "grammar_tags": [
+            "conjunctions"
+          ],
+          "book_source": "必修二 U4",
+          "difficulty": 3
+        },
+        {
+          "number": 9,
+          "stem": "选择 ⑨ 处最合适的选项。",
+          "options": [
+            "join",
+            "joining",
+            "to join",
+            "joined"
+          ],
+          "answer": "to join",
+          "explanation": "正确答案是 to join。invite sb to do sth 是固定结构。",
+          "knowledge_points": [
+            "不定式作宾补"
+          ],
+          "grammar_tags": [
+            "infinitive_nonfinite"
+          ],
+          "book_source": "必修三 U1",
+          "difficulty": 3
+        },
+        {
+          "number": 10,
+          "stem": "选择 ⑩ 处最合适的选项。",
+          "options": [
+            "became",
+            "would become",
+            "will become",
+            "has become"
+          ],
+          "answer": "would become",
+          "explanation": "正确答案是 would become。if 从句使用过去式时，主句使用 would do 表示非真实条件。",
+          "knowledge_points": [
+            "基础虚拟语气"
+          ],
+          "grammar_tags": [
+            "subjunctive_basic_if"
+          ],
+          "book_source": "必修三 U4",
+          "difficulty": 4
+        }
+      ]
+    },
+    {
+      "validation_profile": "stored",
+      "type": "reading",
+      "passage_group_id": "DEMO-READING-01",
+      "topic": "education",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "word_count": 131,
+      "passage": "A school in Guangzhou changed its morning schedule after teachers noticed that many students arrived tired. The first lesson now starts twenty minutes later, and the time before class is used for reading or quiet study. Students are not allowed to use the extra time for games or shopping. After one term, teachers reported that students answered questions more actively and slept in class less often. The school also asked families to keep regular sleep times. Some parents worried that a later start would make the school day end too late, so sports clubs were moved to a shorter lunch break. The head teacher said the change was not only about sleeping longer. It was about helping students arrive ready to think, and about teaching them to plan their evenings honestly.",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "Why did the school change its schedule?",
+          "options": [
+            "Students arrived tired.",
+            "Sports clubs were closed.",
+            "Teachers wanted longer holidays.",
+            "Parents asked for more homework."
+          ],
+          "answer": "A",
+          "explanation": "首段说明教师发现许多学生到校时很疲惫，因此调整时间表。",
+          "knowledge_points": [
+            "reading_purpose"
+          ],
+          "grammar_tags": [
+            "articles"
+          ],
+          "book_source": "选必二 U1",
+          "difficulty": 1
+        },
+        {
+          "number": 2,
+          "stem": "What may students do before the first lesson?",
+          "options": [
+            "Play online games.",
+            "Read or prepare quietly.",
+            "Go shopping.",
+            "Leave school."
+          ],
+          "answer": "B",
+          "explanation": "原文说明课前时间用于阅读或安静准备。",
+          "knowledge_points": [
+            "reading_detail"
+          ],
+          "grammar_tags": [
+            "relative_clauses_defining"
+          ],
+          "book_source": "选必二 U3",
+          "difficulty": 2
+        },
+        {
+          "number": 3,
+          "stem": "Why were sports clubs moved?",
+          "options": [
+            "To shorten the school day.",
+            "To give students more homework.",
+            "To reduce morning lessons.",
+            "To improve the weather."
+          ],
+          "answer": "A",
+          "explanation": "原文说家长担心放学太晚，因此体育社团被安排到午间。",
+          "knowledge_points": [
+            "reading_inference"
+          ],
+          "grammar_tags": [
+            "adverbial_clauses"
+          ],
+          "book_source": "选必二 U5",
+          "difficulty": 3
+        },
+        {
+          "number": 4,
+          "stem": "What does the head teacher value most?",
+          "options": [
+            "Longer sleep alone.",
+            "Students arriving ready to think.",
+            "Closing sports clubs.",
+            "Starting every class late."
+          ],
+          "answer": "B",
+          "explanation": "校长强调重点不是单纯多睡，而是让学生到校后准备好思考。",
+          "knowledge_points": [
+            "reading_main_idea"
+          ],
+          "grammar_tags": [
+            "cleft_basic"
+          ],
+          "book_source": "必修二 U2",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "validation_profile": "stored",
+      "type": "reading",
+      "passage_group_id": "DEMO-READING-02",
+      "topic": "technology",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "word_count": 127,
+      "passage": "A library in a small town now lends more than books. People can borrow a simple repair kit containing a lamp, hand tools, and written instructions. The idea came from a retired engineer who noticed that people often throw away small objects because repairing them seemed difficult. A library member can keep a kit for three days. Before taking one home, the person watches a short safety video. Staff members say the project has two aims: saving money and reducing waste. Not every repair succeeds, but people learn how products are built. One teenager repaired a desk lamp with her father and then helped a neighbour fix a chair. The engineer believes that a library should not only store knowledge; it should help people share useful skills.",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "What can people borrow besides books?",
+          "options": [
+            "A bicycle.",
+            "A repair kit.",
+            "A computer.",
+            "A desk lamp."
+          ],
+          "answer": "B",
+          "explanation": "第二句明确说读者可以借用维修工具包。",
+          "knowledge_points": [
+            "reading_detail"
+          ],
+          "grammar_tags": [
+            "relative_clauses_defining"
+          ],
+          "book_source": "选必二 U1",
+          "difficulty": 1
+        },
+        {
+          "number": 2,
+          "stem": "What must a person do before taking a kit home?",
+          "options": [
+            "Pay for new tools.",
+            "Watch a safety video.",
+            "Bring a neighbour.",
+            "Read three books."
+          ],
+          "answer": "B",
+          "explanation": "原文说借出前必须观看十分钟安全视频。",
+          "knowledge_points": [
+            "reading_detail"
+          ],
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "book_source": "选必二 U3",
+          "difficulty": 2
+        },
+        {
+          "number": 3,
+          "stem": "What is one aim of the project?",
+          "options": [
+            "Selling more lamps.",
+            "Reducing waste.",
+            "Creating a repair shop.",
+            "Replacing libraries."
+          ],
+          "answer": "B",
+          "explanation": "工作人员说明项目目标包括省钱和减少浪费。",
+          "knowledge_points": [
+            "reading_detail"
+          ],
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "book_source": "选必二 U5",
+          "difficulty": 3
+        },
+        {
+          "number": 4,
+          "stem": "What does the retired engineer want the library to do?",
+          "options": [
+            "Store more books.",
+            "Employ more staff.",
+            "Help people share practical skills.",
+            "Sell tools to families."
+          ],
+          "answer": "C",
+          "explanation": "结尾强调图书馆应帮助人们分享实用技能。",
+          "knowledge_points": [
+            "reading_main_idea"
+          ],
+          "grammar_tags": [
+            "infinitive_nonfinite"
+          ],
+          "book_source": "必修二 U2",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "validation_profile": "stored",
+      "type": "reading",
+      "passage_group_id": "DEMO-READING-03",
+      "topic": "environment",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "word_count": 118,
+      "passage": "City trees are often planted for beauty, but their value goes much further. On hot days, leaves help streets stay cooler. Roots hold soil in place during heavy rain, reducing the risk of sudden flooding. Trees also create small habitats for birds and insects. However, a young tree needs care for several years. If it is planted in a narrow space, its roots may damage pipes or streets. Some cities therefore choose smaller species for busy streets and leave larger ones for parks. Residents can help by reporting damaged branches and by avoiding any extra digging near roots. Planting a tree is a quick event, but keeping it healthy is a long promise shared by the whole neighbourhood.",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "What is one benefit of city trees on hot days?",
+          "options": [
+            "They reduce shade.",
+            "They cool streets.",
+            "They stop all rain.",
+            "They replace parks."
+          ],
+          "answer": "B",
+          "explanation": "第二句说明树叶遮阴并帮助街道降温。",
+          "knowledge_points": [
+            "reading_detail"
+          ],
+          "grammar_tags": [
+            "articles"
+          ],
+          "book_source": "选必二 U1",
+          "difficulty": 1
+        },
+        {
+          "number": 2,
+          "stem": "How can tree roots help during heavy rain?",
+          "options": [
+            "They hold soil in place.",
+            "They increase traffic.",
+            "They damage every pipe.",
+            "They remove insects."
+          ],
+          "answer": "A",
+          "explanation": "树根在暴雨中固定土壤，减少突发洪涝风险。",
+          "knowledge_points": [
+            "reading_cause_effect"
+          ],
+          "grammar_tags": [
+            "adverbial_clauses"
+          ],
+          "book_source": "选必二 U3",
+          "difficulty": 2
+        },
+        {
+          "number": 3,
+          "stem": "Why do some cities use smaller trees on busy streets?",
+          "options": [
+            "To attract more birds.",
+            "To avoid damage to pipes and pavements.",
+            "To make parks smaller.",
+            "To stop residents reporting damage."
+          ],
+          "answer": "B",
+          "explanation": "狭窄空间中的大树根部可能破坏管道和人行道，因此选择较小树种。",
+          "knowledge_points": [
+            "reading_inference"
+          ],
+          "grammar_tags": [
+            "comparatives_superlatives"
+          ],
+          "book_source": "选必二 U5",
+          "difficulty": 3
+        },
+        {
+          "number": 4,
+          "stem": "What is the main message of the passage?",
+          "options": [
+            "Trees require a shared long-term commitment.",
+            "Only parks should contain trees.",
+            "Trees are planted mainly for decoration.",
+            "Residents should remove old trees."
+          ],
+          "answer": "A",
+          "explanation": "末句强调种树是短事件，维护却是社区共同承担的长期承诺。",
+          "knowledge_points": [
+            "reading_main_idea"
+          ],
+          "grammar_tags": [
+            "infinitive_nonfinite"
+          ],
+          "book_source": "必修二 U2",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "validation_profile": "stored",
+      "type": "reading",
+      "passage_group_id": "DEMO-READING-04",
+      "topic": "culture",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "word_count": 132,
+      "passage": "Food can tell the story of a family without using words. At a community food fair, students prepared dishes that their families had taught them to make. Each group placed a short note beside the food. The notes explained where the recipe came from and which ingredients had been changed after the family moved to Guangdong. Guests could taste a dish only after reading its story. Staff hoped this rule would slow people down and start conversations. One student used less sugar than her grandmother did because fresh fruit was available. Another kept the same soup but added local plants. The recipes were different from the originals, yet the project was never about copying the past exactly. It was about carrying memories into a new place and letting other people understand them.",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "What did each group put beside its food?",
+          "options": [
+            "A price list.",
+            "A short recipe story.",
+            "A family photo.",
+            "A school timetable."
+          ],
+          "answer": "B",
+          "explanation": "每组食物旁放置一张解释来源和变化的短说明。",
+          "knowledge_points": [
+            "reading_detail"
+          ],
+          "grammar_tags": [
+            "articles"
+          ],
+          "book_source": "选必二 U1",
+          "difficulty": 1
+        },
+        {
+          "number": 2,
+          "stem": "Why did staff ask guests to read before tasting?",
+          "options": [
+            "To check prices.",
+            "To start conversations.",
+            "To finish quickly.",
+            "To hide the recipes."
+          ],
+          "answer": "B",
+          "explanation": "组织者希望放慢节奏并促成交流。",
+          "knowledge_points": [
+            "reading_purpose"
+          ],
+          "grammar_tags": [
+            "infinitive_nonfinite"
+          ],
+          "book_source": "选必二 U3",
+          "difficulty": 2
+        },
+        {
+          "number": 3,
+          "stem": "How was one student's dish different from her grandmother's?",
+          "options": [
+            "It had no fruit.",
+            "It used less sugar.",
+            "It was served cold.",
+            "It contained no soup."
+          ],
+          "answer": "B",
+          "explanation": "一名学生因为能买到新鲜水果而减少了糖的用量。",
+          "knowledge_points": [
+            "reading_detail"
+          ],
+          "grammar_tags": [
+            "comparatives_superlatives"
+          ],
+          "book_source": "选必二 U5",
+          "difficulty": 3
+        },
+        {
+          "number": 4,
+          "stem": "What was the project mainly about?",
+          "options": [
+            "Carrying family memories into a new place.",
+            "Selling traditional food.",
+            "Teaching professional cooking.",
+            "Recording prices."
+          ],
+          "answer": "A",
+          "explanation": "最后一句说明项目重在把记忆带入新环境并让他人理解。",
+          "knowledge_points": [
+            "reading_main_idea"
+          ],
+          "grammar_tags": [
+            "infinitive_nonfinite"
+          ],
+          "book_source": "必修二 U2",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "validation_profile": "stored",
+      "type": "reading",
+      "passage_group_id": "DEMO-READING-05",
+      "topic": "health",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "word_count": 128,
+      "passage": "Many people believe that exercise has to be difficult to be useful. A simple walk, however, can improve both feelings and health. Research suggests that short walks after meals may help the body control sugar levels. Walking also gives people a break from screens and creates chances to meet neighbours. The greatest problem is often starting. Health experts suggest choosing a familiar route and walking for ten minutes. Once that becomes a habit, people can add a few minutes each week. Comfortable shoes matter more than expensive sports clothes. It is also easier to continue when a friend walks at the same time. The aim is not to compete with anyone. It is to make movement a normal part of the day, one small choice at a time.",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "What common belief does the passage question?",
+          "options": [
+            "Walking is useful.",
+            "Exercise must be difficult.",
+            "Friends make exercise easier.",
+            "Shoes affect walking."
+          ],
+          "answer": "B",
+          "explanation": "开头指出许多人以为运动必须很难才有用，文章对此提出不同看法。",
+          "knowledge_points": [
+            "reading_purpose"
+          ],
+          "grammar_tags": [
+            "noun_clauses"
+          ],
+          "book_source": "选必二 U1",
+          "difficulty": 1
+        },
+        {
+          "number": 2,
+          "stem": "What may a short walk after a meal help with?",
+          "options": [
+            "Screen size.",
+            "Sugar levels.",
+            "Shoe prices.",
+            "Traffic speed."
+          ],
+          "answer": "B",
+          "explanation": "第二段说饭后短距离步行可能帮助身体控制血糖。",
+          "knowledge_points": [
+            "reading_detail"
+          ],
+          "grammar_tags": [
+            "articles"
+          ],
+          "book_source": "选必二 U3",
+          "difficulty": 2
+        },
+        {
+          "number": 3,
+          "stem": "What do health experts suggest first?",
+          "options": [
+            "Buying expensive clothes.",
+            "Walking ten minutes on a familiar route.",
+            "Competing with a friend.",
+            "Walking for an hour."
+          ],
+          "answer": "B",
+          "explanation": "专家建议先选择熟悉路线并步行十分钟。",
+          "knowledge_points": [
+            "reading_detail"
+          ],
+          "grammar_tags": [
+            "comparatives_superlatives"
+          ],
+          "book_source": "选必二 U5",
+          "difficulty": 3
+        },
+        {
+          "number": 4,
+          "stem": "What is the main idea of the passage?",
+          "options": [
+            "Exercise should be competitive.",
+            "Small walking habits can make movement normal.",
+            "People should avoid screens completely.",
+            "Expensive clothes improve health."
+          ],
+          "answer": "B",
+          "explanation": "全文强调从小的步行习惯开始，让运动成为日常生活的一部分。",
+          "knowledge_points": [
+            "reading_main_idea"
+          ],
+          "grammar_tags": [
+            "infinitive_nonfinite"
+          ],
+          "book_source": "必修二 U2",
+          "difficulty": 3
+        }
+      ]
+    },
+    {
+      "validation_profile": "stored",
+      "type": "gap_fill",
+      "passage_group_id": "DEMO-GAP-01",
+      "topic": "school life",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "word_count": 127,
+      "passage": "A school wants to start a weekend reading club. The plan explains how students can join and what they should bring. First, interested students should write their names on the notice board. (1) The club will then arrange a short meeting. At the meeting, members will choose books together. (2) Group leaders will help younger students find books that are right for them. The club will meet every Saturday morning in the library. (3) Students are expected to return the books they borrow. At the end of each month, the group will discuss what they have read. (4) Everyone can speak for two minutes about a favourite part. New members are always welcome. (5) The school hopes the club will help students enjoy reading and share ideas.",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "选择最适合第 1 空的句子。",
+          "options": [
+            "A. This gives everyone time to prepare.",
+            "B. The books should be returned on time.",
+            "C. It also gives them a chance to make new friends.",
+            "D. They can ask questions when they are unsure.",
+            "E. A favourite story may be shared at the meeting.",
+            "F. This simple step helps the organizers plan.",
+            "G. The club has already become popular."
+          ],
+          "answer": "F",
+          "explanation": "正确答案是 F。前文要求学生在公告板上写名字，下一步自然是帮助组织者安排活动。该句承接报名后的活动安排。",
+          "knowledge_points": [
+            "gap_fill_transition"
+          ],
+          "grammar_tags": [
+            "adverbial_clauses"
+          ],
+          "book_source": "选必二 U1",
+          "difficulty": 1
+        },
+        {
+          "number": 2,
+          "stem": "选择最适合第 2 空的句子。",
+          "options": [
+            "A. This gives everyone time to prepare.",
+            "B. The books should be returned on time.",
+            "C. It also gives them a chance to make new friends.",
+            "D. They can ask questions when they are unsure.",
+            "E. A favourite story may be shared at the meeting.",
+            "F. This simple step helps the organizers plan.",
+            "G. The club has already become popular."
+          ],
+          "answer": "C",
+          "explanation": "正确答案是 C。该段在补充小组长帮助学生的另一项好处。所补句子应与前一句形成递进关系。",
+          "knowledge_points": [
+            "gap_fill_addition"
+          ],
+          "grammar_tags": [
+            "conjunctions"
+          ],
+          "book_source": "选必二 U2",
+          "difficulty": 1
+        },
+        {
+          "number": 3,
+          "stem": "选择最适合第 3 空的句子。",
+          "options": [
+            "A. This gives everyone time to prepare.",
+            "B. The books should be returned on time.",
+            "C. It also gives them a chance to make new friends.",
+            "D. They can ask questions when they are unsure.",
+            "E. A favourite story may be shared at the meeting.",
+            "F. This simple step helps the organizers plan.",
+            "G. The club has already become popular."
+          ],
+          "answer": "D",
+          "explanation": "正确答案是 D。学生借书前可能需要向小组长寻求帮助。该句提供借书前的实际指导。",
+          "knowledge_points": [
+            "gap_fill_support"
+          ],
+          "grammar_tags": [
+            "pronouns"
+          ],
+          "book_source": "选必二 U3",
+          "difficulty": 3
+        },
+        {
+          "number": 4,
+          "stem": "选择最适合第 4 空的句子。",
+          "options": [
+            "A. This gives everyone time to prepare.",
+            "B. The books should be returned on time.",
+            "C. It also gives them a chance to make new friends.",
+            "D. They can ask questions when they are unsure.",
+            "E. A favourite story may be shared at the meeting.",
+            "F. This simple step helps the organizers plan.",
+            "G. The club has already become popular."
+          ],
+          "answer": "A",
+          "explanation": "正确答案是 A。限制每人发言两分钟，可以为下一位成员留下准备时间。该句体现了发言时间安排带来的结果。",
+          "knowledge_points": [
+            "gap_fill_sequence"
+          ],
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "book_source": "选必二 U4",
+          "difficulty": 3
+        },
+        {
+          "number": 5,
+          "stem": "选择最适合第 5 空的句子。",
+          "options": [
+            "A. This gives everyone time to prepare.",
+            "B. The books should be returned on time.",
+            "C. It also gives them a chance to make new friends.",
+            "D. They can ask questions when they are unsure.",
+            "E. A favourite story may be shared at the meeting.",
+            "F. This simple step helps the organizers plan.",
+            "G. The club has already become popular."
+          ],
+          "answer": "B",
+          "explanation": "正确答案是 B。最后应落到学校希望学生享受阅读并分享想法这一目的。该句总结阅读俱乐部的预期成果。",
+          "knowledge_points": [
+            "gap_fill_closing"
+          ],
+          "grammar_tags": [
+            "subject_verb_agreement"
+          ],
+          "book_source": "必修二 U1",
+          "difficulty": 3
+        }
+      ],
+      "options": [
+        "A. This gives everyone time to prepare.",
+        "B. The books should be returned on time.",
+        "C. It also gives them a chance to make new friends.",
+        "D. They can ask questions when they are unsure.",
+        "E. A favourite story may be shared at the meeting.",
+        "F. This simple step helps the organizers plan.",
+        "G. The club has already become popular."
+      ]
+    },
+    {
+      "validation_profile": "stored",
+      "type": "gap_fill",
+      "passage_group_id": "DEMO-GAP-02",
+      "topic": "volunteering",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "word_count": 96,
+      "passage": "A youth group wants to improve an empty corner of the school garden. First, members will measure the area and list the tools they need. (1) Next, they will turn the soil and remove stones before planting anything. (2) The group plans to grow vegetables that students can use in cooking lessons. (3) Different classes will take turns looking after the plants. (4) At the end of the term, the group will hold an open garden day. (5) The project should teach students that small daily actions can create a shared space everyone is proud of.",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "选择最适合第 1 空的句子。",
+          "options": [
+            "A. They will also ask the science teacher for advice.",
+            "B. This work will make the ground ready for young plants.",
+            "C. It will also provide fresh food for the school kitchen.",
+            "D. This arrangement prevents one class from doing all the work.",
+            "E. Families and teachers will be invited to see the result.",
+            "F. The first step is to talk with the person responsible for the garden.",
+            "G. The garden has already won several national competitions."
+          ],
+          "answer": "A",
+          "explanation": "正确答案是 A。测量和列工具清单后，还需要咨询科学老师的意见。空白位于第一步与第二步之间。",
+          "knowledge_points": [
+            "gap_fill_addition"
+          ],
+          "grammar_tags": [
+            "relative_clauses_defining"
+          ],
+          "book_source": "选必二 U1",
+          "difficulty": 1
+        },
+        {
+          "number": 2,
+          "stem": "选择最适合第 2 空的句子。",
+          "options": [
+            "A. They will also ask the science teacher for advice.",
+            "B. This work will make the ground ready for young plants.",
+            "C. It will also provide fresh food for the school kitchen.",
+            "D. This arrangement prevents one class from doing all the work.",
+            "E. Families and teachers will be invited to see the result.",
+            "F. The first step is to talk with the person responsible for the garden.",
+            "G. The garden has already won several national competitions."
+          ],
+          "answer": "B",
+          "explanation": "正确答案是 B。松土和清理石头是为种植准备土壤。空白应解释前一步的目的。",
+          "knowledge_points": [
+            "gap_fill_explanation"
+          ],
+          "grammar_tags": [
+            "relative_clauses_non_defining"
+          ],
+          "book_source": "选必二 U2",
+          "difficulty": 1
+        },
+        {
+          "number": 3,
+          "stem": "选择最适合第 3 空的句子。",
+          "options": [
+            "A. They will also ask the science teacher for advice.",
+            "B. This work will make the ground ready for young plants.",
+            "C. It will also provide fresh food for the school kitchen.",
+            "D. This arrangement prevents one class from doing all the work.",
+            "E. Families and teachers will be invited to see the result.",
+            "F. The first step is to talk with the person responsible for the garden.",
+            "G. The garden has already won several national competitions."
+          ],
+          "answer": "C",
+          "explanation": "正确答案是 C。种植蔬菜还能为学校厨房提供新鲜食物。空白承接蔬菜可用于烹饪课。",
+          "knowledge_points": [
+            "gap_fill_benefit"
+          ],
+          "grammar_tags": [
+            "passive_voice_tenses"
+          ],
+          "book_source": "选必二 U3",
+          "difficulty": 3
+        },
+        {
+          "number": 4,
+          "stem": "选择最适合第 4 空的句子。",
+          "options": [
+            "A. They will also ask the science teacher for advice.",
+            "B. This work will make the ground ready for young plants.",
+            "C. It will also provide fresh food for the school kitchen.",
+            "D. This arrangement prevents one class from doing all the work.",
+            "E. Families and teachers will be invited to see the result.",
+            "F. The first step is to talk with the person responsible for the garden.",
+            "G. The garden has already won several national competitions."
+          ],
+          "answer": "D",
+          "explanation": "正确答案是 D。轮流照料可以避免一个班级承担全部劳动。空白解释班级轮值的意义。",
+          "knowledge_points": [
+            "gap_fill_explanation"
+          ],
+          "grammar_tags": [
+            "past_participle_nonfinite"
+          ],
+          "book_source": "选必二 U4",
+          "difficulty": 3
+        },
+        {
+          "number": 5,
+          "stem": "选择最适合第 5 空的句子。",
+          "options": [
+            "A. They will also ask the science teacher for advice.",
+            "B. This work will make the ground ready for young plants.",
+            "C. It will also provide fresh food for the school kitchen.",
+            "D. This arrangement prevents one class from doing all the work.",
+            "E. Families and teachers will be invited to see the result.",
+            "F. The first step is to talk with the person responsible for the garden.",
+            "G. The garden has already won several national competitions."
+          ],
+          "answer": "E",
+          "explanation": "正确答案是 E。开放日会邀请家庭和教师观看成果。空白补充开放日的具体对象。",
+          "knowledge_points": [
+            "gap_fill_closing"
+          ],
+          "grammar_tags": [
+            "v_ing_nonfinite"
+          ],
+          "book_source": "必修二 U1",
+          "difficulty": 3
+        }
+      ],
+      "options": [
+        "A. They will also ask the science teacher for advice.",
+        "B. This work will make the ground ready for young plants.",
+        "C. It will also provide fresh food for the school kitchen.",
+        "D. This arrangement prevents one class from doing all the work.",
+        "E. Families and teachers will be invited to see the result.",
+        "F. The first step is to talk with the person responsible for the garden.",
+        "G. The garden has already won several national competitions."
+      ]
+    }
+  ]
+}

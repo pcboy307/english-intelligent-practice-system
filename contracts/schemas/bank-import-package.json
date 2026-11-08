@@ -158,7 +158,11 @@
             "$ref": "#/$defs/question"
           }
         },
-        "validation_profile": { "type": "string" },
+        "validation_profile": {
+          "type": "string",
+          "enum": ["m2", "m26", "stored"],
+          "description": "stored is emitted by database export; structural import checks still apply, while generation-only placeholder and semantic gates are not repeated."
+        },
         "generation_observations": { "type": "object" }
       },
       "allOf": [

@@ -249,6 +249,12 @@ export async function importBank(
   );
 }
 
+export async function exportBank(bankId: string) {
+  return request<BankImportPackage>(
+    `/banks/${encodeURIComponent(bankId)}/export`,
+  );
+}
+
 export async function previewDeleteBank(bankId: string) {
   return request<BankDeletePreview>(
     `/banks/${encodeURIComponent(bankId)}/delete-preview`,

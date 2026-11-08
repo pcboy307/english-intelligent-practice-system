@@ -233,3 +233,17 @@
 - 最终回归：124 passed、M0 PASS、API contract PASS calls=20、OpenAPI valid。
 - 修复过期 `in_progress` 会话继续占用 passages 导致的
   `NO_VALID_PAPER_ASSEMBLY`：并发语篇与换库未完成数现在都只统计未过期会话。
+
+## 2026-11-08 - 题库逐库导出
+
+- “切换题库”中每个题库行在“删除”左侧新增“导出”按钮，当前题库也可以导出。
+- 新增 `GET /api/v1/banks/{bank_id}/export`，从数据库直接生成与导入接口共用
+  `bank-v1` 契约的 JSON，不切换当前题库。
+- 导出包含 7 个顶层字段、实际题数、分题型篇数、完整题目/答案/解析；七选五同时
+  输出语篇级 7 个共享选项，确保导出文件可直接按导入 Schema 校验并重新导入。
+- 新增导出后再预览导入、非回环拒绝、七选五 Schema 回归测试。
+- 浏览器实测所有题库行按钮顺序均为“导出 → 删除/当前库不可删除”，Demo Bank
+  实际下载 80 题 / 11 篇，导入预览通过。
+- 验证：163 passed、M0_CHECK=PASS、API_CONTRACT_CHECK=PASS calls=25、
+  TypeScript 与 OpenAPI 校验通过。
+- 格式说明：`docs/bank-import-export-format.md`。

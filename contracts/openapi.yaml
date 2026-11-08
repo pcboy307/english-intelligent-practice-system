@@ -1448,6 +1448,26 @@ paths:
           $ref: "#/components/responses/ErrorResponse"
         "403":
           $ref: "#/components/responses/ErrorResponse"
+  /banks/{bank_id}/export:
+    get:
+      tags: [maintenance]
+      operationId: exportBank
+      security: []
+      summary: 导出指定题库为可重新导入的 bank-v1 JSON
+      description: 仅接受本机回环来源；导出包使用与导入接口相同的 JSON 契约。
+      parameters:
+        - $ref: "#/components/parameters/BankId"
+      responses:
+        "200":
+          description: 包含完整语篇、题目、答案和解析的题库导入包
+          content:
+            application/json:
+              schema:
+                $ref: ./schemas/bank-import-package.json
+        "403":
+          $ref: "#/components/responses/ErrorResponse"
+        "404":
+          $ref: "#/components/responses/ErrorResponse"
   /banks/import:
     post:
       tags: [maintenance]

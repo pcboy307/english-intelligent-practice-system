@@ -1,0 +1,88 @@
+题库逐库导出验收证据
+日期：2026-11-08
+
+1. 按钮顺序
+
+浏览器页面：http://localhost:8081/
+操作：首页点击“切换”打开“切换题库”。
+
+当前题库行：
+  Demo Bank · v1 | ✓ 当前 | 导出 | 当前库不可删除
+
+其他题库行：
+  选择 | 导出 | 删除
+
+DOM 机械检查结果（18 个题库均一致）：
+  当前题库 actions = ["导出", "当前库不可删除"]
+  其他题库 actions = ["导出", "删除"]
+
+截图：
+  qa/evidence/bank-export-row-buttons.png
+
+2. 真实浏览器下载
+
+点击 Demo Bank 的“导出”后浏览器报告下载完成。浏览器保存的下载文件名为：
+  Demo-Bank-2026-11-08 (1).json
+
+为便于复现和归档，文件副本：
+  qa/evidence/demo-bank-export.json
+
+导出包统计：
+  format_version = bank-v1
+  name = Demo Bank
+  target_size = 80
+  实际题目数 = 80
+  语篇数 = 11
+  validation_profile = stored
+  七选五共享选项数 = [7, 7]
+  composition = {"cloze":2,"grammar_fill":2,"reading":5,"gap_fill":2}
+
+顶层字段严格为：
+  format_version
+  name
+  target_size
+  difficulty_profile
+  generated_at
+  composition
+  passages
+
+3. 导入契约校验
+
+使用 contracts/schemas/bank-import-package.json 校验真实下载文件：
+  PASS: bank-import-package.json
+
+使用同一文件调用导入预览接口，仅修改题库名称以避开当前同名题库：
+  HTTP 200
+  valid = true
+  target_size = 80
+  passages = 11
+  questions = 80
+  composition = {"cloze":2,"grammar_fill":2,"reading":5,"gap_fill":2}
+  errors = []
+
+4. 自动测试
+
+命令：
+  .\.venv\Scripts\python.exe -m pytest tests\api\test_bank_import_delete.py -q
+
+结果：
+  14 passed, 1 warning
+
+全量回归：
+  163 passed, 1 warning
+
+M0 契约检查：
+  M0_CHECK=PASS
+
+OpenAPI 前端调用对照：
+  API_CONTRACT_CHECK=PASS calls=25
+
+TypeScript / OpenAPI：
+  tsc --noEmit = PASS
+  contracts/openapi.yaml is valid
+
+覆盖范围：
+  - 导出包使用 bank-v1 顶层契约
+  - 导出后可再次预览导入
+  - 七选五导出包含语篇级共享 options，并通过 JSON Schema
+  - 非回环来源访问导出接口返回 403

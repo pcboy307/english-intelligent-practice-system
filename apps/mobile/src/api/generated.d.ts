@@ -495,6 +495,26 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/banks/{bank_id}/export": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * 导出指定题库为可重新导入的 bank-v1 JSON
+         * @description 仅接受本机回环来源；导出包使用与导入接口相同的 JSON 契约。
+         */
+        get: operations["exportBank"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/banks/import": {
         parameters: {
             query?: never;
@@ -1255,7 +1275,11 @@ export interface components {
             passage: string;
             options?: components["schemas"]["options"];
             questions: components["schemas"]["$defs-question"][];
-            validation_profile?: string;
+            /**
+             * @description stored is emitted by database export; structural import checks still apply, while generation-only placeholder and semantic gates are not repeated.
+             * @enum {string}
+             */
+            validation_profile?: "m2" | "m26" | "stored";
             generation_observations?: Record<string, never>;
         } & (unknown & unknown & unknown & unknown);
         /** Question bank import package */
@@ -1313,7 +1337,11 @@ export interface components {
                     passage: string;
                     options?: components["schemas"]["options"];
                     questions: components["schemas"]["$defs-question"][];
-                    validation_profile?: string;
+                    /**
+                     * @description stored is emitted by database export; structural import checks still apply, while generation-only placeholder and semantic gates are not repeated.
+                     * @enum {string}
+                     */
+                    validation_profile?: "m2" | "m26" | "stored";
                     generation_observations?: Record<string, never>;
                 } & (unknown & unknown & unknown & unknown);
             };
@@ -2074,6 +2102,30 @@ export interface operations {
             };
             400: components["responses"]["ErrorResponse"];
             403: components["responses"]["ErrorResponse"];
+        };
+    };
+    exportBank: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                bank_id: components["parameters"]["BankId"];
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description 包含完整语篇、题目、答案和解析的题库导入包 */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["bank-import-package"];
+                };
+            };
+            403: components["responses"]["ErrorResponse"];
+            404: components["responses"]["ErrorResponse"];
         };
     };
     importBank: {

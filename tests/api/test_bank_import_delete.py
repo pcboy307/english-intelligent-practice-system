@@ -5,6 +5,7 @@ import os
 import uuid
 from pathlib import Path
 
+import jsonschema
 import psycopg
 import pytest
 from fastapi.testclient import TestClient
@@ -54,6 +55,56 @@ def import_package() -> dict:
         "generated_at": "2026-11-09",
         "composition": counts,
         "passages": records,
+    }
+
+
+def gap_fill_import_package() -> dict:
+    options = [
+        f"{letter}. Shared option {letter}"
+        for letter in "ABCDEFG"
+    ]
+    record = {
+        "validation_profile": "stored",
+        "type": "gap_fill",
+        "passage_group_id": "GAP-EXPORT-01",
+        "topic": "school life",
+        "book_source": "必修一 U1",
+        "difficulty": 2,
+        "word_count": 90,
+        "passage": (
+            "A school is starting a reading club. (1) Members will meet on Friday. "
+            "(2) They will choose books together. (3) Everyone can share an idea. "
+            "(4) The club will keep a simple record. (5)"
+        ),
+        "options": options,
+        "questions": [
+            {
+                "number": number,
+                "stem": f"Choose the best sentence for blank ({number}).",
+                "options": options,
+                "answer": "ABCDE"[number - 1],
+                "explanation": f"第 {number} 空的句子与上下文衔接最自然。",
+                "knowledge_points": ["gap_fill_transition"],
+                "grammar_tags": ["conjunctions"],
+                "book_source": "必修一 U1",
+                "difficulty": 2,
+            }
+            for number in range(1, 6)
+        ],
+    }
+    return {
+        "format_version": "bank-v1",
+        "name": f"Gap export test {uuid.uuid4().hex[:10]}",
+        "target_size": 5,
+        "difficulty_profile": "standard",
+        "generated_at": "2026-11-09",
+        "composition": {
+            "cloze": 0,
+            "grammar_fill": 0,
+            "reading": 0,
+            "gap_fill": 1,
+        },
+        "passages": [record],
     }
 
 
@@ -131,6 +182,131 @@ def test_import_preview_rejects_non_loopback_clients() -> None:
     response = remote_client.post(
         "/api/v1/banks/import/preview?semantic_check=false",
         json=import_package(),
+        headers=student_headers(),
+    )
+
+    assert response.status_code == 403
+    assert response.json()["detail"]["code"] == "ADMIN_LOCAL_ONLY"
+
+
+def test_export_bank_uses_import_contract_and_can_be_previewed_again() -> None:
+    original_bank_id = store.bank["bank_id"]
+    imported_id = ""
+    try:
+        imported = client.post(
+            "/api/v1/banks/import?semantic_check=false",
+            json=import_package(),
+            headers=student_headers(),
+        )
+        assert imported.status_code == 201, imported.text
+        imported_id = imported.json()["bank_id"]
+
+        exported = client.get(
+            f"/api/v1/banks/{imported_id}/export",
+            headers=student_headers(),
+        )
+        assert exported.status_code == 200, exported.text
+        package = exported.json()
+        assert set(package) == {
+            "format_version",
+            "name",
+            "target_size",
+            "difficulty_profile",
+            "generated_at",
+            "composition",
+            "passages",
+        }
+        assert package["format_version"] == "bank-v1"
+        assert package["target_size"] == sum(
+            len(passage["questions"]) for passage in package["passages"]
+        )
+        assert package["target_size"] == 4
+        assert package["passages"][0]["validation_profile"] == "stored"
+
+        package["name"] = f"Exported roundtrip {uuid.uuid4().hex[:10]}"
+        preview = client.post(
+            "/api/v1/banks/import/preview?semantic_check=false",
+            json=package,
+            headers=student_headers(),
+        )
+        assert preview.status_code == 200, preview.text
+        assert preview.json()["summary"]["questions"] == package["target_size"]
+    finally:
+        if imported_id:
+            with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+                with connection.transaction():
+                    connection.execute(
+                        "UPDATE question_banks SET status='archived' WHERE id=%s",
+                        (imported_id,),
+                    )
+                    connection.execute(
+                        "UPDATE question_banks SET status='ready' WHERE id=%s",
+                        (original_bank_id,),
+                    )
+                    connection.execute(
+                        "UPDATE bank_active_state SET active_bank_id=%s WHERE singleton=TRUE",
+                        (original_bank_id,),
+                    )
+                    delete_bank(connection, imported_id)
+            store.reload_active_bank()
+
+
+def test_exported_gap_fill_matches_import_schema() -> None:
+    original_bank_id = store.bank["bank_id"]
+    imported_id = ""
+    try:
+        imported = client.post(
+            "/api/v1/banks/import?semantic_check=false",
+            json=gap_fill_import_package(),
+            headers=student_headers(),
+        )
+        assert imported.status_code == 201, imported.text
+        imported_id = imported.json()["bank_id"]
+
+        exported = client.get(
+            f"/api/v1/banks/{imported_id}/export",
+            headers=student_headers(),
+        )
+        assert exported.status_code == 200, exported.text
+        package = exported.json()
+        gap_fill = next(
+            passage
+            for passage in package["passages"]
+            if passage["type"] == "gap_fill"
+        )
+        assert gap_fill["options"] == gap_fill["questions"][0]["options"]
+        schema = json.loads(
+            (
+                ROOT
+                / "contracts"
+                / "schemas"
+                / "bank-import-package.json"
+            ).read_text(encoding="utf-8")
+        )
+        jsonschema.validate(package, schema)
+    finally:
+        if imported_id:
+            with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+                with connection.transaction():
+                    connection.execute(
+                        "UPDATE question_banks SET status='archived' WHERE id=%s",
+                        (imported_id,),
+                    )
+                    connection.execute(
+                        "UPDATE question_banks SET status='ready' WHERE id=%s",
+                        (original_bank_id,),
+                    )
+                    connection.execute(
+                        "UPDATE bank_active_state SET active_bank_id=%s WHERE singleton=TRUE",
+                        (original_bank_id,),
+                    )
+                    delete_bank(connection, imported_id)
+            store.reload_active_bank()
+
+
+def test_export_endpoint_rejects_non_loopback_clients() -> None:
+    response = remote_client.get(
+        f"/api/v1/banks/{store.bank['bank_id']}/export",
         headers=student_headers(),
     )
 
