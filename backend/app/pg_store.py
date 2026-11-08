@@ -19,11 +19,15 @@ from .demo_bank import DemoQuestion, demo_bank
 from .analysis import generate_weakness_analysis, humanize_analysis_text
 from .composer import assemble_demo_paper
 from .mistakes import (
+    clear_current_mistakes,
+    clear_mistakes_preview,
     coverage_statistics,
     create_review_composition,
     get_passage_mistake_detail,
     list_open_mistakes,
     record_session_results,
+    reset_coverage_attempts,
+    reset_coverage_preview,
     session_attempt_kind,
 )
 from .store import SessionRecord
@@ -807,6 +811,42 @@ class PostgresStore:
                 student_id=student_id,
                 active_bank_id=self.bank["bank_id"],
             )
+
+    def clear_mistakes_preview(self, student_id: str) -> dict:
+        with self.connection() as connection:
+            return clear_mistakes_preview(
+                connection,
+                student_id=student_id,
+                active_bank_id=self.bank["bank_id"],
+            )
+
+    def clear_mistakes(self, student_id: str) -> dict:
+        with self.connection() as connection:
+            with connection.transaction():
+                deleted_count = clear_current_mistakes(
+                    connection,
+                    student_id=student_id,
+                    active_bank_id=self.bank["bank_id"],
+                )
+        return {"deleted_count": deleted_count}
+
+    def reset_coverage_preview(self, student_id: str) -> dict:
+        with self.connection() as connection:
+            return reset_coverage_preview(
+                connection,
+                student_id=student_id,
+                active_bank_id=self.bank["bank_id"],
+            )
+
+    def reset_coverage(self, student_id: str) -> dict:
+        with self.connection() as connection:
+            with connection.transaction():
+                deleted_count = reset_coverage_attempts(
+                    connection,
+                    student_id=student_id,
+                    active_bank_id=self.bank["bank_id"],
+                )
+        return {"deleted_count": deleted_count}
 
     def list_reports(self, student_id: str) -> list[dict]:
         with self.connection() as connection:

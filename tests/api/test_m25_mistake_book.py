@@ -225,6 +225,13 @@ def activate_bank(bank_id: str) -> dict:
     return response.json()
 
 
+def admin_headers(headers: dict[str, str]) -> dict[str, str]:
+    return {
+        **headers,
+        "X-Admin-Token": app_main.ADMIN_TOKEN,
+    }
+
+
 def test_m25_migration_is_idempotent_and_preserves_existing_rows() -> None:
     with psycopg.connect(database_url(), row_factory=dict_row) as connection:
         before = connection.execute(
@@ -747,3 +754,210 @@ def test_m25_coverage_includes_mistake_review_sessions() -> None:
         assert payload["twice_plus"] == 1
     finally:
         activate_bank(original_bank_id)
+
+
+def test_m25_clear_mistakes_only_affects_current_bank_and_student() -> None:
+    original_bank_id = store.bank["bank_id"]
+    bank_a = create_test_bank("M25 Clear History", ["M25-CLEAR-A-Q01"])
+    bank_b = create_test_bank("M25 Clear Current", ["M25-CLEAR-B-Q01"])
+    first_headers = student_headers()
+    second_headers = student_headers()
+    try:
+        activate_bank(bank_a["bank_id"])
+        old_session = direct_session(first_headers, ["M25-CLEAR-A-Q01"])
+        answer(first_headers, old_session, "M25-CLEAR-A-Q01", "calm")
+        submit(first_headers, old_session)
+
+        activate_bank(bank_b["bank_id"])
+        current_session = direct_session(first_headers, ["M25-CLEAR-B-Q01"])
+        answer(first_headers, current_session, "M25-CLEAR-B-Q01", "calm")
+        submit(first_headers, current_session)
+        other_student_session = direct_session(second_headers, ["M25-CLEAR-B-Q01"])
+        answer(second_headers, other_student_session, "M25-CLEAR-B-Q01", "calm")
+        submit(second_headers, other_student_session)
+
+        with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+            before = connection.execute(
+                """
+                SELECT
+                  (SELECT count(*) FROM questions) AS questions,
+                  (SELECT count(*) FROM passages) AS passages,
+                  (SELECT count(*) FROM question_banks) AS banks,
+                  (SELECT count(*) FROM practice_reports) AS reports,
+                  (SELECT count(*) FROM question_attempts
+                   WHERE student_id=%s) AS attempts
+                """,
+                (first_headers["X-Student-Id"],),
+            ).fetchone()
+
+        preview = client.get(
+            "/api/v1/maintenance/clear-mistakes/preview",
+            headers=admin_headers(first_headers),
+        )
+        assert preview.status_code == 200, preview.text
+        assert preview.json() == {
+            "count": 1,
+            "bank_name": "M25 Clear Current",
+            "history_count": 1,
+        }
+        cleared = client.post(
+            "/api/v1/maintenance/clear-mistakes",
+            headers=admin_headers(first_headers),
+        )
+        assert cleared.status_code == 200, cleared.text
+        assert cleared.json() == {"deleted_count": 1}
+        repeated = client.post(
+            "/api/v1/maintenance/clear-mistakes",
+            headers=admin_headers(first_headers),
+        )
+        assert repeated.json() == {"deleted_count": 0}
+
+        with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+            mistakes = connection.execute(
+                """
+                SELECT bank_id::text, count(*) AS count
+                FROM mistake_items
+                WHERE student_id=%s
+                GROUP BY bank_id
+                """,
+                (first_headers["X-Student-Id"],),
+            ).fetchall()
+            second_count = connection.execute(
+                """
+                SELECT count(*) AS count
+                FROM mistake_items
+                WHERE student_id=%s AND bank_id=%s
+                """,
+                (second_headers["X-Student-Id"], bank_b["bank_id"]),
+            ).fetchone()["count"]
+            after = connection.execute(
+                """
+                SELECT
+                  (SELECT count(*) FROM questions) AS questions,
+                  (SELECT count(*) FROM passages) AS passages,
+                  (SELECT count(*) FROM question_banks) AS banks,
+                  (SELECT count(*) FROM practice_reports) AS reports,
+                  (SELECT count(*) FROM question_attempts
+                   WHERE student_id=%s) AS attempts
+                """,
+                (first_headers["X-Student-Id"],),
+            ).fetchone()
+        assert {row["bank_id"]: row["count"] for row in mistakes} == {
+            bank_a["bank_id"]: 1
+        }
+        assert second_count == 1
+        assert after == before
+    finally:
+        activate_bank(original_bank_id)
+
+
+def test_m25_reset_coverage_deletes_by_active_question_id_only() -> None:
+    original_bank_id = store.bank["bank_id"]
+    shared_id = "M25-RESET-SHARED-Q01"
+    bank_a = create_test_bank(
+        "M25 Reset History",
+        [shared_id, "M25-RESET-OLD-Q02"],
+    )
+    bank_b = create_test_bank(
+        "M25 Reset Current",
+        [shared_id, "M25-RESET-NEW-Q02"],
+    )
+    headers = student_headers()
+    try:
+        activate_bank(bank_a["bank_id"])
+        old = direct_session(headers, [shared_id, "M25-RESET-OLD-Q02"])
+        answer(headers, old, shared_id, "anxious")
+        answer(headers, old, "M25-RESET-OLD-Q02", "calm")
+        submit(headers, old)
+
+        activate_bank(bank_b["bank_id"])
+        current = direct_session(headers, [shared_id, "M25-RESET-NEW-Q02"])
+        answer(headers, current, shared_id, "anxious")
+        answer(headers, current, "M25-RESET-NEW-Q02", "calm")
+        submit(headers, current)
+        review = create_review(headers, bank_b["passage_id"])
+        answer(headers, review["session_id"], "M25-RESET-NEW-Q02", "anxious")
+        submit(headers, review["session_id"])
+
+        with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+            before_mistakes = connection.execute(
+                """
+                SELECT count(*) AS count
+                FROM mistake_items
+                WHERE student_id=%s
+                """,
+                (headers["X-Student-Id"],),
+            ).fetchone()["count"]
+
+        preview = client.get(
+            "/api/v1/maintenance/reset-coverage/preview",
+            headers=admin_headers(headers),
+        )
+        assert preview.status_code == 200, preview.text
+        assert preview.json() == {
+            "count": 4,
+            "bank_name": "M25 Reset Current",
+            "question_total": 2,
+        }
+        reset = client.post(
+            "/api/v1/maintenance/reset-coverage",
+            headers=admin_headers(headers),
+        )
+        assert reset.status_code == 200, reset.text
+        assert reset.json() == {"deleted_count": 4}
+        repeated = client.post(
+            "/api/v1/maintenance/reset-coverage",
+            headers=admin_headers(headers),
+        )
+        assert repeated.json() == {"deleted_count": 0}
+
+        coverage = client.get(
+            "/api/v1/stats/coverage?bank_id=active",
+            headers=headers,
+        ).json()
+        assert coverage["total"] == 2
+        assert coverage["none"] == 2
+        assert coverage["once"] == 0
+        assert coverage["twice_plus"] == 0
+        with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+            remaining_attempts = connection.execute(
+                """
+                SELECT question_id, count(*) AS count
+                FROM question_attempts
+                WHERE student_id=%s
+                GROUP BY question_id
+                """,
+                (headers["X-Student-Id"],),
+            ).fetchall()
+            after_mistakes = connection.execute(
+                """
+                SELECT count(*) AS count
+                FROM mistake_items
+                WHERE student_id=%s
+                """,
+                (headers["X-Student-Id"],),
+            ).fetchone()["count"]
+        assert {
+            row["question_id"]: row["count"] for row in remaining_attempts
+        } == {"M25-RESET-OLD-Q02": 1}
+        assert after_mistakes == before_mistakes
+    finally:
+        activate_bank(original_bank_id)
+
+
+def test_m25_maintenance_endpoints_require_local_admin_auth() -> None:
+    headers = student_headers()
+    missing = client.get(
+        "/api/v1/maintenance/clear-mistakes/preview",
+        headers=headers,
+    )
+    assert missing.status_code == 401
+    assert missing.json()["detail"]["code"] == "ADMIN_AUTH_FAILED"
+
+    remote = TestClient(app, client=("192.168.1.50", 42100))
+    denied = remote.get(
+        "/api/v1/maintenance/reset-coverage/preview",
+        headers=admin_headers(headers),
+    )
+    assert denied.status_code == 403
+    assert denied.json()["detail"]["code"] == "ADMIN_LOCAL_ONLY"

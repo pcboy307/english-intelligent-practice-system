@@ -6,9 +6,12 @@ import {
   deleteReport,
   getCoverageStats,
   listReports,
+  previewResetCoverage,
+  resetCoverage,
   type CoverageStats,
   type ReportSummary,
 } from "../src/api/client";
+import { MaintenanceDialog } from "../src/components/MaintenanceDialog";
 import { tokens } from "../src/theme/tokens";
 import { useResponsiveLayout } from "../src/theme/useResponsiveLayout";
 
@@ -19,6 +22,7 @@ export default function HistoryScreen() {
   const [confirmingId, setConfirmingId] = useState<string | null>(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
+  const [resetVisible, setResetVisible] = useState(false);
 
   useEffect(() => {
     Promise.all([listReports(), getCoverageStats()])
@@ -44,6 +48,21 @@ export default function HistoryScreen() {
 
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.center}>
+      <MaintenanceDialog
+        visible={resetVisible}
+        title="重置覆盖统计"
+        intro="先读取当前题库将删除的实际作答计数；历史报告不会被删除。"
+        onCancel={() => setResetVisible(false)}
+        loadPreview={async (token) => {
+          const preview = await previewResetCoverage(token);
+          return `将重置当前题库（${preview.bank_name}）共 ${preview.question_total ?? 0} 题的作答统计，实际删除 ${preview.count} 条作答计数。历史报告不会被删除。此操作不可恢复。`;
+        }}
+        onConfirm={async (token) => {
+          await resetCoverage(token);
+          setCoverage(await getCoverageStats());
+          setResetVisible(false);
+        }}
+      />
       <View
         testID="history-shell"
         style={[styles.shell, { maxWidth: layout.contentMaxWidth }]}
@@ -69,6 +88,14 @@ export default function HistoryScreen() {
                   当前题库：{coverage.bank_name} · 共 {coverage.total} 题
                 </Text>
               </View>
+              <Pressable
+                accessibilityRole="button"
+                onPress={() => setResetVisible(true)}
+                style={styles.resetButton}
+                testID="reset-coverage-button"
+              >
+                <Text style={styles.resetText}>重置覆盖统计</Text>
+              </Pressable>
             </View>
             {coverage.once + coverage.twice_plus === 0 ? (
               <Text style={styles.coverageEmpty} testID="coverage-empty">
@@ -255,6 +282,16 @@ const styles = StyleSheet.create({
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.sectionTitle,
     fontWeight: "600",
+  },
+  resetButton: {
+    minHeight: tokens.control.touchTargetMin,
+    justifyContent: "center",
+    paddingHorizontal: tokens.spacing.listGap,
+  },
+  resetText: {
+    color: tokens.color.secondaryText,
+    fontFamily: tokens.font.uiFamily.web,
+    fontSize: tokens.font.sizes.auxiliary,
   },
   coverageBank: {
     color: tokens.color.secondaryText,

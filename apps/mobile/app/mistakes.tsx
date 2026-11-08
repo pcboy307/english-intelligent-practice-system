@@ -3,11 +3,14 @@ import { useEffect, useState } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 
 import {
+  clearMistakes,
   getMistakes,
+  previewClearMistakes,
   type MistakeBankGroup,
   type MistakeEntry,
   type MistakeList,
 } from "../src/api/client";
+import { MaintenanceDialog } from "../src/components/MaintenanceDialog";
 import { tokens } from "../src/theme/tokens";
 import { useResponsiveLayout } from "../src/theme/useResponsiveLayout";
 
@@ -27,6 +30,7 @@ export default function MistakesScreen() {
   const [mistakes, setMistakes] = useState<MistakeList | null>(null);
   const [expandedHistory, setExpandedHistory] = useState<Record<string, boolean>>({});
   const [error, setError] = useState("");
+  const [clearVisible, setClearVisible] = useState(false);
 
   useEffect(() => {
     getMistakes()
@@ -96,6 +100,21 @@ export default function MistakesScreen() {
 
   return (
     <ScrollView style={styles.page} contentContainerStyle={styles.center}>
+      <MaintenanceDialog
+        visible={clearVisible}
+        title="清空错题本"
+        intro="先读取当前题库的实际错题条数；历史题库的错题会保留。"
+        onCancel={() => setClearVisible(false)}
+        loadPreview={async (token) => {
+          const preview = await previewClearMistakes(token);
+          return `将清空当前题库（${preview.bank_name}）的 ${preview.count} 道错题。历史题库的 ${preview.history_count} 道错题会保留。此操作不可恢复。`;
+        }}
+        onConfirm={async (token) => {
+          await clearMistakes(token);
+          setMistakes(await getMistakes());
+          setClearVisible(false);
+        }}
+      />
       <View
         testID="mistakes-shell"
         style={[styles.shell, { maxWidth: layout.contentMaxWidth }]}
@@ -128,6 +147,14 @@ export default function MistakesScreen() {
           <View style={[styles.body, { maxWidth: layout.bodyMaxWidth }]}>
             {renderBankGroup(mistakes.current_bank, false)}
             {mistakes.history_banks.map((group) => renderBankGroup(group, true))}
+            <Pressable
+              accessibilityRole="button"
+              onPress={() => setClearVisible(true)}
+              style={styles.clearButton}
+              testID="clear-mistakes-button"
+            >
+              <Text style={styles.clearText}>清空错题本</Text>
+            </Pressable>
           </View>
         ) : null}
       </View>
@@ -252,5 +279,17 @@ const styles = StyleSheet.create({
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.auxiliary,
     marginTop: tokens.spacing.section,
+  },
+  clearButton: {
+    alignSelf: "flex-start",
+    minHeight: tokens.control.touchTargetMin,
+    marginTop: tokens.spacing.section,
+    paddingHorizontal: tokens.spacing.listGap,
+    justifyContent: "center",
+  },
+  clearText: {
+    color: tokens.color.secondaryText,
+    fontFamily: tokens.font.uiFamily.web,
+    fontSize: tokens.font.sizes.auxiliary,
   },
 });

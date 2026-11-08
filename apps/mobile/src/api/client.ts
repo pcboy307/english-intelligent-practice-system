@@ -16,6 +16,9 @@ export type MistakePassageGroup =
 export type MistakeBankGroup =
   components["schemas"]["MistakeBankGroup"];
 export type CoverageStats = components["schemas"]["CoverageStats"];
+export type ClearPreview = components["schemas"]["ClearPreview"];
+export type MaintenanceResult =
+  components["schemas"]["MaintenanceResult"];
 export type MistakeEntry = components["schemas"]["MistakeEntry"];
 export type MistakeDetailQuestion = {
   question_id: string;
@@ -136,4 +139,30 @@ export async function startMistakeReview(passageId: string) {
 
 export async function getCoverageStats() {
   return request<CoverageStats>("/stats/coverage?bank_id=active");
+}
+
+export async function previewClearMistakes(adminToken: string) {
+  return request<ClearPreview>("/maintenance/clear-mistakes/preview", {
+    headers: { "X-Admin-Token": adminToken },
+  });
+}
+
+export async function clearMistakes(adminToken: string) {
+  return request<MaintenanceResult>("/maintenance/clear-mistakes", {
+    method: "POST",
+    headers: { "X-Admin-Token": adminToken },
+  });
+}
+
+export async function previewResetCoverage(adminToken: string) {
+  return request<ClearPreview>("/maintenance/reset-coverage/preview", {
+    headers: { "X-Admin-Token": adminToken },
+  });
+}
+
+export async function resetCoverage(adminToken: string) {
+  return request<MaintenanceResult>("/maintenance/reset-coverage", {
+    method: "POST",
+    headers: { "X-Admin-Token": adminToken },
+  });
 }

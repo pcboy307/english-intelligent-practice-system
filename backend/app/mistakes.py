@@ -445,3 +445,119 @@ def coverage_statistics(
         "bank_name": bank["name"],
         "as_of": datetime.now(timezone.utc).isoformat(),
     }
+
+
+def clear_mistakes_preview(
+    connection: Connection,
+    *,
+    student_id: str,
+    active_bank_id: str,
+) -> dict:
+    bank = connection.execute(
+        "SELECT name FROM question_banks WHERE id=%s",
+        (active_bank_id,),
+    ).fetchone()
+    if not bank:
+        raise KeyError("ACTIVE_BANK_NOT_FOUND")
+    counts = connection.execute(
+        """
+        SELECT
+          count(*) FILTER (WHERE bank_id=%s) AS current_count,
+          count(*) FILTER (WHERE bank_id<>%s) AS history_count
+        FROM mistake_items
+        WHERE student_id=%s
+        """,
+        (active_bank_id, active_bank_id, student_id),
+    ).fetchone()
+    return {
+        "count": counts["current_count"],
+        "bank_name": bank["name"],
+        "history_count": counts["history_count"],
+    }
+
+
+def clear_current_mistakes(
+    connection: Connection,
+    *,
+    student_id: str,
+    active_bank_id: str,
+) -> int:
+    rows = connection.execute(
+        """
+        DELETE FROM mistake_items
+        WHERE student_id=%s AND bank_id=%s
+        RETURNING question_id
+        """,
+        (student_id, active_bank_id),
+    ).fetchall()
+    return len(rows)
+
+
+def active_question_ids(
+    connection: Connection,
+    *,
+    active_bank_id: str,
+) -> list[str]:
+    return [
+        row["id"]
+        for row in connection.execute(
+            """
+            SELECT id
+            FROM questions
+            WHERE bank_id=%s AND status='published'
+            """,
+            (active_bank_id,),
+        ).fetchall()
+    ]
+
+
+def reset_coverage_preview(
+    connection: Connection,
+    *,
+    student_id: str,
+    active_bank_id: str,
+) -> dict:
+    bank = connection.execute(
+        "SELECT name FROM question_banks WHERE id=%s",
+        (active_bank_id,),
+    ).fetchone()
+    if not bank:
+        raise KeyError("ACTIVE_BANK_NOT_FOUND")
+    question_ids = active_question_ids(
+        connection,
+        active_bank_id=active_bank_id,
+    )
+    count = connection.execute(
+        """
+        SELECT count(*) AS count
+        FROM question_attempts
+        WHERE student_id=%s AND question_id=ANY(%s)
+        """,
+        (student_id, question_ids),
+    ).fetchone()["count"]
+    return {
+        "count": count,
+        "bank_name": bank["name"],
+        "question_total": len(question_ids),
+    }
+
+
+def reset_coverage_attempts(
+    connection: Connection,
+    *,
+    student_id: str,
+    active_bank_id: str,
+) -> int:
+    question_ids = active_question_ids(
+        connection,
+        active_bank_id=active_bank_id,
+    )
+    rows = connection.execute(
+        """
+        DELETE FROM question_attempts
+        WHERE student_id=%s AND question_id=ANY(%s)
+        RETURNING id
+        """,
+        (student_id, question_ids),
+    ).fetchall()
+    return len(rows)

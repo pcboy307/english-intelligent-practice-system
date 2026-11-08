@@ -205,6 +205,82 @@ def get_coverage_stats(
     return store.get_coverage_stats(student_id)
 
 
+@app.get("/api/v1/maintenance/clear-mistakes/preview")
+def preview_clear_mistakes(
+    request: Request,
+    x_student_id: str | None = Header(default=None, alias="X-Student-Id"),
+    x_admin_token: str | None = Header(default=None, alias="X-Admin-Token"),
+) -> dict:
+    student_id = student_id_or_401(x_student_id)
+    token = require_local_admin(request, x_admin_token)
+    preview = store.clear_mistakes_preview(student_id)
+    store.admin_audit(
+        "GET",
+        "/api/v1/maintenance/clear-mistakes/preview",
+        token,
+        "ok",
+        200,
+    )
+    return preview
+
+
+@app.post("/api/v1/maintenance/clear-mistakes")
+def clear_mistakes(
+    request: Request,
+    x_student_id: str | None = Header(default=None, alias="X-Student-Id"),
+    x_admin_token: str | None = Header(default=None, alias="X-Admin-Token"),
+) -> dict:
+    student_id = student_id_or_401(x_student_id)
+    token = require_local_admin(request, x_admin_token)
+    result = store.clear_mistakes(student_id)
+    store.admin_audit(
+        "POST",
+        "/api/v1/maintenance/clear-mistakes",
+        token,
+        "ok",
+        200,
+    )
+    return result
+
+
+@app.get("/api/v1/maintenance/reset-coverage/preview")
+def preview_reset_coverage(
+    request: Request,
+    x_student_id: str | None = Header(default=None, alias="X-Student-Id"),
+    x_admin_token: str | None = Header(default=None, alias="X-Admin-Token"),
+) -> dict:
+    student_id = student_id_or_401(x_student_id)
+    token = require_local_admin(request, x_admin_token)
+    preview = store.reset_coverage_preview(student_id)
+    store.admin_audit(
+        "GET",
+        "/api/v1/maintenance/reset-coverage/preview",
+        token,
+        "ok",
+        200,
+    )
+    return preview
+
+
+@app.post("/api/v1/maintenance/reset-coverage")
+def reset_coverage(
+    request: Request,
+    x_student_id: str | None = Header(default=None, alias="X-Student-Id"),
+    x_admin_token: str | None = Header(default=None, alias="X-Admin-Token"),
+) -> dict:
+    student_id = student_id_or_401(x_student_id)
+    token = require_local_admin(request, x_admin_token)
+    result = store.reset_coverage(student_id)
+    store.admin_audit(
+        "POST",
+        "/api/v1/maintenance/reset-coverage",
+        token,
+        "ok",
+        200,
+    )
+    return result
+
+
 @app.get("/api/v1/practice/{session_id}")
 def get_practice(
     session_id: str,
