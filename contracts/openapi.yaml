@@ -301,6 +301,131 @@ components:
     Coverage:
       type: object
       additionalProperties: true
+    MistakeEntry:
+      type: object
+      additionalProperties: false
+      required:
+        - question_id
+        - passage_id
+        - question_type
+        - label
+        - wrong_count
+        - correct_streak
+        - status
+      properties:
+        question_id:
+          type: string
+        passage_id:
+          oneOf:
+            - type: "null"
+            - type: string
+        question_type:
+          type: string
+          enum: [cloze, grammar, reading, seven]
+        label:
+          type: string
+        wrong_count:
+          type: integer
+          minimum: 1
+        correct_streak:
+          type: integer
+          minimum: 0
+          maximum: 2
+        status:
+          type: string
+          enum: [open, mastered]
+    MistakePassageGroup:
+      type: object
+      additionalProperties: false
+      required: [passage_id, question_type, items]
+      properties:
+        passage_id:
+          type: string
+        question_type:
+          type: string
+          enum: [cloze, grammar, reading, seven]
+        items:
+          type: array
+          minItems: 1
+          items:
+            $ref: "#/components/schemas/MistakeEntry"
+    MistakeBankGroup:
+      type: object
+      additionalProperties: false
+      required: [bank_id, bank_name, count, passages]
+      properties:
+        bank_id:
+          type: string
+          format: uuid
+        bank_name:
+          type: string
+        count:
+          type: integer
+          minimum: 0
+        passages:
+          type: array
+          items:
+            $ref: "#/components/schemas/MistakePassageGroup"
+    MistakeListResponse:
+      type: object
+      additionalProperties: false
+      required: [current_bank, history_banks, total_open]
+      properties:
+        current_bank:
+          $ref: "#/components/schemas/MistakeBankGroup"
+        history_banks:
+          type: array
+          items:
+            $ref: "#/components/schemas/MistakeBankGroup"
+        total_open:
+          type: integer
+          minimum: 0
+    CoverageStats:
+      type: object
+      additionalProperties: false
+      required: [total, none, once, twice_plus, bank_name, as_of]
+      properties:
+        total:
+          type: integer
+          minimum: 0
+        none:
+          type: integer
+          minimum: 0
+        once:
+          type: integer
+          minimum: 0
+        twice_plus:
+          type: integer
+          minimum: 0
+        bank_name:
+          type: string
+        as_of:
+          type: string
+          format: date-time
+    ClearPreview:
+      type: object
+      additionalProperties: false
+      required: [count, bank_name]
+      properties:
+        count:
+          type: integer
+          minimum: 0
+        bank_name:
+          type: string
+        history_count:
+          type: integer
+          minimum: 0
+        question_total:
+          type: integer
+          minimum: 0
+    MaintenanceResult:
+      type: object
+      additionalProperties: false
+      required: [deleted_count]
+      properties:
+        deleted_count:
+          type: integer
+          minimum: 0
     PreviewResponse:
       type: object
       additionalProperties: false
@@ -976,4 +1101,172 @@ paths:
                     type: integer
                     minimum: 0
         "400":
+          $ref: "#/components/responses/ErrorResponse"
+  /mistakes:
+    get:
+      tags: [student]
+      operationId: listMistakes
+      security:
+        - StudentId: []
+      summary: 按当前与历史题库列出待订正错题
+      parameters:
+        - name: status
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [open]
+            default: open
+      responses:
+        "200":
+          description: 按题库和语篇聚合的错题列表
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MistakeListResponse"
+        "401":
+          $ref: "#/components/responses/ErrorResponse"
+  /mistakes/{passage_id}:
+    get:
+      tags: [student]
+      operationId: getMistakePassage
+      security:
+        - StudentId: []
+      summary: 获取指定语篇的错题明细与完整语篇
+      parameters:
+        - name: passage_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: 语篇、错题目标和完整题目上下文
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+        "404":
+          $ref: "#/components/responses/ErrorResponse"
+  /mistakes/review/{passage_id}:
+    post:
+      tags: [student]
+      operationId: startMistakeReview
+      security:
+        - StudentId: []
+      summary: 为指定语篇创建错题重做会话
+      parameters:
+        - name: passage_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "201":
+          description: 重做会话
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SessionResponse"
+        "404":
+          $ref: "#/components/responses/ErrorResponse"
+        "409":
+          $ref: "#/components/responses/ErrorResponse"
+  /stats/coverage:
+    get:
+      tags: [reports]
+      operationId: getCoverageStats
+      security:
+        - StudentId: []
+      summary: 统计当前 active Bank 的题目覆盖次数
+      parameters:
+        - name: bank_id
+          in: query
+          required: false
+          schema:
+            type: string
+            default: active
+      responses:
+        "200":
+          description: 三段覆盖统计
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CoverageStats"
+  /maintenance/clear-mistakes/preview:
+    get:
+      tags: [admin]
+      operationId: previewClearMistakes
+      security:
+        - StudentId: []
+        - AdminToken: []
+      summary: 预览当前题库错题清空条数
+      responses:
+        "200":
+          description: 将删除的当前题库错题数与保留的历史错题数
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ClearPreview"
+        "401":
+          $ref: "#/components/responses/ErrorResponse"
+        "403":
+          $ref: "#/components/responses/ErrorResponse"
+  /maintenance/clear-mistakes:
+    post:
+      tags: [admin]
+      operationId: clearMistakes
+      security:
+        - StudentId: []
+        - AdminToken: []
+      summary: 清空当前题库的错题记录
+      responses:
+        "200":
+          description: 实际删除条数
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MaintenanceResult"
+        "401":
+          $ref: "#/components/responses/ErrorResponse"
+        "403":
+          $ref: "#/components/responses/ErrorResponse"
+  /maintenance/reset-coverage/preview:
+    get:
+      tags: [admin]
+      operationId: previewResetCoverage
+      security:
+        - StudentId: []
+        - AdminToken: []
+      summary: 预览当前题库覆盖统计重置条数
+      responses:
+        "200":
+          description: 将删除的 attempt 条数与当前题库题数
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ClearPreview"
+        "401":
+          $ref: "#/components/responses/ErrorResponse"
+        "403":
+          $ref: "#/components/responses/ErrorResponse"
+  /maintenance/reset-coverage:
+    post:
+      tags: [admin]
+      operationId: resetCoverage
+      security:
+        - StudentId: []
+        - AdminToken: []
+      summary: 按当前题库 question_id 删除对应覆盖记录
+      responses:
+        "200":
+          description: 实际删除条数
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MaintenanceResult"
+        "401":
+          $ref: "#/components/responses/ErrorResponse"
+        "403":
           $ref: "#/components/responses/ErrorResponse"

@@ -24,7 +24,10 @@
     "primaryButtonText": "#FFFFFF",
     "accent": "#2C5F5A",
     "correct": "#2E7D52",
-    "incorrect": "#B3261E"
+    "incorrect": "#B3261E",
+    "coverage_repeat": "#2C5F5A",
+    "coverage_once": "#9A9A9A",
+    "coverage_none": "#E6E6E6"
   },
   "color_usage": {
     "accent_only_for": [
@@ -42,7 +45,8 @@
     "correct_incorrect": "correct_answer_background_or_text; incorrect_text_or_1px_border_only",
     "semantic_fill_forbidden": false,
     "correct_answer_fill_only": true,
-    "large_semantic_color_blocks_forbidden": true
+    "large_semantic_color_blocks_forbidden": true,
+    "coverage_bar_exception": "coverage_repeat, coverage_once and coverage_none may fill the three manual horizontal stacked-bar segments"
   },
   "font": {
     "uiFamily": {

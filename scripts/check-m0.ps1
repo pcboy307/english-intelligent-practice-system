@@ -260,15 +260,23 @@ foreach ($path in @(
   "/admin/banks/{bank_id}/archive:",
   "/admin/banks/{bank_id}/job:",
   "/admin/questions:",
-  "/admin/questions/review:"
+  "/admin/questions/review:",
+  "/mistakes:",
+  "/mistakes/{passage_id}:",
+  "/mistakes/review/{passage_id}:",
+  "/stats/coverage:",
+  "/maintenance/clear-mistakes/preview:",
+  "/maintenance/clear-mistakes:",
+  "/maintenance/reset-coverage/preview:",
+  "/maintenance/reset-coverage:"
 )) {
   Assert-True ($openapi.Contains($path)) "OpenAPI missing path $path"
 }
 Assert-True (-not $openapi.Contains("approved_by_owner")) "Client-side owner approval must be removed"
 Assert-True (-not [regex]::IsMatch($openapi, "(?m)^security:")) "Top-level global security must be absent"
-Assert-True ([regex]::Matches($openapi, "(?m)^      security:\s*$").Count -eq 25) "Every operation must declare security"
-Assert-True ([regex]::Matches($openapi, "- StudentId: \[\]").Count -eq 13) "Student security declaration mismatch"
-Assert-True ([regex]::Matches($openapi, "- AdminToken: \[\]").Count -eq 12) "Admin security declaration mismatch"
+Assert-True ([regex]::Matches($openapi, "(?m)^      security:\s*$").Count -eq 33) "Every operation must declare security"
+Assert-True ([regex]::Matches($openapi, "- StudentId: \[\]").Count -eq 21) "Student security declaration mismatch"
+Assert-True ([regex]::Matches($openapi, "- AdminToken: \[\]").Count -eq 16) "Admin security declaration mismatch"
 Assert-True ($openapi.Contains("/approve-generation:")) "Generation approval path missing"
 Assert-True ($openapi.Contains("Idempotency-Key")) "Submit idempotency contract missing"
 Assert-True (-not $openapi.Contains("components_parameters_anchor")) "Invalid OpenAPI anchor remains"

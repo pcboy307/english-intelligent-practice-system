@@ -390,6 +390,142 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/mistakes": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** 按当前与历史题库列出待订正错题 */
+        get: operations["listMistakes"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/mistakes/{passage_id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** 获取指定语篇的错题明细与完整语篇 */
+        get: operations["getMistakePassage"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/mistakes/review/{passage_id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** 为指定语篇创建错题重做会话 */
+        post: operations["startMistakeReview"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/stats/coverage": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** 统计当前 active Bank 的题目覆盖次数 */
+        get: operations["getCoverageStats"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/maintenance/clear-mistakes/preview": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** 预览当前题库错题清空条数 */
+        get: operations["previewClearMistakes"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/maintenance/clear-mistakes": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** 清空当前题库的错题记录 */
+        post: operations["clearMistakes"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/maintenance/reset-coverage/preview": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** 预览当前题库覆盖统计重置条数 */
+        get: operations["previewResetCoverage"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/maintenance/reset-coverage": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** 按当前题库 question_id 删除对应覆盖记录 */
+        post: operations["resetCoverage"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
 }
 export type webhooks = Record<string, never>;
 export interface components {
@@ -506,6 +642,53 @@ export interface components {
         };
         Coverage: {
             [key: string]: unknown;
+        };
+        MistakeEntry: {
+            question_id: string;
+            passage_id: null | string;
+            /** @enum {string} */
+            question_type: "cloze" | "grammar" | "reading" | "seven";
+            label: string;
+            wrong_count: number;
+            correct_streak: number;
+            /** @enum {string} */
+            status: "open" | "mastered";
+        };
+        MistakePassageGroup: {
+            passage_id: string;
+            /** @enum {string} */
+            question_type: "cloze" | "grammar" | "reading" | "seven";
+            items: components["schemas"]["MistakeEntry"][];
+        };
+        MistakeBankGroup: {
+            /** Format: uuid */
+            bank_id: string;
+            bank_name: string;
+            count: number;
+            passages: components["schemas"]["MistakePassageGroup"][];
+        };
+        MistakeListResponse: {
+            current_bank: components["schemas"]["MistakeBankGroup"];
+            history_banks: components["schemas"]["MistakeBankGroup"][];
+            total_open: number;
+        };
+        CoverageStats: {
+            total: number;
+            none: number;
+            once: number;
+            twice_plus: number;
+            bank_name: string;
+            /** Format: date-time */
+            as_of: string;
+        };
+        ClearPreview: {
+            count: number;
+            bank_name: string;
+            history_count?: number;
+            question_total?: number;
+        };
+        MaintenanceResult: {
+            deleted_count: number;
         };
         PreviewResponse: {
             /** Format: uuid */
@@ -857,6 +1040,10 @@ export interface components {
             created_at: string;
             /** Format: date-time */
             updated_at: string;
+            context_clue?: string;
+            clue_argument?: string;
+            invalid?: boolean;
+            invalid_reason?: string;
         } & (unknown & unknown & unknown & unknown);
     };
     responses: {
@@ -1471,6 +1658,188 @@ export interface operations {
                 };
             };
             400: components["responses"]["ErrorResponse"];
+        };
+    };
+    listMistakes: {
+        parameters: {
+            query?: {
+                status?: "open";
+            };
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description 按题库和语篇聚合的错题列表 */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["MistakeListResponse"];
+                };
+            };
+            401: components["responses"]["ErrorResponse"];
+        };
+    };
+    getMistakePassage: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                passage_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description 语篇、错题目标和完整题目上下文 */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": {
+                        [key: string]: unknown;
+                    };
+                };
+            };
+            404: components["responses"]["ErrorResponse"];
+        };
+    };
+    startMistakeReview: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                passage_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description 重做会话 */
+            201: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["session"];
+                };
+            };
+            404: components["responses"]["ErrorResponse"];
+            409: components["responses"]["ErrorResponse"];
+        };
+    };
+    getCoverageStats: {
+        parameters: {
+            query?: {
+                bank_id?: string;
+            };
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description 三段覆盖统计 */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["CoverageStats"];
+                };
+            };
+        };
+    };
+    previewClearMistakes: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description 将删除的当前题库错题数与保留的历史错题数 */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ClearPreview"];
+                };
+            };
+            401: components["responses"]["ErrorResponse"];
+            403: components["responses"]["ErrorResponse"];
+        };
+    };
+    clearMistakes: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description 实际删除条数 */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["MaintenanceResult"];
+                };
+            };
+            401: components["responses"]["ErrorResponse"];
+            403: components["responses"]["ErrorResponse"];
+        };
+    };
+    previewResetCoverage: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description 将删除的 attempt 条数与当前题库题数 */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ClearPreview"];
+                };
+            };
+            401: components["responses"]["ErrorResponse"];
+            403: components["responses"]["ErrorResponse"];
+        };
+    };
+    resetCoverage: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description 实际删除条数 */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["MaintenanceResult"];
+                };
+            };
+            401: components["responses"]["ErrorResponse"];
+            403: components["responses"]["ErrorResponse"];
         };
     };
 }
