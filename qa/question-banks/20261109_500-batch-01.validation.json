@@ -1,0 +1,56 @@
+{
+  "file": "qa/question-banks/20261109_500-batch-01.json",
+  "sha256": "0f0991dabc5cb0ce778fc368ec4b86e9d3979aab7fc2d3f75ee1d1619cc41d77",
+  "format_version": "bank-v1",
+  "name": "20261109_500#batch-01",
+  "bank_id": "0957a6ae-e4cf-466a-9829-bb3ce2896e8c",
+  "status": "active",
+  "schema_validation": "PASS",
+  "generation_validation": {
+    "M26-NEW-CLOZE-01": {
+      "accepted": true,
+      "words": 317,
+      "flesch_reading_ease": 50.15
+    },
+    "M26-NEW-CLOZE-02": {
+      "accepted": true,
+      "words": 319,
+      "flesch_reading_ease": 49.59
+    },
+    "M26-NEW-GRAMMAR-01": {
+      "accepted": true,
+      "words": 231
+    },
+    "M26-NEW-READING-01": {
+      "accepted": true,
+      "words": 387,
+      "flesch_reading_ease": 55.85
+    },
+    "M26-NEW-READING-02": {
+      "accepted": true,
+      "words": 361,
+      "flesch_reading_ease": 52.34
+    },
+    "M26-NEW-GAP-01": {
+      "accepted": true,
+      "words": 333
+    }
+  },
+  "preview": {
+    "http_status": 200,
+    "target_size": 53,
+    "passages": 6,
+    "questions": 53,
+    "composition": {
+      "cloze": 2,
+      "grammar_fill": 1,
+      "reading": 2,
+      "gap_fill": 1
+    }
+  },
+  "export_roundtrip": {
+    "questions": 53,
+    "passages": 6
+  },
+  "tests": "39 passed"
+}
