@@ -39,6 +39,26 @@ These observation items cannot override R1-R10.
 - Gap fill: five blanks with seven mutually distinguishable options; four
   cohesion types are covered across ten passages.
 
+## M2.6 generation parameters v2
+
+The machine-readable source of truth is
+`contracts/m26-generation-params-v2.json`.
+
+- Cloze: 280-320 words; at least four sentences of at least 25 words; at
+  least three of non-finite, nominal clause, parenthetical/appositive, and
+  inversion/ellipsis; at least three near-synonym discrimination items;
+  Flesch 45-60.
+- Grammar fill: 220-260 words; all ten items must include perfect/passive
+  non-finite, preposition + which, a what-led nominal clause, subjunctive, and
+  inversion.
+- Reading: 350-420 words; average sentence length at least 20; Flesch 45-60;
+  every passage includes at least one paragraph-function question.
+- Gap fill: 320-380 words; expository or argumentative prose on an abstract
+  topic such as technology ethics, urban governance, or a psychological
+  mechanism.
+- Vocabulary remains governed by the frozen whitelist; abstract nouns are
+  allowed when they are in scope or clarified by context.
+
 ## Composition
 
 - 47 passages / 300 questions:

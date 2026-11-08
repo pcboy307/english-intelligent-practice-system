@@ -26,7 +26,7 @@ def _judge_config() -> dict[str, Any]:
         "transport": base["transport"],
         "max_tokens": base["max_tokens"],
         "temperature": 0,
-        "prompt_version": "m26-import-judge-v1",
+        "prompt_version": "m26-import-judge-v2",
         "price_input_per_1m_cny": base["judge_price_input_per_1m_cny"],
         "price_output_per_1m_cny": base["judge_price_output_per_1m_cny"],
         "budget_cap_cny": base["budget_cap_cny"],
@@ -47,6 +47,21 @@ def _judge_prompt(record: dict[str, Any]) -> str:
         }
         for index, question in enumerate(record["questions"], start=1)
     ]
+    rendered_passage = record["passage"]
+    for index, question in enumerate(record["questions"], start=1):
+        if record["type"] == "gap_fill":
+            option_index = ord(str(question["answer"]).upper()) - ord("A")
+            replacement = question["options"][option_index]
+            marker = f"({index}) ______"
+        elif record["type"] == "cloze":
+            replacement = str(question["answer"])
+            marker = f"({index}) ______"
+        elif record["type"] == "grammar_fill":
+            replacement = str(question["answer"])
+            marker = f"{chr(0x2460 + index - 1)} ______"
+        else:
+            continue
+        rendered_passage = rendered_passage.replace(marker, replacement, 1)
     return f"""
 You are an independent senior-high English item reviewer. Judge the fixed
 passage and questions. Do not rewrite them and do not assume the stated answer
@@ -61,6 +76,8 @@ Return JSON with exactly:
       "question_index": 1,
       "unique_best": true,
       "answer_supported": true,
+      "answer_grammatical": true,
+      "answer_semantic": true,
       "same_part_of_speech": true,
       "same_semantic_field": true,
       "near_synonym_distractor": false,
@@ -73,8 +90,15 @@ Return JSON with exactly:
 }}
 
 Rules:
+- Use the "Passage with stated answers inserted" section below for grammatical
+  and semantic checks. Reject redundant, awkward, contradictory, or
+  ungrammatical inserted answers.
 - `coherent` is false if the passage is a set of unrelated sentences.
 - `unique_best` is false if two or more options can fit equally well.
+- For cloze and grammar_fill, insert the stated answer into its blank.
+  `answer_grammatical` is false if the resulting sentence is ungrammatical;
+  `answer_semantic` is false if it does not make sense in context.
+- For gap_fill, map the answer letter to its option text before judging fit.
 - For cloze, `same_part_of_speech` and `same_semantic_field` judge the four
   options. `near_synonym_distractor` is true only when a distractor has the same
   core meaning and is genuinely easy to confuse with the answer.
@@ -87,7 +111,10 @@ Rules:
 
 Type: {record["type"]}
 Topic: {record["topic"]}
-Passage:
+Passage with stated answers inserted:
+{rendered_passage}
+
+Original passage with blanks:
 {record["passage"]}
 
 Questions:
@@ -111,6 +138,8 @@ def _shape_errors(data: dict[str, Any], expected_count: int) -> list[str]:
         for field in (
             "unique_best",
             "answer_supported",
+            "answer_grammatical",
+            "answer_semantic",
             "same_part_of_speech",
             "same_semantic_field",
             "near_synonym_distractor",
@@ -248,6 +277,14 @@ def audit_records(records: list[dict[str, Any]]) -> dict[str, Any]:
                 failures.append({"code": "R9_NO_CLEAR_BEST", **prefix})
             if not item["answer_supported"]:
                 failures.append({"code": "ANSWER_UNSUPPORTED", **prefix})
+            if not item["answer_grammatical"]:
+                failures.append(
+                    {"code": "ANSWER_GRAMMATICAL_FAILURE", **prefix}
+                )
+            if not item["answer_semantic"]:
+                failures.append(
+                    {"code": "ANSWER_SEMANTIC_FAILURE", **prefix}
+                )
             if item["verdict"] != "ok":
                 failures.append({"code": "JUDGE_REJECTED", **prefix})
             if record["type"] == "cloze":
@@ -264,7 +301,7 @@ def audit_records(records: list[dict[str, Any]]) -> dict[str, Any]:
                     failures.append(
                         {"code": "R14_OPTION_NOT_REWRITTEN", **prefix}
                     )
-        if record["type"] == "cloze" and near_synonyms < 2:
+        if record["type"] == "cloze" and near_synonyms < 3:
             failures.append(
                 {
                     "code": "R13_NEAR_SYNONYM_DISTRACTORS_TOO_FEW",

@@ -18,7 +18,11 @@ from .deepseek_generation import (
 )
 from .generation import (
     FILL_PLACEHOLDER,
+    M26_RULES,
+    PLACEHOLDER_TYPES,
+    _cloze_structure_categories,
     _load_vocabulary_audit_module,
+    _placeholder_count_failures,
     get_type_rules,
     load_curriculum,
     load_vocabulary_scope,
@@ -100,19 +104,23 @@ def _build_passage_prompt(spec: dict[str, Any]) -> str:
         length_ranges = {
             "cloze": (
                 f"{rule['min_words']}-{rule['max_words']} words; aim for "
-                "220-240 and verify the count before returning"
+                f"{rule['min_words'] + 10}-{rule['max_words'] - 10} and "
+                "verify the count before returning"
             ),
             "grammar_fill": (
-                "no more than 220 words; use as many words as needed for a "
-                "coherent passage with ten grammar blanks"
+                f"{rule['min_words']}-{rule['max_words']} words; aim for "
+                f"{rule['min_words'] + 10}-{rule['max_words'] - 10} with ten "
+                "grammar blanks"
             ),
             "reading": (
                 f"{rule['min_words']}-{rule['max_words']} words; aim for "
-                "280-310 and verify the count before returning"
+                f"{rule['min_words'] + 20}-{rule['max_words'] - 15} and "
+                "verify the count before returning"
             ),
             "gap_fill": (
                 f"{rule['min_words']}-{rule['max_words']} words; aim for "
-                "250-280 and verify the count before returning"
+                f"{rule['min_words'] + 15}-{rule['max_words'] - 15} and "
+                "verify the count before returning"
             ),
         }
     else:
@@ -143,36 +151,105 @@ def _build_passage_prompt(spec: dict[str, Any]) -> str:
             "(for example, '(1) ______')"
         ),
     }
+    blank_instruction = (
+        "Every blank must contain one label followed by one space and exactly six "
+        f"underscores: {FILL_PLACEHOLDER}. Never print an answer word, option "
+        "word, or word fragment at or beside a blank."
+        if spec["type"] in PLACEHOLDER_TYPES
+        else "This passage type has no blanks. Do not include numbered blanks, "
+        "circled labels, or underscore placeholders anywhere."
+    )
     target_block = ""
     if targets:
+        marker_for = (
+            lambda index: f"({index})"
+            if spec["type"] in {"cloze", "gap_fill"}
+            else chr(0x2460 + index - 1)
+        )
+        target_map = [
+            {
+                "blank": marker_for(index),
+                "answer": str(
+                    question.get("answer_target")
+                    or question.get("cloze_target")
+                    or ""
+                ).strip(),
+            }
+            for index, question in enumerate(spec["questions"], start=1)
+            if question.get("answer_target") or question.get("cloze_target")
+        ]
         target_block = (
-            "\nThe preplanned correct answers are fixed below. Write the passage "
-            "around these answer positions without printing any target or its "
-            "inflected form anywhere:\n"
-            f"{json.dumps(targets, ensure_ascii=False)}"
-            "\nEach marker replaces the ENTIRE target. Do not leave any word "
-            "from a target immediately before or after its marker. For example, "
-            "if the target is `the person who called`, write "
-            "`The visitor ① ______ yesterday`, not "
-            "`The person who called ① ______ yesterday`."
+            "\nThe blank-to-answer mapping is fixed and MUST be followed exactly. "
+            "For every entry below, the exact answer must be grammatical, "
+            "idiomatic, and semantically justified when substituted into that "
+            "numbered blank:\n"
+            f"{json.dumps(target_map, ensure_ascii=False, indent=2)}"
+            "\nDo not print any target or its inflected form anywhere in the "
+            "passage. Each marker replaces the ENTIRE target. Do not leave any "
+            "word from a target immediately before or after its marker. Before "
+            "returning, test every blank by mentally inserting its mapped answer."
+        )
+    feedback_block = ""
+    feedback = spec.get("generation_feedback")
+    if feedback:
+        feedback_block = (
+            "\nThe previous generated passage was rejected by the deterministic "
+            "quality validator. Repair the cause while preserving every other "
+            "requirement:\n"
+            + (
+                "\n".join(f"- {item}" for item in feedback)
+                if isinstance(feedback, list)
+                else f"- {feedback}"
+            )
+        )
+    style_guidance_block = ""
+    style_guidance = spec.get("style_guidance")
+    if style_guidance:
+        style_guidance_block = (
+            "\nSTYLE GUIDANCE (mandatory):\n"
+            + (
+                "\n".join(f"- {item}" for item in style_guidance)
+                if isinstance(style_guidance, list)
+                else f"- {style_guidance}"
+            )
         )
     m26_quality = ""
     if profile == "m26":
-        m26_quality = """
+        cloze_rule = M26_RULES["cloze"]
+        reading_rule = M26_RULES["reading"]
+        grammar_rule = M26_RULES["grammar_fill"]
+        m26_quality = f"""
 M2.6 quality requirements:
-- Cloze: average sentence length at least 15 words; Flesch Reading Ease
-  52-70; at least three sentences of at least 22 words; at least two
-  non-finite or subordinate-clause structures. Avoid short, primary-school
-  sentences; use connected multi-clause sentences throughout.
-- Reading: average sentence length at least 16 words; Flesch Reading Ease
-  48-68.
-- Grammar fill: the ten items together must cover at least five of these
-  categories: tense/voice, non-finite, relative clause, noun clause,
-  adverbial clause, article, preposition, conjunction, pronoun, comparison.
+- Cloze: average sentence length at least
+  {cloze_rule['average_sentence_words_minimum']} words; Flesch Reading Ease
+  {cloze_rule['flesch_reading_ease']['minimum']}-
+  {cloze_rule['flesch_reading_ease']['maximum']} (preferably 50-58, not the
+  upper boundary); at least
+  {cloze_rule['long_sentence_minimum_count']} sentences of at least
+  {cloze_rule['long_sentence_minimum_words']} words. Across the passage include
+  at least {cloze_rule['structure_categories_minimum_count']} distinct
+  structures from: non-finite, nominal clause, parenthetical/appositive, and
+  inversion/ellipsis. Use precise abstract nouns from the approved list and
+  avoid a chain of short, simple clauses that makes the prose too easy.
+- Reading: average sentence length at least
+  {reading_rule['average_sentence_words_minimum']} words; Flesch Reading Ease
+  {reading_rule['flesch_reading_ease']['minimum']}-
+  {reading_rule['flesch_reading_ease']['maximum']}; include at least one
+  paragraph-function question asking why a named paragraph mentions a detail.
+- Grammar fill: the ten items together must include all five mandatory
+  categories: perfect/passive non-finite, preposition + which, what-led nominal
+  clause, subjunctive, and inversion. Additional grammar categories may be used
+  for the remaining items. Punctuation outside each blank must still produce a
+  grammatical sentence after insertion; never place a comma between a subject
+  and its predicate.
 - Gap fill: use at least three distinct cohesion types: pronoun reference,
-  logical connector, lexical repetition, time order, general-to-specific.
+  logical connector, lexical repetition, time order, general-to-specific. The
+  passage must be expository or argumentative and discuss an abstract issue such
+  as technology ethics, urban governance, or a psychological mechanism.
 - The passage must be coherent, not a collection of unrelated example
   sentences. Use at most three recurring people or actors.
+- Abstract nouns are allowed when they are in the frozen vocabulary whitelist or
+  are clarified by context.
 - Do not invent personal names. Refer to people only by roles such as the
   student, teacher, parent, neighbour, or volunteer.
 """
@@ -190,11 +267,12 @@ M2.6 quality requirements:
 Write only the original practice passage. Return JSON with one key, "passage".
 Type: {spec["type"]}
 Topic: {spec["topic"]}
+Topic focus: {spec.get("topic_focus", spec["topic"])}
 Required length: {type_rules[spec["type"]]}
-Every blank must contain one label followed by one space and exactly six
-underscores: {FILL_PLACEHOLDER}. Never print an answer word, option word, or
-word fragment at or beside a blank.
+{blank_instruction}
 {target_block}
+{feedback_block}
+{style_guidance_block}
 {m26_quality}
 {vocabulary_block}
 Use simple vocabulary already learned in PEP 2019 required books 1-3 and
@@ -235,14 +313,32 @@ def _build_questions_prompt(
             "in that question's options:\n"
             + json.dumps(fixed_targets, ensure_ascii=False, indent=2)
         )
+    assignment_metadata = [
+        {
+            "question_order": assignment.get("question_order"),
+            "reading_type": assignment.get("reading_type"),
+            "cohesion_type": assignment.get("cohesion_type"),
+            "grammar_category": assignment.get("grammar_category"),
+        }
+        for assignment in assignments
+        if any(
+            assignment.get(field) is not None
+            for field in ("reading_type", "cohesion_type", "grammar_category")
+        )
+    ]
+    assignment_rule = ""
+    if assignment_metadata:
+        assignment_rule = (
+            "\nQUESTION-TYPE ASSIGNMENTS (follow exactly):\n"
+            + json.dumps(assignment_metadata, ensure_ascii=False, indent=2)
+        )
     m26_rules = ""
     if spec.get("validation_profile") == "m26":
         m26_rules = """
 M2.6 question requirements:
 - Cloze distractors must belong to the same semantic field and part of speech.
-  Do not use one correct word plus three obvious antonyms. At least two cloze
-  questions must include a genuine near-synonym distractor. In questions 1 and
-  2, deliberately include one near-synonym/easily confused distractor.
+  Do not use one correct word plus three obvious antonyms. At least three cloze
+  questions must include a genuine near-synonym/easily confused distractor.
 - Every reading question is comprehension-based. The correct option must be a
   paraphrase, never share five consecutive words with the passage.
 - Gap-fill options must be seven complete, mutually distinguishable sentences,
@@ -262,6 +358,7 @@ Every question must include:
 - grammar_tags, book_source and difficulty copied exactly from its assignment
 - evidence_sentence for every reading question: an exact passage substring
 {target_rule}
+{assignment_rule}
 
 All options in one grammar_fill question must belong to the same grammatical
 category. Assess only the assigned grammar tag.
@@ -352,7 +449,7 @@ def _validate_passage_step(
     integrity_failures = validate_fill_placeholder_shape(
         spec["type"],
         passage,
-    )
+    ) + _placeholder_count_failures(spec["type"], passage)
     if integrity_failures:
         raise ValueError(
             "FILL_PLACEHOLDER_INTEGRITY_FAILED:"
@@ -362,6 +459,8 @@ def _validate_passage_step(
             )
         )
     if spec.get("validation_profile") == "m26" and enforce_quality:
+        cloze_rule = M26_RULES["cloze"]
+        reading_rule = M26_RULES["reading"]
         unknown_words = _unique_unknown_words(passage)
         if len(unknown_words) > 3:
             raise ValueError(
@@ -378,46 +477,50 @@ def _validate_passage_step(
         )
         if spec["type"] in {"cloze", "reading"}:
             flesch = flesch_reading_ease(passage)
-            if spec["type"] == "cloze" and not 52 <= flesch <= 70:
+            rule_key = "cloze" if spec["type"] == "cloze" else "reading"
+            flesch_range = M26_RULES[rule_key]["flesch_reading_ease"]
+            if not (
+                float(flesch_range["minimum"])
+                <= flesch
+                <= float(flesch_range["maximum"])
+            ):
                 raise ValueError(
-                    f"R12_CLOZE_FLESCH actual={flesch} expected=52-70"
-                )
-            if spec["type"] == "reading" and not 48 <= flesch <= 68:
-                raise ValueError(
-                    f"R12_READING_FLESCH actual={flesch} expected=48-68"
+                    f"R12_{rule_key.upper()}_FLESCH actual={flesch} "
+                    f"expected={flesch_range['minimum']}-"
+                    f"{flesch_range['maximum']}"
                 )
         if spec["type"] == "cloze":
-            if average_sentence_words < 15:
+            if average_sentence_words < float(
+                cloze_rule["average_sentence_words_minimum"]
+            ):
                 raise ValueError(
                     "R12_CLOZE_SENTENCE_LENGTH "
                     f"actual={average_sentence_words:.2f}"
                 )
             long_sentences = sum(
-                _word_count(sentence) >= 22
+                _word_count(sentence)
+                >= int(cloze_rule["long_sentence_minimum_words"])
                 for sentence in sentences
             )
-            if long_sentences < 3:
+            if long_sentences < int(
+                cloze_rule["long_sentence_minimum_count"]
+            ):
                 raise ValueError(
                     f"R12_CLOZE_LONG_SENTENCES actual={long_sentences}"
                 )
-            complex_structures = sum(
-                bool(
-                    re.search(
-                        r"\b(?:which|who|whom|whose|that|because|although|"
-                        r"though|while|since|unless|when|where|after|before|if)\b"
-                        r"|\b(?:to\s+[a-z]+|[a-z]+ing\b|[a-z]+ed\b)",
-                        sentence,
-                        re.IGNORECASE,
-                    )
-                )
-                for sentence in sentences
-            )
-            if complex_structures < 2:
+            structure_categories = _cloze_structure_categories(passage)
+            if len(structure_categories) < int(
+                cloze_rule["structure_categories_minimum_count"]
+            ):
                 raise ValueError(
-                    "R12_CLOZE_COMPLEX_STRUCTURES "
-                    f"actual={complex_structures}"
+                    "R12_CLOZE_STRUCTURE_CATEGORIES "
+                    f"actual={structure_categories}"
                 )
-        if spec["type"] == "reading" and average_sentence_words < 16:
+        if (
+            spec["type"] == "reading"
+            and average_sentence_words
+            < float(reading_rule["average_sentence_words_minimum"])
+        ):
             raise ValueError(
                 "R12_READING_SENTENCE_LENGTH "
                 f"actual={average_sentence_words:.2f}"
@@ -502,7 +605,7 @@ def _simplify_m26_vocabulary(
     passage: str,
 ) -> str:
     current = passage
-    for attempt in range(1, 5):
+    for attempt in range(1, 7):
         unknown = _unique_unknown_words(current)
         try:
             return _validate_passage_step(spec, {"passage": current})
@@ -520,6 +623,12 @@ senior-high curriculum list are replaced with common approved alternatives.
 Keep the same topic, characters, sequence of ideas, blank markers, and
 approximate word count. Never reveal or insert any preplanned answer. Return
 JSON only as {{"passage": "complete rewritten passage"}}.
+
+If any quality error concerns Flesch Reading Ease being too high, do not make
+the sentences shorter or simpler. Merge adjacent short sentences into longer
+multi-clause sentences, embed nominal clauses and parenthetical phrases, and
+replace vague general words with precise abstract nouns from the approved
+curriculum. Preserve the blank-to-answer mapping and every placeholder exactly.
 
 Words that must be removed or replaced:
 {json.dumps(unknown, ensure_ascii=False)}
@@ -881,6 +990,10 @@ def _build_distractors_prompt(
     passage: str,
     target: str,
 ) -> str:
+    requires_near_synonym = bool(
+        assignment.get("near_synonym_calibration")
+        or assignment.get("near_synonym_required")
+    )
     near_synonym_rule = (
         "At least one distractor must be a genuine near-synonym or easily "
         "confused word. The fixed answer must still be the only option that "
@@ -891,7 +1004,7 @@ def _build_distractors_prompt(
         else "All distractors must belong to the same grammatical category "
         "as the answer."
     )
-    if spec["type"] == "cloze" and question_index in {1, 2}:
+    if spec["type"] == "cloze" and requires_near_synonym:
         near_synonym_rule += (
             " This question MUST contain exactly one near-synonym distractor; "
             "the context must make the fixed answer clearly better than that "
@@ -899,10 +1012,10 @@ def _build_distractors_prompt(
         )
     elif spec["type"] == "cloze":
         near_synonym_rule += (
-            " Do not use a near-synonym for the correct answer in this "
-            "question. All three distractors must be clearly impossible from "
-            "the surrounding context while remaining in the same broad "
-            "semantic field and part of speech."
+            " This question is not one of the three designated near-synonym "
+            "items. Keep all three distractors in the same broad semantic field "
+            "and part of speech, but make them clearly impossible from the "
+            "surrounding context."
         )
     return f"""
 The correct answer for blank {question_index} is fixed and must not be changed:
@@ -915,6 +1028,7 @@ semantic field, and must not be obvious antonyms. {near_synonym_rule}
 
 Type: {spec["type"]}
 Grammar tags: {json.dumps(assignment["grammar_tags"], ensure_ascii=False)}
+Grammar category: {assignment.get("grammar_category", "same category as answer")}
 Passage:
 {passage}
 """.strip()

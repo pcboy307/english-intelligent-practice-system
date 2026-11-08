@@ -11,12 +11,12 @@
     ],
     "topic_count": 6,
     "counts": {
-      "科技": 1,
       "健康心理": 1,
+      "家庭代际": 1,
       "职业创业": 1,
+      "科技": 1,
       "历史遗产": 1,
-      "环境": 1,
-      "家庭代际": 1
+      "环境": 1
     },
     "all_allowed": true,
     "no_topic_over_six": true
@@ -138,198 +138,234 @@
         ]
       },
       "r12": {
-        "word_count": 212,
-        "average_sentence_words": 19.27,
-        "flesch_reading_ease": 65.56,
-        "long_sentence_count": 4,
+        "word_count": 305,
+        "average_sentence_words": 30.5,
+        "flesch_reading_ease": 56.61,
+        "long_sentence_count": 7,
         "complex_structure_count": 10,
+        "cloze_structure_categories": [
+          "non_finite",
+          "noun_clause",
+          "parenthetical"
+        ],
         "grammar_categories": null,
+        "missing_required_grammar_categories": null,
         "cohesion_types": null
       },
       "r13": {
         "judge": {
           "coherent": true,
-          "coherence_reason": "The passage is a coherent text about building a healthy mind, with logically connected sentences.",
+          "coherence_reason": "The passage is a coherent discussion about test anxiety and strategies for managing it, with logically connected sentences.",
           "questions": [
             {
               "question_index": 1,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": true,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are adjectives describing emotional states, but 'anxious' best fits the context of a student before a big test who needs to calm down, while 'nervous' is a near synonym that could also fit but is less precise."
+              "reason": "All options are adjectives describing negative emotional states, but 'anxious' is the most precise for test-related worry, though 'nervous' and 'worried' are near-synonyms that could confuse students."
             },
             {
               "question_index": 2,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
-              "near_synonym_distractor": false,
+              "near_synonym_distractor": true,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The options are adjectives, but 'confident' is the only one that logically describes a teacher's positive influence on learners, while 'certain' is a near synonym but does not fit the context of encouraging questions."
+              "reason": "All options are adjectives indicating positive expectation, but 'confident' best fits the context of trusting one's preparation, while 'assured' and 'certain' are near-synonyms that might be confused."
             },
             {
               "question_index": 3,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
-              "near_synonym_distractor": false,
+              "near_synonym_distractor": true,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are adjectives, but 'curious' is the only one that aligns with the idea of students who wonder and keep looking for answers, while 'silent' is a contrast but not a synonym."
+              "reason": "All options are adjectives related to interest, but 'curious' is the most appropriate for a healthy attitude toward results, while 'interested' and 'eager' are near-synonyms that could be plausible."
             },
             {
               "question_index": 4,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
-              "near_synonym_distractor": false,
+              "near_synonym_distractor": true,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The options are adjectives, but 'reliable' is the only one that fits the context of needing regular sleep, honest friends, and a clear plan, as these contribute to being dependable."
+              "reason": "All options are adjectives meaning dependable, but 'reliable' is the most common collocation with 'study plan', while 'dependable' and 'consistent' are near-synonyms that could be confused."
             },
             {
               "question_index": 5,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
-              "near_synonym_distractor": false,
+              "near_synonym_distractor": true,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are adjectives, but 'ambitious' is the only one that logically pairs with wanting to achieve great things quickly, while 'cautious' is an opposite trait."
+              "reason": "All options are adjectives describing strong motivation, but 'ambitious' best fits the context of pushing too hard, while 'driven' and 'determined' are near-synonyms that could be plausible."
             },
             {
               "question_index": 6,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": true,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are verbs meaning to get or reach something, but 'achieve' is the most natural collocation with 'great things', while 'attain' is a near synonym that is less common in this context."
+              "reason": "All options are verbs meaning to reach a goal, but 'achieve' is the most natural with 'high marks', while 'attain' and 'accomplish' are near-synonyms that could be confused."
             },
             {
               "question_index": 7,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
-              "near_synonym_distractor": false,
+              "near_synonym_distractor": true,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The options are verbs, but 'adapt' is the only one that fits the contrast with giving up, as it means to adjust to new circumstances, while 'hesitate' is a near synonym but does not convey the same positive response."
+              "reason": "All options are verbs meaning to change something, but 'adapt' is the most appropriate for adjusting methods, while 'adjust' and 'modify' are near-synonyms that could be plausible."
             },
             {
               "question_index": 8,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
-              "near_synonym_distractor": false,
+              "near_synonym_distractor": true,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are verbs, but 'encourage' is the only one that fits the positive action of parents listening without judging, while 'discourage' is an antonym."
+              "reason": "All options are verbs meaning to give support or motivation, but 'encourage' is the most common in educational contexts, while 'motivate' and 'inspire' are near-synonyms that could be confused."
             },
             {
               "question_index": 9,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": true,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The options are verbs, but 'persuade' is the best fit because it implies gentle encouragement rather than force, while 'force' and 'command' are too strong and 'order' is a near synonym that is less appropriate."
+              "reason": "All options are verbs meaning to influence someone, but 'persuade' is the most precise for convincing a classmate to join, while 'convince' and 'urge' are near-synonyms that could be plausible."
             },
             {
               "question_index": 10,
               "unique_best": true,
               "answer_supported": true,
-              "same_part_of_speech": true,
-              "same_semantic_field": true,
-              "near_synonym_distractor": false,
-              "evidence_ok": true,
-              "options_rewritten": true,
-              "verdict": "ok",
-              "reason": "All options are verbs, but 'concentrate' is the only one that collocates with 'on the task', while 'reflect' is a near synonym but requires 'on' with a different meaning."
-            },
-            {
-              "question_index": 11,
-              "unique_best": true,
-              "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": true,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are adverbs, but 'gradually' is the only one that fits the context of progress through small daily choices, while 'slowly' is a near synonym but not an option; 'suddenly' and 'instantly' are opposites."
+              "reason": "All options are verbs related to attention, but 'concentrate' is the most natural with 'on one task', while 'focus' is a near-synonym that could be confused."
+            },
+            {
+              "question_index": 11,
+              "unique_best": true,
+              "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
+              "same_part_of_speech": true,
+              "same_semantic_field": true,
+              "near_synonym_distractor": true,
+              "evidence_ok": true,
+              "options_rewritten": true,
+              "verdict": "ok",
+              "reason": "All options are adverbs meaning slowly over time, but 'gradually' best fits the context of steady practice, while 'steadily' and 'progressively' are near-synonyms that could be plausible."
             },
             {
               "question_index": 12,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
-              "near_synonym_distractor": false,
+              "near_synonym_distractor": true,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The options are adverbs, but 'eventually' is the only one that fits the positive outcome of feeling calmer and stronger, while 'rarely', 'seldom', and 'never' are negative."
+              "reason": "All options are adverbs indicating a future outcome, but 'eventually' is the most appropriate for a gradual improvement, while 'ultimately' and 'finally' are near-synonyms that could be confused."
             },
             {
               "question_index": 13,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
-              "near_synonym_distractor": false,
+              "near_synonym_distractor": true,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are adverbs, but 'independently' is the only one that fits the context of solving problems alone, while 'together' is an antonym."
+              "reason": "All options are adverbs meaning without help, but 'independently' is the most natural in this context, while 'autonomously' is a near-synonym that could be plausible."
             },
             {
               "question_index": 14,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
-              "near_synonym_distractor": false,
+              "near_synonym_distractor": true,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The options are nouns, but 'confidence' is the only positive trait gained from solving problems alone, while 'arrogance' and 'stubbornness' are negative."
+              "reason": "All options are nouns meaning self-assurance, but 'confidence' is the most common and fits the context of building self-belief, while 'assurance' and 'self-belief' are near-synonyms that could be confused."
             },
             {
               "question_index": 15,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
-              "near_synonym_distractor": false,
+              "near_synonym_distractor": true,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are nouns, but 'opportunity' is the only one that fits the positive view of difficulty as a chance to learn, while 'obstacle' and 'burden' are negative."
+              "reason": "All options are nouns meaning a favorable circumstance, but 'opportunity' is the most appropriate for growth, while 'chance' and 'possibility' are near-synonyms that could be plausible."
             }
           ]
         }
@@ -459,198 +495,234 @@
         ]
       },
       "r12": {
-        "word_count": 219,
-        "average_sentence_words": 18.25,
-        "flesch_reading_ease": 60.06,
-        "long_sentence_count": 3,
-        "complex_structure_count": 11,
+        "word_count": 295,
+        "average_sentence_words": 21.07,
+        "flesch_reading_ease": 52.96,
+        "long_sentence_count": 5,
+        "complex_structure_count": 13,
+        "cloze_structure_categories": [
+          "non_finite",
+          "noun_clause",
+          "parenthetical"
+        ],
         "grammar_categories": null,
+        "missing_required_grammar_categories": null,
         "cohesion_types": null
       },
       "r13": {
         "judge": {
           "coherent": true,
-          "coherence_reason": "The passage is a coherent text about starting a business, with logically connected sentences.",
+          "coherence_reason": "The passage is a coherent text about starting a business, with logically connected sentences and a consistent theme.",
           "questions": [
             {
               "question_index": 1,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are verbs, and 'accept' is the best fit for 'risks honestly'."
+              "reason": "The answer 'accept' fits grammatically and semantically, and the other options are not near-synonyms that would confuse."
             },
             {
               "question_index": 2,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are verbs, and 'appreciate' fits 'whether they are truly ready'."
+              "reason": "The answer 'appreciate' is the best fit for understanding risks, and the distractors are not near-synonyms that would cause confusion."
             },
             {
               "question_index": 3,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are verbs, and 'balance' is the best fit for 'limited money and time well'."
+              "reason": "The answer 'balance' is the most appropriate for managing limited time and money, and the distractors are not near-synonyms."
             },
             {
               "question_index": 4,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are nouns, and 'benefit' fits the context of being advantageous."
+              "reason": "The answer 'benefit' is correct as a verb meaning to gain advantage, and the distractors are not near-synonyms in this context."
             },
             {
               "question_index": 5,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are nouns, and 'challenge' is the best fit for 'to (5) ______ with customers clearly'."
+              "reason": "The answer 'challenge' is the best fit for a positive view of problems, and the distractors are not near-synonyms that would confuse."
             },
             {
               "question_index": 6,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are verbs, and 'communicate' is the best fit for 'with customers clearly'."
+              "reason": "The answer 'communicate' is the most general and appropriate verb for interacting with partners, staff, and buyers."
             },
             {
               "question_index": 7,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are verbs, and 'contribute' fits 'a wider network brings fresh ideas and useful support'."
+              "reason": "The answer 'contribute' fits the context of offering skills to a shared goal, and the distractors are not near-synonyms."
             },
             {
               "question_index": 8,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are verbs, and 'determine' fits 'skills' in the context of learning from hard blows."
+              "reason": "The answer 'determine' is the best fit for finding out exactly what the market needs, and the distractors are not near-synonyms."
             },
             {
               "question_index": 9,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are verbs, and 'discover' fits 'bad habits before they become serious problems'."
+              "reason": "The answer 'discover' is the most appropriate for finding unseen chances through research, and the distractors are not near-synonyms."
             },
             {
               "question_index": 10,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are adjectives, and 'efficient' fits 'advice from experienced guides'."
+              "reason": "The answer 'efficient' is the best fit for being careful with resources, and the distractors are not near-synonyms."
             },
             {
               "question_index": 11,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are adjectives, and 'essential' fits 'far more than those who struggle silently'."
+              "reason": "The answer 'essential' is the best fit for describing the importance of planning, and the distractors are not near-synonyms."
             },
             {
               "question_index": 12,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are verbs, and 'improve' fits 'the strengths of each team member'."
+              "reason": "The answer 'improve' is the most straightforward verb for making products better, and the distractors are not near-synonyms."
             },
             {
               "question_index": 13,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are verbs, and 'manage' fits 'in their own way'."
+              "reason": "The answer 'manage' is the best fit for dealing with people, and the distractors are not near-synonyms."
             },
             {
               "question_index": 14,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are verbs, and 'prefer' fits 'work and rest'."
+              "reason": "The answer 'prefer' is the best fit for expressing a choice between small and large teams, and the distractors are not near-synonyms."
             },
             {
               "question_index": 15,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "All options are verbs, and 'reduce' fits 'work and rest' in the context of balance."
+              "reason": "The answer 'reduce' is the best fit for lessening pressure, and the distractors are not near-synonyms."
             }
           ]
         }
@@ -674,56 +746,56 @@
         "blanks": [
           {
             "question_index": 1,
-            "answer": "the person who called",
+            "answer": "having been repaired",
             "answer_occurrences": 0,
             "slot_form": "______",
             "valid": true
           },
           {
             "question_index": 2,
-            "answer": "the bridge which was built",
+            "answer": "The project about which we spoke",
             "answer_occurrences": 0,
             "slot_form": "______",
             "valid": true
           },
           {
             "question_index": 3,
-            "answer": "has already been repaired",
+            "answer": "what the committee proposed",
             "answer_occurrences": 0,
             "slot_form": "______",
             "valid": true
           },
           {
             "question_index": 4,
-            "answer": "written by a local teacher",
+            "answer": "If I were the coordinator",
             "answer_occurrences": 0,
             "slot_form": "______",
             "valid": true
           },
           {
             "question_index": 5,
-            "answer": "having checked the plan",
+            "answer": "Only then did we understand the risk",
             "answer_occurrences": 0,
             "slot_form": "______",
             "valid": true
           },
           {
             "question_index": 6,
-            "answer": "whether the plan would work",
+            "answer": "the bridge which was built",
             "answer_occurrences": 0,
             "slot_form": "______",
             "valid": true
           },
           {
             "question_index": 7,
-            "answer": "although the weather changed",
+            "answer": "Although the weather changed",
             "answer_occurrences": 0,
             "slot_form": "______",
             "valid": true
           },
           {
             "question_index": 8,
-            "answer": "if I were in charge",
+            "answer": "whether the plan would work",
             "answer_occurrences": 0,
             "slot_form": "______",
             "valid": true
@@ -745,145 +817,171 @@
         ]
       },
       "r12": {
-        "word_count": 215,
-        "average_sentence_words": 21.5,
+        "word_count": 259,
+        "average_sentence_words": 21.58,
         "flesch_reading_ease": null,
-        "long_sentence_count": 5,
-        "complex_structure_count": 9,
+        "long_sentence_count": 3,
+        "complex_structure_count": 12,
+        "cloze_structure_categories": null,
         "grammar_categories": [
+          "adverbial_clause",
+          "inversion",
+          "non_finite_perfect_passive",
+          "noun_clause",
+          "preposition_plus_which",
+          "relative_clause",
+          "subjunctive",
+          "what_noun_clause",
           "冠词",
-          "名词性从句",
-          "定语从句",
-          "时态语态",
-          "状语从句",
-          "非谓语"
+          "时态语态"
         ],
+        "missing_required_grammar_categories": [],
         "cohesion_types": null
       },
       "r13": {
         "judge": {
           "coherent": true,
-          "coherence_reason": "The passage is a coherent narrative about family life and generational relationships, with each sentence logically connected to the overall theme.",
+          "coherence_reason": "The passage is a coherent narrative about family generational conflict and communication, with each sentence logically connected to the theme.",
           "questions": [
             {
               "question_index": 1,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The correct answer 'the person who called' is the only option that correctly uses the active voice in the past tense to describe the person who performed the action of calling."
+              "reason": "The correct answer 'having been repaired' is the only option that correctly forms a perfect passive participle phrase modifying 'the old table', and the other options are grammatically incorrect or change the meaning."
             },
             {
               "question_index": 2,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The correct answer 'the bridge which was built' is the only option that correctly uses the passive voice in the past tense to describe the bridge that was constructed."
+              "reason": "The correct answer 'The project about which we spoke' is the only option that forms a grammatical and meaningful noun phrase as the subject of the sentence, while the others are fragments or incorrect."
             },
             {
               "question_index": 3,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The correct answer 'has already been repaired' is the only option that correctly uses the present perfect passive to indicate a recently completed action with present relevance."
+              "reason": "The correct answer 'what the committee proposed' is the only option that functions as a noun clause subject and fits the parallel structure with the previous clause, while the others are either ungrammatical or change the meaning."
             },
             {
               "question_index": 4,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The correct answer 'written by a local teacher' is the only option that logically fits the context of a notebook that is read aloud, as it implies the notebook contains written content."
+              "reason": "The correct answer 'If I were the coordinator' is the only option that correctly uses the subjunctive mood for a hypothetical condition, while the others are grammatically incorrect or inappropriate."
             },
             {
               "question_index": 5,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The correct answer 'having checked the plan' is the only option that logically precedes the decision to give the grandparents the larger room, as checking the plan would be a necessary step before making such a decision."
+              "reason": "The correct answer 'Only then did we understand the risk' is the only option that correctly uses inversion after 'Only then', and the other options either lack inversion or change the word 'risk' to a near-synonym that is not in the original passage."
             },
             {
               "question_index": 6,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The correct answer 'whether the plan would work' is the only option that expresses uncertainty, which is appropriate given the children's need to ask many questions."
+              "reason": "The correct answer 'the bridge which was built' is the only option that correctly forms a passive relative clause, while the others are grammatically incorrect or change the meaning."
             },
             {
               "question_index": 7,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The correct answer 'although the weather changed' is the only option that creates a contrast between the weather change and the family still walking to the park, which fits the context of small disagreements not breaking family ties."
+              "reason": "The correct answer 'Although the weather changed' is the only option that logically contrasts with the continuation of the talk, while the others imply cause, condition, or time that do not fit the context."
             },
             {
               "question_index": 8,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The correct answer 'if I were in charge' is the only option that correctly uses the subjunctive mood to express a hypothetical situation."
+              "reason": "The correct answer 'whether the plan would work' is the only option that correctly introduces an indirect question about uncertainty, while the others either change the meaning or are less appropriate."
             },
             {
               "question_index": 9,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The correct answer 'the team has already begun' is the only option that correctly uses the present perfect tense with the singular verb 'has' to agree with the collective noun 'team'."
+              "reason": "The correct answer 'the team has already begun' is the only option that correctly uses the present perfect tense and the verb 'begun' to match the infinitive 'to gather', while the others are either incorrect or change the meaning."
             },
             {
               "question_index": 10,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The correct answer 'the first train' is the only option that correctly uses the definite article 'the' with the ordinal number 'first' to refer to a specific train."
+              "reason": "The correct answer 'the first train' is the only option that correctly uses the definite article with an ordinal number, while the others are grammatically incorrect."
             }
           ]
         }
@@ -907,66 +1005,76 @@
         "blanks": []
       },
       "r12": {
-        "word_count": 264,
-        "average_sentence_words": 24.0,
-        "flesch_reading_ease": 58.78,
-        "long_sentence_count": 5,
-        "complex_structure_count": 11,
+        "word_count": 373,
+        "average_sentence_words": 23.31,
+        "flesch_reading_ease": 48.67,
+        "long_sentence_count": 7,
+        "complex_structure_count": 14,
+        "cloze_structure_categories": null,
         "grammar_categories": null,
+        "missing_required_grammar_categories": null,
         "cohesion_types": null
       },
       "r13": {
         "judge": {
           "coherent": true,
-          "coherence_reason": "The passage presents a unified discussion of technology's role in education, with a clear thesis and supporting examples.",
+          "coherence_reason": "The passage presents a unified argument about smartphone privacy, moving from problem to causes to solutions, with clear logical connections.",
           "questions": [
             {
               "question_index": 1,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The main idea is clearly supported by the passage's emphasis on teacher guidance and purposeful use of technology."
+              "reason": "The main idea is accurately captured by the answer, which synthesizes the passage's core argument, and the distractors are clearly incorrect."
             },
             {
               "question_index": 2,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The inference is directly supported by the statement that a machine cannot encourage a nervous learner or notice confusion."
+              "reason": "The inference is directly supported by the passage's statement that refusing conditions is hardly possible when services are essential, and the other options are unsupported or contradicted."
             },
             {
               "question_index": 3,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The writer's balanced support is evident from acknowledging both benefits and limitations of technology."
+              "reason": "The author's supportive attitude is evident from the call to treat privacy as a right, and the other options misrepresent the tone or content."
             },
             {
               "question_index": 4,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The context 'treat the computer as an aid rather than a master' clearly indicates 'aid' means a helpful support."
+              "reason": "The fourth paragraph clearly focuses on practical steps for schools and families, and the answer accurately reflects that function while the distractors misidentify the paragraph's role."
             }
           ]
         }
@@ -976,7 +1084,7 @@
           "main_idea",
           "inference",
           "purpose_or_attitude",
-          "vocabulary_in_context"
+          "paragraph_function"
         ],
         "failures": []
       },
@@ -995,66 +1103,76 @@
         "blanks": []
       },
       "r12": {
-        "word_count": 258,
-        "average_sentence_words": 25.8,
-        "flesch_reading_ease": 57.68,
-        "long_sentence_count": 9,
-        "complex_structure_count": 9,
+        "word_count": 397,
+        "average_sentence_words": 30.54,
+        "flesch_reading_ease": 51.6,
+        "long_sentence_count": 10,
+        "complex_structure_count": 13,
+        "cloze_structure_categories": null,
         "grammar_categories": null,
+        "missing_required_grammar_categories": null,
         "cohesion_types": null
       },
       "r13": {
         "judge": {
           "coherent": true,
-          "coherence_reason": "The passage is a coherent narrative about a community's efforts to preserve an ancient wall and the value of heritage.",
+          "coherence_reason": "The passage is a coherent essay about preserving historic districts, with a clear introduction, body, and conclusion.",
           "questions": [
             {
               "question_index": 1,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The main idea is clearly supported by the passage, and the other options are not supported or are contradicted."
+              "reason": "The main idea is accurately captured by the answer, which is supported by the passage and not directly copied."
             },
             {
               "question_index": 2,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The inference about the neighbour's personal connection is directly supported by the text, and the other options are not supported."
+              "reason": "The inference is directly supported by the text, and the answer is not a verbatim copy."
             },
             {
               "question_index": 3,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The purpose of the volunteer's explanation is explicitly stated in the passage, and the other options are not supported."
+              "reason": "The author's attitude is clearly expressed in the final paragraph, and the answer paraphrases it."
             },
             {
               "question_index": 4,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "The meaning of 'heritage' is clear from context, and the other options do not fit the context."
+              "reason": "The second paragraph indeed discusses the difficulties and competing interests, and the answer is not copied."
             }
           ]
         }
@@ -1064,7 +1182,7 @@
           "main_idea",
           "inference",
           "purpose_or_attitude",
-          "vocabulary_in_context"
+          "paragraph_function"
         ],
         "failures": []
       },
@@ -1119,12 +1237,14 @@
         ]
       },
       "r12": {
-        "word_count": 283,
-        "average_sentence_words": 20.21,
+        "word_count": 378,
+        "average_sentence_words": 19.89,
         "flesch_reading_ease": null,
         "long_sentence_count": 4,
-        "complex_structure_count": 13,
+        "complex_structure_count": 18,
+        "cloze_structure_categories": null,
         "grammar_categories": null,
+        "missing_required_grammar_categories": null,
         "cohesion_types": [
           "general_to_specific",
           "lexical_repetition",
@@ -1136,67 +1256,77 @@
       "r13": {
         "judge": {
           "coherent": true,
-          "coherence_reason": "The passage is a coherent narrative about a school's waste reduction project with clear chronological and logical progression.",
+          "coherence_reason": "The passage is a coherent discussion about accountability and transparency in technology, with each paragraph building on the previous one.",
           "questions": [
             {
               "question_index": 1,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "Only option A correctly uses 'After' to indicate the sequence of events, while the other options introduce incorrect logical relationships."
+              "reason": "Option A ('For this reason') correctly links the previous sentence about unclear responsibility to the assumption of machine fairness, and no other option fits the logical flow as well."
             },
             {
               "question_index": 2,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "Only option A correctly uses 'As a result' to show the consequence of the club's request, while the other options introduce incorrect logical relationships."
+              "reason": "Option D ('Consequently') correctly indicates that the need for transparency follows from the problem of unnoticed unfairness, and other options do not express this cause-effect relationship."
             },
             {
               "question_index": 3,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "Only option A correctly uses 'After' to indicate the sequence of events, while the other options introduce incorrect logical relationships."
+              "reason": "Option B ('In fact') appropriately emphasizes the statement about accountability as a concrete fact, and no other option fits the context as naturally."
             },
             {
               "question_index": 4,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "Only option A correctly uses 'provided that' to express the condition under which waste becomes useful, while the other options introduce incorrect logical relationships."
+              "reason": "Option F ('In short') correctly summarizes the preceding argument about shared duty and rules, and other options do not serve this summarizing function."
             },
             {
               "question_index": 5,
               "unique_best": true,
               "answer_supported": true,
+              "answer_grammatical": true,
+              "answer_semantic": true,
               "same_part_of_speech": true,
               "same_semantic_field": true,
               "near_synonym_distractor": false,
               "evidence_ok": true,
               "options_rewritten": true,
               "verdict": "ok",
-              "reason": "Only option A correctly uses 'On condition that' to express the condition for a cleaner future, while the other options introduce incorrect logical relationships."
+              "reason": "Option C ('In general') correctly introduces a general principle about the goal of controlling technology, and other options are either too specific or ungrammatical."
             }
           ]
         }

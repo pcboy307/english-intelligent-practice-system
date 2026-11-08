@@ -111,7 +111,14 @@
         "evidence_sentence": { "type": "string", "minLength": 1 },
         "reading_type": {
           "type": "string",
-          "enum": ["main_idea", "detail", "inference", "word_meaning", "attitude"]
+          "enum": [
+            "main_idea",
+            "detail",
+            "inference",
+            "vocabulary_in_context",
+            "purpose_or_attitude",
+            "paragraph_function"
+          ]
         },
         "grammar_category": { "type": "string", "minLength": 1 },
         "cohesion_type": { "type": "string", "minLength": 1 },

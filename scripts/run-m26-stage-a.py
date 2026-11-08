@@ -28,6 +28,7 @@ from backend.app.deepseek_generation import (  # noqa: E402
     RepairExhausted,
     TransportRetriesExhausted,
 )
+from backend.app.bank_transfer import delete_bank as delete_existing_bank  # noqa: E402
 from backend.app.generation import (  # noqa: E402
     validate_generated_passage,
 )
@@ -45,7 +46,13 @@ RAW_GENERATION = EVIDENCE / "raw-responses" / "generation"
 RAW_JUDGE = EVIDENCE / "raw-responses" / "judge"
 RUN_SECONDS = 90 * 60
 RUN_COST_CAP = 5.0
-MAX_PAPER_ATTEMPTS = 5
+MAX_PAPER_ATTEMPTS = 8
+FORCE_REGENERATE = "--force" in sys.argv[1:]
+FORCE_PASSAGE_IDS = {
+    item.split("=", 1)[1]
+    for item in sys.argv[1:]
+    if item.startswith("--force-passage=")
+}
 ALLOWED_TOPICS = {
     "科技",
     "环境",
@@ -91,7 +98,7 @@ def model_contracts() -> tuple[dict[str, Any], dict[str, Any]]:
     base = load_json(MODEL_PATH)
     generation = {
         **base,
-        "prompt_version": "m26-stage-a-v1",
+        "prompt_version": "m26-stage-a-v3.5",
         "budget_cap_cny": {**base["budget_cap_cny"], "pilot": RUN_COST_CAP},
     }
     judge = {
@@ -102,7 +109,7 @@ def model_contracts() -> tuple[dict[str, Any], dict[str, Any]]:
         "transport": base["transport"],
         "max_tokens": base["max_tokens"],
         "temperature": 0,
-        "prompt_version": "m26-stage-a-judge-v1",
+        "prompt_version": "m26-stage-a-judge-v4",
         "price_input_per_1m_cny": base["judge_price_input_per_1m_cny"],
         "price_output_per_1m_cny": base["judge_price_output_per_1m_cny"],
         "budget_cap_cny": {**base["budget_cap_cny"], "pilot": RUN_COST_CAP},
@@ -124,6 +131,21 @@ def judge_prompt(record: dict[str, Any]) -> str:
         }
         for index, question in enumerate(record["questions"], start=1)
     ]
+    rendered_passage = record["passage"]
+    for index, question in enumerate(record["questions"], start=1):
+        if record["type"] == "gap_fill":
+            option_index = ord(str(question["answer"]).upper()) - ord("A")
+            replacement = question["options"][option_index]
+            marker = f"({index}) ______"
+        elif record["type"] == "cloze":
+            replacement = str(question["answer"])
+            marker = f"({index}) ______"
+        elif record["type"] == "grammar_fill":
+            replacement = str(question["answer"])
+            marker = f"{chr(0x2460 + index - 1)} ______"
+        else:
+            continue
+        rendered_passage = rendered_passage.replace(marker, replacement, 1)
     return f"""
 You are an independent senior-high English item reviewer. Judge the fixed
 passage and questions. Do not rewrite them and do not assume the stated answer
@@ -138,6 +160,8 @@ Return JSON with exactly:
       "question_index": 1,
       "unique_best": true,
       "answer_supported": true,
+      "answer_grammatical": true,
+      "answer_semantic": true,
       "same_part_of_speech": true,
       "same_semantic_field": true,
       "near_synonym_distractor": false,
@@ -150,8 +174,18 @@ Return JSON with exactly:
 }}
 
 Rules:
+- The "Passage with stated answers inserted" below is authoritative for the
+  `answer_grammatical` and `answer_semantic` checks. If any inserted answer
+  creates an ungrammatical, redundant, awkward, or contradictory sentence,
+  set the corresponding field to false even if one option is clearly better
+  than the others.
 - `coherent` is false if the passage is a set of unrelated sentences.
 - `unique_best` is false if two or more options can fit equally well.
+- For cloze and grammar_fill, mentally insert the stated answer into its blank.
+  `answer_grammatical` is false if the resulting sentence is ungrammatical.
+  `answer_semantic` is false if the answer does not make sense in context.
+- For gap_fill, first map the answer letter to its option text, then apply the
+  same grammatical and semantic checks.
 - For cloze, `same_part_of_speech` and `same_semantic_field` judge the four
   options; `near_synonym_distractor` is true when a distractor has essentially
   the same core meaning as the answer and is easy for a student to confuse with
@@ -166,7 +200,10 @@ Rules:
 
 Type: {record["type"]}
 Topic: {record["topic"]}
-Passage:
+Passage with stated answers inserted:
+{rendered_passage}
+
+Original passage with blanks:
 {record["passage"]}
 
 Questions:
@@ -189,6 +226,8 @@ def validate_judge_shape(data: dict[str, Any], expected_count: int) -> dict[str,
     required_booleans = (
         "unique_best",
         "answer_supported",
+        "answer_grammatical",
+        "answer_semantic",
         "same_part_of_speech",
         "same_semantic_field",
         "near_synonym_distractor",
@@ -264,6 +303,10 @@ def judge_failures(
             failures.append(f"R9_NO_CLEAR_BEST:Q{index}")
         if not item["answer_supported"]:
             failures.append(f"ANSWER_UNSUPPORTED:Q{index}")
+        if not item["answer_grammatical"]:
+            failures.append(f"ANSWER_GRAMMATICAL_FAILURE:Q{index}")
+        if not item["answer_semantic"]:
+            failures.append(f"ANSWER_SEMANTIC_FAILURE:Q{index}")
         if item["verdict"] != "ok":
             failures.append(f"JUDGE_REJECTED:Q{index}")
         if record["type"] == "cloze":
@@ -280,7 +323,7 @@ def judge_failures(
                 failures.append(f"R14_EVIDENCE_REJECTED:Q{index}")
             if not item["options_rewritten"]:
                 failures.append(f"R14_OPTION_NOT_REWRITTEN:Q{index}")
-    if record["type"] == "cloze" and near_synonym_count < 2:
+    if record["type"] == "cloze" and near_synonym_count < 3:
         failures.append("R13_NEAR_SYNONYM_DISTRACTORS_TOO_FEW")
     return failures
 
@@ -334,7 +377,13 @@ def gate_summary(
             "flesch_reading_ease": report.metrics.get("flesch_reading_ease"),
             "long_sentence_count": report.metrics.get("long_sentence_count"),
             "complex_structure_count": report.metrics.get("complex_structure_count"),
+            "cloze_structure_categories": report.metrics.get(
+                "cloze_structure_categories"
+            ),
             "grammar_categories": report.metrics.get("grammar_categories"),
+            "missing_required_grammar_categories": report.metrics.get(
+                "missing_required_grammar_categories"
+            ),
             "cohesion_types": report.metrics.get("cohesion_types"),
         },
         "r13": {
@@ -405,11 +454,37 @@ def persist_bank(
     with psycopg.connect(database_url(), row_factory=dict_row) as connection:
         with connection.transaction():
             existing = connection.execute(
-                "SELECT id::text AS id FROM question_banks WHERE name=%s",
+                "SELECT id::text AS id, status FROM question_banks WHERE name=%s",
                 (bank_name,),
             ).fetchone()
             if existing:
-                raise RuntimeError(f"BANK_ALREADY_EXISTS:{existing['id']}")
+                if existing["status"] == "active":
+                    raise RuntimeError(
+                        f"ACTIVE_STAGE_A_BANK_CANNOT_BE_REPLACED:{existing['id']}"
+                    )
+                history = connection.execute(
+                    """
+                    SELECT
+                        (SELECT count(*) FROM practice_sessions WHERE bank_id=%s) AS sessions,
+                        (SELECT count(*) FROM practice_reports WHERE bank_id=%s) AS reports,
+                        (SELECT count(*) FROM question_attempts WHERE bank_id=%s) AS attempts,
+                        (SELECT count(*) FROM mistake_items WHERE bank_id=%s) AS mistakes,
+                        (SELECT count(*) FROM error_tags WHERE bank_id=%s) AS error_tags
+                    """,
+                    (
+                        existing["id"],
+                        existing["id"],
+                        existing["id"],
+                        existing["id"],
+                        existing["id"],
+                    ),
+                ).fetchone()
+                if any(int(history[key]) for key in history):
+                    raise RuntimeError(
+                        "STAGE_A_BANK_HAS_USER_HISTORY:"
+                        + json.dumps(history, ensure_ascii=False)
+                    )
+                delete_existing_bank(connection, existing["id"])
             repository = M2Repository(connection)
             bank = repository.create_bank(
                 name=bank_name,
@@ -418,7 +493,7 @@ def persist_bank(
             )
             job = repository.create_generation_job(
                 bank["id"],
-                target_passages=67,
+            target_passages=72,
                 batch_size=1,
                 approved_by="user-m26-stage-a",
                 reason="M2.6 Stage A six-passage quality pilot",
@@ -434,7 +509,7 @@ def persist_bank(
                 )
             repository.set_job_status(
                 job["id"],
-                "running",
+                "completed",
                 checkpoint={
                     "phase": "stage_a_complete",
                     "passages": len(results),
@@ -443,6 +518,22 @@ def persist_bank(
                         for item in results
                     ),
                 },
+            )
+            connection.execute(
+                "UPDATE passages SET status='published' WHERE bank_id=%s",
+                (bank["id"],),
+            )
+            connection.execute(
+                "UPDATE questions SET status='published' WHERE bank_id=%s",
+                (bank["id"],),
+            )
+            connection.execute(
+                """
+                UPDATE question_banks
+                SET status='archived', finished_at=now()
+                WHERE id=%s
+                """,
+                (bank["id"],),
             )
             return {
                 "bank_id": bank["id"],
@@ -475,7 +566,11 @@ def main() -> None:
     old_generated_path = EVIDENCE / "stage-a-generated.json"
     old_gates_path = EVIDENCE / "stage-a-gates.json"
     old_cost_path = EVIDENCE / "stage-a-cost-report.json"
-    if old_generated_path.exists() and old_gates_path.exists():
+    if (
+        not FORCE_REGENERATE
+        and old_generated_path.exists()
+        and old_gates_path.exists()
+    ):
         existing_record_by_id = {
             item["passage_group_id"]: item
             for item in load_json(old_generated_path)
@@ -500,6 +595,7 @@ def main() -> None:
             existing_record is not None
             and existing_gate is not None
             and existing_gate.get("accepted") is True
+            and passage_id not in FORCE_PASSAGE_IDS
         ):
             results.append(
                 {
@@ -529,6 +625,7 @@ def main() -> None:
             spec = {**spec, "validation_profile": "m26"}
             accepted_result = None
             accepted_gate = None
+            attempt_feedback: list[str] = []
             for paper_attempt in range(1, MAX_PAPER_ATTEMPTS + 1):
                 if time.perf_counter() - started > RUN_SECONDS:
                     raise RuntimeError("RUN_TIME_LIMIT_REACHED")
@@ -538,7 +635,10 @@ def main() -> None:
                     record = generate_pilot_passage(
                         client=generator,
                         ledger=generation_ledger,
-                        schedule_passage=spec,
+                        schedule_passage={
+                            **spec,
+                            "generation_feedback": attempt_feedback,
+                        },
                         bank_id="00000000-0000-4000-8000-000000000000",
                         batch_id="M26-STAGE-A",
                         max_repair_retries=1,
@@ -570,6 +670,19 @@ def main() -> None:
                         accepted_result = result
                         accepted_gate = gate
                         break
+                    attempt_feedback = [
+                        failure["message"]
+                        + (
+                            " details="
+                            + json.dumps(
+                                failure.get("details") or {},
+                                ensure_ascii=False,
+                            )
+                            if failure.get("details")
+                            else ""
+                        )
+                        for failure in gate["machine_failures"]
+                    ] + gate["judge_failures"]
                     failures.append(
                         {
                             "passage_group_id": spec["passage_group_id"],
@@ -589,6 +702,7 @@ def main() -> None:
                     TransportRetriesExhausted,
                     ValueError,
                 ) as error:
+                    attempt_feedback = [str(error)]
                     failures.append(
                         {
                             "passage_group_id": spec["passage_group_id"],
@@ -608,6 +722,16 @@ def main() -> None:
             gates.append(accepted_gate)
 
         unique_topics = {item["record"]["topic"] for item in results}
+        schedule_order = {
+            item["passage_group_id"]: index
+            for index, item in enumerate(schedule["passages"])
+        }
+        paired = sorted(
+            zip(results, gates, strict=True),
+            key=lambda pair: schedule_order[pair[0]["record"]["passage_group_id"]],
+        )
+        results = [result for result, _ in paired]
+        gates = [gate for _, gate in paired]
         topic_counts = {
             topic: sum(item["record"]["topic"] == topic for item in results)
             for topic in unique_topics

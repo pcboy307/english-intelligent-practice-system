@@ -7,13 +7,13 @@
       "prompt_tokens": 31,
       "completion_tokens": 1,
       "total_tokens": 32,
-      "elapsed_seconds": 0.9811195000074804,
+      "elapsed_seconds": 0.6061445999657735,
       "finish_reason": "length",
-      "request_id": "4e8d87c1-28df-4df5-b938-4061e70b3123",
+      "request_id": "d6cae9bc-f7cb-47d4-aa6b-cee44b61eb47",
       "error": null,
       "model_id": "deepseek-flash",
       "transport": "json_object",
-      "prompt_version": "m26-stage-a-v1",
+      "prompt_version": "m26-stage-a-v3.5",
       "cost_cny": 7.000000000000001e-05
     }
   ],

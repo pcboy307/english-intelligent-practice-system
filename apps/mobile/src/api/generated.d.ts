@@ -1250,7 +1250,7 @@ export interface components {
             difficulty?: number;
             evidence_sentence?: string;
             /** @enum {string} */
-            reading_type?: "main_idea" | "detail" | "inference" | "word_meaning" | "attitude";
+            reading_type?: "main_idea" | "detail" | "inference" | "vocabulary_in_context" | "purpose_or_attitude" | "paragraph_function";
             grammar_category?: string;
             cohesion_type?: string;
             context_clue?: string;
@@ -1318,7 +1318,7 @@ export interface components {
                     difficulty?: number;
                     evidence_sentence?: string;
                     /** @enum {string} */
-                    reading_type?: "main_idea" | "detail" | "inference" | "word_meaning" | "attitude";
+                    reading_type?: "main_idea" | "detail" | "inference" | "vocabulary_in_context" | "purpose_or_attitude" | "paragraph_function";
                     grammar_category?: string;
                     cohesion_type?: string;
                     context_clue?: string;

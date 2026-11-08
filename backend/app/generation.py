@@ -22,6 +22,11 @@ from .question_validation import (
 
 
 ROOT = Path(__file__).resolve().parents[2]
+M26_GENERATION_PARAMS_PATH = ROOT / "contracts" / "m26-generation-params-v2.json"
+M26_GENERATION_PARAMS = json.loads(
+    M26_GENERATION_PARAMS_PATH.read_text(encoding="utf-8")
+)
+M26_RULES = M26_GENERATION_PARAMS["rules"]
 
 
 class GateCategory(StrEnum):
@@ -175,30 +180,18 @@ TYPE_RULES = {
 }
 
 M26_TYPE_RULES = {
-    "cloze": {
-        "questions": 15,
-        "min_words": 200,
-        "max_words": 290,
-        "options": 4,
-    },
-    "grammar_fill": {
-        "questions": 10,
-        "min_words": 1,
-        "max_words": 220,
-        "options": 4,
-    },
-    "reading": {
-        "questions": 4,
-        "min_words": 250,
-        "max_words": 380,
-        "options": 4,
-    },
-    "gap_fill": {
-        "questions": 5,
-        "min_words": 220,
-        "max_words": 350,
-        "options": 7,
-    },
+    type_: {
+        "questions": questions,
+        "min_words": int(M26_RULES[type_]["word_count"]["minimum"]),
+        "max_words": int(M26_RULES[type_]["word_count"]["maximum"]),
+        "options": options,
+    }
+    for type_, questions, options in (
+        ("cloze", 15, 4),
+        ("grammar_fill", 10, 4),
+        ("reading", 4, 4),
+        ("gap_fill", 5, 7),
+    )
 }
 M26_READING_TYPES = {
     "main_idea",
@@ -206,12 +199,14 @@ M26_READING_TYPES = {
     "inference",
     "vocabulary_in_context",
     "purpose_or_attitude",
+    "paragraph_function",
 }
 M26_HIGHER_ORDER_READING_TYPES = {
     "main_idea",
     "inference",
     "vocabulary_in_context",
     "purpose_or_attitude",
+    "paragraph_function",
 }
 M26_COHESION_TYPES = {
     "pronoun_reference",
@@ -327,6 +322,39 @@ def _complex_structure_count(text: str) -> int:
         for sentence in re.split(r"(?<=[.!?])\s+", text)
         if sentence.strip()
     )
+
+
+def _cloze_structure_categories(text: str) -> list[str]:
+    categories: set[str] = set()
+    sentence_patterns = {
+        "non_finite": re.compile(
+            r"\b(?:having\s+(?:been\s+)?[a-z]+|to\s+[a-z]+|"
+            r"[a-z]{4,}ing|[a-z]{4,}ed)\b",
+            re.IGNORECASE,
+        ),
+        "noun_clause": re.compile(
+            r"\b(?:that|whether|what|how|why|whoever|whatever)\b"
+            r"\s+[a-z]",
+            re.IGNORECASE,
+        ),
+        "parenthetical": re.compile(
+            r"\([^)]{8,}\)|—[^—]{8,}—|,\s+[^,.;]{12,80},\s",
+            re.IGNORECASE,
+        ),
+        "inversion_or_ellipsis": re.compile(
+            r"(?:^|[.!?]\s+)(?:only|never|rarely|seldom|hardly|scarcely|"
+            r"no sooner|not until)\b|\bnot only\b.*\bbut also\b|"
+            r"\b(?:and so|neither|nor)\b",
+            re.IGNORECASE,
+        ),
+    }
+    for sentence in re.split(r"(?<=[.!?])\s+", text):
+        if not sentence.strip():
+            continue
+        for category, pattern in sentence_patterns.items():
+            if pattern.search(sentence):
+                categories.add(category)
+    return sorted(categories)
 
 
 def _word_windows(text: str, width: int) -> set[tuple[str, ...]]:
@@ -451,12 +479,18 @@ def _fill_integrity_failures(
         for index, question in enumerate(questions, start=1)
         if isinstance(question, dict)
     }
+    questions_by_index = {
+        index: question
+        for index, question in enumerate(questions, start=1)
+        if isinstance(question, dict)
+    }
     failures: list[GateFailure] = []
     rows: list[dict[str, Any]] = []
     expected_count = TYPE_RULES[passage_type]["questions"]
 
     for index in range(1, expected_count + 1):
         marker = _blank_marker(passage_type, index)
+        question = questions_by_index.get(index, {})
         answer = (
             answers_by_index.get(index, "")
             if passage_type != "gap_fill"
@@ -495,7 +529,45 @@ def _fill_integrity_failures(
             rows.append(row)
             continue
 
+        prefix = passage[: markers[0].start()].rstrip()
+        if (
+            answer
+            and answer[0].isalpha()
+            and answer[0].islower()
+            and (not prefix or prefix[-1] in ".!?")
+        ):
+            failures.append(
+                GateFailure(
+                    GateCategory.PLACEHOLDER_INTEGRITY,
+                    "ANSWER_SENTENCE_CAPITALIZATION: answer begins a sentence with a lowercase letter.",
+                    index,
+                    {"answer": answer},
+                )
+            )
+
         suffix = passage[markers[0].end() :]
+        grammar_category = (
+            str(question.get("grammar_category", ""))
+            if isinstance(question, dict)
+            else ""
+        )
+        if (
+            passage_type == "grammar_fill"
+            and grammar_category
+            in {"relative_clause", "preposition_plus_which"}
+            and re.match(rf"\s*{re.escape(FILL_PLACEHOLDER)}\s*,", suffix)
+        ):
+            failures.append(
+                GateFailure(
+                    GateCategory.PLACEHOLDER_INTEGRITY,
+                    "RELATIVE_CLAUSE_COMMA_SEPARATES_SUBJECT: relative-clause answer is followed by a comma before its predicate.",
+                    index,
+                    {
+                        "grammar_category": grammar_category,
+                        "sample": suffix[:30],
+                    },
+                )
+            )
         leading_word_fragment = re.match(r"\s*[A-Za-z]+_+", suffix)
         trailing_word_fragment = re.match(r"\s*_+[A-Za-z]+", suffix)
         if leading_word_fragment or trailing_word_fragment:
@@ -569,6 +641,61 @@ def _fill_integrity_failures(
             )
 
     return failures, rows
+
+
+def _placeholder_count_failures(
+    passage_type: str,
+    passage: str,
+) -> list[GateFailure]:
+    if passage_type not in PLACEHOLDER_TYPES:
+        if FILL_PLACEHOLDER in passage:
+            return [
+                GateFailure(
+                    GateCategory.PLACEHOLDER_INTEGRITY,
+                    "UNEXPECTED_PLACEHOLDER: non-fill passage contains a blank placeholder.",
+                )
+            ]
+        return []
+
+    expected_count = TYPE_RULES[passage_type]["questions"]
+    failures: list[GateFailure] = []
+    placeholder_count = len(re.findall(re.escape(FILL_PLACEHOLDER), passage))
+    if placeholder_count != expected_count:
+        failures.append(
+            GateFailure(
+                GateCategory.PLACEHOLDER_INTEGRITY,
+                "PLACEHOLDER_COUNT_INVALID: placeholder count differs from question count.",
+                details={
+                    "actual": placeholder_count,
+                    "expected": expected_count,
+                },
+            )
+        )
+
+    if passage_type in {"cloze", "gap_fill"}:
+        labels = {
+            int(value)
+            for value in re.findall(r"\((\d+)\)", passage)
+        }
+        expected_labels = set(range(1, expected_count + 1))
+        unexpected_labels = sorted(labels - expected_labels)
+    else:
+        circled = "①②③④⑤⑥⑦⑧⑨⑩"
+        expected_labels = set(circled[:expected_count])
+        labels = {
+            value
+            for value in re.findall(r"[①②③④⑤⑥⑦⑧⑨⑩⑪⑫]", passage)
+        }
+        unexpected_labels = sorted(labels - expected_labels)
+    if unexpected_labels:
+        failures.append(
+            GateFailure(
+                GateCategory.PLACEHOLDER_INTEGRITY,
+                "UNEXPECTED_PLACEHOLDER_MARKER: passage contains an extra blank number.",
+                details={"unexpected_markers": unexpected_labels},
+            )
+        )
+    return failures
 
 
 def validate_fill_placeholder_shape(
@@ -676,54 +803,87 @@ def _m26_rule_failures(
         }
     metrics: dict[str, Any] = {
         "average_sentence_words": round(_average_sentence_words(passage), 2),
-        "long_sentence_count": _long_sentence_count(passage),
+        "long_sentence_count": _long_sentence_count(
+            passage,
+            minimum_words=int(
+                M26_RULES["cloze"]["long_sentence_minimum_words"]
+            ),
+        ),
         "complex_structure_count": _complex_structure_count(passage),
     }
     if passage_type in {"cloze", "reading"}:
         metrics["flesch_reading_ease"] = flesch_reading_ease(passage)
 
     if passage_type == "cloze":
-        if metrics["average_sentence_words"] < 15:
+        rule = M26_RULES["cloze"]
+        metrics["cloze_structure_categories"] = _cloze_structure_categories(
+            passage
+        )
+        if (
+            metrics["average_sentence_words"]
+            < float(rule["average_sentence_words_minimum"])
+        ):
             failures.append(
                 GateFailure(
                     GateCategory.M26_FORM,
-                    "R12_CLOZE_SENTENCE_LENGTH: average sentence length is below 15.",
+                    "R12_CLOZE_SENTENCE_LENGTH: average sentence length is below the configured minimum.",
                     details={"actual": metrics["average_sentence_words"]},
                 )
             )
-        if not 52 <= metrics["flesch_reading_ease"] <= 70:
+        flesch_range = rule["flesch_reading_ease"]
+        if not (
+            float(flesch_range["minimum"])
+            <= metrics["flesch_reading_ease"]
+            <= float(flesch_range["maximum"])
+        ):
             failures.append(
                 GateFailure(
                     GateCategory.M26_FORM,
-                    "R12_CLOZE_FLESCH: Flesch score is outside 52-70.",
+                    "R12_CLOZE_FLESCH: Flesch score is outside the configured range.",
                     details={"actual": metrics["flesch_reading_ease"]},
                 )
             )
-        if metrics["long_sentence_count"] < 3:
+        if (
+            metrics["long_sentence_count"]
+            < int(rule["long_sentence_minimum_count"])
+        ):
             failures.append(
                 GateFailure(
                     GateCategory.M26_FORM,
-                    "R12_CLOZE_LONG_SENTENCES: fewer than three sentences have at least 22 words.",
+                    "R12_CLOZE_LONG_SENTENCES: too few sentences meet the configured long-sentence threshold.",
                     details={"actual": metrics["long_sentence_count"]},
                 )
             )
-        if metrics["complex_structure_count"] < 2:
+        if (
+            len(metrics["cloze_structure_categories"])
+            < int(rule["structure_categories_minimum_count"])
+        ):
             failures.append(
                 GateFailure(
                     GateCategory.M26_FORM,
-                    "R12_CLOZE_COMPLEX_STRUCTURES: fewer than two complex structures.",
-                    details={"actual": metrics["complex_structure_count"]},
+                    "R12_CLOZE_STRUCTURE_CATEGORIES: too few configured structure categories.",
+                    details={
+                        "actual": metrics["cloze_structure_categories"],
+                        "required_minimum": int(
+                            rule["structure_categories_minimum_count"]
+                        ),
+                    },
                 )
             )
 
     if passage_type == "grammar_fill":
+        rule = M26_RULES["grammar_fill"]
         categories = {
             str(question.get("grammar_category"))
             for question in questions
             if isinstance(question, dict) and question.get("grammar_category")
         }
         metrics["grammar_categories"] = sorted(categories)
-        if len(categories) < 5:
+        missing_categories = sorted(
+            set(rule["required_categories"]) - categories
+        )
+        metrics["missing_required_grammar_categories"] = missing_categories
+        if len(categories) < int(rule["required_category_count"]):
             failures.append(
                 GateFailure(
                     GateCategory.M26_FORM,
@@ -731,21 +891,38 @@ def _m26_rule_failures(
                     details={"actual": sorted(categories)},
                 )
             )
+        if missing_categories:
+            failures.append(
+                GateFailure(
+                    GateCategory.M26_FORM,
+                    "R12_GRAMMAR_REQUIRED_CATEGORIES: mandatory grammar categories are missing.",
+                    details={"missing": missing_categories},
+                )
+            )
 
     if passage_type == "reading":
-        if metrics["average_sentence_words"] < 16:
+        rule = M26_RULES["reading"]
+        if (
+            metrics["average_sentence_words"]
+            < float(rule["average_sentence_words_minimum"])
+        ):
             failures.append(
                 GateFailure(
                     GateCategory.M26_READING,
-                    "R12_READING_SENTENCE_LENGTH: average sentence length is below 16.",
+                    "R12_READING_SENTENCE_LENGTH: average sentence length is below the configured minimum.",
                     details={"actual": metrics["average_sentence_words"]},
                 )
             )
-        if not 48 <= metrics["flesch_reading_ease"] <= 68:
+        flesch_range = rule["flesch_reading_ease"]
+        if not (
+            float(flesch_range["minimum"])
+            <= metrics["flesch_reading_ease"]
+            <= float(flesch_range["maximum"])
+        ):
             failures.append(
                 GateFailure(
                     GateCategory.M26_READING,
-                    "R12_READING_FLESCH: Flesch score is outside 48-68.",
+                    "R12_READING_FLESCH: Flesch score is outside the configured range.",
                     details={"actual": metrics["flesch_reading_ease"]},
                 )
             )
@@ -774,6 +951,18 @@ def _m26_rule_failures(
                     GateCategory.M26_READING,
                     "R14_READING_TYPE_RATIO: higher-order reading types are below 60 percent.",
                     details={"higher_order": higher_order, "total": len(reading_types)},
+                )
+            )
+        paragraph_function_count = reading_types.count("paragraph_function")
+        metrics["paragraph_function_count"] = paragraph_function_count
+        if paragraph_function_count < int(
+            rule["paragraph_function_minimum_questions"]
+        ):
+            failures.append(
+                GateFailure(
+                    GateCategory.M26_READING,
+                    "R14_PARAGRAPH_FUNCTION_MISSING: reading set lacks a paragraph-function question.",
+                    details={"actual": paragraph_function_count},
                 )
             )
         passage_windows = _word_windows(passage, 5)
@@ -955,6 +1144,7 @@ def validate_generated_passage(
         questions,
     )
     failures.extend(placeholder_failures)
+    failures.extend(_placeholder_count_failures(passage_type, passage))
     failures.extend(
         _gap_option_leak_failures(passage_type, passage, questions)
     )

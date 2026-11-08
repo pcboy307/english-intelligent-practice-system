@@ -1,38 +1,26 @@
 {
-  "generated_at": "2026-11-08T07:47:59.400148+00:00",
+  "generated_at": "2026-11-08T15:45:18.123749+00:00",
   "ping": {
     "model_id": "deepseek-flash",
     "transport": "json_object",
-    "prompt_version": "m26-stage-a-v1",
-    "request_id": "4e8d87c1-28df-4df5-b938-4061e70b3123",
+    "prompt_version": "m26-stage-a-v3.5",
+    "request_id": "d6cae9bc-f7cb-47d4-aa6b-cee44b61eb47",
     "finish_reason": "length",
     "prompt_tokens": 31,
     "completion_tokens": 1,
     "cost_cny": 7.000000000000001e-05,
-    "elapsed_seconds": 0.9811195000074804
+    "elapsed_seconds": 0.6061445999657735
   },
   "papers": [
     {
       "passage_group_id": "M26-A-CLOZE-01",
       "generation": {
-        "requests": 21,
-        "prompt_tokens": 19459,
-        "completion_tokens": 2698,
-        "cost_cny": 0.060502,
-        "elapsed_seconds": 34.742,
+        "requests": 9,
+        "prompt_tokens": 11689,
+        "completion_tokens": 4271,
+        "cost_cny": 0.057546,
+        "elapsed_seconds": 30.717,
         "finish_reasons": [
-          "stop",
-          "stop",
-          "stop",
-          "stop",
-          "stop",
-          "stop",
-          "stop",
-          "stop",
-          "stop",
-          "stop",
-          "stop",
-          "stop",
           "stop",
           "stop",
           "stop",
@@ -46,24 +34,24 @@
       },
       "judge": {
         "requests": 1,
-        "prompt_tokens": 1989,
-        "completion_tokens": 2004,
-        "cost_cny": 0.072009,
-        "elapsed_seconds": 15.821,
+        "prompt_tokens": 2197,
+        "completion_tokens": 2290,
+        "cost_cny": 0.081603,
+        "elapsed_seconds": 24.642,
         "finish_reasons": [
           "stop"
         ]
       },
-      "total_cny": 0.132511
+      "total_cny": 0.139149
     },
     {
       "passage_group_id": "M26-A-CLOZE-02",
       "generation": {
         "requests": 6,
-        "prompt_tokens": 8398,
-        "completion_tokens": 3444,
-        "cost_cny": 0.044348,
-        "elapsed_seconds": 30.417,
+        "prompt_tokens": 9295,
+        "completion_tokens": 2590,
+        "cost_cny": 0.03931,
+        "elapsed_seconds": 20.462,
         "finish_reasons": [
           "stop",
           "stop",
@@ -75,25 +63,27 @@
       },
       "judge": {
         "requests": 1,
-        "prompt_tokens": 1975,
-        "completion_tokens": 1682,
-        "cost_cny": 0.063189,
-        "elapsed_seconds": 11.515,
+        "prompt_tokens": 2163,
+        "completion_tokens": 2063,
+        "cost_cny": 0.075168,
+        "elapsed_seconds": 19.618,
         "finish_reasons": [
           "stop"
         ]
       },
-      "total_cny": 0.107537
+      "total_cny": 0.114478
     },
     {
       "passage_group_id": "M26-A-GRAMMAR-01",
       "generation": {
-        "requests": 12,
-        "prompt_tokens": 9684,
-        "completion_tokens": 1509,
-        "cost_cny": 0.03144,
-        "elapsed_seconds": 20.92,
+        "requests": 14,
+        "prompt_tokens": 11905,
+        "completion_tokens": 2069,
+        "cost_cny": 0.040362,
+        "elapsed_seconds": 21.852,
         "finish_reasons": [
+          "stop",
+          "stop",
           "stop",
           "stop",
           "stop",
@@ -110,24 +100,24 @@
       },
       "judge": {
         "requests": 1,
-        "prompt_tokens": 1691,
-        "completion_tokens": 1284,
-        "cost_cny": 0.049887,
-        "elapsed_seconds": 14.005,
+        "prompt_tokens": 2295,
+        "completion_tokens": 1514,
+        "cost_cny": 0.061533,
+        "elapsed_seconds": 17.417,
         "finish_reasons": [
           "stop"
         ]
       },
-      "total_cny": 0.081327
+      "total_cny": 0.101895
     },
     {
       "passage_group_id": "M26-A-READING-01",
       "generation": {
         "requests": 5,
-        "prompt_tokens": 9945,
-        "completion_tokens": 1711,
-        "cost_cny": 0.033578,
-        "elapsed_seconds": 19.009,
+        "prompt_tokens": 7636,
+        "completion_tokens": 2040,
+        "cost_cny": 0.031592,
+        "elapsed_seconds": 17.221,
         "finish_reasons": [
           "stop",
           "stop",
@@ -138,25 +128,28 @@
       },
       "judge": {
         "requests": 1,
-        "prompt_tokens": 1258,
-        "completion_tokens": 482,
-        "cost_cny": 0.024336,
-        "elapsed_seconds": 4.047,
+        "prompt_tokens": 1533,
+        "completion_tokens": 594,
+        "cost_cny": 0.029835,
+        "elapsed_seconds": 7.754,
         "finish_reasons": [
           "stop"
         ]
       },
-      "total_cny": 0.057914
+      "total_cny": 0.061427
     },
     {
       "passage_group_id": "M26-A-READING-02",
       "generation": {
-        "requests": 3,
-        "prompt_tokens": 5862,
-        "completion_tokens": 1332,
-        "cost_cny": 0.02238,
-        "elapsed_seconds": 11.847,
+        "requests": 6,
+        "prompt_tokens": 8286,
+        "completion_tokens": 2576,
+        "cost_cny": 0.03718,
+        "elapsed_seconds": 20.542,
         "finish_reasons": [
+          "stop",
+          "stop",
+          "stop",
           "stop",
           "stop",
           "stop"
@@ -164,25 +157,28 @@
       },
       "judge": {
         "requests": 1,
-        "prompt_tokens": 1301,
-        "completion_tokens": 491,
-        "cost_cny": 0.024966,
-        "elapsed_seconds": 4.737,
+        "prompt_tokens": 1587,
+        "completion_tokens": 550,
+        "cost_cny": 0.029133,
+        "elapsed_seconds": 6.536,
         "finish_reasons": [
           "stop"
         ]
       },
-      "total_cny": 0.047346
+      "total_cny": 0.066313
     },
     {
       "passage_group_id": "M26-A-GAP-01",
       "generation": {
-        "requests": 4,
-        "prompt_tokens": 11016,
-        "completion_tokens": 2724,
-        "cost_cny": 0.043824,
-        "elapsed_seconds": 18.762,
+        "requests": 7,
+        "prompt_tokens": 14273,
+        "completion_tokens": 4073,
+        "cost_cny": 0.06113,
+        "elapsed_seconds": 24.372,
         "finish_reasons": [
+          "stop",
+          "stop",
+          "stop",
           "stop",
           "stop",
           "stop",
@@ -191,23 +187,23 @@
       },
       "judge": {
         "requests": 1,
-        "prompt_tokens": 1892,
-        "completion_tokens": 622,
-        "cost_cny": 0.033822,
-        "elapsed_seconds": 5.645,
+        "prompt_tokens": 2205,
+        "completion_tokens": 731,
+        "cost_cny": 0.039582,
+        "elapsed_seconds": 9.173,
         "finish_reasons": [
           "stop"
         ]
       },
-      "total_cny": 0.077646
+      "total_cny": 0.100712
     }
   ],
   "totals": {
     "passages": 6,
     "questions": 53,
-    "prompt_tokens": 74470,
-    "completion_tokens": 19983,
-    "cost_cny": 0.504281
+    "prompt_tokens": 75064,
+    "completion_tokens": 25361,
+    "cost_cny": 0.583974
   },
   "generation_requests": [
     {
@@ -217,19 +213,19 @@
       "prompt_tokens": 31,
       "completion_tokens": 1,
       "total_tokens": 32,
-      "elapsed_seconds": 0.9811195000074804,
+      "elapsed_seconds": 0.6061445999657735,
       "finish_reason": "length",
-      "request_id": "4e8d87c1-28df-4df5-b938-4061e70b3123",
+      "request_id": "d6cae9bc-f7cb-47d4-aa6b-cee44b61eb47",
       "error": null,
       "model_id": "deepseek-flash",
       "transport": "json_object",
-      "prompt_version": "m26-stage-a-v1",
+      "prompt_version": "m26-stage-a-v3.5",
       "cost_cny": 7.000000000000001e-05
     }
   ],
   "judge_requests": [],
   "extrapolations": {
-    "300_questions_cny": 2.854421,
-    "2000_questions_cny": 19.029472
+    "300_questions_cny": 3.305513,
+    "2000_questions_cny": 22.036755
   }
 }

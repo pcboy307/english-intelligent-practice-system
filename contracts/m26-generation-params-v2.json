@@ -1,0 +1,69 @@
+{
+  "schema_version": "2.6.1",
+  "source": "表格_20261108.csv",
+  "updated_at": "2026-11-08",
+  "vocabulary_policy": {
+    "whitelist": "contracts/vocabulary-whitelist.json",
+    "abstract_nouns_allowed": true
+  },
+  "rules": {
+    "cloze": {
+      "word_count": {
+        "minimum": 280,
+        "maximum": 320
+      },
+      "average_sentence_words_minimum": 15,
+      "long_sentence_minimum_words": 25,
+      "long_sentence_minimum_count": 4,
+      "structure_categories": [
+        "non_finite",
+        "noun_clause",
+        "parenthetical",
+        "inversion_or_ellipsis"
+      ],
+      "structure_categories_minimum_count": 3,
+      "near_synonym_minimum_questions": 3,
+      "flesch_reading_ease": {
+        "minimum": 45,
+        "maximum": 60
+      }
+    },
+    "grammar_fill": {
+      "word_count": {
+        "minimum": 220,
+        "maximum": 260
+      },
+      "required_categories": [
+        "non_finite_perfect_passive",
+        "preposition_plus_which",
+        "what_noun_clause",
+        "subjunctive",
+        "inversion"
+      ],
+      "required_category_count": 5
+    },
+    "reading": {
+      "word_count": {
+        "minimum": 350,
+        "maximum": 420
+      },
+      "average_sentence_words_minimum": 20,
+      "paragraph_function_minimum_questions": 1,
+      "flesch_reading_ease": {
+        "minimum": 45,
+        "maximum": 60
+      }
+    },
+    "gap_fill": {
+      "word_count": {
+        "minimum": 320,
+        "maximum": 380
+      },
+      "genres": [
+        "expository",
+        "argumentative"
+      ],
+      "abstract_topic_required": true
+    }
+  }
+}

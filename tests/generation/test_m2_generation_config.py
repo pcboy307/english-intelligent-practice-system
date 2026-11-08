@@ -45,3 +45,44 @@ def test_deepseek_contract_uses_environment_key_and_safe_budget_defaults() -> No
     assert contract["repair_retries_max"] == 1
     assert contract["circuit_breaker_consecutive_failures"] == 5
     assert contract["budget_stop_ratio"] == 1.0
+
+
+def test_m26_stage_a_schedule_uses_v2_mandatory_categories() -> None:
+    schedule = json.loads(
+        (ROOT / "config" / "m26-stage-a-schedule.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    passages = schedule["passages"]
+
+    cloze = [item for item in passages if item["type"] == "cloze"]
+    grammar = next(item for item in passages if item["type"] == "grammar_fill")
+    readings = [item for item in passages if item["type"] == "reading"]
+    gap = next(item for item in passages if item["type"] == "gap_fill")
+
+    assert all(
+        sum(
+            bool(question.get("near_synonym_required"))
+            for question in item["questions"]
+        )
+        >= 3
+        for item in cloze
+    )
+    assert {
+        question["grammar_category"] for question in grammar["questions"]
+    } >= {
+        "non_finite_perfect_passive",
+        "preposition_plus_which",
+        "what_noun_clause",
+        "subjunctive",
+        "inversion",
+    }
+    assert all(
+        any(
+            question.get("reading_type") == "paragraph_function"
+            for question in item["questions"]
+        )
+        for item in readings
+    )
+    assert gap["topic_focus"] == "科技伦理与算法问责"
+    assert gap["genre"] == "argumentative"

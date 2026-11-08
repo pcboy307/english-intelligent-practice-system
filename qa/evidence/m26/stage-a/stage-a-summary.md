@@ -2,84 +2,70 @@
 
 ## Outcome
 
+- generation parameter version: `2.6.1`
+- prompt version: `m26-stage-a-v3.5`
 - passages: 6/6
 - questions: 53/53
-- all R11-R15 and DeepSeek Pro audits passed
-- Bank: `20261108_500`
-- Bank ID: `ec6ba83b-ef27-4b36-8dc0-d2181a8325f8`
-- Bank status after browser verification: `generating`
-- old active bank restored: `M2 Bank #2`
+- final machine and DeepSeek Pro gates: all passed
+- bank: `20261108_500`
+- bank ID: `0b87ae69-c8c0-4805-a499-aefcd6bfb6ab`
+- bank status: `archived` and selectable
+- current bank remains: `M2 Bank #2`
 
 ## Passage results
 
-| Passage | Type | Questions | Words | Flesch | R11 |
-| --- | --- | ---: | ---: | ---: | --- |
-| M26-A-CLOZE-01 | cloze | 15 | 212 | 65.56 | pass |
-| M26-A-CLOZE-02 | cloze | 15 | 219 | 60.06 | pass |
-| M26-A-GRAMMAR-01 | grammar_fill | 10 | 215 | n/a | pass |
-| M26-A-READING-01 | reading | 4 | 264 | 58.78 | n/a |
-| M26-A-READING-02 | reading | 4 | 258 | 57.68 | n/a |
-| M26-A-GAP-01 | gap_fill | 5 | 283 | n/a | pass |
+| Passage | Type | Questions | Words | Avg sentence | Flesch | Long sentences | Result |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | --- |
+| M26-A-CLOZE-01 | cloze | 15 | 305 | 30.50 | 56.61 | 7 | pass |
+| M26-A-CLOZE-02 | cloze | 15 | 295 | 21.07 | 52.96 | 5 | pass |
+| M26-A-GRAMMAR-01 | grammar_fill | 10 | 259 | 21.58 | n/a | 3 | pass |
+| M26-A-READING-01 | reading | 4 | 373 | 23.31 | 48.67 | 7 | pass |
+| M26-A-READING-02 | reading | 4 | 397 | 30.54 | 51.60 | 10 | pass |
+| M26-A-GAP-01 | gap_fill | 5 | 378 | 19.89 | n/a | 4 | pass |
 
-R12 checks:
+## Parameter checks
 
-- both cloze passages meet average sentence length, long-sentence, complex
-  structure, and Flesch requirements;
-- grammar covers six categories: article, noun clause, relative clause,
-  tense/voice, adverbial clause, and non-finite;
-- both readings meet average sentence and Flesch requirements;
-- gap fill covers all five cohesion types.
+- Both cloze passages use at least three distinct structures from non-finite,
+  noun clause, parenthetical/appositive, and inversion/ellipsis.
+- Cloze near-synonym discrimination counts are 3 and 4.
+- Grammar fill includes all five mandatory categories:
+  `non_finite_perfect_passive`, `preposition_plus_which`,
+  `what_noun_clause`, `subjunctive`, and `inversion`.
+- Both reading passages contain a `paragraph_function` question.
+- Reading averages are 23.31 and 30.54 words; Flesch values are 48.67 and 51.60.
+- Gap fill is a 378-word argumentative passage on technology ethics and
+  algorithmic accountability.
+- Both cloze passages contain exactly 15 placeholders; grammar fill contains
+  exactly 10; gap fill contains exactly 5; reading passages contain 0.
+- Pro judging verifies answer uniqueness, answer support, inserted-answer
+  grammar, and inserted-answer semantics for every question.
 
-R13 checks:
+## Structure repair found during review
 
-- Pro judge reports unique best answer for all 53 items;
-- both cloze passages use same-part-of-speech, same-semantic-field options;
-- two calibrated near-synonym questions per cloze are recorded in the gate JSON.
+An earlier v2 candidate was rejected after manual review because it contained
+an extra 16th cloze marker and stray blank markers in reading passages. Those
+cases are now permanent machine gates and have tests:
 
-R14 checks:
+- `PLACEHOLDER_COUNT_INVALID`
+- `UNEXPECTED_PLACEHOLDER_MARKER`
+- `UNEXPECTED_PLACEHOLDER`
 
-- both readings use main idea, inference, purpose/attitude, and vocabulary in
-  context;
-- every evidence sentence is a passage substring;
-- no answer copies five consecutive passage words;
-- no meta-language grammar question.
-
-R15 checks:
-
-- six distinct topics: health/mental health, career, family generations,
-  technology, historical heritage, environment;
-- allowed topic count: 6/6;
-- no topic exceeds six passages.
+The rejected v2 evidence is archived under
+`work/backups/m26-stage-a-v2-invalid-20261108.zip`.
 
 ## Cost
 
-- final resumed run: ¥0.504281
-- final successful build projection: ¥2.85 for 300 questions,
-  ¥19.03 for 2000 questions
-- all Stage A attempts, deduplicated by request ID: ¥6.068438
-- all-attempt projection: ¥34.35 for 300, ¥229.00 for 2000
-- request failures excluding `ok`: 222/1106 = 20.07%
-- `finish_reason=length`: 17/1106 = 1.54%
-
-## Browser
-
-- actual web app opened with a 29-question Stage A paper;
-- cloze and grammar passages rendered with underline-only blanks;
-- test session was deleted after capture;
-- active bank was restored to `M2 Bank #2`.
-
-Screenshots:
-
-- `blank-render.png`
-- `grammar-render.png`
+- current successful generation accounting: `CNY 0.583974`
+- prompt tokens: `75,064`
+- completion tokens: `25,361`
 
 ## Validation
 
 ```text
-pytest: 141 passed, 1 warning
+pytest: 163 passed, 1 warning
 M0_CHECK=PASS
-API_CONTRACT_CHECK=PASS calls=20
-contracts/openapi.yaml is valid
+API_CONTRACT_CHECK=PASS calls=24
+OpenAPI: PASS
 TypeScript tsc --noEmit: PASS
-migration 004 reapply: PASS
+migration 005 reapply: PASS
 ```

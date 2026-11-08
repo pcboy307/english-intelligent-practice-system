@@ -1,6 +1,16 @@
 from __future__ import annotations
 
-from backend.app.generation import GateCategory, validate_generated_passage
+import json
+from pathlib import Path
+
+from backend.app.generation import (
+    GateCategory,
+    _cloze_structure_categories,
+    validate_generated_passage,
+)
+
+
+ROOT = Path(__file__).resolve().parents[2]
 
 
 PLACEHOLDER = "______"
@@ -53,8 +63,51 @@ def _failure_codes(report) -> set[str]:
     return {failure.message.split(":", 1)[0] for failure in report.failures}
 
 
-def test_m26_cloze_uses_the_new_250_to_290_word_profile() -> None:
-    fillers = " ".join(["Students learn through steady practice every day."] * 36)
+def test_m26_generation_params_match_the_approved_spreadsheet() -> None:
+    params = json.loads(
+        (ROOT / "contracts" / "m26-generation-params-v2.json").read_text(
+            encoding="utf-8"
+        )
+    )["rules"]
+
+    assert params["cloze"]["word_count"] == {"minimum": 280, "maximum": 320}
+    assert params["cloze"]["long_sentence_minimum_words"] == 25
+    assert params["cloze"]["long_sentence_minimum_count"] == 4
+    assert params["cloze"]["structure_categories_minimum_count"] == 3
+    assert params["cloze"]["near_synonym_minimum_questions"] == 3
+    assert params["cloze"]["flesch_reading_ease"] == {
+        "minimum": 45,
+        "maximum": 60,
+    }
+    assert params["grammar_fill"]["word_count"] == {
+        "minimum": 220,
+        "maximum": 260,
+    }
+    assert params["grammar_fill"]["required_categories"] == [
+        "non_finite_perfect_passive",
+        "preposition_plus_which",
+        "what_noun_clause",
+        "subjunctive",
+        "inversion",
+    ]
+    assert params["reading"]["word_count"] == {
+        "minimum": 350,
+        "maximum": 420,
+    }
+    assert params["reading"]["average_sentence_words_minimum"] == 20
+    assert params["reading"]["paragraph_function_minimum_questions"] == 1
+    assert params["reading"]["flesch_reading_ease"] == {
+        "minimum": 45,
+        "maximum": 60,
+    }
+    assert params["gap_fill"]["word_count"] == {
+        "minimum": 320,
+        "maximum": 380,
+    }
+
+
+def test_m26_cloze_uses_the_new_280_to_320_word_profile() -> None:
+    fillers = " ".join(["Students learn through steady practice every day."] * 42)
     slots = " ".join(f"({index}) {PLACEHOLDER}" for index in range(1, 16))
     passage = f"{fillers} {slots}"
     record = _base_record(
@@ -71,6 +124,130 @@ def test_m26_cloze_uses_the_new_250_to_290_word_profile() -> None:
     assert GateCategory.WORD_COUNT not in {
         failure.category for failure in report.failures
     }
+
+
+def test_m26_cloze_rejects_the_previous_short_profile() -> None:
+    fillers = " ".join(["Students learn through steady practice every day."] * 39)
+    slots = " ".join(f"({index}) {PLACEHOLDER}" for index in range(1, 16))
+    record = _base_record(
+        "cloze",
+        f"{fillers} {slots}",
+        [
+            _question(index, answer=f"unusedword{index}")
+            for index in range(1, 16)
+        ],
+    )
+
+    report = validate_generated_passage(record)
+
+    assert GateCategory.WORD_COUNT in {
+        failure.category for failure in report.failures
+    }
+
+
+def test_m26_cloze_structure_detector_requires_three_distinct_categories() -> None:
+    passage = (
+        "Having been warned about the risk, the student paused before speaking. "
+        "The claim that practice is enough, however, was questioned by the group. "
+        "Only then did the class understand how much evidence they needed."
+    )
+
+    categories = _cloze_structure_categories(passage)
+
+    assert {"non_finite", "noun_clause", "inversion_or_ellipsis"} <= set(
+        categories
+    )
+
+
+def test_m26_rejects_an_extra_numbered_cloze_placeholder() -> None:
+    fillers = " ".join(["Students learn through steady practice every day."] * 42)
+    slots = " ".join(f"({index}) {PLACEHOLDER}" for index in range(1, 17))
+    record = _base_record(
+        "cloze",
+        f"{fillers} {slots}",
+        [
+            _question(index, answer=f"unusedword{index}")
+            for index in range(1, 16)
+        ],
+    )
+
+    report = validate_generated_passage(record)
+
+    assert "PLACEHOLDER_COUNT_INVALID" in _failure_codes(report)
+    assert "UNEXPECTED_PLACEHOLDER_MARKER" in _failure_codes(report)
+
+
+def test_m26_rejects_blanks_inside_a_reading_passage() -> None:
+    passage = (
+        "Students learn through steady practice. ______ ______ "
+        "The teacher explains a clear method and checks every example."
+    )
+    record = _base_record(
+        "reading",
+        passage,
+        [
+            _question(1, reading_type="main_idea"),
+            _question(2, reading_type="inference"),
+            _question(3, reading_type="purpose_or_attitude"),
+            _question(4, reading_type="paragraph_function"),
+        ],
+    )
+
+    report = validate_generated_passage(record)
+
+    assert "UNEXPECTED_PLACEHOLDER" in _failure_codes(report)
+
+
+def test_m26_rejects_lowercase_answer_at_sentence_start() -> None:
+    passage = (
+        "The first sentence ends here. ① ______ continues the next sentence. "
+        "② ______ and ③ ______ are mid-sentence choices, followed by "
+        "④ ______, ⑤ ______, ⑥ ______, ⑦ ______, ⑧ ______, ⑨ ______, "
+        "and ⑩ ______."
+    )
+    record = _base_record(
+        "grammar_fill",
+        passage,
+        [
+            _question(1, answer="lowercase answer"),
+            *[
+                _question(index, answer=f"answer {index}")
+                for index in range(2, 11)
+            ],
+        ],
+    )
+
+    report = validate_generated_passage(record)
+
+    assert "ANSWER_SENTENCE_CAPITALIZATION" in _failure_codes(report)
+
+
+def test_m26_rejects_comma_between_relative_clause_subject_and_verb() -> None:
+    passage = (
+        "The first sentence ends here. ① ______, reminded everyone of the past. "
+        "② ______ and ③ ______ are mid-sentence choices, followed by "
+        "④ ______, ⑤ ______, ⑥ ______, ⑦ ______, ⑧ ______, ⑨ ______, "
+        "and ⑩ ______."
+    )
+    questions = [
+        _question(
+            1,
+            answer="the bridge which was built",
+            grammar_category="relative_clause",
+        ),
+        *[
+            _question(index, answer=f"answer {index}")
+            for index in range(2, 11)
+        ],
+    ]
+    record = _base_record("grammar_fill", passage, questions)
+
+    report = validate_generated_passage(record)
+
+    assert (
+        "RELATIVE_CLAUSE_COMMA_SEPARATES_SUBJECT"
+        in _failure_codes(report)
+    )
 
 
 def test_m26_rejects_a_reading_option_copied_from_the_passage() -> None:
@@ -97,6 +274,46 @@ def test_m26_rejects_a_reading_option_copied_from_the_passage() -> None:
     report = validate_generated_passage(record)
 
     assert "R14_READING_OPTION_COPIED" in _failure_codes(report)
+
+
+def test_m26_reading_requires_a_paragraph_function_question() -> None:
+    passage = (
+        "Students learn through steady practice. "
+        "The teacher explains a clear method and checks every example."
+    )
+    record = _base_record(
+        "reading",
+        passage,
+        [
+            _question(1, reading_type="main_idea"),
+            _question(2, reading_type="inference"),
+            _question(3, reading_type="purpose_or_attitude"),
+            _question(4, reading_type="vocabulary_in_context"),
+        ],
+    )
+
+    report = validate_generated_passage(record)
+
+    assert "R14_PARAGRAPH_FUNCTION_MISSING" in _failure_codes(report)
+
+
+def test_m26_grammar_fill_requires_all_five_mandatory_categories() -> None:
+    passage = " ".join(f"({index}) {PLACEHOLDER}" for index in range(1, 11))
+    record = _base_record(
+        "grammar_fill",
+        passage,
+        [
+            _question(
+                index,
+                grammar_category=f"optional_{index}",
+            )
+            for index in range(1, 11)
+        ],
+    )
+
+    report = validate_generated_passage(record)
+
+    assert "R12_GRAMMAR_REQUIRED_CATEGORIES" in _failure_codes(report)
 
 
 def test_m26_gap_fill_requires_three_cohesion_types() -> None:
