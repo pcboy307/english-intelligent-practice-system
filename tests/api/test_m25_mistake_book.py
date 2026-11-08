@@ -676,6 +676,89 @@ def test_m25_bank_switch_regroups_current_and_historical_mistakes() -> None:
         assert current_ids == {shared_id}
         assert old_only_id in history_ids
         assert payload["total_open"] == 2
+        assert payload["history_banks"][0]["bank_name"] == "M25 Switch A"
+    finally:
+        activate_bank(original_bank_id)
+
+
+def test_m25_cross_bank_coverage_recomputes_from_shared_question_ids() -> None:
+    original_bank_id = store.bank["bank_id"]
+    shared = [f"M25-SIZE-SHARED-Q{index:02d}" for index in range(1, 6)]
+    bank_a = create_test_bank(
+        "M25 Size A",
+        shared + [f"M25-SIZE-A-Q{index:02d}" for index in range(6, 11)],
+    )
+    bank_b = create_test_bank(
+        "M25 Size B",
+        shared + [f"M25-SIZE-B-Q{index:02d}" for index in range(6, 21)],
+    )
+    headers = student_headers()
+    try:
+        activate_bank(bank_a["bank_id"])
+        session_id = direct_session(
+            headers,
+            shared[:3] + ["M25-SIZE-A-Q06", "M25-SIZE-A-Q07"],
+        )
+        for question_id in shared[:3] + [
+            "M25-SIZE-A-Q06",
+            "M25-SIZE-A-Q07",
+        ]:
+            answer(headers, session_id, question_id, "anxious")
+        submit(headers, session_id)
+
+        coverage_a = client.get(
+            "/api/v1/stats/coverage?bank_id=active",
+            headers=headers,
+        ).json()
+        assert {
+            key: coverage_a[key]
+            for key in ("total", "none", "once", "twice_plus")
+        } == {"total": 10, "none": 5, "once": 5, "twice_plus": 0}
+
+        with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+            before_switch = connection.execute(
+                """
+                SELECT
+                  (SELECT count(*) FROM question_attempts
+                   WHERE student_id=%s) AS attempts,
+                  (SELECT count(*) FROM mistake_items
+                   WHERE student_id=%s) AS mistakes
+                """,
+                (headers["X-Student-Id"], headers["X-Student-Id"]),
+            ).fetchone()
+
+        activate_bank(bank_b["bank_id"])
+        coverage_b = client.get(
+            "/api/v1/stats/coverage?bank_id=active",
+            headers=headers,
+        ).json()
+        assert {
+            key: coverage_b[key]
+            for key in ("total", "none", "once", "twice_plus")
+        } == {"total": 20, "none": 17, "once": 3, "twice_plus": 0}
+
+        activate_bank(bank_a["bank_id"])
+        coverage_again = client.get(
+            "/api/v1/stats/coverage?bank_id=active",
+            headers=headers,
+        ).json()
+        assert {
+            key: coverage_again[key]
+            for key in ("total", "none", "once", "twice_plus")
+        } == {"total": 10, "none": 5, "once": 5, "twice_plus": 0}
+
+        with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+            after_switch = connection.execute(
+                """
+                SELECT
+                  (SELECT count(*) FROM question_attempts
+                   WHERE student_id=%s) AS attempts,
+                  (SELECT count(*) FROM mistake_items
+                   WHERE student_id=%s) AS mistakes
+                """,
+                (headers["X-Student-Id"], headers["X-Student-Id"]),
+            ).fetchone()
+        assert after_switch == before_switch
     finally:
         activate_bank(original_bank_id)
 

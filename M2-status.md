@@ -59,6 +59,26 @@ strict four-rule pass.
 - Evidence: `qa/evidence/m2/browser-acceptance.json` and screenshots under
   `qa/evidence/m2/browser-acceptance/`.
 
+## M2.5 错题本与覆盖统计
+
+- `question_attempts`、`mistake_items`、`report_deletions`、`bank_switch_log`
+  与 `practice_sessions.session_kind` 已通过幂等迁移创建。
+- 错题状态机为连续重做答对 2 次掌握，答错归零；七选五按篇记录，完形按空记录。
+- 历史报告删除已由物理删除修正为 `report_deletions` 软删。
+- 错题本支持当前题库/历史题库分组、完整语篇重做、其余空位灰字正确答案。
+- 历史报告页显示当前 active bank 的三段覆盖堆积条。
+- 两个维护操作均需 `X-Student-Id + X-Admin-Token + 回环来源`，并显示实时预览条数。
+- A/B/D/E 逐条实测见 `qa/evidence/m25/acceptance-results.md`。
+- 浏览器截图见 `qa/evidence/m25/`，记录见
+  `qa/evidence/m25/browser-acceptance.json`。
+
+### M2.5 数据边界
+
+- 本次修正前已由旧硬删实现删除的 150 个会话无法恢复。
+- 不回填历史 743 次会话 / 15413 条作答，原因是这些数据均为调试与验收数据。
+- M3 扩库到 2000 题时，如需保留学生记录，必须复制旧 300 题并保留原
+  `question_id`；重新生成 question_id 会使覆盖统计和错题关联归零。
+
 ## Sampling
 
 - Deterministic sample: 20 questions, five from each question type.
@@ -67,9 +87,9 @@ strict four-rule pass.
 
 ## Verification
 
-- pytest: 100 passed.
+- pytest: 118 passed.
 - `M0_CHECK=PASS`
-- `API_CONTRACT_CHECK=PASS calls=10`
+- `API_CONTRACT_CHECK=PASS calls=18`
 - Accepted-generation ledger: CNY 3.063101.
 - Discarded generation attempts remain in raw-response evidence and are not
   included in that total.

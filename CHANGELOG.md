@@ -210,3 +210,14 @@
 - 答题页左上角由题库名改为当前题型的自然语言名称。
 - 映射：完形填空、语法填空、阅读理解、七选五。
 - 浏览器实测逐题切换后标题同步从“完形填空”变为“语法填空”“阅读理解”。
+
+## 2026-11-08 - M2.5 错题本、覆盖统计与软删修正
+
+- 新增 `question_attempts`、`mistake_items`、`report_deletions` 和
+  `bank_switch_log`，并为 `practice_sessions` 增加 `session_kind`。
+- 交卷时持久化逐题 attempt；错题连续重做答对 2 次进入 mastered，答错立即归零。
+- 完形、语法、阅读按题记录错题；七选五使用 `seven:{passage_id}` 按篇记录。
+- 新增当前/历史题库分组错题本、完整语篇重做及锁定空位灰字正确答案。
+- 历史页新增当前 active bank 的三段覆盖堆积条，以及两个受本机口令保护的清空操作。
+- CO-005 的报告删除由物理删除修正为 `report_deletions` 软删。
+- 全量验收：118 passed、M0 PASS、API contract PASS calls=18、OpenAPI valid。

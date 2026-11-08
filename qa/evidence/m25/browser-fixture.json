@@ -1,0 +1,102 @@
+{
+  "student_id": "e5f47edf-e155-45cd-af58-55cbf14cd17b",
+  "active_bank": {
+    "id": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2",
+    "name": "M2 Bank #2"
+  },
+  "current_passage_id": "M2-FULL-CLOZE-01",
+  "current_question_ids": [
+    "M2-FULL-CLOZE-01-Q03",
+    "M2-FULL-CLOZE-01-Q01",
+    "M2-FULL-CLOZE-01-Q02"
+  ],
+  "practice_session_id": "c4eabce9-03da-466f-a657-b8a8ca5e12f2",
+  "repeat_session_id": "fe4371d1-ff38-42f2-bde8-2e275f0e4549",
+  "history": {
+    "bank_id": "d25d23a2-42e0-4477-8998-718768c6be97",
+    "name": "M2.5 历史验收题库",
+    "passage_id": "M25-HISTORY-3c5a3f33",
+    "question_id": "M25-HISTORY-3c5a3f33-Q01"
+  },
+  "history_session_id": "03b82fb6-e690-49e0-9b9f-d68cb5105892",
+  "mistakes": {
+    "current_bank": {
+      "bank_id": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2",
+      "bank_name": "M2 Bank #2",
+      "count": 3,
+      "passages": [
+        {
+          "passage_id": "M2-FULL-CLOZE-01",
+          "question_type": "cloze",
+          "items": [
+            {
+              "question_id": "M2-FULL-CLOZE-01-Q01",
+              "passage_id": "M2-FULL-CLOZE-01",
+              "question_type": "cloze",
+              "label": "第1题",
+              "wrong_count": 1,
+              "correct_streak": 0,
+              "status": "open"
+            },
+            {
+              "question_id": "M2-FULL-CLOZE-01-Q02",
+              "passage_id": "M2-FULL-CLOZE-01",
+              "question_type": "cloze",
+              "label": "第2题",
+              "wrong_count": 1,
+              "correct_streak": 0,
+              "status": "open"
+            },
+            {
+              "question_id": "M2-FULL-CLOZE-01-Q03",
+              "passage_id": "M2-FULL-CLOZE-01",
+              "question_type": "cloze",
+              "label": "第3题",
+              "wrong_count": 1,
+              "correct_streak": 0,
+              "status": "open"
+            }
+          ]
+        }
+      ]
+    },
+    "history_banks": [
+      {
+        "bank_id": "d25d23a2-42e0-4477-8998-718768c6be97",
+        "bank_name": "历史题库",
+        "count": 1,
+        "passages": [
+          {
+            "passage_id": "M25-HISTORY-3c5a3f33",
+            "question_type": "cloze",
+            "items": [
+              {
+                "question_id": "M25-HISTORY-3c5a3f33-Q01",
+                "passage_id": "M25-HISTORY-3c5a3f33",
+                "question_type": "cloze",
+                "label": "第1题",
+                "wrong_count": 1,
+                "correct_streak": 0,
+                "status": "open"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "total_open": 4
+  },
+  "coverage": {
+    "total": 300,
+    "none": 297,
+    "once": 2,
+    "twice_plus": 1,
+    "bank_name": "M2 Bank #2",
+    "as_of": "2026-11-08T02:46:34.048541+00:00"
+  },
+  "counts": {
+    "sessions": 3,
+    "attempts": 5,
+    "open_mistakes": 4
+  }
+}

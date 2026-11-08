@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "browser": "agent-browser",
+  "session": "m25-805a5871183b",
+  "url": "http://127.0.0.1:8081",
+  "student_id": "e5f47edf-e155-45cd-af58-55cbf14cd17b",
+  "active_bank": "M2 Bank #2",
+  "home_entry": "错题本 · 待订正 4 题",
+  "mistake_groups": {
+    "current": 3,
+    "history": 1
+  },
+  "review": {
+    "question_type": "cloze",
+    "answerable": 3,
+    "locked_with_gray_answer": 12
+  },
+  "coverage_before_reset": {
+    "total": 300,
+    "none": 297,
+    "once": 2,
+    "twice_plus": 1
+  },
+  "cancel_check": {
+    "mistakes": 4,
+    "coverage_none": 297,
+    "coverage_once": 2,
+    "coverage_twice_plus": 1
+  },
+  "reset_executed": {
+    "preview_deleted_count": 4,
+    "coverage_after": {
+      "total": 300,
+      "none": 300,
+      "once": 0,
+      "twice_plus": 0
+    },
+    "empty_text": "还没有开始练习"
+  },
+  "clear_mistakes_executed": {
+    "preview_deleted_count": 3,
+    "current_after": 0,
+    "history_after": 1
+  },
+  "screenshots": {
+    "home": "home-entry.png",
+    "mistakes_groups": "mistakes-groups.png",
+    "mistakes_empty": "mistakes-empty.png",
+    "review": "mistake-review.png",
+    "coverage": "coverage-bar.png",
+    "coverage_empty": "coverage-empty.png",
+    "clear_dialog": "clear-mistakes-dialog.png",
+    "reset_dialog": "reset-coverage-dialog.png",
+    "mistakes_cleared": "mistakes-cleared.png"
+  }
+}

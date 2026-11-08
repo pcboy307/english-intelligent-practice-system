@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "migration": {
+    "path": "db/migrations/002_mistake_book.sql",
+    "lines": 101,
+    "new_tables": [
+      "question_attempts",
+      "mistake_items",
+      "report_deletions",
+      "bank_switch_log"
+    ],
+    "altered_table": "practice_sessions",
+    "altered_column": "session_kind",
+    "question_primary_key": ["bank_id", "id"]
+  },
+  "endpoints": [
+    "GET /api/v1/mistakes",
+    "GET /api/v1/mistakes/{passage_id}",
+    "POST /api/v1/mistakes/review/{passage_id}",
+    "GET /api/v1/stats/coverage",
+    "GET /api/v1/maintenance/clear-mistakes/preview",
+    "POST /api/v1/maintenance/clear-mistakes",
+    "GET /api/v1/maintenance/reset-coverage/preview",
+    "POST /api/v1/maintenance/reset-coverage",
+    "POST /api/v1/admin/banks/{bank_id}/activate"
+  ],
+  "pages": {
+    "home": "apps/mobile/app/index.tsx",
+    "mistakes": "apps/mobile/app/mistakes.tsx",
+    "review": "apps/mobile/app/mistake-review.tsx",
+    "coverage": "apps/mobile/app/history.tsx",
+    "maintenance_dialog": "apps/mobile/src/components/MaintenanceDialog.tsx"
+  },
+  "design_tokens": {
+    "coverage_repeat_line": 28,
+    "coverage_once_line": 29,
+    "coverage_none_line": 30
+  },
+  "documents": [
+    "docs/change-log/CO-005-soft-delete-correction.md",
+    "M2-status.md",
+    "docs/待补齐清单.md",
+    "docs/交接说明.md",
+    "CHANGELOG.md"
+  ],
+  "evidence": [
+    "qa/evidence/m25/acceptance-results.md",
+    "qa/evidence/m25/browser-acceptance.json",
+    "qa/evidence/m25/browser-fixture.json",
+    "qa/evidence/m25/database-snapshot.txt",
+    "qa/evidence/m25/pytest.txt",
+    "qa/evidence/m25/checks.txt",
+    "qa/evidence/m25/typecheck.txt",
+    "qa/evidence/m25/openapi.txt"
+  ],
+  "screenshots": [
+    "qa/evidence/m25/home-entry.png",
+    "qa/evidence/m25/mistakes-groups.png",
+    "qa/evidence/m25/mistakes-empty.png",
+    "qa/evidence/m25/mistake-review.png",
+    "qa/evidence/m25/coverage-bar.png",
+    "qa/evidence/m25/coverage-empty.png",
+    "qa/evidence/m25/clear-mistakes-dialog.png",
+    "qa/evidence/m25/reset-coverage-dialog.png",
+    "qa/evidence/m25/mistakes-cleared.png"
+  ],
+  "verification": {
+    "pytest": "118 passed, 1 warning",
+    "M0_CHECK": "PASS",
+    "API_CONTRACT_CHECK": "PASS calls=18",
+    "OpenAPI": "valid"
+  }
+}

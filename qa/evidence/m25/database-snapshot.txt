@@ -1,0 +1,20 @@
+active_bank: M2 Bank #2 (active)
+bank_content: 47 passages / 300 published questions
+database: english_practice
+port: 15432
+
+schema_tables:
+  question_attempts
+  mistake_items
+  report_deletions
+  bank_switch_log
+practice_sessions.session_kind: VARCHAR(20) NOT NULL DEFAULT 'practice'
+
+post_acceptance_fixture:
+  sessions: 3
+  reports: 3
+  attempts: 1
+  mistakes: 1
+  open_mistakes: 1
+  current_bank_mistakes: 0
+  history_bank_mistakes: 1

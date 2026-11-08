@@ -152,10 +152,17 @@ export default function HistoryScreen() {
                 </View>
                 <View style={styles.coverageLegend}>
                   <Text style={styles.legendRepeat}>
-                    做过 ≥2 次 {coverage.twice_plus}
+                    做过 ≥2 次 {coverage.twice_plus} (
+                    {((coverage.twice_plus / coverage.total) * 100).toFixed(1)}%)
                   </Text>
-                  <Text style={styles.legendOnce}>只做 1 次 {coverage.once}</Text>
-                  <Text style={styles.legendNone}>没做过 {coverage.none}</Text>
+                  <Text style={styles.legendOnce}>
+                    只做 1 次 {coverage.once} (
+                    {((coverage.once / coverage.total) * 100).toFixed(1)}%)
+                  </Text>
+                  <Text style={styles.legendNone}>
+                    没做过 {coverage.none} (
+                    {((coverage.none / coverage.total) * 100).toFixed(1)}%)
+                  </Text>
                 </View>
               </>
             )}

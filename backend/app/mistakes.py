@@ -181,7 +181,7 @@ def list_open_mistakes(
         (student_id,),
     ).fetchall()
     bank_names = {
-        row["id"]: row["name"]
+        str(row["id"]): row["name"]
         for row in connection.execute(
             "SELECT id, name FROM question_banks"
         ).fetchall()
