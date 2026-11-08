@@ -8,9 +8,13 @@
 - questions: 53/53
 - final machine and DeepSeek Pro gates: all passed
 - bank: `20261108_500`
-- bank ID: `0b87ae69-c8c0-4805-a499-aefcd6bfb6ab`
-- bank status: `archived` and selectable
-- current bank remains: `M2 Bank #2`
+- bank ID: `70b53084-eb02-40db-9ee6-f986120679c7`
+- bank status: `active` after switch verification
+- coverage snapshot: present and switch activation verified
+- known limitation: this is the 6-passage / 53-question Stage A sample bank;
+  full-paper assembly remains governed by the normal paper quotas and is not
+  guaranteed until Stage B provides the complete bank.
+- previous bank after switch: `M2 Bank #2` (`ready`)
 
 ## Passage results
 

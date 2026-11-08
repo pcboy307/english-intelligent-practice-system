@@ -1203,6 +1203,32 @@ def test_m25_legacy_demos_are_not_switchable_when_present_or_deleted() -> None:
     assert payload["current_bank_id"] in visible_ids
 
 
+def test_activation_rejects_a_bank_without_coverage_snapshot() -> None:
+    bank_id = str(uuid.uuid4())
+    with psycopg.connect(database_url()) as connection:
+        connection.execute(
+            """
+            INSERT INTO question_banks
+                (id, name, target_size, difficulty_profile, status)
+            VALUES (%s, %s, 1, 'standard', 'archived')
+            """,
+            (bank_id, f"No snapshot {bank_id[:8]}"),
+        )
+    try:
+        response = client.post(
+            f"/api/v1/admin/banks/{bank_id}/activate",
+            headers=student_headers(),
+        )
+        assert response.status_code == 409
+        assert response.json()["detail"]["code"] == "BANK_COVERAGE_MISSING"
+    finally:
+        with psycopg.connect(database_url()) as connection:
+            connection.execute(
+                "DELETE FROM question_banks WHERE id=%s",
+                (bank_id,),
+            )
+
+
 def test_start_practice_ignores_expired_in_progress_sessions() -> None:
     headers = student_headers()
     session_id = str(uuid.uuid4())

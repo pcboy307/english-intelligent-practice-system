@@ -337,7 +337,7 @@ class PostgresStore:
             with connection.transaction():
                 target = connection.execute(
                     """
-                    SELECT id::text AS id, name, status
+                SELECT id::text AS id, name, status, coverage_snapshot
                     FROM question_banks
                     WHERE id=%s
                     FOR UPDATE
@@ -348,6 +348,8 @@ class PostgresStore:
                     raise KeyError("BANK_NOT_FOUND")
                 if target["status"] not in {"ready", "active", "archived"}:
                     raise ValueError("BANK_NOT_READY")
+                if target["coverage_snapshot"] is None:
+                    raise ValueError("BANK_COVERAGE_MISSING")
                 current = connection.execute(
                     """
                     SELECT qb.id::text AS id

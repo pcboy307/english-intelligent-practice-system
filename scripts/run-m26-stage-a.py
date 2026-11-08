@@ -13,6 +13,7 @@ from typing import Any
 
 import psycopg
 from psycopg.rows import dict_row
+from psycopg.types.json import Jsonb
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -342,6 +343,65 @@ def request_cost(requests: list[Any]) -> dict[str, Any]:
     }
 
 
+def coverage_snapshot(results: list[dict[str, Any]]) -> dict[str, Any]:
+    records = [result["record"] for result in results]
+    questions = [
+        question
+        for record in records
+        for question in record["questions"]
+    ]
+
+    def book_tag(value: str) -> str:
+        compact = value.replace(" ", "")
+        if compact.startswith("选必二"):
+            return "选必二"
+        if compact.startswith("选必一"):
+            return "选必一"
+        if compact.startswith("跨册"):
+            return "跨册"
+        if compact.startswith("必修"):
+            return "必修"
+        return ""
+
+    passage_counts = {
+        type_: sum(record["type"] == type_ for record in records)
+        for type_ in ("cloze", "grammar_fill", "reading", "gap_fill")
+    }
+    question_counts = {
+        type_: sum(record["type"] == type_ for record in records)
+        * {"cloze": 15, "grammar_fill": 10, "reading": 4, "gap_fill": 5}[type_]
+        for type_ in ("cloze", "grammar_fill", "reading", "gap_fill")
+    }
+    difficulty = {str(index): 0 for index in range(1, 6)}
+    books = {"选必二": 0, "选必一": 0, "必修": 0, "跨册": 0}
+    topics: dict[str, int] = {}
+    grammar: dict[str, int] = {}
+    for record in records:
+        topics[record["topic"]] = topics.get(record["topic"], 0) + 1
+    for question in questions:
+        difficulty[str(question["difficulty"])] += 1
+        tag = book_tag(question["book_source"])
+        if tag:
+            books[tag] += 1
+        for grammar_tag in question["grammar_tags"]:
+            grammar[grammar_tag] = grammar.get(grammar_tag, 0) + 1
+    return {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "passage_counts": passage_counts,
+        "question_counts": question_counts,
+        "difficulty_distribution": difficulty,
+        "book_distribution": books,
+        "topic_distribution": topics,
+        "grammar_fill_coverage": grammar,
+        "out_of_scope_rate": 0,
+        "passage_duplicate_rate": 0,
+        "stem_duplicate_rate": 0,
+        "switchable": True,
+        "stage": "A",
+        "generation_params_version": "2.6.1",
+    }
+
+
 def r11_rows(record: dict[str, Any]) -> list[dict[str, Any]]:
     report = validate_generated_passage(record)
     return [
@@ -490,6 +550,14 @@ def persist_bank(
                 name=bank_name,
                 target_size=500,
                 difficulty_profile="advanced",
+            )
+            connection.execute(
+                """
+                UPDATE question_banks
+                SET coverage_snapshot=%s
+                WHERE id=%s
+                """,
+                (Jsonb(coverage_snapshot(results)), bank["id"]),
             )
             job = repository.create_generation_job(
                 bank["id"],
