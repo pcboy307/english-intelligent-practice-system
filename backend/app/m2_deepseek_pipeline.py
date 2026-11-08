@@ -18,9 +18,12 @@ from .deepseek_generation import (
 )
 from .generation import (
     FILL_PLACEHOLDER,
-    TYPE_RULES,
+    _load_vocabulary_audit_module,
+    get_type_rules,
     load_curriculum,
+    load_vocabulary_scope,
     validate_fill_placeholder_shape,
+    validate_gap_option_leak,
     validate_generated_passage,
 )
 from .readability import flesch_reading_ease
@@ -71,25 +74,118 @@ def _book_tag(book_source: str) -> str:
     return ""
 
 
+def _unique_unknown_words(text: str) -> list[str]:
+    vocabulary = load_vocabulary_scope()
+    audit = _load_vocabulary_audit_module().count_passage(
+        text,
+        vocabulary["single_words"],
+        vocabulary["phrases"],
+    )
+    return sorted({str(word).casefold() for word in audit["unknown"]})
+
+
 def _build_passage_prompt(spec: dict[str, Any]) -> str:
+    profile = str(spec.get("validation_profile", "m2"))
+    rule = get_type_rules(spec["type"], profile)
+    targets = [
+        str(
+            question.get("answer_target")
+            or question.get("cloze_target")
+            or ""
+        )
+        for question in spec["questions"]
+        if question.get("answer_target") or question.get("cloze_target")
+    ]
+    if profile == "m26":
+        length_ranges = {
+            "cloze": (
+                f"{rule['min_words']}-{rule['max_words']} words; aim for "
+                "220-240 and verify the count before returning"
+            ),
+            "grammar_fill": (
+                "no more than 220 words; use as many words as needed for a "
+                "coherent passage with ten grammar blanks"
+            ),
+            "reading": (
+                f"{rule['min_words']}-{rule['max_words']} words; aim for "
+                "280-310 and verify the count before returning"
+            ),
+            "gap_fill": (
+                f"{rule['min_words']}-{rule['max_words']} words; aim for "
+                "250-280 and verify the count before returning"
+            ),
+        }
+    else:
+        length_ranges = {
+            "cloze": "170-220 words",
+            "grammar_fill": "120-180 words",
+            "reading": "no more than 250 words",
+            "gap_fill": "no more than 220 words",
+        }
     type_rules = {
         "cloze": (
-            f"170-220 words and numbered blanks (1) through (15), "
+            f"{length_ranges['cloze']} and numbered "
+            "blanks (1) through (15), "
             f"each written as its number followed by {FILL_PLACEHOLDER} "
             "(for example, '(1) ______')"
         ),
         "grammar_fill": (
-            f"120-180 words and circled blanks ① through ⑩, "
+            f"{length_ranges['grammar_fill']} and circled "
+            "blanks ① through ⑩, "
             f"each written as its circled label followed by {FILL_PLACEHOLDER} "
             "(for example, '① ______')"
         ),
-        "reading": "no more than 250 words",
+        "reading": length_ranges["reading"],
         "gap_fill": (
-            f"no more than 220 words and numbered blanks (1) through (5), "
+            length_ranges["gap_fill"]
+            + " and numbered blanks (1) through (5), "
             f"each written as its number followed by {FILL_PLACEHOLDER} "
             "(for example, '(1) ______')"
         ),
     }
+    target_block = ""
+    if targets:
+        target_block = (
+            "\nThe preplanned correct answers are fixed below. Write the passage "
+            "around these answer positions without printing any target or its "
+            "inflected form anywhere:\n"
+            f"{json.dumps(targets, ensure_ascii=False)}"
+            "\nEach marker replaces the ENTIRE target. Do not leave any word "
+            "from a target immediately before or after its marker. For example, "
+            "if the target is `the person who called`, write "
+            "`The visitor ① ______ yesterday`, not "
+            "`The person who called ① ______ yesterday`."
+        )
+    m26_quality = ""
+    if profile == "m26":
+        m26_quality = """
+M2.6 quality requirements:
+- Cloze: average sentence length at least 15 words; Flesch Reading Ease
+  52-70; at least three sentences of at least 22 words; at least two
+  non-finite or subordinate-clause structures. Avoid short, primary-school
+  sentences; use connected multi-clause sentences throughout.
+- Reading: average sentence length at least 16 words; Flesch Reading Ease
+  48-68.
+- Grammar fill: the ten items together must cover at least five of these
+  categories: tense/voice, non-finite, relative clause, noun clause,
+  adverbial clause, article, preposition, conjunction, pronoun, comparison.
+- Gap fill: use at least three distinct cohesion types: pronoun reference,
+  logical connector, lexical repetition, time order, general-to-specific.
+- The passage must be coherent, not a collection of unrelated example
+  sentences. Use at most three recurring people or actors.
+- Do not invent personal names. Refer to people only by roles such as the
+  student, teacher, parent, neighbour, or volunteer.
+"""
+    vocabulary_block = ""
+    if profile == "m26":
+        allowed_words = " ".join(
+            sorted(load_vocabulary_scope()["single_words"])
+        )
+        vocabulary_block = (
+            "\nUse only these base words or their accepted inflections unless "
+            "a topic term is unavoidable:\n"
+            + allowed_words
+        )
     return f"""
 Write only the original practice passage. Return JSON with one key, "passage".
 Type: {spec["type"]}
@@ -98,6 +194,9 @@ Required length: {type_rules[spec["type"]]}
 Every blank must contain one label followed by one space and exactly six
 underscores: {FILL_PLACEHOLDER}. Never print an answer word, option word, or
 word fragment at or beside a blank.
+{target_block}
+{m26_quality}
+{vocabulary_block}
 Use simple vocabulary already learned in PEP 2019 required books 1-3 and
 elective required books 1-2. Do not use elective books 3-4 material.
 Do not mention real people, schools, exam IDs, brands, or named places.
@@ -110,23 +209,72 @@ def _build_questions_prompt(
     passage: str,
     assignments: list[dict[str, Any]],
 ) -> str:
+    option_count = 7 if spec["type"] == "gap_fill" else 4
+    batch_count = len(assignments)
+    answer_rule = (
+        "answer is one letter A-G"
+        if spec["type"] == "gap_fill"
+        else "answer equal to one exact option"
+    )
+    fixed_targets = [
+        {
+            "question_order": assignment.get("question_order"),
+            "answer_target": (
+                assignment.get("answer_target")
+                or assignment.get("cloze_target")
+            ),
+        }
+        for assignment in assignments
+        if assignment.get("answer_target") or assignment.get("cloze_target")
+    ]
+    target_rule = ""
+    if fixed_targets:
+        target_rule = (
+            "\nFIXED ANSWERS: the answer field must exactly equal these target "
+            "strings, character for character, and each target must appear once "
+            "in that question's options:\n"
+            + json.dumps(fixed_targets, ensure_ascii=False, indent=2)
+        )
+    m26_rules = ""
+    if spec.get("validation_profile") == "m26":
+        m26_rules = """
+M2.6 question requirements:
+- Cloze distractors must belong to the same semantic field and part of speech.
+  Do not use one correct word plus three obvious antonyms. At least two cloze
+  questions must include a genuine near-synonym distractor. In questions 1 and
+  2, deliberately include one near-synonym/easily confused distractor.
+- Every reading question is comprehension-based. The correct option must be a
+  paraphrase, never share five consecutive words with the passage.
+- Gap-fill options must be seven complete, mutually distinguishable sentences,
+  and only one option may fit each blank.
+"""
     return f"""
 Create only the questions listed below for the fixed passage.
 Return JSON exactly as {{"questions": [...]}}.
+This is one partial batch: return exactly {batch_count} questions, one for each
+assignment below and in the same order. Do not return the other questions from
+the passage.
 Every question must include:
 - stem
-- exactly four non-empty options
-- answer equal to one exact option
+- exactly {option_count} non-empty options
+- {answer_rule}
 - one unique knowledge_points entry
 - grammar_tags, book_source and difficulty copied exactly from its assignment
+- evidence_sentence for every reading question: an exact passage substring
+{target_rule}
 
 All options in one grammar_fill question must belong to the same grammatical
 category. Assess only the assigned grammar tag.
+When an assignment contains answer_target, the answer must equal that exact
+text; do not replace it with another word or phrase.
 The correct answer must not occur anywhere in the fixed passage, including
 inflected forms. Gap-fill options must not reproduce any six-word sequence
 from the passage.
+{m26_rules}
 
 Type: {spec["type"]}
+For gap_fill, every question must use the same complete seven-sentence option
+set.
 Fixed passage:
 {passage}
 
@@ -183,13 +331,20 @@ Questions:
 def _validate_passage_step(
     spec: dict[str, Any],
     data: dict[str, Any],
+    *,
+    enforce_minimum: bool = True,
+    enforce_quality: bool = True,
 ) -> str:
     passage = data.get("passage")
     if not isinstance(passage, str) or not passage.strip():
         raise ValueError("PASSAGE_TEXT_MISSING")
-    rule = TYPE_RULES[spec["type"]]
+    rule = get_type_rules(
+        spec["type"],
+        str(spec.get("validation_profile", "m2")),
+    )
     word_count = _word_count(passage)
-    if not rule["min_words"] <= word_count <= rule["max_words"]:
+    minimum_ok = word_count >= rule["min_words"] or not enforce_minimum
+    if not minimum_ok or word_count > rule["max_words"]:
         raise ValueError(
             f"WORD_COUNT_OUT_OF_RANGE actual={word_count} "
             f"min={rule['min_words']} max={rule['max_words']}"
@@ -206,7 +361,192 @@ def _validate_passage_step(
                 ensure_ascii=False,
             )
         )
+    if spec.get("validation_profile") == "m26" and enforce_quality:
+        unknown_words = _unique_unknown_words(passage)
+        if len(unknown_words) > 3:
+            raise ValueError(
+                "R12_VOCABULARY_LIMIT "
+                f"unique_unknown={len(unknown_words)} words={unknown_words}"
+            )
+        sentences = [
+            sentence.strip()
+            for sentence in re.split(r"(?<=[.!?])\s+", passage)
+            if sentence.strip()
+        ]
+        average_sentence_words = (
+            word_count / len(sentences) if sentences else 0
+        )
+        if spec["type"] in {"cloze", "reading"}:
+            flesch = flesch_reading_ease(passage)
+            if spec["type"] == "cloze" and not 52 <= flesch <= 70:
+                raise ValueError(
+                    f"R12_CLOZE_FLESCH actual={flesch} expected=52-70"
+                )
+            if spec["type"] == "reading" and not 48 <= flesch <= 68:
+                raise ValueError(
+                    f"R12_READING_FLESCH actual={flesch} expected=48-68"
+                )
+        if spec["type"] == "cloze":
+            if average_sentence_words < 15:
+                raise ValueError(
+                    "R12_CLOZE_SENTENCE_LENGTH "
+                    f"actual={average_sentence_words:.2f}"
+                )
+            long_sentences = sum(
+                _word_count(sentence) >= 22
+                for sentence in sentences
+            )
+            if long_sentences < 3:
+                raise ValueError(
+                    f"R12_CLOZE_LONG_SENTENCES actual={long_sentences}"
+                )
+            complex_structures = sum(
+                bool(
+                    re.search(
+                        r"\b(?:which|who|whom|whose|that|because|although|"
+                        r"though|while|since|unless|when|where|after|before|if)\b"
+                        r"|\b(?:to\s+[a-z]+|[a-z]+ing\b|[a-z]+ed\b)",
+                        sentence,
+                        re.IGNORECASE,
+                    )
+                )
+                for sentence in sentences
+            )
+            if complex_structures < 2:
+                raise ValueError(
+                    "R12_CLOZE_COMPLEX_STRUCTURES "
+                    f"actual={complex_structures}"
+                )
+        if spec["type"] == "reading" and average_sentence_words < 16:
+            raise ValueError(
+                "R12_READING_SENTENCE_LENGTH "
+                f"actual={average_sentence_words:.2f}"
+            )
     return passage
+
+
+def _append_m26_passage(
+    *,
+    client: DeepSeekClient,
+    ledger: CostLedger,
+    spec: dict[str, Any],
+    passage: str,
+) -> str:
+    rule = get_type_rules(spec["type"], "m26")
+    current = passage
+    for expansion_index in range(1, 5):
+        current_words = _word_count(current)
+        if current_words >= rule["min_words"]:
+            return _validate_passage_step(
+                spec,
+                {"passage": current},
+                enforce_quality=False,
+            )
+        needed = rule["min_words"] - current_words
+        lower = needed + 8
+        upper = needed + 24
+        appended = run_repair_loop(
+            client=client,
+            ledger=ledger,
+            purpose=(
+                f"extend-passage:{spec['type']}:{expansion_index}"
+            ),
+            prompt=f"""
+Continue the existing passage below with new, coherent sentences from the
+same topic, characters, and time line. Append between {lower} and {upper}
+English words. Do not repeat or rewrite the existing passage. Do not add,
+remove, or move blank markers. Do not print any preplanned answer or its
+inflected form. Return JSON only as {{"append": "new sentences"}}.
+
+Preplanned answers:
+{json.dumps([
+    question.get("answer_target") or question.get("cloze_target")
+    for question in spec["questions"]
+    if question.get("answer_target") or question.get("cloze_target")
+], ensure_ascii=False)}
+
+Existing passage:
+{current}
+""".strip(),
+            validate=lambda data: (
+                str(data.get("append", "")).strip()
+                if isinstance(data.get("append"), str)
+                and data["append"].strip()
+                and not any(
+                    marker in data["append"]
+                    for marker in (
+                        ["(" + str(index) + ")" for index in range(1, 16)]
+                        if spec["type"] in {"cloze", "gap_fill"}
+                        else [chr(0x2460 + index - 1) for index in range(1, 11)]
+                    )
+                )
+                else (_ for _ in ()).throw(
+                    ValueError("M26_PASSAGE_APPEND_INVALID")
+                )
+            ),
+            max_repair_retries=1,
+        )
+        current = f"{current.rstrip()} {appended}"
+    return _validate_passage_step(
+        spec,
+        {"passage": current},
+        enforce_quality=False,
+    )
+
+
+def _simplify_m26_vocabulary(
+    *,
+    client: DeepSeekClient,
+    ledger: CostLedger,
+    spec: dict[str, Any],
+    passage: str,
+) -> str:
+    current = passage
+    for attempt in range(1, 5):
+        unknown = _unique_unknown_words(current)
+        try:
+            return _validate_passage_step(spec, {"passage": current})
+        except ValueError as quality_error:
+            quality_message = str(quality_error)
+        rewritten = run_repair_loop(
+            client=client,
+            ledger=ledger,
+            purpose=(
+                f"simplify-vocabulary:{spec['type']}:{attempt}"
+            ),
+            prompt=f"""
+Rewrite the complete passage below so that all words outside the approved
+senior-high curriculum list are replaced with common approved alternatives.
+Keep the same topic, characters, sequence of ideas, blank markers, and
+approximate word count. Never reveal or insert any preplanned answer. Return
+JSON only as {{"passage": "complete rewritten passage"}}.
+
+Words that must be removed or replaced:
+{json.dumps(unknown, ensure_ascii=False)}
+
+Other quality errors that must be fixed without weakening the requirements:
+{quality_message}
+
+Approved answer targets that must remain absent:
+{json.dumps([
+    question.get("answer_target") or question.get("cloze_target")
+    for question in spec["questions"]
+    if question.get("answer_target") or question.get("cloze_target")
+], ensure_ascii=False)}
+
+Current passage:
+{current}
+""".strip(),
+            validate=lambda data: _validate_passage_step(
+                spec,
+                data,
+                enforce_minimum=False,
+                enforce_quality=False,
+            ),
+            max_repair_retries=1,
+        )
+        current = rewritten
+    return _validate_passage_step(spec, {"passage": current})
 
 
 def _validate_question_batch(
@@ -214,6 +554,7 @@ def _validate_question_batch(
     assignments: list[dict[str, Any]],
     data: dict[str, Any],
     observations: list[dict[str, Any]] | None = None,
+    passage: str | None = None,
 ) -> list[dict[str, Any]]:
     questions = data.get("questions")
     if not isinstance(questions, list):
@@ -244,16 +585,34 @@ def _validate_question_batch(
             if field not in question:
                 raise ValueError(f"QUESTION_FIELD_MISSING index={index} field={field}")
         options = question["options"]
+        expected_options = 7 if spec["type"] == "gap_fill" else 4
         if (
             not isinstance(options, list)
-            or len(options) != 4
+            or len(options) != expected_options
             or any(not isinstance(option, str) or not option.strip() for option in options)
         ):
             raise ValueError(f"QUESTION_OPTIONS_INVALID index={index}")
-        if not isinstance(question["answer"], str) or question["answer"] not in options:
+        if not isinstance(question["answer"], str):
+            raise ValueError(f"QUESTION_ANSWER_INVALID index={index}")
+        if spec["type"] == "gap_fill":
+            if question["answer"].upper() not in set("ABCDEFG"):
+                raise ValueError(f"QUESTION_ANSWER_NOT_IN_OPTIONS index={index}")
+        elif question["answer"] not in options:
             raise ValueError(f"QUESTION_ANSWER_NOT_IN_OPTIONS index={index}")
         if not isinstance(question["stem"], str) or not question["stem"].strip():
             raise ValueError(f"QUESTION_STEM_INVALID index={index}")
+        if spec["type"] == "reading" and spec.get("validation_profile") == "m26":
+            evidence = question.get("evidence_sentence")
+            if (
+                not isinstance(evidence, str)
+                or not evidence.strip()
+                or passage is None
+                or evidence.strip() not in passage
+            ):
+                raise ValueError(
+                    f"R14_EVIDENCE_SENTENCE_INVALID index={index}"
+                )
+            question["evidence_sentence"] = evidence.strip()
         if (
             not isinstance(question["knowledge_points"], list)
             or not question["knowledge_points"]
@@ -296,6 +655,12 @@ def _validate_question_batch(
                         "actual": tags,
                     }
                 )
+        target = assignment.get("answer_target") or assignment.get("cloze_target")
+        if target and str(question["answer"]).casefold() != str(target).casefold():
+            raise ValueError(
+                "ANSWER_TARGET_MISMATCH "
+                f"index={index} expected={target!r} actual={question['answer']!r}"
+            )
         try:
             validate_question_book_tag(tags, _book_tag(question["book_source"]))
         except QuestionValidationError as error:
@@ -303,6 +668,19 @@ def _validate_question_batch(
                 f"BOOK_TAG_INVALID index={index} code={error.code}"
             ) from error
         validated.append(question)
+    if spec["type"] == "gap_fill":
+        leaks = validate_gap_option_leak(
+            passage or "",
+            validated,
+        )
+        if leaks:
+            raise ValueError(
+                "GAP_OPTION_TEXT_LEAK:"
+                + json.dumps(
+                    [failure.as_dict() for failure in leaks],
+                    ensure_ascii=False,
+                )
+            )
     return validated
 
 
@@ -495,6 +873,135 @@ def _validate_explanation_batch(
     return by_index
 
 
+def _build_distractors_prompt(
+    *,
+    spec: dict[str, Any],
+    assignment: dict[str, Any],
+    question_index: int,
+    passage: str,
+    target: str,
+) -> str:
+    near_synonym_rule = (
+        "At least one distractor must be a genuine near-synonym or easily "
+        "confused word. The fixed answer must still be the only option that "
+        "matches all contextual clues. All three distractors must be words a "
+        "student would plausibly consider for this exact blank, not unrelated "
+        "verbs or pure opposites."
+        if spec["type"] == "cloze"
+        else "All distractors must belong to the same grammatical category "
+        "as the answer."
+    )
+    if spec["type"] == "cloze" and question_index in {1, 2}:
+        near_synonym_rule += (
+            " This question MUST contain exactly one near-synonym distractor; "
+            "the context must make the fixed answer clearly better than that "
+            "near-synonym, while both other distractors are clearly impossible."
+        )
+    elif spec["type"] == "cloze":
+        near_synonym_rule += (
+            " Do not use a near-synonym for the correct answer in this "
+            "question. All three distractors must be clearly impossible from "
+            "the surrounding context while remaining in the same broad "
+            "semantic field and part of speech."
+        )
+    return f"""
+The correct answer for blank {question_index} is fixed and must not be changed:
+{target!r}
+
+Return JSON only as {{"distractors": ["...", "...", "..."]}}.
+Write exactly three distractors for this blank. Distractors must be different
+from the answer and from one another, must fit the same part of speech and
+semantic field, and must not be obvious antonyms. {near_synonym_rule}
+
+Type: {spec["type"]}
+Grammar tags: {json.dumps(assignment["grammar_tags"], ensure_ascii=False)}
+Passage:
+{passage}
+""".strip()
+
+
+def _generate_m26_fixed_choice_questions(
+    *,
+    client: DeepSeekClient,
+    ledger: CostLedger,
+    spec: dict[str, Any],
+    passage: str,
+    max_repair_retries: int,
+) -> list[dict[str, Any]]:
+    questions: list[dict[str, Any]] = []
+    for index, assignment in enumerate(spec["questions"], start=1):
+        target = str(
+            assignment.get("answer_target")
+            or assignment.get("cloze_target")
+            or ""
+        ).strip()
+        if not target:
+            raise ValueError(f"ANSWER_TARGET_MISSING index={index}")
+        configured = assignment.get("distractor_candidates")
+        if isinstance(configured, list) and len(configured) == 3:
+            distractors = [str(value).strip() for value in configured]
+        else:
+            distractors = run_repair_loop(
+                client=client,
+                ledger=ledger,
+                purpose=f"distractors:{spec['type']}:{index}",
+                prompt=_build_distractors_prompt(
+                    spec=spec,
+                    assignment=assignment,
+                    question_index=index,
+                    passage=passage,
+                    target=target,
+                ),
+                validate=lambda data: (
+                    [
+                        str(value).strip()
+                        for value in data.get("distractors", [])
+                    ]
+                    if isinstance(data.get("distractors"), list)
+                    and len(data["distractors"]) == 3
+                    and all(
+                        isinstance(value, str)
+                        and value.strip()
+                        and value.strip().casefold() != target.casefold()
+                        for value in data["distractors"]
+                    )
+                    and len(
+                        {
+                            value.strip().casefold()
+                            for value in data["distractors"]
+                        }
+                    )
+                    == 3
+                    else (_ for _ in ()).throw(
+                        ValueError(f"DISTRACTORS_INVALID index={index}")
+                    )
+                ),
+                max_repair_retries=max_repair_retries,
+            )
+        options = list(distractors)
+        options.insert(index % 4, target)
+        question = {
+            "stem": f"Choose the best option for blank {index}.",
+            "options": options,
+            "answer": target,
+            "knowledge_points": [f"grammar:{assignment['grammar_tags'][0]}"],
+            "grammar_tags": list(assignment["grammar_tags"]),
+            "book_source": assignment["book_source"],
+            "difficulty": assignment["difficulty"],
+        }
+        for metadata_field in (
+            "grammar_category",
+            "reading_type",
+            "cohesion_type",
+            "near_synonym_calibration",
+        ):
+            value = assignment.get(metadata_field)
+            if value is not None:
+                question[metadata_field] = value
+        questions.append(question)
+    return questions
+
+
 def generate_pilot_passage(
     *,
     client: DeepSeekClient,
@@ -505,44 +1012,84 @@ def generate_pilot_passage(
     max_repair_retries: int = 3,
 ) -> dict[str, Any]:
     observations: list[dict[str, Any]] = []
-    passage = run_repair_loop(
-        client=client,
-        ledger=ledger,
-        purpose=f"passage:{schedule_passage['type']}",
-        prompt=_build_passage_prompt(schedule_passage),
-        validate=lambda data: _validate_passage_step(schedule_passage, data),
-        max_repair_retries=max_repair_retries,
-    )
-
-    assignments = schedule_passage["questions"]
-    questions: list[dict[str, Any]] = []
-    for start in range(0, len(assignments), 5):
-        batch = assignments[start : start + 5]
-        batch_number = start // 5 + 1
-        validated = run_repair_loop(
+    if schedule_passage.get("validation_profile") == "m26":
+        passage = run_repair_loop(
             client=client,
             ledger=ledger,
-            purpose=(
-                f"questions:{schedule_passage['type']}:"
-                f"batch-{batch_number}"
-            ),
-            prompt=_build_questions_prompt(
+            purpose=f"passage:{schedule_passage['type']}",
+            prompt=_build_passage_prompt(schedule_passage),
+            validate=lambda data: _validate_passage_step(
                 schedule_passage,
-                passage,
-                [
-                    {"question_order": start + index + 1, **assignment}
-                    for index, assignment in enumerate(batch)
-                ],
-            ),
-            validate=lambda data, batch=batch: _validate_question_batch(
-                schedule_passage,
-                batch,
                 data,
-                observations,
+                enforce_minimum=False,
+                enforce_quality=False,
             ),
             max_repair_retries=max_repair_retries,
         )
-        questions.extend(validated)
+        passage = _append_m26_passage(
+            client=client,
+            ledger=ledger,
+            spec=schedule_passage,
+            passage=passage,
+        )
+        passage = _simplify_m26_vocabulary(
+            client=client,
+            ledger=ledger,
+            spec=schedule_passage,
+            passage=passage,
+        )
+    else:
+        passage = run_repair_loop(
+            client=client,
+            ledger=ledger,
+            purpose=f"passage:{schedule_passage['type']}",
+            prompt=_build_passage_prompt(schedule_passage),
+            validate=lambda data: _validate_passage_step(schedule_passage, data),
+            max_repair_retries=max_repair_retries,
+        )
+
+    assignments = schedule_passage["questions"]
+    if (
+        schedule_passage.get("validation_profile") == "m26"
+        and schedule_passage["type"] in {"cloze", "grammar_fill"}
+    ):
+        questions = _generate_m26_fixed_choice_questions(
+            client=client,
+            ledger=ledger,
+            spec=schedule_passage,
+            passage=passage,
+            max_repair_retries=max_repair_retries,
+        )
+    else:
+        questions = []
+        for start in range(0, len(assignments), 5):
+            batch = assignments[start : start + 5]
+            batch_number = start // 5 + 1
+            validated = run_repair_loop(
+                client=client,
+                ledger=ledger,
+                purpose=(
+                    f"questions:{schedule_passage['type']}:"
+                    f"batch-{batch_number}"
+                ),
+                prompt=_build_questions_prompt(
+                    schedule_passage,
+                    passage,
+                    [
+                        {"question_order": start + index + 1, **assignment}
+                        for index, assignment in enumerate(batch)
+                    ],
+                ),
+                validate=lambda data, batch=batch: _validate_question_batch(
+                    schedule_passage,
+                    batch,
+                    data,
+                    observations,
+                    passage=passage,
+                ),
+                max_repair_retries=max_repair_retries,
+            )
+            questions.extend(validated)
 
     explanation_by_index: dict[int, str] = {}
     for start in range(0, len(questions), 10):
@@ -572,8 +1119,20 @@ def generate_pilot_passage(
 
     for index, question in enumerate(questions, start=1):
         question["explanation"] = explanation_by_index[index]
+        for metadata_field in (
+            "grammar_category",
+            "reading_type",
+            "cohesion_type",
+        ):
+            value = assignments[index - 1].get(metadata_field)
+            if value is not None:
+                question[metadata_field] = value
 
     record = {
+        "validation_profile": schedule_passage.get(
+            "validation_profile",
+            "m2",
+        ),
         "type": schedule_passage["type"],
         "passage_group_id": schedule_passage["passage_group_id"],
         "topic": schedule_passage["topic"],

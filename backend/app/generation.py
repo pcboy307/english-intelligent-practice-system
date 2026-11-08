@@ -14,6 +14,7 @@ from typing import Any, Callable
 
 import httpx
 
+from .readability import flesch_reading_ease
 from .question_validation import (
     QuestionValidationError,
     validate_question_book_tag,
@@ -33,6 +34,10 @@ class GateCategory(StrEnum):
     QUESTION_COUNT = "question_count"
     GRAMMAR_TAG = "grammar_tag"
     BOOK_TAG = "book_tag"
+    M26_FORM = "m26_form"
+    M26_READING = "m26_reading"
+    M26_COHESION = "m26_cohesion"
+    M26_VOCABULARY = "m26_vocabulary"
 
 
 @dataclass(frozen=True)
@@ -169,10 +174,83 @@ TYPE_RULES = {
     },
 }
 
+M26_TYPE_RULES = {
+    "cloze": {
+        "questions": 15,
+        "min_words": 200,
+        "max_words": 290,
+        "options": 4,
+    },
+    "grammar_fill": {
+        "questions": 10,
+        "min_words": 1,
+        "max_words": 220,
+        "options": 4,
+    },
+    "reading": {
+        "questions": 4,
+        "min_words": 250,
+        "max_words": 380,
+        "options": 4,
+    },
+    "gap_fill": {
+        "questions": 5,
+        "min_words": 220,
+        "max_words": 350,
+        "options": 7,
+    },
+}
+M26_READING_TYPES = {
+    "main_idea",
+    "detail",
+    "inference",
+    "vocabulary_in_context",
+    "purpose_or_attitude",
+}
+M26_HIGHER_ORDER_READING_TYPES = {
+    "main_idea",
+    "inference",
+    "vocabulary_in_context",
+    "purpose_or_attitude",
+}
+M26_COHESION_TYPES = {
+    "pronoun_reference",
+    "logical_connector",
+    "lexical_repetition",
+    "time_order",
+    "general_to_specific",
+}
+READING_META_PATTERN = re.compile(
+    r"which sentence contains|哪一句含有|contains a .* (?:clause|construction|voice)|含.*(?:从句|语态)",
+    re.IGNORECASE,
+)
+
 FILL_PLACEHOLDER = "______"
 PLACEHOLDER_TYPES = {"cloze", "grammar_fill", "gap_fill"}
 GAP_OPTION_OVERLAP_WORDS = 6
 ANSWER_TOKEN_PATTERN = re.compile(r"[A-Za-z]+(?:['-][A-Za-z]+)*")
+ANSWER_INFLECTION_RULES = frozenset(
+    {
+        "exact",
+        "irregular_inflection",
+        "plural_ies_to_y",
+        "past_ied_to_y",
+        "inflection_ing",
+        "inflection_ing_restore_e",
+        "inflection_ing_undouble",
+        "inflection_ed",
+        "inflection_ed_restore_e",
+        "inflection_ed_undouble",
+        "plural_es",
+        "plural_s",
+        "comparative_er_restore_e",
+        "comparative_est",
+        "comparative_est_restore_e",
+        "comparative_ier_to_y",
+        "comparative_iest_to_y",
+        "possessive_s",
+    }
+)
 
 
 @lru_cache(maxsize=1)
@@ -215,6 +293,48 @@ def load_vocabulary_scope() -> dict[str, Any]:
 
 def _word_count(text: str) -> int:
     return len(re.findall(r"[A-Za-z]+(?:['-][A-Za-z]+)*", text))
+
+
+def get_type_rules(
+    passage_type: str,
+    validation_profile: str = "m2",
+) -> dict[str, int]:
+    source = M26_TYPE_RULES if validation_profile == "m26" else TYPE_RULES
+    return source[passage_type]
+
+
+def _average_sentence_words(text: str) -> float:
+    word_count = _word_count(text)
+    sentence_count = _sentence_count(text)
+    return word_count / sentence_count if sentence_count else 0.0
+
+
+def _long_sentence_count(text: str, *, minimum_words: int = 22) -> int:
+    return sum(
+        _word_count(sentence) >= minimum_words
+        for sentence in re.split(r"(?<=[.!?])\s+", text)
+        if sentence.strip()
+    )
+
+
+def _complex_structure_count(text: str) -> int:
+    patterns = (
+        r"\b(?:which|who|whom|whose|that|because|although|though|while|since|unless|when|where|after|before|if)\b",
+        r"\b(?:to\s+[a-z]+|[a-z]+ing\b|[a-z]+ed\b)",
+    )
+    return sum(
+        any(re.search(pattern, sentence, re.IGNORECASE) for pattern in patterns)
+        for sentence in re.split(r"(?<=[.!?])\s+", text)
+        if sentence.strip()
+    )
+
+
+def _word_windows(text: str, width: int) -> set[tuple[str, ...]]:
+    words = [value.casefold() for value in ANSWER_TOKEN_PATTERN.findall(text)]
+    return {
+        tuple(words[index : index + width])
+        for index in range(max(0, len(words) - width + 1))
+    }
 
 
 def _sentence_count(text: str) -> int:
@@ -269,9 +389,30 @@ def _answer_tokens(value: str) -> list[str]:
     return [match.group(0).casefold() for match in ANSWER_TOKEN_PATTERN.finditer(value)]
 
 
-def _same_lemma(left: str, right: str) -> bool:
-    candidate_lemmas = _load_vocabulary_audit_module().candidate_lemmas
-    return bool(set(candidate_lemmas(left.casefold())) & set(candidate_lemmas(right.casefold())))
+def _inflection_candidates(value: str) -> set[str]:
+    resolver = _load_vocabulary_audit_module()
+    candidates = {
+        candidate
+        for candidate, rule in resolver.resolution_candidates(value.casefold())
+        if rule in ANSWER_INFLECTION_RULES
+    }
+    for suffix in ("er", "est"):
+        if value.casefold().endswith(suffix):
+            stem = value.casefold()[: -len(suffix)]
+            if (
+                len(stem) > 2
+                and stem[-1] == stem[-2]
+                and stem[-1] not in "aeiou"
+            ):
+                candidates.add(stem[:-1])
+    return candidates
+
+
+def _same_inflection(left: str, right: str) -> bool:
+    return bool(
+        _inflection_candidates(left)
+        & _inflection_candidates(right)
+    )
 
 
 def _answer_occurrence_count(passage: str, answer: str) -> int:
@@ -282,7 +423,10 @@ def _answer_occurrence_count(passage: str, answer: str) -> int:
     width = len(answer_tokens)
     return sum(
         all(
-            _same_lemma(passage_tokens[index + offset], answer_tokens[offset])
+            _same_inflection(
+                passage_tokens[index + offset],
+                answer_tokens[offset],
+            )
             for offset in range(width)
         )
         for index in range(len(passage_tokens) - width + 1)
@@ -378,7 +522,11 @@ def _fill_integrity_failures(
         else:
             value = _placeholder_value_after_marker(suffix)
             row["slot_form"] = value or FILL_PLACEHOLDER
-            if value and answer and _same_lemma(value, _answer_tokens(answer)[0]):
+            if (
+                value
+                and answer
+                and _same_inflection(value, _answer_tokens(answer)[0])
+            ):
                 code = "PLACEHOLDER_ANSWER_WORD_LEAK"
                 message = (
                     "PLACEHOLDER_ANSWER_WORD_LEAK: answer word occupies its blank."
@@ -492,6 +640,17 @@ def _gap_option_leak_failures(
     return failures
 
 
+def validate_gap_option_leak(
+    passage: str,
+    questions: list[dict[str, Any]],
+) -> list[GateFailure]:
+    return _gap_option_leak_failures(
+        "gap_fill",
+        passage,
+        questions,
+    )
+
+
 def validate_rendered_passage(
     record: dict[str, Any],
     rendered_passage: str,
@@ -499,6 +658,176 @@ def validate_rendered_passage(
     rendered_record = dict(record)
     rendered_record["passage"] = rendered_passage
     return validate_generated_passage(rendered_record)
+
+
+def _m26_rule_failures(
+    record: dict[str, Any],
+    passage: str,
+    questions: list[Any],
+) -> tuple[list[GateFailure], dict[str, Any]]:
+    passage_type = record["type"]
+    failures: list[GateFailure] = []
+    if not passage.strip():
+        return failures, {
+            "average_sentence_words": 0.0,
+            "long_sentence_count": 0,
+            "complex_structure_count": 0,
+            "flesch_reading_ease": None,
+        }
+    metrics: dict[str, Any] = {
+        "average_sentence_words": round(_average_sentence_words(passage), 2),
+        "long_sentence_count": _long_sentence_count(passage),
+        "complex_structure_count": _complex_structure_count(passage),
+    }
+    if passage_type in {"cloze", "reading"}:
+        metrics["flesch_reading_ease"] = flesch_reading_ease(passage)
+
+    if passage_type == "cloze":
+        if metrics["average_sentence_words"] < 15:
+            failures.append(
+                GateFailure(
+                    GateCategory.M26_FORM,
+                    "R12_CLOZE_SENTENCE_LENGTH: average sentence length is below 15.",
+                    details={"actual": metrics["average_sentence_words"]},
+                )
+            )
+        if not 52 <= metrics["flesch_reading_ease"] <= 70:
+            failures.append(
+                GateFailure(
+                    GateCategory.M26_FORM,
+                    "R12_CLOZE_FLESCH: Flesch score is outside 52-70.",
+                    details={"actual": metrics["flesch_reading_ease"]},
+                )
+            )
+        if metrics["long_sentence_count"] < 3:
+            failures.append(
+                GateFailure(
+                    GateCategory.M26_FORM,
+                    "R12_CLOZE_LONG_SENTENCES: fewer than three sentences have at least 22 words.",
+                    details={"actual": metrics["long_sentence_count"]},
+                )
+            )
+        if metrics["complex_structure_count"] < 2:
+            failures.append(
+                GateFailure(
+                    GateCategory.M26_FORM,
+                    "R12_CLOZE_COMPLEX_STRUCTURES: fewer than two complex structures.",
+                    details={"actual": metrics["complex_structure_count"]},
+                )
+            )
+
+    if passage_type == "grammar_fill":
+        categories = {
+            str(question.get("grammar_category"))
+            for question in questions
+            if isinstance(question, dict) and question.get("grammar_category")
+        }
+        metrics["grammar_categories"] = sorted(categories)
+        if len(categories) < 5:
+            failures.append(
+                GateFailure(
+                    GateCategory.M26_FORM,
+                    "R12_GRAMMAR_CATEGORIES: fewer than five grammar categories.",
+                    details={"actual": sorted(categories)},
+                )
+            )
+
+    if passage_type == "reading":
+        if metrics["average_sentence_words"] < 16:
+            failures.append(
+                GateFailure(
+                    GateCategory.M26_READING,
+                    "R12_READING_SENTENCE_LENGTH: average sentence length is below 16.",
+                    details={"actual": metrics["average_sentence_words"]},
+                )
+            )
+        if not 48 <= metrics["flesch_reading_ease"] <= 68:
+            failures.append(
+                GateFailure(
+                    GateCategory.M26_READING,
+                    "R12_READING_FLESCH: Flesch score is outside 48-68.",
+                    details={"actual": metrics["flesch_reading_ease"]},
+                )
+            )
+        reading_types = [
+            str(question.get("reading_type", ""))
+            for question in questions
+            if isinstance(question, dict)
+        ]
+        metrics["reading_types"] = reading_types
+        invalid_types = sorted(set(reading_types) - M26_READING_TYPES)
+        if invalid_types:
+            failures.append(
+                GateFailure(
+                    GateCategory.M26_READING,
+                    "R14_READING_TYPE_INVALID: unknown reading subtype.",
+                    details={"invalid_types": invalid_types},
+                )
+            )
+        higher_order = sum(
+            item in M26_HIGHER_ORDER_READING_TYPES
+            for item in reading_types
+        )
+        if reading_types and higher_order / len(reading_types) < 0.6:
+            failures.append(
+                GateFailure(
+                    GateCategory.M26_READING,
+                    "R14_READING_TYPE_RATIO: higher-order reading types are below 60 percent.",
+                    details={"higher_order": higher_order, "total": len(reading_types)},
+                )
+            )
+        passage_windows = _word_windows(passage, 5)
+        for question_index, question in enumerate(questions, start=1):
+            if not isinstance(question, dict):
+                continue
+            evidence = question.get("evidence_sentence")
+            if not isinstance(evidence, str) or evidence not in passage:
+                failures.append(
+                    GateFailure(
+                        GateCategory.M26_READING,
+                        "R14_READING_EVIDENCE_NOT_SUBSTRING: evidence is not a passage substring.",
+                        question_index,
+                    )
+                )
+            stem = str(question.get("stem", ""))
+            if READING_META_PATTERN.search(stem):
+                failures.append(
+                    GateFailure(
+                        GateCategory.M26_READING,
+                        "R14_READING_META_LANGUAGE: question asks for grammar recognition.",
+                        question_index,
+                    )
+                )
+            answer = str(question.get("answer", ""))
+            if 5 <= len(ANSWER_TOKEN_PATTERN.findall(answer)) and (
+                _word_windows(answer, 5) & passage_windows
+            ):
+                failures.append(
+                    GateFailure(
+                        GateCategory.M26_READING,
+                        "R14_READING_OPTION_COPIED: answer copies at least five consecutive passage words.",
+                        question_index,
+                        {"answer": answer},
+                    )
+                )
+
+    if passage_type == "gap_fill":
+        cohesion_types = {
+            str(question.get("cohesion_type"))
+            for question in questions
+            if isinstance(question, dict) and question.get("cohesion_type")
+        }
+        metrics["cohesion_types"] = sorted(cohesion_types)
+        if len(cohesion_types) < 3:
+            failures.append(
+                GateFailure(
+                    GateCategory.M26_COHESION,
+                    "R12_COHESION_TYPES: fewer than three cohesion types.",
+                    details={"actual": sorted(cohesion_types)},
+                )
+            )
+
+    return failures, metrics
 
 
 def validate_generated_passage(
@@ -561,7 +890,20 @@ def validate_generated_passage(
             metrics={},
         )
 
-    rule = TYPE_RULES[passage_type]
+    validation_profile = str(record.get("validation_profile", "m2"))
+    if validation_profile not in {"m2", "m26"}:
+        return PassageValidationReport(
+            accepted=False,
+            failures=[
+                GateFailure(
+                    GateCategory.STRUCTURE,
+                    "Unknown validation profile.",
+                    details={"validation_profile": validation_profile},
+                )
+            ],
+            metrics={},
+        )
+    rule = get_type_rules(passage_type, validation_profile)
     passage = record.get("passage")
     questions = record.get("questions")
     if not isinstance(passage, str) or not passage.strip():
@@ -616,6 +958,14 @@ def validate_generated_passage(
     failures.extend(
         _gap_option_leak_failures(passage_type, passage, questions)
     )
+    m26_metrics: dict[str, Any] = {}
+    if validation_profile == "m26":
+        m26_failures, m26_metrics = _m26_rule_failures(
+            record,
+            passage,
+            questions,
+        )
+        failures.extend(m26_failures)
 
     glossed_terms = _glossed_terms(passage)
     audit_text = _remove_glossed_terms(passage, glossed_terms)
@@ -627,15 +977,28 @@ def validate_generated_passage(
     unknown_words = audit["unknown"]
     unknown_ratio = audit["unknown_ratio"]
     vocabulary_resolutions = audit["resolutions"]
-    if unknown_words:
+    unique_unknown_words = sorted(
+        {str(word).casefold() for word in unknown_words}
+    )
+    if unknown_words and (
+        validation_profile != "m26" or len(unique_unknown_words) > 3
+    ):
         failures.append(
             GateFailure(
-                GateCategory.VOCABULARY_SCOPE,
-                "Passage contains words outside the 3413-entry whitelist.",
+                (
+                    GateCategory.M26_VOCABULARY
+                    if validation_profile == "m26"
+                    else GateCategory.VOCABULARY_SCOPE
+                ),
+                (
+                    "R12_VOCABULARY_LIMIT: more than three words are outside the whitelist."
+                    if validation_profile == "m26"
+                    else "Passage contains words outside the 3413-entry whitelist."
+                ),
                 details={"unknown_words": unknown_words},
             )
         )
-    if unknown_ratio > 0.03:
+    if unknown_ratio > 0.03 and validation_profile != "m26":
         failures.append(
             GateFailure(
                 GateCategory.UNKNOWN_RATIO,
@@ -864,6 +1227,7 @@ def validate_generated_passage(
         failures=failures,
         metrics={
             "type": passage_type,
+            "validation_profile": validation_profile,
             "word_count": word_count,
             "question_count": len(questions),
             "unknown_words": unknown_words,
@@ -880,6 +1244,7 @@ def validate_generated_passage(
             "glossed_terms": glossed_terms,
             "single_word_denominator": audit["single_word_denominator"],
             "fill_integrity": fill_integrity,
+            **m26_metrics,
         },
     )
 

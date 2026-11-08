@@ -1,0 +1,114 @@
+{
+  "schema_version": "2.6.0-stage-a",
+  "bank_name": "20261108_500",
+  "validation_profile": "m26",
+  "passages": [
+    {
+      "type": "cloze",
+      "passage_group_id": "M26-A-CLOZE-01",
+      "topic": "健康心理",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "questions": [
+        {"answer_target": "anxious", "book_source": "选必二 U1", "difficulty": 2, "grammar_tags": ["noun_clauses"]},
+        {"answer_target": "confident", "book_source": "选必一 U1", "difficulty": 3, "grammar_tags": ["cleft_basic"]},
+        {"answer_target": "curious", "book_source": "必修1 U1", "difficulty": 3, "grammar_tags": ["adverbial_clauses"]},
+        {"answer_target": "reliable", "book_source": "跨册综合", "difficulty": 2, "grammar_tags": ["cleft_basic"]},
+        {"answer_target": "ambitious", "book_source": "选必二 U1", "difficulty": 5, "grammar_tags": ["partial_inversion_basic"]},
+        {"answer_target": "achieve", "book_source": "选必一 U1", "difficulty": 3, "grammar_tags": ["noun_clauses"]},
+        {"answer_target": "adapt", "book_source": "必修1 U1", "difficulty": 2, "grammar_tags": ["articles"]},
+        {"answer_target": "encourage", "book_source": "跨册综合", "difficulty": 4, "grammar_tags": ["noun_clauses"]},
+        {"answer_target": "persuade", "book_source": "选必二 U1", "difficulty": 4, "grammar_tags": ["passive_voice_tenses"]},
+        {"answer_target": "concentrate", "book_source": "选必一 U1", "difficulty": 3, "grammar_tags": ["relative_clauses_non_defining"]},
+        {"answer_target": "gradually", "book_source": "跨册综合", "difficulty": 3, "grammar_tags": ["relative_clauses_non_defining"]},
+        {"answer_target": "eventually", "book_source": "选必二 U1", "difficulty": 2, "grammar_tags": ["subjunctive_basic_if"]},
+        {"answer_target": "independently", "book_source": "选必一 U1", "difficulty": 4, "grammar_tags": ["subjunctive_basic_if"]},
+        {"answer_target": "confidence", "book_source": "跨册综合", "difficulty": 3, "grammar_tags": ["subjunctive_basic_if"]},
+        {"answer_target": "opportunity", "book_source": "选必二 U1", "difficulty": 5, "grammar_tags": ["subjunctive_basic_should"]}
+      ]
+    },
+    {
+      "type": "cloze",
+      "passage_group_id": "M26-A-CLOZE-02",
+      "topic": "职业创业",
+      "book_source": "选必一 U2",
+      "difficulty": 4,
+      "questions": [
+        {"answer_target": "accept", "distractor_candidates": ["approve", "acknowledge", "admit"], "near_synonym_calibration": true, "book_source": "选必二 U2", "difficulty": 2, "grammar_tags": ["subjunctive_basic_should"]},
+        {"answer_target": "appreciate", "distractor_candidates": ["value", "treasure", "admire"], "near_synonym_calibration": true, "book_source": "选必一 U2", "difficulty": 3, "grammar_tags": ["tense_system"]},
+        {"answer_target": "balance", "distractor_candidates": ["manage", "arrange", "abandon"], "book_source": "选必二 U2", "difficulty": 4, "grammar_tags": ["tense_system"]},
+        {"answer_target": "benefit", "distractor_candidates": ["advantage", "profit", "loss"], "book_source": "选必一 U2", "difficulty": 2, "grammar_tags": ["word_formation"]},
+        {"answer_target": "challenge", "distractor_candidates": ["difficulty", "obstacle", "comfort"], "book_source": "选必一 U2", "difficulty": 5, "grammar_tags": ["v_ing_nonfinite"]},
+        {"answer_target": "communicate", "distractor_candidates": ["discuss", "explain", "hide"], "book_source": "选必一 U2", "difficulty": 3, "grammar_tags": ["noun_clauses"]},
+        {"answer_target": "contribute", "distractor_candidates": ["add", "donate", "remove"], "book_source": "选必一 U2", "difficulty": 4, "grammar_tags": ["with_compound"]},
+        {"answer_target": "determine", "distractor_candidates": ["decide", "identify", "ignore"], "book_source": "选必二 U2", "difficulty": 3, "grammar_tags": ["partial_inversion_basic"]},
+        {"answer_target": "discover", "distractor_candidates": ["find", "notice", "overlook"], "book_source": "选必二 U2", "difficulty": 3, "grammar_tags": ["word_formation"]},
+        {"answer_target": "efficient", "distractor_candidates": ["effective", "productive", "wasteful"], "book_source": "选必二 U2", "difficulty": 4, "grammar_tags": ["passive_voice_tenses"]},
+        {"answer_target": "essential", "distractor_candidates": ["necessary", "important", "optional"], "book_source": "选必一 U2", "difficulty": 3, "grammar_tags": ["cleft_basic"]},
+        {"answer_target": "improve", "distractor_candidates": ["enhance", "develop", "worsen"], "book_source": "选必一 U2", "difficulty": 5, "grammar_tags": ["subjunctive_basic_if"]},
+        {"answer_target": "manage", "distractor_candidates": ["handle", "control", "neglect"], "book_source": "选必二 U2", "difficulty": 3, "grammar_tags": ["noun_clauses"]},
+        {"answer_target": "prefer", "distractor_candidates": ["choose", "favor", "reject"], "book_source": "选必一 U2", "difficulty": 4, "grammar_tags": ["subjunctive_basic_should"]},
+        {"answer_target": "reduce", "distractor_candidates": ["decrease", "limit", "increase"], "book_source": "选必一 U2", "difficulty": 4, "grammar_tags": ["relative_clauses_non_defining"]}
+      ]
+    },
+    {
+      "type": "grammar_fill",
+      "passage_group_id": "M26-A-GRAMMAR-01",
+      "topic": "家庭代际",
+      "book_source": "必修2 U2",
+      "difficulty": 3,
+      "questions": [
+        {"answer_target": "the person who called", "book_source": "必修1 U1", "difficulty": 2, "grammar_tags": ["relative_clauses_defining"], "grammar_category": "定语从句"},
+        {"answer_target": "the bridge which was built", "book_source": "选必一 U1", "difficulty": 3, "grammar_tags": ["relative_clauses_non_defining"], "grammar_category": "定语从句"},
+        {"answer_target": "has already been repaired", "book_source": "选必二 U1", "difficulty": 3, "grammar_tags": ["passive_voice_tenses"], "grammar_category": "时态语态"},
+        {"answer_target": "written by a local teacher", "book_source": "必修1 U2", "difficulty": 4, "grammar_tags": ["past_participle_nonfinite"], "grammar_category": "非谓语"},
+        {"answer_target": "having checked the plan", "book_source": "选必一 U2", "difficulty": 5, "grammar_tags": ["v_ing_nonfinite"], "grammar_category": "非谓语"},
+        {"answer_target": "whether the plan would work", "book_source": "选必二 U2", "difficulty": 4, "grammar_tags": ["noun_clauses"], "grammar_category": "名词性从句"},
+        {"answer_target": "although the weather changed", "book_source": "必修1 U2", "difficulty": 3, "grammar_tags": ["adverbial_clauses"], "grammar_category": "状语从句"},
+        {"answer_target": "if I were in charge", "book_source": "选必二 U3", "difficulty": 5, "grammar_tags": ["subjunctive_basic_if"], "grammar_category": "时态语态"},
+        {"answer_target": "the team has already begun", "book_source": "必修2 U1", "difficulty": 3, "grammar_tags": ["subject_verb_agreement"], "grammar_category": "时态语态"},
+        {"answer_target": "the first train", "book_source": "必修2 U1", "difficulty": 2, "grammar_tags": ["articles"], "grammar_category": "冠词"}
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M26-A-READING-01",
+      "topic": "科技",
+      "book_source": "选必二 U1",
+      "difficulty": 4,
+      "questions": [
+        {"book_source": "必修1 U1", "difficulty": 3, "grammar_tags": ["relative_clauses_defining"], "reading_type": "main_idea"},
+        {"book_source": "选必二 U1", "difficulty": 4, "grammar_tags": ["passive_voice_tenses"], "reading_type": "inference"},
+        {"book_source": "选必二 U1", "difficulty": 4, "grammar_tags": ["noun_clauses"], "reading_type": "purpose_or_attitude"},
+        {"book_source": "必修2 U1", "difficulty": 3, "grammar_tags": ["articles"], "reading_type": "vocabulary_in_context"}
+      ]
+    },
+    {
+      "type": "reading",
+      "passage_group_id": "M26-A-READING-02",
+      "topic": "历史遗产",
+      "book_source": "选必一 U2",
+      "difficulty": 4,
+      "questions": [
+        {"book_source": "选必二 U2", "difficulty": 3, "grammar_tags": ["tense_system"], "reading_type": "main_idea"},
+        {"book_source": "必修1 U2", "difficulty": 4, "grammar_tags": ["adverbial_clauses"], "reading_type": "inference"},
+        {"book_source": "选必一 U2", "difficulty": 4, "grammar_tags": ["v_ing_nonfinite"], "reading_type": "purpose_or_attitude"},
+        {"book_source": "选必二 U1", "difficulty": 3, "grammar_tags": ["word_formation"], "reading_type": "vocabulary_in_context"}
+      ]
+    },
+    {
+      "type": "gap_fill",
+      "passage_group_id": "M26-A-GAP-01",
+      "topic": "环境",
+      "book_source": "选必二 U1",
+      "difficulty": 3,
+      "questions": [
+        {"book_source": "选必二 U1", "difficulty": 2, "grammar_tags": ["noun_clauses"], "cohesion_type": "pronoun_reference"},
+        {"book_source": "必修2 U1", "difficulty": 3, "grammar_tags": ["articles"], "cohesion_type": "logical_connector"},
+        {"book_source": "选必二 U1", "difficulty": 3, "grammar_tags": ["passive_voice_tenses"], "cohesion_type": "lexical_repetition"},
+        {"book_source": "选必二 U3", "difficulty": 4, "grammar_tags": ["subjunctive_basic_if"], "cohesion_type": "time_order"},
+        {"book_source": "选必二 U3", "difficulty": 4, "grammar_tags": ["subjunctive_basic_should"], "cohesion_type": "general_to_specific"}
+      ]
+    }
+  ]
+}

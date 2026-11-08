@@ -868,16 +868,9 @@ def replace_bank(records: list[dict[str, Any]]) -> dict[str, Any]:
                 """,
                 (job["id"],),
             )
-        # The old 29 items are rejected pilot artifacts. Replace them atomically.
-        connection.execute(
-            "DELETE FROM questions WHERE bank_id=%s",
-            (bank["id"],),
-        )
-        connection.execute(
-            "DELETE FROM passages WHERE bank_id=%s",
-            (bank["id"],),
-        )
         repository = M2Repository(connection)
+        # The old 29 items are rejected pilot artifacts. Replace them atomically.
+        repository.clear_bank_content(bank["id"])
         job = repository.create_generation_job(
             bank["id"],
             target_passages=47,

@@ -1,0 +1,21 @@
+{
+  "generation": [
+    {
+      "purpose": "ping",
+      "attempt": 1,
+      "status": "ok",
+      "prompt_tokens": 31,
+      "completion_tokens": 1,
+      "total_tokens": 32,
+      "elapsed_seconds": 0.9811195000074804,
+      "finish_reason": "length",
+      "request_id": "4e8d87c1-28df-4df5-b938-4061e70b3123",
+      "error": null,
+      "model_id": "deepseek-flash",
+      "transport": "json_object",
+      "prompt_version": "m26-stage-a-v1",
+      "cost_cny": 7.000000000000001e-05
+    }
+  ],
+  "judge": []
+}

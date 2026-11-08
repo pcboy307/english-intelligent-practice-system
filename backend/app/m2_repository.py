@@ -243,6 +243,16 @@ class M2Repository:
         )
         return ids
 
+    def clear_bank_content(self, bank_id: str) -> None:
+        self.connection.execute(
+            "DELETE FROM questions WHERE bank_id=%s",
+            (bank_id,),
+        )
+        self.connection.execute(
+            "DELETE FROM passages WHERE bank_id=%s",
+            (bank_id,),
+        )
+
     def question_count(self, bank_id: str) -> int:
         return int(
             self.connection.execute(

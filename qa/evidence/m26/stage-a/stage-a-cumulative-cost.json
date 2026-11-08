@@ -1,0 +1,30 @@
+{
+  "request_count": 1106,
+  "prompt_tokens": 1204660,
+  "completion_tokens": 332185,
+  "cost_cny": 6.068438,
+  "status_counts": {
+    "ok": 884,
+    "validation_error": 221,
+    "finish_reason_length": 1
+  },
+  "finish_reason_counts": {
+    "stop": 1089,
+    "length": 17
+  },
+  "final_resumed_run_totals": {
+    "passages": 6,
+    "questions": 53,
+    "prompt_tokens": 74470,
+    "completion_tokens": 19983,
+    "cost_cny": 0.504281
+  },
+  "final_resumed_run_extrapolations": {
+    "300_questions_cny": 2.854421,
+    "2000_questions_cny": 19.029472
+  },
+  "all_attempts_extrapolation": {
+    "300_questions_cny": 34.349649,
+    "2000_questions_cny": 228.99766
+  }
+}

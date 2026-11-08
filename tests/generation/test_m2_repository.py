@@ -290,3 +290,54 @@ def test_prevalidated_insert_cannot_bypass_placeholder_integrity() -> None:
                 (bank["id"],),
             ).fetchone()["count"]
             assert passage_count == 0
+
+
+def test_clear_bank_content_only_deletes_the_requested_bank() -> None:
+    with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+        with connection.transaction(force_rollback=True):
+            repo = M2Repository(connection)
+            target = repo.create_bank(
+                name=f"M2 clear target {uuid.uuid4()}",
+                target_size=4,
+                difficulty_profile="standard",
+            )
+            preserved = repo.create_bank(
+                name=f"M2 clear preserved {uuid.uuid4()}",
+                target_size=4,
+                difficulty_profile="standard",
+            )
+            for bank in (target, preserved):
+                job = repo.create_generation_job(
+                    bank["id"],
+                    target_passages=1,
+                    batch_size=1,
+                    approved_by="pytest",
+                    reason="clear bank content test",
+                )
+                repo.insert_passage(
+                    bank_id=bank["id"],
+                    job_id=job["id"],
+                    batch_id="M2-CLEAR-TEST",
+                    record=valid_reading(),
+                )
+
+            clear_bank_content = getattr(repo, "clear_bank_content", None)
+            assert callable(clear_bank_content)
+            clear_bank_content(target["id"])
+
+            assert repo.question_count(target["id"]) == 0
+            assert repo.question_count(preserved["id"]) == 4
+            passage_counts = {
+                str(row["bank_id"]): row["count"]
+                for row in connection.execute(
+                    """
+                    SELECT bank_id, count(*) AS count
+                    FROM passages
+                    WHERE bank_id = ANY(%s)
+                    GROUP BY bank_id
+                    """,
+                    ([target["id"], preserved["id"]],),
+                ).fetchall()
+            }
+            assert passage_counts.get(target["id"], 0) == 0
+            assert passage_counts[preserved["id"]] == 1

@@ -33,7 +33,7 @@
     "type": {"enum": ["cloze", "grammar_fill", "reading", "gap_fill"]},
     "passage_group_id": {"type": "string", "minLength": 1, "maxLength": 100},
     "passage": {"type": "string", "minLength": 1},
-    "word_count": {"type": "integer", "minimum": 1, "maximum": 250},
+    "word_count": {"type": "integer", "minimum": 1, "maximum": 380},
     "stem": {"type": "string", "minLength": 1},
     "options": {
       "oneOf": [

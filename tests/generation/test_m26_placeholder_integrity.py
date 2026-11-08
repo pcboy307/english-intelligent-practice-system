@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import json
 
+import pytest
+
 from backend.app.generation import (
     validate_fill_placeholder_shape,
     validate_generated_passage,
@@ -74,6 +76,15 @@ def _failure_codes(record: dict) -> set[str]:
     return {failure.message.split(":", 1)[0] for failure in report.failures}
 
 
+def _answer_leak_on_question(record: dict, question_index: int) -> bool:
+    report = validate_generated_passage(record)
+    return any(
+        failure.question_index == question_index
+        and failure.message.startswith("ANSWER_WORD_APPEARS_IN_PASSAGE")
+        for failure in report.failures
+    )
+
+
 def test_rejects_answer_word_printed_at_its_own_blank() -> None:
     record = _cloze_record("(1) anxious")
 
@@ -103,9 +114,53 @@ def test_accepts_a_uniform_placeholder_after_every_marker() -> None:
 
 def test_rejects_an_inflected_answer_form_elsewhere_in_the_passage() -> None:
     record = _cloze_record(f"(1) {PLACEHOLDER}")
-    record["passage"] += " The student waited anxiously."
+    record["questions"][0].update(
+        {
+            "options": ["wait", "clear", "ready", "quiet"],
+            "answer": "wait",
+        }
+    )
+    record["passage"] += " The student waited outside."
 
     assert "ANSWER_WORD_APPEARS_IN_PASSAGE" in _failure_codes(record)
+
+
+@pytest.mark.parametrize(
+    ("answer", "derived_form"),
+    [
+        ("achieve", "achievement"),
+        ("succeed", "success"),
+        ("confident", "confidence"),
+        ("teach", "teacher"),
+    ],
+)
+def test_does_not_treat_derived_words_as_inflected_answers(
+    answer: str,
+    derived_form: str,
+) -> None:
+    record = _cloze_record(f"(1) {PLACEHOLDER}")
+    record["questions"][0].update(
+        {
+            "options": [answer, "clear", "ready", "quiet"],
+            "answer": answer,
+        }
+    )
+    record["passage"] += f" The word {derived_form} appeared later."
+
+    assert _answer_leak_on_question(record, 1) is False
+
+
+def test_irregular_inflection_still_counts_as_an_answer_form() -> None:
+    record = _cloze_record(f"(1) {PLACEHOLDER}")
+    record["questions"][0].update(
+        {
+            "options": ["good", "clear", "ready", "quiet"],
+            "answer": "good",
+        }
+    )
+    record["passage"] += " The second result was better."
+
+    assert _answer_leak_on_question(record, 1) is True
 
 
 def test_rejects_gap_option_text_leaking_into_the_passage() -> None:

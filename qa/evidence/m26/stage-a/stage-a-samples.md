@@ -1,0 +1,635 @@
+# M2.6 Stage A Generated Samples
+
+## M26-A-CLOZE-01 · cloze · 健康心理
+
+Building a healthy mind is a slow process that rewards patience. A student who feels (1) ______ before a big test can learn to calm down by breathing slowly and by reminding himself that one exam does not define his whole future. Teachers can (2) ______ learners to ask questions, and a (3) ______ class often discovers more than a quiet one because students who wonder about a topic keep looking for answers. To become (4) ______, a person needs regular sleep, honest friends and a clear plan for each day. Some young people are very (5) ______ and want to (6) ______ great things quickly, yet real growth takes time. When plans fail, the wise response is to (7) ______ rather than give up, and parents can (8) ______ children by listening without judging them. A good advisor may (9) ______ a worried student to seek help, and simple habits help us (10) ______ on the task in front of us. Progress comes (11) ______, through small daily choices, and we (12) ______ notice that we feel calmer and stronger. Working (13) ______ is also important, because a person who can solve problems alone gains real (14) ______. Every difficulty is also an (15) ______ to learn something useful about ourselves, so a healthy mind treats trouble as a teacher rather than an enemy. In time, these small victories build a steady inner strength that carries us through harder days ahead.
+
+**1. Choose the best option for blank 1.**
+
+- A. eager
+- B. anxious
+- C. nervous
+- D. excited
+
+答案：anxious
+
+解析：第1题应选 anxious，因为句意是学生在大考前感到焦虑不安，anxious 表示担忧、紧张，与后文学习冷静下来相呼应。nervous 虽也有紧张之意，但 anxious 更强调对考试的担忧，且与 calm down 的对比最自然；eager 和 excited 都偏积极，不符合需要平静下来的语境。本题考点是近义形容词在语境中的辨析。
+
+**2. Choose the best option for blank 2.**
+
+- A. certain
+- B. arrogant
+- C. confident
+- D. doubtful
+
+答案：confident
+
+解析：第2题应选 confident，因为教师应让学生有信心去提问，confident 表示自信的，符合鼓励学生表达疑问的语境。arrogant 意为傲慢的，doubtful 意为怀疑的，certain 意为确定的，都不能表达教师给予学生信心这一含义。本题考点是形容词在教育语境中的语义辨析。
+
+**3. Choose the best option for blank 3.**
+
+- A. bored
+- B. silent
+- C. tired
+- D. curious
+
+答案：curious
+
+解析：第3题应选 curious，因为后文说对话题好奇的学生会不断寻找答案，curious 意为好奇的，与 wonder about a topic 直接对应。bored、silent、tired 都与后文发现的更多相矛盾，尤其 silent 与 quiet 重复且不符合逻辑。本题考点是形容词与上下文逻辑的呼应。
+
+**4. Choose the best option for blank 4.**
+
+- A. reliable
+- B. famous
+- C. wealthy
+- D. cheerful
+
+答案：reliable
+
+解析：第4题应选 reliable，因为句子列举规律睡眠、诚实朋友和每日清晰计划，这些品质指向一个人变得可靠、值得信赖。famous、wealthy、cheerful 分别指著名、富有、愉快，与睡眠、朋友、计划这些具体习惯的对应关系较弱。本题考点是形容词根据列举信息进行语义归纳。
+
+**5. Choose the best option for blank 5.**
+
+- A. lazy
+- B. ambitious
+- C. content
+- D. cautious
+
+答案：ambitious
+
+解析：第5题应选 ambitious，因为后文说年轻人想快速成就大事，ambitious 意为有雄心的，正好解释这种急切追求。lazy 与想成就大事矛盾，content 意为满足的，cautious 意为谨慎的，都不能体现想快速做大事的强烈愿望。本题考点是形容词与后文行为之间的因果关系。
+
+**6. Choose the best option for blank 6.**
+
+- A. acquire
+- B. obtain
+- C. achieve
+- D. attain
+
+答案：achieve
+
+解析：第6题应选 achieve，因为 achieve great things 是固定搭配，表示成就伟业。acquire 和 obtain 多指获得具体物品或知识，attain 虽可指达到目标，但与 great things 搭配不如 achieve 自然常用。本题考点是动词与名词的固定搭配辨析。
+
+**7. Choose the best option for blank 7.**
+
+- A. postpone
+- B. complain
+- C. hesitate
+- D. adapt
+
+答案：adapt
+
+解析：第7题应选 adapt，因为句意是计划失败时明智的做法是适应而不是放弃，adapt 表示调整适应。postpone 意为推迟，complain 意为抱怨，hesitate 意为犹豫，都不能与 rather than give up 形成合理的积极应对。本题考点是动词在转折语境中的语义选择。
+
+**8. Choose the best option for blank 8.**
+
+- A. encourage
+- B. discourage
+- C. prevent
+- D. forbid
+
+答案：encourage
+
+解析：第8题应选 encourage，因为父母通过不带评判地倾听来鼓励孩子，encourage 表示鼓励，符合积极教育方式。discourage、prevent、forbid 都表示阻止或打击，与倾听支持孩子的语境相反。本题考点是动词在家庭教育语境中的褒贬色彩。
+
+**9. Choose the best option for blank 9.**
+
+- A. force
+- B. persuade
+- C. command
+- D. order
+
+答案：persuade
+
+解析：第9题应选 persuade，因为好顾问会说服忧虑的学生去寻求帮助，persuade 表示劝说、说服，语气适合顾问与学生之间的关系。force、command、order 都带有强制命令意味，不符合顾问温和引导的角色。本题考点是动词的语气和人际关系适用性。
+
+**10. Choose the best option for blank 10.**
+
+- A. speculate
+- B. reflect
+- C. concentrate
+- D. elaborate
+
+答案：concentrate
+
+解析：第10题应选 concentrate，因为 concentrate on the task 是固定搭配，表示专注于眼前的任务。speculate 意为推测，reflect 意为反思，elaborate 意为详细阐述，都不能与 on the task 搭配表达集中注意力。本题考点是动词短语搭配与语境意义。
+
+**11. Choose the best option for blank 11.**
+
+- A. suddenly
+- B. instantly
+- C. abruptly
+- D. gradually
+
+答案：gradually
+
+解析：第11空应选gradually，因为句意强调进步是通过每天的小选择逐渐发生的，与slow process和small daily choices相呼应。suddenly、instantly和abruptly都表示突然或立刻，与缓慢成长的语境矛盾。本题考点是副词辨析，特别是表示渐进过程的副词在语境中的使用。
+
+**12. Choose the best option for blank 12.**
+
+- A. eventually
+- B. rarely
+- C. seldom
+- D. never
+
+答案：eventually
+
+解析：第12空应选eventually，表示我们最终会注意到自己更平静、更坚强，符合长期积累后产生结果的逻辑。rarely、seldom和never都表示很少或从不，与积极成长的结果相反。本题考点是频率副词和结果副词在语境中的辨析。
+
+**13. Choose the best option for blank 13.**
+
+- A. together
+- B. independently
+- C. quickly
+- D. carefully
+
+答案：independently
+
+解析：第13空应选independently，因为后文说能独自解决问题的人会获得真正的信心，说明这里强调独立工作。together与后文alone矛盾，quickly和carefully虽然语法可行，但无法与独自解决问题形成语义衔接。本题考点是副词与上下文逻辑关系的匹配。
+
+**14. Choose the best option for blank 14.**
+
+- A. arrogance
+- B. stubbornness
+- C. confidence
+- D. carelessness
+
+答案：confidence
+
+解析：第14空应选confidence，因为能够独立解决问题的人会获得真正的自信，这与建立健康心智的主题一致。arrogance表示傲慢，stubbornness表示固执，carelessness表示粗心，都是负面品质，不符合语境。本题考点是名词辨析及积极语义场的判断。
+
+**15. Choose the best option for blank 15.**
+
+- A. obstacle
+- B. burden
+- C. penalty
+- D. opportunity
+
+答案：opportunity
+
+解析：第15空应选opportunity，因为句意是每个困难也是学习有用东西的机会，且后文说健康心智把麻烦当作老师。obstacle、burden和penalty都表示障碍、负担或惩罚，与treats trouble as a teacher的积极态度不符。本题考点是名词辨析和比喻语境的理解。
+
+Gate result: `True`
+
+## M26-A-CLOZE-02 · cloze · 职业创业
+
+Starting a business is a dream for many young people, but turning that dream into reality is a long journey that requires patience and careful planning. Before anyone decides to leave a steady job, they should (1) ______ the risks honestly and (2) ______ whether they are truly ready for the pressure of working alone. A new founder must learn to (3) ______ limited money and time well, because resources are always tighter than expected. It is also (4) ______ to (5) ______ with customers clearly, since a wrong idea about their needs can quickly destroy trust. Many new starters (6) ______ to work with people they already know, yet they soon (7) ______ that a wider network brings fresh ideas and useful support. Every hard blow is a chance to (8) ______ skills and to (9) ______ bad habits before they become serious problems. Those who (10) ______ advice from experienced guides usually (11) ______ far more than those who struggle silently. A wise owner will (12) ______ the strengths of each team member and let everyone (13) ______ in their own way. Above all, founders must (14) ______ work and rest, for no one can stay creative while very tired. In the end, the greatest (15) ______ is not money but the courage to keep learning. Friends and family often offer steady encouragement, reminding the founder why the effort matters. Small daily wins build confidence, and each honest lesson learned makes the next choice a little wiser.
+
+**1. Choose the best option for blank 1.**
+
+- A. approve
+- B. accept
+- C. acknowledge
+- D. admit
+
+答案：accept
+
+解析：第一题应选 accept，因为此处表示“坦然接受风险”，与后文“honestly”搭配，强调创业者要正视并承担风险。approve 意为“批准”，通常指上级对下级或官方对申请予以同意，不能与 risks 搭配；acknowledge 意为“承认”，偏重公开认可事实，语气不如 accept 主动承担；admit 意为“承认”，常含不情愿或认错意味，也不如 accept 贴切。本题考点是近义动词辨析，重点区分 accept 与 acknowledge、admit 在“接受/承认”语义和搭配上的差异。
+
+**2. Choose the best option for blank 2.**
+
+- A. value
+- B. treasure
+- C. appreciate
+- D. admire
+
+答案：appreciate
+
+解析：第二题应选 appreciate，因为此处表示“真正理解并体会自己是否准备好承受独自工作的压力”，appreciate 有“充分意识到、理解”之意，符合语境。value 意为“重视、珍视”，侧重认为某物有价值，不能表达“判断自己是否准备好”的意思；treasure 意为“珍藏、珍爱”，感情色彩过强，与 whether 从句不搭配；admire 意为“钦佩、欣赏”，对象通常是人或品质，不能接 whether 引导的宾语从句。本题考点是动词辨析，重点掌握 appreciate 表示“理解、意识到”的用法。
+
+**3. Choose the best option for blank 3.**
+
+- A. manage
+- B. arrange
+- C. abandon
+- D. balance
+
+答案：balance
+
+解析：第三题应选 balance，因为此处表示“合理平衡有限的资金和时间”，balance 强调在两者之间取得均衡，与 limited money and time well 搭配自然。manage 意为“管理、设法完成”，虽可与 money 搭配，但不如 balance 能体现“兼顾资金与时间”的平衡含义；arrange 意为“安排”，通常指安排事务或顺序，不用于“平衡资源”；abandon 意为“放弃”，与句意完全相反。本题考点是动词辨析，重点区分 balance 与 manage 在“管理资源”语境中的不同侧重点。
+
+**4. Choose the best option for blank 4.**
+
+- A. benefit
+- B. advantage
+- C. profit
+- D. loss
+
+答案：benefit
+
+解析：第四题应选 benefit，因为此处构成 It is also benefit to do sth. 的结构，表示“与客户清晰沟通也是有益的”，benefit 在此作名词，符合“It is + 名词 + to do”的句型。advantage 意为“优势”，通常说 It is an advantage to do sth.，需要冠词，且语义偏“有利条件”；profit 意为“利润”，多指经济收益，与沟通客户无关；loss 意为“损失”，与句意相反。本题考点是名词辨析及句型搭配，重点掌握 benefit 在“It is benefit to do”结构中的用法。
+
+**5. Choose the best option for blank 5.**
+
+- A. difficulty
+- B. challenge
+- C. obstacle
+- D. comfort
+
+答案：challenge
+
+解析：第五题应选 challenge，因为此处表示“与客户清晰沟通是一项挑战”，challenge 作名词指“挑战、难题”，符合上下文对创业困难的描述。difficulty 意为“困难”，虽语义接近，但通常说 have difficulty (in) doing sth.，不用于 It is also challenge to do 的句型；obstacle 意为“障碍”，强调阻碍前进的具体事物，与“沟通”搭配不如 challenge 自然；comfort 意为“安慰、舒适”，与句意完全相反。本题考点是名词辨析，重点区分 challenge 与 difficulty、obstacle 在“困难”语义上的搭配差异。
+
+**6. Choose the best option for blank 6.**
+
+- A. discuss
+- B. explain
+- C. communicate
+- D. hide
+
+答案：communicate
+
+解析：第六题应选 communicate，因为此处表示“与客户清晰沟通”，communicate with sb. 是固定搭配，意为“与某人交流”，符合语境。discuss 意为“讨论”，通常说 discuss sth. with sb.，需要先接讨论的内容，不能直接说 discuss with customers 表示“与客户沟通”；explain 意为“解释”，通常说 explain sth. to sb.，介词用 to 而非 with；hide 意为“隐藏”，与“清晰沟通”的句意相反。本题考点是动词搭配，重点掌握 communicate with sb. 这一固定短语。
+
+**7. Choose the best option for blank 7.**
+
+- A. add
+- B. donate
+- C. remove
+- D. contribute
+
+答案：contribute
+
+解析：第七题应选 contribute，因为此处表示“每个人以自己的方式做出贡献”，contribute 意为“贡献、出力”，与 in their own way 搭配自然，符合团队合作的语境。add 意为“增加”，通常说 add to sth.，不用于“人做出贡献”的表达；donate 意为“捐赠”，多指捐钱捐物，与团队贡献的语境不符；remove 意为“移除”，与句意相反。本题考点是动词辨析，重点掌握 contribute 表示“做出贡献”的用法及与 add、donate 的区别。
+
+**8. Choose the best option for blank 8.**
+
+- A. determine
+- B. decide
+- C. identify
+- D. ignore
+
+答案：determine
+
+解析：第八题应选 determine，因为此处表示“每一次沉重打击都是确定技能水平的机会”，determine 意为“确定、判定”，与 skills 搭配表示“测定/确定技能”，符合语境。decide 意为“决定”，通常指人做出选择，不能用于“打击决定技能”的表达；identify 意为“识别、确认”，侧重辨认出具体事物，与“确定技能”的抽象含义不完全吻合；ignore 意为“忽视”，与句意相反。本题考点是动词辨析，重点区分 determine 与 decide、identify 在“确定”语义上的用法差异。
+
+**9. Choose the best option for blank 9.**
+
+- A. find
+- B. discover
+- C. notice
+- D. overlook
+
+答案：discover
+
+解析：第九题应选 discover，因为此处表示“在坏习惯变成严重问题之前发现它们”，discover 意为“发现”，强调首次找到原本存在但未被察觉的事物，符合“发现坏习惯”的语境。find 意为“找到”，侧重寻找的结果，与“坏习惯”搭配不如 discover 自然；notice 意为“注意到”，侧重偶然看到，程度较轻，不能体现“及早发现并处理”的含义；overlook 意为“忽视”，与句意相反。本题考点是动词辨析，重点区分 discover 与 find、notice 在“发现”语义上的细微差别。
+
+**10. Choose the best option for blank 10.**
+
+- A. effective
+- B. productive
+- C. efficient
+- D. wasteful
+
+答案：efficient
+
+解析：第十题应选 efficient，因为此处表示“高效利用有限资金和时间”，efficient 意为“高效的”，强调以较少投入取得较好效果，与 limited money and time 搭配贴切。effective 意为“有效的”，强调能产生预期效果，不强调资源利用效率；productive 意为“多产的、富有成效的”，多形容人或工作成果，与“利用资金和时间”搭配不如 efficient 自然；wasteful 意为“浪费的”，与句意相反。本题考点是形容词辨析，重点区分 efficient 与 effective、productive 在“效率”语义上的差异。
+
+**11. Choose the best option for blank 11.**
+
+- A. necessary
+- B. important
+- C. optional
+- D. essential
+
+答案：essential
+
+解析：第11空应填 essential，因为句中 those who seek advice from experienced guides usually... far more 表达的是“从有经验的导师那里获得建议的人通常收获更多”，essential 在此表示“必不可少的”，与语境中强调请教他人的重要性一致。necessary 和 important 虽然也含“重要”之意，但语气较弱，不能像 essential 那样突出“不可或缺”的核心作用；optional 意为“可选的”，与句子强调请教导师的必要性完全相反。本题考点是近义形容词的辨析，需要根据语境判断语气强弱和语义褒贬。
+
+**12. Choose the best option for blank 12.**
+
+- A. improve
+- B. enhance
+- C. develop
+- D. worsen
+
+答案：improve
+
+解析：第12空应填 improve，因为句子 A wise owner will ______ the strengths of each team member 意为“明智的老板会提升每位团队成员的优势”，improve 表示“改进、提升”，与 strengths 搭配自然，强调让优势变得更好。enhance 虽也有“增强”之意，但更常用于价值、效果等抽象事物，与 strengths 搭配不如 improve 常见；worsen 意为“使恶化”，与句意完全相反。本题考点是动词与名词的搭配辨析，需要根据宾语 strengths 选择语义相符的动词。
+
+**13. Choose the best option for blank 13.**
+
+- A. handle
+- B. manage
+- C. control
+- D. neglect
+
+答案：manage
+
+解析：第13空应填 manage，因为句子 let everyone ______ in their own way 意为“让每个人以自己的方式管理/应对”，manage 在此表示“设法应对、管理”，与 in their own way 搭配合理，强调各人按自己的方式处理事务。handle 与 manage 意思接近，但 manage 更强调对局面的掌控和安排；control 语气过强，含“控制他人”之意，与 let everyone 的宽松语气不符；neglect 意为“忽视”，与句意相反。本题考点是近义动词的辨析，需要结合语境中“让每个人以自己的方式”这一含义选择最贴切的词。
+
+**14. Choose the best option for blank 14.**
+
+- A. choose
+- B. favor
+- C. prefer
+- D. reject
+
+答案：prefer
+
+解析：第14空应填 prefer，因为句子 founders must ______ work and rest 意为“创始人必须在工作与休息之间有所偏好/做出取舍”，prefer 表示“更喜欢、优先选择”，与 work and rest 搭配自然，强调在两者间做出倾向性选择。choose 虽也表示“选择”，但通常直接接选择对象而不强调偏好；favor 意为“偏袒、支持”，与工作与休息的取舍语境不完全吻合；reject 意为“拒绝”，与句意相反。本题考点是表示“偏好、选择”的动词辨析，需要根据 work and rest 的并列结构判断语义。
+
+**15. Choose the best option for blank 15.**
+
+- A. decrease
+- B. limit
+- C. increase
+- D. reduce
+
+答案：reduce
+
+解析：第15空应填 reduce，因为句子 Every hard blow is a chance to ______ bad habits before they become serious problems 意为“每一次沉重打击都是减少坏习惯的机会”，reduce 表示“减少”，与 bad habits 搭配自然，强调在坏习惯变成严重问题前加以削减。decrease 虽也表示“减少”，但多用于数量、程度等可测量事物，与 habits 搭配不如 reduce 常见；limit 意为“限制”，侧重设定界限而非减少；increase 意为“增加”，与句意完全相反。本题考点是近义动词的辨析，需要根据宾语 bad habits 和 before they become serious problems 的语境选择语义相符的词。
+
+Gate result: `True`
+
+## M26-A-GRAMMAR-01 · grammar_fill · 家庭代际
+
+In many families, the older generation and the younger one live under the same roof, and small duties often cause quiet tension between them. ① ______ at the front door yesterday turned out to be a volunteer from the neighbourhood, who came to ask about the family plan for the coming holiday. The grandfather, ② ______ across the river last year, likes to tell the children how the town has changed, and he believes that ③ ______ should be respected by everyone in the house. The mother, who works long hours at a local clinic, keeps a notebook ④ ______, and she reads it aloud whenever the family meets for dinner. ⑤ ______ carefully with her husband, she decided to give the grandparents the larger room and to move the children upstairs. The children were not sure ⑥ ______, so they asked many questions during the meal. ⑦ ______, the family still walked to the park together on Sunday, which showed that small disagreements need not break family ties. The father often says that ⑧ ______, he would ask every member to share one household task each week. Since the new arrangement started, ⑨ ______ to take turns cooking on weekends, and the grandparents have taught the children several old recipes. On school days, ⑩ ______ leaves the station at seven, so the student must finish breakfast early and say goodbye to everyone before leaving.
+
+**1. Choose the best option for blank 1.**
+
+- A. the person who was called
+- B. the person who called
+- C. the person who calls
+- D. the person calling
+
+答案：the person who called
+
+解析：此处需要修饰 the person 的定语从句，表示“昨天打电话的那个人”，动作发生在过去，所以用 who called。the person who was called 意为“被打电话的人”，与后文“来询问家庭假期计划”的志愿者身份不符。the person who calls 是一般现在时，不能表示昨天发生的动作；the person calling 是现在分词，表示主动且与谓语同时进行，也不符合 yesterday 的时间。本题考查定语从句中关系代词 who 及时态的选择。
+
+**2. Choose the best option for blank 2.**
+
+- A. the bridge which built
+- B. the bridge which was building
+- C. the bridge which was built
+- D. the bridge which has built
+
+答案：the bridge which was built
+
+解析：此处 the bridge 与 build 是被动关系，且建桥发生在去年，所以用 which was built 构成被动语态的定语从句。the bridge which built 中 built 缺少宾语且语态错误；the bridge which was building 是进行时，表示桥自己在建，不合逻辑；the bridge which has built 是主动完成时，同样不能与 bridge 搭配。本题考查定语从句中的被动语态和时态。
+
+**3. Choose the best option for blank 3.**
+
+- A. was already repaired
+- B. has already repaired
+- C. had already been repairing
+- D. has already been repaired
+
+答案：has already been repaired
+
+解析：此处表示“这座桥已经被修好了”，桥是被修理的对象，且强调对现在的影响，所以用现在完成时的被动语态 has already been repaired。was already repaired 是一般过去时被动，不能体现“已经”对现在的影响；has already repaired 是主动语态，桥不能自己修理；had already been repairing 是过去完成进行时，既时态不符也不能用于被动。本题考查现在完成时被动语态的构成。
+
+**4. Choose the best option for blank 4.**
+
+- A. written by a local teacher
+- B. read by a local teacher
+- C. checked by a local teacher
+- D. prepared by a local teacher
+
+答案：written by a local teacher
+
+解析：notebook 与 write 是被动关系，表示“由当地老师写的笔记本”，所以用过去分词短语 written by a local teacher 作后置定语。read by a local teacher 意为“被老师读的笔记本”，checked 意为“被检查的”，prepared 意为“被准备的”，都不符合“笔记本内容由老师撰写”的语境。本题考查过去分词短语作定语表示被动。
+
+**5. Choose the best option for blank 5.**
+
+- A. having discussed the matter
+- B. having checked the plan
+- C. having considered the options
+- D. having reviewed the situation
+
+答案：having checked the plan
+
+解析：此处用现在分词完成式 having checked the plan 作状语，表示“在核对计划之后”，与主句主语 she 构成主动关系，且动作先于 decided。having discussed the matter、having considered the options、having reviewed the situation 虽然语法上也可作状语，但与后文“决定把大房间给祖父母、让孩子搬到楼上”这一具体安排对应的是“核对计划”，其他选项语义不贴切。本题考查现在分词完成式作状语的用法及语义搭配。
+
+**6. Choose the best option for blank 6.**
+
+- A. that the plan would cost
+- B. how the plan would work
+- C. whether the plan would work
+- D. why the plan would work
+
+答案：whether the plan would work
+
+解析：孩子们“不确定计划是否会行得通”，whether 引导宾语从句表示“是否”，符合语境。that the plan would cost 语义不完整且与“问了很多问题”不搭配；how the plan would work 意为“计划将如何运作”，与 not sure 搭配不如 whether 自然；why the plan would work 意为“计划为什么会行得通”，与“不确定”矛盾。本题考查 whether 引导宾语从句的用法。
+
+**7. Choose the best option for blank 7.**
+
+- A. because the weather changed
+- B. since the weather changed
+- C. when the weather changed
+- D. although the weather changed
+
+答案：although the weather changed
+
+解析：前后句意为“尽管天气变了，一家人周日还是去了公园”，是让步关系，所以用 although the weather changed。because 和 since 表示原因，与“仍然一起去公园”的逻辑不符；when 表示时间，不能体现转折让步。本题考查让步状语从句连词的选择。
+
+**8. Choose the best option for blank 8.**
+
+- A. if I were in charge
+- B. if I am in charge
+- C. if I was in charge
+- D. if I will be in charge
+
+答案：if I were in charge
+
+解析：父亲说的是与现在事实相反的假设，“如果我负责的话”，所以用虚拟语气 if I were in charge。if I am in charge 是真实条件句，与“often says”所表达的假设语气不符；if I was in charge 在正式虚拟语气中不如 were 规范；if I will be in charge 不能用于条件从句表示将来假设。本题考查与现在事实相反的虚拟条件句。
+
+**9. Choose the best option for blank 9.**
+
+- A. the team have already begun
+- B. the team has already begun
+- C. the team has already begin
+- D. the team already begun
+
+答案：the team has already begun
+
+解析：the team 作为整体视为单数，且“已经开始轮流做饭”用现在完成时，所以 the team has already begun 正确。the team have already begun 主谓不一致；the team has already begin 中 begin 未用过去分词 begun；the team already begun 缺少助动词 has。本题考查主谓一致和现在完成时的构成。
+
+**10. Choose the best option for blank 10.**
+
+- A. a first train
+- B. an first train
+- C. the first train
+- D. first train
+
+答案：the first train
+
+解析：表示“第一班火车”要用序数词前加定冠词，即 the first train。a first train 中 a 不能与序数词 first 连用表示“第一班”；an first train 冠词形式错误，first 以辅音音素开头；first train 缺少定冠词，不符合特指“那班第一趟车”的语境。本题考查序数词前定冠词 the 的用法。
+
+Gate result: `True`
+
+## M26-A-READING-01 · reading · 科技
+
+Technology has changed the way students learn in many schools, and this change is not always easy to see at first. When a student uses a computer to look up information, the ability to find an answer quickly is useful, but the ability to judge whether that answer is correct matters even more. Teachers now ask learners to compare several sources before they accept a fact, which helps them build careful habits of thought. A parent might worry that a child spends too much time in front of a screen, and this concern is reasonable, yet the same screen can open a door to lessons that a small classroom could never offer. For example, a volunteer who guides an online reading group can reach students in distant villages without travelling far. Of course, technology alone cannot replace a good teacher, because a machine can give information but it cannot encourage a nervous learner or notice when someone is confused. Schools that use new tools well usually keep the teacher at the centre of the lesson and treat the computer as an aid rather than a master. The student who learns to use these tools with care will be better prepared for a world where change happens fast. In the end, the value of any device depends on the purpose behind its use, and that purpose is still set by people. A teacher who explains this purpose clearly helps students see the screen as a partner in discovery, not a shortcut. Over time, small daily choices shape habits that last far beyond the classroom walls.
+
+**1. What is the main idea of the passage?**
+
+- A. Digital tools are most valuable when teachers guide their use toward clear learning goals.
+- B. Computers should replace textbooks in every classroom as soon as possible.
+- C. Students learn best when they avoid screens and study only from printed books.
+- D. Online lessons are useful mainly because they save schools money on travel.
+
+答案：Digital tools are most valuable when teachers guide their use toward clear learning goals.
+
+解析：文章的主旨是数字工具只有在教师引导、服务于明确学习目标时才最有价值，末段“the value of any device depends on the purpose behind its use, and that purpose is still set by people”直接点明这一中心。选项B“计算机应尽快取代课本”过于极端，文章强调教师居于课堂中心、电脑只是辅助，并未主张取代课本。选项C“学生只读纸质书最好”与文中“屏幕能打开小教室无法提供的课程之门”相矛盾。选项D把在线课程的价值归结为节省差旅费，属于以偏概全，文中举例是为说明覆盖面广而非省钱。本题考点是段落主旨与概括能力。
+
+**2. What can be inferred from the passage about a machine in a classroom?**
+
+- A. It can supply facts but is unable to respond to a learner's emotional or mental state.
+- B. It is always more patient with nervous students than a human teacher is.
+- C. It should be given full control of the lesson once it is switched on.
+- D. It can notice confusion more quickly than any teacher can.
+
+答案：It can supply facts but is unable to respond to a learner's emotional or mental state.
+
+解析：文中说“a machine can give information but it cannot encourage a nervous learner or notice when someone is confused”，可推断机器能提供事实信息，却无法回应学习者的情绪或心理状态，故选A。选项B说机器比人类教师更有耐心，文中并未作此比较，属于无中生有。选项C说机器一开机就应掌控整节课，与“treat the computer as an aid rather than a master”正好相反。选项D说机器比任何教师都更快察觉困惑，与原文“cannot notice when someone is confused”直接矛盾。本题考点是推理判断与细节理解。
+
+**3. What is the writer's attitude toward technology in schools?**
+
+- A. Balanced support: tools help learning when people set a sensible purpose for them.
+- B. Complete rejection: screens do more harm than good in every case.
+- C. Uncritical enthusiasm: devices should decide what students study.
+- D. Indifference: technology makes no real difference to how students learn.
+
+答案：Balanced support: tools help learning when people set a sensible purpose for them.
+
+解析：作者态度是平衡的支持：既承认家长对屏幕时间的担忧合理，又指出技术能带来课堂之外的资源，并强调关键在于人们设定的使用目的，故选A。选项B“完全拒绝”忽视了文中对在线阅读小组等积极作用的肯定。选项C“盲目热情、让设备决定学习内容”与“that purpose is still set by people”相悖。选项D“漠不关心”与全文反复讨论技术利弊的立场不符。本题考点是作者态度与观点推断。
+
+**4. In the passage, the word "aid" is closest in meaning to ______.**
+
+- A. a helpful support
+- B. a strict ruler
+- C. a heavy burden
+- D. a final goal
+
+答案：a helpful support
+
+解析：文中“treat the computer as an aid rather than a master”把aid与master对举，说明aid指“有帮助的辅助手段”，与a helpful support同义。选项B“严厉的统治者”恰是master之意，与aid相反。选项C“沉重的负担”与语境中电脑作为教学帮手的意思不符。选项D“最终目标”与aid“辅助”的含义无关。本题考点是词义猜测与上下文语境理解。
+
+Gate result: `True`
+
+## M26-A-READING-02 · reading · 历史遗产
+
+The old city wall stands quietly at the edge of the town, and for hundreds of years it has protected the people who live beside it. ______ ______ Every morning, the volunteer walks slowly along the stone path and looks closely at the surface of the wall, because she wants to record any damage before it becomes serious. ______ ______ The student often joins her, carrying a notebook in which he writes down what they observe together, and he has learned that careful notes are as valuable as the wall itself. ______ ______ When rain falls heavily for several days, small cracks appear in the ancient bricks, and the water slowly wears away the soft material beneath them. ______ ______ The neighbour, who has lived near the wall since childhood, remembers when the town first began to repair it, and he says the work must continue for many more years. ______ ______ Although the wall is old, it still teaches everyone something important about patience, because people who built it long ago could not imagine how long their work would last. ______ ______ Visitors sometimes ask why the town spends so much money on an old structure, and the volunteer explains that history gives people a sense of who they are. ______ ______ The student wrote in his report that the wall is not simply stone and earth but a living record of ordinary lives, and his teacher praised the depth of his thinking. ______ ______ If the community continues to care for this heritage, future generations will walk beside the same wall and feel the same quiet pride that the neighbours feel today. ______ ______
+
+**1. What is the main idea of the passage?**
+
+- A. A community works together to protect an ancient wall and values the history it represents.
+- B. A student writes a report about how bricks are made and receives praise from his teacher.
+- C. Visitors complain that too much money is spent on repairing old buildings in the town.
+- D. An old wall was built hundreds of years ago and has never needed any repair work.
+
+答案：A community works together to protect an ancient wall and values the history it represents.
+
+解析：文章主旨是社区成员（志愿者、学生、邻居）共同保护古城墙并珍视其所代表的历史，因此A项正确。B项只涉及学生写报告这一细节，不能概括全文；C项与文中游客提问、志愿者解释的情节不符，游客并未抱怨花钱太多；D项与文中城墙出现裂缝、需要持续修缮的内容矛盾。本题考查对文章主旨大意的归纳能力。
+
+**2. What can we infer about the neighbour from the passage?**
+
+- A. He has a deep personal connection to the wall because he grew up beside it.
+- B. He believes the repair work should stop soon because the wall is too old.
+- C. He first became interested in the wall only after the student wrote his report.
+- D. He thinks the town wastes money on the wall and should spend it elsewhere.
+
+答案：He has a deep personal connection to the wall because he grew up beside it.
+
+解析：文中说这位邻居从小住在城墙附近，还记得小镇最初开始修缮城墙的时候，可见他对城墙有深厚的个人情感联系，因此A项正确。B项与他说修缮工作还必须持续很多年相矛盾；C项无中生有，文中没有说他因学生写报告才开始关注城墙；D项与文中他支持修缮的态度相反。本题考查根据文本信息进行合理推断的能力。
+
+**3. Why does the volunteer explain the value of history to visitors?**
+
+- A. To help them understand that the past shapes people's identity.
+- B. To persuade them to give money for repairing the ancient bricks.
+- C. To show them how to write careful notes in a notebook.
+- D. To warn them that the wall may fall down after heavy rain.
+
+答案：To help them understand that the past shapes people's identity.
+
+解析：文中志愿者解释说历史赋予人们一种自我身份认同感，因此她向游客解释历史价值是为了帮助他们理解过去塑造了人们的身份，A项正确。B项文中未提到劝游客捐款；C项做笔记是学生的行为，与志愿者向游客解释无关；D项文中没有警告城墙会倒塌的内容。本题考查对人物行为目的的理解能力。
+
+**4. As used in the passage, the word "heritage" most nearly means ______.**
+
+- A. valued traditions and structures passed down from earlier generations
+- B. new buildings designed by modern architects
+- C. money collected for local repairs
+- D. ordinary lives recorded in a student's notebook
+
+答案：valued traditions and structures passed down from earlier generations
+
+解析：结合语境，"heritage"指社区共同珍视并传承给后代的历史遗产，即世代相传的宝贵传统与建筑，因此A项正确。B项指现代建筑师设计的新建筑，与古老城墙的语境相反；C项把heritage误解为修缮资金；D项只是文中学生笔记的内容，并非该词含义。本题考查根据上下文猜测词义的能力。
+
+Gate result: `True`
+
+## M26-A-GAP-01 · gap_fill · 环境
+
+Our school has decided to reduce the waste it produces, and the student council has asked every class to take part. The volunteer who leads our environmental club explained that small daily choices can make a surprising difference, so we began by looking at what we throw away. (1) ______ the club first met, we simply collected old paper and bottles, but we soon realised that we needed a clearer plan. The teacher who advises us suggested that we measure our rubbish for a week, and the result was shocking: each student produced almost half a kilogram of waste every day. Because the canteen used far too many plastic bags, the club asked the manager to change the way food was packed. (2) ______, the manager agreed to offer paper boxes instead, and the amount of plastic fell by nearly forty percent. The volunteer then turned her attention to the classroom, where lights and computers were often left on all night. She reminded us that energy is not endless, and she asked the student to switch everything off before leaving. (3) ______ the volunteer had explained the reason, most classes followed the new rule without complaint. We also started a garden behind the library, and the vegetables we grow there are used in the school kitchen. This garden has taught us that waste can become something useful, (4) ______ it is food for plants rather than rubbish for the ground. The teacher believes that such habits will stay with us long after we leave school. The volunteer says the project is only a beginning, and she hopes that every student will continue to think about the environment. (5) ______ we all act together, she argues, a cleaner future is completely within our reach.
+
+**1. Choose the sentence that best fits blank (1).**
+
+- A. After the environmental group held its opening meeting, our efforts involved nothing more than gathering used paper and empty containers.
+- B. The environmental group had its opening meeting because our efforts involved nothing more than gathering used paper and empty containers.
+- C. Although the environmental group held its opening meeting, our efforts involved nothing more than gathering used paper and empty containers.
+- D. Unless the environmental group held its opening meeting, our efforts involved nothing more than gathering used paper and empty containers.
+- E. Before the environmental group held its opening meeting, our efforts involved nothing more than gathering used paper and empty containers.
+- F. If the environmental group held its opening meeting, our efforts involved nothing more than gathering used paper and empty containers.
+- G. Since the environmental group held its opening meeting, our efforts involved nothing more than gathering used paper and empty containers.
+
+答案：A
+
+解析：第一题应选A，因为上下文表示环保小组召开首次会议之后，大家最初只是收集废纸和空瓶，时间顺序和让步转折都自然衔接。B项因果倒置，C项让步关系与后文“但很快意识到需要更清晰计划”重复冲突，D项条件关系不合逻辑，E项时间颠倒，F项条件关系不当，G项因果虽可但不如A项准确表达先后顺序。本题考点是时间状语从句与逻辑连接词的选用。
+
+**2. Choose the sentence that best fits blank (2).**
+
+- A. As a result, the person in charge of the dining hall consented to provide containers made of card rather than plastic.
+- B. Nevertheless, the person in charge of the dining hall consented to provide containers made of card rather than plastic.
+- C. Otherwise, the person in charge of the dining hall consented to provide containers made of card rather than plastic.
+- D. Meanwhile, the person in charge of the dining hall consented to provide containers made of card rather than plastic.
+- E. Besides, the person in charge of the dining hall consented to provide containers made of card rather than plastic.
+- F. Similarly, the person in charge of the dining hall consented to provide containers made of card rather than plastic.
+- G. Instead, the person in charge of the dining hall consented to provide containers made of card rather than plastic.
+
+答案：A
+
+解析：第二题应选A，因为前文说食堂使用太多塑料袋，俱乐部要求经理改变包装方式，后文经理同意提供纸盒，这是自然的结果关系。B项转折、C项否则、D项同时、E项递进、F项类比、G项替代均不能准确表达前后因果。本题考点是结果连接词在语篇中的逻辑衔接。
+
+**3. Choose the sentence that best fits blank (3).**
+
+- A. After the reason had been clarified by the club leader, the majority of classes adopted the fresh regulation with no objections.
+- B. Although the reason had been clarified by the club leader, the majority of classes adopted the fresh regulation with no objections.
+- C. Unless the reason had been clarified by the club leader, the majority of classes adopted the fresh regulation with no objections.
+- D. While the reason had been clarified by the club leader, the majority of classes adopted the fresh regulation with no objections.
+- E. Since the reason had been clarified by the club leader, the majority of classes adopted the fresh regulation with no objections.
+- F. If the reason had been clarified by the club leader, the majority of classes adopted the fresh regulation with no objections.
+- G. Before the reason had been clarified by the club leader, the majority of classes adopted the fresh regulation with no objections.
+
+答案：A
+
+解析：第三题应选A，因为志愿者解释原因之后，大多数班级无怨言地遵守新规定，时间先后和因果顺承都很清楚。B项让步、C项条件、D项同时、E项因果虽可但不如A项强调先后，F项条件不当，G项时间颠倒。本题考点是时间状语从句与被动语态在语篇中的衔接。
+
+**4. Choose the sentence that best fits blank (4).**
+
+- A. provided that it becomes nourishment for growing things instead of trash for the soil.
+- B. unless it becomes nourishment for growing things instead of trash for the soil.
+- C. although it becomes nourishment for growing things instead of trash for the soil.
+- D. because it becomes nourishment for growing things instead of trash for the soil.
+- E. while it becomes nourishment for growing things instead of trash for the soil.
+- F. since it becomes nourishment for growing things instead of trash for the soil.
+- G. whether it becomes nourishment for growing things instead of trash for the soil.
+
+答案：A
+
+解析：第四题应选A，因为“provided that”表示条件，说明只要废物变成植物的养料而不是土壤的垃圾，花园就教会我们废物可以有用。B项除非、C项让步、D项因果、E项同时、F项因果、G项是否均不符合此处条件含义。本题考点是条件状语从句连接词的辨析。
+
+**5. Choose the sentence that best fits blank (5).**
+
+- A. On condition that every one of us takes action jointly, she maintains, a greener tomorrow lies entirely within our grasp.
+- B. Although every one of us takes action jointly, she maintains, a greener tomorrow lies entirely within our grasp.
+- C. Whether every one of us takes action jointly, she maintains, a greener tomorrow lies entirely within our grasp.
+- D. Because every one of us takes action jointly, she maintains, a greener tomorrow lies entirely within our grasp.
+- E. While every one of us takes action jointly, she maintains, a greener tomorrow lies entirely within our grasp.
+- F. If every one of us takes action jointly, she maintains, a greener tomorrow lies entirely within our grasp.
+- G. Since every one of us takes action jointly, she maintains, a greener tomorrow lies entirely within our grasp.
+
+答案：A
+
+解析：第五题应选A，因为“On condition that”表示条件，志愿者认为只要我们共同行动，更清洁的未来就完全可期。B项让步、C项是否、D项因果、E项同时、F项条件虽可但语气不如A项正式准确，G项因果不当。本题考点是条件状语从句与正式连接表达的选用。
+
+Gate result: `True`

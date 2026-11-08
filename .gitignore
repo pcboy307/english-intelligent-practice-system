@@ -48,4 +48,6 @@ qa/*.log
 qa/evidence/m0/dzkbw-B2U3-page037.txt
 qa/evidence/m0/smartedu-b1u1.har
 qa/evidence/m0/textbook-B1U1-page023.png
+qa/evidence/m26/stage-a-run-*/
+qa/evidence/m26/stage-a/raw-responses/
 scripts/start-embedded-postgres.cjs

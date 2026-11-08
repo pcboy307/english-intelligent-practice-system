@@ -1,0 +1,235 @@
+{
+  "generated_at": "2026-11-08T07:47:59.400148+00:00",
+  "ping": {
+    "model_id": "deepseek-flash",
+    "transport": "json_object",
+    "prompt_version": "m26-stage-a-v1",
+    "request_id": "4e8d87c1-28df-4df5-b938-4061e70b3123",
+    "finish_reason": "length",
+    "prompt_tokens": 31,
+    "completion_tokens": 1,
+    "cost_cny": 7.000000000000001e-05,
+    "elapsed_seconds": 0.9811195000074804
+  },
+  "papers": [
+    {
+      "passage_group_id": "M26-A-CLOZE-01",
+      "generation": {
+        "requests": 21,
+        "prompt_tokens": 19459,
+        "completion_tokens": 2698,
+        "cost_cny": 0.060502,
+        "elapsed_seconds": 34.742,
+        "finish_reasons": [
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop"
+        ]
+      },
+      "judge": {
+        "requests": 1,
+        "prompt_tokens": 1989,
+        "completion_tokens": 2004,
+        "cost_cny": 0.072009,
+        "elapsed_seconds": 15.821,
+        "finish_reasons": [
+          "stop"
+        ]
+      },
+      "total_cny": 0.132511
+    },
+    {
+      "passage_group_id": "M26-A-CLOZE-02",
+      "generation": {
+        "requests": 6,
+        "prompt_tokens": 8398,
+        "completion_tokens": 3444,
+        "cost_cny": 0.044348,
+        "elapsed_seconds": 30.417,
+        "finish_reasons": [
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop"
+        ]
+      },
+      "judge": {
+        "requests": 1,
+        "prompt_tokens": 1975,
+        "completion_tokens": 1682,
+        "cost_cny": 0.063189,
+        "elapsed_seconds": 11.515,
+        "finish_reasons": [
+          "stop"
+        ]
+      },
+      "total_cny": 0.107537
+    },
+    {
+      "passage_group_id": "M26-A-GRAMMAR-01",
+      "generation": {
+        "requests": 12,
+        "prompt_tokens": 9684,
+        "completion_tokens": 1509,
+        "cost_cny": 0.03144,
+        "elapsed_seconds": 20.92,
+        "finish_reasons": [
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop"
+        ]
+      },
+      "judge": {
+        "requests": 1,
+        "prompt_tokens": 1691,
+        "completion_tokens": 1284,
+        "cost_cny": 0.049887,
+        "elapsed_seconds": 14.005,
+        "finish_reasons": [
+          "stop"
+        ]
+      },
+      "total_cny": 0.081327
+    },
+    {
+      "passage_group_id": "M26-A-READING-01",
+      "generation": {
+        "requests": 5,
+        "prompt_tokens": 9945,
+        "completion_tokens": 1711,
+        "cost_cny": 0.033578,
+        "elapsed_seconds": 19.009,
+        "finish_reasons": [
+          "stop",
+          "stop",
+          "stop",
+          "stop",
+          "stop"
+        ]
+      },
+      "judge": {
+        "requests": 1,
+        "prompt_tokens": 1258,
+        "completion_tokens": 482,
+        "cost_cny": 0.024336,
+        "elapsed_seconds": 4.047,
+        "finish_reasons": [
+          "stop"
+        ]
+      },
+      "total_cny": 0.057914
+    },
+    {
+      "passage_group_id": "M26-A-READING-02",
+      "generation": {
+        "requests": 3,
+        "prompt_tokens": 5862,
+        "completion_tokens": 1332,
+        "cost_cny": 0.02238,
+        "elapsed_seconds": 11.847,
+        "finish_reasons": [
+          "stop",
+          "stop",
+          "stop"
+        ]
+      },
+      "judge": {
+        "requests": 1,
+        "prompt_tokens": 1301,
+        "completion_tokens": 491,
+        "cost_cny": 0.024966,
+        "elapsed_seconds": 4.737,
+        "finish_reasons": [
+          "stop"
+        ]
+      },
+      "total_cny": 0.047346
+    },
+    {
+      "passage_group_id": "M26-A-GAP-01",
+      "generation": {
+        "requests": 4,
+        "prompt_tokens": 11016,
+        "completion_tokens": 2724,
+        "cost_cny": 0.043824,
+        "elapsed_seconds": 18.762,
+        "finish_reasons": [
+          "stop",
+          "stop",
+          "stop",
+          "stop"
+        ]
+      },
+      "judge": {
+        "requests": 1,
+        "prompt_tokens": 1892,
+        "completion_tokens": 622,
+        "cost_cny": 0.033822,
+        "elapsed_seconds": 5.645,
+        "finish_reasons": [
+          "stop"
+        ]
+      },
+      "total_cny": 0.077646
+    }
+  ],
+  "totals": {
+    "passages": 6,
+    "questions": 53,
+    "prompt_tokens": 74470,
+    "completion_tokens": 19983,
+    "cost_cny": 0.504281
+  },
+  "generation_requests": [
+    {
+      "purpose": "ping",
+      "attempt": 1,
+      "status": "ok",
+      "prompt_tokens": 31,
+      "completion_tokens": 1,
+      "total_tokens": 32,
+      "elapsed_seconds": 0.9811195000074804,
+      "finish_reason": "length",
+      "request_id": "4e8d87c1-28df-4df5-b938-4061e70b3123",
+      "error": null,
+      "model_id": "deepseek-flash",
+      "transport": "json_object",
+      "prompt_version": "m26-stage-a-v1",
+      "cost_cny": 7.000000000000001e-05
+    }
+  ],
+  "judge_requests": [],
+  "extrapolations": {
+    "300_questions_cny": 2.854421,
+    "2000_questions_cny": 19.029472
+  }
+}

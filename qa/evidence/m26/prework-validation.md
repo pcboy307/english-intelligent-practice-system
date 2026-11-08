@@ -13,7 +13,7 @@ The following tests exercise the real pre-persist validator:
 | `test_rejects_placeholder_with_a_remaining_word_fragment` | `(1) graduat______` | `PLACEHOLDER_FRAGMENT` |
 | `test_rejects_gap_option_text_leaking_into_the_passage` | option and passage share six contiguous words | `GAP_OPTION_TEXT_LEAK` |
 | `test_accepts_a_uniform_placeholder_after_every_marker` | `(1) ______` ... `(15) ______` | no integrity failure |
-| `test_rejects_an_inflected_answer_form_elsewhere_in_the_passage` | answer `anxious`; passage contains `anxiously` | `ANSWER_WORD_APPEARS_IN_PASSAGE` |
+| `test_rejects_an_inflected_answer_form_elsewhere_in_the_passage` | answer `wait`; passage contains `waited` | `ANSWER_WORD_APPEARS_IN_PASSAGE` |
 | `test_revalidates_the_text_after_the_json_render_boundary` | renderer text changes `______` to `anxious` | same answer-leak rejection |
 | `test_prevalidated_insert_cannot_bypass_placeholder_integrity` | bad record passed with `prevalidated=True` | rejected before any row is written |
 
@@ -27,7 +27,7 @@ Focused result:
 Full suite:
 
 ```text
-132 passed, 1 warning in 72.12s (0:01:12)
+141 passed, 1 warning
 ```
 
 The warning is the pre-existing Starlette `BlockingPortal` deprecation.
