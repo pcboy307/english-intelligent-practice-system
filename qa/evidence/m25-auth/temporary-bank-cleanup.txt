@@ -24,6 +24,15 @@ deleted:
   temporary_banks = 159
 
 after final test cleanup:
+  temporary_banks_removed_after_tests = 15
+  questions_removed_again = 77
+  passages_removed_again = 15
+  sessions_removed_again = 14
+  attempts_removed_again = 17
+  mistakes_removed_again = 7
+  errors_tags_removed_again = 8
+
+after last regression cleanup:
   temporary_banks_removed_again = 15
   questions_removed_again = 77
   passages_removed_again = 15
@@ -31,6 +40,7 @@ after final test cleanup:
   attempts_removed_again = 17
   mistakes_removed_again = 7
   errors_tags_removed_again = 8
+  total_temporary_banks_removed = 189
 
 after:
   candidate_banks:

@@ -1172,6 +1172,31 @@ def test_m25_bank_activation_is_loopback_only_and_logged() -> None:
         activate_bank(original_bank_id)
 
 
+def test_m25_legacy_demo_is_unique_archived_and_not_switchable() -> None:
+    legacy_id = "00000000-0000-4000-8000-000000000001"
+    archived_m1_id = "00000000-0000-4000-8000-000000000002"
+    with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+        rows = connection.execute(
+            """
+            SELECT id::text AS id, name, status, coverage_snapshot
+            FROM question_banks
+            WHERE id IN (%s, %s)
+            ORDER BY id
+            """,
+            (legacy_id, archived_m1_id),
+        ).fetchall()
+    by_id = {row["id"]: row for row in rows}
+    assert by_id[legacy_id]["name"] != by_id[archived_m1_id]["name"]
+    assert by_id[legacy_id]["status"] == "archived"
+    assert by_id[legacy_id]["coverage_snapshot"]["switchable"] is False
+
+    headers = student_headers()
+    payload = client.get("/api/v1/banks", headers=headers).json()
+    visible_ids = {bank["bank_id"] for bank in payload["banks"]}
+    assert legacy_id not in visible_ids
+    assert payload["current_bank_id"] in visible_ids
+
+
 def test_m25_in_progress_session_survives_bank_switch_and_keeps_bank_id() -> None:
     original_bank_id = store.bank["bank_id"]
     bank_a = create_test_bank("M25 Running A", ["M25-RUNNING-A-Q01"])

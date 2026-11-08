@@ -2,12 +2,33 @@
 
 生成日期：2026-11-08
 
+## Z1. 迁移可重建立
+
+在一次性空库 `english_practice_z1_121202` 上按顺序执行：
+
+```text
+001_initial.sql
+002_mistake_book.sql
+```
+
+结果：
+
+```text
+fresh database foreign keys = 33
+current database foreign keys = 33
+equal = true
+```
+
+- 新库清单：`fresh-db-foreign-keys.txt`
+- 当前库清单：`current-db-foreign-keys.txt`
+- 比对结果：`fresh-db-comparison.json`
+
 ## G. 换库
 
 | 判据 | 实际输出 |
 |---|---|
 | G1 | 首页与覆盖统计均显示 `M2 Bank #2 · 共 300 题`，来源同为 `GET /stats/coverage` |
-| G2 | 弹窗列出 active / ready / archived；当前项显示 `✓ 当前` 且 disabled |
+| G2 | 数据库存在 active / ready / archived；切换弹窗只列真实可切换库，当前项显示 `✓ 当前` 且 disabled |
 | G3 | 归档库确认弹窗显示新旧库名称/题数、覆盖口径、错题迁移、历史报告、立即生效、取消，以及 `1` 个未完成练习提示 |
 | G4 | 取消前后均为 `M2 Bank #2 / total=300` |
 | G5 | `bank_switch_log` 有 M2→目标库、目标库→M2 两行，`operator=student_ui`，时间存在 |
@@ -21,11 +42,12 @@
 
 ```text
 M2 Bank #2  300题  active   current
-Demo Bank    80题  archived
-Demo Bank    30题  ready
+Demo Bank（80题·归档） 80题 archived
 ```
 
 最终列表截图：`bank-list-final.png`。
+旧 `Demo Bank（30题·旧版演示）` 保留为 archived 且 `switchable=false`，
+不出现在孩子可见的切换列表中。来源是原始 30 题 bootstrap 演示库。
 
 ## P1. 外键
 
@@ -129,7 +151,7 @@ contracts/openapi.yaml is valid
 ## 回归
 
 ```text
-pytest: 122 passed, 1 warning
+pytest: 123 passed, 1 warning
 M0_CHECK=PASS
 API_CONTRACT_CHECK=PASS calls=20
 OpenAPI: valid

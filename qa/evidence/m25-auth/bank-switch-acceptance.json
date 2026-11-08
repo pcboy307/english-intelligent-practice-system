@@ -19,8 +19,9 @@
   "G2": {
     "current_marked": "✓ 当前",
     "current_disabled": true,
-    "all_statuses_visible": ["active", "ready", "archived"],
-    "final_candidates": "final-bank-list.txt",
+    "visible_statuses": ["active", "archived"],
+    "hidden_legacy_ready_demo": true,
+    "final_candidates": "final-switch-candidates.json",
     "final_screenshot": "bank-list-final.png"
   },
   "G3": {
@@ -78,19 +79,21 @@
       "is_current": true
     },
     {
-      "name": "Demo Bank",
+      "name": "Demo Bank（80题·归档）",
       "question_count": 80,
       "status": "archived",
       "is_current": false
-    },
-    {
-      "name": "Demo Bank",
-      "question_count": 30,
-      "status": "ready",
-      "is_current": false
     }
   ],
-  "temporary_banks_removed": 159,
+  "temporary_banks_removed": 189,
+  "legacy_demo_source": {
+    "bank_id": "00000000-0000-4000-8000-000000000001",
+    "created_at": "2026-11-07T11:07:42.182188+08:00",
+    "origin": "最早 30 题 bootstrap 演示库，后被 80 题 M1 Demo Bank 取代",
+    "final_name": "Demo Bank（30题·旧版演示）",
+    "final_status": "archived",
+    "switchable": false
+  },
   "screenshots": {
     "home_bank_count": "home-bank-count-fixed.png",
     "bank_list": "bank-list-dialog.png",

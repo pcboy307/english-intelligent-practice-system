@@ -11,15 +11,16 @@
   },
   "checks": {
     "G1_G10": "passed",
+    "Z1": "fresh 001->002 foreign keys 33 = current 33",
     "P1": "14 FK definitions, 0 orphans",
     "X1": "root cause and recurrence controls recorded",
-    "X2": "159 temporary banks removed; final candidates 300 active / 80 archived / 30 ready",
+    "X2": "189 temporary banks removed; final candidates 300 active / 80 archived; legacy 30 hidden",
     "Y1": "composite-key orphan checks: 0 / 0 / 0 / 0",
     "P2": "30 hits = 30 safe + 0 needs-fix",
     "P3": "3 auth tests passed",
     "S1": "tokens at lines 28, 29, 30",
     "S2": "OpenAPI valid",
-    "pytest": "122 passed, 1 warning",
+    "pytest": "123 passed, 1 warning",
     "API_CONTRACT_CHECK": "PASS calls=20"
   },
   "primary_key_authorization": "docs/change-log/AUTH-question-primary-key.md",
@@ -29,8 +30,12 @@
     "qa/evidence/m25-auth/orphan-checks.txt",
     "qa/evidence/m25-auth/temporary-bank-cleanup.txt",
     "qa/evidence/m25-auth/final-bank-list.txt",
+    "qa/evidence/m25-auth/final-switch-candidates.json",
     "qa/evidence/m25-auth/query-write-audit.md",
-    "qa/evidence/m25-auth/p2-counts.txt"
+    "qa/evidence/m25-auth/p2-counts.txt",
+    "qa/evidence/m25-auth/fresh-db-foreign-keys.txt",
+    "qa/evidence/m25-auth/current-db-foreign-keys.txt",
+    "qa/evidence/m25-auth/fresh-db-comparison.json"
   ],
   "screenshots": [
     "qa/evidence/m25-auth/home-bank-count-fixed.png",

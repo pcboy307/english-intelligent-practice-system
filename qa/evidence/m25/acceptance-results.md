@@ -64,7 +64,7 @@
 
 | 判据 | 实际输出 |
 |---|---|
-| F1 | `122 passed, 1 warning` |
+| F1 | `123 passed, 1 warning` |
 | F2 | `M0_CHECK=PASS` |
 | F3 | `API_CONTRACT_CHECK=PASS calls=20` |
 | F4 | `contracts/openapi.yaml is valid` |

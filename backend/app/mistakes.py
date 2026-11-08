@@ -576,6 +576,7 @@ def switchable_banks(
         FROM question_banks qb
         LEFT JOIN questions q ON q.bank_id=qb.id
         WHERE qb.status IN ('active', 'ready', 'archived')
+          AND COALESCE((qb.coverage_snapshot->>'switchable')::boolean, TRUE)
         GROUP BY qb.id, qb.name, qb.status, qb.target_size, qb.created_at
         ORDER BY (qb.id=%s) DESC, qb.created_at DESC
         """,

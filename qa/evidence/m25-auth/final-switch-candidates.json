@@ -1,0 +1,29 @@
+{
+  "current_bank_id": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2",
+  "in_progress_count": 0,
+  "banks": [
+    {
+      "bank_id": "6fab59cd-c1fa-4a7a-8532-41bde57d18f2",
+      "name": "M2 Bank #2",
+      "version": 1,
+      "question_count": 300,
+      "status": "active",
+      "is_current": true
+    },
+    {
+      "bank_id": "00000000-0000-4000-8000-000000000002",
+      "name": "Demo Bank（80题·归档）",
+      "version": 1,
+      "question_count": 80,
+      "status": "archived",
+      "is_current": false
+    }
+  ],
+  "excluded_legacy_demo": {
+    "bank_id": "00000000-0000-4000-8000-000000000001",
+    "name": "Demo Bank（30题·旧版演示）",
+    "question_count": 30,
+    "status": "archived",
+    "switchable": false
+  }
+}
