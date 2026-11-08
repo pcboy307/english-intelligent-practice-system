@@ -18,6 +18,10 @@
 - R9: Pro must identify one clearly best option; `NO_CLEAR_BEST` is rejected.
 - R10: every explanation ends with one explicit sentence naming why the two main
   distractors are wrong.
+- R11: for cloze and grammar fill, the answer and its exact/inflected forms must
+  occur zero times anywhere in the passage; derived forms are not counted.
+- R12: M2.6 word-count ranges, composition, difficulty and book-tag totals are
+  hard limits from `contracts/m26-generation-params-v2.json`.
 
 ## Observation-only gates
 
@@ -26,7 +30,16 @@
 - G15: 6 easy / 6 medium / 3 hard is recorded but does not block.
 - G16: Flesch Reading Ease is recorded but does not block.
 
-These observation items cannot override R1-R10.
+These observation items cannot override R1-R12.
+
+## Pro and human gates
+
+- Every cloze and grammar-fill answer must be substituted back into its sentence.
+  The resulting sentence must be grammatical and semantically valid.
+- All options for one blank must have the same word class and inflection level.
+- A Pro judge or human reviewer must reject any passage with an invalid rendered
+  sentence, an ambiguous answer, or more than one defensible option.
+- These checks are not claimed as complete machine validation.
 
 ## Type rules
 
@@ -70,10 +83,16 @@ The machine-readable source of truth is
 - Grammar: all 21 whitelist IDs covered about three times each.
 - Reading: five question types, 20 each.
 - Gap fill: four cohesion types covered across all blanks.
+- M2.6 complete banks are 72 passages / 500 questions:
+  cloze 12x15=180, grammar 12x10=120, reading 40x4=160, gap fill 8x5=40.
+- M2.6 question-level difficulty is 60/120/190/95/35.
+- M2.6 all-question book tags are 225/150/100/25, totaling 500.
 
 ## Run controls
 
-- Batch size is at most 12 passages.
+- One model response generates one passage; valid passages are merged locally.
+- A `m26-v1` package must contain only `validation_profile: "m26"` passages.
+- A `bank-v1` package does not enforce 300/500 full-bank quotas.
 - A failed passage is recorded and skipped; it does not terminate the batch.
 - Stop only for authentication failure, unsupported API capability, a run cost
   above CNY 5, or all passages failing for the same systemic reason.

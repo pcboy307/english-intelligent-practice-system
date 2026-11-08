@@ -2,6 +2,12 @@
 
 状态：V1 标准。
 
+大模型生成、评审和修改题库时必须先阅读：
+
+```text
+docs/question-bank-generation-standard-v2.md
+```
+
 数据库导出的文件和手工准备、供导入的文件使用同一份 JSON Schema：
 
 ```text
@@ -31,6 +37,8 @@ contracts/schemas/bank-import-package.json
 - `composition` 是每种题型的实际语篇数。
 - 导入后 Bank 会获得新的 `bank_id`，并由系统自动设为 active。
 - Bank 名称必须全局唯一；重新导入同一名称前需修改 `name`。
+- 新生成文件使用 `validation_profile: "m2"` 或 `"m26"`；`stored` 只用于系统导出。
+- 修改导出题库后，必须把修改篇改回 `m26`，并更新名称、时间、题数和篇数。
 
 ## 导出特点
 
@@ -59,6 +67,10 @@ contracts/schemas/bank-import-package.json
 - 名称唯一性与事务写入。
 
 不会重复执行只适用于新生成内容的占位符、阅读证据和生成提示词质量门禁。
+
+导出文件用于大模型评审或修改时，完整规则见
+`docs/question-bank-generation-standard-v2.md`。只评审不应修改 JSON；
+修改并重新导入时必须输出完整 JSON。
 
 ## 导入接口
 

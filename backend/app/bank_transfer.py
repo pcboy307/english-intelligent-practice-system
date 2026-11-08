@@ -7,6 +7,7 @@ import json
 import re
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from pathlib import Path
 from typing import Any
 from uuid import uuid4
 
@@ -69,43 +70,95 @@ QUESTION_FIELDS = {
     "clue_argument",
     "near_synonym_calibration",
 }
+ROOT = Path(__file__).resolve().parents[2]
+M26_CONTRACT = json.loads(
+    (ROOT / "contracts" / "m26-generation-params-v2.json").read_text(
+        encoding="utf-8"
+    )
+)
+M26_COMPOSITION = M26_CONTRACT["composition"]
+M26_TARGET_SIZE = int(M26_COMPOSITION["target_size"])
 M26_DIFFICULTY_TARGETS = {
-    1: 60,
-    2: 120,
-    3: 190,
-    4: 95,
-    5: 35,
+    int(key): int(value)
+    for key, value in M26_COMPOSITION["difficulty"].items()
 }
 M26_BOOK_TARGETS = {
-    "选必二": 113,
-    "选必一": 75,
-    "必修": 50,
-    "跨册": 12,
+    str(key): int(value)
+    for key, value in M26_COMPOSITION["book_distribution"].items()
 }
 M26_COMPOSITION_TARGETS = {
-    "cloze": 12,
-    "grammar_fill": 12,
-    "reading": 40,
-    "gap_fill": 8,
+    str(key): int(value)
+    for key, value in M26_COMPOSITION["passages"].items()
 }
-M26_ALLOWED_TOPICS = {
-    "科技",
-    "环境",
-    "健康心理",
-    "文化艺术",
-    "旅行地理",
-    "志愿公益",
-    "职业创业",
-    "家庭代际",
-    "体育竞技",
-    "社会伦理",
-    "人物传记",
-    "自然科普",
-    "历史遗产",
-    "媒体信息",
-    "城市交通",
-}
+M26_ALLOWED_TOPICS = set(M26_COMPOSITION["allowed_topics"])
 ANSWER_LETTER = re.compile(r"^[A-G]$")
+BOOK_SOURCE_PATTERN = re.compile(
+    r"^(?:必修[1-3] U[1-5]|选必一 U[1-5]|选必二 U[1-5]|跨册综合)$"
+)
+GRAMMAR_CATEGORIES = {
+    "relative_clauses_defining",
+    "relative_clauses_non_defining",
+    "passive_voice_tenses",
+    "past_participle_nonfinite",
+    "v_ing_nonfinite",
+    "noun_clauses",
+    "adverbial_clauses",
+    "noun_clause",
+    "relative_clause",
+    "adverbial_clause",
+    "subjunctive_basic_if",
+    "subjunctive_basic_should",
+    "partial_inversion_basic",
+    "cleft_basic",
+    "tense_system",
+    "subject_verb_agreement",
+    "articles",
+    "prepositions",
+    "pronouns",
+    "conjunctions",
+    "word_formation",
+    "comparatives_superlatives",
+    "with_compound",
+    "infinitive_nonfinite",
+    "non_finite_perfect_passive",
+    "preposition_plus_which",
+    "what_noun_clause",
+    "subjunctive",
+    "inversion",
+    "时态语态",
+    "冠词",
+}
+GRAMMAR_IDS = {
+    "relative_clauses_defining",
+    "relative_clauses_non_defining",
+    "passive_voice_tenses",
+    "past_participle_nonfinite",
+    "v_ing_nonfinite",
+    "noun_clauses",
+    "adverbial_clauses",
+    "subjunctive_basic_if",
+    "subjunctive_basic_should",
+    "partial_inversion_basic",
+    "cleft_basic",
+    "tense_system",
+    "subject_verb_agreement",
+    "articles",
+    "prepositions",
+    "pronouns",
+    "conjunctions",
+    "word_formation",
+    "comparatives_superlatives",
+    "with_compound",
+    "infinitive_nonfinite",
+}
+COHESION_TYPES = {
+    "pronoun_reference",
+    "logical_connector",
+    "lexical_repetition",
+    "semantic_contrast",
+    "time_order",
+    "general_to_specific",
+}
 UNCHECKED_ESSENTIAL_CODES = {
     "PACKAGE_NOT_OBJECT",
     "BANK_NAME_INVALID",
@@ -339,16 +392,20 @@ def normalize_import_package(
         if not isinstance(topic, str) or not topic.strip():
             errors.append(_error("TOPIC_INVALID", "topic must be non-empty.", passage_id=passage_id))
             topic = "未分类"
-        if not isinstance(book_source, str) or not _book_tag(book_source):
+        if (
+            not isinstance(book_source, str)
+            or not BOOK_SOURCE_PATTERN.fullmatch(book_source)
+            or not _book_tag(book_source)
+        ):
             errors.append(
                 _error(
-                    "BOOK_SOURCE_INVALID",
-                    "book_source must resolve to 必修/选必一/选必二/跨册.",
+                    "BOOK_SOURCE_FORMAT_INVALID",
+                    "book_source must use the canonical book-source format.",
                     passage_id=passage_id,
                     sample=book_source,
                 )
             )
-            book_source = "跨册"
+            book_source = "跨册综合"
         if not isinstance(difficulty, int) or not 1 <= difficulty <= 5:
             errors.append(
                 _error(
@@ -532,6 +589,7 @@ def normalize_import_package(
                 not isinstance(grammar_tags, list)
                 or not grammar_tags
                 or any(not isinstance(tag, str) or not tag for tag in grammar_tags)
+                or any(tag not in GRAMMAR_IDS for tag in grammar_tags)
             ):
                 errors.append(
                     _error(
@@ -553,9 +611,44 @@ def normalize_import_package(
                 question_difficulty = difficulty
             if (
                 not isinstance(question_book_source, str)
+                or not BOOK_SOURCE_PATTERN.fullmatch(question_book_source)
                 or not _book_tag(question_book_source)
             ):
+                errors.append(
+                    _error(
+                        "BOOK_SOURCE_FORMAT_INVALID",
+                        "Question book_source must use the canonical book-source format.",
+                        passage_id=passage_id,
+                        question_index=question_index,
+                        sample=question_book_source,
+                    )
+                )
                 question_book_source = book_source
+            grammar_category = raw_question.get("grammar_category")
+            if (
+                grammar_category is not None
+                and grammar_category not in GRAMMAR_CATEGORIES
+            ):
+                errors.append(
+                    _error(
+                        "GRAMMAR_CATEGORY_INVALID",
+                        "grammar_category is outside the frozen category set.",
+                        passage_id=passage_id,
+                        question_index=question_index,
+                        sample=grammar_category,
+                    )
+                )
+            cohesion_type = raw_question.get("cohesion_type")
+            if cohesion_type is not None and cohesion_type not in COHESION_TYPES:
+                errors.append(
+                    _error(
+                        "COHESION_TYPE_INVALID",
+                        "cohesion_type is outside the frozen category set.",
+                        passage_id=passage_id,
+                        question_index=question_index,
+                        sample=cohesion_type,
+                    )
+                )
             knowledge_points = raw_question.get("knowledge_points")
             if (
                 not isinstance(knowledge_points, list)
@@ -632,11 +725,27 @@ def normalize_import_package(
             )
 
     if strict_validation and format_version == "m26-v1":
-        if target_size != 500:
+        profile_mismatches = [
+            {
+                "passage_group_id": record["passage_group_id"],
+                "validation_profile": record["validation_profile"],
+            }
+            for record in records
+            if record["validation_profile"] != "m26"
+        ]
+        if profile_mismatches:
+            errors.append(
+                _error(
+                    "M26_PROFILE_MISMATCH",
+                    "m26-v1 requires every passage to use validation_profile=m26.",
+                    sample=profile_mismatches,
+                )
+            )
+        if target_size != M26_TARGET_SIZE:
             errors.append(
                 _error(
                     "M26_TARGET_SIZE_INVALID",
-                    "m26-v1 packages must contain exactly 500 questions.",
+                    f"m26-v1 packages must contain exactly {M26_TARGET_SIZE} questions.",
                     sample=target_size,
                 )
             )
@@ -671,7 +780,7 @@ def normalize_import_package(
             errors.append(
                 _error(
                     "M26_DIFFICULTY_DISTRIBUTION_INVALID",
-                    "Difficulty distribution must be 60/120/190/95/35.",
+                    "Difficulty distribution does not match the M2.6 contract.",
                     sample=difficulty_counts,
                 )
             )
@@ -679,7 +788,7 @@ def normalize_import_package(
             errors.append(
                 _error(
                     "M26_BOOK_DISTRIBUTION_INVALID",
-                    "Book distribution must be 113/75/50/12.",
+                    "Book distribution does not match the M2.6 contract.",
                     sample=book_counts,
                 )
             )

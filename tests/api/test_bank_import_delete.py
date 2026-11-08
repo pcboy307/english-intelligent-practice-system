@@ -15,7 +15,11 @@ from psycopg.types.json import Jsonb
 os.environ.setdefault("WEAKNESS_ANALYSIS_DISABLED", "1")
 
 from backend.app.main import app, store
-from backend.app.bank_transfer import delete_bank
+from backend.app.bank_transfer import (
+    ImportValidationError,
+    delete_bank,
+    normalize_import_package,
+)
 from backend.app.m26_audit import audit_records
 
 
@@ -31,9 +35,18 @@ def database_url() -> str:
     raise RuntimeError("DATABASE_URL_NOT_CONFIGURED")
 
 
+def normalized_evidence_record(record: dict) -> dict:
+    normalized = json.loads(json.dumps(record, ensure_ascii=False))
+    if not isinstance(normalized.get("generation_observations"), dict):
+        normalized.pop("generation_observations", None)
+    for number, question in enumerate(normalized.get("questions", []), start=1):
+        question.setdefault("number", number)
+    return normalized
+
+
 def import_package() -> dict:
     records = [
-        record
+        normalized_evidence_record(record)
         for record in json.loads(
         (
             ROOT
@@ -68,7 +81,7 @@ def gap_fill_import_package() -> dict:
         "type": "gap_fill",
         "passage_group_id": "GAP-EXPORT-01",
         "topic": "school life",
-        "book_source": "必修一 U1",
+        "book_source": "必修1 U1",
         "difficulty": 2,
         "word_count": 90,
         "passage": (
@@ -86,7 +99,7 @@ def gap_fill_import_package() -> dict:
                 "explanation": f"第 {number} 空的句子与上下文衔接最自然。",
                 "knowledge_points": ["gap_fill_transition"],
                 "grammar_tags": ["conjunctions"],
-                "book_source": "必修一 U1",
+                "book_source": "必修1 U1",
                 "difficulty": 2,
             }
             for number in range(1, 6)
@@ -103,6 +116,37 @@ def gap_fill_import_package() -> dict:
             "grammar_fill": 0,
             "reading": 0,
             "gap_fill": 1,
+        },
+        "passages": [record],
+    }
+
+
+def grammar_import_package() -> dict:
+    record = next(
+        normalized_evidence_record(item)
+        for item in json.loads(
+            (
+                ROOT
+                / "qa"
+                / "evidence"
+                / "m26"
+                / "stage-a"
+                / "stage-a-generated.json"
+            ).read_text(encoding="utf-8")
+        )
+        if item["type"] == "grammar_fill"
+    )
+    return {
+        "format_version": "bank-v1",
+        "name": f"Grammar contract test {uuid.uuid4().hex[:10]}",
+        "target_size": 10,
+        "difficulty_profile": "standard",
+        "generated_at": "2026-11-09",
+        "composition": {
+            "cloze": 0,
+            "grammar_fill": 1,
+            "reading": 0,
+            "gap_fill": 0,
         },
         "passages": [record],
     }
@@ -152,6 +196,122 @@ def test_import_preview_rejects_target_size_mismatch() -> None:
     assert any(
         item["code"] == "TARGET_SIZE_MISMATCH"
         for item in response.json()["detail"]["errors"]
+    )
+
+
+def test_m26_v1_rejects_non_m26_passage_profile() -> None:
+    package = import_package()
+    package["format_version"] = "m26-v1"
+    package["passages"][0]["validation_profile"] = "m2"
+
+    with pytest.raises(ImportValidationError) as raised:
+        normalize_import_package(package)
+
+    assert any(
+        item["code"] == "M26_PROFILE_MISMATCH"
+        for item in raised.value.errors
+    )
+
+
+def test_import_contract_accepts_canonical_book_source() -> None:
+    package = import_package()
+    schema = json.loads(
+        (
+            ROOT
+            / "contracts"
+            / "schemas"
+            / "bank-import-package.json"
+        ).read_text(encoding="utf-8")
+    )
+
+    jsonschema.validate(package, schema)
+
+
+def test_import_contract_rejects_legacy_book_source_spelling() -> None:
+    package = import_package()
+    package["passages"][0]["book_source"] = "必修一 U1"
+    schema = json.loads(
+        (
+            ROOT
+            / "contracts"
+            / "schemas"
+            / "bank-import-package.json"
+        ).read_text(encoding="utf-8")
+    )
+
+    with pytest.raises(jsonschema.ValidationError):
+        jsonschema.validate(package, schema)
+
+
+def test_import_contract_rejects_unknown_grammar_category() -> None:
+    package = grammar_import_package()
+    package["passages"][0]["questions"][0]["grammar_category"] = "free_form_category"
+    schema = json.loads(
+        (
+            ROOT
+            / "contracts"
+            / "schemas"
+            / "bank-import-package.json"
+        ).read_text(encoding="utf-8")
+    )
+
+    with pytest.raises(jsonschema.ValidationError):
+        jsonschema.validate(package, schema)
+
+
+def test_import_contract_accepts_legacy_grammar_category_alias() -> None:
+    package = grammar_import_package()
+    schema = json.loads(
+        (
+            ROOT
+            / "contracts"
+            / "schemas"
+            / "bank-import-package.json"
+        ).read_text(encoding="utf-8")
+    )
+
+    jsonschema.validate(package, schema)
+
+
+def test_import_contract_rejects_unknown_grammar_tag() -> None:
+    package = import_package()
+    package["passages"][0]["questions"][0]["grammar_tags"] = ["invented_grammar"]
+    schema = json.loads(
+        (
+            ROOT
+            / "contracts"
+            / "schemas"
+            / "bank-import-package.json"
+        ).read_text(encoding="utf-8")
+    )
+
+    with pytest.raises(jsonschema.ValidationError):
+        jsonschema.validate(package, schema)
+
+
+def test_importer_rejects_unknown_grammar_tag() -> None:
+    package = import_package()
+    package["passages"][0]["questions"][0]["grammar_tags"] = ["invented_grammar"]
+
+    with pytest.raises(ImportValidationError) as raised:
+        normalize_import_package(package)
+
+    assert any(
+        item["code"] == "GRAMMAR_TAGS_INVALID"
+        for item in raised.value.errors
+    )
+
+
+def test_importer_rejects_legacy_book_source_spelling() -> None:
+    package = import_package()
+    package["passages"][0]["book_source"] = "必修一 U1"
+
+    with pytest.raises(ImportValidationError) as raised:
+        normalize_import_package(package)
+
+    assert any(
+        item["code"] == "BOOK_SOURCE_FORMAT_INVALID"
+        for item in raised.value.errors
     )
 
 

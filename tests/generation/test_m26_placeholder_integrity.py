@@ -33,7 +33,7 @@ def _question(
         "explanation": "The answer fits the context. One distractor is too broad. Another distractor is unrelated.",
         "knowledge_points": ["context"],
         "grammar_tags": ["tense_system"],
-        "book_source": "必修一 U1",
+        "book_source": "必修1 U1",
         "difficulty": 3,
     }
 
@@ -63,7 +63,7 @@ def _cloze_record(first_slot: str) -> dict:
         "type": "cloze",
         "passage_group_id": "M2.6-TEST-CLOZE-01",
         "topic": "health",
-        "book_source": "必修一 U1",
+        "book_source": "必修1 U1",
         "difficulty": 3,
         "passage": "Students read a story. " + " ".join(slots) + ".",
         "questions": [_question(answer) for answer in answers],
@@ -178,7 +178,7 @@ def test_rejects_gap_option_text_leaking_into_the_passage() -> None:
         "type": "gap_fill",
         "passage_group_id": "M2.6-TEST-GAP-01",
         "topic": "health",
-        "book_source": "必修一 U1",
+        "book_source": "必修1 U1",
         "difficulty": 3,
         "passage": (
             "Students discussed healthy routines. "

@@ -1,0 +1,23 @@
+{
+  "standard": "docs/question-bank-generation-standard-v2.md",
+  "fixture": "qa/evidence/m26/stage-a/stage-a-generated.json",
+  "corrected_for_shadow_import": {
+    "added_question_number": true,
+    "removed_non_object_generation_observations": true,
+    "added_gap_fill_passage_options": true
+  },
+  "schema": "PASS",
+  "preview_http_status": 200,
+  "summary": {
+    "target_size": 53,
+    "passages": 6,
+    "questions": 53,
+    "composition": {
+      "cloze": 2,
+      "grammar_fill": 1,
+      "reading": 2,
+      "gap_fill": 1
+    }
+  },
+  "errors": []
+}

@@ -26,6 +26,7 @@ $requiredFiles = @(
   "contracts/vocabulary-whitelist.json",
   "contracts/vocabulary/kebiao-2022-level3.json",
   "contracts/vocabulary/kebiao-2022-supplements.json",
+  "docs/question-bank-generation-standard-v2.md",
   "docs/curriculum/grammar-by-unit.md",
   "docs/curriculum/grammar-id-ownership.md",
   "docs/curriculum/grammar-whitelist-mapping.md",
@@ -35,6 +36,20 @@ $requiredFiles = @(
 )
 foreach ($file in $requiredFiles) {
   Assert-True (Test-Path -LiteralPath $file) "Missing required file: $file"
+}
+Assert-True (-not (Test-Path -LiteralPath "docs/llm-question-bank-single-file-prompt.md")) "Legacy generation prompt must be removed"
+Assert-True (-not (Test-Path -LiteralPath "docs/llm-question-bank-import-prompt.md")) "Legacy import prompt must be removed"
+
+$generationStandard = Get-Content -Raw -Encoding UTF8 -LiteralPath "docs/question-bank-generation-standard-v2.md"
+foreach ($requiredText in @(
+  "72 篇 / 500 题",
+  "225",
+  "一次只生成一篇",
+  "①–⑩",
+  '"format_version": "bank-v1"',
+  '"format_version": "m26-v1"'
+)) {
+  Assert-True ($generationStandard.Contains($requiredText)) "Generation standard missing: $requiredText"
 }
 
 $schemas = Get-ChildItem -LiteralPath "contracts/schemas" -Filter "*.json"

@@ -8,6 +8,7 @@
 |---|---|
 | `contracts/curriculum.json` | 教材、25 单元、词汇/语法边界、题材、难度、题型与质量规则 |
 | `docs/curriculum/grammar-book-matrix.md` | 21 个 grammar ID 的允许册次集合与 400 题覆盖可达性 |
+| `docs/question-bank-generation-standard-v2.md` | 大模型生成、评审、修改和往返导入题库的唯一标准 |
 | `contracts/vocabulary-whitelist.json` | 规范化词元白名单及教材出处 |
 | `contracts/design-tokens.json` | App 与后台唯一视觉事实源 |
 | `contracts/admin-auth.md` | 本机回环、管理 token、生成审批和审计契约 |
@@ -50,7 +51,11 @@
 - `question_type_distribution.demo_80`：M1 Demo Bank 规模，共 80 题 / 11 篇。
 - `passage_rules.word_limits`：各题型词数边界。
 - `grammar_fill` 仅为题型 ID：语篇使用 ①–⑩ 空位，小题为 A/B/C/D 四选一；干扰项必须同语法范畴，`grammar_tags` 和每 ID ≥12 题覆盖要求不变。
-- `quality_gates.generation_batch_max_passages`：单批上限 `10`。
+- `cloze` 与 `gap_fill` 使用 `(n)` 编号；`grammar_fill` 使用 `①–⑩`。
+- `book_source` 只允许 `必修1-3 U1-5`、`选必一 U1-5`、`选必二 U1-5`、`跨册综合`。
+- 新生成文件的 `grammar_category` 使用 grammar ID 或五个 M2.6 结构类别；旧中文值仅保留导入兼容。
+- `quality_gates.generation_batch_max_passages`：脚本合并批次上限 `10`；
+  大模型单次响应固定只生成 `1` 篇，通过后再由脚本合并。
 - `m1_exemption.seven_day_repeat_rate_requirement`：值为 `deferred_to_m3`。
 
 ### `config/practice-modes.json`

@@ -8,6 +8,11 @@ from backend.app.generation import (
     _cloze_structure_categories,
     validate_generated_passage,
 )
+from backend.app.bank_transfer import (
+    M26_BOOK_TARGETS,
+    M26_COMPOSITION_TARGETS,
+    M26_DIFFICULTY_TARGETS,
+)
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -64,11 +69,12 @@ def _failure_codes(report) -> set[str]:
 
 
 def test_m26_generation_params_match_the_approved_spreadsheet() -> None:
-    params = json.loads(
+    contract = json.loads(
         (ROOT / "contracts" / "m26-generation-params-v2.json").read_text(
             encoding="utf-8"
         )
-    )["rules"]
+    )
+    params = contract["rules"]
 
     assert params["cloze"]["word_count"] == {"minimum": 280, "maximum": 320}
     assert params["cloze"]["long_sentence_minimum_words"] == 25
@@ -104,6 +110,64 @@ def test_m26_generation_params_match_the_approved_spreadsheet() -> None:
         "minimum": 320,
         "maximum": 380,
     }
+    assert contract["generation_standard"] == (
+        "docs/question-bank-generation-standard-v2.md"
+    )
+    assert contract["standard_version"] == 2
+    assert contract["run_controls"] == {
+        "passages_per_model_response": 1,
+        "merge_valid_passages_before_full_import": True,
+        "m26_v1_requires_full_quota": True,
+        "m26_v1_requires_m26_profile_for_every_passage": True,
+        "difficulty_scope": "question",
+        "book_distribution_scope": "all_questions",
+    }
+    assert contract["composition"] == {
+        "target_size": 500,
+        "passages": {
+            "cloze": 12,
+            "grammar_fill": 12,
+            "reading": 40,
+            "gap_fill": 8,
+        },
+        "difficulty": {
+            "1": 60,
+            "2": 120,
+            "3": 190,
+            "4": 95,
+            "5": 35,
+        },
+        "book_distribution": {
+            "选必二": 225,
+            "选必一": 150,
+            "必修": 100,
+            "跨册": 25,
+        },
+        "allowed_topics": [
+            "科技",
+            "环境",
+            "健康心理",
+            "文化艺术",
+            "旅行地理",
+            "志愿公益",
+            "职业创业",
+            "家庭代际",
+            "体育竞技",
+            "社会伦理",
+            "人物传记",
+            "自然科普",
+            "历史遗产",
+            "媒体信息",
+            "城市交通",
+        ],
+    }
+    assert M26_COMPOSITION_TARGETS == contract["composition"]["passages"]
+    assert M26_DIFFICULTY_TARGETS == {
+        int(key): value
+        for key, value in contract["composition"]["difficulty"].items()
+    }
+    assert M26_BOOK_TARGETS == contract["composition"]["book_distribution"]
+    assert sum(M26_BOOK_TARGETS.values()) == 500
 
 
 def test_m26_cloze_uses_the_new_280_to_320_word_profile() -> None:

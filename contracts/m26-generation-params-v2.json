@@ -1,10 +1,59 @@
 {
   "schema_version": "2.6.1",
   "source": "表格_20261108.csv",
-  "updated_at": "2026-11-08",
+  "updated_at": "2026-11-09",
+  "standard_version": 2,
+  "generation_standard": "docs/question-bank-generation-standard-v2.md",
+  "run_controls": {
+    "passages_per_model_response": 1,
+    "merge_valid_passages_before_full_import": true,
+    "m26_v1_requires_full_quota": true,
+    "m26_v1_requires_m26_profile_for_every_passage": true,
+    "difficulty_scope": "question",
+    "book_distribution_scope": "all_questions"
+  },
   "vocabulary_policy": {
     "whitelist": "contracts/vocabulary-whitelist.json",
     "abstract_nouns_allowed": true
+  },
+  "composition": {
+    "target_size": 500,
+    "passages": {
+      "cloze": 12,
+      "grammar_fill": 12,
+      "reading": 40,
+      "gap_fill": 8
+    },
+    "difficulty": {
+      "1": 60,
+      "2": 120,
+      "3": 190,
+      "4": 95,
+      "5": 35
+    },
+    "book_distribution": {
+      "选必二": 225,
+      "选必一": 150,
+      "必修": 100,
+      "跨册": 25
+    },
+    "allowed_topics": [
+      "科技",
+      "环境",
+      "健康心理",
+      "文化艺术",
+      "旅行地理",
+      "志愿公益",
+      "职业创业",
+      "家庭代际",
+      "体育竞技",
+      "社会伦理",
+      "人物传记",
+      "自然科普",
+      "历史遗产",
+      "媒体信息",
+      "城市交通"
+    ]
   },
   "rules": {
     "cloze": {

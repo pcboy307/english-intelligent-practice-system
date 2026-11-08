@@ -18,6 +18,11 @@
 | 400 | `INVALID_REQUEST` | 请求结构或参数非法 |
 | 400 | `INVALID_DURATION` | 练习时长不在配置中 |
 | 400 | `ANSWER_FORMAT_INVALID` | 答案不符合题型要求 |
+| 400 | `M26_PROFILE_MISMATCH` | `m26-v1` 中包含非 `m26` 语篇 |
+| 400 | `BOOK_SOURCE_FORMAT_INVALID` | `book_source` 不符合冻结格式 |
+| 400 | `GRAMMAR_TAGS_INVALID` | `grammar_tags` 为空或包含 21 项白名单外标签 |
+| 400 | `GRAMMAR_CATEGORY_INVALID` | `grammar_category` 不在闭集 |
+| 400 | `COHESION_TYPE_INVALID` | 七选五 `cohesion_type` 不在闭集 |
 | 401 | `STUDENT_ID_REQUIRED` | 缺少或非法 `X-Student-Id` |
 | 401 | `ADMIN_AUTH_FAILED` | 缺少或错误 `X-Admin-Token` |
 | 403 | `ADMIN_LOCAL_ONLY` | `/admin/*`、`/maintenance/*` 或题库切换请求来源不是回环地址 |

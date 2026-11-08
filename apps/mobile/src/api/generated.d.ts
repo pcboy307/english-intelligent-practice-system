@@ -1241,6 +1241,14 @@ export interface components {
         options: {
             [key: string]: string;
         } | string[];
+        bookSource: string;
+        /**
+         * @description New generation uses a grammar ID or a frozen structural category. The final two values are legacy import aliases only.
+         * @enum {string}
+         */
+        grammarCategory: "relative_clauses_defining" | "relative_clauses_non_defining" | "passive_voice_tenses" | "past_participle_nonfinite" | "v_ing_nonfinite" | "noun_clauses" | "adverbial_clauses" | "noun_clause" | "relative_clause" | "adverbial_clause" | "subjunctive_basic_if" | "subjunctive_basic_should" | "partial_inversion_basic" | "cleft_basic" | "tense_system" | "subject_verb_agreement" | "articles" | "prepositions" | "pronouns" | "conjunctions" | "word_formation" | "comparatives_superlatives" | "with_compound" | "infinitive_nonfinite" | "non_finite_perfect_passive" | "preposition_plus_which" | "what_noun_clause" | "subjunctive" | "inversion" | "时态语态" | "冠词";
+        /** @enum {string} */
+        cohesionType: "pronoun_reference" | "logical_connector" | "lexical_repetition" | "semantic_contrast" | "time_order" | "general_to_specific";
         "$defs-question": {
             number: number;
             stem?: string;
@@ -1248,14 +1256,14 @@ export interface components {
             answer: string;
             explanation: string;
             knowledge_points?: string[];
-            grammar_tags: string[];
-            book_source?: string;
+            grammar_tags: ("relative_clauses_defining" | "relative_clauses_non_defining" | "passive_voice_tenses" | "past_participle_nonfinite" | "v_ing_nonfinite" | "noun_clauses" | "adverbial_clauses" | "subjunctive_basic_if" | "subjunctive_basic_should" | "partial_inversion_basic" | "cleft_basic" | "tense_system" | "subject_verb_agreement" | "articles" | "prepositions" | "pronouns" | "conjunctions" | "word_formation" | "comparatives_superlatives" | "with_compound" | "infinitive_nonfinite")[];
+            book_source?: components["schemas"]["bookSource"];
             difficulty?: number;
             evidence_sentence?: string;
             /** @enum {string} */
             reading_type?: "main_idea" | "detail" | "inference" | "vocabulary_in_context" | "purpose_or_attitude" | "paragraph_function";
-            grammar_category?: string;
-            cohesion_type?: string;
+            grammar_category?: components["schemas"]["grammarCategory"];
+            cohesion_type?: components["schemas"]["cohesionType"];
             context_clue?: string;
             clue_argument?: string;
             near_synonym_calibration?: boolean;
@@ -1271,7 +1279,7 @@ export interface components {
             type: "cloze" | "grammar_fill" | "reading" | "gap_fill";
             passage_group_id: string;
             topic: string;
-            book_source: string;
+            book_source: components["schemas"]["bookSource"];
             difficulty: number;
             word_count?: number;
             flesch_reading_ease?: number;
@@ -1309,6 +1317,14 @@ export interface components {
                 options: {
                     [key: string]: string;
                 } | string[];
+                bookSource: string;
+                /**
+                 * @description New generation uses a grammar ID or a frozen structural category. The final two values are legacy import aliases only.
+                 * @enum {string}
+                 */
+                grammarCategory: "relative_clauses_defining" | "relative_clauses_non_defining" | "passive_voice_tenses" | "past_participle_nonfinite" | "v_ing_nonfinite" | "noun_clauses" | "adverbial_clauses" | "noun_clause" | "relative_clause" | "adverbial_clause" | "subjunctive_basic_if" | "subjunctive_basic_should" | "partial_inversion_basic" | "cleft_basic" | "tense_system" | "subject_verb_agreement" | "articles" | "prepositions" | "pronouns" | "conjunctions" | "word_formation" | "comparatives_superlatives" | "with_compound" | "infinitive_nonfinite" | "non_finite_perfect_passive" | "preposition_plus_which" | "what_noun_clause" | "subjunctive" | "inversion" | "时态语态" | "冠词";
+                /** @enum {string} */
+                cohesionType: "pronoun_reference" | "logical_connector" | "lexical_repetition" | "semantic_contrast" | "time_order" | "general_to_specific";
                 question: {
                     number: number;
                     stem?: string;
@@ -1316,14 +1332,14 @@ export interface components {
                     answer: string;
                     explanation: string;
                     knowledge_points?: string[];
-                    grammar_tags: string[];
-                    book_source?: string;
+                    grammar_tags: ("relative_clauses_defining" | "relative_clauses_non_defining" | "passive_voice_tenses" | "past_participle_nonfinite" | "v_ing_nonfinite" | "noun_clauses" | "adverbial_clauses" | "subjunctive_basic_if" | "subjunctive_basic_should" | "partial_inversion_basic" | "cleft_basic" | "tense_system" | "subject_verb_agreement" | "articles" | "prepositions" | "pronouns" | "conjunctions" | "word_formation" | "comparatives_superlatives" | "with_compound" | "infinitive_nonfinite")[];
+                    book_source?: components["schemas"]["bookSource"];
                     difficulty?: number;
                     evidence_sentence?: string;
                     /** @enum {string} */
                     reading_type?: "main_idea" | "detail" | "inference" | "vocabulary_in_context" | "purpose_or_attitude" | "paragraph_function";
-                    grammar_category?: string;
-                    cohesion_type?: string;
+                    grammar_category?: components["schemas"]["grammarCategory"];
+                    cohesion_type?: components["schemas"]["cohesionType"];
                     context_clue?: string;
                     clue_argument?: string;
                     near_synonym_calibration?: boolean;
@@ -1333,7 +1349,7 @@ export interface components {
                     type: "cloze" | "grammar_fill" | "reading" | "gap_fill";
                     passage_group_id: string;
                     topic: string;
-                    book_source: string;
+                    book_source: components["schemas"]["bookSource"];
                     difficulty: number;
                     word_count?: number;
                     flesch_reading_ease?: number;

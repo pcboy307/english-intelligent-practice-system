@@ -247,3 +247,18 @@
 - 验证：163 passed、M0_CHECK=PASS、API_CONTRACT_CHECK=PASS calls=25、
   TypeScript 与 OpenAPI 校验通过。
 - 格式说明：`docs/bank-import-export-format.md`。
+
+## 2026-11-09 - 题库生成与往返评审标准 v2
+
+- 将旧提示词收敛为唯一标准 `docs/question-bank-generation-standard-v2.md`，
+  同时覆盖新生成、导出评审和修改后重新导入。
+- M2.6 全量合同固定为 72 篇 / 500 题，题目级难度 60/120/190/95/35；
+  全题册次分布修正为选必二 225、选必一 150、必修 100、跨册 25。
+- 明确 `m26-v1` 的全部语篇必须使用 `validation_profile: "m26"`；
+  `bank-v1` 用于普通或分批题库，不执行全量配额。
+- 冻结 `book_source`、21 个 grammar ID、`grammar_category` 和
+  `cohesion_type`；旧 `必修一` 拼写和未知标签在导入时拒收。
+- 固定语法填空使用 `①–⑩`，完形和七选五使用 `(n)`。
+- 明确答案在整篇正文中零泄漏、题目级难度统计、单次只生成一篇，
+  以及可解性属于 Pro/人工门禁。
+- 6 篇 / 53 题最新样本通过 Schema 与影子导入预览。

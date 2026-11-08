@@ -74,8 +74,8 @@
         {"answer_target": "the bridge which was built", "book_source": "选必一 U1", "difficulty": 2, "grammar_tags": ["relative_clauses_non_defining"], "grammar_category": "relative_clause"},
         {"answer_target": "Although the weather changed", "book_source": "必修1 U2", "difficulty": 3, "grammar_tags": ["adverbial_clauses"], "grammar_category": "adverbial_clause"},
         {"answer_target": "whether the plan would work", "book_source": "选必二 U2", "difficulty": 4, "grammar_tags": ["noun_clauses"], "grammar_category": "noun_clause"},
-        {"answer_target": "the team has already begun", "book_source": "必修2 U1", "difficulty": 3, "grammar_tags": ["subject_verb_agreement"], "grammar_category": "时态语态"},
-        {"answer_target": "the first train", "book_source": "必修2 U1", "difficulty": 2, "grammar_tags": ["articles"], "grammar_category": "冠词"}
+        {"answer_target": "the team has already begun", "book_source": "必修2 U1", "difficulty": 3, "grammar_tags": ["subject_verb_agreement"], "grammar_category": "tense_system"},
+        {"answer_target": "the first train", "book_source": "必修2 U1", "difficulty": 2, "grammar_tags": ["articles"], "grammar_category": "articles"}
       ]
     },
     {
