@@ -9,6 +9,33 @@ export type ReviewItem = PracticeReview["items"][number];
 export type Report = components["schemas"]["Report"];
 export type ReportSummary =
   paths["/reports"]["get"]["responses"]["200"]["content"]["application/json"][number];
+export type MistakeList =
+  components["schemas"]["MistakeListResponse"];
+export type MistakePassageGroup =
+  components["schemas"]["MistakePassageGroup"];
+export type MistakeBankGroup =
+  components["schemas"]["MistakeBankGroup"];
+export type MistakeEntry = components["schemas"]["MistakeEntry"];
+export type MistakeDetailQuestion = {
+  question_id: string;
+  type: string;
+  passage_group_id: string;
+  stem: string;
+  options: string[];
+  answer: string;
+  label: string;
+  locked: boolean;
+};
+export type MistakeDetail = {
+  bank_id: string;
+  bank_name: string;
+  passage_id: string;
+  question_type: "cloze" | "grammar" | "reading" | "seven";
+  passage: string;
+  questions: MistakeDetailQuestion[];
+  target_items: MistakeEntry[];
+  target_question_ids: string[];
+};
 
 export function getStudentId(): string {
   const key = "device_student_id";
@@ -87,4 +114,21 @@ export async function listReports() {
 
 export async function deleteReport(sessionId: string) {
   return request<void>(`/reports/${sessionId}`, { method: "DELETE" });
+}
+
+export async function getMistakes() {
+  return request<MistakeList>("/mistakes?status=open");
+}
+
+export async function getMistakePassage(passageId: string) {
+  return request<MistakeDetail>(
+    `/mistakes/${encodeURIComponent(passageId)}`,
+  );
+}
+
+export async function startMistakeReview(passageId: string) {
+  return request<PracticeSession>(
+    `/mistakes/review/${encodeURIComponent(passageId)}`,
+    { method: "POST" },
+  );
 }

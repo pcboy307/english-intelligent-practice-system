@@ -10,13 +10,18 @@ $matches = [regex]::Matches(
 )
 
 $replacementPatterns = @(
-  @{ Pattern = '${sessionId}'; Replacement = '{session_id}' }
+  @{ Pattern = '${sessionId}'; Replacement = '{session_id}' },
+  @{ Pattern = '${passageId}'; Replacement = '{passage_id}' },
+  @{
+    Pattern = '${encodeURIComponent(passageId)}'
+    Replacement = '{passage_id}'
+  }
 )
 
 $openapi = Get-Content -Raw -Encoding UTF8 -LiteralPath "contracts/openapi.yaml"
 $rows = foreach ($match in $matches) {
   $rawPath = $match.Groups[1].Value
-  $contractPath = $rawPath
+  $contractPath = $rawPath.Split("?")[0]
   foreach ($replacement in $replacementPatterns) {
     $contractPath = $contractPath.Replace(
       $replacement.Pattern,

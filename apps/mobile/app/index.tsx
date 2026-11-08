@@ -2,7 +2,11 @@ import { router } from "expo-router";
 import { useEffect, useState } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 
-import { getActiveBank, startPractice } from "../src/api/client";
+import {
+  getActiveBank,
+  getMistakes,
+  startPractice,
+} from "../src/api/client";
 import { setSession } from "../src/sessionStore";
 import { tokens } from "../src/theme/tokens";
 import { useResponsiveLayout } from "../src/theme/useResponsiveLayout";
@@ -12,10 +16,14 @@ export default function HomeScreen() {
   const [bankName, setBankName] = useState("加载中");
   const [error, setError] = useState("");
   const [starting, setStarting] = useState(false);
+  const [mistakeCount, setMistakeCount] = useState(0);
 
   useEffect(() => {
     getActiveBank()
       .then((bank) => setBankName(bank.name))
+      .catch((reason) => setError(String(reason)));
+    getMistakes()
+      .then((mistakes) => setMistakeCount(mistakes.total_open))
       .catch((reason) => setError(String(reason)));
   }, []);
 
@@ -44,13 +52,25 @@ export default function HomeScreen() {
             <Text style={styles.eyebrow}>高二英语</Text>
             <Text style={styles.title}>智能练习</Text>
           </View>
-          <Pressable
-            accessibilityRole="button"
-            onPress={() => router.push("/history")}
-            style={[styles.secondaryButton, layout.desktop && styles.primaryButtonDesktop]}
-          >
-            <Text style={styles.secondaryButtonText}>历史报告</Text>
-          </Pressable>
+          <View style={styles.headerActions}>
+            <Pressable
+              accessibilityRole="button"
+              onPress={() => router.push("/mistakes")}
+              style={[styles.secondaryButton, layout.desktop && styles.primaryButtonDesktop]}
+              testID="home-mistakes-entry"
+            >
+              <Text style={styles.secondaryButtonText}>
+                错题本 · 待订正 {mistakeCount} 题
+              </Text>
+            </Pressable>
+            <Pressable
+              accessibilityRole="button"
+              onPress={() => router.push("/history")}
+              style={[styles.secondaryButton, layout.desktop && styles.primaryButtonDesktop]}
+            >
+              <Text style={styles.secondaryButtonText}>历史报告</Text>
+            </Pressable>
+          </View>
         </View>
         <Text style={styles.bank}>当前题库：{bankName}</Text>
         <Text style={[styles.body, { maxWidth: layout.bodyMaxWidth }]}>
@@ -86,6 +106,12 @@ const styles = StyleSheet.create({
     paddingTop: 80,
   },
   header: { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", gap: tokens.spacing.listGap },
+  headerActions: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "flex-end",
+    gap: tokens.web_desktop.optionGap,
+  },
   eyebrow: {
     color: tokens.color.secondaryText,
     fontFamily: tokens.font.uiFamily.web,
