@@ -230,4 +230,6 @@
 - 首页题库名称/题数统一取 `GET /stats/coverage`，并新增题库切换入口与两阶段确认。
 - 重做页、覆盖条和两个 maintenance 弹窗均重新浏览器验收。
 - 新增 questions 复合主键补授权记录、外键完整性审计和查询/写入路径审计。
-- 最终回归：123 passed、M0 PASS、API contract PASS calls=20、OpenAPI valid。
+- 最终回归：124 passed、M0 PASS、API contract PASS calls=20、OpenAPI valid。
+- 修复过期 `in_progress` 会话继续占用 passages 导致的
+  `NO_VALID_PAPER_ASSEMBLY`：并发语篇与换库未完成数现在都只统计未过期会话。

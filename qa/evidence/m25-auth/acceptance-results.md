@@ -163,7 +163,7 @@ contracts/openapi.yaml is valid
 ## 回归
 
 ```text
-pytest: 123 passed, 1 warning
+pytest: 124 passed, 1 warning
 M0_CHECK=PASS
 API_CONTRACT_CHECK=PASS calls=20
 OpenAPI: valid

@@ -90,7 +90,7 @@ strict four-rule pass.
 
 ## Verification
 
-- pytest: 123 passed.
+- pytest: 124 passed.
 - `M0_CHECK=PASS`
 - `API_CONTRACT_CHECK=PASS calls=20`
 - Accepted-generation ledger: CNY 3.063101.

@@ -83,7 +83,7 @@
     "Demo Bank（30题·旧版演示）",
     "Demo Bank（80题·归档）"
   ],
-  "temporary_banks_removed": 219,
+  "temporary_banks_removed": 234,
   "legacy_demo_source": {
     "bank_id": "00000000-0000-4000-8000-000000000001",
     "created_at": "2026-11-07T11:07:42.182188+08:00",

@@ -589,6 +589,7 @@ def switchable_banks(
         WHERE student_id=%s
           AND bank_id=%s
           AND status='in_progress'
+          AND deadline > now()
         """,
         (student_id, active_bank_id),
     ).fetchone()["count"]

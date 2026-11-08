@@ -1200,6 +1200,84 @@ def test_m25_legacy_demos_are_unique_archived_and_not_switchable() -> None:
     assert payload["current_bank_id"] in visible_ids
 
 
+def test_start_practice_ignores_expired_in_progress_sessions() -> None:
+    headers = student_headers()
+    session_id = str(uuid.uuid4())
+    now = datetime.now(timezone.utc)
+    sample_questions = []
+    for type_ in ("cloze", "grammar_fill", "reading"):
+        sample_questions.append(
+            next(
+                question
+                for question in store.questions.values()
+                if question.type == type_
+            )
+        )
+    with psycopg.connect(database_url()) as connection:
+        connection.execute(
+            """
+            INSERT INTO practice_sessions
+                (id, student_id, bank_id, bank_name, bank_version,
+                 duration_minutes, status, started_at, deadline,
+                 composition_note, session_kind)
+            VALUES (%s, %s, %s, %s, 1, 30, 'in_progress', %s, %s, %s,
+                    'practice')
+            """,
+            (
+                session_id,
+                headers["X-Student-Id"],
+                store.bank["bank_id"],
+                store.bank["name"],
+                now - timedelta(minutes=60),
+                now - timedelta(minutes=30),
+                Jsonb({"expired_test_fixture": True}),
+            ),
+        )
+        for ordinal, question in enumerate(sample_questions):
+            connection.execute(
+                """
+                INSERT INTO session_items
+                    (session_id, question_id, bank_id, ordinal)
+                VALUES (%s, %s, %s, %s)
+                """,
+                (
+                    session_id,
+                    question.id,
+                    store.bank["bank_id"],
+                    ordinal,
+                ),
+            )
+
+    try:
+        active_groups = store._student_state(headers["X-Student-Id"])[4]
+        switch_data = store.list_switchable_banks(headers["X-Student-Id"])
+        assert {
+            question.passage_group_id for question in sample_questions
+        }.isdisjoint(active_groups)
+        assert switch_data["in_progress_count"] == 0
+        response = client.post(
+            "/api/v1/practice/start",
+            headers=headers,
+            json={"duration_minutes": 30},
+        )
+        assert response.status_code == 201, response.text
+        created_id = response.json()["session_id"]
+        client.delete(
+            f"/api/v1/practice/{created_id}",
+            headers=headers,
+        )
+    finally:
+        with psycopg.connect(database_url()) as connection:
+            connection.execute(
+                "DELETE FROM session_items WHERE session_id=%s",
+                (session_id,),
+            )
+            connection.execute(
+                "DELETE FROM practice_sessions WHERE id=%s",
+                (session_id,),
+            )
+
+
 def test_m25_in_progress_session_survives_bank_switch_and_keeps_bank_id() -> None:
     original_bank_id = store.bank["bank_id"]
     bank_a = create_test_bank("M25 Running A", ["M25-RUNNING-A-Q01"])

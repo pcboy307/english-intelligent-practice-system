@@ -14,14 +14,14 @@
     "Z1": "fresh 001->002 foreign keys 33 = current 33",
     "P1": "14 FK definitions, 0 orphans",
     "X1": "root cause and recurrence controls recorded",
-    "X2": "219 temporary banks removed; final switch target only M2 300 active; legacy Demo 30/80 hidden",
+    "X2": "234 temporary banks removed; final switch target only M2 300 active; legacy Demo 30/80 hidden",
     "W3": "orphan practice_sessions=0; orphan practice_reports=0",
     "Y1": "composite-key orphan checks: 0 / 0 / 0 / 0",
     "P2": "30 hits = 30 safe + 0 needs-fix",
     "P3": "3 auth tests passed",
     "S1": "tokens at lines 28, 29, 30",
     "S2": "OpenAPI valid",
-    "pytest": "123 passed, 1 warning",
+    "pytest": "124 passed, 1 warning",
     "API_CONTRACT_CHECK": "PASS calls=20"
   },
   "primary_key_authorization": "docs/change-log/AUTH-question-primary-key.md",
@@ -38,7 +38,8 @@
     "qa/evidence/m25-auth/p2-counts.txt",
     "qa/evidence/m25-auth/fresh-db-foreign-keys.txt",
     "qa/evidence/m25-auth/current-db-foreign-keys.txt",
-    "qa/evidence/m25-auth/fresh-db-comparison.json"
+    "qa/evidence/m25-auth/fresh-db-comparison.json",
+    "qa/evidence/m25-auth/no-valid-paper-assembly.md"
   ],
   "screenshots": [
     "qa/evidence/m25-auth/home-bank-count-fixed.png",

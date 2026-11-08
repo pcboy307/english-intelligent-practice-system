@@ -464,6 +464,7 @@ class PostgresStore:
                     WHERE ps.student_id=%s
                       AND ps.bank_id=%s
                       AND ps.status='in_progress'
+                      AND ps.deadline > now()
                     """,
                     (student_id, self.bank["bank_id"]),
                 ).fetchall()
