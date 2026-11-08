@@ -671,6 +671,11 @@ class PostgresStore:
                 SELECT report, created_at
                 FROM practice_reports
                 WHERE student_id=%s AND session_id=%s
+                  AND NOT EXISTS (
+                      SELECT 1
+                      FROM report_deletions rd
+                      WHERE rd.session_id=practice_reports.session_id
+                  )
                 """,
                 (student_id, session_id),
             ).fetchone()
@@ -722,6 +727,11 @@ class PostgresStore:
                 SELECT session_id, report, created_at
                 FROM practice_reports
                 WHERE student_id=%s
+                  AND NOT EXISTS (
+                      SELECT 1
+                      FROM report_deletions rd
+                      WHERE rd.session_id=practice_reports.session_id
+                  )
                 ORDER BY created_at DESC
                 """,
                 (student_id,),
@@ -763,24 +773,12 @@ class PostgresStore:
                 if not exists:
                     raise KeyError("REPORT_NOT_FOUND")
                 connection.execute(
-                    "DELETE FROM error_tag_successes WHERE session_id=%s",
-                    (session_id,),
-                )
-                connection.execute(
-                    "DELETE FROM practice_reports WHERE student_id=%s AND session_id=%s",
-                    (student_id, session_id),
-                )
-                connection.execute(
-                    "DELETE FROM saved_answers WHERE session_id=%s",
-                    (session_id,),
-                )
-                connection.execute(
-                    "DELETE FROM session_items WHERE session_id=%s",
-                    (session_id,),
-                )
-                connection.execute(
-                    "DELETE FROM practice_sessions WHERE student_id=%s AND id=%s",
-                    (student_id, session_id),
+                    """
+                    INSERT INTO report_deletions (session_id, student_id)
+                    VALUES (%s, %s)
+                    ON CONFLICT (session_id) DO NOTHING
+                    """,
+                    (session_id, student_id),
                 )
 
     def get_review(self, student_id: str, session_id: str) -> dict:

@@ -430,3 +430,58 @@ def test_m25_mistake_state_is_isolated_by_student() -> None:
     submit(second_headers, second_session)
     assert mistake_row(second_headers, question_id) is None
     assert mistake_row(first_headers, question_id)["wrong_count"] == 1
+
+
+def test_m25_report_delete_is_soft_and_preserves_learning_evidence() -> None:
+    headers = student_headers()
+    question_id = next(
+        qid for qid, question in store.questions.items() if question.type == "cloze"
+    )
+    session_id = direct_session(headers, [question_id])
+    answer(headers, session_id, question_id, wrong_answer(question_id))
+    submit(headers, session_id)
+
+    deleted = client.delete(
+        f"/api/v1/reports/{session_id}",
+        headers=headers,
+    )
+    assert deleted.status_code == 204, deleted.text
+    assert client.get(
+        f"/api/v1/reports/{session_id}",
+        headers=headers,
+    ).status_code == 404
+    assert session_id not in {
+        item["session_id"]
+        for item in client.get("/api/v1/reports", headers=headers).json()
+    }
+
+    with psycopg.connect(database_url(), row_factory=dict_row) as connection:
+        counts = connection.execute(
+            """
+            SELECT
+              (SELECT count(*) FROM practice_sessions WHERE id=%s) AS sessions,
+              (SELECT count(*) FROM practice_reports WHERE session_id=%s) AS reports,
+              (SELECT count(*) FROM saved_answers WHERE session_id=%s) AS answers,
+              (SELECT count(*) FROM question_attempts WHERE session_id=%s) AS attempts,
+              (SELECT count(*) FROM mistake_items
+               WHERE student_id=%s AND question_id=%s) AS mistakes,
+              (SELECT count(*) FROM report_deletions WHERE session_id=%s) AS deletions
+            """,
+            (
+                session_id,
+                session_id,
+                session_id,
+                session_id,
+                headers["X-Student-Id"],
+                question_id,
+                session_id,
+            ),
+        ).fetchone()
+    assert counts == {
+        "sessions": 1,
+        "reports": 1,
+        "answers": 1,
+        "attempts": 1,
+        "mistakes": 1,
+        "deletions": 1,
+    }
