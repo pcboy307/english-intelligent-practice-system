@@ -401,7 +401,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: tokens.color.primaryButtonBackground,
     borderRadius: tokens.radius.medium,
-    marginTop: tokens.spacing.section,
+    marginTop: tokens.spacing.section * 2,
     paddingHorizontal: tokens.spacing.cardPadding,
   },
   primaryButtonText: {
