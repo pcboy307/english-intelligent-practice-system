@@ -3,6 +3,19 @@ from __future__ import annotations
 from collections import Counter, defaultdict
 
 
+def _passage_coverage_count(
+    passage_questions: list,
+    covered_at: dict[str, list],
+) -> int:
+    return len(
+        {
+            seen_at
+            for question in passage_questions
+            for seen_at in covered_at.get(question.id, [])
+        }
+    )
+
+
 def assemble_demo_paper(
     questions: list,
     paper_number: int,
@@ -11,7 +24,7 @@ def assemble_demo_paper(
     """Assemble one paper using only the two configured selection rules.
 
     Rule 1: select one cloze, one grammar-fill and one reading or seven-choice
-    passage, preferring passages not covered by this student.
+    passage, preferring the combination with the lowest total passage coverage.
     Rule 2: when coverage ties, prefer three distinct topics.
     """
     grouped: dict[str, dict[str, list]] = defaultdict(
@@ -38,12 +51,15 @@ def assemble_demo_paper(
                         grammar_questions,
                         extra_questions,
                     )
-                    unseen_passage_count = sum(
-                        not any(
-                            covered_at.get(question.id)
-                            for question in passage_questions
-                        )
+                    passage_coverage_counts = tuple(
+                        _passage_coverage_count(passage_questions, covered_at)
                         for passage_questions in passages
+                    )
+                    unseen_passage_count = sum(
+                        count == 0 for count in passage_coverage_counts
+                    )
+                    total_passage_coverage_count = sum(
+                        passage_coverage_counts
                     )
                     selected_questions = (
                         cloze_questions + grammar_questions + extra_questions
@@ -57,6 +73,10 @@ def assemble_demo_paper(
                     candidates.append(
                         {
                             "questions": selected_questions,
+                            "passage_coverage_counts": passage_coverage_counts,
+                            "total_passage_coverage_count": (
+                                total_passage_coverage_count
+                            ),
                             "unseen_passage_count": unseen_passage_count,
                             "topic_count": topic_count,
                             "paper_mode": extra_type,
@@ -65,13 +85,14 @@ def assemble_demo_paper(
                         }
                     )
 
-    best_unseen = max(
-        candidate["unseen_passage_count"] for candidate in candidates
+    best_coverage_count = min(
+        candidate["total_passage_coverage_count"]
+        for candidate in candidates
     )
     coverage_tier = [
         candidate
         for candidate in candidates
-        if candidate["unseen_passage_count"] == best_unseen
+        if candidate["total_passage_coverage_count"] == best_coverage_count
     ]
     best_topic_count = max(
         candidate["topic_count"] for candidate in coverage_tier
@@ -143,10 +164,25 @@ def assemble_demo_paper(
         "topics": selected_topics,
         "selected_distinct_topic_count": best["topic_count"],
         "selected_passage_groups": list(best["groups"]),
-        "selection_basis": "unseen_passages_then_distinct_topics",
+        "selected_passage_coverage_counts": [
+            {
+                "passage_group_id": passage_group_id,
+                "coverage_count": coverage_count,
+            }
+            for passage_group_id, coverage_count in zip(
+                best["groups"],
+                best["passage_coverage_counts"],
+            )
+        ],
+        "selected_total_passage_coverage_count": best[
+            "total_passage_coverage_count"
+        ],
+        "selection_basis": (
+            "lowest_passage_coverage_then_distinct_topics"
+        ),
         "selection_rules": [
             "one_cloze_one_grammar_fill_one_reading_or_seven_choice",
-            "prefer_uncovered_passages_then_three_distinct_topics",
+            "prefer_lowest_total_passage_coverage_then_three_distinct_topics",
         ],
         "selected_unseen_passage_count": best["unseen_passage_count"],
         "selected_unseen_question_count": selected_unseen_question_count,

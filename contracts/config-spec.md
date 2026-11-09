@@ -62,9 +62,9 @@
 
 - `modes.30.passage_composition`：每套固定 1 篇完形、1 篇语法填空、1 篇阅读或七选五。
 - `selection_policy.rules`：只有两条选题规则。
-  1. 先最大化本学生在当前 Bank 中未覆盖的语篇数；覆盖以“该篇任一题已出现在已交卷或已过期会话”为准。
-  2. 未覆盖语篇数并列时，优先选择覆盖 3 个不同话题的组合。
-- `selection_policy.candidate_order`：固定为 `highest_unseen_passage_count`、`highest_distinct_topic_count`，不得插入其他排序条件。
+  1. 先最小化组合内 3 篇语篇的本学生覆盖次数总和；一篇的覆盖次数按已交卷或已过期会话去重计数。
+  2. 覆盖次数总和并列时，优先选择覆盖 3 个不同话题的组合。
+- `selection_policy.candidate_order`：固定为 `lowest_total_passage_coverage_count`、`highest_distinct_topic_count`，不得插入其他排序条件。
 - 错题标签、历史权重、册次、难度、grammar tag 重复、知识点重复、错题池占比和未完成会话同篇冲突均不参与选题。
 - `bank_scope.source`：必须为 `session.bank_id`；`allow_cross_bank_sampling=false`。
 - 报告和历史记录必须使用实际题数作分母。

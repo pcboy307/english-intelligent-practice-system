@@ -104,7 +104,7 @@ Assert-True ($mode30.passage_composition.reading_or_gap_fill -eq 1) "30-minute r
 Assert-True ($practiceModes.bank_scope.allow_cross_bank_sampling -eq $false) "Cross-bank sampling must be forbidden"
 $selectionRules = @($practiceModes.selection_policy.rules)
 Assert-True ($selectionRules.Count -eq 2) "Selection policy must contain exactly two rules"
-Assert-True ((@($practiceModes.selection_policy.candidate_order) -join ",") -eq "highest_unseen_passage_count,highest_distinct_topic_count") "Selection candidate order mismatch"
+Assert-True ((@($practiceModes.selection_policy.candidate_order) -join ",") -eq "lowest_total_passage_coverage_count,highest_distinct_topic_count") "Selection candidate order mismatch"
 foreach ($disabledRule in @(
   "error_tags_used_for_selection",
   "history_weights_used_for_selection",

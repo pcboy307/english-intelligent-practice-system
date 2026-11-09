@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from types import SimpleNamespace
 
 from backend.app.composer import assemble_demo_paper
@@ -58,7 +58,18 @@ def _covered(questions: list[SimpleNamespace]) -> dict[str, list[datetime]]:
     return {question.id: [seen_at] for question in questions}
 
 
-def test_uncovered_passages_are_selected_before_covered_passages() -> None:
+def _covered_times(
+    questions: list[SimpleNamespace],
+    count: int,
+) -> dict[str, list[datetime]]:
+    start = datetime(2026, 11, 1, tzinfo=timezone.utc)
+    return {
+        question.id: [start + timedelta(days=index) for index in range(count)]
+        for question in questions
+    }
+
+
+def test_less_covered_passages_are_selected_before_more_covered_passages() -> None:
     covered_passages = (
         _passage("cloze", "CLOZE-COVERED", "science")
         + _passage("grammar_fill", "GRAMMAR-COVERED", "environment")
@@ -81,7 +92,10 @@ def test_uncovered_passages_are_selected_before_covered_passages() -> None:
         "GRAMMAR-UNCOVERED",
         "READING-UNCOVERED",
     }
-    assert log["selection_basis"] == "unseen_passages_then_distinct_topics"
+    assert log["selection_basis"] == (
+        "lowest_passage_coverage_then_distinct_topics"
+    )
+    assert log["selected_total_passage_coverage_count"] == 0
     assert log["selected_unseen_passage_count"] == 3
 
 
@@ -103,7 +117,46 @@ def test_three_distinct_topics_break_the_uncovered_passage_tie() -> None:
         "READING-DISTINCT-TOPIC",
     }
     assert log["selected_distinct_topic_count"] == 3
+    assert log["selected_total_passage_coverage_count"] == 0
     assert log["topics"] == ["environment", "health", "science"]
+
+
+def test_lower_total_coverage_is_preferred_across_mixed_passages() -> None:
+    cloze_a = _passage("cloze", "CLOZE-A", "science")
+    grammar_a = _passage("grammar_fill", "GRAMMAR-A", "science")
+    reading_a = _passage("reading", "READING-A", "science")
+    cloze_b = _passage("cloze", "CLOZE-B", "science")
+    grammar_b = _passage("grammar_fill", "GRAMMAR-B", "science")
+    reading_b = _passage("reading", "READING-B", "science")
+    questions = (
+        cloze_a
+        + grammar_a
+        + reading_a
+        + cloze_b
+        + grammar_b
+        + reading_b
+    )
+    covered_at = {
+        **_covered_times(cloze_a, 0),
+        **_covered_times(grammar_a, 0),
+        **_covered_times(reading_a, 10),
+        **_covered_times(cloze_b, 3),
+        **_covered_times(grammar_b, 3),
+        **_covered_times(reading_b, 3),
+    }
+
+    _, log = assemble_demo_paper(questions, 1, covered_at)
+
+    assert log["selected_total_passage_coverage_count"] == 3
+    assert log["selected_unseen_passage_count"] == 2
+    assert log["selected_passage_groups"] == [
+        "CLOZE-A",
+        "GRAMMAR-A",
+        "READING-B",
+    ]
+    assert log["selection_basis"] == (
+        "lowest_passage_coverage_then_distinct_topics"
+    )
 
 
 def test_old_quota_repetition_and_topic_gate_rules_do_not_block_selection() -> None:

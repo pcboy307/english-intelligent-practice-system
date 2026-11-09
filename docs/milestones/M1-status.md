@@ -20,7 +20,7 @@ M1 依据：Demo Bank 80 题 11 篇；交卷前 has_answer=false /
 has_explanation=false；交卷幂等；跨会话两次消标；门禁三层且 fail-closed。
 
 2026-11-09 用户推翻原组卷规则，当前选题只保留两条：每套选 1 篇完形、
-1 篇语法填空、1 篇阅读或七选五，先优先未覆盖语篇；未覆盖数并列时优先
+1 篇语法填空、1 篇阅读或七选五，先选择三篇覆盖次数总和最少的组合；并列时优先
 覆盖 3 个不同话题。原 tag≤3、册次、难度、权重和并发语篇约束不再参与选题。
 
 已知欠账：全部登记在 `docs/待补齐清单.md`，不阻塞签字。
@@ -58,11 +58,11 @@ has_explanation=false；交卷幂等；跨会话两次消标；门禁三层且 f
 | 规则 | 验收方式 |
 |---|---|
 | 每套 1 篇完形 + 1 篇语法 + 1 篇阅读或七选五 | 校验实际题型集合与 3 个篇 ID |
-| 优先未覆盖语篇 | 四套均为 `selected_unseen_passage_count=3`，且与前套篇 ID 不相交 |
-| 未覆盖数并列时优先 3 个不同话题 | 校验话题集合与 `selected_distinct_topic_count` |
+| 优先覆盖次数少的文章 | 四套均为 `selected_total_passage_coverage_count=0`，且与前套篇 ID 不相交 |
+| 覆盖次数并列时优先 3 个不同话题 | 校验话题集合与 `selected_distinct_topic_count` |
 
 测试命令：`.\.venv\Scripts\python.exe -m pytest
-tests\api\test_half_day_flow.py::test_four_papers_prioritize_three_uncovered_passages
+tests\api\test_half_day_flow.py::test_four_papers_prioritize_low_coverage_passages
 -q`。旧 `qa/evidence/m1/four-rule-decisions.json` 仅保留为历史证据，不再代表
 当前选题逻辑。
 

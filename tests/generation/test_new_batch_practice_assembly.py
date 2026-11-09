@@ -63,9 +63,10 @@ def test_new_batch_can_assemble_both_practice_modes() -> None:
             )
         )
         assert log["selected_unseen_passage_count"] == 3
+        assert log["selected_total_passage_coverage_count"] == 0
         assert log["selected_distinct_topic_count"] == len(log["topics"])
         assert log["selection_basis"] == (
-            "unseen_passages_then_distinct_topics"
+            "lowest_passage_coverage_then_distinct_topics"
         )
 
 

@@ -395,7 +395,7 @@ def test_database_endpoint_is_absolute_and_name_is_checked() -> None:
     )
 
 
-def test_four_papers_prioritize_three_uncovered_passages() -> None:
+def test_four_papers_prioritize_low_coverage_passages() -> None:
     headers = student_headers()
     selected_group_sets: list[set[str]] = []
     for _ in range(4):
@@ -405,9 +405,10 @@ def test_four_papers_prioritize_three_uncovered_passages() -> None:
         assert len(session["items"]) == log["question_count"]
         assert len(selected_groups) == 3
         assert log["selected_unseen_passage_count"] == 3
+        assert log["selected_total_passage_coverage_count"] == 0
         assert log["selected_distinct_topic_count"] == len(log["topics"])
         assert log["selection_basis"] == (
-            "unseen_passages_then_distinct_topics"
+            "lowest_passage_coverage_then_distinct_topics"
         )
         assert log["active_bank_question_count"] == len(store.questions)
         assert log["active_bank_passage_count"] == len(

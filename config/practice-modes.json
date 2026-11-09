@@ -14,7 +14,7 @@
     "rules": [
       {
         "priority": 1,
-        "description": "Select one cloze, one grammar-fill and one reading or seven-choice passage; prefer passages not yet covered by the student."
+        "description": "Select one cloze, one grammar-fill and one reading or seven-choice passage; prefer the combination whose three passages have the lowest total coverage count for the student."
       },
       {
         "priority": 2,
@@ -22,7 +22,7 @@
       }
     ],
     "candidate_order": [
-      "highest_unseen_passage_count",
+      "lowest_total_passage_coverage_count",
       "highest_distinct_topic_count"
     ],
     "coverage_source": "submitted_or_expired_reports_for_same_student_and_bank",
