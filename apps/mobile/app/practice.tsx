@@ -339,7 +339,7 @@ export default function PracticeScreen() {
                 }
                 style={actionStyle}
               >
-                <Text style={actionTextStyle}>查看报告</Text>
+                <Text style={actionTextStyle}>返回报告</Text>
               </Pressable>
             ) : (
               <Pressable
