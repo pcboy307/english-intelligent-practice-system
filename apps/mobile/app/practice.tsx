@@ -318,31 +318,25 @@ export default function PracticeScreen() {
                 下一题
               </Text>
             </Pressable>
-            <Pressable
-              accessibilityRole="button"
-              disabled={!canViewReport || !reportHref}
-              onPress={() =>
-                reportHref &&
-                router.push({
-                  pathname: "/report",
-                  params: {
-                    session_id: reportHref,
-                    anchor: String(currentIndex + 1),
-                  },
-                })
-              }
-              style={[actionStyle, !canViewReport && styles.actionDisabled]}
-            >
-              <Text
-                style={[
-                  actionTextStyle,
-                  !canViewReport && styles.actionTextDisabled,
-                ]}
+            {canViewReport ? (
+              <Pressable
+                accessibilityRole="button"
+                disabled={!reportHref}
+                onPress={() =>
+                  reportHref &&
+                  router.push({
+                    pathname: "/report",
+                    params: {
+                      session_id: reportHref,
+                      anchor: String(currentIndex + 1),
+                    },
+                  })
+                }
+                style={actionStyle}
               >
-                {canViewReport ? "查看报告" : "交卷后可查看报告"}
-              </Text>
-            </Pressable>
-            {!reviewMode && atLast ? (
+                <Text style={actionTextStyle}>查看报告</Text>
+              </Pressable>
+            ) : (
               <Pressable
                 accessibilityRole="button"
                 onPress={() => setDialogMode("submit")}
@@ -350,7 +344,7 @@ export default function PracticeScreen() {
               >
                 <Text style={actionTextStyle}>交卷</Text>
               </Pressable>
-            ) : null}
+            )}
             {!reviewMode ? (
               <Pressable
                 accessibilityRole="button"
