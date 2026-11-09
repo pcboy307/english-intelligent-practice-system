@@ -685,6 +685,7 @@ export interface components {
                 book_tag: "必修" | "选必一" | "选必二" | "跨册";
                 correct: boolean;
                 correct_answer: string | string[];
+                explanation: string;
             }[];
         };
         SavedAnswer: components["schemas"]["answer"];
@@ -935,14 +936,9 @@ export interface components {
         };
         compositionNote: {
             bank_name: string;
+            /** @constant */
+            session_kind: "practice";
             question_type_counts: {
-                [key: string]: number;
-            };
-            error_pool_ratio: number;
-            difficulty_distribution: {
-                [key: string]: number;
-            };
-            book_distribution: {
                 [key: string]: number;
             };
             topics: string[];
@@ -993,14 +989,9 @@ export interface components {
                 };
                 compositionNote: {
                     bank_name: string;
+                    /** @constant */
+                    session_kind: "practice";
                     question_type_counts: {
-                        [key: string]: number;
-                    };
-                    error_pool_ratio: number;
-                    difficulty_distribution: {
-                        [key: string]: number;
-                    };
-                    book_distribution: {
                         [key: string]: number;
                     };
                     topics: string[];

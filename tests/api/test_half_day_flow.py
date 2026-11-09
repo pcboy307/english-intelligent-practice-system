@@ -18,17 +18,13 @@ from backend.app.main import app, store
 
 
 client = TestClient(app, client=("127.0.0.1", 41000))
-FULL_BANK_ID = "6fab59cd-c1fa-4a7a-8532-41bde57d18f2"
 
 
 @pytest.fixture(scope="module", autouse=True)
 def use_full_bank_for_half_day_flow_tests():
-    original_bank_id = store.bank["bank_id"]
-    if original_bank_id != FULL_BANK_ID:
-        store.activate_bank(FULL_BANK_ID, operator="pytest")
+    assert store.bank["status"] == "active"
+    assert len(store.questions) > 0
     yield
-    if store.bank["bank_id"] != original_bank_id:
-        store.activate_bank(original_bank_id, operator="pytest-restore")
 
 
 def student_headers() -> dict[str, str]:
@@ -151,7 +147,15 @@ def test_submit_returns_report_and_is_idempotent() -> None:
     )
     assert review.status_code == 200
     assert len(review.json()["items"]) == 29
-    assert all("explanation" not in item for item in review.json()["items"])
+    report_explanations = {
+        item["question_id"]: item["explanation"]
+        for item in report["question_results"]
+    }
+    assert all(
+        item["explanation"] == report_explanations[item["question_id"]]
+        for item in review.json()["items"]
+    )
+    assert all(item["explanation"] for item in review.json()["items"])
     assert all(item["correct_answer"] for item in review.json()["items"])
 
 

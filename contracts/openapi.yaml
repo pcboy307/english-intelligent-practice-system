@@ -97,6 +97,7 @@ components:
               - book_tag
               - correct
               - correct_answer
+              - explanation
             properties:
               question_id:
                 type: string
@@ -139,6 +140,8 @@ components:
                   - type: array
                     items:
                       type: string
+              explanation:
+                type: string
     SavedAnswer:
       $ref: ./schemas/answer.json
     Report:

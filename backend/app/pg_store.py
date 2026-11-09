@@ -868,6 +868,10 @@ class PostgresStore:
             item["question_id"]: item["correct"]
             for item in report["question_results"]
         }
+        explanations = {
+            item["question_id"]: item["explanation"]
+            for item in report["question_results"]
+        }
         items = []
         for qid in record.question_ids:
             question = self.get_question(record.bank_id, qid)
@@ -886,6 +890,7 @@ class PostgresStore:
                     "question_order": question.question_order,
                     "correct": correctness[qid],
                     "correct_answer": question.answer,
+                    "explanation": explanations[qid],
                 }
             )
         return {

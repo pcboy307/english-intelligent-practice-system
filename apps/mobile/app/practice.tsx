@@ -209,6 +209,9 @@ export default function PracticeScreen() {
     setAnswers((current) => ({ ...current, [item.question_id]: answer }));
     try {
       await saveAnswer(session.session_id, item.question_id, answer);
+      if (currentIndex < items.length - 1) {
+        setCurrentIndex(currentIndex + 1);
+      }
     } catch (reason) {
       setError(String(reason));
     }
@@ -227,10 +230,12 @@ export default function PracticeScreen() {
       const submittedSession = { ...session, status: "submitted" as const };
       setSession(submittedSession);
       setLocalSession(submittedSession);
-      const review = await getPracticeReview(session.session_id);
-      setReviewSession(review);
       setReviewMode(true);
       setDialogMode(null);
+      router.replace({
+        pathname: "/report",
+        params: { session_id: session.session_id },
+      });
     } catch (reason) {
       setError(String(reason));
     }
@@ -443,19 +448,24 @@ export default function PracticeScreen() {
               })}
             </View>
             {reviewMode && reviewItem ? (
-              <Text
-                style={[
-                  styles.reviewResult,
-                  {
-                    color: reviewItem.correct
-                      ? tokens.color.correct
-                      : tokens.color.incorrect,
-                  },
-                ]}
-              >
-                我的选择：{String(reviewItem.saved_answer || "未作答")} ·{" "}
-                {reviewItem.correct ? "正确" : "错误"}
-              </Text>
+              <>
+                <Text
+                  style={[
+                    styles.reviewResult,
+                    {
+                      color: reviewItem.correct
+                        ? tokens.color.correct
+                        : tokens.color.incorrect,
+                    },
+                  ]}
+                >
+                  我的选择：{String(reviewItem.saved_answer || "未作答")} ·{" "}
+                  {reviewItem.correct ? "正确" : "错误"}
+                </Text>
+                <Text style={styles.reviewExplanation}>
+                  解析：{reviewItem.explanation}
+                </Text>
+              </>
             ) : null}
           </View>
         </View>
@@ -656,6 +666,13 @@ const styles = StyleSheet.create({
     fontSize: tokens.font.sizes.body,
     marginTop: tokens.spacing.listGap,
     fontWeight: "600",
+  },
+  reviewExplanation: {
+    color: tokens.color.primaryText,
+    fontFamily: tokens.font.passageFamily.web,
+    fontSize: tokens.font.sizes.body,
+    lineHeight: tokens.font.sizes.body * tokens.font.lineHeight.passage,
+    marginTop: tokens.spacing.listGap,
   },
   primaryButton: {
     minHeight: tokens.control.primaryButtonHeightMin,

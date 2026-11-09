@@ -1,5 +1,11 @@
 import { router, useLocalSearchParams } from "expo-router";
-import { useCallback, useEffect, useRef, useState } from "react";
+import {
+  type ElementRef,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 
 import { getReport, type Report } from "../src/api/client";
@@ -9,6 +15,7 @@ import { useResponsiveLayout } from "../src/theme/useResponsiveLayout";
 
 export default function ReportScreen() {
   const layout = useResponsiveLayout();
+  const scrollViewRef = useRef<ElementRef<typeof ScrollView>>(null);
   const params = useLocalSearchParams<{ session_id?: string; anchor?: string }>();
   const routeSessionId = Array.isArray(params.session_id)
     ? params.session_id[0]
@@ -56,6 +63,21 @@ export default function ReportScreen() {
   }, [anchorParam, report]);
 
   useEffect(() => {
+    if (!report || anchorParam || typeof window === "undefined") return;
+    let secondFrame = 0;
+    const firstFrame = window.requestAnimationFrame(() => {
+      secondFrame = window.requestAnimationFrame(() => {
+        scrollViewRef.current?.scrollTo({ y: 0, animated: false });
+        window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+      });
+    });
+    return () => {
+      window.cancelAnimationFrame(firstFrame);
+      if (secondFrame) window.cancelAnimationFrame(secondFrame);
+    };
+  }, [anchorParam, report]);
+
+  useEffect(() => {
     restoredAnchor.current = null;
     if (typeof window === "undefined") return;
     let secondFrame = 0;
@@ -78,6 +100,7 @@ export default function ReportScreen() {
 
   return (
     <ScrollView
+      ref={scrollViewRef}
       style={styles.page}
       contentContainerStyle={styles.center}
       onContentSizeChange={restoreAnswerAnchor}
@@ -88,7 +111,7 @@ export default function ReportScreen() {
       >
         <View
           testID="report-body"
-          style={[styles.contentColumn, { maxWidth: layout.bodyMaxWidth }]}
+          style={[styles.contentColumn, { maxWidth: layout.contentMaxWidth }]}
         >
         <View style={styles.header}>
           <View>
