@@ -104,7 +104,7 @@ export default function HomeScreen() {
           </View>
         </View>
         <View style={styles.bankLine}>
-          <Text style={styles.bank}>
+          <Text style={styles.bank} testID="home-bank-heading">
             当前题库：{coverage?.bank_name || "加载中"}
             {coverage ? ` · 共 ${coverage.total} 题` : ""}
           </Text>
@@ -127,7 +127,9 @@ export default function HomeScreen() {
           >
             <View style={styles.coverageHeader}>
               <View>
-                <Text style={styles.coverageTitle}>题库覆盖统计</Text>
+                <Text style={styles.coverageTitle} testID="coverage-title">
+                  题库覆盖统计
+                </Text>
                 <Text style={styles.coverageBank}>
                   当前题库：{coverage.bank_name} · 共 {coverage.total} 题
                 </Text>
@@ -267,7 +269,8 @@ const styles = StyleSheet.create({
   bank: {
     color: tokens.color.primaryText,
     fontFamily: tokens.font.uiFamily.web,
-    fontSize: tokens.font.sizes.subheading,
+    fontSize: tokens.font.sizes.sectionTitle,
+    fontWeight: "600",
     marginTop: tokens.spacing.section,
   },
   bankLine: {
