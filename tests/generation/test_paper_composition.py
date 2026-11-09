@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from datetime import datetime, timezone
 from types import SimpleNamespace
 
 import pytest
@@ -51,22 +52,11 @@ def _stage_a_questions() -> list[SimpleNamespace]:
 
 def test_stage_a_sample_bank_uses_explicit_quota_fallback() -> None:
     questions = _stage_a_questions()
-    weights = {
-        question.id: {
-            "weight": 1.0,
-            "base_weight": 1.0,
-            "recent_three_penalty": 0,
-            "i_err": 0,
-        }
-        for question in questions
-    }
     arguments = {
         "questions": questions,
         "paper_number": 1,
-        "weight_details": weights,
-        "recent_three_ids": set(),
+        "covered_at": {},
         "active_passage_ids": set(),
-        "active_error_ids": set(),
         "book_percentages": {
             "选必二": 0.45,
             "选必一": 0.30,
@@ -87,3 +77,86 @@ def test_stage_a_sample_bank_uses_explicit_quota_fallback() -> None:
     assert len(selected) == 29
     assert log["fallback_reason"] == "STAGE_A_SAMPLE_QUOTA_FALLBACK"
     assert log["stage_a_sample_fallback"] is True
+
+
+def test_uncovered_questions_are_preferred_before_covered_questions() -> None:
+    questions = _stage_a_questions()
+    questions.extend(
+        _question(
+            question_id=f"M26-READING-B-Q{order:02d}",
+            type_="reading",
+            passage_id="M26-READING-B",
+            order=order,
+            topic="社会伦理",
+        )
+        for order in range(1, 5)
+    )
+    appearances = {
+        question.id: [datetime(2026, 11, 8, tzinfo=timezone.utc)]
+        for question in questions
+        if question.passage_group_id != "M26-READING-B"
+    }
+
+    selected, log = assemble_demo_paper(
+        questions,
+        1,
+        appearances,
+        set(),
+        {
+            "选必二": 0.45,
+            "选必一": 0.30,
+            "必修": 0.20,
+            "跨册": 0.05,
+        },
+        ["选必二", "选必一", "必修", "跨册"],
+        allow_stage_a_sample_fallback=True,
+    )
+
+    assert {question.passage_group_id for question in selected} == {
+        "M26-CLOZE",
+        "M26-GRAMMAR",
+        "M26-READING-B",
+    }
+    assert log["selected_unseen_question_count"] == 4
+    assert log["selection_basis"] == "coverage"
+
+
+def test_when_all_questions_were_covered_the_oldest_seen_is_preferred() -> None:
+    questions = _stage_a_questions()
+    questions.extend(
+        _question(
+            question_id=f"M26-READING-B-Q{order:02d}",
+            type_="reading",
+            passage_id="M26-READING-B",
+            order=order,
+            topic="社会伦理",
+        )
+        for order in range(1, 5)
+    )
+    appearances = {}
+    for question in questions:
+        seen_at = (
+            datetime(2026, 11, 1, tzinfo=timezone.utc)
+            if question.passage_group_id == "M26-READING"
+            else datetime(2026, 11, 8, tzinfo=timezone.utc)
+        )
+        appearances[question.id] = [seen_at]
+
+    selected, _ = assemble_demo_paper(
+        questions,
+        1,
+        appearances,
+        set(),
+        {
+            "选必二": 0.45,
+            "选必一": 0.30,
+            "必修": 0.20,
+            "跨册": 0.05,
+        },
+        ["选必二", "选必一", "必修", "跨册"],
+        allow_stage_a_sample_fallback=True,
+    )
+
+    assert "M26-READING" in {
+        question.passage_group_id for question in selected
+    }

@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import json
 import os
-import random
 import uuid
 from collections import defaultdict
 from contextlib import contextmanager
@@ -510,84 +509,10 @@ class PostgresStore:
                 history[row["question_id"]].append((result["correct"], row["started_at"]))
         return tags, history, appearances, recent_ids, active_groups, submitted_count
 
-    def _weight_details(
-        self,
-        question: DemoQuestion,
-        tags: dict,
-        history: dict,
-        appearances: dict,
-        now: datetime,
-    ) -> dict:
-        tag = tags.get(question.id)
-        i_err = 1.0 if tag and tag["status"] == "active" else 0.0
-        s_kp = min(
-            3,
-            sum(
-                1
-                for other in tags.values()
-                if other["status"] == "active"
-                and (
-                    set(other["knowledge_points"]) & set(question.knowledge_points)
-                    or set(other["grammar_tags"]) & set(question.grammar_tags)
-                )
-            ),
-        )
-        same_type = [
-            correct
-            for qid, outcomes in history.items()
-            if self.questions[qid].type == question.type
-            for correct, _ in outcomes
-        ]
-        s_type = 1.0 if same_type and sum(same_type) / len(same_type) < 0.6 else 0.0
-        gap = tags.get(question.id)
-        mastery = 0.7
-        if gap and gap["status"] == "active":
-            mastery = 0.5
-        g_gap = max(0.0, 0.7 - mastery) * 2
-        seen = appearances.get(question.id, [])
-        recent = 1.2 if len(seen[-3:]) >= 3 else (0.6 if any(now - at <= timedelta(days=7) for at in seen) else 0)
-        base = 1.0 + 2 * i_err + s_kp + 0.5 * s_type + 0.8 * g_gap
-        return {
-            "weight": round(max(0.1, base - recent), 4),
-            "base_weight": round(max(0.1, base), 4),
-            "recent_three_penalty": recent,
-            "i_err": i_err,
-        }
-
-    def _weight(
-        self,
-        question: DemoQuestion,
-        tags: dict,
-        history: dict,
-        appearances: dict,
-        now: datetime,
-    ) -> float:
-        return self._weight_details(question, tags, history, appearances, now)["weight"]
-
-    def _sample(self, candidates: list[DemoQuestion], amount: int, weights: list[float], rng) -> list[DemoQuestion]:
-        remaining = list(zip(candidates, weights))
-        selected = []
-        while remaining and len(selected) < amount:
-            total = sum(weight for _, weight in remaining)
-            target = rng.random() * total
-            running = 0.0
-            index = len(remaining) - 1
-            for position, (_, weight) in enumerate(remaining):
-                running += weight
-                if target <= running:
-                    index = position
-                    break
-            selected.append(remaining.pop(index)[0])
-        return selected
-
     def start_session(self, student_id: str, duration_minutes: int, now: datetime) -> SessionRecord:
         if duration_minutes != 30:
             raise ValueError("INVALID_DURATION")
-        tags, history, appearances, recent_ids, active_groups, submitted_count = self._student_state(student_id)
-        weight_details = {
-            question.id: self._weight_details(question, tags, history, appearances, now)
-            for question in self.questions.values()
-        }
+        tags, _history, appearances, _recent_ids, active_groups, submitted_count = self._student_state(student_id)
         practice_config = json.loads(
             (Path(__file__).resolve().parents[2] / "config" / "practice-modes.json")
             .read_text(encoding="utf-8")
@@ -595,17 +520,27 @@ class PostgresStore:
         all_questions, assembly_log = assemble_demo_paper(
             list(self.questions.values()),
             submitted_count + 1,
-            weight_details,
-            recent_ids,
+            appearances,
             active_groups,
-            {
-                question.id for question in self.questions.values() if tags.get(question.id, {}).get("status") == "active"
-            },
             practice_config["paper_constraints"]["question_point_book_distribution"],
             practice_config["paper_constraints"]["book_distribution_rounding"]["tie_break_order"],
             allow_stage_a_sample_fallback=bool(
                 (self.bank.get("coverage_snapshot") or {}).get("stage") == "A"
             ),
+        )
+        active_error_ids = {
+            question.id
+            for question in self.questions.values()
+            if tags.get(question.id, {}).get("status") == "active"
+        }
+        assembly_log["error_pool_ratio"] = round(
+            sum(
+                1
+                for question_id in assembly_log["question_coverage"]
+                if question_id["question_id"] in active_error_ids
+            )
+            / len(assembly_log["question_coverage"]),
+            4,
         )
         session_id = str(uuid.uuid4())
         composition = {

@@ -61,12 +61,14 @@ active -> archived
 
 主动错题标签以 `device_student_id + question_id + bank_id` 为唯一业务身份，并快照 `knowledge_points` 与 `grammar_tags`。
 
-- `I_err`：只有标签所属 `bank_id` 等于 session Bank 时才产生加权。
+- `I_err`：只有标签所属 `bank_id` 等于 session Bank 时才计入该 Bank 的错题状态。
 - `S_kp`：按知识点/语法标签跨 Bank 统计活跃错题，最多计 3。
-- `G_gap`：知识点掌握度跨 Bank 累计，基于 `knowledge_mastery`。
+- `G_gap`：知识点掌握度跨 Bank 记录，基于 `knowledge_mastery`，用于报告和学习状态。
 - `streak`：按错误标签所属 Bank 独立冻结和续算；换库不增加、不重置。
 - 两次不同会话都答对后转 `mastered`；同套内重复只取该题第一次结果。
 - `mastered` 后再次答错，转回 `active` 且 `streak=0`。
+- 上述错题和掌握度字段用于学习状态与报告，不参与新练习的最终选题排序。
+- 新练习选题优先覆盖当前学生尚未做过的题；全部覆盖后选择最久未出现的组合。
 
 ## 7. Coverage 与选库
 

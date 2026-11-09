@@ -424,20 +424,16 @@ def test_four_generated_papers_meet_all_hard_constraints() -> None:
         assert log["error_pool_ratio"] <= 0.60
         assert all(
             item["book_tag"] in {"必修", "选必一", "选必二", "跨册"}
-            for item in log["question_weights"]
+            for item in log["question_coverage"]
         )
-        assert len(log["question_weights"]) == expected_size
+        assert log["selection_basis"] == "coverage"
+        assert "question_weights" not in log
+        assert "recent_three_question_weights" not in log
+        assert len(log["question_coverage"]) == expected_size
+        assert 0 <= log["selected_new_coverage_ratio"] <= 1
         logs.append(log)
         answer_all_correct(session, headers)
         submit_session(session, headers)
-
-    for log in logs[2:]:
-        if not log.get("fallback_used", False):
-            assert log["recent_three_question_weights"]
-            assert all(
-                item["weight"] < item["base_weight"]
-                for item in log["recent_three_question_weights"]
-            )
 
 
 def test_two_unfinished_sessions_do_not_share_a_passage() -> None:

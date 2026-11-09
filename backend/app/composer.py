@@ -56,10 +56,8 @@ def _difficulty_band(value: int) -> str:
 def assemble_demo_paper(
     questions: list,
     paper_number: int,
-    weight_details: dict[str, dict],
-    recent_three_ids: set[str],
+    covered_at: dict[str, list],
     active_passage_ids: set[str],
-    active_error_ids: set[str],
     book_percentages: dict[str, float],
     tie_break_order: list[str],
     *,
@@ -113,11 +111,20 @@ def assemble_demo_paper(
                     reasons.append("KNOWLEDGE_POINT_REPEAT_EXCEEDS_3")
                 if len({question.topic for question in candidate}) < 3:
                     reasons.append("TOPIC_COUNT_BELOW_3")
-                error_ratio = sum(
-                    1 for question in candidate if question.id in active_error_ids
-                ) / len(candidate)
-                if error_ratio > 0.60:
-                    reasons.append("ERROR_POOL_EXCEEDS_60_PERCENT")
+                unseen_count = sum(
+                    1 for question in candidate if not covered_at.get(question.id)
+                )
+                seen_times = [
+                    max(covered_at[question.id])
+                    for question in candidate
+                    if covered_at.get(question.id)
+                ]
+                latest_covered_at = max(seen_times, default=None)
+                latest_covered_epoch = (
+                    latest_covered_at.timestamp()
+                    if latest_covered_at is not None
+                    else float("-inf")
+                )
                 deviation = sum(
                     abs(actual_books[key] - expected_books[key])
                     for key in expected_books
@@ -125,10 +132,6 @@ def assemble_demo_paper(
                     abs(actual_difficulty[key] - expected_difficulty[key])
                     for key in expected_difficulty
                 )
-                score = sum(
-                    weight_details[question.id]["weight"]
-                    for question in candidate
-                ) / len(candidate)
                 if (
                     "ACTIVE_PASSAGE_CONFLICT" not in reasons
                     and "GRAMMAR_TAG_REPEAT_EXCEEDS_3" not in reasons
@@ -138,8 +141,10 @@ def assemble_demo_paper(
                         {
                             "groups": groups,
                             "questions": candidate,
-                            "score": round(score, 6),
                             "deviation": deviation,
+                            "unseen_count": unseen_count,
+                            "latest_covered_at": latest_covered_at,
+                            "latest_covered_epoch": latest_covered_epoch,
                             "reasons": list(reasons),
                         }
                     )
@@ -147,14 +152,15 @@ def assemble_demo_paper(
                     allow_stage_a_sample_fallback
                     and "ACTIVE_PASSAGE_CONFLICT" not in reasons
                     and "TOPIC_COUNT_BELOW_3" not in reasons
-                    and error_ratio <= 0.60
                 ):
                     stage_a_candidates.append(
                         {
                             "groups": groups,
                             "questions": candidate,
-                            "score": round(score, 6),
                             "deviation": deviation,
+                            "unseen_count": unseen_count,
+                            "latest_covered_at": latest_covered_at,
+                            "latest_covered_epoch": latest_covered_epoch,
                             "reasons": list(reasons),
                         }
                     )
@@ -176,13 +182,16 @@ def assemble_demo_paper(
                                 question.question_order,
                             ),
                         ),
-                        "score": round(score, 6),
+                        "deviation": deviation,
+                        "unseen_count": unseen_count,
+                        "latest_covered_at": latest_covered_at,
+                        "latest_covered_epoch": latest_covered_epoch,
                     }
                 )
 
     fallback_used = False
     fallback_reason = None
-    weight_elimination_witness = None
+    coverage_elimination_witness = None
     if not valid:
         fallback_used = True
         fallback_reason = "NO_EXACT_GROUPED_ASSEMBLY"
@@ -194,7 +203,12 @@ def assemble_demo_paper(
             raise ValueError("NO_VALID_PAPER_ASSEMBLY")
         best = min(
             candidate_pool,
-            key=lambda item: (item["deviation"], -item["score"], item["groups"]),
+            key=lambda item: (
+                -item["unseen_count"],
+                item["deviation"],
+                item["latest_covered_epoch"],
+                item["groups"],
+            ),
         )
         selected = {
             "questions": sorted(
@@ -204,34 +218,40 @@ def assemble_demo_paper(
                     question.question_order,
                 ),
             ),
-            "score": best["score"],
             "deviation": best["deviation"],
             "groups": best["groups"],
+            "unseen_count": best["unseen_count"],
+            "latest_covered_at": best["latest_covered_at"],
+            "latest_covered_epoch": best["latest_covered_epoch"],
         }
-        lower_weight = min(
+        lower_coverage = min(
             (
                 item
                 for item in candidate_pool
-                if item["score"] < best["score"]
+                if item["unseen_count"] < best["unseen_count"]
                 or item["groups"] != best["groups"]
             ),
-            key=lambda item: item["score"],
+            key=lambda item: (item["unseen_count"], item["groups"]),
             default=None,
         )
-        weight_elimination_witness = {
-            "selected_score": best["score"],
-            "rejected_candidate_score": (
-                lower_weight["score"] if lower_weight else None
+        coverage_elimination_witness = {
+            "selected_unseen_question_count": best["unseen_count"],
+            "rejected_unseen_question_count": (
+                lower_coverage["unseen_count"] if lower_coverage else None
             ),
             "rejected_candidate_groups": (
-                lower_weight["groups"] if lower_weight else None
+                lower_coverage["groups"] if lower_coverage else None
             ),
         }
     else:
-        selected = sorted(
+        selected = min(
             valid,
-            key=lambda item: (-item["score"], item["groups"]),
-        )[0]
+            key=lambda item: (
+                -item["unseen_count"],
+                item["latest_covered_epoch"],
+                item["groups"],
+            ),
+        )
 
     result_questions = selected["questions"]
     tags = Counter(tag for question in result_questions for tag in question.grammar_tags)
@@ -240,21 +260,24 @@ def assemble_demo_paper(
         for question in result_questions
         for point in question.knowledge_points
     )
-    weight_rows = []
+    coverage_rows = []
     for question in result_questions:
-        detail = weight_details[question.id]
-        weight_rows.append(
+        seen_times = covered_at.get(question.id, [])
+        coverage_rows.append(
             {
                 "question_id": question.id,
                 "type": question.type,
                 "passage_group_id": question.passage_group_id,
                 "book_tag": question.book_tag,
-                "weight": detail["weight"],
-                "base_weight": detail["base_weight"],
-                "recent_three_penalty": detail["recent_three_penalty"],
-                "appeared_in_recent_three": question.id in recent_three_ids,
+                "seen_count": len(seen_times),
+                "last_seen_at": (
+                    max(seen_times).isoformat() if seen_times else None
+                ),
+                "unseen": not bool(seen_times),
             }
         )
+    selected_unseen = selected["unseen_count"]
+    selected_covered = len(result_questions) - selected_unseen
     log = {
         "paper_number": paper_number,
         "paper_mode": paper_mode,
@@ -271,19 +294,19 @@ def assemble_demo_paper(
         "knowledge_point_counts": dict(sorted(knowledge_points.items())),
         "topics": sorted({question.topic for question in result_questions}),
         "selected_passage_groups": [q.passage_group_id for q in result_questions],
-        "recent_three_question_weights": [
-            row for row in weight_rows if row["appeared_in_recent_three"]
-        ],
-        "question_weights": weight_rows,
-        "error_pool_ratio": round(
-            sum(
-                1
-                for question in result_questions
-                if question.id in active_error_ids
-            )
-            / len(result_questions),
+        "selection_basis": "coverage",
+        "selected_unseen_question_count": selected_unseen,
+        "selected_covered_question_count": selected_covered,
+        "selected_new_coverage_ratio": round(
+            selected_unseen / len(result_questions),
             4,
         ),
+        "selected_latest_covered_at": (
+            selected["latest_covered_at"].isoformat()
+            if selected["latest_covered_at"] is not None
+            else None
+        ),
+        "question_coverage": coverage_rows,
         "hard_constraint_triggered": bool(failures),
         "fallback_used": fallback_used,
         "fallback_reason": fallback_reason,
@@ -292,7 +315,7 @@ def assemble_demo_paper(
         "stage_a_sample_fallback": (
             fallback_reason == "STAGE_A_SAMPLE_QUOTA_FALLBACK"
         ),
-        "weight_elimination_witness": weight_elimination_witness,
+        "coverage_elimination_witness": coverage_elimination_witness,
         "hard_constraint_rejections": failures,
         "valid_skeleton_count": len(valid),
     }

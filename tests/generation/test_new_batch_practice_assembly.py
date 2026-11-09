@@ -45,23 +45,11 @@ def _questions() -> list[DemoQuestion]:
 
 def test_new_batch_can_assemble_both_practice_modes() -> None:
     questions = _questions()
-    weights = {
-        item.id: {
-            "weight": 1.0,
-            "base_weight": 1.0,
-            "recent_three_penalty": 0.0,
-            "i_err": 0.0,
-        }
-        for item in questions
-    }
-
     for paper_number, expected_size in ((1, 29), (2, 30)):
         selected, log = assemble_demo_paper(
             questions,
             paper_number,
-            weights,
-            set(),
-            set(),
+            {},
             set(),
             {
                 "选必二": 0.45,

@@ -125,22 +125,17 @@ def main() -> None:
     historical_shared_passages = {
         group_id
         for group_id in {
-            item["passage_group_id"] for log in logs for item in log["question_weights"]
+            item["passage_group_id"] for log in logs for item in log["question_coverage"]
         }
         if sum(
             group_id
             in {
-                item["passage_group_id"] for item in log["question_weights"]
+                item["passage_group_id"] for item in log["question_coverage"]
             }
             for log in logs
         )
         > 1
     }
-    recent_rows = [
-        row
-        for log in logs[2:]
-        for row in log["recent_three_question_weights"]
-    ]
     decisions = {
         "grammar_tag_repetition_lte_3": {
             "passed": all(
@@ -173,11 +168,23 @@ def main() -> None:
                 "for each actual paper size: 29 -> 12/11/6, 30 -> 12/12/6."
             ),
         },
-        "recent_three_penalty": {
-            "passed": bool(recent_rows)
-            and all(row["weight"] < row["base_weight"] for row in recent_rows),
-            "actual": recent_rows,
-            "expected": "all recent-three selected questions have weight < base_weight",
+        "coverage_priority": {
+            "passed": all(
+                log["selection_basis"] == "coverage"
+                for log in logs
+            ),
+            "actual": [
+                {
+                    "selected_unseen_question_count": log[
+                        "selected_unseen_question_count"
+                    ],
+                    "selected_new_coverage_ratio": log[
+                        "selected_new_coverage_ratio"
+                    ],
+                }
+                for log in logs
+            ],
+            "expected": "hard-valid candidates are ranked by unseen questions first",
         },
         "same_passage_not_in_two_active_sessions": {
             "passed": not active_intersection,

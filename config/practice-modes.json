@@ -31,20 +31,24 @@
     "prefer_less_recent_type": true,
     "mix_within_session": false
   },
-  "selection_weight": {
-    "base": 1.0,
-    "active_error_same_bank": 2.0,
-    "knowledge_gap_same_tag": 1.0,
-    "knowledge_gap_count_cap": 3,
-    "weak_type_history_accuracy_below": 0.60,
-    "weak_type_bonus": 0.5,
-    "mastery_gap_multiplier": 0.8,
-    "mastery_target": 0.70,
-    "mastery_gap_scale": 2.0,
-    "recent_three_appearance_penalty": 1.2,
-    "recent_seven_day_penalty": 0.6,
-    "minimum_weight": 0.1,
-    "within_type_sampling": "weighted_without_replacement"
+  "selection_policy": {
+    "basis": "coverage",
+    "unseen_first": true,
+    "coverage_source": "submitted_or_expired_reports_for_same_student_and_bank",
+    "abandoned_sessions_count_as_covered": false,
+    "exact_candidate_order": [
+      "highest_unseen_question_count",
+      "oldest_last_seen_time",
+      "passage_group_ids"
+    ],
+    "fallback_candidate_order": [
+      "highest_unseen_question_count",
+      "lowest_book_and_difficulty_deviation",
+      "oldest_last_seen_time",
+      "passage_group_ids"
+    ],
+    "error_tags_used_for_selection": false,
+    "history_weights_used_for_selection": false
   },
   "paper_constraints": {
     "difficulty_easy_d1_d2": 0.40,

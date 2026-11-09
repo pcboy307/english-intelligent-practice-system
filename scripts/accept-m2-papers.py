@@ -86,15 +86,12 @@ def compact_log(session: dict, report: dict) -> dict:
         ),
         "hard_constraint_rejection_counts": dict(reasons),
         "valid_skeleton_count": log["valid_skeleton_count"],
-        "weight_witness": log.get("weight_elimination_witness")
-        or next(
-            (
-                row
-                for row in log["question_weights"]
-                if row["weight"] < row["base_weight"]
-            ),
-            None,
-        ),
+        "selection_basis": log["selection_basis"],
+        "selected_unseen_question_count": log[
+            "selected_unseen_question_count"
+        ],
+        "selected_new_coverage_ratio": log["selected_new_coverage_ratio"],
+        "coverage_witness": log.get("coverage_elimination_witness"),
     }
 
 
