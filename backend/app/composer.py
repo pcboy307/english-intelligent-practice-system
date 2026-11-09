@@ -76,10 +76,16 @@ def assemble_demo_paper(
         grouped.setdefault(question.type, {}).setdefault(
             question.passage_group_id, []
         ).append(question)
+    active_bank_question_count = len(questions)
+    active_bank_passage_count = len(
+        {question.passage_group_id for question in questions}
+    )
+    covered_bank_question_count = sum(
+        1 for question in questions if covered_at.get(question.id)
+    )
 
     failures = []
-    valid = []
-    fallback_candidates = []
+    safe_candidates = []
     stage_a_candidates = []
     for cloze_group, cloze_questions in grouped["cloze"].items():
         for grammar_group, grammar_questions in grouped["grammar_fill"].items():
@@ -107,7 +113,11 @@ def assemble_demo_paper(
                     for question in candidate
                     for point in question.knowledge_points
                 )
-                if max(knowledge_counts.values(), default=0) > 3:
+                knowledge_repeat_excess = max(
+                    0,
+                    max(knowledge_counts.values(), default=0) - 3,
+                )
+                if knowledge_repeat_excess:
                     reasons.append("KNOWLEDGE_POINT_REPEAT_EXCEEDS_3")
                 if len({question.topic for question in candidate}) < 3:
                     reasons.append("TOPIC_COUNT_BELOW_3")
@@ -131,13 +141,13 @@ def assemble_demo_paper(
                 ) + sum(
                     abs(actual_difficulty[key] - expected_difficulty[key])
                     for key in expected_difficulty
-                )
+                ) + knowledge_repeat_excess
                 if (
                     "ACTIVE_PASSAGE_CONFLICT" not in reasons
                     and "GRAMMAR_TAG_REPEAT_EXCEEDS_3" not in reasons
                     and "TOPIC_COUNT_BELOW_3" not in reasons
                 ):
-                    fallback_candidates.append(
+                    safe_candidates.append(
                         {
                             "groups": groups,
                             "questions": candidate,
@@ -145,6 +155,14 @@ def assemble_demo_paper(
                             "unseen_count": unseen_count,
                             "latest_covered_at": latest_covered_at,
                             "latest_covered_epoch": latest_covered_epoch,
+                            "quota_exact": not any(
+                                reason
+                                in {
+                                    "BOOK_QUOTA_MISMATCH",
+                                    "DIFFICULTY_MISMATCH",
+                                }
+                                for reason in reasons
+                            ),
                             "reasons": list(reasons),
                         }
                     )
@@ -161,6 +179,14 @@ def assemble_demo_paper(
                             "unseen_count": unseen_count,
                             "latest_covered_at": latest_covered_at,
                             "latest_covered_epoch": latest_covered_epoch,
+                            "quota_exact": not any(
+                                reason
+                                in {
+                                    "BOOK_QUOTA_MISMATCH",
+                                    "DIFFICULTY_MISMATCH",
+                                }
+                                for reason in reasons
+                            ),
                             "reasons": list(reasons),
                         }
                     )
@@ -171,87 +197,66 @@ def assemble_demo_paper(
                             "reasons": reasons,
                         }
                     )
-                    continue
-                valid.append(
-                    {
-                        "groups": groups,
-                        "questions": sorted(
-                            candidate,
-                            key=lambda question: (
-                                question.passage_order,
-                                question.question_order,
-                            ),
-                        ),
-                        "deviation": deviation,
-                        "unseen_count": unseen_count,
-                        "latest_covered_at": latest_covered_at,
-                        "latest_covered_epoch": latest_covered_epoch,
-                    }
-                )
 
     fallback_used = False
     fallback_reason = None
     coverage_elimination_witness = None
-    if not valid:
-        fallback_used = True
-        fallback_reason = "NO_EXACT_GROUPED_ASSEMBLY"
-        candidate_pool = fallback_candidates
-        if not candidate_pool and allow_stage_a_sample_fallback:
-            candidate_pool = stage_a_candidates
-            fallback_reason = "STAGE_A_SAMPLE_QUOTA_FALLBACK"
-        if not candidate_pool:
-            raise ValueError("NO_VALID_PAPER_ASSEMBLY")
-        best = min(
-            candidate_pool,
-            key=lambda item: (
-                -item["unseen_count"],
-                item["deviation"],
-                item["latest_covered_epoch"],
-                item["groups"],
+    candidate_pool = safe_candidates
+    used_stage_a_fallback = False
+    if not candidate_pool and allow_stage_a_sample_fallback:
+        candidate_pool = stage_a_candidates
+        used_stage_a_fallback = True
+    if not candidate_pool:
+        raise ValueError("NO_VALID_PAPER_ASSEMBLY")
+
+    best = min(
+        candidate_pool,
+        key=lambda item: (
+            -item["unseen_count"],
+            item["deviation"],
+            item["latest_covered_epoch"],
+            item["groups"],
+        ),
+    )
+    selected = {
+        "questions": sorted(
+            best["questions"],
+            key=lambda question: (
+                question.passage_order,
+                question.question_order,
             ),
-        )
-        selected = {
-            "questions": sorted(
-                best["questions"],
-                key=lambda question: (
-                    question.passage_order,
-                    question.question_order,
-                ),
-            ),
-            "deviation": best["deviation"],
-            "groups": best["groups"],
-            "unseen_count": best["unseen_count"],
-            "latest_covered_at": best["latest_covered_at"],
-            "latest_covered_epoch": best["latest_covered_epoch"],
-        }
-        lower_coverage = min(
-            (
-                item
-                for item in candidate_pool
-                if item["unseen_count"] < best["unseen_count"]
-                or item["groups"] != best["groups"]
-            ),
-            key=lambda item: (item["unseen_count"], item["groups"]),
-            default=None,
-        )
-        coverage_elimination_witness = {
-            "selected_unseen_question_count": best["unseen_count"],
-            "rejected_unseen_question_count": (
-                lower_coverage["unseen_count"] if lower_coverage else None
-            ),
-            "rejected_candidate_groups": (
-                lower_coverage["groups"] if lower_coverage else None
-            ),
-        }
-    else:
-        selected = min(
-            valid,
-            key=lambda item: (
-                -item["unseen_count"],
-                item["latest_covered_epoch"],
-                item["groups"],
-            ),
-        )
+        ),
+        "deviation": best["deviation"],
+        "groups": best["groups"],
+        "unseen_count": best["unseen_count"],
+        "latest_covered_at": best["latest_covered_at"],
+        "latest_covered_epoch": best["latest_covered_epoch"],
+        "quota_exact": best["quota_exact"],
+    }
+    lower_coverage = min(
+        (
+            item
+            for item in candidate_pool
+            if item["unseen_count"] < best["unseen_count"]
+            or item["groups"] != best["groups"]
+        ),
+        key=lambda item: (item["unseen_count"], item["groups"]),
+        default=None,
+    )
+    coverage_elimination_witness = {
+        "selected_unseen_question_count": best["unseen_count"],
+        "rejected_unseen_question_count": (
+            lower_coverage["unseen_count"] if lower_coverage else None
+        ),
+        "rejected_candidate_groups": (
+            lower_coverage["groups"] if lower_coverage else None
+        ),
+    }
+    fallback_used = used_stage_a_fallback or not best["quota_exact"]
+    if used_stage_a_fallback:
+        fallback_reason = "STAGE_A_SAMPLE_QUOTA_FALLBACK"
+    elif not best["quota_exact"]:
+        fallback_reason = "COVERAGE_WITH_QUOTA_DEVIATION"
 
     result_questions = selected["questions"]
     tags = Counter(tag for question in result_questions for tag in question.grammar_tags)
@@ -307,16 +312,33 @@ def assemble_demo_paper(
             else None
         ),
         "question_coverage": coverage_rows,
+        "active_bank_question_count": active_bank_question_count,
+        "active_bank_passage_count": active_bank_passage_count,
+        "covered_bank_question_count": covered_bank_question_count,
+        "uncovered_bank_question_count": (
+            active_bank_question_count - covered_bank_question_count
+        ),
+        "bank_coverage_ratio": round(
+            covered_bank_question_count / active_bank_question_count,
+            4,
+        ),
+        "uncovered_safe_candidate_count": sum(
+            item["unseen_count"] > 0 for item in safe_candidates
+        ),
         "hard_constraint_triggered": bool(failures),
         "fallback_used": fallback_used,
         "fallback_reason": fallback_reason,
-        "fallback_candidate_count": len(fallback_candidates),
+        "fallback_candidate_count": sum(
+            not item["quota_exact"] for item in safe_candidates
+        ),
         "stage_a_sample_candidate_count": len(stage_a_candidates),
         "stage_a_sample_fallback": (
             fallback_reason == "STAGE_A_SAMPLE_QUOTA_FALLBACK"
         ),
         "coverage_elimination_witness": coverage_elimination_witness,
         "hard_constraint_rejections": failures,
-        "valid_skeleton_count": len(valid),
+        "valid_skeleton_count": sum(
+            item["quota_exact"] for item in safe_candidates
+        ),
     }
     return result_questions, log

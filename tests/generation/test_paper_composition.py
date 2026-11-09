@@ -15,15 +15,18 @@ def _question(
     passage_id: str,
     order: int,
     topic: str,
+    book_bucket: str = "选必二",
+    difficulty: int = 3,
+    grammar_tag: str = "noun_clauses",
 ) -> SimpleNamespace:
     return SimpleNamespace(
         id=question_id,
         type=type_,
         passage_group_id=passage_id,
-        book_bucket="选必二",
-        book_tag="选必二",
-        difficulty=3,
-        grammar_tags=["noun_clauses"],
+        book_bucket=book_bucket,
+        book_tag=book_bucket,
+        difficulty=difficulty,
+        grammar_tags=[grammar_tag],
         knowledge_points=[f"{passage_id}:{order}"],
         topic=topic,
         passage_order=order,
@@ -160,3 +163,88 @@ def test_when_all_questions_were_covered_the_oldest_seen_is_preferred() -> None:
     assert "M26-READING" in {
         question.passage_group_id for question in selected
     }
+
+
+def test_unseen_fallback_beats_seen_exact_quota_candidate() -> None:
+    books = ["选必二"] * 13 + ["选必一"] * 9 + ["必修"] * 6 + ["跨册"]
+    difficulties = [1] * 12 + [3] * 11 + [4] * 6
+    grammar_tags = [
+        "relative_clauses_defining",
+        "relative_clauses_non_defining",
+        "passive_voice_tenses",
+        "past_participle_nonfinite",
+        "v_ing_nonfinite",
+        "noun_clauses",
+        "adverbial_clauses",
+        "subjunctive_basic_if",
+        "subjunctive_basic_should",
+        "partial_inversion_basic",
+        "cleft_basic",
+        "tense_system",
+        "subject_verb_agreement",
+        "articles",
+        "prepositions",
+    ]
+    seen_questions = []
+    index = 0
+    for type_, passage_id, topic, count in (
+        ("cloze", "SEEN-CLOZE", "科技", 15),
+        ("grammar_fill", "SEEN-GRAMMAR", "环境", 10),
+        ("reading", "SEEN-READING", "健康心理", 4),
+    ):
+        for order in range(1, count + 1):
+            seen_questions.append(
+                _question(
+                    question_id=f"{passage_id}-Q{order:02d}",
+                    type_=type_,
+                    passage_id=passage_id,
+                    order=order,
+                    topic=topic,
+                    book_bucket=books[index],
+                    difficulty=difficulties[index],
+                    grammar_tag=grammar_tags[index % len(grammar_tags)],
+                )
+            )
+            index += 1
+    unseen_reading = [
+        _question(
+            question_id=f"UNSEEN-READING-Q{order:02d}",
+            type_="reading",
+            passage_id="UNSEEN-READING",
+            order=order,
+            topic="社会伦理",
+            book_bucket="必修",
+            difficulty=5,
+            grammar_tag=grammar_tags[(index + order) % len(grammar_tags)],
+        )
+        for order in range(1, 5)
+    ]
+    questions = seen_questions + unseen_reading
+    appearances = {
+        question.id: [datetime(2026, 11, 8, tzinfo=timezone.utc)]
+        for question in seen_questions
+    }
+
+    selected, log = assemble_demo_paper(
+        questions,
+        1,
+        appearances,
+        set(),
+        {
+            "选必二": 0.45,
+            "选必一": 0.30,
+            "必修": 0.20,
+            "跨册": 0.05,
+        },
+        ["选必二", "选必一", "必修", "跨册"],
+    )
+
+    assert "UNSEEN-READING" in {
+        question.passage_group_id for question in selected
+    }
+    assert log["selected_unseen_question_count"] == 4
+    assert log["active_bank_question_count"] == 33
+    assert log["active_bank_passage_count"] == 4
+    assert log["covered_bank_question_count"] == 29
+    assert log["uncovered_bank_question_count"] == 4
+    assert log["uncovered_safe_candidate_count"] >= 1
