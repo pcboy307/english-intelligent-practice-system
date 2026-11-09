@@ -11,5 +11,6 @@ export function useResponsiveLayout() {
       ? tokens.web_desktop.contentMaxWidth
       : tokens.web_desktop.mobileMaxWidth,
     bodyMaxWidth: tokens.web_desktop.bodyMaxWidth,
+    passageMaxWidth: tokens.web_desktop.passageMaxWidth,
   };
 }

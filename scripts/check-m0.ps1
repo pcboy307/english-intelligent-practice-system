@@ -157,6 +157,7 @@ Assert-True ($tokens.web_desktop.mobileMaxWidth -eq 480) "Mobile content max wid
 Assert-True ($tokens.web.maxContentWidth -eq 960) "Web content max width mismatch"
 Assert-True ($tokens.web.mobileMaxContentWidth -eq 480) "Web mobile max width mismatch"
 Assert-True ($tokens.web_desktop.bodyMaxWidth -eq 760) "Body max width mismatch"
+Assert-True ($tokens.web_desktop.passageMaxWidth -eq 836) "Passage max width must be 10% wider than body width"
 Assert-True ($tokens.web_desktop.optionFontSize -eq 15) "Desktop option font size mismatch"
 Assert-True ($tokens.web_desktop.optionLineHeight -eq 1.5) "Desktop option line height mismatch"
 Assert-True ($tokens.web_desktop.optionPadding -eq 12) "Desktop option padding mismatch"

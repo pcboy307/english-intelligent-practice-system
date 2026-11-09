@@ -108,6 +108,7 @@
     "contentMaxWidth": 960,
     "mobileMaxWidth": 480,
     "bodyMaxWidth": 760,
+    "passageMaxWidth": 836,
     "optionFontSize": 15,
     "optionLineHeight": 1.5,
     "optionPadding": 12,

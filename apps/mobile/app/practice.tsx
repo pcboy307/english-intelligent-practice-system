@@ -372,10 +372,24 @@ export default function PracticeScreen() {
 
         <View
           testID="reading-column"
-          style={[styles.readingColumn, { maxWidth: layout.bodyMaxWidth }]}
+          style={styles.readingColumn}
         >
-          <Text style={styles.passage}>{item.passage}</Text>
-          <View testID={`question-${item.question_id}`} style={styles.questionBlock}>
+          <View
+            testID="passage-column"
+            style={[
+              styles.passageColumn,
+              { maxWidth: layout.passageMaxWidth },
+            ]}
+          >
+            <Text style={styles.passage}>{item.passage}</Text>
+          </View>
+          <View
+            testID={`question-${item.question_id}`}
+            style={[
+              styles.questionBlock,
+              { maxWidth: layout.bodyMaxWidth },
+            ]}
+          >
             <Text style={styles.stem}>
               {currentIndex + 1}. {item.stem}
             </Text>
@@ -569,6 +583,7 @@ const styles = StyleSheet.create({
     marginTop: tokens.spacing.listGap,
   },
   readingColumn: { width: "100%", alignSelf: "center" },
+  passageColumn: { width: "100%", alignSelf: "center" },
   passage: {
     color: tokens.color.primaryText,
     fontFamily: tokens.font.passageFamily.web,
@@ -577,6 +592,8 @@ const styles = StyleSheet.create({
     marginTop: tokens.spacing.section,
   },
   questionBlock: {
+    width: "100%",
+    alignSelf: "center",
     borderTopWidth: tokens.border.width,
     borderTopColor: tokens.color.divider,
     marginTop: tokens.spacing.section,
