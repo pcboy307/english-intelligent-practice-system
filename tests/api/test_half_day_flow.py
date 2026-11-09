@@ -6,6 +6,7 @@ import re
 import subprocess
 import sys
 import uuid
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import pytest
@@ -164,6 +165,53 @@ def test_review_is_blocked_before_submit() -> None:
     )
     assert response.status_code == 409
     assert response.json()["detail"]["code"] == "SESSION_NOT_SUBMITTED"
+
+
+def test_expired_session_auto_submits_with_a_uuid_key() -> None:
+    headers = student_headers()
+    session = start_practice(headers)
+    expired_at = datetime.now(timezone.utc) - timedelta(minutes=1)
+    with store.connection() as connection:
+        connection.execute(
+            """
+            UPDATE practice_sessions
+            SET status='in_progress',
+                started_at=%s,
+                deadline=%s,
+                submitted_at=NULL,
+                submit_idempotency_key=NULL
+            WHERE id=%s
+            """,
+            (
+                expired_at - timedelta(minutes=30),
+                expired_at,
+                session["session_id"],
+            ),
+        )
+
+    response = client.get(
+        f"/api/v1/practice/{session['session_id']}",
+        headers=headers,
+    )
+
+    assert response.status_code == 200, response.text
+    assert response.json()["status"] == "expired"
+    report = client.get(
+        f"/api/v1/reports/{session['session_id']}",
+        headers=headers,
+    )
+    assert report.status_code == 200, report.text
+    with store.connection() as connection:
+        row = connection.execute(
+            """
+            SELECT status, submit_idempotency_key::text AS submit_key
+            FROM practice_sessions
+            WHERE id=%s
+            """,
+            (session["session_id"],),
+        ).fetchone()
+    assert row["status"] == "expired"
+    uuid.UUID(row["submit_key"])
 
 
 def test_exit_deletes_unsubmitted_session_without_report() -> None:

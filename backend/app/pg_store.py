@@ -764,7 +764,13 @@ class PostgresStore:
     def get_session(self, student_id: str, session_id: str, now: datetime) -> SessionRecord:
         record = self._load_session(student_id, session_id)
         if record.status == "in_progress" and now >= record.deadline:
-            self.submit_session(student_id, session_id, f"auto:{session_id}", now)
+            auto_key = str(
+                uuid.uuid5(
+                    uuid.NAMESPACE_URL,
+                    f"english-practice:auto-submit:{session_id}",
+                )
+            )
+            self.submit_session(student_id, session_id, auto_key, now)
             record = self._load_session(student_id, session_id)
         self.sessions[session_id] = record
         return record
