@@ -72,16 +72,20 @@ def assemble_demo_paper(
     expected_difficulty = allocate_difficulty(question_count)
 
     grouped: dict[str, dict[str, list]] = {}
+    bank_passages: dict[str, list] = {}
     for question in questions:
         grouped.setdefault(question.type, {}).setdefault(
             question.passage_group_id, []
         ).append(question)
+        bank_passages.setdefault(question.passage_group_id, []).append(question)
     active_bank_question_count = len(questions)
-    active_bank_passage_count = len(
-        {question.passage_group_id for question in questions}
-    )
+    active_bank_passage_count = len(bank_passages)
     covered_bank_question_count = sum(
         1 for question in questions if covered_at.get(question.id)
+    )
+    covered_bank_passage_count = sum(
+        any(covered_at.get(question.id) for question in passage_questions)
+        for passage_questions in bank_passages.values()
     )
 
     failures = []
@@ -124,6 +128,14 @@ def assemble_demo_paper(
                 unseen_count = sum(
                     1 for question in candidate if not covered_at.get(question.id)
                 )
+                unseen_passage_count = sum(
+                    not any(covered_at.get(question.id) for question in passage_questions)
+                    for passage_questions in (
+                        cloze_questions,
+                        grammar_questions,
+                        extra_questions,
+                    )
+                )
                 seen_times = [
                     max(covered_at[question.id])
                     for question in candidate
@@ -153,6 +165,7 @@ def assemble_demo_paper(
                             "questions": candidate,
                             "deviation": deviation,
                             "unseen_count": unseen_count,
+                            "unseen_passage_count": unseen_passage_count,
                             "latest_covered_at": latest_covered_at,
                             "latest_covered_epoch": latest_covered_epoch,
                             "quota_exact": not any(
@@ -177,6 +190,7 @@ def assemble_demo_paper(
                             "questions": candidate,
                             "deviation": deviation,
                             "unseen_count": unseen_count,
+                            "unseen_passage_count": unseen_passage_count,
                             "latest_covered_at": latest_covered_at,
                             "latest_covered_epoch": latest_covered_epoch,
                             "quota_exact": not any(
@@ -212,6 +226,7 @@ def assemble_demo_paper(
     best = min(
         candidate_pool,
         key=lambda item: (
+            -item["unseen_passage_count"],
             -item["unseen_count"],
             item["deviation"],
             item["latest_covered_epoch"],
@@ -229,6 +244,7 @@ def assemble_demo_paper(
         "deviation": best["deviation"],
         "groups": best["groups"],
         "unseen_count": best["unseen_count"],
+        "unseen_passage_count": best["unseen_passage_count"],
         "latest_covered_at": best["latest_covered_at"],
         "latest_covered_epoch": best["latest_covered_epoch"],
         "quota_exact": best["quota_exact"],
@@ -238,13 +254,24 @@ def assemble_demo_paper(
             item
             for item in candidate_pool
             if item["unseen_count"] < best["unseen_count"]
+            or item["unseen_passage_count"] < best["unseen_passage_count"]
             or item["groups"] != best["groups"]
         ),
-        key=lambda item: (item["unseen_count"], item["groups"]),
+        key=lambda item: (
+            item["unseen_passage_count"],
+            item["unseen_count"],
+            item["groups"],
+        ),
         default=None,
     )
     coverage_elimination_witness = {
         "selected_unseen_question_count": best["unseen_count"],
+        "selected_unseen_passage_count": best["unseen_passage_count"],
+        "rejected_unseen_passage_count": (
+            lower_coverage["unseen_passage_count"]
+            if lower_coverage
+            else None
+        ),
         "rejected_unseen_question_count": (
             lower_coverage["unseen_count"] if lower_coverage else None
         ),
@@ -301,6 +328,7 @@ def assemble_demo_paper(
         "selected_passage_groups": [q.passage_group_id for q in result_questions],
         "selection_basis": "coverage",
         "selected_unseen_question_count": selected_unseen,
+        "selected_unseen_passage_count": selected["unseen_passage_count"],
         "selected_covered_question_count": selected_covered,
         "selected_new_coverage_ratio": round(
             selected_unseen / len(result_questions),
@@ -314,6 +342,10 @@ def assemble_demo_paper(
         "question_coverage": coverage_rows,
         "active_bank_question_count": active_bank_question_count,
         "active_bank_passage_count": active_bank_passage_count,
+        "covered_bank_passage_count": covered_bank_passage_count,
+        "uncovered_bank_passage_count": (
+            active_bank_passage_count - covered_bank_passage_count
+        ),
         "covered_bank_question_count": covered_bank_question_count,
         "uncovered_bank_question_count": (
             active_bank_question_count - covered_bank_question_count
@@ -323,7 +355,7 @@ def assemble_demo_paper(
             4,
         ),
         "uncovered_safe_candidate_count": sum(
-            item["unseen_count"] > 0 for item in safe_candidates
+            item["unseen_passage_count"] > 0 for item in safe_candidates
         ),
         "hard_constraint_triggered": bool(failures),
         "fallback_used": fallback_used,

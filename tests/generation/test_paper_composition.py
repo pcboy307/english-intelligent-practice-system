@@ -247,4 +247,77 @@ def test_unseen_fallback_beats_seen_exact_quota_candidate() -> None:
     assert log["active_bank_passage_count"] == 4
     assert log["covered_bank_question_count"] == 29
     assert log["uncovered_bank_question_count"] == 4
+    assert log["covered_bank_passage_count"] == 3
+    assert log["uncovered_bank_passage_count"] == 1
     assert log["uncovered_safe_candidate_count"] >= 1
+
+
+def test_more_unseen_passages_beat_more_unseen_questions() -> None:
+    grammar_tags = [
+        "relative_clauses_defining",
+        "relative_clauses_non_defining",
+        "passive_voice_tenses",
+        "past_participle_nonfinite",
+        "v_ing_nonfinite",
+        "noun_clauses",
+        "adverbial_clauses",
+        "subjunctive_basic_if",
+        "subjunctive_basic_should",
+        "partial_inversion_basic",
+        "cleft_basic",
+        "tense_system",
+        "subject_verb_agreement",
+        "articles",
+        "prepositions",
+    ]
+
+    def group(type_: str, passage_id: str, topic: str, count: int):
+        return [
+            _question(
+                question_id=f"{passage_id}-Q{order:02d}",
+                type_=type_,
+                passage_id=passage_id,
+                order=order,
+                topic=topic,
+                grammar_tag=grammar_tags[(order - 1) % len(grammar_tags)],
+            )
+            for order in range(1, count + 1)
+        ]
+
+    unseen_cloze = group("cloze", "UNSEEN-CLOZE", "科技", 15)
+    seen_grammar = group("grammar_fill", "SEEN-GRAMMAR", "环境", 10)
+    seen_reading = group("reading", "SEEN-READING", "健康心理", 4)
+    seen_cloze = group("cloze", "SEEN-CLOZE", "媒体信息", 15)
+    unseen_grammar = group("grammar_fill", "UNSEEN-GRAMMAR", "科技", 10)
+    unseen_reading = group("reading", "UNSEEN-READING", "社会伦理", 4)
+    questions = (
+        unseen_cloze
+        + seen_grammar
+        + seen_reading
+        + seen_cloze
+        + unseen_grammar
+        + unseen_reading
+    )
+    appearances = {
+        question.id: [datetime(2026, 11, 8, tzinfo=timezone.utc)]
+        for question in seen_grammar + seen_reading + seen_cloze
+    }
+
+    selected, log = assemble_demo_paper(
+        questions,
+        1,
+        appearances,
+        set(),
+        {
+            "选必二": 0.45,
+            "选必一": 0.30,
+            "必修": 0.20,
+            "跨册": 0.05,
+        },
+        ["选必二", "选必一", "必修", "跨册"],
+    )
+
+    assert log["selected_unseen_passage_count"] == 2
+    groups = {question.passage_group_id for question in selected}
+    assert sum(group.startswith("UNSEEN-") for group in groups) == 2
+    assert "UNSEEN-READING" in groups

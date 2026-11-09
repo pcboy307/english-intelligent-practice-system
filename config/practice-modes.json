@@ -37,11 +37,13 @@
     "coverage_source": "submitted_or_expired_reports_for_same_student_and_bank",
     "abandoned_sessions_count_as_covered": false,
     "exact_candidate_order": [
+      "highest_unseen_passage_count",
       "highest_unseen_question_count",
       "oldest_last_seen_time",
       "passage_group_ids"
     ],
     "fallback_candidate_order": [
+      "highest_unseen_passage_count",
       "highest_unseen_question_count",
       "lowest_book_and_difficulty_deviation",
       "oldest_last_seen_time",

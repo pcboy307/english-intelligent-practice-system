@@ -175,6 +175,9 @@ def main() -> None:
             ),
             "actual": [
                 {
+                    "selected_unseen_passage_count": log[
+                        "selected_unseen_passage_count"
+                    ],
                     "selected_unseen_question_count": log[
                         "selected_unseen_question_count"
                     ],
