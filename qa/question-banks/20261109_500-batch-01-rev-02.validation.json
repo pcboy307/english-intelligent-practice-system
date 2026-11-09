@@ -1,0 +1,85 @@
+{
+  "file": "qa/question-banks/20261109_500-batch-01-rev-02.json",
+  "sha256": "1d2261ef65e9fd2d7f5bce5b2f4bc68e2ab6ac02287933e29de2ea402fa6f534",
+  "format_version": "bank-v1",
+  "name": "20261109_500#batch-01-rev-02",
+  "bank_id": "1963c264-973a-43df-814f-9c6c4c88bbc8",
+  "status": "active",
+  "difficulty_profile": "advanced",
+  "schema_validation": "PASS",
+  "generation_validation": {
+    "M26-NEW-CLOZE-01": {
+      "accepted": true,
+      "words": 317,
+      "flesch_reading_ease": 50.15
+    },
+    "M26-NEW-CLOZE-02": {
+      "accepted": true,
+      "words": 313,
+      "flesch_reading_ease": 49.15
+    },
+    "M26-NEW-GRAMMAR-01": {
+      "accepted": true,
+      "words": 226
+    },
+    "M26-NEW-READING-01": {
+      "accepted": true,
+      "words": 387,
+      "flesch_reading_ease": 55.85
+    },
+    "M26-NEW-READING-02": {
+      "accepted": true,
+      "words": 361,
+      "flesch_reading_ease": 52.81
+    },
+    "M26-NEW-GAP-01": {
+      "accepted": true,
+      "words": 333
+    }
+  },
+  "content_fixes": {
+    "grammar_fill_in_which": true,
+    "subjunctive_reviewed": true,
+    "present_perfect_since_2021": true,
+    "cloze_temporary_single_answer": true,
+    "cloze_modest_context_clarified": true,
+    "cloze_balance_options_strengthened": true,
+    "cloze_adjust_options_strengthened": true,
+    "reading_cafe_residue_removed": true,
+    "repeated_walk_far_phrase_removed": true,
+    "chinese_in_english_passage_removed": true,
+    "reading_evidence_reason_corrected": true,
+    "gap_first_word_clues_reduced": true,
+    "semantic_grammar_tag_mapping": "53/53 questions",
+    "near_synonym_calibration_count": 6
+  },
+  "preview": {
+    "http_status": 200,
+    "target_size": 53,
+    "passages": 6,
+    "questions": 53,
+    "composition": {
+      "cloze": 2,
+      "grammar_fill": 1,
+      "reading": 2,
+      "gap_fill": 1
+    }
+  },
+  "practice_assembly": {
+    "reading_mode": {
+      "questions": 29,
+      "grammar_tag_max": 3,
+      "topics": 3,
+      "fallback_used": true
+    },
+    "gap_fill_mode": {
+      "questions": 30,
+      "grammar_tag_max": 3,
+      "topics": 3,
+      "fallback_used": true
+    },
+    "live_start_http_status": 201,
+    "live_abandon_http_status": 204
+  },
+  "tests": "42 passed"
+}
