@@ -265,6 +265,7 @@ const styles = StyleSheet.create({
     fontFamily: tokens.font.uiFamily.web,
     fontSize: tokens.font.sizes.pageTitle,
     fontWeight: "600",
+    marginBottom: tokens.spacing.section,
   },
   bank: {
     color: tokens.color.primaryText,
