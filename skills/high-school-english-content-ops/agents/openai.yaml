@@ -1,0 +1,4 @@
+interface:
+  display_name: "高中英语题库内容运营"
+  short_description: "生成、评审、修复并发布符合契约的高中英语题库内容"
+  default_prompt: "Use $high-school-english-content-ops to review this question bank package and report only evidence-backed blockers and quality risks."

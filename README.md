@@ -4,11 +4,12 @@
 
 ## 项目状态
 
-当前处于 **M2 题库交接**。`M2 Bank #2` 已激活，包含 47 篇 / 300 题；
-R1-R10 与全库覆盖审计通过。详见 `M2-status.md`。
+当前 active Bank 为 **`20261109_500`**，包含 **72 篇 / 500 题**。
+早期 47 篇 / 300 题的 `M2 Bank #2` 与 M1 Demo Bank 均作为历史交付保留；
+当前运行题库以实时 API 和数据库为准。
 
 M0 契约与 M1 验收已于 2026-11-07 签字通过；M1 的 80 题 Demo Bank
-现作为历史归档保留。当前运行题库以 `M2-status.md` 为准。
+现作为历史归档保留。`M2-status.md` 保留为 300 题阶段的历史记录。
 
 当前需求版本严格读取 `contracts/VERSION`，并与 `contracts/curriculum.json.requirement_version` 机械校验。本期运行载体为 **Expo Web（react-native-web）电脑浏览器**。React Native 源码保留，手机真机验收推迟到手机端阶段，不作为本期门禁。
 
@@ -17,6 +18,13 @@ V11.3 的练习页按篇分节，语法填空使用语篇后四选一；报告�
 V11.4 将练习页改为逐题展示，新增本地模型薄弱点分析、历史报告列表与删除能力。
 
 V11.5 将交卷确认改为弹窗，并支持退出未交卷练习且不保留本次题目和报告。
+
+## 项目复盘与技术资产
+
+- 项目全周期总结：`docs/project-retrospective-2026-11-09.md`
+- 当前系统架构与限制：`docs/architecture/system-overview.md`
+- 可复用提示词模板库：`docs/prompt-library/README.md`
+- 项目专用 Skill：`skills/high-school-english-content-ops/SKILL.md`
 
 ## 题库生成与评审
 
