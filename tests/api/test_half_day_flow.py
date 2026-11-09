@@ -15,7 +15,6 @@ from fastapi.testclient import TestClient
 os.environ.setdefault("WEAKNESS_ANALYSIS_DISABLED", "1")
 
 from backend.app.main import app, store
-from backend.app.composer import allocate_difficulty, allocate_largest_remainder
 
 
 client = TestClient(app, client=("127.0.0.1", 41000))
@@ -392,56 +391,50 @@ def test_database_endpoint_is_absolute_and_name_is_checked() -> None:
     )
 
 
-def test_four_generated_papers_meet_all_hard_constraints() -> None:
+def test_four_papers_prioritize_three_uncovered_passages() -> None:
     headers = student_headers()
-    logs = []
-    expected_sizes = [29, 30, 29, 30]
-    book_percentages = {"选必二": 0.45, "选必一": 0.30, "必修": 0.20, "cross_book": 0.05}
-    tie_order = ["选必二", "选必一", "必修", "cross_book"]
-
-    for paper_number, expected_size in enumerate(expected_sizes, start=1):
-        _, _, _, _, active_groups, _ = store._student_state(headers["X-Student-Id"])
-        assert active_groups == set()
+    selected_group_sets: list[set[str]] = []
+    for _ in range(4):
         session = start_practice(headers)
-        assert len(session["items"]) == expected_size
         log = session["composition_note"]["assembly_log"]
-        assert log["paper_label"] == ("29 题阅读场" if paper_number % 2 else "30 题七选五场")
-        assert log["question_count"] == expected_size
-        if not log.get("fallback_used", False):
-            assert log["book_quota_expected"] == allocate_largest_remainder(
-                expected_size,
-                book_percentages,
-                tie_order,
-            )
-            assert log["book_quota_actual"] == log["book_quota_expected"]
-            assert log["difficulty_actual"] == allocate_difficulty(
-                expected_size
-            )
-        else:
-            assert sum(log["book_quota_actual"].values()) == expected_size
-            assert sum(log["difficulty_actual"].values()) == expected_size
-        assert max(log["grammar_tag_counts"].values(), default=0) <= 3
-        assert log["error_pool_ratio"] <= 0.60
-        assert all(
-            item["book_tag"] in {"必修", "选必一", "选必二", "跨册"}
-            for item in log["question_coverage"]
+        selected_groups = set(log["selected_passage_groups"])
+        assert len(session["items"]) == log["question_count"]
+        assert len(selected_groups) == 3
+        assert log["selected_unseen_passage_count"] == 3
+        assert log["selected_distinct_topic_count"] == len(log["topics"])
+        assert log["selection_basis"] == (
+            "unseen_passages_then_distinct_topics"
         )
-        assert log["selection_basis"] == "coverage"
+        assert log["active_bank_question_count"] == len(store.questions)
+        assert log["active_bank_passage_count"] == len(
+            {
+                question.passage_group_id
+                for question in store.questions.values()
+            }
+        )
         assert "question_weights" not in log
         assert "recent_three_question_weights" not in log
-        assert len(log["question_coverage"]) == expected_size
+        assert "book_quota_expected" not in log
+        assert "difficulty_quota_expected" not in log
+        assert "grammar_tag_counts" not in log
+        assert "fallback_used" not in log
+        assert len(log["question_coverage"]) == log["question_count"]
         assert 0 <= log["selected_new_coverage_ratio"] <= 1
-        logs.append(log)
+        assert all(
+            selected_groups.isdisjoint(previous)
+            for previous in selected_group_sets
+        )
+        selected_group_sets.append(selected_groups)
         answer_all_correct(session, headers)
         submit_session(session, headers)
 
 
-def test_two_unfinished_sessions_do_not_share_a_passage() -> None:
+def test_active_sessions_do_not_add_a_competing_selection_rule() -> None:
     headers = student_headers()
     first = start_practice(headers)
     second = start_practice(headers)
     first_groups = {item["passage_group_id"] for item in first["items"]}
     second_groups = {item["passage_group_id"] for item in second["items"]}
-    assert first_groups.isdisjoint(second_groups)
+    assert first_groups == second_groups
     client.delete(f"/api/v1/practice/{first['session_id']}", headers=headers)
     client.delete(f"/api/v1/practice/{second['session_id']}", headers=headers)

@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import json
-from collections import Counter
 from pathlib import Path
 
 from backend.app.composer import assemble_demo_paper
@@ -45,28 +44,29 @@ def _questions() -> list[DemoQuestion]:
 
 def test_new_batch_can_assemble_both_practice_modes() -> None:
     questions = _questions()
-    for paper_number, expected_size in ((1, 29), (2, 30)):
+    for paper_number in (1, 2):
         selected, log = assemble_demo_paper(
             questions,
             paper_number,
             {},
-            set(),
-            {
-                "选必二": 0.45,
-                "选必一": 0.30,
-                "必修": 0.20,
-                "跨册": 0.05,
-            },
-            ["选必二", "选必一", "必修", "跨册"],
         )
 
-        assert len(selected) == expected_size
-        assert max(
-            Counter(
-                tag for question in selected for tag in question.grammar_tags
-            ).values()
-        ) <= 3
-        assert len(log["topics"]) >= 3
+        assert len(selected) == log["question_count"]
+        assert set(log["question_type_counts"]) == {
+            "cloze",
+            "grammar_fill",
+            log["paper_mode"],
+        }
+        assert log["selected_passage_groups"] == list(
+            dict.fromkeys(
+                question.passage_group_id for question in selected
+            )
+        )
+        assert log["selected_unseen_passage_count"] == 3
+        assert log["selected_distinct_topic_count"] == len(log["topics"])
+        assert log["selection_basis"] == (
+            "unseen_passages_then_distinct_topics"
+        )
 
 
 def test_revision_applies_quality_fixes() -> None:

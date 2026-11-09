@@ -41,7 +41,8 @@
 
 ### 练习与错题
 
-- 组卷使用完整双通道公式与全部约束，禁止纯随机。
+- 组卷只使用两条选题规则：每套选 1 篇完形、1 篇语法填空、1 篇阅读或七选五；
+  先优先未覆盖语篇，未覆盖数并列时优先覆盖 3 个不同话题。
 - 同一错题必须在两次不同会话都答对才能消标；同套重复不计。
 - 换库后旧题 `I_err` 失效；`S_kp`、`G_gap` 与知识点掌握度跨库继承。
 - 错题 `streak` 换库冻结，换回原库继续。
@@ -79,7 +80,7 @@
 
 - Demo Bank 为 80 题，M1 允许同题重复。
 - “7 天内同题重复率 <10%”不在 M1 验收，M3 生效。
-- 不因此削弱 Bank 隔离、组卷权重、错题机制、答案安全或服务端计时。
+- 不因此削弱 Bank 隔离、两条选题规则、错题机制、答案安全或服务端计时。
 - 所有延期项见 `docs/待补齐清单.md`。
 
 ## 4. 25 单元与白名单口径
@@ -90,7 +91,7 @@
 | 词汇 | 去重词元 | `contracts/vocabulary-whitelist.json.entries` |
 | 语法 | grammar item ID | `contracts/curriculum.json.grammar_whitelist` |
 | 题材 | 25 个正式单元题材 | `contracts/curriculum.json.units[].topic` |
-| 组卷册次 | 必修/选必一/选必二/跨册占比 | `config/practice-modes.json.paper_constraints` |
+| 组卷选篇 | 完形 1 + 语法 1 + 阅读/七选五 1；先未覆盖，再优先 3 话题 | `config/practice-modes.json.selection_policy` |
 
 词汇来源为两层合并：
 

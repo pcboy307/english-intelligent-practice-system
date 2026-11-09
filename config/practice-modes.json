@@ -1,106 +1,44 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "modes": {
     "30": {
       "duration_minutes": 30,
-      "cloze_questions": 15,
-      "grammar_fill_questions": 10,
-      "reading_slots": [
-        {"type": "reading", "passages": 1, "questions_per_passage": 4},
-        {"type": "gap_fill", "passages": 1, "questions_per_passage": 5}
-      ],
-      "alternate_reading_slot": true,
-      "expected_question_counts": [29, 30],
-      "estimated_use_minutes": [29, 31]
-    },
-    "60": {
-      "duration_minutes": 60,
-      "cloze_questions": 15,
-      "grammar_fill_questions": 10,
-      "reading_slots": [
-        {"type": "reading", "passages": 3, "questions_per_passage": 4},
-        {"type": "gap_fill", "passages": 1, "questions_per_passage": 5}
-      ],
-      "alternate_reading_slot": false,
-      "expected_question_counts": [42],
-      "estimated_use_minutes": [50, 55]
+      "passage_composition": {
+        "cloze": 1,
+        "grammar_fill": 1,
+        "reading_or_gap_fill": 1
+      }
     }
   },
-  "reading_slot_rotation": {
-    "history_window": 3,
-    "prefer_less_recent_type": true,
-    "mix_within_session": false
-  },
   "selection_policy": {
-    "basis": "coverage",
-    "unseen_first": true,
+    "rules": [
+      {
+        "priority": 1,
+        "description": "Select one cloze, one grammar-fill and one reading or seven-choice passage; prefer passages not yet covered by the student."
+      },
+      {
+        "priority": 2,
+        "description": "When Rule 1 ties, prefer a combination with three distinct topics."
+      }
+    ],
+    "candidate_order": [
+      "highest_unseen_passage_count",
+      "highest_distinct_topic_count"
+    ],
     "coverage_source": "submitted_or_expired_reports_for_same_student_and_bank",
     "abandoned_sessions_count_as_covered": false,
-    "exact_candidate_order": [
-      "highest_unseen_passage_count",
-      "highest_unseen_question_count",
-      "oldest_last_seen_time",
-      "passage_group_ids"
-    ],
-    "fallback_candidate_order": [
-      "highest_unseen_passage_count",
-      "highest_unseen_question_count",
-      "lowest_book_and_difficulty_deviation",
-      "oldest_last_seen_time",
-      "passage_group_ids"
-    ],
     "error_tags_used_for_selection": false,
-    "history_weights_used_for_selection": false
-  },
-  "paper_constraints": {
-    "difficulty_easy_d1_d2": 0.40,
-    "difficulty_medium_d3": 0.40,
-    "difficulty_hard_d4_d5_base": 0.20,
-    "difficulty_hard_adaptive_min": 0.15,
-    "difficulty_hard_adaptive_max": 0.25,
-    "hard_increase_requires_all": [
-      "last_5_accuracy_gt_0.85",
-      "last_3_d4_accuracy_gte_0.80"
-    ],
-    "hard_decrease_requires": "last_5_accuracy_lt_0.50",
-    "max_d5_questions": 3,
-    "max_d5_questions_per_passage": 1,
-    "max_error_pool_ratio": 0.60,
-    "max_knowledge_point_repetition": 3,
-    "min_topics": 3,
-    "max_passages_per_book": 3,
-    "reading_topic_min_elective_share": 0.50,
-    "question_point_book_distribution": {
-      "必修": 0.20,
-      "选必一": 0.30,
-      "选必二": 0.45,
-      "cross_book": 0.05
-    },
-    "book_distribution_rounding": {
-      "method": "largest_remainder",
-      "tie_break_order": ["选必二", "选必一", "必修", "cross_book"],
-      "self_tests": {
-        "29": {"必修": 6, "选必一": 9, "选必二": 13, "cross_book": 1},
-        "30": {"必修": 6, "选必一": 9, "选必二": 14, "cross_book": 1},
-        "42": {"必修": 8, "选必一": 13, "选必二": 19, "cross_book": 2}
-      }
-    },
-    "paper_question_counts": {"reading": 29, "gap_fill": 30},
-    "same_passage_exclusivity_scope": "concurrent_in_progress_sessions_only",
-    "allow_same_passage_reuse_after_submission": true,
-    "allow_same_question_repeat_in_m1": true,
-    "seven_day_repeat_rate_max": 0.10,
-    "seven_day_repeat_rate_effective_milestone": "M3"
+    "history_weights_used_for_selection": false,
+    "book_distribution_used_for_selection": false,
+    "difficulty_distribution_used_for_selection": false,
+    "grammar_tag_repetition_used_for_selection": false,
+    "knowledge_point_repetition_used_for_selection": false,
+    "error_pool_ratio_used_for_selection": false,
+    "active_passage_conflict_used_for_selection": false
   },
   "bank_scope": {
     "source": "session.bank_id",
     "allow_cross_bank_sampling": false,
     "active_bank_required_for_new_session": true
-  },
-  "assembly": {
-    "hard_constraints_first": true,
-    "soft_weight_second": true,
-    "max_same_grammar_tag_per_paper": 3,
-    "max_questions_sharing_passage_between_active_sessions": 0
   }
 }

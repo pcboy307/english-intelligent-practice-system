@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import hashlib
-import random
 import secrets
 import uuid
 from collections import Counter, defaultdict
@@ -10,6 +9,7 @@ from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 from .analysis import generate_weakness_analysis
+from .composer import assemble_demo_paper
 from .demo_bank import DemoQuestion, demo_bank
 
 
@@ -59,44 +59,9 @@ class InMemoryStore:
         self.appearances: dict[str, list[datetime]] = defaultdict(list)
         self.idempotency: dict[tuple[str, str], dict] = {}
         self.audit_log: list[dict] = []
-        self.random = random.Random(seed)
 
     def active_bank(self) -> dict:
         return self.bank
-
-    def _question_weight(self, question: DemoQuestion, student_id: str, now: datetime) -> float:
-        tag = self.error_tags.get((student_id, question.id, question.bank_id))
-        i_err = 1.0 if tag and tag.status == "active" and question.bank_id == self.bank["bank_id"] else 0.0
-        s_kp = min(
-            3,
-            sum(
-                other.status == "active"
-                and (
-                    set(other.knowledge_points) & set(question.knowledge_points)
-                    or set(other.grammar_tags) & set(question.grammar_tags)
-                )
-                for (sid, _qid, bid), other in self.error_tags.items()
-                if sid == student_id and bid == question.bank_id
-            ),
-        )
-        history = self.history.get(student_id, [])
-        same_type = [correct for qid, correct, _ in history if self.questions[qid].type == question.type]
-        s_type = 1.0 if same_type and sum(same_type) / len(same_type) < 0.6 else 0.0
-        mastery_values = [
-            tag_mastery
-            for _sid, kp, tag_mastery in self.mastery_values(student_id)
-            if kp in question.knowledge_points
-        ]
-        mastery = sum(mastery_values) / len(mastery_values) if mastery_values else 0.7
-        g_gap = max(0.0, 0.7 - mastery) * 2.0
-        appearances = self.appearances.get(question.id, [])
-        recent3 = len(appearances[-3:]) >= 3
-        recent7 = any(now - seen <= timedelta(days=7) for seen in appearances)
-        recent_penalty = 1.2 if recent3 else (0.6 if recent7 else 0.0)
-        return max(
-            0.1,
-            1.0 + 2.0 * i_err + 1.0 * s_kp + 0.5 * s_type + 0.8 * g_gap - recent_penalty,
-        )
 
     def mastery_values(self, student_id: str) -> list[tuple[str, str, float]]:
         by_point: dict[str, list[bool]] = defaultdict(list)
@@ -105,46 +70,28 @@ class InMemoryStore:
                 by_point[point].append(correct)
         return [(student_id, point, sum(values) / len(values)) for point, values in by_point.items()]
 
-    def _weighted_without_replacement(
-        self, ids: list[str], weights: list[float], count: int
-    ) -> list[str]:
-        remaining = list(zip(ids, weights))
-        selected: list[str] = []
-        while remaining and len(selected) < count:
-            total = sum(weight for _, weight in remaining)
-            pick = self.random.random() * total
-            upto = 0.0
-            chosen_index = len(remaining) - 1
-            for index, (_, weight) in enumerate(remaining):
-                upto += weight
-                if pick <= upto:
-                    chosen_index = index
-                    break
-            selected.append(remaining.pop(chosen_index)[0])
-        return selected
-
     def start_session(self, student_id: str, duration_minutes: int, now: datetime) -> SessionRecord:
         if duration_minutes != 30:
             raise ValueError("INVALID_DURATION")
         if self.bank["status"] != "active":
             raise ValueError("BANK_NOT_ACTIVE")
-        counts = {"cloze": 15, "grammar_fill": 10, "gap_fill": 5}
-        selected: list[str] = []
-        for qtype, amount in counts.items():
-            candidates = [
-                question
-                for question in self.questions.values()
-                if question.bank_id == self.bank["bank_id"] and question.type == qtype
-            ]
-            ids = [question.id for question in candidates]
-            weights = [self._question_weight(question, student_id, now) for question in candidates]
-            selected.extend(self._weighted_without_replacement(ids, weights, amount))
-        selected.sort(
-            key=lambda question_id: (
-                self.questions[question_id].passage_order,
-                self.questions[question_id].question_order,
-            )
+        covered_at: dict[str, list[datetime]] = defaultdict(list)
+        submitted_count = 0
+        for record in self.sessions.values():
+            if (
+                record.student_id == student_id
+                and record.bank_id == self.bank["bank_id"]
+                and record.status in {"submitted", "expired"}
+            ):
+                submitted_count += 1
+                for question_id in record.question_ids:
+                    covered_at[question_id].append(record.started_at)
+        selected_questions, assembly_log = assemble_demo_paper(
+            list(self.questions.values()),
+            submitted_count + 1,
+            covered_at,
         )
+        selected = [question.id for question in selected_questions]
         session_id = str(uuid.uuid4())
         record = SessionRecord(
             id=session_id,
@@ -158,11 +105,10 @@ class InMemoryStore:
             question_ids=selected,
             composition_note={
                 "bank_name": self.bank["name"],
-                "question_type_counts": counts,
-                "error_pool_ratio": 0.0,
-                "difficulty_distribution": {"easy": 0.4, "medium": 0.4, "hard": 0.2},
-                "book_distribution": {"必修": 0.2, "选必一": 0.3, "选必二": 0.45, "cross_book": 0.05},
-                "topics": ["environment", "community life", "reading"],
+                "session_kind": "practice",
+                "question_type_counts": assembly_log["question_type_counts"],
+                "topics": assembly_log["topics"],
+                "assembly_log": assembly_log,
             },
         )
         self.sessions[session_id] = record

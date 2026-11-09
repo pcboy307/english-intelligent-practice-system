@@ -96,29 +96,19 @@
       "additionalProperties": false,
       "required": [
         "bank_name",
+        "session_kind",
         "question_type_counts",
-        "error_pool_ratio",
-        "difficulty_distribution",
-        "book_distribution",
         "topics",
         "assembly_log"
       ],
       "properties": {
         "bank_name": {"type": "string"},
+        "session_kind": {"const": "practice"},
         "question_type_counts": {
           "type": "object",
           "additionalProperties": {"type": "integer", "minimum": 0}
         },
-        "error_pool_ratio": {"type": "number", "minimum": 0, "maximum": 0.6},
-        "difficulty_distribution": {
-          "type": "object",
-          "additionalProperties": {"type": "number", "minimum": 0, "maximum": 1}
-        },
-        "book_distribution": {
-          "type": "object",
-          "additionalProperties": {"type": "number", "minimum": 0, "maximum": 1}
-        },
-        "topics": {"type": "array", "minItems": 3, "items": {"type": "string"}},
+        "topics": {"type": "array", "minItems": 1, "items": {"type": "string"}},
         "assembly_log": {
           "type": "object",
           "additionalProperties": true

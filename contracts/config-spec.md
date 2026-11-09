@@ -12,7 +12,7 @@
 | `contracts/vocabulary-whitelist.json` | 规范化词元白名单及教材出处 |
 | `contracts/design-tokens.json` | App 与后台唯一视觉事实源 |
 | `contracts/admin-auth.md` | 本机回环、管理 token、生成审批和审计契约 |
-| `config/practice-modes.json` | 时长、题量、组卷权重与单套约束 |
+| `config/practice-modes.json` | 时长、篇数构成与两条选题规则 |
 | `config/reporting.json` | 掌握度、趋势与报告阈值 |
 | `config/validation.json` | 题库自动校验阈值 |
 | `config/app.json` | 身份、计时权威、离线与数据清除 |
@@ -60,19 +60,14 @@
 
 ### `config/practice-modes.json`
 
-- `modes.30`：30 分钟模式，阅读类 slot 在阅读与七选五之间轮换。
-- `modes.60`：60 分钟模式，固定 3 篇阅读 + 1 篇七选五。
-- `selection_policy`：最终选题按覆盖率排序，首先最大化未覆盖文章数，其次最大化未覆盖题目数；
-  全部覆盖后再选最久未出现的组合。错题标签和历史权重不参与选题，只用于错题本、掌握度和报告。
-- `paper_constraints`：单套难度、错题池、知识点重复、话题和册次约束。
-- `paper_constraints.book_distribution_rounding`：按卷内实际题数使用最大余数法从百分比生成整数配额，不写死某一题数的整数组合。差额依次补给小数部分最大的册次；并列时顺序为 `选必二`、`选必一`、`必修`、`cross_book`。
-- 最大余数法自检值：29 题 `13/9/6/1`，30 题 `14/9/6/1`，42 题 `19/13/8/2`。册次配额覆盖卷内全部题目，包括阅读场与七选五场。
-- `paper_constraints.paper_question_counts`：阅读场 29 题，七选五场 30 题；报告与历史记录必须使用实际题数作分母。
-- `paper_constraints.same_passage_exclusivity_scope=concurrent_in_progress_sessions_only`：同一语篇不得同时进入两套未完成会话；已交卷会话允许复用。
-- `paper_constraints.allow_same_passage_reuse_after_submission=true`：11 篇小于 4 套 × 3 篇，历史复用不可避免。
+- `modes.30.passage_composition`：每套固定 1 篇完形、1 篇语法填空、1 篇阅读或七选五。
+- `selection_policy.rules`：只有两条选题规则。
+  1. 先最大化本学生在当前 Bank 中未覆盖的语篇数；覆盖以“该篇任一题已出现在已交卷或已过期会话”为准。
+  2. 未覆盖语篇数并列时，优先选择覆盖 3 个不同话题的组合。
+- `selection_policy.candidate_order`：固定为 `highest_unseen_passage_count`、`highest_distinct_topic_count`，不得插入其他排序条件。
+- 错题标签、历史权重、册次、难度、grammar tag 重复、知识点重复、错题池占比和未完成会话同篇冲突均不参与选题。
 - `bank_scope.source`：必须为 `session.bank_id`；`allow_cross_bank_sampling=false`。
-- `paper_constraints.allow_same_question_repeat_in_m1=true`：仅 M1 豁免。
-- `paper_constraints.seven_day_repeat_rate_max=0.10`：M3 生效。
+- 报告和历史记录必须使用实际题数作分母。
 
 ### `config/reporting.json`
 

@@ -3,321 +3,147 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from types import SimpleNamespace
 
-import pytest
-
 from backend.app.composer import assemble_demo_paper
+
+
+QUESTION_COUNTS = {
+    "cloze": 15,
+    "grammar_fill": 10,
+    "reading": 4,
+    "gap_fill": 5,
+}
 
 
 def _question(
     *,
-    question_id: str,
-    type_: str,
+    question_type: str,
     passage_id: str,
     order: int,
     topic: str,
-    book_bucket: str = "选必二",
-    difficulty: int = 3,
-    grammar_tag: str = "noun_clauses",
 ) -> SimpleNamespace:
+    passage_order = {
+        "cloze": 1,
+        "grammar_fill": 2,
+        "reading": 3,
+        "gap_fill": 3,
+    }[question_type]
     return SimpleNamespace(
-        id=question_id,
-        type=type_,
+        id=f"{passage_id}-Q{order:02d}",
+        type=question_type,
         passage_group_id=passage_id,
-        book_bucket=book_bucket,
-        book_tag=book_bucket,
-        difficulty=difficulty,
-        grammar_tags=[grammar_tag],
-        knowledge_points=[f"{passage_id}:{order}"],
         topic=topic,
-        passage_order=order,
+        passage_order=passage_order,
         question_order=order,
     )
 
 
-def _stage_a_questions() -> list[SimpleNamespace]:
-    groups = (
-        ("cloze", "M26-CLOZE", "科技", 15),
-        ("grammar_fill", "M26-GRAMMAR", "环境", 10),
-        ("reading", "M26-READING", "健康心理", 4),
-    )
+def _passage(
+    question_type: str,
+    passage_id: str,
+    topic: str,
+) -> list[SimpleNamespace]:
     return [
         _question(
-            question_id=f"{passage_id}-Q{order:02d}",
-            type_=type_,
+            question_type=question_type,
             passage_id=passage_id,
             order=order,
             topic=topic,
         )
-        for type_, passage_id, topic, count in groups
-        for order in range(1, count + 1)
+        for order in range(1, QUESTION_COUNTS[question_type] + 1)
     ]
 
 
-def test_stage_a_sample_bank_uses_explicit_quota_fallback() -> None:
-    questions = _stage_a_questions()
-    arguments = {
-        "questions": questions,
-        "paper_number": 1,
-        "covered_at": {},
-        "active_passage_ids": set(),
-        "book_percentages": {
-            "选必二": 0.45,
-            "选必一": 0.30,
-            "必修": 0.20,
-            "跨册": 0.05,
-        },
-        "tie_break_order": ["选必二", "选必一", "必修", "跨册"],
-    }
+def _covered(questions: list[SimpleNamespace]) -> dict[str, list[datetime]]:
+    seen_at = datetime(2026, 11, 8, tzinfo=timezone.utc)
+    return {question.id: [seen_at] for question in questions}
 
-    with pytest.raises(ValueError, match="NO_VALID_PAPER_ASSEMBLY"):
-        assemble_demo_paper(**arguments)
 
-    selected, log = assemble_demo_paper(
-        **arguments,
-        allow_stage_a_sample_fallback=True,
+def test_uncovered_passages_are_selected_before_covered_passages() -> None:
+    covered_passages = (
+        _passage("cloze", "CLOZE-COVERED", "science")
+        + _passage("grammar_fill", "GRAMMAR-COVERED", "environment")
+        + _passage("reading", "READING-COVERED", "health")
+    )
+    uncovered_passages = (
+        _passage("cloze", "CLOZE-UNCOVERED", "science")
+        + _passage("grammar_fill", "GRAMMAR-UNCOVERED", "environment")
+        + _passage("reading", "READING-UNCOVERED", "society")
     )
 
-    assert len(selected) == 29
-    assert log["fallback_reason"] == "STAGE_A_SAMPLE_QUOTA_FALLBACK"
-    assert log["stage_a_sample_fallback"] is True
-
-
-def test_uncovered_questions_are_preferred_before_covered_questions() -> None:
-    questions = _stage_a_questions()
-    questions.extend(
-        _question(
-            question_id=f"M26-READING-B-Q{order:02d}",
-            type_="reading",
-            passage_id="M26-READING-B",
-            order=order,
-            topic="社会伦理",
-        )
-        for order in range(1, 5)
-    )
-    appearances = {
-        question.id: [datetime(2026, 11, 8, tzinfo=timezone.utc)]
-        for question in questions
-        if question.passage_group_id != "M26-READING-B"
-    }
-
     selected, log = assemble_demo_paper(
-        questions,
+        covered_passages + uncovered_passages,
         1,
-        appearances,
-        set(),
-        {
-            "选必二": 0.45,
-            "选必一": 0.30,
-            "必修": 0.20,
-            "跨册": 0.05,
-        },
-        ["选必二", "选必一", "必修", "跨册"],
-        allow_stage_a_sample_fallback=True,
+        _covered(covered_passages),
     )
 
     assert {question.passage_group_id for question in selected} == {
-        "M26-CLOZE",
-        "M26-GRAMMAR",
-        "M26-READING-B",
+        "CLOZE-UNCOVERED",
+        "GRAMMAR-UNCOVERED",
+        "READING-UNCOVERED",
     }
-    assert log["selected_unseen_question_count"] == 4
-    assert log["selection_basis"] == "coverage"
+    assert log["selection_basis"] == "unseen_passages_then_distinct_topics"
+    assert log["selected_unseen_passage_count"] == 3
 
 
-def test_when_all_questions_were_covered_the_oldest_seen_is_preferred() -> None:
-    questions = _stage_a_questions()
-    questions.extend(
-        _question(
-            question_id=f"M26-READING-B-Q{order:02d}",
-            type_="reading",
-            passage_id="M26-READING-B",
-            order=order,
-            topic="社会伦理",
-        )
-        for order in range(1, 5)
-    )
-    appearances = {}
-    for question in questions:
-        seen_at = (
-            datetime(2026, 11, 1, tzinfo=timezone.utc)
-            if question.passage_group_id == "M26-READING"
-            else datetime(2026, 11, 8, tzinfo=timezone.utc)
-        )
-        appearances[question.id] = [seen_at]
-
-    selected, _ = assemble_demo_paper(
-        questions,
-        1,
-        appearances,
-        set(),
-        {
-            "选必二": 0.45,
-            "选必一": 0.30,
-            "必修": 0.20,
-            "跨册": 0.05,
-        },
-        ["选必二", "选必一", "必修", "跨册"],
-        allow_stage_a_sample_fallback=True,
-    )
-
-    assert "M26-READING" in {
-        question.passage_group_id for question in selected
-    }
-
-
-def test_unseen_fallback_beats_seen_exact_quota_candidate() -> None:
-    books = ["选必二"] * 13 + ["选必一"] * 9 + ["必修"] * 6 + ["跨册"]
-    difficulties = [1] * 12 + [3] * 11 + [4] * 6
-    grammar_tags = [
-        "relative_clauses_defining",
-        "relative_clauses_non_defining",
-        "passive_voice_tenses",
-        "past_participle_nonfinite",
-        "v_ing_nonfinite",
-        "noun_clauses",
-        "adverbial_clauses",
-        "subjunctive_basic_if",
-        "subjunctive_basic_should",
-        "partial_inversion_basic",
-        "cleft_basic",
-        "tense_system",
-        "subject_verb_agreement",
-        "articles",
-        "prepositions",
-    ]
-    seen_questions = []
-    index = 0
-    for type_, passage_id, topic, count in (
-        ("cloze", "SEEN-CLOZE", "科技", 15),
-        ("grammar_fill", "SEEN-GRAMMAR", "环境", 10),
-        ("reading", "SEEN-READING", "健康心理", 4),
-    ):
-        for order in range(1, count + 1):
-            seen_questions.append(
-                _question(
-                    question_id=f"{passage_id}-Q{order:02d}",
-                    type_=type_,
-                    passage_id=passage_id,
-                    order=order,
-                    topic=topic,
-                    book_bucket=books[index],
-                    difficulty=difficulties[index],
-                    grammar_tag=grammar_tags[index % len(grammar_tags)],
-                )
-            )
-            index += 1
-    unseen_reading = [
-        _question(
-            question_id=f"UNSEEN-READING-Q{order:02d}",
-            type_="reading",
-            passage_id="UNSEEN-READING",
-            order=order,
-            topic="社会伦理",
-            book_bucket="必修",
-            difficulty=5,
-            grammar_tag=grammar_tags[(index + order) % len(grammar_tags)],
-        )
-        for order in range(1, 5)
-    ]
-    questions = seen_questions + unseen_reading
-    appearances = {
-        question.id: [datetime(2026, 11, 8, tzinfo=timezone.utc)]
-        for question in seen_questions
-    }
-
-    selected, log = assemble_demo_paper(
-        questions,
-        1,
-        appearances,
-        set(),
-        {
-            "选必二": 0.45,
-            "选必一": 0.30,
-            "必修": 0.20,
-            "跨册": 0.05,
-        },
-        ["选必二", "选必一", "必修", "跨册"],
-    )
-
-    assert "UNSEEN-READING" in {
-        question.passage_group_id for question in selected
-    }
-    assert log["selected_unseen_question_count"] == 4
-    assert log["active_bank_question_count"] == 33
-    assert log["active_bank_passage_count"] == 4
-    assert log["covered_bank_question_count"] == 29
-    assert log["uncovered_bank_question_count"] == 4
-    assert log["covered_bank_passage_count"] == 3
-    assert log["uncovered_bank_passage_count"] == 1
-    assert log["uncovered_safe_candidate_count"] >= 1
-
-
-def test_more_unseen_passages_beat_more_unseen_questions() -> None:
-    grammar_tags = [
-        "relative_clauses_defining",
-        "relative_clauses_non_defining",
-        "passive_voice_tenses",
-        "past_participle_nonfinite",
-        "v_ing_nonfinite",
-        "noun_clauses",
-        "adverbial_clauses",
-        "subjunctive_basic_if",
-        "subjunctive_basic_should",
-        "partial_inversion_basic",
-        "cleft_basic",
-        "tense_system",
-        "subject_verb_agreement",
-        "articles",
-        "prepositions",
-    ]
-
-    def group(type_: str, passage_id: str, topic: str, count: int):
-        return [
-            _question(
-                question_id=f"{passage_id}-Q{order:02d}",
-                type_=type_,
-                passage_id=passage_id,
-                order=order,
-                topic=topic,
-                grammar_tag=grammar_tags[(order - 1) % len(grammar_tags)],
-            )
-            for order in range(1, count + 1)
-        ]
-
-    unseen_cloze = group("cloze", "UNSEEN-CLOZE", "科技", 15)
-    seen_grammar = group("grammar_fill", "SEEN-GRAMMAR", "环境", 10)
-    seen_reading = group("reading", "SEEN-READING", "健康心理", 4)
-    seen_cloze = group("cloze", "SEEN-CLOZE", "媒体信息", 15)
-    unseen_grammar = group("grammar_fill", "UNSEEN-GRAMMAR", "科技", 10)
-    unseen_reading = group("reading", "UNSEEN-READING", "社会伦理", 4)
+def test_three_distinct_topics_break_the_uncovered_passage_tie() -> None:
     questions = (
-        unseen_cloze
-        + seen_grammar
-        + seen_reading
-        + seen_cloze
-        + unseen_grammar
-        + unseen_reading
+        _passage("cloze", "CLOZE-SAME-TOPIC", "science")
+        + _passage("grammar_fill", "GRAMMAR-SAME-TOPIC", "science")
+        + _passage("reading", "READING-SAME-TOPIC", "science")
+        + _passage("cloze", "CLOZE-DISTINCT-TOPIC", "science")
+        + _passage("grammar_fill", "GRAMMAR-DISTINCT-TOPIC", "environment")
+        + _passage("reading", "READING-DISTINCT-TOPIC", "health")
     )
-    appearances = {
-        question.id: [datetime(2026, 11, 8, tzinfo=timezone.utc)]
-        for question in seen_grammar + seen_reading + seen_cloze
+
+    selected, log = assemble_demo_paper(questions, 1, {})
+
+    assert {question.passage_group_id for question in selected} == {
+        "CLOZE-DISTINCT-TOPIC",
+        "GRAMMAR-DISTINCT-TOPIC",
+        "READING-DISTINCT-TOPIC",
     }
+    assert log["selected_distinct_topic_count"] == 3
+    assert log["topics"] == ["environment", "health", "science"]
 
-    selected, log = assemble_demo_paper(
-        questions,
-        1,
-        appearances,
-        set(),
-        {
-            "选必二": 0.45,
-            "选必一": 0.30,
-            "必修": 0.20,
-            "跨册": 0.05,
-        },
-        ["选必二", "选必一", "必修", "跨册"],
+
+def test_old_quota_repetition_and_topic_gate_rules_do_not_block_selection() -> None:
+    questions = (
+        _passage("cloze", "CLOZE-ONLY", "science")
+        + _passage("grammar_fill", "GRAMMAR-ONLY", "science")
+        + _passage("reading", "READING-ONLY", "science")
     )
+    for question in questions:
+        question.book_tag = "必修"
+        question.difficulty = 5
+        question.grammar_tags = ["noun_clauses"]
+        question.knowledge_points = ["same-point"]
 
-    assert log["selected_unseen_passage_count"] == 2
-    groups = {question.passage_group_id for question in selected}
-    assert sum(group.startswith("UNSEEN-") for group in groups) == 2
-    assert "UNSEEN-READING" in groups
+    selected, log = assemble_demo_paper(questions, 1, {})
+
+    assert len(selected) == 29
+    assert log["selected_distinct_topic_count"] == 1
+    assert log["paper_mode"] == "reading"
+
+
+def test_seven_choice_passage_can_win_when_it_is_uncovered() -> None:
+    questions = (
+        _passage("cloze", "CLOZE-ONLY", "science")
+        + _passage("grammar_fill", "GRAMMAR-ONLY", "environment")
+        + _passage("reading", "READING-COVERED", "health")
+        + _passage("gap_fill", "GAP-UNCOVERED", "society")
+    )
+    covered = [
+        question
+        for question in questions
+        if question.passage_group_id == "READING-COVERED"
+    ]
+
+    selected, log = assemble_demo_paper(questions, 1, _covered(covered))
+
+    assert {question.passage_group_id for question in selected} == {
+        "CLOZE-ONLY",
+        "GRAMMAR-ONLY",
+        "GAP-UNCOVERED",
+    }
+    assert len(selected) == 30
+    assert log["paper_mode"] == "gap_fill"

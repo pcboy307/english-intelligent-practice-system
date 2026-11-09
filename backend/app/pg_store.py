@@ -512,44 +512,24 @@ class PostgresStore:
     def start_session(self, student_id: str, duration_minutes: int, now: datetime) -> SessionRecord:
         if duration_minutes != 30:
             raise ValueError("INVALID_DURATION")
-        tags, _history, appearances, _recent_ids, active_groups, submitted_count = self._student_state(student_id)
-        practice_config = json.loads(
-            (Path(__file__).resolve().parents[2] / "config" / "practice-modes.json")
-            .read_text(encoding="utf-8")
-        )
+        (
+            _tags,
+            _history,
+            appearances,
+            _recent_ids,
+            _active_groups,
+            submitted_count,
+        ) = self._student_state(student_id)
         all_questions, assembly_log = assemble_demo_paper(
             list(self.questions.values()),
             submitted_count + 1,
             appearances,
-            active_groups,
-            practice_config["paper_constraints"]["question_point_book_distribution"],
-            practice_config["paper_constraints"]["book_distribution_rounding"]["tie_break_order"],
-            allow_stage_a_sample_fallback=bool(
-                (self.bank.get("coverage_snapshot") or {}).get("stage") == "A"
-            ),
-        )
-        active_error_ids = {
-            question.id
-            for question in self.questions.values()
-            if tags.get(question.id, {}).get("status") == "active"
-        }
-        assembly_log["error_pool_ratio"] = round(
-            sum(
-                1
-                for question_id in assembly_log["question_coverage"]
-                if question_id["question_id"] in active_error_ids
-            )
-            / len(assembly_log["question_coverage"]),
-            4,
         )
         session_id = str(uuid.uuid4())
         composition = {
             "bank_name": self.bank["name"],
             "session_kind": "practice",
             "question_type_counts": assembly_log["question_type_counts"],
-            "error_pool_ratio": assembly_log["error_pool_ratio"],
-            "difficulty_distribution": assembly_log["difficulty_actual"],
-            "book_distribution": assembly_log["book_quota_actual"],
             "topics": assembly_log["topics"],
             "assembly_log": assembly_log,
         }
