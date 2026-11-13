@@ -26,6 +26,23 @@ V11.5 将交卷确认改为弹窗，并支持退出未交卷练习且不保留�
 - 可复用提示词模板库：`docs/prompt-library/README.md`
 - 项目专用 Skill：`skills/high-school-english-content-ops/SKILL.md`
 
+## Windows 安装包
+
+当前可生成免管理员、自包含 Windows x64 安装器：
+
+```text
+dist/windows/GaoerEnglishPractice-Setup.exe
+```
+
+安装包包含 Expo Web、FastAPI、便携 Python 3.12、PostgreSQL 16 和当前
+`20261109_500` 题库。用户无需安装 Node、Python、Docker 或 PostgreSQL。
+
+详细说明：
+
+- 构建：`docs/windows-installer-build.md`
+- 安装：`docs/windows-installer-user-guide.md`
+- 验收：`docs/milestones/windows-installer-acceptance.md`
+
 ## 题库生成与评审
 
 大模型生成题库、评审导出题库或修改后重新导入时，唯一有效标准为：

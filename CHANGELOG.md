@@ -323,3 +323,12 @@
 - 新增题库生成、题库评审、薄弱点分析和需求裁定提示词模板。
 - 新增 `high-school-english-content-ops` 项目专用 Skill。
 - README 的当前 active Bank 状态更新为 `20261109_500`（72 篇 / 500 题）。
+
+## 2026-11-13 - Windows 自包含安装器
+
+- 新增每用户、免管理员、免外部运行时的 Windows x64 安装器。
+- 安装包内置 Expo Web、FastAPI、便携 Python 3.12、PostgreSQL 16 和 500 题 seed。
+- 首次启动自动初始化 LOCALAPPDATA 数据库并导入当前 active Bank。
+- 支持桌面/开始菜单启动、停止服务、卸载保留用户数据。
+- 完成本机安装、练习、交卷、报告、重启持久化、卸载和重装验收。
+- 多 Agent 本轮再次出现任务正文丢失，3 个任务均未成功，实际改为主 Agent 串行。
