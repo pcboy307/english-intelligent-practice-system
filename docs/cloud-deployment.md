@@ -32,7 +32,7 @@ GaoerEnglishPractice-Setup.exe.sha256
 ### 获取代码
 
 ```powershell
-git clone <REPOSITORY_URL>
+git clone https://github.com/pcboy307/english-intelligent-practice-system.git
 cd english-intelligent-practice-system
 ```
 

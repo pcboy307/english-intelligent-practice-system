@@ -1,5 +1,7 @@
 # 高二英语智能练习系统
 
+GitHub 仓库：<https://github.com/pcboy307/english-intelligent-practice-system>
+
 面向广东省高二学生的人教版（2019）英语智能练习系统。系统包含 React Native + Expo 学生端、FastAPI 后端、PostgreSQL、Redis，以及题库生成与审核管线。
 
 ## 项目状态
@@ -33,6 +35,10 @@ V11.5 将交卷确认改为弹窗，并支持退出未交卷练习且不保留�
 ```text
 dist/windows/GaoerEnglishPractice-Setup.exe
 ```
+
+云电脑可直接从以下 Release 下载：
+
+<https://github.com/pcboy307/english-intelligent-practice-system/releases/tag/v0.1.0>
 
 安装包包含 Expo Web、FastAPI、便携 Python 3.12、PostgreSQL 16 和当前
 `20261109_500` 题库。用户无需安装 Node、Python、Docker 或 PostgreSQL。
