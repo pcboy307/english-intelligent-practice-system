@@ -42,6 +42,7 @@ dist/windows/GaoerEnglishPractice-Setup.exe
 - 构建：`docs/windows-installer-build.md`
 - 安装：`docs/windows-installer-user-guide.md`
 - 验收：`docs/milestones/windows-installer-acceptance.md`
+- 云电脑部署：`docs/cloud-deployment.md`
 
 ## 题库生成与评审
 

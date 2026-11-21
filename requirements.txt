@@ -1,0 +1,6 @@
+fastapi==0.121.2
+uvicorn[standard]==0.38.0
+pydantic==2.12.4
+psycopg[binary]==3.2.12
+jsonschema==4.25.1
+httpx==0.28.1

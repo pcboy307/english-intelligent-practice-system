@@ -53,3 +53,6 @@ qa/evidence/m0/textbook-B1U1-page023.png
 qa/evidence/m26/stage-a-run-*/
 qa/evidence/m26/stage-a/raw-responses/
 scripts/start-embedded-postgres.cjs
+
+# Local installer artifacts are distributed through GitHub Releases.
+安装文件/
